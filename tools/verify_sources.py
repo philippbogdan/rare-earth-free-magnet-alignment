@@ -1,0 +1,193 @@
+"""Verify sources and quotes of every record in data/raw/*.yaml, data/outcomes/*.yaml and
+data/curated/*.yaml.
+
+For each record: (1) the DOI resolves on Crossref and its title/year/first author match;
+(2) the verbatim quote is found in the abstract (Crossref / OpenAlex / Semantic Scholar)
+or in the text at `url` (HTML or PDF via pdftotext). Matching ignores case, whitespace,
+punctuation and line-break hyphenation. Results go to data/verification.json.
+Fetched texts are cached in .tmp/cache (not committed).
+
+    .venv/bin/python tools/verify_sources.py [files...]
+"""
+import difflib
+import glob
+import hashlib
+import html
+import json
+import os
+import re
+import subprocess
+import sys
+import time
+import unicodedata
+import urllib.parse
+import urllib.request
+
+import yaml
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CACHE = os.path.join(ROOT, '.tmp', 'cache')
+OUT = os.path.join(ROOT, 'data', 'verification.json')
+UA = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
+                    '(KHTML, like Gecko) Chrome/124 Safari/537.36'}
+os.makedirs(CACHE, exist_ok=True)
+
+
+def _get(url, binary=False, timeout=40):
+    key = hashlib.sha1(url.encode()).hexdigest()
+    p = os.path.join(CACHE, key + ('.bin' if binary else '.txt'))
+    if os.path.exists(p):
+        return open(p, 'rb').read() if binary else open(p, encoding='utf-8').read()
+    try:
+        req = urllib.request.Request(url, headers=UA)
+        data = urllib.request.urlopen(req, timeout=timeout).read()
+    except Exception as e:  # noqa: BLE001
+        return None
+    time.sleep(0.2)
+    if binary:
+        open(p, 'wb').write(data)
+        return data
+    s = data.decode('utf-8', errors='ignore')
+    open(p, 'w', encoding='utf-8').write(s)
+    return s
+
+
+def norm(s):
+    s = unicodedata.normalize('NFKC', s or '')
+    s = s.replace('­', '').replace('ﬁ', 'fi').replace('ﬂ', 'fl')
+    s = re.sub(r'-\s*\n\s*', '', s)
+    s = s.lower()
+    return re.sub(r'[\W_]+', '', s)
+
+
+def strip_tags(s):
+    s = re.sub(r'<script.*?</script>|<style.*?</style>', ' ', s or '', flags=re.S)
+    return html.unescape(re.sub(r'<[^>]+>', ' ', s))
+
+
+def crossref(doi):
+    s = _get('https://api.crossref.org/works/' + urllib.parse.quote(doi))
+    try:
+        return json.loads(s)['message']
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def abstracts(doi):
+    texts = []
+    m = crossref(doi)
+    if m and m.get('abstract'):
+        texts.append(strip_tags(m['abstract']))
+    s = _get('https://api.openalex.org/works/doi:' + urllib.parse.quote(doi))
+    try:
+        inv = json.loads(s).get('abstract_inverted_index')
+        if inv:
+            pos = {}
+            for w, ix in inv.items():
+                for i in ix:
+                    pos[i] = w
+            texts.append(' '.join(pos[i] for i in sorted(pos)))
+    except Exception:  # noqa: BLE001
+        pass
+    s = _get('https://api.semanticscholar.org/graph/v1/paper/DOI:' + urllib.parse.quote(doi)
+             + '?fields=title,abstract')
+    try:
+        a = json.loads(s).get('abstract')
+        if a:
+            texts.append(a)
+    except Exception:  # noqa: BLE001
+        pass
+    return m, texts
+
+
+def url_text(url):
+    if not url:
+        return ''
+    if url.lower().endswith('.pdf') or 'pdf' in url.lower().split('/')[-1]:
+        data = _get(url, binary=True)
+        if not data or not data[:5] == b'%PDF-':
+            return strip_tags(data.decode('utf-8', 'ignore')) if data else ''
+        key = hashlib.sha1(url.encode()).hexdigest()
+        pdf = os.path.join(CACHE, key + '.bin')
+        r = subprocess.run(['pdftotext', '-q', pdf, '-'], capture_output=True, text=True)
+        return r.stdout
+    s = _get(url)
+    if s and s[:5] == '%PDF-':
+        return ''
+    return strip_tags(s or '')
+
+
+def find_quote(quote, text):
+    q, t = norm(quote), norm(text)
+    if not q or not t:
+        return 0.0
+    if q in t:
+        return 1.0
+    sm = difflib.SequenceMatcher(None, q, t, autojunk=False)
+    b = sm.find_longest_match(0, len(q), 0, len(t))
+    lo = max(0, b.b - b.a - 20)
+    win = t[lo: lo + len(q) + 40]
+    return difflib.SequenceMatcher(None, q, win, autojunk=False).ratio()
+
+
+def title_score(a, b):
+    return difflib.SequenceMatcher(None, norm(a), norm(b)).ratio()
+
+
+def verify_record(r):
+    src = r.get('source') or {}
+    doi = (src.get('doi') or '').strip()
+    out = {'file': r.get('_file'), 'doi': doi or None}
+    quote = r.get('quote') or ''
+    texts = []
+    if doi:
+        m, texts = abstracts(doi)
+        if m:
+            t = (m.get('title') or [''])[0]
+            out['crossref_title'] = t
+            out['title_score'] = round(title_score(t, src.get('title', '')), 2)
+            y = (m.get('issued') or {}).get('date-parts', [[None]])[0][0]
+            out['crossref_year'] = y
+            out['year_ok'] = (y is None or src.get('year') is None
+                              or abs(int(y) - int(src.get('year'))) <= 1)
+            fam = [(a.get('family') or '') for a in m.get('author', [])]
+            fa = (src.get('first_author') or '')
+            out['author_ok'] = bool(fa) and any(norm(f) and norm(f) in norm(fa) or
+                                                 norm(fa) in norm(f) for f in fam if f)
+            out['doi_ok'] = True
+        else:
+            out['doi_ok'] = False
+    best, where = 0.0, None
+    for t in texts:
+        s = find_quote(quote, t)
+        if s > best:
+            best, where = s, 'abstract'
+    if best < 0.95 and src.get('url'):
+        s = find_quote(quote, url_text(src['url']))
+        if s > best:
+            best, where = s, 'url'
+    out['quote_score'] = round(best, 3)
+    out['quote_where'] = where
+    out['quote_ok'] = best >= 0.9
+    return out
+
+
+def main(files):
+    res = json.load(open(OUT)) if os.path.exists(OUT) else {}
+    for fn in files:
+        recs = yaml.safe_load(open(fn)) or []
+        for r in recs:
+            r['_file'] = os.path.relpath(fn, ROOT)
+            rid = r.get('id')
+            if not rid:
+                continue
+            res[rid] = verify_record(r)
+            st = res[rid]
+            print(f"{rid:50s} doi={st.get('doi_ok')} title={st.get('title_score')} "
+                  f"quote={st['quote_score']} ({st['quote_where']})")
+        json.dump(res, open(OUT, 'w'), indent=1, sort_keys=True)
+
+
+if __name__ == '__main__':
+    fs = sys.argv[1:] or sorted(glob.glob(os.path.join(ROOT, 'data', 'raw', '*.yaml')))
+    main(fs)
