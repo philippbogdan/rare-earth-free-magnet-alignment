@@ -348,3 +348,71 @@ def _settle(c):
 
 def evaluate(ph):
     return [_settle(FUN[r](ph)) for r in ROUTES]
+
+
+# ---------------------------------------------------------------- the single measurement
+DELTA = 0.03     # stated margin of a measurement of A (Mr/Ms or pole-figure average)
+
+
+def test_for(c, ph):
+    """One measurement per prediction, with the outcome that would refute it."""
+    A = c.A_max
+    name = ph.get('name', ph['id'])
+    if c.verdict == 'open':
+        d = c.decides[0] if c.decides else None
+        if d:
+            outs = ', '.join(f'{k}: A_max = {v:.3f}' for k, v in d[1].items() if v is not None)
+            return f'Measure {d[0]} by {d[2]}; it selects the ceiling ({outs}).'
+        return 'Unpublished input: see limits.'
+    r = c.route
+    if r == 'FP':
+        if c.verdict == 'full':
+            return (f'Mr/Ms of field-aligned, single-variant {name} particles fixed in resin, measured '
+                    f'along the alignment axis at 300 K after saturation (demagnetisation-corrected): '
+                    f'predicted to reach >= {A - DELTA - 0.02:.2f}; refuted if, with particles shown '
+                    'single-variant by EBSD, it stays below that.')
+        return (f'Mr/Ms of field-aligned {name} particles of the stated internal structure: refuted if '
+                f'> {A + DELTA:.2f}.')
+    if r in ('DS', 'AM'):
+        return (f'Easy-axis pole figure (EBSD or XRD) of {name} formed from a {r} parent of measured '
+                f'fibre texture, converted to A along the best axis: refuted if A > {A + DELTA:.2f}'
+                + ('' if c.verdict == 'full' else ' (the cap is geometric: no bias acts)') + '.')
+    if r in ('FA', 'DS+FA', 'AM+FA', 'RX+FA'):
+        if c.verdict == 'none':
+            return (f'Form {name} from the same parent at the same temperature with and without a '
+                    f'saturating field and compare A (Mr/Ms or pole figure): refuted if the field '
+                    f'raises A by more than {DELTA:.2f}.')
+        return (f'Form {name} in a saturating field below its Curie point and measure the variant '
+                f'fractions (XRD/EBSD) or Mr/Ms along the field: predicted ceiling {A:.3f}; refuted if '
+                'the favoured-variant fraction stays at the no-field value.')
+    if r in ('SA', 'DS+SA', 'RX+SA'):
+        if c.verdict == 'none':
+            return (f'Form {name} under a uniaxial stress near the yield stress and without: refuted if '
+                    f'the variant fractions (A) differ by more than {DELTA:.2f}.')
+        return (f'Form {name} under uniaxial stress of the favoured sign and measure variant fractions: '
+                f'predicted ceiling {A:.3f}; refuted if no selection occurs.')
+    if r == 'FS':
+        if c.verdict == 'none':
+            return (f'Solidify in 0 and >= 10 T and compare the pole figures of {name}: refuted if A '
+                    f'differs by more than {DELTA:.2f}.')
+        return (f'Solidify in a field (ferromagnetic crystals: >= 1 T; paramagnetic: >= 10 T) and '
+                f'measure the pole figure of the {name} crystals: predicted A up to {A:.3f}.')
+    if r == 'HD':
+        return (f'Pole figure of {name} after hot deformation along the deformation axis: predicted '
+                f'ceiling {A:.3f}' + (f'; refuted if A > {A + DELTA:.2f}' if c.verdict != 'full' else '') + '.')
+    if r == 'HDDR':
+        return ('A of powder after a disproportionation-recombination cycle: refuted if A exceeds '
+                f'{A + DELTA:.2f}.' if c.verdict == 'none' else f'Predicted ceiling {A:.3f}.')
+    if r == 'EP':
+        return f'XRD pole figure / Mr/Ms of an epitaxial {name} film: predicted A >= {A - DELTA:.2f}.'
+    if r == 'TGG':
+        return (f'Pole figure after templated grain growth: predicted up to {A:.3f}.' if c.verdict != 'none'
+                else f'Refuted if templated growth gives A > {0.5 + DELTA:.2f} in {name}.')
+    return ''
+
+
+def evaluate_with_tests(ph):
+    cells = evaluate(ph)
+    for c in cells:
+        c.test = test_for(c, ph)
+    return cells
