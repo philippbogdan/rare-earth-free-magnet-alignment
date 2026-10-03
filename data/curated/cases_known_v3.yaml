@@ -1,0 +1,2304 @@
+# Known-case predictions, rules v3 (post hoc; see docs/PROTOCOL_LOG.md).
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico_columnar_mmpa_desc
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico_columnar_arnold_desc
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico5DG_57_history_cui2022
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_process_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico57_9_alignment_cui2018
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_DS_machining_white2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico57_9_chillcast_dillon2014
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-5
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: &id001
+    - 1.43
+    - 1.46
+    js_src: alnico5_Js_iwama1976, alnico_Js_sergeyev_via_takeuchi1976_5 (Ti-free grades)
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_5dg_Br_mmpa
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_5dg_Hc_mmpa
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_5dg_BHmax_mmpa
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-5
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id001
+    js_src: alnico5_Js_iwama1976, alnico_Js_sergeyev_via_takeuchi1976_5 (Ti-free grades)
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_57_Br_mmpa
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_57_Hc_mmpa
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_57_BHmax_mmpa
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: &id002
+    - 1.15
+    - 1.23
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_9_Br_mmpa
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_9_Hc_mmpa
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_9_BHmax_mmpa
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-5
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id001
+    js_src: alnico5_Js_iwama1976, alnico_Js_sergeyev_via_takeuchi1976_5 (Ti-free grades)
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_arkomax800_Br_arnold2003
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_arkomax800_Hc_arnold2003
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_arkomax800_BHmax_arnold2003
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-5
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id001
+    js_src: alnico5_Js_iwama1976, alnico_Js_sergeyev_via_takeuchi1976_5 (Ti-free grades)
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_arkomax800hihc_Br_arnold2003
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_arkomax800hihc_Hc_arnold2003
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_arkomax800hihc_BHmax_arnold2003
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_alnico9_Br_arnold2003
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_Hc_arnold2003
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_BHmax_arnold2003
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-5
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id001
+    js_src: alnico5_Js_iwama1976, alnico_Js_sergeyev_via_takeuchi1976_5 (Ti-free grades)
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_5dg_LNG52_Br_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_5dg_LNG52_Hc_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_5dg_LNG52_BHmax_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-5
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id001
+    js_src: alnico5_Js_iwama1976, alnico_Js_sergeyev_via_takeuchi1976_5 (Ti-free grades)
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_57_LNG60_Br_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_57_LNG60_Hc_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_57_LNG60_BHmax_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_9_LNGT60_Br_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_9_LNGT60_Hc_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_9_LNGT60_BHmax_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_9_LNGT72_Br_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_9_LNGT72_Hc_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_9_LNGT72_BHmax_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_9_LNGT80_Br_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_9_LNGT80_Hc_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_9_LNGT80_BHmax_eclipse
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_alnico9_Br_top_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_BHmax_top_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_Hci_top_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_alnico9_Br_middle_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_BHmax_middle_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_Hci_middle_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_alnico9_Br_bottom_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_BHmax_bottom_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_Hci_bottom_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_alnico9_Br_average_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_BHmax_average_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_Hci_average_zhou2019
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_alnico9_Br_AMT_white2017
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_Hcj_AMT_white2017
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: kc_alnico9_BHmax_AMT_white2017
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-5
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id001
+    js_src: alnico5_Js_iwama1976, alnico_Js_sergeyev_via_takeuchi1976_5 (Ti-free grades)
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_alnico9_57_values_cui2018
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_alnico9_values_cui2022
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-5
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id001
+    js_src: alnico5_Js_iwama1976, alnico_Js_sergeyev_via_takeuchi1976_5 (Ti-free grades)
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_alnico57_Br_white2017
+  topic: alnico_fecrco
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js: *id002
+    js_src: alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: kc_alnico9_Br_ames2023slides
+  topic: alnico_fecrco
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_sagawa1984
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_rodewald2002
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_rodewald2003
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_alpha_mag_kitai2014_dy0_017t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_alpha_ebsd_kitai2014_dy0_017t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: class
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_pfmax_kitai2014_dy0_017t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_alpha_mag_kitai2014_dy0_17t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_alpha_ebsd_kitai2014_dy0_17t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: class
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_pfmax_kitai2014_dy0_17t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_alpha_mag_kitai2014_dy21_017t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_alpha_ebsd_kitai2014_dy21_017t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: class
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_pfmax_kitai2014_dy21_017t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_alpha_mag_kitai2014_dy21_17t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_alpha_ebsd_kitai2014_dy21_17t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: class
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_pfmax_kitai2014_dy21_17t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: class
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_gauss_sigma_kitai2014_017t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: class
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_gauss_sigma_kitai2014_17t
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_arnold_n55
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_arnold_n52
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_shinetsu_n56f
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_shinetsu_n44ma
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_vac_722hr
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_vac_745hr
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_vac_745tp
+  topic: ferrite_ndfeb
+  status: known
+- phase: Nd2Fe14B
+  route: FP
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'FP cell: full; single-variant particles each turn their easy axis to the field'
+  case: nd2fe14b_fp_br_vac_745ap
+  topic: ferrite_ndfeb
+  status: known
+- phase: null
+  route: AM
+  meas:
+    kind: class
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: phase not in the account
+  case: mnal_am_pacheco2023a
+  topic: mnal
+  status: known
+- phase: null
+  route: AM
+  meas:
+    kind: class
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: phase not in the account
+  case: mnal_am_pacheco2023b
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: AM
+  meas:
+    kind: class
+    along: par
+    saturating: true
+  pred:
+    A_hi: 0.6133
+    A_base: 0.5
+    cls: none
+    why: 'printed ε <0001> fibre; τ formed at 833 K (massive mode): at most the OR value 0.613 along the build direction'
+  case: mnal_am_pacheco2023c
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: AM
+  meas:
+    kind: class
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 0.6133
+    A_base: 0.5
+    cls: none
+    why: 'printed ε <0001> fibre; τ formed at 833 K (massive mode): at most the OR value 0.613 along the build direction'
+  case: mnal_am_pacheco2023d
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: AM
+  meas:
+    kind: MrMs
+    along: unknown
+    saturating: false
+  pred:
+    A_hi: 0.6133
+    A_base: 0.5
+    cls: none
+    why: 'printed ε <0001> fibre; τ formed at 833 K (massive mode): at most the OR value 0.613 along the build direction'
+  case: mnal_am_pacheco2023e
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_ohtani1977a
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: skip
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: mnal_hd_ohtani1977b
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: class
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1979a
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: MrMs
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1979b
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1979c
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: MrMs
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_a_mrms
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_a_gamma
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: MrMs
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_b_mrms
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_b_gamma
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: MrMs
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_c_mrms
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: A
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_c_gamma
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_a_edge_br
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_a_centre_br
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_b_edge_br
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_b_centre_br
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_c_edge_br
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_c_centre_br
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: skip
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: mnal_hd_feng2020_b_section_bhmax
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: perp
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_feng2020_commercial_br
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: skip
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: info
+    why: quantity is not remanence or texture
+  case: mnal_hd_feng2022_bhmax
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex1_sa2p5
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex1_sa5
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex1_sa7p5
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex1_sa10
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex1_sa15
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex1_sa20
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex1_sa25
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex1_sa30
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex1_sa45
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex1_sa60
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex2
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_sakamoto1977_ex3
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t6_500
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t6_580
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t6_630
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t6_730
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t6_830
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t6_850
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t7_500
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t7_530
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t7_630
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t7_730
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t7_830
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t7_850
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t11_530
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t11_580
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t11_590
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t11_600
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t11_650
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t11_700
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t11_750
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t11_780
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t11_790
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_t11_800
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex11_p4
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex11_p5
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex12
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex13
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex14_p4
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex14_p6
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex17_no23
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex18_no24
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex14_p5_br
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: MrMs
+    along: par
+    saturating: false
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex14_p5_mrms
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: class
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex14_torque
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: perp
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1976_ex19_no39
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1977_ex21
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1977_ex24_field
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1977_ex25_ultrasonic
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'radial compression (extrusion, swaging, groove rolling): [001] fibre along the axis'
+  case: mnal_hd_kubo1977_ex26_highspeed
+  topic: mnal
+  status: known
+- phase: tau-MnAl-C
+  route: HD
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.5
+    cls: acts
+    why: 'HD cell: full; warm extrusion (600-780 C) gives an approximately [001] fibre along the extrusion axis
+      by {111}<112> shear/twinning under radial compression with recrystallisat'
+  case: uni_out_mnalc_hd_extrusion_cui2018
+  topic: universe
+  status: known
+- phase: AlNiCo-8-9
+  route: DS+FA
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+    js:
+    - 1.03
+    - 1.23
+    js_src: 'Ti content not stated: from the 7.5 wt% Ti to the 5 wt% Ti value'
+  pred:
+    A_hi: 1.0
+    A_base: 0.3333
+    cls: acts
+    why: 'columnar <100> fibre with the field along it: one rod set along the field'
+  case: uni_out_dussa2024_alnico8_columnar_durandcharre1978
+  topic: universe
+  status: known

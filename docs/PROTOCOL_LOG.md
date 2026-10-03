@@ -87,3 +87,14 @@ and its six sealed cases predicted with the v2 rules before opening batch3.
     coupled-network bound that held in all held-out unbiased cases (0.866 for random grains, 0.934
     along the best axis of a <100> fibre); the cell value stays the uniaxial reference 1/2, so
     route comparisons are between alignment ceilings.
+
+## Freeze v3 before opening batch 4 (heldout2_b: 139 records from sources not used before)
+
+Rules v3 = v2 plus the account changes logged above (EP geometric ceiling, physical TGG and
+direct-formation reasons, unbiased bound stated) and, for this batch, phase-label mappings,
+Br units mT/kGs, same-sample Js links of the form _br_/_js_same_sample_, mass-unit Js not
+converted, exchange-enhanced bonded/composite samples flagged, MnBi powder milled from
+ribbon open, epsilon-Fe2O3 variant-family fractions not A. No prediction for batches 1-3
+changed (checked against cases_v2.yaml).
+
+    sha256 data/curated/cases_v3.yaml  b203b12b3f0b75f6935c9cde3aa4ee783f2c0fb79f406b5557cf7bef55716588

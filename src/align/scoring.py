@@ -31,7 +31,7 @@ import yaml
 from .account import DELTA
 from .data import ROOT
 
-UNIT_T = {'T': 1.0, 'kG': 0.1, 'mT': 1e-3, 'G': 1e-4, 'Gs': 1e-4}
+UNIT_T = {'T': 1.0, 'kG': 0.1, 'kGs': 0.1, 'mT': 1e-3, 'G': 1e-4, 'Gs': 1e-4}
 
 
 def _num(v):
@@ -73,7 +73,7 @@ def measured_A(spec, rec, recs, phases):
     u = _num(rec.get('uncertainty')) or 0.0
     unit = str(rec.get('unit') or '').strip()
     if kind in ('MrMs', 'A', 'vfrac'):
-        if kind == 'MrMs' and '%' in unit:
+        if '%' in unit or 'percent' in unit.lower():
             v, u = v / 100, u / 100
         return v - u, v + u, ''
     if kind == 'Br':
@@ -86,8 +86,8 @@ def measured_A(spec, rec, recs, phases):
             jr = recs[m['js_case']]
             jv = _num(jr.get('value'))
             ju = _num(jr.get('uncertainty')) or 0.0
-            jf = UNIT_T.get(str(jr.get('unit') or 'T').strip(), 1.0)
-            if jv is None:
+            jf = UNIT_T.get(str(jr.get('unit') or 'T').strip())
+            if jv is None or jf is None:          # e.g. a mass magnetisation: no conversion to T
                 return None
             js = [(jv - ju) * jf, (jv + ju) * jf]
             src = 'same-sample Js'

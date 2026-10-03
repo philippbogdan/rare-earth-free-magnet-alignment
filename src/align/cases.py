@@ -44,6 +44,10 @@ PHASE_MAP = {                            # collector phase label -> account phas
     'Fe3-xMnxSe4 nanorods (composition for low-T value unspecified)': 'Fe3Se4',
     'Fe2+δTa-C14-meltspun': 'Fe2Ta-C14',
     'Mn4N': 'Mn4N', 'Mn-Sn-Co-N multiphase alloy': 'Mn4N',
+    'Ba0.8La0.2Fe11.8Cu0.2O19': 'SrM-hexaferrite', 'Ba1-xCoxDyyFe12-yO19': 'SrM-hexaferrite',
+    'Ba1-xCoxFe12O19': 'SrM-hexaferrite', 'RE-substituted SrFe12O19': 'SrM-hexaferrite',
+    'Sr0.95Gd0.05Fe11.4Cu0.6O19': 'SrM-hexaferrite', 'Sr0.95Gd0.05Fe11.7Cu0.3O19': 'SrM-hexaferrite',
+    'epsilon-Fe2O3': 'eps-Fe2O3', 'LTP-MnBi/FeSiB': 'LTP-MnBi', 'tau-MnAl-C/alpha-Fe': 'tau-MnAl-C',
 }
 
 PAIRS = [   # (case, reference case, expectation): same study, same alloy, one condition changed
@@ -88,8 +92,9 @@ def exposed(cid):
 
 def along_kind(s):
     s = (s or '').lower()
-    if any(w in s for w in ('film normal', 'out-of-plane', 'out of plane', 'perpendicularly magnetized')):
-        return 'par'                          # v2: the film normal is the alignment axis of a (001) film
+    if any(w in s for w in ('film normal', 'out-of-plane', 'out of plane', 'perpendicularly magnetized',
+                            'perpendicular to cylinder plane', 'perpendicular to the cylinder plane')):
+        return 'par'                          # the film/disc normal is the alignment axis
     if any(w in s for w in ('perpendicular', 'perp', 'hard axis', 'hard direction', 'axial (compression')):
         return 'perp'
     if any(w in s for w in ('parallel', 'alignment', 'easy axis', 'field direction', 'preferred',
@@ -107,7 +112,7 @@ def meas_kind(c):
     q, u = str(c.get('quantity')), str(c.get('unit') or '')
     if q == 'Mr_over_Ms':
         return 'MrMs'
-    if q in ('[redacted]', 'Br') and u.strip() in ('T', 'kG'):
+    if q in ('[redacted]', 'Br') and u.strip() in ('T', 'kG', 'kGs', 'mT', 'G', 'Gs'):
         return 'Br'
     if q == 'texture_metric' and u.startswith('variant_fraction'):
         return 'vfrac'
@@ -252,10 +257,13 @@ def build():
         for x in recs:
             if x.get('quantity') in ('Br', '[redacted]'):
                 exact = x['id'].replace('_Br_', '_Js_same_')
+                exact2 = x['id'].replace('_br_', '_js_same_sample_')
                 paper = x['id'].rsplit('_', 1)[-1]
                 same = [j for j in js_ids if j.endswith('_' + paper)]
                 if exact in js_ids:
                     ctx.js_same[x['id']] = exact
+                elif exact2 in js_ids:
+                    ctx.js_same[x['id']] = exact2
                 elif len(same) == 1:
                     ctx.js_same[x['id']] = same[0]
     man = json.load(open(os.path.join(ROOT, 'data', 'sealed', 'MANIFEST.json')))
@@ -314,7 +322,9 @@ def encode(ctx, topic, c):
             return {**base, 'pred': pred(PLANAR, PLANAR, 'rods lie in the film plane at random azimuth: '
                                                          'planar random, in-plane value 2/pi', cls='none')}
         exch = any(w in proc for w in ('milled', 'melt-spun', 'ribbon', 'nanocrystal', 'quenched', 'mechanically alloyed',
-                                       'cluster'))
+                                       'cluster', 'mqp', 'bonded nd-fe-b', 'fesib', 'alpha-fe'))
+        if '/' in str(c.get('phase') or ''):          # composite with a second (soft) phase
+            exch = True
         return {**base, 'pred': pred(ISO, ISO, 'no alignment step: random grains' +
                                      ('; fine-grained, exchange enhancement possible (not alignment)' if exch else ''),
                                      cls='info' if exch else 'none')}
@@ -512,6 +522,11 @@ def enc_mnbi(ctx, pid, c, route, r, proc, cond, al, mk):
                                  cls='none')}
         if al == 'perp':
             return {'pred': pred(ISO, ISO, 'measured across the alignment axis', cls='none')}
+        if 'melt-spun' in proc and 'mill' in proc:
+            return {'pred': _hyp({'particles milled below the ribbon grain size (single crystals)': 1.0,
+                                  'particles holding several randomly oriented ribbon grains': ISO + DELTA},
+                                 'powder milled from melt-spun ribbon: particle size relative to the ribbon grain '
+                                 'size unpublished', cls='open')}
         return {'pred': pred(1.0, ISO, 'single-crystal LTP particles aligned in a field')}
     if 'through htp' in r or 'alpha->beta->alpha' in r:
         return {'pred': pred(1.0, ISO, 'LTP re-forms from paramagnetic HTP on cooling in the field; whether c '
@@ -572,6 +587,9 @@ def enc_nano_other(ctx, pid, c, route, r, proc, cond, al, mk):
         if 'rescaled' in medium:
             return {'pred': pred(1.0, ISO, 'derived value (rescaled loop)', cls='info')}
         return {'pred': pred(1.0, ISO, 'single-crystal rods turned in a liquid (c along the rod)')}
+    if pid == 'eps-Fe2O3' and r.startswith('ep') and mk == 'vfrac':
+        return {'pred': pred(1.0, ISO, 'fraction of one in-plane variant family of a multi-variant film (not A)',
+                             cls='info')}
     if pid == 'eps-Fe2O3' and r.startswith('ep'):
         return {'pred': pred(2 / 3, ISO, 'epitaxial film with three in-plane easy-axis variants: 0.667 ceiling')}
     if r.startswith('fp'):
@@ -881,6 +899,10 @@ def enc_ndfeb_routes(ctx, pid, c, route, r, proc, cond, al, mk):
                                        'to the field not stated', cls='info')}
     if r.startswith('am'):
         meas = {'phi': [0.5, 1.0]} if mk == 'Br' else {}
+        if 'bonded' in proc or 'isotropic' in str(cond.get('parent_texture')).lower():
+            return {'pred': pred(ISO, ISO, 'printed bonded magnet of isotropic rapidly solidified powder: no alignment '
+                                           'step; exchange enhancement possible (not alignment)', cls='info'),
+                    'meas_extra': meas}
         return {'pred': pred(1.0, ISO, 'printed Nd-Fe-B: crystal orientation not measured (AM cell open)',
                              cls='open'), 'meas_extra': meas}
     return None
