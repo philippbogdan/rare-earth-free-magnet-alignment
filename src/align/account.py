@@ -377,8 +377,8 @@ def _settle(c):
     if not outs:
         return c
     cats = {_verdict(v, v > ISO + 1e-3) for v in outs}
+    c.A_max = max(outs)            # for an open cell: the ceiling if the quantity falls its way
     if len(cats) == 1:
-        c.A_max = max(outs)
         c.verdict = cats.pop()
     return c
 
