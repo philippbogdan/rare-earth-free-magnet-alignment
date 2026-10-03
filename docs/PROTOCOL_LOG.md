@@ -22,3 +22,20 @@ frozen. Each entry: date, what was exposed, consequence.
 - 2026-10-03 — The process text of mnbi_other_tang2022_fieldsinter250 contains "(270 C: 0.86)", a
   remanence ratio of a sibling sample of the same series. Consequence: both Tang 2022
   field-sintering cases are classed "exposed".
+
+## Freeze before opening batch1 and batch2 (2026-10-03)
+
+Predictions for every sealed case (batch1: 10 files; batch2: ndfeb_routes, borides_feta) and
+for the known cases, together with the scoring rules (src/align/scoring.py) and the method
+changes (docs/METHOD.md section 8), are committed in the commit that adds this entry, before
+`tools/seal.py open` is run for either batch.
+
+    sha256 data/curated/cases.yaml        eb6ee47de1f561568ff545347e7336fb226fee9f205a0a82637db39892252eca
+    sha256 data/curated/cases_known.yaml  b10093d6d74e49d65376add9c557c61f464f621244a5748166b8ca9fcdb31499
+
+Development data seen while writing the rules: the value-free condition files only, and the
+known cases of PROBLEM.md (data/raw/known_cases_*.yaml), on which the scoring was dry-run.
+That dry run exposed a grade-to-Js mapping error (columnar alnico 5DG/5-7 read as alnico 8),
+fixed from sourced Js values before this freeze. Exposed sealed cases remain as listed above.
+The Mn4N collection (Codex task A3) is still running; its outcomes will be sealed as a later
+batch and frozen separately.

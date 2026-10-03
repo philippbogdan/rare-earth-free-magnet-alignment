@@ -133,6 +133,17 @@ def route_MO(ph):
     if h.get('single_crystal') is False:
         return Cell(ph['id'], 'MO', 'none', ISO, '', chain='particles are not single crystals: '
                     + h.get('reason', ''), refs=h.get('refs', []))
+    if h.get('easy') == 'unknown' and h['shape'] in ('rod', 'plate'):
+        other = 'perpendicular' if h['shape'] == 'rod' else 'in-plane'
+        main = 'axis' if h['shape'] == 'rod' else 'normal'
+        outs = {f"{h['shape']}s, easy axis {'along the rod' if main == 'axis' else 'normal'}": SHAPE_A[(h['shape'], main)][0],
+                f"{h['shape']}s, easy axis {other}": SHAPE_A[(h['shape'], other)][0]}
+        return Cell(ph['id'], 'MO', 'open', max(outs.values()), '',
+                    chain=f"single-crystal {h['shape']}s; the easy axis relative to the particle shape is unpublished: "
+                          + h.get('reason', ''),
+                    decides=[('easy axis relative to the particle shape', outs,
+                              'EBSD or SAED of single particles + their long axis')],
+                    A_alt=outs, refs=h.get('refs', []))
     key = (h['shape'], h.get('easy') if h['shape'] != 'equiaxed' else None)
     A, ax = SHAPE_A[key]
     if h.get('single_crystal') is None and A > ISO + 1e-3:
@@ -216,7 +227,10 @@ def _field_status(ph, path):
     mag, why = formation_magnetic(ph, path)
     acts2 = mag in ('yes', 'partly')
     extra = []
-    if not acts2:
+    if mag == 'unknown':
+        extra.append((f'Curie point of {ph.get("name", ph["id"])} relative to its formation temperature',
+                      'M(T) of the ordered phase through the formation window'))
+    elif not acts2:
         A_label = 'forms below Tc'
         if p.get('product_ferromagnetic', True):
             extra.append((f'formation of the phase below its Curie point '
@@ -344,6 +358,14 @@ def _bias_route(ph, route, kind, source):
                 continue
             if kind == 'field':
                 mag, why = formation_magnetic(ph, path)
+                if mag == 'unknown':
+                    outs = {'Tc above the formation temperature': 1.0, 'Tc below it': ISO}
+                    cells.append(Cell(ph['id'], route, 'open', 1.0, 'field direction',
+                                      chain=f'forms without a parent crystal; {why}',
+                                      decides=[(f'Curie point of {ph.get("name", ph["id"])} relative to its '
+                                                'formation temperature', outs,
+                                                'M(T) of the phase through the formation window')], A_alt=outs))
+                    continue
                 acts = mag in ('yes', 'partly')
                 cells.append(Cell(ph['id'], route, 'full' if acts else 'none', 1.0 if acts else ISO,
                                   'field direction' if acts else '',
@@ -504,6 +526,12 @@ def route_HDDR(ph):
         return Cell(ph['id'], 'HDDR', 'none', ISO, '',
                     chain='no reversible disproportionation-recombination reaction with an orientation '
                           'memory is reported for this phase')
+    if h.get('unknown_memory'):
+        outs = {'recombined grains keep the parent c axis': 1.0, 'no orientation memory': ISO}
+        return Cell(ph['id'], 'HDDR', 'open', 1.0, 'memory axis', chain=h['reason'],
+                    decides=[('orientation memory of the recombination (memory site and its variants)', outs,
+                              'EBSD of a partially recombined coarse single-crystal particle')],
+                    A_alt=outs, refs=h.get('refs', []))
     return Cell(ph['id'], 'HDDR', _verdict(h['A']), h['A'], 'memory axis', chain=h['reason'],
                 refs=h.get('refs', []))
 
@@ -572,7 +600,27 @@ def _hypotheses(ph):
     return a, b, [ph['paths'][i] for i in unk]
 
 
+def _easy_open(ph, cells):
+    """Phases whose easy direction is unpublished: every ceiling that assumes the stated easy
+    axis becomes open, with the measurement that settles the easy direction."""
+    eo = ph.get('easy_open')
+    if not eo:
+        return cells
+    for c in cells:
+        if c.verdict in ('full', 'capped', 'open'):
+            outs = {'easy axis c': c.A_max, eo.get('alt', 'easy cone or plane'): None}
+            c.decides = [(eo['name'], outs, eo['measurement'])] + c.decides
+            c.chain = f"{eo['name']} unpublished; if it is c: {c.chain}"
+            c.verdict = 'open'
+            c.A_alt = {**c.A_alt, **outs} if c.A_alt else outs
+    return cells
+
+
 def evaluate(ph):
+    return _easy_open(ph, _evaluate(ph))
+
+
+def _evaluate(ph):
     hyp = _hypotheses(ph)
     if not hyp:
         return [_settle(FUN[r](ph)) for r in ROUTES]

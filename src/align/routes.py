@@ -145,6 +145,9 @@ def formation_magnetic(ph, path):
     prod_mag = p.get('product_ferromagnetic', True)
     Tc_par = (p.get('parent') or {}).get('Tc')
     cands = []
+    if prod_mag and Tc_prod is None and Tc_par is None:
+        return 'unknown', (f'Curie point of the forming phase unpublished (formation window '
+                           f'{lo:.0f}-{hi:.0f} K)')
     if prod_mag and Tc_prod is not None:
         cands.append((Tc_prod, 'product'))
         if Tc_par is not None:

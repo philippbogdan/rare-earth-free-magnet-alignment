@@ -134,3 +134,48 @@ after each success the criterion furthest from its limit is pushed next.
 A remaining gap is accepted only if it is physics, or a quantity that is unpublished and
 shown (by running the engine on both of its possible values) to decide the answer,
 together with the measurement that would settle it.
+
+## 8. Changes made before any sealed outcome was opened
+
+Each change below was committed together with the frozen predictions (data/curated/cases.yaml)
+and the scoring code (src/align/scoring.py), before `tools/seal.py open` was run for any batch.
+
+1. **Route classes.** Besides the classes of section 2: MO (shape orientation of single-crystal
+   particles by pressing/flow), SC+FA and SC+SA (bias on a single-crystal parent), DS+SA and
+   RX+SA (stress on a textured parent), HDDR, TGG. 18 classes in all, every one evaluated for
+   every phase.
+2. **Field rule.** The field acts if the nucleus that decides the variant is magnetically
+   ordered at T_f: product Tc > T_f, or a ferromagnetic parent with Tc > T_f polarising a
+   ferromagnetic product. If the Curie point of the forming phase is unpublished the cell is
+   open (both outcomes given).
+3. **Unpublished inputs** are never guessed: the engine is run on each possible value and the
+   cell lists every outcome (verdict 'open' only if the outcomes fall in different categories).
+   An unpublished orientation relationship is expanded into two hypotheses (no OR / the stated
+   analogue OR); an unpublished easy direction makes every ceiling conditional on it.
+4. **Free bodies** with a degenerate anisotropy tensor (e.g. three equal orthogonal variants)
+   have no unique axis: the field direction is spread over the degenerate subspace.
+5. **Two-step transformations** (parent -> intermediate -> product) choose variants at two
+   levels; each level acts only if its deciding phase is ordered (field) or coherent (stress).
+6. **Unbiased spinodal alloys (AlNiCo, Fe-Cr-Co, alnico-like HEA).** Without a bias the
+   ferromagnetic precipitates lie along all three parent <100>. Two readings bracket the
+   remanence: independent rods (A_base: 1/2 for random grains) and one coupled network per
+   grain with the published no-field easy directions <111> (A_hi: 0.866 for random grains;
+   Nesbitt 1952, record alnico5_field_easyaxis_nesbitt1952). Ties of the nearest-<100> rule
+   (field along <111> or <110>) are given both readings as well.
+7. **Measuring direction off the bias axis.** Partial selection can exceed complete selection
+   there, so the ceiling is the larger of the complete-selection and the unbiased values.
+8. **Case predictions** (data/curated/cases.yaml) replace the [A_lo, A_hi] of section 1 by:
+   A_hi (ceiling under the case's own conditions), A_base (the same without the route's
+   mechanism), a class ('acts', 'none', 'open', or 'info' = not a test of alignment), optional
+   hypothesis values, the conversion of the measured quantity to A (Js from a same-sample
+   record, a sourced grade interval, or the phase Js -/+ 5 %; phi where the hard phase is
+   diluted), and optional pairs (same study, one condition changed) with the expected sign of
+   the change. The interval of section 5 is kept as [min(A_base, A_hi) - tol, A_hi + tol].
+9. **Scoring** (src/align/scoring.py, docstring): tol = max(0.03, 2x stated uncertainty);
+   a ceiling is violated only if the most favourable conversion of the measurement still
+   exceeds it (straddling cases are listed as possible violations); 'none' is refuted by
+   A_meas > A_hi + tol; 'acts' is shown by A_meas > A_base + tol (not shown is not a
+   refutation); each hypothesis of an open case is kept or refuted; pairs are checked for the
+   predicted sign. Known cases (PROBLEM.md) are scored with the same rules and reported
+   separately as fidelity; exposed cases (docs/PROTOCOL_LOG.md) are reported separately from
+   held-out ones.

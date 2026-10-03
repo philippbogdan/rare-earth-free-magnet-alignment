@@ -10,6 +10,7 @@ Each case gets:
   meas                  how the measured value converts to A (MrMs | Br | vfrac | class | skip)
   status                'heldout' or 'exposed' (docs/PROTOCOL_LOG.md)
 """
+import json
 import os
 import re
 
@@ -37,7 +38,26 @@ PHASE_MAP = {                            # collector phase label -> account phas
     'M-type ferrite (unspecified)': 'SrM-hexaferrite', 'M-type hexaferrite': 'SrM-hexaferrite',
     '(Sr,La)(Fe,Co)12O19': 'SrM-hexaferrite', '(Ca,La)(Fe,Co)12O19': 'SrM-hexaferrite',
     '(La,Na)(Fe,Co)12O19': 'SrM-hexaferrite', 'Nd2Fe14B': 'Nd2Fe14B',
+    'AlNiCo': 'AlNiCo-8-9', 'Fe-Cr-Co': 'Fe-Cr-Co',      # grade decides AlNiCo-5 vs 8/9 (enc_alnico_fecrco)
+    'FeCoNiAlCu0.4Ti0.4 (alloy A)': 'HEA-FeCoNiAlCuTi', 'Fe2CoNiAlCu0.4Ti0.4 (alloy D)': 'HEA-FeCoNiAlCuTi',
+    '(FeCoNiMnCu)Pt (L10 film)': 'L10-HEA-Pt', 'Fe3Se4 (monoclinic)': 'Fe3Se4',
+    'Fe3-xMnxSe4 nanorods (composition for low-T value unspecified)': 'Fe3Se4',
+    'Fe2+δTa-C14-meltspun': 'Fe2Ta-C14',
 }
+
+PAIRS = [   # (case, reference case, expectation): same study, same alloy, one condition changed
+    ('alnico8H_Br_FA_800_zhou2017', 'alnico8H_Br_nofield_800_zhou2017', 'higher'),
+    ('alnico8H_Br_FA_840_zhou2017', 'alnico8H_Br_nofield_840_zhou2017', 'higher'),
+    ('alnico8H_Br_FA_860_zhou2017', 'alnico8H_Br_nofield_860_zhou2017', 'higher'),
+    ('alnico5_Br_equiaxed_field_makino1963', 'alnico5_Br_equiaxed_nofield_makino1963', 'higher'),
+    ('alnico5_Br_columnar_field_par_makino1963', 'alnico5_Br_columnar_nofield_par_makino1963', 'higher'),
+    ('alnico5_Br_columnar_field_perp_makino1963', 'alnico5_Br_columnar_nofield_perp_makino1963', 'higher'),
+    ('alnico9_MrMs_Ydoped_field30kOe_zhang2018', 'alnico9_MrMs_Ydoped_field0kOe_zhang2018', 'higher'),
+    ('alnico9_MrMs_Ydoped_textured_FA45kOe_zhang2018', 'alnico9_MrMs_Ydoped_field0kOe_zhang2018', 'higher'),
+    ('fecrco_FA_stepaged_okadathesis', 'fecrco_iso_stepaged_okadathesis', 'higher'),
+    ('hea_a_fa_mrms_na2021', 'hea_a_ta_mrms_na2021', 'open'),
+    ('ndfeb_nguyen2013_field_mr_over_ms', 'ndfeb_nguyen2013_zero_mr_over_ms', 'equal'),
+]
 
 EXPOSED = {   # docs/PROTOCOL_LOG.md
     'prefix': ['fepd_scfa_', 'uni_out_rt_fepd_scfa', 'uni_out_fepd_l10_fa', 'mnal_hd_', 'mnal_sc_sa_kubo1976'],
@@ -45,6 +65,9 @@ EXPOSED = {   # docs/PROTOCOL_LOG.md
             'mnal_ep_takata2018_mgo', 'mnal_ep_takata2018_rocking', 'mnbi_other_tang2022_fieldsinter300',
             'mnbi_other_tang2022_fieldsinter250'],
 }
+
+
+TOPIC_FIRST = ('alnico_fecrco', 'fese_hea', 'ndfeb_routes')
 
 
 def exposed(cid):
@@ -91,6 +114,7 @@ class Ctx:
         self.phases, _ = load_phases()
         self.ph = {p['id']: p for p in self.phases}
         self.cells = {}
+        self.js_same = {}
 
     def cell(self, pid, route):
         if pid not in self.cells:
@@ -153,18 +177,93 @@ def mnal_ds_stress(ctx, pid, measure):
     return E.alignment(ax, w, vec)
 
 
+# ---------------------------------------------------------------- AlNiCo / Fe-Cr-Co rods
+_D111 = np.array([[1, 1, 1], [1, 1, -1], [1, -1, 1], [-1, 1, 1]]) / np.sqrt(3)
+
+
+def rods_A(tex, h, m, rule, spread=0.0):
+    """A along m for α1 rods on the parent <100> (crystal x, y, z), per parent grain.
+
+    tex   'random' | 'fibre' (<100> along z) | 'single' (parent axes = sample axes)
+    h     field direction (sample frame); m measuring direction
+    rule  'field'  rods follow the field in every grain (A = |h.m|)
+          'near'   complete selection of the <100> nearest h (ties split equally)
+          'none'   no bias: all three <100>
+    Returns (A_indep, A_coupled): rods as independent units, or the selected rod sets of a
+    grain as one coupled unit (one set: uniaxial; two: easy plane; three: cubic with the
+    no-field easy directions <111>, Nesbitt 1952)."""
+    h, m = np.asarray(h, float), np.asarray(m, float)
+    h, m = h / np.linalg.norm(h), m / np.linalg.norm(m)
+    if rule == 'field':
+        a = abs(float(h @ m))
+        return a, a
+    g = {'random': lambda: E.texture_random(),
+         'fibre': lambda: E.texture_fibre((0, 0, 1), n_az=720, spread_deg=spread),
+         'single': lambda: E.texture_single(n=400 if spread else 1, spread_deg=spread)}[tex]()
+    ax = np.transpose(g, (0, 2, 1))                 # (n, 3 rods, 3): columns of g
+    if rule == 'near':
+        sc = np.abs(ax @ h)
+        sel = sc >= sc.max(1, keepdims=True) - 1e-6
+    else:
+        sel = np.ones(ax.shape[:2], bool)
+    k = sel.sum(1)
+    cm = np.abs(ax @ m)                             # (n, 3)
+    indep = float(((cm * sel).sum(1) / k).mean())
+    coup = np.where(k == 1, (cm * sel).sum(1), 0.0)
+    two = k == 2
+    if two.any():
+        n_ax = (~sel[two]).argmax(1)                # the unselected axis is the plane normal
+        nm = cm[two][np.arange(two.sum()), n_ax]
+        coup[two] = np.sqrt(np.clip(1 - nm ** 2, 0, 1))
+    three = k == 3
+    if three.any():
+        mc = np.einsum('nij,j->ni', np.transpose(ax[three], (0, 2, 1)), m)   # m in crystal frame
+        coup[three] = np.abs(mc @ _D111.T).max(1)
+    return indep, float(coup.mean())
+
+
 def build():
     ctx = Ctx()
     out = []
     files = sorted(f for f in os.listdir(os.path.join(ROOT, 'data', 'sealed')) if f.endswith('.conditions.yaml'))
+    man = json.load(open(os.path.join(ROOT, 'data', 'sealed', 'MANIFEST.json')))
+    real = {f: [c['id'] for c in m['cases']] for b in man['batches'].values() for f, m in b['files'].items()}
+    for fn in files:                         # same-sample Js records for Br -> A
+        recs = yaml.safe_load(open(os.path.join(ROOT, 'data', 'sealed', fn))) or []
+        ids = real.get(fn.replace('.conditions.yaml', '.yaml'), [])
+        if len(ids) == len(recs):
+            for c, i in zip(recs, ids):
+                c['id'] = i
+        js_ids = [x['id'] for x in recs if x.get('quantity') == 'Js_same_sample']
+        for x in recs:
+            if x.get('quantity') in ('Br', '[redacted]'):
+                exact = x['id'].replace('_Br_', '_Js_same_')
+                paper = x['id'].rsplit('_', 1)[-1]
+                same = [j for j in js_ids if j.endswith('_' + paper)]
+                if exact in js_ids:
+                    ctx.js_same[x['id']] = exact
+                elif len(same) == 1:
+                    ctx.js_same[x['id']] = same[0]
+    man = json.load(open(os.path.join(ROOT, 'data', 'sealed', 'MANIFEST.json')))
+    real = {f: [c['id'] for c in m['cases']] for b in man['batches'].values() for f, m in b['files'].items()}
     for fn in files:
         topic = fn.replace('_outcomes.conditions.yaml', '')
-        for c in yaml.safe_load(open(os.path.join(ROOT, 'data', 'sealed', fn))):
+        recs = yaml.safe_load(open(os.path.join(ROOT, 'data', 'sealed', fn)))
+        ids = real.get(fn.replace('.conditions.yaml', '.yaml'), [])
+        if len(ids) == len(recs):              # value-free manifest ids (the redaction also hit ids)
+            for c, i in zip(recs, ids):
+                c['id'] = i
+        for c in recs:
             spec = encode(ctx, topic, c)
             if spec:
                 spec.update({'case': c['id'], 'topic': topic,
                              'status': 'exposed' if exposed(c['id']) else 'heldout'})
                 out.append(spec)
+    ids = {x['case'] for x in out}
+    by = {x['case']: x for x in out}
+    for a, b, exp in PAIRS:
+        if a in ids and b in ids:
+            by[a]['pair'] = {'with': b, 'expect': exp}
     return out
 
 
@@ -172,6 +271,8 @@ def encode(ctx, topic, c):
     """One case -> spec; rules by (phase, route) group with per-case conditions."""
     cid, route = c['id'], str(c.get('route'))
     pid = PHASE_MAP.get(c.get('phase'))
+    if pid == 'tau-MnAl' and re.search(r'mn-?al-?c\b|mnal\(c\)|mn-al-c|mnal-c', str(c.get('process') or '').lower()):
+        pid = 'tau-MnAl-C'                    # carbon-containing alloy labelled with the binary phase
     mk = meas_kind(c)
     al = along_kind(c.get('measured_along'))
     cond = c.get('conditions') or {}
@@ -182,6 +283,12 @@ def encode(ctx, topic, c):
     if mk == 'skip':
         return {**base, 'pred': pred(1, ISO, 'quantity is not remanence or texture', cls='info')}
     r = route.lower()
+    t_first = 'alnico_fecrco' if c.get('phase') in ('AlNiCo', 'Fe-Cr-Co') else topic
+    if t_first in TOPIC_FIRST:                # topic rules that also cover unbiased samples
+        res = globals()['enc_' + t_first](ctx, pid, c, route, r, proc, cond, al, mk)
+        if res is not None:
+            extra = res.pop('meas_extra', {})
+            return {**base, **res, 'meas': {**base['meas'], **extra}}
     # ------------------------------------------------ isotropic samples (no alignment step)
     if r.startswith('isotropic') or 'no alignment' in r or 'without field' in r and 'cold rolling' not in r:
         if any(w in proc for w in ('film', 'cast', 'spin-coated')) and pid == 'Co-nanorods' and al != 'any':
@@ -461,7 +568,307 @@ def enc_ferrite_ndfeb(ctx, pid, c, route, r, proc, cond, al, mk):
     return None
 
 
+# ---------------------------------------------------------------- AlNiCo / Fe-Cr-Co
+_Z, _X = (0, 0, 1), (1, 0, 0)
+_JS = {   # sourced saturation intervals (T) by grade, data/raw/alnico_fecrco_inputs.yaml
+    'alnico1-4': ([0.87, 1.46], 'grade Js unpublished: whole sourced alnico range (estimate)'),
+    'alnico5': ([1.43, 1.46], 'alnico5_Js_iwama1976, alnico_Js_sergeyev_via_takeuchi1976_5 (Ti-free grades)'),
+    'alnico6': ([1.30, 1.43], 'between alnico_Js_takeuchi1976_ti1p3 (1.36) and the Ti-free value (estimate)'),
+    'alnico8n': ([1.15, 1.23], 'alnico_Js_sergeyev_via_takeuchi1976_8 (5 wt% Ti, MMPA alnico 8 and 9) -/+3%'),
+    'alnico8H': ([1.03, 1.10], 'alnico_Js_takeuchi1976_ti7p5, alnico_Js_zou2016_DS_7p5Ti (7-8.7 wt% Ti)'),
+    'alnico8': ([1.03, 1.23], 'Ti content not stated: from the 7.5 wt% Ti to the 5 wt% Ti value'),
+}
+
+
+def _alnico_grade(cid, proc):
+    k = cid.lower()
+    if re.search(r'alnico[1-4]_|alnico_br_alnico[1-4]_|ln10|lng12', k):
+        return 'AlNiCo-5', 'alnico1-4'
+    if 'alnico6' in k:
+        return 'AlNiCo-5', 'alnico6'
+    if re.search(r'alnico5|makino1963|no1_takeuchi|alcomax|5dg|_57_|arkomax800|lng52|lng60', k):
+        return 'AlNiCo-5', 'alnico5'
+    if re.search(r'alnico9|_9_|lngt60|lngt72|lngt80', k) or ('_mmpa' in k and 'alnico8_' in k):
+        return 'AlNiCo-8-9', 'alnico8n'
+    if re.search(r'alnico8h|8hc|8he|8h_|kassen2018|white20|ames2023|rinko2023|zou2016|no4_takeuchi', k):
+        return 'AlNiCo-8-9', 'alnico8H'
+    return 'AlNiCo-8-9', 'alnico8'
+
+
+def _fecrco_js(cid, proc):
+    if 'fe31cr23co' in cid or 'okada' in cid or 'fe-31cr-23co' in proc:
+        return [1.2, 1.4], 'fecrco_Js_fe31cr23co_okadathesis'
+    if re.search(r'\d+\s*-\s*\d+\s*cr', proc) and 'arnokrome' not in cid:
+        return [1.2, 1.7], 'composition range only: sourced Fe-Cr-Co range (estimate)'
+    if 'arnokrome' in cid:
+        proc = 'fe-28cr-8co'
+    m = re.search(r'(\d+(?:\.\d+)?)\s*(?:wt%\s*)?cr\b', proc) or re.search(r'fe-?\(?(\d+)', proc)
+    cr = None
+    if m:
+        try:
+            cr = float(m.group(1))
+        except ValueError:
+            cr = None
+    if cr is None or not 10 <= cr <= 40:
+        return [1.2, 1.7], 'composition not resolved: sourced Fe-Cr-Co range (estimate)'
+    js = float(np.interp(cr, [18.4, 26.8, 35.2], [1.68, 1.37, 1.21]))
+    return [round(js - 0.12, 2), round(js + 0.12, 2)], \
+        f'interpolated in Cr ({cr:g} wt%) between fecrco_Js_he2024_No1/No4/No7, +-0.12 T for Co (estimate)'
+
+
+def _hyp(vals, why, cls=None, base=None):
+    """Prediction carrying alternative readings: vals = {name: A}; A_hi = max."""
+    hi = max(vals.values())
+    b = base if base is not None else ISO
+    if cls is None:
+        cl = {('acts' if v > b + DELTA else 'none') for v in vals.values()}
+        cls = cl.pop() if len(cl) == 1 else 'open'
+    out = pred(hi, b, why, cls=cls)
+    out['hyp'] = {k: round(float(v), 4) for k, v in vals.items()}
+    return out
+
+
+def _unbiased(tex, m, why, spread=0.0):
+    ind, cou = rods_A(tex, _Z, m, 'none', spread)
+    return _hyp({'independent rods': ind, 'coupled network (<111> easy)': cou},
+                'no bias: α1 along all three <100>; ' + why, cls='none', base=ind)
+
+
+def enc_alnico_fecrco(ctx, pid, c, route, r, proc, cond, al, mk):
+    cid = c['id']
+    alongs = str(c.get('measured_along') or '').lower()
+    ptex = str(cond.get('parent_texture') or '').lower()
+    js_case = ctx.js_same.get(cid)
+    meas = {}
+    if c.get('phase') == 'AlNiCo':
+        pid, grade = _alnico_grade(cid, proc)
+        js, js_src = _JS[grade]
+    else:
+        pid, grade = 'Fe-Cr-Co', 'fecrco'
+        js, js_src = _fecrco_js(cid, proc)
+    if mk == 'Br':
+        meas = {'js_case': js_case} if js_case else {'js': js, 'js_src': js_src}
+        if 'bonded' in proc:
+            meas['phi'] = [0.5, 1.0]
+        elif 'sinter' in proc or 'sint_' in cid or '_fl' in cid:
+            meas['phi'] = [0.95, 1.0]
+    out = lambda p: {'phase': pid, 'pred': p, 'meas_extra': meas}
+    no_field = str(cond.get('field_T')) in ('0', '0.0') or 'without field' in proc or 'isotropic' in r \
+        or re.search(r'no field(?! template)', r + ' ' + proc) is not None
+    colum = ('columnar' in ptex and not re.search(r'not (described as )?columnar|non-?columnar', ptex)
+             and 'columnar-appearing' not in ptex and 'not measured' not in ptex) or r.startswith('ds')
+    fe = pid == 'Fe-Cr-Co'
+    mo = fe and bool(re.search(r'\d\s*mo\b|-mo\b|mo-|\dmo', proc + ' ' + cid))
+    # ---------------------------------------------------- not tests of alignment
+    if mk == 'class' or c.get('quantity') == 'texture_metric':
+        return out(pred(1.0, ISO, 'parent texture metric from the same work that supplied the account input '
+                                  '(not independent)', cls='info'))
+    if 'no coercivity' in proc or 'as-quenched' in cid or 'asquenched' in cid:
+        return out(pred(1.0, ISO, 'no α1 rods formed (no coercivity): not a Stoner-Wohlfarth remanence', cls='info'))
+    if 'whether a field was applied is not stated' in r or 'post-treatment not give' in proc:
+        return out(pred(1.0, ISO, 'process not specific enough to test', cls='info'))
+    if 'cold roll' in proc and no_field and fe:
+        return out(pred(1.0, ISO, 'cold-rolled strip aged without field: deformation state and texture not '
+                                  'reported', cls='info'))
+    # ---------------------------------------------------- deformation ageing (Fe-Cr-Co)
+    if re.search(r'deformation[- ]ag', r):
+        cell = ctx.cell('Fe-Cr-Co', 'HD')
+        return out(pred(cell.A_max, ISO, 'deformation ageing elongates α1 along the deformation axis (HD cell)'))
+    # ---------------------------------------------------- stress anneal without field (AlNiCo)
+    if r.startswith('sa'):
+        cell = ctx.cell(pid, 'SA')
+        return out(pred(cell.A_max, ISO, 'stress during the coherent spinodal on a random parent: complete '
+                                         'selection of the <100> nearest the tensile axis (SA cell)'))
+    # ---------------------------------------------------- unbiased (no field, no stress)
+    if no_field:
+        if colum:
+            m = _X if al == 'perp' else _Z
+            return out(_unbiased('fibre', m, 'columnar <100> fibre', spread=2.5))
+        if 'as-built columnar' in ptex:
+            return out(_unbiased('random', _Z, 'AM parent: random to <001> fibre (account input); random '
+                                               'gives the larger coupled value'))
+        return out(_unbiased('random', _Z, 'random or weakly textured parent'))
+    # ---------------------------------------------------- field-treated
+    if fe:
+        mode = 'Mo-bearing: rods on the nearest <100> (path 1)' if mo else 'Mo-free: rods follow the field (path 0)'
+        if 'sc+fa' in r or 'single crystal' in ptex:
+            fd = re.search(r'field along <(\d)(\d)(\d)>', ptex)
+            if fd:
+                d = np.array([float(x) for x in fd.groups()])
+                if not mo:
+                    b, _ = rods_A('single', d, d, 'none')
+                    return out(pred(1.0, b, f'{mode}: A = 1 along the field <{"".join(fd.groups())}>'))
+                ind, cou = rods_A('single', d, d, 'near')
+                b, _ = rods_A('single', d, d, 'none')
+                return out(_hyp({'independent rods': ind, 'coupled sets (tie)': cou},
+                                f'{mode}; field along <{"".join(fd.groups())}>: nearest-<100> selection '
+                                f'(ties split)', base=b))
+            return out(pred(1.0, ISO, f'{mode}; single crystal with field along <100>'))
+        if 'rx+fa' in r or 'ds+fa' in r or 'am+fa' in r:
+            return out(pred(1.0, ISO, f'{mode}; parent <100> texture along the field (or rods follow the '
+                                      'field): ceiling 1'))
+        # equiaxed / sintered / unstated polycrystal
+        if mo and ptex.startswith('not stated'):
+            return out(pred(1.0, ISO, f'{mode}; parent texture not stated: ceiling of a <100> fibre along the field'))
+        if mo:
+            return out(pred(0.8312, ISO, f'{mode}; random parent: nearest <100> (0.831)'))
+        if 'mo' not in proc and re.search(r'15-35 cr', proc):
+            return out(_hyp({'Mo-free (path 0)': 1.0, 'Mo-bearing (path 1)': 0.8312},
+                            'commercial grade, Mo content not stated'))
+        return out(pred(1.0, ISO, f'{mode}; any grain orientation'))
+    # AlNiCo, field-treated
+    five = pid == 'AlNiCo-5'
+    if al == 'perp' and not colum:
+        near_perp = rods_A('random', _Z, _X, 'near')[0]
+        _, unb = rods_A('random', _Z, _X, 'none')
+        vals = {'rods on the nearest <100>': max(near_perp, unb)}
+        if five:
+            vals['rods follow the field'] = unb
+        return out(_hyp(vals, f'measured across the anneal field: complete selection gives {near_perp:.3f} '
+                              f'(nearest <100>) or 0 (rods along the field); partial selection up to the '
+                              f'unbiased {unb:.3f}', cls='none', base=ISO))
+    if 'grain structure not described' in r:
+        return out(pred(1.0, ISO, 'grain structure not stated', cls='info'))
+    if 'agg under uniaxial load' in ptex:
+        return out(pred(1.0, ISO, 'parent texture from stress-biased grain growth not quantified', cls='info'))
+    if 'sc+fa' in r:
+        return out(pred(1.0, 1 / 3, 'single crystal, field along [100]: one rod set along the field'))
+    if colum and ('angle' in cid):
+        th = float(re.search(r'angle(\d+)', cid).group(1))
+        t = np.radians(th)
+        if 'perp' in cid:
+            h, m = (np.cos(t), 0, np.sin(t)), _X
+        else:
+            h, m = (np.sin(t), 0, np.cos(t)), _Z
+        vals = [rods_A('fibre', h, m, 'near', s) for s in (0.0, 2.5)]
+        near = max(v[0] for v in vals)
+        b, unb = rods_A('fibre', _Z, m, 'none', 2.5)
+        # off the field direction partial selection can exceed complete selection: the ceiling is
+        # the larger of the complete-selection and the unbiased (coupled) values
+        full = [float(np.cos(t)), near]                 # complete selection decides the class
+        cl = {('acts' if v > b + DELTA else 'none') for v in full}
+        return out(_hyp({'rods follow the field': max(float(np.cos(t)), unb),
+                         'rods on the nearest <100>': max(near, unb)}, cls=cl.pop() if len(cl) == 1 else 'open',
+                        why=
+                        f'columnar <100> fibre, field {th:g} deg from the measuring direction; '
+                        f'complete selection gives {np.cos(t):.3f} (follow) / {near:.3f} (nearest <100>), '
+                        f'unbiased up to {unb:.3f}', base=b))
+    if 'columnar-appearing' in ptex or ('as above' in ptex and 'l37' in cid.lower()):
+        return out(pred(1.0, ISO, 'printed parent texture not measured: ceiling of a perfect <100> fibre',
+                        cls='acts'))
+    if colum:
+        if 'field_perp' in cid or 'perpendicular to the columnar' in alongs or 'perpendicul' in str(cond.get('magnet_axis')):
+            near = rods_A('fibre', _X, _X, 'near', 2.5)[0]
+            b, _ = rods_A('fibre', _Z, _X, 'none', 2.5)
+            vals = {'rods follow the field': 1.0, 'rods on the nearest <100>': near}
+            return out(_hyp(vals if five else {'rods on the nearest <100>': near},
+                            'columnar <100> fibre, field and measurement across the columns', base=b))
+        return out(pred(1.0, 1 / 3, 'columnar <100> fibre with the field along it: one rod set along the field'))
+    if '(200)' in ptex or '<200>' in ptex:
+        return out(pred(1.0, ISO, '(200)-textured button, field along <200>: between 0.831 (random) and 1 '
+                                  '(perfect fibre); texture degree not quantified'))
+    if 'near single crystal with [111]' in ptex:
+        d = np.ones(3)
+        ind, cou = rods_A('single', d, d, 'near')
+        return out(_hyp({'independent rods': ind, 'coupled sets (tie)': cou},
+                        'near single crystal with [111] along the field: the three <100> tie', base=ind))
+    if 'field-templated' in ptex or 'agg under uniaxial load' in ptex:
+        return out(pred(1.0, ISO, 'parent texture from field templating / stress-biased growth not quantified',
+                        cls='info'))
+    if 'grain structure not described' in r:
+        return out(pred(1.0, ISO, 'grain structure not stated', cls='info'))
+    weak = 'weak texture' in ptex or 'fairly isotropic' in ptex
+    if five:
+        return out(_hyp({'rods follow the field': 1.0, 'rods on the nearest <100>': 0.8312},
+                        'random parent, Ti-free alnico: rod-axis selection open'))
+    if weak:
+        return out(pred(0.8312 + 0.1 * (1 - 0.8312), ISO, 'nearly random parent (very weak texture, <=10% '
+                                                         '<100> fibre assumed): nearest <100>'))
+    return out(pred(0.8312, ISO, 'random parent: rods on the <100> nearest the field (0.831)'))
+
+
+# ---------------------------------------------------------------- HEA, Fe3Se4
+def enc_fese_hea(ctx, pid, c, route, r, proc, cond, al, mk):
+    cid = c['id']
+    if pid == 'HEA-FeCoNiAlCuTi':
+        js = [0.49, 0.54] if 'alloy a' in str(c.get('phase')).lower() else [0.86, 0.95]
+        meas = {'js': js, 'js_src': 'hea_a_js_na2021 / hea_d_js_na2021 (+-5%)'} if mk == 'Br' else {}
+        if r.startswith('isotropic'):
+            res = _unbiased('random', _Z, 'random as-cast parent (alnico-like spinodal)')
+        else:
+            res = _hyp({'precipitates follow the field': 1.0, 'precipitates on the nearest <100>': 0.8312,
+                        'no elongated precipitates': 0.8656},
+                       'field anneal at 923 K below Tc 1093 K: shape anisotropy and its axis unpublished',
+                       cls='open')
+        return {'pred': res, 'meas_extra': meas}
+    if pid == 'L10-HEA-Pt':
+        return {'pred': pred(1.0, ISO, 'rocking width of the (001)-oriented grains does not give the oriented '
+                                       'fraction', cls='info')}
+    if pid == 'Fe3Se4' and 'alignment unreported' in r:
+        return {'pred': pred(1.0, ISO, 'alignment not reported', cls='info')}
+    return None
+
+
+# ---------------------------------------------------------------- Nd2Fe14B, other routes
+def enc_ndfeb_routes(ctx, pid, c, route, r, proc, cond, al, mk):
+    cid = c['id']
+    if mk == 'skip':
+        return None
+    if 'injection cast' in proc:
+        meas = {'phi': [0.5, 1.0]} if mk == 'Br' else {}
+        if str(cond.get('field_T')) in ('0', '0.0'):
+            return {'pred': pred(ISO, ISO, 'injection cast without field: random grains', cls='none'),
+                    'meas_extra': meas}
+        return {'pred': pred(1.0, ISO, 'crystals solidifying in 0.37 T far above Tc: paramagnetic torque on '
+                                       '>~1 um crystals exceeds kT, but rotation (~ms) competes with the '
+                                       'solidification time (unpublished)', cls='open'), 'meas_extra': meas}
+    if 'semisolid' in proc or r.startswith('fs'):
+        meas = {'phi': [0.25, 0.35], 'phi_src': '30 wt% Nd2Fe14B in Nd70Cu30 (volume fraction estimate)'} \
+            if mk == 'Br' else {}
+        return {'pred': pred(1.0, ISO, 'Nd2Fe14B crystals free in a liquid at 973 K (paramagnetic) turn in 10 T '
+                                       '(FS cell)'), 'meas_extra': meas}
+    if 'melt-spun' in proc and 'powdered' in proc:
+        if mk == 'MrMs':
+            return {'pred': pred(1.0, ISO, 'powdered nanocomposite ribbon measured at random orientation: '
+                                           'exchange-enhanced, not an alignment value; the 0.32 T field acts on '
+                                           'nanocrystals far above Tc (bias << kT): no field effect', cls='info')}
+        return {'pred': pred(1.0, ISO, 'powdered nanocomposite ribbon', cls='info')}
+    if 'melt-spun' in proc:
+        return {'pred': pred(1.0, ISO, 'melt-spun ribbon: growth texture unpublished, measuring direction relative '
+                                       'to the field not stated', cls='info')}
+    if r.startswith('am'):
+        meas = {'phi': [0.5, 1.0]} if mk == 'Br' else {}
+        return {'pred': pred(1.0, ISO, 'printed Nd-Fe-B: crystal orientation not measured (AM cell open)',
+                             cls='open'), 'meas_extra': meas}
+    return None
+
+
+def build_known():
+    """Specs for the known (fidelity) cases of PROBLEM.md, data/raw/known_cases_*.yaml, from the same
+    value-free fields and the same rules as the sealed cases."""
+    ctx = Ctx()
+    keep = ('id', 'phase', 'route', 'process', 'conditions', 'quantity', 'unit', 'measured_along', 'measurement')
+    out = []
+    for fn in sorted(os.listdir(os.path.join(ROOT, 'data', 'raw'))):
+        if not fn.startswith('known_cases_'):
+            continue
+        topic = fn[len('known_cases_'):-5]
+        for r in yaml.safe_load(open(os.path.join(ROOT, 'data', 'raw', fn))) or []:
+            c = {k: r.get(k) for k in keep}
+            if not isinstance(c.get('conditions'), dict):
+                c['conditions'] = {}
+            spec = encode(ctx, topic, c)
+            if spec:
+                spec.update({'case': c['id'], 'topic': topic, 'status': 'known'})
+                out.append(spec)
+    return out
+
+
 def write():
+    known = build_known()
+    open(os.path.join(ROOT, 'data', 'curated', 'cases_known.yaml'), 'w').write(
+        '# Conditional predictions for the known cases (PROBLEM.md), same rules as cases.yaml.\n'
+        + yaml.safe_dump(known, sort_keys=False, allow_unicode=True, width=110))
     specs = build()
     hdr = ('# Conditional predictions for the sealed published cases (generated by align.cases from the\n'
            '# value-free condition files; committed before any outcome is opened).\n')

@@ -886,3 +886,377 @@
     refs: [fecrco_shape_dominates_coercivity_jin1982, fecrco_one_direction_isij2022]
   epitaxy: {}
   tgg: {}
+- id: (Fe,Co)2B
+  name: (Fe0.7Co0.3)2B (CuAl2-type boride)
+  universe: (Fe,Co)2B
+  structure:
+    system: tetragonal
+    a:
+      est: 5.11
+      why: CuAl2-type Fe2B cell; the lattice of the Co-substituted boride is not in the records (only the cell
+        shape enters, through crystal directions)
+    c:
+      est: 4.25
+      why: as above
+    laue: 4/mmm
+  structure_ref:
+    ref: feco2b_structure_liu2024
+  easy_axis_vec:
+  - 0
+  - 0
+  - 1
+  easy_axis:
+    ref: feco2b_easy_lam2020
+  Js:
+    ref: feco2b_js_liu2024
+  K1:
+    ref: feco2b_k1_liu2024
+  Tc:
+    ref: feco2b_tc_liu2024
+  cell:
+    atoms: 12
+    magnetic_fraction:
+      est: 0.667
+      why: 8 Fe/Co of 12 atoms in the M2B cell
+  paths:
+  - name: crystallisation from an Fe/Co-rich melt or solution (Fe2B forms at ~1410 K, far above Tc)
+    mode: direct
+    refs:
+    - feco2b_formation_lam2020
+    - feco2b_meltspin_lam2020
+    - fe2b_primary_quir2015
+    T_f:
+    - ref: fe2b_tf_quir2015
+    - ref: fe2b_tf_quir2015
+  - name: crystallisation of amorphous melt-spun (Fe,Co)2B + 3 wt% Al on heating (below Tc)
+    mode: direct
+    refs:
+    - feco2b_al_cryst_lam2020
+    T_f:
+    - ref: feco2b_al_cryst_lam2020
+    - ref: feco2b_al_cryst_lam2020
+  particles:
+    single_variant: unknown
+    reason: single crystals grow from solution as tetragonal rods; single-variant powder not reported
+    refs:
+    - feco2b_sc_lam2020
+    habit:
+      shape: rod
+      easy: unknown
+      single_crystal: true
+      refs:
+      - feco2b_sc_lam2020
+      reason: rod axis relative to c not established
+  melt:
+    primary: hard
+    reason: crystallises from an Fe/Co-rich high-temperature solution
+    refs:
+    - feco2b_formation_lam2020
+  epitaxy: {}
+  tgg: {}
+- id: Fe2Ta-C14
+  name: Fe2+δTa (C14 Laves phase, Fe-rich, melt-spun)
+  universe: Fe-Ta
+  structure:
+    system: hexagonal
+    a:
+      ref: feta_c14_lattice_gabay2019
+      key: a
+    c:
+      ref: feta_c14_lattice_gabay2019
+      key: c
+    laue: 6/mmm
+  structure_ref:
+    ref: feta_c14_structure_gabay2019
+  easy_axis_vec:
+  - 0
+  - 0
+  - 1
+  easy_axis:
+    ref: feta_easycone_arap2020
+  easy_open:
+    name: easy direction of Fe-rich C14 Fe2+δTa at 300 K (an easy cone is predicted for the equilibrium phase)
+    alt: easy cone (angle unpublished)
+    measurement: magnetisation along and across c of an aligned powder or single crystal at 300 K
+  Js: null
+  Tc:
+    ref: feta_ms_tc85_gabay2019
+  phi_max:
+    est: 1.0
+    why: the C14 phase has not been isolated (feta_c14_fraction_gabay2019); the ceiling per C14 volume is given
+  cell:
+    atoms: 12
+    magnetic_fraction:
+      est: 0.67
+      why: Fe2Ta stoichiometry (Fe-rich off-stoichiometry raises it)
+  paths:
+  - name: rapid solidification of an Fe-Ta melt (C14 + bcc Fe(Ta))
+    mode: direct
+    refs:
+    - feta_c14_path_gabay2019
+    - feta_c14_fraction_gabay2019
+    T_f:
+    - est: 1700
+      why: solidification from the melt (liquidus of Fe-rich Fe-Ta alloys well above 1500 K; only T_f >> Tc 438 K
+        enters the verdict)
+    - est: 1900
+      why: as above
+  particles:
+    single_variant: unknown
+    reason: no single-crystal C14 particles reported
+    refs: []
+  melt:
+    primary: unknown
+    reason: whether Fe-rich C14 crystallises as free primary crystals is unpublished
+    refs:
+    - feta_c14_path_gabay2019
+  epitaxy: {}
+  tgg: {}
+- id: Fe3Se4
+  name: Fe3Se4 (monoclinic Cr3S4-type ferrimagnet)
+  universe: Fe3Se4
+  structure:
+    system: orthorhombic
+    a:
+      ref: fese_lattice_wang2012
+      key: a
+    b:
+      ref: fese_lattice_wang2012
+      key: b
+    c:
+      ref: fese_lattice_wang2012
+      key: c
+    laue: mmm
+  structure_ref:
+    ref: fese_structure_saucedo2021
+  structure_note: monoclinic C2/m treated as orthorhombic (beta close to 90 deg); only the easy b axis enters
+  easy_axis_vec:
+  - 0
+  - 1
+  - 0
+  easy_axis:
+    ref: fese_easy_axis_saucedo2021
+  Js:
+    est: 0.0155
+    why: Ms 1.893 Am2/kg at 300 K (fese_ms_wang2012) x X-ray density 6.52 g/cm3 computed from the cell
+      (fese_lattice_wang2012, Z = 2)
+  Js_refs:
+  - fese_ms_wang2012
+  K1:
+    ref: fese_k_wang2012
+  Tc:
+    ref: fese_tc_ampoule_saucedo2021
+  cell:
+    atoms: 14
+    magnetic_fraction:
+      est: 0.43
+      why: 6 Fe of 14 atoms (Fe3Se4, Z = 2)
+  paths:
+  - name: solvothermal synthesis at 573 K (above Tc)
+    mode: direct
+    refs:
+    - fese_formation_solvo_saucedo2021
+    T_f:
+    - ref: fese_tform_solvo_saucedo2021
+    - ref: fese_tform_solvo_saucedo2021
+  - name: high-temperature solid-state reaction or Bridgman growth (1073-1323 K)
+    mode: direct
+    refs:
+    - fese_formation_ampoule_saucedo2021
+    - fese_bridgman_komarova2024
+    T_f:
+    - ref: fese_bridgman_tform_komarova2024
+    - ref: fese_tform_ampoule_saucedo2021
+  particles:
+    single_variant: unknown
+    reason: nanorods, nanoplatelets and nanosheets are reported, single-variant character not verified
+    refs:
+    - fese_particle_habit_zhang2011
+    - fese_rod_habit_bishwas2014
+    habit:
+      shape: plate
+      easy: unknown
+      single_crystal: null
+      refs:
+      - fese_particle_habit_zhang2011
+      reason: platelet habit vs the easy b axis not established
+  melt:
+    primary: hard
+    reason: single crystals grow from the melt (modified Bridgman)
+    refs:
+    - fese_bridgman_komarova2024
+  epitaxy: {}
+  tgg: {}
+- id: HEA-FeCoNiAlCuTi
+  name: FeCoNiAlCu0.4Ti0.4 high-entropy alloy (alnico-like BCC spinodal)
+  universe: high-entropy alloys
+  structure:
+    system: tetragonal
+    a: 1.0
+    c: 1.0
+    laue: 4/mmm
+  easy_axis_vec:
+  - 0
+  - 0
+  - 1
+  easy_axis:
+    est: long axis of the ferromagnetic decomposition product, if it is elongated
+    why: alnico analogue; the precipitate shape after a field anneal is unpublished
+  easy_open:
+    name: uniaxial (shape) anisotropy of the annealed HEA (elongated ferromagnetic precipitates)
+    alt: no elongated precipitates (no uniaxial axis to align)
+    measurement: TEM of the field-annealed alloy plus Mr/Ms along and across the anneal field
+  Js:
+    ref: hea_a_js_na2021
+  Tc:
+    ref: hea_a_tc_na2021
+  cell:
+    atoms: 2
+    magnetic_fraction:
+      est: 0.625
+      why: Fe+Co+Ni of FeCoNiAlCu0.4Ti0.4 (3 of 4.8)
+  paths:
+  - name: BCC spinodal decomposition during the 650-700 C anneal (proposed)
+    mode: spinodal
+    OR: unknown
+    OR_analogue:
+      plane_P:
+      - 0
+      - 0
+      - 1
+      plane_H:
+      - 0
+      - 0
+      - 1
+      dir_P:
+      - 1
+      - 0
+      - 0
+      dir_H:
+      - 1
+      - 0
+      - 0
+      ref: alnico_OR_alpha1_alpha2_zhou2019
+    OR_analogue_name: precipitates on the nearest parent <100> (alnico 8/9 analogue)
+    mode_analogue: spinodal
+    unknown_name: orientation of the elongated precipitates (along the field, or on the nearest <100>)
+    unknown_label_a: precipitates follow the field
+    unknown_label_b: precipitates on the nearest <100>
+    unknown_measurement: TEM/SANS of an equiaxed sample field-annealed at 650 C, with the field off a cube axis
+    refs:
+    - hea_a_spinodal_na2021
+    - hea_a_field_anneal_na2021
+    - hea_a_arc_melt_na2021
+    - hea_candidate2_popa2024
+    parent:
+      name: BCC solid solution
+      structure:
+        system: cubic
+        a: 1.0
+        laue: m-3m
+      family: bcc
+      rollable: false
+    T_f:
+    - est: 923
+      why: 650 C anneal (hea_a_tform_na2021, 650-700 C; value restated in K)
+    - est: 973
+      why: 700 C anneal (hea_a_tform_na2021)
+    Tc_forming:
+      ref: hea_a_tc_na2021
+  particles:
+    single_variant: unknown
+    reason: no aligned HEA particles reported
+    refs: []
+  melt:
+    primary: parent
+    path: 0
+    refs:
+    - hea_a_arc_melt_na2021
+  hd:
+    possible: false
+    reason: the hardening precipitates form only in the final anneal (as in alnico)
+    refs:
+    - hea_a_spinodal_na2021
+  epitaxy: {}
+  tgg: {}
+- id: L10-HEA-Pt
+  name: L1_0 (FeCoNiMnCu)Pt high-entropy intermetallic
+  universe: high-entropy alloys
+  structure:
+    system: tetragonal
+    a:
+      ref: hea_l10_lattice_beeson2024
+      key: a
+    c:
+      ref: hea_l10_lattice_beeson2024
+      key: c
+    laue: 4/mmm
+  structure_ref:
+    ref: hea_l10_structure_beeson2024
+  easy_axis_vec:
+  - 0
+  - 0
+  - 1
+  easy_axis:
+    ref: hea_l10_easy_axis_beeson2024
+  Js:
+    ref: hea_l10_js_beeson2024
+  K1:
+    ref: hea_l10_ku_beeson2024
+  Tc: null
+  cell:
+    atoms: 4
+    magnetic_fraction:
+      est: 0.5
+      why: equiatomic 3d-Pt
+  paths:
+  - name: chemical ordering A1 -> L1_0 during rapid thermal annealing (as in FePt)
+    mode: OR
+    refs:
+    - hea_l10_formation_beeson2024
+    - hea_l10_tetragonality_beeson2024
+    parent:
+      name: A1 (FeCoNiMnCu)Pt (fcc)
+      structure:
+        system: cubic
+        a:
+          ref: hea_l10_lattice_beeson2024
+          key: a
+        laue: m-3m
+      family: fcc
+    OR:
+      plane_P:
+      - 0
+      - 0
+      - 1
+      plane_H:
+      - 0
+      - 0
+      - 1
+      dir_P:
+      - 1
+      - 0
+      - 0
+      dir_H:
+      - 1
+      - 0
+      - 0
+      ref: fept_n_variants_inoue2006
+    T_f:
+    - ref: hea_l10_tform_beeson2024
+    - ref: hea_l10_tform_beeson2024
+    stress_sign: -1
+    stress_refs:
+    - hea_l10_tetragonality_beeson2024
+  particles:
+    single_variant: unknown
+    reason: grains of 5-300 nm in films; no free particles reported
+    refs:
+    - hea_l10_grains_beeson2024
+  melt:
+    primary: parent
+    path: 0
+    refs:
+    - hea_l10_formation_beeson2024
+  epitaxy: {}
+  tgg: {}

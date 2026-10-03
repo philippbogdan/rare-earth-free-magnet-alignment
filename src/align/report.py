@@ -23,7 +23,7 @@ def ranking(phases, rows, reg):
         sure = [r for r in cells if r['verdict'] in ('full', 'capped')]
         sure_top = max(sure, key=lambda r: r['A_max']) if sure else None
         out.append((ph, top, sure_top))
-    out.sort(key=lambda t: -(t[0]['Js'] * (t[2]['A_max'] if t[2] else 0.5)))
+    out.sort(key=lambda t: -((t[0]['Js'] or 0.0) * (t[2]['A_max'] if t[2] else 0.5)))
     return out
 
 
@@ -61,7 +61,7 @@ def build(reg, phases, rows, R, st):
     ctx['ranking_table'] = table(
         ['phase', 'Js (T)', 'best established route', 'A_max', 'Br_max (T)', 'highest open route', 'A_max if open resolves'],
         [[ph.get('name', ph['id']), fmt(ph['Js']), s['route'] if s else '–', fmt(s['A_max']) if s else '–',
-          fmt(ph['Js'] * s['A_max']) if s else '–', t['route'] if t['verdict'] == 'open' else '–',
+          fmt(ph['Js'] * s['A_max']) if s and ph['Js'] is not None else '–', t['route'] if t['verdict'] == 'open' else '–',
           fmt(t['A_max']) if t['verdict'] == 'open' else '–'] for ph, t, s in rk])
     ctx['phase_sections'] = '\n'.join(phase_section(ph, rows, reg) for ph in phases)
     ctx['tests_table'] = table(['phase', 'route', 'prediction', 'the measurement'],

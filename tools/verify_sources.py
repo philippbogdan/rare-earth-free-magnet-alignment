@@ -104,13 +104,18 @@ def url_text(url):
     """Text at a URL; PDFs are recognised by their content, not their URL."""
     if not url:
         return ''
+    key = hashlib.sha1(url.encode()).hexdigest()
+    pdftxt = os.path.join(CACHE, key + '.pdftxt')
+    if os.path.exists(pdftxt):                  # PDFs are kept as extracted text only (disk)
+        return open(pdftxt, encoding='utf-8').read()
     data = _get(url, binary=True)
     if not data:
         return ''
     if data[:5] == b'%PDF-':
-        key = hashlib.sha1(url.encode()).hexdigest()
         pdf = os.path.join(CACHE, key + '.bin')
         r = subprocess.run(['pdftotext', '-q', pdf, '-'], capture_output=True, text=True)
+        open(pdftxt, 'w', encoding='utf-8').write(r.stdout)
+        os.remove(pdf)
         return r.stdout
     return strip_tags(data.decode('utf-8', 'ignore'))
 
