@@ -569,12 +569,37 @@ def route_EP(ph):
 
 
 def route_TGG(ph):
+    """Templated grain growth: aligned single-crystal templates grow through a fine matrix.
+    Phases that form inside a parent: the templates texture the parent, so without a bias TGG
+    is a parent-texture route like DS. Phases that do not survive the anneal that grain growth
+    needs (decomposition, loss of the anisotropic shape): cannot. Otherwise: open, decided by
+    whether aligned templates grow below the stability limit."""
     t = ph.get('tgg', {})
     if t.get('applicable'):
         return Cell(ph['id'], 'TGG', 'full', 1.0, 'template axis', chain=t['reason'],
                     refs=t.get('refs', []))
-    return Cell(ph['id'], 'TGG', 'none', ISO, '', chain=t.get('reason', 'not densified by sintering '
-                                                                      'with grain growth'))
+    if any(p.get('parent') for p in ph['paths']) and all(p.get('mode') != 'direct' for p in ph['paths']):
+        c = route_DS(ph)
+        c.route = 'TGG'
+        c.chain = ('templates grow in the parent, giving it a fibre texture; without a bias the product then '
+                   'forms as from a DS parent: ' + c.chain)
+        for i, d in enumerate(c.decides):
+            c.decides[i] = (d[0].replace('DS growth', 'template').replace('DS ', 'templated '), d[1], d[2])
+        return c
+    hd = ph.get('hd') or {}
+    if hd.get('possible') is False and any(w in hd.get('reason', '') for w in
+                                           ('decompose', 'convert', 'coalesce', 'lose')):
+        return Cell(ph['id'], 'TGG', 'none', ISO, '',
+                    chain='the phase does not survive the anneal that grain growth needs: ' + hd['reason'],
+                    refs=hd.get('refs', []))
+    T = ph.get('T_stab')
+    lim = f' (stability limit {T:.0f} K)' if isinstance(T, (int, float)) else ''
+    outs = {'aligned templates grow': 1.0, 'they do not': ISO}
+    return Cell(ph['id'], 'TGG', 'open', 1.0, 'template axis',
+                chain=f'templated growth of the phase itself{lim} not reported',
+                decides=[(f'growth of aligned single-crystal templates below the stability limit', outs,
+                          'anneal a fine-powder compact seeded with field-aligned single-crystal templates below '
+                          'the stability limit; pole figure')], A_alt=outs)
 
 
 FUN = {'FP': route_FP, 'MO': route_MO, 'SC+FA': route_SCFA, 'SC+SA': route_SCSA, 'FS': route_FS, 'DS': route_DS, 'AM': route_AM, 'FA': route_FA,
