@@ -98,3 +98,4 @@ ribbon open, epsilon-Fe2O3 variant-family fractions not A. No prediction for bat
 changed (checked against cases_v2.yaml).
 
     sha256 data/curated/cases_v3.yaml  b203b12b3f0b75f6935c9cde3aa4ee783f2c0fb79f406b5557cf7bef55716588
+freeze v3: 3d50da0
