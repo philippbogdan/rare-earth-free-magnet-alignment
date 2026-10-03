@@ -317,6 +317,12 @@ def encode(ctx, topic, c):
             extra = res.pop('meas_extra', {})
             return {**base, **res, 'meas': {**base['meas'], **extra}}
     # ------------------------------------------------ isotropic samples (no alignment step)
+    loose = 'loose' in str(cond.get('parent_texture') or '').lower() or 'loose' in str(cond.get('alignment_medium') or '').lower()
+    if loose and (r.startswith('isotropic') or 'no alignment' in r):
+        return {**base, 'pred': _hyp({'particles held fixed (random)': ISO,
+                                      'particles turn in the measuring field (or sinter into coupled clusters)': 1.0},
+                                     'loose powder measured without fixing: whether the particles stayed random during '
+                                     'the measurement is unpublished', cls='open')}
     if r.startswith('isotropic') or 'no alignment' in r or 'without field' in r and 'cold rolling' not in r:
         if pid == 'Co-nanorods' and not any(w in proc for w in ('film', 'cast', 'spin-coated')):
             return {**base, 'pred': _rod_arrangement('rod powder or compact without an alignment step')}

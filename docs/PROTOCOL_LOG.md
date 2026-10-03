@@ -122,3 +122,13 @@ steps = deformation ageing; '8h' in an id no longer read as grade 8H.
 
     sha256 data/curated/cases_v4.yaml  b8ce592f93b14a5bc774115a5cfe590a3fd1c647e7332174071f77fe0123c91b
 freeze v4: 92b950f
+
+## After opening batch 5
+
+Frozen v4 result: results/scores_v4.json (held-out = batch 5). Two 'cannot align' predictions
+failed: loose L1_0 FePt nanoparticle powders (sintered on NaCl at 700-750 C, 6-7 nm) measured
+as loose powder reach Mr/Ms above the random value. Diagnosis: loose particles can turn in the
+measuring field, and particles sintered together can be exchange-coupled; the 'no alignment
+step' rule had treated a loose powder as a fixed random sample. Post-hoc rule v5: loose powders
+measured without fixing are open (random if held fixed; up to 1 if they turn), decided by
+whether the particles were immobilised during the measurement.
