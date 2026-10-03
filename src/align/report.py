@@ -631,7 +631,8 @@ def build(reg, phases, rows, R, st, univ=None):
             for r in fr if r['version'] != 'v1') + f" (all failures diagnosed: {len(undiag)} undiagnosed)",
          all(r['n_cases'] > 0 for r in fr) and not undiag),
         ('Frontier', f"phases {fr[-1]['phases_covered']}/{fr[-1]['phases_universe']}, routes "
-         f"{fr[-1]['routes_covered']}/{fr[-1]['routes_universe']}, accuracy {fmt(fr[0]['accuracy'])} (v1 held-out); "
+         f"{fr[-1]['routes_covered']}/{fr[-1]['routes_universe']}, held-out accuracy {fmt(fr[0]['accuracy'])} (v1, "
+         f"{fr[0]['n_cases']} cases) and {fmt(fr[-1]['accuracy'])} (latest, {fr[-1]['version']}, {fr[-1]['n_cases']} cases); "
          f"non-dominated: {', '.join(ndv)}; furthest from its limit: {far}" if fr else '–',
          bool(fr) and fr[-1]['phases_covered'] == fr[-1]['phases_universe']
          and fr[-1]['routes_covered'] == fr[-1]['routes_universe']),
