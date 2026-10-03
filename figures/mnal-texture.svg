@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="777.6pt" height="345.6pt" viewBox="0 0 777.6 345.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 345.6 
+L 777.6 345.6 
+L 777.6 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 208.551919 211.130365 
+C 203.763915 204.964044 197.628939 199.973192 190.617227 196.540352 
+C 183.605515 193.107511 175.90091 191.322689 168.093957 191.322689 
+" clip-path="url(#p481c16ddba)" style="fill: none; stroke: #202b33; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 74.005674 169.487681 
+L 262.18224 169.487681 
+" clip-path="url(#p481c16ddba)" style="fill: none; stroke-dasharray: 1.2,1.98; stroke-dashoffset: 0; stroke: #686868; stroke-width: 1.2"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 168.093957 240.541968 
+Q 168.093957 173.452384 168.093957 108.598867 
+" style="fill: none; stroke: #202b33; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 165.893957 112.998867 
+L 168.093957 108.598867 
+L 170.293957 112.998867 
+" style="fill: none; stroke: #202b33; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #202b33" transform="translate(175.24126 111.772044)">Build direction</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #202b33" transform="translate(175.24126 123.774778)">(parent c-axis)</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 166.511846 241.316549 
+Q 121.047806 206.014791 77.791465 172.427259 
+" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 79.917546 176.863449 
+L 77.791465 172.427259 
+L 82.616066 173.388109 
+" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 169.676069 241.316549 
+Q 215.140108 206.014791 258.39645 172.427259 
+" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 253.571849 173.388109 
+L 258.39645 172.427259 
+L 256.270369 176.863449 
+" style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202b33" x="191.918298" y="186.557821" transform="rotate(-0 191.918298 186.557821)">52.2°</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0072b2" x="37.060085" y="146.056443" transform="rotate(-0 37.060085 146.056443)">Product easy axes</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202b33" x="168.093957" y="260.104568" transform="rotate(-0 168.093957 260.104568)">Section through the easy-axis cone (schematic)</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_6">
+    <path d="M 474.336 245.376 
+L 715.392 245.376 
+L 715.392 82.944 
+L 474.336 82.944 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 474.336 90.327273 
+L 579.142957 90.327273 
+L 579.142957 116.955469 
+L 474.336 116.955469 
+z
+" clip-path="url(#p27856490c7)" style="fill: #686868"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 474.336 150.845902 
+L 602.892213 150.845902 
+L 602.892213 177.474098 
+L 474.336 177.474098 
+z
+" clip-path="url(#p27856490c7)" style="fill: #0072b2"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 474.336 211.364531 
+L 683.949913 211.364531 
+L 683.949913 237.992727 
+L 474.336 237.992727 
+z
+" clip-path="url(#p27856490c7)" style="fill: #202b33"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_2">
+      <defs>
+       <path id="m4a2376d1a4" d="M 0 0 
+L 0 3.5 
+" style="stroke: #202b33; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m4a2376d1a4" x="474.336" y="245.376" style="fill: #202b33; stroke: #202b33; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202b33" x="474.336" y="260.733422" transform="rotate(-0 474.336 260.733422)">0.0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m4a2376d1a4" x="579.142957" y="245.376" style="fill: #202b33; stroke: #202b33; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202b33" x="579.142957" y="260.733422" transform="rotate(-0 579.142957 260.733422)">0.5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m4a2376d1a4" x="683.949913" y="245.376" style="fill: #202b33; stroke: #202b33; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202b33" x="683.949913" y="260.733422" transform="rotate(-0 683.949913 260.733422)">1.0</text>
+     </g>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #202b33" x="594.864" y="275.734281" transform="rotate(-0 594.864 275.734281)">Ideal alignment factor, A</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5"/>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #202b33" x="466.336" y="107.820512" transform="rotate(-0 466.336 107.820512)">Random grains</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6"/>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #202b33" x="466.336" y="168.339141" transform="rotate(-0 466.336 168.339141)">Inherited texture</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7"/>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #202b33" x="466.336" y="228.85777" transform="rotate(-0 466.336 228.85777)">Perfect alignment</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_10">
+    <path d="M 474.336 245.376 
+L 715.392 245.376 
+" style="fill: none; stroke: #808890; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202b33" x="584.383304" y="106.758559" transform="rotate(-0 584.383304 106.758559)">0.50</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202b33" x="608.132561" y="167.277187" transform="rotate(-0 608.132561 167.277187)">0.61</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202b33" x="689.190261" y="227.795816" transform="rotate(-0 689.190261 227.795816)">1.00</text>
+   </g>
+  </g>
+  <g id="text_15">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202b33" x="38.88" y="26.741344" transform="rotate(-0 38.88 26.741344)">MnAl(C): inherited texture still limits alignment</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202b33" x="38.88" y="39.744" transform="rotate(-0 38.88 39.744)">Ideal parent c-axis texture; no field or stress bias during transformation</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202b33" x="38.88" y="319.68" transform="rotate(-0 38.88 319.68)">A = mean |cos θ|. For independent uniaxial grains, A is the ideal remanence / saturation ratio.</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202b33" x="38.88" y="334.5408" transform="rotate(-0 38.88 334.5408)">Equal variant weights; perfect orientation inheritance. Calculated limits, not measured magnet performance.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p481c16ddba">
+   <rect x="31.104" y="87.686809" width="279.936" height="166.770383"/>
+  </clipPath>
+  <clipPath id="p27856490c7">
+   <rect x="474.336" y="82.944" width="241.056" height="162.432"/>
+  </clipPath>
+ </defs>
+</svg>

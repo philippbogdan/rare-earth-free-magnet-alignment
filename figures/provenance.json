@@ -1,0 +1,37 @@
+{
+  "result_stamp": {
+    "stamp": {
+      "commit": "1f634cc6f724",
+      "clean_inputs": true,
+      "dirty_files": []
+    },
+    "n_phases": 31,
+    "n_cells": 558
+  },
+  "inputs_sha256": {
+    "results/account.csv": "3a820b8ed15135a02504f51d8bf812376e537949ba9b94e027c77d0d2229a33a",
+    "results/stamp.json": "af8274dc09904be16b187e653dc669cbe5d72a35f8e4e40019c849d6490abf5d",
+    "results/scores_v1.json": "5feb63620630cb5dc0e3da0ac386cbc9d4590562ac03c390b2511c9d679733e4",
+    "results/scores_v2.json": "06326861a92bfa4a8a434cbca6b73c725582c337c4cad33789c0b4eee7c191a9",
+    "results/scores_v3.json": "b06dfa568350c6a8f91ccd72f532e89604fbf0967c89a05e5ea03bc202830896",
+    "results/scores_v4.json": "6fd8f20c5f0c80950dc876c9303109af5f2dc2f492722552636c923f2f89db48",
+    "results/scores_v5.json": "c365e35863c11111645a2bbdca1a8f2f839580cb19bf39d52f385870792cd348"
+  },
+  "script_sha256": "388f58ab480e2b809499e60fe82c308a578ffa645ee9cb2a5d513d1359cdf709",
+  "matplotlib": "3.11.1",
+  "destination": "GitHub README, web; MnAl figure also suitable as an email attachment",
+  "exports": "PNG at 180 dpi plus SVG with editable text; opaque white background",
+  "mnal_geometry": {
+    "A_random": 0.5,
+    "A_inherited": 0.6133,
+    "cone_angle_deg": 52.17150114609799
+  },
+  "transformations": [
+    "MnAl-C AM: select A_alt random and OR kept; perfect alignment is the definitional reference A=1",
+    "Schematic angle = acos(A_alt[OR kept]); representative section of the cone, not raw orientation samples",
+    "Route map includes every account.csv row in file order; symbols encode stored verdicts",
+    "Validation uses heldout summaries only, one bar per version; counts divided by n_scored"
+  ],
+  "missing_and_uncertainty": "Open route cells shown as question marks. No invented error bars. Conversion-straddling scores shown separately. No averaging across batches.",
+  "scope": "Alignment ceilings under idealised assumptions; no new magnet experiments or process-feasibility validation"
+}
