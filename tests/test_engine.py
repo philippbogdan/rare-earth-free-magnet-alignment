@@ -42,6 +42,20 @@ def test_fibre_field():
     w = E.bias_weights(axes, frac, len(V), per, 'field')
     assert abs(E.alignment(axes, w) - 1.0) < 1e-9
 
+
+def test_spread_fwhm():
+    # easy axis along fibre axis with Gaussian tilt sigma: A = E[cos theta], theta Rayleigh(sigma)
+    import numpy as np
+    for sig in (5.0, 15.0):
+        g = E.texture_fibre([0, 0, 1], n_az=60, spread_deg=sig)
+        g = np.concatenate([E.texture_fibre([0, 0, 1], n_az=60, spread_deg=sig, seed=s) for s in range(200)])
+        axes, frac, per = E.product_axes(g, np.eye(3)[None], np.array([0, 0, 1.0]))
+        A = E.alignment(axes, frac)
+        rng = np.random.default_rng(0)
+        th = np.hypot(*rng.normal(scale=np.radians(sig), size=(2, 400000)))
+        assert abs(A - np.cos(th).mean()) < 0.003, (sig, A, np.cos(th).mean())
+
+
 if __name__ == '__main__':
     for k, f in list(globals().items()):
         if k.startswith('test_'):

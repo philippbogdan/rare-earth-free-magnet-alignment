@@ -15,6 +15,8 @@ import secrets
 import subprocess
 import sys
 
+import re
+
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,6 +41,35 @@ def _manifest():
     return {'batches': {}}
 
 
+REDACT = re.compile(r'(Br\b|B_r|Mr\b|M_r|Mr/Ms|remanen\w*|squareness|\(BH\)\s*max|BHmax|energy product'
+                    r'|pole[- ]figure max\w*|MRD|mrd|Lotgering|orientation factor|alignment degree'
+                    r'|texture coefficient|variant fraction)[^;\n]*', re.I)
+COND_KEYS = ('id', 'phase', 'route', 'process', 'conditions', 'quantity', 'unit',
+             'measured_along', 'measurement', 'n_samples')
+
+
+def _redact(v):
+    if isinstance(v, str):
+        return REDACT.sub('[redacted]', v)
+    if isinstance(v, dict):
+        return {k: _redact(x) for k, x in v.items()}
+    if isinstance(v, list):
+        return [_redact(x) for x in v]
+    return v
+
+
+def conditions_only(recs):
+    """Value-free view of outcome records (no value, uncertainty, quote or note)."""
+    out = []
+    for r in recs:
+        c = {k: _redact(r.get(k)) for k in COND_KEYS if k in r}
+        src = r.get('source') or {}
+        c['source'] = {k: src.get(k) for k in ('doi', 'title', 'first_author', 'year',
+                                               'evidence', 'locator', 'url') if k in src}
+        out.append(c)
+    return out
+
+
 def seal(batch):
     os.makedirs(DST, exist_ok=True)
     man = _manifest()
@@ -56,6 +87,9 @@ def seal(batch):
         out = os.path.join(DST, fn + '.enc')
         subprocess.run(['openssl', 'enc', '-aes-256-cbc', '-pbkdf2', '-salt', '-in', p,
                         '-out', out, '-pass', 'file:' + _key()], check=True)
+        cond = os.path.join(DST, fn.replace('.yaml', '.conditions.yaml'))
+        yaml.safe_dump(conditions_only(recs), open(cond, 'w'), sort_keys=False,
+                       allow_unicode=True, width=100)
         entry['files'][fn] = {'sha256': hashlib.sha256(raw).hexdigest(),
                               'n_records': len(recs), 'cases': cases}
         print(f'sealed {fn}: {len(recs)} records')

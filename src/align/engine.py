@@ -27,16 +27,16 @@ def _align_vec(a, b):
 
 
 def _spread(g, spread_deg, seed):
-    """Tilt each orientation by a Gaussian-distributed misorientation about a random
-    axis (spread_deg = standard deviation of the tilt angle per axis); 0 = none."""
+    """Misorientation spread: each orientation is rotated by a rotation vector whose three
+    Cartesian components are independent N(0, spread_deg). The tilt of any crystal axis is
+    then a 2-D Gaussian with that standard deviation, so a rocking curve has
+    FWHM = 2.3548 * spread_deg. 0 = none."""
     if not spread_deg:
         return g
     rng = np.random.default_rng(seed)
-    n = len(g)
-    axes = rng.normal(size=(n, 3))
-    axes /= np.linalg.norm(axes, axis=1)[:, None]
-    ang = np.abs(rng.normal(scale=spread_deg, size=n))
-    R = np.array([rot(a, t) for a, t in zip(axes, ang)])
+    rv = rng.normal(scale=spread_deg, size=(len(g), 3))
+    ang = np.linalg.norm(rv, axis=1)
+    R = np.array([rot(v, a) if a > 0 else np.eye(3) for v, a in zip(rv, ang)])
     return R @ g
 
 
