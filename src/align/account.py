@@ -35,7 +35,7 @@ class Cell:
 
 
 def _verdict(A, acts=True):
-    if not acts:
+    if not acts or A <= ISO + 1e-3:
         return 'none'
     return 'full' if A >= 0.95 - 1e-9 else 'capped'
 
@@ -198,7 +198,20 @@ def _biased(ph, route, kind, texture_key=None):
             tex = f'{fam} rolling/recrystallisation texture ({nd} || ND)'
         else:
             src = (p.get('parent') or {}).get(texture_key)
-            if path.mode == 'direct' or src is None:
+            if path.mode == 'direct':
+                continue
+            if src is None:
+                outs = {}
+                for d in CANDIDATE_FIBRES[path.LP.system]:
+                    if acts is True:
+                        A_d, _ = _select_best(path, _fibre(path, d), kind, sign, fibre=True)
+                    else:
+                        A_d, _ = _equal_best(path, _fibre(path, d))
+                    outs['<' + ''.join(str(x) for x in d) + '> parent fibre'] = A_d
+                cells.append(Cell(ph['id'], route, 'open', max(outs.values()), '',
+                                  chain=f'parent {texture_key.split("_")[0].upper()} texture unpublished; {why}',
+                                  decides=[(f'{texture_key.split("_")[0].upper()} texture of the parent', outs,
+                                            'EBSD pole figure of the parent as made')], A_alt=outs))
                 continue
             parents, fib = _fibre(path, src['dir']), True
             tex = f"parent fibre {src['dir']}"

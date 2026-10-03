@@ -132,14 +132,30 @@ def alignment(axes, weights, z=(0, 0, 1)):
     return float((a * weights).sum() / weights.sum())
 
 
-def body_alignment(axes, weights):
+def body_alignment(axes, weights, tol=1e-6, n_sub=64):
     """Free-body rotation: each body (first index) turns the principal axis of
-    T = sum w e e^T to the field; returns A of the aligned population."""
+    T = sum w e e^T to the field (second-order anisotropy energy). If the largest eigenvalue
+    is degenerate the body has no unique axis: the field direction is uniform over the
+    degenerate subspace (a circle, or the sphere for an isotropic body)."""
     T = np.einsum('nm,nmi,nmj->nij', weights, axes, axes)
     vals, vecs = np.linalg.eigh(T)
-    n_hat = vecs[:, :, -1]
-    a = np.abs(np.einsum('nmi,ni->nm', axes, n_hat))
-    return float((a * weights).sum() / weights.sum())
+    tot, wsum = 0.0, 0.0
+    D_sphere = fibonacci_hemisphere(400)
+    t = np.linspace(0, np.pi, n_sub, endpoint=False)
+    for k in range(len(T)):
+        v, U = vals[k], vecs[k]
+        deg = int(np.sum(v >= v[-1] - tol * max(1.0, abs(v[-1]))))
+        if deg == 1:
+            dirs = U[:, -1][None]
+        elif deg == 2:
+            a, b = U[:, -1], U[:, -2]
+            dirs = np.cos(t)[:, None] * a + np.sin(t)[:, None] * b
+        else:
+            dirs = D_sphere
+        a_k = (np.abs(axes[k] @ dirs.T) * weights[k][:, None]).sum(0).mean()
+        tot += a_k
+        wsum += weights[k].sum()
+    return float(tot / wsum)
 
 
 def best_axis(axes, weights, n_dir=2000):
