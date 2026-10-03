@@ -76,6 +76,9 @@ def main():
         sys.exit(1)
     rows = matrix(phases)
     write_csv(os.path.join(RES, 'account.csv'), rows)
+    from . import evaluate
+    for v in ('v1', 'v2'):                 # scores of the frozen and the revised case predictions
+        evaluate.run(v, phases)
     ctx = report.build(reg, phases, rows, R, st)
     json.dump({'stamp': st, 'n_phases': len(phases), 'n_cells': len(rows)},
               open(os.path.join(RES, 'stamp.json'), 'w'), indent=1)

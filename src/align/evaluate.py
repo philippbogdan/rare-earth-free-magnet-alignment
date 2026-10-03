@@ -15,6 +15,8 @@ from .curate import load_phases
 from .data import ROOT
 
 FILES = {'v1': 'cases.yaml', 'v2': 'cases_v2.yaml'}
+# topics whose outcomes were opened only after the version's predictions were frozen
+HELDOUT_AFTER = {'v1': None, 'v2': {'mn4n', 'heldout2_a', 'heldout2_b'}}
 
 
 def run(version, phases=None):
@@ -30,6 +32,11 @@ def run(version, phases=None):
     kspecs = yaml.safe_load(open(kpath)) if os.path.exists(kpath) else []
     rows = [scoring.score_case(s, recs[s['case']], recs, P) for s in specs if s['case'] in recs]
     rows += [scoring.score_case(s, known[s['case']], known, P) for s in kspecs if s['case'] in known]
+    ho = HELDOUT_AFTER.get(version)
+    if ho is not None:
+        for x in rows:
+            if x['status'] == 'heldout' and x.get('topic') not in ho:
+                x['status'] = 'post hoc'
     pairs = scoring.score_pairs(specs, rows, recs)
     out = {'version': version, 'file': FILES[version], 'summary': scoring.summarise(rows, pairs),
            'pairs': pairs, 'cases': rows,

@@ -129,6 +129,8 @@ def local_texts():
     if _LOCAL is None:
         _LOCAL = []
         for f in glob.glob(os.path.join(ROOT, '.tmp', '**', '*.txt'), recursive=True):
+            if os.path.dirname(f) == os.path.join(ROOT, '.tmp'):
+                continue                      # our own listings and printouts, not sources
             try:
                 if os.path.getsize(f) > 30_000_000:
                     continue

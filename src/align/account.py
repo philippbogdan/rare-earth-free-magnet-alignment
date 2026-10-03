@@ -418,7 +418,15 @@ def _bias_route(ph, route, kind, source):
         cells.append(Cell(ph['id'], route, 'open', max(outcomes.values()), '',
                           chain=f'{tex_label}; {why}', decides=dec, A_alt=outcomes))
     if not cells:
-        return Cell(ph['id'], route, 'none', ISO, '', chain='no formation path to bias with this texture source')
+        if kind == 'stress':
+            why = ('the phase forms directly (from a melt, solution or vapour, or by a reaction without an '
+                   'orientation relationship), not by a coherent transformation: no transformation strain '
+                   'for a stress to bias')
+        else:
+            why = ('the phase forms directly (from a melt, solution or vapour, or by a reaction without an '
+                   'orientation relationship): there is no solid parent whose texture it could inherit, so '
+                   'this combination reduces to the plain routes (DS, FS or FA)')
+        return Cell(ph['id'], route, 'none', ISO, '', chain=why)
     return _best_path_value(cells)
 
 
@@ -549,8 +557,9 @@ def route_EP(ph):
         return Cell(ph['id'], 'EP', 'full', 1.0, 'film normal or in-plane axis',
                     chain='single-crystal film on a lattice-matched substrate (not a bulk magnet)',
                     refs=ep.get('refs', []))
-    return Cell(ph['id'], 'EP', 'open', 1.0, '', chain='epitaxial growth not reported',
-                decides=[('epitaxial growth', {}, 'XRD of a film on a matched substrate')])
+    return Cell(ph['id'], 'EP', 'full', 1.0, 'film normal or in-plane axis',
+                chain=('geometric ceiling of a single-variant epitaxial film (A = 1); no epitaxial film of '
+                       'this phase is reported, so the route is unproven (not a bulk magnet)'))
 
 
 def route_TGG(ph):
