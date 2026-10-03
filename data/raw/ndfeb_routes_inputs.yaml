@@ -1,8 +1,12 @@
 # Nd2Fe14B reference phase, alternative alignment routes.
 # Inputs contain intrinsic properties and mechanisms only. Measured sample outcomes are sealed.
-# Gaps: no quantitative above-Tc delta_chi; no peritectic Fe/Nd2Fe14B OR or variant count;
-# no verified universal crystallographic fibre for directional solidification or L-PBF;
-# no exact nucleation temperature for Nd-rich flux growth; no film or bulk magnetic T_stab timescale.
+# Gaps:
+# - No quantitative above-Tc delta_chi at formation temperatures or critical-nucleus volume.
+# - No verified Fe/Nd2Fe14B peritectic OR or number of orientation variants.
+# - No universal crystallographic fibre established for directional solidification, EBM or L-PBF.
+# - No exact nucleation temperature or proven primary-phase order for Nd-rich flux growth.
+# - No kinetic thermal-stability limit with a specified hold time.
+# - No quantified epitaxial-film remanence or bulk texture factor from accessible source text.
 - id: ndfeb_js_coey1999
   phase: Nd2Fe14B
   quantity: Js
@@ -45,15 +49,25 @@
   conditions: undoped Nd2Fe14B flux-grown single crystal, DTA/TGA
   source:
     doi: 10.1016/j.jmmm.2016.10.127
-    title: Flux growth and characterization of Ce-substituted Nd2Fe14B single crystals
+    title: "2Flux growth and characterization of Ce-substituted\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
+      \ altimg=\"si0047.gif\" overflow=\"scroll\">\n                      <mml:mrow>\n                        <mml:msub>\n\
+      \                          <mml:mrow>\n                            <mml:mi>Nd</mml:mi>\n                          </mml:mrow>\n\
+      \                          <mml:mrow>\n                            <mml:mn>2</mml:mn>\n                          </mml:mrow>\n\
+      \                        </mml:msub>\n                        <mml:msub>\n                          <mml:mrow>\n   \
+      \                         <mml:mi>Fe</mml:mi>\n                          </mml:mrow>\n                          <mml:mrow>\n\
+      \                            <mml:mn>14</mml:mn>\n                          </mml:mrow>\n                        </mml:msub>\n\
+      \                        <mml:mi mathvariant=\"normal\">B</mml:mi>\n                      </mml:mrow>\n            \
+      \        </mml:math>\n                    single crystals"
     first_author: Michael A. Susner
     year: 2017
     url: https://www.osti.gov/servlets/purl/1349597
     evidence: full_text
     locator: p. 7, Curie-temperature discussion
-  quote: "The undoped Nd2 Fe14 B yields a T C of ≈\n                           \x0F\b\x05\x05                            \
-    \                           584 K, in accord with the established literature value of\n                              \
-    \                                                        585 K [8]."
+  quote: 'The undoped Nd2 Fe14 B yields a T C of ≈
+
+    584 K, in accord with the established literature value of
+
+    585 K [8].'
   note: Authors report about 584 K and compare with the literature value 585 K; their Table 5 gives 583 K by TGA, 584 K by
     DTA, 586 K by MPMS.
 - id: ndfeb_density_ahn2024
@@ -146,7 +160,7 @@
     first_author: Mingjun Li
     year: 2019
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6450867/fullTextXML
-    evidence: full_text
+    evidence: review
     locator: Experimental Methods
   quote: The specimen was heated to 973 K, i.e., 180 K higher than the melting point of CuNd-Nd eutectics (793 K) and approximately
     480 K lower than the peritectic decomposition temperature of the Nd2Fe14B compound (1453 K), resulting in a semisolid
@@ -206,7 +220,7 @@
     first_author: Mingjun Li
     year: 2019
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6450867/fullTextXML
-    evidence: full_text
+    evidence: review
     locator: Experimental Methods
   quote: The specimen was heated to 973 K, i.e., 180 K higher than the melting point of CuNd-Nd eutectics (793 K) and approximately
     480 K lower than the peritectic decomposition temperature of the Nd2Fe14B compound (1453 K), resulting in a semisolid

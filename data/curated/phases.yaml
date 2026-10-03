@@ -769,3 +769,120 @@
   melt: {primary: hard, reason: "LTP crystals grow and turn freely in liquid Bi below 628 K", refs: [mnbi_fieldeffect_wang2003, mnbi_fieldeffect_ren2006, mnbi_primcryst_mitsui2013_fig1]}
   epitaxy: {demonstrated: true, refs: [mnbi_or_antonov2020_films]}
   tgg: {}
+
+# ------------------------------------------------------------------ AlNiCo 5 type (Ti-free): shape anisotropy of alpha1 rods
+- id: AlNiCo-5
+  name: "AlNiCo 5-type (Ti-free; α1 rods in α2)"
+  universe: AlNiCo
+  structure: {system: tetragonal, a: 1.0, c: 1.0, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: alnico5_field_easyaxis_nesbitt1952}
+  Js: {ref: alnico_Js_sergeyev_via_takeuchi1976_5}
+  Js_refs: [alnico5_Js_iwama1976, alnico5_Js_makino1963_table1]
+  Tc: {ref: alpha1_tc_lo_iwama1970}
+  cell: {atoms: 2, magnetic_fraction: {est: 0.7, why: "Fe+Co+Ni fraction of Alnico 5 (only bounds a paramagnetic bias)"}}
+  paths:
+    - name: spinodal α -> α1 + α2 (rods on parent <100>, possibly tilted toward the field)
+      mode: spinodal
+      OR: unknown
+      OR_analogue: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: alnico_OR_alpha1_alpha2_zhou2019}
+      OR_analogue_name: "rods held on the nearest parent <100> (elastic anisotropy)"
+      mode_analogue: spinodal
+      unknown_name: "rod-axis selection in Ti-free alnico (on the nearest <100>, or tilted to the field)"
+      unknown_label_a: "rods follow the field"
+      unknown_label_b: "rods held on the nearest <100>"
+      unknown_measurement: "Br/Js of equiaxed vs columnar Alnico 5 field-cooled together (0.832 vs 1 if held on <100>)"
+      refs: [alnico_formation_spinodal_white2019, alnico5_field_off100_heidenreich1952, alnico5_field_offaxis_iwama1976, alnico_field_100_closest_iwama1967]
+      parent:
+        name: α (bcc/B2)
+        structure: {system: cubic, a: 1.0, laue: m-3m}
+        family: bcc
+        ds_texture: {dir: [0, 0, 1], refs: [alnico5_DS_growth_100_makino1963, alnico_DS_growth_100_cui2018, alnico5_DS_axis_spread_makino1963]}
+        am_texture: {kind: random, refs: [alnico_AM_no_texture_white2019, alnico_AM_LENS_random_ebsd_white2017, alnico_AM_LPBF_equiaxed_rottmann_dussa2024]}
+        rollable: false
+      T_f: [{est: 873, why: "field cooling from ~900 to 600 C (alnico_Tf_range_dillon2014)"}, {est: 1173, why: "as above"}]
+      Tc_forming: {ref: alpha1_tc_lo_iwama1970}
+  particles:
+    single_variant: unknown
+    reason: "gas-atomised alnico particles are single crystals below ~15-17 µm, but field-aged single-variant particles have not been aligned"
+    refs: [alnico_powder_single_crystal_kassen2018]
+  melt: {primary: parent, path: 0, refs: [alnico_DS_growth_100_cui2018]}
+  hd: {possible: false, reason: "the rods form only in the final field treatment; deformation before it acts on the parent only", refs: [alnico_rolling_RX_texture_kimura1965]}
+  epitaxy: {}
+  tgg: {}
+
+# ------------------------------------------------------------------ AlNiCo 8/9 type (Ti 5 wt%)
+- id: AlNiCo-8-9
+  name: "AlNiCo 8/9-type (5 wt% Ti)"
+  universe: AlNiCo
+  structure: {system: tetragonal, a: 1.0, c: 1.0, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: alnico_field_nearest100_zhou2018}
+  Js: {ref: alnico_Js_sergeyev_via_takeuchi1976_8}
+  Js_refs: [alnico_Js_approx_fullCo_kassen2018]
+  Tc: {ref: alpha1_tc_lo_iwama1970}
+  cell: {atoms: 2, magnetic_fraction: {est: 0.75, why: "Fe+Co+Ni fraction of Alnico 8 (only bounds a paramagnetic bias)"}}
+  paths:
+    - name: spinodal α -> α1 + α2 (rods on the parent <100> nearest the field)
+      mode: spinodal
+      refs: [alnico_field_selects_nearest100_zhou2017, alnico_field_nearest100_zhou2018, alnico9_largest_projected_field_zhou2019, alnico_rod_aspect_vs_grain_orientation_cui2018, alnico_elastic_100_iwama1974]
+      parent:
+        name: α (bcc/B2)
+        structure: {system: cubic, a: 1.0, laue: m-3m}
+        family: bcc
+        Tc: {ref: alnico8_Tc_alpha_iwama1974}
+        ds_texture: {dir: [0, 0, 1], refs: [alnico_DS_growth_001_zou2016, alnico9_DS_texture_ebsd_zhou2019, alnico_DS_cone15_iwama1976]}
+        am_texture: {kind: random, refs: [alnico_AM_no_texture_white2019, alnico_AM_LENS_random_ebsd_white2017, alnico_AM_LPBF_equiaxed_rottmann_dussa2024]}
+        rollable: true
+        rx_texture: {kind: mixture, components: [{nd: [1, 0, 0], rd: [0, 1, 1]}, {nd: [1, 1, 2], rd: [1, -1, 0]}, {nd: [1, 1, 1], rd: [1, 1, -2]}], refs: [alnico_rolling_RX_texture_kimura1965]}
+      OR: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: alnico_OR_alpha1_alpha2_zhou2019}
+      T_f: [{ref: alnico8_Tf_most_effective_810_iwama1974}, {ref: alnico8H_Tf_840_zhou2017}]
+      Tc_forming: {ref: alpha1_tc_lo_iwama1970}
+      stress_refs: [alnico_stress_anneal_shear_rinko2023]
+  particles:
+    single_variant: unknown
+    reason: "gas-atomised particles are single crystals below ~15-17 µm; aligning field-aged single-variant particles is unreported"
+    refs: [alnico_powder_single_crystal_kassen2018, alnico_powder_field_template_111_kassen2018]
+  melt: {primary: parent, path: 0, refs: [alnico_DS_growth_001_zou2016]}
+  hd: {possible: false, reason: "rods form only in the final field treatment", refs: [alnico_rolling_RX_texture_kimura1965]}
+  epitaxy: {}
+  tgg: {}
+
+# ------------------------------------------------------------------ Fe-Cr-Co (spinodal, shape anisotropy)
+- id: Fe-Cr-Co
+  name: "Fe-Cr-Co (α1 rods in α2)"
+  universe: Fe-Cr-Co
+  structure: {system: tetragonal, a: 1.0, c: 1.0, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: fecrco_shape_anisotropy_sugimoto1987}
+  Js: {ref: fecrco_Js_he2024_No4}
+  Tc: {ref: alpha1_Tc_kaneko1977}
+  cell: {atoms: 2, magnetic_fraction: {est: 0.73, why: "Fe+Co fraction of Fe-27Cr-12Co"}}
+  paths:
+    - name: ridge (Mo-free) alloys - early decomposition isotropic, rods follow the field in any grain
+      mode: random_nucleation
+      refs: [fecrco_vs_alnico_selection_okada1978, fecrco_isotropic_decomp_field_okada1978, fecrco_SC_orientation_indep_okadathesis, fecrco_elastic_small_in_ridge_ikuta1983]
+      T_f: [{est: 913, why: "TMT at 640 C (fecrco_TMT_time_field_okada1978)"}, {ref: fecrco_Tf_gap_fe31cr23co_kaneko1977}]
+    - name: Mo-bearing alloys - decomposition anisotropic along <100> (like alnico)
+      mode: spinodal
+      refs: [fecrco_Mo_needs_100_homma1980, fecrco_elastic_beats_field_Mo_ikuta1983, fecrco_Mo_anisotropic_sugimoto1991]
+      parent:
+        name: α (bcc)
+        structure: {system: cubic, a: 1.0, laue: m-3m}
+        family: bcc
+        rollable: true
+        rx_texture: {kind: sheet, nd: [1, 1, 0], rd: [1, -1, 0], refs: [fecrco_RX_texture_mt_sugimoto1991, fecrco_RX_texture_jap_sugimoto1988]}
+        am_texture: {dir: [0, 0, 1], refs: [fecrco_AM_elastic_and_field_arneitz2025]}
+      OR: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: fecrco_OR_coherent_okada1978}
+      T_f: [{est: 913, why: "TMT 640-690 C"}, {est: 963, why: "TMT 640-690 C (fecrco_elastic_at_670C_homma1981)"}]
+  particles:
+    single_variant: unknown
+    reason: "no aligned Fe-Cr-Co particles reported"
+    refs: []
+  melt: {primary: parent, path: 1, refs: [fecrco_structure_alpha_kaneko1971]}
+  hd:
+    fibre: [0, 0, 1]
+    reason: "deformation ageing: plastic elongation of near-spherical α1 particles along the drawing/rolling axis (no field needed)"
+    refs: [fecrco_shape_dominates_coercivity_jin1982, fecrco_one_direction_isij2022]
+  epitaxy: {}
+  tgg: {}

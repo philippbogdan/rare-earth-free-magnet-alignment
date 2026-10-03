@@ -158,6 +158,10 @@ def _texture_route(ph, route, key):
         src = (p.get('parent') or ph).get(key) if path.mode != 'direct' else ph.get(key)
         if src is None:
             continue
+        if src.get('kind') == 'random':
+            out.append(Cell(ph['id'], route, 'none', ISO, '', chain=f'{route} gives no texture of the parent '
+                            '(published)', refs=src.get('refs', [])))
+            continue
         d = src['dir']
         if path.mode == 'direct':
             A, ax = _equal_best(path, _fibre(path, d))
@@ -276,6 +280,12 @@ def _parents_for(path, source):
         return [], False
     t = par.get(key)
     if t:
+        if t.get('kind') == 'random':
+            return [(f'{source.upper()} parent without texture (published)', E.texture_random(20000), 'random')], True
+        if t.get('kind') == 'mixture':        # published components in one sample, equal weights assumed
+            g = np.concatenate([E.texture_single(_sheet_g(path, c)) for c in t['components']])
+            lab = ' + '.join(f"{c['nd']}||ND" for c in t['components'])
+            return [(f'rolling texture mixture ({lab}; equal weights assumed)', g, 'single')], True
         if t.get('kind', 'fibre') == 'sheet':
             return [(f"sheet texture {t['nd']}||ND {t['rd']}||RD", E.texture_single(_sheet_g(path, t)),
                      'single')], True
@@ -328,6 +338,9 @@ def _bias_route(ph, route, kind, source):
             continue
         if path.mode in ('direct', 'random_nucleation'):
             if source != 'random' and path.mode == 'direct':
+                continue
+            if source == 'rx' and (p.get('parent') or {}).get('rollable') is False:
+                cells.append(Cell(ph['id'], route, 'none', ISO, '', chain='parent cannot be rolled or drawn'))
                 continue
             if kind == 'field':
                 mag, why = formation_magnetic(ph, path)
@@ -566,20 +579,20 @@ def evaluate(ph):
     a, b, unk = hyp
     out = []
     lab_a = 'no orientation relationship (random nucleation)'
-    lab_b = 'orientation relationship as in ' + unk[0].get('OR_analogue_name', 'the analogue')
+    lab_b = unk[0].get('unknown_label_b', 'orientation relationship as in ' + unk[0].get('OR_analogue_name', 'the analogue'))
     for r in ROUTES:
         ca, cb = _settle(FUN[r](a)), _settle(FUN[r](b))
         if abs(ca.A_max - cb.A_max) < 0.005 and ca.verdict == cb.verdict:
             ca.chain += ' (same under either orientation relationship hypothesis)'
             out.append(ca)
             continue
+        lab_a = unk[0].get('unknown_label_a', lab_a)
         outs = {lab_a: ca.A_max, lab_b: cb.A_max}
+        qname = unk[0].get('unknown_name', 'orientation relationship of the transformation')
+        qmeas = unk[0].get('unknown_measurement', 'EBSD/TEM of a partially transformed parent crystal')
         c = Cell(ph['id'], r, 'open', max(outs.values()), '',
-                 chain=f'orientation relationship of {unk[0]["parent"].get("name", "parent")} -> product '
-                       f'unpublished. If none: {ca.chain}. If as analogue: {cb.chain}',
-                 decides=[('orientation relationship of the transformation', outs,
-                           'EBSD/TEM of a partially transformed parent crystal')] + ca.decides + cb.decides,
-                 A_alt=outs)
+                 chain=f'{qname} unpublished. If {lab_a}: {ca.chain}. If {lab_b}: {cb.chain}',
+                 decides=[(qname, outs, qmeas)] + ca.decides + cb.decides, A_alt=outs)
         out.append(_settle(c))
     return out
 

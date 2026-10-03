@@ -203,3 +203,25 @@
   quote: The eutectic composition was found to be 0.72 ~ 0.03 w/o Mn (2.69 ~ 0.08 a/a Mn), which results in an MnBi
     volume fraction of 3.18 ~ 0.09 v/o.
   note: 3.18 vol% MnBi in the Bi/MnBi eutectic, transcribed from mnbi_phasefraction_pirich1980spar6
+- id: alpha1_tc_lo_iwama1970
+  phase: AlNiCo alpha1 (Fe-Co-rich)
+  quantity: Tc
+  value: 1163
+  unit: K
+  conditions: Alnico 8-type alloys; alpha1 dissolves (alpha1+alpha2 -> alpha) before its Curie point is reached
+    on heating
+  source:
+    doi: 10.2320/matertrans1960.11.268
+    title: Effects of Titanium in Alnico 8-Type Magnet Alloys
+    first_author: Iwama
+    year: 1970
+    url: https://www.jstage.jst.go.jp/article/matertrans1960/11/4/11_4_268/_pdf
+    evidence: full_text
+    locator: Summary (4) and Sec. III.3
+  quote: The other Curie point, which is observed in the higher temperature side in Fig. 2, lies at about 890°C
+    independent of the annealing temperature. Though it appears to show a Curie point of the α1 phase, it is not
+    the case. It is because the upper Curie point is situated above its own Tc temperature for almost all the alloys,
+    so that during the measurement with an ordinary heating rate the dissolving reaction, α1 + α2→α, may probably
+    proceed in some extent before the θ1 is reached.
+  note: lower bound (890 C = 1163 K) transcribed from alpha1_Tc_lowerbound_iwama1970; the alpha1 Curie point lies
+    above it
