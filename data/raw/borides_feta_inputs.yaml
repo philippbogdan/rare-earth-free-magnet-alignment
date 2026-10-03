@@ -182,8 +182,7 @@
 - id: feco2b_re_edstrom2015
   phase: (Fe0.7Co0.3)2B + Re
   quantity: other
-  value: 2.5 at.% Re on Fe/Co sites increased magnetic anisotropy by 50%; W did not enhance it due to secondary
-    phases
+  value: 2.5 at.% Re on Fe/Co sites increased magnetic anisotropy by 50%
   unit: ''
   conditions: ''
   source:
@@ -202,6 +201,23 @@
     In particular, doping by 2.5 at. % of Re on the Fe/Co site shows a magnetocrystalline anisotropy energy which
     is increased by 50% compared to its parent ( F e 0 . 7 ⁢ C o 0 . 3 ) 2 ⁢ B compound, making this system interesting,
   note: Experimental Re increase reported in the abstract; parent and doped absolute K1 values are not quoted here.
+- id: feco2b_w_edstrom2015
+  phase: (Fe,Co)2B + W
+  quantity: other
+  value: W doping did not enhance anisotropy because other phases formed
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1103/PhysRevB.92.174413
+    title: Magnetic properties of (Fe1−xCox)2B alloys and the effect of doping by 5d elements
+    first_author: Edström
+    year: 2015
+    url: https://doi.org/10.1103/PhysRevB.92.174413
+    evidence: abstract
+    locator: abstract
+  quote: Experimentally, W doping did not succeed in enhancing the magnetic anisotropy due to formation of other
+    phases.
+  note: ''
 - id: fe2b_structure_park2025
   phase: Fe2B
   quantity: structure
@@ -417,7 +433,7 @@
     ].
   note: ''
 - id: fe3b_cvd_li2006
-  phase: Fe3B-tetragonal
+  phase: Fe3B
   quantity: formation_path
   value: vapor-liquid-solid chemical vapor deposition from FeI2 and BI3
   unit: ''
@@ -437,7 +453,7 @@
     (FeI ₂ ) as precursors.'
   note: ''
 - id: fe3b_cvd_tf_li2006
-  phase: Fe3B-tetragonal
+  phase: Fe3B
   quantity: T_formation
   value: 1073.15
   unit: K
@@ -457,7 +473,7 @@
     (FeI ₂ ) as precursors.'
   note: 800 °C converted to 1073.15 K; CVD kinetically produces metastable phase.
 - id: fe3b_nw_li2006
-  phase: Fe3B-tetragonal
+  phase: Fe3B
   quantity: single_variant_particles
   value: single-crystal nanowires, width 5-50 nm, length 2-30 µm; crystal growth axis unresolved
   unit: ''
@@ -1181,15 +1197,34 @@
     url: https://arxiv.org/pdf/1910.10531
     evidence: review
     locator: Introduction
-  quote: "The Fe2 Ta structure is a paramagnet in which ei-\n                                                  \
-    \   PMs in modern society has resulted in a renewed interest in\n                                          \
-    \                                                                                  ther Fe or Ta excess can\
-    \ induce a ferromagnetic ordering at\n                                                     the design of new\
-    \ magnet materials that are cheaper and con-\n                                                             \
-    \                                                               low temperatures (<            10\n        \
-    \                                                                                                          \
-    \                              ∼ 150 K) ."
+  quote: 'The Fe2Ta structure is a paramagnet in which ei-
+
+    ther Fe or Ta excess can induce a ferromagnetic ordering at
+
+    low temperatures (<
+
+    ∼ 150 K)10.'
   note: Arapan summarizes prior experimental work; no 300 K intrinsic Js can be assigned to equilibrium Fe2Ta.
+- id: feta_easycone_arap2020
+  phase: Fe2+δTa-C14-equilibrium
+  quantity: easy_axis
+  value: easy cone predicted in low-temperature ferromagnetic state
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: review
+    locator: Introduction
+  quote: 'Theoretical calculations show
+
+    an easy cone magnetocrystalline anisotropy in the ferromag-
+
+    netic state11.'
+  note: Secondary report of a theoretical result; not a measured room-temperature easy axis.
 - id: fe3ta_structure_arap2020
   phase: Fe3Ta-SG122-predicted
   quantity: structure
@@ -1343,3 +1378,21 @@
   quote: '                        Fe6 Ta          194       -0.0370   1.62     5.77      0.60     4.627   4.627
     9.353   0  886 1.66'
   note: Theoretical Curie temperature; no experimental phase isolation shown.
+- id: fe5ta2_easy_arap2020
+  phase: Fe5Ta2-SG156-predicted
+  quantity: easy_axis
+  value: '[001]'
+  unit: ''
+  conditions: DFT structure prediction
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: full_text
+    locator: Fig. 4 caption
+  quote: 'when magnetization goes from hard
+
+    plane [100] to easy axis [001].'
+  note: No synthesis or bulk texture of this predicted phase reported.

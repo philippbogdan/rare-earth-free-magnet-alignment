@@ -5932,21 +5932,7 @@
    "opened": false
   },
   "pending_codex": {
-   "files": {
-    "borides_feta_outcomes.yaml": {
-     "sha256": "44200f2bf0ddc734d34ef0e1fffdec94a6f78e4b5bf7aaf8104fa17ccaa9282f",
-     "n_records": 1,
-     "cases": [
-      {
-       "id": "feta85_bhmax_gabay2019",
-       "phase": "Fe2+\u03b4Ta-C14-meltspun",
-       "route": "isotropic",
-       "quantity": "BHmax",
-       "doi": "10.1063/1.5079727"
-      }
-     ]
-    }
-   },
+   "files": {},
    "opened": false,
    "note": "superseded partial versions sealed while the Codex collectors were still running (commit dacf28f); final versions are sealed in later batches"
   },
@@ -6116,6 +6102,19 @@
        "route": "AM",
        "quantity": "(BH)max",
        "doi": "10.1007/s00170-024-13605-9"
+      }
+     ]
+    },
+    "borides_feta_outcomes.yaml": {
+     "sha256": "44200f2bf0ddc734d34ef0e1fffdec94a6f78e4b5bf7aaf8104fa17ccaa9282f",
+     "n_records": 1,
+     "cases": [
+      {
+       "id": "feta85_bhmax_gabay2019",
+       "phase": "Fe2+\u03b4Ta-C14-meltspun",
+       "route": "isotropic",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.5079727"
       }
      ]
     }
