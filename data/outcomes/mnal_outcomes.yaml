@@ -1,0 +1,3964 @@
+# SEALED mnal outcomes: measured remanence / Mr/Ms / texture of samples by route (not to be read before predictions are frozen).
+# Route codes per data/SCHEMA.md; 'SC+SA' = single-crystal parent + stress during transformation (METHOD: SA with S4).
+- id: mnal_hd_zhao2021_radial
+  phase: tau-MnAl-C
+  route: HD
+  process: die upsetting of as-transformed Mn53Al45C2 (homogenised 1100 C 2 d, air-cooled to tau) at 700 C, logarithmic
+    strain 1.386, 0.001 1/s, 10 min hold
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: none (as-transformed polycrystal)
+    magnet_axis: radial (in plane perpendicular to compression axis)
+    Js_same_sample_T: about 0.78 (0.82 T as-transformed minus ~40 mT)
+    omega: 0.23
+    mu0Hc_T: 0.16
+  quantity: Br
+  value: 0.39
+  unit: T
+  uncertainty: null
+  measured_along: radial (perpendicular to compression axis)
+  measurement: Quantum Design PPMS-VSM, up to 14 T, room temperature, demagnetisation-corrected
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jallcom.2020.156998
+    title: Microstructural defects in hot deformed and as-transformed τ-MnAl-C
+    first_author: Zhao, P.
+    year: 2021
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/187f02b1-6f29-4daf-99bd-f5fff2989ef3/content
+    evidence: full_text
+    locator: Section 3.1, Fig. 1a
+  quote: The remanence measured in the radial direction (Jr = 0.39 T) is higher than the value measured in the axial
+    direction (Jr = 0.30 T), which indicates that the magnetically easy <001> axis of the grains has a preferred
+    orientation in the plane perpendicular to the axial direction.
+  note: Degree of texture omega = 0.23 defined with the texture axis; 'A slightly lower saturation polarisation
+    (40 mT lower) is observed for the hot deformed τ-MnAl-C alloy measured in both directions.'
+- id: mnal_hd_zhao2021_axial
+  phase: tau-MnAl-C
+  route: HD
+  process: die upsetting of as-transformed Mn53Al45C2 (homogenised 1100 C 2 d, air-cooled to tau) at 700 C, logarithmic
+    strain 1.386, 0.001 1/s, 10 min hold
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    magnet_axis: radial; this record is the axial (compression) direction
+  quantity: Br
+  value: 0.3
+  unit: T
+  uncertainty: null
+  measured_along: axial (compression direction)
+  measurement: Quantum Design PPMS-VSM, up to 14 T, room temperature, demagnetisation-corrected
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jallcom.2020.156998
+    title: Microstructural defects in hot deformed and as-transformed τ-MnAl-C
+    first_author: Zhao, P.
+    year: 2021
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/187f02b1-6f29-4daf-99bd-f5fff2989ef3/content
+    evidence: full_text
+    locator: Section 3.1, Fig. 1a
+  quote: The remanence measured in the radial direction (Jr = 0.39 T) is higher than the value measured in the axial
+    direction (Jr = 0.30 T), which indicates that the magnetically easy <001> axis of the grains has a preferred
+    orientation in the plane perpendicular to the axial direction.
+  note: ''
+- id: mnal_hd_zhao2021_omega
+  phase: tau-MnAl-C
+  route: HD
+  process: die upsetting of as-transformed Mn53Al45C2 (homogenised 1100 C 2 d, air-cooled to tau) at 700 C, logarithmic
+    strain 1.386, 0.001 1/s, 10 min hold
+  conditions:
+    T_process_K: 973
+  quantity: texture_metric
+  value: 0.23
+  unit: 'other: omega = (Jr_par - Jr_perp)/Jr_par with respect to the texture (radial) direction'
+  uncertainty: null
+  measured_along: radial vs axial
+  measurement: Quantum Design PPMS-VSM, up to 14 T, room temperature, demagnetisation-corrected
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jallcom.2020.156998
+    title: Microstructural defects in hot deformed and as-transformed τ-MnAl-C
+    first_author: Zhao, P.
+    year: 2021
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/187f02b1-6f29-4daf-99bd-f5fff2989ef3/content
+    evidence: full_text
+    locator: Section 3.1, Eq. (1)
+  quote: A degree of texture, ω = 0.23 was found for the hot deformed sample.
+  note: 'XRD (Supplementary Fig. S1): ''(002) intensity decreases by 19% and (200) peak intensity increases by 9%
+    after hot deformation'' (surface orientation not stated in the quoted text).'
+- id: mnal_isotropic_zhao2021
+  phase: tau-MnAl-C
+  route: isotropic
+  process: as-transformed Mn53Al45C2 (homogenised 1100 C 2 d, air cooled); coarse grains
+  conditions:
+    field_T: 0
+    parent_texture: none
+    Js_same_sample_T: 0.82
+    mu0Hc_T: 0.017
+  quantity: Br
+  value: 0.17
+  unit: T
+  uncertainty: null
+  measured_along: any (loops identical along different axes)
+  measurement: Quantum Design PPMS-VSM, up to 14 T, room temperature, demagnetisation-corrected
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jallcom.2020.156998
+    title: Microstructural defects in hot deformed and as-transformed τ-MnAl-C
+    first_author: Zhao, P.
+    year: 2021
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/187f02b1-6f29-4daf-99bd-f5fff2989ef3/content
+    evidence: full_text
+    locator: Section 3.1
+  quote: The as-transformed sample shows a low coercivity (μ0Hc = 0.017 T) and remanence (Jr = 0.17 T), and its
+    magnetic properties are isotropic i.e. hysteresis loops measured parallel to different sample axis are identical.
+  note: Mr/Js = 0.21 (computed here) is far below 0.5 because of very low coercivity (multidomain coarse grains),
+    not texture.
+- id: mnal_hd_madugundo2016_perp
+  phase: tau-MnAl-C
+  route: HD
+  process: free hot deformation (upsetting) of tau-phase Mn53.5Al44.5C2 piece (5x5x7 mm) to 75% of its height at
+    700 C between WC punches, lateral expansion free
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    magnet_axis: in plane perpendicular to deformation direction
+    density_g_cm3: 5.2
+    M_30kOe_Am2_kg: 82
+    Mr_Am2_kg: 50
+    BHmax_kJ_m3: 14.3
+  quantity: Mr_over_Ms
+  value: 0.61
+  unit: ''
+  uncertainty: null
+  measured_along: perpendicular to the deformation direction (er)
+  measurement: VSM, room temperature, maximum field 30 kOe (3 T; not saturating for tau), demagnetisation-corrected
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4943242
+    title: Bulk Mn-Al-C permanent magnets prepared by various techniques
+    first_author: Madugundo, Rajasekhar
+    year: 2016
+    url: https://udspace.udel.edu/bitstreams/300b14d7-66e4-41cf-a2a6-b12d954b747c/download
+    evidence: full_text
+    locator: Section III, Fig. 3c, Table I
+  quote: Figure 3(c) shows the hysteresis loops of the hot-deformed magnet measured with applied field parallel
+    to the deformation direction (∥ el) and perpendicular to the deformation direction (⊥er). When measured in the
+    ∥ el direction the M/30 kOe, Mr and Hc are measured to be 79 emu/g, 36 emu/g and 2.7 kOe, respectively and when
+    measured in ⊥er direction 82 emu/g, 50 emu/g and 2.2 kOe, respectively.
+  note: Ratio Mr/M(30 kOe) = 50/82 computed here; M at 3 T underestimates Ms, so the ratio overestimates Mr/Ms.
+- id: mnal_hd_madugundo2016_par
+  phase: tau-MnAl-C
+  route: HD
+  process: free hot deformation (upsetting) of tau-phase Mn53.5Al44.5C2 piece (5x5x7 mm) to 75% of its height at
+    700 C between WC punches, lateral expansion free
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    magnet_axis: this record is along the deformation (compression) direction
+    M_30kOe_Am2_kg: 79
+    Mr_Am2_kg: 36
+  quantity: Mr_over_Ms
+  value: 0.456
+  unit: ''
+  uncertainty: null
+  measured_along: parallel to the deformation direction (el)
+  measurement: VSM, room temperature, maximum field 30 kOe (3 T; not saturating for tau), demagnetisation-corrected
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4943242
+    title: Bulk Mn-Al-C permanent magnets prepared by various techniques
+    first_author: Madugundo, Rajasekhar
+    year: 2016
+    url: https://udspace.udel.edu/bitstreams/300b14d7-66e4-41cf-a2a6-b12d954b747c/download
+    evidence: full_text
+    locator: Section III, Fig. 3c
+  quote: Figure 3(c) shows the hysteresis loops of the hot-deformed magnet measured with applied field parallel
+    to the deformation direction (∥ el) and perpendicular to the deformation direction (⊥er). When measured in the
+    ∥ el direction the M/30 kOe, Mr and Hc are measured to be 79 emu/g, 36 emu/g and 2.7 kOe, respectively and when
+    measured in ⊥er direction 82 emu/g, 50 emu/g and 2.2 kOe, respectively.
+  note: Ratio 36/79 computed here.
+- id: mnal_hd_madugundo2016_tp
+  phase: tau-MnAl-C
+  route: HD
+  process: free hot deformation (upsetting) of tau-phase Mn53.5Al44.5C2 piece (5x5x7 mm) to 75% of its height at
+    700 C between WC punches, lateral expansion free
+  conditions:
+    T_process_K: 973
+  quantity: texture_metric
+  value: 0.26
+  unit: 'other: tp = (Mr_perp - Mr_par)/Mr_perp'
+  uncertainty: null
+  measured_along: perpendicular vs parallel to deformation direction
+  measurement: VSM, room temperature, maximum field 30 kOe (3 T; not saturating for tau), demagnetisation-corrected
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4943242
+    title: Bulk Mn-Al-C permanent magnets prepared by various techniques
+    first_author: Madugundo, Rajasekhar
+    year: 2016
+    url: https://udspace.udel.edu/bitstreams/300b14d7-66e4-41cf-a2a6-b12d954b747c/download
+    evidence: full_text
+    locator: Section III
+  quote: The tp for the hot-deformed magnet is calculated to be 0.26 and the texture developed is in the plane perpendicular
+    to the deformation direction.
+  note: ''
+- id: mnal_hd_madugundo2016b
+  phase: tau-MnAl-C
+  route: HD
+  process: hot deformation of arc-melted tau Mn53.5Al44.5C2 (details not in abstract)
+  conditions:
+    magnet_axis: in plane perpendicular to deformation direction (texture plane)
+  quantity: Br
+  value: 0.33
+  unit: T
+  uncertainty: null
+  measured_along: presumably in the texture plane (not stated in abstract)
+  measurement: not stated in abstract
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4939578
+    title: Anisotropic Mn-Al-(C) hot-deformed bulk magnets
+    first_author: Madugundo, Rajasekhar
+    year: 2016
+    url: https://api.openalex.org/works/doi:10.1063/1.4939578
+    evidence: abstract
+    locator: abstract
+  quote: The hot-deformed magnets develop a texture in a plane perpendicular to the deformation direction. Optimum
+    magnetic properties have been obtained in a magnet with nominal composition Mn53.5Al44.5C2 with values of remnant
+    magnetization, coercivity, and energy product of 2.2 kOe, 3.3 kG, and 1.8 MGOe, respectively.
+  note: The abstract lists 'remnant magnetization, coercivity, and energy product of 2.2 kOe, 3.3 kG, and 1.8 MGOe'
+    - order of units garbled; the kG value (3.3 kG = 0.33 T) is taken as the remanence, consistent with the companion
+    AIP Advances paper (Hc 2.2 kOe, 1.8 MGOe). Uncertain.
+- id: mnal_hd_sakamoto1980
+  phase: tau-MnAl-C
+  route: HD
+  process: MnAlC(Ni) billets first extruded (axial texture) then upset along the extrusion axis at 660 C with small
+    strain, plus tempering
+  conditions:
+    T_process_K: 933
+    magnet_axis: any direction in the plane perpendicular to the former extrusion axis
+    BHmax_kJ_m3: 32.6
+  quantity: Br
+  value: 0.46
+  unit: T
+  uncertainty: null
+  measured_along: in 'the plane of easy magnetization' (radial/tangential)
+  measurement: not stated in abstract
+  n_samples: 1
+  source:
+    doi: 10.1109/tmag.1980.1060672
+    title: New MnAlC permanent magnets exhibiting macroscopically-plane magnetic-anisotropy
+    first_author: Sakamoto, Y.
+    year: 1980
+    url: https://api.openalex.org/works/doi:10.1109/tmag.1980.1060672
+    evidence: abstract
+    locator: abstract
+  quote: 'The optimum magnetic properties in "the plane of easy magnetization" were as follows: Br = 4.6 kG, Hc
+    = 2.9 kOe, iHc = 4.1 kOe and BHmax= 4.1 MG.Oe. They were obtained by a nickel doped MnAlC alloy with additional
+    tempering.'
+  note: converted from 4.6 kG. Planar (2D) easy-axis distribution by re-deformation of a fibre-textured billet.
+- id: mnal_hd_kubo1976_ex11_p4_upset
+  phase: tau-MnAl-C
+  route: HD
+  process: P4 alloy (tau_c(M) + lamellar Mn3AlC) compressed (upset) 53% along cylinder axis at 650 C, 45 kg/mm2
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    magnet_axis: diameter (radial) direction, perpendicular to compression
+    composition_wt: 72.36 Mn, 26.40 Al, 1.24 C
+    BHmax_kJ_m3: 34.2
+  quantity: Br
+  value: 0.49
+  unit: T
+  uncertainty: null
+  measured_along: diameter direction (preferred direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Examples 11/14
+  quote: 'A test piece having the composition of P 4 was subjected to a compression to a degree of deformation of
+    -53% by applying a pressuring force of 45 kg/mm 2 in the axial direction of its cylinder at 650°C. The preferred
+    direction of magnetization of the deformed specimen was found in the diameter direction of it, with its magnetic
+    characteristics being: Br = 4,900 G .sub.B Hc = 2,600 Oe (BH).sub.max = 4.3 × 10.sup.6 G.Oe'
+  note: 'converted from 4900 G. '
+- id: mnal_hd_kubo1976_ex11_p5_upset
+  phase: tau-MnAl-C
+  route: HD
+  process: P5 alloy (tau_c(M)) compressed 65% along cylinder axis at 680 C, 45 kg/mm2
+  conditions:
+    field_T: 0
+    T_process_K: 953
+    magnet_axis: diameter (radial) direction, perpendicular to compression
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 36.6
+  quantity: Br
+  value: 0.505
+  unit: T
+  uncertainty: null
+  measured_along: diameter direction (preferred direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Examples 11/14
+  quote: 'A test piece having the composition of P 5 was subjected to a compression to a degree of deformation of
+    -65%, by applying a pressuring force of 45 kg/mm 2 in the axial direction of its cylinder at 680°C. The preferred
+    direction of magnetization of the deformed specimen was found in the diameter direction of it, with its magnetic
+    characteristics being: Br = 5,050 G .sub.B Hc = 2,600 Oe (BH).sub.max = 4.6 × 10.sup.6 G.Oe'
+  note: 'converted from 5050 G. '
+- id: mnal_hd_kubo1976_ex14_p4_upset
+  phase: tau-MnAl-C
+  route: HD
+  process: P4 alloy M-treated and quenched (eps_c(M)), compressed 45% along axis at 650 C, 45 kg/mm2, then tempered
+    600 C 3 h
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    magnet_axis: diameter (radial) direction, perpendicular to compression
+    composition_wt: 72.36 Mn, 26.40 Al, 1.24 C
+    BHmax_kJ_m3: 37.4
+    parent_phase_at_deformation: epsilon_c(M)
+  quantity: Br
+  value: 0.53
+  unit: T
+  uncertainty: null
+  measured_along: diameter direction (preferred direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Examples 11/14
+  quote: 'A test piece having the composition of P 4 was compressed to a degree of deformation of -45% by applying
+    a pressuring force of 45 kg/mm 2 at a temperature of 650°C in the axial direction of its cylinder. The test
+    piece after being compressed was tempered at 600°C for 3 hours, and then as the result of the measurement of
+    its magnetic characteristics, it was identified as an anisotropic magnet with its preferred direction magnetization
+    in its diameter direction. Its magnetic characteristics in the preferred direction of magnetization were found
+    to be: pressuring Br = 5,300 G .sub.B Hc = 2,600 Oe (BH)max = 4.7 × 10.sup.6 G.Oe'
+  note: converted from 5300 G. Deformation of the epsilon parent; transformation during/after compression.
+- id: mnal_hd_kubo1976_ex11_p1_upset
+  phase: tau-MnAl
+  route: HD
+  process: P1 alloy (C 0.47 wt.%, below the tau solubility limit) compressed 25% along axis at 680 C, 50 kg/mm2
+  conditions:
+    field_T: 0
+    T_process_K: 953
+    composition_wt: 72.08 Mn, 27.45 Al, 0.47 C
+  quantity: Br
+  value: 0.17
+  unit: T
+  uncertainty: null
+  measured_along: not stated (isotropic)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 11
+  quote: 'A test piece having the composition of P 1 is compressed by pressuring it at a temperature of 680°C, a
+    pressure of 50 kg/mm 2 and in the axial direction of the cylinder to a degree of deformation of -25% in the
+    pressuring direction. In the test piece which had been subjected to the deformation, numerous cracks were found
+    developing. Its magnetic Table 5 ______________________________________ Mn Al C ______________________________________
+    P.sub.1 72.08 27.45 0.47 P.sub.2 70.21 29.55 0.24 P.sub.3 73.44 25.51 1.05 P.sub.4 72.36 26.40 1.24 P.sub.5
+    71.63 27.23 1.14 P.sub.6 68.86 30.78 0.40 P.sub.7 67.86 31.81 0.33 P.sub.8 71.66 26.35 1.99 P.sub.9 69.90 28.67
+    1.43 ______________________________________ characteristics greatly declined from the characteristic of (BH).sub.max
+    = 0.6 × 10.sup.6 G.Oe, as measured before making the pressuring, to: Br = 1,700 G .sub.B Hc = 700 Oe (BH).sub.max
+    = 0.3 × 10.sup.6 G.Oe showing it to be isotropic. As this test piece was examined by way of X-ray diffraction,
+    large amount of the β-Mn phase and AlMn(γ) phase were recognized, other than a small amount of remaining τ phase,
+    and the additional heat treatment of tempering merely caused a further decline in its magnetic characteristics.'
+  note: 'converted from 1700 G. Isotropic, mostly decomposed to beta-Mn + AlMn(gamma): C below solubility gives
+    no anisotropy.'
+- id: mnal_sc_kubo1976_ex1
+  phase: tau-MnAl-C
+  route: 'other: SC (single-crystal epsilon parent, no bias)'
+  process: eps_c single crystal (Bridgman/chill mould), 8x8x8 mm cube with (0001), (1-100), (11-20) faces, tempered
+    600 C 1 h
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    parent_texture: single crystal (one orientation)
+    composition_wt: 72.28 Mn, 26.64 Al, 1.08 C
+    BHmax_kJ_m3: 8.8
+  quantity: Br
+  value: 0.275
+  unit: T
+  uncertainty: null
+  measured_along: not stated (found magnetically isotropic)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 1
+  quote: 'This ε c monocrystal was tempered at 600°C for 1 hour. The tempered test piece was found to be magnetically
+    isotropic, as its magnetic characteristics were measured. The magnetic characterstics found were: Br = 2,750
+    G, .sub.B HC = 1,350 Oe, and (BH)max = 1.1 × 10.sup.6 G.Oe, which were equivalent to the magnetic characteristics
+    of isotropic Mn-Al-C alloy magnets of the ordinary polycrystal type.'
+  note: converted from 2750 G. Unstressed transformation of a single-crystal parent gave an isotropic magnet.
+- id: mnal_sc_kubo1976_ex2
+  phase: tau-MnAl-C
+  route: 'other: SC (single-crystal epsilon parent, no bias)'
+  process: eps_c(M) single crystal (lamellar Mn3AlC on eps(0001)), 8x8x8 mm cube with (0001), (1-100), (11-20) faces,
+    tempered 570 C 1 h
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    parent_texture: single crystal
+    composition_wt: 72.28 Mn, 26.64 Al, 1.08 C
+    BHmax_kJ_m3: 5.3
+  quantity: Br
+  value: 0.25
+  unit: T
+  uncertainty: null
+  measured_along: not stated (quite isotropic)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 2
+  quote: 'The magnetic characteristics of the test piece of the τ c (M) phase were quite isotropic. They were found
+    to be: Br = 2,500 G, .sub.B Hc = 800 Oe, and (BH)max = 0.67 × 10.sup.6 G.Oe,'
+  note: converted from 2500 G.
+- id: mnal_sc_sa_kubo1976_s3_br
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal (lamellar Mn3AlC), 10 mm cube, compressed at 550 C, 30 kg/mm2 perpendicular to
+    (3304) to 14.6% (just before saturation), then tempered 580 C 30 h
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    stress_MPa: 294
+    parent_texture: single crystal
+    composition_wt: 72.10 Mn, 26.78 Al, 1.12 C
+    magnet_axis: tau c-axis (about 82 deg from compression axis)
+    J_at_10kOe_T: 0.71
+    BHmax_kJ_m3: 73.2
+  quantity: Br
+  value: 0.7
+  unit: T
+  uncertainty: null
+  measured_along: c-axis (easy axis) of the single-variant tau crystal
+  measurement: not stated; 4πI at 10 kOe given
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 3
+  quote: As this test piece was cut out, and its magnetic characteristics in the easy direction of magnetization
+    (C axis direction) were measured, they were found to be very excellent:Br = 7,000 G B.sup. HC = 2,300 Oe BHmax
+    = 9.2 × 10 6 G.Oe4πI 10000 = 7,100 G I.sup. HC = 2,350 Oe Br/4πI 10000 = 0.98
+  note: converted from 7000 G; 30 kg/mm2 = 294 MPa.
+- id: mnal_sc_sa_kubo1976_s3_mrms
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal (lamellar Mn3AlC), 10 mm cube, compressed at 550 C, 30 kg/mm2 perpendicular to
+    (3304) to 14.6% (just before saturation), then tempered 580 C 30 h
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    stress_MPa: 294
+    composition_wt: 72.10 Mn, 26.78 Al, 1.12 C
+  quantity: Mr_over_Ms
+  value: 0.98
+  unit: ''
+  uncertainty: null
+  measured_along: c-axis
+  measurement: 'Br / 4πI at 10 kOe (1 T): not saturating for tau; ratio is an upper bound for Mr/Ms'
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 3
+  quote: As this test piece was cut out, and its magnetic characteristics in the easy direction of magnetization
+    (C axis direction) were measured, they were found to be very excellent:Br = 7,000 G B.sup. HC = 2,300 Oe BHmax
+    = 9.2 × 10 6 G.Oe4πI 10000 = 7,100 G I.sup. HC = 2,350 Oe Br/4πI 10000 = 0.98
+  note: Single-variant crystal (X-ray). Ratio printed by the patent.
+- id: mnal_sc_sa_kubo1976_s1_torque
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 550 C perpendicular to (3304), stopped at S1, tempered 580 C
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    torque_dyne_cm_cm3: 9300000.0
+    single_crystal_torque_dyne_cm_cm3: 10700000.0
+  quantity: texture_metric
+  value: 0.87
+  unit: 'other: torque amplitude ratio to the single-variant crystal S3'
+  uncertainty: null
+  measured_along: disc containing the easy direction
+  measurement: torque magnetometry
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 3
+  quote: Furthermore, the magnetic torque was measured likewise of the test pieces of S 1 , S 2 and S 4 after being
+    tempered. The values were respectively, 0.93 × 10 7 dyne-cm/cm 3 , 0.97 × 10 7 dyne-cm/cm 3 and 0.95 × 10 7
+    dyne-cm/cm 3 , and as the degree of anisotropization was expressed by their ratio to the value of magnetic torque
+    of monocrystal, i.e., the 1.07 × 10 7 dyne-cm/cm 3 above mentioned, all of these test pieces had such very high
+    degrees of anisotropization, e.g. more than 0.9.
+  note: Ratio computed here from the printed torque values.
+- id: mnal_sc_sa_kubo1976_s2_torque
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 550 C perpendicular to (3304), stopped at S2, tempered 580 C
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    torque_dyne_cm_cm3: 9700000.0
+    single_crystal_torque_dyne_cm_cm3: 10700000.0
+  quantity: texture_metric
+  value: 0.91
+  unit: 'other: torque amplitude ratio to the single-variant crystal S3'
+  uncertainty: null
+  measured_along: disc containing the easy direction
+  measurement: torque magnetometry
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 3
+  quote: Furthermore, the magnetic torque was measured likewise of the test pieces of S 1 , S 2 and S 4 after being
+    tempered. The values were respectively, 0.93 × 10 7 dyne-cm/cm 3 , 0.97 × 10 7 dyne-cm/cm 3 and 0.95 × 10 7
+    dyne-cm/cm 3 , and as the degree of anisotropization was expressed by their ratio to the value of magnetic torque
+    of monocrystal, i.e., the 1.07 × 10 7 dyne-cm/cm 3 above mentioned, all of these test pieces had such very high
+    degrees of anisotropization, e.g. more than 0.9.
+  note: Ratio computed here from the printed torque values.
+- id: mnal_sc_sa_kubo1976_s4_torque
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 550 C perpendicular to (3304), stopped at S4, tempered 580 C
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    torque_dyne_cm_cm3: 9500000.0
+    single_crystal_torque_dyne_cm_cm3: 10700000.0
+  quantity: texture_metric
+  value: 0.89
+  unit: 'other: torque amplitude ratio to the single-variant crystal S3'
+  uncertainty: null
+  measured_along: disc containing the easy direction
+  measurement: torque magnetometry
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 3
+  quote: Furthermore, the magnetic torque was measured likewise of the test pieces of S 1 , S 2 and S 4 after being
+    tempered. The values were respectively, 0.93 × 10 7 dyne-cm/cm 3 , 0.97 × 10 7 dyne-cm/cm 3 and 0.95 × 10 7
+    dyne-cm/cm 3 , and as the degree of anisotropization was expressed by their ratio to the value of magnetic torque
+    of monocrystal, i.e., the 1.07 × 10 7 dyne-cm/cm 3 above mentioned, all of these test pieces had such very high
+    degrees of anisotropization, e.g. more than 0.9.
+  note: Ratio computed here from the printed torque values.
+- id: mnal_sc_sa_kubo1976_s5
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 600 C along theta1=0 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -0.8% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    theta1_deg: 0
+    theta2_deg: 0
+    strain_percent: -0.8
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 14.3
+    bHc_Oe: 1400
+  quantity: Br
+  value: 0.33
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S5
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.5 0° 0° 600 - 0.8 3,300 1,400 1.8
+  note: 'converted from 3300 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s6
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 550 C along theta1=20 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -2.6% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    theta1_deg: 20
+    theta2_deg: 0
+    strain_percent: -2.6
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 26.3
+    bHc_Oe: 1550
+  quantity: Br
+  value: 0.475
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S6
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.6 20° 0° 550 - 2.6 4,750 1,550 3.3
+  note: 'converted from 4750 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s7
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 550 C along theta1=35 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -12.0% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    theta1_deg: 35
+    theta2_deg: 0
+    strain_percent: -12.0
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 57.3
+    bHc_Oe: 2050
+  quantity: Br
+  value: 0.65
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S7
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.7 35° 0° 550 -12.0 6,500 2,050 7.2
+  note: 'converted from 6500 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s8
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 500 C along theta1=55 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -0.2% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 773
+    theta1_deg: 55
+    theta2_deg: 0
+    strain_percent: -0.2
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 12.7
+    bHc_Oe: 1500
+  quantity: Br
+  value: 0.29
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S8
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.8 55° 0° 500 - 0.2 2,900 1,500 1.6
+  note: 'converted from 2900 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s9
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 530 C along theta1=55 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -14.8% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 803
+    theta1_deg: 55
+    theta2_deg: 0
+    strain_percent: -14.8
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 71.6
+    bHc_Oe: 2250
+  quantity: Br
+  value: 0.69
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S9
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.9 55° 0° 530 -14.8 6,900 2,250 9.0
+  note: 'converted from 6900 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s10
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 720 C along theta1=55 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -14.5% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 993
+    theta1_deg: 55
+    theta2_deg: 0
+    strain_percent: -14.5
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 64.5
+    bHc_Oe: 2200
+  quantity: Br
+  value: 0.68
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S10
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.10 55° 0° 720 -14.5 6,800 2,200 8.1
+  note: 'converted from 6800 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s11
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 850 C along theta1=55 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -14.0% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 1123
+    theta1_deg: 55
+    theta2_deg: 0
+    strain_percent: -14.0
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 11.1
+    bHc_Oe: 1600
+  quantity: Br
+  value: 0.26
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S11
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.11 55° 0° 850 -14.0 2,600 1,600 1.4
+  note: 'converted from 2600 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s12
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 650 C along theta1=55 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -0.4% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    theta1_deg: 55
+    theta2_deg: 0
+    strain_percent: -0.4
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 8.8
+    bHc_Oe: 1400
+  quantity: Br
+  value: 0.295
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S12
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.12 55° 0° 650 - 0.4 2,950 1,400 1.1
+  note: 'converted from 2950 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s13
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 600 C along theta1=55 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -25.0% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    theta1_deg: 55
+    theta2_deg: 0
+    strain_percent: -25.0
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 15.9
+    bHc_Oe: 1800
+  quantity: Br
+  value: 0.31
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S13
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.13 55° 0° 600 -25.0 3,100 1,800 2.0
+  note: 'converted from 3100 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s14
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 580 C along theta1=70 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -12.0% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 853
+    theta1_deg: 70
+    theta2_deg: 0
+    strain_percent: -12.0
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 58.1
+    bHc_Oe: 2000
+  quantity: Br
+  value: 0.66
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S14
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.14 70° 0° 580 -12.0 6,600 2,000 7.3
+  note: 'converted from 6600 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s15
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 530 C along theta1=90 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -2.0% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 803
+    theta1_deg: 90
+    theta2_deg: 0
+    strain_percent: -2.0
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 60.5
+    bHc_Oe: 2300
+  quantity: Br
+  value: 0.625
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S15
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.15 90° 0° 530 - 2.0 6,250 2,300 7.6
+  note: 'converted from 6250 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s16
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 560 C along theta1=90 deg (from eps[0001]), theta2=0 deg (azimuth
+    from eps[1-100]) to -3.2% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 833
+    theta1_deg: 90
+    theta2_deg: 0
+    strain_percent: -3.2
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 55.7
+    bHc_Oe: 2150
+  quantity: Br
+  value: 0.61
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S16
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.16 90° 0° 560 - 3.2 6,100 2,150 7.0
+  note: 'converted from 6100 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s17
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 830 C along theta1=35 deg (from eps[0001]), theta2=10 deg (azimuth
+    from eps[1-100]) to -12.9% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 1103
+    theta1_deg: 35
+    theta2_deg: 10
+    strain_percent: -12.9
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 55.7
+    bHc_Oe: 2100
+  quantity: Br
+  value: 0.64
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S17
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.17 35° 10° 830 -12.9 6,400 2,100 7.0
+  note: 'converted from 6400 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s18
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 550 C along theta1=35 deg (from eps[0001]), theta2=15 deg (azimuth
+    from eps[1-100]) to -11.7% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    theta1_deg: 35
+    theta2_deg: 15
+    strain_percent: -11.7
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 52.5
+    bHc_Oe: 2050
+  quantity: Br
+  value: 0.635
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S18
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.18 35° 15° 550 -11.7 6,350 2,050 6.6
+  note: 'converted from 6350 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s19
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 600 C along theta1=70 deg (from eps[0001]), theta2=15 deg (azimuth
+    from eps[1-100]) to -10.0% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    theta1_deg: 70
+    theta2_deg: 15
+    strain_percent: -10.0
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 49.3
+    bHc_Oe: 1750
+  quantity: Br
+  value: 0.64
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S19
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.19 70° 15° 600 -10.0 6,400 1,750 6.2
+  note: 'converted from 6400 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s20
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 650 C along theta1=55 deg (from eps[0001]), theta2=20 deg (azimuth
+    from eps[1-100]) to -6.2% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    theta1_deg: 55
+    theta2_deg: 20
+    strain_percent: -6.2
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 18.3
+    bHc_Oe: 1500
+  quantity: Br
+  value: 0.415
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S20
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.20 55° 20° 650 - 6.2 4,150 1,500 2.3
+  note: 'converted from 4150 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s21
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 580 C along theta1=50 deg (from eps[0001]), theta2=30 deg (azimuth
+    from eps[1-100]) to -4.4% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 853
+    theta1_deg: 50
+    theta2_deg: 30
+    strain_percent: -4.4
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 17.5
+    bHc_Oe: 1350
+  quantity: Br
+  value: 0.37
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S21
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.21 50° 30° 580 - 4.4 3,700 1,350 2.2
+  note: 'converted from 3700 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s22
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal compressed at 560 C along theta1=90 deg (from eps[0001]), theta2=30 deg (azimuth
+    from eps[1-100]) to -0.5% strain, then tempered 550-650 C
+  conditions:
+    field_T: 0
+    T_process_K: 833
+    theta1_deg: 90
+    theta2_deg: 30
+    strain_percent: -0.5
+    parent_texture: single crystal
+    composition_wt: 71.93 Mn, 27.02 Al, 1.05 C
+    BHmax_kJ_m3: 13.5
+    bHc_Oe: 1300
+  quantity: Br
+  value: 0.33
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 4, Table 3, specimen S22
+  quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
+    at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
+    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
+    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
+    ... S.sub.22 90° 30° 560 - 0.5 3,300 1,300 1.7
+  note: 'converted from 3300 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
+    of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
+- id: mnal_sc_sa_kubo1976_s23
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 72.02 Mn, 27.43 Al, 0.55 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 72.02 Mn, 27.43 Al, 0.55 C
+    BHmax_kJ_m3: 3.2
+    bHc_Oe: 900
+  quantity: Br
+  value: 0.14
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S23
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.23 72.02
+    27.43 0.55 1400 900 0.4
+  note: 'converted from 1400 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_s24
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 69.77 Mn, 30.04 Al, 0.19 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 69.77 Mn, 30.04 Al, 0.19 C
+    BHmax_kJ_m3: 1.6
+    bHc_Oe: 550
+  quantity: Br
+  value: 0.11
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S24
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.24 69.77
+    30.04 0.19 1100 550 0.2
+  note: 'converted from 1100 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_s25
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 73.44 Mn, 25.53 Al, 1.03 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 73.44 Mn, 25.53 Al, 1.03 C
+    BHmax_kJ_m3: 7.2
+    bHc_Oe: 1250
+  quantity: Br
+  value: 0.25
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S25
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.25 73.44
+    25.53 1.03 2500 1250 0.9
+  note: 'converted from 2500 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_s26
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 72.89 Mn, 25.86 Al, 1.25 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 72.89 Mn, 25.86 Al, 1.25 C
+    BHmax_kJ_m3: 50.9
+    bHc_Oe: 2350
+  quantity: Br
+  value: 0.645
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S26
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.26 72.89
+    25.86 1.25 6450 2350 6.4
+  note: 'converted from 6450 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_s27
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 71.58 Mn, 27.22 Al, 1.20 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 71.58 Mn, 27.22 Al, 1.20 C
+    BHmax_kJ_m3: 71.6
+    bHc_Oe: 2250
+  quantity: Br
+  value: 0.69
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S27
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.27 71.58
+    27.22 1.20 6900 2250 9.0
+  note: 'converted from 6900 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_s28
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 70.72 Mn, 28.29 Al, 0.99 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 70.72 Mn, 28.29 Al, 0.99 C
+    BHmax_kJ_m3: 63.7
+    bHc_Oe: 2200
+  quantity: Br
+  value: 0.675
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S28
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.28 70.72
+    28.29 0.99 6750 2200 8.0
+  note: 'converted from 6750 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_s29
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 68.14 Mn, 31.41 Al, 0.45 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 68.14 Mn, 31.41 Al, 0.45 C
+    BHmax_kJ_m3: 54.1
+    bHc_Oe: 1900
+  quantity: Br
+  value: 0.655
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S29
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.29 68.14
+    31.41 0.45 6550 1900 6.8
+  note: 'converted from 6550 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_s30
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 67.63 Mn, 32.17 Al, 0.20 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 67.63 Mn, 32.17 Al, 0.20 C
+    BHmax_kJ_m3: 4.0
+    bHc_Oe: 850
+  quantity: Br
+  value: 0.18
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S30
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.30 67.63
+    32.17 0.20 1800 850 0.5
+  note: 'converted from 1800 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_s31
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 71.40 Mn, 26.42 Al, 2.18 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 71.40 Mn, 26.42 Al, 2.18 C
+    BHmax_kJ_m3: 8.8
+    bHc_Oe: 1400
+  quantity: Br
+  value: 0.25
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S31
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.31 71.40
+    26.42 2.18 2500 1400 1.1
+  note: 'converted from 2500 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_s32
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 70.78 Mn, 27.77 Al, 1.45 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 70.78 Mn, 27.77 Al, 1.45 C
+    BHmax_kJ_m3: 8.8
+    bHc_Oe: 1300
+  quantity: Br
+  value: 0.275
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S32
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.32 70.78
+    27.77 1.45 2750 1300 1.1
+  note: 'converted from 2750 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_s33
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: single crystal (or large-grained) eps or eps_c(M), 69.90 Mn, 28.77 Al, 1.33 C wt.%, compressed at 570
+    C, 40 kg/mm2, theta1=55 deg, theta2=0, then tempered
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    stress_MPa: 392
+    theta1_deg: 55
+    theta2_deg: 0
+    composition_wt: 69.90 Mn, 28.77 Al, 1.33 C
+    BHmax_kJ_m3: 8.0
+    bHc_Oe: 1250
+  quantity: Br
+  value: 0.26
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization after tempering
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 9, Table 4, specimen S33
+  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
+    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
+    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
+    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
+    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.33 69.90
+    28.77 1.33 2600 1250 1.0
+  note: 'converted from 2600 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
+    much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
+- id: mnal_sc_sa_kubo1976_ex5
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c(M) single crystal cube (faces (0001), (1-100), (11-20)) held 500 C 5 min (mostly eps_c'(M)), compressed
+    at 550 C, 35 kg/mm2 perpendicular to (1-100), then 600 C 1 h
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    stress_MPa: 343
+    parent_phase_at_deformation: epsilon'_c(M) (orthorhombic)
+    composition_wt: 72.10 Mn, 26.78 Al, 1.12 C
+    Br_before_600C_T: 0.53
+    BHmax_kJ_m3: 41.4
+  quantity: Br
+  value: 0.57
+  unit: T
+  uncertainty: null
+  measured_along: pressing direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 5
+  quote: 'This test piece was pressured and deformed at a temperature of 550°C, at pressure of of 35 kg/mm 2 in
+    the direction perpendicular to (1100) plane and its magnetic characteristics were measured. The magnetic characteristics
+    found in the pressuring direction were; Br = 5300 G, .sub.B Hc = 2200 Oe, (BH)max = 4.1 × 10.sup.6 G.Oe Then,
+    this test piece was held further at a temperature of 600°C for 1 hour, as the result, an anisotropic magnet
+    was obtained, having magnetic characteristics of: Br = 5700 G, .sub.B Hc = 2100 Oe, (BH)max = 5.2 × 10.sup.6
+    G.O3'
+  note: converted from 5700 G (5300 G before the 600 C anneal). Preferred direction along the pressing direction
+    here.
+- id: mnal_sc_sa_kubo1976_ex6_repress
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: 'single-variant tau_c(M) crystal S3 re-compressed at 600 C, 40 kg/mm2 PARALLEL to its easy axis: tau
+    -> eps'' -> new tau variant (c-axis moves toward the former compression direction)'
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    stress_MPa: 392
+    BHmax_kJ_m3: 55.7
+  quantity: Br
+  value: 0.685
+  unit: T
+  uncertainty: null
+  measured_along: new preferred direction of magnetization
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 6
+  quote: 'The magnetic characteristics of the newly formed τ c (M) phase in the preferred direction of magnetization
+    were found to be: Br = 6,850 G .sub.B Hc = 1,900 G (BH)max = 7.0 × 10.sup.6 G.Oe'
+  note: converted from 6850 G. Demonstrates stress re-selection of variants in already-formed tau.
+- id: mnal_sc_sa_kubo1976_ex6_s15
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: two-variant tau_c(M) crystal S15 (two c-axes ~37 deg from first pressing axis) re-compressed at 600 C,
+    35 kg/mm2 parallel to one of the c-axes -> single variant
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    stress_MPa: 343
+    BHmax_kJ_m3: 54.9
+  quantity: Br
+  value: 0.68
+  unit: T
+  uncertainty: null
+  measured_along: remaining tau [001] axis (preferred direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 6
+  quote: 'The preferred direction of magnetization of the test piece which had been deformed was found identical
+    to the direction of the τ c [001] axis, and its magnetic characteristics were found to be: Br = 6,800 G Hc =
+    1,850 Oe BHmax = 6.9 × 10.sup.6 G.Oe'
+  note: converted from 6800 G; 'showing an improved Br, as compared with the magnetic characteristic in the preferred
+    direction of magnetization observed before the deformation'.
+- id: mnal_sc_sa_kubo1976_ex7_press
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c single crystal WITHOUT lamellar Mn3AlC (71.95 Mn, 26.95 Al, 1.10 C wt.%) compressed at 560 C, 50
+    kg/mm2, theta1=90, theta2=0 (to -1.9%), tempered 570 C 4 h
+  conditions:
+    field_T: 0
+    T_process_K: 833
+    stress_MPa: 490
+    theta1_deg: 90
+    theta2_deg: 0
+    composition_wt: 71.95 Mn, 26.95 Al, 1.10 C
+  quantity: Br
+  value: 0.545
+  unit: T
+  uncertainty: null
+  measured_along: pressing direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 7
+  quote: 'Its magnetic characteristics were found in the pressuring direction to be: Br = 5,450 G .sub.B Hc = 2,200
+    Oe BHmax = 3.3 × 10.sup.6 G.Oe'
+  note: converted from 5450 G. Three orthogonal remanences of one crystal (sum of Br/Js over three axes constrains
+    the variant distribution).
+- id: mnal_sc_sa_kubo1976_ex7_perp1
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c single crystal WITHOUT lamellar Mn3AlC (71.95 Mn, 26.95 Al, 1.10 C wt.%) compressed at 560 C, 50
+    kg/mm2, theta1=90, theta2=0 (to -1.9%), tempered 570 C 4 h
+  conditions:
+    field_T: 0
+    T_process_K: 833
+    stress_MPa: 490
+    theta1_deg: 90
+    theta2_deg: 0
+    composition_wt: 71.95 Mn, 26.95 Al, 1.10 C
+  quantity: Br
+  value: 0.1
+  unit: T
+  uncertainty: null
+  measured_along: perpendicular to pressing, along former eps [11-20]
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 7
+  quote: 'In the direction at a right angle to the pressuring direction and corresponding to the [1120] direction
+    before making the pressuring the magnetic characteristics were: Br = 1,000 G .sub.B Hc = 600 Oe BHmax = 0.2
+    × 10.sup.6 G.Oe'
+  note: converted from 1000 G. Three orthogonal remanences of one crystal (sum of Br/Js over three axes constrains
+    the variant distribution).
+- id: mnal_sc_sa_kubo1976_ex7_perp2
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: eps_c single crystal WITHOUT lamellar Mn3AlC (71.95 Mn, 26.95 Al, 1.10 C wt.%) compressed at 560 C, 50
+    kg/mm2, theta1=90, theta2=0 (to -1.9%), tempered 570 C 4 h
+  conditions:
+    field_T: 0
+    T_process_K: 833
+    stress_MPa: 490
+    theta1_deg: 90
+    theta2_deg: 0
+    composition_wt: 71.95 Mn, 26.95 Al, 1.10 C
+  quantity: Br
+  value: 0.24
+  unit: T
+  uncertainty: null
+  measured_along: the other direction perpendicular to pressing
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 7
+  quote: 'In another direction at a right angle to the pressuring direction the magnetic characteristics were: Br
+    = 2,400 G .sub.B Hc = 1,400 Oe (BH)max = 0.9 × 10.sup.6 G.Oe'
+  note: converted from 2400 G. Three orthogonal remanences of one crystal (sum of Br/Js over three axes constrains
+    the variant distribution).
+- id: mnal_sc_sa_kubo1976_ex8_binary
+  phase: tau-MnAl
+  route: SC+SA
+  process: binary Mn-Al epsilon grain (3-5 mm, 71.81 Mn, 28.19 Al wt.%, from 1 week at 1100-1200 C + water quench)
+    compressed at 530 C, 40 kg/mm2, theta1=55, to -14.7%
+  conditions:
+    field_T: 0
+    T_process_K: 803
+    stress_MPa: 392
+    composition_wt: 71.81 Mn, 28.19 Al
+  quantity: Br
+  value: 0.135
+  unit: T
+  uncertainty: null
+  measured_along: not stated (isotropic)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 8
+  quote: 'The test piece was found out to be an isotropic magnet; its elongation was isotropic, and its magnetic
+    characteristics were: Br = 1,350 G .sub.B Hc = 650 Oe BHmax = 0.2 × 10.sup.6 G.Oe'
+  note: 'converted from 1350 G. Binary: tau + beta-Mn + AlMn(gamma), ''the orientation of the τ phase was barely
+    recognizable''.'
+- id: mnal_ds_sa_kubo1976_ex10_press
+  phase: tau-MnAl-C
+  route: DS+SA
+  process: chill-mould columnar casting (71.83 Mn, 27.19 Al, 0.98 C wt.%), M treatment 850 C 20 min, quenched (eps_c
+    + lamellar Mn3AlC); 6 mm cube (one face perpendicular to the columnar growth direction) compressed at 650 C,
+    45 kg/mm2, -25.5%, pressing axis perpendicular to the growth direction (growth direction lies in the plane perpendicular
+    to pressing, per the measured directions); tempered 570 C 4 h
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    stress_MPa: 441
+    parent_texture: columnar chill-cast epsilon grains (growth direction texture not measured)
+    BHmax_kJ_m3: 8.8
+  quantity: Br
+  value: 0.28
+  unit: T
+  uncertainty: null
+  measured_along: pressing direction (perpendicular to the columnar growth direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 10
+  quote: 'Its magnetic characteristics, as measured in the pressuring direction, were found to be: Br = 2,800 G
+    .sub.B Hc = 1,500 Oe (BH).sub.max = 1.1 × 10.sup.6 G.Oe'
+  note: 'converted from 2800 G. Three orthogonal directions of one sample: pressing direction; perpendicular to
+    pressing and parallel to the former columnar growth direction; and the third orthogonal direction (patent wording).'
+- id: mnal_ds_sa_kubo1976_ex10_par_growth
+  phase: tau-MnAl-C
+  route: DS+SA
+  process: chill-mould columnar casting (71.83 Mn, 27.19 Al, 0.98 C wt.%), M treatment 850 C 20 min, quenched (eps_c
+    + lamellar Mn3AlC); 6 mm cube (one face perpendicular to the columnar growth direction) compressed at 650 C,
+    45 kg/mm2, -25.5%, pressing axis perpendicular to the growth direction (growth direction lies in the plane perpendicular
+    to pressing, per the measured directions); tempered 570 C 4 h
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    stress_MPa: 441
+    parent_texture: columnar chill-cast epsilon grains (growth direction texture not measured)
+    BHmax_kJ_m3: 28.6
+  quantity: Br
+  value: 0.43
+  unit: T
+  uncertainty: null
+  measured_along: perpendicular to pressing and parallel to the columnar growth direction before pressing
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 10
+  quote: 'In one direction at a right angle to the pressuring direction and parallel to the growing direction of
+    the columnar crystal before being pressured the magnetic characteristics were: Br = 4,300 G Hc = 2,350 Oe (BH).sub.max
+    = 3.6 × 10.sup.6 G.Oe'
+  note: 'converted from 4300 G. Three orthogonal directions of one sample: pressing direction; perpendicular to
+    pressing and parallel to the former columnar growth direction; and the third orthogonal direction (patent wording).'
+- id: mnal_ds_sa_kubo1976_ex10_perp2
+  phase: tau-MnAl-C
+  route: DS+SA
+  process: chill-mould columnar casting (71.83 Mn, 27.19 Al, 0.98 C wt.%), M treatment 850 C 20 min, quenched (eps_c
+    + lamellar Mn3AlC); 6 mm cube (one face perpendicular to the columnar growth direction) compressed at 650 C,
+    45 kg/mm2, -25.5%, pressing axis perpendicular to the growth direction (growth direction lies in the plane perpendicular
+    to pressing, per the measured directions); tempered 570 C 4 h
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    stress_MPa: 441
+    parent_texture: columnar chill-cast epsilon grains (growth direction texture not measured)
+    BHmax_kJ_m3: 39.0
+  quantity: Br
+  value: 0.475
+  unit: T
+  uncertainty: null
+  measured_along: the other direction perpendicular to pressing
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 10
+  quote: 'In another direction at a right angle to the pressuring direction: Br = 4,750 G Hc = 2,400 Oe (BH).sub.max
+    = 4.9 × 10.sup.6 G.Oe'
+  note: 'converted from 4750 G. Three orthogonal directions of one sample: pressing direction; perpendicular to
+    pressing and parallel to the former columnar growth direction; and the third orthogonal direction (patent wording).'
+- id: mnal_isotropic_kubo1976_no17
+  phase: tau-MnAl-C
+  route: isotropic
+  process: alloy No. 17 homogenised 1150 C 2 h, quenched (eps), tempered 700 C 30 min (tau_c)
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 6.4
+    same_alloy_extruded: mnal_hd_kubo1976_t11_* (known-case file)
+  quantity: Br
+  value: 0.32
+  unit: T
+  uncertainty: null
+  measured_along: not stated (isotropic bulk)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 15, Table 10, code i (700 C)
+  quote: For the test specimen of No. 17, the magnetic characteristics and principal phase were observed after it
+    was tempered for 30 minutes in the temperature range of 480° - 830°C. These results are shown in Table 10. ...
+    i 700 3200 650 0.8 τ.sub.c
+  note: converted from 3200 G. Isotropic reference for the same alloy that reaches 6450 G after extrusion at 650-700
+    C (Table 11). Table 10 lists two rows coded 'i' (700 and 800 C); this is the 700 C row.
+- id: mnal_hd_kubo1977_ex22_dieupset
+  phase: tau-MnAl-C
+  route: HD
+  process: alloy No. 10 homogenised, quenched, tempered 550 C 30 min, upset in a 40 mm die at 750 C (20x35 mm ->
+    40x8.8 mm); cube from outer periphery
+  conditions:
+    field_T: 0
+    T_process_K: 1023
+    magnet_axis: diameter (radial) direction
+    composition_wt: 68.53 Mn, 30.95 Al, 0.52 C
+    BHmax_kJ_m3: 42.2
+  quantity: Br
+  value: 0.55
+  unit: T
+  uncertainty: null
+  measured_along: diameter direction (preferred)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic permanent magnet of Mn-Al-C alloy (US Patent 4,023,991)
+    first_author: Kubo, Takao
+    year: 1977
+    url: https://patents.google.com/patent/US4023991A/en
+    evidence: full_text
+    locator: Example 22
+  quote: 'From the outer peripheral part of this test piece, a cube of 8.8 × 8.8 × 8.8 mm was cut out. By the measurement
+    of its magnetic characteristics, it was found out to be an anisotropic magnet with its preferred direction of
+    magnetization in its diameter direction. The magnetic characteristics in the preferred direction of magnetization
+    observed were: Br = 5500 G B HC = 2400 Oe (BH) max 32 5.3 = 10 6 G.Oe.'
+  note: converted from 5500 G. Patent prints '(BH) max 32 5.3 = 10 6 G.Oe' (garbled; 5.3 x 10^6 G.Oe).
+- id: mnal_hd_kubo1977_ex23_rolling
+  phase: tau-MnAl-C
+  route: HD
+  process: 30x30x150 mm casting homogenised 1150 C 2 h, quenched 1000->600 C at ~400 C/min, tempered 600 C 30 min,
+    groove-rolled in 5 passes to 10 mm thickness (30 mm groove)
+  conditions:
+    field_T: 0
+    magnet_axis: rolling direction
+    composition_wt: 69.28 Mn, 30.28 Al, 0.49 C
+    BHmax_kJ_m3: 52.5
+  quantity: Br
+  value: 0.645
+  unit: T
+  uncertainty: null
+  measured_along: rolling direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic permanent magnet of Mn-Al-C alloy (US Patent 4,023,991)
+    first_author: Kubo, Takao
+    year: 1977
+    url: https://patents.google.com/patent/US4023991A/en
+    evidence: full_text
+    locator: Example 23
+  quote: 'The formed test piece turned out to be an anisotropic magnet with its preferred direction of magnetization
+    in the rolling direction of magnetization were found to be: Br = 6450 G B HC = 2500 Oe (BH) max = 6.6 × 10 6
+    G.Oe.'
+  note: converted from 6450 G. Rolling temperature not stated in the quoted example.
+- id: mnal_hd_kubo1977_ex28_binary
+  phase: tau-MnAl
+  route: HD
+  process: binary Mn-Al (71.62 Mn, 28.38 Al wt.%) quenched from 1000 C (epsilon only), compressed 50% at 650 C,
+    45 kg/mm2
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    composition_wt: 71.62 Mn, 28.38 Al
+  quantity: Br
+  value: 0.13
+  unit: T
+  uncertainty: null
+  measured_along: not stated (isotropic)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic permanent magnet of Mn-Al-C alloy (US Patent 4,023,991)
+    first_author: Kubo, Takao
+    year: 1977
+    url: https://patents.google.com/patent/US4023991A/en
+    evidence: full_text
+    locator: Example 28
+  quote: 'This cylindrical test piece in the ε phase was compressed to a degree of deformation of -50% by applying
+    a pressuring force of 45 kg/mm 2 at a temperature of 650° C in the axial direction of its cylinder. The test
+    piece after being compressed was found to be isotropic, giving low magnetic characteristics as: Br = 1,300 G'
+  note: 'converted from 1300 G. Binary epsilon deformed: isotropic, low properties.'
+- id: mnal_hd_kojima1979_dieupset
+  phase: tau-MnAl-C
+  route: HD
+  process: '72.0 Mn, 27.0 Al, 1.0 C wt.% (with/without 3 wt.% Cu): 1120 C 1 h, quenched in silicone oil, annealed
+    650 C 1 h, die-upset 50% at 720 C'
+  conditions:
+    field_T: 0
+    T_process_K: 993
+    composition_wt: 72.0 Mn, 27.0 Al, 1.0 C
+    BHmax_kJ_m3: 17.1
+  quantity: texture_metric
+  value: isotropic after die-upsetting (both samples)
+  unit: qualitative
+  uncertainty: null
+  measured_along: not stated
+  measurement: not stated
+  n_samples: 2
+  source:
+    doi: null
+    title: Permanent magnetic Mn-Al-C alloy (US Patent 4,133,703)
+    first_author: Kojima, Shigeru
+    year: 1979
+    url: https://patents.google.com/patent/US4133703A/en
+    evidence: full_text
+    locator: Description, die-upsetting experiment
+  quote: Both of the upset samples were isotropic permanent magnets and the magnetic characteristics were improved
+    by die-upsetting. The sample without copper and the one with copper exhibited 2.15 Mg.Oe and 2.10 Mg.Oe of (BH)max,
+    respectively.
+  note: High-Mn composition (72 wt.%) without M treatment; consistent with US 3,976,519 finding that 70.5-73 wt.%
+    Mn quench-tempered alloys hardly anisotropise.
+- id: mnal_am_tiden2024_ref_mrms
+  phase: tau-MnAl-C
+  route: AM
+  process: L-PBF (EOS M100, 20 W, 240 mm/s, double melting) of gas-atomised MnAl(C) (72.2 Mn, 27.2 Al, 0.61 C wt.%),
+    then 560 C 5 min (uncoated reference powder)
+  conditions:
+    field_T: 0
+    T_process_K: 833
+    parent_texture: epsilon <001> fibre along BD (stronger than GO sample; XRD)
+    magnet_axis: build direction
+    density_rel: 0.91
+    Mr_Am2_kg: 33
+    M_at_max_field_Am2_kg: about 73 (read from Fig. 7)
+    max_field_kA_m: 1500
+  quantity: Mr_over_Ms
+  value: 0.45
+  unit: ''
+  uncertainty: 0.03
+  measured_along: build direction (field along a cube edge in BD)
+  measurement: VSM, max ~1500 kA/m (~1.9 T, not saturating for tau), room temperature, NOT corrected for demagnetisation
+  n_samples: 1
+  source:
+    doi: 10.1038/s41598-024-51283-5
+    title: Crack reduction in laser powder bed fusion of MnAl(C) using graphene oxide coated powders
+    first_author: Tidén, Simon
+    year: 2024
+    url: https://www.nature.com/articles/s41598-024-51283-5.pdf
+    evidence: full_text
+    locator: Magnetic properties section; Fig. 7 (M at max field read from plot)
+  quote: The reference showed a coercivity of 139 kA/m and a remanence of 33 Am2/kg while the 0.2 wt.% GO sample
+    showed a slightly lower coercivity of 130 kA/m and a remanence of 30 Am2/kg.
+  note: '0.45 = 33 / ~73 computed here (denominator read from Fig. 7, +-3 Am2/kg). Phase fractions after annealing
+    in Table 1 (tau with beta and gamma2). Measured also perpendicular to BD: ''The magnetic properties of the printed
+    samples were isotropic when comparing the measurements parallel (Fig. 7) and perpendicular (Fig. SI 8) to the
+    building direction.'''
+- id: mnal_am_tiden2024_isotropy
+  phase: tau-MnAl-C
+  route: AM
+  process: L-PBF (EOS M100, 20 W, 240 mm/s, double melting) of gas-atomised MnAl(C) (72.2 Mn, 27.2 Al, 0.61 C wt.%),
+    then 560 C 5 min (uncoated reference and 0.2 wt.% GO-coated powder)
+  conditions:
+    field_T: 0
+    T_process_K: 833
+    parent_texture: epsilon <001> fibre along BD
+    magnet_axis: build direction
+  quantity: texture_metric
+  value: 'magnetically isotropic: loops parallel and perpendicular to the build direction equivalent'
+  unit: qualitative
+  uncertainty: null
+  measured_along: parallel vs perpendicular to build direction
+  measurement: VSM, not demagnetisation-corrected
+  n_samples: 2
+  source:
+    doi: 10.1038/s41598-024-51283-5
+    title: Crack reduction in laser powder bed fusion of MnAl(C) using graphene oxide coated powders
+    first_author: Tidén, Simon
+    year: 2024
+    url: https://www.nature.com/articles/s41598-024-51283-5.pdf
+    evidence: full_text
+    locator: Magnetic properties section
+  quote: The magnetic properties of the printed samples were isotropic when comparing the measurements parallel
+    (Fig. 7) and perpendicular (Fig. SI 8) to the building direction.
+  note: ''
+- id: mnal_am_tiden2024_tautexture
+  phase: tau-MnAl-C
+  route: AM
+  process: L-PBF (EOS M100, 20 W, 240 mm/s, double melting) of gas-atomised MnAl(C) (72.2 Mn, 27.2 Al, 0.61 C wt.%),
+    then 560 C 5 min
+  conditions:
+    field_T: 0
+    T_process_K: 833
+    parent_texture: epsilon <001> fibre along BD, stronger in uncoated reference
+  quantity: texture_metric
+  value: texture differences of the epsilon parent not retained in tau after annealing (XRD)
+  unit: qualitative
+  uncertainty: null
+  measured_along: XRD with diffraction vector parallel to build direction
+  measurement: XRD (Cu Ka), Rietveld
+  n_samples: 2
+  source:
+    doi: 10.1038/s41598-024-51283-5
+    title: Crack reduction in laser powder bed fusion of MnAl(C) using graphene oxide coated powders
+    first_author: Tidén, Simon
+    year: 2024
+    url: https://www.nature.com/articles/s41598-024-51283-5.pdf
+    evidence: full_text
+    locator: Annealing of printed MnAl(C) section
+  quote: texture difference in the in the ε-phase of the as-printed samples were not retained in the τ-phase after
+    annealing, which is consistent with previous reports22.
+  note: '''reports22'' = ref. 22 (Pacheco et al. 2023).'
+- id: mnal_fp_jia2022_nanoparticles
+  phase: tau-MnAl
+  route: FP
+  process: twin-free single-crystal tau nanoparticles (calciothermic reduction at 1100 C, mean 9.35 nm) aligned
+    in 2 T and polymer-bonded
+  conditions:
+    field_T: 2
+    parent_texture: none
+    magnet_axis: alignment field direction
+    particle_size_nm: 9.35
+    isotropic_reference: bonded magnet without field (Fig. 5d; value not stated in text)
+  quantity: Mr_over_Ms
+  value: 0.7
+  unit: ''
+  uncertainty: null
+  measured_along: parallel to alignment field
+  measurement: hysteresis loops to 2 T maximum (not saturating for tau), room temperature presumably; demagnetisation
+    correction not stated
+  n_samples: 1
+  source:
+    doi: 10.21203/rs.3.rs-1850627/v1
+    title: Roadmap towards optimal magnetic properties in rare-earth-free L10-MnAl permanent magnets
+    first_author: Jia, Yuxiao
+    year: 2022
+    url: https://www.researchsquare.com/article/rs-1850627/latest.pdf
+    evidence: full_text
+    locator: Results, Fig. 5d
+  quote: These twin-free single-crystal nanoparticles were extracted and aligned under the external field of 2 T
+    to fabricate a bonded magnet. The magnetic hysteresis loops of the bonded magnet were measured parallel and
+    perpendicular to the alignment field, as displayed in Fig. 5d. For comparison, hysteresis loop of another bonded
+    magnet without applying external field was also measured. Conspicuous texture features can be observed, and
+    the coercivity is approximately 0.15 T. An unprecedented for MnAl remanence ratio of 0.7 was achieved in the
+    field-aligned bonded magnet.
+  note: Preprint; published as Acta Mater. 2023 118654 (not read). 'remanence ratio' presumably Mr/M(2 T). Coercivity
+    ~0.15 T.
+- id: mnal_isotropic_jia2022_review_cast
+  phase: tau-MnAl(C)
+  route: isotropic
+  process: as-cast MnAl (twinned polycrystals)
+  conditions:
+    note_on_value: upper bound or approximate value as summarised (≤, <, ~)
+  quantity: Mr_over_Ms
+  value: 0.2
+  unit: ''
+  uncertainty: null
+  measured_along: not stated (best direction)
+  measurement: as reported in the originals (not read here)
+  n_samples: literature range
+  source:
+    doi: 10.21203/rs.3.rs-1850627/v1
+    title: Roadmap towards optimal magnetic properties in rare-earth-free L10-MnAl permanent magnets
+    first_author: Jia, Yuxiao
+    year: 2022
+    url: https://www.researchsquare.com/article/rs-1850627/latest.pdf
+    evidence: review
+    locator: Results, discussion of Fig. 5e
+  quote: The casting method normally does not have an effective control of crystallographic textures, the as-cast
+    MnAl magnets generally have twinned polycrystal microstructure with remanence ratio of ~0.2 24.
+  note: 'Jia et al. summary of the literature (Fig. 5e); originals: ref. 24 Zhao et al. J. Alloys Compd. 755 (2018)
+    257. Value is the bound/approximation quoted (''≤0.4'', ''<0.45'', ''~0.2'', ''~0.64''), not a single measurement.'
+- id: mnal_ds_jia2022_review
+  phase: tau-MnAl(C)
+  route: DS
+  process: directional solidification / solidification-induced texture of MnAl(C)
+  conditions:
+    note_on_value: upper bound or approximate value as summarised (≤, <, ~)
+  quantity: Mr_over_Ms
+  value: 0.4
+  unit: ''
+  uncertainty: null
+  measured_along: not stated (best direction)
+  measurement: as reported in the originals (not read here)
+  n_samples: literature range
+  source:
+    doi: 10.21203/rs.3.rs-1850627/v1
+    title: Roadmap towards optimal magnetic properties in rare-earth-free L10-MnAl permanent magnets
+    first_author: Jia, Yuxiao
+    year: 2022
+    url: https://www.researchsquare.com/article/rs-1850627/latest.pdf
+    evidence: review
+    locator: Results, discussion of Fig. 5e
+  quote: Through the strategy of solidification induced texture (e.g. directional solidification), weak shape magnetic
+    anisotropy with the remanence ratio of ≤0.4 is realized in the τ-phase magnets 21,23,29.
+  note: 'Jia et al. summary of the literature (Fig. 5e); originals: refs. 21 Zhang C. et al. Scripta Mater. 143
+    (2018) 72; 23 Jia et al. Intermetallics 96 (2018) 41; 29 Zhao et al. JMMM 483 (2019) 164. Value is the bound/approximation
+    quoted (''≤0.4'', ''<0.45'', ''~0.2'', ''~0.64''), not a single measurement.'
+- id: mnal_fp_jia2022_review_milled
+  phase: tau-MnAl(C)
+  route: FP
+  process: magnetic alignment of ball-milled (twinned, polycrystalline) MnAl(C) powders
+  conditions:
+    note_on_value: upper bound or approximate value as summarised (≤, <, ~)
+  quantity: Mr_over_Ms
+  value: 0.45
+  unit: ''
+  uncertainty: null
+  measured_along: not stated (best direction)
+  measurement: as reported in the originals (not read here)
+  n_samples: literature range
+  source:
+    doi: 10.21203/rs.3.rs-1850627/v1
+    title: Roadmap towards optimal magnetic properties in rare-earth-free L10-MnAl permanent magnets
+    first_author: Jia, Yuxiao
+    year: 2022
+    url: https://www.researchsquare.com/article/rs-1850627/latest.pdf
+    evidence: review
+    locator: Results, discussion of Fig. 5e
+  quote: Using the strategy of magnetic field induced texture (e.g. magnetic alignment to ball-milled powders),
+    the microstructure of polycrystal with twins still exist, thus only improve the remanence ratio to lower than
+    0.45 34,35.
+  note: 'Jia et al. summary of the literature (Fig. 5e); originals: refs. 34 Jian et al. J. Alloys Compd. 622 (2015)
+    524; 35 Jia et al. JMMM 530 (2021) 167933. Value is the bound/approximation quoted (''≤0.4'', ''<0.45'', ''~0.2'',
+    ''~0.64''), not a single measurement.'
+- id: mnal_sa_jia2022_review
+  phase: tau-MnAl(C)
+  route: SA
+  process: stress applied near the epsilon->tau transformation temperature
+  conditions:
+    note_on_value: upper bound or approximate value as summarised (≤, <, ~)
+  quantity: Mr_over_Ms
+  value: 0.64
+  unit: ''
+  uncertainty: null
+  measured_along: not stated (best direction)
+  measurement: as reported in the originals (not read here)
+  n_samples: literature range
+  source:
+    doi: 10.21203/rs.3.rs-1850627/v1
+    title: Roadmap towards optimal magnetic properties in rare-earth-free L10-MnAl permanent magnets
+    first_author: Jia, Yuxiao
+    year: 2022
+    url: https://www.researchsquare.com/article/rs-1850627/latest.pdf
+    evidence: review
+    locator: Results, discussion of Fig. 5e
+  quote: Especially, if the stress is applied ... near the temperature at which the ε → τ phase transformation is
+    triggered, a significantly enhanced [001]τ texture can be realized, the remanence ratio is also increased to
+    ~0.64 45,48.
+  note: 'Jia et al. summary of the literature (Fig. 5e); originals: refs. 45 Jia et al. Acta Mater. 232 (2022) 117892;
+    48 Thielsch et al. JMMM 426 (2017) 25 (the latter is hot-extruded MnAl-C). Value is the bound/approximation
+    quoted (''≤0.4'', ''<0.45'', ''~0.2'', ''~0.64''), not a single measurement.'
+- id: mnal_fp_jia2021_flakes
+  phase: tau-MnAl
+  route: FP
+  process: tau precursor ball-milled in ethanol (wet, thin polycrystalline flakes) vs argon (dry, isotropic particles),
+    annealed, bonded magnets
+  conditions:
+    magnet_axis: not stated in abstract
+  quantity: texture_metric
+  value: wet-milled flakes show stronger internal texture; dry-milled particles isotropic; bonded magnets from wet-milled
+    powder have higher remanence
+  unit: qualitative
+  uncertainty: null
+  measured_along: not stated
+  measurement: not stated in abstract
+  n_samples: several
+  source:
+    doi: 10.1016/j.jmmm.2021.167933
+    title: Tailoring precursor and medium of ball milling to optimize magnetic properties in Mn-Al bonded permanent
+      magnets
+    first_author: Jia, Yuxiao
+    year: 2021
+    url: https://research.buaa.edu.cn/en/publications/tailoring-precursor-and-medium-of-ball-milling-to-optimize-magnet/
+    evidence: abstract
+    locator: abstract (BUAA research portal)
+  quote: The former condition can fabricate thin polycrystalline flakes, and form stronger texture inside simultaneously,
+    while the latter condition produces isotropic polycrystalline particles.
+  note: Whether the bonded magnets were field-aligned is not stated in the abstract.
+- id: mnal_ep_takata2018_sto
+  phase: tau-MnAl
+  route: EP
+  process: MBE 15 nm MnAl on 5 nm Mn4N(001) buffer on SrTiO3(001), Ts = 150 C
+  conditions:
+    substrate: SrTiO3(001)/Mn4N
+    magnet_axis: film normal (c-axis)
+    Ku_Merg_cm3: 6.0
+    Hc_kOe: 7
+  quantity: Mr_over_Ms
+  value: 0.95
+  unit: ''
+  uncertainty: null
+  measured_along: out-of-plane
+  measurement: VSM at room temperature / SQUID 300 K; Mn4N layer (Ms 110 emu/cm3) exchange-coupled contributes
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jcrysgro.2018.01.008
+    title: Structural characterization and magnetic properties of L10-MnAl films grown on different underlayers
+      by molecular beam epitaxy
+    first_author: Takata, Fumiya
+    year: 2018
+    url: https://tsukuba.repo.nii.ac.jp/record/47578/files/JCG_486.pdf
+    evidence: full_text
+    locator: Section 3, Fig. 7(c)
+  quote: Moreover, an out-ofplane remanence ratio (M R /M S ) of 0.95 and a coercivity (H C ) of 7 kOe were obtained
+    for this sample, while M R /M S = 0.5 and H C = 4 kOe were obtained for MnAl/Mn 4 N film on MgO.
+  note: Accepted manuscript text (Tsukuba repository).
+- id: mnal_ep_takata2018_mgo_mn4n
+  phase: tau-MnAl
+  route: EP
+  process: MBE 15 nm MnAl on 5 nm Mn4N(001) buffer on MgO(001), Ts = 150 C
+  conditions:
+    substrate: MgO(001)/Mn4N
+    magnet_axis: film normal
+    Ku_Merg_cm3: 5.0
+    Hc_kOe: 4
+  quantity: Mr_over_Ms
+  value: 0.5
+  unit: ''
+  uncertainty: null
+  measured_along: out-of-plane
+  measurement: VSM at room temperature
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jcrysgro.2018.01.008
+    title: Structural characterization and magnetic properties of L10-MnAl films grown on different underlayers
+      by molecular beam epitaxy
+    first_author: Takata, Fumiya
+    year: 2018
+    url: https://tsukuba.repo.nii.ac.jp/record/47578/files/JCG_486.pdf
+    evidence: full_text
+    locator: Section 3, Fig. 7(b)
+  quote: Moreover, an out-ofplane remanence ratio (M R /M S ) of 0.95 and a coercivity (H C ) of 7 kOe were obtained
+    for this sample, while M R /M S = 0.5 and H C = 4 kOe were obtained for MnAl/Mn 4 N film on MgO.
+  note: ''
+- id: mnal_ep_takata2018_mgo
+  phase: tau-MnAl
+  route: EP
+  process: MBE MnAl directly on MgO(001) (Ts = 200 C, RTA 300 C) - cubic-like structure
+  conditions:
+    substrate: MgO(001)
+    Ku_Merg_cm3: 0.9
+  quantity: texture_metric
+  value: magnetization curves almost isotropic (in-plane vs out-of-plane)
+  unit: qualitative
+  uncertainty: null
+  measured_along: in-plane vs out-of-plane
+  measurement: VSM
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jcrysgro.2018.01.008
+    title: Structural characterization and magnetic properties of L10-MnAl films grown on different underlayers
+      by molecular beam epitaxy
+    first_author: Takata, Fumiya
+    year: 2018
+    url: https://tsukuba.repo.nii.ac.jp/record/47578/files/JCG_486.pdf
+    evidence: full_text
+    locator: Section 3, Fig. 7(a)
+  quote: On the MgO substrate (Fig. 7(a)), the magnetization curves were almost isotropic, and M S was 360 ± 20
+    emu/cm3.
+  note: Authors attribute this to a cubic (not tetragonal) MnAl structure on MgO.
+- id: mnal_ep_takata2018_rocking
+  phase: tau-MnAl
+  route: EP
+  process: MBE 15 nm MnAl on Mn4N(001)/SrTiO3(001)
+  conditions:
+    substrate: SrTiO3(001)/Mn4N
+    order_parameter_S: 0.86
+  quantity: texture_metric
+  value: 0.08
+  unit: rocking_fwhm_deg
+  uncertainty: null
+  measured_along: MnAl(002) omega-scan
+  measurement: XRD rocking curve, Cu Ka
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jcrysgro.2018.01.008
+    title: Structural characterization and magnetic properties of L10-MnAl films grown on different underlayers
+      by molecular beam epitaxy
+    first_author: Takata, Fumiya
+    year: 2018
+    url: https://tsukuba.repo.nii.ac.jp/record/47578/files/JCG_486.pdf
+    evidence: full_text
+    locator: Section 3
+  quote: The FWHM of the MnAl(002) peak was a markedly small value of 0.08°.
+  note: (002) reflection of the fct setting = c-axis normal to film.
+- id: mnal_ep_huang2015
+  phase: tau-MnAl
+  route: EP
+  process: DC magnetron sputtered MnAl at 530 C on MgO seed layer on Si, then 350 C anneal in 4 kOe field perpendicular
+    to film
+  conditions:
+    substrate: Si/MgO
+    magnet_axis: film normal
+    field_T: 0.4
+    Ku_erg_cm3: 6500000.0
+    Hc_kOe: 8
+  quantity: Mr_over_Ms
+  value: 0.8
+  unit: ''
+  uncertainty: null
+  measured_along: out-of-plane
+  measurement: not stated in abstract
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4915093
+    title: Fabrication of MnAl thin films with perpendicular anisotropy on Si substrates
+    first_author: Huang, Efrem Y.
+    year: 2015
+    url: https://api.openalex.org/works/doi:10.1063/1.4915093
+    evidence: abstract
+    locator: abstract
+  quote: Strong perpendicular magnetic anisotropy with coercivity Hc of 8 kOe, Ku of over 6.5 × 106 erg/cm3, saturation
+    magnetization Ms of 300 emu/cm3, and out-of-plane squareness Mr/Ms of 0.8 were achieved. These MnAl film properties
+    were obtained via DC magnetron sputtering at 530 °C, followed by 350 °C annealing under a 4 kOe magnetic field
+    oriented perpendicular to the film plane.
+  note: The film was already tau (deposited at 530 C) before the field anneal at 350 C (below Tc), so the field
+    anneal is not an epsilon->tau formation-in-field experiment.
+- id: mnal_ep_sands1990
+  phase: tau-MnAl
+  route: EP
+  process: MBE tau-MnAl films on GaAs(001)
+  conditions:
+    substrate: GaAs(001)
+    magnet_axis: film normal
+  quantity: texture_metric
+  value: c-axis of tetragonal cell normal to the {100}GaAs surface (RHEED, XRD); Hall hysteresis consistent with
+    perpendicular easy axis
+  unit: qualitative
+  uncertainty: null
+  measured_along: film normal
+  measurement: RHEED, XRD, Hall effect
+  n_samples: 1
+  source:
+    doi: 10.1063/1.103826
+    title: Epitaxial ferromagnetic τ-MnAl films on GaAs
+    first_author: Sands, T.
+    year: 1990
+    url: https://api.openalex.org/works/doi:10.1063/1.103826
+    evidence: abstract
+    locator: abstract
+  quote: Reflection high-energy electron diffraction and x-ray diffraction show that the τ-phase films grow with
+    the c axis of the tetragonal unit cell normal to the {100}GaAs substrate surface.
+  note: ''
+- id: mnal_meltspun_pasko2014a
+  phase: tau-MnAl-C
+  route: 'other: melt-spun ribbon, annealed (no alignment step)'
+  process: Mn54Al44C2 induction melted, melt-spun (25 m/s, ~25 um thick ribbons), annealed 550 C 10 min in vacuum
+    furnace
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    parent_texture: 'epsilon ribbons: noticeable (001) preferred orientation (Pasko 2013)'
+    magnet_axis: not stated
+    phase_content: 100 wt.% tau
+  quantity: Br
+  value: 0.31
+  unit: T
+  measured_along: not stated (ribbon)
+  measurement: Lake Shore 7400 VSM, room temperature, max applied field 1.9 T (NOT saturating; tau needs > ~5 T);
+    demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1088/0953-8984/26/6/064203
+    title: Spark plasma sintering of Mn–Al–C hard magnets
+    first_author: Pasko, A
+    year: 2014
+    url: https://hal.science/hal-00973537/file/MnAlC_SPS.pdf
+    evidence: full_text
+    locator: Table 2 (550 C row); Table 1
+  quote: Table 2. Magnetic properties of annealed at 550 °C melt-spun ribbons and sintered at higher temperatures
+    (650–950 °C) bulk samples in applied field of 1.9 T. ... Mn54 Al44 C2 550 0.55 0.31 0.18
+  note: 'Br = mu0*Mr = 0.31 T; mu0*M at 1.9 T = 0.55 T (Table 2 "Magnetization mu0 Ms" is the 1.9 T value, not saturation);
+    ratio Mr/M(1.9 T) = 0.56 (computed). Unsaturated minor-loop values: not a clean Mr/Ms test.'
+- id: mnal_meltspun_pasko2014b
+  phase: tau-MnAl-C
+  route: 'other: melt-spun ribbon, annealed (no alignment step)'
+  process: Mn49Al49C2 induction melted, melt-spun (25 m/s, ~25 um thick ribbons), annealed 550 C 10 min in vacuum
+    furnace
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    parent_texture: 'epsilon ribbons: noticeable (001) preferred orientation (Pasko 2013)'
+    magnet_axis: not stated
+    phase_content: 70 wt.% tau + 30 wt.% gamma2
+  quantity: Br
+  value: 0.22
+  unit: T
+  measured_along: not stated (ribbon)
+  measurement: Lake Shore 7400 VSM, room temperature, max applied field 1.9 T (NOT saturating; tau needs > ~5 T);
+    demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1088/0953-8984/26/6/064203
+    title: Spark plasma sintering of Mn–Al–C hard magnets
+    first_author: Pasko, A
+    year: 2014
+    url: https://hal.science/hal-00973537/file/MnAlC_SPS.pdf
+    evidence: full_text
+    locator: Table 2 (550 C row); Table 1
+  quote: Table 2. Magnetic properties of annealed at 550 °C melt-spun ribbons and sintered at higher temperatures
+    (650–950 °C) bulk samples in applied field of 1.9 T. ... Mn49 Al49 C2 550 0.38 0.22 0.23
+  note: 'Br = mu0*Mr = 0.22 T; mu0*M at 1.9 T = 0.38 T (Table 2 "Magnetization mu0 Ms" is the 1.9 T value, not saturation);
+    ratio Mr/M(1.9 T) = 0.58 (computed). Unsaturated minor-loop values: not a clean Mr/Ms test.'
+- id: mnal_meltspun_pasko2014c
+  phase: tau-MnAl
+  route: 'other: melt-spun ribbon, annealed (no alignment step)'
+  process: Mn55Al45 induction melted, melt-spun (25 m/s, ~25 um thick ribbons), annealed 550 C 10 min in vacuum
+    furnace
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    parent_texture: 'epsilon ribbons: noticeable (001) preferred orientation (Pasko 2013)'
+    magnet_axis: not stated
+    phase_content: 75 wt.% tau + 25 wt.% beta
+  quantity: Br
+  value: 0.24
+  unit: T
+  measured_along: not stated (ribbon)
+  measurement: Lake Shore 7400 VSM, room temperature, max applied field 1.9 T (NOT saturating; tau needs > ~5 T);
+    demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1088/0953-8984/26/6/064203
+    title: Spark plasma sintering of Mn–Al–C hard magnets
+    first_author: Pasko, A
+    year: 2014
+    url: https://hal.science/hal-00973537/file/MnAlC_SPS.pdf
+    evidence: full_text
+    locator: Table 2 (550 C row); Table 1
+  quote: Table 2. Magnetic properties of annealed at 550 °C melt-spun ribbons and sintered at higher temperatures
+    (650–950 °C) bulk samples in applied field of 1.9 T. ... Mn55 Al45 550 0.43 0.24 0.14
+  note: 'Br = mu0*Mr = 0.24 T; mu0*M at 1.9 T = 0.43 T (Table 2 "Magnetization mu0 Ms" is the 1.9 T value, not saturation);
+    ratio Mr/M(1.9 T) = 0.56 (computed). Unsaturated minor-loop values: not a clean Mr/Ms test.'
+- id: mnal_sps_pasko2014a
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn54Al44C2 melt-spun ribbons hand-ground, SPS at 650 C, 5 min dwell, 100 K/min, 70 MPa uniaxial (epsilon->tau
+    during heating)
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (ground ribbons)
+    magnet_axis: not stated
+    density_rel: 0.88
+    phase_content: 84 wt.% tau, 6 % gamma2 (+Mn3AlC)
+  quantity: Br
+  value: 0.26
+  unit: T
+  measured_along: not stated
+  measurement: Lake Shore 7400 VSM, room temperature, max applied field 1.9 T (NOT saturating; tau needs > ~5 T);
+    demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1088/0953-8984/26/6/064203
+    title: Spark plasma sintering of Mn–Al–C hard magnets
+    first_author: Pasko, A
+    year: 2014
+    url: https://hal.science/hal-00973537/file/MnAlC_SPS.pdf
+    evidence: full_text
+    locator: Table 2; Table 1 (phases, relative density)
+  quote: Table 2. Magnetic properties of annealed at 550 °C melt-spun ribbons and sintered at higher temperatures
+    (650–950 °C) bulk samples in applied field of 1.9 T. ... 650 0.50 0.26 0.19
+  note: Br = mu0*Mr; mu0*M at 1.9 T = 0.5 T; ratio Mr/M(1.9 T) = 0.52 (computed). Unsaturated. Uniaxial SPS pressure
+    during the transformation could in principle bias variants; the authors call the samples isotropic (abstract).
+- id: mnal_sps_pasko2014b
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn54Al44C2 melt-spun ribbons hand-ground, SPS at 850 C, 5 min dwell, 100 K/min, 70 MPa uniaxial (sintered
+    as epsilon; tau forms on cooling)
+  conditions:
+    field_T: 0
+    T_process_K: 1123
+    parent_texture: none (ground ribbons)
+    magnet_axis: not stated
+    density_rel: 1.0
+    phase_content: 79 wt.% tau, 21 % gamma2
+  quantity: Br
+  value: 0.16
+  unit: T
+  measured_along: not stated
+  measurement: Lake Shore 7400 VSM, room temperature, max applied field 1.9 T (NOT saturating; tau needs > ~5 T);
+    demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1088/0953-8984/26/6/064203
+    title: Spark plasma sintering of Mn–Al–C hard magnets
+    first_author: Pasko, A
+    year: 2014
+    url: https://hal.science/hal-00973537/file/MnAlC_SPS.pdf
+    evidence: full_text
+    locator: Table 2; Table 1 (phases, relative density)
+  quote: Table 2. Magnetic properties of annealed at 550 °C melt-spun ribbons and sintered at higher temperatures
+    (650–950 °C) bulk samples in applied field of 1.9 T. ... 850 0.47 0.16 0.09
+  note: Br = mu0*Mr; mu0*M at 1.9 T = 0.47 T; ratio Mr/M(1.9 T) = 0.34 (computed). Unsaturated. Uniaxial SPS pressure
+    during the transformation could in principle bias variants; the authors call the samples isotropic (abstract).
+- id: mnal_sps_pasko2014c
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn54Al44C2 melt-spun ribbons hand-ground, SPS at 950 C, 5 min dwell, 100 K/min, 70 MPa uniaxial (sintered
+    as epsilon; tau forms on cooling)
+  conditions:
+    field_T: 0
+    T_process_K: 1223
+    parent_texture: none (ground ribbons)
+    magnet_axis: not stated
+    density_rel: 1.0
+    phase_content: 96 wt.% tau, 4 % gamma2
+  quantity: Br
+  value: 0.14
+  unit: T
+  measured_along: not stated
+  measurement: Lake Shore 7400 VSM, room temperature, max applied field 1.9 T (NOT saturating; tau needs > ~5 T);
+    demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1088/0953-8984/26/6/064203
+    title: Spark plasma sintering of Mn–Al–C hard magnets
+    first_author: Pasko, A
+    year: 2014
+    url: https://hal.science/hal-00973537/file/MnAlC_SPS.pdf
+    evidence: full_text
+    locator: Table 2; Table 1 (phases, relative density)
+  quote: Table 2. Magnetic properties of annealed at 550 °C melt-spun ribbons and sintered at higher temperatures
+    (650–950 °C) bulk samples in applied field of 1.9 T. ... 950 0.59 0.14 0.05
+  note: Br = mu0*Mr; mu0*M at 1.9 T = 0.59 T; ratio Mr/M(1.9 T) = 0.24 (computed). Unsaturated. Uniaxial SPS pressure
+    during the transformation could in principle bias variants; the authors call the samples isotropic (abstract).
+- id: mnal_sps_pasko2014d
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn49Al49C2 melt-spun ribbons hand-ground, SPS at 650 C, 5 min dwell, 100 K/min, 70 MPa uniaxial (epsilon->tau
+    during heating)
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (ground ribbons)
+    magnet_axis: not stated
+    density_rel: 0.92
+    phase_content: 25 wt.% tau, 67 % gamma2
+  quantity: Br
+  value: 0.08
+  unit: T
+  measured_along: not stated
+  measurement: Lake Shore 7400 VSM, room temperature, max applied field 1.9 T (NOT saturating; tau needs > ~5 T);
+    demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1088/0953-8984/26/6/064203
+    title: Spark plasma sintering of Mn–Al–C hard magnets
+    first_author: Pasko, A
+    year: 2014
+    url: https://hal.science/hal-00973537/file/MnAlC_SPS.pdf
+    evidence: full_text
+    locator: Table 2; Table 1 (phases, relative density)
+  quote: Table 2. Magnetic properties of annealed at 550 °C melt-spun ribbons and sintered at higher temperatures
+    (650–950 °C) bulk samples in applied field of 1.9 T. ... 650 0.15 0.08 0.31
+  note: Br = mu0*Mr; mu0*M at 1.9 T = 0.15 T; ratio Mr/M(1.9 T) = 0.53 (computed). Unsaturated. Uniaxial SPS pressure
+    during the transformation could in principle bias variants; the authors call the samples isotropic (abstract).
+- id: mnal_sps_pasko2014e
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn49Al49C2 melt-spun ribbons hand-ground, SPS at 850 C, 5 min dwell, 100 K/min, 70 MPa uniaxial (sintered
+    as epsilon; tau forms on cooling)
+  conditions:
+    field_T: 0
+    T_process_K: 1123
+    parent_texture: none (ground ribbons)
+    magnet_axis: not stated
+    density_rel: 0.99
+    phase_content: 35 wt.% tau, 65 % gamma2
+  quantity: Br
+  value: 0.09
+  unit: T
+  measured_along: not stated
+  measurement: Lake Shore 7400 VSM, room temperature, max applied field 1.9 T (NOT saturating; tau needs > ~5 T);
+    demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1088/0953-8984/26/6/064203
+    title: Spark plasma sintering of Mn–Al–C hard magnets
+    first_author: Pasko, A
+    year: 2014
+    url: https://hal.science/hal-00973537/file/MnAlC_SPS.pdf
+    evidence: full_text
+    locator: Table 2; Table 1 (phases, relative density)
+  quote: Table 2. Magnetic properties of annealed at 550 °C melt-spun ribbons and sintered at higher temperatures
+    (650–950 °C) bulk samples in applied field of 1.9 T. ... 850 0.22 0.09 0.13
+  note: Br = mu0*Mr; mu0*M at 1.9 T = 0.22 T; ratio Mr/M(1.9 T) = 0.41 (computed). Unsaturated. Uniaxial SPS pressure
+    during the transformation could in principle bias variants; the authors call the samples isotropic (abstract).
+- id: mnal_sps_pasko2014f
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn49Al49C2 melt-spun ribbons hand-ground, SPS at 950 C, 5 min dwell, 100 K/min, 70 MPa uniaxial (sintered
+    as epsilon; tau forms on cooling)
+  conditions:
+    field_T: 0
+    T_process_K: 1223
+    parent_texture: none (ground ribbons)
+    magnet_axis: not stated
+    density_rel: 0.99
+    phase_content: 46 wt.% tau, 54 % gamma2
+  quantity: Br
+  value: 0.09
+  unit: T
+  measured_along: not stated
+  measurement: Lake Shore 7400 VSM, room temperature, max applied field 1.9 T (NOT saturating; tau needs > ~5 T);
+    demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1088/0953-8984/26/6/064203
+    title: Spark plasma sintering of Mn–Al–C hard magnets
+    first_author: Pasko, A
+    year: 2014
+    url: https://hal.science/hal-00973537/file/MnAlC_SPS.pdf
+    evidence: full_text
+    locator: Table 2; Table 1 (phases, relative density)
+  quote: Table 2. Magnetic properties of annealed at 550 °C melt-spun ribbons and sintered at higher temperatures
+    (650–950 °C) bulk samples in applied field of 1.9 T. ... 950 0.24 0.09 0.10
+  note: Br = mu0*Mr; mu0*M at 1.9 T = 0.24 T; ratio Mr/M(1.9 T) = 0.38 (computed). Unsaturated. Uniaxial SPS pressure
+    during the transformation could in principle bias variants; the authors call the samples isotropic (abstract).
+- id: mnal_iso_juerries2020a
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn54Al44C2 induction melted, cast (11 mm Cu mould), homogenised 1100 C, quenched, annealed 720 C 10 min
+    (as-transformed, phi = 0)
+  conditions:
+    field_T: 0
+    T_process_K: 993
+    parent_texture: coarse epsilon grains without preferred orientation (authors)
+    magnet_axis: radial direction of the cylinder
+    density_rel: 1.0
+  quantity: Br
+  value: 0.3
+  unit: T
+  uncertainty: 0.01
+  measured_along: radial (perpendicular to cylinder axis)
+  measurement: Quantum Design PPMS-VSM, room temperature, max 14 T (near-saturating), demagnetisation corrected
+    (Aharoni)
+  n_samples: 1
+  source:
+    doi: 10.1038/s41598-020-64697-8
+    title: The Influence of Cu-Additions on the Microstructure, Mechanical and Magnetic Properties of MnAl-C Alloys
+    first_author: Jürries, Florian
+    year: 2020
+    url: https://oa.tib.eu/renate/handle/123456789/4956
+    evidence: full_text
+    locator: Fig. 10a (read from plot, x = 0 at phi = 0); Results text
+  quote: The values refer to measurements in the radial direction. ... The remanence of the low-Cu, annealed materials
+    was between these two values because the annealed materials were crystallographically isotropic.
+  note: 'Value read from plot (black square at phi = 0, ~0.30 T). Same sample state: J at 14 T ~0.80 T (Fig. 5,
+    see Js_same_sample record) -> Mr/Ms ~0.38 (computed), below 0.5 for this low-coercivity (~0.08 T) coarse-grained
+    isotropic bulk.'
+- id: mnal_iso_juerries2020b
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn54Al44C2 annealed 720 C 10 min (as mnal_iso_juerries2020a)
+  conditions:
+    field_T: 0
+    T_process_K: 993
+    parent_texture: none
+    magnet_axis: n/a
+    density_rel: 1.0
+  quantity: Js_same_sample
+  value: 0.8
+  unit: T
+  uncertainty: 0.02
+  measured_along: n/a
+  measurement: PPMS-VSM, room temperature, polarisation at 14 T
+  n_samples: 1
+  source:
+    doi: 10.1038/s41598-020-64697-8
+    title: The Influence of Cu-Additions on the Microstructure, Mechanical and Magnetic Properties of MnAl-C Alloys
+    first_author: Jürries, Florian
+    year: 2020
+    url: https://oa.tib.eu/renate/handle/123456789/4956
+    evidence: full_text
+    locator: Fig. 5 (read from plot, red circle at x = 0)
+  quote: Figure 5. Curie temperature, TC, of the τ-phase (black squares), κ-phase (black triangle) and polarisation
+    (red circles) of the alloy at an applied field of 14 T, J14T, as a function of Cu-content for (Mn54Al44C2)100-xCux.
+  note: Read from plot.
+- id: mnal_iso_fang2018a
+  phase: tau-MnAl-C
+  route: isotropic
+  process: 'drop synthesis of (Mn0.55Al0.45)100C2: melt dropped and cooled at 10 K/min (tau forms directly on cooling);
+    coarse randomly oriented grains; measured as powder pieces'
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: n/a
+  quantity: Mr_over_Ms
+  value: 0.421
+  unit: ''
+  measured_along: not stated (randomly oriented grains)
+  measurement: PPMS (9 T) or MPMS, room temperature, Ms = M at 7200 kA/m; Mr/Ms after demagnetisation correction
+    with N = 1/3
+  n_samples: 1
+  source:
+    doi: 10.1038/s41598-018-20606-8
+    title: Structural, microstructural and magnetic evolution in cryo milled carbon doped MnAl
+    first_author: Fang, Hailiang
+    year: 2018
+    url: https://www.diva-portal.org/smash/get/diva2:1180632/FULLTEXT01.pdf
+    evidence: full_text
+    locator: Table 2 (DS row); Magnetic properties characterization
+  quote: Drop synthesized (Mn0.55Al0.45)100C2 614.8 1.84 120.4 42.1 32 ... The Mr/Ms ratio of the samples are less
+    than the expected 50% when taking into account the demagnetizing field.
+  note: 'Mr/Ms reported in percent (42.1 %). Authors: grains randomly oriented and too large to be single domain.
+    Ms = 614.8 kA/m (Js 0.773 T), Mr = 120.4 kA/m.'
+- id: mnal_iso_fang2018b
+  phase: tau-MnAl-C
+  route: isotropic
+  process: (Mn0.55Al0.45)100C2 drop-synthesised, 2 h cryomilled + flash heated 900 C 5 min (loose powder, unaligned)
+  conditions:
+    field_T: 0
+    T_process_K: 1173
+    parent_texture: none
+    magnet_axis: n/a
+  quantity: Mr_over_Ms
+  value: 0.349
+  unit: ''
+  measured_along: not stated (loose powder in capsule)
+  measurement: PPMS 9 T / MPMS, room temperature, Ms = M at max field, N = 1/3 demagnetisation correction
+  n_samples: 1
+  source:
+    doi: 10.1038/s41598-018-20606-8
+    title: Structural, microstructural and magnetic evolution in cryo milled carbon doped MnAl
+    first_author: Fang, Hailiang
+    year: 2018
+    url: https://www.diva-portal.org/smash/get/diva2:1180632/FULLTEXT01.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: Flash heated 5 min 542.5 1.62 133.6 34.9 95 ... The Mr/Ms ratio of the samples are less than the expected
+    50% when taking into account the demagnetizing field.
+  note: Mr/Ms in percent in source. Unaligned milled powder (route isotropic powder). Authors attribute Mr/Ms <
+    0.5 to epsilon/unindexed phases and uncertain N.
+- id: mnal_iso_fang2018c
+  phase: tau-MnAl-C
+  route: isotropic
+  process: (Mn0.55Al0.45)100C2 drop-synthesised, 4 h cryomilled + flash heated 900 C 5 min (loose powder, unaligned)
+  conditions:
+    field_T: 0
+    T_process_K: 1173
+    parent_texture: none
+    magnet_axis: n/a
+  quantity: Mr_over_Ms
+  value: 0.383
+  unit: ''
+  measured_along: not stated (loose powder in capsule)
+  measurement: PPMS 9 T / MPMS, room temperature, Ms = M at max field, N = 1/3 demagnetisation correction
+  n_samples: 1
+  source:
+    doi: 10.1038/s41598-018-20606-8
+    title: Structural, microstructural and magnetic evolution in cryo milled carbon doped MnAl
+    first_author: Fang, Hailiang
+    year: 2018
+    url: https://www.diva-portal.org/smash/get/diva2:1180632/FULLTEXT01.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: Flash heated 5 min 515.8 1.54 148.4 38.3 127 ... The Mr/Ms ratio of the samples are less than the expected
+    50% when taking into account the demagnetizing field.
+  note: Mr/Ms in percent in source. Unaligned milled powder (route isotropic powder). Authors attribute Mr/Ms <
+    0.5 to epsilon/unindexed phases and uncertain N.
+- id: mnal_iso_nguyen2018a
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn54.2Al43.8C2 mechanically alloyed powder, aged (annealed) to tau (unaligned powder)
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: n/a
+  quantity: Mr_over_Ms
+  value: 0.447
+  unit: ''
+  measured_along: not stated (powder)
+  measurement: SQUID MPMS XL7, room temperature, max field 5.5 MA/m (~6.9 T), "almost saturated"; demagnetisation
+    correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jmmm.2018.05.001
+    title: Mechanical alloying and theoretical studies of MnAl(C) magnets
+    first_author: Tang Nguyen, Van
+    year: 2018
+    url: https://univ-lemans.hal.science/hal-01906072/file/Paper_NR_FC-T-revised-JMMM-09-03_new_FC_T%20-%20Copy.pdf
+    evidence: full_text
+    locator: Table 3; Sec. 3
+  quote: Mn54.2Al43.8C2 570 ± 0.5 255 ± 2 143 ± 4.0 7.8 ± 0.1 ... As one can see, magnetizations of all aged samples
+    were almost saturated under an external magnetic field (H) of 5.5 MAm-1.
+  note: Mr/Ms = 255/570 = 0.447 computed here from Table 3 (kA/m).
+- id: mnal_iso_nguyen2018b
+  phase: tau-MnAl
+  route: isotropic
+  process: Mn55Al45 mechanically alloyed powder, aged (annealed) to tau (unaligned powder)
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: n/a
+  quantity: Mr_over_Ms
+  value: 0.44
+  unit: ''
+  measured_along: not stated (powder)
+  measurement: SQUID MPMS XL7, room temperature, max field 5.5 MA/m (~6.9 T), "almost saturated"; demagnetisation
+    correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jmmm.2018.05.001
+    title: Mechanical alloying and theoretical studies of MnAl(C) magnets
+    first_author: Tang Nguyen, Van
+    year: 2018
+    url: https://univ-lemans.hal.science/hal-01906072/file/Paper_NR_FC-T-revised-JMMM-09-03_new_FC_T%20-%20Copy.pdf
+    evidence: full_text
+    locator: Table 3; Sec. 3
+  quote: Mn55Al45 523 ± 0.3 230 ± 3 46 ± 0.9 4.0 ± 0.1 ... As one can see, magnetizations of all aged samples were
+    almost saturated under an external magnetic field (H) of 5.5 MAm-1.
+  note: Mr/Ms = 230/523 = 0.440 computed here from Table 3 (kA/m).
+- id: mnal_iso_madugundo2016a
+  phase: tau-MnAl-C
+  route: 'other: hot compaction of epsilon powder (epsilon->tau under uniaxial 275 MPa; direction of measurement
+    not stated)'
+  process: Mn53.5Al44.5C2 arc-melted, homogenised 1100 C, quenched, high-energy ball milled 2 h (epsilon powder);
+    HEBM epsilon powder hot-compacted at 700 C, 275 MPa (WC punches); epsilon->tau during heating/compaction
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: none (milled powder)
+    magnet_axis: not stated
+    density_g_cm3: 4.9
+  quantity: Mr_over_Ms
+  value: 0.56
+  unit: ''
+  measured_along: not stated
+  measurement: VSM, room temperature, max 30 kOe (3 T, NOT saturating), loops corrected for self-demagnetisation
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4943242
+    title: Bulk Mn-Al-C permanent magnets prepared by various techniques
+    first_author: Madugundo, Rajasekhar
+    year: 2016
+    url: https://hal.science/hal-02290733/file/Bulk%20Mn-Al-C%20permanent%20magnets%20prepared%20by%20various%20techniques.pdf
+    evidence: full_text
+    locator: Sec. III; Table I
+  quote: The hot-compacted magnet exhibits M/30 kOe, Mr, Hc and (BH)max of 50 emu/g, 28 emu/g, 3.3 kOe and 0.6 MGOe,
+    respectively.
+  note: Mr/M(30 kOe) = 28/50 computed here; M at 3 T is below Ms, so the ratio overestimates Mr/Ms. Significant
+    beta-Mn/gamma2 in the hot-compacted magnet (XRD).
+- id: mnal_iso_madugundo2016b
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn53.5Al44.5C2 arc-melted, homogenised 1100 C, quenched, high-energy ball milled 2 h (epsilon powder);
+    HEBM epsilon powder cold-compacted (1.2 GPa), microwave-sintered 700 C 10 min, then 600 C 10 min
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: none (milled powder)
+    magnet_axis: not stated
+    density_g_cm3: 4.1
+  quantity: Mr_over_Ms
+  value: 0.41
+  unit: ''
+  measured_along: not stated
+  measurement: VSM, room temperature, max 30 kOe (3 T, NOT saturating), loops corrected for self-demagnetisation
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4943242
+    title: Bulk Mn-Al-C permanent magnets prepared by various techniques
+    first_author: Madugundo, Rajasekhar
+    year: 2016
+    url: https://hal.science/hal-02290733/file/Bulk%20Mn-Al-C%20permanent%20magnets%20prepared%20by%20various%20techniques.pdf
+    evidence: full_text
+    locator: Sec. III; Table I
+  quote: After the heat-treatment, the M/30 kOe is increased significantly from 56 to 94 emu/g and Mr from 20 to
+    39 emu/g while Hc remained unchanged.
+  note: Mr/M(30 kOe) = 39/94 computed here; M at 3 T is below Ms, so the ratio overestimates Mr/Ms. Significant
+    beta-Mn/gamma2 in the hot-compacted magnet (XRD).
+- id: mnal_meltspun_tyrman2017thesisa
+  phase: tau-MnAl-C
+  route: 'other: melt-spun ribbon, annealed, ground to powder (no alignment step)'
+  process: (Mn0.55Al0.45)100-xCx (x = 0.98, Synt 2) melt-spun, annealed 550 C (single tau), mortar-ground powder
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    parent_texture: epsilon ribbons textured (wheel vs air side XRD differ)
+    magnet_axis: n/a (powder)
+  quantity: Mr_over_Ms
+  value: 0.47
+  unit: ''
+  measured_along: n/a (loose powder)
+  measurement: Lake Shore VSM, room temperature, max 1.4 T (NOT saturating); M at 9 T on the same syntheses = 108-122
+    A m2/kg (Table 6.6)
+  n_samples: 1
+  source:
+    doi: 10.70675/64180c3czeca6z420fzb956z4e7749e9c125
+    title: 'Vers une alternative aux aimants à base de terres rares : hexaferrites nanostructurés et alliages Mn-Al'
+    first_author: Tyrman, Muriel
+    year: 2017
+    url: https://theses.hal.science/tel-03762758/file/75699_TYRMAN_2017_archivage.pdf
+    evidence: full_text
+    locator: Table 6.4
+  quote: Synt 2 0,98 0,110 39 83 ... Table 6.4 – Paramètres magnétiques des trois échantillons sous forme de poudre
+    broyée au mortier.
+  note: 'MR/M(1.4 T) = 39/83 computed here (A m2/kg). Minor loop at 1.4 T: neither Mr nor M is at saturation.'
+- id: mnal_meltspun_tyrman2017thesisb
+  phase: tau-MnAl-C
+  route: 'other: melt-spun ribbon, annealed, ground to powder (no alignment step)'
+  process: (Mn0.55Al0.45)100-xCx (x = 1.88, Synt 3) melt-spun, annealed 550 C (single tau), mortar-ground powder
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    parent_texture: epsilon ribbons textured (wheel vs air side XRD differ)
+    magnet_axis: n/a (powder)
+  quantity: Mr_over_Ms
+  value: 0.59
+  unit: ''
+  measured_along: n/a (loose powder)
+  measurement: Lake Shore VSM, room temperature, max 1.4 T (NOT saturating); M at 9 T on the same syntheses = 108-122
+    A m2/kg (Table 6.6)
+  n_samples: 1
+  source:
+    doi: 10.70675/64180c3czeca6z420fzb956z4e7749e9c125
+    title: 'Vers une alternative aux aimants à base de terres rares : hexaferrites nanostructurés et alliages Mn-Al'
+    first_author: Tyrman, Muriel
+    year: 2017
+    url: https://theses.hal.science/tel-03762758/file/75699_TYRMAN_2017_archivage.pdf
+    evidence: full_text
+    locator: Table 6.4
+  quote: Synt 3 1,88 0,133 51,3 87,5 ... Table 6.4 – Paramètres magnétiques des trois échantillons sous forme de
+    poudre broyée au mortier.
+  note: 'MR/M(1.4 T) = 51.3/87.5 computed here (A m2/kg). Minor loop at 1.4 T: neither Mr nor M is at saturation.'
+- id: mnal_meltspun_tyrman2017thesisc
+  phase: tau-MnAl-C
+  route: 'other: melt-spun ribbon, annealed, ground to powder (no alignment step)'
+  process: (Mn0.55Al0.45)100-xCx (x = 1.88, Synt 1) melt-spun, annealed 550 C (single tau), mortar-ground powder
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    parent_texture: epsilon ribbons textured (wheel vs air side XRD differ)
+    magnet_axis: n/a (powder)
+  quantity: Mr_over_Ms
+  value: 0.42
+  unit: ''
+  measured_along: n/a (loose powder)
+  measurement: Lake Shore VSM, room temperature, max 1.4 T (NOT saturating); M at 9 T on the same syntheses = 108-122
+    A m2/kg (Table 6.6)
+  n_samples: 1
+  source:
+    doi: 10.70675/64180c3czeca6z420fzb956z4e7749e9c125
+    title: 'Vers une alternative aux aimants à base de terres rares : hexaferrites nanostructurés et alliages Mn-Al'
+    first_author: Tyrman, Muriel
+    year: 2017
+    url: https://theses.hal.science/tel-03762758/file/75699_TYRMAN_2017_archivage.pdf
+    evidence: full_text
+    locator: Table 6.4
+  quote: Synt 1 1,88 0,136 32,9 77,9 ... Table 6.4 – Paramètres magnétiques des trois échantillons sous forme de
+    poudre broyée au mortier.
+  note: 'MR/M(1.4 T) = 32.9/77.9 computed here (A m2/kg). Minor loop at 1.4 T: neither Mr nor M is at saturation.'
+- id: mnal_sps_pasko2014hf
+  phase: tau-MnAl-C
+  route: isotropic
+  process: Mn54Al44C2 melt-spun ribbons hand-ground, SPS at 923 K (650 C), 300 s dwell, 70 MPa uniaxial (epsilon->tau
+    during sintering)
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (ground ribbons)
+    magnet_axis: not stated
+  quantity: texture_metric
+  value: isotropic at 300 K; light texture at 4 K (approach-to-saturation fit)
+  unit: qualitative (model fit of approach to saturation)
+  measured_along: not stated
+  measurement: Quantum Design PPMS, 4-300 K, up to 14 T
+  n_samples: 1
+  source:
+    doi: 10.1109/tmag.2014.2320598
+    title: High-Field Magnetization Behavior of Mn-Al-C Alloys
+    first_author: Pasko, Alexandre
+    year: 2014
+    url: https://hal.science/hal-01100219/file/MnAl_IEEE2014_Pasko_pv.pdf
+    evidence: full_text
+    locator: Sec. III (Fig. 4)
+  quote: The approach to saturation at 300 K corresponds well to isotropic material. However, the magnetization
+    curve at 4 K can be better fitted with an assumption of anisotropic texture. ... The presence of light crystallographic
+    texture can be attributed to the uniaxial pressure applied to the sample during SPS.
+  note: Qualitative texture inference from magnetization-curve fitting (not a pole figure). Relevant to stress during
+    the epsilon->tau transformation (SPS under 70 MPa).
+- id: mnal_hd_kamino1966
+  phase: tau-MnAl-B
+  route: HD
+  process: MnAl-B (71.0 wt% Mn, 26.65 wt% Al, 1.76 wt% B) swaged to 70 % reduction
+  conditions:
+    field_T: 0
+    magnet_axis: not stated
+  quantity: Br
+  value: 0.59
+  unit: T
+  measured_along: not stated
+  measurement: not stated in abstract
+  n_samples: not stated
+  source:
+    doi: 10.1109/tmag.1966.1065887
+    title: Magnetic properties of MnAl system alloys
+    first_author: Kamino, K.
+    year: 1966
+    url: https://api.openalex.org/works/doi:10.1109/tmag.1966.1065887
+    evidence: abstract
+    locator: abstract
+  quote: 3) The more the ternary MnAl-B alloys are swaged, the better magnetic properties are gained, for example,
+    Br 5900 G,BHc1780 Oe, and (BH)max 3.5 M.G.Oe at 70 percent reduction of 71.0 percent Mn, 26.65 percent Al, 1.76
+    percent B alloy.
+  note: Cross-topic item (deformation route). boron-containing alloy with needle-shaped secondary ferromagnetic
+    precipitates. Converted 5900 G -> 0.59 T.
+- id: mnal_hd_juerries2020
+  phase: tau-MnAl-C
+  route: HD
+  process: Mn54Al44C2 annealed (720 C 10 min) then die-upset at 720 C, 0.001 s-1 to phi = 1.5
+  conditions:
+    field_T: 0
+    T_process_K: 993
+    magnet_axis: radial (perpendicular to pressing)
+  quantity: texture_metric
+  value: 0.31
+  unit: omega = (JR,radial - JR,axial)/JR,radial
+  measured_along: radial vs axial remanence
+  measurement: PPMS-VSM 14 T, room temperature, demagnetisation corrected
+  n_samples: 1
+  source:
+    doi: 10.1038/s41598-020-64697-8
+    title: The Influence of Cu-Additions on the Microstructure, Mechanical and Magnetic Properties of MnAl-C Alloys
+    first_author: Jürries, Florian
+    year: 2020
+    url: https://oa.tib.eu/renate/handle/123456789/4956
+    evidence: full_text
+    locator: Results (Eq. 2)
+  quote: At ϕ = 1.5, the degree of texture for the alloys with x = 0 and x = 4 was ω = 0.31 and ω = 0.33, respectively,
+    which indicates that a weak texture was present.
+  note: Cross-topic item (die-upsetting,). . Texture metric from remanence anisotropy, not a pole figure.
+- id: mnal_fa_zhang2025
+  phase: tau-MnAl
+  route: FA
+  process: Mn55Al45 melt-spun epsilon ribbons annealed 15 min at 660 K (~20 K above Tc) in ~60 mT (closed magnetic
+    circuit) vs zero field
+  conditions:
+    field_T: 0.06
+    T_process_K: 660
+    parent_texture: (00l) textured epsilon ribbons
+    magnet_axis: n/a
+  quantity: texture_metric
+  value: nominally isotropic tau (both field-annealed and zero-field)
+  unit: qualitative (XRD)
+  measured_along: XRD on ribbon surfaces
+  measurement: XRD relative intensities vs isotropic reference
+  n_samples: not stated
+  source:
+    doi: 10.1016/j.actamat.2025.120868
+    title: Driving rapid atomic order in MnAl via low-magnitude magnetic field annealing
+    first_author: Zhang, X.
+    year: 2025
+    url: https://www.diva-portal.org/smash/get/diva2:1944562/FULLTEXT01.pdf
+    evidence: full_text
+    locator: Sec. 3 (Annealed states)
+  quote: Both modes of thermal treatment produce a multiphase state consisting of (00l) textured ε-MnAl and nominally
+    isotropic τ-MnAl, Fig. 8.
+  note: Cross-topic item (field annealing). . Field applied above Tc of tau.
+- id: mnal_fa_si2017a
+  phase: tau-MnAl-C
+  route: FA
+  process: quenched epsilon Mn54Al46C2.44 bulk annealed 13 h at 773 K in a 4 T field (T_f above Tc ~550 K of tau-MnAlC);
+    both transformation modes
+  conditions:
+    field_T: 4
+    T_process_K: 773
+    parent_texture: not measured; cast 13-mm bar, homogenised 1423 K 24 h, water quenched; XRD of quenched epsilon-MnAlC
+      shows a much stronger (0002) peak than other planes (authors attribute it to crystallite shape)
+    magnet_axis: not stated
+    density_rel: null
+  quantity: Mr_over_Ms
+  value: 0.24
+  unit: ratio
+  uncertainty: 0.05
+  measured_along: not stated (relative to the 4 T annealing field)
+  measurement: room-temperature M-H loop, first quadrant shown to 3 T (not saturated; Ms here = M at 3 T ~105 Am2/kg);
+    Mr read at H = 0 on the descending branch
+  n_samples: 1
+  source:
+    doi: 10.3390/ma10091016
+    title: In situ Observation of Phase Transformation in MnAl(C) Magnetic Materials
+    first_author: Si, Ping-Zhan
+    year: 2017
+    url: https://mdpi-res.com/d_attachment/materials/materials-10-01016/article_deploy/materials-10-01016.pdf
+    evidence: full_text
+    locator: Fig. 3d (read from plot)
+  quote: Figure 3d shows the room temperature magnetic hysteresis loops of the ε-MnAlC after 13-h annealing in 4
+    T.
+  note: 'Mr ~25 +/- 5 Am2/kg read from plot, divided by M(3 T) ~105 Am2/kg. Direction of measurement vs. annealing
+    field unknown; whether the 4 T field affected texture was not studied (authors: field had little effect on Ms).'
+- id: mnal_fa_si2017b
+  phase: tau-MnAl-C
+  route: FA
+  process: quenched epsilon Mn54Al46C2.44 bulk annealed 13 h at 623 K in a 4 T field (displacive mode only, ~1/3
+    transformed; T_f above Tc ~550 K)
+  conditions:
+    field_T: 4
+    T_process_K: 623
+    parent_texture: none reported
+    magnet_axis: not stated
+    density_rel: null
+  quantity: Mr_over_Ms
+  value: 0.2
+  unit: ratio
+  uncertainty: 0.07
+  measured_along: not stated
+  measurement: room-temperature M-H loop to 3 T (Fig. 3d), M(3 T) ~35 Am2/kg; Mr read at H = 0
+  n_samples: 1
+  source:
+    doi: 10.3390/ma10091016
+    title: In situ Observation of Phase Transformation in MnAl(C) Magnetic Materials
+    first_author: Si, Ping-Zhan
+    year: 2017
+    url: https://mdpi-res.com/d_attachment/materials/materials-10-01016/article_deploy/materials-10-01016.pdf
+    evidence: full_text
+    locator: Fig. 3d (read from plot)
+  quote: The saturation magnetization (35 Am2/kg) of the 623 K annealed sample is approximately one-third of that
+    (~105 Am2/kg) in the 773 K annealed sample.
+  note: Mr ~7 +/- 2 Am2/kg read from plot. Sample is ~1/3 tau, rest epsilon/epsilon-prime.
+- id: mnal_other_jia2022a
+  phase: tau-MnAl
+  route: 'other: DS + hot deformation'
+  process: directional solidification combined with hot deformation (details not in abstract)
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: DS (not quantified in abstract)
+    magnet_axis: not stated
+    density_rel: null
+  quantity: Mr_over_Ms
+  value: 0.67
+  unit: ratio
+  uncertainty: null
+  measured_along: not stated
+  measurement: not stated in abstract (max field unknown)
+  n_samples: not stated
+  source:
+    doi: 10.1016/j.actamat.2022.117892
+    title: On the ε → τ phase transformation and twinning in L10−MnAl alloys
+    first_author: Jia, Yuxiao
+    year: 2022
+    url: https://www.tu-darmstadt.de/sfb270/about_crc/news_7/archiv_4/details_223360.en.jsp
+    evidence: abstract
+    locator: abstract
+  quote: as demonstrated by good magnetic properties of ∼400 mT in coercivity and ∼0.67 in remanence ratio in L10−MnAl
+    magnets.
+  note: Abstract only; full text (Acta Mater. 232, 117892) closed.
+- id: mnal_hd_koch1960a
+  phase: tau-MnAl
+  route: HD
+  process: cast Mn-Al bars swaged (phase state and temperature during swaging not given in abstract)
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: cast
+    magnet_axis: preferred (swaging) direction
+    density_rel: null
+  quantity: Br
+  value: 0.428
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction
+  measurement: not stated in abstract
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1984610
+    title: New Material for Permanent Magnets on a Base of Mn and Al
+    first_author: Koch, A. J. J.
+    year: 1960
+    url: https://api.crossref.org/works/10.1063/1.1984610
+    evidence: abstract
+    locator: abstract
+  quote: 'An anisotropic permanent magnet was obtained by swaging cast bars, with the following properties in the
+    preferred direction: Br = 4280 G, HCI = 4600 oe, HCB = 2750 oe, BHmax = 3.5×106 G oe.'
+  note: converted from 4280 G. Same abstract gives 4πIs = 6200 G for the tau phase (extrapolated), not necessarily
+    of the swaged sample. Swaging temperature not given in abstract.
+- id: mnal_fa_kobayashi2017a
+  phase: tau-MnAl
+  route: FA
+  process: quenched single-epsilon Mn55Al45 bulk disk annealed 48 h at 623 K in 10 T (field parallel to disk thickness)
+  conditions:
+    field_T: 10
+    T_process_K: 623
+    parent_texture: none (polycrystalline cast and quenched epsilon, not measured)
+    magnet_axis: annealing field direction
+    density_rel: null
+    Tc_relation: field applied below Tc(tau) ~653 K (ferromagnetic tau forming)
+  quantity: Mr_over_Ms
+  value: 0.41
+  unit: dimensionless (Mr/M at 1.5 T)
+  uncertainty: 0.03
+  measured_along: parallel to annealing field (H//)
+  measurement: VSM at RT, max field 1.5 T (far below saturation; tau anisotropy field ~5 T), Mr/M(1.5 T) used as
+    Mr/Ms proxy; cube-shaped sample (Fig. 5 inset); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans.maw201709
+    title: Magnetic-Field-Induced Acceleration of Phase Formation in τ-Mn-Al
+    first_author: Kobayashi, Ryota
+    year: 2017
+    url: https://www.jstage.jst.go.jp/article/matertrans/58/11/58_MAW201709/_pdf
+    evidence: full_text
+    locator: Fig. 5 (read from plot); text Section 3
+  quote: Figure 5 presents the typical magnetization curves for the sample annealed at 10 T. H⊥ and H// indicate
+    the applied magnetic field direction perpendicular and parallel to H, respectively. The magnetization curves
+    were almost the same for H⊥ and H//, which indicated that a uniaxial oriented phase formation was not observed.
+    This behavior was observed for all in-field samples.
+  note: 'Read from Fig. 5 by pixel analysis: the two descending branches cross H = 0 at M = 29.9 and 26.7 Am2/kg
+    and reach 69.5 and 67.3 Am2/kg at 1.5 T; the solid (H//) and broken (H-perp) curves could not be told apart
+    at the crossings, so each direction lies in Mr/M(1.5 T) = 0.38-0.44. Directional difference <= ~0.06. Authors:
+    same isotropy for all in-field samples (10 and 15 T).'
+- id: mnal_fa_kobayashi2017b
+  phase: tau-MnAl
+  route: FA
+  process: as mnal_fa_kobayashi2017a (10 T, 623 K, 48 h)
+  conditions:
+    field_T: 10
+    T_process_K: 623
+    parent_texture: none (not measured)
+    magnet_axis: annealing field direction
+    density_rel: null
+    Tc_relation: field applied below Tc(tau)
+  quantity: Mr_over_Ms
+  value: 0.41
+  unit: dimensionless (Mr/M at 1.5 T)
+  uncertainty: 0.03
+  measured_along: perpendicular to annealing field (H-perp)
+  measurement: VSM at RT, max field 1.5 T (far below saturation; tau anisotropy field ~5 T), Mr/M(1.5 T) used as
+    Mr/Ms proxy; cube-shaped sample (Fig. 5 inset); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans.maw201709
+    title: Magnetic-Field-Induced Acceleration of Phase Formation in τ-Mn-Al
+    first_author: Kobayashi, Ryota
+    year: 2017
+    url: https://www.jstage.jst.go.jp/article/matertrans/58/11/58_MAW201709/_pdf
+    evidence: full_text
+    locator: Fig. 5 (read from plot); Fig. 5 caption
+  quote: Fig. 5 Typical magnetization curves at room temperature for the sample annealed at 10 T. H// and H⊥ indicate
+    the measuring direction of the magnetic field, parallel and perpendicular to Hh, respectively. The solid and
+    broken curves are the magnetization curve of H// and H⊥, respectively. The inset indicates the relationship
+    between H//, H⊥, Hh, and the sample.
+  note: 'See mnal_fa_kobayashi2017a: both directions 0.38-0.44 (branch assignment unresolved), value given as 0.41
+    +/- 0.03.'
+- id: mnal_fa_kobayashi2017c
+  phase: tau-MnAl
+  route: FA
+  process: quenched epsilon Mn55Al45 disks annealed at 573 K or 623 K in 10-15 T for up to 168 h
+  conditions:
+    field_T: 10-15
+    T_process_K: 573-623
+    parent_texture: none (not measured)
+    magnet_axis: annealing field direction
+    density_rel: null
+    Tc_relation: below Tc(tau)
+  quantity: texture_metric
+  value: no crystal orientation induced
+  unit: qualitative (bulk XRD)
+  uncertainty: null
+  measured_along: XRD scattering vector parallel to disk thickness = annealing field direction
+  measurement: bulk XRD at RT
+  n_samples: all in-field samples (number not stated)
+  source:
+    doi: 10.2320/matertrans.maw201709
+    title: Magnetic-Field-Induced Acceleration of Phase Formation in τ-Mn-Al
+    first_author: Kobayashi, Ryota
+    year: 2017
+    url: https://www.jstage.jst.go.jp/article/matertrans/58/11/58_MAW201709/_pdf
+    evidence: full_text
+    locator: Section 4 (Discussions); Experimental
+  quote: In this study, no crystal orientation was induced by IFHT for Mn-Al alloys. This was a result of the ε-τ
+    solid-phase transformation.
+  note: 'Experimental: "The scattering vector of the X-ray was parallel to the thickness of the disks." Engine reading:
+    A ~ 1/2 along the field.'
+- id: mnal_fa_kobayashi2017d
+  phase: tau-MnAl
+  route: FA
+  process: quenched epsilon Mn55Al45 disk annealed 48 h at 623 K in 15 T
+  conditions:
+    field_T: 15
+    T_process_K: 623
+    parent_texture: none (not measured)
+    magnet_axis: annealing field direction (measurement direction not stated)
+    density_rel: null
+    Tc_relation: below Tc(tau)
+  quantity: Mr_over_Ms
+  value: 0.41
+  unit: dimensionless (Mr/M at 1.5 T)
+  uncertainty: 0.02
+  measured_along: not stated
+  measurement: VSM at RT, max field 1.5 T (not saturating); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans.maw201709
+    title: Magnetic-Field-Induced Acceleration of Phase Formation in τ-Mn-Al
+    first_author: Kobayashi, Ryota
+    year: 2017
+    url: https://www.jstage.jst.go.jp/article/matertrans/58/11/58_MAW201709/_pdf
+    evidence: full_text
+    locator: Fig. 4(d) (read from plot)
+  quote: Fig. 4 Magnetization curves for the samples for Ta = 623 K. The annealed conditions are μ0Hh = 0 T for
+    24 h (a), μ0Hh = 15 T for 24 h (b), μ0Hh = 0 T for 48 h (c), and μ0Hh = 15 T for 48 h (d).
+  note: 'Pixel read-off: Mr = 30.6/-31.1 Am2/kg, M(+/-1.5 T) = 74.7/-74.9 Am2/kg -> 0.41. Zero-field reference:
+    mnal_isotropic_kobayashi2017e.'
+- id: mnal_isotropic_kobayashi2017e
+  phase: tau-MnAl
+  route: isotropic
+  process: quenched epsilon Mn55Al45 disk annealed 48 h at 623 K in zero field (reference for the in-field anneals)
+  conditions:
+    field_T: 0
+    T_process_K: 623
+    parent_texture: none (not measured)
+    magnet_axis: n/a
+    density_rel: null
+    Tc_relation: n/a
+  quantity: Mr_over_Ms
+  value: 0.42
+  unit: dimensionless (Mr/M at 1.5 T)
+  uncertainty: 0.03
+  measured_along: not stated
+  measurement: VSM at RT, max field 1.5 T (not saturating); low tau fraction (M(1.5 T) ~17 Am2/kg)
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans.maw201709
+    title: Magnetic-Field-Induced Acceleration of Phase Formation in τ-Mn-Al
+    first_author: Kobayashi, Ryota
+    year: 2017
+    url: https://www.jstage.jst.go.jp/article/matertrans/58/11/58_MAW201709/_pdf
+    evidence: full_text
+    locator: Fig. 4(c) (read from plot)
+  quote: Fig. 4 Magnetization curves for the samples for Ta = 623 K. The annealed conditions are μ0Hh = 0 T for
+    24 h (a), μ0Hh = 15 T for 24 h (b), μ0Hh = 0 T for 48 h (c), and μ0Hh = 15 T for 48 h (d).
+  note: 'Pixel read-off: Mr = 7.1/-7.6 Am2/kg, M(+/-1.5 T) = 17.1/-17.5 Am2/kg -> 0.42.'
+- id: mnal_sc_sa_zhang2018a
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: (Mn54Al46)97C3 epsilon single crystal grown by optical floating zone (4 mm/h = 1.1 um/s), annealed 903
+    K for 3 min under 320 MPa uniaxial compression along [1-11] of epsilon
+  conditions:
+    field_T: 0
+    T_process_K: 903
+    stress_MPa: 320
+    stress_axis: '[1-11] epsilon (3-index)'
+    parent_texture: single crystal
+    magnet_axis: compression axis
+    density_rel: null
+    Tc_relation: stress applied above Tc(tau) (paramagnetic)
+  quantity: texture_metric
+  value: 1
+  unit: variant_fraction (single tau variant, c || compression axis)
+  uncertainty: null
+  measured_along: compression axis
+  measurement: as described by the review (original method not read)
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Keller, Thomas
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section on Mn-Al bulk processing (p. 23); Table 7
+  quote: However, by using compression along the [1 -1 1] direction of the ε phase during annealing, the martensitic
+    transformation was constrained to just one variant of τ phase, the magnetic easy axis [0 0 1] (which is parallel
+    to the [1 -1 1] direction of the ε phase), formation of twins was suppressed, and consequently the resulting
+    single crystal magnet displayed high magnetic anisotropy along the axis of compression and a high Ms of 113
+    Am2/kg.
+  note: 'Review evidence; original Zhang C. et al., Scripta Mater. 143 (2018) 72-76, doi:10.1016/j.scriptamat.2017.09.008
+    (closed, abstract not available). Conditions from review text ("903 K anneal for 3 min while the specimen was
+    under uniaxial compression") and Table 7 ("903 K anneal for 3 min under 320 MPa uniaxial compression"). Keller
+    et al. 2023 (JMMM 587, 171331, intro) gives the same: single tau variant with [001] parallel to the uniaxial
+    stress along [1-11] epsilon. "variant_fraction = 1" is the review qualitative claim; detection limit unknown.
+    Mr/Ms not given in the review.'
+- id: mnal_sc_sa_zhang2018b
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: as mnal_sc_sa_zhang2018a
+  conditions:
+    field_T: 0
+    T_process_K: 903
+    stress_MPa: 320
+    parent_texture: single crystal
+    magnet_axis: compression axis
+  quantity: Js_same_sample
+  value: 113
+  unit: Am2/kg (mass saturation magnetisation, not converted)
+  uncertainty: null
+  measured_along: not stated
+  measurement: not stated in the review (field of measurement unknown)
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Keller, Thomas
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Table 7 (continued), row Zhang et al. 2018
+  quote: However, by using compression along the [1 -1 1] direction of the ε phase during annealing, the martensitic
+    transformation was constrained to just one variant of τ phase, the magnetic easy axis [0 0 1] (which is parallel
+    to the [1 -1 1] direction of the ε phase), formation of twins was suppressed, and consequently the resulting
+    single crystal magnet displayed high magnetic anisotropy along the axis of compression and a high Ms of 113
+    Am2/kg.
+  note: Review evidence. Same-sample Ms for normalising any remanence of this crystal.
+- id: mnal_other_sc_zhang2018c
+  phase: tau-MnAl-C
+  route: 'other: SC (single-crystal epsilon parent, no bias)'
+  process: (Mn54Al46)97C3 epsilon single crystal (optical floating zone) annealed without compression (reference)
+  conditions:
+    field_T: 0
+    stress_MPa: 0
+    parent_texture: single crystal
+    magnet_axis: n/a
+  quantity: texture_metric
+  value: polycrystalline, magnetically isotropic, high twin density
+  unit: qualitative
+  uncertainty: null
+  measured_along: not stated
+  measurement: as described by the review
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Keller, Thomas
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section on Mn-Al bulk processing (p. 23)
+  quote: In the absence of compression during annealing, the ε phase single crystal transformed through an observed
+    martensitic transformation into a polycrystalline magnetically isotropic τ phase magnet with a high density
+    of twins.
+  note: 'Review evidence (original Zhang C. et al. 2018, Scripta Mater. 143, 72). Key fidelity test: a perfectly
+    oriented epsilon parent still gives an isotropic tau magnet without a bias. Annealing temperature/time of the
+    unstressed reference not stated in the review.'
+- id: mnal_sc_sa_kojima1975a
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: epsilon single crystal (containing Mn3AlC lamellae) annealed under uniaxial compressive stress
+  conditions:
+    field_T: 0
+    parent_texture: single crystal
+    magnet_axis: see mnal_sc_sa_kojima1975b
+    Tc_relation: stress applied at anneal temperature above Tc(tau) (833 K per review)
+  quantity: texture_metric
+  value: 1
+  unit: variant_fraction (tau single crystal)
+  uncertainty: null
+  measured_along: n/a (crystal orientation)
+  measurement: not stated in abstract
+  n_samples: not stated
+  source:
+    doi: 10.1063/1.30281
+    title: Crystal transformation and orientation of Mn-Al-C hard magnetic alloy
+    first_author: Kojima, S.
+    year: 1975
+    url: https://api.openalex.org/works/doi:10.1063/1.30281
+    evidence: abstract
+    locator: abstract
+  quote: During the study on this ternary alloy system, a ferromagnetic phase (τ‐phase) single crystal was obtained
+    by annealing a high‐temperature phase (ε‐phase) single crystal containing lamellae of the compound Mn3AlC, under
+    the action of a uniaxial compressive stress.
+  note: Abstract only (AIP Conf. Proc. 24, 768). Same abstract gives the OR (0001)eps || (100)eps' || (111)tau and
+    [-1100]eps || [001]eps' || [-1-12]tau, with eps->eps' disorder-order and eps'->tau martensitic. Parent records
+    US patents 3976519/4051706 with fuller details of this experiment.
+- id: mnal_sc_sa_kojima1975b
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: Mn54.8Al41.6C3.6 epsilon single crystal (Bridgman), sections annealed at 833 K under uniaxial compression
+    at various orientations; single-crystal tau when compression tilted ~50 deg from [0001] epsilon towards [1-100]
+  conditions:
+    field_T: 0
+    T_process_K: 833
+    stress_MPa: as printed "294 Pa" (probably 294 MPa = 30 kgf/mm2; not verified)
+    stress_axis: ~50 deg from [0001] towards [1-100] of epsilon
+    parent_texture: single crystal
+    magnet_axis: tau [001] reported ~84 deg from the compression axis
+    Tc_relation: above Tc(tau)
+  quantity: texture_metric
+  value: 1
+  unit: variant_fraction (tau single crystal)
+  uncertainty: null
+  measured_along: n/a (crystal orientation)
+  measurement: as described by the review
+  n_samples: multiple samples at various orientations
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Keller, Thomas
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section on Mn-Al bulk processing (p. 23)
+  quote: They achieved a τ phase single crystal when compression was applied along a direction tilted ~50◦ away
+    from the [0 0 0 1] of the ε single crystal towards the [1 -1 0 0] direction, resulting in a τ single crystal
+    of Ms = 106 Am2/kg.
+  note: 'Review evidence (original Kojima et al. 1975). Review also: "They observed coherence of the orientation
+    of the τ crystal to that of the parent ε such that (1 1 1) and (-1 1 0) of the τ was parallel to (0 0 0 1) and
+    (1 1 -2 0) of the ε, respectively. The [0 0 1] τ easy axis developed at a direction tilted ~84◦ away from the
+    axis of compression." CAUTION: with (111)tau || (0001)eps, [001]tau lies ~55 deg from [0001]eps in the [0001]-[1-100]
+    plane, i.e. within a few degrees of a compression axis tilted ~50 deg toward [1-100] (as in Zhang 2018, c ||
+    stress); the ~84 deg statement and the "294 Pa" stress look inconsistent/mis-transcribed - check against the
+    patents. Ms = 106 Am2/kg.'
+- id: mnal_sc_sa_kojima1975c
+  phase: tau-MnAl-C
+  route: SC+SA
+  process: as mnal_sc_sa_kojima1975b but compression along [0001] or [2-1-10] of the epsilon single crystal
+  conditions:
+    field_T: 0
+    T_process_K: 833
+    stress_axis: '[0001] or [2-1-10] epsilon'
+    parent_texture: single crystal
+    magnet_axis: n/a
+  quantity: texture_metric
+  value: polycrystalline, no preferred orientation
+  unit: qualitative
+  uncertainty: null
+  measured_along: n/a
+  measurement: as described by the review
+  n_samples: not stated
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Keller, Thomas
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section on Mn-Al bulk processing (p. 23)
+  quote: They observed coherence of the orientation of the τ crystal to that of the parent ε such that (1 1 1) and
+    (-1 1 0) of the τ was parallel to (0 0 0 1) and (1 1 -2 0) of the ε, respectively. The [0 0 1] τ easy axis developed
+    at a direction tilted ~84◦ away from the axis of compression. Notably, they confirmed that when the compression
+    was applied along the [0 0 0 1] or [2 -1 -1 0] axes of the ε parent, the resulting τ phase was polycrystalline
+    and lacked a preferred orientation.
+  note: 'Review evidence. Test of the B2 rule: stress axes that do not distinguish the variants (symmetric positions)
+    give no selection.'
+- id: mnal_sa_tyrman2018a
+  phase: tau-MnAl-C
+  route: SA
+  process: melt-spun Mn54Al44C2 epsilon ribbons cryo-milled to flake powder, transformed to tau during SPS at 550
+    C (823 K) under 100, 200, 300 or 400 MPa uniaxial pressure (WC mould)
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    stress_MPa: 100-400
+    parent_texture: flake-shaped particles of melt-spun epsilon (crystallites ~60 nm)
+    magnet_axis: pressing axis vs perpendicular
+    density_rel: 0.87-0.98
+    Tc_relation: stress applied above Tc(tau) (paramagnetic tau)
+  quantity: texture_metric
+  value: 'no crystallographic texture: XRD patterns of an isotropic material for all pressures'
+  unit: qualitative (XRD on two perpendicular faces)
+  uncertainty: null
+  measured_along: XRD on two perpendicular cube faces
+  measurement: XRD (Co K-alpha); EBSD (ref. 4) also showed no texture
+  n_samples: 4
+  source:
+    doi: 10.1063/1.5007241
+    title: Anisotropy of the ferromagnetic L1 phase in the Mn-Al-C alloys induced by high-pressure spark plasma
+      sintering
+    first_author: Tyrman, Muriel
+    year: 2018
+    url: https://hal.science/hal-01681390/document
+    evidence: full_text
+    locator: Section IV / final discussion; Section III.C
+  quote: This effect should be explained rather by the shape anisotropy related to the global in plane orientation
+    of flakes produced by the stress applied during sintering than a texture effect since XRD patterns exhibit the
+    features of an isotropic material for all samples.
+  note: 'Same paper: "To explain this result, we propose the hypothesis that texturation appears, which means that
+    there is a development of variants with the c-axis oriented perpendicularly to the stress direction." and "Texture
+    was neither observed by electron backscatter diffraction (EBSD)4." The small remanence anisotropy (records b-e)
+    is attributed by the authors mainly to flake shape anisotropy, not to stress-selected variants.'
+- id: mnal_sa_tyrman2018b
+  phase: tau-MnAl-C
+  route: SA
+  process: cryo-milled melt-spun Mn54Al44C2 epsilon flakes, SPS at 550 C (823 K) under 400 MPa (epsilon->tau during
+    sintering)
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    stress_MPa: 400
+    parent_texture: flake-shaped particles (flakes lie in the plane normal to the pressing axis at 400 MPa per SEM)
+    magnet_axis: pressing axis
+    density_rel: 0.98
+    Tc_relation: stress applied above Tc(tau)
+  quantity: Mr_over_Ms
+  value: 0.45
+  unit: dimensionless (Jr/J at 1.9 T)
+  uncertainty: 0.01
+  measured_along: parallel to pressing axis
+  measurement: 'VSM (LakeShore 7400) at RT on ~3 mm cubes, max field 1.9 T (authors: about 70 % of saturation; same
+    Hc checked up to 9 T); Jr/J(1.9 T) used as Mr/Ms proxy; demagnetisation correction not stated'
+  n_samples: 1
+  source:
+    doi: 10.1063/1.5007241
+    title: Anisotropy of the ferromagnetic L1 phase in the Mn-Al-C alloys induced by high-pressure spark plasma
+      sintering
+    first_author: Tyrman, Muriel
+    year: 2018
+    url: https://hal.science/hal-01681390/document
+    evidence: full_text
+    locator: Fig. 3 (read from plot)
+  quote: FIG. 3. Curves of residual magnetization (left axis) and magnetization at 1.9 T (right axis) versus sintering
+    pressure measured parallel and perpendicular to the pressure axis.
+  note: 'Read from Fig. 3: Jr = 234 mT and J(1.9 T) = 515 mT -> 0.454. Not saturated at 1.9 T, so not a true Mr/Ms.
+    Text: "The hysteresis loops recorded in both direction overlaps for a pressure of 100 MPa but the parallel loop
+    is significantly below the perpendicular one for higher pressures." Relative density from Table I (SF400). Reference
+    sample annealed in a furnace without stress: only its coercivity is reported.'
+- id: mnal_sa_tyrman2018c
+  phase: tau-MnAl-C
+  route: SA
+  process: cryo-milled melt-spun Mn54Al44C2 epsilon flakes, SPS at 550 C (823 K) under 400 MPa (epsilon->tau during
+    sintering)
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    stress_MPa: 400
+    parent_texture: flake-shaped particles (flakes lie in the plane normal to the pressing axis at 400 MPa per SEM)
+    magnet_axis: pressing axis
+    density_rel: 0.98
+    Tc_relation: stress applied above Tc(tau)
+  quantity: Mr_over_Ms
+  value: 0.48
+  unit: dimensionless (Jr/J at 1.9 T)
+  uncertainty: 0.01
+  measured_along: perpendicular to pressing axis
+  measurement: 'VSM (LakeShore 7400) at RT on ~3 mm cubes, max field 1.9 T (authors: about 70 % of saturation; same
+    Hc checked up to 9 T); Jr/J(1.9 T) used as Mr/Ms proxy; demagnetisation correction not stated'
+  n_samples: 1
+  source:
+    doi: 10.1063/1.5007241
+    title: Anisotropy of the ferromagnetic L1 phase in the Mn-Al-C alloys induced by high-pressure spark plasma
+      sintering
+    first_author: Tyrman, Muriel
+    year: 2018
+    url: https://hal.science/hal-01681390/document
+    evidence: full_text
+    locator: Fig. 3 (read from plot)
+  quote: FIG. 3. Curves of residual magnetization (left axis) and magnetization at 1.9 T (right axis) versus sintering
+    pressure measured parallel and perpendicular to the pressure axis.
+  note: 'Read from Fig. 3: Jr = 258 mT and J(1.9 T) = 539 mT -> 0.479. Not saturated at 1.9 T, so not a true Mr/Ms.
+    Text: "The hysteresis loops recorded in both direction overlaps for a pressure of 100 MPa but the parallel loop
+    is significantly below the perpendicular one for higher pressures." Relative density from Table I (SF400). Reference
+    sample annealed in a furnace without stress: only its coercivity is reported.'
+- id: mnal_sa_tyrman2018d
+  phase: tau-MnAl-C
+  route: SA
+  process: cryo-milled melt-spun Mn54Al44C2 epsilon flakes, SPS at 550 C (823 K) under 100 MPa (epsilon->tau during
+    sintering)
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    stress_MPa: 100
+    parent_texture: flake-shaped particles (flakes lie in the plane normal to the pressing axis at 400 MPa per SEM)
+    magnet_axis: pressing axis
+    density_rel: 0.87
+    Tc_relation: stress applied above Tc(tau)
+  quantity: Mr_over_Ms
+  value: 0.42
+  unit: dimensionless (Jr/J at 1.9 T)
+  uncertainty: 0.01
+  measured_along: parallel to pressing axis
+  measurement: 'VSM (LakeShore 7400) at RT on ~3 mm cubes, max field 1.9 T (authors: about 70 % of saturation; same
+    Hc checked up to 9 T); Jr/J(1.9 T) used as Mr/Ms proxy; demagnetisation correction not stated'
+  n_samples: 1
+  source:
+    doi: 10.1063/1.5007241
+    title: Anisotropy of the ferromagnetic L1 phase in the Mn-Al-C alloys induced by high-pressure spark plasma
+      sintering
+    first_author: Tyrman, Muriel
+    year: 2018
+    url: https://hal.science/hal-01681390/document
+    evidence: full_text
+    locator: Fig. 3 (read from plot)
+  quote: FIG. 3. Curves of residual magnetization (left axis) and magnetization at 1.9 T (right axis) versus sintering
+    pressure measured parallel and perpendicular to the pressure axis.
+  note: 'Read from Fig. 3: Jr = 200 mT and J(1.9 T) = 472 mT -> 0.424. Not saturated at 1.9 T, so not a true Mr/Ms.
+    Text: "The hysteresis loops recorded in both direction overlaps for a pressure of 100 MPa but the parallel loop
+    is significantly below the perpendicular one for higher pressures." Relative density from Table I (SF100). Reference
+    sample annealed in a furnace without stress: only its coercivity is reported.'
+- id: mnal_sa_tyrman2018e
+  phase: tau-MnAl-C
+  route: SA
+  process: cryo-milled melt-spun Mn54Al44C2 epsilon flakes, SPS at 550 C (823 K) under 100 MPa (epsilon->tau during
+    sintering)
+  conditions:
+    field_T: 0
+    T_process_K: 823
+    stress_MPa: 100
+    parent_texture: flake-shaped particles (flakes lie in the plane normal to the pressing axis at 400 MPa per SEM)
+    magnet_axis: pressing axis
+    density_rel: 0.87
+    Tc_relation: stress applied above Tc(tau)
+  quantity: Mr_over_Ms
+  value: 0.43
+  unit: dimensionless (Jr/J at 1.9 T)
+  uncertainty: 0.01
+  measured_along: perpendicular to pressing axis
+  measurement: 'VSM (LakeShore 7400) at RT on ~3 mm cubes, max field 1.9 T (authors: about 70 % of saturation; same
+    Hc checked up to 9 T); Jr/J(1.9 T) used as Mr/Ms proxy; demagnetisation correction not stated'
+  n_samples: 1
+  source:
+    doi: 10.1063/1.5007241
+    title: Anisotropy of the ferromagnetic L1 phase in the Mn-Al-C alloys induced by high-pressure spark plasma
+      sintering
+    first_author: Tyrman, Muriel
+    year: 2018
+    url: https://hal.science/hal-01681390/document
+    evidence: full_text
+    locator: Fig. 3 (read from plot)
+  quote: FIG. 3. Curves of residual magnetization (left axis) and magnetization at 1.9 T (right axis) versus sintering
+    pressure measured parallel and perpendicular to the pressure axis.
+  note: 'Read from Fig. 3: Jr = 205 mT and J(1.9 T) = 472 mT -> 0.434. Not saturated at 1.9 T, so not a true Mr/Ms.
+    Text: "The hysteresis loops recorded in both direction overlaps for a pressure of 100 MPa but the parallel loop
+    is significantly below the perpendicular one for higher pressures." Relative density from Table I (SF100). Reference
+    sample annealed in a furnace without stress: only its coercivity is reported.'

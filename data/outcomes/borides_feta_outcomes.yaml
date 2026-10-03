@@ -1,0 +1,30 @@
+- id: feta85_bhmax_gabay2019
+  phase: Fe2+δTa-C14-meltspun
+  route: isotropic
+  process: Fe85Ta15 arc-melted then melt-spun under Ar onto copper wheel at 60 m/s; C14 + bcc Fe(Ta) ribbon
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: not measured
+    magnet_axis: in-plane of ribbon
+    density_rel: null
+  quantity: BHmax
+  value: 1.1
+  unit: MGOe
+  measured_along: in-plane ribbon
+  measurement: VSM M(H) at 300 K; maximum applied field not stated in extracted text; assumed ingot density 10.0
+    g/cm3
+  n_samples: not stated
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out
+    evidence: full_text
+    locator: Results, Fig. 5
+  quote: Figure 5 presents detailed characterization of the two-phase Fe ₈₅ Ta ₁₅ ribbons exhibiting an _H_ c of
+    0.41 kOe at 300 K. Assuming the ingot density (10.0 g/cm ³ ), the _M_ ( _H_ ) data of these ribbons translate
+    into a maximum energy product of 1.1 MGOe.
+  note: Energy product is inferred from ribbon M(H) and ingot density, not a directly measured induction loop. No
+    alignment step reported.

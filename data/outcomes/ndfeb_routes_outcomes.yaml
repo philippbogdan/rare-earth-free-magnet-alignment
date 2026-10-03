@@ -1,0 +1,620 @@
+# Sealed sample outcomes; do not use to build alignment predictions.
+- id: ndfeb_wang2011_br_zero
+  phase: Nd2Fe14B
+  route: isotropic
+  process: injection cast into copper mold without field
+  conditions:
+    field_T: 0
+    composition: Nd9.5Fe71.5Ti2.5Zr0.5Cr1B14.5C0.5
+    slab_mm: 0.9 x 4 x 15
+  quantity: Br
+  value: 0.58
+  unit: T
+  measured_along: not specified
+  measurement: reported Br; magnetizing field and temperature not specified in abstract
+  n_samples: not stated
+  source:
+    doi: 10.1063/1.3556913
+    title: Magnetic properties and microstructure of bulk Nd–Fe–B magnets solidified in magnetic field
+    first_author: C. Wang
+    year: 2011
+    url: https://api.openalex.org/works/doi:10.1063/1.3556913
+    evidence: abstract
+    locator: abstract
+  quote: As a result, the magnetic properties are improved from Br = 5.8 kG, iHc = 6.5 kOe, and (BH)max = 5.9 MGOe for thesample
+    cast without magnetic field to Br = 6.1 kG, iHc = 10.3 kOe, and (BH)max = 7.3 MGOe for the sample cast with a 3.7 kOe
+    magnetic field.
+  note: 5.8 kG converted to 0.58 T. Composition is not pure stoichiometric Nd2Fe14B.
+- id: ndfeb_wang2011_br_field
+  phase: Nd2Fe14B
+  route: FA
+  process: injection cast into copper mold in magnetic field
+  conditions:
+    field_T: 0.37
+    composition: Nd9.5Fe71.5Ti2.5Zr0.5Cr1B14.5C0.5
+    slab_mm: 0.9 x 4 x 15
+  quantity: Br
+  value: 0.61
+  unit: T
+  measured_along: not specified
+  measurement: reported Br; magnetizing field and temperature not specified in abstract
+  n_samples: not stated
+  source:
+    doi: 10.1063/1.3556913
+    title: Magnetic properties and microstructure of bulk Nd–Fe–B magnets solidified in magnetic field
+    first_author: C. Wang
+    year: 2011
+    url: https://api.openalex.org/works/doi:10.1063/1.3556913
+    evidence: abstract
+    locator: abstract
+  quote: As a result, the magnetic properties are improved from Br = 5.8 kG, iHc = 6.5 kOe, and (BH)max = 5.9 MGOe for thesample
+    cast without magnetic field to Br = 6.1 kG, iHc = 10.3 kOe, and (BH)max = 7.3 MGOe for the sample cast with a 3.7 kOe
+    magnetic field.
+  note: 6.1 kG converted to 0.61 T; casting field 3.7 kOe converted approximately to 0.37 T in air.
+- id: ndfeb_wang2011_bh_zero
+  phase: Nd2Fe14B
+  route: isotropic
+  process: injection cast into copper mold
+  conditions:
+    field_T: 0
+    composition: Nd9.5Fe71.5Ti2.5Zr0.5Cr1B14.5C0.5
+  quantity: (BH)max
+  value: 5.9
+  unit: MGOe
+  measured_along: not specified
+  measurement: energy product reported in abstract; measurement details absent
+  n_samples: not stated
+  source:
+    doi: 10.1063/1.3556913
+    title: Magnetic properties and microstructure of bulk Nd–Fe–B magnets solidified in magnetic field
+    first_author: C. Wang
+    year: 2011
+    url: https://api.openalex.org/works/doi:10.1063/1.3556913
+    evidence: abstract
+    locator: abstract
+  quote: As a result, the magnetic properties are improved from Br = 5.8 kG, iHc = 6.5 kOe, and (BH)max = 5.9 MGOe for thesample
+    cast without magnetic field to Br = 6.1 kG, iHc = 10.3 kOe, and (BH)max = 7.3 MGOe for the sample cast with a 3.7 kOe
+    magnetic field.
+  note: Same alloy and source as paired Br records.
+- id: ndfeb_wang2011_bh_field
+  phase: Nd2Fe14B
+  route: FA
+  process: injection cast into copper mold
+  conditions:
+    field_T: 0.37
+    composition: Nd9.5Fe71.5Ti2.5Zr0.5Cr1B14.5C0.5
+  quantity: (BH)max
+  value: 7.3
+  unit: MGOe
+  measured_along: not specified
+  measurement: energy product reported in abstract; measurement details absent
+  n_samples: not stated
+  source:
+    doi: 10.1063/1.3556913
+    title: Magnetic properties and microstructure of bulk Nd–Fe–B magnets solidified in magnetic field
+    first_author: C. Wang
+    year: 2011
+    url: https://api.openalex.org/works/doi:10.1063/1.3556913
+    evidence: abstract
+    locator: abstract
+  quote: As a result, the magnetic properties are improved from Br = 5.8 kG, iHc = 6.5 kOe, and (BH)max = 5.9 MGOe for thesample
+    cast without magnetic field to Br = 6.1 kG, iHc = 10.3 kOe, and (BH)max = 7.3 MGOe for the sample cast with a 3.7 kOe
+    magnetic field.
+  note: Same alloy and source as paired Br records.
+- id: ndfeb_li2019_br_emv
+  phase: Nd2Fe14B
+  route: FS
+  process: solidified semisolid Nd70Cu30-30wt% Nd2Fe14B under 10 T with two-step electromagnetic vibration
+  conditions:
+    field_T: 10
+    T_process_K: 973
+    frequency_Hz: 250 then 1000
+    hard_phase_wt_fraction: 0.3
+  quantity: Br
+  value: 0.38
+  unit: T
+  measured_along: parallel to c-axis / static field
+  measurement: VSM hysteresis loop; max magnetizing field not stated in accessible text
+  n_samples: 1
+  source:
+    doi: 10.1038/s41598-019-42053-9
+    title: Crystalline orientation control of the platelet Nd2Fe14B phase to produce magnetic anisotropy via electromagnetic
+      vibration processing
+    first_author: Mingjun Li
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6450867/fullTextXML
+    evidence: full_text
+    locator: Magnetic properties, Fig. 4b
+  quote: In contrast, the saturation remanence and coercivity acquired along the c axis of the magnetic platelets are 0.38
+    T and 0.78 T, respectively, whereas they are almost naught when measured perpendicular to the c axis in the alloy that
+    was solidified by two-step EMV processing, as revealed in Fig. 4b, indicating that the present two-step EMV solidification
+    technique is effective in producing a bulk magnet with strong anisotropy in magnetism.
+  note: Reported as saturation remanence for the composite; the hard phase is only 30 wt%.
+- id: ndfeb_li2019_ipf_emv
+  phase: Nd2Fe14B
+  route: FS
+  process: same two-step electromagnetic vibration solidification
+  conditions:
+    field_T: 10
+    T_process_K: 973
+    frequency_Hz: 250 then 1000
+    hard_phase_wt_fraction: 0.3
+  quantity: texture_metric
+  value: <10
+  unit: c_axis_IPF_spread_deg
+  measured_along: relative to field/c-axis
+  measurement: EBSD inverse pole figure in a selected area, not a bulk pole figure
+  n_samples: 1
+  source:
+    doi: 10.1038/s41598-019-42053-9
+    title: Crystalline orientation control of the platelet Nd2Fe14B phase to produce magnetic anisotropy via electromagnetic
+      vibration processing
+    first_author: Mingjun Li
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6450867/fullTextXML
+    evidence: full_text
+    locator: Results, Fig. 2j
+  quote: The [001] IPF indicates that magnetic phases are highly concentrated to (001) with their deviations less than 10
+    degrees.
+  note: Local IPF spread, not a rocking-curve FWHM or volume-weighted alignment factor.
+- id: ndfeb_truong2016_mrms_8
+  phase: Nd2Fe14B
+  route: DS+FA
+  process: field-assisted melt-spun Nd10.5Fe72Co11B6.5 ribbon
+  conditions:
+    field_T: 0.32
+    wheel_speed_m_s: 8
+    field_direction: normal to wheel surface
+  quantity: Mr_over_Ms
+  value: 0.66
+  unit: dimensionless
+  measured_along: along ribbon measuring direction, not stated relative to field
+  measurement: Mr divided by magnetization measured at 30 kOe (3 T); this may be below true saturation
+  n_samples: 1
+  source:
+    doi: 10.15625/0868-3166/26/1/7686
+    title: Magnetic field assisted melt–spinning Nd-Fe-B ribbons and anisotropic bonded NdFeB magnets prepared thereof
+    first_author: Nguyen Xuan Truong
+    year: 2016
+    url: https://vjs.ac.vn/index.php/cip/article/download/7686/pdf/31785
+    evidence: full_text
+    locator: p. 61, paragraph below Fig. 1
+  quote: 'The mentioned texture of the prepared FAMS Nd10.5 Fe72 Co11 B6.5 ribbons is approved by
+
+    the high ratio α between the remanent magnetization Mr {M(H = 0)} and the magnetization Ms
+
+    measured at H = 30 kOe (see Fig. 2). For the ribbons melt-spun at v = 8, 10, 12, 14 and 16 m/s,
+
+    the factor α is 0.66, 0.69, 0.73, 0.68 and 0.70, respectively. All these values are higher than the
+
+    value of 0.5 typical for the isotropic ribbons.'
+  note: Co-bearing nanocomposite ribbon. Values listed in wheel-speed order. Ratio can include exchange enhancement and is
+    not directly A.
+- id: ndfeb_truong2016_mrms_10
+  phase: Nd2Fe14B
+  route: DS+FA
+  process: field-assisted melt-spun Nd10.5Fe72Co11B6.5 ribbon
+  conditions:
+    field_T: 0.32
+    wheel_speed_m_s: 10
+    field_direction: normal to wheel surface
+  quantity: Mr_over_Ms
+  value: 0.69
+  unit: dimensionless
+  measured_along: along ribbon measuring direction, not stated relative to field
+  measurement: Mr divided by magnetization measured at 30 kOe (3 T); this may be below true saturation
+  n_samples: 1
+  source:
+    doi: 10.15625/0868-3166/26/1/7686
+    title: Magnetic field assisted melt–spinning Nd-Fe-B ribbons and anisotropic bonded NdFeB magnets prepared thereof
+    first_author: Nguyen Xuan Truong
+    year: 2016
+    url: https://vjs.ac.vn/index.php/cip/article/download/7686/pdf/31785
+    evidence: full_text
+    locator: p. 61, paragraph below Fig. 1
+  quote: 'The mentioned texture of the prepared FAMS Nd10.5 Fe72 Co11 B6.5 ribbons is approved by
+
+    the high ratio α between the remanent magnetization Mr {M(H = 0)} and the magnetization Ms
+
+    measured at H = 30 kOe (see Fig. 2). For the ribbons melt-spun at v = 8, 10, 12, 14 and 16 m/s,
+
+    the factor α is 0.66, 0.69, 0.73, 0.68 and 0.70, respectively. All these values are higher than the
+
+    value of 0.5 typical for the isotropic ribbons.'
+  note: Co-bearing nanocomposite ribbon. Values listed in wheel-speed order. Ratio can include exchange enhancement and is
+    not directly A.
+- id: ndfeb_truong2016_mrms_12
+  phase: Nd2Fe14B
+  route: DS+FA
+  process: field-assisted melt-spun Nd10.5Fe72Co11B6.5 ribbon
+  conditions:
+    field_T: 0.32
+    wheel_speed_m_s: 12
+    field_direction: normal to wheel surface
+  quantity: Mr_over_Ms
+  value: 0.73
+  unit: dimensionless
+  measured_along: along ribbon measuring direction, not stated relative to field
+  measurement: Mr divided by magnetization measured at 30 kOe (3 T); this may be below true saturation
+  n_samples: 1
+  source:
+    doi: 10.15625/0868-3166/26/1/7686
+    title: Magnetic field assisted melt–spinning Nd-Fe-B ribbons and anisotropic bonded NdFeB magnets prepared thereof
+    first_author: Nguyen Xuan Truong
+    year: 2016
+    url: https://vjs.ac.vn/index.php/cip/article/download/7686/pdf/31785
+    evidence: full_text
+    locator: p. 61, paragraph below Fig. 1
+  quote: 'The mentioned texture of the prepared FAMS Nd10.5 Fe72 Co11 B6.5 ribbons is approved by
+
+    the high ratio α between the remanent magnetization Mr {M(H = 0)} and the magnetization Ms
+
+    measured at H = 30 kOe (see Fig. 2). For the ribbons melt-spun at v = 8, 10, 12, 14 and 16 m/s,
+
+    the factor α is 0.66, 0.69, 0.73, 0.68 and 0.70, respectively. All these values are higher than the
+
+    value of 0.5 typical for the isotropic ribbons.'
+  note: Co-bearing nanocomposite ribbon. Values listed in wheel-speed order. Ratio can include exchange enhancement and is
+    not directly A.
+- id: ndfeb_truong2016_mrms_14
+  phase: Nd2Fe14B
+  route: DS+FA
+  process: field-assisted melt-spun Nd10.5Fe72Co11B6.5 ribbon
+  conditions:
+    field_T: 0.32
+    wheel_speed_m_s: 14
+    field_direction: normal to wheel surface
+  quantity: Mr_over_Ms
+  value: 0.68
+  unit: dimensionless
+  measured_along: along ribbon measuring direction, not stated relative to field
+  measurement: Mr divided by magnetization measured at 30 kOe (3 T); this may be below true saturation
+  n_samples: 1
+  source:
+    doi: 10.15625/0868-3166/26/1/7686
+    title: Magnetic field assisted melt–spinning Nd-Fe-B ribbons and anisotropic bonded NdFeB magnets prepared thereof
+    first_author: Nguyen Xuan Truong
+    year: 2016
+    url: https://vjs.ac.vn/index.php/cip/article/download/7686/pdf/31785
+    evidence: full_text
+    locator: p. 61, paragraph below Fig. 1
+  quote: 'The mentioned texture of the prepared FAMS Nd10.5 Fe72 Co11 B6.5 ribbons is approved by
+
+    the high ratio α between the remanent magnetization Mr {M(H = 0)} and the magnetization Ms
+
+    measured at H = 30 kOe (see Fig. 2). For the ribbons melt-spun at v = 8, 10, 12, 14 and 16 m/s,
+
+    the factor α is 0.66, 0.69, 0.73, 0.68 and 0.70, respectively. All these values are higher than the
+
+    value of 0.5 typical for the isotropic ribbons.'
+  note: Co-bearing nanocomposite ribbon. Values listed in wheel-speed order. Ratio can include exchange enhancement and is
+    not directly A.
+- id: ndfeb_truong2016_mrms_16
+  phase: Nd2Fe14B
+  route: DS+FA
+  process: field-assisted melt-spun Nd10.5Fe72Co11B6.5 ribbon
+  conditions:
+    field_T: 0.32
+    wheel_speed_m_s: 16
+    field_direction: normal to wheel surface
+  quantity: Mr_over_Ms
+  value: 0.7
+  unit: dimensionless
+  measured_along: along ribbon measuring direction, not stated relative to field
+  measurement: Mr divided by magnetization measured at 30 kOe (3 T); this may be below true saturation
+  n_samples: 1
+  source:
+    doi: 10.15625/0868-3166/26/1/7686
+    title: Magnetic field assisted melt–spinning Nd-Fe-B ribbons and anisotropic bonded NdFeB magnets prepared thereof
+    first_author: Nguyen Xuan Truong
+    year: 2016
+    url: https://vjs.ac.vn/index.php/cip/article/download/7686/pdf/31785
+    evidence: full_text
+    locator: p. 61, paragraph below Fig. 1
+  quote: 'The mentioned texture of the prepared FAMS Nd10.5 Fe72 Co11 B6.5 ribbons is approved by
+
+    the high ratio α between the remanent magnetization Mr {M(H = 0)} and the magnetization Ms
+
+    measured at H = 30 kOe (see Fig. 2). For the ribbons melt-spun at v = 8, 10, 12, 14 and 16 m/s,
+
+    the factor α is 0.66, 0.69, 0.73, 0.68 and 0.70, respectively. All these values are higher than the
+
+    value of 0.5 typical for the isotropic ribbons.'
+  note: Co-bearing nanocomposite ribbon. Values listed in wheel-speed order. Ratio can include exchange enhancement and is
+    not directly A.
+- id: ndfeb_nguyen2013_zero_br
+  phase: Nd2Fe14B
+  route: isotropic
+  process: melt-spun nanocomposite ribbon, then powdered before magnetic measurement
+  conditions: &id001
+    field_T: 0
+    wheel_speed_m_s: 34
+    feedstock: Nd16Fe76B8 plus 40 wt% Fe65Co35
+    state: powdered as-spun ribbons
+    demagnetization_factor_reported: 0.33
+  quantity: Br
+  value: 0.93
+  unit: T
+  measured_along: powdered ribbon sample; direction not specified
+  measurement: pulsed field magnetometer to 90 kOe; Table 1 gives self-demagnetization factor 0.33
+  n_samples: 1
+  source:
+    doi: 10.1155/2013/927356
+    title: The Effect of External Magnetic Field on Microstructure and Magnetic Properties of Melt-Spun Nd-Fe-B/Fe-Co Nanocomposite
+      Ribbons
+    first_author: Xuan Truong Nguyen
+    year: 2013
+    url: https://pdfs.semanticscholar.org/5224/a7abe53e21a227034b2a83a906cf461a98a9.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 0.0               34                   89.2            0.93          0.61          505           383          128
+  note: Br and Mr/Ms may include exchange coupling from FeCo soft phase; do not equate Mr/Ms with alignment A. Wheel speed
+    differs between field and control, so this is not an isolated field effect. Table header supplies units.
+- id: ndfeb_nguyen2013_zero_mr_over_ms
+  phase: Nd2Fe14B
+  route: isotropic
+  process: melt-spun nanocomposite ribbon, then powdered before magnetic measurement
+  conditions: *id001
+  quantity: Mr_over_Ms
+  value: 0.61
+  unit: dimensionless
+  measured_along: powdered ribbon sample; direction not specified
+  measurement: pulsed field magnetometer to 90 kOe; Table 1 gives self-demagnetization factor 0.33
+  n_samples: 1
+  source:
+    doi: 10.1155/2013/927356
+    title: The Effect of External Magnetic Field on Microstructure and Magnetic Properties of Melt-Spun Nd-Fe-B/Fe-Co Nanocomposite
+      Ribbons
+    first_author: Xuan Truong Nguyen
+    year: 2013
+    url: https://pdfs.semanticscholar.org/5224/a7abe53e21a227034b2a83a906cf461a98a9.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 0.0               34                   89.2            0.93          0.61          505           383          128
+  note: Br and Mr/Ms may include exchange coupling from FeCo soft phase; do not equate Mr/Ms with alignment A. Wheel speed
+    differs between field and control, so this is not an isolated field effect. Table header supplies units.
+- id: ndfeb_nguyen2013_zero_bhmax
+  phase: Nd2Fe14B
+  route: isotropic
+  process: melt-spun nanocomposite ribbon, then powdered before magnetic measurement
+  conditions: *id001
+  quantity: (BH)max
+  value: 128
+  unit: kJ/m3
+  measured_along: powdered ribbon sample; direction not specified
+  measurement: pulsed field magnetometer to 90 kOe; Table 1 gives self-demagnetization factor 0.33
+  n_samples: 1
+  source:
+    doi: 10.1155/2013/927356
+    title: The Effect of External Magnetic Field on Microstructure and Magnetic Properties of Melt-Spun Nd-Fe-B/Fe-Co Nanocomposite
+      Ribbons
+    first_author: Xuan Truong Nguyen
+    year: 2013
+    url: https://pdfs.semanticscholar.org/5224/a7abe53e21a227034b2a83a906cf461a98a9.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 0.0               34                   89.2            0.93          0.61          505           383          128
+  note: Br and Mr/Ms may include exchange coupling from FeCo soft phase; do not equate Mr/Ms with alignment A. Wheel speed
+    differs between field and control, so this is not an isolated field effect. Table header supplies units.
+- id: ndfeb_nguyen2013_field_br
+  phase: Nd2Fe14B
+  route: DS+FA
+  process: melt-spun nanocomposite ribbon, then powdered before magnetic measurement
+  conditions: &id002
+    field_T: 0.32
+    wheel_speed_m_s: 30
+    feedstock: Nd16Fe76B8 plus 40 wt% Fe65Co35
+    state: powdered as-spun ribbons
+    demagnetization_factor_reported: 0.33
+  quantity: Br
+  value: 0.99
+  unit: T
+  measured_along: powdered ribbon sample; direction not specified
+  measurement: pulsed field magnetometer to 90 kOe; Table 1 gives self-demagnetization factor 0.33
+  n_samples: 1
+  source:
+    doi: 10.1155/2013/927356
+    title: The Effect of External Magnetic Field on Microstructure and Magnetic Properties of Melt-Spun Nd-Fe-B/Fe-Co Nanocomposite
+      Ribbons
+    first_author: Xuan Truong Nguyen
+    year: 2013
+    url: https://pdfs.semanticscholar.org/5224/a7abe53e21a227034b2a83a906cf461a98a9.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 0.32                  30                   92.3            0.99          0.63          675           504          140
+  note: Br and Mr/Ms may include exchange coupling from FeCo soft phase; do not equate Mr/Ms with alignment A. Wheel speed
+    differs between field and control, so this is not an isolated field effect. Table header supplies units.
+- id: ndfeb_nguyen2013_field_mr_over_ms
+  phase: Nd2Fe14B
+  route: DS+FA
+  process: melt-spun nanocomposite ribbon, then powdered before magnetic measurement
+  conditions: *id002
+  quantity: Mr_over_Ms
+  value: 0.63
+  unit: dimensionless
+  measured_along: powdered ribbon sample; direction not specified
+  measurement: pulsed field magnetometer to 90 kOe; Table 1 gives self-demagnetization factor 0.33
+  n_samples: 1
+  source:
+    doi: 10.1155/2013/927356
+    title: The Effect of External Magnetic Field on Microstructure and Magnetic Properties of Melt-Spun Nd-Fe-B/Fe-Co Nanocomposite
+      Ribbons
+    first_author: Xuan Truong Nguyen
+    year: 2013
+    url: https://pdfs.semanticscholar.org/5224/a7abe53e21a227034b2a83a906cf461a98a9.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 0.32                  30                   92.3            0.99          0.63          675           504          140
+  note: Br and Mr/Ms may include exchange coupling from FeCo soft phase; do not equate Mr/Ms with alignment A. Wheel speed
+    differs between field and control, so this is not an isolated field effect. Table header supplies units.
+- id: ndfeb_nguyen2013_field_bhmax
+  phase: Nd2Fe14B
+  route: DS+FA
+  process: melt-spun nanocomposite ribbon, then powdered before magnetic measurement
+  conditions: *id002
+  quantity: (BH)max
+  value: 140
+  unit: kJ/m3
+  measured_along: powdered ribbon sample; direction not specified
+  measurement: pulsed field magnetometer to 90 kOe; Table 1 gives self-demagnetization factor 0.33
+  n_samples: 1
+  source:
+    doi: 10.1155/2013/927356
+    title: The Effect of External Magnetic Field on Microstructure and Magnetic Properties of Melt-Spun Nd-Fe-B/Fe-Co Nanocomposite
+      Ribbons
+    first_author: Xuan Truong Nguyen
+    year: 2013
+    url: https://pdfs.semanticscholar.org/5224/a7abe53e21a227034b2a83a906cf461a98a9.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 0.32                  30                   92.3            0.99          0.63          675           504          140
+  note: Br and Mr/Ms may include exchange coupling from FeCo soft phase; do not equate Mr/Ms with alignment A. Wheel speed
+    differs between field and control, so this is not an isolated field effect. Table header supplies units.
+- id: ndfeb_kesler2019_bh_0t
+  phase: Nd2Fe14B
+  route: isotropic
+  process: melt-spun amorphous Nd2Fe14B plus TiC crystallized by annealing
+  conditions:
+    field_T: 0
+    T_process_K: 948
+    time_min: 15
+    ribbon_state: amorphous as spun
+  quantity: (BH)max
+  value: 12
+  unit: MGOe
+  measured_along: along ribbon length
+  measurement: VSM at 300 K after 30 kOe (3 T) applied along ribbon; no demagnetization correction
+  n_samples: 1
+  source:
+    doi: 10.3390/magnetochemistry5010016
+    title: Effects of High Magnetic Fields on Phase Transformations in Amorphous Nd2Fe14B
+    first_author: Michael Kesler
+    year: 2019
+    url: https://mdpi-res.com/d_attachment/magnetochemistry/magnetochemistry-05-00016/article_deploy/magnetochemistry-05-00016.pdf
+    evidence: full_text
+    locator: p. 6, Fig. 4d discussion
+  quote: (81 emu/g) and maximum energy products (12 MGOe) are the same for the samples annealed in
+  note: 675 C = 948 K. The extracted PDF text overlays a peer-review preprint on this line, so the quote ends before the corrupted
+    line. Paper reports equality for zero and 90 kOe annealing.
+- id: ndfeb_kesler2019_bh_9t
+  phase: Nd2Fe14B
+  route: FA
+  process: melt-spun amorphous Nd2Fe14B plus TiC crystallized by annealing
+  conditions:
+    field_T: 9
+    T_process_K: 948
+    time_min: 15
+    ribbon_state: amorphous as spun
+  quantity: (BH)max
+  value: 12
+  unit: MGOe
+  measured_along: along ribbon length
+  measurement: VSM at 300 K after 30 kOe (3 T) applied along ribbon; no demagnetization correction
+  n_samples: 1
+  source:
+    doi: 10.3390/magnetochemistry5010016
+    title: Effects of High Magnetic Fields on Phase Transformations in Amorphous Nd2Fe14B
+    first_author: Michael Kesler
+    year: 2019
+    url: https://mdpi-res.com/d_attachment/magnetochemistry/magnetochemistry-05-00016/article_deploy/magnetochemistry-05-00016.pdf
+    evidence: full_text
+    locator: p. 6, Fig. 4d discussion
+  quote: (81 emu/g) and maximum energy products (12 MGOe) are the same for the samples annealed in
+  note: 675 C = 948 K. The extracted PDF text overlays a peer-review preprint on this line, so the quote ends before the corrupted
+    line. Paper reports equality for zero and 90 kOe annealing.
+- id: ndfeb_genc2024_br_rt
+  phase: Nd2Fe14B
+  route: AM
+  process: laser powder bed fusion of commercial NdFeB powder, as printed without heated bed
+  conditions:
+    bed_T_C: room temperature
+    post_treatment: none
+  quantity: Br
+  value: 0.72
+  unit: T
+  measured_along: not specified
+  measurement: remanence reported in abstract; paper later specifies permeameter for heated-bed comparison
+  n_samples: one maximum among process-parameter study
+  source:
+    doi: 10.1007/s00170-024-13605-9
+    title: Laser powder bed fusion of NdFeB and influence of powder bed heating on density and magnetic properties
+    first_author: Kübra Genç
+    year: 2024
+    url: https://link.springer.com/article/10.1007/s00170-024-13605-9
+    evidence: full_text
+    locator: abstract
+  quote: This paper includes a detailed process parameter investigation, which revealed samples with a maximum energy product,
+    (BH) max , of 81 kJ/m 3 (remanence, B r 0.72 T; coercivity, H ci 891 kA/m) without post/pretreatment,
+  note: Multiple phases and porosity; no c-axis texture measurement.
+- id: ndfeb_genc2024_br_heated
+  phase: Nd2Fe14B
+  route: AM
+  process: laser powder bed fusion of commercial NdFeB powder with heated bed, as printed
+  conditions:
+    bed_T_C: 400
+    post_treatment: none
+  quantity: Br
+  value: 0.76
+  unit: T
+  measured_along: not specified
+  measurement: permeameter; magnetizing field not reported in quoted passage
+  n_samples: one maximum among three samples per bed temperature
+  source:
+    doi: 10.1007/s00170-024-13605-9
+    title: Laser powder bed fusion of NdFeB and influence of powder bed heating on density and magnetic properties
+    first_author: Kübra Genç
+    year: 2024
+    url: https://link.springer.com/article/10.1007/s00170-024-13605-9
+    evidence: full_text
+    locator: abstract
+  quote: 'The maximum magnetic properties obtained with the heated bed (400 °C) were as follows: B r , 0.76 T; H ci , 750
+    kA/m; and ( BH) max , 84 kJ/m 3 .'
+  note: Authors note actual part temperature can exceed nominal software bed setting; no crystallographic texture measured.
+- id: ndfeb_genc2024_bh_rt
+  phase: Nd2Fe14B
+  route: AM
+  process: laser powder bed fusion of commercial NdFeB powder, as printed
+  conditions:
+    bed_T_C: room temperature
+    post_treatment: none
+  quantity: (BH)max
+  value: 81
+  unit: kJ/m3
+  measured_along: not specified
+  measurement: permeameter for heated-bed comparison; room-temperature maximum from abstract
+  n_samples: one maximum among process-parameter study
+  source:
+    doi: 10.1007/s00170-024-13605-9
+    title: Laser powder bed fusion of NdFeB and influence of powder bed heating on density and magnetic properties
+    first_author: Kübra Genç
+    year: 2024
+    url: https://link.springer.com/article/10.1007/s00170-024-13605-9
+    evidence: full_text
+    locator: abstract
+  quote: This paper includes a detailed process parameter investigation, which revealed samples with a maximum energy product,
+    (BH) max , of 81 kJ/m 3 (remanence, B r 0.72 T; coercivity, H ci 891 kA/m) without post/pretreatment,
+  note: No measured crystallographic texture; magnetic performance depends on density and phase fraction.
+- id: ndfeb_genc2024_bh_heated
+  phase: Nd2Fe14B
+  route: AM
+  process: laser powder bed fusion of commercial NdFeB powder, as printed
+  conditions:
+    bed_T_C: 400
+    post_treatment: none
+  quantity: (BH)max
+  value: 84
+  unit: kJ/m3
+  measured_along: not specified
+  measurement: permeameter for heated-bed comparison; room-temperature maximum from abstract
+  n_samples: one maximum among process-parameter study
+  source:
+    doi: 10.1007/s00170-024-13605-9
+    title: Laser powder bed fusion of NdFeB and influence of powder bed heating on density and magnetic properties
+    first_author: Kübra Genç
+    year: 2024
+    url: https://link.springer.com/article/10.1007/s00170-024-13605-9
+    evidence: full_text
+    locator: abstract
+  quote: 'The maximum magnetic properties obtained with the heated bed (400 °C) were as follows: B r , 0.76 T; H ci , 750
+    kA/m; and ( BH) max , 84 kJ/m 3 .'
+  note: No measured crystallographic texture; magnetic performance depends on density and phase fraction.

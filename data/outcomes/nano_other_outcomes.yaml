@@ -1,0 +1,2853 @@
+# nano_other OUTCOMES (SEALED until predictions are frozen) - measured remanence / Mr/Ms / BHmax / texture of samples
+# Route codes: FP = free-body rotation of particles/rods in a field (powder in die, slurry, colloidal suspension dried in
+# field, resin/polymer/wax cured or frozen in field) [+ consolidation]; EP = epitaxial film / epitaxially grown wires;
+# isotropic = no alignment step; 'other: field during growth (B1+R)' = field applied during colloidal growth.
+# Extra quantity BHmax (kJ/m3) requested by the lead; packing in conditions.phi_magnetic when reported.
+# Manually checked (rendered page) quotes: bctfeco_ep_andersson2006_perp_mrms
+- id: hcpco_fp_anagnostopoulou2016_r22a1_mrms
+  phase: hcp-Co
+  route: FP
+  process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field (free rotation in liquid); needle cut from wafer
+  conditions: &id001
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
+    phi_magnetic: 0.487
+    rod_dm_over_Lm_nm: 22/166
+    squareness_SQ: 0.93
+    washing: chloroform, standard washing
+  quantity: Mr_over_Ms
+  value: 0.98
+  unit: ''
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R22A1
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R22A1 22/166 48.7 14.0 37.3 1.3 0.98 0.436 0.85 125 0.93 0.27 0.334
+  note: 'Table columns: Sample, dm/Lm (nm), VM (%), VCoO (%), VL (%), e (nm), MR/MS, mu0HC (T), BR (T), (BH)max (kJ/m3), SQ, alpha, BR/2(1+alpha) (T).'
+- id: hcpco_fp_anagnostopoulou2016_r22a1_bhmax
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id001
+  quantity: BHmax
+  value: 125
+  unit: kJ/m3
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; (BH)max computed by the authors from M(H) with the measured VM
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R22A1
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R22A1 22/166 48.7 14.0 37.3 1.3 0.98 0.436 0.85 125 0.93 0.27 0.334
+  note: Same row as the Mr/Ms record.
+- id: hcpco_fp_anagnostopoulou2016_r22a1_br
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id001
+  quantity: Br
+  value: 0.85
+  unit: T
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; BR derived by the authors from VM, MR/MS and the bulk Co polarisation
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R22A1
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R22A1 22/166 48.7 14.0 37.3 1.3 0.98 0.436 0.85 125 0.93 0.27 0.334
+  note: Tabulated BR is consistent with VM x 1.79-1.8 T x MR/MS (derived, not an independent measurement).
+- id: hcpco_fp_anagnostopoulou2016_r22a2_mrms
+  phase: hcp-Co
+  route: FP
+  process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field (free rotation in liquid); needle cut from wafer
+  conditions: &id002
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
+    phi_magnetic: 0.479
+    rod_dm_over_Lm_nm: 22/166
+    squareness_SQ: 0.79
+    washing: toluene, standard washing
+  quantity: Mr_over_Ms
+  value: 0.92
+  unit: ''
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R22A2
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R22A2 22/166 47.9 15.2 36.9 1.4 0.92 0.451 0.79 92 0.79 0.74 0.228
+  note: 'Table columns: Sample, dm/Lm (nm), VM (%), VCoO (%), VL (%), e (nm), MR/MS, mu0HC (T), BR (T), (BH)max (kJ/m3), SQ, alpha, BR/2(1+alpha) (T).'
+- id: hcpco_fp_anagnostopoulou2016_r22a2_bhmax
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id002
+  quantity: BHmax
+  value: 92
+  unit: kJ/m3
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; (BH)max computed by the authors from M(H) with the measured VM
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R22A2
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R22A2 22/166 47.9 15.2 36.9 1.4 0.92 0.451 0.79 92 0.79 0.74 0.228
+  note: Same row as the Mr/Ms record.
+- id: hcpco_fp_anagnostopoulou2016_r22a2_br
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id002
+  quantity: Br
+  value: 0.79
+  unit: T
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; BR derived by the authors from VM, MR/MS and the bulk Co polarisation
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R22A2
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R22A2 22/166 47.9 15.2 36.9 1.4 0.92 0.451 0.79 92 0.79 0.74 0.228
+  note: Tabulated BR is consistent with VM x 1.79-1.8 T x MR/MS (derived, not an independent measurement).
+- id: hcpco_fp_anagnostopoulou2016_r22a3_mrms
+  phase: hcp-Co
+  route: FP
+  process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field (free rotation in liquid); needle cut from wafer
+  conditions: &id003
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
+    phi_magnetic: 0.544
+    rod_dm_over_Lm_nm: 22/166
+    squareness_SQ: 0.96
+    washing: chloroform, extended washing
+  quantity: Mr_over_Ms
+  value: 0.99
+  unit: ''
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R22A3
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R22A3 22/166 54.4 12.0 33.6 1.1 0.99 0.465 0.96 165 0.96 0.165 0.412
+  note: 'Table columns: Sample, dm/Lm (nm), VM (%), VCoO (%), VL (%), e (nm), MR/MS, mu0HC (T), BR (T), (BH)max (kJ/m3), SQ, alpha, BR/2(1+alpha) (T).'
+- id: hcpco_fp_anagnostopoulou2016_r22a3_bhmax
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id003
+  quantity: BHmax
+  value: 165
+  unit: kJ/m3
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; (BH)max computed by the authors from M(H) with the measured VM
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R22A3
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R22A3 22/166 54.4 12.0 33.6 1.1 0.99 0.465 0.96 165 0.96 0.165 0.412
+  note: Same row as the Mr/Ms record.
+- id: hcpco_fp_anagnostopoulou2016_r22a3_br
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id003
+  quantity: Br
+  value: 0.96
+  unit: T
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; BR derived by the authors from VM, MR/MS and the bulk Co polarisation
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R22A3
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R22A3 22/166 54.4 12.0 33.6 1.1 0.99 0.465 0.96 165 0.96 0.165 0.412
+  note: Tabulated BR is consistent with VM x 1.79-1.8 T x MR/MS (derived, not an independent measurement).
+- id: hcpco_fp_anagnostopoulou2016_r24a1_mrms
+  phase: hcp-Co
+  route: FP
+  process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field (free rotation in liquid); needle cut from wafer
+  conditions: &id004
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
+    phi_magnetic: 0.487
+    rod_dm_over_Lm_nm: 24/190
+    squareness_SQ: 0.74
+    washing: 'chloroform, standard washing (labelled R24A2 in Fig. 4 and Tab. S1: toluene)'
+  quantity: Mr_over_Ms
+  value: 0.92
+  unit: ''
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R24A1
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R24A1 24/190 48.7 11.0 40.3 1.2 0.92 0.410 0.80 82 0.74 1.02 0.198
+  note: 'Table columns: Sample, dm/Lm (nm), VM (%), VCoO (%), VL (%), e (nm), MR/MS, mu0HC (T), BR (T), (BH)max (kJ/m3), SQ, alpha, BR/2(1+alpha) (T).'
+- id: hcpco_fp_anagnostopoulou2016_r24a1_bhmax
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id004
+  quantity: BHmax
+  value: 82
+  unit: kJ/m3
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; (BH)max computed by the authors from M(H) with the measured VM
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R24A1
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R24A1 24/190 48.7 11.0 40.3 1.2 0.92 0.410 0.80 82 0.74 1.02 0.198
+  note: Same row as the Mr/Ms record.
+- id: hcpco_fp_anagnostopoulou2016_r24a1_br
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id004
+  quantity: Br
+  value: 0.8
+  unit: T
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; BR derived by the authors from VM, MR/MS and the bulk Co polarisation
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R24A1
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R24A1 24/190 48.7 11.0 40.3 1.2 0.92 0.410 0.80 82 0.74 1.02 0.198
+  note: Tabulated BR is consistent with VM x 1.79-1.8 T x MR/MS (derived, not an independent measurement).
+- id: hcpco_fp_anagnostopoulou2016_r28a2_mrms
+  phase: hcp-Co
+  route: FP
+  process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field (free rotation in liquid); needle cut from wafer
+  conditions: &id005
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
+    phi_magnetic: 0.551
+    rod_dm_over_Lm_nm: 28/190
+    squareness_SQ: 0.81
+    washing: toluene, standard washing
+  quantity: Mr_over_Ms
+  value: 0.96
+  unit: ''
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R28A2
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R28A2 28/190 55.1 19.3 25.6 1.9 0.96 0.345 0.95 106 0.81 1.05 0.232
+  note: 'Table columns: Sample, dm/Lm (nm), VM (%), VCoO (%), VL (%), e (nm), MR/MS, mu0HC (T), BR (T), (BH)max (kJ/m3), SQ, alpha, BR/2(1+alpha) (T).'
+- id: hcpco_fp_anagnostopoulou2016_r28a2_bhmax
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id005
+  quantity: BHmax
+  value: 106
+  unit: kJ/m3
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; (BH)max computed by the authors from M(H) with the measured VM
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R28A2
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R28A2 28/190 55.1 19.3 25.6 1.9 0.96 0.345 0.95 106 0.81 1.05 0.232
+  note: Same row as the Mr/Ms record.
+- id: hcpco_fp_anagnostopoulou2016_r28a2_br
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id005
+  quantity: Br
+  value: 0.95
+  unit: T
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; BR derived by the authors from VM, MR/MS and the bulk Co polarisation
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R28A2
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R28A2 28/190 55.1 19.3 25.6 1.9 0.96 0.345 0.95 106 0.81 1.05 0.232
+  note: Tabulated BR is consistent with VM x 1.79-1.8 T x MR/MS (derived, not an independent measurement).
+- id: hcpco_fp_anagnostopoulou2016_r28a4_mrms
+  phase: hcp-Co
+  route: FP
+  process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field (free rotation in liquid); needle cut from wafer
+  conditions: &id006
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
+    phi_magnetic: 0.488
+    rod_dm_over_Lm_nm: 28/190
+    squareness_SQ: 0.57
+    washing: toluene, limited washing (large scale)
+  quantity: Mr_over_Ms
+  value: 0.89
+  unit: ''
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R28A4
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R28A4 28/190 48.8 15.6 35.6 1.8 0.89 0.363 0.78 51 0.57 1.85 0.137
+  note: 'Table columns: Sample, dm/Lm (nm), VM (%), VCoO (%), VL (%), e (nm), MR/MS, mu0HC (T), BR (T), (BH)max (kJ/m3), SQ, alpha, BR/2(1+alpha) (T).'
+- id: hcpco_fp_anagnostopoulou2016_r28a4_bhmax
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id006
+  quantity: BHmax
+  value: 51
+  unit: kJ/m3
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; (BH)max computed by the authors from M(H) with the measured VM
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R28A4
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R28A4 28/190 48.8 15.6 35.6 1.8 0.89 0.363 0.78 51 0.57 1.85 0.137
+  note: Same row as the Mr/Ms record.
+- id: hcpco_fp_anagnostopoulou2016_r28a4_br
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id006
+  quantity: Br
+  value: 0.78
+  unit: T
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; BR derived by the authors from VM, MR/MS and the bulk Co polarisation
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R28A4
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R28A4 28/190 48.8 15.6 35.6 1.8 0.89 0.363 0.78 51 0.57 1.85 0.137
+  note: Tabulated BR is consistent with VM x 1.79-1.8 T x MR/MS (derived, not an independent measurement).
+- id: hcpco_fp_anagnostopoulou2016_r31a4_mrms
+  phase: hcp-Co
+  route: FP
+  process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field (free rotation in liquid); needle cut from wafer
+  conditions: &id007
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
+    phi_magnetic: 0.568
+    rod_dm_over_Lm_nm: 31/190
+    squareness_SQ: 0.69
+    washing: toluene, limited washing (large scale)
+  quantity: Mr_over_Ms
+  value: 0.94
+  unit: ''
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R31A4
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R31A4 31/190 56.8 11.6 31 .6 1.4 0.94 0.339 0.95 81.5 0.69 1.735 0.174
+  note: 'Table columns: Sample, dm/Lm (nm), VM (%), VCoO (%), VL (%), e (nm), MR/MS, mu0HC (T), BR (T), (BH)max (kJ/m3), SQ, alpha, BR/2(1+alpha) (T).'
+- id: hcpco_fp_anagnostopoulou2016_r31a4_bhmax
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id007
+  quantity: BHmax
+  value: 81.5
+  unit: kJ/m3
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; (BH)max computed by the authors from M(H) with the measured VM
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R31A4
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R31A4 31/190 56.8 11.6 31 .6 1.4 0.94 0.339 0.95 81.5 0.69 1.735 0.174
+  note: Same row as the Mr/Ms record.
+- id: hcpco_fp_anagnostopoulou2016_r31a4_br
+  phase: hcp-Co
+  route: FP
+  process: as above (field-dried dense nanorod assembly, no matrix)
+  conditions: *id007
+  quantity: Br
+  value: 0.95
+  unit: T
+  measured_along: alignment direction (needle long axis)
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated; BR derived by the authors from VM, MR/MS and the bulk Co polarisation
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Table 1, row R31A4
+  quote: Sample dm/Lm VM VCoO VL e (CoO) MR/Ms µ 0HC BR (BH)max. SQ α BR [...] R31A4 31/190 56.8 11.6 31 .6 1.4 0.94 0.339 0.95 81.5 0.69 1.735 0.174
+  note: Tabulated BR is consistent with VM x 1.79-1.8 T x MR/MS (derived, not an independent measurement).
+- id: hcpco_fp_anagnostopoulou2016_r17a1_mrms
+  phase: hcp-Co
+  route: FP
+  process: polyol Co nanorods (dm 17.5 nm, Lm 120 nm) washed in chloroform, dried in 1 T
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension dried in field
+    squareness_SQ: 0.86
+  quantity: Mr_over_Ms
+  value: 0.96
+  unit: ''
+  measured_along: alignment direction
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Results, SANS section (Fig. 2c)
+  quote: Indeed, despite the difference of alignment quality, fairly close values of MR/MS = 0.96 and 0.93 were found for the samples R17A1 and R17A2, respectively.
+  note: VM not reported for R17 in the paper.
+- id: hcpco_fp_anagnostopoulou2016_r17a2_mrms
+  phase: hcp-Co
+  route: FP
+  process: polyol Co nanorods (dm 17.5 nm, Lm 120 nm) washed in toluene, dried in 1 T
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension dried in field
+    squareness_SQ: 0.75
+  quantity: Mr_over_Ms
+  value: 0.93
+  unit: ''
+  measured_along: alignment direction
+  measurement: VSM (Quantum Design PPMS), room temperature, field parallel to the needle long axis (needles ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Results, SANS section (Fig. 2c)
+  quote: Indeed, despite the difference of alignment quality, fairly close values of MR/MS = 0.96 and 0.93 were found for the samples R17A1 and R17A2, respectively.
+  note: 'SANS shows clearly poorer alignment for R17A2 than R17A1 despite similar Mr/Ms (paper''s point: squareness is more sensitive).'
+- id: hcpco_fp_riou2014_review_mrms
+  phase: hcp-Co
+  route: FP
+  process: organometallic Co nanorods grafted with liquid crystals / in LC polymer, oriented in a magnetic field (statement in Anagnostopoulou 2016 intro, citing Riou 2014)
+  conditions:
+    alignment_medium: liquid-crystalline polymer (grafted)
+  quantity: Mr_over_Ms
+  value: close to 1
+  unit: ''
+  measured_along: alignment direction
+  measurement: not stated (review statement)
+  n_samples: 1
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: review
+    locator: Introduction (citing ref. 25)
+  quote: Parallel alignments of cobalt nanorods prepared by organometallic chemistry and characterized by magnetization loops with remanence to saturation ratio close to 1 were obtained by grafting liquid crystals at their surface.
+  note: Qualitative value only.
+- id: hcpco_fp_ener2018_pre204_mrms
+  phase: hcp-Co
+  route: FP
+  process: Co nanorods (dm 20.4 nm, AR 4.5) dried from chloroform under 1 T (pre-aligned pellet/needle)
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension dried in field
+  quantity: Mr_over_Ms
+  value: 0.97
+  unit: ''
+  measured_along: alignment direction
+  measurement: VSM (PPMS) on needle-shaped assemblies, room temperature, field parallel to the alignment direction (loops to +-2 T shown); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.1 (Fig. S2b)
+  quote: The highest Mr/Ms value (0.97) was obtained for the rod exhibiting mean diameter of dm = 20.4 nm and mean aspect ratio of AR = 4.5 (Fig. S2b).
+  note: ''
+- id: hcpco_fp_ener2018_pre109_mrms
+  phase: hcp-Co
+  route: FP
+  process: Co nanorods (dm 10.9 nm, AR 18) dried from chloroform under 1 T
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension dried in field
+  quantity: Mr_over_Ms
+  value: 0.86
+  unit: ''
+  measured_along: alignment direction
+  measurement: VSM (PPMS) on needle-shaped assemblies, room temperature, field parallel to the alignment direction (loops to +-2 T shown); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.1 (Fig. S2a)
+  quote: A lower value (Mr/Ms = 0.86) was obtained with the long and thin rods (dm = 10.9 nm, AR = 18). This difference can be attributed to the difficulty encountered when aligning high aspect ratio rods, leading to a poorer alignment quality.
+  note: Starting assembly of magnets I-III. Thesis Table V-1 gives 0.97 for the R10 film (dm 10 nm) measured separately.
+- id: hcpco_fp_ener2018_pre283_mrms
+  phase: hcp-Co
+  route: FP
+  process: Co nanorods (dm 28.3 nm, AR 6.7) dried from chloroform under 1 T
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension dried in field
+  quantity: Mr_over_Ms
+  value: 0.89
+  unit: ''
+  measured_along: alignment direction
+  measurement: VSM (PPMS) on needle-shaped assemblies, room temperature, field parallel to the alignment direction (loops to +-2 T shown); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.1 (Fig. S2c)
+  quote: For the thicker rods (dm = 28.3 nm, AR = 6.7), a Mr/Ms value of 0.89 was measured despite a very nice alignment, observed on the SEM images.
+  note: Authors attribute Mr/Ms < 1 to lower nucleation field of thick rods, not misalignment.
+- id: hcpco_fp_ener2018_randompowder_mrms
+  phase: hcp-Co
+  route: FP
+  process: dried, randomly agglomerated Co nanorod powder compacted in a die with a 1.7 T field applied during consolidation
+  conditions:
+    field_T: 1.7
+    T_process_K: room temperature or 453
+    parent_texture: random dried powder
+    alignment_medium: dry powder in die
+  quantity: Mr_over_Ms
+  value: 0.61
+  unit: ''
+  measured_along: field direction
+  measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample shape, field parallel to the green-body alignment field
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.1
+  quote: Despite the application of a magnetic field of 1.7 T during the consolidation, the remanence to saturation ratio, Mr/Ms, of materials prepared from such random powders was limited to 61 %.
+  note: 'Thesis (chapter V.2) details: bonded (15 wt% epoxy, 1.6 T, 150 MPa) ~0.57 and hot compacted (1.6 T pre-alignment, 180 C, 40 MPa) ~0.61; recorded separately below.'
+- id: hcpco_fp_ener2018_magnet1_mrms
+  phase: hcp-Co
+  route: FP
+  process: pre-aligned 10.9 nm rod assembly re-aligned in die (1.7 T), hot compacted 300 MPa, 180 C, 2 min (magnet I)
+  conditions:
+    field_T: 1.7
+    T_process_K: 453
+    pressure_MPa: 300
+    parent_texture: pre-aligned assembly Mr/Ms 0.86
+  quantity: Mr_over_Ms
+  value: 0.81
+  unit: ''
+  measured_along: green-body alignment field direction
+  measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample shape, field parallel to the green-body alignment field
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.2 (Table 1 not in HAL text)
+  quote: Consolidated materials of 10.9 nm rods carried out by hot compaction at 300 MPa and cold compaction at 1 GPa exhibited Mr/Ms ratio very close to the starting assembly, 0.81 and 0.82 in the magnets I and III for 0.86 in the pre-aligned rods (Tab. 1) showing that the texture of the pre-aligned sample was not altered by the consolidation.
+  note: VM 26.6% and Br 0.39 T from thesis Table V-1 (same magnet).
+- id: hcpco_fp_ener2018_magnet3_mrms
+  phase: hcp-Co
+  route: FP
+  process: pre-aligned 10.9 nm rod assembly, cold compacted 1 GPa at room temperature (magnet III)
+  conditions:
+    field_T: 1.7
+    T_process_K: 295
+    pressure_MPa: 1000
+    phi_magnetic: 0.34
+    density_g_cm3: 5.0
+    parent_texture: pre-aligned assembly Mr/Ms 0.86
+  quantity: Mr_over_Ms
+  value: 0.82
+  unit: ''
+  measured_along: green-body alignment field direction
+  measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample shape, field parallel to the green-body alignment field
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.2; Discussion (VM, density)
+  quote: Consolidated materials of 10.9 nm rods carried out by hot compaction at 300 MPa and cold compaction at 1 GPa exhibited Mr/Ms ratio very close to the starting assembly, 0.81 and 0.82 in the magnets I and III for 0.86 in the pre-aligned rods (Tab. 1) showing that the texture of the pre-aligned sample was not altered by the consolidation.
+  note: VM = 34% and density 5.0 g/cm3 stated in the Discussion. Thesis says the 1000 MPa cold pressing (in 1.6 T) was applied to the magnet already hot-compacted at 300 and 450 MPa.
+- id: hcpco_fp_ener2018_magnet2_mrms
+  phase: hcp-Co
+  route: FP
+  process: pre-aligned 10.9 nm rod assembly, hot compacted 450 MPa, 180 C, 2 min (magnet II)
+  conditions:
+    field_T: 1.7
+    T_process_K: 453
+    pressure_MPa: 450
+    parent_texture: pre-aligned assembly Mr/Ms 0.86
+  quantity: Mr_over_Ms
+  value: 0.69
+  unit: ''
+  measured_along: green-body alignment field direction
+  measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample shape, field parallel to the green-body alignment field
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.2
+  quote: Under more severe conditions (hot compaction under 450 MPa, magnet II) Mr/Ms felt to 0.69 showing an important deterioration of the rod alignment.
+  note: SANS of magnet II almost isotropic.
+- id: hcpco_fp_ener2018_magnet4_bhmax
+  phase: hcp-Co
+  route: FP
+  process: pre-aligned 28.3 nm rod assembly, hot compacted 450 MPa, 180 C, 2 min (magnet IV)
+  conditions:
+    field_T: 1.7
+    T_process_K: 453
+    pressure_MPa: 450
+    phi_magnetic: 0.64
+    density_g_cm3: 7.1
+  quantity: BHmax
+  value: 65
+  unit: kJ/m3
+  measured_along: green-body alignment field direction
+  measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample shape, field parallel to the green-body alignment field
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Abstract; Discussion
+  quote: Bulk magnets exhibiting a very good mechanical strength and an energy product as high as 65 kJ.m-3 were obtained.
+  note: Highest of the four magnets (range 20-65 kJ/m3); VM = 64% and 7.1 g/cm3 for magnet IV (Discussion).
+- id: hcpco_fp_ener2018_magnets_br_range
+  phase: hcp-Co
+  route: FP
+  process: consolidated magnets I-IV (see other records)
+  conditions:
+    field_T: 1.7
+    T_process_K: 295-453
+    pressure_MPa: 300-1000
+  quantity: Br
+  value: 0.39-0.82
+  unit: T
+  measured_along: green-body alignment field direction
+  measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample shape, field parallel to the green-body alignment field
+  n_samples: 4
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.2
+  quote: The remanent magnetization µ 0Mr varied between 0.39 and 0.82 T.
+  note: Range over magnets I-IV; per-magnet values in thesis tables (records below).
+- id: hcpco_fp_ener2018_magnet4_texture
+  phase: hcp-Co
+  route: FP
+  process: magnet IV (28.3 nm rods, HC 450 MPa) vs II/III
+  conditions:
+    T_process_K: 453
+  quantity: texture_metric
+  value: 'qualitative: (0002) reflection nearly extinguished in theta-theta XRD with alignment axis in the diffraction plane; anisotropic SANS for III and IV, almost isotropic for II'
+  unit: qualitative_xrd_sans
+  measured_along: alignment axis in diffraction plane
+  measurement: theta-theta XRD (Co K-alpha1) and SANS (PA20, 6 A)
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.2 (Fig. 5, Fig. S3)
+  quote: It is noteworthy that the 1010 and 1120 reflections in the XRD patterns are more intense for the consolidated materials than for the powders. In contrast, the (0002) reflection is nearly extinguished in the pattern for consolidated materials (Fig. S3). This is in good agreement with a preferential in-plane orientation of the nanorods long axis (see supplementary materials Fig. S4).
+  note: No numeric texture factor given in the accessible text.
+- id: hcpco_fp_thesis2016_r10_film_mrms
+  phase: hcp-Co
+  route: FP
+  process: pre-compacted R10 rod film (dm 10 +- 1 nm, lm 200 +- 46 nm) aligned in a Teflon mould in 1 T
+  conditions: &id008
+    field_T: 1.0
+    T_process_K: 295
+    pressure_MPa: null
+    phi_magnetic: 0.43
+    rods: R10 (dm 10 nm)
+  quantity: Mr_over_Ms
+  value: 0.97
+  unit: ''
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: &id009
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Table V-1 (chapter V.4)
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Films -- 0.61 486 0.75 0.77 0.97 43.0 60.0
+  note: Ener 2018 quotes 0.86 for the pre-aligned 10.9 nm rods (PPMS on a needle); the thesis film value is 0.97.
+- id: hcpco_fp_thesis2016_r10_film_br
+  phase: hcp-Co
+  route: FP
+  process: pre-compacted R10 rod film (dm 10 +- 1 nm, lm 200 +- 46 nm) aligned in a Teflon mould in 1 T
+  conditions: *id008
+  quantity: Br
+  value: 0.75
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id009
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Films -- 0.61 486 0.75 0.77 0.97 43.0 60.0
+  note: ''
+- id: hcpco_fp_thesis2016_r10_film_js
+  phase: hcp-Co
+  route: FP
+  process: pre-compacted R10 rod film (dm 10 +- 1 nm, lm 200 +- 46 nm) aligned in a Teflon mould in 1 T
+  conditions: *id008
+  quantity: Js_same_sample
+  value: 0.77
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id009
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Films -- 0.61 486 0.75 0.77 0.97 43.0 60.0
+  note: mu0MS of the sample (= Js x VM).
+- id: hcpco_fp_thesis2016_r10_film_bhmax
+  phase: hcp-Co
+  route: FP
+  process: pre-compacted R10 rod film (dm 10 +- 1 nm, lm 200 +- 46 nm) aligned in a Teflon mould in 1 T
+  conditions: *id008
+  quantity: BHmax
+  value: 60.0
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id009
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Films -- 0.61 486 0.75 0.77 0.97 43.0 60.0
+  note: ''
+- id: hcpco_fp_thesis2016_r10_hc300_br
+  phase: hcp-Co
+  route: FP
+  process: R10 needles re-aligned in a disc cavity (1.6 T) then hot compacted 300 MPa, 180-190 C, 2 min
+  conditions: &id010
+    field_T: 1.6
+    T_process_K: 458
+    pressure_MPa: 300
+    phi_magnetic: 0.266
+    rods: R10 (dm 10 nm)
+  quantity: Br
+  value: 0.39
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: &id011
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Table V-1 (chapter V.4)
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] H.C. – 300 0.52 418 0.39 0.48 0.81 26.6 22.5
+  note: Same samples as Ener 2018 magnets I (300 MPa), II (450 MPa), III (1 GPa); thesis states the three compactions were applied successively to one magnet. Mr/Ms of these magnets recorded from Ener 2018 (identical values) to avoid double counting.
+- id: hcpco_fp_thesis2016_r10_hc300_js
+  phase: hcp-Co
+  route: FP
+  process: R10 needles re-aligned in a disc cavity (1.6 T) then hot compacted 300 MPa, 180-190 C, 2 min
+  conditions: *id010
+  quantity: Js_same_sample
+  value: 0.48
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id011
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] H.C. – 300 0.52 418 0.39 0.48 0.81 26.6 22.5
+  note: mu0MS of the sample (= Js x VM).
+- id: hcpco_fp_thesis2016_r10_hc300_bhmax
+  phase: hcp-Co
+  route: FP
+  process: R10 needles re-aligned in a disc cavity (1.6 T) then hot compacted 300 MPa, 180-190 C, 2 min
+  conditions: *id010
+  quantity: BHmax
+  value: 22.5
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id011
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] H.C. – 300 0.52 418 0.39 0.48 0.81 26.6 22.5
+  note: ''
+- id: hcpco_fp_thesis2016_r10_hc450_br
+  phase: hcp-Co
+  route: FP
+  process: the same magnet re-compacted at 450 MPa, 180-190 C, 2 min
+  conditions: &id012
+    field_T: 1.6
+    T_process_K: 458
+    pressure_MPa: 450
+    phi_magnetic: 0.325
+    rods: R10 (dm 10 nm)
+  quantity: Br
+  value: 0.4
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: &id013
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Table V-1 (chapter V.4)
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] H.C. – 450 0.42 337 0.40 0.58 0.69 32.5 21.5
+  note: Same samples as Ener 2018 magnets I (300 MPa), II (450 MPa), III (1 GPa); thesis states the three compactions were applied successively to one magnet. Mr/Ms of these magnets recorded from Ener 2018 (identical values) to avoid double counting.
+- id: hcpco_fp_thesis2016_r10_hc450_js
+  phase: hcp-Co
+  route: FP
+  process: the same magnet re-compacted at 450 MPa, 180-190 C, 2 min
+  conditions: *id012
+  quantity: Js_same_sample
+  value: 0.58
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id013
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] H.C. – 450 0.42 337 0.40 0.58 0.69 32.5 21.5
+  note: mu0MS of the sample (= Js x VM).
+- id: hcpco_fp_thesis2016_r10_hc450_bhmax
+  phase: hcp-Co
+  route: FP
+  process: the same magnet re-compacted at 450 MPa, 180-190 C, 2 min
+  conditions: *id012
+  quantity: BHmax
+  value: 21.5
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id013
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] H.C. – 450 0.42 337 0.40 0.58 0.69 32.5 21.5
+  note: ''
+- id: hcpco_fp_thesis2016_r10_cc1000_br
+  phase: hcp-Co
+  route: FP
+  process: the same magnet finally cold pressed at 1000 MPa under 1.6 T
+  conditions: &id014
+    field_T: 1.6
+    T_process_K: 295
+    pressure_MPa: 1000
+    phi_magnetic: 0.344
+    rods: R10 (dm 10 nm)
+  quantity: Br
+  value: 0.5
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: &id015
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Table V-1 (chapter V.4)
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] C.C. – 1000 0.41 334 0.50 0.61 0.82 34.4 31.0
+  note: Same samples as Ener 2018 magnets I (300 MPa), II (450 MPa), III (1 GPa); thesis states the three compactions were applied successively to one magnet. Mr/Ms of these magnets recorded from Ener 2018 (identical values) to avoid double counting.
+- id: hcpco_fp_thesis2016_r10_cc1000_js
+  phase: hcp-Co
+  route: FP
+  process: the same magnet finally cold pressed at 1000 MPa under 1.6 T
+  conditions: *id014
+  quantity: Js_same_sample
+  value: 0.61
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id015
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] C.C. – 1000 0.41 334 0.50 0.61 0.82 34.4 31.0
+  note: mu0MS of the sample (= Js x VM).
+- id: hcpco_fp_thesis2016_r10_cc1000_bhmax
+  phase: hcp-Co
+  route: FP
+  process: the same magnet finally cold pressed at 1000 MPa under 1.6 T
+  conditions: *id014
+  quantity: BHmax
+  value: 31.0
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id015
+  quote: R10 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] C.C. – 1000 0.41 334 0.50 0.61 0.82 34.4 31.0
+  note: ''
+- id: hcpco_fp_thesis2016_r30_film_mrms
+  phase: hcp-Co
+  route: FP
+  process: pre-compacted R30 rod film (dm 30 +- 6 nm, lm 190 +- 40 nm) dried in 1 T
+  conditions: &id016
+    field_T: 1.0
+    T_process_K: 295
+    pressure_MPa: null
+    phi_magnetic: 0.49
+    rods: R30 (dm 30 nm)
+  quantity: Mr_over_Ms
+  value: 0.89
+  unit: ''
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: &id017
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Table V-2 (chapter V.5)
+  quote: R30 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Films -- 0.36 288 0.78 0.87 0.89 49 51
+  note: Same rods as Ener 2018 28.3 nm assembly (Ener quotes 0.89).
+- id: hcpco_fp_thesis2016_r30_film_br
+  phase: hcp-Co
+  route: FP
+  process: pre-compacted R30 rod film (dm 30 +- 6 nm, lm 190 +- 40 nm) dried in 1 T
+  conditions: *id016
+  quantity: Br
+  value: 0.78
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id017
+  quote: R30 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Films -- 0.36 288 0.78 0.87 0.89 49 51
+  note: ''
+- id: hcpco_fp_thesis2016_r30_film_js
+  phase: hcp-Co
+  route: FP
+  process: pre-compacted R30 rod film (dm 30 +- 6 nm, lm 190 +- 40 nm) dried in 1 T
+  conditions: *id016
+  quantity: Js_same_sample
+  value: 0.87
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id017
+  quote: R30 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Films -- 0.36 288 0.78 0.87 0.89 49 51
+  note: mu0MS of the sample (= Js x VM).
+- id: hcpco_fp_thesis2016_r30_film_bhmax
+  phase: hcp-Co
+  route: FP
+  process: pre-compacted R30 rod film (dm 30 +- 6 nm, lm 190 +- 40 nm) dried in 1 T
+  conditions: *id016
+  quantity: BHmax
+  value: 51
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id017
+  quote: R30 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Films -- 0.36 288 0.78 0.87 0.89 49 51
+  note: ''
+- id: hcpco_fp_thesis2016_r30_hc450_mrms
+  phase: hcp-Co
+  route: FP
+  process: R30 film hot compacted 450 MPa, 180-190 C (needle-shaped magnet; = Ener 2018 magnet IV)
+  conditions: &id018
+    field_T: 1.0
+    T_process_K: 458
+    pressure_MPa: 450
+    phi_magnetic: 0.64
+    rods: R30 (dm 30 nm)
+  quantity: Mr_over_Ms
+  value: 0.67
+  unit: ''
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: &id019
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Table V-2 (chapter V.5)
+  quote: R30 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Magnet 450 0.28 224 0.82 1.22 0.67 64 65
+  note: Ener 2018 states for this magnet only a 17% relative decrease of Mr/Ms vs the pre-aligned rods; the thesis table gives 0.67.
+- id: hcpco_fp_thesis2016_r30_hc450_br
+  phase: hcp-Co
+  route: FP
+  process: R30 film hot compacted 450 MPa, 180-190 C (needle-shaped magnet; = Ener 2018 magnet IV)
+  conditions: *id018
+  quantity: Br
+  value: 0.82
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id019
+  quote: R30 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Magnet 450 0.28 224 0.82 1.22 0.67 64 65
+  note: ''
+- id: hcpco_fp_thesis2016_r30_hc450_js
+  phase: hcp-Co
+  route: FP
+  process: R30 film hot compacted 450 MPa, 180-190 C (needle-shaped magnet; = Ener 2018 magnet IV)
+  conditions: *id018
+  quantity: Js_same_sample
+  value: 1.22
+  unit: T
+  measured_along: alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source: *id019
+  quote: R30 Pressure Hci Hci μ0Mr μ0MS Mr/Ms VM (BH)max [...] Magnet 450 0.28 224 0.82 1.22 0.67 64 65
+  note: mu0MS of the sample (= Js x VM).
+- id: hcpco_fp_thesis2016_bonded_mrms
+  phase: hcp-Co
+  route: FP
+  process: dried random Co nanorod powder (dm 20 nm, lm 250 nm) mixed with 15 wt% epoxy and pressed at 150 MPa for 2 min in 1.6 T
+  conditions:
+    field_T: 1.6
+    T_process_K: 295
+    pressure_MPa: 150
+    alignment_medium: dry agglomerated powder + epoxy
+  quantity: Mr_over_Ms
+  value: 0.57
+  unit: ''
+  uncertainty: 0.02
+  measured_along: field direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Chapter V.2
+  quote: The magnetization measurements showed a remanence-to-saturation ratio around 57 % and 61 %, and a coercivity µ0HC of 0.25 T and 0.28T, for the bonded and hot compacted samples, respectively.
+  note: '''around'' 57%. The same rods aligned from fresh chloroform suspension reached 0.75 (record below).'
+- id: hcpco_fp_thesis2016_hcpowder_bhmax
+  phase: hcp-Co
+  route: FP
+  process: dried random Co nanorod powder pre-aligned in 1.6 T then hot compacted at 180 C, 40 MPa, 2 min (no binder)
+  conditions:
+    field_T: 1.6
+    T_process_K: 453
+    pressure_MPa: 40
+    alignment_medium: dry agglomerated powder
+  quantity: BHmax
+  value: 15.7
+  unit: kJ/m3
+  measured_along: field direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Chapter V.2
+  quote: The room temperature (BH)max value for the hot compacted Co NRs magnet was calculated at 15.7 kJ/m3.
+  note: Its Mr/Ms (~0.61) is recorded from Ener 2018 (hcpco_fp_ener2018_randompowder_mrms).
+- id: hcpco_fp_thesis2016_chloroform_mrms
+  phase: hcp-Co
+  route: FP
+  process: the same rods (dm 20 nm, lm 250 nm) aligned from a chloroform suspension (preliminary)
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension
+  quantity: Mr_over_Ms
+  value: 0.75
+  unit: ''
+  measured_along: alignment direction
+  measurement: magnetometry, room temperature (details not stated)
+  n_samples: 1
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Chapter V.2
+  quote: Preliminary tries of the nanorods’ alignment in a chloroform solution showed that their Mr/Ms ratio could reach a value of 75 % and a coercivity µ0HC = 0.35 T
+  note: ''
+- id: hcpco_fp_thesis2016_preneedles_cc_epoxy_mrms
+  phase: hcp-Co
+  route: FP
+  process: pre-aligned needles (dm 18 nm, lm 320 nm; Mr/Ms 0.78) cold compacted with 15 wt% epoxy at 70 MPa in 1.6 T
+  conditions:
+    field_T: 1.6
+    T_process_K: 295
+    pressure_MPa: 70
+    phi_magnetic: 0.39
+    parent_texture: pre-aligned needles Mr/Ms 0.78
+  quantity: Mr_over_Ms
+  value: 0.67
+  unit: ''
+  measured_along: field direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Chapter V.3
+  quote: The Mr/Ms ratio reached the values of 67 % and 78 % for the cold compacted and SPS sample, respectively. [...] The magnetic volume fraction was equal to 39 % and 41 % and the coercivity µ0HC 0.38 and 0.375 T, for the cold compacted and SPS sample, respectively.
+  note: 'Authors: dispersion in epoxy alters the rod alignment.'
+- id: hcpco_fp_thesis2016_preneedles_sps_mrms
+  phase: hcp-Co
+  route: FP
+  process: pre-aligned needles (dm 18 nm, lm 320 nm; Mr/Ms 0.78) consolidated by SPS without field, 40 MPa, T < 200 C
+  conditions:
+    field_T: 0
+    T_process_K: <473
+    pressure_MPa: 40
+    phi_magnetic: 0.41
+    parent_texture: pre-aligned needles Mr/Ms 0.78
+  quantity: Mr_over_Ms
+  value: 0.78
+  unit: ''
+  measured_along: pre-alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Chapter V.3
+  quote: The Mr/Ms ratio reached the values of 67 % and 78 % for the cold compacted and SPS sample, respectively. [...] The magnetic volume fraction was equal to 39 % and 41 % and the coercivity µ0HC 0.38 and 0.375 T, for the cold compacted and SPS sample, respectively.
+  note: SPS preserved the pre-alignment (0.78 before and after).
+- id: hcpco_fp_thesis2016_preneedles_sps_bhmax
+  phase: hcp-Co
+  route: FP
+  process: same SPS sample
+  conditions:
+    field_T: 0
+    T_process_K: <473
+    phi_magnetic: 0.41
+  quantity: BHmax
+  value: 27.5
+  unit: kJ/m3
+  measured_along: pre-alignment direction
+  measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
+  n_samples: 1
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Chapter V.3
+  quote: The (BH)max value for the SPS sample was measured at 27.5 kJ/m3 at room temperature.
+  note: ''
+- id: hcpco_iso_gandha2014_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: solvothermal Co nanowires (d ~15 nm, L ~200 nm) dispersed and cured in epoxy without field
+  conditions:
+    field_T: 0
+    alignment_medium: epoxy, no field
+  quantity: Mr_over_Ms
+  value: 0.5
+  unit: ''
+  measured_along: any (random)
+  measurement: SQUID (Quantum Design MPMS), 300 K; magnetisation calibrated with ICP-MS Co content; maximum field not stated in text
+  n_samples: 1
+  source:
+    doi: 10.1038/srep05345
+    title: High Energy Product Developed from Cobalt Nanowires
+    first_author: Gandha
+    year: 2014
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4061547/fullTextXML
+    evidence: full_text
+    locator: Results, Fig. 2a
+  quote: According to the Stoner-Wohlfarth model20, in a randomly oriented single-domain particle system, the Mr/Ms ratio is 0.5, which is exactly the situation observed in Fig. 2a.
+  note: Squareness 0.60.
+- id: hcpco_fp_gandha2014_mrms
+  phase: hcp-Co
+  route: FP
+  process: same nanowires in toluene/epoxy, cured in a mould in a 2.0 T field
+  conditions:
+    field_T: 2.0
+    T_process_K: 295
+    alignment_medium: epoxy (dilute, cured in field)
+  quantity: Mr_over_Ms
+  value: 0.92
+  unit: ''
+  measured_along: alignment direction
+  measurement: SQUID (Quantum Design MPMS), 300 K; magnetisation calibrated with ICP-MS Co content; maximum field not stated in text
+  n_samples: 1
+  source:
+    doi: 10.1038/srep05345
+    title: High Energy Product Developed from Cobalt Nanowires
+    first_author: Gandha
+    year: 2014
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4061547/fullTextXML
+    evidence: full_text
+    locator: Results, Fig. 2b
+  quote: The remanent magnetization of the aligned sample also increased greatly, leading to the remanent magnetization ratio Mr/Ms of 0.92, which is an almost doubled value compared to the randomly aligned system (while the saturation magnetization remained unchanged).
+  note: Squareness 0.78.
+- id: hcpco_fp_gandha2014_bhmax_est
+  phase: hcp-Co
+  route: FP
+  process: aligned-in-epoxy loop rescaled to 100% Co volume fraction (authors' estimate)
+  conditions:
+    field_T: 2.0
+    phi_magnetic: 1.0
+    phi_note: assumed 100% (not a real dense magnet)
+  quantity: BHmax
+  value: 350
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: SQUID (Quantum Design MPMS), 300 K; magnetisation calibrated with ICP-MS Co content; maximum field not stated in text; (BH)max computed assuming 100% packing with density 8.92 g/cm3
+  n_samples: 1
+  source:
+    doi: 10.1038/srep05345
+    title: High Energy Product Developed from Cobalt Nanowires
+    first_author: Gandha
+    year: 2014
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4061547/fullTextXML
+    evidence: full_text
+    locator: Results, Fig. 3
+  quote: In Fig. 3 the energy product of the aligned nanowires in epoxy is estimated based on a 100 percent volume fraction of closely packed Co nanowires using the theoretical density of 8.92 g/cm3 containing closely packed nanowires and have obtained a (BH)max value up to 44 MGOe.
+  note: '44 MGOe = 350 kJ/m3 (x 7.958). NOT a measured magnet: hypothetical phi = 1, ignores packing, demagnetisation and dipolar interactions (authors'' caveat).'
+- id: hcpco_fp_gandha2014_texture
+  phase: hcp-Co
+  route: FP
+  process: aligned nanowires in epoxy (2 T)
+  conditions:
+    field_T: 2.0
+  quantity: texture_metric
+  value: 'qualitative: only the (002) reflection remains in XRD along the field direction'
+  unit: qualitative_xrd
+  measured_along: XRD along the alignment direction
+  measurement: powder XRD, Cu K-alpha
+  n_samples: 1
+  source:
+    doi: 10.1038/srep05345
+    title: High Energy Product Developed from Cobalt Nanowires
+    first_author: Gandha
+    year: 2014
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4061547/fullTextXML
+    evidence: full_text
+    locator: Results, Fig. 2d
+  quote: One can see clearly from the XRD pattern that all the wires were aligned with their c-axis parallel to the magnetic field direction, while other diffraction peaks all disappear.
+  note: No numeric texture factor reported.
+- id: hcpco_iso_pousthomis2015_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: Co nanorods (Dm 9 nm, Lm 62 nm) dispersed 0.5-1 vol% in tetracosane, no field
+  conditions:
+    field_T: 0
+    alignment_medium: tetracosane (dilute)
+  quantity: Mr_over_Ms
+  value: 0.5
+  unit: ''
+  measured_along: any (random)
+  measurement: VSM, room temperature, field along the wire axis for aligned samples; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1007/s12274-015-0734-x
+    title: Localized magnetization reversal processes in cobalt nanorods with different aspect ratios
+    first_author: Pousthomis
+    year: 2015
+    url: https://insa-toulouse.hal.science/hal-02020343/document
+    evidence: full_text
+    locator: Section 3.3 (Fig. 3a)
+  quote: Before alignment (red diamonds), the ratio of remanence to saturation magnetization Mr/MS is 0.50, as expected for randomly oriented single-domain uniaxial particles [4].
+  note: ''
+- id: hcpco_fp_pousthomis2015_mrms
+  phase: hcp-Co
+  route: FP
+  process: same rods aligned at 5 T in molten tetracosane (above 330 K), frozen at 300 K
+  conditions:
+    field_T: 5.0
+    T_process_K: 335
+    alignment_medium: molten tetracosane (0.5-1 vol%)
+  quantity: Mr_over_Ms
+  value: 0.8
+  unit: ''
+  measured_along: wire axis (alignment direction)
+  measurement: VSM, room temperature, field along the wire axis for aligned samples; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1007/s12274-015-0734-x
+    title: Localized magnetization reversal processes in cobalt nanorods with different aspect ratios
+    first_author: Pousthomis
+    year: 2015
+    url: https://insa-toulouse.hal.science/hal-02020343/document
+    evidence: full_text
+    locator: Section 3.3 (Fig. 3a)
+  quote: After alignment (Fig. 3a) the magnetization curves measured parallel to the aligned wires have a square shape with Mr/MS > 0.80.
+  note: Lower bound ('> 0.80'); T_process ~335 K is an estimate (just above the 330 K melting point stated).
+- id: hcpco_fp_pousthomis2015_thick_mrms
+  phase: hcp-Co
+  route: FP
+  process: larger rods (Dm ~20 nm) aligned at 5 T in molten tetracosane
+  conditions:
+    field_T: 5.0
+    alignment_medium: molten tetracosane (0.5-1 vol%)
+  quantity: Mr_over_Ms
+  value: 0.84-0.87
+  unit: ''
+  measured_along: wire axis
+  measurement: VSM, room temperature, field along the wire axis for aligned samples; maximum field not stated
+  n_samples: several
+  source:
+    doi: 10.1007/s12274-015-0734-x
+    title: Localized magnetization reversal processes in cobalt nanorods with different aspect ratios
+    first_author: Pousthomis
+    year: 2015
+    url: https://insa-toulouse.hal.science/hal-02020343/document
+    evidence: full_text
+    locator: Section 3.3
+  quote: the bigger rods (Dm ~ 20 nm, in red) exhibit always lower coercivities than the thinner ones even for comparable structural aspect ratios and equivalent alignment, shown by the Mr/MS ratio which ranges from 0.84 to 0.87.
+  note: Range over several samples.
+- id: hcpco_fp_aitatmane2013_mrms
+  phase: hcp-Co
+  route: FP
+  process: washed Co nanowires (dm 13 nm) deposited from toluene on Al foil and dried in 1 T
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: toluene drops evaporated on Al foil
+  quantity: Mr_over_Ms
+  value: 0.67
+  unit: ''
+  measured_along: field direction (presumably)
+  measurement: SQUID (MPMS-5S), room temperature; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jssc.2012.08.009
+    title: High temperature structural and magnetic properties of cobalt nanorods
+    first_author: Ait Atmane
+    year: 2013
+    url: https://hal.science/hal-00916597/document
+    evidence: full_text
+    locator: Section 3.1
+  quote: M/MS values for Co nanowires deposited on an Al substrate and pressed into a pellet [...] are respectively 0.67 and 0.46, indicating a higher degree of organisation in the former case, in agreement with the Stoner-Wholfarth model.
+  note: The paper writes 'M/MS'; context (hysteresis, Stoner-Wohlfarth) indicates remanent M/MS.
+- id: hcpco_iso_aitatmane2013_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: Co nanowire pellet pressed (about 6 t, 13 mm die) without field, packing ~30%
+  conditions:
+    field_T: 0
+    T_process_K: 295
+    phi_magnetic: 0.3
+  quantity: Mr_over_Ms
+  value: 0.46
+  unit: ''
+  measured_along: any (random)
+  measurement: SQUID (MPMS-5S), room temperature; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jssc.2012.08.009
+    title: High temperature structural and magnetic properties of cobalt nanorods
+    first_author: Ait Atmane
+    year: 2013
+    url: https://hal.science/hal-00916597/document
+    evidence: full_text
+    locator: Section 3.1
+  quote: M/MS values for Co nanowires deposited on an Al substrate and pressed into a pellet [...] are respectively 0.67 and 0.46, indicating a higher degree of organisation in the former case, in agreement with the Stoner-Wholfarth model.
+  note: Random reference (no field).
+- id: hcpco_iso_ibrahim2013_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: carbon-coated Co nanorods, random powder, before and after 2 h at 400 C
+  conditions:
+    field_T: 0
+  quantity: Mr_over_Ms
+  value: 0.5
+  unit: ''
+  measured_along: any (random)
+  measurement: magnetometry at room temperature (details not stated)
+  n_samples: 2
+  source:
+    doi: 10.1021/jp3125457
+    title: Carbon Coating, Carburization, and High-Temperature Stability Improvement of Cobalt Nanorods
+    first_author: Ibrahim
+    year: 2013
+    url: https://hal.science/hal-00912966/document
+    evidence: full_text
+    locator: Section C (Figure 10)
+  quote: In both cases the magnetization curve exhibits a remanence to saturation magnetization ratio of 0.5, the expected value for a powder in which particles are randomly oriented in the applied magnetic field.
+  note: ''
+- id: hcpconi_iso_maurer2007_mrms
+  phase: hcp-CoNi
+  route: isotropic
+  process: Co80Ni20 nanowire powder pressed (density 4.4 g/cm3), no alignment step
+  conditions:
+    field_T: 0
+    density_g_cm3: 4.4
+  quantity: Mr_over_Ms
+  value: 0.65
+  unit: ''
+  measured_along: not stated
+  measurement: SQUID/VSM; maximum field not stated, 300 K
+  n_samples: 1
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: full_text
+    locator: p. 2
+  quote: The remanence has increased to 0.85 Ms for the nanowires aligned along the easy axis (compared to 0.65 Ms for powder samples).
+  note: 0.65 > 0.5 suggests some pressing-induced (planar) orientation; direction of measurement vs pressing axis not stated.
+- id: hcpconi_fp_maurer2007_pmma_mrms
+  phase: hcp-CoNi
+  route: FP
+  process: Co80Ni20 nanowires in PMMA/toluene solidified under a magnetic field (room temperature)
+  conditions:
+    alignment_medium: PMMA + toluene, solvent evaporated in field
+    field_T: not stated
+  quantity: Mr_over_Ms
+  value: 0.85
+  unit: ''
+  measured_along: easy axis (field direction)
+  measurement: SQUID/VSM; maximum field not stated, 300 K
+  n_samples: 1
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: full_text
+    locator: p. 2 (Fig. 4)
+  quote: Results obtained at T=300K are presented on Figure 4. Due to a partial alignment of the particles, the magnetic characteristics have been improved compared to the bulk samples. The remanence has increased to 0.85 Ms for the nanowires aligned along the easy axis (compared to 0.65 Ms for powder samples).
+  note: ''
+- id: hcpconi_fp_maurer2007_frozen_mrms
+  phase: hcp-CoNi
+  route: FP
+  process: Co80Ni20 nanowires in liquid toluene frozen (180 K) in 10 kOe; measured at 140 K
+  conditions:
+    field_T: 1.0
+    T_process_K: 180
+    alignment_medium: toluene frozen in field
+  quantity: Mr_over_Ms
+  value: 0.974
+  unit: ''
+  measured_along: field direction
+  measurement: SQUID/VSM; maximum field not stated, 140 K
+  n_samples: 1
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: full_text
+    locator: p. 2 (Fig. 3)
+  quote: 'The characteristics of the sample are significantly improved: the coercive field is increased to 517 kA/m (6.5 kOe), compared to 286 kA/m for powder samples while the remanence is 0.974 Ms.'
+  note: Measured at 140 K, not 300 K.
+- id: hcpconi_fp_maurer2007_frozen_texture
+  phase: hcp-CoNi
+  route: FP
+  process: same frozen-toluene sample
+  conditions:
+    field_T: 1.0
+    T_process_K: 180
+  quantity: texture_metric
+  value: 10
+  unit: orientation_spread_hwhm_deg (Gaussian, Stoner-Wohlfarth fit)
+  measured_along: field direction
+  measurement: SQUID/VSM; maximum field not stated, 140 K
+  n_samples: 1
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: full_text
+    locator: p. 2
+  quote: The magnetization measurement on Figure 3 has been modelled with a reasonable accuracy by considering a dispersion of the nanowires orientation of σθ = 10° (HWHM) and by introducing a magneto-crystalline anisotropy field HMC=3 kOe.
+  note: Distribution width chosen to fit the measured remanence (model-derived).
+- id: hcpco_iso_fang2014_si_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: Co nanowires cast without field in NW powder on Si (no polymer) (film), chloroform
+  conditions:
+    field_T: 0
+    alignment_medium: NW powder on Si (no polymer)
+  quantity: Mr_over_Ms
+  value: 0.57
+  unit: ''
+  measured_along: in-plane (film)
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Table 1 (arXiv version)
+  quote: Polymer NW powder PS 192k PMMA 350k PVP 360k PVP 40k PVP 10k [...] Mr/Ms 0.57 0.56 0.63 0.65 0.59 0.57
+  note: 'Column order: NW powder on Si, PS 192k, PMMA 350k, PVP 360k, PVP 40k, PVP 10k. Values between 0.5 (3D random) and 2/pi (2D in-plane random); authors derive out-of-plane spreads 0-31 deg.'
+- id: hcpco_iso_fang2014_ps192k_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: Co nanowires cast without field in PS 192k (film), chloroform
+  conditions:
+    field_T: 0
+    alignment_medium: PS 192k
+  quantity: Mr_over_Ms
+  value: 0.56
+  unit: ''
+  measured_along: in-plane (film)
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Table 1 (arXiv version)
+  quote: Polymer NW powder PS 192k PMMA 350k PVP 360k PVP 40k PVP 10k [...] Mr/Ms 0.57 0.56 0.63 0.65 0.59 0.57
+  note: 'Column order: NW powder on Si, PS 192k, PMMA 350k, PVP 360k, PVP 40k, PVP 10k. Values between 0.5 (3D random) and 2/pi (2D in-plane random); authors derive out-of-plane spreads 0-31 deg.'
+- id: hcpco_iso_fang2014_pmma350k_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: Co nanowires cast without field in PMMA 350k (film), chloroform
+  conditions:
+    field_T: 0
+    alignment_medium: PMMA 350k
+  quantity: Mr_over_Ms
+  value: 0.63
+  unit: ''
+  measured_along: in-plane (film)
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Table 1 (arXiv version)
+  quote: Polymer NW powder PS 192k PMMA 350k PVP 360k PVP 40k PVP 10k [...] Mr/Ms 0.57 0.56 0.63 0.65 0.59 0.57
+  note: 'Column order: NW powder on Si, PS 192k, PMMA 350k, PVP 360k, PVP 40k, PVP 10k. Values between 0.5 (3D random) and 2/pi (2D in-plane random); authors derive out-of-plane spreads 0-31 deg.'
+- id: hcpco_iso_fang2014_pvp360k_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: Co nanowires cast without field in PVP 360k (film), chloroform
+  conditions:
+    field_T: 0
+    alignment_medium: PVP 360k
+  quantity: Mr_over_Ms
+  value: 0.65
+  unit: ''
+  measured_along: in-plane (film)
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Table 1 (arXiv version)
+  quote: Polymer NW powder PS 192k PMMA 350k PVP 360k PVP 40k PVP 10k [...] Mr/Ms 0.57 0.56 0.63 0.65 0.59 0.57
+  note: 'Column order: NW powder on Si, PS 192k, PMMA 350k, PVP 360k, PVP 40k, PVP 10k. Values between 0.5 (3D random) and 2/pi (2D in-plane random); authors derive out-of-plane spreads 0-31 deg.'
+- id: hcpco_iso_fang2014_pvp40k_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: Co nanowires cast without field in PVP 40k (film), chloroform
+  conditions:
+    field_T: 0
+    alignment_medium: PVP 40k
+  quantity: Mr_over_Ms
+  value: 0.59
+  unit: ''
+  measured_along: in-plane (film)
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Table 1 (arXiv version)
+  quote: Polymer NW powder PS 192k PMMA 350k PVP 360k PVP 40k PVP 10k [...] Mr/Ms 0.57 0.56 0.63 0.65 0.59 0.57
+  note: 'Column order: NW powder on Si, PS 192k, PMMA 350k, PVP 360k, PVP 40k, PVP 10k. Values between 0.5 (3D random) and 2/pi (2D in-plane random); authors derive out-of-plane spreads 0-31 deg.'
+- id: hcpco_iso_fang2014_pvp10k_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: Co nanowires cast without field in PVP 10k (film), chloroform
+  conditions:
+    field_T: 0
+    alignment_medium: PVP 10k
+  quantity: Mr_over_Ms
+  value: 0.57
+  unit: ''
+  measured_along: in-plane (film)
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Table 1 (arXiv version)
+  quote: Polymer NW powder PS 192k PMMA 350k PVP 360k PVP 40k PVP 10k [...] Mr/Ms 0.57 0.56 0.63 0.65 0.59 0.57
+  note: 'Column order: NW powder on Si, PS 192k, PMMA 350k, PVP 360k, PVP 40k, PVP 10k. Values between 0.5 (3D random) and 2/pi (2D in-plane random); authors derive out-of-plane spreads 0-31 deg.'
+- id: hcpco_fp_fang2014_ps_mrms
+  phase: hcp-Co
+  route: FP
+  process: Co nanowires cast in PS 192k / chloroform under a homogeneous field (0.6 T per Fig. 5)
+  conditions:
+    field_T: 0.6
+    T_process_K: 283
+    alignment_medium: PS 192k + chloroform, cast ~5 days at ~10 C
+  quantity: Mr_over_Ms
+  value: 0.9
+  unit: ''
+  measured_along: alignment direction (in plane)
+  measurement: VSM, room temperature
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Section 4.1 (Fig. 6)
+  quote: On the other hand, the PVP sample is better aligned since for Co-PS, Mr/Ms = 0.9 while for the Co-PVP sample Mr/Ms = 0.93.
+  note: Field for this sample from Fig. 5 caption (0.6 T).
+- id: hcpco_fp_fang2014_pvp_mrms
+  phase: hcp-Co
+  route: FP
+  process: Co nanowires cast in PVP 360k / chloroform under field
+  conditions:
+    field_T: <=0.8 (not stated for this sample)
+    alignment_medium: PVP 360k + chloroform
+  quantity: Mr_over_Ms
+  value: 0.93
+  unit: ''
+  measured_along: alignment direction (in plane)
+  measurement: VSM, room temperature
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Section 4.1 (Fig. 6)
+  quote: On the other hand, the PVP sample is better aligned since for Co-PS, Mr/Ms = 0.9 while for the Co-PVP sample Mr/Ms = 0.93.
+  note: ''
+- id: hcpco_fp_fang2014_ps_texture_sw
+  phase: hcp-Co
+  route: FP
+  process: Co-PS aligned film
+  conditions:
+    field_T: 0.6
+  quantity: texture_metric
+  value: 20
+  unit: orientation_spread_sigma_deg (Gaussian sigma_phi = sigma_theta, Stoner-Wohlfarth fit)
+  measured_along: alignment direction
+  measurement: fit of VSM loops
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Section 4.1
+  quote: The PS sample has identical σφ, σθ values of 20°.
+  note: ''
+- id: hcpco_fp_fang2014_pvp_texture_sw
+  phase: hcp-Co
+  route: FP
+  process: Co-PVP aligned film
+  conditions: {}
+  quantity: texture_metric
+  value: 14
+  unit: orientation_spread_sigma_deg (in-plane sigma_phi; out-of-plane sigma_theta about 20)
+  measured_along: alignment direction
+  measurement: fit of VSM loops
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Section 4.1
+  quote: The PVP is better aligned within the plane (σφ=14°) but the out of plane value is similar.
+  note: ''
+- id: hcpco_fp_fang2014_ps_texture_tem
+  phase: hcp-Co
+  route: FP
+  process: Co-PS aligned at 0.6 T
+  conditions:
+    field_T: 0.6
+  quantity: texture_metric
+  value: 18
+  unit: orientation_fwhm_deg (TEM image analysis)
+  measured_along: alignment direction
+  measurement: TEM of ultramicrotomed slices, ImageJ
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Section 4.1
+  quote: In the case of the aligned samples, one can see that the wires are well aligned with an angular dispersion of 18° FWHM (as deduced from an analysis in the imageJ software).
+  note: Wires remain grouped in bundles of 10-20.
+- id: hcpco_fp_fang2014_si004_aniso
+  phase: hcp-Co
+  route: FP
+  process: Co nanowires dried/cast in 0.04 T (NW layer dried on Si)
+  conditions:
+    field_T: 0.04
+    alignment_medium: NW layer dried on Si
+  quantity: texture_metric
+  value: 1.6
+  unit: Mr/Ms(easy) / Mr/Ms(hard) ratio
+  measured_along: easy vs hard in-plane
+  measurement: VSM, room temperature
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Section 3.2 (Fig. 4)
+  quote: It can be noted that even if the SEM image does not show any obvious alignment for µ0.Halign=0.04T, a measurable anisotropy is nevertheless observed (Seasy/ Shard =1.6).
+  note: Ratio of remanence ratios along and across the alignment field; absolute Mr/Ms values only in Fig. 4.
+- id: hcpco_fp_fang2014_si04_aniso
+  phase: hcp-Co
+  route: FP
+  process: Co nanowires dried/cast in 0.4 T (NW layer dried on Si)
+  conditions:
+    field_T: 0.4
+    alignment_medium: NW layer dried on Si
+  quantity: texture_metric
+  value: 3
+  unit: Mr/Ms(easy) / Mr/Ms(hard) ratio
+  measured_along: easy vs hard in-plane
+  measurement: VSM, room temperature
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Section 3.2 (Fig. 4)
+  quote: The anisotropy increases almost linearly as a function of Halign reaching a ratio [...] Seasy/Shard =3 at µ0.Halign = 0.4T.
+  note: Ratio of remanence ratios along and across the alignment field; absolute Mr/Ms values only in Fig. 4.
+- id: hcpco_fp_fang2014_pvp02_aniso
+  phase: hcp-Co
+  route: FP
+  process: Co nanowires dried/cast in 0.2 T (PVP 40k film)
+  conditions:
+    field_T: 0.2
+    alignment_medium: PVP 40k film
+  quantity: texture_metric
+  value: 2.2
+  unit: Mr/Ms(easy) / Mr/Ms(hard) ratio
+  measured_along: easy vs hard in-plane
+  measurement: VSM, room temperature
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Section 3.2 (Fig. 4)
+  quote: The Seasy/ Shard ratio evolves from 2.2 to 4.25 for an alignment field increasing from 0.2 to 0.8 T.
+  note: Ratio of remanence ratios along and across the alignment field; absolute Mr/Ms values only in Fig. 4.
+- id: hcpco_fp_fang2014_pvp08_aniso
+  phase: hcp-Co
+  route: FP
+  process: Co nanowires dried/cast in 0.8 T (PVP 40k film)
+  conditions:
+    field_T: 0.8
+    alignment_medium: PVP 40k film
+  quantity: texture_metric
+  value: 4.25
+  unit: Mr/Ms(easy) / Mr/Ms(hard) ratio
+  measured_along: easy vs hard in-plane
+  measurement: VSM, room temperature
+  n_samples: 1
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Section 3.2 (Fig. 4)
+  quote: The Seasy/ Shard ratio evolves from 2.2 to 4.25 for an alignment field increasing from 0.2 to 0.8 T.
+  note: Ratio of remanence ratios along and across the alignment field; absolute Mr/Ms values only in Fig. 4.
+- id: hcpco_iso_bousnina2020_h0_mrms
+  phase: hcp-Co
+  route: isotropic
+  process: Co nanorods synthesised by polyol at 170 C in 0.0 T (open reactor), dried, then mechanically blocked in resin without organisation (random)
+  conditions:
+    field_T: 0.0
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
+    aspect_ratio: 6.5
+  quantity: Mr_over_Ms
+  value: 0.502
+  unit: ''
+  measured_along: any (random)
+  measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
+  n_samples: 1
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: Samples HC (Oe) MR (emu/g) MS (emu/g) MR /MS (BH)max (MGOe) Aspect Ratio (L/D) [...] H0-OR 3109 66.8 133.0 0.502 3.02 6.5
+  note: Mr/Ms rises above 0.5 with aspect ratio; authors attribute it to spontaneous parallel arrangement of long rods (dipolar), not to the synthesis field directly. (BH)max column not recorded (packing unknown).
+- id: hcpco_oth_bousnina2020_h025_mrms
+  phase: hcp-Co
+  route: 'other: field during growth (B1+R)'
+  process: Co nanorods synthesised by polyol at 170 C in 0.25 T (open reactor), dried, then mechanically blocked in resin without organisation (random)
+  conditions:
+    field_T: 0.25
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
+    aspect_ratio: 10.8
+  quantity: Mr_over_Ms
+  value: 0.54
+  unit: ''
+  measured_along: any (random)
+  measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
+  n_samples: 1
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: Samples HC (Oe) MR (emu/g) MS (emu/g) MR /MS (BH)max (MGOe) Aspect Ratio (L/D) [...] H0.25-OR 4037 73.5 136.1 0.540 4.46 10.8
+  note: Mr/Ms rises above 0.5 with aspect ratio; authors attribute it to spontaneous parallel arrangement of long rods (dipolar), not to the synthesis field directly. (BH)max column not recorded (packing unknown).
+- id: hcpco_oth_bousnina2020_h05_mrms
+  phase: hcp-Co
+  route: 'other: field during growth (B1+R)'
+  process: Co nanorods synthesised by polyol at 170 C in 0.5 T (open reactor), dried, then mechanically blocked in resin without organisation (random)
+  conditions:
+    field_T: 0.5
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
+    aspect_ratio: 13.1
+  quantity: Mr_over_Ms
+  value: 0.575
+  unit: ''
+  measured_along: any (random)
+  measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
+  n_samples: 1
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: Samples HC (Oe) MR (emu/g) MS (emu/g) MR /MS (BH)max (MGOe) Aspect Ratio (L/D) [...] H0.5-OR 4775 82.9 144.2 0.575 5.96 13.1
+  note: Mr/Ms rises above 0.5 with aspect ratio; authors attribute it to spontaneous parallel arrangement of long rods (dipolar), not to the synthesis field directly. (BH)max column not recorded (packing unknown).
+- id: hcpco_oth_bousnina2020_h075_mrms
+  phase: hcp-Co
+  route: 'other: field during growth (B1+R)'
+  process: Co nanorods synthesised by polyol at 170 C in 0.75 T (open reactor), dried, then mechanically blocked in resin without organisation (random)
+  conditions:
+    field_T: 0.75
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
+    aspect_ratio: 18.6
+  quantity: Mr_over_Ms
+  value: 0.595
+  unit: ''
+  measured_along: any (random)
+  measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
+  n_samples: 1
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: Samples HC (Oe) MR (emu/g) MS (emu/g) MR /MS (BH)max (MGOe) Aspect Ratio (L/D) [...] H0.75-OR 5218 87.9 147.7 0.595 7.23 18.6
+  note: Mr/Ms rises above 0.5 with aspect ratio; authors attribute it to spontaneous parallel arrangement of long rods (dipolar), not to the synthesis field directly. (BH)max column not recorded (packing unknown).
+- id: hcpco_oth_bousnina2020_h10_mrms
+  phase: hcp-Co
+  route: 'other: field during growth (B1+R)'
+  process: Co nanorods synthesised by polyol at 170 C in 1.0 T (open reactor), dried, then mechanically blocked in resin without organisation (random)
+  conditions:
+    field_T: 1.0
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
+    aspect_ratio: 20.1
+  quantity: Mr_over_Ms
+  value: 0.651
+  unit: ''
+  measured_along: any (random)
+  measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
+  n_samples: 1
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: Samples HC (Oe) MR (emu/g) MS (emu/g) MR /MS (BH)max (MGOe) Aspect Ratio (L/D) [...] H1.0-OR 5724 97.5 149.8 0.651 9.10 20.1
+  note: Mr/Ms rises above 0.5 with aspect ratio; authors attribute it to spontaneous parallel arrangement of long rods (dipolar), not to the synthesis field directly. (BH)max column not recorded (packing unknown).
+- id: hcpco_oth_bousnina2020_h125_mrms
+  phase: hcp-Co
+  route: 'other: field during growth (B1+R)'
+  process: Co nanorods synthesised by polyol at 170 C in 1.25 T (open reactor), dried, then mechanically blocked in resin without organisation (random)
+  conditions:
+    field_T: 1.25
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
+    aspect_ratio: 28.2
+  quantity: Mr_over_Ms
+  value: 0.7
+  unit: ''
+  measured_along: any (random)
+  measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
+  n_samples: 1
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: Samples HC (Oe) MR (emu/g) MS (emu/g) MR /MS (BH)max (MGOe) Aspect Ratio (L/D) [...] H1.25-OR 5830 106.8 152.5 0.700 10.72 28.2
+  note: Mr/Ms rises above 0.5 with aspect ratio; authors attribute it to spontaneous parallel arrangement of long rods (dipolar), not to the synthesis field directly. (BH)max column not recorded (packing unknown).
+- id: hcpco_fp_bousnina2020_frozen_mrms
+  phase: hcp-Co
+  route: FP
+  process: rods grown in 1.25 T (closed reactor, L/D 37.5) dispersed in liquid toluene, frozen below 140 K in 50 kOe; measured at 140 K
+  conditions:
+    field_T: 5.0
+    T_process_K: 140
+    alignment_medium: toluene frozen in field
+  quantity: Mr_over_Ms
+  value: 0.8
+  unit: ''
+  measured_along: field direction
+  measurement: SQUID magnetometer at 140 K
+  n_samples: 1
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Section 3.2 (Figure 10)
+  quote: Indeed, a higher remanence to saturation ratio of MR /MS = 0.8 has been obtained (see Figure 10).
+  note: Authors call the orientation 'only partially successful'. Measured at 140 K.
+- id: fecoesd_fp_mendelsohn1955_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: ESD Fe particles (150 A, L/D 3:1) aligned in a field and compacted (laboratory)
+  conditions:
+    alignment_medium: powder/slurry (details not in abstract)
+    phi_magnetic: varied (not in abstract)
+  quantity: BHmax
+  value: 24
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1721888
+    title: Permanent-Magnet Properties of Elongated Single-Domain Iron Particles
+    first_author: Mendelsohn
+    year: 1955
+    url: https://api.crossref.org/works/10.1063/1.1721888
+    evidence: abstract
+    locator: abstract
+  quote: The effect of particle alignment and packing fraction on magnetic properties is described, and energy products above three million gauss-oersteds are reported.
+  note: '''above 3 MGOe'' = > 24 kJ/m3 (lower bound).'
+- id: fecoesd_fp_luborsky1957_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: 40:60 Co-Fe ESD particles compacted to various packing densities and degrees of alignment
+  conditions:
+    phi_magnetic: varied (not in abstract)
+  quantity: BHmax
+  value: 40
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1722744
+    title: Reproducing the Properties of Alnico Permanent Magnet Alloys with Elongated Single-Domain Cobalt-Iron Particles
+    first_author: Luborsky
+    year: 1957
+    url: https://api.crossref.org/works/10.1063/1.1722744
+    evidence: abstract
+    locator: abstract
+  quote: By compacting these particles to various packing densities and degrees of alignment, shape anisotropy fine-particle magnets have been made with magnetic properties duplicating those of each of the Alnico permanent magnet alloys, including maximum energy product values above five million gauss-oersteds.
+  note: '''above 5 MGOe'' = > 40 kJ/m3 (lower bound).'
+- id: fecoesd_fp_luborsky1961_fe_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: ESD iron particle magnets (laboratory, electrolysis into Hg)
+  conditions: {}
+  quantity: BHmax
+  value: 34
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.2000392
+    title: Development of Elongated Particle Magnets
+    first_author: Luborsky
+    year: 1961
+    url: https://api.crossref.org/works/10.1063/1.2000392
+    evidence: abstract
+    locator: abstract
+  quote: Iron and iron-cobalt alloy particle magnets are described with maximum energy products up to 4.3 and 6.5 million gauss-oe, respectively.
+  note: 4.3 MGOe = 34 kJ/m3.
+- id: fecoesd_fp_luborsky1961_feco_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: ESD iron-cobalt particle magnets (laboratory, electrolysis into Hg)
+  conditions: {}
+  quantity: BHmax
+  value: 52
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.2000392
+    title: Development of Elongated Particle Magnets
+    first_author: Luborsky
+    year: 1961
+    url: https://api.crossref.org/works/10.1063/1.2000392
+    evidence: abstract
+    locator: abstract
+  quote: Iron and iron-cobalt alloy particle magnets are described with maximum energy products up to 4.3 and 6.5 million gauss-oe, respectively.
+  note: 6.5 MGOe = 52 kJ/m3.
+- id: fecoesd_fp_falk1959_fe_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: commercial ESD iron magnets (particles in metallic matrix)
+  conditions:
+    matrix: metallic
+  quantity: BHmax
+  value: 17.5
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: commercial product
+  source:
+    doi: 10.1063/1.2185852
+    title: Recent Developments in the Field of Elongated Single-Domain Iron and Iron-Cobalt Permanent Magnets
+    first_author: Falk
+    year: 1959
+    url: https://api.crossref.org/works/10.1063/1.2185852
+    evidence: abstract
+    locator: abstract
+  quote: Maximum magnetic energies of 2.2 megagauss-oersteds for iron and 3.6 megagauss-oersteds for iron-cobalt are available.
+  note: 2.2 MGOe = 17.5 kJ/m3 (commercial grade level).
+- id: fecoesd_fp_falk1959_feco_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: commercial ESD iron-cobalt magnets (particles in metallic matrix)
+  conditions:
+    matrix: metallic
+  quantity: BHmax
+  value: 28.6
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: commercial product
+  source:
+    doi: 10.1063/1.2185852
+    title: Recent Developments in the Field of Elongated Single-Domain Iron and Iron-Cobalt Permanent Magnets
+    first_author: Falk
+    year: 1959
+    url: https://api.crossref.org/works/10.1063/1.2185852
+    evidence: abstract
+    locator: abstract
+  quote: Maximum magnetic energies of 2.2 megagauss-oersteds for iron and 3.6 megagauss-oersteds for iron-cobalt are available.
+  note: 3.6 MGOe = 28.6 kJ/m3 (commercial grade level).
+- id: fecoesd_fp_lever1958_fe_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: compacts of ESD iron particles with metal or organic matrices
+  conditions: {}
+  quantity: BHmax
+  value: 27.9
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1723110
+    title: Physical and Magnetic Properties of Elongated Single-Domain Iron and Iron-Cobalt Permanent Magnets
+    first_author: Lever
+    year: 1958
+    url: https://api.crossref.org/works/10.1063/1.1723110
+    evidence: abstract
+    locator: abstract
+  quote: Compacts have been prepared from iron and iron-cobalt particles with energies of 3.5 million and 5 million gauss-oersteds, respectively.
+  note: 3.5 MGOe = 27.9 kJ/m3.
+- id: fecoesd_fp_lever1958_feco_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: compacts of ESD iron-cobalt particles with metal or organic matrices
+  conditions: {}
+  quantity: BHmax
+  value: 39.8
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1723110
+    title: Physical and Magnetic Properties of Elongated Single-Domain Iron and Iron-Cobalt Permanent Magnets
+    first_author: Lever
+    year: 1958
+    url: https://api.crossref.org/works/10.1063/1.1723110
+    evidence: abstract
+    locator: abstract
+  quote: Compacts have been prepared from iron and iron-cobalt particles with energies of 3.5 million and 5 million gauss-oersteds, respectively.
+  note: 5 MGOe = 39.8 kJ/m3.
+- id: fecoesd_fp_luborsky1959_comm_fe_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: commercial ESD iron magnets (Hg electrodeposition, field alignment twice, matrix)
+  conditions: {}
+  quantity: BHmax
+  value: 17.5
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: 1
+  source:
+    doi: 10.1179/pom.1959.2.4.006
+    title: PERMANENT MAGNETS FROM ELONGATED SINGLE-DOMAIN PARTICLES
+    first_author: LUBORSKY
+    year: 1959
+    url: https://api.openalex.org/works/doi:10.1179/pom.1959.2.4.006
+    evidence: abstract
+    locator: abstract
+  quote: The process described produces commercial ESD iron and iron–cobalt magnets with energy products of 2·2 and 3·5 million gauss-oersteds, and laboratory ESD iron and iron–cobalt magnets of 4·2 and 5·0 million gauss-oersteds.
+  note: 2.2 MGOe = 17.5 kJ/m3.
+- id: fecoesd_fp_luborsky1959_comm_feco_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: commercial ESD iron-cobalt magnets (Hg electrodeposition, field alignment twice, matrix)
+  conditions: {}
+  quantity: BHmax
+  value: 27.9
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: 1
+  source:
+    doi: 10.1179/pom.1959.2.4.006
+    title: PERMANENT MAGNETS FROM ELONGATED SINGLE-DOMAIN PARTICLES
+    first_author: LUBORSKY
+    year: 1959
+    url: https://api.openalex.org/works/doi:10.1179/pom.1959.2.4.006
+    evidence: abstract
+    locator: abstract
+  quote: The process described produces commercial ESD iron and iron–cobalt magnets with energy products of 2·2 and 3·5 million gauss-oersteds, and laboratory ESD iron and iron–cobalt magnets of 4·2 and 5·0 million gauss-oersteds.
+  note: 3.5 MGOe = 27.9 kJ/m3.
+- id: fecoesd_fp_luborsky1959_lab_fe_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: laboratory ESD iron magnets (Hg electrodeposition, field alignment twice, matrix)
+  conditions: {}
+  quantity: BHmax
+  value: 33.4
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: 1
+  source:
+    doi: 10.1179/pom.1959.2.4.006
+    title: PERMANENT MAGNETS FROM ELONGATED SINGLE-DOMAIN PARTICLES
+    first_author: LUBORSKY
+    year: 1959
+    url: https://api.openalex.org/works/doi:10.1179/pom.1959.2.4.006
+    evidence: abstract
+    locator: abstract
+  quote: The process described produces commercial ESD iron and iron–cobalt magnets with energy products of 2·2 and 3·5 million gauss-oersteds, and laboratory ESD iron and iron–cobalt magnets of 4·2 and 5·0 million gauss-oersteds.
+  note: 4.2 MGOe = 33.4 kJ/m3.
+- id: fecoesd_fp_luborsky1959_lab_feco_bhmax
+  phase: FeCo-elongated
+  route: FP
+  process: laboratory ESD iron-cobalt magnets (Hg electrodeposition, field alignment twice, matrix)
+  conditions: {}
+  quantity: BHmax
+  value: 39.8
+  unit: kJ/m3
+  measured_along: alignment direction
+  measurement: demagnetisation curve along the alignment direction (details not in abstract)
+  n_samples: 1
+  source:
+    doi: 10.1179/pom.1959.2.4.006
+    title: PERMANENT MAGNETS FROM ELONGATED SINGLE-DOMAIN PARTICLES
+    first_author: LUBORSKY
+    year: 1959
+    url: https://api.openalex.org/works/doi:10.1179/pom.1959.2.4.006
+    evidence: abstract
+    locator: abstract
+  quote: The process described produces commercial ESD iron and iron–cobalt magnets with energy products of 2·2 and 3·5 million gauss-oersteds, and laboratory ESD iron and iron–cobalt magnets of 4·2 and 5·0 million gauss-oersteds.
+  note: 5.0 MGOe = 39.8 kJ/m3.
+- id: fecoesd_fp_luborsky1960_angular
+  phase: FeCo-elongated
+  route: FP
+  process: oriented ESD Fe compacts at several packing fractions; demagnetisation curves vs angle
+  conditions: {}
+  quantity: texture_metric
+  value: 'qualitative: residual-to-saturation ratio vs angle is a distorted cosine, not reproducible by single-domain SW particles with the micrograph orientations'
+  unit: qualitative_angular_remanence
+  measured_along: angle to alignment axis
+  measurement: demagnetisation curves vs angle
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1984605
+    title: Angular Variation of the Magnetic Properties of Elongated Single-Domain Iron Particles
+    first_author: Luborsky
+    year: 1960
+    url: https://api.crossref.org/works/10.1063/1.1984605
+    evidence: abstract
+    locator: abstract
+  quote: The residual to saturation ratio appears as a distorted cosine function, which the simple single-domain particle model cannot account for without assuming particle orientations inconsistent with electron micrographs.
+  note: No numeric values in abstract.
+- id: co3c_iso_harris2010_bhmax
+  phase: Co3C
+  route: isotropic
+  process: polyol Co2C+Co3C nanoparticle powder, rinsed and dried, measured as free (not compacted) powder
+  conditions:
+    field_T: 0
+    phi_magnetic: not stated (free powder)
+    phases: Co3C + Co2C
+  quantity: BHmax
+  value: 20.7
+  unit: kJ/m3
+  measured_along: not applicable (random powder)
+  measurement: VSM at room temperature, max ~17 kOe (not saturating per authors); magnetisation corrected for graphitic shell; demagnetisation not stated
+  n_samples: 1
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results (Fig. 5)
+  quote: This sample has a room temperature BHmax of 20.7 KJ/m3.
+  note: Per-mass magnetisation converted to BHmax by the authors; packing density of the free powder not given.
+- id: co3c_iso_huba2012_bhmax
+  phase: Co3C
+  route: isotropic
+  process: CoxC (Co2C+Co3C) nanocomposite of capped nanorods from polyol (0.25 M OH-/Cl-)
+  conditions:
+    field_T: 0
+    phases: Co3C + Co2C
+  quantity: BHmax
+  value: 13.1
+  unit: kJ/m3
+  measured_along: not stated
+  measurement: room temperature magnetometry (abstract only)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.3677816
+    title: Size and phase control of cobalt–carbide nanoparticles using OH− and Cl− anions in a polyol process
+    first_author: Huba
+    year: 2012
+    url: https://api.crossref.org/works/10.1063/1.3677816
+    evidence: abstract
+    locator: abstract
+  quote: The CoxC nanocomposites comprised of capped nanorods possessed a BHmax of 1.65 MGOe with a magnetic saturation and coercivity values of 38 emu/g and 2.4 kOe, respectively.
+  note: 1.65 MGOe = 13.1 kJ/m3. Only the abstract was accessible; packing and alignment state not stated (assumed unaligned powder).
+- id: co3c_iso_sutradhar2019_texture
+  phase: Co3C
+  route: isotropic
+  process: Co3C nanoparticle assembly made without field (El-Gendy et al. data), interpreted with an LLG/Stoner-Wohlfarth model of 16 interacting 4 nm particles
+  conditions:
+    field_T: 0
+  quantity: texture_metric
+  value: 'model-inferred: easy axes uniformly within +-30 deg of the measuring field fits better than a random distribution (dipolar texturing claimed)'
+  unit: model_inferred_orientation_window_deg
+  measured_along: measuring field direction
+  measurement: LLG simulation fitted to published M(H)
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jmmm.2018.08.026
+    title: Magnetic behaviour of assemblies of interacting cobalt-carbide nanoparticles
+    first_author: Sutradhar
+    year: 2019
+    url: https://arxiv.org/pdf/1801.06672
+    evidence: full_text
+    locator: Model and results (arXiv 1801.06672)
+  quote: By evaluating different kinds of distribution for our system we found out that the distribution for which the easy axes are distributed uniformly between 60° to 120° best matches the experiment. While no magnetic field was applied during the assembly of the Co3C nanoparticles (a strong magnetic field could potentially promote a preference for the magnetic easy axis of each particle aligning close to the direction of this applied field thus enhancing the coercivity and remanence of the assembly), the dipolar coupling between the these nanoparticles results in some texturing in the nanoparticle assembly.
+  note: Model inference (Ku = 7.5e5 J/m3 from DFT used), not a texture measurement; sealed because it characterises a real sample's orientation state.
+- id: efe2o3_fp_namai2012_mrms
+  phase: epsilon-Fe2O3
+  route: FP
+  process: epsilon-Rh0.14Fe1.86O3 nanoparticles (~35 nm, silica-etched) in UV-curing resin oriented in 12.7 kOe, UV-cured
+  conditions:
+    field_T: 1.27
+    T_process_K: 295
+    alignment_medium: UV-curing resin (dilute)
+    composition: Rh0.14Fe1.86O3
+  quantity: Mr_over_Ms
+  value: 0.8
+  unit: ''
+  uncertainty: 0.05
+  measured_along: orientation field direction (presumably)
+  measurement: SQUID (MPMS 7), 300 K, max ~55 kOe, NOT saturating (Ha = 53 kOe); ratio is Mr/M(55 kOe), an upper bound of Mr/Ms
+  n_samples: 1
+  source:
+    doi: 10.1038/ncomms2038
+    title: Hard magnetic ferrite with a gigantic coercivity and high frequency millimetre wave rotation
+    first_author: Namai
+    year: 2012
+    url: https://www.nature.com/articles/ncomms2038.pdf
+    evidence: full_text
+    locator: Fig. 2b (read from plot)
+  quote: Magnetization versus external magnetic field plot of crystallographically oriented ε-Rh0.14Fe1.86O3/resin at 300 K exhibiting a coercive field of 31 kOe.
+  note: 'Read from plot: Mr ~7.0 emu/g, M(55 kOe) ~8.8 emu/g.'
+- id: efe2o3_iso_namai2012_mrms
+  phase: epsilon-Fe2O3
+  route: isotropic
+  process: non-oriented epsilon-Rh0.14Fe1.86O3 nanoparticle powder
+  conditions:
+    field_T: 0
+    composition: Rh0.14Fe1.86O3
+  quantity: Mr_over_Ms
+  value: 0.56
+  unit: ''
+  uncertainty: 0.05
+  measured_along: any (random)
+  measurement: SQUID, 300 K, max ~50 kOe, not saturating; ratio Mr/M(max)
+  n_samples: 1
+  source:
+    doi: 10.1038/ncomms2038
+    title: Hard magnetic ferrite with a gigantic coercivity and high frequency millimetre wave rotation
+    first_author: Namai
+    year: 2012
+    url: https://www.nature.com/articles/ncomms2038.pdf
+    evidence: full_text
+    locator: Fig. 2a (read from plot)
+  quote: Magnetization versus external magnetic field plot of non-oriented ε-Rh0.14Fe1.86O3 nanoparticles at 300 K exhibiting a coercive field of 27 kOe.
+  note: 'Read from plot: Mr ~4.0 emu/g, M(50 kOe) ~7.1 emu/g.'
+- id: efe2o3_fp_ohkoshi2015_mrms
+  phase: epsilon-Fe2O3
+  route: FP
+  process: 8.2 nm epsilon-Fe2O3 (S-1020) dispersed in a vehicle matrix and dried under an external field into an oriented film
+  conditions:
+    field_T: not stated
+    alignment_medium: vehicle matrix film
+    particle_size_nm: 8.2
+  quantity: Mr_over_Ms
+  value: 0.5
+  unit: ''
+  uncertainty: 0.07
+  measured_along: parallel to easy axis (a, normal to film)
+  measurement: magnetometer, 300 K, +-60 kOe (saturated); demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Fig. 3b (read from plot)
+  quote: The magnetic hysteresis loop of the crystallographically oriented S-1020 nanocrystal film measured in the applied magnetic field (H0) parallel to the easy-axis at 300 K.
+  note: 'Read from plot: Mr ~7.5-8 emu/g, Ms ~15.5 emu/g. Particles are close to the 7.5 nm superparamagnetic limit, so thermal relaxation lowers Mr.'
+- id: efe2o3_fp_ohkoshi2015_texture
+  phase: epsilon-Fe2O3
+  route: FP
+  process: same oriented film
+  conditions: {}
+  quantity: texture_metric
+  value: 'qualitative: (200) reflection dominates the theta-2theta pattern; a-axis distribution shown clustered around the field (unit-sphere plot)'
+  unit: qualitative_xrd
+  measured_along: film normal
+  measurement: XRPD (Cu K-alpha)
+  n_samples: 1
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Fig. 3a
+  quote: The XRPD pattern of the S-1020 shows that the nanocrystals oriented along the crystallographic a-axis, perpendicular to the film (Fig. 3a).
+  note: No numeric orientation factor in the text.
+- id: efe2o3_ep_gich2014_mrms
+  phase: epsilon-Fe2O3
+  route: EP
+  process: 'PLD epsilon-Fe2O3 film on AlFeO3-buffered Nb:SrTiO3(111): c out of plane, six 60-deg in-plane domains'
+  conditions:
+    T_process_K: not stated
+    substrate: AlFeO3/Nb:SrTiO3(111)
+  quantity: Mr_over_Ms
+  value: 0.4
+  unit: ''
+  uncertainty: 0.05
+  measured_along: in-plane
+  measurement: magnetometry at room temperature, substrate and buffer contributions subtracted; maximum field not stated
+  n_samples: 1
+  source:
+    doi: 10.1002/adma.201400990
+    title: Multiferroic Iron Oxide Thin Films at Room Temperature
+    first_author: Gich
+    year: 2014
+    url: https://arxiv.org/pdf/1405.4909
+    evidence: full_text
+    locator: Results (Fig. 3a)
+  quote: It turns out that the ε-Fe2O3 film has a magnetic remanence and saturation magnetization of about 40 emu/cm3 and 100 emu/cm3, respectively, which are in good agreement with previous magnetic studies on ε-Fe2O3 nanoparticles.
+  note: Ratio of the two stated approximate values.
+- id: efe2o3_ep_gich2014_js
+  phase: epsilon-Fe2O3
+  route: EP
+  process: same film
+  conditions: {}
+  quantity: Js_same_sample
+  value: 0.126
+  unit: T
+  uncertainty: 0.02
+  measured_along: in-plane
+  measurement: magnetometry at room temperature
+  n_samples: 1
+  source:
+    doi: 10.1002/adma.201400990
+    title: Multiferroic Iron Oxide Thin Films at Room Temperature
+    first_author: Gich
+    year: 2014
+    url: https://arxiv.org/pdf/1405.4909
+    evidence: full_text
+    locator: Results (Fig. 3a)
+  quote: It turns out that the ε-Fe2O3 film has a magnetic remanence and saturation magnetization of about 40 emu/cm3 and 100 emu/cm3, respectively, which are in good agreement with previous magnetic studies on ε-Fe2O3 nanoparticles.
+  note: 4 pi x 100 emu/cm3 = 1257 G = 0.126 T (conversion).
+- id: efe2o3_iso_chan2018_br
+  phase: epsilon-Fe2O3
+  route: isotropic
+  process: 'CAPAD-densified Fe-O/Si-O (IO-90, ~89% dense) annealed 1025 C / 1 h: epsilon nanorods (56 x 195 nm) in thin silica, minor alpha'
+  conditions:
+    field_T: 0
+    T_process_K: 723-873 (CAPAD) then 1298 (anneal)
+    density_rel: 0.89
+  quantity: Br
+  value: 0.0126
+  unit: T
+  uncertainty: 0.002
+  measured_along: not stated
+  measurement: VSM at 300 K, volume-normalised
+  n_samples: 1
+  source:
+    doi: null
+    title: Phase Control and Processing Methods for High-Coercivity Magnets based on Metastable Fe2O3
+    first_author: Chan
+    year: 2018
+    url: https://escholarship.org/content/qt8q08q7pp/qt8q08q7pp.pdf
+    evidence: full_text
+    locator: Chapter 5.3 (Fig. 5.5a)
+  quote: The range of remanent magnetization was found to be 14-30 emu/cm3, slightly higher than the 10 emu/cm3 found in the IO-90 sample, which is consistent with the presence of some silica content as well as some residual porosity.
+  note: 10 emu/cm3 -> 4 pi x 10 G = 0.0126 T. The 14-30 emu/cm3 is the author's estimate for pure epsilon (not a sample).
+- id: bctfeco_ep_andersson2006_perp_mrms
+  phase: bct-FeCo
+  route: EP
+  process: Fe0.36Co0.64 (3 ML)/Pt (7 ML) x 23 superlattice sputtered on Pt/MgO(001) at 470 K; c axis normal to film (single variant by epitaxy), c/a = 1.18
+  conditions:
+    T_process_K: 470
+    substrate: Pt buffer/MgO(001)
+    Ku_over_Kd_40K: ~1.16 (2.9 vs 2.5 MJ/m3)
+  quantity: Mr_over_Ms
+  value: 0.1
+  unit: ''
+  uncertainty: 0.1
+  measured_along: perpendicular (film normal = c axis)
+  measurement: 'polar MOKE normalised to SQUID Ms, 300 K, NOT demagnetisation-corrected (thin film, N ~ 1): loop sheared by the film demagnetising field'
+  n_samples: 1
+  source:
+    doi: 10.1103/physrevlett.96.037205
+    title: Perpendicular Magnetocrystalline Anisotropy in Tetragonally Distorted Fe-Co Alloys
+    first_author: Andersson
+    year: 2006
+    url: https://uu.diva-portal.org/smash/get/diva2:103158/FULLTEXT01.pdf
+    evidence: full_text
+    locator: Fig. 3 lower panel (read from plot)
+  quote: 'Upper panel: normalized magnetization data at 40 K obtained from SQUID (in-plane, ‖ ) and polar MOKE (perpendicular, ⊥ ). Lower panel: the corresponding data at 300 K.'
+  note: 'Read from plot: the perpendicular (PMOKE) branch crosses H = 0 near M/Ms ~ 0-0.2. Low remanence reflects domain formation in a film with Ku close to the shape term, not misorientation; included as a cautionary EP data point.'
+- id: fe5pb2_fp_mcguire2015_texture
+  phase: Fe5PB2
+  route: FP
+  process: finely ground polycrystal powder sprinkled on grease-coated glass slide over a strong permanent magnet (room temperature)
+  conditions:
+    field_T: not stated (permanent magnet)
+    T_process_K: 295
+    alignment_medium: vacuum grease on slide
+  quantity: texture_metric
+  value: 'qualitative: 004 strongly enhanced vs 022/121, residual 022/121 intensity (incomplete alignment or polycrystalline particles)'
+  unit: qualitative_xrd
+  measured_along: normal to sample plane (field direction)
+  measurement: powder XRD (Cu K-alpha1), room temperature
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Section III.A (Fig. 2a)
+  quote: For each material, the intensity of the 004 reflection is strongly increased relative to the 022 and 121 reflections when the powders are magnetically aligned. This indicates that the easy axis of magnetization is parallel to the c* reciprocal lattice vector. For tetragonal symmetry, this is the c-axis of the crystal structure. Some intensity is still observed on the 022 and 121 reflections of the aligned samples, which is expected if the alignment is incomplete or if all of the powder particles are not single crystals, but instead are composed of agglomerates of misaligned crystallites.
+  note: No numeric texture factor given.
+- id: fe5sib2_fp_mcguire2015_texture
+  phase: Fe5SiB2
+  route: FP
+  process: finely ground polycrystal powder sprinkled on grease-coated glass slide over a strong permanent magnet (room temperature)
+  conditions:
+    field_T: not stated (permanent magnet)
+    T_process_K: 295
+    alignment_medium: vacuum grease on slide
+  quantity: texture_metric
+  value: 'qualitative: 004 strongly enhanced vs 022/121, residual 022/121 intensity (incomplete alignment or polycrystalline particles)'
+  unit: qualitative_xrd
+  measured_along: normal to sample plane (field direction)
+  measurement: powder XRD (Cu K-alpha1), room temperature
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Section III.A (Fig. 2a)
+  quote: For each material, the intensity of the 004 reflection is strongly increased relative to the 022 and 121 reflections when the powders are magnetically aligned. This indicates that the easy axis of magnetization is parallel to the c* reciprocal lattice vector. For tetragonal symmetry, this is the c-axis of the crystal structure. Some intensity is still observed on the 022 and 121 reflections of the aligned samples, which is expected if the alignment is incomplete or if all of the powder particles are not single crystals, but instead are composed of agglomerates of misaligned crystallites.
+  note: No numeric texture factor given.
+- id: feco5pb2_fp_mcguire2015_texture
+  phase: (Fe,Co)5PB2
+  route: FP
+  process: finely ground polycrystal powder sprinkled on grease-coated glass slide over a strong permanent magnet (room temperature)
+  conditions:
+    field_T: not stated (permanent magnet)
+    T_process_K: 295
+    alignment_medium: vacuum grease on slide
+  quantity: texture_metric
+  value: 'qualitative: 004 strongly enhanced vs 022/121, residual 022/121 intensity (incomplete alignment or polycrystalline particles)'
+  unit: qualitative_xrd
+  measured_along: normal to sample plane (field direction)
+  measurement: powder XRD (Cu K-alpha1), room temperature
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Section III.A (Fig. 2a)
+  quote: For each material, the intensity of the 004 reflection is strongly increased relative to the 022 and 121 reflections when the powders are magnetically aligned. This indicates that the easy axis of magnetization is parallel to the c* reciprocal lattice vector. For tetragonal symmetry, this is the c-axis of the crystal structure. Some intensity is still observed on the 022 and 121 reflections of the aligned samples, which is expected if the alignment is incomplete or if all of the powder particles are not single crystals, but instead are composed of agglomerates of misaligned crystallites.
+  note: No numeric texture factor given.
+- id: fe5sib2_iso_hedlund2017_mrms
+  phase: Fe5SiB2
+  route: isotropic
+  process: arc-melted/drop-synthesised, annealed 1273 K 33 days, polycrystalline bulk (Fe5SiB2, Fe5Si0.5P0.5B2, Fe5PB2)
+  conditions:
+    field_T: 0
+  quantity: Mr_over_Ms
+  value: ~0 (close to zero)
+  unit: ''
+  measured_along: not applicable
+  measurement: magnetometry M(H) at 300 K
+  n_samples: 3
+  source:
+    doi: 10.1103/physrevb.96.094433
+    title: Magnetic properties of the Fe5SiB2−Fe5PB2 system
+    first_author: Hedlund
+    year: 2017
+    url: https://arxiv.org/pdf/2512.08043
+    evidence: full_text
+    locator: Section III.B (Fig. 4)
+  quote: All samples exhibit close to zero coercivity and remanence, which is illustrated by [...] the insert in Fig. 4 for Fe5 Si0.5 P0.5 B2 .
+  note: 'Coarse-grained multidomain bulk: no remanence regardless of orientation (coercivity mechanism missing).'
+- id: fe3sn_fp_sales2014_texture
+  phase: Fe3Sn
+  route: FP
+  process: <37 um single-crystal-grain powder in epoxy (gelcap) cured in 4 T along the capsule axis
+  conditions:
+    field_T: 4.0
+    T_process_K: 295
+    alignment_medium: epoxy in gelcap
+  quantity: texture_metric
+  value: 'qualitative: XRD of field-oriented powder shows the easy direction in the basal plane (planar alignment); two-rotation method aligns c along the capsule axis'
+  unit: qualitative_xrd
+  measured_along: capsule axis
+  measurement: powder XRD
+  n_samples: 1
+  source:
+    doi: 10.1038/srep07024
+    title: Ferromagnetism of Fe3Sn and Alloys
+    first_author: Sales
+    year: 2014
+    url: https://www.nature.com/articles/srep07024.pdf
+    evidence: full_text
+    locator: Fig. 3 caption; Methods
+  quote: The x-ray data unambiguously identifies the easy magnetic axis in the basal plane, which is detrimental for a potential permanent magnet, and in contradiction to the conclusion of Trumpy et al6. based on a less direct method (Mossbauer data).
+  note: 'Easy-plane phase: field alignment orients the basal planes, not a single axis.'
+- id: mn4n_ep_zhou2021_mrms
+  phase: Mn4N
+  route: EP
+  process: reactive sputtering of sub-20 nm Mn4N films on annealed MgO at 400-450 C (perpendicular anisotropy)
+  conditions:
+    T_process_K: 673-723
+    substrate: MgO
+  quantity: Mr_over_Ms
+  value: near 1
+  unit: ''
+  measured_along: out of plane (perpendicular)
+  measurement: magnetometry at room temperature (details in paper)
+  n_samples: 1
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Abstract
+  quote: The optimal films showed low saturation magnetization (Ms = 43 emu/cc), low magnetic anisotropy energy (0.7 Merg/cc), and a remanent magnetization to saturation magnetization ratio (Mr/Ms) near 1 at room temperature.
+  note: Film with perpendicular anisotropy; Js only ~0.05 T.

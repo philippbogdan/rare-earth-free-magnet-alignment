@@ -5929,7 +5929,7 @@
      ]
     }
    },
-   "opened": false
+   "opened": true
   },
   "pending_codex": {
    "files": {},
@@ -6119,7 +6119,7 @@
      ]
     }
    },
-   "opened": false
+   "opened": true
   }
  }
 }

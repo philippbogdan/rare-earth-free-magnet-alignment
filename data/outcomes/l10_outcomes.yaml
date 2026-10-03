@@ -1,0 +1,1926 @@
+# Topic l10 - SEALED OUTCOME records (measured variant fractions, macroscopic uniaxial anisotropy,
+# Mr/Ms, Br, texture) for L1_0 FeNi, FePt, CoPt, FePd made by field/stress ordering, epitaxy,
+# powder/particle alignment, natural cooling (meteorites) or without alignment (isotropic).
+# Do not open before predictions are frozen. Schema: data/SCHEMA.md (outcome record).
+# Phase names as in data/raw/l10_inputs.yaml. Temperatures in K.
+# Non-schema quantity used: `Ku_macro` (MJ/m3) = macroscopic uniaxial anisotropy of a multi-variant
+# sample along the field/stress axis, a proxy for the degree of variant selection.
+# Values read off figures carry locator "(read from plot)" and an uncertainty.
+- id: feni_scfa_neel1964a
+  phase: L10-FeNi
+  route: SC+FA
+  process: 'Fe50Ni50 single-crystal disk ordered by neutron irradiation at 295 °C with a magnetic field along [100] (literature: 2.5 kOe)'
+  conditions:
+    field_T: 0.25
+    T_process_K: 568
+    parent_texture: single crystal (disk, plane (011))
+    magnet_axis: irradiation-field direction [100]
+    density_rel: 1.0
+  quantity: Ku_macro
+  value: 0.32
+  unit: MJ/m3
+  measured_along: anisotropy energy in the (011) disk plane; uniaxial axis = field direction
+  measurement: torque/anisotropy energy and magnetization curves, room temperature (fit K1 sin2θ + K2 sin4θ)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1713516
+    title: Magnetic Properties of an Iron—Nickel Single Crystal Ordered by Neutron Bombardment
+    first_author: L. Néel
+    year: 1964
+    url: https://api.crossref.org/works/10.1063/1.1713516
+    evidence: abstract
+    locator: abstract
+  quote: The study of the anisotropy energy in the sample plane [011], and the magnetization curves drawn for different directions, show that this sample presents the characteristics of a uniaxial substance. But if we express, in a classical way, the anisotropy energy by K1 sin2θ+K2 sin4θ, we find experimentally K1=3.2·106 ergs/cm3 and K2=2.3·106 ergs/cm3.
+  note: 'Macroscopic K1 = 3.2×10^6 erg/cm3 = 0.32 MJ/m3 and K2 = 0.23 MJ/m3 of a multi-variant crystal (3 variants, ~150 Å crystallites); proxy for field-induced variant selection. Quantity ''Ku_macro'' is not in the schema list (proposed extension). Field value 0.25 T from Hlova 2024 (review). T_process 568 K < Tc(A1) ~723-773 K: parent ferromagnetic. Order parameter estimated 0.41-0.45 (Woodgate 2023 Table I).'
+- id: feni_scfa_neel1964b
+  phase: L10-FeNi
+  route: SC+FA
+  process: 'same Néel et al. 1964 crystal: total uniaxial anisotropy KU = K1 + K2 (+K3) as tabulated by Woodgate et al. 2023'
+  conditions:
+    field_T: 0.25
+    T_process_K: 568
+    parent_texture: single crystal
+    magnet_axis: irradiation-field direction [100]
+    density_rel: 1.0
+  quantity: Ku_macro
+  value: 0.55
+  unit: MJ/m3
+  measured_along: uniaxial axis = field direction
+  measurement: as reported by Néel et al. 1964, T = 293 K
+  n_samples: 1
+  source:
+    doi: 10.1063/5.0169752
+    title: 'Revisiting Néel 60 years on: The magnetic anisotropy of L10 FeNi (tetrataenite)'
+    first_author: Christopher D. Woodgate
+    year: 2023
+    url: https://arxiv.org/pdf/2307.15470
+    evidence: review
+    locator: Table I (arXiv version)
+  quote: Néel et al. (1964)10 Bulk Sample (Disc) Fe0.5 Ni0.5 0.41–0.45 (Estimate) 293 0.55 0.32 0.23
+  note: 'Table row: S = 0.41-0.45 (estimate), T = 293 K, KU = 0.55, K1 = 0.32, K2 = 0.23 MJ/m3.'
+- id: feni_scfa_pauleve1968a
+  phase: L10-FeNi
+  route: SC+FA
+  process: spherical Fe50Ni50 single crystals ordered by neutron irradiation at 295 °C in a field along a fourfold axis
+  conditions:
+    field_T: null
+    T_process_K: 568
+    parent_texture: single crystal (sphere)
+    magnet_axis: field direction <100>
+    density_rel: 1.0
+  quantity: Ku_macro
+  value: 0.55
+  unit: MJ/m3
+  measured_along: field (fourfold) axis
+  measurement: magnetization curves / anisotropy energy, room temperature
+  n_samples: 1
+  source:
+    doi: 10.1063/5.0169752
+    title: 'Revisiting Néel 60 years on: The magnetic anisotropy of L10 FeNi (tetrataenite)'
+    first_author: Christopher D. Woodgate
+    year: 2023
+    url: https://arxiv.org/pdf/2307.15470
+    evidence: review
+    locator: Table I (arXiv version)
+  quote: Paulevé et al. (1968)11 Bulk Sample (Sphere) Fe0.5 Ni0.5 0.55 0.3 0.17 0.08
+  note: KU = 0.55, K1 = 0.3, K2 = 0.17, K3 = 0.08 MJ/m3 (order parameter not given). Field strength during irradiation not given in accessible text.
+- id: feni_scfa_pauleve1968b
+  phase: L10-FeNi
+  route: SC+FA
+  process: spherical Fe50Ni50 single crystals ordered by neutron irradiation at 295 °C, field along a fourfold vs a threefold axis
+  conditions:
+    field_T: null
+    T_process_K: 568
+    parent_texture: single crystal (sphere)
+    magnet_axis: field direction
+    density_rel: 1.0
+  quantity: Ku_macro
+  value: 'qualitative: field ∥ <100> -> tetragonal (uniaxial) bulk anisotropy; field ∥ <111> -> cubic bulk anisotropy with <111> easy'
+  unit: ''
+  measured_along: several directions
+  measurement: magnetization curves and anisotropy energy
+  n_samples: 2
+  source:
+    doi: 10.1063/1.1656361
+    title: Magnetization Curves of Fe–Ni (50–50) Single Crystals Ordered by Neutron Irradiation with an Applied Magnetic Field
+    first_author: J. Paulevé
+    year: 1968
+    url: https://api.crossref.org/works/10.1063/1.1656361
+    evidence: abstract
+    locator: abstract
+  quote: When the magnetic field is applied along a fourfold axis, the bulk magnetic anisotropy is tetragonal with a very large value for K3. When the magnetic field is applied along a three fold axis, the bulk magnetic anisotropy is cubic and the threefold axis becomes an easy axis of magnetization; the magnetization measured along the easy direction reaches saturation with a certain law of approach, while the magnetization measured along the [100] direction reaches saturation immediately.
+  note: 'Qualitative test of the variant-selection geometry: with the field along <111> all three <100> variants are equally favoured.'
+- id: feni_meteorite_bryson2014b_coarse
+  phase: L10-FeNi
+  route: 'other: natural slow cooling (meteorite cloudy zone), no dynamo field expected'
+  process: Tazewell IIICD iron meteorite, coarse cloudy zone (~80 nm islands); deep-seated, slowly cooled body
+  conditions:
+    field_T: 0
+    T_process_K: 593
+    parent_texture: single taenite crystal (Widmanstätten lamella)
+    magnet_axis: n/a
+    density_rel: null
+  quantity: texture_metric
+  value: 0.33
+  unit: variant_fraction (each of the three easy axes)
+  uncertainty: 0.04
+  measured_along: XPEEM surface normal to [111] of parent
+  measurement: XPEEM magnetic imaging + histogram matching to simulations (3 μm × 400 nm areas)
+  n_samples: 1
+  source:
+    doi: 10.1016/j.epsl.2014.04.016
+    title: Nanopaleomagnetism of meteoritic Fe–Ni studied using X-ray photoemission electron microscopy
+    first_author: James F.J. Bryson
+    year: 2014
+    url: https://zaguan.unizar.es/record/58379/files/texto_completo.pdf
+    evidence: full_text
+    locator: Sec. 3.2
+  quote: For the coarse region (Fig. 5), the best histogram agreements are created with equal proportions of each of the three easy axes (i.e. 33% chance of an island displaying any one of the easy axes).
+  note: 'Error: ''The proportions could be changed by ±4% without a significant variation to the quality of fit''. The paper states Tazewell ''is unlikely to have cooled through the tetrataenite formation temperature while a putative core dynamo was active'' (zero-field control).'
+- id: feni_meteorite_bryson2014b_int
+  phase: L10-FeNi
+  route: 'other: natural slow cooling (meteorite cloudy zone), no dynamo field expected'
+  process: Tazewell IIICD, intermediate cloudy zone (~40 nm islands)
+  conditions:
+    field_T: 0
+    T_process_K: 593
+    parent_texture: single taenite crystal
+    magnet_axis: n/a
+    density_rel: null
+  quantity: texture_metric
+  value: 0.38
+  unit: variant_fraction (easy axis 1; axes 2+3 together 0.62)
+  uncertainty: 0.04
+  measured_along: XPEEM, sample normal ∥ [111]
+  measurement: XPEEM + histogram matching
+  n_samples: 1
+  source:
+    doi: 10.1016/j.epsl.2014.04.016
+    title: Nanopaleomagnetism of meteoritic Fe–Ni studied using X-ray photoemission electron microscopy
+    first_author: James F.J. Bryson
+    year: 2014
+    url: https://zaguan.unizar.es/record/58379/files/texto_completo.pdf
+    evidence: full_text
+    locator: Sec. 3.2
+  quote: For the intermediate CZ (Fig. 6) the experimental and simulated histograms displayed the best agreement with 38% ± 4% of the islands with easy axis 1, 62% ± 4% of the islands with easy axis 2 and 3, and a similar degree of clustering to that of the coarse CZ.
+  note: ''
+- id: feni_meteorite_bryson2014b_fine
+  phase: L10-FeNi
+  route: 'other: natural slow cooling (meteorite cloudy zone), interaction-driven'
+  process: Tazewell IIICD, fine cloudy zone (<20 nm islands)
+  conditions:
+    field_T: 0
+    T_process_K: 593
+    parent_texture: single taenite crystal
+    magnet_axis: n/a
+    density_rel: null
+  quantity: texture_metric
+  value: 0.92
+  unit: variant_fraction (easy axis 2 or 3; axis 1 = 0.08)
+  uncertainty: 0.04
+  measured_along: XPEEM, sample normal ∥ [111]
+  measurement: XPEEM + histogram matching
+  n_samples: 1
+  source:
+    doi: 10.1016/j.epsl.2014.04.016
+    title: Nanopaleomagnetism of meteoritic Fe–Ni studied using X-ray photoemission electron microscopy
+    first_author: James F.J. Bryson
+    year: 2014
+    url: https://zaguan.unizar.es/record/58379/files/texto_completo.pdf
+    evidence: full_text
+    locator: Sec. 3.2
+  quote: The intensity histogram was best recreated with 92% ± 4% of the easy axis 2 or 3 and 8% ± 4% of easy axis 1 (Fig. 7).
+  note: Authors attribute this bias to island-island exchange interactions (not an external field). Easy axes 2 and 3 are not distinguished by the signal.
+- id: feni_meteorite_poirier2015
+  phase: L10-FeNi
+  route: 'other: natural slow cooling (meteorite), paleofield unknown'
+  process: ataxite meteorite NWA 6259 (95 vol.% tetrataenite, 43 at.% Ni)
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: 'coarse parent taenite (EBSD: strongly textured)'
+    magnet_axis: n/a
+    density_rel: null
+  quantity: texture_metric
+  value: 0.62
+  unit: variant_fraction (dominant variant, by volume)
+  measured_along: 13 orientations
+  measurement: fit of three-variant uniaxial model to first-quadrant M(H) at 13 orientations
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4916190
+    title: Intrinsic magnetic properties of L1 FeNi obtained from meteorite NWA 6259
+    first_author: Eric Poirier
+    year: 2015
+    url: https://api.crossref.org/works/10.1063/1.4916190
+    evidence: abstract
+    locator: abstract
+  quote: The fit also indicated that NWA 6259 contains one dominant variant (62% by volume), the remainder of the sample being a second variant, and the third variant being absent altogether.
+  note: Second variant ≈ 0.38, third 0.
+- id: feni_isotropic_goto2017
+  phase: L10-FeNi
+  route: isotropic
+  process: NITE powder (A1-FeNi nanoparticles nitrided in NH3 at 300 °C 50 h, denitrided in H2 at 250 °C 2 h), pressed into capsule without field
+  conditions:
+    field_T: 0
+    T_process_K: 523
+    parent_texture: random (nanoparticle powder)
+    magnet_axis: none (non-oriented)
+    density_rel: 0.2
+  quantity: Mr_over_Ms
+  value: 0.48
+  unit: ''
+  uncertainty: 0.02
+  measured_along: arbitrary (non-oriented powder)
+  measurement: VSM, 300 K, demagnetisation-corrected, max field 2.4 MA/m (not saturating); Ms taken as M(2.4 MA/m)
+  n_samples: 1
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: full_text
+    locator: Fig. 5b (read from plot) + p. 5 text
+  quote: The magnetization MH=2.4M under an applied magnetic field of 2.4 MA/m was 144, 151, and 139 Am2/kg for pre-FeNi, DN-Fe2Ni2N, and DN-FeNiN.
+  note: Mr ≈ 67 ± 2 Am2/kg for DN-FeNiN read from Fig. 5b (pixel analysis, both branches); divided by M(2.4 MA/m) = 139 Am2/kg. The paper notes magnetization did not saturate at 2.4 MA/m, so Mr/Ms is overestimated; with Ms = 154 Am2/kg it would be ≈0.44. Powder filling 20 vol.%; particles sintered/necked (exchange coupling possible). S = 0.71.
+- id: feni_fp_hlova2024a
+  phase: L10-FeNi
+  route: FP
+  process: NITE-type L10-FeNi powder (ball-milled A1-FeNi, NH3 290-340 °C, denitrogenated in high-pressure H2, HCl-etched), aligned in 1 T and cold-compacted at 900 MPa
+  conditions:
+    field_T: 1.0
+    T_process_K: 298
+    parent_texture: powder
+    magnet_axis: alignment field direction (assumed measurement axis)
+    density_rel: null
+  quantity: Br
+  value: 0.61
+  unit: T
+  uncertainty: 0.04
+  measured_along: not stated (presumably alignment direction)
+  measurement: PPMS VSM, 300 K; loop plotted to ±11 kOe; M in kG (presumably normalised with theoretical density 8.22 g/cm3)
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jallcom.2024.173619
+    title: Enhancement of hard magnetism and chemical order of synthetic L10-FeNi
+    first_author: Ihor Z. Hlova
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2283203
+    evidence: full_text
+    locator: Fig. 7a (read from plot; HCl-etched sample) + Sec. 2.2
+  quote: For magnetic measurements, the powders were aligned in 1 T field and consolidated at room temperature with 900 MPa pressure.
+  note: M(H=0) ≈ 6.1 ± 0.4 kG read by pixel analysis of Fig. 7a (red curve). Same sample labelled Ms = 13.8 kG (see Js_same_sample). The authors could not resolve L10 superlattice peaks in this sample (L10 inferred from coercivity 2.3 kOe). Demagnetisation correction not stated.
+- id: feni_fp_hlova2024b
+  phase: L10-FeNi
+  route: FP
+  process: same HCl-etched sample as feni_fp_hlova2024a
+  conditions:
+    field_T: 1.0
+    T_process_K: 298
+    parent_texture: powder
+    magnet_axis: alignment field direction (assumed)
+    density_rel: null
+  quantity: Js_same_sample
+  value: 1.38
+  unit: T
+  measured_along: not stated
+  measurement: label 'Ms = 13.8 kG' in Fig. 7a, 300 K
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jallcom.2024.173619
+    title: Enhancement of hard magnetism and chemical order of synthetic L10-FeNi
+    first_author: Ihor Z. Hlova
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2283203
+    evidence: full_text
+    locator: Fig. 7a label
+  quote: Coercivity of the L10-FeNi sample refined by acid leaching increases by more than 60%, from 1.4 to 2.3 kOe, and both saturation and remanence magnetization increase by close to 20%, boosting the maximum energy product to BHmax = ~6 MGOe (aligned and compacted material), which to the best of our knowledge, is the highest value reported so far for the synthetic L10-FeNi.
+  note: 13.8 kG = 1.38 T (value from figure label, not from the quoted sentence). Mr/Ms ≈ 0.44 ± 0.04 from feni_fp_hlova2024a.
+- id: feni_fp_hlova2024c
+  phase: L10-FeNi
+  route: FP
+  process: as-denitrogenated (before acid etch) NITE-type powder, aligned in 1 T, cold-compacted at 900 MPa
+  conditions:
+    field_T: 1.0
+    T_process_K: 298
+    parent_texture: powder
+    magnet_axis: alignment field direction (assumed)
+    density_rel: null
+  quantity: Br
+  value: 0.44
+  unit: T
+  uncertainty: 0.04
+  measured_along: not stated
+  measurement: PPMS VSM, 300 K; labelled Ms = 11.6 kG
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jallcom.2024.173619
+    title: Enhancement of hard magnetism and chemical order of synthetic L10-FeNi
+    first_author: Ihor Z. Hlova
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2283203
+    evidence: full_text
+    locator: Fig. 7a (read from plot; blue curve)
+  quote: For magnetic measurements, the powders were aligned in 1 T field and consolidated at room temperature with 900 MPa pressure.
+  note: M(H=0) ≈ 4.4 ± 0.4 kG read by pixel analysis; labelled Ms = 11.6 kG (1.16 T) -> Mr/Ms ≈ 0.38 ± 0.04.
+- id: feni_fsa_lewis2023
+  phase: L10-FeNi
+  route: 'other: RX+FA+SA (cold-rolled strip annealed under field and tensile stress)'
+  process: cold-rolled (85-95%) FeNi-based strips, slow-cooled to 285 °C and held 48 days under ≈0.7 T and ≈6.2 MPa tension
+  conditions:
+    field_T: 0.7
+    T_process_K: 558
+    parent_texture: cold-rolled sheet (texture not quantified)
+    magnet_axis: in-plane
+    density_rel: 1.0
+  quantity: Ku_macro
+  value: <0.001
+  unit: MJ/m3
+  measured_along: in-plane (rotational VSM)
+  measurement: rotational vector VSM at room temperature; detection threshold ≈1 kJ/m3
+  n_samples: several
+  source:
+    doi: 10.1002/advs.202302696
+    title: 'Accelerating Nature: Induced Atomic Order in Equiatomic FeNi'
+    first_author: Laura H. Lewis
+    year: 2023
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10870030/fullTextXML
+    evidence: full_text
+    locator: Sec. 3
+  quote: Magnetic characterization of the processed samples did not reveal any magnetic in‐plane anisotropy above the threshold of detection, equivalent to ≈1 kJ·m−3 of equivalent uniaxial anisotropy energy.
+  note: Only ≈20 vol.% L10 (Mössbauer) with low order. Upper bound.
+- id: feni_ep_ito2020
+  phase: L10-FeNi
+  route: EP
+  process: a-axis oriented FeNiN film (two in-plane c variants) grown by MBE on SrTiO3(001) at 350 °C, denitrided in H2 at 300 °C 4 h (topotactic)
+  conditions:
+    field_T: 0
+    T_process_K: 573
+    parent_texture: epitaxial film, 2 in-plane c variants
+    magnet_axis: in-plane
+    density_rel: 1.0
+  quantity: Ku_macro
+  value: 0.59
+  unit: MJ/m3
+  measured_along: torque around STO(010)
+  measurement: magnetic torque, room temperature
+  n_samples: 1
+  source:
+    doi: 10.1063/5.0011875
+    title: Epitaxial L1-FeNi films with high degree of order and large uniaxial magnetic anisotropy fabricated by denitriding FeNiN films
+    first_author: Keita Ito
+    year: 2020
+    url: https://tsukuba.repo.nii.ac.jp/record/2002585/files/APL_116-24-242404.pdf
+    evidence: full_text
+    locator: abstract
+  quote: A high S of 0.87 and a Ku of 5.9 × 105 J/m3 were realized in the L10-FeNi film with a TS of 350 °C. This high S value exceeds the values reported on L10-FeNi to date, but the Ku value was comparable to those of c-axis oriented L10-FeNi films with S ∼ 0.5 grown by alternate monoatomic deposition of Fe and Ni layers.
+  note: Macroscopic Ku of a two-variant film; the paper suggests it 'may be smaller than the actual Ku of each variant'.
+- id: feni_other_makino2015
+  phase: L10-FeNi
+  route: 'other: crystallisation of melt-spun amorphous ribbon (no field)'
+  process: Fe42Ni41.3Si8B4P4Cu0.7 amorphous ribbon crystallized at 400 °C for 288 h
+  conditions:
+    field_T: 0
+    T_process_K: 673
+    parent_texture: amorphous
+    magnet_axis: ribbon normal
+    density_rel: null
+  quantity: texture_metric
+  value: 0.017
+  unit: XRD intensity ratio I(001)/I(111), observed (random-calculated 0.003)
+  measured_along: ribbon normal (out-of-plane XRD)
+  measurement: XRD
+  n_samples: 1
+  source:
+    doi: 10.1038/srep16627
+    title: Artificially produced rare-earth free cosmic magnet
+    first_author: Akihiro Makino
+    year: 2015
+    url: https://www.nature.com/articles/srep16627.pdf
+    evidence: full_text
+    locator: p. 2
+  quote: The calculated intensity of the (001) superlattice reflection is 0.3% of the (111) fundamental reflection, which is much lower than the experimentally observed value (~1.7%), suggesting that the ribbon has a texture in the out-of-plane direction i.e. c-axis.
+  note: Texture inferred by the authors from a superlattice/fundamental intensity ratio; could also reflect order parameter/phase fraction. Multi-phase product (α-Fe, Fe3B).
+- id: copt_sc_farjami2009a
+  phase: L10-CoPt
+  route: 'other: SC, zero-field control of the SC+FA series (B0)'
+  process: 'Co-50Pt (at%) floating-zone single crystal, 1273 K 168 h, then 1273 K 1 h + ice-water quench (A1); cube 1.6 mm with edges parallel to {100}A1; step 1: 773 K 0.5 h with H1 = 0; step 2: 1023 K 3 h without field'
+  conditions:
+    field_T: 0
+    T_process_K: 773
+    parent_texture: single crystal
+    magnet_axis: Z = one <100>A1 (the field axis of the field runs)
+    density_rel: 1.0
+  quantity: texture_metric
+  value: 0.33
+  unit: variant_fraction
+  uncertainty: 0.03
+  measured_along: fraction fz of the Z variant (c parallel to Z)
+  measurement: SQUID at 300 K along X, Y, Z (fields to ~7 T); fz = Mz0/Ms with Mz0 the zero-field extrapolation of the high-field magnetization
+  n_samples: 1
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Section 3.2 text; Fig. 6 (H1 = 0 point reads 0.33)
+  quote: For both the Co–50Pt and Fe–55Pd alloys, the value of fz is about one-third when H1 is 0 T, and it increases with increasing H1.
+  note: 'Zero-field reference: equal weights of the three variants.'
+- id: copt_scfa_farjami2009b
+  phase: L10-CoPt
+  route: SC+FA
+  process: as copt_sc_farjami2009a but step 1 at 773 K 0.5 h under H1 = 0.1 T along Z (heating and cooling at 5 K/min under H1); step 2 1023 K 3 h, zero field
+  conditions:
+    field_T: 0.1
+    T_process_K: 773
+    parent_texture: single crystal
+    magnet_axis: Z = field direction <100>A1
+    density_rel: 1.0
+  quantity: texture_metric
+  value: 0.6
+  unit: variant_fraction
+  uncertainty: 0.05
+  measured_along: fraction fz of the variant with c parallel to the field
+  measurement: SQUID at 300 K along X, Y, Z; fz = Mz0/Ms
+  n_samples: 3 points plotted at ~0.1 T
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Fig. 6 (read from plot)
+  quote: Fig. 6. Fraction of the Z-variant (fz) after the second step of ordering in Co–50Pt (circle marks) and Fe–55Pd (square marks) plotted as a function of magnetic field applied in the first step. ... We notice that there is a jump in fz near H1=0.3 T in the case of the Co–50Pt alloy, and near H1=3 T in the case of the Fe–55Pd alloy.
+  note: 'Three circles at ~0.1 T read 0.57, 0.58, 0.65; at ~0.2 T two circles read 0.72 and 0.92. Text: at 0.1 T the curves show a mixture of easy and hard axes. Same 773 K step is below Tc(A1) = 850 K and above Tc(L1_0) = 730 K (paper''s values).'
+- id: copt_scfa_farjami2009c
+  phase: L10-CoPt
+  route: SC+FA
+  process: as copt_sc_farjami2009a but step 1 at 773 K 0.5 h under H1 = 0.5 T along Z; step 2 1023 K 3 h, zero field
+  conditions:
+    field_T: 0.5
+    T_process_K: 773
+    parent_texture: single crystal
+    magnet_axis: Z = field direction <100>A1
+    density_rel: 1.0
+  quantity: texture_metric
+  value: 0.98
+  unit: variant_fraction
+  uncertainty: 0.02
+  measured_along: fraction fz of the variant with c parallel to the field
+  measurement: SQUID at 300 K along X, Y, Z; fz = Mz0/Ms
+  n_samples: 1
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Section 3.2 text and Fig. 4(b'); Fig. 6 (read from plot)
+  quote: This means that a single variant state is realized when H1 is 10 T and 0.5 T.
+  note: 'Fig. 6 circles at 0.5 T read 0.97-0.99 (0.3-0.4 T: ~0.96-0.97). Abstract: ''The lowest magnetic field required for obtaining the single variant is about 0.5 T for the Co–50Pt alloy''.'
+- id: copt_scfa_farjami2009d
+  phase: L10-CoPt
+  route: SC+FA
+  process: as copt_sc_farjami2009a but step 1 at 773 K 0.5 h under H1 = 10 T along Z; step 2 1023 K 3 h, zero field
+  conditions:
+    field_T: 10
+    T_process_K: 773
+    parent_texture: single crystal
+    magnet_axis: Z = field direction <100>A1
+    density_rel: 1.0
+  quantity: texture_metric
+  value: 1.0
+  unit: variant_fraction
+  uncertainty: 0.02
+  measured_along: fraction fz of the variant with c parallel to the field
+  measurement: SQUID at 300 K along X, Y, Z; fz = Mz0/Ms
+  n_samples: 1
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Section 3.2 text and Fig. 4(a'); Fig. 6 (read from plot)
+  quote: This means that a single variant state is realized when H1 is 10 T and 0.5 T.
+  note: Fig. 6 circles at 1, 2 and 10 T read 1.0.
+- id: copt_scfa_yasui2006
+  phase: L10-CoPt
+  route: SC+FA
+  process: single crystals of disordered CoPt, 773 K 0.5 h under fields up to 10 T along [001]A1, then 1023 K 3 h in zero field
+  conditions:
+    field_T: '>0.5'
+    T_process_K: 773
+    parent_texture: single crystal
+    magnet_axis: '[001]A1 = field direction'
+    density_rel: 1.0
+  quantity: texture_metric
+  value: 1.0
+  unit: variant_fraction
+  uncertainty: null
+  measured_along: c-axis variant parallel to the field
+  measurement: not given in abstract (magnetization)
+  n_samples: not stated
+  source:
+    doi: 10.1088/1742-6596/51/1/072
+    title: Formation of single variant CoPt by ordering treatment under magnetic field
+    first_author: M Yasui
+    year: 2006
+    url: https://api.openalex.org/works/doi:10.1088/1742-6596/51/1/072
+    evidence: abstract
+    locator: abstract
+  quote: When the magnetic field in the first stage of ordering heat-treatment is larger than 0.5 T, a single variant state of L10-type ordered phase with the easy axis (c-axis) being parallel to the applied magnetic field direction is obtained.
+  note: 'Qualitative ''single variant'' claim recorded as 1.0. Same group and protocol as Farjami 2009 (probably overlapping data): do not count as an independent case.'
+- id: fept_fp_yamamoto2007a
+  phase: L10-FePt
+  route: FP
+  process: L1_0-FePt nanoparticles from the SiO2-nanoreactor method (single-crystalline, ~6.5 nm) dispersed in styrene with small amounts of oleic acid and oleyl amine; easy axes aligned and fixed by free radical polymerization of styrene at 60 °C under 50 kOe (L1_0-FePt/polystyrene composite)
+  conditions:
+    field_T: 5.0
+    T_process_K: 333
+    parent_texture: none (free particles in liquid monomer)
+    magnet_axis: aligning field direction
+    density_rel: null
+  quantity: Mr_over_Ms
+  value: 0.86
+  unit: ''
+  uncertainty: 0.03
+  measured_along: parallel to the aligning field
+  measurement: hysteresis loop at 300 K, max ±90 kOe; Ms taken by the authors as M at 90 kOe; dilute composite (demagnetization not discussed)
+  n_samples: 1
+  source:
+    doi: 10.3379/jmsjmag.31.199
+    title: Easy Axis Alignment of L10-FePt Nanoparticles Synthesized by the "SiO2-Nanoreactor" Method
+    first_author: S. Yamamoto
+    year: 2007
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/31/3/31_3_199/_pdf
+    evidence: full_text
+    locator: Fig. 5 (read from plot), p. 201
+  quote: Fig. 5 Hysteresis loops for applied fields parallel (filled circles) and perpendicular (open circles) to the aligning field direction, measured at 300 K.
+  note: 'Value read at H = 0 on the descending parallel branch (0.86); points at small positive field read ~0.97. Japanese text (p. 201): ''容易軸方向の磁化曲線では，残留磁化がMsとほぼ等しくなっており'' (remanence nearly equal to Ms) and the deficit attributed to a few percent of superparamagnetic fcc-FePt; ''Msは90 kOeの外部磁場下での磁化としている'' (Ms = M at 90 kOe). Japanese text layer of the PDF is garbled; read from the rendered page.'
+- id: fept_fp_yamamoto2007b
+  phase: L10-FePt
+  route: FP
+  process: same composite as fept_fp_yamamoto2007a
+  conditions:
+    field_T: 5.0
+    T_process_K: 333
+    parent_texture: none (free particles in liquid monomer)
+    magnet_axis: aligning field direction
+    density_rel: null
+  quantity: Mr_over_Ms
+  value: 0.23
+  unit: ''
+  uncertainty: 0.03
+  measured_along: perpendicular to the aligning field
+  measurement: hysteresis loop at 300 K, max ±90 kOe; Ms = M at 90 kOe
+  n_samples: 1
+  source:
+    doi: 10.3379/jmsjmag.31.199
+    title: Easy Axis Alignment of L10-FePt Nanoparticles Synthesized by the "SiO2-Nanoreactor" Method
+    first_author: S. Yamamoto
+    year: 2007
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/31/3/31_3_199/_pdf
+    evidence: full_text
+    locator: Fig. 5 (read from plot), p. 201
+  quote: Fig. 5 Hysteresis loops for applied fields parallel (filled circles) and perpendicular (open circles) to the aligning field direction, measured at 300 K.
+  note: Open circles at H = 0 read +0.24 / -0.22.
+- id: fept_fp_yamamoto2007c
+  phase: L10-FePt
+  route: FP
+  process: same composite as fept_fp_yamamoto2007a
+  conditions:
+    field_T: 5.0
+    T_process_K: 333
+    parent_texture: none (free particles in liquid monomer)
+    magnet_axis: aligning field direction
+    density_rel: null
+  quantity: texture_metric
+  value: 0.3
+  unit: 'other: XRD intensity ratio I(111)/I(002) of L1_0 FePt (random powder 5.9; perfect c-axis alignment 0)'
+  uncertainty: null
+  measured_along: theta-2theta XRD with the aligning field normal to the sample plane
+  measurement: powder XRD of the composite
+  n_samples: 1
+  source:
+    doi: 10.3379/jmsjmag.31.199
+    title: Easy Axis Alignment of L10-FePt Nanoparticles Synthesized by the "SiO2-Nanoreactor" Method
+    first_author: S. Yamamoto
+    year: 2007
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/31/3/31_3_199/_pdf
+    evidence: full_text
+    locator: Section 3.2, p. 201
+  quote: 無配向状態におけるI(111)/I(002)値は 5.9 であり，完全にc軸配向した状態では 0 となる．XRDパターンから見積もられたI(111)/I(002)値は 0.3 となり，磁化容易軸が高度に配向・固定化された試料が作製できていることが分かる．
+  note: 'Transcribed from the rendered page (text layer garbled). Translation: the I(111)/I(002) ratio is 5.9 for random orientation and 0 for perfect c-axis orientation; the value estimated from the XRD pattern is 0.3, showing the easy axes are highly aligned and fixed. Measurement geometry (same page): ''測定は配向磁場の方向が基板に対して垂直となる試料配置で行った''.'
+- id: fept_fp_yamamoto2008
+  phase: L10-FePt
+  route: FP
+  process: L1_0-FePt nanoparticles (SiO2-nanoreactor, 900 °C 1 h; mean 5.6 nm, 19 % size distribution, Fe52Pt48) dispersed in styrene and polymerized at 60 °C under 50 kOe (polystyrene composite)
+  conditions:
+    field_T: 5.0
+    T_process_K: 333
+    parent_texture: none (free particles in liquid monomer)
+    magnet_axis: aligning field direction
+    density_rel: null
+  quantity: texture_metric
+  value: 0.5
+  unit: 'other: fraction of particles with easy axis within 13 deg of the aligning field (from L1_0 (002) rocking curve, size-distribution analysis)'
+  uncertainty: null
+  measured_along: aligning field direction
+  measurement: XRD rocking curve of the (002) reflection (2theta = 49 deg), analysed with a Boltzmann orientation model including size distribution
+  n_samples: 1
+  source:
+    doi: 10.3379/msjmag.32.66
+    title: Effects of Size Distribution on the Easy Axis Alignment of L10-FePt Nanoparticles
+    first_author: S. Yamamoto
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/msjmag/32/2_1/32_2_1_66/_pdf
+    evidence: full_text
+    locator: abstract; Sections 2-3
+  quote: The steady state orientation of the easy axis of the L10-FePt nanoparticles of the L10-FePt/polystytene composite, which had been prepared at 60°C under an external field of 50 kOe, was analyzed with particular emphasis on the effects of size distribution. ... It was revealed that about 50% of the L10-FePt nanoparticles have angles of less than 13 degrees between the magnetic easy axis and the external magnetic field.
+  note: 'Process details from the Japanese text: ~1 wt% particles in styrene, 18 h at 60 °C under 50 kOe; particles described as single crystals, single domain. Likely the same composite family as Yamamoto 2007 (do not treat as fully independent).'
+- id: fept_fp_yamamoto2006
+  phase: L10-FePt
+  route: FP
+  process: single-crystalline L1_0-FePt nanoparticles (6.5 nm, Fe55Pt45; SiO2-nanoreactor, 900 °C 1 h, SiO2 removed) dispersed in chloroform; field-cooled in 10 kOe to 150 K (frozen solvent fixes the aligned particles)
+  conditions:
+    field_T: 1.0
+    T_process_K: room temperature -> 150 (field-cooled, solvent frozen)
+    parent_texture: none (free particles in liquid)
+    magnet_axis: cooling-field direction
+    density_rel: null
+  quantity: Mr_over_Ms
+  value: 0.95
+  unit: ''
+  uncertainty: 0.03
+  measured_along: parallel to the cooling field
+  measurement: SQUID (MPMS-XL) at 150 K, max ±50 kOe; minor loop (negative saturation not reached)
+  n_samples: 1
+  source:
+    doi: 10.1021/cm0616634
+    title: Preparation of Monodisperse and Highly Coercive L10-FePt Nanoparticles Dispersible in Nonpolar Organic Solvents
+    first_author: Shinpei Yamamoto
+    year: 2006
+    url: https://arxiv.org/pdf/cond-mat/0607070
+    evidence: full_text
+    locator: Results and Discussions; Figure 6 (read from plot)
+  quote: 'Shown in Fig. 6 for example is the hysteresis loop of the chloroform-dispersed nanoparticles measured after field-cooling down to 150 K at 10 kOe.16 At this temperature, the matrix solution was frozen, any motion of the FePt nanoparticles thus being suppressed. Here, Ms represents the saturation magnetization.17 It is notable that the remanent magnetization (Mr: magnetization at H=0 kOe) is almost equal to the saturation magnetization as expected from an anisotropic hard magnet.'
+  note: Read on the descending branch at H = 0 (0.95); at small positive fields 1.0. Measured at 150 K, not 300 K. arXiv preprint of Chem. Mater. 18, 5385.
+- id: fept_isotropic_yamamoto2005
+  phase: L10-FePt
+  route: isotropic
+  process: SiO2-coated L1_0-FePt nanocrystals (6.5 nm cores, annealed at 900 °C inside sintered SiO2 shells); particles cannot rotate in the measuring field
+  conditions:
+    field_T: null
+    T_process_K: 1173
+    parent_texture: none (random)
+    magnet_axis: measuring field
+    density_rel: null
+  quantity: Mr_over_Ms
+  value: 0.5
+  unit: ''
+  uncertainty: null
+  measured_along: measuring field (random particle orientation)
+  measurement: hysteresis loop at 300 K (Fig. 4a); field up to at least 50 kOe
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1995959
+    title: Magnetically superior and easy to handle L1-FePt nanocrystals
+    first_author: Shinpei Yamamoto
+    year: 2005
+    url: https://arxiv.org/pdf/cond-mat/0505006
+    evidence: full_text
+    locator: p. 5 (arXiv cond-mat/0505006)
+  quote: The fact that the ratio of Mr / Ms = 0.5 is also worth noting, where Mr is the remnant magnetization. This indicates that the SiO2-coated nanoparticles behave as an ensemble of randomly oriented, non-interacting, uniaxially anisotropic, single-domain particles because sintering of the SiO2-shells and a tight core-shell adhesion prevent the orientation of the magnetic and structural axis along the external field even at 50 kOe.
+  note: Reference (random) case for the same particles that, once freed from the shell, align in a field.
+- id: fept_fp_yamamoto2005
+  phase: L10-FePt
+  route: FP
+  process: same L1_0-FePt nanocrystals after SiO2 removal, dispersed in water; cooled to 200 K in 50 kOe (frozen water fixes the aligned particles)
+  conditions:
+    field_T: 5.0
+    T_process_K: room temperature -> 200 (field-cooled, solvent frozen)
+    parent_texture: none (free particles in liquid)
+    magnet_axis: cooling-field direction
+    density_rel: null
+  quantity: Mr_over_Ms
+  value: almost equal to M(±50 kOe) (qualitative)
+  unit: ''
+  uncertainty: null
+  measured_along: parallel to the cooling field
+  measurement: hysteresis loop at 200 K, max ±50 kOe (Fig. 4b; axis labels unreadable in the arXiv PDF, so no value read)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1995959
+    title: Magnetically superior and easy to handle L1-FePt nanocrystals
+    first_author: Shinpei Yamamoto
+    year: 2005
+    url: https://arxiv.org/pdf/cond-mat/0505006
+    evidence: full_text
+    locator: p. 5-6, Fig. 4b
+  quote: Fig. 4b shows the hysteresis loop of the water-dispersed nanocrystals measured after cooling the solution down to 200 K in an applied magnetic field of 50 kOe23. At this temperature, the matrix solution was frozen, suppressing any motion of the FePt nanocrystals. The shape is almost rectangular, with the Mr being almost equal to the magnetization at ±50 kOe.
+  note: Qualitative only. Ratio of the H = 0 point to the +50 kOe point on the plotted loop is ~0.9 (own reading of an unlabelled axis; low confidence).
+- id: fept_fp_jia2006
+  phase: L10-FePt
+  route: FP
+  process: partially ordered as-made FePt nanoparticles (reflux 330-360 °C in hexadecylamine/trioctylamine), aligned in a 10 kOe field
+  conditions:
+    field_T: 1.0
+    T_process_K: null
+    parent_texture: none (free particles)
+    magnet_axis: aligning field direction
+    density_rel: null
+  quantity: texture_metric
+  value: 1.6
+  unit: 'other: remanence ratio Mr(parallel)/Mr(perpendicular) to the aligning field'
+  uncertainty: null
+  measured_along: parallel vs perpendicular to the aligning field
+  measurement: room temperature (not specified in abstract)
+  n_samples: not stated
+  source:
+    doi: 10.1063/1.2159392
+    title: Improved synthesis and easy-axis alignment of L1-FePt nanoparticles
+    first_author: Zhiyong Jia
+    year: 2006
+    url: https://api.openalex.org/works/doi:10.1063/1.2159392
+    evidence: abstract
+    locator: abstract
+  quote: The as-made particles were aligned in a 10kOe magnetic field, giving a parallel to perpendicular remanence ratio of about 1.6.
+  note: Partially ordered particles with a broad anisotropy distribution (Kang et al. 2005); a random uniaxial assembly gives a ratio of 1.
+- id: fept_other_kamzin2015a
+  phase: L10-FePt
+  route: 'other: field re-anneal near Tc of a pre-ordered polycrystalline film (FA-like)'
+  process: Si/Fe(2 nm)/Fe50Pt50(20 nm)/Pt(2 nm) rf-sputtered; 700 °C 30 min without field (L1_0 formed); then 478 °C 60 min in ~3500 Oe perpendicular to the film, cooled in field (mode A)
+  conditions:
+    field_T: 0.35
+    T_process_K: 751
+    parent_texture: polycrystalline film on Si, already L1_0 after 973 K step
+    magnet_axis: film normal (field direction)
+    density_rel: null
+  quantity: texture_metric
+  value: 86
+  unit: 'other: Mössbauer (CEMS) fraction of Fe moments perpendicular to the film plane (%)'
+  uncertainty: 1
+  measured_along: film normal (gamma ray along the normal)
+  measurement: 57Fe conversion-electron Mössbauer spectroscopy at room temperature, no applied field; fraction from A2,5/A1,6 line-intensity ratios
+  n_samples: 1
+  source:
+    doi: 10.1134/S1063783415090127
+    title: Control of the magnetization orientation in L10 FePt films by means of annealing in a magnetic field near the Curie temperature
+    first_author: A. S. Kamzin
+    year: 2015
+    url: https://www.mathnet.ru/php/getFT.phtml?jrnid=ftt&paperid=11624&what=fullt&option_lang=eng
+    evidence: full_text
+    locator: Table, p. 1731 (Russian original), row Ta = 478 °C
+  quote: Параметры сверхтонких взаимодействий для магнитных cтруктур на основе FePt толщиной 20 nm, отожженных во внешнем магнитном поле напряженностью 3500 Oe, приложенном перпендикулярно плоскости пленки ... Ta, ◦C | M⊥, % (в поле) | M∥, % (в поле) | θ, deg (в поле) | θ, deg (без поля) ... 478 | 86 | 14 | 81 | 8
+  note: 'Table caption and row transcribed (M∥ appears as ''M k'' in the text layer). Footnote defines M⊥/M∥ as the fractions of moments perpendicular/parallel to the film plane. Same table: as-prepared 18 %, 470 °C 50 %, 472 °C 78 % (row sums to 110 %), 480 °C 52 %, 490-600 °C 11-15 %. Read in the Russian original; DOI is the English translation.'
+- id: fept_other_kamzin2015b
+  phase: L10-FePt
+  route: 'other: field re-anneal of a pre-ordered polycrystalline film away from Tc (control)'
+  process: as fept_other_kamzin2015a but field step at 430 °C for 60 min in ~3500 Oe perpendicular
+  conditions:
+    field_T: 0.35
+    T_process_K: 703
+    parent_texture: polycrystalline film on Si, already L1_0 after 973 K step
+    magnet_axis: film normal (field direction)
+    density_rel: null
+  quantity: texture_metric
+  value: 11
+  unit: 'other: Mössbauer (CEMS) fraction of Fe moments perpendicular to the film plane (%)'
+  uncertainty: 1
+  measured_along: film normal
+  measurement: 57Fe CEMS at room temperature, no applied field
+  n_samples: 1
+  source:
+    doi: 10.1134/S1063783415090127
+    title: Control of the magnetization orientation in L10 FePt films by means of annealing in a magnetic field near the Curie temperature
+    first_author: A. S. Kamzin
+    year: 2015
+    url: https://www.mathnet.ru/php/getFT.phtml?jrnid=ftt&paperid=11624&what=fullt&option_lang=eng
+    evidence: full_text
+    locator: Table, p. 1731, row Ta = 430 °C
+  quote: Ta, ◦C | M⊥, % (в поле) | M∥, % (в поле) | θ, deg (в поле) | θ, deg (без поля) ... 430 | 11 | 89 | 7 | 9
+  note: Table row transcribed.
+- id: fept_other_kamzin2015c
+  phase: L10-FePt
+  route: 'other: zero-field re-anneal of a pre-ordered polycrystalline film at Tc (control, mode B)'
+  process: as fept_other_kamzin2015a but the 478 °C 60 min step without field
+  conditions:
+    field_T: 0
+    T_process_K: 751
+    parent_texture: polycrystalline film on Si, already L1_0 after 973 K step
+    magnet_axis: film normal
+    density_rel: null
+  quantity: texture_metric
+  value: 8
+  unit: 'other: Mössbauer angle theta of Fe moments from the film plane (deg)'
+  uncertainty: 2
+  measured_along: film normal
+  measurement: 57Fe CEMS at room temperature, no applied field
+  n_samples: 1
+  source:
+    doi: 10.1134/S1063783415090127
+    title: Control of the magnetization orientation in L10 FePt films by means of annealing in a magnetic field near the Curie temperature
+    first_author: A. S. Kamzin
+    year: 2015
+    url: https://www.mathnet.ru/php/getFT.phtml?jrnid=ftt&paperid=11624&what=fullt&option_lang=eng
+    evidence: full_text
+    locator: Table, p. 1731, row Ta = 478 °C, column θ (без поля)
+  quote: Ta, ◦C | M⊥, % (в поле) | M∥, % (в поле) | θ, deg (в поле) | θ, deg (без поля) ... 478 | 86 | 14 | 81 | 8
+  note: With field at the same temperature theta = 81 deg (fept_other_kamzin2015a). The footnote defines theta as the deviation angle of moments from the film plane; the main text in one place calls it the deviation from the normal, so the angle convention is ambiguous in the source.
+- id: fept_other_xu2016a
+  phase: L10-FePt
+  route: 'other: field (0.6 T) during wet-chemical synthesis of A1 nanoparticles at 493 K; drop-cast film on Si; ordering anneal 973 K 1 h without field'
+  process: FePt NPs from Pt(acac)2 + Fe(CO)5 with OA/OAm at 220 °C under 6000 Oe (two SmCo magnets); drop-coated on Si without field (sample 2#); annealed 700 °C 60 min in 7 % H2/Ar
+  conditions:
+    field_T: 0.6
+    T_process_K: 493
+    parent_texture: nanoparticle film on Si(100)
+    magnet_axis: film normal (XRD scattering vector)
+    density_rel: null
+  quantity: texture_metric
+  value: 3.47
+  unit: 'other: D(001) = (I001/I111)measured / 0.3 (random fct powder = 1)'
+  uncertainty: 0.1
+  measured_along: film normal (theta-2theta XRD)
+  measurement: XRD Cu K-alpha after the 973 K anneal
+  n_samples: 1
+  source:
+    doi: 10.1186/s11671-016-1543-1
+    title: Synthesis and Characteristics of FePt Nanoparticle Films Under In Situ-Applied Magnetic Field
+    first_author: Xu Qian
+    year: 2016
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4940308/
+    evidence: full_text
+    locator: Table 2
+  quote: Sample | Unannealed I(200)/I(111) | Annealed I(001)/I(111) | Annealed D(001) | Annealed S | 1# | 0.46 ± 0.03 | 0.19 ± 0.02 | 0.63 ± 0.07 | 0.72 ± 0.02 | 2# | 0.89 ± 0.03 | 1.04 ± 0.03 | 3.47 ± 0.10 | 0.76 ± 0.03 | 3# | 0.76 ± 0.11 | 0.65 ± 0.02 | 2.17 ± 0.07 | 0.77 ± 0.02 |
+  note: 'Field acted on the superparamagnetic A1 particles/assembly at 493 K, not during ordering (ordering at 973 K without field); not a test of formation bias. Sample 3# (field also during drop-coating): D(001) = 2.17. First author as listed by Crossref (''Xu Qian'').'
+- id: fept_other_xu2016b
+  phase: L10-FePt
+  route: 'other: zero-field control of the Xu 2016 series (no field in synthesis or coating; ordering anneal 973 K 1 h)'
+  process: FePt NPs synthesized at 220 °C without field, drop-coated on Si without field (sample 1#), annealed 700 °C 60 min in 7 % H2/Ar
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: nanoparticle film on Si(100)
+    magnet_axis: film normal
+    density_rel: null
+  quantity: texture_metric
+  value: 0.63
+  unit: 'other: D(001) = (I001/I111)measured / 0.3 (random fct powder = 1)'
+  uncertainty: 0.07
+  measured_along: film normal (theta-2theta XRD)
+  measurement: XRD Cu K-alpha after the 973 K anneal
+  n_samples: 1
+  source:
+    doi: 10.1186/s11671-016-1543-1
+    title: Synthesis and Characteristics of FePt Nanoparticle Films Under In Situ-Applied Magnetic Field
+    first_author: Xu Qian
+    year: 2016
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4940308/
+    evidence: full_text
+    locator: Table 2
+  quote: Sample | Unannealed I(200)/I(111) | Annealed I(001)/I(111) | Annealed D(001) | Annealed S | 1# | 0.46 ± 0.03 | 0.19 ± 0.02 | 0.63 ± 0.07 | 0.72 ± 0.02 |
+  note: ''
+- id: fept_isotropic_tanaka2003a
+  phase: L10-FePt
+  route: isotropic
+  process: 'Fe-40 mol% Pt melted, drawn into 3 mm silica tube (isotropic rod), solution treated 1598 K 2.7 ks, ice-water quenched (as-quenched: ~10 nm ordered domains of all three variants)'
+  conditions:
+    field_T: null
+    T_process_K: 1598
+    parent_texture: none (morphologically isotropic cast rod, random grains)
+    magnet_axis: not stated
+    density_rel: 1.0
+  quantity: Br
+  value: 1.0
+  unit: T
+  uncertainty: null
+  measured_along: not stated (isotropic sample)
+  measurement: VSM, max 2.4 MA/m (30 kOe), not saturated; demagnetizing-field compensation via Ni standard; room temperature
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1555675
+    title: Remanence enhancement based on L1 ordering in Fe–Pt permanent magnets
+    first_author: Y. Tanaka
+    year: 2003
+    url: https://nagasaki-u.repo.nii.ac.jp/record/16061/files/JouApplPhy9_3435.pdf
+    evidence: full_text
+    locator: Section III, p. 3437, Fig. 4(a)
+  quote: Values for the coercive force, the residual magnetization, and the maximum energy product in the Fe– 40 mol %Pt magnet were 211 kA m−1, 1.0 T, and 93 kJ m−3, respectively. However, the magnetization of the Fe– 40 mol %Pt magnet was not saturated even in the external magnetic field of 2.4 MA mm−1.
+  note: Minus-sign glyphs normalized (text layer shows '⫺'); 'MA mm−1' is in the original. Remanence enhanced by intergranular exchange between ~10 nm ordered domains (authors' interpretation), which METHOD excludes from A.
+- id: fept_isotropic_tanaka2003b
+  phase: L10-FePt
+  route: isotropic
+  process: as fept_isotropic_tanaka2003a
+  conditions:
+    field_T: null
+    T_process_K: 1598
+    parent_texture: none (random)
+    magnet_axis: not stated
+    density_rel: 1.0
+  quantity: Mr_over_Ms
+  value: 0.69
+  unit: ''
+  uncertainty: null
+  measured_along: not stated (isotropic sample)
+  measurement: 'estimate: Ir measured to 2.4 MA/m (not saturating) divided by an assumed Ms = 1.45 T taken from a soft Fe-38 mol% Pt alloy'
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1555675
+    title: Remanence enhancement based on L1 ordering in Fe–Pt permanent magnets
+    first_author: Y. Tanaka
+    year: 2003
+    url: https://nagasaki-u.repo.nii.ac.jp/record/16061/files/JouApplPhy9_3435.pdf
+    evidence: full_text
+    locator: Section III, p. 3437
+  quote: On the other hand, the magnetization of the soft magnetic Fe–38 mol %Pt alloy was saturated by the external magnetic field of 2.4 MA m−1, and saturation magnetization of 1.45 T was obtained. If the saturation magnetization of the Fe– 40 mol %Pt magnet is also assumed to be comparable to the Fe–38 mol %Pt alloy, the remanence ratio can be estimated as 0.69.
+  note: Estimate, not a measured Mr/Ms. Exchange-enhanced isotropic magnet (not alignment).
+- id: copt_isotropic_cui2010a
+  phase: L10-CoPt
+  route: isotropic
+  process: 50/50 CoPt sealed in quartz, 1000 °C 3 h, cooled at 120-150 °C/min to 600 °C, held 10 h (isothermal ordering), quenched in mineral oil
+  conditions:
+    field_T: null
+    T_process_K: 873
+    parent_texture: none stated (cast/annealed bulk, ~1.6 mm diameter sample)
+    magnet_axis: not stated
+    density_rel: null
+  quantity: Br
+  value: 0.69
+  unit: T
+  uncertainty: 0.014
+  measured_along: not stated
+  measurement: not stated (hysteresis loop in patent Fig. 2)
+  n_samples: several (2 % sample-to-sample variation stated)
+  source:
+    doi: null
+    title: Method of producing cobalt-platinum magnetic alloys with improved magnetic properties (US 7,819,988 B2)
+    first_author: Baozhi Cui
+    year: 2010
+    url: https://patents.google.com/patent/US7819988
+    evidence: full_text
+    locator: Detailed description of the invention
+  quote: The magnetic properties of CoPt alloys produced using the proposed method include a remanence (Br) of approximately 6.9 kGs, a coercivity (iHc) of approximately 5.6 kOe, an energy product ((BH)max) of approximately 8.0 MGOe. These results may vary slightly from one sample to another by as much as 2%.
+  note: 6.9 kG = 0.69 T. Patent (not peer reviewed). Uncertainty = the stated 2 %.
+- id: copt_isotropic_cui2010b
+  phase: L10-CoPt
+  route: isotropic
+  process: 'conventional Pt-Co magnet processing (prior art): 950-1000 °C 3 h, cooled to room temperature, 660 °C salt bath 1.5 h, quenched or slowly cooled'
+  conditions:
+    field_T: null
+    T_process_K: 933
+    parent_texture: none stated
+    magnet_axis: not stated
+    density_rel: null
+  quantity: Br
+  value: 0.64
+  unit: T
+  uncertainty: null
+  measured_along: not stated
+  measurement: typical values, not stated
+  n_samples: typical (prior-art) values
+  source:
+    doi: null
+    title: Method of producing cobalt-platinum magnetic alloys with improved magnetic properties (US 7,819,988 B2)
+    first_author: Baozhi Cui
+    year: 2010
+    url: https://patents.google.com/patent/US7819988
+    evidence: review
+    locator: Description of the related art
+  quote: The alloy is then cooled to approximately room temperature before being transferred to a salt bath maintained at 660 degrees C. for one and half hours. The alloy is then either quenched or cooled slowly. The typical magnetic properties for CoPt alloys prepared using this method include a remanence (Br) of approximately 6.4 kGs, a coercivity (iHc) of approximately 4.8 kOe, an energy product ((BH)max) of approximately 9.2 MGOe.
+  note: 6.4 kG = 0.64 T. Secondary (patent background); original sources not cited there.
+- id: copt_isotropic_cui2010c
+  phase: L10-CoPt
+  route: isotropic
+  process: 'conventional Pt-Co magnet processing (prior art): 900-1000 °C 3 h, cooled, aged 500-700 °C for 5-20 h, quenched or slowly cooled'
+  conditions:
+    field_T: null
+    T_process_K: 773-973
+    parent_texture: none stated
+    magnet_axis: not stated
+    density_rel: null
+  quantity: Br
+  value: 0.63
+  unit: T
+  uncertainty: null
+  measured_along: not stated
+  measurement: typical values, not stated
+  n_samples: typical (prior-art) values
+  source:
+    doi: null
+    title: Method of producing cobalt-platinum magnetic alloys with improved magnetic properties (US 7,819,988 B2)
+    first_author: Baozhi Cui
+    year: 2010
+    url: https://patents.google.com/patent/US7819988
+    evidence: review
+    locator: Description of the related art
+  quote: The typical magnetic properties for CoPt alloys prepared using this method are Br=6.3 kGs, iHc=4.95 kOe, and (BH)max=9.0 MGOe.
+  note: 6.3 kG = 0.63 T. Secondary (patent background).
+- id: fepd_scfa_tanaka2000a
+  phase: L10-FePd
+  route: SC+FA
+  process: disordered single crystal ordered 3.6 ks at 793 K in 6 T along [001]
+  conditions:
+    field_T: 6
+    T_process_K: 793
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd, Bridgman), near-cube 2-4 mm, faces {100}; field along [001] during heating, hold and cooling
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.98
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.03
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: 'X-ray diffraction (Mo-Kα) on ~50 μm (010) slices: super/fundamental intensity ratios 100/200, 101/202, 001/002 give x-, y-, z-variant volume fractions; long-range order assumed 1; room temperature'
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: full_text
+    locator: Fig. 2 (read from plot) and Sec. 3 item (3)
+  quote: (3) At 793K, a very significant effect is observed; the ordering is nearly complete with the formation of virtually mono-variant structure. ... Fig. 2 Volume fractions of the three variants after isothermal annealing for 3.6 ks under the magnetic fields along the z-direction.
+  note: 'value = fz / (fx+fy+fz), the fraction of ordered volume with c parallel to the field. Read from the 3-D bar chart of Fig. 2: c//z ≈ 89 %, c//x ≈ 2 % of the volume, total ordered ≈ 90 %. T_process 793 K is ABOVE the ordered-phase Tc (763 K) and above the disordered-phase Tc (673 K) adopted by the authors: ordering in the paramagnetic state under a high field.'
+- id: fepd_scfa_tanaka2000b
+  phase: L10-FePd
+  route: SC+FA
+  process: disordered single crystal ordered 3.6 ks at 793 K in 10 T along [001]
+  conditions:
+    field_T: 10
+    T_process_K: 793
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd, Bridgman), near-cube 2-4 mm, faces {100}; field along [001] during heating, hold and cooling
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 1.0
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.03
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: 'X-ray diffraction (Mo-Kα) on ~50 μm (010) slices: super/fundamental intensity ratios 100/200, 101/202, 001/002 give x-, y-, z-variant volume fractions; long-range order assumed 1; room temperature'
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: full_text
+    locator: Figs. 2 and 3 (read from plot); Sec. 5
+  quote: The mono-variant L10 structure can be realized when the specimen is ordered at 793 and 813 K. ... Fig. 3 Volume fractions of the three variants after isothermal annealing for 3.6 ks under the magnetic field of 10 T.
+  note: 'value = fz / (fx+fy+fz), the fraction of ordered volume with c parallel to the field. Fig. 2/3: only c//z visible; total ordered ≈ 68-70 % after 3.6 ks (incomplete ordering). 793 K > Tc(ordered) = 763 K.'
+- id: fepd_scfa_tanaka2000c
+  phase: L10-FePd
+  route: SC+FA
+  process: disordered single crystal ordered 3.6 ks at 813 K in 10 T along [001]
+  conditions:
+    field_T: 10
+    T_process_K: 813
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd, Bridgman), near-cube 2-4 mm, faces {100}; field along [001] during heating, hold and cooling
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.95
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.03
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: 'X-ray diffraction (Mo-Kα) on ~50 μm (010) slices: super/fundamental intensity ratios 100/200, 101/202, 001/002 give x-, y-, z-variant volume fractions; long-range order assumed 1; room temperature'
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: full_text
+    locator: Fig. 3 (read from plot); Sec. 5
+  quote: The mono-variant L10 structure can be realized when the specimen is ordered at 793 and 813 K. ... Fig. 3 Volume fractions of the three variants after isothermal annealing for 3.6 ks under the magnetic field of 10 T.
+  note: 'value = fz / (fx+fy+fz), the fraction of ordered volume with c parallel to the field. Fig. 3: c//z ≈ 57 %, c//y + c//x ≈ 3 % of the volume, total ordered ≈ 60 %. 813 K is 50 K above Tc(ordered).'
+- id: fepd_scfa_tanaka2000d
+  phase: L10-FePd
+  route: SC+FA
+  process: disordered single crystal ordered 3.6 ks at 773 K (also 753 K) in 10 T along [001]
+  conditions:
+    field_T: 10
+    T_process_K: 773
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd, Bridgman), near-cube 2-4 mm, faces {100}; field along [001] during heating, hold and cooling
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.33
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.1
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: 'X-ray diffraction (Mo-Kα) on ~50 μm (010) slices: super/fundamental intensity ratios 100/200, 101/202, 001/002 give x-, y-, z-variant volume fractions; long-range order assumed 1; room temperature'
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: full_text
+    locator: Sec. 5 (conclusions); Fig. 3
+  quote: 'When the ordering treatment is made at slightly lower temperatures where the process proceeds by spinodal ordering, such a mono-variant structure cannot be obtained: the volume fraction of the energetically favored variant does not change appreciably from 1/3.'
+  note: value = fz / (fx+fy+fz), the fraction of ordered volume with c parallel to the field. Value from the text ('does not change appreciably from 1/3'); my reading of Fig. 3 at 773 K gives c//z ≈ 4-5 % of a total ≈ 20 % ordered (≈0.2-0.25), at 753 K total ordered only ≈ 8 %. 773 K is above Tc(ordered) 763 K but below the spinodal-regime threshold (~780 K).
+- id: fepd_scfa_tanaka2000e
+  phase: L10-FePd
+  route: SC+FA
+  process: disordered single crystal ordered 3.6 ks at 673 K in 10 T along [001]
+  conditions:
+    field_T: 10
+    T_process_K: 673
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd, Bridgman), near-cube 2-4 mm, faces {100}; field along [001] during heating, hold and cooling
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.5
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.1
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: 'X-ray diffraction (Mo-Kα) on ~50 μm (010) slices: super/fundamental intensity ratios 100/200, 101/202, 001/002 give x-, y-, z-variant volume fractions; long-range order assumed 1; room temperature'
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: full_text
+    locator: Sec. 5 (conclusions); Fig. 3
+  quote: At further lower temperatures, the magnetocrystalline anisotropy constant becomes larger, which results in the increase of the volume fraction of the favored variant to about 50%.
+  note: value = fz / (fx+fy+fz), the fraction of ordered volume with c parallel to the field. Text value ~50 %; my reading of Fig. 3 (673 K, 10 T) gives c//z ≈ 10-13 % of a total ≈ 27-30 % ordered (≈0.4). 673 K is below Tc(ordered) (ferromagnetic product) but in the spinodal regime.
+- id: fepd_ctrl_tanaka2000f
+  phase: L10-FePd
+  route: 'other: SC, no field (control)'
+  process: disordered single crystal ordered 3.6 ks at 793 K, 0 T
+  conditions:
+    field_T: 0
+    T_process_K: 793
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd, Bridgman), near-cube 2-4 mm, faces {100}; field along [001] during heating, hold and cooling
+    magnet_axis: '[001]'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.33
+  unit: variant_fraction (c//[001] among ordered variants)
+  uncertainty: 0.05
+  measured_along: '[001]; fractions from XRD'
+  measurement: 'X-ray diffraction (Mo-Kα) on ~50 μm (010) slices: super/fundamental intensity ratios 100/200, 101/202, 001/002 give x-, y-, z-variant volume fractions; long-range order assumed 1; room temperature'
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: full_text
+    locator: Sec. 3 item (1); Fig. 2
+  quote: (1) In the absence of the magnetic field, the three types of variants are formed in almost equal proportions, as expected naturally. ... Fig. 2 Volume fractions of the three variants after isothermal annealing for 3.6 ks under the magnetic fields along the z-direction.
+  note: 'value = fz / (fx+fy+fz), the fraction of ordered volume with c parallel to the field. Fig. 2 (793 K, 0 T): c//z ≈ 12, c//y ≈ 12, c//x ≈ 13 % (total ≈ 37 %).'
+- id: fepd_scfa_tanaka2000mrsja
+  phase: L10-FePd
+  route: SC+FA
+  process: isothermal ordering at 673 K for 3.6 ks in 2 T along [001] (treatment (i), spinodal regime)
+  conditions:
+    field_T: 2
+    T_process_K: 673
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd), quenched from 1073 K; field along [001] throughout the ordering process
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.48
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.05
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: X-ray superlattice/fundamental intensities on ~50 μm foils; variant volume fractions (order parameter assumed 1); fraction labels printed on Fig. 2
+  n_samples: 1
+  source:
+    doi: null
+    title: Effect of Magnetic Field on Ordering of FePd
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.mrs-j.org/pub/tmrsj/vol25_no2/vol25_no2_497.pdf
+    evidence: full_text
+    locator: Fig. 2 (printed percentage labels) and Sec. 3
+  quote: In the specimen ordered under external magnetic field, the volume fraction of the favorable variant is larger than the other two; it increases from about 33 % for 0 T to about 50 % under the fields. ... Fig. 2. Volume fractions of the three variants after isothermal annealing at 673K for 3.6ks and 7.2ks under the magnetic fields along the z-direction.
+  note: Value is the percentage label printed above the bar in Fig. 2 (3.6 ks, 2 T). Total ordered volume only ~20-35 % after this anneal. 673 K is below Tc(ordered) = 763 K and equal to the disordered-phase Tc (673 K) adopted by the authors.
+- id: fepd_scfa_tanaka2000mrsjb
+  phase: L10-FePd
+  route: SC+FA
+  process: isothermal ordering at 673 K for 3.6 ks in 6 T along [001] (treatment (i), spinodal regime)
+  conditions:
+    field_T: 6
+    T_process_K: 673
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd), quenched from 1073 K; field along [001] throughout the ordering process
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.5
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.05
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: X-ray superlattice/fundamental intensities on ~50 μm foils; variant volume fractions (order parameter assumed 1); fraction labels printed on Fig. 2
+  n_samples: 1
+  source:
+    doi: null
+    title: Effect of Magnetic Field on Ordering of FePd
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.mrs-j.org/pub/tmrsj/vol25_no2/vol25_no2_497.pdf
+    evidence: full_text
+    locator: Fig. 2 (printed percentage labels) and Sec. 3
+  quote: In the specimen ordered under external magnetic field, the volume fraction of the favorable variant is larger than the other two; it increases from about 33 % for 0 T to about 50 % under the fields. ... Fig. 2. Volume fractions of the three variants after isothermal annealing at 673K for 3.6ks and 7.2ks under the magnetic fields along the z-direction.
+  note: Value is the percentage label printed above the bar in Fig. 2 (3.6 ks, 6 T). Total ordered volume only ~20-35 % after this anneal. 673 K is below Tc(ordered) = 763 K and equal to the disordered-phase Tc (673 K) adopted by the authors.
+- id: fepd_scfa_tanaka2000mrsjc
+  phase: L10-FePd
+  route: SC+FA
+  process: isothermal ordering at 673 K for 3.6 ks in 10 T along [001] (treatment (i), spinodal regime)
+  conditions:
+    field_T: 10
+    T_process_K: 673
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd), quenched from 1073 K; field along [001] throughout the ordering process
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.47
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.05
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: X-ray superlattice/fundamental intensities on ~50 μm foils; variant volume fractions (order parameter assumed 1); fraction labels printed on Fig. 2
+  n_samples: 1
+  source:
+    doi: null
+    title: Effect of Magnetic Field on Ordering of FePd
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.mrs-j.org/pub/tmrsj/vol25_no2/vol25_no2_497.pdf
+    evidence: full_text
+    locator: Fig. 2 (printed percentage labels) and Sec. 3
+  quote: In the specimen ordered under external magnetic field, the volume fraction of the favorable variant is larger than the other two; it increases from about 33 % for 0 T to about 50 % under the fields. ... Fig. 2. Volume fractions of the three variants after isothermal annealing at 673K for 3.6ks and 7.2ks under the magnetic fields along the z-direction.
+  note: Value is the percentage label printed above the bar in Fig. 2 (3.6 ks, 10 T). Total ordered volume only ~20-35 % after this anneal. 673 K is below Tc(ordered) = 763 K and equal to the disordered-phase Tc (673 K) adopted by the authors.
+- id: fepd_scfa_tanaka2000mrsjd
+  phase: L10-FePd
+  route: SC+FA
+  process: isothermal ordering at 673 K for 7.2 ks in 10 T along [001] (treatment (i), spinodal regime)
+  conditions:
+    field_T: 10
+    T_process_K: 673
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd), quenched from 1073 K; field along [001] throughout the ordering process
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.52
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.05
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: X-ray superlattice/fundamental intensities on ~50 μm foils; variant volume fractions (order parameter assumed 1); fraction labels printed on Fig. 2
+  n_samples: 1
+  source:
+    doi: null
+    title: Effect of Magnetic Field on Ordering of FePd
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.mrs-j.org/pub/tmrsj/vol25_no2/vol25_no2_497.pdf
+    evidence: full_text
+    locator: Fig. 2 (printed percentage labels) and Sec. 3
+  quote: In the specimen ordered under external magnetic field, the volume fraction of the favorable variant is larger than the other two; it increases from about 33 % for 0 T to about 50 % under the fields. ... Fig. 2. Volume fractions of the three variants after isothermal annealing at 673K for 3.6ks and 7.2ks under the magnetic fields along the z-direction.
+  note: Value is the percentage label printed above the bar in Fig. 2 (7.2 ks, 10 T). Total ordered volume only ~20-35 % after this anneal. 673 K is below Tc(ordered) = 763 K and equal to the disordered-phase Tc (673 K) adopted by the authors.
+- id: fepd_ctrl_tanaka2000mrsje
+  phase: L10-FePd
+  route: 'other: SC, no field (control)'
+  process: isothermal ordering at 673 K for 3.6 ks, 0 T
+  conditions:
+    field_T: 0
+    T_process_K: 673
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd), quenched from 1073 K; field along [001] throughout the ordering process
+    magnet_axis: '[001]'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.36
+  unit: variant_fraction (c//[001] among ordered variants)
+  uncertainty: 0.05
+  measured_along: '[001]; fractions from XRD'
+  measurement: X-ray superlattice/fundamental intensities on ~50 μm foils; variant volume fractions (order parameter assumed 1); fraction labels printed on Fig. 2
+  n_samples: 1
+  source:
+    doi: null
+    title: Effect of Magnetic Field on Ordering of FePd
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.mrs-j.org/pub/tmrsj/vol25_no2/vol25_no2_497.pdf
+    evidence: full_text
+    locator: Fig. 2 (printed label 36 % for 3.6 ks; 30 % for 7.2 ks)
+  quote: In the absence of the magnetic field (0 T), three types of variants were formed almost in equal proportions, as naturally expected.
+  note: Printed label 36 % (3.6 ks) and 30 % (7.2 ks) in Fig. 2.
+- id: fepd_scfa_tanaka2000mrsjf
+  phase: L10-FePd
+  route: SC+FA
+  process: heated to 793 K, cooled at 1/60 K/s to 673 K, furnace cooled; 4 T along [001] throughout (treatment (ii), nucleation regime)
+  conditions:
+    field_T: 4
+    T_process_K: 793 -> 673 (slow cooling)
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd), quenched from 1073 K; field along [001] throughout the ordering process
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.5
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.1
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: X-ray superlattice/fundamental intensities on ~50 μm foils; variant volume fractions (order parameter assumed 1); fraction labels printed on Fig. 2
+  n_samples: 1
+  source:
+    doi: null
+    title: Effect of Magnetic Field on Ordering of FePd
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.mrs-j.org/pub/tmrsj/vol25_no2/vol25_no2_497.pdf
+    evidence: full_text
+    locator: Sec. 3, Fig. 3
+  quote: When the specimen is ordered under the magnetic field of 4 T, the relative population of the favored variant is about 50 %.
+  note: Cooling window crosses Tc(ordered) = 763 K; total ordered volume ≈ 30 % (Fig. 3, read from plot).
+- id: fepd_scfa_tanaka2000mrsjg
+  phase: L10-FePd
+  route: SC+FA
+  process: heated to 793 K, cooled at 1/60 K/s to 673 K, furnace cooled; 10 T along [001] throughout (treatment (ii))
+  conditions:
+    field_T: 10
+    T_process_K: 793 -> 673 (slow cooling)
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd), quenched from 1073 K; field along [001] throughout the ordering process
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 1.0
+  unit: variant_fraction (c//field among ordered variants)
+  uncertainty: 0.03
+  measured_along: '[001] (field axis); fractions from XRD'
+  measurement: X-ray superlattice/fundamental intensities on ~50 μm foils; variant volume fractions (order parameter assumed 1); fraction labels printed on Fig. 2
+  n_samples: 1
+  source:
+    doi: null
+    title: Effect of Magnetic Field on Ordering of FePd
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.mrs-j.org/pub/tmrsj/vol25_no2/vol25_no2_497.pdf
+    evidence: full_text
+    locator: abstract; Sec. 3, Fig. 3
+  quote: In contrast, treatment (ii) with the magnetic field of 10 T has yielded a fully ordered structure with only one type of variant of the favored orientation.
+  note: 'Fig. 3: single bar c//z ≈ 97-100 % of the volume (read from plot). Uncertainty is my estimate from the bar chart.'
+- id: fepd_scfa_farjami2008a
+  phase: L10-FePd
+  route: SC+FA
+  process: 'two-step ordering: 673 K 1 h in 10 T along [001], then 773 K 24 h without field'
+  conditions:
+    field_T: 10
+    T_process_K: 673 (field step), 773 (field-free step)
+    parent_texture: 'Fe-55 at.% Pd single crystal (floating zone), 1.6 mm cube with {001} faces, quenched from 1173 K; step 1: heat at 5 K/min to 673 K, hold 1 h, cool at 5 K/min, all under H1 along [001]; step 2: 773 K, 24 h, no field'
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 1.0
+  unit: variant_fraction (fz, c//field)
+  uncertainty: 0.03
+  measured_along: Z = [001] = field axis
+  measurement: SQUID magnetization curves at 300 K up to 7 T along X, Y, Z (<001>); fz = Mz0/Ms with Mz0 the zero-field extrapolation of the high-field magnetization along Z
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: Sec. 3, Fig. 6(b), p. 1972
+  quote: This means that a single variant of Fe-55 at%Pd is obtained and the fraction of the Z-variant (fz) is 100%.
+  note: 'Field step at 673 K: just above Tc(ordered) = 670 K and below Tc(disordered) = 740 K of this alloy (authors'' values); field-free step at 773 K is above both Curie points. Text layer drops the line-end hyphen in ''Fe-55''; quote checked on page image.'
+- id: fepd_scfa_farjami2008b
+  phase: L10-FePd
+  route: SC+FA
+  process: 'two-step ordering: 673 K 1 h in 5 T along [001], then 773 K 24 h without field'
+  conditions:
+    field_T: 5
+    T_process_K: 673 (field step), 773 (field-free step)
+    parent_texture: 'Fe-55 at.% Pd single crystal (floating zone), 1.6 mm cube with {001} faces, quenched from 1173 K; step 1: heat at 5 K/min to 673 K, hold 1 h, cool at 5 K/min, all under H1 along [001]; step 2: 773 K, 24 h, no field'
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 1.0
+  unit: variant_fraction (fz, c//field)
+  uncertainty: 0.03
+  measured_along: Z = [001] = field axis
+  measurement: SQUID magnetization curves at 300 K up to 7 T along X, Y, Z (<001>); fz = Mz0/Ms with Mz0 the zero-field extrapolation of the high-field magnetization along Z
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: Sec. 3, Fig. 7(f), p. 1973
+  quote: However, magnetization curves after the second step of ordering indicate that the fraction of the Z-variant increases from 67% (Fig. 7(b)) under 3 T to 100% (Fig. 7(d) and (f)) under 4 and 5 T, respectively.
+  note: 'Field step at 673 K: just above Tc(ordered) = 670 K and below Tc(disordered) = 740 K of this alloy (authors'' values); field-free step at 773 K is above both Curie points.'
+- id: fepd_scfa_farjami2008c
+  phase: L10-FePd
+  route: SC+FA
+  process: 'two-step ordering: 673 K 1 h in 4 T along [001], then 773 K 24 h without field'
+  conditions:
+    field_T: 4
+    T_process_K: 673 (field step), 773 (field-free step)
+    parent_texture: 'Fe-55 at.% Pd single crystal (floating zone), 1.6 mm cube with {001} faces, quenched from 1173 K; step 1: heat at 5 K/min to 673 K, hold 1 h, cool at 5 K/min, all under H1 along [001]; step 2: 773 K, 24 h, no field'
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 1.0
+  unit: variant_fraction (fz, c//field)
+  uncertainty: 0.03
+  measured_along: Z = [001] = field axis
+  measurement: SQUID magnetization curves at 300 K up to 7 T along X, Y, Z (<001>); fz = Mz0/Ms with Mz0 the zero-field extrapolation of the high-field magnetization along Z
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: Sec. 3, Fig. 7(d), p. 1973
+  quote: However, magnetization curves after the second step of ordering indicate that the fraction of the Z-variant increases from 67% (Fig. 7(b)) under 3 T to 100% (Fig. 7(d) and (f)) under 4 and 5 T, respectively.
+  note: 'Field step at 673 K: just above Tc(ordered) = 670 K and below Tc(disordered) = 740 K of this alloy (authors'' values); field-free step at 773 K is above both Curie points. Lowest field giving a single variant (4 T for Fe-55Pd vs 0.5 T for Co-50Pt per the authors).'
+- id: fepd_scfa_farjami2008d
+  phase: L10-FePd
+  route: SC+FA
+  process: 'two-step ordering: 673 K 1 h in 3 T along [001], then 773 K 24 h without field'
+  conditions:
+    field_T: 3
+    T_process_K: 673 (field step), 773 (field-free step)
+    parent_texture: 'Fe-55 at.% Pd single crystal (floating zone), 1.6 mm cube with {001} faces, quenched from 1173 K; step 1: heat at 5 K/min to 673 K, hold 1 h, cool at 5 K/min, all under H1 along [001]; step 2: 773 K, 24 h, no field'
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.67
+  unit: variant_fraction (fz, c//field)
+  uncertainty: 0.03
+  measured_along: Z = [001] = field axis
+  measurement: SQUID magnetization curves at 300 K up to 7 T along X, Y, Z (<001>); fz = Mz0/Ms with Mz0 the zero-field extrapolation of the high-field magnetization along Z
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: Sec. 3, Fig. 7(b), p. 1973
+  quote: However, magnetization curves after the second step of ordering indicate that the fraction of the Z-variant increases from 67% (Fig. 7(b)) under 3 T to 100% (Fig. 7(d) and (f)) under 4 and 5 T, respectively.
+  note: 'Field step at 673 K: just above Tc(ordered) = 670 K and below Tc(disordered) = 740 K of this alloy (authors'' values); field-free step at 773 K is above both Curie points.'
+- id: fepd_scfa_farjami2009a
+  phase: L10-FePd
+  route: SC+FA
+  process: 'two-step ordering: 673 K 1 h in 3.5 T along [001], then 773 K 24 h without field'
+  conditions:
+    field_T: 3.5
+    T_process_K: 673 (field step), 773 (field-free step)
+    parent_texture: 'Fe-55 at.% Pd single crystal (floating zone), 1.6 mm cube with {001} faces, quenched from 1173 K; step 1: heat at 5 K/min to 673 K, hold 1 h, cool at 5 K/min, all under H1 along [001]; step 2: 773 K, 24 h, no field'
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.92
+  unit: variant_fraction (fz, c//field)
+  uncertainty: 0.03
+  measured_along: Z = [001] = field axis
+  measurement: SQUID magnetization curves at 300 K up to 7 T along X, Y, Z (<001>); fz = Mz0/Ms with Mz0 the zero-field extrapolation of the high-field magnetization along Z
+  n_samples: 1
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Fig. 6 (read from plot); Sec. 3.2
+  quote: We notice that there is a jump in fz near H1=0.3 T in the case of the Co–50Pt alloy, and near H1=3 T in the case of the Fe–55Pd alloy. ... Fig. 6. Fraction of the Z-variant (fz) after the second step of ordering in Co–50Pt (circle marks) and Fe–55Pd (square marks) plotted as a function of magnetic field applied in the first step.
+  note: 'Field step at 673 K: just above Tc(ordered) = 670 K and below Tc(disordered) = 740 K of this alloy (authors'' values); field-free step at 773 K is above both Curie points. Read from Fig. 6 square marks: 3.2 T ≈ 0.84, 3.5 T ≈ 0.92, 3.7 T ≈ 0.95 (same data as Fig. 8 of Farjami et al. 2008).'
+- id: fepd_scfa_farjami2009b
+  phase: L10-FePd
+  route: SC+FA
+  process: 'two-step ordering: 673 K 1 h in 2.5 T along [001], then 773 K 24 h without field'
+  conditions:
+    field_T: 2.5
+    T_process_K: 673 (field step), 773 (field-free step)
+    parent_texture: 'Fe-55 at.% Pd single crystal (floating zone), 1.6 mm cube with {001} faces, quenched from 1173 K; step 1: heat at 5 K/min to 673 K, hold 1 h, cool at 5 K/min, all under H1 along [001]; step 2: 773 K, 24 h, no field'
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.6
+  unit: variant_fraction (fz, c//field)
+  uncertainty: 0.03
+  measured_along: Z = [001] = field axis
+  measurement: SQUID magnetization curves at 300 K up to 7 T along X, Y, Z (<001>); fz = Mz0/Ms with Mz0 the zero-field extrapolation of the high-field magnetization along Z
+  n_samples: 1
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Fig. 6 (read from plot); Sec. 3.2
+  quote: On the other hand, when H1 is 2.5 T and 0 T, the difference in magnetization curves becomes less significant after the first step as seen in Figs. 5(c), 5(d), and single variant state is not obtained after the second step as seen in Figs. 5(c′), 5(d′). ... Fig. 6. Fraction of the Z-variant (fz) after the second step of ordering in Co–50Pt (circle marks) and Fe–55Pd (square marks) plotted as a function of magnetic field applied in the first step.
+  note: 'Field step at 673 K: just above Tc(ordered) = 670 K and below Tc(disordered) = 740 K of this alloy (authors'' values); field-free step at 773 K is above both Curie points. Value read from Fig. 6 (square mark at 2.5 T).'
+- id: fepd_scfa_farjami2009c
+  phase: L10-FePd
+  route: SC+FA
+  process: 'two-step ordering: 673 K 1 h in 2 T along [001], then 773 K 24 h without field'
+  conditions:
+    field_T: 2
+    T_process_K: 673 (field step), 773 (field-free step)
+    parent_texture: 'Fe-55 at.% Pd single crystal (floating zone), 1.6 mm cube with {001} faces, quenched from 1173 K; step 1: heat at 5 K/min to 673 K, hold 1 h, cool at 5 K/min, all under H1 along [001]; step 2: 773 K, 24 h, no field'
+    magnet_axis: '[001] = field direction'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.57
+  unit: variant_fraction (fz, c//field)
+  uncertainty: 0.03
+  measured_along: Z = [001] = field axis
+  measurement: SQUID magnetization curves at 300 K up to 7 T along X, Y, Z (<001>); fz = Mz0/Ms with Mz0 the zero-field extrapolation of the high-field magnetization along Z
+  n_samples: 1
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Fig. 6 (read from plot)
+  quote: For both the Co–50Pt and Fe–55Pd alloys, the value of fz is about one-third when H1 is 0 T, and it increases with increasing H1. ... Fig. 6. Fraction of the Z-variant (fz) after the second step of ordering in Co–50Pt (circle marks) and Fe–55Pd (square marks) plotted as a function of magnetic field applied in the first step.
+  note: 'Field step at 673 K: just above Tc(ordered) = 670 K and below Tc(disordered) = 740 K of this alloy (authors'' values); field-free step at 773 K is above both Curie points. Value read from Fig. 6 (square mark at 2 T).'
+- id: fepd_ctrl_farjami2009d
+  phase: L10-FePd
+  route: 'other: SC, no field (control)'
+  process: 'two-step ordering: 673 K 1 h at 0 T, then 773 K 24 h'
+  conditions:
+    field_T: 0
+    T_process_K: 673 then 773
+    parent_texture: 'Fe-55 at.% Pd single crystal (floating zone), 1.6 mm cube with {001} faces, quenched from 1173 K; step 1: heat at 5 K/min to 673 K, hold 1 h, cool at 5 K/min, all under H1 along [001]; step 2: 773 K, 24 h, no field'
+    magnet_axis: '[001]'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.33
+  unit: variant_fraction (fz)
+  uncertainty: 0.03
+  measured_along: Z = [001]
+  measurement: SQUID magnetization curves at 300 K up to 7 T along X, Y, Z (<001>); fz = Mz0/Ms with Mz0 the zero-field extrapolation of the high-field magnetization along Z
+  n_samples: 1
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Sec. 3.2, Fig. 6
+  quote: For both the Co–50Pt and Fe–55Pd alloys, the value of fz is about one-third when H1 is 0 T, and it increases with increasing H1.
+  note: Control without field.
+- id: fepd_scsa_ichitsubo1998a
+  phase: L10-FePd
+  route: SC+SA
+  process: isothermal ordering at 400 °C for 1 h under 40 MPa uniaxial compression along [001] (treatment 1)
+  conditions:
+    stress_MPa: -40
+    field_T: 0
+    T_process_K: 673
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd, Bridgman), ~4 mm cube with {100} faces, quenched from 800 °C; compression along [001] (z)
+    magnet_axis: '[001] = compression axis'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.66
+  unit: variant_fraction (c//compression axis)
+  uncertainty: +0.15/-0.18
+  measured_along: z = [001]
+  measurement: 4-axis X-ray diffractometer (Mo-Kα) on a ~0.2 mm column along z; averaged {112} superlattice / {113} fundamental intensity ratios
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: Table 1
+  quote: Table 1 Intensity ratios and the relative volume fraction of three types of variants in ordering at 400°C. ... 40 MPa, 1 h ... Volume fraction (%) 13 +15/−8 21 +15/−10 66 +15/−18
+  note: Columns c//100, c//010, c//001; c//001 is the favoured variant. Table typeset with asymmetric errors as superscript/subscript (rendered '+15/−18'). Scanned paper, read on page image. 673 K is below the ordered-phase Curie point (~670-763 K depending on source) - stress acts regardless.
+- id: fepd_ctrl_ichitsubo1998b
+  phase: L10-FePd
+  route: 'other: SC, no stress (control)'
+  process: isothermal ordering at 400 °C for 1 h without stress
+  conditions:
+    stress_MPa: 0
+    field_T: 0
+    T_process_K: 673
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd, Bridgman), ~4 mm cube with {100} faces, quenched from 800 °C; compression along [001] (z)
+    magnet_axis: '[001]'
+    density_rel: null
+  quantity: texture_metric
+  value: 0.36
+  unit: variant_fraction (c//[001])
+  uncertainty: +0.11/-0.08
+  measured_along: z = [001]
+  measurement: 4-axis X-ray diffractometer, {112}/{113} ratios
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: Table 1
+  quote: Table 1 Intensity ratios and the relative volume fraction of three types of variants in ordering at 400°C. ... Free, 1 h ... Volume fraction (%) 29 +9/−8 35 +10/−10 36 +11/−8
+  note: 'Control: c//100 29 %, c//010 35 %, c//001 36 %.'
+- id: fepd_scsa_ichitsubo1998c
+  phase: L10-FePd
+  route: SC+SA
+  process: 'slow cooling under 40 MPa along [001]: 750 °C -> 650 °C at 1 °C/s, 650 -> 600 °C at 0.0166 °C/s, 600 s at 600 °C, furnace cooled (treatment 2)'
+  conditions:
+    stress_MPa: -40
+    field_T: 0
+    T_process_K: 923 -> 873 (slow cooling through the order-disorder temperature)
+    parent_texture: equiatomic FePd single crystal (Fe-49.8 at.% Pd, Bridgman), ~4 mm cube with {100} faces, quenched from 800 °C; compression along [001] (z)
+    magnet_axis: '[001] = compression axis'
+    density_rel: null
+  quantity: texture_metric
+  value: 1.0
+  unit: variant_fraction (c//compression axis)
+  uncertainty: not quantified (no 200/002 doublet detected)
+  measured_along: z = [001]
+  measurement: 'X-ray diffractometer (Fe-Kα): 002 peak on the compressed (001) face and 200 peak on the (100) face, no doublet in either'
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: Sec. III.2, Fig. 1; abstract
+  quote: Note that a doublet peak was not observed in either of the two arrangements. ... This result clearly shows that only the single variant with the c-axis parallel to the z-axis is formed in the specimen subjected to treatment 2.
+  note: Ordering occurs at 873-923 K, above the Curie points of both phases (paramagnetic) - stress selection does not need ferromagnetism. Detection limit of the minority variant not stated.
+- id: fepd_filmsa_ichitsubo2011a
+  phase: L10-FePd
+  route: 'other: film on amorphous substrate, ordering under thermal-mismatch biaxial tensile stress (SA in films)'
+  process: '[FePd(4 nm)/Fe(5 nm)]10 multilayer on SiO2 glass, ordered at 550 °C'
+  conditions:
+    stress_MPa: ≈ +700 biaxial in-plane (estimated by the authors for the multilayers)
+    field_T: 0
+    T_process_K: 823
+    parent_texture: sputtered on amorphous SiO2 glass (no epitaxy), ordered by heating to and holding at 550 °C; biaxial in-plane tension from thermal-contraction mismatch (≈700 MPa estimated by the authors)
+    magnet_axis: film normal
+    density_rel: null
+  quantity: texture_metric
+  value: 0.88
+  unit: lotgering_f00l (F001, FePd 00l reflections, theta-2theta XRD)
+  uncertainty: null
+  measured_along: film normal
+  measurement: theta-2theta XRD, Lotgering degree of orientation F001 = (p - p0)/(1 - p0)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.3544466
+    title: Control of c-axis orientation of L1-FePd in dual-phase-equilibrium FePd/Fe thin films
+    first_author: T. Ichitsubo
+    year: 2011
+    url: https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/19267488-524f-4221-92dd-d81c603b190e/content
+    evidence: full_text
+    locator: Fig. 5(a) (printed value labels)
+  quote: FIG. 5. (Color online) (a) The degree of orientation associated with the 001 axis, evaluated by the Lotgering method (Ref. 23).
+  note: 'Value is the label printed on the bar in Fig. 5(a) (other multilayers: FePd 5 nm 0.82, 3 nm 0.87; single layers Fe-54.2Pd -0.08, Fe-36.3Pd -0.13, Fe-6.0Pd 0.38). Multilayers contain soft alpha-Fe (phi < 1). Single layers phase-separate and grow <111>-oriented from the surface, so the stress bias fails there. The authors say the F001 evaluation is rough.'
+- id: fepd_filmsa_ichitsubo2011b
+  phase: L10-FePd
+  route: 'other: film on amorphous substrate, ordering under thermal-mismatch biaxial tensile stress (SA in films)'
+  process: '[FePd(2 nm)/Fe(5 nm)]10 multilayer on SiO2 glass, ordered at 550 °C'
+  conditions:
+    stress_MPa: ≈ +700 biaxial in-plane (estimated by the authors for the multilayers)
+    field_T: 0
+    T_process_K: 823
+    parent_texture: sputtered on amorphous SiO2 glass (no epitaxy), ordered by heating to and holding at 550 °C; biaxial in-plane tension from thermal-contraction mismatch (≈700 MPa estimated by the authors)
+    magnet_axis: film normal
+    density_rel: null
+  quantity: texture_metric
+  value: 0.82
+  unit: lotgering_f00l (F001, FePd 00l reflections, theta-2theta XRD)
+  uncertainty: null
+  measured_along: film normal
+  measurement: theta-2theta XRD, Lotgering degree of orientation F001 = (p - p0)/(1 - p0)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.3544466
+    title: Control of c-axis orientation of L1-FePd in dual-phase-equilibrium FePd/Fe thin films
+    first_author: T. Ichitsubo
+    year: 2011
+    url: https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/19267488-524f-4221-92dd-d81c603b190e/content
+    evidence: full_text
+    locator: Fig. 5(a) (printed value labels)
+  quote: FIG. 5. (Color online) (a) The degree of orientation associated with the 001 axis, evaluated by the Lotgering method (Ref. 23).
+  note: 'Value is the label printed on the bar in Fig. 5(a) (other multilayers: FePd 5 nm 0.82, 3 nm 0.87; single layers Fe-54.2Pd -0.08, Fe-36.3Pd -0.13, Fe-6.0Pd 0.38). Multilayers contain soft alpha-Fe (phi < 1). Single layers phase-separate and grow <111>-oriented from the surface, so the stress bias fails there. The authors say the F001 evaluation is rough.'
+- id: fepd_filmsa_ichitsubo2011c
+  phase: L10-FePd
+  route: 'other: film on amorphous substrate, ordering under thermal-mismatch biaxial tensile stress (SA in films)'
+  process: single-layer Fe-49.4 at.% Pd film on SiO2 glass, ordered at 550 °C
+  conditions:
+    stress_MPa: biaxial in-plane tension from thermal mismatch (not quantified for single layers)
+    field_T: 0
+    T_process_K: 823
+    parent_texture: sputtered on amorphous SiO2 glass (no epitaxy), ordered by heating to and holding at 550 °C; biaxial in-plane tension from thermal-contraction mismatch (≈700 MPa estimated by the authors)
+    magnet_axis: film normal
+    density_rel: null
+  quantity: texture_metric
+  value: -0.04
+  unit: lotgering_f00l (F001, FePd 00l reflections, theta-2theta XRD)
+  uncertainty: null
+  measured_along: film normal
+  measurement: theta-2theta XRD, Lotgering degree of orientation F001 = (p - p0)/(1 - p0)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.3544466
+    title: Control of c-axis orientation of L1-FePd in dual-phase-equilibrium FePd/Fe thin films
+    first_author: T. Ichitsubo
+    year: 2011
+    url: https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/19267488-524f-4221-92dd-d81c603b190e/content
+    evidence: full_text
+    locator: Fig. 5(a) (printed value labels)
+  quote: FIG. 5. (Color online) (a) The degree of orientation associated with the 001 axis, evaluated by the Lotgering method (Ref. 23).
+  note: 'Value is the label printed on the bar in Fig. 5(a) (other multilayers: FePd 5 nm 0.82, 3 nm 0.87; single layers Fe-54.2Pd -0.08, Fe-36.3Pd -0.13, Fe-6.0Pd 0.38). Multilayers contain soft alpha-Fe (phi < 1). Single layers phase-separate and grow <111>-oriented from the surface, so the stress bias fails there. The authors say the F001 evaluation is rough.'
+- id: copt_sa_shimizu1968a
+  phase: L10-CoPt
+  route: SA
+  process: 50 at.% Pt-Co tempered (ordered) under uniaxial compressive stress, over-aged (perfectly ordered) state
+  conditions:
+    stress_MPa: compressive, magnitude not in abstract
+    field_T: 0
+    T_process_K: null
+    parent_texture: not stated in abstract (fiber structure observed by XRD, so presumably polycrystalline)
+    magnet_axis: stress axis
+    density_rel: null
+  quantity: Ku_macro
+  value: 0.31
+  unit: MJ/m3
+  uncertainty: null
+  measured_along: easy axis = compression axis
+  measurement: torque/magnetization in 20 kOe (not saturating for CoPt)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1656562
+    title: Uniaxial Magnetic Anisotropy Induced in Pt–Co Alloy by Tempering under Stress
+    first_author: S. Shimizu
+    year: 1968
+    url: https://api.openalex.org/works/doi:10.1063/1.1656562
+    evidence: abstract
+    locator: abstract
+  quote: This anisotropy is most developed in the so-called over-aged (perfectly ordered) state, and K=3.1×106 erg/cc is measured in the field of 20 kOe.
+  note: Converted 3.1×10^6 erg/cc = 0.31 MJ/m3. Quantity 'uniaxial_anisotropy' is outside the SCHEMA outcome list (brief asks for anisotropy along the stress axis). Measured in 20 kOe, far below the CoPt anisotropy field, so a lower bound of the induced anisotropy. [quantity renamed from 'uniaxial_anisotropy' to 'Ku_macro' at merge for consistency]
+- id: copt_sa_shimizu1968b
+  phase: L10-CoPt
+  route: SA
+  process: same sample as copt_sa_shimizu1968a
+  conditions:
+    stress_MPa: compressive, magnitude not in abstract
+    field_T: 0
+    T_process_K: null
+    parent_texture: presumably polycrystalline (fiber structure)
+    magnet_axis: stress axis
+    density_rel: null
+  quantity: texture_metric
+  value: '4πI(23 kOe) = 7.4 kG along easy (stress) axis vs 4.7 kG along hard axis; XRD: <001> fiber along the compression axis ''somewhat more than the cross directions'''
+  unit: magnetization at 23 kOe (kG) and qualitative fiber texture
+  uncertainty: null
+  measured_along: easy (stress) axis and hard axis
+  measurement: magnetization in 23 kOe (not saturating); x-ray diffraction diagrams
+  n_samples: 1
+  source:
+    doi: 10.1063/1.1656562
+    title: Uniaxial Magnetic Anisotropy Induced in Pt–Co Alloy by Tempering under Stress
+    first_author: S. Shimizu
+    year: 1968
+    url: https://api.openalex.org/works/doi:10.1063/1.1656562
+    evidence: abstract
+    locator: abstract
+  quote: 4πI=7.4 kG and 4.7 kG are measured in the field of 23 kOe along the easy and the hard axis, respectively. From x-ray-diffraction diagrams a kind of fiber structure is observed in which the 〈001〉 axes of the ordered tetragonal lattices are oriented to the direction of the compressive stress somewhat more than the cross directions.
+  note: Not remanence and not saturated; recorded as a weak-selection outcome of polycrystalline SA.
+- id: copt_scsa_shima2005
+  phase: L10-CoPt
+  route: SC+SA
+  process: Co(100-x)Pt(x) (x = 45, 50, 55) single crystals ordered under 20-25 MPa uniaxial compression along one <001>
+  conditions:
+    stress_MPa: -20 to -25
+    field_T: 0
+    T_process_K: null
+    parent_texture: fcc single crystal (floating zone), cube with {001} faces, misorientation < ±2°
+    magnet_axis: compression axis (c)
+    density_rel: null
+  quantity: texture_metric
+  value: 1.0
+  unit: variant_fraction (c//compression axis)
+  uncertainty: not quantified (I200/I002 ≈ 0)
+  measured_along: c axis
+  measurement: 'four-axis XRD: only 001, 002, 003, 004 with scattering vector along c; I200/I002 ≈ 0'
+  n_samples: 3
+  source:
+    doi: 10.1063/1.1861977
+    title: Large magnetocrystalline anisotropy energy of L1-type Co100−xPtx bulk single crystals prepared under compressive stress
+    first_author: H. Shima
+    year: 2005
+    url: https://tohoku.repo.nii.ac.jp/record/25482/files/OIKAWA-Katsunari-01-08-db0193-ApplPhysLett_86_112515.pdf
+    evidence: full_text
+    locator: p. 112515-2
+  quote: Since the integrated intensity ratio I200 / I002 ≈ 0, the formation of the single variant state in L10-type Co100−xPtx is achieved.
+  note: Ordering temperature not given in the letter. n_samples = 3 compositions. Magnetization curves along c and a at 298 K up to 140 kOe in Fig. 2 (not read).
+- id: fept_scsa_inoue2006
+  phase: L10-FePt
+  route: SC+SA
+  process: Fe60Pt40 bulk single crystal ordered under compressive stress
+  conditions:
+    stress_MPa: compressive, magnitude not stated
+    field_T: 0
+    T_process_K: null
+    parent_texture: fcc single crystal
+    magnet_axis: c axis
+    density_rel: null
+  quantity: texture_metric
+  value: 1.0
+  unit: variant_fraction (c//compression axis)
+  uncertainty: not quantified (I(200)/I(002) ≈ 0)
+  measured_along: c axis
+  measurement: XRD with scattering vector along a and c axes; long-range order S = 0.8
+  n_samples: 1
+  source:
+    doi: 10.1063/1.2177355
+    title: Temperature dependence of magnetocrystalline anisotropy constants in the single variant state of L1-type FePt bulk single crystal
+    first_author: K. Inoue
+    year: 2006
+    url: https://tohoku.repo.nii.ac.jp/record/25483/files/OIKAWA-Katsunari-01-08-db0194-ApplPhysLett_88_102503.pdf
+    evidence: full_text
+    locator: p. 102503-1/-2, Fig. 1
+  quote: Since the relative-intensity ratio I(200) / I(002) ≈ 0 in Fig. 1(b), it is confirmed that the c axis in the L10-type Fe60P40 bulk single crystal is uniaxially oriented by the heat-treatment under compressive stress.
+  note: '''Fe60P40'' is a typo in the original. Sentence spans a column/page break in the PDF (''heat-'' / ''treatment''); checked in the text. Off-stoichiometric Fe60Pt40 used because Fe50Pt50 recrystallizes at its high ordering temperature (see fept_stress_effect_on_formation_inoue2006).'
+- id: copt_sc_kandaurova1992a
+  phase: L10-CoPt
+  route: 'other: polytwinned crystal, no bias (quench + anneal)'
+  process: equiatomic CoPt quenched in water and annealed 660 °C, 20 min (high nucleation rate, fine polytwins)
+  conditions:
+    field_T: 0
+    T_process_K: 933
+    parent_texture: not stated for this value (review of polytwinned crystals; anisotropy of Hc and jr 'characteristic of multiaxial crystals')
+    magnet_axis: not stated (maximum value)
+    density_rel: null
+  quantity: Mr_over_Ms
+  value: 0.82
+  unit: '1'
+  uncertainty: null
+  measured_along: not stated
+  measurement: not stated in the review (value cited from ref [13])
+  n_samples: 1
+  source:
+    doi: 10.3367/ufnr.0162.199205d.0161
+    title: Cooperative domain structures in highly anisotropic alloys with twinned microstructure
+    first_author: Gerta S. Kandaurova
+    year: 1992
+    url: https://ufn.ru/ufn92/ufn92_5/Russian/r925d.pdf
+    evidence: review
+    locator: Sec. 2, p. 165
+  quote: После отжига 660°С, 20 мин получено рекордное для эквиатомного сплава CoPt значение максимального энергетического произведения (BH)mах = 120 Тл • А/м при Hс = 480 кА/м и jr = 0,82 [13]. При этом анизотропия Hс и jr имеют вид, характерный для многоосных кристаллов, петли гистерезиса — ступенчатообразную форму, а величина jr превышает значения, вычисленные для ансамбля магнитоодноосных невзаимодействующих частиц с учетом их распределения по ориентациям ОЛН.
+  note: 'Translation: ''After annealing at 660 °C, 20 min, a record (BH)max = 120 [printed units ''T·A/m''] at Hc = 480 kA/m and jr = 0.82 was obtained for equiatomic CoPt [13]. The anisotropy of Hc and jr is that of multiaxial crystals, loops are step-like, and jr exceeds the values computed for an ensemble of non-interacting uniaxial particles with their easy-axis distribution.'' jr read as reduced remanence Mr/Ms. Shows exchange/magnetostatic coupling across twins raising remanence above the non-interacting value. Overlaps the CoPt bulk-magnet scope of the other fork.'
+- id: copt_sc_kandaurova1992b
+  phase: L10-CoPt
+  route: 'other: polytwinned crystal, no bias (slow cooling)'
+  process: CoPt slowly cooled near the order-disorder temperature (low nucleation rate, coarse polytwin packets)
+  conditions:
+    field_T: 0
+    T_process_K: slow cooling near T_order-disorder
+    parent_texture: not stated for this value
+    magnet_axis: not stated
+    density_rel: null
+  quantity: Mr_over_Ms
+  value: 0.3
+  unit: '1'
+  uncertainty: null
+  measured_along: not stated
+  measurement: not stated in the review (value cited from ref [1])
+  n_samples: 1
+  source:
+    doi: 10.3367/ufnr.0162.199205d.0161
+    title: Cooperative domain structures in highly anisotropic alloys with twinned microstructure
+    first_author: Gerta S. Kandaurova
+    year: 1992
+    url: https://ufn.ru/ufn92/ufn92_5/Russian/r925d.pdf
+    evidence: review
+    locator: Sec. 2, p. 165
+  quote: Так, например, при медленном охлаждении сплава CoPt вблизи Tк (скорость роста зародышей велика) Hс = 80 кА/м, а jr = 0,3 [1].
+  note: 'Translation: ''For example, on slow cooling of CoPt near Tк (high growth rate of nuclei) Hc = 80 kA/m and jr = 0.3 [1].'' ''Tк'' (printed bold) is the order-disorder temperature.'
