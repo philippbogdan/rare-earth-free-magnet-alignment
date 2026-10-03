@@ -1,0 +1,164 @@
+# Topic: mn4n. Sealed measured outcomes. Do not expose values before predictions are frozen.
+# Figure-read values have explicit locator and estimated uncertainty.
+- id: mn4n_ep_zhou2021_s1_mrms
+  phase: Mn4N
+  route: EP
+  process: reactive rf sputtering of 16.6 nm film at 400 °C onto unannealed MgO(001)
+  conditions:
+    field_T: null
+    T_process_K: 673
+    parent_texture: MgO single crystal
+    magnet_axis: film normal
+  quantity: Mr_over_Ms
+  value: 0.47
+  unit: ratio
+  uncertainty: null
+  measured_along: film normal
+  measurement: VSM, 300 K, out-of-plane M(H), max plotted field 15 kOe (about 1.5 T); demagnetizing correction not reported
+  n_samples: 1
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Results and Fig. 2(a,b)
+  quote: 'The Mr/Ms ratio increased from 0.47 to
+
+
+    0.72 as the annealing temperature increased from RT to 1100 °C.'
+  note: Sample S1; field and measurement temperature from methods and figure.
+- id: mn4n_ep_zhou2021_s3_mrms
+  phase: Mn4N
+  route: EP
+  process: reactive rf sputtering of 16.8 nm film at 400 °C onto MgO(001) preannealed 1100 °C for 4 h
+  conditions:
+    field_T: null
+    T_process_K: 673
+    parent_texture: MgO single crystal
+    magnet_axis: film normal
+  quantity: Mr_over_Ms
+  value: 0.72
+  unit: ratio
+  uncertainty: null
+  measured_along: film normal
+  measurement: VSM, 300 K, out-of-plane M(H), max plotted field 15 kOe (about 1.5 T); demagnetizing correction not reported
+  n_samples: 1
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Results and Fig. 2(a,b)
+  quote: 'The Mr/Ms ratio increased from 0.47 to
+
+
+    0.72 as the annealing temperature increased from RT to 1100 °C.'
+  note: Sample S3; the 1100 °C treatment was of the substrate before film deposition.
+- id: mn4n_ep_zhou2021_s4_mrms
+  phase: Mn4N
+  route: EP
+  process: reactive rf sputtering of 16.8 nm film at 450 °C onto MgO(001) preannealed 1100 °C for 4 h
+  conditions:
+    field_T: null
+    T_process_K: 723
+    parent_texture: MgO single crystal
+    magnet_axis: film normal
+  quantity: Mr_over_Ms
+  value: 0.98
+  unit: ratio
+  uncertainty: 0.02
+  measured_along: film normal
+  measurement: VSM, 300 K, out-of-plane M(H), max plotted field 15 kOe (about 1.5 T); demagnetizing correction not reported
+  n_samples: 1
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Fig. 2(c), read from plot
+  quote: the Mr/Ms ratio of these samples, S4 and S5, increased further to near 1,
+  note: Sample S4. The paper says near 1; 0.98 ± 0.02 is read from its plotted loop, not a tabulated measurement.
+- id: mn4n_ep_zhou2021_s5_mrms
+  phase: Mn4N
+  route: EP
+  process: reactive rf sputtering of 11.5 nm film at 450 °C onto MgO(001) preannealed 1100 °C for 4 h
+  conditions:
+    field_T: null
+    T_process_K: 723
+    parent_texture: MgO single crystal
+    magnet_axis: film normal
+  quantity: Mr_over_Ms
+  value: 0.8
+  unit: ratio
+  uncertainty: null
+  measured_along: film normal
+  measurement: VSM, 300 K, out-of-plane M(H), max plotted field 15 kOe (about 1.5 T); demagnetizing correction not reported
+  n_samples: 1
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Results and Fig. 2(c)
+  quote: S5, the thinnest film, kept a high Mr/Ms ratio ~0.8,
+  note: Sample S5; reported approximately.
+- id: mn4n_like_iso_shinaji2013_500c_br
+  phase: Mn-Sn-Co-N multiphase alloy
+  route: isotropic
+  process: arc-melt Mn82.5Sn10Co7.5, homogenize 950 °C 20 h Ar, crush to 500-850 µm, first anneal 900 °C 3 h N2, second anneal 500 °C 5 h N2, quench
+  conditions:
+    field_T: null
+    T_process_K: 773
+    parent_texture: not reported
+    magnet_axis: measurement field
+  quantity: Br
+  value: 0.026
+  unit: T
+  uncertainty: 0.002
+  measured_along: measurement field, unspecified specimen orientation
+  measurement: VSM demagnetization curve, temperature not stated; maximum plotted positive field 1500 kA/m (about 1.9 T); no demagnetizing correction stated
+  n_samples: not reported
+  source:
+    doi: 10.2320/matertrans.MAW201312
+    title: Influence of Heat Treatment on the Microstructure and Magnetic Properties of Mn-Sn-Co-N Alloys
+    first_author: Shinaji
+    year: 2013
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/10/54_MAW201312/_pdf
+    evidence: full_text
+    locator: Fig. 4 (read from plot)
+  quote: Fig. 4 Demagnetization curves of samples subjected to second-annealing at 500 and 700°C in comparison with that of a sample without second-annealing.
+  note: Read magnetic polarization at H=0 as approximately 26 ± 2 mT; converted to T. This is the multiphase alloy, not intrinsic Mn4N.
+- id: mn4n_like_iso_shinaji2013_700c_br
+  phase: Mn-Sn-Co-N multiphase alloy
+  route: isotropic
+  process: arc-melt Mn82.5Sn10Co7.5, homogenize 950 °C 20 h Ar, crush to 500-850 µm, first anneal 900 °C 3 h N2, second anneal 700 °C 5 h N2, quench
+  conditions:
+    field_T: null
+    T_process_K: 973
+    parent_texture: not reported
+    magnet_axis: measurement field
+  quantity: Br
+  value: 0.01
+  unit: T
+  uncertainty: 0.002
+  measured_along: measurement field, unspecified specimen orientation
+  measurement: VSM demagnetization curve, temperature not stated; maximum plotted positive field 1500 kA/m (about 1.9 T); no demagnetizing correction stated
+  n_samples: not reported
+  source:
+    doi: 10.2320/matertrans.MAW201312
+    title: Influence of Heat Treatment on the Microstructure and Magnetic Properties of Mn-Sn-Co-N Alloys
+    first_author: Shinaji
+    year: 2013
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/10/54_MAW201312/_pdf
+    evidence: full_text
+    locator: Fig. 4 (read from plot)
+  quote: Fig. 4 Demagnetization curves of samples subjected to second-annealing at 500 and 700°C in comparison with that of a sample without second-annealing.
+  note: Read magnetic polarization at H=0 as approximately 10 ± 2 mT; converted to T. The 700 °C treatment produced a coarser microstructure.
