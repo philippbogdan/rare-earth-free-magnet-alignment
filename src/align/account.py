@@ -152,9 +152,12 @@ def route_MO(ph):
                     chain=f"{h.get('reason', '')}; whether such particles are single crystals is unpublished",
                     decides=[('single-crystal anisometric particles', outs, 'EBSD of crushed particles')],
                     A_alt=outs, refs=h.get('refs', []))
-    return Cell(ph['id'], 'MO', _verdict(A, A > ISO + 1e-3), A, ax,
-                chain=f"single-crystal {h['shape']}s with the easy axis {h.get('easy', '')} to the shape; "
-                      'pressing/shear flow orients the shape', refs=h.get('refs', []))
+    if h['shape'] == 'equiaxed':
+        why = 'equiaxed single-crystal particles: there is no particle shape for pressing or flow to orient'
+    else:
+        why = (f"single-crystal {h['shape']}s with the easy axis {h.get('easy', '')} to the shape; "
+               'pressing/shear flow orients the shape')
+    return Cell(ph['id'], 'MO', _verdict(A, A > ISO + 1e-3), A, ax, chain=why, refs=h.get('refs', []))
 
 
 # ---------------------------------------------------------------- texture sources (DS/AM)
@@ -673,7 +676,8 @@ def route_TGG(ph):
         c.chain = ('templates grow in the parent, giving it a fibre texture; without a bias the product then '
                    'forms as from a DS parent: ' + c.chain)
         for i, d in enumerate(c.decides):
-            c.decides[i] = (d[0].replace('DS growth', 'template').replace('DS ', 'templated '), d[1], d[2])
+            c.decides[i] = (d[0].replace('DS growth', 'template').replace('DS ', 'templated '), d[1],
+                            d[2].replace('a DS sample', 'the templated parent'))
         return c
     hd = ph.get('hd') or {}
     if hd.get('possible') is False and any(w in hd.get('reason', '') for w in
