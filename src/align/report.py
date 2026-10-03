@@ -316,6 +316,17 @@ def _frontier_scores(r):
             'accuracy': r['accuracy'] if r['accuracy'] is not None else 0.0}
 
 
+def _push_history(fr):
+    out = []
+    for a, b in zip(fr, fr[1:]):
+        sa = _frontier_scores(a)
+        far = min(sa, key=sa.get)
+        out.append(f"after {a['version']} the furthest criterion was {far} ({sa[far]:.3f}); {b['version']} pushed it "
+                   f"({b['note']}; phases {b['phases_covered']}/{b['phases_universe']}, held-out accuracy "
+                   f"{fmt(b['accuracy'])} on {b['n_cases']} new cases)")
+    return out
+
+
 def non_dominated(rows):
     keep = []
     for r in rows:
@@ -543,9 +554,8 @@ def build(reg, phases, rows, R, st, univ=None):
                   f"{r['routes_covered']}/{r['routes_universe']}", r['n_cases'],
                   fmt(r['accuracy']), r['note']] for r in fr])
         + f"\n\nNon-dominated versions: {', '.join(ndv)}. Furthest from its limit now: **{far}** "
-          f"({', '.join(f'{k} {v:.3f}' for k, v in sc.items())}). History of pushes: after v1 the phase "
-          "count (23/24) was furthest and Mn4N was added (24/24); then accuracy was furthest and was pushed by "
-          "the post-hoc v2 rules, which are being tested on a further held-out batch.")
+          f"({', '.join(f'{k} {v:.3f}' for k, v in sc.items())}). History of pushes: "
+        + '; '.join(_push_history(fr)) + '.')
     # ---------------- limits
     opened, phys, bad = limits(rows)
     lt = [[q, len(v), ', '.join(v[:6]) + (' …' if len(v) > 6 else ''), m] for (q, m), v in
