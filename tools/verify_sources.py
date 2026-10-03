@@ -118,7 +118,19 @@ def url_text(url):
 
 
 def find_quote(quote, text):
-    q, t = norm(quote), norm(text)
+    """Score in [0,1]; quotes with '...' elisions are checked fragment by fragment
+    (fragments shorter than 12 normalised characters are ignored); the score is the
+    length-weighted mean of the fragment scores."""
+    frags = [f for f in re.split(r'\.\.\.|…|\[\.\.\.\]', quote or '') if len(norm(f)) >= 12]
+    if len(frags) > 1:
+        t = norm(text)
+        tot = sum(len(norm(f)) for f in frags)
+        return sum(_find_one(f, t, normed=True) * len(norm(f)) for f in frags) / tot
+    return _find_one(quote, text)
+
+
+def _find_one(quote, text, normed=False):
+    q, t = norm(quote), (text if normed else norm(text))
     if not q or not t:
         return 0.0
     if q in t:
@@ -128,6 +140,42 @@ def find_quote(quote, text):
     lo = max(0, b.b - b.a - 20)
     win = t[lo: lo + len(q) + 40]
     return difflib.SequenceMatcher(None, q, win, autojunk=False).ratio()
+
+
+NUM = re.compile(r'(?<![\w.])[-−]?\d+(?:[.,]\d+)?')
+
+
+def numbers(s):
+    return [n.replace('−', '-').replace(',', '.') for n in NUM.findall(unicodedata.normalize('NFKC', s or ''))]
+
+
+def numbers_found(quote, text):
+    """Fraction of the numbers in the quote that occur verbatim (as digit strings) in the
+    source text; None if the quote has no numbers."""
+    ns = [n for n in numbers(quote) if len(n.strip('-').replace('.', '')) >= 1]
+    if not ns:
+        return None
+    t = unicodedata.normalize('NFKC', text or '').replace('−', '-')
+    t = re.sub(r'\s+', ' ', t)
+    hit = 0
+    for n in ns:
+        variants = {n, n.replace('.', ','), n.replace('.', '·')}
+        if any(re.search(r'(?<![\d.])' + re.escape(v) + r'(?![\d])', t) for v in variants):
+            hit += 1
+    return hit / len(ns)
+
+
+def value_in_quote(value, quote):
+    if isinstance(value, bool) or not isinstance(value, (int, float)):
+        return None
+    qs = numbers(quote)
+    for q in qs:
+        try:
+            if abs(float(q) - float(value)) <= 1e-9 * max(1, abs(float(value))):
+                return True
+        except ValueError:
+            pass
+    return False
 
 
 def title_score(a, b):
@@ -157,18 +205,22 @@ def verify_record(r):
             out['doi_ok'] = True
         else:
             out['doi_ok'] = False
-    best, where = 0.0, None
+    best, where, btext = 0.0, None, ''
     for t in texts:
         s = find_quote(quote, t)
         if s > best:
-            best, where = s, 'abstract'
+            best, where, btext = s, 'abstract', t
     if best < 0.95 and src.get('url'):
-        s = find_quote(quote, url_text(src['url']))
+        ut = url_text(src['url'])
+        s = find_quote(quote, ut)
         if s > best:
-            best, where = s, 'url'
+            best, where, btext = s, 'url', ut
     out['quote_score'] = round(best, 3)
     out['quote_where'] = where
-    out['quote_ok'] = best >= 0.9
+    nf = numbers_found(quote, btext) if btext else None
+    out['numbers_found'] = None if nf is None else round(nf, 3)
+    out['value_in_quote'] = value_in_quote(r.get('value'), quote)
+    out['quote_ok'] = best >= 0.9 and (nf is None or nf >= 0.999)
     return out
 
 

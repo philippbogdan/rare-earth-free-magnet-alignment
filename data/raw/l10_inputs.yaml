@@ -1,0 +1,3094 @@
+# Topic l10: L1_0 ordered phases formed by chemical ordering of a disordered fcc (A1) parent.
+# INPUT records (visible). Schema: data/SCHEMA.md. Evidence rules: verbatim quotes from fetched pages.
+#
+# Phase names used in this file:
+#   L10-FeNi  tetrataenite (ordered FeNi);           A1-FeNi  disordered fcc parent (taenite)
+#   FeNiN     tetragonal nitride intermediate of the NITE route (nitrogen insertion + topotactic extraction)
+#   L10-FePt, A1-FePt;  L10-CoPt, A1-CoPt;  L10-FePd, A1-FePd;  L10-generic (statements about the L1_0 class)
+#
+# Conventions: Js in T (mu0*Ms, ~300 K), Ms_mass Am2/kg, K1 MJ/m3, Tc and all temperatures in K
+# (deg C + 273.15, conversion stated in note), density g/cm3, lattice in Angstrom, stress in MPa.
+# Ranges are given as text "lo-hi". Values converted from other units keep the original unit in the quote.
+# Quotes: verbatim; only whitespace normalisation, re-joining of words split by line-end hyphenation and
+# restoration of glyphs lost in PDF text layers (superscripts, degree signs, brackets) - stated in note
+# where it matters. Own arithmetic or comparisons appear only in `note` and are labelled as such.
+# evidence: full_text = text read; abstract = only abstract accessible; review = value quoted by a
+# secondary source (the cited original was not read).
+# Outcome data (variant fractions, macroscopic anisotropy, Mr/Ms, Br, texture of samples) are sealed in
+# .tmp/sealed/l10_outcomes.yaml.
+- id: feni_js_poirier2015
+  phase: L10-FeNi
+  quantity: Js
+  value: 1.47
+  unit: T
+  conditions: meteoritic tetrataenite, NWA 6259 (95 vol.% tetrataenite, 43 at.% Ni), room temperature; intrinsic value from multi-orientation fit
+  source:
+    doi: 10.1063/1.4916190
+    title: Intrinsic magnetic properties of L1 FeNi obtained from meteorite NWA 6259
+    first_author: Eric Poirier
+    year: 2015
+    url: https://api.crossref.org/works/10.1063/1.4916190
+    evidence: abstract
+    locator: abstract
+  quote: By simultaneously fitting first-quadrant magnetization data for 13 different orientations of the sample with respect to the applied field direction, the intrinsic magnetic properties were estimated to be saturation magnetization 4πMs = 14.7 kG and anisotropy field Ha = 14.4 kOe.
+  note: 4πMs = 14.7 kG converted to 1.47 T. Fe-rich composition (~Fe57Ni43), not equiatomic.
+- id: feni_js_goto2017
+  phase: L10-FeNi
+  quantity: Js
+  value: 1.6
+  unit: T
+  conditions: L10-FeNi, room temperature (literature value quoted in introduction)
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: review
+    locator: p. 1, introduction
+  quote: The saturation magnetic flux density of L10-FeNi is 1.6 T (154 A∙m2/kg), which is comparable to that of Nd-Fe-B.
+  note: 'Secondary citation: later in the same paper the 154 Am2/kg value is attributed to a past report (ref. 5, Paulevé et al. 1968, J. Appl. Phys. 39, 989).'
+- id: feni_msmass_goto2017
+  phase: L10-FeNi
+  quantity: Ms_mass
+  value: 154
+  unit: Am2/kg
+  conditions: L10-FeNi (literature estimate), room temperature
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: review
+    locator: p. 5, text below Fig. 5
+  quote: The saturation magnetization of L10-FeNi was estimated to be 154 Am2/kg in a past report5, compared to which the value of DN-FeNiN in the L10 phase was smaller by approximately 10%.
+  note: Ref. 5 = Paulevé, Chamberod, Krebs, Bourret, J. Appl. Phys. 39, 989 (1968). DN-FeNiN = NITE powder (139 Am2/kg at 2.4 MA/m, not saturated).
+- id: feni_js_ito2019
+  phase: L10-FeNi
+  quantity: Js
+  value: 1.596
+  unit: T
+  conditions: L10-FeNi bulk (literature value quoted), room temperature
+  source:
+    doi: 10.3379/msjmag.1907r002
+    title: Fabrication of L10-FeNi films by denitriding FeNiN films
+    first_author: K. Ito
+    year: 2019
+    url: https://www.jstage.jst.go.jp/article/msjmag/43/4/43_1907R002/_pdf
+    evidence: review
+    locator: p. 79, introduction
+  quote: Saturation magnetization (MS) is 1270 emu/cm3 3) and the Curie temperature is higher than 550 °C.4,5)
+  note: Ms = 1270 emu/cm3 -> Js = 4π·1270 G = 15.96 kG = 1.596 T. Ref. 3 = Néel et al. 1964 (neutron-irradiated crystal).
+- id: a1feni_js_einsle2018
+  phase: A1-FeNi
+  quantity: Js
+  value: 1.6
+  unit: T
+  conditions: cubic disordered Fe0.5Ni0.5, room temperature; value used as micromagnetic input parameter
+  source:
+    doi: 10.1073/pnas.1809378115
+    title: Nanomagnetic properties of the meteorite cloudy zone
+    first_author: Joshua F. Einsle
+    year: 2018
+    url: http://eprints.gla.ac.uk/205239/1/205239.pdf
+    evidence: review
+    locator: p. 5 (author version), micromagnetic state section
+  quote: Finite-element micromagnetic simulations were performed initially using room-temperature micromagnetic parameters appropriate to cubic disordered Fe0.5Ni0.5 (Ms = 1273 kA/m, K1 = 1 kJ/m3, Aex = 1.13 x 10−11 J/m), which is a soft ferromagnet below its Curie temperature of ∼ 450 °C (18, 19).
+  note: Ms = 1273 kA/m -> Js = μ0Ms = 1.600 T. Parameter taken from refs 18,19 of the paper (secondary). Quote checked against the page image (two-column author PDF with line numbers).
+- id: feni_k1_woodgate2023
+  phase: L10-FeNi
+  quantity: K1
+  value: 0.889
+  unit: MJ/m3
+  conditions: first-principles (relativistic KKR-CPA with disordered-local-moment finite-T), perfectly ordered S = 1, Fe0.5Ni0.5, T = 300 K
+  source:
+    doi: 10.1063/5.0169752
+    title: 'Revisiting Néel 60 years on: The magnetic anisotropy of L10 FeNi (tetrataenite)'
+    first_author: Christopher D. Woodgate
+    year: 2023
+    url: https://www.osti.gov/servlets/purl/2527271
+    evidence: full_text
+    locator: Sec. III.B
+  quote: It can be seen that, as expected, the anisotropy decreases as temperature increases, but that the decrease is very gradual, with the anisotropy energy at T = 300 K computed as 0.889 MJ m−3, around 90% of the T = 0 value.
+  note: 'Computed, not measured. Same paper: K1(0 K, S=1) = 0.96 MJ/m3 for Fe0.5Ni0.5 and 0.61 MJ/m3 for Fe0.56Ni0.44; K2, K3 orders of magnitude smaller for single-variant crystals.'
+- id: feni_k1_poirier2015
+  phase: L10-FeNi
+  quantity: K1
+  value: 0.84
+  unit: MJ/m3
+  conditions: meteoritic tetrataenite NWA 6259 (43 at.% Ni), room temperature; intrinsic K from fit of a three-variant model to 13 orientations
+  source:
+    doi: 10.1063/1.4916190
+    title: Intrinsic magnetic properties of L1 FeNi obtained from meteorite NWA 6259
+    first_author: Eric Poirier
+    year: 2015
+    url: https://api.crossref.org/works/10.1063/1.4916190
+    evidence: abstract
+    locator: abstract
+  quote: The anisotropy constant K = 0.84 MJ/m3 is somewhat smaller than the value K = 1.3 MJ/m3 obtained by earlier researchers from nominally equiatomic FeNi prepared by neutron irradiation accompanied by annealing in a magnetic field, suggesting that higher Ni content (fewer Fe antisite defects) may improve the anisotropy.
+  note: The 1.3 MJ/m3 comparison value derives from the field-irradiated crystals (Néel 1964 / Paulevé 1968).
+- id: feni_k1_ito2019
+  phase: L10-FeNi
+  quantity: K1
+  value: 1.3
+  unit: MJ/m3
+  conditions: bulk value from neutron-irradiated, field-annealed Fe50Ni50 (literature value quoted)
+  source:
+    doi: 10.3379/msjmag.1907r002
+    title: Fabrication of L10-FeNi films by denitriding FeNiN films
+    first_author: K. Ito
+    year: 2019
+    url: https://www.jstage.jst.go.jp/article/msjmag/43/4/43_1907R002/_pdf
+    evidence: review
+    locator: p. 79, introduction
+  quote: The Ku value was reported to be 1.3 × 107 erg/cm3 in a bulk sample, 3,6) and 7.0 × 106 erg/cm3 in a film prepared by molecular beam epitaxy (MBE).7)
+  note: '1.3×10^7 erg/cm3 = 1.3 MJ/m3 (superscripts lost in PDF text: ''107'' = 10^7). Refs 3,6 = Néel 1964, Paulevé 1968: this is an estimate for full order derived from multi-variant field-ordered crystals; Woodgate 2023 argues such samples carry large extrinsic K2/K3.'
+- id: feni_k1_goto2017
+  phase: L10-FeNi
+  quantity: K1
+  value: 1.37
+  unit: MJ/m3
+  conditions: bulk L10-FeNi with S = 0.41 (literature estimate, ref. 5 = Paulevé 1968)
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: review
+    locator: p. 5
+  quote: In previous work, the Ku values of L10-FeNi with S = 0.41 in a bulk and with S = 0.5 in a thin film were estimated at 1.37 × 106 J/m3 5 and 0.7 × 106 J/m321, respectively.
+  note: 1.37×10^6 J/m3 (superscript lost in PDF text). Shows the commonly quoted ~1.3-1.4 MJ/m3 refers to a partially ordered (S≈0.41) field-ordered bulk sample.
+- id: feni_k1_kojima2014
+  phase: L10-FeNi
+  quantity: K1
+  value: 0.7
+  unit: MJ/m3
+  conditions: epitaxial single-variant (c ⊥ film) L10-FeNi film by alternate monatomic layer deposition on Au6Cu51Ni43 buffer, room temperature, partial order
+  source:
+    doi: 10.1088/0953-8984/26/6/064207
+    title: Fe–Ni composition dependence of magnetic anisotropy in artificially fabricated L1 0 -ordered FeNi films
+    first_author: Takayuki Kojima
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/26/6/064207
+    evidence: abstract
+    locator: abstract
+  quote: An L10-FeNi film grown on Au6Cu51Ni43 showed a large uniaxial magnetic anisotropy energy (Ku = 7.0 × 10(6) erg cm(-)3). Ku monotonically increased with the long-range order parameter (S) of the L10 phase.
+  note: '7.0×10^6 erg/cm3 = 0.70 MJ/m3 (OpenAlex rendering ''10(6)'' = 10^6). Same abstract: Fe60Ni40 film Ku = 9.3×10^6 erg/cm3.'
+- id: feni_k1_mizuguchi2011
+  phase: L10-FeNi
+  quantity: K1
+  value: 0.58
+  unit: MJ/m3
+  conditions: epitaxial L10-FeNi film on AuNi buffer (alternate monatomic layer deposition), S = 0.330, room temperature
+  source:
+    doi: 10.3379/msjmag.1106r008
+    title: Artificial Fabrication and Order Parameter Estimation of L10-ordered FeNi Thin Film Grown on a AuNi Buffer Layer
+    first_author: M. Mizuguchi
+    year: 2011
+    url: https://www.jstage.jst.go.jp/article/msjmag/35/4/35_1106R008/_pdf
+    evidence: full_text
+    locator: abstract
+  quote: A uniaxial magnetic anisotropy energy of the FeNi layer was estimated to be 5.8 × 106 erg/cm3 from magnetization measurements, which is the largest energy among values reported on FeNi thin films grown on nonmagnetic buffers. A long-range order parameter of the FeNi layer was estimated to be 0.330 from a grazing incidence X-ray diffraction (GI-XRD) using synchrotron radiation.
+  note: 5.8×10^6 erg/cm3 = 0.58 MJ/m3. Ku from area between in-plane and out-of-plane curves plus demagnetisation energy.
+- id: feni_tc_lewis2014
+  phase: L10-FeNi
+  quantity: Tc
+  value: 830
+  unit: K
+  conditions: meteoritic tetrataenite NWA 6259 (~Fe55Ni44); lower bound
+  source:
+    doi: 10.1088/0953-8984/26/6/064213
+    title: 'Inspired by nature: investigating tetrataenite for permanent magnet applications'
+    first_author: L H Lewis
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/26/6/064213
+    evidence: abstract
+    locator: abstract
+  quote: nonetheless, even in its highly unoptimized state tetrataenite provides a room-temperature coercivity of 95.5 kA m(-1) (1200 Oe), a Curie temperature of at least 830 K
+  note: Lower bound ('at least'); Tc of the ordered phase is not directly accessible because the phase disorders on heating.
+- id: feni_tc_nagata1987b
+  phase: L10-FeNi
+  quantity: Tc
+  value: 833-853
+  unit: K
+  conditions: tetrataenite-rich meteorites, thermomagnetic heating curves (apparent Curie point; phase breaks down on further heating)
+  source:
+    doi: null
+    title: Tetrataenite phase in Antarctic meteorites (Mem. Natl Inst. Polar Res., Spec. Issue 46, 245-262)
+    first_author: Takesi Nagata
+    year: 1987
+    url: https://nipr.repo.nii.ac.jp/record/2138/files/KJ00000012691.pdf
+    evidence: full_text
+    locator: abstract, criteria (2)-(3), p. 245
+  quote: (2) The apparent Curie point is 560–580°C. (3) The initial heating thermomagnetic (TM) curve of the γ'-phase is flat below about 500°C and then sharply drops down to the apparent Curie point.
+  note: 560-580 °C converted to 833-853 K. 'Apparent' because disordering competes; γ' = tetrataenite. Quote read from the page image (OCR text layer garbles Greek letters).
+- id: feni_tc_goto2017
+  phase: L10-FeNi
+  quantity: Tc
+  value: 823
+  unit: K
+  conditions: L10-FeNi, literature lower bound
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: review
+    locator: p. 1, introduction
+  quote: The Curie point is 550 °C or higher, which is higher than that of conventional magnets6.
+  note: 550 °C = 823 K, lower bound. Ref. 6 = Wasilewski, Phys. Earth Planet. Inter. 52, 150 (1988).
+- id: a1feni_tc_nagata1987a
+  phase: A1-FeNi
+  quantity: Tc
+  value: 773
+  unit: K
+  uncertainty: 20
+  conditions: disordered fcc taenite (γ) with ~50 wt% Ni (≈49 at.% Ni), thermomagnetic measurement
+  source:
+    doi: null
+    title: Magnetic properties of Ni-rich iron meteorites (Mem. Natl Inst. Polar Res., Spec. Issue 46, 263-282)
+    first_author: Takesi Nagata
+    year: 1987
+    url: https://nipr.repo.nii.ac.jp/record/2139/files/KJ00000012692.pdf
+    evidence: full_text
+    locator: p. 275, sec. 3.5 (Lime Creek)
+  quote: An unsolved problem in regard to thermomagnetic characteristics of the Lime Creek is concerned with a high value of the observed Curie point of γ-phase around 500°C, which corresponds to almost 50 wt% in Ni-content in the stoichiometric taenite.
+  note: 'Indirect statement: a Curie point ~500 °C (773 K) corresponds to ~50 wt% Ni disordered taenite. Uncertainty ±20 K is my estimate of the ''around''. Quote read from page image.'
+- id: a1feni_tc_einsle2018
+  phase: A1-FeNi
+  quantity: Tc
+  value: 723
+  unit: K
+  conditions: cubic disordered Fe0.5Ni0.5 (value used as micromagnetic input, from the paper's refs 18,19)
+  source:
+    doi: 10.1073/pnas.1809378115
+    title: Nanomagnetic properties of the meteorite cloudy zone
+    first_author: Joshua F. Einsle
+    year: 2018
+    url: http://eprints.gla.ac.uk/205239/1/205239.pdf
+    evidence: review
+    locator: p. 5 (author version), micromagnetic state section
+  quote: Finite-element micromagnetic simulations were performed initially using room-temperature micromagnetic parameters appropriate to cubic disordered Fe0.5Ni0.5 (Ms = 1273 kA/m, K1 = 1 kJ/m3, Aex = 1.13 x 10−11 J/m), which is a soft ferromagnet below its Curie temperature of ∼ 450 °C (18, 19).
+  note: ~450 °C = 723 K. Conflicts with ~500 °C (773 K) of Nagata et al. 1987 for ~50 wt% Ni; both above the 320 °C ordering temperature, so the parent is ferromagnetic during ordering either way.
+- id: feninitride_tn_goto2019
+  phase: FeNiN
+  quantity: Tc
+  value: 178
+  unit: K
+  conditions: FeNiN nanoparticles (NITE intermediate) made by NH3 nitriding at 300 °C, 50 h; antiferromagnetic Néel temperature (not a Curie point)
+  source:
+    doi: 10.1021/acsanm.9b01405
+    title: Positive Weiss Temperature in Layered Antiferromagnetic FeNiN for High-Performance Permanent Magnets
+    first_author: Sho Goto
+    year: 2019
+    url: https://api.openalex.org/works/doi:10.1021/acsanm.9b01405
+    evidence: abstract
+    locator: abstract
+  quote: The χ– T curve of FeNiN shows a cusp associated with the antiferromagnetic phase transition at T N ≈ 178 K, and the asymptotic Curie temperature (or Weiss temperature) is positive at θ p ≈ 100 K, as determined by the χ –1 – T plot.
+  note: Value is T_N of a C-type antiferromagnet; FeNiN is therefore paramagnetic at its formation (nitriding) temperature 563-613 K (my inference from T_N << T_f).
+- id: feni_tstab_pauleve1962
+  phase: L10-FeNi
+  quantity: T_stab
+  value: 593
+  unit: K
+  conditions: Fe-Ni (50-50); critical temperature of the AuCu-type order-disorder transition (equilibrium)
+  source:
+    doi: 10.1051/jphysrad:019620023010084100
+    title: Une nouvelle transition ordre-désordre dans Fe-Ni (50-50 )
+    first_author: J. Paulevé
+    year: 1962
+    url: https://api.openalex.org/works/doi:10.1051/jphysrad:019620023010084100
+    evidence: abstract
+    locator: abstract (French)
+  quote: Des expériences d'irradiation aux neutrons sous champ magnétique d'alliages Fe-Ni (50-50) ont permis de découvrir une transition ordre-désordre du type Au Cu dont la température critique est 320 °C.
+  note: 320 °C = 593 K. Equilibrium order-disorder temperature (upper limit for forming the phase); kinetic survival of an already ordered phase on heating is higher (see other T_stab records).
+- id: feni_tstab_goto2017a
+  phase: L10-FeNi
+  quantity: T_stab
+  value: 473-593
+  unit: K
+  conditions: order-disorder transition temperature Tλ, literature range (refs 14-16)
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: review
+    locator: p. 1, introduction
+  quote: The Tλ of L10-FeNi has been estimated to range in 200–320 °C14–16.
+  note: 200-320 °C = 473-593 K.
+- id: feni_tstab_goto2017b
+  phase: L10-FeNi
+  quantity: T_stab
+  value: 673-723
+  unit: K
+  conditions: NITE-made L10-FeNi powder (S = 0.71) on heating (kinetic stability; heating time scale in Supplementary Fig. 4, not read)
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: full_text
+    locator: pp. 5-6
+  quote: L10-FeNi fabricated with the NITE method sustained an ordered structure up to 400 °C (as indicated in Supplementary Figure 4), but a transformation to a disordered phase occurred once the temperature reached 450 °C.
+  note: 'Ordered at 400 °C (673 K), disordered at 450 °C (723 K). Next sentence: meteoritic L10-FeNi requires >=480 °C for disordering (ref. 6). Consolidation must stay below this (the paper: ''a method for molding at or below the disordering temperatures is essential'').'
+- id: feni_tstab_goto2017c
+  phase: L10-FeNi
+  quantity: T_stab
+  value: 753
+  unit: K
+  conditions: meteoritic L10-FeNi, temperature needed for disordering to progress (literature, ref. 6 Wasilewski 1988)
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: review
+    locator: p. 6
+  quote: It was reported that the temperature required for the progression of disordering in L10-FeNi extracted from meteorites is 480 °C or higher6.
+  note: 480 °C = 753 K (lower bound for disordering of meteoritic tetrataenite).
+- id: feni_tstab_nagata1987b
+  phase: L10-FeNi
+  quantity: T_stab
+  value: 973
+  unit: K
+  conditions: tetrataenite-rich meteorites heated in thermomagnetic runs (time scale of a TM run)
+  source:
+    doi: null
+    title: Tetrataenite phase in Antarctic meteorites (Mem. Natl Inst. Polar Res., Spec. Issue 46, 245-262)
+    first_author: Takesi Nagata
+    year: 1987
+    url: https://nipr.repo.nii.ac.jp/record/2138/files/KJ00000012691.pdf
+    evidence: full_text
+    locator: abstract, criterion (4), p. 245
+  quote: (4) After heating to temperatures above 700°C, the γ'-phase is broken down to the ordinary disordered γ-phase, so that the first-cooling curve and subsequent TM curves have the characteristics of those of γ-phase.
+  note: '700 °C = 973 K: complete breakdown on TM heating; disordering already begins near the apparent Curie point (560-580 °C). Quote read from page image.'
+- id: feni_tstab_makino2015
+  phase: L10-FeNi
+  quantity: T_stab
+  value: 803
+  unit: K
+  conditions: L10-FeNi formed in crystallized Fe42Ni41.3Si8B4P4Cu0.7 ribbon; onset of disordering on heating (M-T curve)
+  source:
+    doi: 10.1038/srep16627
+    title: Artificially produced rare-earth free cosmic magnet
+    first_author: Akihiro Makino
+    year: 2015
+    url: https://www.nature.com/articles/srep16627.pdf
+    evidence: full_text
+    locator: p. 4
+  quote: Although, the annealing temperature (~400 °C) for formation of ordered phase is higher than the order-disorder transition temperature (320 °C), our measurements Fig. 3a show onset temperature for disordering is ~530 °C.
+  note: ~530 °C = 803 K.
+- id: feni_tstab_woodgate2023
+  phase: L10-FeNi
+  quantity: T_stab
+  value: 508
+  unit: K
+  conditions: first-principles (KKR-CPA mean-field) ordering temperature for Fe0.5Ni0.5 magnetized along x
+  source:
+    doi: 10.1063/5.0169752
+    title: 'Revisiting Néel 60 years on: The magnetic anisotropy of L10 FeNi (tetrataenite)'
+    first_author: Christopher D. Woodgate
+    year: 2023
+    url: https://www.osti.gov/servlets/purl/2527271
+    evidence: full_text
+    locator: Sec. III.C
+  quote: We find that, for a sample magnetized along the x̂ direction, the predicted ordering is indeed an L10-type layering along the x̂ direction, with an ordering temperature of 508 K.
+  note: Computed, compare experimental 593 K (320 °C).
+- id: feninitride_tstab_hlova2024
+  phase: FeNiN
+  quantity: T_stab
+  value: 673
+  unit: K
+  conditions: FeNiN intermediate heated (thermogravimetry); nitrogen loss
+  source:
+    doi: 10.1016/j.jallcom.2024.173619
+    title: Enhancement of hard magnetism and chemical order of synthetic L10-FeNi
+    first_author: Ihor Z. Hlova
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2283203
+    evidence: full_text
+    locator: Sec. 3.2
+  quote: The nitride itself is thermally unstable, and it loses nitrogen when heated above 400 °C (Fig. 5a), which exceeds both the Tod ≈ 320 °C of the L10-FeNi → A1-FeNi transformation and 290 °C – the most effective temperature of synthesis of FeNiN.
+  note: 400 °C = 673 K. Hydrogen enables denitriding below 320 °C (same section).
+- id: feni_density_hlova2024
+  phase: L10-FeNi
+  quantity: density
+  value: 8.22
+  unit: g/cm3
+  conditions: theoretical density of FeNi used for (BH)max calculation
+  source:
+    doi: 10.1016/j.jallcom.2024.173619
+    title: Enhancement of hard magnetism and chemical order of synthetic L10-FeNi
+    first_author: Ihor Z. Hlova
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2283203
+    evidence: full_text
+    locator: Sec. 2.3
+  quote: Maximum energy product (BHmax) calculations were carried out using theoretical density of FeNi, i.e. ρ = 8.22 g/cm3.
+  note: 'Value adopted by the authors; derivation not given. My arithmetic check (estimate): 4-atom fct cell (2 Fe + 2 Ni, 229.08 g/mol) with a = 3.582 Å, c = 3.607 Å gives 8.22 g/cm3, i.e. the X-ray density.'
+- id: feni_lattice_albertsen1981
+  phase: L10-FeNi
+  quantity: lattice
+  value: a=3.5761, c=3.5890
+  unit: Angstrom
+  uncertainty: 0.0005
+  conditions: well-ordered stoichiometric tetrataenite from 3 iron meteorites and 1 mesosiderite; f.c.t. cell with 4 atoms
+  source:
+    doi: 10.1088/0031-8949/23/3/015
+    title: Tetragonal Lattice of Tetrataenite (Ordered Fe-Ni, 50-50) from 4 Meteorites
+    first_author: J F Albertsen
+    year: 1981
+    url: https://api.openalex.org/works/doi:10.1088/0031-8949/23/3/015
+    evidence: abstract
+    locator: abstract
+  quote: 'The lattice is found to show tetragonal symmetry, and the lattice parameters associated with the f.c.t. unit cell containing 4 atoms are: a = 3.5761 ± 0.0005 A; c = 3.5890 ± 0.0005 A; c/a = 1.0036 ± 0.0002.'
+  note: ''
+- id: feni_lattice_kotsugi2014
+  phase: L10-FeNi
+  quantity: lattice
+  value: a=3.582, c=3.607
+  unit: Angstrom
+  conditions: L10-FeNi extracted from a meteorite, Fe50.5Ni49.6, S = 0.608
+  source:
+    doi: 10.1088/0953-8984/26/6/064206
+    title: Structural, magnetic and electronic state characterization of L10-type ordered FeNi alloy extracted from a natural meteorite
+    first_author: M Kotsugi
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/26/6/064206
+    evidence: abstract
+    locator: abstract
+  quote: The estimated degree of order was 0.608, with lattice constants a = b = 3.582 Å and c = 3.607 Å.
+  note: c/a = 1.007 (my arithmetic). Differs from Albertsen 1981 (c/a = 1.0036).
+- id: feni_lattice_clarke1980
+  phase: L10-FeNi
+  quantity: lattice
+  value: a(primitive)=2.533, c=3.582 (no tetragonal distortion resolved)
+  unit: Angstrom
+  uncertainty: 0.002
+  conditions: meteoritic tetrataenite, Albertsen et al. (1978a) data as summarised; primitive tetragonal cell P4/mmm
+  source:
+    doi: null
+    title: Tetrataenite—ordered FeNi, a new mineral in meteorites
+    first_author: Roy S. Clarke, Jr.
+    year: 1980
+    url: http://www.minsocam.org/ammin/AM65/AM65_624.pdf
+    evidence: review
+    locator: abstract, p. 624
+  quote: 'They found it has the L1₀ (or CuAu) structure like synthetic FeNi: space group P4/mmm with a = 2.533±0.002, c = 3.582±0.002Å, Z = 1.'
+  note: 'a√2 = 3.582 Å = c: no distortion was resolved in this earlier measurement (later resolved by Albertsen 1981: c/a = 1.0036). Quote read from page image (scanned PDF).'
+- id: a1feni_lattice_goto2017
+  phase: A1-FeNi
+  quantity: lattice
+  value: a=3.58
+  unit: Angstrom
+  conditions: disordered A1 FeNi nanoparticle starting powder (and lattice constant after denitriding)
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: full_text
+    locator: p. 3
+  quote: Furthermore, all diffraction lines from the nitrides have disappeared in these profiles, with the lattice constant equal to that of the starting raw material, which was a = 0.358 nm.
+  note: 0.358 nm = 3.58 Å.
+- id: feni_tetragonality_albertsen1981
+  phase: L10-FeNi
+  quantity: tetragonality
+  value: 1.0036
+  unit: c/a
+  uncertainty: 0.0002
+  conditions: meteoritic tetrataenite (4 meteorites)
+  source:
+    doi: 10.1088/0031-8949/23/3/015
+    title: Tetragonal Lattice of Tetrataenite (Ordered Fe-Ni, 50-50) from 4 Meteorites
+    first_author: J F Albertsen
+    year: 1981
+    url: https://api.openalex.org/works/doi:10.1088/0031-8949/23/3/015
+    evidence: abstract
+    locator: abstract
+  quote: The ordering of taenite leads to a change of symmetry from f.c.c. to tetragonal, but no tetragonal distortion of the lattice has previously been observed.
+  note: 'c/a = 1.0036 ± 0.0002 from the next sentence of the same abstract (see feni_lattice_albertsen1981). Sign: c/a > 1 (c elongated), opposite to FePt/CoPt/FePd. Strain vs parent a0 = 3.58 Å (Goto 2017), my estimate: ≈ +0.25% along c, ≈ -0.1% along a.'
+- id: feni_tetragonality_ito2019
+  phase: L10-FeNi
+  quantity: tetragonality
+  value: 1.007
+  unit: c/a
+  conditions: L10-FeNi (literature lattice constants, ref. 2)
+  source:
+    doi: 10.3379/msjmag.1907r002
+    title: Fabrication of L10-FeNi films by denitriding FeNiN films
+    first_author: K. Ito
+    year: 2019
+    url: https://www.jstage.jst.go.jp/article/msjmag/43/4/43_1907R002/_pdf
+    evidence: review
+    locator: p. 79
+  quote: Lattice constants are a = 3.582 Å and c = 3.607 Å; the c/a ratio is 1.007.2)
+  note: c/a > 1. Relative to A1 a0 = 3.58 Å the c-axis strain would be ≈ +0.7% (my estimate).
+- id: feni_structure_goto2017
+  phase: L10-FeNi
+  quantity: structure
+  value: L1_0 (CuAu-type), face-centred tetragonal; Fe and Ni monatomic layers alternate along c
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: full_text
+    locator: p. 1
+  quote: L10-FeNi is an ordered alloy containing equiatomic Fe and Ni, as shown in Fig. 1e, in which atomic layers of Fe and Ni are stacked alternatively along the c-axis of the FCT crystal structure. Its easy axis of magnetization corresponds to the c-axis.
+  note: ''
+- id: feni_easyaxis_goto2017
+  phase: L10-FeNi
+  quantity: easy_axis
+  value: c axis [001]
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: full_text
+    locator: p. 1
+  quote: Its easy axis of magnetization corresponds to the c-axis.
+  note: ''
+- id: feni_easyaxis_pauleve1962
+  phase: L10-FeNi
+  quantity: easy_axis
+  value: tetragonal c axis is the only easy axis
+  unit: ''
+  conditions: Fe-Ni (50-50) single crystals ordered by neutron irradiation in a field
+  source:
+    doi: 10.1051/jphysrad:019620023010084100
+    title: Une nouvelle transition ordre-désordre dans Fe-Ni (50-50 )
+    first_author: J. Paulevé
+    year: 1962
+    url: https://api.openalex.org/works/doi:10.1051/jphysrad:019620023010084100
+    evidence: abstract
+    locator: abstract (French)
+  quote: Une étude sur des monocristaux montre que cet axe tétragonal est le seul axe de facile aimantation de la structure ordonnée.
+  note: ''
+- id: feni_formation_path_clarke1980
+  phase: L10-FeNi
+  quantity: formation_path
+  value: A1 taenite -> L1_0 by Fe/Ni chemical ordering in the solid (meteorites, slow cooling)
+  unit: ''
+  conditions: meteorites
+  source:
+    doi: null
+    title: Tetrataenite—ordered FeNi, a new mineral in meteorites
+    first_author: Roy S. Clarke, Jr.
+    year: 1980
+    url: http://www.minsocam.org/ammin/AM65/AM65_624.pdf
+    evidence: full_text
+    locator: abstract, p. 624
+  quote: Tetrataenite is a new meteoritic mineral with ideal formula FeNi, which forms by ordering of Fe and Ni atoms in taenite.
+  note: Quote read from page image.
+- id: feni_tformation_clarke1980
+  phase: L10-FeNi
+  quantity: T_formation
+  value: <623
+  unit: K
+  conditions: slow-cooled meteorites (cooling ~1-100 °C/Myr)
+  source:
+    doi: null
+    title: Tetrataenite—ordered FeNi, a new mineral in meteorites
+    first_author: Roy S. Clarke, Jr.
+    year: 1980
+    url: http://www.minsocam.org/ammin/AM65/AM65_624.pdf
+    evidence: full_text
+    locator: abstract, p. 624
+  quote: Massive and rim occurrences of tetrataenite are composed of three sets of irregular oriented crystals, which show intricate lamellar magnetic domains under crossed polars. Tetrataenite forms below 350°C in slow-cooled meteorites that contain taenite, and is most abundant in mesosiderites and some chondrites which have cooled the slowest.
+  note: 350 °C = 623 K. Quote read from page image.
+- id: feni_tformation_einsle2018
+  phase: L10-FeNi
+  quantity: T_formation
+  value: 593
+  unit: K
+  conditions: meteorite cloudy zone (Tazewell); islands form by spinodal decomposition below 450 °C, then Fe-Ni ordering at 320 °C
+  source:
+    doi: 10.1073/pnas.1809378115
+    title: Nanomagnetic properties of the meteorite cloudy zone
+    first_author: Joshua F. Einsle
+    year: 2018
+    url: https://api.openalex.org/works/doi:10.1073/pnas.1809378115
+    evidence: abstract
+    locator: abstract
+  quote: The cloudy zone acquires paleomagnetic remanence via a sequence of magnetic domain state transformations (vortex to two domain to single domain), driven by Fe–Ni ordering at 320 °C.
+  note: '320 °C = 593 K. Same paper (p. 1, author version): ''The cloudy zone forms at T < 450 °C by a process of spinodal decomposition (2).'' and cooling rates ~10^-1 to ~10^3 °C per Myr.'
+- id: feni_tformation_bryson2015
+  phase: L10-FeNi
+  quantity: T_formation
+  value: 593
+  unit: K
+  conditions: pallasite cloudy zone (Imilac, Esquel); parent-body cooling 2-9 K/Myr
+  source:
+    doi: 10.1038/nature14114
+    title: Long-lived magnetism from solidification-driven convection on the pallasite parent body
+    first_author: James F. J. Bryson
+    year: 2015
+    url: https://www.repository.cam.ac.uk/bitstreams/c0b44767-4697-4e31-9b30-6e9d730d622f/download
+    evidence: full_text
+    locator: main text (accepted manuscript)
+  quote: The CZ started recording the field once tetrataenite formation commenced (593 K), which we predict occurred at these depths during the period of core solidification (Fig. 4).
+  note: Quote from the authors' accepted manuscript (Cambridge repository; manuscript title differs from published title).
+- id: feni_formation_time_bryson2014b
+  phase: L10-FeNi
+  quantity: formation_path
+  value: cloudy-zone islands form progressively over ~10-100 Myr during cooling (spinodal decomposition + ordering)
+  unit: ''
+  conditions: iron/stony-iron meteorites
+  source:
+    doi: 10.1016/j.epsl.2014.04.016
+    title: Nanopaleomagnetism of meteoritic Fe–Ni studied using X-ray photoemission electron microscopy
+    first_author: James F.J. Bryson
+    year: 2014
+    url: https://zaguan.unizar.es/record/58379/files/texto_completo.pdf
+    evidence: full_text
+    locator: Sec. 4, Discussion
+  quote: Tetrataenite islands form progressively over a period of around 10–100 Ma with increasing lateral distance across the CZ (Goldstein et al., 2009b).
+  note: ''
+- id: feni_kinetics_pauleve1962
+  phase: L10-FeNi
+  quantity: other
+  value: ordering only under irradiation near 300 °C (thermal diffusion too slow)
+  unit: ''
+  conditions: Fe-Ni (50-50), ~573 K
+  source:
+    doi: 10.1051/jphysrad:019620023010084100
+    title: Une nouvelle transition ordre-désordre dans Fe-Ni (50-50 )
+    first_author: J. Paulevé
+    year: 1962
+    url: https://api.openalex.org/works/doi:10.1051/jphysrad:019620023010084100
+    evidence: abstract
+    locator: abstract (French)
+  quote: L'ordre ne peut s'établir que sous irradiation étant donné la valeur trop faible du coefficient de diffusion auteur de 300°C.
+  note: '''auteur'' [sic] as in the OpenAlex abstract text (presumably ''autour''). Kinetics record.'
+- id: feni_kinetics_lewis2023
+  phase: L10-FeNi
+  quantity: other
+  value: 1.0e-27
+  unit: cm2/s
+  conditions: lattice diffusivity of equiatomic FeNi at 573 K (literature value, ref. 52)
+  source:
+    doi: 10.1002/advs.202302696
+    title: 'Accelerating Nature: Induced Atomic Order in Equiatomic FeNi'
+    first_author: Laura H. Lewis
+    year: 2023
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10870030/fullTextXML
+    evidence: review
+    locator: Sec. 4 Discussion
+  quote: As the lattice diffusivity of the FeNi equiatomic composition has been reported as ≈1 × 10−27 cm2 s−1 at T = 573 K,[52] the process utilized in this work is estimated to accelerate diffusion by ten or more orders of magnitude.
+  note: Kinetics record (diffusivity). Explains geological ordering times.
+- id: feni_kinetics_makino2015
+  phase: L10-FeNi
+  quantity: other
+  value: ordering in crystalline FeNi needs geological time (no diffusion near 320 °C)
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1038/srep16627
+    title: Artificially produced rare-earth free cosmic magnet
+    first_author: Akihiro Makino
+    year: 2015
+    url: https://www.nature.com/articles/srep16627.pdf
+    evidence: full_text
+    locator: p. 1
+  quote: The diffusion coefficients of Fe and Ni are extremely low around this temperature, and in reality, no diffusion takes place, which is why the ordered L10 FeNi phase requires billions of years to form in cosmic products (meteorites).
+  note: Kinetics record.
+- id: feni_formation_path_neel1964
+  phase: L10-FeNi
+  quantity: formation_path
+  value: A1 Fe50Ni50 -> L1_0 by neutron-irradiation-enhanced ordering below 320 °C
+  unit: ''
+  conditions: neutron irradiation
+  source:
+    doi: 10.1063/1.1713516
+    title: Magnetic Properties of an Iron—Nickel Single Crystal Ordered by Neutron Bombardment
+    first_author: L. Néel
+    year: 1964
+    url: https://api.crossref.org/works/10.1063/1.1713516
+    evidence: abstract
+    locator: abstract
+  quote: It has been shown that a new ordered structure can be obtained in an Fe-Ni (50%–50%) alloy, by irradiating it with neutrons below 320°C. This ordered structure is tetragonal (AuCu type) and leads to a very high magnetic anisotropy.
+  note: ''
+- id: feni_tformation_neel1964
+  phase: L10-FeNi
+  quantity: T_formation
+  value: 568
+  unit: K
+  conditions: single-crystal disk, neutron irradiation with field along [100]
+  source:
+    doi: 10.1063/1.1713516
+    title: Magnetic Properties of an Iron—Nickel Single Crystal Ordered by Neutron Bombardment
+    first_author: L. Néel
+    year: 1964
+    url: https://api.crossref.org/works/10.1063/1.1713516
+    evidence: abstract
+    locator: abstract
+  quote: We have studied the magnetic properties of a single-crystal disk irradiated with neutrons at 295°C, with an applied magnetic field along the [100] direction.
+  note: '295 °C = 568 K, i.e. below Tc of the A1 parent (~723-773 K): ferromagnetic during ordering.'
+- id: feni_formation_path_hlova2024a
+  phase: L10-FeNi
+  quantity: formation_path
+  value: electron or ion irradiation also promotes partial A1 -> L1_0 ordering
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/j.jallcom.2024.173619
+    title: Enhancement of hard magnetism and chemical order of synthetic L10-FeNi
+    first_author: Ihor Z. Hlova
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2283203
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: In addition to neutrons, electron [9] and ion [10] bombardments also promote partial A1-FeNi → L10-FeNi ordering.
+  note: ''
+- id: feni_formation_path_hlova2024b
+  phase: L10-FeNi
+  quantity: formation_path
+  value: severe plastic deformation -> disordered tetragonal A6 -> partial L1_0 on annealing
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/j.jallcom.2024.173619
+    title: Enhancement of hard magnetism and chemical order of synthetic L10-FeNi
+    first_author: Ihor Z. Hlova
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2283203
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: Thus, severe plastic deformation of A1-FeNi leads to the formation of a metastable chemically disordered tetragonal A6-FeNi phase that, upon annealing, partially transforms into an ordered L10-FeNi phase [13].
+  note: ''
+- id: feni_formation_path_lee2014
+  phase: L10-FeNi
+  quantity: formation_path
+  value: high-pressure torsion of elemental nanopowders (enhanced diffusion), optionally + annealing
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1080/09500839.2014.955546
+    title: Formation of FeNi withL10-ordered structure using high-pressure torsion
+    first_author: Seungwon Lee
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1080/09500839.2014.955546
+    evidence: abstract
+    locator: abstract
+  quote: Processing of elemental nanopowders by HPT is an effective method for the formation of the L10 phase, which is enhanced by the addition of Co to FeNi or annealing after HPT.
+  note: Phase fraction/order not given in abstract.
+- id: feni_tformation_makino2015
+  phase: L10-FeNi
+  quantity: T_formation
+  value: 673
+  unit: K
+  conditions: 'crystallization of amorphous Fe42Ni41.3Si8B4P4Cu0.7 ribbon, 288 h; product: 30-50 nm grains with α-Fe and Fe3B'
+  source:
+    doi: 10.1038/srep16627
+    title: Artificially produced rare-earth free cosmic magnet
+    first_author: Akihiro Makino
+    year: 2015
+    url: https://www.nature.com/articles/srep16627.pdf
+    evidence: full_text
+    locator: p. 2
+  quote: Figure 1 shows the X-ray diffraction (XRD) pattern of the Fe42Ni41.3Si8B4P4Cu0.7 ribbon crystallized at 400 °C for 288 hours.
+  note: 400 °C = 673 K, above the 320 °C equilibrium ordering temperature (the authors attribute formation to the amorphous precursor).
+- id: feni_formation_time_makino2015
+  phase: L10-FeNi
+  quantity: formation_path
+  value: 'amorphous precursor crystallization: < 300 h instead of geological times'
+  unit: ''
+  conditions: Fe42Ni41.3Si8B4P4Cu0.7 ribbon
+  source:
+    doi: 10.1038/srep16627
+    title: Artificially produced rare-earth free cosmic magnet
+    first_author: Akihiro Makino
+    year: 2015
+    url: https://www.nature.com/articles/srep16627.pdf
+    evidence: full_text
+    locator: abstract
+  quote: Present alloy design shortens the formation time from hundreds of millions of years for natural meteorites to less than 300 hours.
+  note: ''
+- id: feni_formation_path_lewis2023
+  phase: L10-FeNi
+  quantity: formation_path
+  value: field (0.7 T) + tensile stress (6.2 MPa) anneal of cold-rolled FeNi at 285 °C for 48 days -> ≈20 vol% L1_0
+  unit: ''
+  conditions: cold-rolled (85-95% strain) bulk polycrystalline strips
+  source:
+    doi: 10.1002/advs.202302696
+    title: 'Accelerating Nature: Induced Atomic Order in Equiatomic FeNi'
+    first_author: Laura H. Lewis
+    year: 2023
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10870030/fullTextXML
+    evidence: full_text
+    locator: Sec. 5 Experimental
+  quote: A subset of these deformed strips was mounted on the customized furnace sample assembly for thermal treatment in an inert atmosphere under the simultaneous action of applied tensile stress (≈6.2 MPA) and static uniform magnetic field (≈0.7 T at elevated temperature).
+  note: 'Same section: heated above 320 °C, slowly cooled at 0.1 K/min to ≈285 °C and held 48 days. Mössbauer: ≈20 vol.% L10 in field-stress-annealed samples, 0% in precursors.'
+- id: feni_tformation_lewis2023
+  phase: L10-FeNi
+  quantity: T_formation
+  value: 558
+  unit: K
+  conditions: field + stress annealing (FSA), 48 days
+  source:
+    doi: 10.1002/advs.202302696
+    title: 'Accelerating Nature: Induced Atomic Order in Equiatomic FeNi'
+    first_author: Laura H. Lewis
+    year: 2023
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10870030/fullTextXML
+    evidence: full_text
+    locator: Sec. 5 Experimental
+  quote: Specimens were heated above the reported 320 °C order‐disorder temperature of L10 FeNi, held for 5 min, and then slowly cooled to T≈285 °C at a rate of 0.1 K min−1 and held for 48 days prior to furnace cooling to room temperature.
+  note: 285 °C = 558 K.
+- id: feni_formation_path_goto2017
+  phase: L10-FeNi
+  quantity: formation_path
+  value: 'NITE: A1-FeNi --NH3--> Fe2Ni2N --> FeNiN (ordered) --H2 topotactic denitriding--> L1_0 FeNi'
+  unit: ''
+  conditions: powder
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: full_text
+    locator: p. 2
+  quote: Further nitriding of Fe2Ni2N results in the insertion of nitrogen in (0 0 1/2), with the (001) plane occupied by nickel and the (002) plane occupied by iron, to derive FeNiN (Fig. 1d)18. High-S L10-FeNi is derived by the topotactic denitriding of FeNiN because the metallic atom arrangement of FeNiN is identical to that of L10-FeNi (Fig. 1e).
+  note: The Fe/Ni order (and hence the c axis) is set when FeNiN forms during nitriding.
+- id: feninitride_tformation_goto2017
+  phase: FeNiN
+  quantity: T_formation
+  value: 573
+  unit: K
+  conditions: NH3 nitriding of A1-FeNi nanoparticles, 50 h for FeNiN (10 h gives Fe2Ni2N)
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: full_text
+    locator: Methods
+  quote: Nitrided FeNi was then obtained by nitriding the specimen at 300 °C in a large amount of ammonia flowing at 5 L/min. Fe2Ni2N and FeNiN were prepared separately by setting the reaction times to 10 and 50 h, respectively.
+  note: 300 °C = 573 K. FeNiN is antiferromagnetic below T_N ≈ 178 K (Goto 2019), i.e. paramagnetic at 573 K.
+- id: feni_tformation_goto2017
+  phase: L10-FeNi
+  quantity: T_formation
+  value: 523
+  unit: K
+  conditions: NITE topotactic denitriding of FeNiN in flowing H2, 2 h
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: full_text
+    locator: Methods
+  quote: Subsequently, heat treatment was performed at 250 °C in hydrogen gas flowing at 1 L/min for 2 h to denitride the nitrided FeNi.
+  note: 250 °C = 523 K, below Tc of L10-FeNi; but the c axis is inherited from FeNiN, not chosen at this step.
+- id: feninitride_tformation_hlova2024
+  phase: FeNiN
+  quantity: T_formation
+  value: 563-613
+  unit: K
+  conditions: NH3 nitrogenation of ball-milled A1-FeNi, 15-72 h
+  source:
+    doi: 10.1016/j.jallcom.2024.173619
+    title: Enhancement of hard magnetism and chemical order of synthetic L10-FeNi
+    first_author: Ihor Z. Hlova
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2283203
+    evidence: full_text
+    locator: Sec. 2.2
+  quote: Nitrogenation of the mechanochemically-activated A1-FeNi powders, typically in ~100 mg quantities, was performed in a tube furnace under 250 cm3/min flows of ammonia at 290 – 340 °C for 15 – 72 hours.
+  note: 290-340 °C = 563-613 K.
+- id: feni_tformation_hlova2024
+  phase: L10-FeNi
+  quantity: T_formation
+  value: 393-523
+  unit: K
+  conditions: denitrogenation of FeNiN in 1-150 bar H2, 10 min-6 h
+  source:
+    doi: 10.1016/j.jallcom.2024.173619
+    title: Enhancement of hard magnetism and chemical order of synthetic L10-FeNi
+    first_author: Ihor Z. Hlova
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2283203
+    evidence: full_text
+    locator: Sec. 2.2
+  quote: After evacuation and pressurizing the nitrides with 1 – 150 bar H2, the temperature was ramped to 120 – 250 °C, and samples were held at selected constant temperatures for time periods from 10 min to 6 hours.
+  note: 120-250 °C = 393-523 K.
+- id: feninitride_structure_ito2020
+  phase: FeNiN
+  quantity: structure
+  value: antiferromagnetic tetragonal FeNiN; FeN and Ni monoatomic layers alternate along c
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/5.0011875
+    title: Epitaxial L1-FeNi films with high degree of order and large uniaxial magnetic anisotropy fabricated by denitriding FeNiN films
+    first_author: Keita Ito
+    year: 2020
+    url: https://tsukuba.repo.nii.ac.jp/record/2002585/files/APL_116-24-242404.pdf
+    evidence: full_text
+    locator: p. 1
+  quote: On the other hand, we synthesized L10-FeNi powder with an S of 0.71 by extracting nitrogen atoms from antiferromagnetic tetragonal FeNiN powder,17 where FeN and Ni monoatomic layers are alternately stacked in the c-axis direction due to the higher affinity of Fe–N bonds than that of Ni–N bonds,18–22 by the annealing in a H2 gas atmosphere while maintaining the Fe/Ni ordered structure.
+  note: FeNiN lattice parameters / transformation strain relative to A1 not found in accessible text (gap).
+- id: feni_nvariants_neel1964
+  phase: L10-FeNi
+  quantity: n_variants
+  value: 3
+  unit: ''
+  conditions: Fe50Ni50 single crystal ordered by neutron irradiation in a field along [100]
+  source:
+    doi: 10.1063/1.1713516
+    title: Magnetic Properties of an Iron—Nickel Single Crystal Ordered by Neutron Bombardment
+    first_author: L. Néel
+    year: 1964
+    url: https://api.crossref.org/works/10.1063/1.1713516
+    evidence: abstract
+    locator: abstract
+  quote: The x-ray superlattice lines show that after irradiation the sample is made of small ordered crystallites with their tetragonal axes distributed along a [100], [010], or [001] direction.
+  note: 'Cube-on-cube: c along any of the three parent <100>. Crystallite size ~150 Å per Néel''s model (Woodgate 2023).'
+- id: feni_or_poirier2015
+  phase: L10-FeNi
+  quantity: OR
+  value: c axis of L1_0 along one of the three parent fcc <100> (cube-on-cube, 3 orthogonal variants)
+  unit: ''
+  conditions: meteorite NWA 6259, EBSD
+  source:
+    doi: 10.1063/1.4916190
+    title: Intrinsic magnetic properties of L1 FeNi obtained from meteorite NWA 6259
+    first_author: Eric Poirier
+    year: 2015
+    url: https://api.crossref.org/works/10.1063/1.4916190
+    evidence: abstract
+    locator: abstract
+  quote: containing L10 grains oriented along any one of the three equivalent cubic directions of the parent fcc structure. The magnetic structure was modeled as a superposition of the three orthonormal uniaxial variants.
+  note: Quote starts mid-sentence (the omitted opening reports the EBSD texture of the meteorite, an outcome).
+- id: feni_or_bryson2014a
+  phase: L10-FeNi
+  quantity: OR
+  value: '[001] easy axis of each island along one of three <100> of parent taenite'
+  unit: ''
+  conditions: cloudy zone, Tazewell IIICD meteorite
+  source:
+    doi: 10.1016/j.epsl.2013.12.004
+    title: 'Nanomagnetic intergrowths in Fe–Ni meteoritic metal: The potential for time-resolved records of planetesimal dynamo fields'
+    first_author: James F.J. Bryson
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1016/j.epsl.2013.12.004
+    evidence: abstract
+    locator: abstract
+  quote: In the remanent state, each tetrataenite island acts as a uniaxial single domain particle with its [001] magnetic easy axis oriented along one of three 〈100〉 crystallographic directions of the parent taenite phase.
+  note: ''
+- id: feni_nvariants_clarke1980
+  phase: L10-FeNi
+  quantity: n_variants
+  value: 3
+  unit: ''
+  conditions: massive and rim tetrataenite in meteorites (crystals 1-15 μm)
+  source:
+    doi: null
+    title: Tetrataenite—ordered FeNi, a new mineral in meteorites
+    first_author: Roy S. Clarke, Jr.
+    year: 1980
+    url: http://www.minsocam.org/ammin/AM65/AM65_624.pdf
+    evidence: full_text
+    locator: p. 627, Occurrence
+  quote: Three sets of oriented tetrataenite crystals are observed, because ordering in a single crystal of taenite can occur on one of three equivalent sets of (002) planes.
+  note: Quote read from page image.
+- id: feni_twins_clarke1980
+  phase: L10-FeNi
+  quantity: twins
+  value: 'no specific twin plane: variant boundaries coherent in any orientation (distortion minute)'
+  unit: ''
+  conditions: meteoritic tetrataenite
+  source:
+    doi: null
+    title: Tetrataenite—ordered FeNi, a new mineral in meteorites
+    first_author: Roy S. Clarke, Jr.
+    year: 1980
+    url: http://www.minsocam.org/ammin/AM65/AM65_624.pdf
+    evidence: full_text
+    locator: p. 627, Occurrence
+  quote: Since lattice distortions on ordering are so minute, boundaries between tetrataenite crystals will be coherent irrespective of their orientation, and are not as a rule crystallographically oriented themselves.
+  note: Contrast with FePt/CoPt/FePd (large c/a deviation -> {101} polytwins). Quote read from page image.
+- id: feni_nvariants_einsle2018
+  phase: L10-FeNi
+  quantity: n_variants
+  value: 3
+  unit: ''
+  conditions: cloudy zone (Tazewell), scanning precession electron diffraction
+  source:
+    doi: 10.1073/pnas.1809378115
+    title: Nanomagnetic properties of the meteorite cloudy zone
+    first_author: Joshua F. Einsle
+    year: 2018
+    url: http://eprints.gla.ac.uk/205239/1/205239.pdf
+    evidence: full_text
+    locator: p. 4 (author version), crystallographic analysis
+  quote: Cluster analysis identifies three ⟨100⟩tet diffraction patterns, each containing a distinct set of superlattice peaks corresponding to one of the three choices of c-axis orientation for tetrataenite (Fig. 5a-c). The orientation maps for the coarse, medium and fine regions of the cloudy zone (Fig 5d-f) show groups of neighboring islands with a uniform c-axis orientation.
+  note: '''⟨100⟩'' renders as ''h100i'' in the PDF text layer. Same paper: c-axis clusters ~50-500 nm.'
+- id: feni_nvariants_woodgate2023
+  phase: L10-FeNi
+  quantity: n_variants
+  value: 3
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/5.0169752
+    title: 'Revisiting Néel 60 years on: The magnetic anisotropy of L10 FeNi (tetrataenite)'
+    first_author: Christopher D. Woodgate
+    year: 2023
+    url: https://www.osti.gov/servlets/purl/2527271
+    evidence: full_text
+    locator: Sec. III.C
+  quote: (Note that there are three possible directional variants of the L10 structure, with layering perpendicular to x̂, ŷ, or ẑ directions.)
+  note: ''
+- id: feni_field_effect_pauleve1962
+  phase: L10-FeNi
+  quantity: field_effect_on_formation
+  value: field applied during (irradiation) ordering in the ferromagnetic state favours c ∥ field for crystallites with a <100> near the field
+  unit: ''
+  conditions: Fe-Ni (50-50), neutron irradiation below 320 °C in a magnetic field
+  source:
+    doi: 10.1051/jphysrad:019620023010084100
+    title: Une nouvelle transition ordre-désordre dans Fe-Ni (50-50 )
+    first_author: J. Paulevé
+    year: 1962
+    url: https://api.openalex.org/works/doi:10.1051/jphysrad:019620023010084100
+    evidence: abstract
+    locator: abstract (French)
+  quote: Un effet directeur du champ magnétique appliqué, dû aux couplages magnétiques des liaisons avec l'aimantation favorise le développement de l'axe tétragonal dans la direction du champ pour les cristallites dont un axe [100] est voisin de la direction du champ.
+  note: 'Mechanism: Néel pair (bond) directional ordering coupled to the magnetization direction (B1 acting in a ferromagnetic parent).'
+- id: feni_field_effect_hlova2024
+  phase: L10-FeNi
+  quantity: field_effect_on_formation
+  value: 0.25 T along [100] during neutron irradiation of an A1 single crystal at 295 °C
+  unit: ''
+  conditions: historical Néel/Paulevé experiments (literature summary)
+  source:
+    doi: 10.1016/j.jallcom.2024.173619
+    title: Enhancement of hard magnetism and chemical order of synthetic L10-FeNi
+    first_author: Ihor Z. Hlova
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2283203
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: Mimicking the formation of tetrataenite in meteorites, synthetic L10-FeNi was first prepared [6 – 8] by annealing a single crystal of a disordered A1-FeNi at 295 °C during neutron bombardment in the presence of a 2.5 kOe magnetic field applied along the [100] direction.
+  note: 2.5 kOe -> μ0H = 0.25 T. The PDF text layer drops the degree sign ('295 C').
+- id: feni_field_effect_woodgate2023
+  phase: L10-FeNi
+  quantity: field_effect_on_formation
+  value: 0.7
+  unit: MJ/m3
+  conditions: 'first-principles: energy difference between L1_0 layering along vs perpendicular to the magnetization (x), Fe0.5Ni0.5'
+  source:
+    doi: 10.1063/5.0169752
+    title: 'Revisiting Néel 60 years on: The magnetic anisotropy of L10 FeNi (tetrataenite)'
+    first_author: Christopher D. Woodgate
+    year: 2023
+    url: https://www.osti.gov/servlets/purl/2527271
+    evidence: full_text
+    locator: Sec. III.C
+  quote: However, the difference in energy between layering along the x̂ direction and layering along ŷ or ẑ directions is only 0.7 MJ m−3, comparable to our calculated magnetocrystalline anisotropy energy constant K1. This small but detectable difference supports Néel's hypothesis that samples annealed with an applied field parallel to the x̂ direction will produce crystallites with L10 layering along all three crystal axes, but layering along the x̂ direction will be favored over that along the other two directions.
+  note: Computed selection energy density for a magnetized, ordered state; the bias acts on the variant decision through the magnetization direction of the ferromagnetic parent.
+- id: feni_field_effect_bryson2014b
+  phase: L10-FeNi
+  quantity: field_effect_on_formation
+  value: each island picks one of 3 easy axes (6 moment directions) as it forms; proportions set by field intensity/direction; equal without bias
+  unit: ''
+  conditions: meteorite cloudy zone (paleofield ~μT-100 μT range)
+  source:
+    doi: 10.1016/j.epsl.2014.04.016
+    title: Nanopaleomagnetism of meteoritic Fe–Ni studied using X-ray photoemission electron microscopy
+    first_author: James F.J. Bryson
+    year: 2014
+    url: https://zaguan.unizar.es/record/58379/files/texto_completo.pdf
+    evidence: full_text
+    locator: Sec. 1 and Sec. 4
+  quote: Each tetrataenite island can adopt one of six magnetisation directions as it forms, and the proportions of these six directions, averaged over a large enough number of islands, relates to both the intensity and direction of the field experienced by the CZ.
+  note: 'Same paper (Discussion): ''The implication is that the CZ will display all three easy axes with equal probability unless it experiences a field (or other interactions) that biases one direction over the others.'''
+- id: feni_field_effect_einsle2018
+  phase: L10-FeNi
+  quantity: field_effect_on_formation
+  value: c-axis choice at the taenite->tetrataenite transition follows the magnetization direction of the (ferromagnetic) parent island
+  unit: ''
+  conditions: meteorite cloudy zone, ordering at 320 °C below Tc of the taenite islands
+  source:
+    doi: 10.1073/pnas.1809378115
+    title: Nanomagnetic properties of the meteorite cloudy zone
+    first_author: Joshua F. Einsle
+    year: 2018
+    url: http://eprints.gla.ac.uk/205239/1/205239.pdf
+    evidence: full_text
+    locator: pp. 7-8 (author version), Discussion
+  quote: In addition, regions of the cloudy zone containing islands below the single-domain threshold size may have significantly enhanced capacity to retain a memory of a preexisting remanence, since the choice of c-axis orientation during the transition to tetrataenite is likely to be strongly influenced by the direction of uniform magnetization in the parent taenite island.
+  note: 'Also: magnetostatic interactions between islands may raise c-axis alignment in the fine cloudy zone (self-organisation, same paper).'
+- id: feni_field_effect_lewis2023
+  phase: L10-FeNi
+  quantity: field_effect_on_formation
+  value: 0.7 T during FSA anneal judged too small for appreciable Zeeman energy
+  unit: ''
+  conditions: field + stress annealing at 285 °C
+  source:
+    doi: 10.1002/advs.202302696
+    title: 'Accelerating Nature: Induced Atomic Order in Equiatomic FeNi'
+    first_author: Laura H. Lewis
+    year: 2023
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10870030/fullTextXML
+    evidence: full_text
+    locator: Sec. 4 Discussion
+  quote: The magnitude of the magnetic field applied during the thermal treatment step is much too small to produce an appreciable Zeeman energy; therefore, some other factors must be in play.
+  note: Refers to effects on ordering kinetics/thermodynamics, not variant selection.
+- id: feni_stress_effect_lewis2023
+  phase: L10-FeNi
+  quantity: stress_effect_on_formation
+  value: 'hypothesis: stress (and field) during annealing tip equilibria and lower kinetic barriers for ordering; stress may induce a disordered tetragonal A6 intermediate'
+  unit: ''
+  conditions: bulk FeNi
+  source:
+    doi: 10.1002/advs.202302696
+    title: 'Accelerating Nature: Induced Atomic Order in Equiatomic FeNi'
+    first_author: Laura H. Lewis
+    year: 2023
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10870030/fullTextXML
+    evidence: full_text
+    locator: Sec. 2.2
+  quote: 'Accordingly, these data allowed the hypothesis that the A1‐L10 phase transformation in bulk FeNi may be promoted by two consecutive operations: i) applied stress to induce a martensitic (i.e., diffusionless) transformation from the cubic structure to an intermediate, atomically disordered tetragonal structure (A6 Strukturbericht designation) followed by ii) a nucleation/diffusional process to induce atomic order and thereby amplify the magnetocrystalline anisotropy.'
+  note: No data on stress-induced variant selection in FeNi were found.
+- id: feni_single_variant_particles_ito2019
+  phase: L10-FeNi
+  quantity: single_variant_particles
+  value: NITE powders are polycrystalline (no single-variant particles reported)
+  unit: ''
+  conditions: NITE L10-FeNi powder
+  source:
+    doi: 10.3379/msjmag.1907r002
+    title: Fabrication of L10-FeNi films by denitriding FeNiN films
+    first_author: K. Ito
+    year: 2019
+    url: https://www.jstage.jst.go.jp/article/msjmag/43/4/43_1907R002/_pdf
+    evidence: full_text
+    locator: p. 79
+  quote: Recently, however, the synthesis of polycrystalline L10-FeNi powder with large S (0.71) has been achieved by nitrogen topotactic extraction from FeNiN powder. 13)
+  note: 'Same paper: ''However, the evaluation of its Ku value has never been performed because of polycrystalline powder.'''
+- id: feni_single_variant_particles_goto2017
+  phase: L10-FeNi
+  quantity: single_variant_particles
+  value: NITE particles ~90 nm (mode), necked/sintered; Ku not measurable on the powder
+  unit: ''
+  conditions: NITE powder from 30-44 nm thermal-plasma FeNi nanoparticles after H2 pretreatment at 400 °C
+  source:
+    doi: 10.1038/s41598-017-13562-2
+    title: Synthesis of single-phase L10-FeNi magnet powder by nitrogen insertion and topotactic extraction
+    first_author: Sho Goto
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13562-2.pdf
+    evidence: full_text
+    locator: p. 2 and p. 5
+  quote: Growth and necking occurred in these particles because of sintering during pretreatment. The mode diameter after sintering was approximately 90 nm.
+  note: 'Same paper: ''The Ku of L10-FeNi derived by the NITE method could not be estimated quantitatively because of sintering between particles, as shown in Fig. 2c; a single-crystal bulk or film is required to evaluate Ku.'''
+- id: feni_single_variant_particles_bryson2014b
+  phase: L10-FeNi
+  quantity: single_variant_particles
+  value: 'natural: cloudy-zone islands are single-domain, single-variant tetrataenite (~80 nm coarse, ~40 nm intermediate, <20 nm fine)'
+  unit: ''
+  conditions: meteorite cloudy zone (Tazewell)
+  source:
+    doi: 10.1016/j.epsl.2014.04.016
+    title: Nanopaleomagnetism of meteoritic Fe–Ni studied using X-ray photoemission electron microscopy
+    first_author: James F.J. Bryson
+    year: 2014
+    url: https://zaguan.unizar.es/record/58379/files/texto_completo.pdf
+    evidence: full_text
+    locator: Sec. 1 and Sec. 2
+  quote: The CZ consists of conjoined, single domain islands of tetrataenite (FeNi) embedded in a matrix of Fe3 Ni (Leroux et al., 2000; Bryson et al., 2014).
+  note: Island sizes from Sec. 2 of the same paper (coarse ~80 nm, intermediate ~40 nm, fine <20 nm). Islands are embedded in a matrix, not free particles.
+- id: feni_or_nite_ito2019
+  phase: L10-FeNi
+  quantity: OR
+  value: 'topotactic: L1_0 c axis inherited from FeNiN c axis on denitriding (film variants preserved)'
+  unit: ''
+  conditions: 20 nm FeNiN films (two in-plane c variants) on SrTiO3/MgAl2O4/MgO(001), denitrided 300 °C 4 h in H2
+  source:
+    doi: 10.3379/msjmag.1907r002
+    title: Fabrication of L10-FeNi films by denitriding FeNiN films
+    first_author: K. Ito
+    year: 2019
+    url: https://www.jstage.jst.go.jp/article/msjmag/43/4/43_1907R002/_pdf
+    evidence: full_text
+    locator: pp. 80-81
+  quote: 'Therefore, we can say that the epitaxial relationship between the L10-FeNi films and the substrates is maintained after the denitriding process as shown in Fig. 6: L10-FeNi[001](100) || STO, MAO, MgO[100](001) and L10-FeNi[010](100) || STO, MAO, MgO[100](001).'
+  note: 'Before denitriding the same paper gives FeNiN[001](100) || substrate[100](001) and FeNiN[010](100) || substrate[100](001): the two FeNiN c-variants map one-to-one onto the two L1_0 c-variants.'
+- id: feninitride_nvariants_ito2019
+  phase: FeNiN
+  quantity: n_variants
+  value: 2 in-plane c variants in a-axis oriented epitaxial films (3 expected from a cubic parent/substrate in general)
+  unit: ''
+  conditions: MBE FeNiN films on (001) oxide substrates
+  source:
+    doi: 10.3379/msjmag.1907r002
+    title: Fabrication of L10-FeNi films by denitriding FeNiN films
+    first_author: K. Ito
+    year: 2019
+    url: https://www.jstage.jst.go.jp/article/msjmag/43/4/43_1907R002/_pdf
+    evidence: full_text
+    locator: p. 80
+  quote: 'This means that the FeNiN films are epitaxially grown with two variants: the epitaxial relationships are FeNiN[001](100) || STO, MAO, MgO[100](001) and FeNiN[010](100) || STO, MAO, MgO[100](001), as shown schematically in Fig. 3. There are the two variants with the in-plane c-axis of FeNiN intersecting at 90°.'
+  note: The '3 in general' remark is my inference for powders from an A1 parent (not stated by the source).
+- id: feni_formation_path_gros1970
+  phase: L10-FeNi
+  quantity: formation_path
+  value: neutron or electron irradiation in a magnetic field (poly- and single crystals); electron irradiation gives larger ordered domains
+  unit: ''
+  conditions: Fe-Ni 50-50, irradiation in a magnetic field
+  source:
+    doi: 10.1051/jphys:01970003105-6045900
+    title: Etude par effet mössbauer de l'ordre dans un alliage Fe-Ni 50-50 irradié par des neutrons ou des électrons
+    first_author: Y. Gros
+    year: 1970
+    url: https://api.openalex.org/works/doi:10.1051/jphys:01970003105-6045900
+    evidence: abstract
+    locator: abstract (French)
+  quote: Nous avons étudié, par effet Mössbauer, l'alliage Fe-Ni 50-50 sous forme polycristalline et monocristalline, irradié en présence d'un champ magnétique par des neutrons ou des électrons.
+  note: 'Same abstract: ''L''irradiation par des électrons permet d''obtenir des domaines ordonnés de volume plus important''. The paper determines proportions of ordered-domain types (outcome; values not in abstract, full text inaccessible).'
+- id: feni_nvariants_lewis2014
+  phase: L10-FeNi
+  quantity: n_variants
+  value: 3
+  unit: ''
+  conditions: meteoritic tetrataenite NWA 6259 (~Fe55Ni44)
+  source:
+    doi: 10.1088/0953-8984/26/6/064213
+    title: 'Inspired by nature: investigating tetrataenite for permanent magnet applications'
+    first_author: L H Lewis
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/26/6/064213
+    evidence: abstract
+    locator: abstract
+  quote: The tetrataenite microstructure exhibits three mutually orthogonal crystallographic variants of the L10 structure
+  note: Fragment of the sentence (the remainder states an outcome).
+- id: fept_k1_barmak2004
+  phase: L10-FePt
+  quantity: K1
+  value: 6.6
+  unit: MJ/m3
+  conditions: bulk equiatomic L1_0 FePt, literature value quoted (room temperature implied)
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Introduction, p. 2 (citing refs 73-81)
+  quote: The ordered phase in these two alloy systems manifests a large uniaxial magnetocrystalline anisotropy along the c-axis, with reported bulk values of 4.9 × 10^7 erg/cm3 for CoPt and 6.6 × 10^7 erg/cm3 for FePt. [73-81]
+  note: Converted 6.6e7 erg/cm3 = 6.6 MJ/m3. Superscript exponent written as ^ (lost in PDF text layer). SLAC-PUB-10614 preprint (OSTI) of Barmak et al., J. Appl. Phys. 98 (2005).
+- id: fept_easy_axis_barmak2004
+  phase: L10-FePt
+  quantity: easy_axis
+  value: c axis of the L1_0 cell (uniaxial)
+  unit: ''
+  conditions: bulk equiatomic L1_0 FePt
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Introduction, p. 2
+  quote: The ordered phase in these two alloy systems manifests a large uniaxial magnetocrystalline anisotropy along the c-axis, with reported bulk values of 4.9 × 10^7 erg/cm3 for CoPt and 6.6 × 10^7 erg/cm3 for FePt. [73-81]
+  note: Same sentence as fept_k1_barmak2004.
+- id: fept_lattice_barmak2004
+  phase: L10-FePt
+  quantity: lattice
+  value: a=3.853, c=3.713
+  unit: Å
+  conditions: bulk L1_0 FePt (literature, ref [87])
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Results and Discussion, p. 9
+  quote: The lattice parameters and the c/a ratios obtained at the highest substrate temperatures for CoPt and FePt also compare reasonably well with those for bulk samples, namely a = 3.803 Å, c = 3.701 Å, c/a = 0.973 for CoPt and a = 3.853 Å, c = 3.713 Å, c/a = 0.964 for FePt.[87]
+  note: ''
+- id: fept_tetragonality_barmak2004
+  phase: L10-FePt
+  quantity: tetragonality
+  value: 0.964
+  unit: c/a
+  conditions: bulk L1_0 FePt (literature, ref [87])
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Results and Discussion, p. 9
+  quote: The lattice parameters and the c/a ratios obtained at the highest substrate temperatures for CoPt and FePt also compare reasonably well with those for bulk samples, namely a = 3.803 Å, c = 3.701 Å, c/a = 0.973 for CoPt and a = 3.853 Å, c = 3.713 Å, c/a = 0.964 for FePt.[87]
+  note: 'c/a < 1: c contracts relative to the cubic parent. Own arithmetic (not stated by the source), using the essentially disordered epitaxial Fe52Pt48 film of a1fept_lattice_barmak2004 (a = 3.834, c = 3.832 Å) as parent: c about -3.1 %, a about +0.5 % relative to the A1 cell. Same paper, Table I: in films c/a falls from 0.999 (S = 0.03) to 0.958 as S rises to 0.82.'
+- id: fept_t_stab_barmak2004
+  phase: L10-FePt
+  quantity: T_stab
+  value: 1573
+  unit: K
+  conditions: equilibrium L1_0 -> A1 order-disorder temperature, equiatomic FePt (equilibrium, i.e. no time limit)
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Results and Discussion, p. 10 (ref 88)
+  quote: The greater ease of ordering in FePt compared with CoPt is in agreement with other studies of epitaxial and polycrystalline thin films [11, 28, 65], and it is believed to be a reflection of the higher equilibrium order-disorder temperature (1300 vs. 825 °C), and, thus, the larger magnitude of the driving force for ordering in FePt compared with CoPt.[88]
+  note: 1300 °C = 1573 K (converted).
+- id: fept_js_barmak2004
+  phase: L10-FePt
+  quantity: Js
+  value: 1.43
+  unit: T
+  conditions: bulk L1_0 FePt, literature value (temperature not stated in the quote; room temperature implied)
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Results and Discussion, p. 11-12 (ref 81)
+  quote: The saturation magnetization values, MS, in Table III for the CoPt and FePt films studied here can be compared with those reported for bulk CoPt and FePt, namely 800 and 1140 emu/cm3, respectively.[81]
+  note: 'Converted: Js = 4π × 1140 G = 14 330 G = 1.43 T.'
+- id: fept_js_hono2016
+  phase: L10-FePt
+  quantity: Js
+  value: 1.4
+  unit: T
+  conditions: L1_0 FePt (review value)
+  source:
+    doi: 10.1201/b20044-6
+    title: L10–FePt Granular Films for Heat-Assisted Magnetic Recording Media
+    first_author: Kazuhiro Hono
+    year: 2016
+    url: https://mdr.nims.go.jp/filesets/a78cda54-f66c-4452-82ea-d574e7f1242a/download
+    evidence: review
+    locator: Section 1.1, p. 2 (authors' copy)
+  quote: In addition, the magnetic polarization of the L10-FePt phase is µ0Ms~1.4 T, which is large enough to gain sufficient signal to noise ratio with the film thickness of less than 8 nm.
+  note: Book chapter (Varvaro & Casoli eds., Ultrahigh-Density Magnetic Recording, Pan Stanford 2016), authors' copy on NIMS repository.
+- id: fept_k1_hono2016
+  phase: L10-FePt
+  quantity: K1
+  value: 6.6
+  unit: MJ/m3
+  conditions: L1_0 FePt (review value)
+  source:
+    doi: 10.1201/b20044-6
+    title: L10–FePt Granular Films for Heat-Assisted Magnetic Recording Media
+    first_author: Kazuhiro Hono
+    year: 2016
+    url: https://mdr.nims.go.jp/filesets/a78cda54-f66c-4452-82ea-d574e7f1242a/download
+    evidence: review
+    locator: Section 1.1, p. 2 (authors' copy)
+  quote: While Ku of the CoCrPt alloy is ~0.3 MJ/m3, the L10-ordered FePt has an order of magnitude larger magnetocrystalline anisotropy of 6.6 MJ/m3, which makes the minimum size of stable ferromagnetic grains ~ 4 nm for spheres and 2.4 nm for cylinders [4].
+  note: ''
+- id: fept_tc_weller2016
+  phase: L10-FePt
+  quantity: Tc
+  value: 750
+  unit: K
+  conditions: bulk L1_0 FePt
+  source:
+    doi: 10.1116/1.4965980
+    title: 'Review Article: FePt heat assisted magnetic recording media'
+    first_author: Dieter Weller
+    year: 2016
+    url: https://api.openalex.org/works/doi:10.1116/1.4965980
+    evidence: abstract
+    locator: abstract
+  quote: X = Cu ∼ 10 at. % reduces the Curie temperature TC by ∼100 K below TC,bulk = 750 K, thereby lowering the write head heat energy requirement.
+  note: Review article; full text (AIP) refused scripted access.
+- id: fept_tc_kamzin2015
+  phase: L10-FePt
+  quantity: Tc
+  value: 751
+  unit: K
+  conditions: L1_0 Fe50Pt50 films (20 nm), value quoted from ref [1] (Ivanov et al. 1973)
+  source:
+    doi: 10.1134/S1063783415090127
+    title: Control of the magnetization orientation in L10 FePt films by means of annealing in a magnetic field near the Curie temperature
+    first_author: A. S. Kamzin
+    year: 2015
+    url: https://www.mathnet.ru/php/getFT.phtml?jrnid=ftt&paperid=11624&what=fullt&option_lang=eng
+    evidence: full_text
+    locator: Section 3, p. 1732 (Russian original, Fiz. Tverd. Tela 57, 1728)
+  quote: При отжиге в режиме A на температурной зависимости отношения интенсивностей линий I (001)/I (111) наблюдается максимум при температуре 478◦ C, соответствующей Tc для пленок FePt [1].
+  note: 'Translation: in mode A (field annealing) the I(001)/I(111) ratio versus annealing temperature has a maximum at 478 °C, corresponding to Tc of FePt films [1]. 478 °C = 751 K (converted). Read in the Russian original; DOI is that of the English translation (Phys. Solid State 57, 1772).'
+- id: fept_tc_abel2018
+  phase: L10-FePt
+  quantity: Tc
+  value: 740
+  unit: K
+  conditions: chemically synthesized FePt nanoparticles, ordered L1_0 sample
+  source:
+    doi: null
+    title: Curie Temperature Dependence on Chemical Ordering in FePt and CoPt Nanoparticle
+    first_author: Frank Abel
+    year: 2018
+    url: https://meetings-archive.aps.org/mar/2018/g60/113
+    evidence: abstract
+    locator: APS March Meeting 2018, poster abstract G60.113
+  quote: FePt showed an opposite behavior with the Curie temperature increasing from 600 K for a disordered sample to 740 K for an ordered L10 sample.
+  note: Conference abstract (no DOI). Nanoparticles; size effects may lower Tc.
+- id: fept_tc_abel2018t
+  phase: L10-FePt
+  quantity: Tc
+  value: 745
+  unit: K
+  conditions: FePt nanoparticles (~28 nm, irregular) synthesized at 300 C, annealed 700 C 1 h (highly ordered L1_0); thermomagnetic M(T)
+  source:
+    doi: null
+    title: Synthesis and study of L10 magnetic nanostructures (PhD thesis, University of Delaware)
+    first_author: Frank M. Abel
+    year: 2018
+    url: https://udspace.udel.edu/items/1fe5f987-b07d-4315-8fd1-dda7deb76840/full
+    evidence: full_text
+    locator: Section 8.4.2, p. 217
+  quote: The annealed FePt shows two transitions one that overlaps with the as-made fcc, and one that is much higher at 472 C, which is the major transition of the alloy.
+  note: '472 °C = 745 K (converted; degree sign lost in the PDF text layer). Thesis DOI 10.58088/kbwx-zz64 is a DataCite DOI (not on Crossref), hence doi: null.'
+- id: fept_n_variants_tanaka2003
+  phase: L10-FePt
+  quantity: n_variants
+  value: 3
+  unit: ''
+  conditions: bulk Fe-39.5/40 mol% Pt, A1 -> L1_0 ordering
+  source:
+    doi: 10.1063/1.1555675
+    title: Remanence enhancement based on L1 ordering in Fe–Pt permanent magnets
+    first_author: Y. Tanaka
+    year: 2003
+    url: https://nagasaki-u.repo.nii.ac.jp/record/16061/files/JouApplPhy9_3435.pdf
+    evidence: full_text
+    locator: Section III, p. 3437
+  quote: Since the c axis of the FePt ordered phase can take any of the x, y, and z directions of the parent disordered fcc phase, three orientational variants exist for the ordered domain.
+  note: 'Variant geometry: c of each variant along one of the three cube axes of the A1 parent (cube-on-cube).'
+- id: fept_t_formation_barmak2004
+  phase: L10-FePt
+  quantity: T_formation
+  value: 690
+  unit: K
+  conditions: epitaxial Fe52Pt48 film co-sputtered on MgO(001) at the given substrate temperature (ordering during growth); film series spans 144-704 °C
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: full_text
+    locator: Results and Discussion, p. 10; Table I
+  quote: As an illustration, at the deposition temperature of 417 °C, S is found to be 0.39 and 0.68 for CoPt and FePt, respectively.
+  note: '417 °C = 690 K (converted). Order parameter S (not a texture measure). Table I: FePt S = 0.82 at 534-620 °C; CoPt S = 0.88 at 704 °C. Own comparison: 690 K is below Tc(L1_0 FePt) ~750 K, but kinetics in films are aided by surface diffusion during growth.'
+- id: fept_t_formation_hono2016a
+  phase: L10-FePt
+  quantity: T_formation
+  value: '>=913'
+  unit: K
+  conditions: sputtered FePt films, post-deposition annealing (volume diffusion) or deposition on heated substrates
+  source:
+    doi: 10.1201/b20044-6
+    title: L10–FePt Granular Films for Heat-Assisted Magnetic Recording Media
+    first_author: Kazuhiro Hono
+    year: 2016
+    url: https://mdr.nims.go.jp/filesets/a78cda54-f66c-4452-82ea-d574e7f1242a/download
+    evidence: review
+    locator: Section 1.2.1, p. 3 (authors' copy)
+  quote: Although the L10-FePt phase is thermally stable below 1300°C, the FePt films sputter-deposited below 400 °C have the disordered A1 structure because of a kinetic constraint. Since the melting temperature of equiatomic FePt alloy is about 1830 K, the volume diffusion is very sluggish below 917 K (~640 °C). This means that the sputtered A1 film has to be annealed above 640 °C to make them transform to the L10 structure by volume diffusion [11] or must be deposited on heated substrates [12].
+  note: '640 °C = 913 K. Own comparison: above Tc(L1_0) ~750 K and above Tc(A1) ~600 K, i.e. ordering of bulk-like FePt by volume diffusion proceeds in the paramagnetic state.'
+- id: fept_t_formation_hono2016b
+  phase: L10-FePt
+  quantity: T_formation
+  value: '>873 (binary); 673 with Cu addition'
+  unit: K
+  conditions: continuous polycrystalline FePt films; binary vs Cu-alloyed
+  source:
+    doi: 10.1201/b20044-6
+    title: L10–FePt Granular Films for Heat-Assisted Magnetic Recording Media
+    first_author: Kazuhiro Hono
+    year: 2016
+    url: https://mdr.nims.go.jp/filesets/a78cda54-f66c-4452-82ea-d574e7f1242a/download
+    evidence: review
+    locator: Section 1.2.1, p. 3 (authors' copy)
+  quote: By alloying FePt with Cu, the ordering temperature decreases to 400 °C while binary A1 FePt does not order below 600 °C [12].
+  note: 600 °C = 873 K; 400 °C = 673 K. With Cu the forming phase would be below its Tc at T_f (own comparison; Cu also lowers Tc, see fept_tc_weller2016).
+- id: fept_t_formation_weller2016
+  phase: L10-FePt
+  quantity: T_formation
+  value: 923-943
+  unit: K
+  conditions: granular FePtX-Y HAMR media grown on MgO seed layers (growth temperature)
+  source:
+    doi: 10.1116/1.4965980
+    title: 'Review Article: FePt heat assisted magnetic recording media'
+    first_author: Dieter Weller
+    year: 2016
+    url: https://api.openalex.org/works/doi:10.1116/1.4965980
+    evidence: abstract
+    locator: abstract
+  quote: Reasonable average grain diameter ⟨D⟩ = 8–10 nm and distributions σD/D ∼ 18% are possible despite elevated growth temperatures TG = 650–670 °C.
+  note: 650-670 °C = 923-943 K, above Tc(bulk L1_0) = 750 K (own comparison).
+- id: fept_t_formation_tanaka2003
+  phase: L10-FePt
+  quantity: T_formation
+  value: 873
+  unit: K
+  conditions: 'bulk Fe-39.5/40 mol% Pt cast rod: solution treatment 1598 K 2.7 ks, ice-water quench, ageing at 873 K; ~10 nm ordered domains already form during the quench'
+  source:
+    doi: 10.1063/1.1555675
+    title: Remanence enhancement based on L1 ordering in Fe–Pt permanent magnets
+    first_author: Y. Tanaka
+    year: 2003
+    url: https://nagasaki-u.repo.nii.ac.jp/record/16061/files/JouApplPhy9_3435.pdf
+    evidence: full_text
+    locator: Sections II and III, pp. 3435-3437
+  quote: After vacuum sealing the silica tube, the sample alloy underwent solution treatment at 1598 K for 2.7 ks, and was quenched in ice water. The sample was subsequently subjected to heat treatment at 873 K. ... In the as-quenched sample, ordered domains almost 10 nm in size were produced in the entire area during quenching after the solution heat treatment.
+  note: 'Two sentences from different paragraphs joined by ''...''. Own comparison: both the quench-ordering (from 1598 K) and the 873 K ageing occur above Tc(L1_0) ~750 K, i.e. paramagnetic ordering in bulk FePt.'
+- id: fept_t_formation_yamamoto2005
+  phase: L10-FePt
+  quantity: T_formation
+  value: 1173
+  unit: K
+  conditions: chemically synthesized fcc FePt nanoparticles inside a thick SiO2 shell ('SiO2-nanoreactor'), annealed 900 °C (1 h, H2/Ar per the 2006 paper)
+  source:
+    doi: 10.1063/1.1995959
+    title: Magnetically superior and easy to handle L1-FePt nanocrystals
+    first_author: Shinpei Yamamoto
+    year: 2005
+    url: https://arxiv.org/pdf/cond-mat/0505006
+    evidence: full_text
+    locator: abstract (arXiv cond-mat/0505006)
+  quote: Thanks to a thick SiO2-coating, the thermal treatment needed to form the L10 structure can be done even at 900 oC without inducing coalescence and coarsening.
+  note: 900 °C = 1173 K ('oC' is the arXiv rendering of °C; the published APL abstract reads 'SiO2 coating ... 900°C').
+- id: fept_field_effect_on_formation_wang2004
+  phase: L10-FePt
+  quantity: field_effect_on_formation
+  value: 4 T field during post-deposition annealing enhances ordering rate; ordering starts at or below 723 K
+  unit: ''
+  conditions: sputtered FePt films, post-deposition annealing in 40 kOe
+  source:
+    doi: 10.1063/1.1794380
+    title: Enhancement in ordering of FePt films by magnetic field annealing
+    first_author: H. Y. Wang
+    year: 2004
+    url: https://api.crossref.org/works/10.1063/1.1794380
+    evidence: abstract
+    locator: abstract
+  quote: It is found that the ordering rate in FePt films is enhanced by applying a magnetic field during postdeposition annealing. Measurements of the structure and magnetic properties of FePt films reveal that the disorder–order transformation starts at or below 450°C when the film is annealed in a magnetic field of 40kOe.
+  note: '450 °C = 723 K; 40 kOe = 4 T. Own comparison: 723 K is just below Tc(bulk L1_0) = 750 K and above Tc of disordered FePt (~600 K, nanoparticle value in a1fept_tc_abel2018). Abstract reports kinetics only; no variant/texture data.'
+- id: fept_field_effect_on_formation_kura2008
+  phase: L10-FePt
+  quantity: field_effect_on_formation
+  value: ordering at 750 K in a field produced an ordered phase with anisotropy along the field (not particle rotation)
+  unit: ''
+  conditions: chemically synthesized FePt (and FePtAu, FePtCu) nanoparticles, heat treatment 750 K, 4 h, in a magnetic field (strength not given in abstract); ordering accompanied by coalescence
+  source:
+    doi: 10.1143/JJAP.47.3466
+    title: Effect of Coalescence on Ordering and c-Axis Orientation of FePt, FePtAu, and FePtCu Nanoparticles Heat-Treated in Magnetic Field
+    first_author: Hiroaki Kura
+    year: 2008
+    url: https://api.openalex.org/works/doi:10.1143/JJAP.47.3466
+    evidence: abstract
+    locator: abstract
+  quote: FePt, FePtAu, and FePtCu, synthesized by a chemical method, showed an ordering accompanied by the coalescence of nanoparticles during heat treatment at 750 K for 4 h. FePt/SiO 2 core/shell nanoparticles that did not coalesce did not show ordering. Only in FePt nanoparticles the heat treated in magnetic field, was the difference in switching field distribution observed to depend on the direction of the applied field. Magnetic measurement showed that this difference was caused by the induced ordered phase with high magnetic anisotropy along the direction of the magnetic field rather than the rotation of the magnetic easy axis.
+  note: 'Own comparison: T_f = 750 K equals Tc(bulk L1_0 FePt) = 750 K, i.e. ordering at the Curie point. Qualitative evidence of field-biased variant formation; no fraction given in abstract. IOP full text refused scripted access.'
+- id: fept_field_effect_on_formation_kamzin2015
+  phase: L10-FePt
+  quantity: field_effect_on_formation
+  value: re-annealing pre-ordered films 1 h in ~0.35 T normal to film is effective only near Tc (751 K)
+  unit: ''
+  conditions: Fe(2 nm)/Fe50Pt50(20 nm)/Pt(2 nm) on Si, first 700 °C 30 min without field (L1_0 formed), then 430-600 °C 1 h in ~3500 Oe perpendicular to film (mode A) or without field (mode B), field-cooled
+  source:
+    doi: 10.1134/S1063783415090127
+    title: Control of the magnetization orientation in L10 FePt films by means of annealing in a magnetic field near the Curie temperature
+    first_author: A. S. Kamzin
+    year: 2015
+    url: https://www.mathnet.ru/eng/ftt11624
+    evidence: full_text
+    locator: English abstract on mathnet.ru; Russian full text Sections 2-3
+  quote: When the annealing temperature is close to the Curie temperature T_C for FePt films, the thermal perturbation is comparable in magnitude to the magnetization exchange energy; consequently, the external magnetic field of ∼ 3500 Oe, which is applied perpendicular to the film surface, effectively contributes to the formation of the L1_0 structure.
+  note: 'LaTeX markup of the mathnet abstract simplified (T_C, L1_0, ∼). Authors'' mechanism argument (Section 3): Zeeman energy per Fe atom in 3500 Oe ~7e-24 J vs kT ~1e-20 J away from Tc. Note the L1_0 phase was first formed at 973 K without field; the field step is a re-anneal near Tc. Results in sealed outcomes.'
+- id: fept_field_effect_on_formation_li2010
+  phase: L10-FePt
+  quantity: field_effect_on_formation
+  value: field annealing near Tc of L1_0 FePt, field along film normal
+  unit: ''
+  conditions: FePt 20 nm films annealed in a magnetic field along the film normal at a temperature around Tc of L1_0 FePt (same Lanzhou group as Kamzin 2015)
+  source:
+    doi: 10.1016/j.jmmm.2010.07.047
+    title: Effect of magnetic field annealing on microstructure and magnetic properties of FePt films
+    first_author: Y.B. Li
+    year: 2010
+    url: https://experts.umn.edu/en/publications/effect-of-magnetic-field-annealing-on-microstructure-and-magnetic/
+    evidence: abstract
+    locator: abstract
+  quote: FePt (20 nm) films were annealed in a magnetic field (along the normal direction of the films) at a temperature around the Curie temperature of L1 0 FePt. The influence of magnetic filed annealing on texture and magnetic properties of FePt films were investigated.
+  note: Abstract reports a qualitative (001) texture/perpendicular anisotropy result; no numbers. A related paper (Liu et al., Appl. Surf. Sci. 258 (2012) 5770, doi 10.1016/j.apsusc.2012.02.090) could not be accessed (no abstract available to scripts).
+- id: fept_field_effect_on_formation_wu2021
+  phase: L10-FePt
+  quantity: field_effect_on_formation
+  value: 12 T at 973 K promoted L1_0 formation (ordering degree, L1_0 content), no texture reported
+  unit: ''
+  conditions: concave-cube FePt nanoparticles in NaCl matrix, 700 °C 1 h in vacuum in 0, 6, 12 T; particles became Fe-rich (~Fe72Pt28) and mostly L1_2 Fe3Pt
+  source:
+    doi: 10.1039/d1ra00072a
+    title: Effects of high magnetic field annealing on FePt nanoparticles with shape-anisotropy and element-distribution-anisotropy
+    first_author: Chun Wu
+    year: 2021
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8695698/
+    evidence: full_text
+    locator: Experimental method; Conclusions
+  quote: The as-synthesized FePt NPs were annealed at 700 °C for 1 h in vacuum, which was placed inside a 12 T super-conducting magnet. ... The ordering degree, content, and the coercivity of L10-FePt NPs increased with enhancing the HMF strength, which suggests that the nucleation of L10-phase and ordering diffusion of Fe/Pt atoms were promoted by the HMF.
+  note: 'Sentences from Experimental and Conclusions joined by ''...''. Own comparison: 973 K is far above Tc(L1_0) ~750 K (paramagnetic forming phase); the field acted on phase selection/kinetics, not on variant orientation (not measured).'
+- id: fept_single_variant_particles_yamamoto2006
+  phase: L10-FePt
+  quantity: single_variant_particles
+  value: 'yes: single-crystalline L1_0 FePt nanoparticles, 6.5 nm, Fe55Pt45, dispersible in nonpolar solvents (SiO2-nanoreactor, 1173 K 1 h, shell removed)'
+  unit: ''
+  conditions: chemically synthesized fcc FePt, SiO2-coated, annealed 900 °C 1 h in H2(5%)/Ar, SiO2 dissolved, extracted to chloroform
+  source:
+    doi: 10.1021/cm0616634
+    title: Preparation of Monodisperse and Highly Coercive L10-FePt Nanoparticles Dispersible in Nonpolar Organic Solvents
+    first_author: Shinpei Yamamoto
+    year: 2006
+    url: https://arxiv.org/pdf/cond-mat/0607070
+    evidence: full_text
+    locator: Results and Discussions (Fig. 3); Experimental
+  quote: The high-resolution TEM (HRTEM) image in Fig. 3 clearly shows that the L10-FePt nanoparticles are single crystalline with the (110)-superlattice contrast clearly seen up to the surface end.
+  note: Read in the arXiv preprint (cond-mat/0607070) of Chem. Mater. 18, 5385 (2006). Single crystallinity shown for imaged particles; no statistics on twinned/multi-variant particles.
+- id: fept_single_variant_particles_elkins2005
+  phase: L10-FePt
+  quantity: single_variant_particles
+  value: monodisperse fct (L1_0) particles recovered after salt-matrix annealing at 973 K; single-crystallinity not stated in abstract
+  unit: ''
+  conditions: chemically synthesized fcc FePt nanoparticles mixed with salt powder, annealed 700 °C, salt washed out
+  source:
+    doi: 10.1088/0022-3727/38/14/003
+    title: Monodisperse face-centred tetragonal FePt nanoparticles with giant coercivity
+    first_author: Kevin Elkins
+    year: 2005
+    url: https://api.openalex.org/works/doi:10.1088/0022-3727/38/14/003
+    evidence: abstract
+    locator: abstract
+  quote: The as-synthesized face-centred cubic FePt nanoparticles were mixed with salt powders and annealed at 700 °C. The salts were then removed from the particles by washing the samples in water. Monodisperse fct FePt particles were recovered with the particle size and shape being retained.
+  note: 'Degree sign restored: the OpenAlex abstract text reads ''700uC'' (encoding loss). IOP full text refused scripted access.'
+- id: fept_single_variant_particles_kim2009
+  phase: L10-FePt
+  quantity: single_variant_particles
+  value: dispersible ferromagnetic L1_0 FePt nanoparticles via annealing of FePt/MgO core/shell particles and MgO removal
+  unit: ''
+  conditions: FePt/MgO core/shell nanoparticles, thermal annealing, MgO removed with hexadecanethiol and oleic acid
+  source:
+    doi: 10.1002/adma.200801620
+    title: Dispersible Ferromagnetic FePt Nanoparticles
+    first_author: Jaemin Kim
+    year: 2009
+    url: https://api.openalex.org/works/doi:10.1002/adma.200801620
+    evidence: abstract
+    locator: abstract
+  quote: A simple method to produce ferromagnetic FePt nanoparticle dispersions by thermal annealing of core/shell-structured FePt/MgO nanoparticles and removal of MgO in the presence of hexadecanethiol and oleic acid is reported.
+  note: Particle crystallinity/variant state not stated in abstract.
+- id: fept_other_harrell2005
+  phase: L10-FePt
+  quantity: other
+  value: free-body alignment of L1_0 FePt nanoparticles in a field is governed by KV/kT
+  unit: ''
+  conditions: chemically synthesized L1_0 FePt nanoparticles aligned in a field in a fluid/binder; analytical and computational model vs experiment
+  source:
+    doi: 10.1063/1.2132539
+    title: Model for the easy-axis alignment of chemically synthesized L1 FePt nanoparticles
+    first_author: J. W. Harrell
+    year: 2005
+    url: https://api.openalex.org/works/doi:10.1063/1.2132539
+    evidence: abstract
+    locator: abstract
+  quote: It is found that the degree of orientation depends on the parameter KV∕kT, with K the anisotropy constant and V the nanoparticle volume, which governs the coupling of the easy axis to the magnetic moment.
+  note: 'Mechanism input for route FP (free-body rotation R): the easy axis follows the moment only if KV >> kT. The model fit needed a reduced K, ascribed to aggregation.'
+- id: a1fept_tc_abel2018
+  phase: A1-FePt
+  quantity: Tc
+  value: 600
+  unit: K
+  conditions: chemically synthesized FePt nanoparticles, disordered (fcc) sample
+  source:
+    doi: null
+    title: Curie Temperature Dependence on Chemical Ordering in FePt and CoPt Nanoparticle
+    first_author: Frank Abel
+    year: 2018
+    url: https://meetings-archive.aps.org/mar/2018/g60/113
+    evidence: abstract
+    locator: APS March Meeting 2018, poster abstract G60.113
+  quote: FePt showed an opposite behavior with the Curie temperature increasing from 600 K for a disordered sample to 740 K for an ordered L10 sample.
+  note: No bulk A1-FePt Tc with a fetchable quote was found; this is a nanoparticle value.
+- id: a1fept_tc_abel2018t
+  phase: A1-FePt
+  quantity: Tc
+  value: 576
+  unit: K
+  conditions: as-made FePt nanoparticles (~28 nm), mostly disordered fcc (small L1_0 fraction possible); thermomagnetic M(T)
+  source:
+    doi: null
+    title: Synthesis and study of L10 magnetic nanostructures (PhD thesis, University of Delaware)
+    first_author: Frank M. Abel
+    year: 2018
+    url: https://udspace.udel.edu/items/1fe5f987-b07d-4315-8fd1-dda7deb76840/full
+    evidence: full_text
+    locator: Section 8.4.2, p. 217
+  quote: Similarly, in the case of FePt the as-made has a clear Curie temperature at 303 C, which is believed to be related to the majority fcc FePt in the XRD data.
+  note: 303 °C = 576 K (converted; degree sign lost in the PDF text layer). Thesis DOI 10.58088/kbwx-zz64 (DataCite).
+- id: a1fept_lattice_barmak2004
+  phase: A1-FePt
+  quantity: lattice
+  value: a=3.834, c=3.832
+  unit: Å
+  conditions: Fe52Pt48 epitaxial film (42 nm) on MgO(001), deposited at 144 °C, order parameter S = 0.03 ± 0.03 (essentially A1); possibly strained by the substrate
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: full_text
+    locator: Table I, Fe52Pt48 row Ts = 144 °C
+  quote: 'Table I ... Fe52Pt48 (42 nm) /No seed: Ts (oC) 144, a 3.834, c 3.832, c/a 0.999, FWHM (002) 1.667, Smax 0.96, S 0.03 ± 0.03'
+  note: 'Table row transcribed from the PDF table (column headers: Ts (oC), a, c, c/a, FWHM (001)/(002)/(003), Smax, S). No bulk A1 lattice parameter with fetchable quote was found.'
+- id: copt_k1_barmak2004
+  phase: L10-CoPt
+  quantity: K1
+  value: 4.9
+  unit: MJ/m3
+  conditions: bulk equiatomic L1_0 CoPt, literature value quoted
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Introduction, p. 2 (citing refs 73-81)
+  quote: The ordered phase in these two alloy systems manifests a large uniaxial magnetocrystalline anisotropy along the c-axis, with reported bulk values of 4.9 × 10^7 erg/cm3 for CoPt and 6.6 × 10^7 erg/cm3 for FePt. [73-81]
+  note: Converted 4.9e7 erg/cm3 = 4.9 MJ/m3. Superscript exponent written as ^.
+- id: copt_easy_axis_barmak2004
+  phase: L10-CoPt
+  quantity: easy_axis
+  value: c axis of the L1_0 cell (uniaxial)
+  unit: ''
+  conditions: bulk equiatomic L1_0 CoPt
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Introduction, p. 2
+  quote: The ordered phase in these two alloy systems manifests a large uniaxial magnetocrystalline anisotropy along the c-axis, with reported bulk values of 4.9 × 10^7 erg/cm3 for CoPt and 6.6 × 10^7 erg/cm3 for FePt. [73-81]
+  note: ''
+- id: copt_lattice_barmak2004
+  phase: L10-CoPt
+  quantity: lattice
+  value: a=3.803, c=3.701
+  unit: Å
+  conditions: bulk L1_0 CoPt (literature, ref [87])
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Results and Discussion, p. 9
+  quote: The lattice parameters and the c/a ratios obtained at the highest substrate temperatures for CoPt and FePt also compare reasonably well with those for bulk samples, namely a = 3.803 Å, c = 3.701 Å, c/a = 0.973 for CoPt and a = 3.853 Å, c = 3.713 Å, c/a = 0.964 for FePt.[87]
+  note: ''
+- id: copt_tetragonality_barmak2004
+  phase: L10-CoPt
+  quantity: tetragonality
+  value: 0.973
+  unit: c/a
+  conditions: bulk L1_0 CoPt (literature, ref [87])
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Results and Discussion, p. 9
+  quote: The lattice parameters and the c/a ratios obtained at the highest substrate temperatures for CoPt and FePt also compare reasonably well with those for bulk samples, namely a = 3.803 Å, c = 3.701 Å, c/a = 0.973 for CoPt and a = 3.853 Å, c = 3.713 Å, c/a = 0.964 for FePt.[87]
+  note: 'c/a < 1 (c contracts). Own arithmetic, using the essentially disordered epitaxial Co52Pt48 film of a1copt_lattice_barmak2004 (a = 3.770, c = 3.766 Å) as parent: c about -1.8 %, a about +0.9 %.'
+- id: copt_t_stab_barmak2004
+  phase: L10-CoPt
+  quantity: T_stab
+  value: 1098
+  unit: K
+  conditions: equilibrium L1_0 -> A1 order-disorder temperature, equiatomic CoPt
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Results and Discussion, p. 10 (ref 88)
+  quote: The greater ease of ordering in FePt compared with CoPt is in agreement with other studies of epitaxial and polycrystalline thin films [11, 28, 65], and it is believed to be a reflection of the higher equilibrium order-disorder temperature (1300 vs. 825 °C), and, thus, the larger magnitude of the driving force for ordering in FePt compared with CoPt.[88]
+  note: 825 °C = 1098 K (converted).
+- id: copt_t_stab_farjami2009
+  phase: L10-CoPt
+  quantity: T_stab
+  value: 1095
+  unit: K
+  conditions: Co-50Pt (at%) single crystal, electrical resistivity on heating (1 K/min); disorder->order on cooling at 1045 K
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Section 3.1, pp. 1611-1612
+  quote: In the case of the Co–50Pt alloy, T(o–d) is 1 095 K, being consistent with 1 100 K reported by Leroux et al.,13) and T(d–o) is 1 045 K.
+  note: Superscripts (o–d), (d–o) written inline.
+- id: copt_js_barmak2004
+  phase: L10-CoPt
+  quantity: Js
+  value: 1.01
+  unit: T
+  conditions: bulk L1_0 CoPt, literature value (temperature not stated; room temperature implied)
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: review
+    locator: Results and Discussion, p. 11-12 (ref 81)
+  quote: The saturation magnetization values, MS, in Table III for the CoPt and FePt films studied here can be compared with those reported for bulk CoPt and FePt, namely 800 and 1140 emu/cm3, respectively.[81]
+  note: 'Converted: Js = 4π × 800 G = 10 050 G = 1.01 T.'
+- id: copt_tc_farjami2009
+  phase: L10-CoPt
+  quantity: Tc
+  value: 730
+  unit: K
+  conditions: Co-50Pt single crystal ordered 1023 K 3 h; slope change of resistivity on heating at 1 K/min (same on cooling)
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Section 3.1, p. 1611
+  quote: In the case of the Co–50Pt alloy, the slope changes at 730 K, and in the case of the Fe–55Pd alloy, the slope changes at 670 K. These temperatures should be the Curie temperature of the ordered phase, Tc(o). The same Curie temperature was obtained in the cooling process (solid marks in Fig. 2) after heating up to 1 200 K. By comparing Tc(o) with Tc(d), we notice that Tc(o) is lower than Tc(d) for both the Co–50Pt and Fe–55Pd alloys, and the difference is larger in the Co–50Pt alloy.
+  note: Superscript (o)/(d) written inline. Literature tables often quote ~840 K for L1_0 CoPt (see copt_tc_shamis2018).
+- id: copt_tc_shamis2018
+  phase: L10-CoPt
+  quantity: Tc
+  value: 843
+  unit: K
+  conditions: L1_0 CoPt, table value reproduced from Weller & Moser, IEEE Trans. Magn. 35, 4423 (1999)
+  source:
+    doi: 10.15407/ufm.19.03.337
+    title: Materials Science Aspects of FePt-Based Thin Films’ Formation
+    first_author: O. V. Shamis
+    year: 2018
+    url: https://ufm.imp.kiev.ua/article/v19/i03/Usp.Fiz.Met.19.337.pdf
+    evidence: review
+    locator: Table 1, p. 338
+  quote: Table 1. Physical properties of different materials with a high magnetic anisotropy [1] ... L10 FePd 1.8 1100 33 490 5.0; FePt 6.6–10 1140 116 480 3.3–2.8; CoPt 4.9 800 123 570 3.6
+  note: 'Table rows transcribed; columns: Ku (10^7 erg/cm3), Ms (emu/cm3), Hc (kOe), Tc (°C), Dp (nm). CoPt Tc 570 °C = 843 K. Disagrees with the 730 K resistivity value of copt_tc_farjami2009 (bulk single crystal) and 727-791 K nanoparticle values.'
+- id: copt_tc_abel2018
+  phase: L10-CoPt
+  quantity: Tc
+  value: 727
+  unit: K
+  conditions: chemically synthesized CoPt nanoparticles, ordered L1_0 sample
+  source:
+    doi: null
+    title: Curie Temperature Dependence on Chemical Ordering in FePt and CoPt Nanoparticle
+    first_author: Frank Abel
+    year: 2018
+    url: https://meetings-archive.aps.org/mar/2018/g60/113
+    evidence: abstract
+    locator: APS March Meeting 2018, poster abstract G60.113
+  quote: CoPt nanoparticles show a linear relationship between the chemical ordering and Curie temperature, going from 948 K in a disordered sample to 727 K in an ordered L10 sample.
+  note: Conference abstract (no DOI).
+- id: copt_tc_abel2018t
+  phase: L10-CoPt
+  quantity: Tc
+  value: 791
+  unit: K
+  conditions: CoPt nanoparticles (~25 nm) synthesized at 300 C, annealed 700 C 4 h (ordered L1_0); thermomagnetic M(T)
+  source:
+    doi: null
+    title: Synthesis and study of L10 magnetic nanostructures (PhD thesis, University of Delaware)
+    first_author: Frank M. Abel
+    year: 2018
+    url: https://udspace.udel.edu/items/1fe5f987-b07d-4315-8fd1-dda7deb76840/full
+    evidence: full_text
+    locator: Section 8.4.2, p. 217
+  quote: However, there is clearly a high temperature transition that occurs at approximately 647 C, which is assumed to be related to a mostly disordered structure. In the annealed case a clear Curie temperature is at approximately 518 C.
+  note: 518 °C = 791 K (converted; degree sign lost in the PDF text layer). The thesis also uses 'bulk Curie temperatures of 507 C, and 476 C for CoPt and FePt' as simulation inputs (Section 8.4.4).
+- id: copt_n_variants_farjami2009
+  phase: L10-CoPt
+  quantity: n_variants
+  value: 3
+  unit: ''
+  conditions: Co-50Pt single crystal, A1 -> L1_0; variants labelled by c axis along X, Y, Z = the three <100>A1
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Section 2, pp. 1610-1611
+  quote: In the ordering process, a magnetic field was applied along one of the three equivalent ⟨100⟩A1 directions. We call this direction as Z-direction and remaining two ⟨100⟩A1 directions as X- and Y-directions. We term the variant whose easy axis (c-axis) lies in the X-, Y-, and Z-directions as X-, Y-, Z-variants, respectively, and these fractions as fx, fy, and fz.
+  note: Angle brackets checked on the rendered page (lost in the text layer).
+- id: copt_t_formation_barmak2004
+  phase: L10-CoPt
+  quantity: T_formation
+  value: 690
+  unit: K
+  conditions: epitaxial Co52Pt48 film co-sputtered on MgO(001)/Pt seed (ordering during growth); film series spans 276-704 °C
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: full_text
+    locator: Results and Discussion, p. 10; Table I
+  quote: As an illustration, at the deposition temperature of 417 °C, S is found to be 0.39 and 0.68 for CoPt and FePt, respectively.
+  note: '417 °C = 690 K. CoPt orders more slowly than FePt at the same temperature (Table I: S = 0.88 only at 704 °C = 977 K).'
+- id: copt_t_formation_farjami2009
+  phase: L10-CoPt
+  quantity: T_formation
+  value: 1023
+  unit: K
+  conditions: bulk Co-50Pt single crystal quenched from 1273 K; isothermal ordering monitored by resistivity at 773-1023 K
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Section 3.1, p. 1611
+  quote: In the case of the Co–50Pt alloy, the resistivity saturates within 3 h by the heat-treatment at 1 023 K, while not within 200 h by the heat-treatment at 973 K, 873 K, and 773 K. These results imply that the ordering process is the fastest at 1 023 K and slowest at 773 K in the examined temperature range.
+  note: 'Own comparison: 1023 K is above both Tc(o) = 730 K and Tc(d) = 850 K (paramagnetic ordering); the field-assisted nucleation step at 773 K is slow.'
+- id: copt_t_formation_cui2010a
+  phase: L10-CoPt
+  quantity: T_formation
+  value: 873
+  unit: K
+  conditions: bulk 50/50 CoPt, homogenized 1000 °C 3 h, cooled 120-150 °C/min to 600 °C, held 10 h, oil quench (patent process)
+  source:
+    doi: null
+    title: Method of producing cobalt-platinum magnetic alloys with improved magnetic properties (US 7,819,988 B2)
+    first_author: Baozhi Cui
+    year: 2010
+    url: https://patents.google.com/patent/US7819988
+    evidence: full_text
+    locator: Detailed description
+  quote: The sample is then allowed to cool at a cooling rate of 120-150° C. per minute to 600° C. The sample is then held at 600° C. for 10 hours to promote isothermal ordering. During this part of the process, the CoPt alloy undergoes a phase transformation from the chemically disordered face-centered-cubic structure to a chemically ordered face-centered-tetragonal structure.
+  note: US patent, granted 2010-10-26 (Florida State University); not peer reviewed. 600 °C = 873 K.
+- id: copt_t_formation_cui2010b
+  phase: L10-CoPt
+  quantity: T_formation
+  value: 773-973
+  unit: K
+  conditions: 'conventional Pt-Co magnet processing described as prior art: 900-1000 °C 3 h, cooled, aged 500-700 °C for 5-20 h (or 660 °C salt bath 1.5 h)'
+  source:
+    doi: null
+    title: Method of producing cobalt-platinum magnetic alloys with improved magnetic properties (US 7,819,988 B2)
+    first_author: Baozhi Cui
+    year: 2010
+    url: https://patents.google.com/patent/US7819988
+    evidence: review
+    locator: Description of the related art
+  quote: In the second method, the CoPt alloy is heated at 900-1000 degrees C. for 3 hours in a protective atmosphere. The alloy is then cooled to room temperature. After being cooled to room temperature, the alloy is “aged” at a temperature of 500-700 degrees C. for 5-20 hours.
+  note: 500-700 °C = 773-973 K. Prior-art description in a patent (secondary).
+- id: copt_field_effect_on_formation_farjami2009
+  phase: L10-CoPt
+  quantity: field_effect_on_formation
+  value: field applied during the nucleation stage at 773 K (below Tc(d) = 850 K, above Tc(o) = 730 K) along [001]A1, then zero-field ordering at 1023 K; favours the variant with c parallel to the field
+  unit: ''
+  conditions: Co-50Pt single crystal cube (1.6 mm), first step 773 K 0.5 h under H1 (0-10 T) along Z = <100>A1, heating/cooling 5 K/min under H1; second step 1023 K 3 h, no field
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Section 3.2, p. 1612; Discussion p. 1613
+  quote: Considering the results of Fig. 1 and the Curie temperatures, we determined the ordering temperature under magnetic field for the selected formation of variants. Expecting that the magnetic field is especially effective at the nucleation stage of ordering, we employed a two-step ordering heat-treatment. The first step is made below Tc(d), where the progress of ordering is slow, under a magnetic field, H1. The second step is made near T(d–o), where the progress of ordering is fast, to complete ordering.
+  note: 'Mechanism proposed by the authors (Discussion): field lowers the nucleation barrier of the Z variant; selected nuclei then grow by elastic interaction. Own comparison of temperatures: T_f(step 1) = 773 K < Tc(A1) = 850 K but > Tc(L1_0) = 730 K. Measured variant fractions are in the sealed outcomes.'
+- id: copt_other_farjami2009
+  phase: L10-CoPt
+  quantity: other
+  value: 0.0041
+  unit: MJ/m3
+  conditions: magnetic anisotropy energy (c vs a axis) of single-variant ordered Co-50Pt measured at 773 K (the first-step temperature) at 1 T; Fe-55Pd at 673 K for comparison
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Discussion and Fig. 7, p. 1614
+  quote: From the difference in magnetization curves between the c- and a-axes, the induced magnetic anisotropy energy at 1 T is obtained to be 4.1 kJ/m3 for the Co–50Pt alloy at 773 K and 45.3 kJ/m3 for the Fe–55Pd alloy at 673 K.
+  note: Bias energy density available to a field at the formation temperature (4.1 kJ/m3 = 0.0041 MJ/m3). The authors note this ordering (CoPt lower than FePd) contradicts the lower critical field of CoPt, so anisotropy alone does not explain the selection.
+- id: copt_field_effect_on_formation_yasui2006
+  phase: L10-CoPt
+  quantity: field_effect_on_formation
+  value: first ordering stage at 773 K for 0.5 h in up to 10 T along [001]A1, then 1023 K 3 h in zero field
+  unit: ''
+  conditions: single crystals of disordered A1 CoPt
+  source:
+    doi: 10.1088/1742-6596/51/1/072
+    title: Formation of single variant CoPt by ordering treatment under magnetic field
+    first_author: M Yasui
+    year: 2006
+    url: https://api.openalex.org/works/doi:10.1088/1742-6596/51/1/072
+    evidence: abstract
+    locator: abstract
+  quote: Single crystals of disordered (A1-type) CoPt were heat-treated at 773 K for 0.5 h under various magnetic fields up to 10 T applied along the [001]A1direction, and then annealed at 1023 K for 3 h under zero magnetic field.
+  note: Same group and protocol as Farjami 2009 (conference version). IOP full text refused scripted access.
+- id: a1copt_tc_farjami2009
+  phase: A1-CoPt
+  quantity: Tc
+  value: 850
+  unit: K
+  conditions: Co-50Pt single crystal quenched to the disordered state; bending of resistivity on fast heating (100 K/min)
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Section 3.1, p. 1611
+  quote: In the case of the Co–50Pt alloy (a), the resistivity heating curve exhibits a bending as indicated by an arrow at about 850 K. We can interpret this temperature as the Curie temperature of the disordered phase, Tc(d), considering the same bending appears at Curie temperature of iron and nickel alloys.11,12)
+  note: Authors also note that ordering of Co-50Pt cannot be avoided during 100 K/min heating above ~1000 K.
+- id: a1copt_tc_abel2018
+  phase: A1-CoPt
+  quantity: Tc
+  value: 948
+  unit: K
+  conditions: chemically synthesized CoPt nanoparticles, disordered (fcc) sample
+  source:
+    doi: null
+    title: Curie Temperature Dependence on Chemical Ordering in FePt and CoPt Nanoparticle
+    first_author: Frank Abel
+    year: 2018
+    url: https://meetings-archive.aps.org/mar/2018/g60/113
+    evidence: abstract
+    locator: APS March Meeting 2018, poster abstract G60.113
+  quote: CoPt nanoparticles show a linear relationship between the chemical ordering and Curie temperature, going from 948 K in a disordered sample to 727 K in an ordered L10 sample.
+  note: Conference abstract (no DOI).
+- id: a1copt_tc_abel2018t
+  phase: A1-CoPt
+  quantity: Tc
+  value: 920
+  unit: K
+  conditions: as-made CoPt nanoparticles (~25 nm), completely disordered fcc by XRD; M(T) transition (slight ordering during measurement noted)
+  source:
+    doi: null
+    title: Synthesis and study of L10 magnetic nanostructures (PhD thesis, University of Delaware)
+    first_author: Frank M. Abel
+    year: 2018
+    url: https://udspace.udel.edu/items/1fe5f987-b07d-4315-8fd1-dda7deb76840/full
+    evidence: full_text
+    locator: Section 8.4.2, p. 217
+  quote: However, there is clearly a high temperature transition that occurs at approximately 647 C, which is assumed to be related to a mostly disordered structure. In the annealed case a clear Curie temperature is at approximately 518 C.
+  note: 647 °C = 920 K (converted; degree sign lost in the PDF text layer).
+- id: a1copt_lattice_barmak2004
+  phase: A1-CoPt
+  quantity: lattice
+  value: a=3.770, c=3.766
+  unit: Å
+  conditions: Co52Pt48 epitaxial film (50 nm) on MgO(001)/Pt(1 nm), deposited at 276 °C, order parameter S = 0.03 ± 0.03 (essentially A1); possibly strained by the substrate
+  source:
+    doi: 10.2172/829753
+    title: On the Relationship of Magnetocrystalline Anisotropy and Stoichiometry in Epitaxial L1{sub 0} CoPt(001) and FePt(001) Thin Films
+    first_author: K Barmak
+    year: 2004
+    url: https://www.osti.gov/servlets/purl/829753
+    evidence: full_text
+    locator: Table I, Co52Pt48 row Ts = 276 °C
+  quote: 'Table I ... Co52Pt48 (50 nm) /Pt(1 nm): Ts (oC) 276, a 3.770, c 3.766, c/a 0.999, FWHM (001) 2.317, (002) 1.096, (003) 0.207, Smax 0.97, S 0.03 ± 0.03, In-plane c-variant No'
+  note: Table row transcribed from the PDF table. No bulk A1 lattice parameter with fetchable quote was found.
+- id: fepd_js_tanaka2000
+  phase: L10-FePd
+  quantity: Js
+  value: 1.38
+  unit: T
+  conditions: room temperature, ordered equiatomic FePd (value adopted by the authors for their calculation)
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: review
+    locator: Sec. 4.1, list of values adopted in the numerical calculation (p. 919)
+  quote: Magnetization at room temperature:10,15) 1.32 T for disordered phase, 1.38 T for ordered phase.
+  note: 'Secondary value: Tanaka et al. (full text read, scanned PDF checked on page image) cite refs 10 (Klemmer et al., Scripta Metall. Mater. 33 (1995) 1793) and 15 (Yermakov & Maykov, Phys. Met. Metall. 69 (1990) 198); originals not accessed. Reference superscripts kept as printed.'
+- id: a1fepd_js_tanaka2000
+  phase: A1-FePd
+  quantity: Js
+  value: 1.32
+  unit: T
+  conditions: room temperature, disordered (A1) equiatomic FePd (value adopted by the authors)
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: review
+    locator: Sec. 4.1, list of values adopted in the numerical calculation (p. 919)
+  quote: Magnetization at room temperature:10,15) 1.32 T for disordered phase, 1.38 T for ordered phase.
+  note: Secondary value cited from refs 10, 15 (see fepd_js_tanaka2000).
+- id: fepd_ms_farjami2008
+  phase: L10-FePd
+  quantity: other
+  value: 3.01
+  unit: muB per formula unit
+  conditions: Fe-55 at.% Pd single-variant single crystal, 300 K, spontaneous magnetization (SQUID, extrapolated to zero field)
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: Sec. 3, p. 1972-1973
+  quote: The spontaneous magnetization of single variant at 300 K is evaluated to be about 3.01 μB f.u.−1
+  note: Quantity is Ms per formula unit (not converted to Js because no lattice parameters for Fe-55Pd are given in this paper). Partial sentence quoted; the rest of the sentence refers to another group's sample. Checked on page image (text layer renders μ as 'm').
+- id: a1fepd_ms_farjami2008
+  phase: A1-FePd
+  quantity: other
+  value: 2.95
+  unit: muB per formula unit
+  conditions: Fe-55 at.% Pd, quenched from 1173 K (disordered), 300 K
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: Sec. 3, p. 1972
+  quote: The spontaneous magnetization of the disordered specimen at 300 K is evaluated to be about 2.95 μB f.u.−1.
+  note: Ms per formula unit of the disordered parent at the same composition. Checked on page image.
+- id: fepd_k1_shima2004
+  phase: L10-FePd
+  quantity: K1
+  value: 1.7
+  unit: MJ/m3
+  conditions: equiatomic FePd single crystals ordered under compressive stress, 300 K (2.1 at 4.2 K)
+  source:
+    doi: 10.1103/physrevb.70.224408
+    title: Lattice axial ratio and large uniaxial magnetocrystalline anisotropy in L10-type FePd single crystals prepared under compressive stress
+    first_author: H. Shima
+    year: 2004
+    url: https://api.openalex.org/works/doi:10.1103/physrevb.70.224408
+    evidence: abstract
+    locator: abstract
+  quote: The uniaxial magnetocrystalline anisotropy constant KU at the equiatomic composition is evaluated to be 2.1×10^7 erg/cm^3 at 4.2 K and 1.7×10^7 erg/cm^3 at 300 K.
+  note: Converted 1.7×10^7 erg/cm3 = 1.7 MJ/m3 (300 K); 2.1×10^7 erg/cm3 = 2.1 MJ/m3 (4.2 K). Value is KU (total uniaxial MAE), measured on crystals made by stress ordering. TeX markup of the abstract metadata rendered as plain text.
+- id: fepd_k1_tanaka2000
+  phase: L10-FePd
+  quantity: K1
+  value: 2.2
+  unit: MJ/m3
+  conditions: 0 K value adopted by the authors
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: review
+    locator: Sec. 4.1, p. 919
+  quote: The value of K1(0) has been reported as about 2.2 MJ m−3.15)
+  note: Secondary value citing ref 15 (Yermakov & Maykov 1990). 0 K, not 300 K.
+- id: fepd_easy_axis_tanaka2000
+  phase: L10-FePd
+  quantity: easy_axis
+  value: c-axis [001] of the tetragonal cell
+  unit: null
+  conditions: ordered FePd
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: full_text
+    locator: Sec. 1, p. 917
+  quote: Since the L10 ordered phase has magnetocrystalline anisotropy with the easy axis parallel to the c-axis, a magnetic field is expected to have an effect similar to the compressive stress.
+  note: Subscript of L10 flattened.
+- id: fepd_tc_tanaka2000
+  phase: L10-FePd
+  quantity: Tc
+  value: 763
+  unit: K
+  conditions: ordered equiatomic FePd (Fe-49.8 at.% Pd crystals); value adopted from refs 15,17
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: review
+    locator: Sec. 3, p. 919 and Sec. 4.1 list
+  quote: The magnetic transition temperature, Tc, of the ordered phase is 763 K. ... Magnetic transition temperature:15,17) 673 K for disordered phase, 763 K for ordered phase.
+  note: 'Secondary (refs 15 Yermakov & Maykov 1990; 17 Shimizu & Hashimoto, J. Jpn. Inst. Met. 35 (1971) 902). NOTE: conflicts in sign with Farjami et al. (Fe-55Pd: Tc(ordered) 670 K < Tc(disordered) 740 K) and Burzo & Vlaic (ordered ~30 K below disordered for 40-50 at.% Fe).'
+- id: a1fepd_tc_tanaka2000
+  phase: A1-FePd
+  quantity: Tc
+  value: 673
+  unit: K
+  conditions: disordered equiatomic FePd; value adopted from refs 15,17
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: review
+    locator: Sec. 4.1 list, p. 919
+  quote: Magnetic transition temperature:15,17) 673 K for disordered phase, 763 K for ordered phase.
+  note: Secondary; see conflict noted in fepd_tc_tanaka2000.
+- id: fepd_tc_farjami2008
+  phase: L10-FePd
+  quantity: Tc
+  value: 670
+  unit: K
+  conditions: Fe-55 at.% Pd, ordered (773 K, 24 h), resistivity slope change on heating and cooling at 1 K/min
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: abstract; Sec. 3, Fig. 2
+  quote: The Curie temperature of the disordered phase is 740 K and that of the ordered phase is 670 K.
+  note: Same composition as the A1 value in a1fepd_tc_farjami2008. Farjami et al. 2009 (ISIJ Int. 49, 1610) report the same values and state that Tc(o) is lower than Tc(d).
+- id: a1fepd_tc_farjami2008
+  phase: A1-FePd
+  quantity: Tc
+  value: 740
+  unit: K
+  conditions: Fe-55 at.% Pd quenched from 1173 K, resistivity bending on heating at 100 K/min (to suppress ordering)
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: abstract; Sec. 3, Fig. 1
+  quote: The Curie temperature of the disordered phase is 740 K and that of the ordered phase is 670 K.
+  note: ''
+- id: fepd_tc_burzo2010
+  phase: L10-FePd
+  quantity: Tc
+  value: Tc(L10) ≈ Tc(A1) − 30
+  unit: K
+  conditions: Fe(x)Pd(100-x), 40 ≤ x ≤ 50 at.% Fe
+  source:
+    doi: null
+    title: Magnetic properties of iron-palladium solid solutions and compounds
+    first_author: E. Burzo
+    year: 2010
+    url: https://joam.inoe.ro/articles/magnetic-properties-of-iron-palladium-solid-solutions-and-compounds/fulltext
+    evidence: review
+    locator: Sec. 1 (introduction), p. 1869
+  quote: The Curie temperatures of the atomic ordered alloys having 40 ≤ x ≤ 50 at % Fe decrease by ≅30 K, as compared to those of disordered phase [6].
+  note: Relative value (difference ordered minus disordered) cited from ref [6] of Burzo & Vlaic; JOAM has no DOI. Supports Tc(L10) < Tc(A1).
+- id: fepd_t_stab_ichitsubo1998
+  phase: L10-FePd
+  quantity: T_stab
+  value: 923
+  unit: K
+  conditions: equiatomic FePd (Fe-49.8 at.% Pd); order-disorder transformation
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: abstract
+  quote: The equiatomic Fe–Pd alloy has an order-disorder transformation at about 650°C.
+  note: Converted 650 °C = 923 K. Same value (Tt about 923 K) used by Tanaka et al. 2000 (Mater. Trans. JIM 41, 917). Equilibrium order-disorder limit; time scale not applicable.
+- id: fepd_t_stab_farjami2009
+  phase: L10-FePd
+  quantity: T_stab
+  value: 1025
+  unit: K
+  conditions: Fe-55 at.% Pd; T(o-d) on heating 1 K/min = 1025 K, T(d-o) on cooling 1 K/min = 955 K (resistivity)
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Sec. 3.1, p. 1612
+  quote: In the case of the Fe–55Pd alloy, T (o–d) is 1 025 K and T (d–o) is 955 K.
+  note: The 70 K hysteresis is attributed by the authors to the supercooling needed for nucleation. Note difference from the ~923 K quoted for equiatomic FePd (composition dependence).
+- id: fepd_t_stab_korolev2015
+  phase: L10-FePd
+  quantity: T_stab
+  value: 950
+  unit: K
+  conditions: FePd (composition not stated in abstract); 'ordering temperature'
+  source:
+    doi: 10.1109/intmag.2015.7156517
+    title: Temperature dependence of magnetic anisotropy for single domain L10 FePd crystal and role of the ordering defects
+    first_author: A. Korolev
+    year: 2015
+    url: https://api.openalex.org/works/doi:10.1109/intmag.2015.7156517
+    evidence: abstract
+    locator: abstract
+  quote: This chemical analog of the FePt is known for its significantly lower ordering temperature (950 vs. 1910 K)
+  note: Partial sentence quoted (the rest contains garbled characters in the metadata). Conference abstract.
+- id: fepd_lattice_ichitsubo1998
+  phase: L10-FePd
+  quantity: lattice
+  value: a=3.881, c=3.748
+  unit: Angstrom
+  conditions: L10 FePd; values from ref (13) (Oshima et al. 1994) used for the eigenstrain
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: review
+    locator: Sec. IV.1, p. 26
+  quote: The stress-free transformation strain or eigenstrain is calculated from the L10 lattice parameters (a=0.3881 nm, c=0.3748 nm) and the fcc lattice parameter (a0=0.3835 nm) of FePd(13); the eigenstrain ε*pq is given by eq. (1) ... ε*C11=ε*C22=0.0120, ε*C33=−0.0227, ε*Cij=0 (for i≠j)
+  note: 'Converted nm to Angstrom. Secondary (ref 13: Oshima, Yamashita, Matsumoto, Hiraga, Solid-Solid Phase Transformations, TMS 1994, p. 407). Scanned paper, text checked on page image; sub/superscripts flattened.'
+- id: a1fepd_lattice_ichitsubo1998
+  phase: A1-FePd
+  quantity: lattice
+  value: a0=3.835
+  unit: Angstrom
+  conditions: fcc disordered FePd; value from ref (13)
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: review
+    locator: Sec. IV.1, p. 26
+  quote: The stress-free transformation strain or eigenstrain is calculated from the L10 lattice parameters (a=0.3881 nm, c=0.3748 nm) and the fcc lattice parameter (a0=0.3835 nm) of FePd(13)
+  note: Parent lattice parameter at the same composition (secondary, ref 13).
+- id: fepd_lattice_aledealat2021
+  phase: L10-FePd
+  quantity: lattice
+  value: a=3.855, c=3.714
+  unit: Angstrom
+  conditions: experimental values listed for comparison with DFT (ref [45] of the paper)
+  source:
+    doi: 10.1016/j.heliyon.2021.e08639
+    title: First-principles study of electronic structure and magnetic properties of L10-ordered FeNi, FePd, and FePt alloys
+    first_author: K. Aledealat
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8723993/fullTextXML
+    evidence: review
+    locator: Table 1, row FePd 'Exp.'
+  quote: Table 1 The lattice parameters (a and c) and the bulk modulus for FeM (M = Ni, Pd, or Pt) calculated for the configurations illustrated in Figure 2. ... Exp. | 3.855 [45] | 3.714 [45]
+  note: Table row of the FePd block (columns a (Å), c (Å)); value is the paper's cited experimental reference [45], not its DFT result. Gives c/a ≈ 0.963 (computed here, not quoted).
+- id: fepd_tetragonality_ichitsubo1998
+  phase: L10-FePd
+  quantity: tetragonality
+  value: 'c/a = 0.966; transformation (eigen)strain relative to fcc parent: e11 = e22 = +0.0120, e33 = -0.0227 (c contracts, a expands)'
+  unit: null
+  conditions: equiatomic FePd
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: abstract; Sec. IV.1 eq. (1)
+  quote: Since the ordered phase is tetragonal with c/a=0.966, the external stress is expected to modify the relative population of variants. ... ε*C11=ε*C22=0.0120, ε*C33=−0.0227, ε*Cij=0 (for i≠j)
+  note: 'c/a < 1: tetragonal contraction along c relative to the cubic parent. Tanaka et al. 2000 use e33 = -0.022 (favoured) and +0.011 (unfavoured variants).'
+- id: fepd_tetragonality_ichitsubo2011
+  phase: L10-FePd
+  quantity: tetragonality
+  value: 0.963
+  unit: c/a
+  conditions: bulk Fe-50.6 at.% Pd reference sample
+  source:
+    doi: 10.1063/1.3544466
+    title: Control of c-axis orientation of L1-FePd in dual-phase-equilibrium FePd/Fe thin films
+    first_author: T. Ichitsubo
+    year: 2011
+    url: https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/19267488-524f-4221-92dd-d81c603b190e/content
+    evidence: full_text
+    locator: Sec. IV, p. 033513-4
+  quote: Then, the tetragonal distortion is estimated to be ε*eq ≈ 0.0123 by using the axial ratio, (c/a)eq=0.963, of the bulk sample in Fig. 5(b).
+  note: e*_eq ≈ (1/3)[1-(c/a)eq] per the paper. Sub/superscripts flattened; checked on page image.
+- id: fepd_structure_burzo2010
+  phase: L10-FePd
+  quantity: structure
+  value: L10 (CuAu-I type) tetragonal superstructure of the fcc lattice; alternating Fe and Pd (001) planes; c/a ≈ 0.96
+  unit: null
+  conditions: 40 ≤ x ≤ 50 at.% Fe
+  source:
+    doi: null
+    title: Magnetic properties of iron-palladium solid solutions and compounds
+    first_author: E. Burzo
+    year: 2010
+    url: https://joam.inoe.ro/articles/magnetic-properties-of-iron-palladium-solid-solutions-and-compounds/fulltext
+    evidence: review
+    locator: Sec. 1 (introduction), p. 1869
+  quote: The disordered fcc-type structure, with 40 ≤ x ≤ 50, having low magnetic anisotropy, orders to L10 type superstructure via a thermodynamically first order type, order-disorder transformation. The ordered structure is tetragonal via an alternating stacking of Fe and Pd planes along the [001] principal axis with respect to fcc-lattice. The axial ratio c/a is smaller than the unity (c/a ≅ 0.96), due to the difference of atomic radii between Fe and Pd.
+  note: Review statement (no DOI for JOAM).
+- id: fepd_n_variants_ichitsubo1998
+  phase: L10-FePd
+  quantity: n_variants
+  value: 3
+  unit: null
+  conditions: fcc (A1) single-crystal parent, equiatomic FePd
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: abstract
+  quote: Three types of variants of the L10 ordered phase are formed with the c-axis parallel to either of the 〈100〉 directions of the disordered fcc matrix.
+  note: Quote from the abstract metadata (Crossref/OpenAlex); identical on the printed page.
+- id: fepd_or_ichitsubo1998
+  phase: L10-FePd
+  quantity: OR
+  value: 'cube-on-cube lattice correspondence: tetragonal c-axis along one of [100], [010], [001] of the fcc parent; a-axes along the other two'
+  unit: null
+  conditions: equiatomic FePd, A1 -> L10
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: Sec. I, p. 24
+  quote: The transformation is accompanied by a reduction in point-group symmetry; three types of ordered domains are possible with the tetragonal axes along the [100], [010] or [001] directions of the fcc matrix. In the absence of an external field, three types of variants will be formed with an equal probability.
+  note: Value is my summary of the quote ('cube-on-cube' is not the authors' wording). Scanned paper, verified on page image.
+- id: fepd_formation_path_farjami2009
+  phase: L10-FePd
+  quantity: formation_path
+  value: A1 (disordered fcc) -> L10 by chemical ordering; first-order, nucleation and growth of ordered domains in the A1 matrix (coherent, lattice-correspondent)
+  unit: null
+  conditions: Fe-55 at.% Pd (and Co-50 at.% Pt)
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Sec. 4, p. 1613
+  quote: Since the disorder–order transformation of the present alloys are first order, occurring by the nucleation and growth of the ordered L10 domains in the A1 matrix,14,15) there should be a nucleation barrier
+  note: Partial sentence. Statement covers both Fe-55Pd and Co-50Pt.
+- id: fepd_t_formation_farjami2009
+  phase: L10-FePd
+  quantity: T_formation
+  value: 773-873 (ordering saturates within 21 h at 773 K, within 3 h at 873 K; not within 163 h at 673 K)
+  unit: K
+  conditions: Fe-55 at.% Pd single crystal quenched from 1173 K, isothermal anneals, resistivity at 273 K
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Sec. 3.1, Fig. 1, p. 1611
+  quote: In the case of Fe–55Pd alloy, the resistivity saturates within 3 h by the heat-treatment at 873 K, within 21 h at 773 K, while not within 163 h by heat-treatment at 673 K.
+  note: T(d-o) on cooling = 955 K for this alloy (fepd_t_stab_farjami2009).
+- id: fepd_t_formation_tanaka2000
+  phase: L10-FePd
+  quantity: T_formation
+  value: 'spinodal ordering temperature T0 ≈ 742-797 K: nucleation-and-growth ordering above T0, spinodal ordering below'
+  unit: K
+  conditions: equiatomic FePd, Tt = 923 K
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: full_text
+    locator: Sec. 4.2, p. 921
+  quote: The spinodal temperature T0, which separates the two regimes of the ordering processes, for the fcc-L10 transition has been estimated as T0/Tt = 0.804 by the Monte-Carlo simulation27) and as T0/Tt = 0.863 by the cluster variation method.28) For the order-disorder transition temperature Tt = 923 K, the two formulae yield 742 and 797 K.
+  note: Estimates by the authors from cited theory; regime boundary matters because field/stress bias acts mainly on nucleation. Scanned paper, verified on page image; subscripts flattened.
+- id: fepd_t_formation_burzo2010
+  phase: L10-FePd
+  quantity: T_formation
+  value: 773
+  unit: K
+  conditions: 40 ≤ x ≤ 50 at.% Fe, alloys homogenized at 1200 °C and quenched, then annealed (cited ref [6])
+  source:
+    doi: null
+    title: Magnetic properties of iron-palladium solid solutions and compounds
+    first_author: E. Burzo
+    year: 2010
+    url: https://joam.inoe.ro/articles/magnetic-properties-of-iron-palladium-solid-solutions-and-compounds/fulltext
+    evidence: review
+    locator: Sec. 1, p. 1869
+  quote: In the composition range 40 ≤ x≤ 50, a disordered fcc phase was obtained by homogenezing the alloys, at 1200 oC, and then quenching [6]. The ordered L10 phase was obtained by annealing the above alloys at 500 oC.
+  note: Converted 500 °C = 773 K. Annealing time not stated. Spelling as printed.
+- id: fepd_t_formation_vlasova2009
+  phase: L10-FePd
+  quantity: T_formation
+  value: 823
+  unit: K
+  conditions: equiatomic FePd single crystals, ordering anneal
+  source:
+    doi: 10.1134/s0031918x09040061
+    title: Effect of the structural state of the FePd equiatomic alloy on the temperature dependence of the initial magnetic susceptibility and the curie temperature
+    first_author: N. I. Vlasova
+    year: 2009
+    url: https://api.openalex.org/works/doi:10.1134/s0031918x09040061
+    evidence: abstract
+    locator: abstract
+  quote: The temperature dependence of the initial magnetic susceptibility of a quenched equiatomic FePd alloy with an A 1 structure and the variations of its Curie temperature and anisotropy of hysteresis loops have been studied during the ordering annealing of single-crystal samples at 550°C.
+  note: Converted 550 °C = 823 K.
+- id: fepd_phase_fraction_limit_farjami2008
+  phase: L10-FePd
+  quantity: phase_fraction_limit
+  value: single-phase L10 chosen at Fe-55 at.% Pd rather than Fe-50 at.% Pd, per the phase diagram
+  unit: null
+  conditions: bulk Fe-Pd
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: Sec. 1, p. 1970
+  quote: In the present study, we selected an Fe-55 at%Pd alloy instead of an Fe-50 at%Pd alloy to obtain the single L10-phase considering the phase diagram.16)
+  note: 'Suggests the equiatomic composition may not be single-phase L10 at the ordering temperature used (phase diagram ref 16: Massalski). Not quantified here. Checked on page image (text layer drops the hyphen in ''L10-phase'').'
+- id: fepd_single_variant_particles_sato2005
+  phase: L10-FePd
+  quantity: single_variant_particles
+  value: 'yes: ~10 nm isolated epitaxial FePd nanoparticles (Fe-58 at.% Pd, annealed 873 K, 36 ks) are almost all single-variant single crystals'
+  unit: null
+  conditions: nanoparticles grown on NaCl(001), embedded in amorphous Al2O3 film
+  source:
+    doi: 10.1063/1.1985973
+    title: 'Long-range order parameter of single L10-FePd nanoparticle determined by nanobeam electron diffraction: Particle size dependence of the order parameter'
+    first_author: Kazuhisa Sato
+    year: 2005
+    url: https://tohoku.repo.nii.ac.jp/record/44248/files/JApplPhys_98_024308.pdf
+    evidence: full_text
+    locator: Sec. I and II, p. 024308-1 to -3
+  quote: In these studies, 10-nm-sized FePt and FePd particles were epitaxially grown on NaCl (001) substrates and each particle was well isolated and separated by amorphous (a-) Al2O3 thin film. ... Nanoparticles with crystallographic variant domains composed of more than two crystalline domains with orthogonal c axes were few in number.
+  note: Particles are film-embedded (not a free powder); annealing 873 K for 36 ks per Sec. II.
+- id: fepd_field_effect_on_formation_tanaka2000a
+  phase: L10-FePd
+  quantity: field_effect_on_formation
+  value: field biases variant nucleation rates; effective only in the nucleation-and-growth regime (above the spinodal ordering temperature) and when the field-induced magnetocrystalline energy is large enough
+  unit: null
+  conditions: equiatomic FePd single crystals, fields up to 10 T along [001], 673-813 K
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: full_text
+    locator: abstract
+  quote: 'The necessary conditions for the formation of the mono-variant structure are: the ordering proceeds by nucleation and growth process (the temperature of heat treatment must be higher than the spinodal ordering temperature), and magnetocrystalline anisotropy energy is sufficiently large to change the nucleation rates of different variants.'
+  note: Mechanism statement only; measured variant fractions are in the sealed outcome file.
+- id: fepd_field_effect_on_formation_tanaka2000b
+  phase: L10-FePd
+  quantity: field_effect_on_formation
+  value: variant energy difference from field-induced magnetocrystalline anisotropy ≈ 10.6 kJ/m3 at 793 K, 6 T; magnetostriction-equivalent stress 0.019 MPa gives only 0.63 kJ/m3
+  unit: kJ/m3
+  conditions: equiatomic FePd, T = 793 K (above Tc of ordered phase, 763 K), H = 6 T
+  source:
+    doi: 10.2320/matertrans1989.41.917
+    title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_917/_pdf
+    evidence: full_text
+    locator: Sec. 4.2, p. 921
+  quote: The values of ε*33 for the favorable (z-) and unfavorable (x- and y-) variants are −0.022 and 0.011, respectively. Thus, the energy difference between the favorable and unfavorable variants caused by the stress, 0.019 MPa, is calculated to be 0.63 kJ m−3, which is far smaller than the magnetocrystalline anisotropy energy of 10.6 kJ m−3 (c.f. Fig. 5).
+  note: Energy scale of field selection at the formation temperature (calculated by the authors from a Curie-Weiss magnetization model). Shows the field acts through magnetocrystalline anisotropy, not magnetostriction.
+- id: fepd_field_effect_on_formation_tanaka2000c
+  phase: L10-FePd
+  quantity: field_effect_on_formation
+  value: field applied during slow cooling 793 -> 673 K (1/60 K/s), i.e. through Tc of the ordered phase (763 K); isothermal 673 K treatment is in the spinodal regime
+  unit: null
+  conditions: equiatomic FePd single crystals (Fe-49.8 at.% Pd), field up to 10 T along [001] throughout
+  source:
+    doi: null
+    title: Effect of Magnetic Field on Ordering of FePd
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.mrs-j.org/pub/tmrsj/vol25_no2/vol25_no2_497.pdf
+    evidence: full_text
+    locator: Sec. 2.2, p. 497-498
+  quote: (ii) The specimen was heated up to 793 K (the magnetic transition temperature of the ordered phase is 763 K) and cooled down at a rate of 1/60 Ks-1 to 673 K and then furnace-cooled to room temperature. In treatment (i), the ordering is considered to proceed by a spinodal ordering; ordering proceeds spatially homogeneously. In contrast, the ordering proceeds through nucleation and growth in treatment (ii).
+  note: Trans. MRS-J 25 [2] 497-500 (2000), no Crossref DOI found. Fig. 1 of the paper marks Tt = 923 K, Tm(ord) = 763 K, Tm(dis) = 673 K. Scanned/OCR text layer; verified on page image.
+- id: fepd_field_effect_on_formation_farjami2008
+  phase: L10-FePd
+  quantity: field_effect_on_formation
+  value: 'two-step: field (up to 10 T, along [001]) applied only during a first ordering step at 673 K, close to Tc(ordered) = 670 K and below Tc(disordered) = 740 K; second step 773 K, 24 h, no field'
+  unit: null
+  conditions: Fe-55 at.% Pd single crystals
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: Sec. 3, p. 1971-1972
+  quote: 'Considering the result of the resistivity measurements, we have determined the ordering temperatures of the two-step ordering heat-treatment as follows: the first step of ordering at 673 K (close to Tc(o) and slightly below Tc(d)) under a magnetic field up to 10 T (maximum field-strength of the utilized superconducting magnet) applied in the [001] (Z-direction).'
+  note: Superscripts flattened; '[001]' rendered from a glyph artifact in the text layer (abstract metadata gives '[001]'). Parent A1 is ferromagnetic at the field step (673 K < 740 K); the ordered phase is at its Curie point.
+- id: fepd_field_effect_on_formation_farjami2008b
+  phase: L10-FePd
+  quantity: field_effect_on_formation
+  value: field acts at the early (nucleation) stage; later growth of the favoured variant proceeds without field, attributed to elastic interaction
+  unit: null
+  conditions: Fe-55 at.% Pd single crystals
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: Sec. 4 (conclusions), p. 1974
+  quote: This result suggests that magnetic field is especially effective at the early stage of ordering for the selective formation of preferable variant and the growth of the preferable variant during the second step of ordering occurs spontaneously being probably due to elastic interaction among the variants.
+  note: ''
+- id: fepd_field_effect_on_formation_farjami2009
+  phase: L10-FePd
+  quantity: field_effect_on_formation
+  value: 45.3
+  unit: kJ/m3
+  conditions: Fe-55 at.% Pd single-variant crystal measured at 673 K (the first-step ordering temperature), induced anisotropy energy at 1 T between c and a axes
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Sec. 4, Fig. 7, p. 1614
+  quote: From the difference in magnetization curves between the c- and a-axes, the induced magnetic anisotropy energy at 1 T is obtained to be 4.1 kJ/m3 for the Co–50Pt alloy at 773 K and 45.3 kJ/m3 for the Fe–55Pd alloy at 673 K.
+  note: Selection-energy scale at T_f. The CoPt value (4.1 kJ/m3 at 773 K) belongs to the CoPt topic (other fork). Text layer drops the line-end hyphen in 'c- and'; checked on page.
+- id: fepd_field_effect_on_formation_oshima1998
+  phase: L10-FePd
+  quantity: field_effect_on_formation
+  value: magneto-heat-treatment effect present just above the magnetic Curie temperature (ferromagnetic short-range order); magnetostriction ~1e-5
+  unit: null
+  conditions: FePd alloys (incl. Fe-55 at.% Pd), in-situ TEM heating near Tc under field
+  source:
+    doi: 10.2320/jinstmet1952.62.4_317
+    title: Effect of Magnetic Field on Early Stage of Ordering Process of FePd Alloys
+    first_author: Ryuichiro Oshima
+    year: 1998
+    url: https://api.openalex.org/works/doi:10.2320/jinstmet1952.62.4_317
+    evidence: abstract
+    locator: abstract (English abstract of a Japanese paper)
+  quote: (3) Magneto-heat treatment effect is present in a certain temperature range of ferromagnetic short range order just above the magnetic Curie temperature. (4) Magnetostriction calculated from elastic constants is an order of 10−5, which seems small but still plays an important role in the initiation of variant domains.
+  note: ''
+- id: fepd_field_effect_on_formation_ueshima2010
+  phase: L10-FePd
+  quantity: field_effect_on_formation
+  value: 'phase-field: 5 T applied from the beginning of ordering gives a small initial excess of the favoured variant that coarsening (interface energy) amplifies to dominance; field applied later has little effect'
+  unit: null
+  conditions: simulation, disordered FePd 50 K below the transition temperature
+  source:
+    doi: 10.2355/isijinternational.50.1908
+    title: Numerical Analyses of Effectiveness of Magnetic Field on Variant Selection in FePd by Phase Field Modeling
+    first_author: Nobufumi Ueshima
+    year: 2010
+    url: https://api.openalex.org/works/doi:10.2355/isijinternational.50.1908
+    evidence: abstract
+    locator: abstract
+  quote: It is found that applying magnetic field from the beginning of order–disorder transition results in the slightly more volume fraction of the favorable variant, and, in turn, the less interface energy per unit volume, than others, which leads to the dominance of the favorable variant at the end after variant coarsening driven by interface energy, resulting in successful grain alignment, although applying the magnetic field at later stage shows little effect.
+  note: Simulation (multi-phase-field); mechanism input only.
+- id: fepd_field_effect_on_formation_ueshima2014
+  phase: L10-FePd
+  quantity: field_effect_on_formation
+  value: field effective only for a very short early period; selection results from interplay of field, transformation strain and interface energy
+  unit: null
+  conditions: phase-field simulation
+  source:
+    doi: 10.1063/1.4865745
+    title: Impact of interplay between magnetic field, transformation strain, and coarsening on variant selection in L1-type FePd
+    first_author: N. Ueshima
+    year: 2014
+    url: https://api.crossref.org/works/10.1063/1.4865745
+    evidence: abstract
+    locator: abstract
+  quote: The duration for which the external magnetic field is effective is found to be very short, and variant selection is significantly affected by not only direct response to the external magnetic field but also their interplay between the field, intrinsic transformation strain, and various thermodynamic energy components involved in the course of microstructure evolution.
+  note: ''
+- id: fepd_stress_effect_on_formation_ichitsubo1998a
+  phase: L10-FePd
+  quantity: stress_effect_on_formation
+  value: uniaxial compression along [001] of the fcc parent favours the variant with c parallel to the compression axis (c/a < 1); 40 MPa used
+  unit: MPa
+  conditions: equiatomic FePd single crystal, (1) 400 °C 1 h under 40 MPa; (2) slow cooling 750 -> 650 °C (1 °C/s) -> 600 °C (0.0166 °C/s), 600 s at 600 °C, furnace cool, 40 MPa kept
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: Sec. II and VI (conclusions), p. 24 and 29
+  quote: The specimens were annealed for ordering at 400°C for 1 h with or without the compressive stress of 40 MPa in the [001] direction of the fcc disordered matrix (Treatment 1). ... The external stress enhances the formation of one type of variant with the c-axis parallel to the direction of the external stress.
+  note: Scanned paper; checked on page images. T_f of treatment 1 (673 K) is below the ordered-phase Tc; treatment 2 orders at 873-923 K, above Tc (paramagnetic) - stress acts irrespective of magnetic state.
+- id: fepd_stress_effect_on_formation_ichitsubo1998b
+  phase: L10-FePd
+  quantity: stress_effect_on_formation
+  value: 'interaction energy at -40 MPa: -9.1e5 J/m3 for c parallel to the compression axis, +4.8e5 J/m3 for c perpendicular'
+  unit: J/m3
+  conditions: equiatomic FePd, c/a = 0.966, eigenstrain of eq. (1)
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: Sec. IV.3, eq. (3), p. 27-28
+  quote: The values of the interaction energy FI per unit volume of the particle for σAC33 = −40 MPa are calculated to be FI = −9.1×10^5 J/m3 (for c-axis parallel to z-axis (Fig. 7(a)), FI = +4.8×10^5 J/m3 (for c-axis normal to z-axis (Fig. 7(b)).
+  note: 'Selection-energy scale for stress: difference ≈ 1.4 MJ/m3 at 40 MPa (my arithmetic, not quoted). Sub/superscripts flattened; checked on page image.'
+- id: fepd_stress_effect_on_formation_ichitsubo1998c
+  phase: L10-FePd
+  quantity: stress_effect_on_formation
+  value: 'simple elastic estimate: ~800 MPa needed to suppress unfavoured variants completely in isothermal ordering; slow cooling through Tc (low initial tetragonality) greatly enlarges the favourable region'
+  unit: MPa
+  conditions: equiatomic FePd, isothermal ordering at 400 °C vs slow cooling across the order-disorder temperature
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: Sec. V.1-V.2, p. 29
+  quote: The magnitude of the compressive stress necessary for complete suppression of the unfavorable variants is estimated to be about 800 MPa. ... When a specimen is cooled slowly across the transition temperature Tc, as in treatment 2 of the present experiment, particles first formed just below Tc must have a tetragonality far smaller than that for equilibrium. If one takes into account this situation, the region favorable for the formation of particles having the c-axis parallel to the z-axis is greatly enlarged.
+  note: Here 'Tc' is the authors' symbol for the order-disorder transition temperature (not the Curie temperature).
+- id: fepd_stress_effect_on_formation_ichitsubo2000a
+  phase: L10-FePd
+  quantity: stress_effect_on_formation
+  value: 'autocatalytic: stress triggers the favoured variant, whose internal stress field then promotes the same variant (TDGL simulations at 100 MPa)'
+  unit: null
+  conditions: TDGL simulation of fcc-L10 ordering in equiatomic FePd, 723 and 823 K
+  source:
+    doi: 10.1103/physrevb.62.5435
+    title: Kinetics of cubic to tetragonal transformation under external field by the time-dependent Ginzburg-Landau approach
+    first_author: Tetsu Ichitsubo
+    year: 2000
+    url: https://repository.kulib.kyoto-u.ac.jp/bitstreams/25652701-72d7-4cad-a2bf-e369fe9b7e86/download
+    evidence: full_text
+    locator: Sec. V, p. 5439-5440
+  quote: Thus, the application of external stress just triggers off the formation of the favorable variant, and the resultant internal stress field further enhances the formation of such a variant, leading to the single variant structure. This process may be said to be autocatalytic or self-organizing.
+  note: Simulation mechanism; explains selection at stresses far below the ~800 MPa simple estimate.
+- id: fepd_stress_effect_on_formation_ichitsubo2000b
+  phase: L10-FePd
+  quantity: stress_effect_on_formation
+  value: external fields (stress or magnetic) act mainly near the transition temperature (nucleation mode), little in the spinodal-ordering regime
+  unit: null
+  conditions: FePd
+  source:
+    doi: 10.1103/physrevb.62.5435
+    title: Kinetics of cubic to tetragonal transformation under external field by the time-dependent Ginzburg-Landau approach
+    first_author: Tetsu Ichitsubo
+    year: 2000
+    url: https://repository.kulib.kyoto-u.ac.jp/bitstreams/25652701-72d7-4cad-a2bf-e369fe9b7e86/download
+    evidence: full_text
+    locator: Sec. I, p. 5435
+  quote: (1) The effect of an external field on the ordering of FePd appears most dominantly when the field is applied near the transition temperature. At relatively lower temperatures where the process proceeds via spinodal ordering, the application of the field does not significantly modify the process.
+  note: Applies to both stress and magnetic field bias.
+- id: fepd_stress_effect_on_formation_ichitsubo2011
+  phase: L10-FePd
+  quantity: stress_effect_on_formation
+  value: in-plane biaxial tension (≈700 MPa, from thermal-contraction mismatch with silica glass) during ordering at 550 °C favours L10 domains with c normal to the film
+  unit: MPa
+  conditions: '[FePd(x nm)/Fe(5 nm)]n multilayers on amorphous SiO2 glass, annealed up to 550 °C'
+  source:
+    doi: 10.1063/1.3544466
+    title: Control of c-axis orientation of L1-FePd in dual-phase-equilibrium FePd/Fe thin films
+    first_author: T. Ichitsubo
+    year: 2011
+    url: https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/19267488-524f-4221-92dd-d81c603b190e/content
+    evidence: full_text
+    locator: abstract; Sec. IV, p. 033513-4
+  quote: On the contrary, for multilayered films, each FePd layer can undergo ordering without phase separation subject to the constraint of strong biaxial tensile stress resulting from the difference in the thermal contractions between Fe/FePd film and the silica glass substrate. Consequently, the L10 domains with c-axis orientation in the normal direction of the film surface are preferentially formed in the initial amorphouslike structure ... Since (c/a)exp is approximately 0.951 as shown in Fig. 5(b), the in-plane stresses are estimated to be σ1=σ2≈700 [MPa].
+  note: Tension perpendicular to c is equivalent (for c/a<1) to compression along c. Stress estimated by the authors from the measured c/a; not an applied load. Measured orientation degrees are in the sealed outcome file. Subscripts flattened; last sentence checked on page image.
+- id: copt_stress_effect_on_formation_shimizu1968
+  phase: L10-CoPt
+  quantity: stress_effect_on_formation
+  value: tempering (ordering) under compression induces an easy axis along the stress; under tension the stress axis becomes a hard axis
+  unit: null
+  conditions: 50 at.% Pt-Co alloy tempered under stress
+  source:
+    doi: 10.1063/1.1656562
+    title: Uniaxial Magnetic Anisotropy Induced in Pt–Co Alloy by Tempering under Stress
+    first_author: S. Shimizu
+    year: 1968
+    url: https://api.openalex.org/works/doi:10.1063/1.1656562
+    evidence: abstract
+    locator: abstract
+  quote: When the 50 at.% Pt–Co alloy is tempered under compressive stress, a uniaxial magnetic anisotropy is induced which has its easy axis along the direction of the stress. When tempered under tensile stress instead of compression, the anisotropy has its hard axis along the direction of the stress.
+  note: Sign of the stress coupling consistent with c/a < 1. Measured anisotropy/magnetization values are in the sealed outcome file.
+- id: copt_stress_effect_on_formation_shima2005
+  phase: L10-CoPt
+  quantity: stress_effect_on_formation
+  value: 20-25
+  unit: MPa
+  conditions: Co(100-x)Pt(x) single crystals (x = 45, 50, 55), compression along one <001> of the fcc crystal during ordering heat treatment (temperature not stated in the letter)
+  source:
+    doi: 10.1063/1.1861977
+    title: Large magnetocrystalline anisotropy energy of L1-type Co100−xPtx bulk single crystals prepared under compressive stress
+    first_author: H. Shima
+    year: 2005
+    url: https://tohoku.repo.nii.ac.jp/record/25482/files/OIKAWA-Katsunari-01-08-db0193-ApplPhysLett_86_112515.pdf
+    evidence: full_text
+    locator: p. 112515-1
+  quote: A compressive stress of 20–25 MPa was applied along one of the 〈001〉 directions in the fcc-type Co100−xPtx.
+  note: Outcome (variant state) of this treatment is in the sealed outcome file (copt_scsa_shima2005).
+- id: copt_stress_effect_on_formation_vlasova2001
+  phase: L10-CoPt
+  quantity: stress_effect_on_formation
+  value: ordering of quenched CoPt single crystals under an elastic tensile load studied; {110} band hierarchy forms
+  unit: null
+  conditions: CoPt single crystals, annealing under tensile load (magnitude/temperature not in abstract)
+  source:
+    doi: null
+    title: Magnetic Domain Structure of Thermally Demagnetized CoPt Crystals at Early Stages of Ordering under the Effect of a Tensile Load
+    first_author: N. I. Vlasova
+    year: 2001
+    url: https://www.pleiades.online/cgi-perl/search.pl?type=abstract&name=physmet&number=6&year=1&page=559
+    evidence: abstract
+    locator: abstract
+  quote: The polarization-optical and Bitter powder methods were used to study the evolution of the magnetic domain structure in the process of atomic ordering upon the annealing of quenched single-crystal CoPt samples in the presence of an elastic tensile load. ... On various scale levels, systems of {110} bands were revealed, which represent elements of a structural hierarchy.
+  note: Phys. Met. Metallogr. 91(6) 559 (2001); no Crossref DOI found. No variant fractions in the abstract.
+- id: fept_stress_effect_on_formation_inoue2006
+  phase: L10-FePt
+  quantity: stress_effect_on_formation
+  value: stress ordering of equiatomic Fe50Pt50 bulk crystals is impeded because the high ordering temperature causes recovery and recrystallization; Fe60Pt40 used instead
+  unit: null
+  conditions: FePt bulk single crystals ordered under compressive stress
+  source:
+    doi: 10.1063/1.2177355
+    title: Temperature dependence of magnetocrystalline anisotropy constants in the single variant state of L1-type FePt bulk single crystal
+    first_author: K. Inoue
+    year: 2006
+    url: https://tohoku.repo.nii.ac.jp/record/25483/files/OIKAWA-Katsunari-01-08-db0194-ApplPhysLett_88_102503.pdf
+    evidence: full_text
+    locator: p. 102503-1
+  quote: It should be noted that Fe50Pt50 bulk single crystal in a single variant state is difficult to obtain. That is, Fe50Pt50 has a high-ordering temperature, and hence the preparation at high temperature is necessary, but it induces recovery and recrystallization behaviors.
+  note: 'Limitation of the SA route for FePt (prerequisite: coherent ordering of a single-crystal parent without recrystallization).'
+- id: a1fepd_other_ichitsubo1998
+  phase: A1-FePd
+  quantity: other
+  value: c11=186, c12=138, c44=72.8 (elastic constants at 400 °C)
+  unit: GPa
+  conditions: disordered fcc FePd, 400 °C (extrapolated)
+  source:
+    doi: 10.2320/matertrans1989.39.24
+    title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
+    first_author: T. Ichitsubo
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/1/39_1_24/_pdf
+    evidence: full_text
+    locator: Sec. IV.1, p. 26
+  quote: The elastic constants of the disordered matrix at 400°C were evaluated by extrapolation of values measured at temperatures lower than 50°C and those measured at temperatures higher than 650°C; cC11=186, cC12=138, cC44=72.8 GPa.
+  note: Needed to convert stress into transformation-strain work. Superscripts flattened; checked on page image.
+- id: a1fepd_other_ichitsubo2004
+  phase: A1-FePd
+  quantity: other
+  value: elastic anisotropy factor 2c44/(c11-c12) ≈ 3.0 at all temperatures
+  unit: null
+  conditions: disordered FePd single crystal (resonant ultrasound)
+  source:
+    doi: 10.1063/1.1809775
+    title: Single-crystal elastic constants of disordered and ordered FePd
+    first_author: Tetsu Ichitsubo
+    year: 2004
+    url: https://api.crossref.org/works/10.1063/1.1809775
+    evidence: abstract
+    locator: abstract
+  quote: The anisotropy factor 2c44∕(c11−c12) is fairly large (about 3.0) at any temperatures, which may be related with the tweed pattern formation observed experimentally in the early stage of ordering.
+  note: ''
+- id: l10gen_n_variants_tanaka2000
+  phase: L10-generic
+  quantity: n_variants
+  value: 3
+  unit: null
+  conditions: FePd, FePt, CoPt ordered from the fcc disordered phase
+  source:
+    doi: null
+    title: Effect of Magnetic Field on Ordering of FePd
+    first_author: Katsushi Tanaka
+    year: 2000
+    url: https://www.mrs-j.org/pub/tmrsj/vol25_no2/vol25_no2_497.pdf
+    evidence: full_text
+    locator: Sec. 1, p. 497
+  quote: The ferromagnetic L10 ordered alloys, FePd, FePt and CoPt exhibit high uniaxial magnetocrystalline anisotropy [10]. In these alloys, three kinds of L10 variants are formed in the ordering process, and each variant possesses the c-axis along either of <100> directions of the fcc disordered matrix. In the absence of any external fields, these variants are formed with an equal probability and hence the ordered bulk material as a whole would loose a uniaxial magnetocrystalline anisotropy.
+  note: Trans. MRS-J 25 (2000) 497, no DOI. Subscript flattened; verified on page image (text layer is OCR with errors).
+- id: fept_n_variants_inoue2006
+  phase: L10-FePt
+  quantity: n_variants
+  value: 3
+  unit: null
+  conditions: fcc FePt single crystal transforming to L10
+  source:
+    doi: 10.1063/1.2177355
+    title: Temperature dependence of magnetocrystalline anisotropy constants in the single variant state of L1-type FePt bulk single crystal
+    first_author: K. Inoue
+    year: 2006
+    url: https://tohoku.repo.nii.ac.jp/record/25483/files/OIKAWA-Katsunari-01-08-db0194-ApplPhysLett_88_102503.pdf
+    evidence: full_text
+    locator: p. 102503-1
+  quote: Face-centered-cubic (fcc)-type Fe– Pt single crystal transforms into an L10-type phase, accompanied by multivariant structures because of the reduction of the lattice strain energy. The L10-type Fe– Pt single crystal in a multivariant state is insufficient for evaluating accurate Ku because the c axis has three equivalent 〈100〉 directions in the fcc-phase matrix.
+  note: Spacing 'Fe– Pt' as in the text layer.
+- id: l10gen_twins_savovici2024
+  phase: L10-generic
+  quantity: twins
+  value: polytwin colonies of alternating conjugate variant pairs; c-axes along two of the three <100> of the A1 parent; coherent {110} twin boundaries (orientation domain boundaries); forms to reduce transformation-strain energy
+  unit: null
+  conditions: bulk Fe-Pd L10 (Fe-61.8 at.% Pd samples in this paper)
+  source:
+    doi: 10.1016/j.scriptamat.2024.116067
+    title: Wetting of L10 twin and antiphase boundaries by nanometer-scale L12 in Fe-Pd alloys
+    first_author: Adrian Savovici
+    year: 2024
+    url: https://par.nsf.gov/servlets/purl/10543320
+    evidence: full_text
+    locator: p. 1 (introduction)
+  quote: Bulk Fe-Pd L10 alloys self-assemble into the so-called polytwin microstructure, which forms as a means of reducing the transformation strain energy accrued during the cubic→tetragonal transformation from A1 [11,12]. As shown in Fig. 1b, a prototypical L10 polytwin colony consists of alternating conjugate pairs of L10 orientation variants whose c-axes (shown as the double headed arrows) lie along two of the three ⟨100⟩ directions of the parent A1 phase. ... The twin boundaries separating the L10 orientation variants are coherent {110} planes which we will refer to as orientation domain boundaries (ODBs).
+  note: Angle brackets appear as glyph artifacts in the text layer; checked on the page image. Accepted-manuscript PDF via NSF PAR.
+- id: l10gen_twins_belashchenko2002
+  phase: L10-generic
+  quantity: twins
+  value: 'tweed (1-10 nm, {101} interfaces, random c) -> polytwinned stacks: c-axis alternates between two directions at pi/2 across parallel {101} interfaces; reduces elastic energy of coexisting variants'
+  unit: null
+  conditions: CoPt-type alloys (CoPt, FePt, FePd), quench + ageing
+  source:
+    doi: 10.1016/s0304-8853(02)00417-1
+    title: Atomistic, microstructural and micromagnetic aspects of the multiscale modeling of hysteretic phenomena in hard magnets
+    first_author: K.D Belashchenko
+    year: 2002
+    url: https://arxiv.org/pdf/cond-mat/0203544
+    evidence: full_text
+    locator: Sec. III (arXiv preprint cond-mat/0203544, p. 2)
+  quote: The ‘tweed contrast’ corresponds to a uniform pattern formed by small (1–10 nm) ordered domains with a dominant {101} orientation of interfaces and essentially random distribution of the c-axis directions. When the growing ordered domains reach some characteristic size (10-20 nm), a new pattern develops, with the formation of large ‘polytwinned’ stacks containing ordered ‘bands’ (‘c-domains’) with two alternating directions of the c-axis making π/2 angles with each other. The interfaces between the c-domains within a polytwinned stack are all parallel to each other and lie in one of the 101 planes. ... Physically, polytwinning is explained by the fact that such structures eliminate the volume-dependent part of the elastic energy stemming from the coexistence of ordered domains with different c-axis directions
+  note: Quote from the arXiv preprint of the JMMM paper ('one of the 101 planes' printed without braces in the preprint).
+- id: l10gen_twins_kandaurova1992
+  phase: L10-generic
+  quantity: twins
+  value: C-domains (variants) in plates and plates in packets join on {110}-type planes; coherent twin boundaries are dislocation-free and invariant; hierarchy (C-domains-blocks-plates-packets) minimizes elastic energy
+  unit: null
+  conditions: polytwinned FePt and CoPt crystals ordered from disordered single crystals
+  source:
+    doi: 10.3367/ufnr.0162.199205d.0161
+    title: Cooperative domain structures in highly anisotropic alloys with twinned microstructure
+    first_author: Gerta S. Kandaurova
+    year: 1992
+    url: https://ufn.ru/ufn92/ufn92_5/Russian/r925d.pdf
+    evidence: review
+    locator: Sec. 2, p. 164-165
+  quote: С-домены в пластине и пластины в пачке сочленяются по различным плоскостям типа {110}. ... Как показано в [14, 26, 27], сложное иерархическое строение упорядоченной ГЦТ фазы (С-домены—блоки—пластины—пачки) обусловлено стремлением кристалла до минимума уменьшить упругую энергию, связанную с внутренними напряжениями. ... Согласно электронно-микроскопическим наблюдениям [6 — 10, 14] когерентные двойниковые границы С-доменов не содержат дислокаций и свободны от внутренних напряжений, т.е. являются инвариантными.
+  note: 'Russian original (UFN 162(5) 161, 1992; English: Phys. Usp. 35, 420, doi 10.1070/PU1992v035n05ABEH002238). Translation: ''C-domains in a plate and plates in a packet are joined along various {110}-type planes ... the hierarchical structure of the ordered fct phase (C-domains-blocks-plates-packets) results from minimizing the elastic energy of internal stresses ... coherent twin boundaries of C-domains contain no dislocations and are free of internal stresses, i.e. invariant.'' Hyphens in ''С-домены'' print as ''2'' in the text layer; checked on page image. Crossref lists G.S. Kandaurova as first author of the Russian version (printed order: N.I. Vlasova first).'
+- id: fepd_twins_oshima1998
+  phase: L10-FePd
+  quantity: twins
+  value: '{011} macrotwins form as accommodation defects when a field-favoured variant grows'
+  unit: null
+  conditions: FePd thin foils heated in TEM under a field parallel to the foil
+  source:
+    doi: 10.2320/jinstmet1952.62.4_317
+    title: Effect of Magnetic Field on Early Stage of Ordering Process of FePd Alloys
+    first_author: Ryuichiro Oshima
+    year: 1998
+    url: https://api.openalex.org/works/doi:10.2320/jinstmet1952.62.4_317
+    evidence: abstract
+    locator: abstract
+  quote: (2) Under a magnetic field parallel to the specimen surface, a variant crystal with c-axis near the direction of the magnetic field starts to grow from grain boundaries, and {011} macrotwins are formed as accommodation defects.
+  note: Qualitative; no fractions given.
+- id: copt_tetragonality_shima2005
+  phase: L10-CoPt
+  quantity: tetragonality
+  value: 0.976
+  unit: c/a
+  conditions: Co50Pt50 single-variant single crystal (minimum c/a over x = 45-55)
+  source:
+    doi: 10.1063/1.1861977
+    title: Large magnetocrystalline anisotropy energy of L1-type Co100−xPtx bulk single crystals prepared under compressive stress
+    first_author: H. Shima
+    year: 2005
+    url: https://tohoku.repo.nii.ac.jp/record/25482/files/OIKAWA-Katsunari-01-08-db0193-ApplPhysLett_86_112515.pdf
+    evidence: full_text
+    locator: p. 112515-2, Fig. 1
+  quote: Both the a and c axes elongate with increasing Pt concentration, whereas the axial ratio c / a has a minimum value of 0.976 at x = 50, resulting in the largest tetragonal distortion.
+  note: May duplicate a CoPt record of the other fork (CoPt intrinsic); kept because it sets the stress-coupling strain for CoPt.
+- id: copt_k1_shima2005
+  phase: L10-CoPt
+  quantity: K1
+  value: 4.5
+  unit: MJ/m3
+  conditions: Co50Pt50 single-variant single crystal (ordered under compressive stress), 298 K, KU from magnetization-curve area up to 140 kOe
+  source:
+    doi: 10.1063/1.1861977
+    title: Large magnetocrystalline anisotropy energy of L1-type Co100−xPtx bulk single crystals prepared under compressive stress
+    first_author: H. Shima
+    year: 2005
+    url: https://tohoku.repo.nii.ac.jp/record/25482/files/OIKAWA-Katsunari-01-08-db0193-ApplPhysLett_86_112515.pdf
+    evidence: full_text
+    locator: abstract
+  quote: The value of KU directly determined at 298 K exhibits a maximum value of 4.5× 107 erg cm−3 for 50 at. % Pt.
+  note: Converted 4.5×10^7 erg/cm3 = 4.5 MJ/m3. 'KU' is the total uniaxial MAE; K1 (Sucksmith-Thompson) = 4.1×10^7 erg/cm3. May duplicate the other fork's CoPt record.
