@@ -508,6 +508,10 @@ def build(reg, phases, rows, R, st, univ=None):
         f"({len(R.estimates)}, FINDINGS.md §7) and never set a ceiling.")
     ctx['failures'] = (table(['case', 'phase', 'route', 'predicted', 'A ceiling', 'measured A', 'diagnosis'], fails)
                        if fails else 'None.')
+    pv = [x for x in (s1['cases'] if s1 else []) if x['status'] == 'heldout' and x.get('ceiling') == 'possible violation']
+    pv_table = table(['case', 'phase', 'A ceiling', 'measured A (Js range)', 'conversion'],
+                     [[x['case'], x['phase'], fmt(x['A_hi']), f"{fmt(x['m_lo'])}-{fmt(x['m_hi'])}", x['conv']]
+                      for x in pv])
     s2h = s2['summary'].get('heldout', {}) if s2 else {}
     ctx['open_items'] = '\n'.join([
         f"- {verd['open']} account cells decided by unpublished quantities (Limits).",
@@ -515,6 +519,8 @@ def build(reg, phases, rows, R, st, univ=None):
         "ceiling because the same sample's Js is unpublished; the Js of that magnet settles each.",
         f"- v2 has been tested on {s2h.get('n_scored', 0)} held-out measurements so far "
         f"({s2h.get('ceiling_violated', 0)} violations).",
+        '', 'Held-out measurements (v1) whose conversion straddles the ceiling (the same-sample Js decides):', '',
+        pv_table,
     ])
     # ---------------- COMPLETE.md: each GOAL.md measurement, computed
     n_ph, n_rt = len(phases), len(ROUTES)

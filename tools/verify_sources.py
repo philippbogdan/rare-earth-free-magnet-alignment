@@ -246,6 +246,16 @@ def verify_record(r):
             if frags and all(f in nt for f in frags):
                 best, where, btext = 1.0, 'local:' + rel, raw
                 break
+    if best < 0.9:                    # fuzzy match in the saved text of this record's own source
+        slug = doi.lower().replace('/', '_') if doi else None
+        au = norm((src.get('first_author') or '').split(',')[0].split(' ')[-1]) if src.get('first_author') else ''
+        yr = str(src.get('year') or '')
+        for rel, raw, nt in local_texts():
+            name = rel.lower()
+            if (slug and slug in name) or (au and len(au) > 2 and au in norm(name) and yr and yr in name):
+                sc = find_quote(quote, raw)
+                if sc > best:
+                    best, where, btext = sc, 'local:' + rel, raw
     out['quote_score'] = round(best, 3)
     out['quote_where'] = where
     out['level'] = (None if best < 0.9 else ('local' if (where or '').startswith('local:') else 'online'))
@@ -272,6 +282,23 @@ def main(files):
         json.dump(res, open(OUT, 'w'), indent=1, sort_keys=True)
 
 
+def recheck_failed(files):
+    """Re-verify only the records whose quote was not found (e.g. after adding saved texts)."""
+    res = json.load(open(OUT)) if os.path.exists(OUT) else {}
+    for fn in files:
+        for r in yaml.safe_load(open(fn)) or []:
+            rid = r.get('id')
+            if not rid or (res.get(rid) or {}).get('quote_ok'):
+                continue
+            r['_file'] = os.path.relpath(fn, ROOT)
+            res[rid] = verify_record(r)
+            print(f"{rid:50s} quote={res[rid]['quote_score']} ({res[rid]['quote_where']})", flush=True)
+    json.dump(res, open(OUT, 'w'), indent=1, sort_keys=True)
+
+
 if __name__ == '__main__':
-    fs = sys.argv[1:] or sorted(glob.glob(os.path.join(ROOT, 'data', 'raw', '*.yaml')))
-    main(fs)
+    args = sys.argv[1:]
+    if args and args[0] == '--recheck-failed':
+        recheck_failed(args[1:])
+    else:
+        main(args or sorted(glob.glob(os.path.join(ROOT, 'data', 'raw', '*.yaml'))))
