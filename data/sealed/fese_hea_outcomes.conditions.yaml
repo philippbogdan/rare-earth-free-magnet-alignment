@@ -228,8 +228,8 @@
     locator: Results and Discussion, Fig. 3
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
 - id: fese_mnrod_bh_bishwas2014
-  phase: Fe3-xMnxSe4 nanorods (x=0.03)
-  route: isotropic
+  phase: Fe3-xMnxSe4 nanorods (composition for low-T value unspecified)
+  route: 'other: alignment unreported'
   process: Mn-substituted nanorods synthesized chemically
   quantity: '[redacted]'
   unit: MGOe
@@ -249,3 +249,26 @@
     evidence: abstract
     locator: abstract
     url: https://pubs.acs.org/doi/10.1021/jp411956q
+- id: fese_powder_mrms_wang2012
+  phase: Fe3Se4 (monoclinic)
+  route: isotropic
+  process: organic-solution-phase synthesis of approximately 30 nm nanoparticles; randomly oriented powder
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: random powder direction
+  measurement: VSM at 300 K; loop to 90 kOe; high-field superparamagnetic component fitted and subtracted
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: not available in extracted source text
+    parent_texture: random nanoparticle assembly
+    magnet_axis: arbitrary powder measurement direction
+  source:
+    doi: 10.1063/1.4759352
+    title: 'Temperature dependence of magnetic anisotropy constant in iron chalcogenide Fe3Se4: Excellent
+      agreement with theories'
+    first_author: Jun Wang
+    year: 2012
+    evidence: full_text
+    locator: Results, Fig. 2b
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3517494/

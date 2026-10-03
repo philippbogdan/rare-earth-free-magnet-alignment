@@ -807,7 +807,7 @@
 - id: fe5sib2_spin_mcg2015
   phase: Fe5SiB2
   quantity: other
-  value: spin reorientation to easy plane near 170 K
+  value: spin reorientation anomaly near 170 K
   unit: ''
   conditions: ''
   source:
@@ -821,6 +821,24 @@
   quote: "The spin reorientation\n              in Fe5 SiB2 is observed as an anomaly in the magnetization near\
     \ 170 K,"
   note: Below room temperature; temperature dependence matters to easy-axis selection.
+- id: fe5sib2_lowt_easy_mcg2015
+  phase: Fe5SiB2
+  quantity: easy_axis
+  value: ab easy plane at low temperature
+  unit: ''
+  conditions: below spin reorientation near 170 K
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: section III
+  quote: 'with the easy axis reported to be in the ab-plane at low
+
+    top panel. For each material, the intensity of the 004 re-     temperature [8].'
+  note: McGuire cites earlier measurement; room-temperature easy axis is c.
 - id: fe5pb2_tc_sc2016
   phase: Fe5PB2
   quantity: Tc
@@ -971,6 +989,25 @@
 
     [010], and [001] directions.'
   note: ''
+- id: feta_scope_scheiber2025
+  phase: Fe-Ta-system
+  quantity: other
+  value: review refers to Fe-Ta miscellaneous phases, not a unique FeTa compound
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1002/adem.202502032
+    title: Recent Advancements in Bulk Processing of Rare‐Earth‐Free Hard Magnetic Materials and Related Multiscale
+      Simulations
+    first_author: Scheiber
+    year: 2025
+    url: https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adem.202502032
+    evidence: review
+    locator: section 2.1
+  quote: 'The following magnetic systems (phases) will be covered: Mn  Bi (α-MnBi), Mn  Al (τ-MnAl), Fe  Ni (L1
+    ₀ -FeNi), Fe  N (α″-Fe ₁₆ N ₂ ), Fe  Ta (misc. phases), and Fe  P (Fe ₂ P).'
+  note: The experimentally explored candidate is Fe-rich C14 Fe2+δTa with bcc Fe(Ta); other Fe-Ta structures are
+    predictions.
 - id: feta_c14_structure_gabay2019
   phase: Fe2+δTa-C14
   quantity: structure
@@ -1009,7 +1046,7 @@
 - id: feta_c14_path_gabay2019
   phase: Fe2+δTa-C14
   quantity: formation_path
-  value: rapid solidification yields Fe-rich C14 plus bcc Fe(Ta)
+  value: rapid solidification of molten Fe-Ta alloy onto copper wheel
   unit: ''
   conditions: ''
   source:
@@ -1130,6 +1167,29 @@
   quote: The secondary-electrons SEM image of the contact side of the ribbon shown in Fig. 5b reveals 25 nm Fe(Ta)
     precipitates.
   note: Particle elongation and shape anisotropy are hypotheses, not observed morphology.
+- id: feta_stoich_pm_arap2020
+  phase: Fe2Ta-C14
+  quantity: other
+  value: stoichiometric Fe2Ta paramagnetic; off-stoichiometry can induce low-temperature ferromagnetism
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: review
+    locator: Introduction
+  quote: "The Fe2 Ta structure is a paramagnet in which ei-\n                                                  \
+    \   PMs in modern society has resulted in a renewed interest in\n                                          \
+    \                                                                                  ther Fe or Ta excess can\
+    \ induce a ferromagnetic ordering at\n                                                     the design of new\
+    \ magnet materials that are cheaper and con-\n                                                             \
+    \                                                               low temperatures (<            10\n        \
+    \                                                                                                          \
+    \                              ∼ 150 K) ."
+  note: Arapan summarizes prior experimental work; no 300 K intrinsic Js can be assigned to equilibrium Fe2Ta.
 - id: fe3ta_structure_arap2020
   phase: Fe3Ta-SG122-predicted
   quantity: structure

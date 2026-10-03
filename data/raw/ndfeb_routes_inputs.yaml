@@ -17,11 +17,10 @@
     url: https://bdt.semi.ac.cn/download/0.8346965234794707.pdf
     evidence: review
     locator: p. 406, first paragraph
-  quote: 'nent magnet material but its polarisation (1.61 T)
-
-    body-centred cubic (BCC) phase aFe is a weak                     and Curie temperature (585 K) both leave some-'
-  note: Review quote from two-column PDF text; chemical formula is in adjacent line. Saturation polarization is the phase
-    value, not sample remanence.
+  quote: Likewise, Nd2Fe14B is a versatile high-performance permanent magnet material but its polarisation (1.61 T) and Curie
+    temperature (585 K) both leave something to be desired.
+  note: 'Review quote restored from two-column PDF text: line-end hyphenation and chemical subscripts normalized. Saturation
+    polarization is the phase value, not sample remanence.'
 - id: ndfeb_k1_susner2017
   phase: Nd2Fe14B
   quantity: K1
@@ -171,7 +170,9 @@
   quote: 'The Fe phase solidiﬁed primarily from the melt. Subsequently, the
 
     remaining melt was undercooled below the peritectic temperature and the Nd2 Fe14 B phase surrounded the primary Fe dendrites,
-    yielding the'
+    yielding the
+
+    recalescence.'
   note: Peritectic morphology directly observed; does not establish a unique parent-product orientation relationship.
 - id: ndfeb_peritectic_reaction_sridharan2018
   phase: Nd2Fe14B
@@ -207,7 +208,9 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6450867/fullTextXML
     evidence: full_text
     locator: Experimental Methods
-  quote: peritectic decomposition temperature of the Nd2Fe14B compound (1453 K)
+  quote: The specimen was heated to 973 K, i.e., 180 K higher than the melting point of CuNd-Nd eutectics (793 K) and approximately
+    480 K lower than the peritectic decomposition temperature of the Nd2Fe14B compound (1453 K), resulting in a semisolid
+    state of the specimen.
   note: The cited value is the heating decomposition temperature; using it as the equilibrium cooling reaction temperature
     assumes negligible hysteresis.
 - id: ndfeb_flux_susner2017
@@ -218,17 +221,21 @@
   conditions: 51 mol% Nd, 43.3 mol% Fe, 5.8 mol% B flux; heated 1190 C then cooled to 800 C
   source:
     doi: 10.1016/j.jmmm.2016.10.127
-    title: Flux growth and characterization of Ce-substituted Nd2Fe14B single crystals
+    title: "2Flux growth and characterization of Ce-substituted\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
+      \ altimg=\"si0047.gif\" overflow=\"scroll\">\n                      <mml:mrow>\n                        <mml:msub>\n\
+      \                          <mml:mrow>\n                            <mml:mi>Nd</mml:mi>\n                          </mml:mrow>\n\
+      \                          <mml:mrow>\n                            <mml:mn>2</mml:mn>\n                          </mml:mrow>\n\
+      \                        </mml:msub>\n                        <mml:msub>\n                          <mml:mrow>\n   \
+      \                         <mml:mi>Fe</mml:mi>\n                          </mml:mrow>\n                          <mml:mrow>\n\
+      \                            <mml:mn>14</mml:mn>\n                          </mml:mrow>\n                        </mml:msub>\n\
+      \                        <mml:mi mathvariant=\"normal\">B</mml:mi>\n                      </mml:mrow>\n            \
+      \        </mml:math>\n                    single crystals"
     first_author: Michael A. Susner
     year: 2017
     url: https://www.osti.gov/servlets/purl/1349597
     evidence: full_text
-    locator: pp. 2-3, Experimental Details
-  quote: 'Single crystals of both Nd2 Fe14 B and NdFe4 B4 type
-
-    (Nd1−x Cex )2 Fe14 B is preferentially associated with the        materials were grown from Nd-Fe flux following the
-
-    larger 4g site or the smaller 4 f site has previously been        techniques originally reported by Canfield et al. [12,'
+    locator: abstract
+  quote: Single crystals of (Nd1−x Cex )2 Fe14 B, some reaching ∼ 6 × 8 × 8 mm3 in volume, are grown out of Fe-(Nd,Ce) flux.
   note: The experiment demonstrates melt growth but does not prove Nd2Fe14B nucleated first. Flux is Nd-rich relative to stoichiometric
     2:14:1.
 - id: ndfeb_flux_window_susner2017
@@ -239,25 +246,29 @@
   conditions: thermal interval traversed during Nd-rich flux crystal growth; nucleation temperature unreported
   source:
     doi: 10.1016/j.jmmm.2016.10.127
-    title: Flux growth and characterization of Ce-substituted Nd2Fe14B single crystals
+    title: "2Flux growth and characterization of Ce-substituted\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
+      \ altimg=\"si0047.gif\" overflow=\"scroll\">\n                      <mml:mrow>\n                        <mml:msub>\n\
+      \                          <mml:mrow>\n                            <mml:mi>Nd</mml:mi>\n                          </mml:mrow>\n\
+      \                          <mml:mrow>\n                            <mml:mn>2</mml:mn>\n                          </mml:mrow>\n\
+      \                        </mml:msub>\n                        <mml:msub>\n                          <mml:mrow>\n   \
+      \                         <mml:mi>Fe</mml:mi>\n                          </mml:mrow>\n                          <mml:mrow>\n\
+      \                            <mml:mn>14</mml:mn>\n                          </mml:mrow>\n                        </mml:msub>\n\
+      \                        <mml:mi mathvariant=\"normal\">B</mml:mi>\n                      </mml:mrow>\n            \
+      \        </mml:math>\n                    single crystals"
     first_author: Michael A. Susner
     year: 2017
     url: https://www.osti.gov/servlets/purl/1349597
     evidence: full_text
     locator: p. 3, Experimental Details
-  quote: 'The sealed ampoules were placed into a large box                     HB-3A four circle diﬀractometer at the High
-    Flux Iso-
+  quote: 'The sealed ampoules were placed into a large box
 
-    furnace and heated to 1190 ◦ C over 12 h and held                       tope Reactor (HFIR) at the Oak Ridge National
-    Labo-
+    furnace and heated to 1190 ◦ C over 12 h and held
 
-    at that temperature for 24 h. The furnace was then                      ratory. The ∼300 mg sample was measured at 4 K
-    and
+    at that temperature for 24 h. The furnace was then
 
-    cooled to 800 ◦ C over 390 h, after which the samples                   300 K by neutrons with a wavelength of 1.003 Å
-    from
+    cooled to 800 ◦ C over 390 h, after which the samples
 
-    were removed and the flux was decanted using a cen-'
+    were removed and the flux was decanted using a centrifuge.'
   note: 1190 C = 1463 K and 800 C = 1073 K. This is a growth protocol window, not a measured nucleation temperature.
 - id: ndfeb_singlecrystal_susner2017
   phase: Nd2Fe14B
@@ -267,18 +278,27 @@
   conditions: grown from Nd-Fe flux
   source:
     doi: 10.1016/j.jmmm.2016.10.127
-    title: Flux growth and characterization of Ce-substituted Nd2Fe14B single crystals
+    title: "2Flux growth and characterization of Ce-substituted\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
+      \ altimg=\"si0047.gif\" overflow=\"scroll\">\n                      <mml:mrow>\n                        <mml:msub>\n\
+      \                          <mml:mrow>\n                            <mml:mi>Nd</mml:mi>\n                          </mml:mrow>\n\
+      \                          <mml:mrow>\n                            <mml:mn>2</mml:mn>\n                          </mml:mrow>\n\
+      \                        </mml:msub>\n                        <mml:msub>\n                          <mml:mrow>\n   \
+      \                         <mml:mi>Fe</mml:mi>\n                          </mml:mrow>\n                          <mml:mrow>\n\
+      \                            <mml:mn>14</mml:mn>\n                          </mml:mrow>\n                        </mml:msub>\n\
+      \                        <mml:mi mathvariant=\"normal\">B</mml:mi>\n                      </mml:mrow>\n            \
+      \        </mml:math>\n                    single crystals"
     first_author: Michael A. Susner
     year: 2017
     url: https://www.osti.gov/servlets/purl/1349597
     evidence: full_text
     locator: pp. 3-4, Experimental Details and Results
-  quote: "The as-grown crystals displayed well-defined\n                                                                 \
-    \                                                                   faceting (Fig. 1a, inset). The sizes of the 2-14-1\n\
-    \                                \x15\x10'\x15,\x16\n                                                                \
-    \                                                                    crystals were typically ∼ 2 × 2 × 2 mm3 with some\n\
-    \                                                                                                                    \
-    \                reaching ∼ 6 × 8 × 8 mm3 in volume."
+  quote: 'The as-grown crystals displayed well-defined
+
+    faceting (Fig. 1a, inset). The sizes of the 2-14-1
+
+    crystals were typically ∼ 2 × 2 × 2 mm3 with some
+
+    reaching ∼ 6 × 8 × 8 mm3 in volume.'
   note: Directly grown single crystals; their three dimensions are roughly comparable, unlike thin platelets in other processes.
 - id: ndfeb_habit_li2019
   phase: Nd2Fe14B
@@ -330,13 +350,11 @@
     url: https://www.jstage.jst.go.jp/article/matertrans/50/3/50_MBW200821/_pdf
     evidence: full_text
     locator: p. 480, Results
-  quote: 'The lamella structure is            Nd2 Fe14 B was too ﬁne to observe with SEM. Although the
+  quote: 'The lamella structure is
 
-    formed by R2 Fe14 B and R-rich phase parallel to the growth               size distribution of R-rich phase at the wheel
-    surface is larger
+    formed by R2 Fe14 B and R-rich phase parallel to the growth
 
-    direction, and the heat ﬂux is perpendicular to the wheel                 than that at the free surface as shown in Fig.
-    3, it is found that
+    direction, and the heat ﬂux is perpendicular to the wheel
 
     surface in casting.'
   note: Refers to lamellar morphology, not a crystallographic [hkl]. Sample c-axis orientation is sealed as an outcome.
@@ -567,21 +585,3 @@
     [110]∥Mo(100)[100], and Mo(100) [100]∥Nd2Fe14B(001)[100], as shown schematically in Fig. 2b.
   note: In-plane fourfold peaks were weak; the reported epitaxial relationship is the authors interpretation. No product variant
     fraction is supplied.
-- id: ndfeb_ep_caxis_koike2016
-  phase: Nd2Fe14B
-  quantity: easy_axis
-  value: film c-axis normal to plane
-  unit: text
-  conditions: Nd2Fe14B films on Mo/MgO
-  source:
-    doi: 10.1186/s11671-016-1227-x
-    title: Modification of the Interface Nanostructure and Magnetic Properties in Nd-Fe-B Thin Films
-    first_author: Kunihiro Koike
-    year: 2016
-    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4718914/fullTextXML
-    evidence: full_text
-    locator: Results, XRD
-  quote: In addition to the strong peaks from MgO substrate and Mo layers, we do observe in all the films the diffraction
-    peaks from the (004), (006), (008), and (0010) planes of the tetragonal Nd2Fe14B phase, which indicate that the c-axis
-    of the Nd2Fe14B crystallites aligns perpendicular to the film plane.
-  note: Film orientation establishes EP as a valid route. This is process-specific orientation, not an intrinsic phase property.
