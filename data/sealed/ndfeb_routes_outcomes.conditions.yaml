@@ -368,7 +368,7 @@
     url: https://mdpi-res.com/d_attachment/magnetochemistry/magnetochemistry-05-00016/article_deploy/magnetochemistry-05-00016.pdf
 - id: ndfeb_kesler2019_bh_9t
   phase: Nd2Fe14B
-  route: RX+FA
+  route: FA
   process: melt-spun amorphous Nd2Fe14B plus TiC crystallized by annealing
   quantity: '[redacted]'
   unit: MGOe

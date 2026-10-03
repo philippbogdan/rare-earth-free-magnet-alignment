@@ -6,7 +6,8 @@
 # - No universal crystallographic fibre established for directional solidification, EBM or L-PBF.
 # - No exact nucleation temperature or proven primary-phase order for Nd-rich flux growth.
 # - No kinetic thermal-stability limit with a specified hold time.
-# - No quantified epitaxial-film remanence or bulk texture factor from accessible source text.
+# - No quantified remanence or texture factor for pure Nd2Fe14B strip cast or epitaxial films
+#   from accessible source text; a Dy-substituted strip-cast plot was excluded.
 - id: ndfeb_js_coey1999
   phase: Nd2Fe14B
   quantity: Js
@@ -49,15 +50,7 @@
   conditions: undoped Nd2Fe14B flux-grown single crystal, DTA/TGA
   source:
     doi: 10.1016/j.jmmm.2016.10.127
-    title: "2Flux growth and characterization of Ce-substituted\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
-      \ altimg=\"si0047.gif\" overflow=\"scroll\">\n                      <mml:mrow>\n                        <mml:msub>\n\
-      \                          <mml:mrow>\n                            <mml:mi>Nd</mml:mi>\n                          </mml:mrow>\n\
-      \                          <mml:mrow>\n                            <mml:mn>2</mml:mn>\n                          </mml:mrow>\n\
-      \                        </mml:msub>\n                        <mml:msub>\n                          <mml:mrow>\n   \
-      \                         <mml:mi>Fe</mml:mi>\n                          </mml:mrow>\n                          <mml:mrow>\n\
-      \                            <mml:mn>14</mml:mn>\n                          </mml:mrow>\n                        </mml:msub>\n\
-      \                        <mml:mi mathvariant=\"normal\">B</mml:mi>\n                      </mml:mrow>\n            \
-      \        </mml:math>\n                    single crystals"
+    title: Flux growth and characterization of Ce-substituted Nd2Fe14B single crystals
     first_author: Michael A. Susner
     year: 2017
     url: https://www.osti.gov/servlets/purl/1349597
@@ -200,7 +193,7 @@
     first_author: Niyanth Sridharan
     year: 2018
     url: https://www.osti.gov/servlets/purl/1461738
-    evidence: full_text
+    evidence: review
     locator: p. 6, Discussion
   quote: 'Typically Nd2Fe14B is expected to solidify by a primary γ iron mode and subsequently
 
@@ -235,15 +228,7 @@
   conditions: 51 mol% Nd, 43.3 mol% Fe, 5.8 mol% B flux; heated 1190 C then cooled to 800 C
   source:
     doi: 10.1016/j.jmmm.2016.10.127
-    title: "2Flux growth and characterization of Ce-substituted\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
-      \ altimg=\"si0047.gif\" overflow=\"scroll\">\n                      <mml:mrow>\n                        <mml:msub>\n\
-      \                          <mml:mrow>\n                            <mml:mi>Nd</mml:mi>\n                          </mml:mrow>\n\
-      \                          <mml:mrow>\n                            <mml:mn>2</mml:mn>\n                          </mml:mrow>\n\
-      \                        </mml:msub>\n                        <mml:msub>\n                          <mml:mrow>\n   \
-      \                         <mml:mi>Fe</mml:mi>\n                          </mml:mrow>\n                          <mml:mrow>\n\
-      \                            <mml:mn>14</mml:mn>\n                          </mml:mrow>\n                        </mml:msub>\n\
-      \                        <mml:mi mathvariant=\"normal\">B</mml:mi>\n                      </mml:mrow>\n            \
-      \        </mml:math>\n                    single crystals"
+    title: Flux growth and characterization of Ce-substituted Nd2Fe14B single crystals
     first_author: Michael A. Susner
     year: 2017
     url: https://www.osti.gov/servlets/purl/1349597
@@ -260,15 +245,7 @@
   conditions: thermal interval traversed during Nd-rich flux crystal growth; nucleation temperature unreported
   source:
     doi: 10.1016/j.jmmm.2016.10.127
-    title: "2Flux growth and characterization of Ce-substituted\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
-      \ altimg=\"si0047.gif\" overflow=\"scroll\">\n                      <mml:mrow>\n                        <mml:msub>\n\
-      \                          <mml:mrow>\n                            <mml:mi>Nd</mml:mi>\n                          </mml:mrow>\n\
-      \                          <mml:mrow>\n                            <mml:mn>2</mml:mn>\n                          </mml:mrow>\n\
-      \                        </mml:msub>\n                        <mml:msub>\n                          <mml:mrow>\n   \
-      \                         <mml:mi>Fe</mml:mi>\n                          </mml:mrow>\n                          <mml:mrow>\n\
-      \                            <mml:mn>14</mml:mn>\n                          </mml:mrow>\n                        </mml:msub>\n\
-      \                        <mml:mi mathvariant=\"normal\">B</mml:mi>\n                      </mml:mrow>\n            \
-      \        </mml:math>\n                    single crystals"
+    title: Flux growth and characterization of Ce-substituted Nd2Fe14B single crystals
     first_author: Michael A. Susner
     year: 2017
     url: https://www.osti.gov/servlets/purl/1349597
@@ -292,15 +269,7 @@
   conditions: grown from Nd-Fe flux
   source:
     doi: 10.1016/j.jmmm.2016.10.127
-    title: "2Flux growth and characterization of Ce-substituted\n                    <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"\
-      \ altimg=\"si0047.gif\" overflow=\"scroll\">\n                      <mml:mrow>\n                        <mml:msub>\n\
-      \                          <mml:mrow>\n                            <mml:mi>Nd</mml:mi>\n                          </mml:mrow>\n\
-      \                          <mml:mrow>\n                            <mml:mn>2</mml:mn>\n                          </mml:mrow>\n\
-      \                        </mml:msub>\n                        <mml:msub>\n                          <mml:mrow>\n   \
-      \                         <mml:mi>Fe</mml:mi>\n                          </mml:mrow>\n                          <mml:mrow>\n\
-      \                            <mml:mn>14</mml:mn>\n                          </mml:mrow>\n                        </mml:msub>\n\
-      \                        <mml:mi mathvariant=\"normal\">B</mml:mi>\n                      </mml:mrow>\n            \
-      \        </mml:math>\n                    single crystals"
+    title: Flux growth and characterization of Ce-substituted Nd2Fe14B single crystals
     first_author: Michael A. Susner
     year: 2017
     url: https://www.osti.gov/servlets/purl/1349597
@@ -463,19 +432,7 @@
 
     microstructural evolution and magnetic behavior of Nd2 Fe14 B ribbons produced through
 
-    melt-spinning with TiC additions. A custom-built differential scanning calorimeter (DSC) was used to
-
-    determine the crystallization temperatures at zero-field and applied fields of 20 kOe and 90 kOe, which
-
-    guided subsequent heat treatments to evaluate phase evolution. X-ray diffraction (XRD) was used for
-
-    phase identification and transmission electron microscopy (TEM) was employed for observation of
-
-    the microstructural size, morphology, and magnetic domain structure. A superconducting quantum
-
-    interference device (SQUID) and vibrating sample magnetometer (VSM) were used to measure the
-
-    magnetic behavior.'
+    melt-spinning with TiC additions.'
   note: The precursor and TiC addition are essential to interpreting field effects.
 - id: ndfeb_tformation_amorphous_kesler2019
   phase: Nd2Fe14B

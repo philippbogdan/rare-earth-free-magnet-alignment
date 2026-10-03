@@ -5838,6 +5838,101 @@
       }
      ]
     },
+    "fese_hea_outcomes.yaml": {
+     "sha256": "7c734dd1279cf3ee2d859767c0b3db6c6a00609ea4685a6e326de58dfd354c50",
+     "n_records": 12,
+     "cases": [
+      {
+       "id": "hea_a_ta_br_na2021",
+       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1063/9.0000097"
+      },
+      {
+       "id": "hea_a_ta_bhmax_na2021",
+       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
+       "route": "isotropic",
+       "quantity": "BHmax",
+       "doi": "10.1063/9.0000097"
+      },
+      {
+       "id": "hea_a_ta_mrms_na2021",
+       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/9.0000097"
+      },
+      {
+       "id": "hea_a_fa_br_na2021",
+       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1063/9.0000097"
+      },
+      {
+       "id": "hea_a_fa_bhmax_na2021",
+       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
+       "route": "FA",
+       "quantity": "BHmax",
+       "doi": "10.1063/9.0000097"
+      },
+      {
+       "id": "hea_a_fa_mrms_na2021",
+       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
+       "route": "FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/9.0000097"
+      },
+      {
+       "id": "hea_d_ta_br_na2021",
+       "phase": "Fe2CoNiAlCu0.4Ti0.4 (alloy D)",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1063/9.0000097"
+      },
+      {
+       "id": "hea_d_ta_bhmax_na2021",
+       "phase": "Fe2CoNiAlCu0.4Ti0.4 (alloy D)",
+       "route": "isotropic",
+       "quantity": "BHmax",
+       "doi": "10.1063/9.0000097"
+      },
+      {
+       "id": "hea_d_ta_mrms_na2021",
+       "phase": "Fe2CoNiAlCu0.4Ti0.4 (alloy D)",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/9.0000097"
+      },
+      {
+       "id": "hea_l10_rocking_beeson2024",
+       "phase": "(FeCoNiMnCu)Pt (L10 film)",
+       "route": "other: sputtered film plus RTA",
+       "quantity": "texture_metric",
+       "doi": "10.1002/advs.202308574"
+      },
+      {
+       "id": "fese_mnrod_bh_bishwas2014",
+       "phase": "Fe3-xMnxSe4 nanorods (composition for low-T value unspecified)",
+       "route": "other: alignment unreported",
+       "quantity": "BHmax",
+       "doi": "10.1021/jp411956q"
+      },
+      {
+       "id": "fese_powder_mrms_wang2012",
+       "phase": "Fe3Se4 (monoclinic)",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.4759352"
+      }
+     ]
+    }
+   },
+   "opened": false
+  },
+  "pending_codex": {
+   "files": {
     "borides_feta_outcomes.yaml": {
      "sha256": "44200f2bf0ddc734d34ef0e1fffdec94a6f78e4b5bf7aaf8104fa17ccaa9282f",
      "n_records": 1,
@@ -5850,9 +5945,15 @@
        "doi": "10.1063/1.5079727"
       }
      ]
-    },
+    }
+   },
+   "opened": false,
+   "note": "superseded partial versions sealed while the Codex collectors were still running (commit dacf28f); final versions are sealed in later batches"
+  },
+  "batch2": {
+   "files": {
     "ndfeb_routes_outcomes.yaml": {
-     "sha256": "a71db996153010afd5de68fed67781d9250174806bcd52edd89e84f4d1e903db",
+     "sha256": "ce8b78db76e07789f2532f6f9d71b42b8eedaf65b39ff229f8846b6b69c98067",
      "n_records": 23,
      "cases": [
       {
@@ -5984,7 +6085,7 @@
       {
        "id": "ndfeb_kesler2019_bh_9t",
        "phase": "Nd2Fe14B",
-       "route": "RX+FA",
+       "route": "FA",
        "quantity": "(BH)max",
        "doi": "10.3390/magnetochemistry5010016"
       },
@@ -6015,96 +6116,6 @@
        "route": "AM",
        "quantity": "(BH)max",
        "doi": "10.1007/s00170-024-13605-9"
-      }
-     ]
-    },
-    "fese_hea_outcomes.yaml": {
-     "sha256": "7c734dd1279cf3ee2d859767c0b3db6c6a00609ea4685a6e326de58dfd354c50",
-     "n_records": 12,
-     "cases": [
-      {
-       "id": "hea_a_ta_br_na2021",
-       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
-       "route": "isotropic",
-       "quantity": "Br",
-       "doi": "10.1063/9.0000097"
-      },
-      {
-       "id": "hea_a_ta_bhmax_na2021",
-       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
-       "route": "isotropic",
-       "quantity": "BHmax",
-       "doi": "10.1063/9.0000097"
-      },
-      {
-       "id": "hea_a_ta_mrms_na2021",
-       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
-       "route": "isotropic",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.1063/9.0000097"
-      },
-      {
-       "id": "hea_a_fa_br_na2021",
-       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
-       "route": "FA",
-       "quantity": "Br",
-       "doi": "10.1063/9.0000097"
-      },
-      {
-       "id": "hea_a_fa_bhmax_na2021",
-       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
-       "route": "FA",
-       "quantity": "BHmax",
-       "doi": "10.1063/9.0000097"
-      },
-      {
-       "id": "hea_a_fa_mrms_na2021",
-       "phase": "FeCoNiAlCu0.4Ti0.4 (alloy A)",
-       "route": "FA",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.1063/9.0000097"
-      },
-      {
-       "id": "hea_d_ta_br_na2021",
-       "phase": "Fe2CoNiAlCu0.4Ti0.4 (alloy D)",
-       "route": "isotropic",
-       "quantity": "Br",
-       "doi": "10.1063/9.0000097"
-      },
-      {
-       "id": "hea_d_ta_bhmax_na2021",
-       "phase": "Fe2CoNiAlCu0.4Ti0.4 (alloy D)",
-       "route": "isotropic",
-       "quantity": "BHmax",
-       "doi": "10.1063/9.0000097"
-      },
-      {
-       "id": "hea_d_ta_mrms_na2021",
-       "phase": "Fe2CoNiAlCu0.4Ti0.4 (alloy D)",
-       "route": "isotropic",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.1063/9.0000097"
-      },
-      {
-       "id": "hea_l10_rocking_beeson2024",
-       "phase": "(FeCoNiMnCu)Pt (L10 film)",
-       "route": "other: sputtered film plus RTA",
-       "quantity": "texture_metric",
-       "doi": "10.1002/advs.202308574"
-      },
-      {
-       "id": "fese_mnrod_bh_bishwas2014",
-       "phase": "Fe3-xMnxSe4 nanorods (composition for low-T value unspecified)",
-       "route": "other: alignment unreported",
-       "quantity": "BHmax",
-       "doi": "10.1021/jp411956q"
-      },
-      {
-       "id": "fese_powder_mrms_wang2012",
-       "phase": "Fe3Se4 (monoclinic)",
-       "route": "isotropic",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.1063/1.4759352"
       }
      ]
     }
