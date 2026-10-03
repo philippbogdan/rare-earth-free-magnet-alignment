@@ -1,0 +1,401 @@
+# Topic: mn4n. Inputs are intrinsic properties and formation mechanisms only.
+# Gaps: numerical/sign-specific bulk cubic K1; decomposition T_stab and atmosphere/time window;
+# measured density at 300 K; bulk nitriding and alloy transformation OR and variant count;
+# isolated single-crystal particle habit relative to <111>; melt crystallisation and growth direction;
+# hot deformation mechanism; film rocking-curve FWHM; field-aligned powder or textured-bulk data.
+- id: mn4n_structure_zhou2021
+  phase: Mn4N
+  quantity: structure
+  value: cubic antiperovskite ferrimagnet, Mn on corner and face-center sites, N at body center
+  unit: ''
+  conditions: stoichiometric Mn4N
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Introduction
+  quote: 'Anti-perovskite Mn4N has been known as a crystalline, rare-earth-free ferrimagnetic material. In
+
+
+    Mn4N, the Mn-atoms have a face-centered cubic structure with one N-atom at the body center.'
+  note: ''
+- id: mn4n_lattice_odonnell2024
+  phase: Mn4N
+  quantity: lattice
+  value: 3.8709
+  unit: Å
+  conditions: cubic antiperovskite phase refined from synchrotron powder XRD; mixed sample with Mn5Al8
+  source:
+    doi: 10.1021/acs.inorgchem.4c02693
+    title: “Mn3AlN” is Really Mn4N
+    first_author: O’Donnell
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2433916
+    evidence: full_text
+    locator: Table 2, Mn4N refinement
+  quote: "Lattice Parameter of\n                                                           3.8709(3)    3.8708(7)"
+  note: Parenthetical (3) is the stated uncertainty in the last digit.
+  uncertainty: 0.0003
+- id: mn4n_easy_bulk_zhou2021
+  phase: Mn4N
+  quantity: easy_axis
+  value: <111>
+  unit: ''
+  conditions: bulk cubic Mn4N; literature statement, not measured in this film study
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: review
+    locator: Introduction
+  quote: 'Although the easy axis of bulk
+
+
+    Mn4N is along the [111] direction, PMA is repeatedly and reproducibly observed in crystalline Mn4N
+
+
+    films 22-28.'
+  note: The <111> easy direction is a secondary statement in the Introduction; no independently measured bulk cubic K1 value or sign was located.
+- id: mn4n_js_bulk_apetrei2026
+  phase: Mn4N
+  quantity: Js
+  value: 0.1822
+  unit: T
+  conditions: bulk Mn4N, room temperature; value cited by the 2026 preprint from a review
+  source:
+    doi: null
+    title: Optimization of Epitaxial Mn4N Thin Films Grown by Sputtering for Spintronic Applications
+    first_author: Apetrei
+    year: 2026
+    url: https://arxiv.org/pdf/2607.27419
+    evidence: review
+    locator: Section III.C, bulk comparison
+  quote: resulting in a net room-temperature magnetization of ∼ 1.45 × 105 A/m.
+  note: Derived as μ0 times the quoted 1.45e5 A/m. This is secondary evidence and should not be treated as a fresh bulk measurement.
+- id: mn4n_js_film_zhou2021
+  phase: Mn4N
+  quantity: Js
+  value: 0.054
+  unit: T
+  conditions: S4 epitaxial film, 16.8 nm on MgO(001), reactive rf sputtering at 450 °C; 300 K
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Results, Figure 2(d)
+  quote: 'Figure 2(d) shows the out-of-plane and in-plane M-H curves for the S4 film. The Ms and Ku for the
+
+
+    S4 film is 43 ± 1 emu/cc and 0.70 Merg/cc, respectively.'
+  note: Converted from Ms = 43 ± 1 emu/cm3 using 1 emu/cm3 = 1000 A/m and Js = μ0Ms.
+  uncertainty: 0.0013
+- id: mn4n_tc_li2008
+  phase: Mn4N
+  quantity: Tc
+  value: 740
+  unit: K
+  conditions: bulk nitride prepared from Mn metal, NH3/N2 treatment; Curie point from M(T)
+  source:
+    doi: 10.1016/j.jallcom.2007.03.085
+    title: Fabrication and magnetic characteristic of ferrimagnetic bulk Mn4N
+    first_author: Li
+    year: 2008
+    url: https://doi.org/10.1016/j.jallcom.2007.03.085
+    evidence: abstract
+    locator: Abstract and summary snippet
+  quote: The magnetic measurements show that the Curie temperature is 740 K and the average magnetic moment is 0.88 μ B /cell at 5 K.
+  note: The original source calls this a Curie temperature; ferrimagnetic ordering is meant.
+- id: mn4n_formation_bulk_li2008
+  phase: Mn4N
+  quantity: formation_path
+  value: gas nitriding of pre-existing bulk Mn metal in NH3/N2 flow
+  unit: ''
+  conditions: bulk Mn4N synthesis
+  source:
+    doi: 10.1016/j.jallcom.2007.03.085
+    title: Fabrication and magnetic characteristic of ferrimagnetic bulk Mn4N
+    first_author: Li
+    year: 2008
+    url: https://doi.org/10.1016/j.jallcom.2007.03.085
+    evidence: abstract
+    locator: Abstract
+  quote: bulk Mn ₄ N by doping bulk Mn metal with nitrogen at 900 °C in a flow of NH ₃ /N ₂
+  note: The source does not give a crystallographic parent-product orientation relationship.
+- id: mn4n_tform_bulk_li2008
+  phase: Mn4N
+  quantity: T_formation
+  value: 1173
+  unit: K
+  conditions: bulk Mn metal nitrided at 900 °C for 4 h in NH3/N2 flow
+  source:
+    doi: 10.1016/j.jallcom.2007.03.085
+    title: Fabrication and magnetic characteristic of ferrimagnetic bulk Mn4N
+    first_author: Li
+    year: 2008
+    url: https://doi.org/10.1016/j.jallcom.2007.03.085
+    evidence: abstract
+    locator: Summary snippet
+  quote: A pure bulk Mn ₄ N has been prepared by the nitrogen-doping into bulk Mn with NH ₃ /N ₂ gas at 900 °C for 4 h.
+  note: 900 °C converted to 1173 K. This synthesis temperature exceeds the reported bulk Tc of 740 K.
+- id: mn4n_ku_film_zhou2021
+  phase: Mn4N
+  quantity: other
+  value: Ku = 0.070 MJ/m3
+  unit: MJ/m3
+  conditions: S4 epitaxial tetragonally distorted film, 16.8 nm on MgO(001); 300 K
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Results, Figure 2(d)
+  quote: 'Figure 2(d) shows the out-of-plane and in-plane M-H curves for the S4 film. The Ms and Ku for the
+
+
+    S4 film is 43 ± 1 emu/cc and 0.70 Merg/cc, respectively.'
+  note: Uniaxial film Ku, not bulk cubic K1. Converted from 0.70 Merg/cm3.
+- id: mn4n_easy_film_zhou2021
+  phase: Mn4N
+  quantity: easy_axis
+  value: perpendicular to film plane, Mn4N[001] on MgO(001)
+  unit: ''
+  conditions: S4 reactive-sputtered epitaxial film on MgO(001)
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Results, Figure 2(d)
+  quote: All out-of-plane hysteresis loops were open, indicating PMA.
+  note: The film has a perpendicular easy direction; strained-film anisotropy differs from cubic bulk easy <111>.
+- id: mn4n_tetragonality_zhou2021
+  phase: Mn4N
+  quantity: tetragonality
+  value: 0.987
+  unit: c/a
+  conditions: S3 epitaxial film on MgO(001), 16.8 nm
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Results, Figure 3
+  quote: 'The out-of-plane lattice constant c and in-plane lattice constant a deduced from the (002)
+
+
+    and (202) diffraction peaks are 0.386 nm and 0.391 nm, respectively. Therefore, the c/a ratio was
+
+
+    calculated to be 0.987,'
+  note: c = 0.386 nm and a = 0.391 nm measured by XRD. A substrate-induced distortion is plausible, not proven as the sole cause of PMA.
+- id: mn4n_pma_origin_apetrei2026
+  phase: Mn4N
+  quantity: other
+  value: epitaxial strain contributes to film anisotropy, with interfacial effects also important
+  unit: ''
+  conditions: reactive-sputtered epitaxial films and DFT; 2026 preprint
+  source:
+    doi: null
+    title: Optimization of Epitaxial Mn4N Thin Films Grown by Sputtering for Spintronic Applications
+    first_author: Apetrei
+    year: 2026
+    url: https://arxiv.org/pdf/2607.27419
+    evidence: full_text
+    locator: Section III, strain analysis and conclusion
+  quote: indicate that while epitaxial strain contributes to magnetic anisotropy, interfacial effects also play a crucial role.
+  note: Preprint combines film measurements and DFT; its calculations link tensile tetragonal distortion to perpendicular anisotropy, but do not isolate strain as the only cause.
+- id: mn4n_epitaxy_or_zhou2021
+  phase: Mn4N
+  quantity: OR
+  value: MgO(001)[100] // Mn4N(001)[100]
+  unit: ''
+  conditions: S3 film on annealed MgO(001), reactive sputtering
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Results, Figure 3
+  quote: 'peaks and MgO peaks in φ-scan confirm their epitaxial relationship to be MgO (001)[100]// Mn4N
+
+
+    (001)[100].'
+  note: This is an epitaxial orientation relation; it is not an OR for nitriding bulk manganese.
+- id: mn4n_formation_film_zhou2021
+  phase: Mn4N
+  quantity: formation_path
+  value: reactive rf sputtering of Mn in Ar/N2 onto MgO(001)
+  unit: ''
+  conditions: 10 to 17 nm epitaxial films
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Methods
+  quote: 'Mn4N thin films with nominal thicknesses of ~15 nm and 10 nm were deposited on MgO(001)
+
+
+    5x5x0.5 mm substrates by reactive rf-sputtering at 400 °C and 450 °C substrate temperatures and a base
+
+
+    pressure of 7x10-8 Torr.'
+  note: The Mn4N phase forms during deposition; no bulk solid-state parent variant relation is implied.
+- id: mn4n_tform_film_zhou2021
+  phase: Mn4N
+  quantity: T_formation
+  value: 673-723
+  unit: K
+  conditions: substrate held at 400 or 450 °C during reactive sputtering
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Methods
+  quote: 'Mn4N thin films with nominal thicknesses of ~15 nm and 10 nm were deposited on MgO(001)
+
+
+    5x5x0.5 mm substrates by reactive rf-sputtering at 400 °C and 450 °C substrate temperatures and a base
+
+
+    pressure of 7x10-8 Torr.'
+  note: The deposition temperatures straddle 673 to 723 K, slightly below bulk Tc; the film's own Tc was not measured here.
+- id: mn4n_epitaxial_substrates_zhang2020
+  phase: Mn4N
+  quantity: other
+  value: MBE films single crystalline on MgO and SiC, polycrystalline on GaN, amorphous on sapphire
+  unit: ''
+  conditions: plasma-assisted MBE on four substrates under similar conditions
+  source:
+    doi: 10.1063/1.5130485
+    title: Magnetic properties of MBE grown Mn4N on MgO, SiC, GaN and Al2O3 substrates
+    first_author: Zhang
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10149169
+    evidence: full_text
+    locator: Abstract
+  quote: 'Under similar growth conditions, the Mn4N film is found to grow single crystalline on MgO and SiC, polycrystalline
+
+    on GaN, and amorphous on sapphire.'
+  note: This demonstrates single-crystal films, not free single-crystal particles.
+- id: mn4n_epitaxial_twinning_zhang2020
+  phase: Mn4N
+  quantity: twins
+  value: twinning in (111)-oriented Mn4N film on SiC
+  unit: ''
+  conditions: plasma-assisted MBE on SiC
+  source:
+    doi: 10.1063/1.5130485
+    title: Magnetic properties of MBE grown Mn4N on MgO, SiC, GaN and Al2O3 substrates
+    first_author: Zhang
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10149169
+    evidence: full_text
+    locator: Results, crystal quality
+  quote: 'the epitaxial Mn4N on SiC is a single-phase crystal
+
+    with twinning, showing only the (111) XRD peak, as expected from
+
+    the symmetry of substrates.'
+  note: No measured variant count or twin misorientation is reported in this passage.
+- id: mn4n_tform_mbe_zhang2020
+  phase: Mn4N
+  quantity: T_formation
+  value: 973
+  unit: K
+  conditions: plasma-assisted MBE films on MgO, SiC, GaN and sapphire, one hour nominal growth
+  source:
+    doi: 10.1063/1.5130485
+    title: Magnetic properties of MBE grown Mn4N on MgO, SiC, GaN and Al2O3 substrates
+    first_author: Zhang
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10149169
+    evidence: full_text
+    locator: Growth and characterization methods
+  quote: The growths on all 4 substrates were performed at a thermocouple temperature of 700 °C (unless stated otherwise) for one hour.
+  note: 700 °C thermocouple substrate temperature converted to 973 K; above reported bulk Tc.
+- id: mn4n_alloy_formation_shinaji2013
+  phase: Mn4N-like phase in Mn-Sn-Co-N
+  quantity: formation_path
+  value: ζ′ nitride parent transforms into Mn4N-like perovskite plus β-Mn on second anneal at 500 °C
+  unit: ''
+  conditions: arc-melted Mn82.5Sn10Co7.5 alloy; first nitrided at 900 °C in N2
+  source:
+    doi: 10.2320/matertrans.MAW201312
+    title: Influence of Heat Treatment on the Microstructure and Magnetic Properties of Mn-Sn-Co-N Alloys
+    first_author: Shinaji
+    year: 2013
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/10/54_MAW201312/_pdf
+    evidence: full_text
+    locator: Results, pages 2008-2010
+  quote: Consequently, this reveals that the phase transformation of ζ′ into perovskite-type and β-Mn phases occurred by the second-annealing at 500°C.
+  note: The paper observes phase changes by XRD, SEM and WDS but reports no crystallographic OR or variant count.
+- id: mn4n_alloy_tform_shinaji2013
+  phase: Mn4N-like phase in Mn-Sn-Co-N
+  quantity: T_formation
+  value: 773
+  unit: K
+  conditions: second anneal of nitrogen-bearing ζ′ parent at 500 °C for 5 h in N2
+  source:
+    doi: 10.2320/matertrans.MAW201312
+    title: Influence of Heat Treatment on the Microstructure and Magnetic Properties of Mn-Sn-Co-N Alloys
+    first_author: Shinaji
+    year: 2013
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/10/54_MAW201312/_pdf
+    evidence: full_text
+    locator: Results, page 2009
+  quote: Consequently, this reveals that the phase transformation of ζ′ into perovskite-type and β-Mn phases occurred by the second-annealing at 500°C.
+  note: 500 °C converted to 773 K. The alloy phase's own Tc is not established by this paper.
+- id: mn4n_alloy_coercivity_mechanism_shinaji2013
+  phase: Mn4N-like phase in Mn-Sn-Co-N
+  quantity: other
+  value: high coercivity associated with fine two-phase Mn4N-like plus β-Mn microstructure
+  unit: ''
+  conditions: Mn82.5Sn10Co7.5 after two nitrogen anneals
+  source:
+    doi: 10.2320/matertrans.MAW201312
+    title: Influence of Heat Treatment on the Microstructure and Magnetic Properties of Mn-Sn-Co-N Alloys
+    first_author: Shinaji
+    year: 2013
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/10/54_MAW201312/_pdf
+    evidence: full_text
+    locator: Summary, page 2010
+  quote: Consequently, it is considered that the fine two-phase microstructure formed by this phase transformation of ζ′ in the second annealing is important for the high coercivity of Mn–Sn–Co–N alloys.
+  note: Association, not proof of a unique microscopic pinning mechanism. Outcome values remain sealed.
+- id: mn4n_film_coercivity_isogami2022
+  phase: Mn4N
+  quantity: other
+  value: coercive field sensitive to grain diameter, microstructure and strain
+  unit: ''
+  conditions: epitaxial thin-film series grown between 400 and 500 °C
+  source:
+    doi: 10.1016/j.jmmm.2022.169642
+    title: Wide modulation of coercive fields in Mn4N ferrimagnetic thin films caused dominantly by dislocation microstructures
+    first_author: Isogami
+    year: 2022
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0304885322005558
+    evidence: abstract
+    locator: Abstract
+  quote: As a result, H c was sensitive to grain diameter, microstructure, and strain, which were not detectable by X-ray diffractometry (XRD).
+  note: Abstract also reports sensitivity to dislocations at fixed nitrogen order. No remanence or texture number was taken from this source.

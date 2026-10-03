@@ -1,0 +1,144 @@
+- id: mn4n_ep_zhou2021_s1_mrms
+  phase: Mn4N
+  route: EP
+  process: reactive rf sputtering of 16.6 nm film at 400 °C onto unannealed MgO(001)
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: film normal
+  measurement: VSM, 300 K, out-of-plane M(H), max plotted field 15 kOe (about 1.5 T); demagnetizing correction
+    not reported
+  n_samples: 1
+  conditions:
+    field_T: null
+    T_process_K: 673
+    parent_texture: MgO single crystal
+    magnet_axis: film normal
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic
+      material
+    first_author: Zhou
+    year: 2021
+    evidence: full_text
+    locator: Results and Fig. 2(a,b)
+    url: https://arxiv.org/pdf/2012.10493
+- id: mn4n_ep_zhou2021_s3_mrms
+  phase: Mn4N
+  route: EP
+  process: reactive rf sputtering of 16.8 nm film at 400 °C onto MgO(001) preannealed 1100 °C for 4 h
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: film normal
+  measurement: VSM, 300 K, out-of-plane M(H), max plotted field 15 kOe (about 1.5 T); demagnetizing correction
+    not reported
+  n_samples: 1
+  conditions:
+    field_T: null
+    T_process_K: 673
+    parent_texture: MgO single crystal
+    magnet_axis: film normal
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic
+      material
+    first_author: Zhou
+    year: 2021
+    evidence: full_text
+    locator: Results and Fig. 2(a,b)
+    url: https://arxiv.org/pdf/2012.10493
+- id: mn4n_ep_zhou2021_s4_mrms
+  phase: Mn4N
+  route: EP
+  process: reactive rf sputtering of 16.8 nm film at 450 °C onto MgO(001) preannealed 1100 °C for 4 h
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: film normal
+  measurement: VSM, 300 K, out-of-plane M(H), max plotted field 15 kOe (about 1.5 T); demagnetizing correction
+    not reported
+  n_samples: 1
+  conditions:
+    field_T: null
+    T_process_K: 723
+    parent_texture: MgO single crystal
+    magnet_axis: film normal
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic
+      material
+    first_author: Zhou
+    year: 2021
+    evidence: full_text
+    locator: Fig. 2(c), read from plot
+    url: https://arxiv.org/pdf/2012.10493
+- id: mn4n_ep_zhou2021_s5_mrms
+  phase: Mn4N
+  route: EP
+  process: reactive rf sputtering of 11.5 nm film at 450 °C onto MgO(001) preannealed 1100 °C for 4 h
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: film normal
+  measurement: VSM, 300 K, out-of-plane M(H), max plotted field 15 kOe (about 1.5 T); demagnetizing correction
+    not reported
+  n_samples: 1
+  conditions:
+    field_T: null
+    T_process_K: 723
+    parent_texture: MgO single crystal
+    magnet_axis: film normal
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic
+      material
+    first_author: Zhou
+    year: 2021
+    evidence: full_text
+    locator: Results and Fig. 2(c)
+    url: https://arxiv.org/pdf/2012.10493
+- id: mn4n_like_iso_shinaji2013_500c_[redacted]
+  phase: Mn-Sn-Co-N multiphase alloy
+  route: isotropic
+  process: arc-melt Mn82.5Sn10Co7.5, homogenize 950 °C 20 h Ar, crush to 500-850 µm, first anneal 900
+    °C 3 h N2, second anneal 500 °C 5 h N2, quench
+  quantity: '[redacted]'
+  unit: T
+  measured_along: measurement field, unspecified specimen orientation
+  measurement: VSM demagnetization curve, temperature not stated; maximum plotted positive field 1500
+    kA/m (about 1.9 T); no demagnetizing correction stated
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 773
+    parent_texture: not reported
+    magnet_axis: measurement field
+  source:
+    doi: 10.2320/matertrans.MAW201312
+    title: Influence of Heat Treatment on the Microstructure and Magnetic Properties of Mn-Sn-Co-N Alloys
+    first_author: Shinaji
+    year: 2013
+    evidence: full_text
+    locator: Fig. 4 (read from plot)
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/10/54_MAW201312/_pdf
+- id: mn4n_like_iso_shinaji2013_700c_[redacted]
+  phase: Mn-Sn-Co-N multiphase alloy
+  route: isotropic
+  process: arc-melt Mn82.5Sn10Co7.5, homogenize 950 °C 20 h Ar, crush to 500-850 µm, first anneal 900
+    °C 3 h N2, second anneal 700 °C 5 h N2, quench
+  quantity: '[redacted]'
+  unit: T
+  measured_along: measurement field, unspecified specimen orientation
+  measurement: VSM demagnetization curve, temperature not stated; maximum plotted positive field 1500
+    kA/m (about 1.9 T); no demagnetizing correction stated
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 973
+    parent_texture: not reported
+    magnet_axis: measurement field
+  source:
+    doi: 10.2320/matertrans.MAW201312
+    title: Influence of Heat Treatment on the Microstructure and Magnetic Properties of Mn-Sn-Co-N Alloys
+    first_author: Shinaji
+    year: 2013
+    evidence: full_text
+    locator: Fig. 4 (read from plot)
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/10/54_MAW201312/_pdf
