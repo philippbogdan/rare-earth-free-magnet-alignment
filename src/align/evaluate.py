@@ -14,9 +14,9 @@ from . import scoring
 from .curate import load_phases
 from .data import ROOT
 
-FILES = {'v1': 'cases.yaml', 'v2': 'cases_v2.yaml'}
+FILES = {'v1': 'cases.yaml', 'v2': 'cases_v2.yaml', 'v3': 'cases_v3.yaml'}
 # topics whose outcomes were opened only after the version's predictions were frozen
-HELDOUT_AFTER = {'v1': None, 'v2': {'mn4n', 'heldout2_a', 'heldout2_b'}}
+HELDOUT_AFTER = {'v1': None, 'v2': {'mn4n'}, 'v3': {'heldout2_a', 'heldout2_b'}}
 
 
 def run(version, phases=None):
@@ -28,7 +28,7 @@ def run(version, phases=None):
     P = {p['id']: p for p in phases}
     recs, known = scoring.load_outcomes()
     specs = yaml.safe_load(open(path)) or []
-    kpath = os.path.join(ROOT, 'data', 'curated', 'cases_known.yaml' if version == 'v1' else 'cases_known_v2.yaml')
+    kpath = os.path.join(ROOT, 'data', 'curated', 'cases_known.yaml' if version == 'v1' else f'cases_known_{version}.yaml')
     kspecs = yaml.safe_load(open(kpath)) if os.path.exists(kpath) else []
     rows = [scoring.score_case(s, recs[s['case']], recs, P) for s in specs if s['case'] in recs]
     rows += [scoring.score_case(s, known[s['case']], known, P) for s in kspecs if s['case'] in known]

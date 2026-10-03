@@ -268,8 +268,20 @@ def phases_covered_at(commit, univ_names):
 VERSIONS = [  # version, freeze commit, scores file, statuses that are held-out for it, note
     ('v1', '15c80aa', 'results/scores_v1.json', ('heldout',), 'frozen before batches 1-2 were opened'),
     ('v2', 'e94871b', 'results/scores_v2.json', ('heldout',),
-     'post-hoc revision; held-out only on batches opened after its freeze'),
+     'post-hoc revision; held-out on the Mn4N batch opened after its freeze'),
+    ('v3', None, 'results/scores_v3.json', ('heldout',),
+     'rules after the HDDR/TGG/EP reasons were made physical; held-out on batch 4'),
 ]
+FREEZE = os.path.join(ROOT, 'docs', 'PROTOCOL_LOG.md')
+
+
+def _freeze_commit(version):
+    """Commit recorded in the protocol log for a version's freeze (line 'freeze <version>: <commit>')."""
+    import re
+    if not os.path.exists(FREEZE):
+        return None
+    m = re.search(r'freeze ' + version + r': ([0-9a-f]{7,40})', open(FREEZE).read())
+    return m.group(1) if m else None
 
 
 def frontier_rows(univ):
@@ -278,7 +290,8 @@ def frontier_rows(univ):
     out = []
     for v, commit, fn, sts, note in VERSIONS:
         sc = _load(fn)
-        if not sc:
+        commit = commit or _freeze_commit(v)
+        if not sc or not commit:
             continue
         n = sum(sc['summary'].get(s, {}).get('n_scored', 0) for s in sts)
         ok = sum(sc['summary'].get(s, {}).get('ceiling_ok', 0) + sc['summary'].get(s, {}).get('ceiling_possible', 0)
