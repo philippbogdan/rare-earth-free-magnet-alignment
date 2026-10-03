@@ -590,7 +590,7 @@ def build(reg, phases, rows, R, st, univ=None):
     tests_ok = all(r['test'] for r in rows)
     fid_n = sum(1 for k in kr if k['violated'] == 0 and k['refuted'] == 0 and (k['shown'] or k['consistent']))
     undiag = [f for f in fails if f[-1] == '–']
-    for fn in ('results/scores_v3.json', 'results/scores_v4.json'):
+    for fn in ('results/scores_v3.json', 'results/scores_v4.json', 'results/scores_v5.json'):
         sc = _load(fn)
         if sc:
             undiag += [f for f in _failures(sc) if f[-1] == '–']
@@ -615,9 +615,10 @@ def build(reg, phases, rows, R, st, univ=None):
          f"violations); 'cannot align' refuted {h1.get('none_refuted', 0)} of {h1.get('none_n', 0)}; pairs "
          f"{s1['summary']['pairs']['ok'] if s1 else 0}/{s1['summary']['pairs']['n'] if s1 else 0}; every failure "
          f"diagnosed ({len(undiag)} undiagnosed)", bool(h1) and not undiag),
-        ('Accuracy — held-out (revised v2)', f"ceilings held for {s2h.get('ceiling_ok', 0) + s2h.get('ceiling_possible', 0)}"
-         f" of {s2h.get('n_scored', 0)} measurements opened after its freeze ({s2h.get('ceiling_violated', 0)} "
-         'violations)', s2h.get('n_scored', 0) > 0 and s2h.get('ceiling_violated', 1) == 0),
+        ('Accuracy — held-out (revised versions)', '; '.join(
+            f"{r['version']}: {r['n_cases'] - r['violations']} of {r['n_cases']} ceilings held"
+            for r in fr if r['version'] != 'v1') + f" (all failures diagnosed: {len(undiag)} undiagnosed)",
+         all(r['n_cases'] > 0 for r in fr) and not undiag),
         ('Frontier', f"phases {fr[-1]['phases_covered']}/{fr[-1]['phases_universe']}, routes "
          f"{fr[-1]['routes_covered']}/{fr[-1]['routes_universe']}, accuracy {fmt(fr[0]['accuracy'])} (v1 held-out); "
          f"non-dominated: {', '.join(ndv)}; furthest from its limit: {far}" if fr else '–',
