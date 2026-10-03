@@ -13,11 +13,12 @@ from . import physics as P
 from .orient import Lattice
 from .variants import or_rotation, variant_rotations, twin_rotation
 
-ROUTES = ['FP', 'FS', 'DS', 'AM', 'FA', 'DS+FA', 'AM+FA', 'RX+FA', 'SA', 'DS+SA', 'RX+SA',
-          'HD', 'HDDR', 'EP', 'TGG']
+ROUTES = ['FP', 'MO', 'FS', 'DS', 'AM', 'FA', 'DS+FA', 'AM+FA', 'RX+FA', 'SC+FA', 'SA', 'DS+SA',
+          'RX+SA', 'SC+SA', 'HD', 'HDDR', 'EP', 'TGG']
 
 ROUTE_NAMES = {
     'FP': 'field alignment of free particles, then consolidation',
+    'MO': 'mechanical (shape-induced) orientation of anisometric particles, no field',
     'FS': 'solidification in a magnetic field',
     'DS': 'directional solidification / columnar casting / melt spinning, no bias',
     'AM': 'additive manufacturing, no bias',
@@ -25,9 +26,11 @@ ROUTE_NAMES = {
     'DS+FA': 'columnar parent + formation in a field',
     'AM+FA': 'printed parent + formation in a field',
     'RX+FA': 'rolled/recrystallised parent + formation in a field',
+    'SC+FA': 'single-crystal parent + formation in a field',
     'SA': 'formation under stress from an untextured parent',
     'DS+SA': 'columnar parent + formation under stress',
     'RX+SA': 'rolled/recrystallised parent + formation under stress',
+    'SC+SA': 'single-crystal parent + formation under stress',
     'HD': 'hot deformation of the hard phase',
     'HDDR': 'reversible disproportionation-recombination with texture memory',
     'EP': 'epitaxial or template-defined growth (films, wire arrays; not bulk)',

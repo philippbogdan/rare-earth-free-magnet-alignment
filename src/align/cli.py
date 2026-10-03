@@ -15,7 +15,8 @@ RES = os.path.join(ROOT, 'results')
 
 
 ROUTE_INPUTS = {          # which parts of a phase description each route reads
-    'FP': ['Js', 'particles', 'consolidation'],
+    'FP': ['Js', 'particles', 'consolidation'], 'MO': ['Js', 'particles'],
+    'SC+FA': ['Js', 'Tc', 'paths'], 'SC+SA': ['Js', 'paths'],
     'FS': ['Js', 'melt', 'paths'],
     'DS': ['Js', 'paths'], 'AM': ['Js', 'paths'],
     'FA': ['Js', 'Tc', 'paths'], 'DS+FA': ['Js', 'Tc', 'paths'], 'AM+FA': ['Js', 'Tc', 'paths'],

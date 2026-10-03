@@ -107,6 +107,35 @@ def _particle_internal(ph, sp):
     return E.body_alignment(ax, fr)
 
 
+# ---------------------------------------------------------------- MO
+SHAPE_A = {   # ceiling of perfect shape alignment, by particle shape and easy-axis relation
+    ('plate', 'normal'): (1.0, 'press direction (plate normals align with it)'),
+    ('plate', 'in-plane'): (2 / np.pi, 'any direction in the pressing plane'),
+    ('rod', 'axis'): (1.0, 'flow/extrusion direction (rod axes align with it)'),
+    ('rod', 'perpendicular'): (2 / np.pi, 'perpendicular to the flow direction'),
+    ('equiaxed', None): (ISO, ''),
+}
+
+
+def route_MO(ph):
+    h = (ph.get('particles') or {}).get('habit')
+    if not h:
+        outs = {'plates, easy axis normal': 1.0, 'rods, easy axis along rod': 1.0,
+                'equiaxed': ISO}
+        return Cell(ph['id'], 'MO', 'open', 1.0, '',
+                    chain='shape of single-crystal particles and its relation to the easy axis unpublished',
+                    decides=[('particle habit (shape vs easy axis)', outs,
+                              'SEM + EBSD of single-crystal particles')], A_alt=outs)
+    if h.get('single_crystal') is False:
+        return Cell(ph['id'], 'MO', 'none', ISO, '', chain='particles are not single crystals: '
+                    + h.get('reason', ''), refs=h.get('refs', []))
+    key = (h['shape'], h.get('easy') if h['shape'] != 'equiaxed' else None)
+    A, ax = SHAPE_A[key]
+    return Cell(ph['id'], 'MO', _verdict(A, A > ISO + 1e-3), A, ax,
+                chain=f"single-crystal {h['shape']}s with the easy axis {h.get('easy', '')} to the shape; "
+                      'pressing/shear flow orients the shape', refs=h.get('refs', []))
+
+
 # ---------------------------------------------------------------- texture sources (DS/AM)
 def _texture_route(ph, route, key):
     out = []
@@ -260,7 +289,7 @@ def _biased(ph, route, kind, texture_key=None):
                             {'dchi/chi >~ 0.1 at 10 T': A_sel, 'small': A_eq},
                             'torque magnetometry above Tc on a single crystal, or formation in 10 T '
                             'followed by a pole figure'))
-            cells.append(Cell(ph['id'], route, 'open' if dec else 'none', A_eq,
+            cells.append(Cell(ph['id'], route, 'open' if dec else _verdict(A_eq, A_eq > ISO + 1e-3), A_eq,
                               '', chain=f'{tex}; {why}', prereq=[(kind + ' bias acts at formation', False, why)],
                               decides=dec, A_alt={'bias acts': A_sel}))
     if not cells:
@@ -270,6 +299,58 @@ def _biased(ph, route, kind, texture_key=None):
 
 def route_FA(ph):
     return _biased(ph, 'FA', 'field')
+
+
+def _single_crystal(ph, route, kind):
+    """Single-crystal parent + bias: with the bias along one variant's easy axis, complete
+    selection leaves that variant only (A = 1); without a bias the variants of one crystal
+    give the best-axis average."""
+    cells = []
+    for p in ph['paths']:
+        path = Path(ph, p)
+        if path.mode == 'direct':
+            continue
+        acts, why, x10 = _bias_acts(ph, p, kind)
+        g = E.texture_single()
+        ax, fr, per = path.axes(g)
+        A_eq, _ = E.best_axis(ax, fr, 1500)
+        if acts is True:
+            h = ax[0, 0]
+            w = E.bias_weights(ax, fr, len(path.V), per, kind, h)
+            A = E.alignment(ax, w, h)
+            cells.append(Cell(ph['id'], route, _verdict(A), A, 'along one variant easy axis',
+                              chain=f'single-crystal parent; {why}; the bias along one variant axis leaves '
+                                    'that variant only', A_alt={'no bias': A_eq}))
+        elif acts is None:
+            cells.append(Cell(ph['id'], route, 'open', 1.0, '', chain=f'single-crystal parent; {why}',
+                              decides=[('transformation strain', {'acts': 1.0, 'none': A_eq},
+                                        'lattice parameters of parent and product')]))
+        else:
+            dec = []
+            if kind == 'field':
+                dec = [(f'rate of formation of the phase below its Curie point ({ph["Tc"]:.0f} K)',
+                        {'forms below Tc': 1.0, 'does not': A_eq},
+                        f'isothermal anneal of a parent single crystal at ~{ph["Tc"] - 50:.0f} K: phase '
+                        'fraction vs time by XRD')]
+                if x10 is not None:
+                    dec.append(('paramagnetic susceptibility anisotropy dchi/chi of the forming phase at T_f',
+                                {'dchi/chi >~ 0.1 at 10 T': 1.0, 'small': A_eq},
+                                'torque magnetometry above Tc on a single crystal, or formation in 10 T '
+                                'followed by a pole figure'))
+            cells.append(Cell(ph['id'], route, 'open' if dec else _verdict(A_eq), A_eq, 'best axis',
+                              chain=f'single-crystal parent; {why}; variants equal', decides=dec,
+                              A_alt={'bias acts': 1.0}))
+    if not cells:
+        return Cell(ph['id'], route, 'none', ISO, '', chain='forms without a parent crystal')
+    return _best_path_value(cells)
+
+
+def route_SCFA(ph):
+    return _single_crystal(ph, 'SC+FA', 'field')
+
+
+def route_SCSA(ph):
+    return _single_crystal(ph, 'SC+SA', 'stress')
 
 
 def route_DSFA(ph):
@@ -380,7 +461,7 @@ def route_TGG(ph):
                                                                       'with grain growth'))
 
 
-FUN = {'FP': route_FP, 'FS': route_FS, 'DS': route_DS, 'AM': route_AM, 'FA': route_FA,
+FUN = {'FP': route_FP, 'MO': route_MO, 'SC+FA': route_SCFA, 'SC+SA': route_SCSA, 'FS': route_FS, 'DS': route_DS, 'AM': route_AM, 'FA': route_FA,
        'DS+FA': route_DSFA, 'AM+FA': route_AMFA, 'RX+FA': route_RXFA, 'SA': route_SA,
        'DS+SA': route_DSSA, 'RX+SA': route_RXSA, 'HD': route_HD, 'HDDR': route_HDDR, 'EP': route_EP,
        'TGG': route_TGG}

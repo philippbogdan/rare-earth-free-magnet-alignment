@@ -1,0 +1,33 @@
+# Known-case outcome records (PROBLEM.md: field-aged columnar AlNiCo) met while collecting the `universe` topic
+- id: uni_out_dussa2024_alnico8_columnar_durandcharre1978
+  phase: AlNiCo
+  route: DS+FA
+  process: columnar Alnico 8 with <100> grain orientation (Durand-Charre et al. 1978, IEEE Trans. Magn. 14, 797;
+    ref. [69] of the review)
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: columnar <100>
+    magnet_axis: columnar axis (presumed)
+    density_rel: 1.0
+  quantity: Br
+  value: 1.08
+  unit: T
+  uncertainty: null
+  measured_along: not stated in the review (presumably the columnar <100> axis)
+  measurement: not stated in the review
+  n_samples: '1'
+  source:
+    doi: 10.3390/magnetism4020010
+    title: Additively Manufactured Alnico Permanent Magnet Materials—A Review
+    first_author: Dussa
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/magnetism/magnetism-04-00010/article_deploy/magnetism-04-00010.pdf
+    evidence: review
+    locator: 'Table 5 (columns: intrinsic coercivity kOe, remanence T, BHmax MGOe)'
+  quote: Table 5. Magnetic properties of Alnico-8 for an equiaxed and columnar microstructure [69]. ... Columnar
+    grains with <100> crystallographic orientation ... 1.08
+  note: 'KNOWN-CASE candidate (columnar field-aged AlNiCo) -> parent may move to data/raw/known_cases_universe.yaml.
+    The extracted table is column-wise; 1.08 T is the remanence entry of the columnar row (row order: columnar,
+    equiaxed). Field heat treatment not stated in the review (Alnico 8 grades are thermomagnetically treated; check
+    the original).'
