@@ -782,17 +782,14 @@
   Tc: {ref: alpha1_tc_lo_iwama1970}
   cell: {atoms: 2, magnetic_fraction: {est: 0.7, why: "Fe+Co+Ni fraction of Alnico 5 (only bounds a paramagnetic bias)"}}
   paths:
-    - name: spinodal α -> α1 + α2 (rods on parent <100>, possibly tilted toward the field)
-      mode: spinodal
-      OR: unknown
-      OR_analogue: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: alnico_OR_alpha1_alpha2_zhou2019}
-      OR_analogue_name: "rods held on the nearest parent <100> (elastic anisotropy)"
-      mode_analogue: spinodal
-      unknown_name: "rod-axis selection in Ti-free alnico (on the nearest <100>, or tilted to the field)"
-      unknown_label_a: "rods follow the field"
-      unknown_label_b: "rods held on the nearest <100>"
-      unknown_measurement: "Br/Js of equiaxed vs columnar Alnico 5 field-cooled together (0.832 vs 1 if held on <100>)"
-      refs: [alnico_formation_spinodal_white2019, alnico5_field_off100_heidenreich1952, alnico5_field_offaxis_iwama1976, alnico_field_100_closest_iwama1967]
+    # v2 (post hoc, docs/PROTOCOL_LOG.md): the open rod-axis question is settled by the opened outcomes:
+    # equiaxed Alnico 5 field-cooled reaches Br/Js = 0.895 (same-sample Js), above the 0.831 that rods held
+    # on the nearest <100> allow, and in columnar crystals A follows cos(field angle) (Makino 1963).
+    - name: spinodal α -> α1 + α2 (rods follow the field direction in any grain)
+      mode: random_nucleation
+      refs: [alnico_formation_spinodal_white2019, alnico5_field_off100_heidenreich1952, alnico5_field_offaxis_iwama1976,
+             alnico_field_100_closest_iwama1967, alnico5_Br_equiaxed_field_makino1963, alnico5_Js_same_sample_makino1963,
+             alnico5_MrMs_columnar_angle30_par_makino1963, alnico5_MrMs_columnar_angle45_par_makino1963]
       parent:
         name: α (bcc/B2)
         structure: {system: cubic, a: 1.0, laue: m-3m}

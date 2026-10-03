@@ -76,6 +76,8 @@ def exposed(cid):
 
 def along_kind(s):
     s = (s or '').lower()
+    if any(w in s for w in ('film normal', 'out-of-plane', 'out of plane', 'perpendicularly magnetized')):
+        return 'par'                          # v2: the film normal is the alignment axis of a (001) film
     if any(w in s for w in ('perpendicular', 'perp', 'hard axis', 'hard direction', 'axial (compression')):
         return 'perp'
     if any(w in s for w in ('parallel', 'alignment', 'easy axis', 'field direction', 'preferred',
@@ -291,10 +293,13 @@ def encode(ctx, topic, c):
             return {**base, **res, 'meas': {**base['meas'], **extra}}
     # ------------------------------------------------ isotropic samples (no alignment step)
     if r.startswith('isotropic') or 'no alignment' in r or 'without field' in r and 'cold rolling' not in r:
+        if pid == 'Co-nanorods' and not any(w in proc for w in ('film', 'cast', 'spin-coated')):
+            return {**base, 'pred': _rod_arrangement('rod powder or compact without an alignment step')}
         if any(w in proc for w in ('film', 'cast', 'spin-coated')) and pid == 'Co-nanorods' and al != 'any':
             return {**base, 'pred': pred(PLANAR, PLANAR, 'rods lie in the film plane at random azimuth: '
                                                          'planar random, in-plane value 2/pi', cls='none')}
-        exch = any(w in proc for w in ('milled', 'melt-spun', 'ribbon', 'nanocrystal', 'quenched', 'mechanically alloyed'))
+        exch = any(w in proc for w in ('milled', 'melt-spun', 'ribbon', 'nanocrystal', 'quenched', 'mechanically alloyed',
+                                       'cluster'))
         return {**base, 'pred': pred(ISO, ISO, 'no alignment step: random grains' +
                                      ('; fine-grained, exchange enhancement possible (not alignment)' if exch else ''),
                                      cls='info' if exch else 'none')}
@@ -339,8 +344,11 @@ def enc_mnal(ctx, pid, c, route, r, proc, cond, al, mk):
         t1, t2 = cond.get('theta1_deg'), cond.get('theta2_deg')
         if t1 is not None and t2 is not None and mk in ('Br', 'MrMs'):
             A, n = mnal_sc_stress(ctx, pid, float(t1), float(t2))
-            return {'pred': pred(A, 0.6133, f'compression at theta1={t1}, theta2={t2} deg in the ε frame '
-                                             f'selects {n} variant(s) with c most perpendicular to the load')}
+            if float(t1) == 0:
+                return {'pred': pred(0.6133, 0.6133, 'compression along c_ε: all six variants equivalent', cls='none')}
+            return {'pred': pred(1.0, 0.6133, f'v2: compression at theta1={t1}, theta2={t2} deg; the tetragonal strain '
+                                              f'alone leaves {n} variant(s) tied (A {A:.3f}), the transformation shear '
+                                              'can select one (SC+SA cell ceiling)')}
         if 're-compress' in proc or 're-pressed' in proc:
             return {'pred': pred(1.0, 0.6133, 're-compression of a τ crystal re-selects a single variant')}
         return {'pred': pred(1.0, 0.6133, 'single-crystal ε compressed during the transformation (530-830 C)')}
@@ -353,6 +361,10 @@ def enc_mnal(ctx, pid, c, route, r, proc, cond, al, mk):
     if r.startswith('am'):
         return {'pred': pred(0.6133, ISO, 'printed ε <0001> fibre; τ formed at 833 K (massive mode): at most '
                                           'the OR value 0.613 along the build direction', cls='none')}
+    if 'ds + hot deformation' in r:
+        return {'pred': _hyp({'deformation after the transformation (massive)': 0.6133,
+                              'stress during a displacive transformation': 0.899},
+                             'v2: DS + hot deformation, temperature and sequence not stated', cls='open')}
     if r.startswith('ds') or 'melt-spun ribbon' in r or r.startswith('other: ds'):
         return {'pred': pred(0.6133, ISO, 'textured ε parent without bias: capped at 0.613', cls='none')}
     if 'sc (single-crystal epsilon parent, no bias)' in r:
@@ -386,8 +398,6 @@ def enc_mnal(ctx, pid, c, route, r, proc, cond, al, mk):
         return {'pred': pred(1.0, ISO, 'field-aligned particles (crystallinity not stated)', cls='info')}
     if r.startswith('ep'):
         return {'pred': pred(1.0, ISO, 'epitaxial film (c normal)')}
-    if 'ds + hot deformation' in r:
-        return {'pred': pred(0.6133, ISO, 'binary MnAl: DS capped at 0.613, warm working adds no texture', cls='none')}
     return None
 
 
@@ -421,13 +431,16 @@ def enc_l10(ctx, pid, c, route, r, proc, cond, al, mk):
         return {'pred': pred(0.8312, ISO, 'polycrystal ordered under stress: complete selection of the nearest '
                                           'variant (0.831 along the stress axis)')}
     if 'polytwinned' in r:
-        return {'pred': pred(0.5774, 0.5774, 'polytwinned single crystal, three equal variants: best axis [111]',
-                             cls='none')}
+        return {'pred': _hyp({'independent variants': 0.5774, 'coupled fine polytwins (multiaxial)': 1.0},
+                             'v2: polytwinned crystal with three equal variants; fine exchange-coupled twins act as one '
+                             'multiaxial unit (as the spinodal networks)', cls='none', base=0.5774)}
     if 'meteorite' in r:
         if 'interaction' in r:
             return {'pred': pred(1.0, 1 / 3, 'islands interact: selection by local magnetisation (not an applied '
                                              'bias); outside the single-island account', cls='info')}
-        return {'pred': pred(1 / 3, 1 / 3, 'no external bias: on average equal variant fractions', cls='none')}
+        return {'pred': pred(1.0, 1 / 3, 'v2: ordering below the Curie point of the ferromagnetic parent: the '
+                                         "parent's own domain magnetisation biases the variant (rule 2 of METHOD "
+                                         'section 8), so one variant can dominate')}
     if 'crystallisation of melt-spun amorphous' in r:
         return {'pred': pred(ISO, ISO, 'nucleation from an amorphous matrix without field: random', cls='none')}
     if 'rx+fa+sa' in r:
@@ -524,14 +537,21 @@ def enc_mnga_co(ctx, pid, c, route, r, proc, cond, al, mk):
     return None
 
 
+def _rod_arrangement(why):
+    """v2: rods in an assembly made without a deliberate alignment step: their arrangement is unverified."""
+    return _hyp({'3-D random': ISO, 'lying flat at random azimuth (in-plane)': PLANAR,
+                 'parallel bundles (dipolar self-assembly)': 1.0},
+                why + ': rod arrangement in the measured sample not verified', cls='open')
+
+
 def enc_nano_other(ctx, pid, c, route, r, proc, cond, al, mk):
     medium = str(cond.get('alignment_medium', '')).lower() + ' ' + proc
     if pid == 'Co-nanorods':
         if 'field during growth' in r:
-            return {'pred': pred(ISO, ISO, 'rods grown in a field but measured randomly embedded', cls='none')}
+            return {'pred': _rod_arrangement('rods grown in a field, then embedded without deliberate alignment')}
         if 'dry powder in die' in medium or 'dry agglomerated' in medium:
-            return {'pred': pred(ISO + DELTA, ISO, 'dried rods agglomerate irreversibly: agglomerates have no '
-                                                   'net axis', cls='none')}
+            return {'pred': pred(1.0, ISO, 'v2: dried rods agglomerate into bundles of parallel rods, which have a net '
+                                           'axis and turn in the die field (incompletely)')}
         if al == 'perp':
             return {'pred': pred(ISO, ISO, 'measured across the alignment axis', cls='none')}
         if 'rescaled' in medium:
@@ -659,6 +679,11 @@ def enc_alnico_fecrco(ctx, pid, c, route, r, proc, cond, al, mk):
              and 'columnar-appearing' not in ptex and 'not measured' not in ptex) or r.startswith('ds')
     fe = pid == 'Fe-Cr-Co'
     mo = fe and bool(re.search(r'\d\s*mo\b|-mo\b|mo-|\dmo', proc + ' ' + cid))
+    mo_wt = None
+    if mo:
+        mm = re.search(r'(\d+(?:\.\d+)?)\s*mo', proc + ' ' + cid.lower())
+        mo_wt = float(mm.group(1)) if mm else None
+    mo_low = mo and mo_wt is not None and mo_wt < 3   # v2: path 1 is sourced at 3 wt% Mo only
     # ---------------------------------------------------- not tests of alignment
     if mk == 'class' or c.get('quantity') == 'texture_metric':
         return out(pred(1.0, ISO, 'parent texture metric from the same work that supplied the account input '
@@ -708,6 +733,9 @@ def enc_alnico_fecrco(ctx, pid, c, route, r, proc, cond, al, mk):
             return out(pred(1.0, ISO, f'{mode}; parent <100> texture along the field (or rods follow the '
                                       'field): ceiling 1'))
         # equiaxed / sintered / unstated polycrystal
+        if mo_low and not ('rx+fa' in r or 'ds+fa' in r or 'am+fa' in r or 'single crystal' in ptex):
+            return out(_hyp({'rods follow the field (path 0)': 1.0, 'rods on the nearest <100> (path 1)': 0.8312},
+                            f'v2: {mo_wt:g} wt% Mo, below the 3 wt% of the path-1 sources; random parent'))
         if mo and ptex.startswith('not stated'):
             return out(pred(1.0, ISO, f'{mode}; parent texture not stated: ceiling of a <100> fibre along the field'))
         if mo:
@@ -723,7 +751,7 @@ def enc_alnico_fecrco(ctx, pid, c, route, r, proc, cond, al, mk):
         _, unb = rods_A('random', _Z, _X, 'none')
         vals = {'rods on the nearest <100>': max(near_perp, unb)}
         if five:
-            vals['rods follow the field'] = unb
+            vals = {'rods follow the field': unb}
         return out(_hyp(vals, f'measured across the anneal field: complete selection gives {near_perp:.3f} '
                               f'(nearest <100>) or 0 (rods along the field); partial selection up to the '
                               f'unbiased {unb:.3f}', cls='none', base=ISO))
@@ -747,8 +775,8 @@ def enc_alnico_fecrco(ctx, pid, c, route, r, proc, cond, al, mk):
         # the larger of the complete-selection and the unbiased (coupled) values
         full = [float(np.cos(t)), near]                 # complete selection decides the class
         cl = {('acts' if v > b + DELTA else 'none') for v in full}
-        return out(_hyp({'rods follow the field': max(float(np.cos(t)), unb),
-                         'rods on the nearest <100>': max(near, unb)}, cls=cl.pop() if len(cl) == 1 else 'open',
+        cl = {('acts' if float(np.cos(t)) > b + DELTA else 'none')}
+        return out(_hyp({'rods follow the field': max(float(np.cos(t)), unb)}, cls=cl.pop(),
                         why=
                         f'columnar <100> fibre, field {th:g} deg from the measuring direction; '
                         f'complete selection gives {np.cos(t):.3f} (follow) / {near:.3f} (nearest <100>), '
@@ -760,7 +788,7 @@ def enc_alnico_fecrco(ctx, pid, c, route, r, proc, cond, al, mk):
         if 'field_perp' in cid or 'perpendicular to the columnar' in alongs or 'perpendicul' in str(cond.get('magnet_axis')):
             near = rods_A('fibre', _X, _X, 'near', 2.5)[0]
             b, _ = rods_A('fibre', _Z, _X, 'none', 2.5)
-            vals = {'rods follow the field': 1.0, 'rods on the nearest <100>': near}
+            vals = {'rods follow the field': 1.0}
             return out(_hyp(vals if five else {'rods on the nearest <100>': near},
                             'columnar <100> fibre, field and measurement across the columns', base=b))
         return out(pred(1.0, 1 / 3, 'columnar <100> fibre with the field along it: one rod set along the field'))
@@ -779,8 +807,8 @@ def enc_alnico_fecrco(ctx, pid, c, route, r, proc, cond, al, mk):
         return out(pred(1.0, ISO, 'grain structure not stated', cls='info'))
     weak = 'weak texture' in ptex or 'fairly isotropic' in ptex
     if five:
-        return out(_hyp({'rods follow the field': 1.0, 'rods on the nearest <100>': 0.8312},
-                        'random parent, Ti-free alnico: rod-axis selection open'))
+        return out(pred(1.0, ISO, 'v2: Ti-free alnico, rods follow the field in any grain (settled by the held-back '
+                                  'data: equiaxed Makino 1963 0.895 > 0.831)'))
     if weak:
         return out(pred(0.8312 + 0.1 * (1 - 0.8312), ISO, 'nearly random parent (very weak texture, <=10% '
                                                          '<100> fibre assumed): nearest <100>'))
@@ -864,16 +892,19 @@ def build_known():
     return out
 
 
-def write():
+def write(version='v2'):
+    """Write the current rules' predictions. The v1 files (cases.yaml, cases_known.yaml) are the
+    frozen pre-registration (docs/PROTOCOL_LOG.md) and are never rewritten."""
+    assert version != 'v1', 'v1 is frozen'
     known = build_known()
-    open(os.path.join(ROOT, 'data', 'curated', 'cases_known.yaml'), 'w').write(
-        '# Conditional predictions for the known cases (PROBLEM.md), same rules as cases.yaml.\n'
+    open(os.path.join(ROOT, 'data', 'curated', f'cases_known_{version}.yaml'), 'w').write(
+        f'# Known-case predictions, rules {version} (post hoc; see docs/PROTOCOL_LOG.md).\n'
         + yaml.safe_dump(known, sort_keys=False, allow_unicode=True, width=110))
     specs = build()
-    hdr = ('# Conditional predictions for the sealed published cases (generated by align.cases from the\n'
-           '# value-free condition files; committed before any outcome is opened).\n')
-    open(os.path.join(ROOT, 'data', 'curated', 'cases.yaml'), 'w').write(
-        hdr + yaml.safe_dump(specs, sort_keys=False, allow_unicode=True, width=110))
+    open(os.path.join(ROOT, 'data', 'curated', f'cases_{version}.yaml'), 'w').write(
+        f'# Case predictions, rules {version}: revised AFTER the outcomes were opened (post hoc, not a\n'
+        '# held-out test); every change is listed in docs/PROTOCOL_LOG.md.\n'
+        + yaml.safe_dump(specs, sort_keys=False, allow_unicode=True, width=110))
     return specs
 
 

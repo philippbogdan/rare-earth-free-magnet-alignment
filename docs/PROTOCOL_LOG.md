@@ -39,3 +39,40 @@ That dry run exposed a grade-to-Js mapping error (columnar alnico 5DG/5-7 read a
 fixed from sourced Js values before this freeze. Exposed sealed cases remain as listed above.
 The Mn4N collection (Codex task A3) is still running; its outcomes will be sealed as a later
 batch and frozen separately.
+
+## Opening and the held-out result (v1, frozen at 15c80aa)
+
+Batches 1 and 2 were opened at 4060e30 (hashes verified) and scored with the frozen rules:
+results/scores_v1.json. This is the held-out test; it is never overwritten.
+
+## Post-hoc revision v2 (after opening; not a held-out test)
+
+Rules changed after seeing the outcomes. Each item names the trigger. Scores of v2 are in
+results/scores_v2.json and are reported only as post-hoc.
+
+1. Measuring direction 'film normal / perpendicularly magnetized' was read as 'across the
+   alignment axis' (encoding error; trigger uni_out_rt_fept_ep_shima2002).
+2. Tetrataenite in meteorites orders below the Curie point of its ferromagnetic parent, whose own
+   domain magnetisation is a bias (rule 2 of METHOD section 8 already says so; the case had been
+   encoded as unbiased; trigger feni_meteorite_poirier2015).
+3. Fine polytwinned L1_0 crystals: equal variants can act as one exchange-coupled multiaxial unit,
+   as the spinodal networks do (the source itself says so); both readings now given (trigger
+   copt_sc_kandaurova1992a).
+4. Isotropic cluster-assembled films are flagged as possibly exchange-enhanced, as other
+   fine-grained isotropic samples were (trigger hfco7_iso_cl_bal2014).
+5. Co-rod assemblies made without an alignment step: the rod arrangement in the measured sample
+   is unverified (3-D random, flat-lying, or parallel bundles) -> open; dried agglomerates of
+   parallel rods have a net axis and turn in a die field (triggers bousnina2020, maurer2007,
+   ener2018).
+6. Fe-Cr-Co with < 3 wt% Mo: the nearest-<100> path is sourced at 3 wt% Mo only -> both paths
+   (trigger fecrco_FA_sintered_fe28cr7co2mo_vompe2019).
+7. Binary MnAl 'DS + hot deformation' with temperature and sequence not stated -> both readings
+   (massive / displacive) (trigger mnal_other_jia2022a).
+8. MnAl-C single crystals compressed during the transformation: the tetragonal-strain rule left
+   2 or 4 variants tied (A <= 0.73), but the crystals reach 0.77-0.89: the transformation shear
+   breaks the tie. The case ceiling reverts to the account's SC+SA cell (one variant, A = 1)
+   (exposed cases mnal_sc_sa_kubo1976_s9-s15, s27-s29).
+9. AlNiCo-5 (Ti-free): the open rod-axis question is settled by the opened data (equiaxed
+   field-cooled Alnico 5 reaches Br/Js = 0.895 with the same-sample Js, above the 0.831 that
+   rods held on the nearest <100> allow; in columnar crystals A follows the cosine of the field
+   angle): rods follow the field. The phase entry cites these outcome records.
