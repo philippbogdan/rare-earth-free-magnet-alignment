@@ -113,18 +113,41 @@ def massive_or(path):
 
 
 def formation_magnetic(ph, path):
-    """Is the forming phase ferromagnetic at (some part of) its formation window?"""
-    Tc = ph['Tc']
-    lo, hi = path.p['T_f']
+    """Is the forming nucleus magnetically ordered somewhere in its formation window?
+
+    Ordered if T_f < Tc of the product (the phase that decides the variant), or if
+    T_f < Tc of the parent and the product is a ferromagnet (a nucleus smaller than the
+    exchange length is polarised by the ferromagnetic parent around it). A product that is
+    not ferromagnetic at all (e.g. an antiferromagnetic intermediate) cannot be selected.
+    """
+    p = path.p
+    lo, hi = p['T_f']
+    Tc_prod = p.get('Tc_forming', ph['Tc'])
+    prod_mag = p.get('product_ferromagnetic', True)
+    Tc_par = (p.get('parent') or {}).get('Tc')
+    cands = []
+    if prod_mag and Tc_prod is not None:
+        cands.append((Tc_prod, 'product'))
+        if Tc_par is not None:
+            cands.append((Tc_par, 'parent'))
+    if not cands:
+        return 'no', (f'the phase that decides the variant is not ferromagnetic '
+                      f'(formation window {lo:.0f}-{hi:.0f} K)')
+    Tc, who = max(cands)
+    tag = 'Tc' if who == 'product' else 'Tc of the ferromagnetic parent'
     if Tc > hi:
-        return 'yes', f'Tc {Tc:.0f} K above the whole formation window {lo:.0f}-{hi:.0f} K'
+        return 'yes', f'{tag} {Tc:.0f} K above the whole formation window {lo:.0f}-{hi:.0f} K'
     if Tc > lo:
-        return 'partly', (f'Tc {Tc:.0f} K inside the formation window {lo:.0f}-{hi:.0f} K: '
+        return 'partly', (f'{tag} {Tc:.0f} K inside the formation window {lo:.0f}-{hi:.0f} K: '
                           f'acts only if formed below {Tc:.0f} K')
-    return 'no', f'Tc {Tc:.0f} K below the formation window {lo:.0f}-{hi:.0f} K'
+    return 'no', f'{tag} {Tc:.0f} K below the formation window {lo:.0f}-{hi:.0f} K'
 
 
 def para_bound(ph, path, B):
-    """Upper bound of the paramagnetic bias (kT) at the lowest formation temperature."""
-    lo = max(path.p['T_f'][0], ph['Tc'] + 1)
-    return P.para_bias_kT_bound(ph['Js0'], ph['n_mag'], ph['Tc'], lo, B, V_STAR[1])
+    """Upper bound of the paramagnetic bias (kT) at the lowest formation temperature,
+    for a ferromagnetic product above its Curie point; 0 for a non-ferromagnetic product."""
+    if not path.p.get('product_ferromagnetic', True):
+        return 0.0
+    Tc = path.p.get('Tc_forming', ph['Tc'])
+    lo = max(path.p['T_f'][0], Tc + 1)
+    return P.para_bias_kT_bound(ph['Js0'], ph['n_mag'], Tc, lo, B, V_STAR[1])
