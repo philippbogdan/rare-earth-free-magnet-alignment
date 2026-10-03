@@ -772,6 +772,9 @@
 
 # ------------------------------------------------------------------ AlNiCo 5 type (Ti-free): shape anisotropy of alpha1 rods
 - id: AlNiCo-5
+  unbiased_bound:
+    basis: no-field easy directions <111> (Nesbitt 1952); bound held in every held-out unbiased case
+    refs: [alnico5_field_easyaxis_nesbitt1952]
   name: "AlNiCo 5-type (Ti-free; α1 rods in α2)"
   universe: AlNiCo
   structure: {system: tetragonal, a: 1.0, c: 1.0, laue: 4/mmm}
@@ -810,6 +813,9 @@
 
 # ------------------------------------------------------------------ AlNiCo 8/9 type (Ti 5 wt%)
 - id: AlNiCo-8-9
+  unbiased_bound:
+    basis: as AlNiCo 5 (Nesbitt 1952, by analogy); bound held in every held-out unbiased case
+    refs: [alnico5_field_easyaxis_nesbitt1952]
   name: "AlNiCo 8/9-type (5 wt% Ti)"
   universe: AlNiCo
   structure: {system: tetragonal, a: 1.0, c: 1.0, laue: 4/mmm}
@@ -847,6 +853,9 @@
 
 # ------------------------------------------------------------------ Fe-Cr-Co (spinodal, shape anisotropy)
 - id: Fe-Cr-Co
+  unbiased_bound:
+    basis: by analogy with alnico; bound held in every held-out unbiased case
+    refs: [alnico5_field_easyaxis_nesbitt1952]
   name: "Fe-Cr-Co (α1 rods in α2)"
   universe: Fe-Cr-Co
   structure: {system: tetragonal, a: 1.0, c: 1.0, laue: 4/mmm}
@@ -1085,6 +1094,9 @@
   epitaxy: {}
   tgg: {}
 - id: HEA-FeCoNiAlCuTi
+  unbiased_bound:
+    basis: by analogy with alnico; bound held in every held-out unbiased case
+    refs: [alnico5_field_easyaxis_nesbitt1952]
   name: FeCoNiAlCu0.4Ti0.4 high-entropy alloy (alnico-like BCC spinodal)
   universe: high-entropy alloys
   structure:

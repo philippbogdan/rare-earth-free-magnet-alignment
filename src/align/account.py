@@ -342,6 +342,12 @@ def _A_bias(path, parents, kind, tex_kind, l1, l2):
     return A, (f'bias axis at {al} deg to the parent fibre axis' if tex_kind == 'fibre' else 'bias axis')
 
 
+def _origin(path):
+    if path.mode == 'random_nucleation':
+        return 'the easy axis forms with no orientation relationship to the parent lattice'
+    return 'forms without a parent crystal'
+
+
 def _bias_route(ph, route, kind, source):
     cells = []
     for p in ph['paths']:
@@ -361,7 +367,7 @@ def _bias_route(ph, route, kind, source):
                 if mag == 'unknown':
                     outs = {'Tc above the formation temperature': 1.0, 'Tc below it': ISO}
                     cells.append(Cell(ph['id'], route, 'open', 1.0, 'field direction',
-                                      chain=f'forms without a parent crystal; {why}',
+                                      chain=f'{_origin(path)}; {why}',
                                       decides=[(f'Curie point of {ph.get("name", ph["id"])} relative to its '
                                                 'formation temperature', outs,
                                                 'M(T) of the phase through the formation window')], A_alt=outs))
@@ -369,7 +375,7 @@ def _bias_route(ph, route, kind, source):
                 acts = mag in ('yes', 'partly')
                 cells.append(Cell(ph['id'], route, 'full' if acts else 'none', 1.0 if acts else ISO,
                                   'field direction' if acts else '',
-                                  chain=(f'forms without a parent crystal; {why}' +
+                                  chain=(f'{_origin(path)}; {why}' +
                                          ('; nuclei take the orientation the field favours' if acts else ''))))
             continue
         l1, l2, why, extra = (_field_status if kind == 'field' else _stress_status)(ph, path)
@@ -695,10 +701,28 @@ def _cubic_multiaxial(ph):
     return out
 
 
+def _unbiased_note(ph, cells):
+    """Spinodal phases: without alignment the coupled α1 network still keeps a multiaxial
+    remanence (<111> easy); state its bound in every 'cannot align' cell."""
+    ub = ph.get('unbiased_bound')
+    if not ub:
+        return cells
+    from .cases import rods_A
+    rnd = rods_A('random', (0, 0, 1), (0, 0, 1), 'none')[1]
+    fib = max(rods_A('fibre', (0, 0, 1), (np.sin(t), 0, np.cos(t)), 'none')[1] for t in np.radians(np.arange(0, 91, 5)))
+    am_random = any(((p.get('parent') or {}).get('am_texture') or {}).get('kind') == 'random' for p in ph['paths'])
+    for c in cells:
+        if c.verdict == 'none':
+            b = fib if (c.route == 'DS' or (c.route == 'AM' and not am_random)) else rnd
+            c.chain += (f'; without alignment the coupled α1 network (no-field easy directions <111>) keeps '
+                        f'up to A = {b:.3f} ({ub.get("basis", "")})')
+    return cells
+
+
 def evaluate(ph):
     if ph.get('easy_multi'):
         return _cubic_multiaxial(ph)
-    return _easy_open(ph, _evaluate(ph))
+    return _unbiased_note(ph, _easy_open(ph, _evaluate(ph)))
 
 
 def _evaluate(ph):

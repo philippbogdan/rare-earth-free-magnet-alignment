@@ -83,3 +83,7 @@ Mn4N curated (cubic, four <111> easy axes: a random polycrystal keeps the neares
 and its six sealed cases predicted with the v2 rules before opening batch3.
 
     sha256 data/curated/cases_v2.yaml  fed2017ea7a6c8dc82c6ddf87cdef7f4300bca417e3ae55113b0eac10bc391af
+10. (account text, no prediction changed) Spinodal phases: every 'cannot align' cell states the
+    coupled-network bound that held in all held-out unbiased cases (0.866 for random grains, 0.934
+    along the best axis of a <100> fibre); the cell value stays the uniaxial reference 1/2, so
+    route comparisons are between alignment ceilings.
