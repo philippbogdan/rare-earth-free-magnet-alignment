@@ -67,5 +67,6 @@ def load_phases(reg=None, path=None):
     for p in raw:
         ph = R(p, p['id'])
         ph['_refs'] = sorted(set(refs_in(p)))
+        ph['_raw'] = p
         phases.append(ph)
     return phases, R

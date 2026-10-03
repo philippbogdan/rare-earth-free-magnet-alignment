@@ -14,6 +14,26 @@ from .stamp import stamp
 RES = os.path.join(ROOT, 'results')
 
 
+ROUTE_INPUTS = {          # which parts of a phase description each route reads
+    'FP': ['Js', 'particles', 'consolidation'],
+    'FS': ['Js', 'melt', 'paths'],
+    'DS': ['Js', 'paths'], 'AM': ['Js', 'paths'],
+    'FA': ['Js', 'Tc', 'paths'], 'DS+FA': ['Js', 'Tc', 'paths'], 'AM+FA': ['Js', 'Tc', 'paths'],
+    'RX+FA': ['Js', 'Tc', 'paths'], 'SA': ['Js', 'paths'], 'DS+SA': ['Js', 'paths'],
+    'RX+SA': ['Js', 'paths'], 'HD': ['Js', 'hd'], 'HDDR': ['Js', 'hddr'], 'EP': ['Js', 'epitaxy'],
+    'TGG': ['Js', 'tgg'],
+}
+
+
+def cell_refs(ph, route):
+    from .curate import refs_in
+    raw = ph.get('_raw', {})
+    out = []
+    for k in ROUTE_INPUTS[route] + ['structure', 'easy_axis']:
+        out += refs_in(raw.get(k))
+    return sorted(set(out))
+
+
 def matrix(phases):
     rows = []
     for ph in phases:
@@ -27,6 +47,7 @@ def matrix(phases):
                          'decides': json.dumps([[d[0], {k: (None if v is None else round(v, 4))
                                                         for k, v in d[1].items()}, d[2]]
                                                 for d in c.decides]),
+                         'refs': ' '.join(cell_refs(ph, c.route)),
                          'test': c.test, 'A_alt': json.dumps({k: (None if v is None else round(v, 4))
                                                                for k, v in c.A_alt.items()})})
     return rows
