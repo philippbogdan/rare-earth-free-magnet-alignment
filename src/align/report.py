@@ -68,8 +68,12 @@ def ranking(phases, rows, reg):
     out = []
     for ph in phases:
         top, cells = best_routes(rows, ph['id'])
-        sure = [r for r in cells if r['verdict'] in ('full', 'capped', 'none')]
-        sure_top = max(sure, key=lambda r: (r['A_max'], r['verdict'] != 'none')) if sure else None
+        sure = [r for r in cells if r['verdict'] in ('full', 'capped')]
+        if sure:
+            sure_top = max(sure, key=lambda r: r['A_max'])
+        else:                                   # no established alignment route: the unaligned value
+            iso = max((r['A_max'] for r in cells if r['verdict'] == 'none'), default=0.5)
+            sure_top = {'route': 'none established (unaligned)', 'A_max': iso, 'verdict': 'none'}
         out.append((ph, top, sure_top))
     out.sort(key=lambda t: -((t[0]['Js'] or 0.0) * (t[2]['A_max'] if t[2] else 0.5)))
     return out
