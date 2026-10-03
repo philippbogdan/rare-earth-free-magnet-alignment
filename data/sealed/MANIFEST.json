@@ -5932,251 +5932,8 @@
    "opened": true
   },
   "pending_codex": {
-   "files": {},
-   "opened": false,
-   "note": "superseded partial versions sealed while the Codex collectors were still running (commit dacf28f); final versions are sealed in later batches"
-  },
-  "batch2": {
    "files": {
-    "ndfeb_routes_outcomes.yaml": {
-     "sha256": "ce8b78db76e07789f2532f6f9d71b42b8eedaf65b39ff229f8846b6b69c98067",
-     "n_records": 23,
-     "cases": [
-      {
-       "id": "ndfeb_wang2011_br_zero",
-       "phase": "Nd2Fe14B",
-       "route": "isotropic",
-       "quantity": "Br",
-       "doi": "10.1063/1.3556913"
-      },
-      {
-       "id": "ndfeb_wang2011_br_field",
-       "phase": "Nd2Fe14B",
-       "route": "FA",
-       "quantity": "Br",
-       "doi": "10.1063/1.3556913"
-      },
-      {
-       "id": "ndfeb_wang2011_bh_zero",
-       "phase": "Nd2Fe14B",
-       "route": "isotropic",
-       "quantity": "(BH)max",
-       "doi": "10.1063/1.3556913"
-      },
-      {
-       "id": "ndfeb_wang2011_bh_field",
-       "phase": "Nd2Fe14B",
-       "route": "FA",
-       "quantity": "(BH)max",
-       "doi": "10.1063/1.3556913"
-      },
-      {
-       "id": "ndfeb_li2019_br_emv",
-       "phase": "Nd2Fe14B",
-       "route": "FS",
-       "quantity": "Br",
-       "doi": "10.1038/s41598-019-42053-9"
-      },
-      {
-       "id": "ndfeb_li2019_ipf_emv",
-       "phase": "Nd2Fe14B",
-       "route": "FS",
-       "quantity": "texture_metric",
-       "doi": "10.1038/s41598-019-42053-9"
-      },
-      {
-       "id": "ndfeb_truong2016_mrms_8",
-       "phase": "Nd2Fe14B",
-       "route": "DS+FA",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.15625/0868-3166/26/1/7686"
-      },
-      {
-       "id": "ndfeb_truong2016_mrms_10",
-       "phase": "Nd2Fe14B",
-       "route": "DS+FA",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.15625/0868-3166/26/1/7686"
-      },
-      {
-       "id": "ndfeb_truong2016_mrms_12",
-       "phase": "Nd2Fe14B",
-       "route": "DS+FA",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.15625/0868-3166/26/1/7686"
-      },
-      {
-       "id": "ndfeb_truong2016_mrms_14",
-       "phase": "Nd2Fe14B",
-       "route": "DS+FA",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.15625/0868-3166/26/1/7686"
-      },
-      {
-       "id": "ndfeb_truong2016_mrms_16",
-       "phase": "Nd2Fe14B",
-       "route": "DS+FA",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.15625/0868-3166/26/1/7686"
-      },
-      {
-       "id": "ndfeb_nguyen2013_zero_br",
-       "phase": "Nd2Fe14B",
-       "route": "isotropic",
-       "quantity": "Br",
-       "doi": "10.1155/2013/927356"
-      },
-      {
-       "id": "ndfeb_nguyen2013_zero_mr_over_ms",
-       "phase": "Nd2Fe14B",
-       "route": "isotropic",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.1155/2013/927356"
-      },
-      {
-       "id": "ndfeb_nguyen2013_zero_bhmax",
-       "phase": "Nd2Fe14B",
-       "route": "isotropic",
-       "quantity": "(BH)max",
-       "doi": "10.1155/2013/927356"
-      },
-      {
-       "id": "ndfeb_nguyen2013_field_br",
-       "phase": "Nd2Fe14B",
-       "route": "DS+FA",
-       "quantity": "Br",
-       "doi": "10.1155/2013/927356"
-      },
-      {
-       "id": "ndfeb_nguyen2013_field_mr_over_ms",
-       "phase": "Nd2Fe14B",
-       "route": "DS+FA",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.1155/2013/927356"
-      },
-      {
-       "id": "ndfeb_nguyen2013_field_bhmax",
-       "phase": "Nd2Fe14B",
-       "route": "DS+FA",
-       "quantity": "(BH)max",
-       "doi": "10.1155/2013/927356"
-      },
-      {
-       "id": "ndfeb_kesler2019_bh_0t",
-       "phase": "Nd2Fe14B",
-       "route": "isotropic",
-       "quantity": "(BH)max",
-       "doi": "10.3390/magnetochemistry5010016"
-      },
-      {
-       "id": "ndfeb_kesler2019_bh_9t",
-       "phase": "Nd2Fe14B",
-       "route": "FA",
-       "quantity": "(BH)max",
-       "doi": "10.3390/magnetochemistry5010016"
-      },
-      {
-       "id": "ndfeb_genc2024_br_rt",
-       "phase": "Nd2Fe14B",
-       "route": "AM",
-       "quantity": "Br",
-       "doi": "10.1007/s00170-024-13605-9"
-      },
-      {
-       "id": "ndfeb_genc2024_br_heated",
-       "phase": "Nd2Fe14B",
-       "route": "AM",
-       "quantity": "Br",
-       "doi": "10.1007/s00170-024-13605-9"
-      },
-      {
-       "id": "ndfeb_genc2024_bh_rt",
-       "phase": "Nd2Fe14B",
-       "route": "AM",
-       "quantity": "(BH)max",
-       "doi": "10.1007/s00170-024-13605-9"
-      },
-      {
-       "id": "ndfeb_genc2024_bh_heated",
-       "phase": "Nd2Fe14B",
-       "route": "AM",
-       "quantity": "(BH)max",
-       "doi": "10.1007/s00170-024-13605-9"
-      }
-     ]
-    },
-    "borides_feta_outcomes.yaml": {
-     "sha256": "44200f2bf0ddc734d34ef0e1fffdec94a6f78e4b5bf7aaf8104fa17ccaa9282f",
-     "n_records": 1,
-     "cases": [
-      {
-       "id": "feta85_bhmax_gabay2019",
-       "phase": "Fe2+\u03b4Ta-C14-meltspun",
-       "route": "isotropic",
-       "quantity": "BHmax",
-       "doi": "10.1063/1.5079727"
-      }
-     ]
-    }
-   },
-   "opened": true
-  },
-  "batch3": {
-   "files": {
-    "mn4n_outcomes.yaml": {
-     "sha256": "961ec4216891f9438652eed5eaf3b342d072f41bdf3af5854e8082946ae30c54",
-     "n_records": 6,
-     "cases": [
-      {
-       "id": "mn4n_ep_zhou2021_s1_mrms",
-       "phase": "Mn4N",
-       "route": "EP",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.1063/5.0032167"
-      },
-      {
-       "id": "mn4n_ep_zhou2021_s3_mrms",
-       "phase": "Mn4N",
-       "route": "EP",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.1063/5.0032167"
-      },
-      {
-       "id": "mn4n_ep_zhou2021_s4_mrms",
-       "phase": "Mn4N",
-       "route": "EP",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.1063/5.0032167"
-      },
-      {
-       "id": "mn4n_ep_zhou2021_s5_mrms",
-       "phase": "Mn4N",
-       "route": "EP",
-       "quantity": "Mr_over_Ms",
-       "doi": "10.1063/5.0032167"
-      },
-      {
-       "id": "mn4n_like_iso_shinaji2013_500c_br",
-       "phase": "Mn-Sn-Co-N multiphase alloy",
-       "route": "isotropic",
-       "quantity": "Br",
-       "doi": "10.2320/matertrans.MAW201312"
-      },
-      {
-       "id": "mn4n_like_iso_shinaji2013_700c_br",
-       "phase": "Mn-Sn-Co-N multiphase alloy",
-       "route": "isotropic",
-       "quantity": "Br",
-       "doi": "10.2320/matertrans.MAW201312"
-      }
-     ]
-    }
-   },
-   "opened": true
-  },
-  "batch4": {
-   "files": {
-    "heldout2_a_outcomes.yaml": {
+    "heldout2_a_outcomes.yaml#partial_2026-10-03": {
      "sha256": "29aa3e76dbe62191de0b11a61452004721666525c9ba0abba3c812399c26e8e4",
      "n_records": 60,
      "cases": [
@@ -6601,7 +6358,251 @@
        "doi": "10.3390/ma18081847"
       }
      ]
+    }
+   },
+   "opened": false,
+   "note": "superseded partial versions sealed while the Codex collectors were still running (commit dacf28f); final versions are sealed in later batches"
+  },
+  "batch2": {
+   "files": {
+    "ndfeb_routes_outcomes.yaml": {
+     "sha256": "ce8b78db76e07789f2532f6f9d71b42b8eedaf65b39ff229f8846b6b69c98067",
+     "n_records": 23,
+     "cases": [
+      {
+       "id": "ndfeb_wang2011_br_zero",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1063/1.3556913"
+      },
+      {
+       "id": "ndfeb_wang2011_br_field",
+       "phase": "Nd2Fe14B",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1063/1.3556913"
+      },
+      {
+       "id": "ndfeb_wang2011_bh_zero",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "(BH)max",
+       "doi": "10.1063/1.3556913"
+      },
+      {
+       "id": "ndfeb_wang2011_bh_field",
+       "phase": "Nd2Fe14B",
+       "route": "FA",
+       "quantity": "(BH)max",
+       "doi": "10.1063/1.3556913"
+      },
+      {
+       "id": "ndfeb_li2019_br_emv",
+       "phase": "Nd2Fe14B",
+       "route": "FS",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-019-42053-9"
+      },
+      {
+       "id": "ndfeb_li2019_ipf_emv",
+       "phase": "Nd2Fe14B",
+       "route": "FS",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-019-42053-9"
+      },
+      {
+       "id": "ndfeb_truong2016_mrms_8",
+       "phase": "Nd2Fe14B",
+       "route": "DS+FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.15625/0868-3166/26/1/7686"
+      },
+      {
+       "id": "ndfeb_truong2016_mrms_10",
+       "phase": "Nd2Fe14B",
+       "route": "DS+FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.15625/0868-3166/26/1/7686"
+      },
+      {
+       "id": "ndfeb_truong2016_mrms_12",
+       "phase": "Nd2Fe14B",
+       "route": "DS+FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.15625/0868-3166/26/1/7686"
+      },
+      {
+       "id": "ndfeb_truong2016_mrms_14",
+       "phase": "Nd2Fe14B",
+       "route": "DS+FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.15625/0868-3166/26/1/7686"
+      },
+      {
+       "id": "ndfeb_truong2016_mrms_16",
+       "phase": "Nd2Fe14B",
+       "route": "DS+FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.15625/0868-3166/26/1/7686"
+      },
+      {
+       "id": "ndfeb_nguyen2013_zero_br",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1155/2013/927356"
+      },
+      {
+       "id": "ndfeb_nguyen2013_zero_mr_over_ms",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1155/2013/927356"
+      },
+      {
+       "id": "ndfeb_nguyen2013_zero_bhmax",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "(BH)max",
+       "doi": "10.1155/2013/927356"
+      },
+      {
+       "id": "ndfeb_nguyen2013_field_br",
+       "phase": "Nd2Fe14B",
+       "route": "DS+FA",
+       "quantity": "Br",
+       "doi": "10.1155/2013/927356"
+      },
+      {
+       "id": "ndfeb_nguyen2013_field_mr_over_ms",
+       "phase": "Nd2Fe14B",
+       "route": "DS+FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1155/2013/927356"
+      },
+      {
+       "id": "ndfeb_nguyen2013_field_bhmax",
+       "phase": "Nd2Fe14B",
+       "route": "DS+FA",
+       "quantity": "(BH)max",
+       "doi": "10.1155/2013/927356"
+      },
+      {
+       "id": "ndfeb_kesler2019_bh_0t",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "(BH)max",
+       "doi": "10.3390/magnetochemistry5010016"
+      },
+      {
+       "id": "ndfeb_kesler2019_bh_9t",
+       "phase": "Nd2Fe14B",
+       "route": "FA",
+       "quantity": "(BH)max",
+       "doi": "10.3390/magnetochemistry5010016"
+      },
+      {
+       "id": "ndfeb_genc2024_br_rt",
+       "phase": "Nd2Fe14B",
+       "route": "AM",
+       "quantity": "Br",
+       "doi": "10.1007/s00170-024-13605-9"
+      },
+      {
+       "id": "ndfeb_genc2024_br_heated",
+       "phase": "Nd2Fe14B",
+       "route": "AM",
+       "quantity": "Br",
+       "doi": "10.1007/s00170-024-13605-9"
+      },
+      {
+       "id": "ndfeb_genc2024_bh_rt",
+       "phase": "Nd2Fe14B",
+       "route": "AM",
+       "quantity": "(BH)max",
+       "doi": "10.1007/s00170-024-13605-9"
+      },
+      {
+       "id": "ndfeb_genc2024_bh_heated",
+       "phase": "Nd2Fe14B",
+       "route": "AM",
+       "quantity": "(BH)max",
+       "doi": "10.1007/s00170-024-13605-9"
+      }
+     ]
     },
+    "borides_feta_outcomes.yaml": {
+     "sha256": "44200f2bf0ddc734d34ef0e1fffdec94a6f78e4b5bf7aaf8104fa17ccaa9282f",
+     "n_records": 1,
+     "cases": [
+      {
+       "id": "feta85_bhmax_gabay2019",
+       "phase": "Fe2+\u03b4Ta-C14-meltspun",
+       "route": "isotropic",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.5079727"
+      }
+     ]
+    }
+   },
+   "opened": true
+  },
+  "batch3": {
+   "files": {
+    "mn4n_outcomes.yaml": {
+     "sha256": "961ec4216891f9438652eed5eaf3b342d072f41bdf3af5854e8082946ae30c54",
+     "n_records": 6,
+     "cases": [
+      {
+       "id": "mn4n_ep_zhou2021_s1_mrms",
+       "phase": "Mn4N",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/5.0032167"
+      },
+      {
+       "id": "mn4n_ep_zhou2021_s3_mrms",
+       "phase": "Mn4N",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/5.0032167"
+      },
+      {
+       "id": "mn4n_ep_zhou2021_s4_mrms",
+       "phase": "Mn4N",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/5.0032167"
+      },
+      {
+       "id": "mn4n_ep_zhou2021_s5_mrms",
+       "phase": "Mn4N",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/5.0032167"
+      },
+      {
+       "id": "mn4n_like_iso_shinaji2013_500c_br",
+       "phase": "Mn-Sn-Co-N multiphase alloy",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.2320/matertrans.MAW201312"
+      },
+      {
+       "id": "mn4n_like_iso_shinaji2013_700c_br",
+       "phase": "Mn-Sn-Co-N multiphase alloy",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.2320/matertrans.MAW201312"
+      }
+     ]
+    }
+   },
+   "opened": true
+  },
+  "batch4": {
+   "files": {
     "heldout2_b_outcomes.yaml": {
      "sha256": "d83448c59760a438388f9a93eaabad72ca5d76d46aee8a4bb68cb0a617b664f8",
      "n_records": 139,
