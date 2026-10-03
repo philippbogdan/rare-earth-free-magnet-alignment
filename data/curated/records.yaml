@@ -1,0 +1,32 @@
+# Records sourced by the lead (same schema as data/raw/*_inputs.yaml).
+- id: rx_cube_feni_soubeyroux2008
+  phase: all
+  quantity: other
+  value: "Fe-Ni alloys develop a cube {100}<001> recrystallisation texture after cold rolling and annealing; best in-plane/out-of-plane disorientations 5.5 deg / 4.5 deg"
+  unit: ""
+  conditions: "industrial Fe-Ni alloy tapes, rolled and annealed up to 1100 C"
+  source: {doi: 10.1088/1742-6596/97/1/012069, title: "Industrial Fe-Ni alloys for HTS coated conductor tapes",
+           first_author: Soubeyroux, year: 2008,
+           url: "https://api.openalex.org/works/doi:10.1088/1742-6596/97/1/012069", evidence: abstract, locator: abstract}
+  quote: "The effects of annealing conditions (temperature and atmosphere) on the cubique texture were analyzed. RX pole figures have been achieved on samples annealed up to 1100°C."
+  note: "Same abstract: 'Pole figure measurements gave the global in-plane and out-of-plane disorientations of our samples which are in-plane 5.5° and out-plane (RD) 4.5° for best samples.'"
+- id: rx_cube_feni_spread_soubeyroux2008
+  phase: all
+  quantity: other
+  value: [5.5, 4.5]
+  unit: deg
+  conditions: "best Fe-Ni cube-textured tapes: in-plane and out-of-plane (RD) disorientation"
+  source: {doi: 10.1088/1742-6596/97/1/012069, title: "Industrial Fe-Ni alloys for HTS coated conductor tapes",
+           first_author: Soubeyroux, year: 2008,
+           url: "https://api.openalex.org/works/doi:10.1088/1742-6596/97/1/012069", evidence: abstract, locator: abstract}
+  quote: "Pole figure measurements gave the global in-plane and out-of-plane disorientations of our samples which are in-plane 5.5° and out-plane (RD) 4.5° for best samples."
+- id: rx_goss_bcc_liang2023
+  phase: all
+  quantity: other
+  value: "bcc Fe-Si: Goss {110}<001> texture with <001> parallel to the rolling direction, sharpened by secondary recrystallisation"
+  unit: ""
+  conditions: "grain-oriented 6.5% Si steel"
+  source: {doi: 10.3390/ma16206731, title: "Evolution of Microstructure and Texture in Grain-Oriented 6.5% Si Steel Processed by Rolling with Intrinsic Inhibitors and Additional Inhibitors",
+           first_author: Liang, year: 2023,
+           url: "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10608260/fullTextXML", evidence: full_text, locator: "Introduction"}
+  quote: "Goss ({110}<001>) orientation, due to the crystal orientation direction parallel to the rolling direction (RD), has better susceptibility to magnetization under directional magnetic fields and therefore, it mostly exists in grain-oriented silicon steel."

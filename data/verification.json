@@ -1,0 +1,41 @@
+{
+ "rx_cube_feni_soubeyroux2008": {
+  "author_ok": true,
+  "crossref_title": "Industrial Fe-Ni alloys for HTS coated conductor tapes",
+  "crossref_year": 2008,
+  "doi": "10.1088/1742-6596/97/1/012069",
+  "doi_ok": true,
+  "file": "data/curated/records.yaml",
+  "quote_ok": true,
+  "quote_score": 1.0,
+  "quote_where": "abstract",
+  "title_score": 1.0,
+  "year_ok": true
+ },
+ "rx_cube_feni_spread_soubeyroux2008": {
+  "author_ok": true,
+  "crossref_title": "Industrial Fe-Ni alloys for HTS coated conductor tapes",
+  "crossref_year": 2008,
+  "doi": "10.1088/1742-6596/97/1/012069",
+  "doi_ok": true,
+  "file": "data/curated/records.yaml",
+  "quote_ok": true,
+  "quote_score": 1.0,
+  "quote_where": "abstract",
+  "title_score": 1.0,
+  "year_ok": true
+ },
+ "rx_goss_bcc_liang2023": {
+  "author_ok": true,
+  "crossref_title": "Evolution of Microstructure and Texture in Grain-Oriented 6.5% Si Steel Processed by Rolling with Intrinsic Inhibitors and Additional Inhibitors",
+  "crossref_year": 2023,
+  "doi": "10.3390/ma16206731",
+  "doi_ok": true,
+  "file": "data/curated/records.yaml",
+  "quote_ok": true,
+  "quote_score": 1.0,
+  "quote_where": "url",
+  "title_score": 1.0,
+  "year_ok": true
+ }
+}
