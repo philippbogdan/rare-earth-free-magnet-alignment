@@ -35,6 +35,12 @@ class Registry:
                 self.rec[rid] = r
         vf = os.path.join(ROOT, 'data', 'verification.json')
         self.ver = json.load(open(vf)) if os.path.exists(vf) else {}
+        mf = os.path.join(ROOT, 'data', 'verification_manual.yaml')
+        for m in (yaml.safe_load(open(mf)) or []) if os.path.exists(mf) else []:
+            if m.get('verdict') == 'verified':          # checked by eye where the automatic match failed
+                v = dict(self.ver.get(m['id']) or {})
+                v.update({'quote_ok': True, 'level': 'manual', 'manual_how': m.get('how')})
+                self.ver[m['id']] = v
 
     def __getitem__(self, rid):
         return self.rec[rid]

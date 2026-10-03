@@ -1,0 +1,45 @@
+# Quotes checked by eye where the automatic check (tools/verify_sources.py) failed: the passage in
+# the source text or, for scanned journals, the page image (rendered with pdftoppm; OCR with
+# tesseract). 'how' says what made the automatic match fail.
+- {id: copt_js_barmak2004, verdict: verified, how: 'text layer: a page number ("12") is inserted inside the sentence'}
+- {id: fept_js_barmak2004, verdict: verified, how: 'text layer: a page number ("12") is inserted inside the sentence'}
+- {id: a1copt_lattice_barmak2004, verdict: verified, how: 'Table I extracted column by column; first column Ts 276, a 3.770, c 3.766'}
+- {id: a1fept_lattice_barmak2004, verdict: verified, how: 'Table I extracted column by column; Fe52Pt48 column Ts 144, a 3.834'}
+- {id: a1copt_tc_farjami2009, verdict: verified, how: 'text layer: a figure caption interrupts the sentence'}
+- {id: copt_n_variants_farjami2009, verdict: verified, how: 'text layer: a page header interrupts the sentence; angle brackets lost'}
+- {id: copt_t_stab_farjami2009, verdict: verified, how: 'text layer: page break inside the sentence'}
+- {id: a1fepd_lattice_ichitsubo1998, verdict: verified, how: 'OCR text of the scan (L10 read as Ll», a0 as ao)'}
+- {id: fepd_tetragonality_ichitsubo1998, verdict: verified, how: 'OCR text of the scan; eigenstrain symbols garbled by OCR'}
+- {id: a1fepd_tc_tanaka2000, verdict: verified, how: 'page 3 image OCR: 673 K for disordered phase, 763 K for ordered phase'}
+- {id: fepd_tc_tanaka2000, verdict: verified, how: 'page 3 image OCR: the magnetic transition temperature of the ordered phase is 763 K'}
+- {id: fepd_js_tanaka2000, verdict: verified, how: 'page 3 image OCR: 1.32 T for disordered phase, 1.38 T for ordered phase'}
+- {id: fepd_easy_axis_tanaka2000, verdict: verified, how: 'page 1 image OCR (a footnote interrupts the sentence)'}
+- {id: srm_t_formation_iida1999, verdict: verified, how: 'page 1 image OCR: attrition-milled ... calcined at 1200 C for 3 hours in air'}
+- {id: srm_single_variant_particles_iida1999, verdict: verified, how: 'page 1 image OCR: primary particle size around 0.5 um'}
+- {id: alnico_Js_sergeyev_via_takeuchi1976_5, verdict: verified, how: 'Table 3 read on the page image: Alnico 5, I*s 1160 G (after Sergeyev)'}
+- {id: alnico_Js_sergeyev_via_takeuchi1976_8, verdict: verified, how: 'Table 3 read on the page image: Alnico 8, I*s 945 G (after Sergeyev)'}
+- {id: alnico5_Br_equiaxed_field_makino1963, verdict: verified, how: 'Table 1 read on the page image: equiaxial, field treated, calculated 11,900, measured 12,800'}
+- {id: alnico5_Js_makino1963_table1, verdict: verified, how: 'Table 1 read on the page image: parallel to the columnar axis, calculated 14,300'}
+- {id: alnico5_Js_same_sample_makino1963, verdict: verified, how: 'Table 1 read on the page image: calculated 14,300'}
+- {id: feni_or_nite_ito2019, verdict: verified, how: 'the same relationships are stated verbatim in the abstract; body text interleaved with a figure'}
+- {id: fepd_k1_shima2004, verdict: verified, how: 'abstract (OpenAlex) contains the sentence with LaTeX markup'}
+- {id: fese_k_wang2012, verdict: verified, how: 'saved paragraph text: 5.22×10^6 erg/cm3 written with a superscript'}
+- {id: hea_l10_ku_beeson2024, verdict: verified, how: 'saved text: Ku = 2 × 10^6 erg cm−3 with a superscript'}
+- {id: hfco7_cluster_bal2014, verdict: verified, how: 'saved text: reference ranges written 14,17–19,23 vs 14,17,18,19,23'}
+- {id: efe2o3_t_stab_chan2018, verdict: verified, how: 'text layer drops the Greek epsilon'}
+- {id: mnbi_fieldeffect_ren2006, verdict: verified, how: 'abstract page: 3--6 wt% written with a dash'}
+- {id: nd2fe14b_growth_direction_hattori2009, verdict: verified, how: 'text layer: R2 Fe14 B spaced, = rendered as ¼'}
+- {id: zr2co11_js_cui2018, verdict: verified, how: 'text layer renders = as ¼'}
+- {id: zr2co11_k1_cui2018, verdict: verified, how: 'text layer renders = as ¼'}
+- {id: zr2co11_tc_cui2018, verdict: verified, how: 'text layer renders = as ¼'}
+- {id: zr2co11_lattice_cui2018, verdict: verified, how: 'text layer renders = as ¼'}
+- {id: zr2co11_easy_calc_cui2018, verdict: verified, how: 'text layer renders = as ¼ and dashes as e'}
+- {id: hfco7_js_cui2018, verdict: verified, how: 'text layer renders = as ¼'}
+- {id: hfco7_k1_cui2018, verdict: verified, how: 'text layer renders = as ¼'}
+- {id: hfco7_tc_cui2018, verdict: verified, how: 'text layer renders = as ¼'}
+- {id: hfco7_tf_cui2018, verdict: verified, how: 'text layer renders the en dash as e (1323e1403 K)'}
+- {id: hfco7_formation_cui2018, verdict: verified, how: 'text layer renders the en dash as e (1323e1403 K)'}
+- {id: mn3ga_lattice_kren, verdict: verified, how: 'table text: a ¼ 3.901, c ¼ 7.120'}
+- {id: mnga_l10_lattice_mix2015, verdict: verified, how: 'table text: a ¼ 3.8921, c ¼ 3.6920'}
+- {id: mnga_l10_formation_hx2020, verdict: verified, how: 'table of invariant reactions, + rendered as þ'}
+- {id: mnga_l10_primary_hx2020, verdict: verified, how: 'table of invariant reactions, + rendered as þ'}

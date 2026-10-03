@@ -557,8 +557,9 @@ def build(reg, phases, rows, R, st, univ=None):
     ctx['evidence_report'] = (
         f"All numbers come from commit `{st['commit']}` ({ctx['clean']}) through `./regenerate.sh`. "
         f"The account uses {nrec} sourced records; quote found at the source for "
-        f"{vc['verified_online'] + vc['verified_local']} ({vc['verified_online']} online, "
-        f"{vc['verified_local']} in the saved source text), not found for {vc['not_found']}, not checked "
+        f"{vc['verified_online'] + vc['verified_local'] + vc['verified_manual']} ({vc['verified_online']} online, "
+        f"{vc['verified_local']} in the saved source text, {vc['verified_manual']} checked by eye on the source "
+        f"text or page image, data/verification_manual.yaml), not found for {vc['not_found']}, not checked "
         f"{vc['not_checked']}; DOI resolves for {vc['doi_ok']}. Estimates made here are labelled "
         f"({len(R.estimates)}, FINDINGS.md §7) and never set a ceiling.")
     allf = []
@@ -626,7 +627,7 @@ def build(reg, phases, rows, R, st, univ=None):
          f"decides it and its measurement ({len(bad)} without); {len(untried)} 'cannot align' cells resting on "
          "'not reported'", not bad and not untried),
         ('Evidence', f"{len(R.used)} input records, each with a named source and verbatim quote "
-         f"({len(srcless)} without); quote found at the source for {vc['verified_online'] + vc['verified_local']}; "
+         f"({len(srcless)} without); quote found at the source for {vc['verified_online'] + vc['verified_local'] + vc['verified_manual']} of {len(R.used)}; "
          f"{len(R.estimates)} labelled estimates; one commit", not srcless and st['clean_inputs']),
     ]
     ctx['complete_table'] = table(['criterion (GOAL.md)', 'measured', 'holds'],

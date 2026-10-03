@@ -1,0 +1,927 @@
+- id: hydride_poor_absorbers_driessen1990
+  phase: elemental metals
+  quantity: other
+  value: Cr, Mn, Fe, Co, Ni, Mo, Ru, Rh, Ir, W, Pt, Cu, Ag, Au absorb only small amounts of H at low pressure
+  unit: text
+  conditions: low H2 pressure; 14 elemental metals, not their intermetallic compounds
+  source:
+    doi: 10.1088/0953-8984/2/49/007
+    title: Metal hydride formation at pressures up to 1 Mbar
+    first_author: Driessen
+    year: 1990
+    url: https://research.utwente.nl/en/publications/metal-hydride-formation-at-pressure-up-to-1mbar/
+    evidence: abstract
+    locator: abstract
+  quote: A simple mean-field lattice gas model is used to predict the hydride formation properties of Cr, Mn,
+    Fe, Co, Ni, Mo, Ru, Rh, Ir, W, Pt, Cu, Ag and Au, which at low hydrogen pressures absorb only small amounts
+    of hydrogen.
+  note: Institutional author-page abstract; the claim concerns elemental metals, not compounds containing those
+    elements.
+- id: hydride_pblock_class_saito
+  phase: p-block hydrides
+  quantity: other
+  value: Group 13-17 hydrides, including Al/Ga/Ge/Bi hydrides, are covalent molecular compounds; existence
+    does not imply direct hydride formation from elements under mild H2
+  unit: text
+  conditions: chemical class; no claim that every p-block hydride is isolable at 1 bar
+  source:
+    title: '4.1: Hydrogen and hydrides'
+    first_author: Saito
+    url: https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(Saito)/04%3A_Chemistry_of_Nonmetallic_Elements/4.01%3A_Hydrogen_and_hydrides
+    evidence: book
+    locator: section 4.1
+  quote: The Group 13-17 p-block elements form covalent molecular hydrides.
+  note: Class-level statement only; separate records give specific stability evidence for Ga, Ge and Bi hydrides.
+- id: hydride_al_direct_su2021
+  phase: AlH3
+  quantity: other
+  value: direct Al + H2 synthesis reported at 650 °C and 10.0 GPa for 24 h, far above a few bar
+  unit: text
+  conditions: elemental Al and H2; Saitoh et al. experiment quoted by review
+  source:
+    doi: 10.3390/ma14112898
+    title: Synthesis and Stability of Hydrogen Storage Material Aluminum Hydride
+    first_author: Su
+    year: 2021
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8198658/
+    evidence: review
+    locator: section 4
+  quote: Saitoh et al. [43] prepared AlH3 via reacting aluminum with hydrogen at 650 °C and 10.0 GPa for 24
+    h.
+  note: Evidence is a review of a direct high-pressure synthesis; it does not prove no other route exists.
+- id: hydride_gallane_grochala2004
+  phase: GaH3
+  quantity: other
+  value: solid gallane has been synthesized but decomposes at about -15 °C; not stable at room or elevated
+    temperature
+  unit: text
+  conditions: uncomplexed GaH3; review of non-interstitial hydrides
+  source:
+    doi: 10.1021/cr030691s
+    title: Thermal Decomposition of the Non-Interstitial Hydrides for the Storage and Production of Hydrogen
+    first_author: Grochala
+    year: 2004
+    url: https://beta.chem.uw.edu.pl/people/WGrochala/H_review.pdf
+    evidence: review
+    locator: section 5
+  quote: 'Finally,
+
+    GaH3(s) has been synthesized (it decomposes at about
+
+    -15 °C), and InH3 has been isolated in the low-
+
+    temperature Ar matrix,241
+
+    but so far all attempts to
+
+    similarly isolate TlH3 have failed242
+
+    and still continue
+
+    in several laboratories.'
+  note: The decomposing solid hydride is distinct from stabilized ligand adducts.
+- id: hydride_bismuthine_grochala2004
+  phase: BiH3
+  quantity: other
+  value: BiH3 decomposes rapidly above -40 °C; not stable at room or elevated temperature
+  unit: text
+  conditions: molecular bismuthine; review cites low-temperature experiments
+  source:
+    doi: 10.1021/cr030691s
+    title: Thermal Decomposition of the Non-Interstitial Hydrides for the Storage and Production of Hydrogen
+    first_author: Grochala
+    year: 2004
+    url: https://beta.chem.uw.edu.pl/people/WGrochala/H_review.pdf
+    evidence: review
+    locator: section 5
+  quote: 'BiH3
+
+    is considerably stable at -55 °C, and it decomposes
+
+    fast when the temperature is raised above -40 °C.'
+  note: The review also quotes a model Tdec near -36 °C; the record uses its reported experimental stability
+    statement.
+- id: hydride_ge_solid_davari2017
+  phase: Ge-H
+  quantity: other
+  value: DFT predicts no thermodynamically stable solid hydrogen-rich Ge hydride below 200 GPa; gaseous GeH4
+    can exist at ambient pressure
+  unit: text
+  conditions: solid Ge-H convex-hull calculation; pressure below 200 GPa
+  source:
+    doi: 10.1103/physrevb.95.134506
+    title: Superconductivity and unexpected chemistry of germanium hydrides under pressure
+    first_author: Davari Esfahani
+    year: 2017
+    url: https://link.aps.org/accepted/10.1103/PhysRevB.95.134506
+    evidence: full_text
+    locator: Results
+  quote: 'Below 200 GPa, no hydrogen-rich composition is stable
+
+    against decomposition into the elements. It is consistent with
+
+    not having any solid H-rich Ge-hydrides at low pressures, al-
+
+    though using in situ gas-condensation techniques, Maley et al.
+
+    showed germane can form at ambient pressure39
+
+    .'
+  note: Computational equilibrium claim for solids; molecular germane from chemical synthesis is not excluded.
+- id: hydride_pd_mild_darmadi2020
+  phase: PdHx
+  quantity: other
+  value: Pd hydride formation near 20-30 mbar H2 at room temperature; Pd is a late-metal exception
+  unit: text
+  conditions: room temperature; pressure near hydride phase transition
+  source:
+    doi: 10.1021/acssensors.0c02019
+    title: 'High-Performance Nanostructured Palladium-Based Hydrogen
+
+      Sensors─Current Limitations and Strategies for Their Mitigation'
+    first_author: Darmadi
+    year: 2020
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7735785/
+    evidence: review
+    locator: section on phase transition
+  quote: 'This is
+
+    problematic, since at room temperature, hydride formation in Pd occurs
+
+    at ∼20–30 mbar,199 which
+
+    means that sensitivity below (and above) this pressure will be low.'
+  note: The quoted pressure applies to Pd hydride formation at room temperature, not to all temperatures or
+    nanostructures.
+- id: tih_mild_pressure_syrtanov2020
+  phase: γ-TiH
+  quantity: T_formation
+  value: 773
+  unit: K
+  conditions: commercially pure Ti powder; 500 °C; H2 pressure 0.5 atm; metastable hydride observed in situ
+  source:
+    doi: 10.3390/met10040447
+    title: Laboratory X-ray Diffraction Complex for In Situ Investigations of Structural Phase Evolution of
+      Materials under Gaseous Atmosphere
+    first_author: Syrtanov
+    year: 2020
+    url: https://earchive.tpu.ru/jspui/bitstream/11683/64876/1/reprint-nw-33306.pdf
+    evidence: abstract
+    locator: abstract
+  quote: "hydrogenation of the CP-Ti powder occurred at a temperature of 500 ◦ C and a hydrogen pressure of\n\
+    \ 0.5 atm, accompanied by the formation of metastable γ titanium hydride (γ-TiH) phase."
+  note: Converted from 500 °C. The cited γ hydride had a limited lifetime, so this is evidence of formation
+    under mild pressure, not long-term stability.
+- id: zrh_mild_pressure_syrtanov2020
+  phase: δ-ZrH
+  quantity: T_formation
+  value: 623
+  unit: K
+  conditions: Zr-1Nb alloy; 350 °C; H2 pressure 0.5 atm; observed α-Zr to δ-ZrH transformation
+  source:
+    doi: 10.3390/met10040447
+    title: Laboratory X-ray Diffraction Complex for In Situ Investigations of Structural Phase Evolution of
+      Materials under Gaseous Atmosphere
+    first_author: Syrtanov
+    year: 2020
+    url: https://earchive.tpu.ru/jspui/bitstream/11683/64876/1/reprint-nw-33306.pdf
+    evidence: abstract
+    locator: abstract
+  quote: "The α-Zr → δ-ZrH phase\n transformation was observed under hydrogenation of the zirconium Zr-1Nb\
+    \ alloy at a temperature\n of 350 ◦ C and a hydrogen pressure of 0.5 atm."
+  note: Converted from 350 °C. Alloy Zr-1Nb rather than pure Zr.
+- id: hydride_enthalpy_mg_goshome2015
+  phase: MgH2
+  quantity: other
+  value: 'formation enthalpy of Mg to MgH2: -74 kJ/mol H2'
+  unit: kJ/mol H2
+  conditions: Table 1-2-3; heat of formation, experimental temperature range shown in quoted row
+  source:
+    title: Thermodynamic and Kinetic Properties of Alkali Metal Amide-Hydrogen System
+    first_author: Goshome
+    url: https://hiroshima.repo.nii.ac.jp/record/2004892/files/k6650_3.pdf
+    evidence: review
+    year: 2015
+    locator: Table 1-2-3
+  quote: '                 Mg - MgH2           -74              -16               440-560'
+  note: Secondary table in a dissertation; stoichiometry matters. No pressure threshold follows from this enthalpy
+    alone.
+- id: hydride_enthalpy_nd_goshome2015
+  phase: NdH2
+  quantity: other
+  value: 'formation enthalpy of Nd to NdH2: -212 kJ/mol H2'
+  unit: kJ/mol H2
+  conditions: Table 1-2-3; heat of formation, experimental temperature range shown in quoted row
+  source:
+    title: Thermodynamic and Kinetic Properties of Alkali Metal Amide-Hydrogen System
+    first_author: Goshome
+    url: https://hiroshima.repo.nii.ac.jp/record/2004892/files/k6650_3.pdf
+    evidence: review
+    year: 2015
+    locator: Table 1-2-3
+  quote: '                  Nd - NdH2         -212             -17.6              650-840'
+  note: Secondary table in a dissertation; stoichiometry matters. No pressure threshold follows from this enthalpy
+    alone.
+- id: hydride_enthalpy_ti_goshome2015
+  phase: TiH2
+  quantity: other
+  value: 'formation enthalpy of Ti to TiH2: -130 kJ/mol H2'
+  unit: kJ/mol H2
+  conditions: Table 1-2-3; heat of formation, experimental temperature range shown in quoted row
+  source:
+    title: Thermodynamic and Kinetic Properties of Alkali Metal Amide-Hydrogen System
+    first_author: Goshome
+    url: https://hiroshima.repo.nii.ac.jp/record/2004892/files/k6650_3.pdf
+    evidence: review
+    year: 2015
+    locator: Table 1-2-3
+  quote: '                Ti (hcp) - TiH2     -130              12                 <300'
+  note: Secondary table in a dissertation; stoichiometry matters. No pressure threshold follows from this enthalpy
+    alone.
+- id: hydride_enthalpy_zr_goshome2015
+  phase: ZrH2
+  quantity: other
+  value: 'formation enthalpy of Zr to ZrH2: -188 kJ/mol H2'
+  unit: kJ/mol H2
+  conditions: Table 1-2-3; heat of formation, experimental temperature range shown in quoted row
+  source:
+    title: Thermodynamic and Kinetic Properties of Alkali Metal Amide-Hydrogen System
+    first_author: Goshome
+    url: https://hiroshima.repo.nii.ac.jp/record/2004892/files/k6650_3.pdf
+    evidence: review
+    year: 2015
+    locator: Table 1-2-3
+  quote: '               Zr (hcp) - ZrH2      -188              -18               400-550'
+  note: Secondary table in a dissertation; stoichiometry matters. No pressure threshold follows from this enthalpy
+    alone.
+- id: hydride_enthalpy_hf_goshome2015
+  phase: HfH2
+  quantity: other
+  value: 'formation enthalpy of Hf to HfH2: -130 kJ/mol H2'
+  unit: kJ/mol H2
+  conditions: Table 1-2-3; heat of formation, experimental temperature range shown in quoted row
+  source:
+    title: Thermodynamic and Kinetic Properties of Alkali Metal Amide-Hydrogen System
+    first_author: Goshome
+    url: https://hiroshima.repo.nii.ac.jp/record/2004892/files/k6650_3.pdf
+    evidence: review
+    year: 2015
+    locator: Table 1-2-3
+  quote: '               Hf (hcp) - HfH2      -130              -12               600-900'
+  note: Secondary table in a dissertation; stoichiometry matters. No pressure threshold follows from this enthalpy
+    alone.
+- id: hydride_enthalpy_nb065_goshome2015
+  phase: NbH0.65
+  quantity: other
+  value: 'formation enthalpy of Nb to NbH0.65: -92 kJ/mol H2'
+  unit: kJ/mol H2
+  conditions: Table 1-2-3; heat of formation, experimental temperature range shown in quoted row
+  source:
+    title: Thermodynamic and Kinetic Properties of Alkali Metal Amide-Hydrogen System
+    first_author: Goshome
+    url: https://hiroshima.repo.nii.ac.jp/record/2004892/files/k6650_3.pdf
+    evidence: review
+    year: 2015
+    locator: Table 1-2-3
+  quote: '                 Nb - NbH0.65        -92              -16                 0-80'
+  note: Secondary table in a dissertation; stoichiometry matters. No pressure threshold follows from this enthalpy
+    alone.
+- id: hydride_enthalpy_nb2_goshome2015
+  phase: NbH2
+  quantity: other
+  value: 'formation enthalpy of Nb to NbH2: -40 kJ/mol H2'
+  unit: kJ/mol H2
+  conditions: Table 1-2-3; heat of formation, experimental temperature range shown in quoted row
+  source:
+    title: Thermodynamic and Kinetic Properties of Alkali Metal Amide-Hydrogen System
+    first_author: Goshome
+    url: https://hiroshima.repo.nii.ac.jp/record/2004892/files/k6650_3.pdf
+    evidence: review
+    year: 2015
+    locator: Table 1-2-3
+  quote: '                  Nb - NbH2          -40              -16                  25'
+  note: Secondary table in a dissertation; stoichiometry matters. No pressure threshold follows from this enthalpy
+    alone.
+- id: hydride_enthalpy_ta_goshome2015
+  phase: TaH0.5
+  quantity: other
+  value: 'formation enthalpy of Ta to TaH0.5: -78 kJ/mol H2'
+  unit: kJ/mol H2
+  conditions: Table 1-2-3; heat of formation, experimental temperature range shown in quoted row
+  source:
+    title: Thermodynamic and Kinetic Properties of Alkali Metal Amide-Hydrogen System
+    first_author: Goshome
+    url: https://hiroshima.repo.nii.ac.jp/record/2004892/files/k6650_3.pdf
+    evidence: review
+    year: 2015
+    locator: Table 1-2-3
+  quote: '                 Ta - TaH0.5         -78              -12                 <50'
+  note: Secondary table in a dissertation; stoichiometry matters. No pressure threshold follows from this enthalpy
+    alone.
+- id: hydride_enthalpy_pd_goshome2015
+  phase: PdH0.5
+  quantity: other
+  value: 'formation enthalpy of Pd to PdH0.5: -40 kJ/mol H2'
+  unit: kJ/mol H2
+  conditions: Table 1-2-3; heat of formation, experimental temperature range shown in quoted row
+  source:
+    title: Thermodynamic and Kinetic Properties of Alkali Metal Amide-Hydrogen System
+    first_author: Goshome
+    url: https://hiroshima.repo.nii.ac.jp/record/2004892/files/k6650_3.pdf
+    evidence: review
+    year: 2015
+    locator: Table 1-2-3
+  quote: '                 Pd - PdH0.5         -40              -10               78-175'
+  note: Secondary table in a dissertation; stoichiometry matters. No pressure threshold follows from this enthalpy
+    alone.
+- id: zrco_hydride_wu2020
+  phase: ZrCo
+  quantity: formation_path
+  value: hydrogen absorption forms ZrCoH3 before disproportionation
+  unit: text
+  conditions: ZrCo in H2 absorption/desorption cycling
+  source:
+    doi: 10.3390/ma13183977
+    title: Research Progress on the Anti-Disproportionation of the ZrCo Alloy by Element Substitution
+    first_author: Wu
+    year: 2020
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7558320/
+    evidence: review
+    locator: Eq. 1
+  quote: 2ZrCo + 3H2 ↔ 2ZrCoH3
+  note: The separate reaction record gives the disproportionation products.
+- id: zrco_disproportionation_wu2020
+  phase: ZrCo
+  quantity: formation_path
+  value: 2 ZrCo + H2 -> ZrH2 + ZrCo2
+  unit: text
+  conditions: high H2 pressure and elevated temperature
+  source:
+    doi: 10.3390/ma13183977
+    title: Research Progress on the Anti-Disproportionation of the ZrCo Alloy by Element Substitution
+    first_author: Wu
+    year: 2020
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7558320/
+    evidence: review
+    locator: Eq. 3
+  quote: 2ZrCo + H2 → ZrH2 + ZrCo2
+  note: The review gives the same products from ZrCoH3 as a second equation.
+- id: zrco_onset_wu2020
+  phase: ZrCo
+  quantity: T_formation
+  value: '>673'
+  unit: K
+  conditions: disproportionation obvious above 400 °C when H2 pressure exceeds equilibrium pressure
+  source:
+    doi: 10.3390/ma13183977
+    title: Research Progress on the Anti-Disproportionation of the ZrCo Alloy by Element Substitution
+    first_author: Wu
+    year: 2020
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7558320/
+    evidence: review
+    locator: section 2
+  quote: The study of Konishi et al. showed that the ZrCo alloy disproportionates obviously when the temperature
+    is higher than 400 °C and the hydrogen pressure is higher than the equilibrium hydrogen pressure, and the
+    complete disproportionation only takes 5 h at 500 °C [53].
+  note: 673.15 K converts the quoted 400 °C. The actual observation is above this criterion, not a pressure-independent
+    threshold.
+- id: zrco_pressure_rate_wu2020
+  phase: ZrCo
+  quantity: other
+  value: disproportionation rate scales as initial H2 pressure to power 3/2 in cited kinetic study
+  unit: text
+  conditions: ZrCo in high-pressure H2 at elevated temperature
+  source:
+    doi: 10.3390/ma13183977
+    title: Research Progress on the Anti-Disproportionation of the ZrCo Alloy by Element Substitution
+    first_author: Wu
+    year: 2020
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7558320/
+    evidence: review
+    locator: section 2
+  quote: 'Furthermore, the disproportionation rate has a relationship with the initial hydrogen pressure of
+    3/2 power [44], as follows:'
+  note: Kinetic relation from Hara et al. as quoted by this review; validity range not given here.
+- id: zrco_reverse_luo2020
+  phase: ZrCo
+  quantity: formation_path
+  value: ZrH2 + ZrCo2 can completely change back to ZrCo under continuous evacuation at 773 K for 12 h
+  unit: text
+  conditions: 773 K; continuous evacuation; 12 h; Luo et al. cite an earlier experiment
+  source:
+    doi: 10.1088/1674-1056/ab9289
+    title: Enhancement of hydrogenation kinetics and thermodynamic properties of ZrCo<sub>1−x</sub>Cr<sub>x</sub>
+      (x = 0−0.1) alloys for hydrogen storage*
+    first_author: Luo
+    year: 2020
+    url: https://cpb.iphy.ac.cn/fileCPB/journal/article/cpb/html/2020/2036/cpb_29_8_088801.html
+    evidence: review
+    locator: Introduction
+  quote: It took 12 h for ZrH2 and ZrCo2 to completely change back to the ZrCo phase under continuous evacuation
+    at 773 K,[10] which leads to tritium permeation at high temperatures and the loss of rare tritium.
+  note: Reviewed prior result. Reversible chemistry is not evidence of magnetic texture memory.
+- id: zrco_disprop_pressure_luo2020
+  phase: ZrCo
+  quantity: T_formation
+  value: 798
+  unit: K
+  conditions: hydride heated under >1 bar H2 for 10 h in the disproportionation experiment
+  source:
+    doi: 10.1088/1674-1056/ab9289
+    title: Enhancement of hydrogenation kinetics and thermodynamic properties of ZrCo<sub>1−x</sub>Cr<sub>x</sub>
+      (x = 0−0.1) alloys for hydrogen storage*
+    first_author: Luo
+    year: 2020
+    url: https://cpb.iphy.ac.cn/fileCPB/journal/article/cpb/html/2020/2036/cpb_29_8_088801.html
+    evidence: full_text
+    locator: section 3.4
+  quote: We chose 798 K and a hydrogen pressure of > 1 bar as experimental conditions. To compare the ability
+    of the anti-disproportionation of ZrCo1 − xCrx (x = 0−0.1) alloys, all the hydrides were heated to 798
+    K, insulated for 10 h, and cooled to room temperature in the furnace.
+  note: This is a tested condition, not the lower onset. XRD later identified ZrH2 and ZrCo2 products. No magnetic
+    texture was assessed.
+- id: zrco_hf_sub_peng2013
+  phase: Zr0.7Hf0.3Co
+  quantity: other
+  value: Hf substitution investigated as a way to resist ZrCo hydrogen disproportionation
+  unit: text
+  conditions: Zr(1-x)Hf(x)Co, x=0-0.3; arc melted; H2 thermal testing
+  source:
+    doi: 10.1016/j.fusengdes.2013.03.027
+    title: Hydrogen-induced disproportionation characteristics of Zr(1−x)Hf(x)Co(x=0, 0.1, 0.2 and 0.3) alloys
+    first_author: Peng
+    year: 2013
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0920379613003219
+    evidence: abstract
+    locator: abstract
+  quote: Doping hafnium to partially substitute zirconium in ZrCo is a promising strategy to improve the ability
+    to resist hydrogen-induced disproportionation .
+  note: Abstract statement; the excerpt does not supply a quantified pressure-temperature stability boundary.
+- id: hfco_hydride_mukai1999
+  phase: HfCo
+  quantity: formation_path
+  value: forms HfCoH3 with CrB(Bf) type hydride structure
+  unit: text
+  conditions: HfCo tested in H2 by DSC and pressure-composition isotherms
+  source:
+    doi: 10.1016/s0925-8388(99)00456-9
+    title: Hydrogen absorption and desorption properties of Hf-based intermetallic compounds
+    first_author: Mukai
+    year: 1999
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0925838899004569
+    evidence: abstract
+    locator: abstract
+  quote: The PCT curves of HfNi and HfCo showed the pressure plateau due to the formation of HfNiH ₃ and HfCoH
+    ₃ with the CrB(B _f_ ) type hydride, respectively.
+  note: Hydride formation is reported; disproportionation of pure HfCo is not established by this quote.
+- id: hfco2_no_uptake_mukai1999
+  phase: HfCo2
+  quantity: other
+  value: no hydrogen absorption detected in the study; cannot infer all-pressure nonreactivity
+  unit: text
+  conditions: study included 5 MPa H2, 298-573 K, 43 ks isothermal tests; see Experimental section in saved
+    extract
+  source:
+    doi: 10.1016/s0925-8388(99)00456-9
+    title: Hydrogen absorption and desorption properties of Hf-based intermetallic compounds
+    first_author: Mukai
+    year: 1999
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0925838899004569
+    evidence: abstract
+    locator: abstract
+  quote: On the other hand, no hydrogen absorption was detected in HfFe ₂ , HfCo ₂ and HfPd ₂ .
+  note: Abstract lacks a compound-specific detection limit. No direct HfCo2 disproportionation experiment located.
+- id: hf2co_solution_mukai1999
+  phase: Hf2Co
+  quantity: other
+  value: absorbs hydrogen as a solid solution in the reported study
+  unit: text
+  conditions: hydrogen exposure; study tested 5 MPa H2, 298-573 K, 43 ks isothermally
+  source:
+    doi: 10.1016/s0925-8388(99)00456-9
+    title: Hydrogen absorption and desorption properties of Hf-based intermetallic compounds
+    first_author: Mukai
+    year: 1999
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0925838899004569
+    evidence: abstract
+    locator: abstract
+  quote: Hydrogen was absorbed forming a solid solution in Hf ₂ Fe, Hf ₂ Co, Hf ₂ Ni, Hf ₂ Cu, Hf ₂ Pd, HfPd,
+    HfV ₂ , HfCr ₂ , HfMn ₂ and HfMo ₂ .
+  note: Solid-solution uptake is distinct from disproportionation.
+- id: zr2co_disproportionation_hara2003
+  phase: Zr2Co
+  quantity: formation_path
+  value: ordinary hydrogen uptake disproportionately decomposes Zr2Co unless absorption is very slow; Zr2CoH5
+    forms only with slow absorption
+  unit: text
+  conditions: room-temperature H2 uptake; rate controlled
+  source:
+    doi: 10.1016/s0925-8388(02)01169-6
+    title: Hydrogen-induced disproportionation of Zr2M (M=Fe, Co, Ni) and reproportionation
+    first_author: Hara
+    year: 2003
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0925838802011696
+    evidence: abstract
+    locator: abstract
+  quote: Hydrogen induced disproportionation and reproportionation for Zr ₂ Fe, Zr ₂ Co and Zr ₂ Ni were studied
+    by means of volumetric measurements of hydrogen absorption and desorption, and X-ray diffraction analyses
+    of the product phases. These alloys formed respective hydrides of Zr ₂ MH ₅ (M=Fe, Co and Ni) type at room
+    temperature only under conditions of very slow hydrogen absorption, otherwise the alloys disproportionated.
+  note: Zr2Co is not Zr2Co11; no extrapolation to the hard Zr2Co11 phase.
+- id: zr2co_products_hara2003
+  phase: Zr2Co
+  quantity: formation_path
+  value: at 773 K rapidly disproportionates to ZrH2 and ZrCo
+  unit: text
+  conditions: hydrogen atmosphere, 773 K; tens-of-seconds time scale
+  source:
+    doi: 10.1016/s0925-8388(02)01169-6
+    title: Hydrogen-induced disproportionation of Zr2M (M=Fe, Co, Ni) and reproportionation
+    first_author: Hara
+    year: 2003
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0925838802011696
+    evidence: abstract
+    locator: abstract
+  quote: At the elevated temperature of 773 K, each alloy disproportionated very fast, within several tens
+    of seconds, to ZrH ₂ and Zr-deficient alloys such as ZrCo, ZrNi and ZrFe ₂ for Zr ₂ Co, Zr ₂ Ni and Zr
+    ₂ Fe, respectively.
+  note: The intermediate ZrCo may subsequently disproportionate much more slowly.
+- id: zr2co_reproportion_hara2003
+  phase: Zr2Co
+  quantity: formation_path
+  value: heating Zr2CoH5 to 1073 K regenerated Zr2Co through decomposition, disproportionation and reproportionation
+  unit: text
+  conditions: heating hydride to 1073 K; pressure not specified in abstract
+  source:
+    doi: 10.1016/s0925-8388(02)01169-6
+    title: Hydrogen-induced disproportionation of Zr2M (M=Fe, Co, Ni) and reproportionation
+    first_author: Hara
+    year: 2003
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0925838802011696
+    evidence: abstract
+    locator: abstract
+  quote: Heating Zr ₂ MH ₅ to 1073 K gave Zr ₂ Ni and Zr ₂ Co through decomposition, disproportionation and
+    reproportionation.
+  note: No crystallographic texture retention is reported.
+- id: hddr_ndfeb_window_habibzadeh2023
+  phase: Nd2Fe14B
+  quantity: T_formation
+  value: 1023-1223
+  unit: K
+  conditions: HDDR of Nd-Fe-B; range from review
+  source:
+    doi: 10.1021/acsomega.3c00299
+    title: 'Review on the Parameters
+
+      of Recycling NdFeB Magnets
+
+      via a Hydrogenation Process'
+    first_author: Habibzadeh
+    year: 2023
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10210235/
+    evidence: review
+    locator: section 4.2
+  quote: 'The main difference between the HDDR and HD processes is the
+
+    higher operating temperature (750–950 °C) of hydrogenation
+
+    in the HDDR process.'
+  note: Converted from the quoted 750-950 °C. This is a route window, not the equilibrium formation temperature
+    of Nd2Fe14B.
+- id: hddr_ndfeb_products_habibzadeh2023
+  phase: Nd2Fe14B
+  quantity: formation_path
+  value: under hydrogen, Nd2Fe14B disproportionates into α-Fe, Fe2B and NdH2; vacuum desorption permits recombination
+  unit: text
+  conditions: HDDR at elevated temperature followed by vacuum
+  source:
+    doi: 10.1021/acsomega.3c00299
+    title: 'Review on the Parameters
+
+      of Recycling NdFeB Magnets
+
+      via a Hydrogenation Process'
+    first_author: Habibzadeh
+    year: 2023
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10210235/
+    evidence: review
+    locator: section 4.2
+  quote: 'By increasing the temperature, disproportionation
+
+    is also initiated in the same areas (Figure 10c) and then propagates to the grains (Figure 10d,e) until
+    the
+
+    entire structure of Nd2Fe14B transforms into
+
+    the susceptible phases α-Fe, Fe2B, and NdH2 (Figure 10f). When
+
+    the pressure is lowered to vacuum, the hydrogen is desorbed and recombination
+
+    and nucleation of new Nd2Fe14B grains occur
+
+    (Figure 10g), which
+
+    then spread until the entire structure is redistributed to ultrafine
+
+    Nd2Fe14B grains and an Nd-rich phase (Figure 10h).'
+  note: The quoted mechanism concerns Nd-Fe-B and is an analogy, not a demonstrated rare-earth-free HDDR magnet.
+- id: hddr_memory_habibzadeh2023
+  phase: Nd2Fe14B
+  quantity: other
+  value: texture memory requires an intermediate that retains the original crystallographic orientation and
+    transfers it during recombination; aligned Fe2B is one documented candidate
+  unit: text
+  conditions: Nd-Fe-B d-HDDR; Fe2B intermediate at 30 kPa hydrogenation pressure
+  source:
+    doi: 10.1021/acsomega.3c00299
+    title: 'Review on the Parameters
+
+      of Recycling NdFeB Magnets
+
+      via a Hydrogenation Process'
+    first_author: Habibzadeh
+    year: 2023
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10210235/
+    evidence: review
+    locator: section 4.2
+  quote: 'Sepehri-Amin et al.61 reported that the Fe2B phase is the
+
+    only phase that maintains its specific crystallographic orientation
+
+    during the entire d-HDDR process. Based on their results, highly aligned
+
+    Fe2B grains which can be obtained by 30 kPa of hydrogenation
+
+    pressure memorize the crystallographic orientation of the initial
+
+    Nd2Fe14B phase and transfer it to the recombined
+
+    Nd2Fe14B grains.'
+  note: Review cites Sepehri-Amin et al.; alternative α-Fe/NdH2 relationships have also been proposed. No universal
+    variant count follows.
+- id: hddr_or_precursors_horikawa2016
+  phase: Nd2Fe14B
+  quantity: OR
+  value: '[110]α-Fe // [110]NdH2+x and (-110)α-Fe // (-220)NdH2+x'
+  unit: text
+  conditions: Nd-Fe-B-Ga-Nb d-HDDR; 30 kPa H2 in disproportionation step
+  source:
+    doi: 10.1063/1.4944073
+    title: Crystallographic alignment in the recombination stage in <i>d</i>-HDDR process of Nd-Fe-B-Ga-Nb
+      powders
+    first_author: Horikawa
+    year: 2016
+    url: https://api.crossref.org/works/10.1063%2F1.4944073
+    evidence: abstract
+    locator: abstract
+  quote: It was observed that even during the recombination process, the orientation relationship was maintained
+    between α-Fe and NdH2+x grains formed after the disproportionation treatment at 30 kPa of hydrogen pressure,
+    [110]α-Fe // [110]NdH2+x, (-110)α-Fe // (-220)NdH2+x.
+  note: An explicit crystallographic relationship in one Nd-Fe-B-Ga-Nb experiment. It does not establish the
+    number of equivalent product variants.
+- id: hddr_or_product_horikawa2016
+  phase: Nd2Fe14B
+  quantity: OR
+  value: (001)Nd2Fe14BHy // (110)α-Fe // (110)NdH2+x
+  unit: text
+  conditions: Nd-Fe-B-Ga-Nb d-HDDR, 30 kPa H2 in HD step; 30 min desorption-recombination
+  source:
+    doi: 10.1063/1.4944073
+    title: Crystallographic alignment in the recombination stage in <i>d</i>-HDDR process of Nd-Fe-B-Ga-Nb
+      powders
+    first_author: Horikawa
+    year: 2016
+    url: https://api.crossref.org/works/10.1063%2F1.4944073
+    evidence: abstract
+    locator: abstract
+  quote: 'Additionally, the alignment of recombined Nd2Fe14BHy grains became clear after 30 min of DR treatment
+    showing following orientation relationship: (001)Nd2Fe14BHy // (110)α-Fe and (110)NdH2+x.'
+  note: The indexed planes link the recombined phase to the retained precursors; no orientation-variant count
+    is stated.
+- id: hddr_or_pressure_horikawa2016
+  phase: Nd2Fe14B
+  quantity: other
+  value: the cited precursor/product OR observed after 30 kPa HD was absent after 100 kPa HD
+  unit: text
+  conditions: Nd-Fe-B-Ga-Nb d-HDDR; comparison of 30 and 100 kPa hydrogen disproportionation treatments
+  source:
+    doi: 10.1063/1.4944073
+    title: Crystallographic alignment in the recombination stage in <i>d</i>-HDDR process of Nd-Fe-B-Ga-Nb
+      powders
+    first_author: Horikawa
+    year: 2016
+    url: https://api.crossref.org/works/10.1063%2F1.4944073
+    evidence: abstract
+    locator: abstract
+  quote: In contrast, such a relationship was not observed in the sample disproportionated at 100 kPa of hydrogen
+    pressure.
+  note: The antecedent is the product/precursor OR in the preceding abstract sentence. This is a condition
+    of this system, not a general 100 kPa cutoff.
+- id: recryst_range_csun
+  phase: metals
+  quantity: other
+  value: recrystallization usually occurs near one-third to one-half of absolute melting temperature
+  unit: T/Tm
+  conditions: previously plastically deformed metal; depends on strain, grain size and solute
+  source:
+    title: Experiment 5 - Cold Work, Recovery, Recrystallization and Grain Growth
+    first_author: California State University, Northridge
+    url: http://www.csun.edu/~bavarian/Courses/MSE%20227/Labs/5-Cold_Working_Brass.pdf
+    evidence: full_text
+    locator: Background, section 2
+  quote: 'The recrystallization temperature is usually 1/3-1/2 the absolute melting point of the
+
+    material.'
+  note: Educational laboratory manual, not a universal threshold for every intermetallic or ceramic.
+- id: grain_growth_after_recryst_csun
+  phase: metals
+  quantity: other
+  value: grain growth can proceed upon further annealing at the recrystallization temperature or higher
+  unit: text
+  conditions: previously recrystallized material
+  source:
+    title: Experiment 5 - Cold Work, Recovery, Recrystallization and Grain Growth
+    first_author: California State University, Northridge
+    url: http://www.csun.edu/~bavarian/Courses/MSE%20227/Labs/5-Cold_Working_Brass.pdf
+    evidence: full_text
+    locator: Background, section 3
+  quote: 'If a recrystallized material is further annealed at the same temperature or at a
+
+    higher temperature grain growth usually occurs.'
+  note: A general kinetic tendency, not a prediction that a metastable hard phase survives that heat.
+- id: bafe_seeded_growth_annapureddy2017
+  phase: BaFe12O19
+  quantity: formation_path
+  value: plate-like Ba ferrite particles field-aligned and compacted; aligned particles seed oriented grain
+    growth on sintering
+  unit: text
+  conditions: weak-field alignment of Ba ferrite platelets then uniaxial compaction and normal sintering
+  source:
+    doi: 10.1016/j.jeurceramsoc.2017.05.028
+    title: Growth of self-textured barium hexaferrite ceramics by normal sintering process and their anisotropic
+      magnetic properties
+    first_author: Annapureddy
+    year: 2017
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0955221917303710
+    evidence: abstract
+    locator: abstract
+  quote: Plate-like shaped barium hexaferrite particles were synthesized using a solid-state reaction process
+    and then aligned under a weak magnetic field , followed by uniaxial compaction. The aligned hexaferrite
+    particles appear to serve as seeds, forming textured grains during sintering.
+  note: The paper calls these aligned particles seeds although no separate seed addition was required. The
+    abstract does not state a numeric firing window.
+- id: bafe_agg_liquid_lee2001
+  phase: BaFe12O19
+  quantity: formation_path
+  value: BaB2O4-assisted liquid phase drives abnormal grain growth and local grain orientation
+  unit: text
+  conditions: Ba hexaferrite with BaB2O4 sintering aid
+  source:
+    doi: 10.1016/s0272-8842(00)00067-5
+    title: Effect of grain orientation on abnormal grain growth in Ba-hexaferrite
+    first_author: Lee
+    year: 2001
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0272884200000675
+    evidence: abstract
+    locator: abstract
+  quote: It has been observed that the nuclei formation for abnormal grain growth was driven by the capillary
+    force due to the liquid phase. A strong orientation of small grains was observed within abnormal grains
+    in materials obtained using BaB ₂ O ₄ as a sintering aid .
+  note: Local orientation inside abnormal grains is qualitative; no measured texture metric is recorded.
+- id: bafe_flux_plates_vinnik2017
+  phase: BaFe12O19
+  quantity: single_variant_particles
+  value: flux-grown single crystals can have large diameter-to-thickness ratio; borate and PbO fluxes yield
+    flat crystals
+  unit: text
+  conditions: BaB2O4 or PbO flux; 1533 K representative flux treatment in study
+  source:
+    doi: 10.3390/ma10060578
+    title: Magnetic and Structural Properties of Barium Hexaferrite BaFe12O19 from Various Growth Techniques
+    first_author: Vinnik
+    year: 2017
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5552085/
+    evidence: full_text
+    locator: Conclusions
+  quote: BaB2O4 and PbO fluxes can be used for the production of single crystals with large aspect ratios for
+    flat/plane attenuator manufacturing, since crystal diameters ranged up to 5 mm, while typically exhibiting
+    thicknesses below 1 mm.
+  note: Crystal habit supports a platelet template route. Quote does not identify the crystallographic normal;
+    existing ferrite records address that.
+- id: feta_congruent_witusiewicz2011
+  phase: Fe2Ta-C14
+  quantity: other
+  value: Fe-Ta Laves phase λ melts congruently; this is a high-temperature stable phase, with no numerical
+    melting temperature in accessible abstract
+  unit: text
+  conditions: binary Fe-Ta phase equilibrium
+  source:
+    doi: 10.1016/j.intermet.2011.03.018
+    title: Experimental study and thermodynamic re-assessment of the binary Fe–Ta system
+    first_author: Witusiewicz
+    year: 2011
+    url: https://www.sciencedirect.com/science/article/abs/pii/S096697951100080X
+    evidence: abstract
+    locator: abstract
+  quote: The experimental results showed congruent melting of the Laves phase (λ), two eutectic reactions L
+    ↔ (δFe) + λ, L ↔ (Ta) + μ and one peritectic reaction L + λ ↔ μ.
+  note: Fe2Ta is the λ Laves phase in this system. The specific melting temperature is still a gap.
+- id: mn4n_thermal_michalsky2015
+  phase: Mn4N
+  quantity: T_stab
+  value: 1273
+  unit: K
+  conditions: Mn nitride under the study gas-flow/thermal conditions; preceding sentence identifies Mn4N as
+    the lower nitride
+  source:
+    doi: 10.1039/c5sc00789e
+    title: 'Chemical looping of metal nitride catalysts: low-pressure ammonia synthesis for energy storage'
+    first_author: Michalsky
+    year: 2015
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5707470/
+    evidence: full_text
+    locator: section 2.3
+  quote: Increasing temperature decreases the fraction of Mn6N2.58 and yields a maximum Mn4N fraction near
+    700 °C. This suggests that NH3 is formed through the reduction of a higher nitride into a lower nitride
+    phase that contains less nitrogen and that decomposes thermally at 1000 °C to Mn and N2.51
+  note: Converted from quoted 1000 °C. The second sentence refers to Mn4N by context; this is a reaction-environment
+    observation, not a universal inert-atmosphere limit.
+- id: fe3se4_gamma_delta_nea2020
+  phase: Fe3Se4 (monoclinic)
+  quantity: T_stab
+  value: 978
+  unit: K
+  conditions: gamma iron selenide near Fe3Se4; heat-capacity anomaly and gamma/delta phase-field change
+  source:
+    title: Chemical Thermodynamics of Iron, Part 2
+    first_author: Lemire
+    url: https://www.oecd-nea.org/upload/docs/application/pdf/2020-03/7499-vol13b-iron.pdf
+    evidence: book
+    year: 2020
+    locator: Appendix A, p. 429
+  quote: 'The relatively small 307 K anomaly for Fe3Se4 is also apparently a Néel
+
+    transition [1959GRO/WES2], while the phase diagram indicates that the larger feature
+
+    at 978 K corresponds to a transformation between the γ and δ phase fields, presumably
+
+    involving a change of vacancy distribution among the iron layers in the structure
+
+    (Figure IX-6).'
+  note: A phase-field transition, not evidence that all Fe3Se4 decomposes. Source notes passage through a narrow
+    two-phase region.
+- id: fe2p_melting_apostolico2003
+  phase: Fe2P
+  quantity: T_stab
+  value: 1638
+  unit: K
+  conditions: stoichiometric Fe2P melting point; quoted 1365 °C converted to nearest K
+  source:
+    title: The synthesis and characterization of novel precursors for the CVD of main group metal phosphides
+    first_author: Apostolico
+    url: https://purehost.bath.ac.uk/ws/portalfiles/portal/188158124/Leonardo_Apostolico_thesis.pdf
+    evidence: review
+    year: 2003
+    locator: Table 1.1
+  quote: Fe3P           1166          Fe2P             1365        Rh2P        1500
+  note: Secondary handbook table in a dissertation. Melting is a transition limit for Fe2P, not a thermal limit
+    for all substituted Fe2P-based hard phases.
+- id: fe5sib2_anneal_casadei2025
+  phase: Fe5SiB2
+  quantity: other
+  value: undoped and substituted Fe5SiB2 samples were annealed under Ar at 1173 K for 10 days plus 7 days,
+    then quenched
+  unit: text
+  conditions: Ar; 1173 K; two anneals, 17 days total with an intervening quench
+  source:
+    doi: 10.1016/j.jallcom.2025.180346
+    title: Magnetic properties of Ge, Re and Cr substituted Fe5SiB2
+    first_author: Casadei
+    year: 2025
+    url: https://www.sciencedirect.com/science/article/pii/S0925838825019073
+    evidence: full_text
+    locator: section 2.1
+  quote: As-cast button-like samples were annealed under Ar atmosphere at 1173 K for 10 days and quenched in
+    water, they were then annealed again at 1173 K for 7 days and quenched.
+  note: The paper later reports ex situ XRD of the Fe5SiB2 phase. This schedule is a lower bound on processability,
+    not a measured decomposition limit.
+- id: fe5borides_melting_order_cedervall2017
+  phase: Fe5SiB2 / Fe5PB2
+  quantity: other
+  value: 'DTA melting-temperature order: Fe5SiB2 lowest, Fe5PB2 highest, mixed Si/P between; exact peaks not
+    transcribed as numeric values'
+  unit: text
+  conditions: Fe5Si1-xPxB2 series; DTA
+  source:
+    title: 'Magnetic Materials for Cool Applications: Relations between Structure and Magnetism in Rare Earth
+      Free Alloys'
+    first_author: Cedervall
+    url: https://uu.diva-portal.org/smash/get/diva2%3A1150878/FULLTEXT01.pdf
+    evidence: book
+    year: 2017
+    locator: chapter 4, Fig. 4.7 discussion
+  quote: 'This is because the melting temperature of Fe5 Si0.5 P0.5 B2 is in between those
+
+    of Fe5 SiB2 (lowest) and Fe5 PB2 (highest).'
+  note: Qualitative comparison only. The numeric stability limits require reading DTA peaks with uncertainty
+    or independent phase equilibria.

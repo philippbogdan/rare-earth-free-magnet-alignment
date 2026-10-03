@@ -534,6 +534,58 @@ def route_HD(ph):
                 chain=hd['reason'], refs=hd.get('refs', []))
 
 
+ELEMENTS = {   # constituents of each phase (chemical formula; not a measured quantity)
+    'tau-MnAl': 'Mn Al', 'tau-MnAl-C': 'Mn Al C', 'L10-FeNi': 'Fe Ni', 'L10-FePt': 'Fe Pt', 'L10-CoPt': 'Co Pt',
+    'L10-FePd': 'Fe Pd', 'Fe16N2': 'Fe N', 'L10-MnGa': 'Mn Ga', 'D022-Mn3Ga': 'Mn Ga', 'D022-Mn3Ge': 'Mn Ge',
+    'Zr2Co11': 'Zr Co', 'HfCo7': 'Hf Co', 'SrM-hexaferrite': 'Sr Fe O', 'Nd2Fe14B': 'Nd Fe B',
+    'Co-nanorods': 'Co', 'eps-Fe2O3': 'Fe O', 'Co3C': 'Co C', 'bct-FeCo': 'Fe Co C', 'Fe5SiB2': 'Fe Si B',
+    'Fe5PB2': 'Fe P B', 'Fe2P-based': 'Fe Co P Si', 'LTP-MnBi': 'Mn Bi', 'AlNiCo-5': 'Fe Co Ni Al Cu',
+    'AlNiCo-8-9': 'Fe Co Ni Al Cu Ti', 'Fe-Cr-Co': 'Fe Cr Co', '(Fe,Co)2B': 'Fe Co B', 'Fe2Ta-C14': 'Fe Ta',
+    'Fe3Se4': 'Fe Se', 'HEA-FeCoNiAlCuTi': 'Fe Co Ni Al Cu Ti', 'L10-HEA-Pt': 'Fe Co Ni Mn Cu Pt', 'Mn4N': 'Mn N',
+}
+HYDRIDE = {   # element -> (formation enthalpy kJ/mol H2 or None, record)
+    'Nd': (-212, 'hydride_enthalpy_nd_goshome2015'), 'Zr': (-188, 'hydride_enthalpy_zr_goshome2015'),
+    'Ti': (-130, 'hydride_enthalpy_ti_goshome2015'), 'Hf': (-130, 'hydride_enthalpy_hf_goshome2015'),
+    'Ta': (-78, 'hydride_enthalpy_ta_goshome2015'), 'Pd': (-40, 'hydride_enthalpy_pd_goshome2015'),
+}
+NO_HYDRIDE = {'Cr': 'hydride_poor_absorbers_driessen1990', 'Mn': 'hydride_poor_absorbers_driessen1990',
+              'Fe': 'hydride_poor_absorbers_driessen1990', 'Co': 'hydride_poor_absorbers_driessen1990',
+              'Ni': 'hydride_poor_absorbers_driessen1990', 'Cu': 'hydride_poor_absorbers_driessen1990',
+              'Pt': 'hydride_poor_absorbers_driessen1990', 'Al': 'hydride_al_direct_su2021',
+              'Ga': 'hydride_gallane_grochala2004', 'Ge': 'hydride_ge_solid_davari2017',
+              'Bi': 'hydride_bismuthine_grochala2004'}
+NONMETAL = {'N', 'C', 'B', 'O', 'Si', 'P', 'Se'}
+S_H2 = 0.130            # kJ/(mol K): entropy of H2 gas, sets T(1 bar) = -dH/S for a hydride (estimate)
+T_HDDR = 1023           # K, lower end of the Nd2Fe14B HDDR window (hddr_ndfeb_window_habibzadeh2023)
+
+
+def _hddr_physics(ph):
+    """(verdict, chain, refs) from the constituents' hydrides, or None if not decided here."""
+    els = ELEMENTS.get(ph['id'], '').split()
+    T_HDDR, S_H2 = globals()['T_HDDR'], globals()['S_H2']
+    if not els:
+        return None
+    refs, strong, weak = [], [], []
+    for e in els:
+        if e in HYDRIDE:
+            dh, rid = HYDRIDE[e]
+            refs.append(rid)
+            # within 10 % of the HDDR temperature the estimate cannot exclude the reaction: open
+            (strong if -dh / S_H2 >= 0.9 * T_HDDR else weak).append(f'{e} ({dh} kJ/mol H2, T(1 bar) ~ {-dh / S_H2:.0f} K)')
+        elif e in NO_HYDRIDE:
+            refs.append(NO_HYDRIDE[e])
+    if 'O' in els:
+        return ('none', 'an oxide: hydrogen reduces it rather than forming a metal hydride from it (estimate)', refs)
+    if strong:
+        return ('open', f"{', '.join(strong)} forms a hydride stable at HDDR temperatures (>= {T_HDDR} K), so "
+                        'hydrogen may disproportionate the phase (as ZrCo -> ZrH2 + ZrCo2); whether recombination '
+                        'keeps the orientation is unpublished', refs + ['zrco_disproportionation_wu2020'])
+    why = 'no constituent forms a hydride stable at HDDR temperatures (>= %d K) at bar pressures' % T_HDDR
+    if weak:
+        why += ' (' + ', '.join(weak) + ': decomposes below that, estimate from dH and the entropy of H2)'
+    return ('none', why, refs + ['hddr_ndfeb_window_habibzadeh2023'])
+
+
 def route_HDDR(ph):
     """HDDR needs hydrogen to disproportionate the phase into a stable hydride plus the rest and
     to recombine it on desorption: a constituent must form a hydride stable at the process
@@ -541,6 +593,19 @@ def route_HDDR(ph):
     (disproportionation and orientation memory unpublished) unless reported."""
     h = ph.get('hddr')
     if not h:
+        hd = ph.get('hd') or {}
+        if hd.get('possible') is False and 'final' in hd.get('reason', ''):
+            return Cell(ph['id'], 'HDDR', 'none', ISO, '', chain='the anisotropic microstructure forms only in the '
+                        'final anneal; a hydrogen cycle before it acts on the parent only', refs=hd.get('refs', []))
+        hp = _hddr_physics(ph)
+        if hp and hp[0] == 'none':
+            return Cell(ph['id'], 'HDDR', 'none', ISO, '', chain=hp[1], refs=hp[2])
+        if hp and hp[0] == 'open':
+            outs = {'disproportionation with orientation memory': 1.0, 'no memory or no disproportionation': ISO}
+            return Cell(ph['id'], 'HDDR', 'open', 1.0, 'memory axis', chain=hp[1],
+                        decides=[('hydrogen disproportionation of the phase and its orientation memory', outs,
+                                  'hydrogen anneal of a coarse single-crystal particle at ~1000 K, desorption, then EBSD')],
+                        A_alt=outs, refs=hp[2])
         return Cell(ph['id'], 'HDDR', 'none', ISO, '',
                     chain='no reversible disproportionation-recombination reaction with an orientation '
                           'memory is reported for this phase')
@@ -724,7 +789,8 @@ def _cubic_multiaxial(ph):
     ho = {**fib, 'random': iso}
     c('HD', 'open', max(fib.values()), 'deformation texture of the phase unpublished',
       [('deformation fibre of the phase', ho, 'pole figure after hot deformation')], ho)
-    c('HDDR', 'none', iso, (ph.get('hddr_none') or 'no constituent forms a hydride that disproportionates the phase'))
+    hp = _hddr_physics(ph)
+    c('HDDR', 'none', iso, hp[1] if hp else 'no constituent forms a hydride stable at HDDR temperatures')
     ep = ph.get('epitaxy') or {}
     if ep.get('demonstrated'):
         c('EP', 'full', 1.0, ep.get('reason', 'epitaxial film with a uniaxial (strain) easy axis'))
