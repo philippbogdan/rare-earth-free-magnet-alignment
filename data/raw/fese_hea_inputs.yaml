@@ -11,7 +11,7 @@
     first_author: Luis A. Saucedo
     year: 2021
     url: https://par.nsf.gov/servlets/purl/10345242
-    evidence: full_text
+    evidence: review
     locator: Introduction
   quote: 'It belongs to the Cr3S4
 
@@ -22,7 +22,7 @@
     parallel to the bc plane of the monoclinic lattice (space group
 
     C2/m).'
-  note: The ordered vacancies occur in alternate metal layers; primary structural description quoted within a later
+  note: The ordered vacancies occur in alternate metal layers; prior structural description quoted within a later
     research article.
 - id: fese_easy_axis_saucedo2021
   phase: Fe3Se4 (monoclinic)
@@ -36,7 +36,7 @@
     first_author: Luis A. Saucedo
     year: 2021
     url: https://par.nsf.gov/servlets/purl/10345242
-    evidence: full_text
+    evidence: review
     locator: Introduction
   quote: 'both types of moments point along the b
 
@@ -96,6 +96,40 @@
   quote: The field-cooled magnetization dependent on the temperature indicates a Curie temperature around 334 K
     for the Fe3Se4 nanowires.
   note: Approximate as reported.
+- id: fese_tc_wang2012
+  phase: Fe3Se4 (monoclinic)
+  quantity: Tc
+  value: 315
+  unit: K
+  conditions: 30 nm nanoparticle powder; temperature sweep at 1 kOe
+  source:
+    doi: 10.1063/1.4759352
+    title: 'Temperature dependence of magnetic anisotropy constant in iron chalcogenide Fe3Se4: Excellent agreement
+      with theories'
+    first_author: Jun Wang
+    year: 2012
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3517494/
+    evidence: full_text
+    locator: Results, Fig. 2a
+  quote: The Curie temperature (corresponding to the inflection point of the magnetization curve) is 315 K.
+  note: ''
+- id: fese_tc_crystal_komarova2024
+  phase: Fe3Se4 (monoclinic)
+  quantity: Tc
+  value: 345
+  unit: K
+  conditions: single crystal grown by modified Bridgman method
+  source:
+    doi: 10.1016/j.solidstatesciences.2024.107756
+    title: Magnetocrystalline anisotropy and giant spontaneous magnetostriction in iron selenide Fe3Se4 studied
+      on single crystals
+    first_author: V.A. Komarova
+    year: 2024
+    url: https://www.sciencedirect.com/science/article/pii/S1293255824003212
+    evidence: abstract
+    locator: abstract
+  quote: In a ferrimagnetically ordered state below _T_ N = 345 K
+  note: Authors use TN for ferrimagnetic ordering. Different samples show appreciable transition-temperature spread.
 - id: fese_ku_long2011
   phase: Fe3Se4 (monoclinic)
   quantity: K1
@@ -111,7 +145,8 @@
     evidence: abstract
     locator: abstract
   quote: The measured anisotropy constant is 1.0 × 107 erg/cm3
-  note: Reported uniaxial anisotropy constant Ku, not explicitly a 300 K K1. Converted 1.0×10^7 erg/cm3 to 1.0 MJ/m3.
+  note: Reported uniaxial Ku, not explicitly a 300 K K1. Converted 1.0×10^7 erg/cm3 to 1.0 MJ/m3. Wang et al. 2012
+    (DOI 10.1063/1.4759352) identify a calculation error in this earlier estimate; do not use as preferred K1.
 - id: fese_ku_zhang2011
   phase: Fe3Se4 (monoclinic)
   quantity: K1
@@ -128,6 +163,118 @@
     locator: abstract
   quote: The estimated magnetocrystalline anisotropy constant is 6 × 10 ⁶ erg cm –3
   note: Estimated constant, not a direct 300 K intrinsic K1. 6×10^6 erg/cm3 = 0.6 MJ/m3.
+- id: fese_k_wang2012
+  phase: Fe3Se4 (monoclinic)
+  quantity: K1
+  value: 0.522
+  unit: MJ/m3
+  conditions: Fe3Se4 30 nm nanoparticle powder at 10 K
+  source:
+    doi: 10.1063/1.4759352
+    title: 'Temperature dependence of magnetic anisotropy constant in iron chalcogenide Fe3Se4: Excellent agreement
+      with theories'
+    first_author: Jun Wang
+    year: 2012
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3517494/
+    evidence: full_text
+    locator: Results, Fig. 6a
+  quote: At 10 K, the anisotropy constant is 5.22×106 erg/cm3
+  note: Law-of-approach effective uniaxial K, not single-crystal intrinsic 300 K K1. Authors explicitly correct
+    the earlier Long et al. value.
+- id: fese_k1_crystal_komarova2024
+  phase: Fe3Se4 (monoclinic)
+  quantity: K1
+  value: -3.9
+  unit: MJ/m3
+  conditions: single crystal at 4 K, field along and perpendicular to c
+  source:
+    doi: 10.1016/j.solidstatesciences.2024.107756
+    title: Magnetocrystalline anisotropy and giant spontaneous magnetostriction in iron selenide Fe3Se4 studied
+      on single crystals
+    first_author: V.A. Komarova
+    year: 2024
+    url: https://www.sciencedirect.com/science/article/pii/S1293255824003212
+    evidence: abstract
+    locator: abstract
+  quote: are _K_ ₁ = −3.9⋅10 ⁷ erg/cm ³ , _K_ ₂ = 5.0⋅10 ⁶ erg/cm ³ at 4 K.
+  note: Converted negative K1 to MJ/m3. Anisotropy model and temperature differ from nanoparticle effective K; the
+    same abstract gives K2 = 0.5 MJ/m3.
+- id: fese_lattice_wang2012
+  phase: Fe3Se4 (monoclinic)
+  quantity: lattice
+  value: a=6.205(12), b=3.524(7), c=11.262(18)
+  unit: Å
+  conditions: nanoparticle powder; monoclinic unit cell
+  source:
+    doi: 10.1063/1.4759352
+    title: 'Temperature dependence of magnetic anisotropy constant in iron chalcogenide Fe3Se4: Excellent agreement
+      with theories'
+    first_author: Jun Wang
+    year: 2012
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3517494/
+    evidence: full_text
+    locator: Results, Fig. 1
+  quote: 'The XRD spectrum can be indexed by the standard Fe3Se4 phase with the lattice constants: a = 6.205(12)
+    Å, b = 3.524(7) Å, and c = 11.262(18) Å'
+  note: Lattice beta and unit-cell setting not specified in this sentence. Do not infer density from these three
+    lengths alone.
+- id: fese_ms_wang2012
+  phase: Fe3Se4 (monoclinic)
+  quantity: Ms_mass
+  value: 1.893
+  unit: Am2/kg
+  conditions: 30 nm Fe3Se4 nanoparticle assembly at 300 K; fitted high-field component
+  source:
+    doi: 10.1063/1.4759352
+    title: 'Temperature dependence of magnetic anisotropy constant in iron chalcogenide Fe3Se4: Excellent agreement
+      with theories'
+    first_author: Jun Wang
+    year: 2012
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3517494/
+    evidence: full_text
+    locator: Results, Fig. 2b
+  quote: yields a saturation magnetization Ms of 1.893±0.002 emu/g
+  note: 1 emu/g = 1 Am2/kg. Measured near this sample Tc; about 30% ultrafine superparamagnetic particles complicate
+    intrinsic phase interpretation.
+  uncertainty: 0.002
+- id: fese_easy_crystal_komarova2024
+  phase: Fe3Se4 (monoclinic)
+  quantity: easy_axis
+  value: moments not strictly in plane perpendicular to c axis
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1016/j.solidstatesciences.2024.107756
+    title: Magnetocrystalline anisotropy and giant spontaneous magnetostriction in iron selenide Fe3Se4 studied
+      on single crystals
+    first_author: V.A. Komarova
+    year: 2024
+    url: https://www.sciencedirect.com/science/article/pii/S1293255824003212
+    evidence: abstract
+    locator: abstract
+  quote: the magnetization curves show that the magnetic moments do not lie strictly in the plane perpendicular
+    to the _c_ axis.
+  note: Single-crystal observation qualifies older simple b-axis/easy-plane descriptions. The abstract does not
+    give a unique cone angle or low-temperature easy direction.
+- id: fese_structure_crystal_komarova2024
+  phase: Fe3Se4 (monoclinic)
+  quantity: structure
+  value: monoclinic I2/m setting
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1016/j.solidstatesciences.2024.107756
+    title: Magnetocrystalline anisotropy and giant spontaneous magnetostriction in iron selenide Fe3Se4 studied
+      on single crystals
+    first_author: V.A. Komarova
+    year: 2024
+    url: https://www.sciencedirect.com/science/article/pii/S1293255824003212
+    evidence: abstract
+    locator: Results preview
+  quote: X-ray diffraction analysis of the powder obtained from a single crystal of Fe ₃ Se ₄ shows that the crystal
+    structure of this compound is monoclinic and is well described by the space group _I_ 2/ _m_ .
+  note: Source is an article preview excerpt. I2/m and C2/m are alternative settings of space group 12; cell basis
+    differs.
 - id: fese_formation_ampoule_saucedo2021
   phase: Fe3Se4 (monoclinic)
   quantity: formation_path
@@ -235,6 +382,61 @@
 
     followed by air-cooling.'
   note: Converted 300 °C to K. Above this sample Tc of 323 K, so no ferrimagnetic formation bias at the hold.
+- id: fese_singlecrystal_komarova2024
+  phase: Fe3Se4 (monoclinic)
+  quantity: single_variant_particles
+  value: macroscopic single crystal grown by modified Bridgman method; particle cleavage and habit unreported
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1016/j.solidstatesciences.2024.107756
+    title: Magnetocrystalline anisotropy and giant spontaneous magnetostriction in iron selenide Fe3Se4 studied
+      on single crystals
+    first_author: V.A. Komarova
+    year: 2024
+    url: https://www.sciencedirect.com/science/article/pii/S1293255824003212
+    evidence: abstract
+    locator: abstract
+  quote: Using the modified Bridgman method , a single-crystalline sample of iron selenide Fe ₃ Se ₄ was grown
+  note: Existence of a single crystal does not establish easily made single-variant free powder particles or the
+    crystal growth direction.
+- id: fese_bridgman_komarova2024
+  phase: Fe3Se4 (monoclinic)
+  quantity: primary_crystallisation
+  value: modified Bridgman growth of Fe3Se4 single crystal from elemental Fe and Se
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1016/j.solidstatesciences.2024.107756
+    title: Magnetocrystalline anisotropy and giant spontaneous magnetostriction in iron selenide Fe3Se4 studied
+      on single crystals
+    first_author: V.A. Komarova
+    year: 2024
+    url: https://www.sciencedirect.com/science/article/pii/S1293255824003212
+    evidence: abstract
+    locator: Methods preview
+  quote: Single crystal Fe ₃ Se ₄ was prepared from high purity selenium (99.999 %) and iron (99.98 %) in a vertical
+    gradient furnace using a modified Bridgman method.
+  note: Article preview does not establish liquidus or whether product itself precipitates directly from melt versus
+    a high-temperature precursor.
+- id: fese_bridgman_tform_komarova2024
+  phase: Fe3Se4 (monoclinic)
+  quantity: T_formation
+  value: 1073.15
+  unit: K
+  conditions: ''
+  source:
+    doi: 10.1016/j.solidstatesciences.2024.107756
+    title: Magnetocrystalline anisotropy and giant spontaneous magnetostriction in iron selenide Fe3Se4 studied
+      on single crystals
+    first_author: V.A. Komarova
+    year: 2024
+    url: https://www.sciencedirect.com/science/article/pii/S1293255824003212
+    evidence: abstract
+    locator: Methods preview
+  quote: heated to a temperature of 800 °C with subsequent holding for 3 days
+  note: Preview of Methods only; 800 °C is a processing hold, not directly observed onset of primary crystallization.
+    Above sample ferrimagnetic ordering temperature.
 - id: fese_particle_habit_zhang2011
   phase: Fe3Se4 (monoclinic)
   quantity: single_variant_particles
@@ -413,7 +615,7 @@
     url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
     evidence: full_text
     locator: Table I, alloy A TA row
-  quote: '|Alloy A (TA) |22\.8 |24\.1 |24\.0 |11\.0 |10\.4 |7\.8 |881 |5\.16 |2\.18 |0\.47 |'
+  quote: '|Alloy A (TA) |22\.8 |24\.1 |24\.0 |11\.0 |10\.4 |7\.8 |881 |5\.16 |'
   note: Table M_S in kG is cgs 4πMs; 5.16 kG equals 0.516 T. Single sample, not phase-resolved intrinsic Js.
 - id: hea_d_js_na2021
   phase: Fe2CoNiAlCu0.4Ti0.4 (alloy D)
@@ -429,7 +631,7 @@
     url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
     evidence: full_text
     locator: Table I, alloy D TA row
-  quote: '|Alloy D (TA) |37\.1 |19\.6 |19\.5 |9\.0 |8\.5 |6\.4 |1,078 |9\.03 |4\.93 |2\.06 |'
+  quote: '|Alloy D (TA) |37\.1 |19\.6 |19\.5 |9\.0 |8\.5 |6\.4 |1,078 |9\.03 |'
   note: Table M_S in kG is cgs 4πMs; 9.03 kG equals 0.903 T. Single sample, not phase-resolved intrinsic Js.
 - id: hea_a_field_anneal_na2021
   phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
@@ -463,16 +665,17 @@
     url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
     evidence: full_text
     locator: Results and Discussion, Fig. 3
-  quote: The copper-rich phase was observed at grain boundaries and inside grains, with an area fraction of only
-    ∼0.7% and an average diameter of 0.82 μm. Therefore, the increase in coercivity is here associated with the
-    copper-rich phase precipitation, which may act as pinning sites for domain wall motion, thus increasing the
-    coercivity.
+  quote: While the Cu-rich phase was not detected in the as-cast XRD pattern for Alloy D, it was observed in the
+    650 °C annealed sample using EBSD scans. The copper-rich phase was observed at grain boundaries and inside grains,
+    with an area fraction of only ∼0.7% and an average diameter of 0.82 μm. Therefore, the increase in coercivity
+    is here associated with the copper-rich phase precipitation, which may act as pinning sites for domain wall
+    motion, thus increasing the coercivity.
   note: Cu-rich precipitation is observed by EBSD. Authors attribute coercivity to pinning; this is different from
     proof of elongated Fe-Co-rich rods.
 - id: hea_d_structure_na2021
   phase: Fe2CoNiAlCu0.4Ti0.4 (alloy D)
   quantity: structure
-  value: majority BCC as-cast; Cu-rich phase after anneal
+  value: majority BCC as-cast
   unit: text
   conditions: ''
   source:
@@ -586,8 +789,8 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
     evidence: full_text
     locator: Results and Discussion
-  quote: Therefore, the hard magnetic properties in FeCoNiMnCu film may be explained by RTA‐induced microstructure
-    changes and anisotropy enhancement which strengthens domain wall pinning.
+  quote: The FeCoNiMnCu films exhibit a large coercivity increase after RTA, resulting from microstructural changes
+    and strain‐induced anisotropy enhancement which strengthens domain wall pinning.
   note: Authors present a mechanism, not direct evidence for uniaxial alignment of cubic grains.
 - id: hea_fcc_decomposition_beeson2024
   phase: FeCoNiMnCu (fcc film)
@@ -763,7 +966,7 @@
 - id: hea_l10_ep_beeson2024
   phase: (FeCoNiMnCu)Pt (L10 film)
   quantity: other
-  value: thin film grown on amorphous SiO2, with some (001) texture after RTA
+  value: thin film sputtered onto thermally oxidized Si(100), not an epitaxial template
   unit: text
   conditions: ''
   source:

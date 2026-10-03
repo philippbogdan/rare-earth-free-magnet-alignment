@@ -1,0 +1,24 @@
+- id: feta85_[redacted]
+  phase: Fe2+δTa-C14-meltspun
+  route: isotropic
+  process: Fe85Ta15 arc-melted then melt-spun under Ar onto copper wheel at 60 m/s; C14 + bcc Fe(Ta) ribbon
+  quantity: '[redacted]'
+  unit: MGOe
+  measured_along: in-plane ribbon
+  measurement: VSM M(H) at 300 K; maximum applied field not stated in extracted text; assumed ingot density
+    10.0 g/cm3
+  n_samples: not stated
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: not measured
+    magnet_axis: in-plane of ribbon
+    density_rel: null
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    evidence: full_text
+    locator: Results, Fig. 5
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out

@@ -19,3 +19,6 @@ frozen. Each entry: date, what was exposed, consequence.
   and Ku/Hc of mnal_ep_takata2018_*. Consequence: every MnAl case whose record appeared in those
   lines is classed "exposed" (development, not held out). The export now keeps only an allow-list
   of process parameters; all condition files were regenerated before any further reading.
+- 2026-10-03 — The process text of mnbi_other_tang2022_fieldsinter250 contains "(270 C: 0.86)", a
+  remanence ratio of a sibling sample of the same series. Consequence: both Tang 2022
+  field-sintering cases are classed "exposed".

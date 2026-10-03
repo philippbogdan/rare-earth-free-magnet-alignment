@@ -1,0 +1,1285 @@
+- id: feco2b_structure_liu2024
+  phase: (Fe0.7Co0.3)2B
+  quantity: structure
+  value: tetragonal
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.3390/cryst14070624
+    title: Coercivity of (Fe0.7Co0.3)2B Nanowire and Its Bonded Magnet
+    first_author: Liu
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2406629
+    evidence: review
+    locator: Introduction
+  quote: "The tetragonal phase (Fe1−x Cox )2 B (0.1 ≤ x ≤ 0.5) has an easy-axis magnetocrys-\nAcademic Editor: John\
+    \ A. Mydosh            talline anisotropy (MCA) with a peak value at x = 0.3 (MCA constant, K1 = 4.1 Merg/cm3\
+    \ ,\n                                           or magnetocrystalline anisotropy field, HMCA = 7.8 kOe) at room\
+    \ temperature [10,11]."
+  note: C16 designation comes from the topic brief; the quoted source explicitly states tetragonal.
+- id: feco2b_easy_lam2020
+  phase: (Fe0.7Co0.3)2B
+  quantity: easy_axis
+  value: c axis
+  unit: ''
+  conditions: x=0.3, measured single crystal
+  source:
+    doi: 10.1016/j.jmmm.2020.167214
+    title: Reinvestigation of the intrinsic magnetic properties of (Fe1−xCox)2B alloys and crystallization behavior
+      of ribbons
+    first_author: Lamichhane
+    year: 2020
+    url: https://www.osti.gov/pages/servlets/purl/1650016
+    evidence: full_text
+    locator: section 3; Fig. 3
+  quote: 'see the uniaxial anisotropy with the 𝑐-axis being the easy
+
+    was studied earlier. Static density functional overestimation        magnetization axis.'
+  note: ''
+- id: feco2b_k1_liu2024
+  phase: (Fe0.7Co0.3)2B
+  quantity: K1
+  value: 0.41
+  unit: MJ/m3
+  conditions: x=0.3, 300 K
+  source:
+    doi: 10.3390/cryst14070624
+    title: Coercivity of (Fe0.7Co0.3)2B Nanowire and Its Bonded Magnet
+    first_author: Liu
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2406629
+    evidence: review
+    locator: Introduction
+  quote: "The tetragonal phase (Fe1−x Cox )2 B (0.1 ≤ x ≤ 0.5) has an easy-axis magnetocrys-\nAcademic Editor: John\
+    \ A. Mydosh            talline anisotropy (MCA) with a peak value at x = 0.3 (MCA constant, K1 = 4.1 Merg/cm3\
+    \ ,\n                                           or magnetocrystalline anisotropy field, HMCA = 7.8 kOe) at room\
+    \ temperature [10,11]."
+  note: Secondary citation of experimental K1=4.1 Merg/cm3; converted to 0.41 MJ/m3.
+- id: feco2b_js_liu2024
+  phase: (Fe0.7Co0.3)2B
+  quantity: Js
+  value: 1.3
+  unit: T
+  conditions: x=0.3, room temperature
+  source:
+    doi: 10.3390/cryst14070624
+    title: Coercivity of (Fe0.7Co0.3)2B Nanowire and Its Bonded Magnet
+    first_author: Liu
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2406629
+    evidence: review
+    locator: Introduction
+  quote: "(Fe0.7 Co0.3 )2 B also has a large magnetization (Js = 13 kG) at room temperature and a\nRevised: 2 July\
+    \ 2024\n                                           high Curie temperature of 660 ◦ C."
+  note: Secondary citation; 13 kG converted to 1.3 T.
+- id: feco2b_tc_liu2024
+  phase: (Fe0.7Co0.3)2B
+  quantity: Tc
+  value: 933.15
+  unit: K
+  conditions: x=0.3
+  source:
+    doi: 10.3390/cryst14070624
+    title: Coercivity of (Fe0.7Co0.3)2B Nanowire and Its Bonded Magnet
+    first_author: Liu
+    year: 2024
+    url: https://www.osti.gov/servlets/purl/2406629
+    evidence: review
+    locator: Introduction
+  quote: "(Fe0.7 Co0.3 )2 B also has a large magnetization (Js = 13 kG) at room temperature and a\nRevised: 2 July\
+    \ 2024\n                                           high Curie temperature of 660 ◦ C."
+  note: Secondary citation; 660 °C converted to 933.15 K.
+- id: feco2b_sc_lam2020
+  phase: (Fe0.7Co0.3)2B
+  quantity: single_variant_particles
+  value: Single crystals grown as tetragonal rods; rod axis relative to c not established
+  unit: ''
+  conditions: high-temperature Fe/Co-rich solution growth
+  source:
+    doi: 10.1016/j.jmmm.2020.167214
+    title: Reinvestigation of the intrinsic magnetic properties of (Fe1−xCox)2B alloys and crystallization behavior
+      of ribbons
+    first_author: Lamichhane
+    year: 2020
+    url: https://www.osti.gov/pages/servlets/purl/1650016
+    evidence: full_text
+    locator: section 2
+  quote: 'Single crystals of (Fe1−𝑥 Co𝑥 )2 B were grown from high-
+
+    magnets are expected to operate at elevated temperatures,                     temperature solution out of an
+    excess of (Fe,Co) which was
+
+    it is necessary to study the temperature dependence of the                    decanted in a centrifuge [6].
+    The single crystals are grown as
+
+    magneto-crystalline anisotropy. This is the purpose of this                   tetragonal rods which were cut
+    using a wire saw to give them'
+  note: Single-crystal habit is demonstrated; no evidence that the long rod axis is the easy axis.
+- id: feco2b_formation_lam2020
+  phase: (Fe0.7Co0.3)2B
+  quantity: formation_path
+  value: crystallizes from Fe/Co-rich high-temperature solution
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/j.jmmm.2020.167214
+    title: Reinvestigation of the intrinsic magnetic properties of (Fe1−xCox)2B alloys and crystallization behavior
+      of ribbons
+    first_author: Lamichhane
+    year: 2020
+    url: https://www.osti.gov/pages/servlets/purl/1650016
+    evidence: full_text
+    locator: section 2
+  quote: 'Single crystals of (Fe1−𝑥 Co𝑥 )2 B were grown from high-
+
+    magnets are expected to operate at elevated temperatures,                     temperature solution out of an
+    excess of (Fe,Co) which was
+
+    it is necessary to study the temperature dependence of the                    decanted in a centrifuge [6].'
+  note: ''
+- id: feco2b_meltspin_lam2020
+  phase: (Fe0.7Co0.3)2B
+  quantity: formation_path
+  value: already crystalline after melt spinning
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/j.jmmm.2020.167214
+    title: Reinvestigation of the intrinsic magnetic properties of (Fe1−xCox)2B alloys and crystallization behavior
+      of ribbons
+    first_author: Lamichhane
+    year: 2020
+    url: https://www.osti.gov/pages/servlets/purl/1650016
+    evidence: full_text
+    locator: section 4; Fig. 9
+  quote: 'of the (Fe1−𝑥 Co𝑥 )2 B alloys (pure, or with Cu and Ti addi-
+
+    tions) are already crystalline, indicating a rapid crystalliza-      Figure 8: (Color online) Magnetic hysteresis
+    loop of as spun
+
+    tion of this system upon cooling.'
+  note: Rapid direct crystallisation makes amorphous precursor alignment difficult.
+- id: feco2b_al_cryst_lam2020
+  phase: (Fe0.65Co0.35)2B + 3 wt% Al
+  quantity: T_formation
+  value: 813.15
+  unit: K
+  conditions: melt-spun ribbon, DSC heating
+  source:
+    doi: 10.1016/j.jmmm.2020.167214
+    title: Reinvestigation of the intrinsic magnetic properties of (Fe1−xCox)2B alloys and crystallization behavior
+      of ribbons
+    first_author: Lamichhane
+    year: 2020
+    url: https://www.osti.gov/pages/servlets/purl/1650016
+    evidence: full_text
+    locator: section 4; Fig. 10
+  quote: 'a clear crystallization peak at 540°C for the alloy with 3wt%        anomalous with some temperature induced
+    changes of sign
+
+    Al.'
+  note: 540 °C converted to 813.15 K; this is the Al-added precursor, not the undoped phase.
+- id: feco2b_re_edstrom2015
+  phase: (Fe0.7Co0.3)2B + Re
+  quantity: other
+  value: 2.5 at.% Re on Fe/Co sites increased magnetic anisotropy by 50%; W did not enhance it due to secondary
+    phases
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1103/PhysRevB.92.174413
+    title: Magnetic properties of (Fe1−xCox)2B alloys and the effect of doping by 5d elements
+    first_author: Edström
+    year: 2015
+    url: https://doi.org/10.1103/PhysRevB.92.174413
+    evidence: abstract
+    locator: abstract
+  quote: Using density functional theory based calculations we have explored the effect of substitutionally doping
+    the transition metal sublattice by the whole range of 5 ⁢ 𝑑 transition metals and found that doping by Re or
+    W elements should significantly enhance the magnetocrystalline anisotropy energy. Experimentally, W doping did
+    not succeed in enhancing the magnetic anisotropy due to formation of other phases. On the other hand, doping
+    by Ir and Re was successful and resulted in magnetic anisotropies that are in agreement with theoretical predictions.
+    In particular, doping by 2.5 at. % of Re on the Fe/Co site shows a magnetocrystalline anisotropy energy which
+    is increased by 50% compared to its parent ( F e 0 . 7 ⁢ C o 0 . 3 ) 2 ⁢ B compound, making this system interesting,
+  note: Experimental Re increase reported in the abstract; parent and doped absolute K1 values are not quoted here.
+- id: fe2b_structure_park2025
+  phase: Fe2B
+  quantity: structure
+  value: tetragonal CuAl2 type
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1002/metm.70022
+    title: 'Rare‐Earth‐Free Iron‐Based Permanent Magnets: Progress, Challenges, and Perspectives'
+    first_author: Park
+    year: 2025
+    url: https://onlinelibrary.wiley.com/doi/full/10.1002/metm.70022
+    evidence: review
+    locator: section 4.2
+  quote: Among Fe–B compounds (FeB, Fe ₂ B, Fe ₃ B, etc.), only orthorhombic FeB and tetragonal CuAl ₂ -type Fe
+    ₂ B are stable at ambient conditions.
+  note: ''
+- id: fe2b_easy_coene1991
+  phase: Fe2B
+  quantity: easy_axis
+  value: easy plane
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/0304-8853(91)90627-M
+    title: Magnetocrystalline anisotropy of Fe3B, Fe2B and Fe1.4Co0.6B as studied by Lorentz electron microscopy,
+      singular point detection and magnetization measurements
+    first_author: Coene
+    year: 1991
+    url: https://doi.org/10.1016/0304-8853(91)90627-M
+    evidence: abstract
+    locator: abstract
+  quote: The magnetocrystalline anisotropy of Fe ₂ B and Fe 1\.4 Co 0\.6 B is found to be in-plane and uniaxial,
+    respectively.
+  note: ''
+- id: fe2b_tc_lam2020
+  phase: Fe2B
+  quantity: Tc
+  value: 1015
+  unit: K
+  conditions: Fe2B end compound
+  source:
+    doi: 10.1016/j.jmmm.2020.167214
+    title: Reinvestigation of the intrinsic magnetic properties of (Fe1−xCox)2B alloys and crystallization behavior
+      of ribbons
+    first_author: Lamichhane
+    year: 2020
+    url: https://www.osti.gov/pages/servlets/purl/1650016
+    evidence: full_text
+    locator: section 3; Fig. 2
+  quote: 'The Curie temperature decreases monotonically from
+
+    (Netzsch, DSC 404C). The STA measurements were per-                  1015 K in Fe2 B to 426 K in Co2 B as shown
+    in Fig. 2.'
+  note: ''
+- id: fe2b_ms_park2025
+  phase: Fe2B
+  quantity: Ms_mass
+  value: 156
+  unit: Am2/kg
+  conditions: high-pressure high-temperature bulk sample; 300 K
+  source:
+    doi: 10.1002/metm.70022
+    title: 'Rare‐Earth‐Free Iron‐Based Permanent Magnets: Progress, Challenges, and Perspectives'
+    first_author: Park
+    year: 2025
+    url: https://onlinelibrary.wiley.com/doi/full/10.1002/metm.70022
+    evidence: review
+    locator: section 4.2
+  quote: The synthesized Fe ₂ B exhibited a room-temperature _M_ s of 156 emu g −1 , surpassing that of conventional
+    ferrite-based magnetic materials.
+  note: Review quotation of a particular bulk sample; 1 emu/g equals 1 Am2/kg. No density matched to this sample
+    was found.
+- id: fe2b_primary_quir2015
+  phase: Fe2B
+  quantity: primary_crystallisation
+  value: equilibrium Fe2B + Fe product from undercooled Fe83B17 liquid
+  unit: ''
+  conditions: electrostatically levitated Fe83B17 liquid
+  source:
+    doi: 10.1063/1.4922802
+    title: Synergistic stabilization of metastable Fe23B6 and γ-Fe in undercooled Fe83B17
+    first_author: Quirinale
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1186931
+    evidence: full_text
+    locator: abstract
+  quote: "Previous investigations of undercooled liquid Fe83B17 near the eutectic composition have found\n     \
+    \    that metastable crystalline phases, such as Fe23B6, can be formed and persist down to ambient\n       \
+    \  temperature even for rather modest cooling rates. Using time-resolved high-energy x-ray diffrac-\n      \
+    \   tion on electrostatically levitated samples of Fe83B17, we demonstrate that the Fe23B6 metastable\n    \
+    \     phase and fcc c-Fe grow coherently from the undercooled Fe83B17 liquid and effectively suppress\n    \
+    \     the formation of the equilibrium Fe2B þ bcc a-Fe phases."
+  note: ''
+- id: fe2b_tf_quir2015
+  phase: Fe2B
+  quantity: T_formation
+  value: 1410
+  unit: K
+  conditions: secondary recalescence of undercooled Fe83B17
+  source:
+    doi: 10.1063/1.4922802
+    title: Synergistic stabilization of metastable Fe23B6 and γ-Fe in undercooled Fe83B17
+    first_author: Quirinale
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1186931
+    evidence: full_text
+    locator: Results, cycle A
+  quote: Fe2B binary phase at 1410 K.
+  note: Eutectic or multiphase solidification observation, not a pure Fe2B liquidus.
+- id: fe2b_mech_mert2023
+  phase: Fe2B
+  quantity: formation_path
+  value: magnesiothermic mechanochemical reduction followed by HCl leaching
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/j.jsamd.2023.100602
+    title: 'Fe2B magnetic nanoparticles: Synthesis, optimization and cytotoxicity for potential biomedical applications'
+    first_author: Mertdinç-Ülküseven
+    year: 2023
+    url: https://www.sciencedirect.com/science/article/pii/S2468217923000710
+    evidence: abstract
+    locator: abstract
+  quote: Crystalline iron boride (Fe ₂ B) nanoparticles were successfully synthesized with magnesiothermic reduction
+    reactions triggered by mechanochemical synthesis (MCS) and purified using selective hydrochloric (HCl) acid
+    leaching.
+  note: ''
+- id: fe3b_t_structure_coene1991
+  phase: Fe3B-tetragonal
+  quantity: structure
+  value: tetragonal
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/0304-8853(91)90627-M
+    title: Magnetocrystalline anisotropy of Fe3B, Fe2B and Fe1.4Co0.6B as studied by Lorentz electron microscopy,
+      singular point detection and magnetization measurements
+    first_author: Coene
+    year: 1991
+    url: https://doi.org/10.1016/0304-8853(91)90627-M
+    evidence: abstract
+    locator: abstract
+  quote: Tetragonal Fe ₃ B has an in-plane anisotropy, with a preferential orientation along [110].
+  note: ''
+- id: fe3b_t_easy_coene1991
+  phase: Fe3B-tetragonal
+  quantity: easy_axis
+  value: basal plane, preferred [110]
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/0304-8853(91)90627-M
+    title: Magnetocrystalline anisotropy of Fe3B, Fe2B and Fe1.4Co0.6B as studied by Lorentz electron microscopy,
+      singular point detection and magnetization measurements
+    first_author: Coene
+    year: 1991
+    url: https://doi.org/10.1016/0304-8853(91)90627-M
+    evidence: abstract
+    locator: abstract
+  quote: Tetragonal Fe ₃ B has an in-plane anisotropy, with a preferential orientation along [110].
+  note: ''
+- id: fe3b_o_structure_coene1991
+  phase: Fe3B-orthorhombic
+  quantity: structure
+  value: orthorhombic
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/0304-8853(91)90627-M
+    title: Magnetocrystalline anisotropy of Fe3B, Fe2B and Fe1.4Co0.6B as studied by Lorentz electron microscopy,
+      singular point detection and magnetization measurements
+    first_author: Coene
+    year: 1991
+    url: https://doi.org/10.1016/0304-8853(91)90627-M
+    evidence: abstract
+    locator: abstract
+  quote: The orthorhombic modification of Fe ₃ B has the easy magnetization axis along the [100] direction.
+  note: ''
+- id: fe3b_o_easy_coene1991
+  phase: Fe3B-orthorhombic
+  quantity: easy_axis
+  value: '[100]'
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/0304-8853(91)90627-M
+    title: Magnetocrystalline anisotropy of Fe3B, Fe2B and Fe1.4Co0.6B as studied by Lorentz electron microscopy,
+      singular point detection and magnetization measurements
+    first_author: Coene
+    year: 1991
+    url: https://doi.org/10.1016/0304-8853(91)90627-M
+    evidence: abstract
+    locator: abstract
+  quote: The orthorhombic modification of Fe ₃ B has the easy magnetization axis along the [100] direction.
+  note: ''
+- id: fe3b_metastable_park2025
+  phase: Fe3B
+  quantity: formation_path
+  value: metastable high-temperature forms decompose to Fe2B and alpha-Fe on cooling
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1002/metm.70022
+    title: 'Rare‐Earth‐Free Iron‐Based Permanent Magnets: Progress, Challenges, and Perspectives'
+    first_author: Park
+    year: 2025
+    url: https://onlinelibrary.wiley.com/doi/full/10.1002/metm.70022
+    evidence: review
+    locator: section 4.2
+  quote: Fe ₃ B, in contrast, is metastable iron-rich boride, which exists in tetragonal and orthorhombic forms
+    only at high temperatures above 1420 K and decomposes into Fe ₂ B and _α_ -Fe upon cooling below 1420 K  [221
+    ].
+  note: ''
+- id: fe3b_cvd_li2006
+  phase: Fe3B-tetragonal
+  quantity: formation_path
+  value: vapor-liquid-solid chemical vapor deposition from FeI2 and BI3
+  unit: ''
+  conditions: Pt/Pd-coated sapphire, 800 °C
+  source:
+    doi: 10.1021/cm060068z
+    title: Ferromagnetic Iron Boride (Fe3B) Nanowires
+    first_author: Li
+    year: 2006
+    url: https://pubs.acs.org/doi/10.1021/cm060068z
+    evidence: abstract
+    locator: abstract
+  quote: 'Single-crystal iron boride (Fe ₃ B) nanowires were synthesized on Pt and Pd (Pt/Pd) coated sapphire
+
+    substrates by a chemical vapor deposition method at 800 ° C using boron triiodide (BI ₃ ) and iron iodide
+
+    (FeI ₂ ) as precursors.'
+  note: ''
+- id: fe3b_cvd_tf_li2006
+  phase: Fe3B-tetragonal
+  quantity: T_formation
+  value: 1073.15
+  unit: K
+  conditions: ''
+  source:
+    doi: 10.1021/cm060068z
+    title: Ferromagnetic Iron Boride (Fe3B) Nanowires
+    first_author: Li
+    year: 2006
+    url: https://pubs.acs.org/doi/10.1021/cm060068z
+    evidence: abstract
+    locator: abstract
+  quote: 'Single-crystal iron boride (Fe ₃ B) nanowires were synthesized on Pt and Pd (Pt/Pd) coated sapphire
+
+    substrates by a chemical vapor deposition method at 800 ° C using boron triiodide (BI ₃ ) and iron iodide
+
+    (FeI ₂ ) as precursors.'
+  note: 800 °C converted to 1073.15 K; CVD kinetically produces metastable phase.
+- id: fe3b_nw_li2006
+  phase: Fe3B-tetragonal
+  quantity: single_variant_particles
+  value: single-crystal nanowires, width 5-50 nm, length 2-30 µm; crystal growth axis unresolved
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1021/cm060068z
+    title: Ferromagnetic Iron Boride (Fe3B) Nanowires
+    first_author: Li
+    year: 2006
+    url: https://pubs.acs.org/doi/10.1021/cm060068z
+    evidence: abstract
+    locator: abstract
+  quote: 'Single-crystal iron boride (Fe ₃ B) nanowires were synthesized on Pt and Pd (Pt/Pd) coated sapphire
+
+    substrates by a chemical vapor deposition method at 800 ° C using boron triiodide (BI ₃ ) and iron iodide
+
+    (FeI ₂ ) as precursors. Morphology of the Fe ₃ B nanowires can be controlled by manipulating the Pt/Pd
+
+    film thickness and the growth time. Transmission electron microscopy and selected area electron diffraction
+
+    were used to analyze the crystal structures of these novel materials. Electron energy-loss spectroscopy
+
+    and X-ray energy-dispersive spectroscopy studies on these nanowires confirm that they are composed of
+
+    boron and iron. Scanning electron microscopy was employed to observe the morphology of these
+
+    nanomaterials. The typical size of the iron boride nanowires is about 5−50 nm in width and 2−30 μm
+
+    in length.'
+  note: Morphology alone does not establish easy-axis alignment.
+- id: fe5pb2_structure_mcg2015
+  phase: Fe5PB2
+  quantity: structure
+  value: tetragonal Cr5B3 type, I4/mcm
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: Table I
+  quote: TABLE I. Crystallographic and magnetic properties. All materials adopt the Cr5 B3 structure type with space
+    group I4/mcm
+  note: ''
+- id: fe5pb2_lattice_mcg2015
+  phase: Fe5PB2
+  quantity: lattice
+  value:
+    a: 5.4867
+    c: 10.3532
+  unit: Å
+  conditions: 300 K powder XRD
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: Table I
+  quote: "                a (Å)                    5.4867(1) 5.4522(1) 5.4947(1) 5.5507(1) 5.5332(2) 5.5689(1)\n\
+    \                c (Å)                   10.3532(2) 10.3585(3) 10.3754(2) 10.3359(2) 10.2692(4) 10.3582(2)"
+  note: Values chosen by named composition column.
+- id: fe5pb2_density_mcg2015
+  phase: Fe5PB2
+  quantity: density
+  value: 7.075
+  unit: g/cm3
+  conditions: ''
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: Table I
+  quote: '                density (g / cm3 )             7.075       7.227        7.020      6.864       7.017       6.785'
+  note: Crystallographic density, not measured bulk density.
+- id: fe5pb2_js_mcg2015
+  phase: Fe5PB2
+  quantity: Js
+  value: 1.09
+  unit: T
+  conditions: 300 K polycrystalline sample
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: Table I
+  quote: '                JS 300 K (T)                     1.09       0.87         1.00        1.21      0.961        1.17'
+  note: Named composition column; saturation polarization, not remanence.
+- id: fe5pb2_easy_mcg2015
+  phase: Fe5PB2
+  quantity: easy_axis
+  value: c axis
+  unit: ''
+  conditions: room temperature
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: abstract
+  quote: "All adopt the tetragonal Cr5 B3 structure-type and are ferromagnetic\n              at room temperature\
+    \ with easy axis of magnetization along the c-axis."
+  note: ''
+- id: fe5pb2_formation_mcg2015
+  phase: Fe5PB2
+  quantity: formation_path
+  value: solid-state reaction from elements
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: section II
+  quote: "Polycrystalline samples of nominal compositions listed\n                                             \
+    \                    Analysis of powder x-ray diﬀraction patterns (Fig. 1)\nin Table I were synthesized by reacting\
+    \ the elements in\n                                                              shows that all of the materials\
+    \ studied adopt the tetrago-\nevacuated and ﬂame-sealed silica tubes. The tubes were\n                     \
+    \                                         nal Cr5 B3 structure type at room temperature. The sam-\nheated to\
+    \ 1000 ◦ C at 100 ◦ C per hour, and held at this\n                                                         \
+    \     ples used in the current study were >   ∼90% pure, and the\ntemperature for 12 hours."
+  note: This quote covers the initial reaction; subsequent long annealing was used for phase purification.
+- id: fe5pb2_tf_mcg2015
+  phase: Fe5PB2
+  quantity: T_formation
+  value: 1273.15
+  unit: K
+  conditions: initial reaction from elements, 12 h
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: section II
+  quote: "heated to 1000 ◦ C at 100 ◦ C per hour, and held at this\n                                           \
+    \                   ples used in the current study were >   ∼90% pure, and the\ntemperature for 12 hours."
+  note: 1000 °C converted to 1273.15 K; complete phase purification required later anneals.
+- id: fe5pb2_incongruent_mcg2015
+  phase: Fe5PB2
+  quantity: primary_crystallisation
+  value: melts incongruently; direct stoichiometric melt growth obstructed
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: section II
+  quote: "materials were observed to melt incongruently, preclud-\n                                            \
+    \                  purity phase, which may be reﬂected in the high temper-\ning some of the more direct methods\
+    \ for growing single"
+  note: For Fe5PB2, flux single crystals were nevertheless demonstrated.
+- id: fe5sib2_structure_mcg2015
+  phase: Fe5SiB2
+  quantity: structure
+  value: tetragonal Cr5B3 type, I4/mcm
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: Table I
+  quote: TABLE I. Crystallographic and magnetic properties. All materials adopt the Cr5 B3 structure type with space
+    group I4/mcm
+  note: ''
+- id: fe5sib2_lattice_mcg2015
+  phase: Fe5SiB2
+  quantity: lattice
+  value:
+    a: 5.5507
+    c: 10.3359
+  unit: Å
+  conditions: 300 K powder XRD
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: Table I
+  quote: "                a (Å)                    5.4867(1) 5.4522(1) 5.4947(1) 5.5507(1) 5.5332(2) 5.5689(1)\n\
+    \                c (Å)                   10.3532(2) 10.3585(3) 10.3754(2) 10.3359(2) 10.2692(4) 10.3582(2)"
+  note: Values chosen by named composition column.
+- id: fe5sib2_density_mcg2015
+  phase: Fe5SiB2
+  quantity: density
+  value: 6.864
+  unit: g/cm3
+  conditions: ''
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: Table I
+  quote: '                density (g / cm3 )             7.075       7.227        7.020      6.864       7.017       6.785'
+  note: Crystallographic density, not measured bulk density.
+- id: fe5sib2_js_mcg2015
+  phase: Fe5SiB2
+  quantity: Js
+  value: 1.21
+  unit: T
+  conditions: 300 K polycrystalline sample
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: Table I
+  quote: '                JS 300 K (T)                     1.09       0.87         1.00        1.21      0.961        1.17'
+  note: Named composition column; saturation polarization, not remanence.
+- id: fe5sib2_easy_mcg2015
+  phase: Fe5SiB2
+  quantity: easy_axis
+  value: c axis
+  unit: ''
+  conditions: room temperature
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: abstract
+  quote: "All adopt the tetragonal Cr5 B3 structure-type and are ferromagnetic\n              at room temperature\
+    \ with easy axis of magnetization along the c-axis."
+  note: ''
+- id: fe5sib2_formation_mcg2015
+  phase: Fe5SiB2
+  quantity: formation_path
+  value: solid-state reaction from elements
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: section II
+  quote: "Polycrystalline samples of nominal compositions listed\n                                             \
+    \                    Analysis of powder x-ray diﬀraction patterns (Fig. 1)\nin Table I were synthesized by reacting\
+    \ the elements in\n                                                              shows that all of the materials\
+    \ studied adopt the tetrago-\nevacuated and ﬂame-sealed silica tubes. The tubes were\n                     \
+    \                                         nal Cr5 B3 structure type at room temperature. The sam-\nheated to\
+    \ 1000 ◦ C at 100 ◦ C per hour, and held at this\n                                                         \
+    \     ples used in the current study were >   ∼90% pure, and the\ntemperature for 12 hours."
+  note: This quote covers the initial reaction; subsequent long annealing was used for phase purification.
+- id: fe5sib2_tf_mcg2015
+  phase: Fe5SiB2
+  quantity: T_formation
+  value: 1273.15
+  unit: K
+  conditions: initial reaction from elements, 12 h
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: section II
+  quote: "heated to 1000 ◦ C at 100 ◦ C per hour, and held at this\n                                           \
+    \                   ples used in the current study were >   ∼90% pure, and the\ntemperature for 12 hours."
+  note: 1000 °C converted to 1273.15 K; complete phase purification required later anneals.
+- id: fe5sib2_incongruent_mcg2015
+  phase: Fe5SiB2
+  quantity: primary_crystallisation
+  value: melts incongruently; direct stoichiometric melt growth obstructed
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: section II
+  quote: "materials were observed to melt incongruently, preclud-\n                                            \
+    \                  purity phase, which may be reﬂected in the high temper-\ning some of the more direct methods\
+    \ for growing single"
+  note: For Fe5PB2, flux single crystals were nevertheless demonstrated.
+- id: fe5sib2_tc_hed2017
+  phase: Fe5SiB2
+  quantity: Tc
+  value: 810
+  unit: K
+  conditions: x=0 end member
+  source:
+    doi: 10.1103/PhysRevB.96.094433
+    title: Magnetic properties of the Fe5SiB2−Fe5PB2 system
+    first_author: Hedlund
+    year: 2017
+    url: https://doi.org/10.1103/PhysRevB.96.094433
+    evidence: abstract
+    locator: abstract
+  quote: The Curie temperature is determined to be 810 and 615 K in F e 5 ⁢ S i B 2 and F e 5 ⁢ P B 2 , respectively.
+  note: Hedlund reports 810 K; McGuire earlier reported only a lower bound.
+- id: fe5sib2_k1_wer2016
+  phase: Fe5SiB2
+  quantity: K1
+  value: 0.25
+  unit: MJ/m3
+  conditions: 300 K, estimated by magnetic measurements
+  source:
+    doi: 10.1103/PhysRevB.93.174412
+    title: Magnetic properties of Fe5SiB2 and its alloys with P, S, and Co
+    first_author: Werwiński
+    year: 2016
+    url: https://doi.org/10.1103/PhysRevB.93.174412
+    evidence: abstract
+    locator: abstract
+  quote: The anisotropy constant 𝐾 1 , estimated at 𝑇 = 3 0 0 K, is 0.25 MJ/ m 3 .
+  note: ''
+- id: fe5sib2_spin_mcg2015
+  phase: Fe5SiB2
+  quantity: other
+  value: spin reorientation to easy plane near 170 K
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: full_text
+    locator: abstract
+  quote: "The spin reorientation\n              in Fe5 SiB2 is observed as an anomaly in the magnetization near\
+    \ 170 K,"
+  note: Below room temperature; temperature dependence matters to easy-axis selection.
+- id: fe5pb2_tc_sc2016
+  phase: Fe5PB2
+  quantity: Tc
+  value: 655
+  unit: K
+  conditions: self-flux single crystals
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: abstract
+  quote: temperature of Fe5 B2 P is determined to be 655 ± 2 K.
+  note: ''
+  uncertainty: 2
+- id: fe5pb2_k1_mcg2015
+  phase: Fe5PB2
+  quantity: K1
+  value: 0.38
+  unit: MJ/m3
+  conditions: 300 K single crystal
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://www.osti.gov/pages/servlets/purl/1286917
+    evidence: review
+    locator: section III
+  quote: "K1 was determined to be 0.38 MJ/m3 at room temper-\n                                                 \
+    \             ment.\nature."
+  note: McGuire quotes Lamichhane single-crystal result.
+- id: fe5pb2_flux_sc2016
+  phase: Fe5PB2
+  quantity: primary_crystallisation
+  value: plate crystals grow from complete self-flux liquid on cooling
+  unit: ''
+  conditions: Fe72P18B10 self flux
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: section 2.1
+  quote: 'for 10 hours, and then cooled to 1160 °C over 75 hours. After                          Finally, the VSM
+    heater stick, with the sample glued on it, was
+
+    cooling to 1160 °C the ampoule was decanted using a centrifuge                         covered with a copper
+    foil so as to (i) better control the heat
+
+    and plate like single crystals of Fe5 B2 P could be found on the                       radiation in the sample
+    chamber, (ii) maintain a uniform tem-
+
+    growth side of the alumina filter. In order to confirm that the                        perature inside the wrapped
+    foil (due to its good thermal con-
+
+    growth of crystals took place from a complete liquid, we de-                           ductivity), and (iii)
+    further secure the sample throughout the
+
+    canted one growth at 1200 °C, instead of cooling to 1160 °C,                           measurement.
+
+    and indeed found all of the material decanted.'
+  note: ''
+- id: fe5pb2_tf_sc2016
+  phase: Fe5PB2
+  quantity: T_formation
+  value: 1433-1473
+  unit: K
+  conditions: self-flux cooling from 1200 to 1160 °C
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: section 2.1
+  quote: 'for 10 hours, and then cooled to 1160 °C over 75 hours. After                          Finally, the VSM
+    heater stick, with the sample glued on it, was
+
+    cooling to 1160 °C the ampoule was decanted using a centrifuge                         covered with a copper
+    foil so as to (i) better control the heat
+
+    and plate like single crystals of Fe5 B2 P could be found on the'
+  note: Temperatures converted to K; source shows crystal growth in this cooling window.
+- id: fe5pb2_plate_sc2016
+  phase: Fe5PB2
+  quantity: single_variant_particles
+  value: single-crystal plates
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: section 2.1
+  quote: 'and plate like single crystals of Fe5 B2 P could be found on the                       radiation in the
+    sample chamber, (ii) maintain a uniform tem-
+
+    growth side of the alumina filter.'
+  note: Laue diffraction identifies [001] as normal to the plate.
+- id: fe5pb2_plate_orientation_sc2016
+  phase: Fe5PB2
+  quantity: other
+  value: plate normal is [001], the easy c axis
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: section 3.2
+  quote: 'The Laue diffraction pattern shown in figure 2(b) was ob-
+
+    tained with the X-ray beam parallel to the plane of the plate                               3.4. Measurement
+    of magnetization and saturation magnetiza-
+
+    [100]. The Laue pattern shown in figure 2(c) was obtained with                                   tion
+
+    the X-ray beam perpendicular to the plane of the plate [001].'
+  note: The easy c-axis direction is separately sourced in the easy_axis record.
+- id: fe5pb2_facets_sc2016
+  phase: Fe5PB2
+  quantity: other
+  value: facets along [100], [010], [001]; kinetic growth direction not measured
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: section 3.2
+  quote: 'ysis revealed that the crystals facets were grown along [100],                              strengths
+    in terms of µB /Fe are reported in figure 6. As the field
+
+    [010], and [001] directions.'
+  note: ''
+- id: feta_c14_structure_gabay2019
+  phase: Fe2+δTa-C14
+  quantity: structure
+  value: hexagonal C14 Laves phase
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out
+    evidence: full_text
+    locator: abstract
+  quote: Melt-spun Fe 100- _x_ Nb _x_ and Fe 100- _x_ Ta _x_ alloys consisting of a hexagonal (C14) Laves phase
+    and an iron-based bcc phase
+  note: ''
+- id: feta_c14_lattice_gabay2019
+  phase: Fe2Ta-C14
+  quantity: lattice
+  value:
+    a: 4.819
+    c: 7.867
+  unit: Å
+  conditions: ''
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out
+    evidence: full_text
+    locator: Results, Fig. 1
+  quote: stoichiometric Fe 66\.6 Ta 33\.4 structure [ _a_ = 0.4819(2) nm, _c_ = 0.7867(2) nm]
+  note: Annealed stoichiometric C14 lattice parameters converted from nm to Å.
+- id: feta_c14_path_gabay2019
+  phase: Fe2+δTa-C14
+  quantity: formation_path
+  value: rapid solidification yields Fe-rich C14 plus bcc Fe(Ta)
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out
+    evidence: full_text
+    locator: Methods
+  quote: For rapid solidification, molten alloys were ejected under argon onto a copper wheel rotating at a tangential
+    velocity of 60 m/s; this melt-spinning produced 5–10-μm-thick ribbons.
+  note: The C14+bcc identification is in the abstract, with no parent-product OR reported.
+- id: feta_c14_enrich_gabay2019
+  phase: Fe2+δTa-C14
+  quantity: other
+  value: melt-spun two-phase C14 has smaller cell volume, probably greater Fe content
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out
+    evidence: full_text
+    locator: Results, Fig. 1
+  quote: The XRD data for the melt-spun ribbons do not indicate that the rapid solidification modifies the above
+    compositional range of the C14 structures. However, the comparison shown in Fig. 1 makes it clear that the C14
+    phase in the _two-phase_ ribbons is characterized by a markedly smaller unit cell volume than the C14 phase
+    in the equilibrated alloys of the same composition. Since the rapid solidification of the single phase Fe ₇₂
+    Nb ₂₈ alloy did not seem to introduce vacancies into the C14 lattice, the C14 lattice contraction found in two-phase
+    melt-spun alloys most probably manifests an increased fraction of the Fe atoms.
+  note: ''
+- id: feta_equil_tc_gabay2019
+  phase: Fe2+δTa-C14-equilibrium
+  quantity: Tc
+  value: 207
+  unit: K
+  conditions: Fe71.9Ta28.1 alloy annealed 1533 K, 5 h
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out
+    evidence: full_text
+    locator: Results, Fig. 4
+  quote: Fe 71\.9 Ta 28\.1 , were 225 K and 207 K, respectively
+  note: The 207 K value is for equilibrium Fe-Ta C14; quoted sentence also lists Fe-Nb.
+- id: feta_ms_tc79_gabay2019
+  phase: Fe2+δTa-C14-meltspun
+  quantity: Tc
+  value: 440
+  unit: K
+  conditions: Fe79Ta21 nominal melt-spun alloy; C14 phase
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out
+    evidence: full_text
+    locator: Results, Fig. 2
+  quote: 'The melt-spinning dramatically increases the _T_ C of the Laves phase in the Fe ₇₉ Ta ₂₁ and Fe ₈₅ Ta
+    ₁₅ alloys: from 229(2) K to 440(2) K and from 224(2) K to 438(2) K, respectively.'
+  note: Two-phase sample; Tc attributed to C14, not bulk alloy as a single phase.
+  uncertainty: 2
+- id: feta_ms_tc85_gabay2019
+  phase: Fe2+δTa-C14-meltspun
+  quantity: Tc
+  value: 438
+  unit: K
+  conditions: Fe85Ta15 nominal melt-spun alloy; C14 phase
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out
+    evidence: full_text
+    locator: Results, Fig. 2
+  quote: 'The melt-spinning dramatically increases the _T_ C of the Laves phase in the Fe ₇₉ Ta ₂₁ and Fe ₈₅ Ta
+    ₁₅ alloys: from 229(2) K to 440(2) K and from 224(2) K to 438(2) K, respectively.'
+  note: Two-phase sample; Tc attributed to C14, not bulk alloy as a single phase.
+  uncertainty: 2
+- id: feta_c14_fraction_gabay2019
+  phase: Fe2+δTa-C14-meltspun
+  quantity: phase_fraction_limit
+  value: C14 coexists with bcc Fe(Ta); isolated phase not demonstrated
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out
+    evidence: full_text
+    locator: abstract
+  quote: Melt-spun Fe 100- _x_ Nb _x_ and Fe 100- _x_ Ta _x_ alloys consisting of a hexagonal (C14) Laves phase
+    and an iron-based bcc phase
+  note: ''
+- id: feta_fe_precip_gabay2019
+  phase: Fe2+δTa-C14-meltspun
+  quantity: other
+  value: Fe(Ta) precipitates around 25 nm observed on ribbon contact side
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.5079727
+    title: Semi-hard magnetic nanocomposites based on out-of-equilibrium Fe2+δNb and Fe2+δTa Laves phases
+    first_author: Gabay
+    year: 2019
+    url: https://pubs.aip.org/aip/adv/article/9/3/035143/1076981/Semi-hard-magnetic-nanocomposites-based-on-out
+    evidence: full_text
+    locator: Results, Fig. 5
+  quote: The secondary-electrons SEM image of the contact side of the ribbon shown in Fig. 5b reveals 25 nm Fe(Ta)
+    precipitates.
+  note: Particle elongation and shape anisotropy are hypotheses, not observed morphology.
+- id: fe3ta_structure_arap2020
+  phase: Fe3Ta-SG122-predicted
+  quantity: structure
+  value: space group 122
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: full_text
+    locator: Table I
+  quote: '                         Fe3 Ta         122       -0.1588   1.14    2.17      -0.84     6.733   6.733
+    13.455     0    364 1.45'
+  note: DFT structure prediction; synthesis not established.
+- id: fe3ta_k1_arap2020
+  phase: Fe3Ta-SG122-predicted
+  quantity: K1
+  value: 2.17
+  unit: MJ/m3
+  conditions: DFT, 0 K
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: full_text
+    locator: Table I
+  quote: '                         Fe3 Ta         122       -0.1588   1.14    2.17      -0.84     6.733   6.733
+    13.455     0    364 1.45'
+  note: Calculated intrinsic value for a predicted phase, not a 300 K measurement.
+- id: fe3ta_tc_arap2020
+  phase: Fe3Ta-SG122-predicted
+  quantity: Tc
+  value: 364
+  unit: K
+  conditions: calculated
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: full_text
+    locator: Table I
+  quote: '                         Fe3 Ta         122       -0.1588   1.14    2.17      -0.84     6.733   6.733
+    13.455     0    364 1.45'
+  note: Theoretical Curie temperature; no experimental phase isolation shown.
+- id: fe5ta2_structure_arap2020
+  phase: Fe5Ta2-SG156-predicted
+  quantity: structure
+  value: space group 156
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: full_text
+    locator: Table I
+  quote: '                        Fe5 Ta2         156       -0.1143   1.00    10.43      6.22     4.713   4.713
+    4.744   0  724 3.62'
+  note: DFT structure prediction; synthesis not established.
+- id: fe5ta2_k1_arap2020
+  phase: Fe5Ta2-SG156-predicted
+  quantity: K1
+  value: 10.43
+  unit: MJ/m3
+  conditions: DFT, 0 K
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: full_text
+    locator: Table I
+  quote: '                        Fe5 Ta2         156       -0.1143   1.00    10.43      6.22     4.713   4.713
+    4.744   0  724 3.62'
+  note: Calculated intrinsic value for a predicted phase, not a 300 K measurement.
+- id: fe5ta2_tc_arap2020
+  phase: Fe5Ta2-SG156-predicted
+  quantity: Tc
+  value: 724
+  unit: K
+  conditions: calculated
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: full_text
+    locator: Table I
+  quote: '                        Fe5 Ta2         156       -0.1143   1.00    10.43      6.22     4.713   4.713
+    4.744   0  724 3.62'
+  note: Theoretical Curie temperature; no experimental phase isolation shown.
+- id: fe6ta_structure_arap2020
+  phase: Fe6Ta-SG194-predicted
+  quantity: structure
+  value: space group 194
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: full_text
+    locator: Table I
+  quote: '                        Fe6 Ta          194       -0.0370   1.62     5.77      0.60     4.627   4.627
+    9.353   0  886 1.66'
+  note: DFT structure prediction; synthesis not established.
+- id: fe6ta_k1_arap2020
+  phase: Fe6Ta-SG194-predicted
+  quantity: K1
+  value: 5.77
+  unit: MJ/m3
+  conditions: DFT, 0 K
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: full_text
+    locator: Table I
+  quote: '                        Fe6 Ta          194       -0.0370   1.62     5.77      0.60     4.627   4.627
+    9.353   0  886 1.66'
+  note: Calculated intrinsic value for a predicted phase, not a 300 K measurement.
+- id: fe6ta_tc_arap2020
+  phase: Fe6Ta-SG194-predicted
+  quantity: Tc
+  value: 886
+  unit: K
+  conditions: calculated
+  source:
+    doi: 10.1103/PhysRevB.101.014426
+    title: Computational screening of Fe-Ta hard magnetic phases
+    first_author: Arapan
+    year: 2020
+    url: https://arxiv.org/pdf/1910.10531
+    evidence: full_text
+    locator: Table I
+  quote: '                        Fe6 Ta          194       -0.0370   1.62     5.77      0.60     4.627   4.627
+    9.353   0  886 1.66'
+  note: Theoretical Curie temperature; no experimental phase isolation shown.
