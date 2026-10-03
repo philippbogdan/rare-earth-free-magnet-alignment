@@ -535,11 +535,23 @@ def route_HD(ph):
 
 
 def route_HDDR(ph):
+    """HDDR needs hydrogen to disproportionate the phase into a stable hydride plus the rest and
+    to recombine it on desorption: a constituent must form a hydride stable at the process
+    conditions. Phases without one cannot take this route (physics); phases with one are open
+    (disproportionation and orientation memory unpublished) unless reported."""
     h = ph.get('hddr')
     if not h:
         return Cell(ph['id'], 'HDDR', 'none', ISO, '',
                     chain='no reversible disproportionation-recombination reaction with an orientation '
                           'memory is reported for this phase')
+    if h.get('possible') is False:
+        return Cell(ph['id'], 'HDDR', 'none', ISO, '', chain=h['reason'], refs=h.get('refs', []))
+    if h.get('possible') == 'unknown':
+        outs = {'disproportionation with orientation memory': 1.0, 'no memory or no disproportionation': ISO}
+        return Cell(ph['id'], 'HDDR', 'open', 1.0, 'memory axis', chain=h['reason'],
+                    decides=[('hydrogen disproportionation of the phase and its orientation memory', outs,
+                              'hydrogen anneal of a coarse single-crystal particle, then EBSD after recombination')],
+                    A_alt=outs, refs=h.get('refs', []))
     if h.get('unknown_memory'):
         outs = {'recombined grains keep the parent c axis': 1.0, 'no orientation memory': ISO}
         return Cell(ph['id'], 'HDDR', 'open', 1.0, 'memory axis', chain=h['reason'],
