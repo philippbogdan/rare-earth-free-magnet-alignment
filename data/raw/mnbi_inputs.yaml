@@ -968,7 +968,7 @@
     url: https://www.osti.gov/servlets/purl/1902756
     evidence: full_text
     locator: Sec. 2.1
-  quote: The bulk magnet fabrication process started with loading the powders into a non-magnetic metal die, then applying 1.5 T field to align the powers while simultaneously pressing the powders with 7 MPa stress perpendicular to the field direction. The obtained green compact was further densified by cold-isostatic-pressing at 500 MPa, reaching 80% green density. Afterward, it was sealed in a vacuumed quartz tube (10 mTorr) and warm-sintered at 250300 °C for 0.5-1 hour. ... The dimensions of the bulk magnets fabricated in this work were about 10.014.010.5 mm3, while the densities are between 8.0 to 8.2 g/cm3.
+  quote: The bulk magnet fabrication process started with loading the powders into a non-magnetic metal die, then applying 1.5 T field to align the powers while simultaneously pressing the powders with 7 MPa stress perpendicular to the field direction. The obtained green compact was further densified by cold-isostatic-pressing at 500 MPa, reaching 80% green density. Afterward, it was sealed in a vacuumed quartz tube (10 mTorr) and warm-sintered at 250300 °C for 0.5-1 hour. ... while the densities are between 8.0 to 8.2 g/cm3.
   note: '''250300'' = 250-300 (dash lost in text layer). Attainable density ~8.0-8.2 g/cm3, i.e. roughly 0.89-0.91 of an X-ray density ~9.0 g/cm3 (ratio computed here; X-ray density not stated in this paper).'
 - id: mnbi_js_tang2022
   phase: LTP-MnBi
@@ -2061,3 +2061,19 @@
     locator: Sec. 3.1
   quote: As Fig. 2(d) and Fig. 2(e) demonstrate, during the magnetic-field annealing at 300 °C the MnBi regions expand in the direction of the field at the expense of the liquid Bi phase and the solid Mn phase. This microstructure evolution is typical of the field-annealed Mn-Bi alloys [15–17].
   note: Growth-selection in the ferromagnetic state with a liquid Bi phase present (peritectic/solution-reprecipitation).
+- id: mnbi_structure_roberts1956_htp
+  phase: HTP-Mn1.08Bi
+  quantity: structure
+  value: 'between 340-360 C and 445 C: disordered Mn on regular and interstitial lattice sites, Mn paramagnetic; large cell distortions and thermal hysteresis at the transformation explained by disordering/recovery'
+  unit: ''
+  conditions: neutron diffraction of BiMn from 4.2 K to 733 K
+  source:
+    doi: 10.1103/PhysRev.104.607
+    title: Neutron Diffraction Study of the Structures and Magnetic Properties of Manganese Bismuthide
+    first_author: Roberts, B. W.
+    year: 1956
+    url: https://api.openalex.org/works/doi:10.1103/PhysRev.104.607
+    evidence: abstract
+    locator: abstract
+  quote: In the temperature range 340-360\ifmmode^\circ\else\textdegree\fi{}C to 445\ifmmode^\circ\else\textdegree\fi{}C a disordered arrangement of Mn atoms on regular and interstitial lattice sites fits the data well if the Mn atoms are assumed to be in the paramagnetic state. ... The temperature hysteresis associated with both magnetization and the large cell distortions are qualitatively explained by the disordering and recovery at the transformation temperatures.
+  note: LaTeX degree macros as in the OpenAlex abstract text (= 340-360 C to 445 C). Primary source for the HTP being an order-disorder (interstitial Mn) variant of the NiAs framework; the abstract gives no orientation relationship.

@@ -167,3 +167,21 @@
     K at 15.4 at.% of Zr (Fig. 10b) [175]. ... A calculation of its free energy also suggests that the rhombohedral
     Zr2Co11 structure is stable only at above 1198 K [176].
   note: upper end of the Zr2Co11 phase field, transcribed from zr2co11_tstab_cui2018
+- id: bctfeco_tc_range_jakobsson2013
+  phase: bct-FeCo
+  quantity: Tc
+  value:
+  - 940
+  - 1575
+  unit: K
+  conditions: B2-type FeCo, DFT + classical Monte Carlo
+  source:
+    doi: 10.1063/1.4819773
+    title: Tuning the Curie temperature of FeCo compounds by tetragonal distortion
+    first_author: Jakobsson
+    year: 2013
+    url: https://arxiv.org/pdf/1309.4232
+    evidence: full_text
+    locator: Abstract
+  quote: The TC monotonically decreases from 1575 K (for c/a = 1) to 940 K (for c/a = 2).
+  note: numeric range transcribed from bctfeco_tc_jakobsson2013 (c/a = 2 to c/a = 1)

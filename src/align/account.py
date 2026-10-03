@@ -498,6 +498,13 @@ def route_HDDR(ph):
 def route_EP(ph):
     ep = ph.get('epitaxy', {})
     if ep.get('demonstrated'):
+        n = int(ep.get('in_plane_variants') or 1)
+        if n > 1:      # n easy axes in the film plane, 180/n degrees apart: best in-plane direction
+            ang = np.radians(np.arange(n) * 180.0 / n)
+            A = max(float(np.mean(np.abs(np.cos(ang - t)))) for t in np.radians(np.linspace(0, 180, 721)))
+            return Cell(ph['id'], 'EP', _verdict(A), A, 'best in-plane direction',
+                        chain=f'epitaxial film with {n} in-plane easy-axis variants (not a bulk magnet)',
+                        refs=ep.get('refs', []))
         return Cell(ph['id'], 'EP', 'full', 1.0, 'film normal or in-plane axis',
                     chain='single-crystal film on a lattice-matched substrate (not a bulk magnet)',
                     refs=ep.get('refs', []))

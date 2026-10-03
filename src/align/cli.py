@@ -39,7 +39,8 @@ def matrix(phases):
     rows = []
     for ph in phases:
         for c in account.evaluate_with_tests(ph):
-            Br = ph['Js'] * c.A_max if ph.get('Js') is not None else None
+            phi = float(ph.get('phi_max', 1.0)) if c.route != 'EP' else 1.0
+            Br = ph['Js'] * c.A_max * phi if ph.get('Js') is not None else None
             rows.append({'phase': ph['id'], 'route': c.route, 'verdict': c.verdict,
                          'A_max': round(c.A_max, 4), 'Br_max_T': None if Br is None else round(Br, 4),
                          'axis': c.axis, 'chain': c.chain,

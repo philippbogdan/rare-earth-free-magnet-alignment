@@ -3543,6 +3543,355 @@
        "doi": null
       }
      ]
+    },
+    "mnbi_outcomes.yaml": {
+     "sha256": "91a2e513100f47838f7fb6bd685979f4e564f95b10ba21669322c38320b39c16",
+     "n_records": 49,
+     "cases": [
+      {
+       "id": "mnbi_fp_adams1952",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1063/1.1702032"
+      },
+      {
+       "id": "mnbi_fp_ramarao2013_bulk",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/0022-3727/46/6/062001"
+      },
+      {
+       "id": "mnbi_fp_ramarao2013_powder",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/0022-3727/46/6/062001"
+      },
+      {
+       "id": "mnbi_fp_chen2016_mn55",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1063/1.4971759"
+      },
+      {
+       "id": "mnbi_fp_chen2016_mn45",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1063/1.4971759"
+      },
+      {
+       "id": "mnbi_fp_jensen2019_best",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2019.10.003"
+      },
+      {
+       "id": "mnbi_fp_jensen2019_js",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1016/j.actamat.2019.10.003"
+      },
+      {
+       "id": "mnbi_fp_jensen2019_typical",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2019.10.003"
+      },
+      {
+       "id": "mnbi_fp_tang2022_nongbp",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jmmm.2022.169912"
+      },
+      {
+       "id": "mnbi_fp_tang2022_nongbp_br",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1016/j.jmmm.2022.169912"
+      },
+      {
+       "id": "mnbi_fp_tang2022_gbp",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jmmm.2022.169912"
+      },
+      {
+       "id": "mnbi_other_tang2022_fieldsinter300",
+       "phase": "LTP-MnBi",
+       "route": "other: FP + warm sintering in 3 T field",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jmmm.2022.169912"
+      },
+      {
+       "id": "mnbi_other_tang2022_fieldsinter250",
+       "phase": "LTP-MnBi",
+       "route": "other: FP + warm sintering in 3 T field",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jmmm.2022.169912"
+      },
+      {
+       "id": "mnbi_fa_gabay2020a_br",
+       "phase": "LTP-MnBi",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1016/j.jmmm.2019.165860"
+      },
+      {
+       "id": "mnbi_fa_gabay2020a_texture",
+       "phase": "LTP-MnBi",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jmmm.2019.165860"
+      },
+      {
+       "id": "mnbi_fa_gabay2020a_sb",
+       "phase": "LTP-MnBi",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1016/j.jmmm.2019.165860"
+      },
+      {
+       "id": "mnbi_fa_gabay2020b_texture",
+       "phase": "LTP-MnBi",
+       "route": "other: FA through alpha->beta->alpha (HTP) cycle in field",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jmmm.2020.167340"
+      },
+      {
+       "id": "mnbi_fa_gabay2020b_sbin",
+       "phase": "LTP-MnBi",
+       "route": "other: FA through alpha->beta->alpha (HTP) cycle in field",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jmmm.2020.167340"
+      },
+      {
+       "id": "mnbi_fa_zhang2019",
+       "phase": "LTP-MnBi",
+       "route": "other: FA through HTP (anneal at 400 C in field, LTP forms on cooling in field)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.5128659"
+      },
+      {
+       "id": "mnbi_fa_zhang2019_texture",
+       "phase": "LTP-MnBi",
+       "route": "other: FA through HTP (anneal at 400 C in field)",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.5128659"
+      },
+      {
+       "id": "mnbi_fa_weissitsch2023_axial",
+       "phase": "LTP-MnBi",
+       "route": "other: HPT-deformed Mn+Bi powder blend + field-assisted reactive annealing",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jmmm.2023.171082"
+      },
+      {
+       "id": "mnbi_fa_wooten2020",
+       "phase": "LTP-MnBi",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.3390/nano10102083"
+      },
+      {
+       "id": "mnbi_fs_yasuda2003",
+       "phase": "LTP-MnBi",
+       "route": "other: semi-solid processing in field (FS with rotation in Bi-rich liquid at 573 K)",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans.44.2207"
+      },
+      {
+       "id": "mnbi_fs_wang2003",
+       "phase": "LTP-MnBi",
+       "route": "FS",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "mnbi_fs_liu2007cpl",
+       "phase": "LTP-MnBi",
+       "route": "other: FS above the LTP transition (HTP crystals in Bi melt, 10 T)",
+       "quantity": "texture_metric",
+       "doi": "10.1088/0256-307x/24/1/057"
+      },
+      {
+       "id": "mnbi_fs_liu2008jap",
+       "phase": "LTP-MnBi",
+       "route": "other: FS above the LTP transition (quenched from ~653 K in 10 T)",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.2966456"
+      },
+      {
+       "id": "mnbi_fs_wangq2008",
+       "phase": "LTP-MnBi",
+       "route": "other: FS in high field gradient (dilute Bi-Mn master alloy)",
+       "quantity": "texture_metric",
+       "doi": "10.1088/0022-3727/42/2/025001"
+      },
+      {
+       "id": "mnbi_ds_pirich_patent1988",
+       "phase": "LTP-MnBi",
+       "route": "DS",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnbi_ds_park2014_citation",
+       "phase": "LTP-MnBi",
+       "route": "DS",
+       "quantity": "Br",
+       "doi": "10.3390/met4030455"
+      },
+      {
+       "id": "mnbi_ds_yim1967",
+       "phase": "LTP-MnBi",
+       "route": "other: DS (zone melting) in longitudinal magnetic field",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.1709304"
+      },
+      {
+       "id": "mnbi_fa_abematsu2016_lotgering",
+       "phase": "LTP-MnBi",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.4961343"
+      },
+      {
+       "id": "mnbi_fa_zhang2015aps",
+       "phase": "LTP-MnBi",
+       "route": "FA",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "mnbi_fp_gabay2019_flakes",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jallcom.2019.03.407"
+      },
+      {
+       "id": "mnbi_fp_gabay2019_sbflakes",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jallcom.2019.03.407"
+      },
+      {
+       "id": "mnbi_other_li2011_dsfield",
+       "phase": "LTP-MnBi",
+       "route": "other: DS + axial strong magnetic field",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.actamat.2011.06.040"
+      },
+      {
+       "id": "mnbi_fs_ren2006",
+       "phase": "LTP-MnBi",
+       "route": "FS",
+       "quantity": "texture_metric",
+       "doi": "10.22364/mhd.42.2-3.25"
+      },
+      {
+       "id": "mnbi_ep_zhang2015",
+       "phase": "LTP-MnBi",
+       "route": "other: textured film (in-situ annealed Bi/Mn/Bi trilayer/multilayer)",
+       "quantity": "texture_metric",
+       "doi": "10.1002/pssb.201552075"
+      },
+      {
+       "id": "mnbi_ep_sabet2017",
+       "phase": "LTP-MnBi",
+       "route": "other: textured film on glass (sputtered + vacuum annealed)",
+       "quantity": "texture_metric",
+       "doi": "10.1109/tmag.2016.2636817"
+      },
+      {
+       "id": "mnbi_fp_vuong2018",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.15625/2525-2518/54/1a/11806"
+      },
+      {
+       "id": "mnbi_fa_zhang2019_jr",
+       "phase": "LTP-MnBi",
+       "route": "other: FA through HTP (anneal at 400 C in 4 T, LTP forms on cooling in field)",
+       "quantity": "Br",
+       "doi": "10.1063/1.5128659"
+      },
+      {
+       "id": "mnbi_ds_pirich1980spar6_alignment",
+       "phase": "LTP-MnBi",
+       "route": "DS",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "mnbi_fp_tang2022_nofieldsinter",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1016/j.jmmm.2022.169912"
+      },
+      {
+       "id": "mnbi_fa_qian2020_binary",
+       "phase": "LTP-MnBi",
+       "route": "FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano10112265"
+      },
+      {
+       "id": "mnbi_fa_qian2020_mg",
+       "phase": "LTP-MnBi",
+       "route": "FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano10112265"
+      },
+      {
+       "id": "mnbi_ep_chen_mica_review",
+       "phase": "LTP-MnBi",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.1063/10.0000360"
+      },
+      {
+       "id": "mnbi_fa_gabay2020c_ingot",
+       "phase": "LTP-MnBi",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jallcom.2020.153663"
+      },
+      {
+       "id": "mnbi_iso_gabay2020c_zerofield",
+       "phase": "LTP-MnBi",
+       "route": "isotropic",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jallcom.2020.153663"
+      },
+      {
+       "id": "mnbi_fa_gabay2020a_10koe",
+       "phase": "LTP-MnBi",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jmmm.2019.165860"
+      },
+      {
+       "id": "mnbi_iso_gabay2020a_0koe",
+       "phase": "LTP-MnBi",
+       "route": "isotropic",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jmmm.2019.165860"
+      }
+     ]
     }
    },
    "opened": false

@@ -467,3 +467,256 @@
   melt: {primary: unknown, reason: "whether HfCo7 crystallises as free primary crystals is unpublished", refs: [hfco7_formation_cui2018]}
   epitaxy: {}
   tgg: {}
+
+# ------------------------------------------------------------------ M-type hexaferrite (SrFe12O19)
+- id: SrM-hexaferrite
+  name: "M-type hexaferrite SrFe12O19"
+  universe: M-type hexaferrite
+  structure: {system: hexagonal, a: {ref: srm_lattice_granados2021, key: a}, c: {ref: srm_lattice_granados2021, key: c}, laue: 6/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: srm_easy_axis_granados2021}
+  Js: {ref: srm_js_shirk1969}
+  K1: {ref: srm_k1_shirk1969}
+  Tc: {ref: srm_tc_shirk1969}
+  T_stab: {ref: srm_t_stab_goto1971}
+  cell: {atoms: 64, magnetic_fraction: {est: 0.375, why: "24 Fe of 64 atoms per cell (Z = 2)"}}
+  paths:
+    - name: incoherent solid-state reaction (calcination) far above Tc
+      mode: direct
+      refs: [srm_formation_path_vogel1979, srm_t_formation_iida1999]
+      T_f: [{ref: srm_t_formation_iida1999}, {ref: srm_t_formation_iida1999}]
+  particles:
+    single_variant: 'yes'
+    reason: "milled until no multi-crystal aggregates remain; calcined primary particles ~0.5 µm, below the ~1 µm single-domain size"
+    refs: [bam_single_variant_particles_stuijts1954, srm_single_variant_particles_iida1999]
+    habit: {shape: plate, easy: normal, single_crystal: true, refs: [srm_growth_direction_granados2021, bam_growth_direction_went1952, srm_other_shape_alignment_granados2021]}
+  melt: {primary: hard, refs: [srm_js_shirk1969, srm_field_effect_on_formation_wallace1993], reason: "crystals grow from Na2O or KCl fluxes"}
+  hd:
+    fibre: [0, 0, 0, 1]
+    reason: "uniaxial hot pressing/forging: platelets and oriented grain growth put c along the pressing axis"
+    refs: [bam_deformation_vonbasel1981, bam_deformation_stuijts1954]
+  epitaxy: {}
+  tgg: {applicable: true, reason: "field-aligned BaM seed platelets grow through a reacting matrix (reactive templated grain growth)", refs: [bam_formation_path_tgg_hovis2001, bam_formation_path_tgg_hovis2008]}
+
+# ------------------------------------------------------------------ Nd2Fe14B (today's practice, reference)
+- id: Nd2Fe14B
+  name: "Nd2Fe14B (reference: today's practice)"
+  universe: reference
+  structure: {system: tetragonal, a: {ref: nd2fe14b_lattice_sagawa1984, key: a}, c: {ref: nd2fe14b_lattice_sagawa1984, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: nd2fe14b_easy_axis_kreyssig2009}
+  Js: {ref: nd2fe14b_js_hirosawa2015}
+  K1: {ref: nd2fe14b_k1_hirosawa2015}
+  Tc: {ref: nd2fe14b_tc_sagawa1984}
+  cell: {atoms: 68, magnetic_fraction: {est: 0.824, why: "56 Fe of 68 atoms per cell (Nd moments counted with Fe as magnetic would raise it; estimate)"}}
+  paths:
+    - name: peritectic crystallisation from the melt far above Tc
+      mode: direct
+      refs: [nd2fe14b_primary_crystallisation_zhong2008, nd2fe14b_primary_crystallisation_bernardi1998]
+      T_f: [{est: 1400, why: "solidification range of Nd-Fe-B melts (peritectic ~1450 K), far above Tc; order of magnitude only"}, {est: 1450, why: "as above"}]
+  particles:
+    single_variant: 'yes'
+    reason: "sintered magnets are made from single-crystal fine powder of a few µm"
+    refs: [nd2fe14b_single_variant_particles_takagi2021, nd2fe14b_single_variant_particles_shinetsu]
+    habit: {shape: plate, easy: normal, single_crystal: null, refs: [nd2fe14b_growth_direction_hioki2021], reason: "grains grow anisotropically along a (platelets with c normal)"}
+  ds_texture: {dir: [0, 0, 1], refs: [nd2fe14b_growth_direction_hattori2009]}
+  melt: {primary: unknown, reason: "primary Fe dendrites lead at low growth rates; Nd2Fe14B grows primary only at high rates or Nd-rich compositions", refs: [nd2fe14b_primary_crystallisation_zhong2008]}
+  hd:
+    fibre: [0, 0, 1]
+    reason: "die-upsetting of hot-pressed nanocrystalline material: stress-assisted anisotropic growth and grain rotation in a liquid boundary phase put c along the press axis"
+    refs: [nd2fe14b_deformation_mishra1987, nd2fe14b_deformation_lee1985, nd2fe14b_deformation_hioki2021]
+  hddr:
+    unknown_memory: true
+    reason: "texture memory site debated: Fe2B sharing the parent c axis, Fe/NdH2 <113> links, or undisproportionated remnants"
+    refs: [nd2fe14b_other_memory_site_horikawa2021, nd2fe14b_or_hddr_kim2018, nd2fe14b_or_hddr_horikawa2021, nd2fe14b_other_memory_remnant_liu2025]
+  epitaxy: {}
+  tgg: {}
+
+# ------------------------------------------------------------------ hcp-Co nanorods (shape + magnetocrystalline anisotropy)
+- id: Co-nanorods
+  name: "hcp-Co nanorods/nanowires"
+  universe: Co nanorods/nanowires (shape anisotropy)
+  structure: {system: hexagonal, a: {est: 2.507, why: "hcp Co lattice; only c/a enters candidate-fibre geometry"}, c: {est: 4.07, why: "hcp Co lattice"}, laue: 6/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: hcpco_easy_axis_gandha2014}
+  Js: {ref: hcpco_js_ener2018}
+  K1: {ref: hcpco_k1_anagnostopoulou2016}
+  Tc: {ref: hcpco_tc_aitatmane2013}
+  T_stab: {ref: hcpco_t_stab_ibrahim2013_coated}
+  phi_max: {ref: hcpco_phase_fraction_model_anagnostopoulou2016}
+  phi_refs: [hcpco_phase_fraction_spacing_anagnostopoulou2016, hcpco_phase_fraction_ener2018]
+  cell: {atoms: 2, magnetic_fraction: 1.0}
+  paths:
+    - name: polyol growth of single-crystal rods in solution, far below Tc
+      mode: direct
+      refs: [hcpco_t_formation_anagnostopoulou2016, hcpco_growth_direction_anagnostopoulou2016, hcpco_field_mechanism_bousnina2020]
+      T_f: [{ref: hcpco_t_formation_ener2018}, {ref: hcpco_t_formation_gandha2014}]
+  particles:
+    single_variant: 'yes'
+    reason: "each rod is a single crystal with c along the rod (basal stacking faults do not tilt c)"
+    refs: [hcpco_single_variant_gandha2014, hcpco_single_variant_pousthomis2015]
+    habit: {shape: rod, easy: axis, single_crystal: true, refs: [hcpco_growth_direction_anagnostopoulou2016, hcpco_growth_direction_bousnina2020]}
+  melt: {primary: hard, reason: "rods grow as free crystals in a liquid (polyol solution) where a field can turn them", refs: [hcpco_field_effect_bousnina2020]}
+  hd: {possible: false, reason: "rods coalesce above ~500 K (uncoated) and lose the rod shape that carries the anisotropy", refs: [hcpco_t_stab_ibrahim2013_uncoated, hcpco_t_stab_aitatmane2013]}
+  epitaxy: {demonstrated: true, refs: [hcpco_or_camara2016]}
+  tgg: {}
+
+# ------------------------------------------------------------------ epsilon-Fe2O3
+- id: eps-Fe2O3
+  name: "ε-Fe2O3"
+  universe: epsilon-Fe2O3
+  structure: {system: orthorhombic, a: {ref: efe2o3_lattice_ohkoshi2015, key: a}, b: {ref: efe2o3_lattice_ohkoshi2015, key: b}, c: {ref: efe2o3_lattice_ohkoshi2015, key: c}, laue: mmm}
+  easy_axis_vec: [1, 0, 0]
+  easy_axis: {ref: efe2o3_easy_axis_ohkoshi2015}
+  Js: {est: 0.096, why: "Ms 15.5 Am2/kg (efe2o3_ms_mass_ohkoshi2015) x an assumed density of 4.9 g/cm3 (no measured density found)"}
+  Js_refs: [efe2o3_ms_mass_ohkoshi2015, efe2o3_ms_mass_gareev2023]
+  K1: {ref: efe2o3_k1_ohkoshi2015}
+  Tc: {ref: efe2o3_tc_namai2012}
+  T_stab: {ref: efe2o3_t_stab_chan2018}
+  cell: {atoms: 40, magnetic_fraction: {est: 0.4, why: "Fe2O3: 16 Fe of 40 atoms (Z = 8)"}}
+  paths:
+    - name: gamma -> epsilon transformation inside silica at 1224-1377 K, far above Tc
+      mode: direct
+      refs: [efe2o3_formation_path_ohkoshi2015, efe2o3_t_formation_ohkoshi2015]
+      T_f: [{ref: efe2o3_t_formation_ohkoshi2015, index: 0}, {ref: efe2o3_t_formation_ohkoshi2015, index: 1}]
+  particles:
+    single_variant: 'yes'
+    reason: "single-domain single-crystal nanoparticles (~35 nm) once freed from silica"
+    refs: [efe2o3_single_variant_namai2012]
+    habit: {shape: rod, easy: axis, single_crystal: true, refs: [efe2o3_growth_direction_jacs2025, efe2o3_growth_direction_chan2018]}
+  melt: {primary: none, reason: "forms in a solid silica matrix, immobile", refs: [efe2o3_formation_path_ohkoshi2015]}
+  hd: {possible: false, reason: "free particles convert to alpha-Fe2O3 above ~500 K; dense composites with high Fe2O3 fraction form alpha", refs: [efe2o3_t_stab_chan2018, efe2o3_phase_fraction_chan2018]}
+  epitaxy: {demonstrated: true, in_plane_variants: 3, refs: [efe2o3_n_variants_suturin2021, efe2o3_or_gich2014]}
+  tgg: {}
+
+# ------------------------------------------------------------------ Co3C (cobalt carbides)
+- id: Co3C
+  name: "Co3C (cobalt carbide)"
+  universe: Co carbides (Co2C/Co3C)
+  structure: {system: orthorhombic, a: {ref: co3c_lattice_harris2010, key: a}, b: {ref: co3c_lattice_harris2010, key: b}, c: {ref: co3c_lattice_harris2010, key: c}, laue: mmm}
+  easy_axis_vec: [1, 0, 0]
+  easy_axis: {ref: co3c_easy_axis_snarski2025}
+  Js: {est: 0.76, why: "Ms 73 Am2/kg of a Co2C+Co3C powder at 17 kOe (co3c_ms_mass_harris2010, not saturated) x X-ray density 8.27 g/cm3 computed from the Pnma cell (Z = 4)"}
+  Js_refs: [co3c_ms_mass_harris2010]
+  K1: {ref: co3c_k1_cui2018}
+  Tc: {ref: co3c_tc_harris2010}
+  T_stab: {ref: co3c_t_stab_harris2010}
+  cell: {atoms: 16, magnetic_fraction: 0.75}
+  paths:
+    - name: polyol synthesis at 573 K (Co nucleates first, carbide forms after)
+      mode: direct
+      refs: [co3c_formation_path_yousefian2026, co3c_t_formation_harris2010]
+      T_f: [{ref: co3c_t_formation_harris2010}, {ref: co3c_t_formation_harris2010}]
+  particles:
+    single_variant: unknown
+    reason: "acicular nanocrystallites (a along the needle) clump into 300-500 nm polycrystalline clusters"
+    refs: [co3c_single_variant_harris2010, co3c_growth_direction_harris2010]
+    habit: {shape: rod, easy: axis, single_crystal: null, refs: [co3c_growth_direction_harris2010, co3c_aspect_ratio_harris2010], reason: "acicular particles with [100] along the needle"}
+  melt: {primary: hard, reason: "particles grow as free crystals in a liquid (polyol)", refs: [co3c_t_formation_harris2010]}
+  hd: {possible: false, reason: "carbides decompose to Co + C near 700 K", refs: [co3c_t_stab_harris2010]}
+  epitaxy: {}
+  tgg: {}
+
+# ------------------------------------------------------------------ tetragonal (bct) Fe-Co
+- id: bct-FeCo
+  name: "tetragonally strained Fe-Co (bct)"
+  universe: tetragonal Fe-Co
+  structure: {system: tetragonal, a: 1.0, c: {ref: bctfeco_tetragonality_reichel2014}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: bctfeco_easy_axis_reichel2017}
+  Js: {ref: bctfeco_js_reichel2014}
+  K1: {ref: bctfeco_k1_reichel2014}
+  Tc: {ref: bctfeco_tc_range_jakobsson2013, pick: lo}
+  cell: {atoms: 2, magnetic_fraction: 0.98}
+  paths:
+    - name: interstitial (C/B/N) straining of bcc Fe-Co along one cube axis
+      mode: OR
+      refs: [bctfeco_formation_path_reichel2015, bctfeco_n_variants_reichel2015]
+      parent:
+        name: bcc Fe-Co
+        structure: {system: cubic, a: 1.0, laue: m-3m}
+        family: bcc
+      OR: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: bctfeco_n_variants_reichel2015}
+      T_f: [{est: 300, why: "interstitials are mobile and Fe-Co stays ferromagnetic at any practical anneal (Tc ~1575 K); window unpublished"}, {est: 900, why: "as above"}]
+      stress_sign: +1
+      stress_refs: [bctfeco_tetragonality_reichel2014]
+  particles:
+    single_variant: unknown
+    reason: "no bulk tetragonal Fe-Co made; core-shell particles reported"
+    refs: [bctfeco_candidate_cui2018, bctfeco_formation_path_gong2014]
+  melt: {primary: none, reason: "the tetragonal strain is metastable (C/B solubility ~0.1 at%) and forms only by interstitial loading of bcc Fe-Co", refs: [bctfeco_t_stab_reichel2015]}
+  epitaxy: {demonstrated: true, refs: [bctfeco_or_hasegawa2017, bctfeco_tetragonality_hasegawa2017]}
+  tgg: {}
+
+# ------------------------------------------------------------------ Fe5SiB2 (Fe-B boride)
+- id: Fe5SiB2
+  name: "Fe5SiB2 (Cr5B3-type boride)"
+  universe: Fe-B borides
+  structure: {system: tetragonal, a: {est: 5.55, why: "Cr5B3-type cell; only c/a enters candidate-fibre geometry"}, c: {est: 10.34, why: "Cr5B3-type cell"}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: fe5sib2_easy_axis_mcguire2015}
+  Js: {ref: fe5sib2_js_mcguire2015}
+  K1: {ref: fe5sib2_k1_werwinski2016}
+  Tc: {ref: fe5sib2_tc_mcguire2015}
+  cell: {atoms: 32, magnetic_fraction: 0.625}
+  paths:
+    - name: solid-state reaction / annealing far above Tc
+      mode: direct
+      refs: [fe5sib2_t_formation_werwinski2016, fe5sib2_primary_crystallisation_mcguire2015]
+      T_f: [{ref: fe5sib2_t_formation_werwinski2016}, {ref: fe5sib2_t_formation_werwinski2016}]
+  particles:
+    single_variant: 'yes'
+    reason: "fine powder aligns in a permanent-magnet field for XRD (single-crystal grains)"
+    refs: [fe5sib2_alignment_mcguire2015]
+  melt: {primary: unknown, reason: "arc-melted Fe-Si-B is not single phase; primary crystallisation of Fe5SiB2 unpublished", refs: [fe5sib2_primary_crystallisation_mcguire2015]}
+  epitaxy: {}
+  tgg: {}
+
+# ------------------------------------------------------------------ Fe5PB2 (Fe-B boride)
+- id: Fe5PB2
+  name: "Fe5PB2 (Cr5B3-type boride)"
+  universe: Fe-B borides
+  structure: {system: tetragonal, a: {est: 5.49, why: "Cr5B3-type cell"}, c: {est: 10.36, why: "Cr5B3-type cell"}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: fe5pb2_easy_axis_lamichhane2016}
+  Js: {ref: fe5pb2_js_mcguire2015}
+  K1: {ref: fe5pb2_k1_lamichhane2016}
+  Tc: {ref: fe5pb2_tc_lamichhane2016}
+  cell: {atoms: 32, magnetic_fraction: 0.625}
+  paths:
+    - name: solid-state reaction far above Tc
+      mode: direct
+      refs: [fe5pb2_t_formation_mcguire2015]
+      T_f: [{ref: fe5pb2_t_formation_mcguire2015}, {ref: fe5pb2_t_formation_mcguire2015}]
+  particles:
+    single_variant: 'yes'
+    reason: "plate-like single crystals grow from a self-flux"
+    refs: [fe5pb2_primary_crystallisation_lamichhane2016]
+    habit: {shape: plate, easy: normal, single_crystal: true, refs: [fe5pb2_growth_direction_lamichhane2016]}
+  melt: {primary: hard, reason: "single crystals grow from an Fe-P-B self-flux", refs: [fe5pb2_primary_crystallisation_lamichhane2016]}
+  epitaxy: {}
+  tgg: {}
+
+# ------------------------------------------------------------------ Fe2P-based ((Fe,Co)2(P,Si))
+- id: Fe2P-based
+  name: "(Fe,Co)2(P,Si) (Fe2P-type)"
+  universe: Fe2P-based
+  structure: {system: hexagonal, a: {est: 5.87, why: "Fe2P-type cell; only c/a enters candidate-fibre geometry"}, c: {est: 3.46, why: "Fe2P-type cell"}, laue: 6/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: fe2p_easy_axis_yiderigu2024}
+  Js: {ref: fe2p_js_he2021}
+  K1: {ref: fe2p_k1_he2021}
+  Tc: {ref: fe2p_tc_he2021}
+  cell: {atoms: 9, magnetic_fraction: 0.667}
+  paths:
+    - name: solid-state reaction / sintering far above Tc
+      mode: direct
+      refs: [fe2p_t_formation_yiderigu2024]
+      T_f: [{ref: fe2p_t_formation_yiderigu2024, index: 0}, {ref: fe2p_t_formation_yiderigu2024, index: 1}]
+  particles:
+    single_variant: unknown
+    reason: "single crystals grown; particle work unpublished; bulk shows no room-temperature coercivity"
+    refs: [fe2p_other_coercivity_yiderigu2024]
+  melt: {primary: unknown, reason: "primary crystallisation from a melt unpublished", refs: []}
+  epitaxy: {}
+  tgg: {}
