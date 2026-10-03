@@ -1,0 +1,235 @@
+# Universe of the frontier (denominators), generated from data/raw/universe_inputs.yaml records.
+# phases: rare-earth-free hard phases named as permanent-magnet candidates in the 19 reviews read
+#   (one record per review naming the phase). route_classes: alignment routes used or proposed in the
+#   literature, grouped into the account's route classes (docs/METHOD.md), with the records describing them.
+# Classes DS+SA and RX+SA are evaluated by the account but are not in this literature universe.
+phases:
+- name: AlNiCo
+  named_in:
+  - uni_ph_coey2012_alnico
+  - uni_ph_kramer2012_alnico
+  - uni_ph_mccallum2014_alnico
+  - uni_ph_hirosawa2015_alnico
+  - uni_ph_cui2018_alnico
+  - uni_ph_mohapatra2018_alnico
+  - uni_ph_coey2020_alnico
+  - uni_ph_shao2020_alnico
+  - uni_ph_sirisathitkul2022_alnico
+  - uni_ph_wu2022_alnico
+  - uni_ph_dussa2024_alnico
+  - uni_ph_popa2024_alnico
+- name: M-type hexaferrite
+  named_in:
+  - uni_ph_coey2012_hexaferrite
+  - uni_ph_kramer2012_hexaferrite
+  - uni_ph_mccallum2014_hexaferrite
+  - uni_ph_hirosawa2015_hexaferrite
+  - uni_ph_coey2020_hexaferrite
+  - uni_ph_shao2020_hexaferrite
+  - uni_ph_granados2021_hexaferrite
+  - uni_ph_sirisathitkul2022_hexaferrite
+  - uni_ph_wu2022_hexaferrite
+  - uni_ph_popa2024_hexaferrite
+- name: tau-MnAl
+  named_in:
+  - uni_ph_coey2012_mnal
+  - uni_ph_kramer2012_mnal
+  - uni_ph_mccallum2014_mnal
+  - uni_ph_hirosawa2015_mnal
+  - uni_ph_cui2018_mnal
+  - uni_ph_mohapatra2018_mnal
+  - uni_ph_patel2018_mnal
+  - uni_ph_yang2018_mnal
+  - uni_ph_shao2020_mnal
+  - uni_ph_keller2022_mnal
+  - uni_ph_sirisathitkul2022_mnal
+  - uni_ph_popa2024_mnal
+  - uni_ph_scheiber2025_mnal
+- name: L10-CoPt
+  named_in:
+  - uni_ph_kramer2012_copt
+  - uni_ph_mccallum2014_copt
+  - uni_ph_mohapatra2018_copt
+  - uni_ph_coey2020_copt
+- name: alpha''-Fe16N2
+  named_in:
+  - uni_ph_kramer2012_fe16n2
+  - uni_ph_mccallum2014_fe16n2
+  - uni_ph_hirosawa2015_fe16n2
+  - uni_ph_cui2018_fe16n2
+  - uni_ph_mohapatra2018_fe16n2
+  - uni_ph_coey2020_fe16n2
+  - uni_ph_shao2020_fe16n2
+  - uni_ph_sirisathitkul2022_fe16n2
+  - uni_ph_popa2024_fe16n2
+  - uni_ph_park2025_fe16n2
+  - uni_ph_scheiber2025_fe16n2
+- name: L10-FeNi
+  named_in:
+  - uni_ph_kramer2012_feni
+  - uni_ph_mccallum2014_feni
+  - uni_ph_hirosawa2015_feni
+  - uni_ph_cui2018_feni
+  - uni_ph_mohapatra2018_feni
+  - uni_ph_coey2020_feni
+  - uni_ph_shao2020_feni
+  - uni_ph_park2025_feni
+  - uni_ph_scheiber2025_feni
+- name: L10-FePt
+  named_in:
+  - uni_ph_kramer2012_fept
+  - uni_ph_mccallum2014_fept
+  - uni_ph_mohapatra2018_fept
+  - uni_ph_shao2020_fept
+- name: LTP-MnBi
+  named_in:
+  - uni_ph_kramer2012_mnbi
+  - uni_ph_mccallum2014_mnbi
+  - uni_ph_hirosawa2015_mnbi
+  - uni_ph_cui2018_mnbi
+  - uni_ph_mohapatra2018_mnbi
+  - uni_ph_patel2018_mnbi
+  - uni_ph_yang2018_mnbi
+  - uni_ph_shao2020_mnbi
+  - uni_ph_keller2022_mnbi
+  - uni_ph_sirisathitkul2022_mnbi
+  - uni_ph_popa2024_mnbi
+  - uni_ph_scheiber2025_mnbi
+- name: (Fe,Co)2B
+  named_in:
+  - uni_ph_kuzmin2014_fecob
+- name: L10-FePd
+  named_in:
+  - uni_ph_mccallum2014_fepd
+  - uni_ph_shao2020_fepd
+- name: tetragonal Fe-Co
+  named_in:
+  - uni_ph_hirosawa2015_fecotet
+  - uni_ph_cui2018_fecotet
+  - uni_ph_shao2020_fecotet
+  - uni_ph_park2025_fecotet
+- name: Mn4N
+  named_in:
+  - uni_ph_hirosawa2015_mn4n
+- name: Co carbides (Co2C/Co3C)
+  named_in:
+  - uni_ph_cui2018_cocarbide
+  - uni_ph_mohapatra2018_cocarbide
+- name: HfCo7
+  named_in:
+  - uni_ph_cui2018_hfco7
+  - uni_ph_mohapatra2018_hfco7
+- name: Zr2Co11
+  named_in:
+  - uni_ph_cui2018_zr2co11
+  - uni_ph_mohapatra2018_zr2co11
+  - uni_ph_shao2020_zr2co11
+- name: Co nanorods/nanowires (shape anisotropy)
+  named_in:
+  - uni_ph_mohapatra2018_conanorod
+  - uni_ph_coey2020_conanorod
+- name: Mn-Ga (L10/D022)
+  named_in:
+  - uni_ph_mohapatra2018_mnga
+  - uni_ph_patel2018_mnga
+  - uni_ph_yang2018_mnga
+  - uni_ph_keller2022_mnga
+  - uni_ph_sirisathitkul2022_mnga
+- name: epsilon-Fe2O3
+  named_in:
+  - uni_ph_shao2020_efe2o3
+- name: Fe3Se4
+  named_in:
+  - uni_ph_shao2020_fe3se4
+- name: high-entropy alloys
+  named_in:
+  - uni_ph_popa2024_hea
+- name: Fe2P-based
+  named_in:
+  - uni_ph_park2025_fe2p
+  - uni_ph_scheiber2025_fe2p
+- name: Fe-B borides
+  named_in:
+  - uni_ph_park2025_feb
+- name: Fe-Ta
+  named_in:
+  - uni_ph_scheiber2025_feta
+route_classes:
+- class: FP
+  sources:
+  - uni_rt_fp_coey2012
+  - uni_rt_fp_mccallum2014
+  - uni_rt_fpwet_granadosmiralles2021
+  - uni_rt_bonded_coey2020
+  - uni_rt_bonded_kramer2012
+  - uni_rt_fpbonded_yang2018
+  - uni_rt_fpbonded_zhu2000
+  - uni_rt_slipcast_sakka2005
+  - uni_rt_fpextrusionam_sirisathitkul2022
+  - uni_rt_colloid_anagnostopoulou2016
+  - uni_rt_nanowire_coey2020
+  - uni_rt_cluster_balamurugan2012
+  - uni_rt_fieldmill_rong2010
+- class: MO
+  sources:
+  - uni_rt_calender_qu2024
+  - uni_rt_extrusionshear_espinosa2024
+  - uni_rt_shapepress_granados2021
+  - uni_rt_shapesps_granados2021
+- class: HD
+  sources:
+  - uni_rt_hd_chen2018
+  - uni_rt_hd_mccallum2014
+  - uni_rt_hdext_feng2020
+  - uni_rt_deformageing_khan2022
+- class: DS
+  sources:
+  - uni_rt_ds_dussa2024
+  - uni_rt_ds_rios2016
+  - uni_rt_ds_sirisathitkul2022
+- class: AM
+  sources:
+  - uni_rt_am_coey2020
+  - uni_rt_am_dussa2024
+  - uni_rt_am_sirisathitkul2022
+  - uni_rt_amscan_dussa2024
+- class: AM+FA
+  sources:
+  - uni_rt_amfa_dussa2024
+- class: FA
+  sources:
+  - uni_rt_fa_dussa2024
+  - uni_rt_fa_rios2016
+  - uni_rt_fa_sirisathitkul2022
+  - uni_rt_favariant_farjami2009
+- class: SC+FA
+  sources:
+  - uni_rt_favariant_tanaka2000
+  - uni_rt_scfa_sugimoto1991
+- class: DS+FA
+  sources:
+  - uni_rt_dsfa_kramer2012
+  - uni_rt_dsfa_mccallum2014
+- class: RX+FA
+  sources:
+  - uni_rt_rxfa_sugimoto1991
+- class: SA
+  sources:
+  - uni_rt_sa_jiang2016
+- class: SC+SA
+  sources:
+  - uni_rt_sa_ichitsubo1998
+- class: FS
+  sources:
+  - uni_rt_fs_sugiyama2003
+  - uni_rt_fs_yasuda2003
+- class: EP
+  sources:
+  - uni_rt_ep_ito2020
+  - uni_rt_template_zeng2000
+- class: TGG
+  sources:
+  - uni_rt_tgg_hovis2001
+- class: HDDR
+  sources:
+  - uni_rt_hddr_kim2018
