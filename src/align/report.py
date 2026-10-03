@@ -471,6 +471,9 @@ def build(reg, phases, rows, R, st, univ=None):
     cur = fr[-1] if fr else None
     sc = _frontier_scores(cur) if cur else {}
     far = min(sc, key=sc.get) if sc else '–'
+    if sc and len({round(v, 3) for v in sc.values()}) == 1:
+        far = (f"none — all three at their limits; accuracy rests on the fewest held-out cases "
+               f"({cur['n_cases']}), so it is pushed next with further held-out batches")
     ctx['frontier_section'] = (
         'Limits set outside this work: phases = the rare-earth-free candidate phases named in published '
         f"reviews ({len(names)}, data/curated/universe.yaml); routes = the route classes used or proposed in "
