@@ -316,6 +316,16 @@ def _frontier_scores(r):
             'accuracy': r['accuracy'] if r['accuracy'] is not None else 0.0}
 
 
+def _possible_by_version(fr):
+    out = []
+    for r in fr:
+        if r['version'] == 'v1':
+            continue
+        sc = _load(f"results/scores_{r['version']}.json") or {}
+        out.append((r['version'], sc.get('summary', {}).get('heldout', {}).get('ceiling_possible', 0)))
+    return out
+
+
 def _push_history(fr):
     out = []
     for a, b in zip(fr, fr[1:]):
@@ -602,8 +612,11 @@ def build(reg, phases, rows, R, st, univ=None):
         f"- {verd['open']} account cells decided by unpublished quantities (Limits).",
         f"- {h1.get('ceiling_possible', 0)} held-out measurements (v1) whose conversion to A straddles the "
         "ceiling because the same sample's Js is unpublished; the Js of that magnet settles each.",
-        f"- v2 has been tested on {s2h.get('n_scored', 0)} held-out measurements so far "
-        f"({s2h.get('ceiling_violated', 0)} violations).",
+        f"- The latest rules ({fr[-1]['version']}) have been tested on {fr[-1]['n_cases']} held-out measurements "
+        f"({fr[-1]['violations']} violations); accuracy is the criterion with the fewest held-out tests and is "
+        'pushed with further sealed batches.' if fr else '',
+        '- Held-out measurements of later versions whose conversion straddles the ceiling: '
+        + ', '.join(f"{v} {n}" for v, n in _possible_by_version(fr)) + '.',
         '', 'Held-out measurements (v1) whose conversion straddles the ceiling (the same-sample Js decides):', '',
         pv_table,
     ])
