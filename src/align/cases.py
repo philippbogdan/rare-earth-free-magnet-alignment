@@ -300,6 +300,8 @@ def encode(ctx, topic, c):
     cond = c.get('conditions') or {}
     proc = str(c.get('process') or '').lower()
     base = {'phase': pid, 'route': route, 'meas': {'kind': mk, 'along': al, 'saturating': saturating(c)}}
+    if mk == 'Br' and ctx.js_same.get(cid):         # same-sample Js for every phase (fixed after v3)
+        base['meas']['js_case'] = ctx.js_same[cid]
     if pid is None or pid not in ctx.ph:
         return {**base, 'pred': pred(1, ISO, 'phase not in the account', cls='info')}
     if mk == 'skip':
@@ -324,6 +326,8 @@ def encode(ctx, topic, c):
         exch = any(w in proc for w in ('milled', 'melt-spun', 'ribbon', 'nanocrystal', 'quenched', 'mechanically alloyed',
                                        'cluster', 'mqp', 'bonded nd-fe-b', 'fesib', 'alpha-fe'))
         if '/' in str(c.get('phase') or ''):          # composite with a second (soft) phase
+            exch = True
+        if pid == 'Nd2Fe14B' and 'bonded' in proc:    # bonded isotropic Nd-Fe-B: rapidly solidified powder
             exch = True
         return {**base, 'pred': pred(ISO, ISO, 'no alignment step: random grains' +
                                      ('; fine-grained, exchange enhancement possible (not alignment)' if exch else ''),

@@ -99,3 +99,13 @@ changed (checked against cases_v2.yaml).
 
     sha256 data/curated/cases_v3.yaml  b203b12b3f0b75f6935c9cde3aa4ee783f2c0fb79f406b5557cf7bef55716588
 freeze v3: 3d50da0
+
+## After opening batch 4
+
+Frozen v3 result: results/scores_v3.json (held-out = batch 4). A conversion bug found after
+opening: for phases other than AlNiCo the specs did not carry the link to a same-sample Js, so
+Br was converted with the phase Js (understating A). The frozen result is kept; a rescoring with
+the same-sample Js is reported next to it (scores_v3.json, sensitivity_js), and the link is
+fixed for later versions. In that rescoring one isotropic bonded Nd-Fe-B print exceeds 1/2 by
+exchange enhancement of its rapidly solidified powder (excluded from A by definition); the
+v3 rules had not flagged 'Nd-Fe-B/PPS bonded' as such (fixed for later versions).

@@ -413,6 +413,24 @@ def build(reg, phases, rows, R, st, univ=None):
         acc.append('')
         acc.append(_summary_table(s2, ['heldout', 'post hoc', 'exposed', 'known']))
         acc.append('')
+    s3 = _load('results/scores_v3.json')
+    if s3:
+        acc.append('**v3 — frozen before opening batch 4 (sources never used before)**')
+        acc.append('')
+        acc.append(_summary_table(s3, ['heldout']))
+        acc.append('')
+        sens = s3.get('sensitivity_js') or []
+        if sens:
+            sv = [x for x in sens if x['same_sample_js'][2] == 'violated']
+            acc.append(f"Conversion check (post hoc): the frozen v3 specs left the same-sample Js unlinked for "
+                       f"{len(sens)} Br cases outside AlNiCo (they used the phase Js, which can only understate A). "
+                       f"Rescored with the same-sample Js, {sum(1 for x in sens if x['same_sample_js'][2] == 'ok')} "
+                       f"ceilings hold and {len(sv)} is exceeded: " + ', '.join(
+                           f"{x['case']} (predicted {x['cls']}, A = {fmt(x['same_sample_js'][0])})" for x in sv)
+                       + ' — an isotropic bonded magnet of rapidly solidified powder, whose remanence above 1/2 is '
+                       'exchange enhancement, excluded from A by definition; its phrase was not flagged by the '
+                       'v3 rules (fixed for later versions).' if sv else '')
+            acc.append('')
     acc.append('Held-out v1 results by phase:')
     acc.append('')
     acc.append(_by_phase(s1, 'heldout') if s1 else '')
