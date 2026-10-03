@@ -158,6 +158,14 @@ def route_MO(ph):
 
 
 # ---------------------------------------------------------------- texture sources (DS/AM)
+def _variant_angles(path, d):
+    """Angles (deg) between the product variants' easy axes and a parent fibre direction d."""
+    g = E.texture_fibre(path.LP.direction(d), n_az=1)
+    ax, fr, per = path.axes(g)
+    ang = np.degrees(np.arccos(np.clip(np.abs(ax[0] @ np.array([0.0, 0.0, 1.0])), 0, 1)))
+    return sorted({round(float(a), 1) for a in ang})
+
+
 def _texture_route(ph, route, key):
     out = []
     for p in ph['paths']:
@@ -183,15 +191,19 @@ def _texture_route(ph, route, key):
             continue
         A_or, ax = _equal_best(path, _fibre(path, d))
         if path.mode == 'massive':
+            angs = ', '.join(f'{a:g}' for a in _variant_angles(path, d))
             out.append(Cell(ph['id'], route, 'capped' if A_or > ISO + 1e-3 else 'none', A_or, ax,
-                            chain=(f'parent fibre {d}; massive (incoherent) growth: product keeps at '
+                            chain=(f'parent fibre {d}: the product variants\' easy axes lie at {angs} deg to the '
+                                   f'fibre axis; massive (incoherent) growth: product keeps at '
                                    f'most the OR of its nucleation grain -> A between {ISO:.2f} '
                                    f'(random) and {A_or:.3f} (OR kept); no bias, equal variants'),
                             refs=src.get('refs', []) + p.get('refs', []),
                             A_alt={'OR kept': A_or, 'random': ISO}))
         else:
+            angs = ', '.join(f'{a:g}' for a in _variant_angles(path, d))
             out.append(Cell(ph['id'], route, _verdict(A_or), A_or, ax,
-                            chain=(f'parent fibre {d}; {len(path.V)} variants with equal weights'),
+                            chain=(f'parent fibre {d}: the {len(path.V)} variants\' easy axes lie at {angs} deg to '
+                                   'the fibre axis, with equal weights'),
                             refs=src.get('refs', []) + p.get('refs', [])))
     if not out:
         p0 = ph['paths'][0]
