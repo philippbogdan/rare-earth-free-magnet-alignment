@@ -1,0 +1,3558 @@
+# nano_other inputs: rare-earth-free hard magnets based on nanostructure or less common phases
+# (collected 2026-10-03 for the magnet-align-frontier project; schema: data/SCHEMA.md)
+#
+# Phase names used in `phase:` (header of this topic file):
+#   hcp-Co          hcp cobalt nanorods / nanowires (polyol, solvothermal, organometallic, epitaxial); easy axis c along the rod
+#   hcp-CoNi        Co-rich hcp Co-Ni (Co80Ni20) nanowires
+#   FeCo-elongated  bcc Fe or Fe-Co elongated single-domain particles: ESD / Lodex magnets, Fe-Co nanowires (shape anisotropy only)
+#   Co2C, Co3C      orthorhombic cobalt carbides (polyol nanoparticles; Co2C also by carburising hcp-Co rods)
+#   epsilon-Fe2O3   orthorhombic (Pna21) epsilon iron oxide, incl. Rh/Ga/Al/Cr-substituted (composition in `conditions`)
+#   bct-FeCo        tetragonally distorted Fe-Co: epitaxially strained films, interstitially strained Fe-Co-C/B/N(-V), templated nanostructures
+#   Fe5SiB2, Fe5PB2, (Fe,Co)5PB2   tetragonal Cr5B3-type borides
+#   Fe3Sn           hexagonal Ni3Sn-type (easy-plane)
+#   Fe2P-based      hexagonal Fe2P and (Fe,Co)2(P,Si)
+#   Mn4N            cubic anti-perovskite ferrimagnet;  MnN  only a predicted (hypothetical) high-MAE structure
+#
+# Conventions:
+# * quantity `other`: `value` starts with a tag - alignment_method:, consolidation:, shape_anisotropy:, candidate_status:,
+#   anisotropy_type:, reversal:, assembly mechanics, size window, morphology, K1(T).
+# * evidence `review` = value quoted by the source from elsewhere (incl. bulk constants adopted by a research paper; full
+#   text read) or a review/thesis statement; `abstract` = only the abstract was accessible.
+# * Quotes are verbatim from the stored source text (PDF text layer, PMC XML or abstract). Superscripts flattened by the
+#   PDF text layer are kept as extracted and explained in `note` (e.g. '105' = 10^5). '[...]' marks omitted text
+#   (including page numbers interleaved by the text layer). Symbol-font glyphs (≈, ×, −, ε) are written as the symbol.
+# * Quotes typed from rendered page images because the text layer garbles symbols (AIP/APS '=' -> '¼' etc.):
+#   hcpco_k1_camara2016_bulk, hcpco_k1_camara2016_nw, efe2o3_tc_gareev2023, efe2o3_ms_mass_gareev2023, bctfeco_k1_andersson2006_40k, bctfeco_k1_andersson2006_300k, bctfeco_js_andersson2006, bctfeco_tetragonality_andersson2006
+# * Sources without a Crossref DOI (doi: null): Chan 2018 UCSD PhD thesis (eScholarship), Yang 2023 arXiv preprint.
+#   The Anagnostopoulou thesis DOI (10.70675/...) has no Crossref 'issued' date; year 2016 = Crossref 'approved' date.
+# * Unit conversions done here are stated in `note`; values read off figures carry 'read from plot' in the locator.
+- id: hcpco_js_ener2018
+  phase: hcp-Co
+  quantity: Js
+  value: 1.79
+  unit: T
+  conditions: bulk hcp Co, room temperature (reference value used by the authors)
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: review
+    locator: Section 2.3 Characterizations
+  quote: The magnetic volume fraction, VM, was calculated as the ratio of the saturation magnetization per volume of the sample divided by the bulk saturation magnetization (1.79 T).
+  note: 'Full text read; the 1.79 T is the bulk literature value adopted by the authors, not their measurement (hence evidence: review). Same value used in Anagnostopoulou 2016 (BCo bulk = 1.79 T).'
+- id: hcpco_js_gandha2014
+  phase: hcp-Co
+  quantity: Js
+  value: 1.8
+  unit: T
+  conditions: bulk Co, room temperature (value quoted by the authors)
+  source:
+    doi: 10.1038/srep05345
+    title: High Energy Product Developed from Cobalt Nanowires
+    first_author: Gandha
+    year: 2014
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4061547/fullTextXML
+    evidence: review
+    locator: Results, Eq. (1) paragraph
+  quote: Js is the magnetic induction and it is 18 kG for Co at room temperature.
+  note: '18 kG = 1.8 T. Bulk value quoted, not measured (evidence: review).'
+- id: hcpco_ms_mass_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: Ms_mass
+  value: 160
+  unit: A m2/kg
+  conditions: bulk Co reference value used to compute magnetic mass fraction
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: review
+    locator: Experimental, Volume fraction measurements, Eq. 1
+  quote: with MS expressed in emu·g-1 and MS cobalt = 160 emu.g-1.
+  note: '160 emu/g = 160 A m2/kg; bulk reference value used by the authors (evidence: review).'
+- id: hcpco_k1_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: K1
+  value: 0.45
+  unit: MJ/m3
+  conditions: bulk hcp Co, room temperature (literature value in thesis chapter I)
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: review
+    locator: Chapter I, section on magnetocrystalline anisotropy (p. I-14)
+  quote: 'For hcp Co, the anisotropy mostly arises from the lattice symmetry and is thus one order of magnitude below: K1 = 4.5×105 J·m-3.'
+  note: '''4.5×105'' is 4.5×10^5 (superscript flattened in the text layer). Thesis cites a textbook value (evidence: review). Micromagnetic work quoted in the same thesis used K1 = 4.1x10^5 J/m3 with MS = 1400 kA/m.'
+- id: hcpco_k1_camara2016_bulk
+  phase: hcp-Co
+  quantity: K1
+  value: 0.52
+  unit: MJ/m3
+  conditions: bulk hcp Co, room temperature, as quoted by the authors (refs 13,14); K2 = 0.10 MJ/m3
+  source:
+    doi: 10.1063/1.4967982
+    title: Enhanced magnetocrystalline anisotropy in an ultra-dense array of air-exposed crystalline cobalt nanowires
+    first_author: Camara
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-01989562v1/document
+    evidence: review
+    locator: p. 202406-4 (HAL pdf page 6)
+  quote: Unexpected high values of the first and second order MCA constants compared to those of bulk cobalt13,14 (K1 = 5.2 × 105 J/m3, K2 = 1.0 × 105 J/m3) are extracted.
+  note: 'Quote typed from the rendered page: the PDF text layer encodes ''='' as ''¼'' and ''×'' as a private glyph, so the automated verifier cannot match it; ''105'' = 10^5 (superscript). Shows the spread of literature bulk K1 for Co (0.41-0.52 MJ/m3 among the sources read).'
+- id: hcpco_k1_camara2016_nw
+  phase: hcp-Co
+  quantity: K1
+  value: 0.74
+  unit: MJ/m3
+  uncertainty: 0.01
+  conditions: single-crystal hcp Co nanowires (D = 6.2 nm, L = 1000 nm) grown epitaxially on Pt(111), air-exposed, room temperature, from FMR fit with packing fraction P = 0.38 and mu0Ms = 1.8 T
+  source:
+    doi: 10.1063/1.4967982
+    title: Enhanced magnetocrystalline anisotropy in an ultra-dense array of air-exposed crystalline cobalt nanowires
+    first_author: Camara
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-01989562v1/document
+    evidence: full_text
+    locator: p. 202406-2, after Eq. (1) (HAL pdf page 4)
+  quote: 'The measured FMR frequencies can be fitted to Eq. (1) with the following set of parameters: γ/2π = 30 GHz/T, μ0Ms = 1.8 T, P = 0.38 and K1 = (7.4 ± 0.1) × 105 J/m3'
+  note: Quote checked against the rendered page image (text layer garbles '=' and '±'); '105' = 10^5. Torque gave the same K1 and K2 = (2.9 ± 0.2)×10^5 J/m3; authors suggest magneto-elastic (tensile strain) or surface origin of the +40% enhancement.
+- id: hcpco_k1t_aitatmane2013
+  phase: hcp-Co
+  quantity: other
+  value: 'K1(T) of bulk hcp Co: ~constant 0-200 K, then linear decrease from about +0.66 MJ/m3 (200 K) to about -0.12 MJ/m3 (600 K); negative above ~500 K (easy direction leaves the c axis)'
+  unit: MJ/m3
+  conditions: bulk hcp Co, literature values compiled by the authors (refs 22-24)
+  source:
+    doi: 10.1016/j.jssc.2012.08.009
+    title: High temperature structural and magnetic properties of cobalt nanorods
+    first_author: Ait Atmane
+    year: 2013
+    url: https://hal.science/hal-00916597/document
+    evidence: review
+    locator: Section 3.4.1
+  quote: As shown in Figure 8, the magneto-crystalline anisotropy constant KMC of bulk hcp Co is almost temperature independent from 0 to 200 K and linearly decreases from KMC ≈ 6.6×105J.m-3 at 200 K down to KMC ≈ -1.2×105J.m-3 at 600 K [22-24]. [...] Note that, above 500 K, the value of the magnetocrystalline constant becomes negative which means that it counteracts the shape anisotropy of the wire.
+  note: 'Symbol-font glyphs restored (≈, ×, minus); ''105'' = 10^5. Relevant to any field/thermal step above ~500 K: magnetocrystalline easy axis no longer along c.'
+- id: hcpco_shape_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: other
+  value: 'shape_anisotropy: for c parallel to the wire axis, mu0Ms/2 = 0.89 T (shape) + 0.58 T (magnetocrystalline) = 1.47 T Stoner-Wohlfarth switching field'
+  unit: T
+  conditions: infinitely long hcp-Co cylinder, c axis along the wire, room temperature, Stoner-Wohlfarth estimate
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Introduction
+  quote: For cobalt wires with the hcp structure and the c axis parallel to the wire long axis a theoretical coercivity µ 0Hc = µ 0MS/2 + K1/2MS = 0.89 + 0.58 = 1.47 T is expected provided that the Stoner-Wohlfarth model applies.
+  note: Shape and magnetocrystalline easy axes coincide (both along the rod axis). The printed term 'K1/2MS' evaluates to 0.58 T only if read as 2K1/MS with K1 ~0.41 MJ/m3 (typo in the paper).
+- id: hcpco_shape_gandha2014
+  phase: hcp-Co
+  quantity: other
+  value: 'shape_anisotropy: maximum shape-anisotropy field 9 kOe (0.9 T) plus magnetocrystalline 7.6 kOe (0.76 T) = 16.6 kOe (1.66 T) total anisotropy field for c along the wire'
+  unit: kOe
+  conditions: infinitely long Co ellipsoid with [0001] along the long axis, room temperature
+  source:
+    doi: 10.1038/srep05345
+    title: High Energy Product Developed from Cobalt Nanowires
+    first_author: Gandha
+    year: 2014
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4061547/fullTextXML
+    evidence: full_text
+    locator: Results, after Eq. (1)
+  quote: If the long-axis direction of a Co nanowire conforms to its magnetocrystalline uniaxial direction [0001] (c-axis, or normal direction of the (002) planes), as observed in Fig. 1, the maximum magnetic anisotropy field contributed from the shape anisotropy will be 9 kOe. Plus the anisotropy field of 7.6 kOe contributed by the magnetocrystalline anisotropy of bulk cobalt19, a total anisotropy field up to 16.6 kOe at room temperature may be reached, which shows the upper limit of coercivity that can be developed from Co nanocrystals with high aspect ratio.
+  note: ''
+- id: hcpco_tc_aitatmane2013
+  phase: hcp-Co
+  quantity: Tc
+  value: 1300
+  unit: K
+  uncertainty: 100
+  conditions: pure Co (approximate value as printed)
+  source:
+    doi: 10.1016/j.jssc.2012.08.009
+    title: High temperature structural and magnetic properties of cobalt nanorods
+    first_author: Ait Atmane
+    year: 2013
+    url: https://hal.science/hal-00916597/document
+    evidence: review
+    locator: Section 3.4.1, last paragraph
+  quote: A general drawback of rare earth based materials is their relatively lower Curie temperature (580K for NdFeB and 1023K for SmCo) which leads to a significant dependence of the magnetization at high temperatures which is not the case for pure Co systems (Tc ≈ 1300K).
+  note: Printed as approximate ('≈' restored from a Symbol-font glyph). No source read gives the precise bulk Tc of Co; whatever the exact value, Tc is far above every synthesis/processing temperature in this topic (443-523 K synthesis, <=493 K consolidation).
+- id: hcpco_density_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: density
+  value: 8.9
+  unit: g/cm3
+  conditions: bulk Co value assumed by the authors
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: review
+    locator: Experimental, Volume fraction measurements (Eq. 6)
+  quote: 'Then, assuming that the density of Co, CoO and ligands are similar to their bulk values, namely ρCo = 8.9, ρCoO =6.4 and ρL =0.9 g·cm-3 respectively, their volume fraction could be deduced as follows:'
+  note: 'Bulk literature value (evidence: review). Gandha 2014 used 8.92 g/cm3.'
+- id: hcpco_structure_ener2018
+  phase: hcp-Co
+  quantity: structure
+  value: hcp (P63/mmc); no fcc detected in as-synthesised polyol rods
+  unit: ''
+  conditions: polyol Co nanorods, dm 10.9-28.3 nm, powder XRD (Co K-alpha)
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Supplementary Material, X-ray diffraction
+  quote: Powder X-ray diffraction patterns of cobalt rods with different mean diameter are plotted in Figure S1. These patterns show that the cobalt rods crystallize with the hcp structure. No trace of fcc phase was detected.
+  note: Space group not stated in the source; 'P63/mmc' is the standard hcp group (added in value for clarity, not from the quote).
+- id: hcpco_easy_axis_gandha2014
+  phase: hcp-Co
+  quantity: easy_axis
+  value: c axis [0001] (parallel to the wire long axis)
+  unit: ''
+  conditions: solvothermal Co nanowires, d ~15 nm, L 200-300 nm, HRTEM + electron holography
+  source:
+    doi: 10.1038/srep05345
+    title: High Energy Product Developed from Cobalt Nanowires
+    first_author: Gandha
+    year: 2014
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4061547/fullTextXML
+    evidence: full_text
+    locator: Results, Fig. 1
+  quote: that each wire is a single crystal with the c-axis (002), or the easy magnetization direction, along the long axis of the wire.
+  note: Electron holography in the same paper shows a single-domain state magnetised along the wire axis.
+- id: hcpco_easy_axis_aitatmane2013
+  phase: hcp-Co
+  quantity: easy_axis
+  value: c axis (along the wire axis) while K1 > 0; perpendicular to c when K1 < 0 (above ~500 K)
+  unit: ''
+  conditions: polyol Co nanowires
+  source:
+    doi: 10.1016/j.jssc.2012.08.009
+    title: High temperature structural and magnetic properties of cobalt nanorods
+    first_author: Ait Atmane
+    year: 2013
+    url: https://hal.science/hal-00916597/document
+    evidence: full_text
+    locator: Section 3.4.1
+  quote: A positive KMC value corresponds to an easy axis along c, i.e. along the wire axis. A negative KMC value corresponds to an easy axis perpendicular to c, i.e. perpendicular to the wire axis.
+  note: ''
+- id: hcpco_growth_direction_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: growth_direction
+  value: '[0001] (c axis) parallel to the rod long axis'
+  unit: ''
+  conditions: polyol Co nanorods (1,2-butanediol, cobalt laurate, RuCl3 nucleation, 175 C)
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Results, Nanorod alignment characterization
+  quote: X-ray diffraction shows that the cobalt rods crystallize with the hcp structure with the c axis parallel to the long axis as previously reported.
+  note: 'Consequence: easy axis of every rod = rod axis, so free-body rotation of a rod aligns its magnetocrystalline easy axis.'
+- id: hcpco_growth_direction_aitatmane2014
+  phase: hcp-Co
+  quantity: growth_direction
+  value: growth parallel or perpendicular to c depending on laurate concentration (rods vs platelets)
+  unit: ''
+  conditions: polyol synthesis of hcp Co; statement summarising Ait Atmane et al., Nanoscale 2014
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: review
+    locator: Introduction (citing ref. 23)
+  quote: A detailed study of the polyol synthesis mechanism clearly identified the role of the laurate ion concentration on the growth of hcp cobalt, parallel or perpendicular to the c axis.
+  note: 'Original: Ait Atmane et al., Nanoscale 6 (2014) 2682, doi:10.1039/c3nr03686c (not read). Rod habit (c along the rod) is a synthesis outcome, not guaranteed.'
+- id: hcpco_growth_direction_bousnina2020
+  phase: hcp-Co
+  quantity: growth_direction
+  value: c axis parallel to rod growth axis (SAED on single rod)
+  unit: ''
+  conditions: polyol Co nanorods grown in a 1.25 T field, closed reactor (H1.25-CR)
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Section 3.1 (Figure 6)
+  quote: A selected area electron diffraction (SAED) pattern performed on a single Co NR (H1.25-CR) was indexed in the hcp system, showing that the growth axis of the particles was parallel to the c axis of the hcp structure (Figure 6).
+  note: ''
+- id: hcpco_single_variant_gandha2014
+  phase: hcp-Co
+  quantity: single_variant_particles
+  value: 'yes: each wire a single crystal with c along the wire (one orientation per rod)'
+  unit: ''
+  conditions: solvothermal Co nanowires, d ~15 nm
+  source:
+    doi: 10.1038/srep05345
+    title: High Energy Product Developed from Cobalt Nanowires
+    first_author: Gandha
+    year: 2014
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4061547/fullTextXML
+    evidence: full_text
+    locator: Results, Fig. 1c (HRTEM [11-20] zone axis)
+  quote: that each wire is a single crystal with the c-axis (002), or the easy magnetization direction, along the long axis of the wire.
+  note: ''
+- id: hcpco_single_variant_pousthomis2015
+  phase: hcp-Co
+  quantity: single_variant_particles
+  value: 'single-crystalline rods with basal stacking faults: c-axis coherence length L(0002) < rod length (about half for rods < 150 nm)'
+  unit: ''
+  conditions: polyol Co nanorods, Dm 7-25 nm, Lm 30-300 nm
+  source:
+    doi: 10.1007/s12274-015-0734-x
+    title: Localized magnetization reversal processes in cobalt nanorods with different aspect ratios
+    first_author: Pousthomis
+    year: 2015
+    url: https://insa-toulouse.hal.science/hal-02020343/document
+    evidence: full_text
+    locator: Section 3.2 (Fig. 2b)
+  quote: Nevertheless, the crystallographic coherence along the c axis L(0002), deduced from XRD, was always found smaller than the rod mean length Lm, deduced from TEM. In the figure 2b, L(0002) value is plotted as a function of Lm for different samples. For the shortest rods (< 150 nm) L(0002) is about one half of the Lm value.
+  note: Basal stacking faults do not change the c-axis direction of the rod but locally reduce anisotropy (nucleation sites).
+- id: hcpco_single_variant_anagnostopoulou2016thesis
+  phase: hcp-Co
+  quantity: single_variant_particles
+  value: 'structural coherence along c shorter than rod length: stacking faults along the c axis'
+  unit: ''
+  conditions: polyol Co nanorods of various morphologies (thesis chapter II)
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Chapter II, p. II-54
+  quote: Regarding the structural length, L(0002), it was always found much smaller than the morphological, Lm. This difference is attributed in the existence of stacking faults along the c axis of the rods.
+  note: ''
+- id: hcpco_t_formation_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: T_formation
+  value: 448
+  unit: K
+  conditions: polyol reduction of cobalt laurate in 1,2-butanediol with RuCl3, 30 min
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Experimental, Synthesis
+  quote: The suspension of cobalt laurate in the basic solution of butanediol containing the ruthenium chloride was heated up to 175 °C for 30 min under mechanical stirring in the range of 80 to 240 rpm.
+  note: 175 C = 448 K. Rods nucleate and grow as ferromagnetic hcp Co (formation T far below Tc of Co).
+- id: hcpco_t_formation_ener2018
+  phase: hcp-Co
+  quantity: T_formation
+  value: 443
+  unit: K
+  conditions: up-scaled polyol synthesis (1 L), reduction onset
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 2.1
+  quote: The suspension was heated to 175 °C for 20 min under mechanical stirring. The stirring speed was varied in the range 40-160 rpm. The solution turned black at 170°C indicating the cobalt reduction.
+  note: 170 C = 443 K (reduction onset), held at 175 C (448 K).
+- id: hcpco_t_formation_gandha2014
+  phase: hcp-Co
+  quantity: T_formation
+  value: 523
+  unit: K
+  conditions: solvothermal (autoclave) polyol synthesis with hexadecylamine, 75 min
+  source:
+    doi: 10.1038/srep05345
+    title: High Energy Product Developed from Cobalt Nanowires
+    first_author: Gandha
+    year: 2014
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4061547/fullTextXML
+    evidence: full_text
+    locator: Methods, Cobalt nanowires synthesis
+  quote: The autoclave reactor was transferred to a furnace and heated from room temperature to 250°C at a rate of 8°C per minute then maintained at 250°C for 75 min.
+  note: 250 C = 523 K.
+- id: hcpco_t_formation_bousnina2020
+  phase: hcp-Co
+  quantity: T_formation
+  value: 443
+  unit: K
+  conditions: polyol synthesis in the air gap of an electromagnet (0-1.25 T), 1 h
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Section 2.1
+  quote: The oil bath is then heated to 170 ◦ C with a temperature ramping rate of 8 ◦ C/min.
+  note: 170 C = 443 K ('◦ C' is the degree sign as extracted).
+- id: hcpco_field_effect_bousnina2020
+  phase: hcp-Co
+  quantity: field_effect_on_formation
+  value: '1.25 T applied during nucleation/growth: longer rods (L/D 6.5 -> 28.2), no conical heads, fewer stacking faults; field kept during synthesis and cooling'
+  unit: ''
+  conditions: polyol synthesis at 170 C in 0-1.25 T (open and closed reactors)
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Abstract; Section 2.1; Section 3.1
+  quote: The application of an external magnetic field (µ0 H = 1.25 T) during the nucleation and growth steps resulted in a noticeable modification of the mean aspect ratio (length/diameter) of the particles. [...] Besides, the stacking faults density along the c axis of the hcp structure in the cobalt nano-rods has been found to decrease with the increase in the applied magnetic field. [...] The magnetic field is maintained during both synthesis and cooling steps.
+  note: Forming phase is ferromagnetic at 443 K, so a field bias during growth (B1) is physically possible; the paper reports morphology/defect effects, and the authors' proposed mechanism is deposition along c of field-aligned rods.
+- id: hcpco_field_mechanism_bousnina2020
+  phase: hcp-Co
+  quantity: field_effect_on_formation
+  value: 'proposed mechanism: growing rods (easy axis c) align with the applied field and Co deposits along c'
+  unit: ''
+  conditions: polyol synthesis at 170 C under field
+  source:
+    doi: 10.3390/nano10020334
+    title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with an External Magnetic Field
+    first_author: Bousnina
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-00334/article_deploy/nanomaterials-10-00334.pdf
+    evidence: full_text
+    locator: Section 3.1
+  quote: Indeed, the applied field helps Co atoms, with a high magnetic moment, to deposit along the c axis of the nanorods, which is their easy magnetization direction that is supposed to be aligned along the applied field direction. This leads to the formation of longer nanorods with better crystallinity (i.e., less stacking faults) and, thus, better magnetic properties.
+  note: Authors' interpretation, not a direct measurement.
+- id: hcpco_t_stab_aitatmane2013
+  phase: hcp-Co
+  quantity: T_stab
+  value: 500
+  unit: K
+  conditions: uncoated polyol Co nanowires (dm 13 nm), in-situ XRD under N2, 5 K/min ramps and 2 h holds; irreversible alteration above 525 K
+  source:
+    doi: 10.1016/j.jssc.2012.08.009
+    title: High temperature structural and magnetic properties of cobalt nanorods
+    first_author: Ait Atmane
+    year: 2013
+    url: https://hal.science/hal-00916597/document
+    evidence: full_text
+    locator: Abstract; Sections 2.3.2, 3.3
+  quote: We show that the anisotropic shapes, the structural and texture properties are preserved up to 500 K. [...] Above 525 K, the magnetic properties are irreversibly altered either by sintering or by oxidation.
+  note: Sintering of pellets (rods in contact) is promoted by decomposition of residual laurate that reduces the CoO shell; washed, isolated rods on a foil kept shape anisotropy to ~600 K but oxidised. 'Above 500 K a sintering of the particles can occur' (conclusion).
+- id: hcpco_t_stab_ibrahim2013_uncoated
+  phase: hcp-Co
+  quantity: T_stab
+  value: 498
+  unit: K
+  conditions: uncoated polyol Co nanorods (powder), annealing ~2 h
+  source:
+    doi: 10.1021/jp3125457
+    title: Carbon Coating, Carburization, and High-Temperature Stability Improvement of Cobalt Nanorods
+    first_author: Ibrahim
+    year: 2013
+    url: https://hal.science/hal-00912966/document
+    evidence: full_text
+    locator: Abstract
+  quote: The shape anisotropy and the crystallite anisotropy of the hcp phase are both preserved up to 400 °C for the carbon coated cobalt rods whereas the uncoated NRs lose their anisotropy at 225 °C.
+  note: 225 C = 498 K (loss of rod anisotropy by sintering in powder form).
+- id: hcpco_t_stab_ibrahim2013_coated
+  phase: hcp-Co
+  quantity: T_stab
+  value: 673
+  unit: K
+  conditions: carbon-coated (5 nm C shell) Co nanorods, powder, 2 h at 400 C
+  source:
+    doi: 10.1021/jp3125457
+    title: Carbon Coating, Carburization, and High-Temperature Stability Improvement of Cobalt Nanorods
+    first_author: Ibrahim
+    year: 2013
+    url: https://hal.science/hal-00912966/document
+    evidence: full_text
+    locator: Abstract; Section C
+  quote: The shape anisotropy and the crystallite anisotropy of the hcp phase are both preserved up to 400 °C for the carbon coated cobalt rods whereas the uncoated NRs lose their anisotropy at 225 °C.
+  note: 400 C = 673 K. A C shell raises the consolidation window to the hcp->fcc limit.
+- id: hcpco_t_stab_hcpfcc_ibrahim2013
+  phase: hcp-Co
+  quantity: T_stab
+  value: 723
+  unit: K
+  conditions: carbon-coated Co nanorods, in-situ XRD under N2; hcp -> fcc transformation
+  source:
+    doi: 10.1021/jp3125457
+    title: Carbon Coating, Carburization, and High-Temperature Stability Improvement of Cobalt Nanorods
+    first_author: Ibrahim
+    year: 2013
+    url: https://hal.science/hal-00912966/document
+    evidence: full_text
+    locator: Section C
+  quote: At 450 °C the hcp to fcc phase transformation occurs as predicted by the phase diagram of bulk cobalt.
+  note: 450 C = 723 K; at this temperature L(10-10) and L(0002) both increase strongly and the rod morphology is lost.
+- id: hcpco_t_stab_ener2018
+  phase: hcp-Co
+  quantity: T_stab
+  value: 493
+  unit: K
+  conditions: uncoated rods; limit used to set hot-compaction temperature
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: review
+    locator: Section 2.2
+  quote: The control of the temperature during the consolidation has essential importance as previous studies showed that coalescence of nanorods can start at 220 °C [31].
+  note: 220 C = 493 K, citing Ait Atmane 2013.
+- id: hcpco_consolidation_ener2018
+  phase: hcp-Co
+  quantity: other
+  value: 'consolidation: matrix-free uniaxial compaction of field-pre-aligned rod assemblies; cold compaction up to 1 GPa at room temperature; hot compaction at 180 C (453 K) up to 450 MPa for 2 min; no fcc formed'
+  unit: ''
+  conditions: Co nanorods dm 10.9 and 28.3 nm
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 2.2; Section 3.2
+  quote: For cold compaction, the highest pressure was 1 GPa. The hot compaction studies were done on a hot press equipped with twelve halogen lamps for heating the sample, the upper pressure was in that case limited to 450 MPa. During the hot compaction, the temperature of the die is kept at 180 oC and the nanorods were compacted at various pressures for 2 minutes.
+  note: Mild consolidation is forced by T_stab (coalescence >= ~493-525 K; hcp->fcc 723 K).
+- id: hcpco_consolidation_thesis_sps
+  phase: hcp-Co
+  quantity: other
+  value: 'consolidation: spark plasma sintering without field, 40 MPa contact pressure, current controlled to keep T < 200 C; hot press 180-220 C under vacuum'
+  unit: ''
+  conditions: pre-aligned Co nanorod needles (thesis chapter V)
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Chapter V.1
+  quote: Spark plasma sintering (SPS) was carried out without magnetic field (Figure V- 1 c). Before starting the sintering process, a 40 MPa pressure was applied to the samples to ensure the good electrical contact. During the sintering, the current was manually controlled to avoid the overheating of the sample (T < 200oC).
+  note: ''
+- id: hcpco_alignment_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: free rotation of rods in a chloroform suspension (about 1 g in 10 mL) dried in air at room temperature in a homogeneous 1 T electromagnet field; no polymer added; needles cut from the dried wafers'
+  unit: ''
+  conditions: polyol Co nanorods dm 17-31 nm
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Experimental, Assembly of Co NRs
+  quote: Dispersions containing approximately 1 g of powder in 10 mL of solvent were allowed to dry under air at room temperature in a homogenous magnetic field of 1T generated by an electro-magnet.
+  note: Rods washed in chloroform aligned better than toluene-washed rods (paper, Tab. S1).
+- id: hcpco_alignment_thesis
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: suspension in a Teflon or aluminium mould inside a homogeneous 1 T field; chloroform evaporated at room temperature over ~5 h'
+  unit: ''
+  conditions: polyol Co nanorods (thesis chapter III)
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Chapter III.2.3
+  quote: In all cases, the suspension was placed in a homogeneous magnetic field of 1T provided by an electromagnet. For the parallelepiped mould the direction of the field was perpendicular to its length (Figure III- 2 c). The chloroform was let to evaporate at room temperature for a few hours (typically 5 h).
+  note: ''
+- id: hcpco_alignment_powder_ener2018
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: field (1.7 T) applied to dried, randomly agglomerated rod powder in the die does not align it; rods must be pre-aligned while dispersed in liquid'
+  unit: ''
+  conditions: dried polyol Co nanorod powder
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.1
+  quote: Preliminary experiments showed that magnetically random powders could not be further aligned during the compaction process.
+  note: 'Mechanism input for free-body rotation R: mobility is lost once rods are dried (van der Waals-bound agglomerates).'
+- id: hcpco_alignment_powder_thesis
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: irreversible agglomeration on drying prevents re-alignment of dried powder even at 1.6 T'
+  unit: ''
+  conditions: Co nanorods (dm 20 nm, lm 250 nm) shipped as suspension, dried, then field-pressed
+  source:
+    doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
+    title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations of dense assemblies of anisotropic nanoparticles'
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://theses.hal.science/tel-01721218/document
+    evidence: full_text
+    locator: Chapter V.2
+  quote: During the time when the suspensions were prepared, sent to Darmstadt and dried, the rod agglomerated in random orientations. This agglomeration is irreversible thus rendering impossible any re-align from the dried powder state even with a magnetic field of 1.6 T.
+  note: ''
+- id: hcpco_alignment_greencompact_ener2018
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: pre-aligned rod assemblies (dried in 1 T) re-aligned in the die with a 1.7 T electromagnet before compaction'
+  unit: ''
+  conditions: consolidation of Co nanorods
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 2.2
+  quote: Prior to the consolidation “green-compacts” were prepared by doing a pre-alignment of the rod assemblies. A 1.7 T electromagnet was used for the preparation of the green-compacts in the consolidation dies.
+  note: ''
+- id: hcpco_alignment_gandha2014
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: rods dispersed in toluene + epoxy, cured in a mould in a 2.0 T electromagnet field (dilute bonded sample)'
+  unit: ''
+  conditions: solvothermal Co nanowires d ~15 nm
+  source:
+    doi: 10.1038/srep05345
+    title: High Energy Product Developed from Cobalt Nanowires
+    first_author: Gandha
+    year: 2014
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4061547/fullTextXML
+    evidence: full_text
+    locator: Methods, Characterizations
+  quote: Aligned Co nanowires were prepared by sonicating the toluene dispersion for 5 min then adding the epoxy into the Co nanowires/toluene dispersion and again sonicating for 2 min. This composite was then poured into a mold and allowed to cure under the external magnetic field of 2.0 T in an electromagnet.
+  note: ''
+- id: hcpco_alignment_pousthomis2015
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: rods dispersed (0.5-1 vol%) in molten tetracosane, aligned at 5 T above its melting point (330 K), frozen at 300 K'
+  unit: ''
+  conditions: polyol Co nanorods, dilute
+  source:
+    doi: 10.1007/s12274-015-0734-x
+    title: Localized magnetization reversal processes in cobalt nanorods with different aspect ratios
+    first_author: Pousthomis
+    year: 2015
+    url: https://insa-toulouse.hal.science/hal-02020343/document
+    evidence: full_text
+    locator: Section 2 (Experimental)
+  quote: The rod volume fraction was in the range 0.5-1% (weight fraction 5-6 %). Alignment was performed in an external magnetic field of 5 T above the melting point of tetracosane (330 K) as reported in [10]. The oriented wires were then frozen by cooling the tetracosane at 300K.
+  note: ''
+- id: hcpco_alignment_fang2014
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: casting of Co nanowire/polymer (PS, PMMA, PVP)/chloroform mixtures in up to 0.8 T; field must be homogeneous (gradients make wires migrate); larger fields form larger wire clusters'
+  unit: ''
+  conditions: polyol Co nanowires in polymer films
+  source:
+    doi: 10.1007/s11051-014-2265-x
+    title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the fabrication of permanent magnets
+    first_author: Fang
+    year: 2014
+    url: https://arxiv.org/pdf/1611.04735
+    evidence: full_text
+    locator: Sections 2.3 and 3.2 (arXiv preprint version)
+  quote: Note that this field should be extremely homogeneous with low gradients. Not fulfilling this condition will result in an inhomogeneous sample since the wires will migrate to the extremities of the film during the casting. [...] In conclusion we can say that alignment fields of a fraction of a tesla should be applied to maximize the anisotropy. [...] It is likely that the applied field magnitude modifies the clustering of the wires. Under larger drying fields, larger NW clusters are formed.
+  note: Text from the arXiv submitted version (1611.04735) of the published paper.
+- id: hcpco_alignment_aitatmane2013
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: drops of a toluene suspension evaporated on Al foil in a 1 T field; reference random sample: pellet pressed (about 6 t, 13 mm die) without field'
+  unit: ''
+  conditions: polyol Co nanowires dm 13 nm
+  source:
+    doi: 10.1016/j.jssc.2012.08.009
+    title: High temperature structural and magnetic properties of cobalt nanorods
+    first_author: Ait Atmane
+    year: 2013
+    url: https://hal.science/hal-00916597/document
+    evidence: full_text
+    locator: Section 2.2
+  quote: a few drops of a Co nanowires suspension in toluene were deposited on an aluminium foil and the toluene was removed by evaporation under the application of an external magnetic field of 1 T
+  note: ''
+- id: hcpco_alignment_liakakos2014
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: epitaxial solution growth of vertical single-crystal Co nanowires (5 nm) on crystalline metal films (EP route; no colloidal alignment step)'
+  unit: ''
+  conditions: wafer-scale crystalline metal films (Pt(111) in Camara 2016)
+  source:
+    doi: 10.1021/nl501018z
+    title: Solution Epitaxial Growth of Cobalt Nanowires on Crystalline Substrates for Data Storage Densities beyond 1 Tbit/in2
+    first_author: Liakakos
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1021/nl501018z
+    evidence: abstract
+    locator: abstract
+  quote: Here we present the bottom-up epitaxial solution growth of high-density arrays of vertical 5 nm diameter single-crystalline metallic cobalt nanowires on wafer-scale crystalline metal surfaces. [...] This method bypasses the need of assembling and orientating free colloidal nanocrystals on surfaces.
+  note: Only the abstract was accessible.
+- id: hcpco_or_camara2016
+  phase: hcp-Co
+  quantity: OR
+  value: 'Co nanowires grown epitaxially on Pt(111): hcp c axis parallel to the wire axis, wires vertical to the film'
+  unit: ''
+  conditions: solution-phase epitaxial growth on Pt(111) films
+  source:
+    doi: 10.1063/1.4967982
+    title: Enhanced magnetocrystalline anisotropy in an ultra-dense array of air-exposed crystalline cobalt nanowires
+    first_author: Camara
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-01989562v1/document
+    evidence: full_text
+    locator: Introduction (p. 202406-1)
+  quote: On Pt(111), this method leads to the epitaxial growth of vertical wires with the c-axis of the hexagonal compact (hcp) structure parallel to the NW axis.
+  note: 'Array: D = 6.2 nm, centre-to-centre 9.6 nm, packing fraction 0.38 (abstract and text).'
+- id: hcpco_phase_fraction_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: phase_fraction_limit
+  value: 0.45-0.56
+  unit: volume fraction
+  conditions: field-dried Co nanorod assemblies (no matrix), magnetic core fraction; remainder CoO shell (11-19%) and ligands (25-40%)
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Results, volume fraction (Table 1)
+  quote: The magnetic volume fraction VM values were found in the range from 45 to 56%, the ligand volume fraction VL in the range from 25 to 40% and the cobalt oxide volume fraction VCoO was found in the range from 11 to 19% (Tab. 1).
+  note: ''
+- id: hcpco_phase_fraction_model_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: phase_fraction_limit
+  value: 0.75
+  unit: volume fraction
+  conditions: 'model of perfect hexagonal rod arrays: non-oxidised 20 nm rods with 2 nm ligand shell (0.70 for 15 nm rods; 0.60-0.65 with 3.5 nm spacing; 0.42-0.51 if oxidised)'
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Magnet performance optimization (Fig. 8a)
+  quote: Magnetic volume fraction of 60% and 65% are expected for non-oxidized rods of diameter 15 and 20 nm, respectively, while only 42 and 51% are expected for oxidized ones (Fig. 8a). Finally, a significant increase of volume fraction could also be reached by lowering the organic amount. With non-oxidized rods separated by only a ligand shell of only 2 nm the magnetic volume fraction could reach 70 and 75% for 15 and 20 nm rods (Fig. 8a).
+  note: Model ceiling, not measured.
+- id: hcpco_phase_fraction_spacing_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: phase_fraction_limit
+  value: < 1 (non-magnetic spacer required)
+  unit: ''
+  conditions: dense Co nanorod arrays
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Notes (footnote ‡)
+  quote: Note that spacing between the rods is necessary to avoid a magnetic exchange and the loss of the shape anisotropy.
+  note: 'Mechanism: phi_max < 1 is intrinsic to the shape-anisotropy route (spacer between rods).'
+- id: hcpco_phase_fraction_ener2018
+  phase: hcp-Co
+  quantity: phase_fraction_limit
+  value: 0.25-0.65
+  unit: volume fraction
+  conditions: consolidated (cold/hot compacted) Co nanorod magnets, VM = M(3.6 T)/M(Co bulk); higher for thicker rods
+  source:
+    doi: 10.1016/j.actamat.2017.12.009
+    title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent magnets'
+    first_author: Ener
+    year: 2018
+    url: https://insa-toulouse.hal.science/hal-01982212v2/file/A-17-2463-HAL.pdf
+    evidence: full_text
+    locator: Section 3.2
+  quote: The magnetic volume fractions, calculated as VM = M(3.6T)/M(Cobulk), were found in the range 25-65 % depending on the consolidation experiment and on the rod mean diameter.
+  note: 'Ideal hexagonal arrays: VCo = 67.5% for 28.3 nm rods at 30 nm spacing; 66% for non-oxidised 10.9 nm rods at 12.8 nm spacing (same paper).'
+- id: hcpco_phase_fraction_aitatmane2013
+  phase: hcp-Co
+  quantity: phase_fraction_limit
+  value: 0.3
+  unit: volume fraction
+  conditions: random Co nanowire pellet pressed without field, about 6 t in a 13 mm die, room temperature
+  source:
+    doi: 10.1016/j.jssc.2012.08.009
+    title: High temperature structural and magnetic properties of cobalt nanorods
+    first_author: Ait Atmane
+    year: 2013
+    url: https://hal.science/hal-00916597/document
+    evidence: full_text
+    locator: Section 2.2
+  quote: The packing factor, defined as the ratio of the volume of the particles by the volume of the pellet was about 30%. Co nanowires are randomly oriented inside the pellet since no magnetic field was applied during its preparation.
+  note: ''
+- id: hcpco_phase_fraction_panagiotopoulos2013
+  phase: hcp-Co
+  quantity: phase_fraction_limit
+  value: no packing-fraction limit from coercivity for Co (micromagnetic model)
+  unit: ''
+  conditions: micromagnetic model of large bundles of aligned Co nanowires
+  source:
+    doi: 10.1063/1.4824381
+    title: Packing fraction dependence of the coercivity and the energy product in nanowire based permanent magnets
+    first_author: Panagiotopoulos
+    year: 2013
+    url: https://api.crossref.org/works/10.1063/1.4824381
+    evidence: abstract
+    locator: abstract
+  quote: The packing fraction limitations are essentially non-existing due to the intrinsic magnetocrystalline anisotropy of Co.
+  note: Only the abstract was accessible. Model, not measurement.
+- id: hcpco_cohesion_anagnostopoulou2016
+  phase: hcp-Co
+  quantity: other
+  value: 'assembly mechanics: dried field-aligned assemblies are held by van der Waals forces between rods ~3.8 nm apart (ligand spacer); robust along the field axis'
+  unit: ''
+  conditions: R17A1 assembly, SANS inter-rod distance
+  source:
+    doi: 10.1039/c5nr07143g
+    title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
+    first_author: Anagnostopoulou
+    year: 2016
+    url: https://insa-toulouse.hal.science/hal-02017936/document
+    evidence: full_text
+    locator: Results, SANS
+  quote: This value is in agreement with an inter-rod spacing occupied by organic molecules like the laurate ions remaining at the surface of the Co NRs and solvent molecules trapped by capillary forces. The strong Van der Waals forces that apply at very small inter-rod distance explain the robustness of the assemblies.
+  note: 'Relevant to R: the same attraction makes dried agglomerates irreversible.'
+- id: hcpco_alignment_riou2014
+  phase: hcp-Co
+  quantity: other
+  value: 'alignment_method: Co nanorods dispersed in side-chain liquid-crystalline polysiloxanes and oriented in a magnetic field; rods self-assemble into bundles of rows packed in a 2D hexagonal lattice'
+  unit: ''
+  conditions: organometallic Co nanorods in LC polymer matrix
+  source:
+    doi: 10.1021/jp410050z
+    title: 'Liquid Crystalline Polymer–Co Nanorod Hybrids: Structural Analysis and Response to a Magnetic Field'
+    first_author: Riou
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1021/jp410050z
+    evidence: abstract
+    locator: abstract
+  quote: This work deals with the structural analysis of side-chain liquid crystalline polysiloxanes, doped with magnetic cobalt nanorods, and their orientational properties under a magnetic field. [...] Here we show that, within the liquid crystal polymer matrix, the cobalt nanorods self-assemble in bundles made of nanorod rows packed in a 2-dimensional hexagonal lattice.
+  note: Only the abstract was accessible.
+- id: hcpco_single_variant_soulantica2009
+  phase: hcp-Co
+  quantity: single_variant_particles
+  value: single-crystalline Co nanorods, 6 nm diameter, aspect ratios 7 and 15 (organometallic route), coherent (Stoner-Wohlfarth) switching
+  unit: ''
+  conditions: organometallic Co nanorods assembled into oriented nanomaterials
+  source:
+    doi: 10.1063/1.3237157
+    title: Magnetism of single-crystalline Co nanorods
+    first_author: Soulantica
+    year: 2009
+    url: https://api.crossref.org/works/10.1063/1.3237157
+    evidence: abstract
+    locator: abstract
+  quote: We report on the synthesis and preparation of oriented nanomaterials of single crystalline metallic Co nanorods of 6 nm in diameters and two different aspect ratios (7 and 15). They display optimized magnetic properties, with a spontaneous magnetization just below the bulk one, and large coercive fields (up to 6.5 kOe at 300 K) as a result of coherent switching (i.e., Stoner and Wohlfarth mechanism).
+  note: Only the abstract was accessible; orientation method not described in the abstract.
+- id: hcpconi_js_maurer2007
+  phase: hcp-CoNi
+  quantity: Js
+  value: 1.54
+  unit: T
+  conditions: bulk Co80Ni20 alloy (value quoted by the authors)
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: review
+    locator: p. 1-2
+  quote: This is lower than the bulk values for Co80Ni20 alloys M = 1230 kA.m-1 (4πM = 15.4 kG).
+  note: mu0 x 1230 kA/m = 1.55 T (4piM = 15.4 kG = 1.54 T). Powder measured 65-85 emu/g, reduced by surface oxidation.
+- id: hcpconi_growth_direction_maurer2007
+  phase: hcp-CoNi
+  quantity: growth_direction
+  value: c axis parallel to the wire axis
+  unit: ''
+  conditions: polyol Co80Ni20 nanowires, dm 6.8 nm, Lm 240 nm
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: full_text
+    locator: p. 1
+  quote: High resolution electron microscopy shows very well crystallized wires with the crystallographic c-axis parallel to the wires.
+  note: ''
+- id: hcpconi_tc_maurer2007
+  phase: hcp-CoNi
+  quantity: Tc
+  value: 873
+  unit: K
+  conditions: Co80Ni20 nanowires; lower bound estimated from M(T) (10% drop at 240 C)
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: full_text
+    locator: p. 2 (Fig. 2 inset)
+  quote: The Curie temperature TC of our nano-objects is expected to be relatively high since the magnetization is reduced by only 10% at 240°C (Fig 2). We estimate that TC is thus at least above 600°C.
+  note: Lower bound only (> 873 K).
+- id: hcpconi_t_stab_maurer2007
+  phase: hcp-CoNi
+  quantity: T_stab
+  value: 523
+  unit: K
+  conditions: Co80Ni20 nanowires, preliminary high-temperature magnetisation measurements
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: full_text
+    locator: p. 3
+  quote: However, preliminary high temperature measurements show a good stability up to 250°C (Fig. 2), thus we think that these materials could be serious contenders for permanent magnet applications at high temperatures.
+  note: Lower bound of stability (only tested to 250 C = 523 K).
+- id: hcpconi_alignment_maurer2007
+  phase: hcp-CoNi
+  quantity: other
+  value: 'alignment_method: (1) wires in liquid toluene frozen at 180 K in 10 kOe; (2) wires in PMMA/toluene solidified under a field while the solvent evaporates (room temperature)'
+  unit: ''
+  conditions: polyol Co80Ni20 nanowires
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: full_text
+    locator: p. 2
+  quote: In a first process, the particles were dispersed in liquid toluene. A magnetic field of 10 kOe was applied during the freezing of the solution (Tf = 180 K). [...] The particles were dispersed in a polymer solution (PMMA + toluene) and we let the material solidify under a magnetic field while the solvent was evaporating.
+  note: ''
+- id: hcpconi_phase_fraction_maurer2007
+  phase: hcp-CoNi
+  quantity: phase_fraction_limit
+  value: 0.5
+  unit: volume fraction
+  conditions: authors' estimate of the usable packing of nanowire magnets that keeps shape anisotropy
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: full_text
+    locator: p. 3
+  quote: In order to fabricate permanent magnets, it is necessary to keep the nanostructuring of the material which means that it would not be possible to reach a packing density of 1. We estimate that a density about half the bulk value can be used while keeping the shape anisotropy properties.
+  note: Estimate, not measured.
+- id: hcpconi_consolidation_ouar2013
+  phase: hcp-CoNi
+  quantity: other
+  value: 'consolidation: spark plasma sintering under uniaxial compression at low temperature with a 1 T permanent-magnet field (field-assisted SPS) of Co80Ni20 nanowires (d ~6 nm, L ~270 nm)'
+  unit: ''
+  conditions: polyol Co80Ni20 nanowires; structure not stated in the abstract
+  source:
+    doi: 10.1063/1.4827199
+    title: Spark-plasma-sintering magnetic field assisted compaction of Co80Ni20 nanowires for anisotropic ferromagnetic bulk materials
+    first_author: Ouar
+    year: 2013
+    url: https://api.crossref.org/works/10.1063/1.4827199
+    evidence: abstract
+    locator: abstract
+  quote: We used a spark-plasma-sintering technique under uniaxial compression and low temperature assisted by a permanent magnetic field of 1 T. A macroscopic pellet of partially aligned nanowire arrays has been easily obtained.
+  note: Only the abstract was accessible; Ener 2018 reports (citing this work) a remanence-to-saturation of only 0.53 along the easy axis for powder and consolidated samples (see sealed outcomes).
+- id: fecoesd_phase_fraction_panagiotopoulos2013
+  phase: FeCo-elongated
+  quantity: phase_fraction_limit
+  value: 0.35
+  unit: packing fraction
+  conditions: 'micromagnetic model of aligned Fe nanowires (shape anisotropy only): coercivity-limited above p = 0.35; optimum p = 0.7'
+  source:
+    doi: 10.1063/1.4824381
+    title: Packing fraction dependence of the coercivity and the energy product in nanowire based permanent magnets
+    first_author: Panagiotopoulos
+    year: 2013
+    url: https://api.crossref.org/works/10.1063/1.4824381
+    evidence: abstract
+    locator: abstract
+  quote: As the performance of iron nanowires is solely based on shape anisotropy it becomes coercivity limited above p = 0.35.
+  note: Only the abstract was accessible. Model prediction (no sample); the same abstract gives an optimum packing p = 0.7 for Fe wires.
+- id: co2c_or_ibrahim2013
+  phase: Co2C
+  quantity: OR
+  value: '[100]Co2C || [11-20]Co(hcp) and (001)Co2C || (0001)Co(hcp); [001]Co2C within 2 deg of [0001]Co'
+  unit: ''
+  conditions: Co2C grains formed inside hcp-Co nanorods by carburisation in octadecene/oleylamine at 300 C (HRTEM)
+  source:
+    doi: 10.1021/jp3125457
+    title: Carbon Coating, Carburization, and High-Temperature Stability Improvement of Cobalt Nanorods
+    first_author: Ibrahim
+    year: 2013
+    url: https://hal.science/hal-00912966/document
+    evidence: full_text
+    locator: Section B (Figure 6)
+  quote: The crystallographic orientation relationships between the carbide and the metal are [100]Co2C||[11 2 0]Cohcp and (001)Co2C||(0001)Cohcp. The angle between the [001] direction of Co2C and the [0001] direction of the hcp Co is less than 2° showing a very small mismatch.
+  note: '''[11 2 0]'' is [11-20] (overbar lost in extraction). Same OR reported by Nagakura on Co/CoxC films (ref. 36).'
+- id: co2c_formation_path_ibrahim2013
+  phase: Co2C
+  quantity: formation_path
+  value: carburisation of hcp-Co nanorods by C from decomposing organic solvent (C intercalation between (0001) planes, starting from lateral {10-10} facets); Co3C never formed in this route
+  unit: ''
+  conditions: Co nanorods heated in octadecene/oleylamine at 300 C under Ar, 30 min - 4 h
+  source:
+    doi: 10.1021/jp3125457
+    title: Carbon Coating, Carburization, and High-Temperature Stability Improvement of Cobalt Nanorods
+    first_author: Ibrahim
+    year: 2013
+    url: https://hal.science/hal-00912966/document
+    evidence: full_text
+    locator: Abstract; Section B; Discussion
+  quote: 'Treatments at 300 °C in ODE/OA mixtures for different durations allowed the progressive carburization of Co to Co2C. [...] In these experiments Co3C was never observed: the carburization of the hcp cobalt NRs leading only to Co2C.'
+  note: Complete carburisation turned the rods into chains of isotropic 9-25 nm Co2C particles (shape anisotropy lost).
+- id: co2c_t_formation_ibrahim2013
+  phase: Co2C
+  quantity: T_formation
+  value: 573
+  unit: K
+  conditions: carburisation of Co nanorods in ODE/OA, 4 h for full conversion
+  source:
+    doi: 10.1021/jp3125457
+    title: Carbon Coating, Carburization, and High-Temperature Stability Improvement of Cobalt Nanorods
+    first_author: Ibrahim
+    year: 2013
+    url: https://hal.science/hal-00912966/document
+    evidence: full_text
+    locator: Section B
+  quote: After a treatment of 4h at 300 °C in the ODE/OA mixture, the Co metal lines totally [...] disappeared and the compound consisted in a pure cobalt carbide powder (Figure 4d).
+  note: 300 C = 573 K.
+- id: co2c_t_stab_ibrahim2013
+  phase: Co2C
+  quantity: T_stab
+  value: 598
+  unit: K
+  uncertainty: 25
+  conditions: partially carburised Co nanorods with thick C shell, in-situ XRD under N2 (O2 < 0.1 ppm), 5 K/min and 2 h holds; Co2C -> hcp Co between 300 and 350 C
+  source:
+    doi: 10.1021/jp3125457
+    title: Carbon Coating, Carburization, and High-Temperature Stability Improvement of Cobalt Nanorods
+    first_author: Ibrahim
+    year: 2013
+    url: https://hal.science/hal-00912966/document
+    evidence: full_text
+    locator: Section C (Figure 8)
+  quote: The high temperature in situ X-ray diffraction patterns of the partially carburized Co NRs coated with a thick carbon layer and annealed under a N2 atmosphere (O2 < 0.1 ppm) at different temperatures showed that the cobalt carbide disappears between 300 and 350 °C (Figure 8).
+  note: Value = midpoint of 573-623 K; uncertainty spans the bracket.
+- id: co2c_single_variant_ibrahim2013
+  phase: Co2C
+  quantity: single_variant_particles
+  value: full carburisation of rods gives isotropic polycrystal-like chains of 9-25 nm Co2C particles (not single rods)
+  unit: ''
+  conditions: Co nanorods carburised to completion in ODE/OA at 300 C
+  source:
+    doi: 10.1021/jp3125457
+    title: Carbon Coating, Carburization, and High-Temperature Stability Improvement of Cobalt Nanorods
+    first_author: Ibrahim
+    year: 2013
+    url: https://hal.science/hal-00912966/document
+    evidence: full_text
+    locator: Section B (Figure 5b)
+  quote: When the Co to Co2C carburization was complete after an extended treatment, the particles were no longer anisotropic but consisted in isotropic particles with a size in the range 9-25 nm and a mean size of 15 nm (Figure 5b).
+  note: ''
+- id: fecoesd_formation_path_luborsky1959
+  phase: FeCo-elongated
+  quantity: formation_path
+  value: ESD Fe or Fe-Co particles (150 A) electrodeposited into mercury, thermally grown, treated with a third metal (Sb) to set shape; aligned in a field, compacted, Hg distilled off, embedded in a matrix, ground, re-aligned and compacted to shape
+  unit: ''
+  conditions: industrial ESD (Lodex) process
+  source:
+    doi: 10.1179/pom.1959.2.4.006
+    title: PERMANENT MAGNETS FROM ELONGATED SINGLE-DOMAIN PARTICLES
+    first_author: LUBORSKY
+    year: 1959
+    url: https://api.openalex.org/works/doi:10.1179/pom.1959.2.4.006
+    evidence: abstract
+    locator: abstract
+  quote: The 150-Å. ESD iron or iron–cobalt alloy particles are prepared by controlled electrodeposition into mercury, followed by thermal growth and treatment with a third metal to attain optimum particle shape and magnetic properties. The particles are then aligned by a magnetic field, compacted under pressure, freed of mercury by vacuum distillation, and embedded in a suitable matrix. This is ground to a coarse powder and fed into automatic presses for realigning and compacting to the final magnet shape.
+  note: Only the abstract was accessible. Particles form and are aligned while ferromagnetic (bcc Fe/Fe-Co far below Tc); alignment is free-body rotation of particles in liquid Hg/powder (FP-type R), twice.
+- id: fecoesd_alignment_luborsky1959
+  phase: FeCo-elongated
+  quantity: other
+  value: 'alignment_method: field alignment of particles in the Hg slurry before first compaction; second field alignment of the ground matrix-embedded powder in automatic presses'
+  unit: ''
+  conditions: Lodex process
+  source:
+    doi: 10.1179/pom.1959.2.4.006
+    title: PERMANENT MAGNETS FROM ELONGATED SINGLE-DOMAIN PARTICLES
+    first_author: LUBORSKY
+    year: 1959
+    url: https://api.openalex.org/works/doi:10.1179/pom.1959.2.4.006
+    evidence: abstract
+    locator: abstract
+  quote: The particles are then aligned by a magnetic field, compacted under pressure, freed of mercury by vacuum distillation, and embedded in a suitable matrix. This is ground to a coarse powder and fed into automatic presses for realigning and compacting to the final magnet shape.
+  note: Field values not in the abstract.
+- id: fecoesd_shape_mendelsohn1955
+  phase: FeCo-elongated
+  quantity: other
+  value: 'shape_anisotropy: ESD iron particles 150 A diameter, median L/D 3:1, intrinsic coercivity 1600 Oe before packing (shape anisotropy replaces weak crystal anisotropy of Fe)'
+  unit: ''
+  conditions: ESD Fe particles
+  source:
+    doi: 10.1063/1.1721888
+    title: Permanent-Magnet Properties of Elongated Single-Domain Iron Particles
+    first_author: Mendelsohn
+    year: 1955
+    url: https://api.crossref.org/works/10.1063/1.1721888
+    evidence: abstract
+    locator: abstract
+  quote: Previously described fine-particle magnets have been based upon crystal anisotropy; this paper reports permanent-magnet properties derived from the shape anisotropy of substantially elongated single-domain iron particles. The shape anisotropy of these particles overcomes the limitation imposed on the energy of previous fine-particle iron magnets by the low crystal anisotropy of iron. [...] Experimental results are reported for magnets made by aligning and compacting single-domain iron particles 150 angstrom units in diameter, with a median length-to-diameter ratio of three to one, and an intrinsic coercive force before packing of 1600 oersteds.
+  note: Only the abstract was accessible.
+- id: fecoesd_shape_paine1955
+  phase: FeCo-elongated
+  quantity: other
+  value: 'shape_anisotropy: torque shows uniaxial anisotropy; temperature coefficient of Hc approaches that of saturation induction with elongation (shape, not crystal, anisotropy); Hc > 2000 Oe for 150 A Fe'
+  unit: ''
+  conditions: ESD Fe particles 150 A
+  source:
+    doi: 10.1103/physrev.100.1055
+    title: Effect of Shape Anisotropy on the Coercive Force of Elongated Single-Magnetic-Domain Iron Particles
+    first_author: Paine
+    year: 1955
+    url: https://api.openalex.org/works/doi:10.1103/physrev.100.1055
+    evidence: abstract
+    locator: abstract
+  quote: 'This conclusion is based upon four observations: (1) Torque curve analysis shows the predominating anisotropy effect to be uniaxial. (2) With increasing particle elongation, the temperature coefficient of coercive force departs from the temperature coefficient of crystal anisotropy and approaches the temperature coefficient of saturation induction. (3) Coercive forces greater than 2000 oersteds for iron have been measured. (4) A direct correlation is observed between particle coercive force and elongation.'
+  note: ''
+- id: fecoesd_shape_luborsky1957
+  phase: FeCo-elongated
+  quantity: other
+  value: 'shape_anisotropy: 40:60 Co-Fe ESD particles, median diameter 200 A, median elongation 5.4:1, intrinsic coercive force 1950 Oe'
+  unit: ''
+  conditions: ESD Co-Fe particles
+  source:
+    doi: 10.1063/1.1722744
+    title: Reproducing the Properties of Alnico Permanent Magnet Alloys with Elongated Single-Domain Cobalt-Iron Particles
+    first_author: Luborsky
+    year: 1957
+    url: https://api.crossref.org/works/10.1063/1.1722744
+    evidence: abstract
+    locator: abstract
+  quote: Single-domain particles of 40:60 cobalt-iron alloy have been prepared with a median diameter of 200 angstrom units, a median elongation of 5.4:1, and an intrinsic coercive force of 1950 oersteds.
+  note: ''
+- id: fecoesd_reversal_luborsky1961
+  phase: FeCo-elongated
+  quantity: other
+  value: 'reversal: noncoherent, closest to chain-of-spheres fanning (not curling/buckling/coherent) for 130-305 A particles; particles made by electrolysis into mercury'
+  unit: ''
+  conditions: ESD Fe and Fe-Co particles
+  source:
+    doi: 10.1063/1.2000392
+    title: Development of Elongated Particle Magnets
+    first_author: Luborsky
+    year: 1961
+    url: https://api.crossref.org/works/10.1063/1.2000392
+    evidence: abstract
+    locator: abstract
+  quote: Rotational hysteresis,coercive force, and coercive force as a function of orientation are reported for particle diameters from 130 A to 305 A. Their behavior is compared to various theoretical descriptions and found to correspond to a noncoherent magnetization reversal mechanism most similar to the chain-of-spheres fanning model rather than the curling, buckling or coherent rotation models.
+  note: ''
+- id: fecoesd_single_variant_luborsky1960
+  phase: FeCo-elongated
+  quantity: single_variant_particles
+  value: 'ESD particles are not ideal isolated rods: dendritic branches and cross-links to neighbours alter the domain structure (explains angular remanence beyond the simple SW model)'
+  unit: ''
+  conditions: oriented ESD Fe compacts at various packing fractions
+  source:
+    doi: 10.1063/1.1984605
+    title: Angular Variation of the Magnetic Properties of Elongated Single-Domain Iron Particles
+    first_author: Luborsky
+    year: 1960
+    url: https://api.crossref.org/works/10.1063/1.1984605
+    evidence: abstract
+    locator: abstract
+  quote: A more realistic model is proposed which accounts for the experimental results by considering the effect on particle domain structure of dendritic branches and cross-links to adjacent particles.
+  note: 'Branching means the ''body'' that rotates in the field is not a single straight easy axis: limits A below 1 even with perfect rotation.'
+- id: fecoesd_phase_fraction_luborsky1960
+  phase: FeCo-elongated
+  quantity: phase_fraction_limit
+  value: 'packing fraction vs coercivity trade-off: increasing packing raises magnetostatic interaction and lowers coercive force'
+  unit: ''
+  conditions: oriented ESD Fe compacts
+  source:
+    doi: 10.1063/1.1984605
+    title: Angular Variation of the Magnetic Properties of Elongated Single-Domain Iron Particles
+    first_author: Luborsky
+    year: 1960
+    url: https://api.crossref.org/works/10.1063/1.1984605
+    evidence: abstract
+    locator: abstract
+  quote: As the packing fraction is increased,particle magnetostatic interaction lowers the coercive force and suppresses the 50° max.
+  note: 'Panagiotopoulos 2013 (model): Fe wires coercivity-limited above p = 0.35 (record fecoesd_phase_fraction_panagiotopoulos2013).'
+- id: fecoesd_matrix_falk1966
+  phase: FeCo-elongated
+  quantity: other
+  value: 'consolidation: Lodex = antimony-coated Fe-Co particles in a metallic lead matrix; isotropic and anisotropic magnets formed by powder-metal pressing and extrusion; properties tuned by particle-to-matrix ratio'
+  unit: ''
+  conditions: commercial Lodex (1966)
+  source:
+    doi: 10.1063/1.1708356
+    title: A Current Review of Lodex Permanent Magnet Technology
+    first_author: Falk
+    year: 1966
+    url: https://api.crossref.org/works/10.1063/1.1708356
+    evidence: abstract
+    locator: abstract
+  quote: A wide variety of magnetic properties may be obtained by altering the ratio of elongated particles to matrix material during processing. Isotropic and anisotropic permanent magnets having complex shapes and extremely close tolerances are formed directly by a variety of powder metal and extrusion processes. Such magnets consist of antimony-coated particles of iron-cobalt embedded in a metallic lead matrix.
+  note: Only the abstract was accessible. phi is set by the particle/matrix ratio (no values in abstract).
+- id: fecoesd_t_stab_lever1958
+  phase: FeCo-elongated
+  quantity: T_stab
+  value: 473
+  unit: K
+  conditions: ESD Fe and Fe-Co compacts held at 200 C for more than one year
+  source:
+    doi: 10.1063/1.1723110
+    title: Physical and Magnetic Properties of Elongated Single-Domain Iron and Iron-Cobalt Permanent Magnets
+    first_author: Lever
+    year: 1958
+    url: https://api.crossref.org/works/10.1063/1.1723110
+    evidence: abstract
+    locator: abstract
+  quote: Compacts exposed to 200°C for over one year were observed to change remanence less than 1%.
+  note: Lower bound of microstructural stability (no upper limit stated). Quote reports a relative change, not a remanence value.
+- id: fecoesd_growth_direction_gandha2015
+  phase: FeCo-elongated
+  quantity: growth_direction
+  value: <110> along the nanowire long axis (bcc FeCo)
+  unit: ''
+  conditions: chemically synthesised Fe60Co40 nanowires (reductive decomposition)
+  source:
+    doi: 10.1088/0957-4484/26/7/075601
+    title: Synthesis and characterization of FeCo nanowires with high coercivity
+    first_author: Gandha
+    year: 2015
+    url: https://api.openalex.org/works/doi:10.1088/0957-4484/26/7/075601
+    evidence: abstract
+    locator: abstract
+  quote: Synthesized nanocrystals have a body-centered cubic crystal structure for both particles and nanowires and the (110) crystalline direction is along the long axis of the nanowires.
+  note: 'Only the abstract was accessible. Cubic Fe-Co: the easy axis of a wire is set by shape, so the <110> growth axis matters little.'
+- id: fecoesd_ms_mass_gandha2015
+  phase: FeCo-elongated
+  quantity: Ms_mass
+  value: 92
+  unit: A m2/kg
+  conditions: Fe60Co40 nanowires (sample value, includes surface oxide/organics)
+  source:
+    doi: 10.1088/0957-4484/26/7/075601
+    title: Synthesis and characterization of FeCo nanowires with high coercivity
+    first_author: Gandha
+    year: 2015
+    url: https://api.openalex.org/works/doi:10.1088/0957-4484/26/7/075601
+    evidence: abstract
+    locator: abstract
+  quote: Nanowires of Fe60Co40 with saturation magnetization of 92 emu g(-1) and coercive force of 1.2 kOe have been obtained in this study.
+  note: 'Far below bulk Fe-Co: sample-level magnetisation, not an intrinsic Js. Bulk bcc Fe-Co Js was not found in an accessible source (gap).'
+- id: fecoesd_tc_jakobsson2013
+  phase: FeCo-elongated
+  quantity: Tc
+  value: 1575
+  unit: K
+  conditions: B2-ordered FeCo (c/a = 1), DFT + classical Monte Carlo (computed)
+  source:
+    doi: 10.1063/1.4819773
+    title: Tuning the Curie temperature of FeCo compounds by tetragonal distortion
+    first_author: Jakobsson
+    year: 2013
+    url: https://arxiv.org/pdf/1309.4232
+    evidence: full_text
+    locator: Abstract
+  quote: The TC monotonically decreases from 1575 K (for c/a = 1) to 940 K (for c/a = 2).
+  note: Computed value (overestimates); experimental bcc Fe-Co Tc not sourced. Either way particles form and are aligned far below Tc.
+- id: fecoesd_history_maurer2007
+  phase: FeCo-elongated
+  quantity: other
+  value: 'candidate_status: ESD magnets commercialised as Lodex in the 1960s, superseded by rare-earth magnets in the 1970s'
+  unit: ''
+  conditions: historical statement
+  source:
+    doi: 10.1063/1.2800786
+    title: Magnetic nanowires as permanent magnet materials
+    first_author: Maurer
+    year: 2007
+    url: https://arxiv.org/pdf/0711.1978
+    evidence: full_text
+    locator: Introduction
+  quote: In the 1960’s, magnets made of elongated single domain (ESD) particles were commercialized under the name of Lodex [1-3]. However their performances were limited and they were superseded in the 70’s by Rare-Earth (RE) magnets.
+  note: ''
+- id: co3c_structure_harris2010
+  phase: Co3C
+  quantity: structure
+  value: orthorhombic, space group Pnma
+  unit: ''
+  conditions: polyol Co-carbide nanoparticles (HRTEM/FFT)
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results (Fig. 3)
+  quote: 'The FFT seen in Fig. 3 (b) was obtained from part of the crystal and indexed to the Co3C phase (space group: Pnma with a=5.03Å, b=6.73Å and c=4.48Å) with additional reflections appearing due to double diffraction.'
+  note: Cui 2018 notes Fe3C (cementite) has the same orthorhombic Pnma structure.
+- id: co3c_lattice_harris2010
+  phase: Co3C
+  quantity: lattice
+  value: a = 5.03, b = 6.73, c = 4.48
+  unit: Å
+  conditions: Co3C in polyol nanoparticles
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results (Fig. 3)
+  quote: 'The FFT seen in Fig. 3 (b) was obtained from part of the crystal and indexed to the Co3C phase (space group: Pnma with a=5.03Å, b=6.73Å and c=4.48Å) with additional reflections appearing due to double diffraction.'
+  note: ''
+- id: co3c_growth_direction_harris2010
+  phase: Co3C
+  quantity: growth_direction
+  value: '[100] (a axis) along the long axis of acicular Co3C particles'
+  unit: ''
+  conditions: one HRTEM-analysed Co3C nanoparticle near the [010] zone axis
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results (Fig. 3d)
+  quote: The corresponding inverse fast Fourier transform (IFFT) image (Fig. 3 (d)) shows the lattice spacing of about 5 Å, consistent with a [100] direction along the long axis of the particle.
+  note: Single-particle observation. Together with the DFT easy axis [100] (Snarski-Adamski 2025), shape and magnetocrystalline easy axes would coincide for such needles.
+- id: co3c_easy_axis_snarski2025
+  phase: Co3C
+  quantity: easy_axis
+  value: '[100] (a axis), DFT, for all spin moments considered'
+  unit: ''
+  conditions: orthorhombic (Pnma) Co3C, first-principles (FPLO, PBE and LDA functionals), 0 K
+  source:
+    doi: 10.1063/5.0243334
+    title: 'Magnetic hardness of hexagonal and orthorhombic Fe3C, Co3C, (Fe–Co)3C, and their alloys with boron, nitrogen, and transition metals: A first-principles study'
+    first_author: Snarski-Adamski
+    year: 2025
+    url: https://arxiv.org/pdf/2409.07058
+    evidence: full_text
+    locator: Fig. 3 caption (arXiv 2409.07058v3)
+  quote: In the case of ortho-Co3 C there is one easy axis for the whole considered range of magnetic moments, namely [100].
+  note: Computed, not measured. Orthorhombic anisotropy is biaxial (three different axis energies).
+- id: co3c_k1_cui2018
+  phase: Co3C
+  quantity: K1
+  value: 0.75
+  unit: MJ/m3
+  uncertainty: 0.1
+  conditions: single-phase Co3C nanoparticles, mean size ~8.1 nm (El-Gendy et al. 2014, ref. 189)
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 8 Carbides
+  quote: For example, single-phase Co3C nanoparticles with an average particle size of about 8.1 nm have shown an improved anisotropy constant of 0.75 ± 0.1 MJ/m3 and a high blocking temperature of 571 K, above which superparamagnetic material loses its preferred direction of magnetization in zero magnetic fields [189].
+  note: Review value quoting El-Gendy et al., APL 104 (2014) 023111 (only the abstract of the original was accessible). Snarski-Adamski 2025 quotes 0.74 +- 0.1 MJ/m3 for the same work.
+- id: co3c_k1_snarski2025
+  phase: Co3C
+  quantity: K1
+  value: 0.67
+  unit: MJ/m3
+  conditions: orthorhombic Co3C, DFT (FPLO, PBE), 0 K; MAE defined as E2 - E1 (medium minus lowest axis energy)
+  source:
+    doi: 10.1063/5.0243334
+    title: 'Magnetic hardness of hexagonal and orthorhombic Fe3C, Co3C, (Fe–Co)3C, and their alloys with boron, nitrogen, and transition metals: A first-principles study'
+    first_author: Snarski-Adamski
+    year: 2025
+    url: https://arxiv.org/pdf/2409.07058
+    evidence: full_text
+    locator: Section III.2 (Table IV)
+  quote: The MAE values calculated with PBE functional (at 0 K) are 0.68, -0.14, 0.11, and 0.67 MJ m−3 for hexaFe3 C, hexa-Co3 C, ortho-Fe3 C and ortho-Co3C, respectively, see Table IV. The calculated MAE of ortho-Co3C is in agreement with experimental magnetocrystalline anisotropy constant determined for ortho-Co3 C nanoparticles as 0.74±0.1 MJ m−3 [27].
+  note: 'Other calculations quoted in the same paper: 0.81 MJ/m3 (PAW-PBE, Wu et al.) and 0.8-0.9 MJ/m3 (El-Gendy 2014); LDA up to 0.9 MJ/m3.'
+- id: co3c_anisotropy_type_snarski2025
+  phase: Co3C
+  quantity: other
+  value: 'anisotropy_type: orthorhombic, biaxial; MAE taken as the energy difference between the medium and the easiest of the three crystal axes'
+  unit: ''
+  conditions: method definition in first-principles study
+  source:
+    doi: 10.1063/5.0243334
+    title: 'Magnetic hardness of hexagonal and orthorhombic Fe3C, Co3C, (Fe–Co)3C, and their alloys with boron, nitrogen, and transition metals: A first-principles study'
+    first_author: Snarski-Adamski
+    year: 2025
+    url: https://arxiv.org/pdf/2409.07058
+    evidence: full_text
+    locator: Section II (methods)
+  quote: The axis of easy magnetization is deﬁned by the lowest energy of the three fully relativistic quantization directions along the main crystal axes ([100], [010], and [001] along a, b, and c, respectively). [...] The MAE of an orthorhombic system is determined by the diﬀerence between the medium and lowest energy, which gives us only non-negative MAE values.
+  note: 'Relevant to alignment: a single easy axis exists, so uniaxial A-counting applies to the easy axis; the hard-axis pair is not degenerate.'
+- id: co3c_tc_snarski2025
+  phase: Co3C
+  quantity: Tc
+  value: 498-650
+  unit: K
+  conditions: orthorhombic Co3C nanoparticles, four literature measurements (refs 24-27); DFT mean-field 458 K
+  source:
+    doi: 10.1063/5.0243334
+    title: 'Magnetic hardness of hexagonal and orthorhombic Fe3C, Co3C, (Fe–Co)3C, and their alloys with boron, nitrogen, and transition metals: A first-principles study'
+    first_author: Snarski-Adamski
+    year: 2025
+    url: https://arxiv.org/pdf/2409.07058
+    evidence: review
+    locator: Introduction
+  quote: For ortho-Co3C, the measured Curie temperatures are 498 K [24], 510 K [25], 563 K [26], and 650 K [27]. The results were determined for nanoparticles, and their large dispersion indicates a signiﬁcant eﬀect of structurization on the magnetic properties of the system.
+  note: 'Refs: [24] Mikhalev 2019 (Phys. Met. Metallogr.), [25] Harris 2010, [26] Turgut 2016 (ball-milled), [27] El-Gendy 2014. Spread straddles the polyol synthesis temperature (~573 K): whether Co3C is ferromagnetic while forming is undecided.'
+- id: co3c_tc_harris2010
+  phase: Co3C
+  quantity: Tc
+  value: 510
+  unit: K
+  conditions: Co2C + Co3C polyol powder (mixture), M(T) in 10 kOe on heating from 10 K
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results (Fig. 8)
+  quote: The data of figure 8, collected under the application of a 10 kOe field, began at 10 K and approached a Curie temperature of ~510 K.
+  note: Measured on a two-phase carbide powder; attributed here to the ferromagnetic carbide (Co3C) because bulk Co2C is reported paramagnetic (Roy 2021) - that attribution is an inference.
+- id: co3c_t_formation_harris2010
+  phase: Co3C
+  quantity: T_formation
+  value: 573
+  unit: K
+  conditions: 'polyol: Co(II) acetate in tetraethylene glycol with PVP and NaOH, reflux 1-2 h (Co2C + Co3C formed)'
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Chemical Processing
+  quote: The solution was then heated to the boiling point of tetraethylene glycol (~573K) for 1-2 h using a distillation apparatus with magnetic stirring.
+  note: 'Formation at ~573 K vs Tc 498-650 K: at or above Tc for most reported Tc values.'
+- id: co2c_t_formation_harris2010
+  phase: Co2C
+  quantity: T_formation
+  value: 573
+  unit: K
+  conditions: same polyol synthesis (mixture of Co2C and Co3C)
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Chemical Processing
+  quote: The solution was then heated to the boiling point of tetraethylene glycol (~573K) for 1-2 h using a distillation apparatus with magnetic stirring.
+  note: ''
+- id: co3c_formation_path_yousefian2026
+  phase: Co3C
+  quantity: formation_path
+  value: Co metal nucleates first (reduction by tetraethylene glycol above ~180-200 C); carbide forms afterwards by catalytic decomposition of the polyol on Co surfaces and C diffusion into the Co lattice
+  unit: ''
+  conditions: CoxC/Co nanocomposites by TEG polyol (accepted manuscript); applies to CoxC generally
+  source:
+    doi: 10.1038/s41598-026-63602-z
+    title: Effect of samarium addition on structural and magnetic properties of polyol-synthesized CoxC/Co nanocomposites
+    first_author: Yousefian
+    year: 2026
+    url: https://www.nature.com/articles/s41598-026-63602-z_reference.pdf
+    evidence: full_text
+    locator: Results (formation mechanism), article in press
+  quote: Following the reduction of cobalt ions to metallic cobalt in a tetraethylene glycol medium activated by sodium hydroxide, cobalt carbide formation occurs as a secondary process that depends on temperature and reaction time. This process involves catalytic decomposition of the polyol and diffusion of carbon into the cobalt metal lattice.
+  note: Consistent with Ibrahim 2013 (carburisation of hcp-Co rods to Co2C with an orientation relationship).
+- id: co3c_formation_path_fujieda2016
+  phase: Co3C
+  quantity: formation_path
+  value: single-phase Co3C-structure particles from TEG polyol with PVP; without PVP fcc+hcp Co forms instead
+  unit: ''
+  conditions: polyol process in tetraethylene glycol
+  source:
+    doi: 10.1109/lmag.2016.2610581
+    title: Magnetic Properties of Cobalt-Based Carbide Particles Synthesized by the Polyol Process
+    first_author: Fujieda
+    year: 2016
+    url: https://api.openalex.org/works/doi:10.1109/lmag.2016.2610581
+    evidence: abstract
+    locator: abstract
+  quote: Single-phase Co carbide particles with the Co3C structure were obtained by the polyol process using tetraethylene glycol (TEG) solution containing polyvinylpyrrolidone (PVP). Additionally, particles with a mixture of face-centered cubic Co and hexagonal close-packed Co were precipitated in the TEG solution without PVP.
+  note: Only the abstract was accessible.
+- id: co3c_formation_path_turgut2016
+  phase: Co3C
+  quantity: formation_path
+  value: metastable nanocrystalline Co3C made by reactive ball milling (room-temperature mechanochemical route)
+  unit: ''
+  conditions: title statement only
+  source:
+    doi: 10.1016/j.jallcom.2016.03.095
+    title: 'Metastable Co3C nanocrystalline powder produced via reactive ball milling: Synthesis and magnetic properties'
+    first_author: Turgut
+    year: 2016
+    url: https://api.crossref.org/works/10.1016/j.jallcom.2016.03.095
+    evidence: abstract
+    locator: title (abstract not accessible)
+  quote: 'Metastable Co3C nanocrystalline powder produced via reactive ball milling: Synthesis and magnetic properties'
+  note: Only the title was accessible; a 563 K Curie temperature from this work is quoted by Snarski-Adamski 2025 (record co3c_tc_snarski2025). A milling route forms the phase below its Tc.
+- id: co3c_t_stab_harris2010
+  phase: Co3C
+  quantity: T_stab
+  value: 700
+  unit: K
+  conditions: 'Co2C/Co3C powder heated in vacuum in the VSM (10-900 K scan, rate not stated): irreversible dissociation to metallic Co + C'
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results (Fig. 8)
+  quote: At temperatures approaching 700 K a dramatic increase in magnetization is measured. The thermal cycle reveals an irreversible transformation. The magnetization and high Curie temperature of the sample heated above 700 K is consistent with metallic cobalt. We conjecture that during this vacuum heat treatment the carbide disassociates to metallic cobalt and free carbon.
+  note: Cui 2018 also states 'cobalt carbide phases decompose above 700 K'. Ibrahim 2013 saw Co2C disappear already at 573-623 K with 2 h holds under N2 (record co2c_t_stab_ibrahim2013).
+- id: co3c_t_stab_cui2018
+  phase: Co3C
+  quantity: T_stab
+  value: 700
+  unit: K
+  conditions: cobalt carbide phases (review statement)
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 8 Carbides
+  quote: It is also worth noting that cobalt carbide phases decompose above 700 K, and this temperature is higher than the required operation temperature (453 K) for the most of the permanent-magnet applications.
+  note: ''
+- id: co3c_single_variant_harris2010
+  phase: Co3C
+  quantity: single_variant_particles
+  value: nanocrystalline acicular crystallites (aspect ratio 2:1 to 7:1) coated by 1-4 nm graphitic carbon, agglomerated (ferromagnetic attraction) into 300-500 nm clusters
+  unit: ''
+  conditions: polyol Co2C/Co3C powders
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results (Fig. 2)
+  quote: TEM observations show agglomerated particle clusters, about 300-500 nm in diameter (see inset to Fig. 2 (a)), consisting of nanocrystalline Co-carbide particles with acicular or rod-like morphology having an approximate 2:1 aspect ratio. The ferromagnetic nature of these particles is the driving force behind particle agglomeration.
+  note: For free-body rotation the rotating body would be the cluster (many differently oriented crystallites), not the single needle - unless clusters are broken up.
+- id: co3c_aspect_ratio_harris2010
+  phase: Co3C
+  quantity: other
+  value: 'morphology: acicular, aspect ratio 2:1 to 7:1 depending on phase and preparation; graphite-like shell'
+  unit: ''
+  conditions: polyol Co2C/Co3C
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results
+  quote: 'Such analyses confirm the following: (i) that Co3C and Co2C coexist in the carbide nanoparticles, (ii) the carbide nanoparticles have an acicular morphology with the aspect ratio varying between phases and preparation conditions from 2:1 to 7:1, and (iii) the crystallites are surrounded by a thin graphite-like layer.'
+  note: ''
+- id: co3c_ms_mass_harris2010
+  phase: Co3C
+  quantity: Ms_mass
+  value: 73
+  unit: A m2/kg
+  conditions: Co2C+Co3C powder, room temperature, at ~17 kOe (not saturated), corrected for graphitic shell
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results (Fig. 5)
+  quote: For this sample the room temperature magnetization under an applied field of ~17 kOe is 73 emu/g with a [...] coercivity of 3.1 kOe. For the purposes of this study we report the magnetization at 17 kOe as the saturation magnetization (Ms) although it is clear that complete saturation was not attained.
+  note: Mixture, not phase-pure Co3C; magnetisation decreases as the Co2C fraction increases (Harris Fig. 7). Phase-pure Co3C Js not found in accessible text.
+- id: co3c_ms_relative_carroll2012
+  phase: Co3C
+  quantity: other
+  value: magnetisation and coercivity of Co3C exceed those of Co2C (single-phase comparison)
+  unit: ''
+  conditions: Co2C and Co3C nanoparticles
+  source:
+    doi: 10.1063/1.4733321
+    title: Magnetic properties of Co2C and Co3C nanoparticles and their assemblies
+    first_author: Carroll
+    year: 2012
+    url: https://api.crossref.org/works/10.1063/1.4733321
+    evidence: abstract
+    locator: abstract
+  quote: The studies indicate that while both phases are magnetic, the Co3C has higher magnetization and coercivity compared to Co2C.
+  note: Only the abstract was accessible.
+- id: co3c_anisotropy_origin_elgendy2014
+  phase: Co3C
+  quantity: other
+  value: 'anisotropy origin: giant magnetocrystalline anisotropy from controlled C p - Co d mixing; blocking temperature > 570 K for 8 nm magnetic domains'
+  unit: ''
+  conditions: wet-chemically synthesised cobalt carbide nanoparticles
+  source:
+    doi: 10.1063/1.4862260
+    title: Enhanced magnetic anisotropy in cobalt-carbide nanoparticles
+    first_author: El-Gendy
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1063/1.4862260
+    evidence: abstract
+    locator: abstract
+  quote: In this work, we demonstrate that using wet chemical synthesis, it is possible to stabilize cobalt carbide nanoparticles which have blocking temperatures exceeding 570 K even for particles with magnetic domains of 8 nm. First principles theoretical investigations show that the observed behavior is rooted in the giant magnetocrystalline anisotropies due to controlled mixing between C p- and Co d-states.
+  note: Only the abstract was accessible.
+- id: co3c_alignment_harris2010
+  phase: Co3C
+  quantity: other
+  value: 'alignment_method: none performed; authors propose acicular shape for particle alignment in nanocomposite cores'
+  unit: ''
+  conditions: polyol Co-carbide powders
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Abstract
+  quote: Further, the acicular particle shape provides an enhancement to the coercivity via dipolar anisotropy energy as well as offering potential for particle alignment in nanocomposite cores.
+  note: No field-aligned carbide assembly was found in the accessible literature.
+- id: co2c_lattice_harris2010
+  phase: Co2C
+  quantity: lattice
+  value: a = 4.45, b = 4.37, c = 2.90 (orthorhombic Pnnm)
+  unit: Å
+  conditions: Co2C in polyol nanoparticles
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results (Fig. 4)
+  quote: 'Figure 4 shows a HRTEM image of a Co2C crystal (space group: Pnnm with a= 4.45Å, b = 4.37Å, and c=2.90Å) close to the [001] zone axis.'
+  note: ''
+- id: co2c_structure_harris2010
+  phase: Co2C
+  quantity: structure
+  value: orthorhombic, space group Pnnm
+  unit: ''
+  conditions: Co2C in polyol nanoparticles
+  source:
+    doi: 10.1088/0022-3727/43/16/165003
+    title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent magnet material'
+    first_author: Harris
+    year: 2010
+    url: https://arxiv.org/pdf/0911.1277
+    evidence: full_text
+    locator: Results (Fig. 4)
+  quote: 'Figure 4 shows a HRTEM image of a Co2C crystal (space group: Pnnm with a= 4.45Å, b = 4.37Å, and c=2.90Å) close to the [001] zone axis.'
+  note: ''
+- id: co2c_ms_mass_huba2012
+  phase: Co2C
+  quantity: Ms_mass
+  value: 16
+  unit: A m2/kg
+  conditions: single-phase Co2C nanoparticles (polyol, 0.71 M OH-/Cl-), room temperature
+  source:
+    doi: 10.1063/1.3677816
+    title: Size and phase control of cobalt–carbide nanoparticles using OH− and Cl− anions in a polyol process
+    first_author: Huba
+    year: 2012
+    url: https://api.crossref.org/works/10.1063/1.3677816
+    evidence: abstract
+    locator: abstract
+  quote: Co2C possessed a saturation magnetization of 16 emu/g and coercivity of 1.3 kOe.
+  note: 'Only the abstract was accessible. Mixed CoxC: 38 emu/g.'
+- id: co2c_ms_mass_roy2021
+  phase: Co2C
+  quantity: Ms_mass
+  value: 6.1
+  unit: A m2/kg
+  conditions: pure Co2C nanoparticles, 40 +- 10 nm, room temperature
+  source:
+    doi: 10.1088/1361-648x/ac0f9f
+    title: Exploring a low temperature glassy state, exchange bias effect, and high magnetic anisotropy in Co2C nanoparticles
+    first_author: Roy
+    year: 2021
+    url: https://arxiv.org/pdf/2005.04904
+    evidence: full_text
+    locator: Results (arXiv preprint 2005.04904, Fig. 1)
+  quote: Although Co2C nanoparticle has a substantial saturation magnetization (MS) at room temperature of 6.1 emu/g, it is smaller than the value for pure Co and Co2C-Co3C nanocomposite.
+  note: Quote from the arXiv preprint (titled 'The Exchange Bias effect in pure Co2C nanoparticles'); DOI/title are those of the published version.
+- id: co2c_magnetic_order_roy2021
+  phase: Co2C
+  quantity: other
+  value: 'magnetic order: bulk Co2C expected paramagnetic; nanoparticles weakly ferromagnetic with blocking above room temperature'
+  unit: ''
+  conditions: Co2C nanoparticles 40 nm
+  source:
+    doi: 10.1088/1361-648x/ac0f9f
+    title: Exploring a low temperature glassy state, exchange bias effect, and high magnetic anisotropy in Co2C nanoparticles
+    first_author: Roy
+    year: 2021
+    url: https://arxiv.org/pdf/2005.04904
+    evidence: full_text
+    locator: Results (arXiv preprint 2005.04904)
+  quote: Here we would like to mention that whereas we observe the Co2C nanoparticles to be FM in nature, bulk Co2C is expected to be paramagnetic.
+  note: Low Js makes Co2C a poor hard phase regardless of alignment.
+- id: efe2o3_structure_ohkoshi2015
+  phase: epsilon-Fe2O3
+  quantity: structure
+  value: orthorhombic, space group Pna21 (polar)
+  unit: ''
+  conditions: pure epsilon phase, 8.2 nm particles (S-1020)
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Results (Fig. 1, Table S1)
+  quote: Above 951 °C, the XRPD patterns for S-951–S-1104 show a pure ε -Fe2O3 phase (orthorhombic, Pna21, a = 5.09 Å, b = 8.80 Å, and c = 9.48 Å for S-1020) (Supplementary Table S1).
+  note: ''
+- id: efe2o3_lattice_ohkoshi2015
+  phase: epsilon-Fe2O3
+  quantity: lattice
+  value: a = 5.09, b = 8.80, c = 9.48
+  unit: Å
+  conditions: S-1020 (sintered 1020 C), Rietveld
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Results (Table S1)
+  quote: Above 951 °C, the XRPD patterns for S-951–S-1104 show a pure ε -Fe2O3 phase (orthorhombic, Pna21, a = 5.09 Å, b = 8.80 Å, and c = 9.48 Å for S-1020) (Supplementary Table S1).
+  note: Gich 2014 quotes a = 5.1019, b = 8.7807, c = 9.4661 Å for nanoparticles.
+- id: efe2o3_easy_axis_ohkoshi2015
+  phase: epsilon-Fe2O3
+  quantity: easy_axis
+  value: a axis [100] (magnetic polarisation along a; electric polarisation along c)
+  unit: ''
+  conditions: epsilon-Fe2O3, room temperature
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Results (Fig. 4e)
+  quote: From the aforementioned electronic and magnetic calculations, ε -Fe2O3 has both electric polarization (//c-axis) and magnetic polarization (//a-axis).
+  note: Oriented films in the same paper align the a axis with the field (record efe2o3_alignment_ohkoshi2015).
+- id: efe2o3_k1_ohkoshi2015
+  phase: epsilon-Fe2O3
+  quantity: K1
+  value: 0.77
+  unit: MJ/m3
+  conditions: 'orthorhombic anisotropy: Ka = 7.7e6 erg/cm3 (easy a) and Kb = 1.2e6 erg/cm3, from Hc of oriented films and 182 GHz natural resonance'
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Results (after Fig. 3)
+  quote: The Hc value of the magnetic hysteresis loop and the natural resonance frequency of 182 GHz, reported in our previous works7,23, indicate that the magnetic anisotropy constants of Ka and Kb in orthorhombic symmetry are 7.7 × 106 erg cm−3 and 1.2 × 106 erg cm−3, respectively.
+  note: '''106'' = 10^6. 7.7e6 erg/cm3 = 0.77 MJ/m3; Kb = 0.12 MJ/m3. Orthorhombic (biaxial) anisotropy with a single easy axis a.'
+- id: efe2o3_k1_chan2018
+  phase: epsilon-Fe2O3
+  quantity: K1
+  value: 0.2-0.5
+  unit: MJ/m3
+  conditions: literature range quoted in thesis background (ref. 27, Tucek et al. review)
+  source:
+    doi: null
+    title: Phase Control and Processing Methods for High-Coercivity Magnets based on Metastable Fe2O3
+    first_author: Chan
+    year: 2018
+    url: https://escholarship.org/content/qt8q08q7pp/qt8q08q7pp.pdf
+    evidence: review
+    locator: Chapter 1.2 (p. 24)
+  quote: The magnetocrystalline anisotropy has been reported as K = 2-5 x 105 J/m3, with a Ms between 15-25 emu/g[27].
+  note: '''105'' = 10^5 (superscript). Lower than Ohkoshi''s Ka = 0.77 MJ/m3: literature K values for epsilon-Fe2O3 disagree by ~2x.'
+- id: efe2o3_shape_namai2012
+  phase: epsilon-Fe2O3
+  quantity: other
+  value: 'shape_anisotropy: negligible (< 0.3 kOe) for ~35 nm particles because Ms is small; anisotropy field Ha = 53 kOe (Rh0.14) is magnetocrystalline'
+  unit: kOe
+  conditions: epsilon-Rh0.14Fe1.86O3, ~35 nm, 300 K
+  source:
+    doi: 10.1038/ncomms2038
+    title: Hard magnetic ferrite with a gigantic coercivity and high frequency millimetre wave rotation
+    first_author: Namai
+    year: 2012
+    url: https://www.nature.com/articles/ncomms2038.pdf
+    evidence: full_text
+    locator: Discussion
+  quote: Because shape anisotropy in the present series is negligible (below 0.3 kOe), the observed Ha value of 53 kOe is determined by the magnetocrystalline anisotropy.
+  note: Unlike hcp-Co rods, elongation of epsilon-Fe2O3 adds no useful shape anisotropy; rod geometry matters only as a handle for rotation and because rods grow along the easy a axis.
+- id: efe2o3_tc_namai2012
+  phase: epsilon-Fe2O3
+  quantity: Tc
+  value: 505
+  unit: K
+  conditions: epsilon-Fe2O3 (x = 0) powder; Rh substitution lowers Tc to 469 K at x = 0.14
+  source:
+    doi: 10.1038/ncomms2038
+    title: Hard magnetic ferrite with a gigantic coercivity and high frequency millimetre wave rotation
+    first_author: Namai
+    year: 2012
+    url: https://www.nature.com/articles/ncomms2038.pdf
+    evidence: full_text
+    locator: Results (Supplementary Fig. S4a)
+  quote: of ε-RhxFe2 − xO3 powder samples show that the Curie temperatures (TC) are 505 K (x = 0), 495 K (x = 0.04), 484 K (x = 0.07), 474 K (x = 0.11) and 469 K (x = 0.14) (Supplementary Fig. S4a).
+  note: ''
+- id: efe2o3_tc_gareev2023
+  phase: epsilon-Fe2O3
+  quantity: Tc
+  value: 480-495
+  unit: K
+  conditions: epsilon-Fe2O3 (review table, refs 41, 46)
+  source:
+    doi: 10.3390/magnetochemistry9050119
+    title: 'Diversity of Iron Oxides: Mechanisms of Formation, Physical Properties and Applications'
+    first_author: Gareev
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/magnetochemistry/magnetochemistry-09-00119/article_deploy/magnetochemistry-09-00119.pdf
+    evidence: review
+    locator: Table 1 (page 5)
+  quote: Curie/Neel point, K 196 [47,55] 838–856 [66] 948–963 [41,58] 110–119 [62,64] 618–928 [41,67] 480–495 [41,46]
+  note: 'Row of Table 1 typed from the rendered page (last column = epsilon-Fe2O3); the PDF text layer overlays a review draft. Same table: saturation mass magnetisation 15 emu/g at 300 K for epsilon-Fe2O3 [46].'
+- id: efe2o3_ms_mass_gareev2023
+  phase: epsilon-Fe2O3
+  quantity: Ms_mass
+  value: 15
+  unit: A m2/kg
+  conditions: 'epsilon-Fe2O3, 300 K (review table; footnote: bulk values)'
+  source:
+    doi: 10.3390/magnetochemistry9050119
+    title: 'Diversity of Iron Oxides: Mechanisms of Formation, Physical Properties and Applications'
+    first_author: Gareev
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/magnetochemistry/magnetochemistry-09-00119/article_deploy/magnetochemistry-09-00119.pdf
+    evidence: review
+    locator: Table 1 (page 5)
+  quote: Saturation mass magnetization 1 at 300 K, emu/g 11–18 [55,56] 92–94 [57] 0.3–1.9 [58,59] 0.02–0.05 [63,64] 74–80 [60,61] 15 [46]
+  note: Row typed from the rendered page (last column = epsilon-Fe2O3).
+- id: efe2o3_ms_mass_chan2018
+  phase: epsilon-Fe2O3
+  quantity: Ms_mass
+  value: 16
+  unit: A m2/kg
+  conditions: theoretical value quoted in thesis
+  source:
+    doi: null
+    title: Phase Control and Processing Methods for High-Coercivity Magnets based on Metastable Fe2O3
+    first_author: Chan
+    year: 2018
+    url: https://escholarship.org/content/qt8q08q7pp/qt8q08q7pp.pdf
+    evidence: review
+    locator: Chapter 4.5 (p. 70-71)
+  quote: While the theoretical magnetization value of ε-Fe2O3 is 16 emu/g, the lower value can be attributed to a dilution effect due to the high silica/sodium silicate (diamagnetic phase) content.
+  note: Greek letter is a Symbol-font glyph in the text layer.
+- id: efe2o3_ms_mass_ohkoshi2015
+  phase: epsilon-Fe2O3
+  quantity: Ms_mass
+  value: 15.5
+  unit: A m2/kg
+  uncertainty: 0.5
+  conditions: oriented film of 8.2 nm epsilon-Fe2O3 (S-1020), 300 K, field parallel to easy axis, saturated above ~20 kOe
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Fig. 3b (read from plot)
+  quote: The magnetic hysteresis loop of the crystallographically oriented S-1020 nanocrystal film measured in the applied magnetic field (H0) parallel to the easy-axis at 300 K.
+  note: Value read from the plateau of Fig. 3b (estimated uncertainty +-0.5 emu/g).
+- id: efe2o3_ms_lowt_suturin2021
+  phase: epsilon-Fe2O3
+  quantity: other
+  value: Ms slightly above 100 emu/cm3 (mu0Ms ~0.13 T) at 5 K in epitaxial films; Ms decreases strongly with temperature
+  unit: emu/cm3
+  conditions: PLD epsilon-Fe2O3 films on GaN, 7-120 nm thick, 5 K
+  source:
+    doi: 10.1080/14686996.2020.1870870
+    title: Correlation between crystal structure and magnetism in PLD grown epitaxial films of ε-Fe2O3 on GaN
+    first_author: Suturin
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8856044/fullTextXML
+    evidence: full_text
+    locator: Section 3.4 (Fig. 4b)
+  quote: The value of the low temperature Ms is mostly the same for different thickness and is slightly above 100 emu/cm3 being a reasonable value for ε-Fe2O3 [7,23,24]. A drastic decrease of saturation magnetization Ms with temperature was observed in all the films.
+  note: No source read states the density of epsilon-Fe2O3, so Js(300 K) cannot be formed from Ms_mass here; Gich 2014 film data at 300 K are in the sealed file (Js_same_sample).
+- id: efe2o3_formation_path_ohkoshi2015
+  phase: epsilon-Fe2O3
+  quantity: formation_path
+  value: ferrihydrite Fe10O14(OH)2 (2.8 nm) in SiO2 -> gamma-Fe2O3 (~250 C) -> epsilon-Fe2O3 (gamma->epsilon 750-924 C with particle growth; pure epsilon 951-1104 C) -> alpha-Fe2O3 traces above 1142 C; 4 h anneals in silica, silica then etched
+  unit: ''
+  conditions: sol-gel precursor in SiO2 matrix
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Results (Fig. 1)
+  quote: As the sintering temperature is raised, γ -Fe2O3 transforms into ε -Fe2O3 around 500 °C. [...] Above 1142 °C, a small amount of α -Fe2O3 is detected [...] As the sintering temperature increases further, from 750 °C to 924 °C, which is the region of the γ -Fe2O3 → ε -Fe2O3 transition, the d value gradually increases, and pure ε -Fe2O3 is formed.
+  note: Formation is size-driven inside a diffusion-limiting silica matrix; particles are embedded (immobile) while forming.
+- id: efe2o3_t_formation_ohkoshi2015
+  phase: epsilon-Fe2O3
+  quantity: T_formation
+  value: 1224-1377
+  unit: K
+  conditions: 'pure epsilon range 951-1104 C, 4 h, in SiO2 (vs Tc ~ 500 K: paramagnetic while forming)'
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Results; Methods
+  quote: The precursor was sintered at 250 °C–1295 °C for four hours in air, to obtain iron oxide in SiO2 matrix. The SiO2 matrix was then removed by chemical etching using a NaOH aqueous solution.
+  note: Pure-epsilon window 951-1104 C from the Results text (record efe2o3_structure_ohkoshi2015).
+- id: efe2o3_t_formation_namai2012
+  phase: epsilon-Fe2O3
+  quantity: T_formation
+  value: 1473
+  unit: K
+  conditions: epsilon-RhxFe2-xO3 in mesoporous silica, 1200 C for 4 h in air
+  source:
+    doi: 10.1038/ncomms2038
+    title: Hard magnetic ferrite with a gigantic coercivity and high frequency millimetre wave rotation
+    first_author: Namai
+    year: 2012
+    url: https://www.nature.com/articles/ncomms2038.pdf
+    evidence: full_text
+    locator: Methods
+  quote: To obtain the target materials, a methanol and water solution containing iron nitrate and rhodium nitrate was immersed into mesoporous silica and sintered at 1,200 °C for 4 h in air. Silica matrices were etched by an aqueous sodium hydroxide solution at 70 °C.
+  note: ''
+- id: efe2o3_formation_path_namai2012
+  phase: epsilon-Fe2O3
+  quantity: formation_path
+  value: gamma -> epsilon -> alpha with increasing particle size; epsilon stable in an intermediate size window (surface-energy effect)
+  unit: ''
+  conditions: nanoparticles in mesoporous silica
+  source:
+    doi: 10.1038/ncomms2038
+    title: Hard magnetic ferrite with a gigantic coercivity and high frequency millimetre wave rotation
+    first_author: Namai
+    year: 2012
+    url: https://www.nature.com/articles/ncomms2038.pdf
+    evidence: full_text
+    locator: Discussion
+  quote: Usually, iron oxide (Fe2O3) transforms directly from γ-phase into α-phase as the sintering temperature increases in the typical calcination process. However, in the present synthetic method, ε-phase exists as a stable phase due to the nanosize effects on the phase transformation via the following mechanism.
+  note: ''
+- id: efe2o3_t_stab_chan2018
+  phase: epsilon-Fe2O3
+  quantity: T_stab
+  value: 500
+  unit: K
+  conditions: unconstrained (free) epsilon-Fe2O3 particles; converts to alpha-Fe2O3
+  source:
+    doi: null
+    title: Phase Control and Processing Methods for High-Coercivity Magnets based on Metastable Fe2O3
+    first_author: Chan
+    year: 2018
+    url: https://escholarship.org/content/qt8q08q7pp/qt8q08q7pp.pdf
+    evidence: review
+    locator: Chapter 1.2 (p. 24)
+  quote: ε-Fe2O3 is a metastable polymorph and readily converts to α-Fe2O3 at temperatures above 500K when the individual particles are unrestricted.
+  note: 'Greek letters are Symbol-font glyphs in the PDF text layer (rendered page checked). Time scale not stated. Decisive for consolidation: densifying freed particles risks epsilon->alpha.'
+- id: efe2o3_t_stab_jacs2025
+  phase: epsilon-Fe2O3
+  quantity: T_stab
+  value: 1373
+  unit: K
+  conditions: epsilon in bulk silica gel, 3 h; above this alpha takes over (embedded particles)
+  source:
+    doi: 10.1021/jacs.5c05058
+    title: Rare-Earth Silicates as High-Temperature Surfactants for the Controlled Synthesis of ε-Fe2O3 Nanoparticles
+    first_author: Khanam
+    year: 2025
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12447499/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion
+  quote: This approach allows obtaining in the lab several grams of roughly spherical ε-Fe2O3 nanoparticles per batch, but their average sizes do not exceed ∼25 nm for 3 h treatments at 1100 °C, the highest temperature that allows stabilizing ε-Fe2O3 as the major polymorph.
+  note: Upper stability bound only while embedded in silica; Ohkoshi 2015 sees alpha traces above 1142 C (4 h).
+- id: efe2o3_growth_direction_jacs2025
+  phase: epsilon-Fe2O3
+  quantity: growth_direction
+  value: '[100] (a axis) along the rod axis'
+  unit: ''
+  conditions: Y-silicate-capped epsilon-Fe2O3 nanorods (bulk sol-gel with Y3+, 1100 C)
+  source:
+    doi: 10.1021/jacs.5c05058
+    title: Rare-Earth Silicates as High-Temperature Surfactants for the Controlled Synthesis of ε-Fe2O3 Nanoparticles
+    first_author: Khanam
+    year: 2025
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12447499/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion (atomic-resolution STEM)
+  quote: The rod axis is oriented along the [100] direction of ε-Fe2O3, as deduced from indexing the fast Fourier transform (FFT) pattern of the atomic resolution image (see S8).
+  note: Rod axis = easy axis (a), as for hcp-Co rods (c).
+- id: efe2o3_growth_direction_chan2018
+  phase: epsilon-Fe2O3
+  quantity: growth_direction
+  value: a axis for Ba-assisted nanorods; growth along b and c restricted; epsilon->alpha linked to growth along c
+  unit: ''
+  conditions: Ba-assisted reverse-micelle/sol-gel nanorods in silica
+  source:
+    doi: null
+    title: Phase Control and Processing Methods for High-Coercivity Magnets based on Metastable Fe2O3
+    first_author: Chan
+    year: 2018
+    url: https://escholarship.org/content/qt8q08q7pp/qt8q08q7pp.pdf
+    evidence: full_text
+    locator: Chapter 4 (p. 69)
+  quote: In the case of spherical nanoparticles, growth is relatively homogenous in all directions, whereas in the nanorod case presented in this work, the growth is heavily restricted along the b- and c-axes due to the adsorption of Ba ions along these surfaces, while growth occurs primarily along the a-axis.
+  note: 'Same paragraph: Sakurai et al. reported epsilon-Fe2O3 nanorods up to 1.5 um long along the a axis with c limited to 50 nm.'
+- id: efe2o3_formation_path_jin2005
+  phase: epsilon-Fe2O3
+  quantity: formation_path
+  value: rod-shaped epsilon-Fe2O3 (100-200 nm) with Sr2+/Ba2+ addition at 1000 C; spheres (16 nm) without at 1050 C
+  unit: ''
+  conditions: reverse micelle + sol-gel epsilon-Fe2O3/SiO2
+  source:
+    doi: 10.1039/b416554c
+    title: Formation of spherical and rod-shaped ε-Fe2O3 nanocrystals with a large coercive field
+    first_author: Jin
+    year: 2005
+    url: https://api.openalex.org/works/doi:10.1039/b416554c
+    evidence: abstract
+    locator: abstract
+  quote: When an appropriate amount of IIA metal ion (Sr2+ or Ba2+) was added to this system, ε-Fe2O3 particles of larger particle size up to 100–200 nm were produced with rod-like shape under a 1000 °C sintering temperature.
+  note: Only the abstract was accessible.
+- id: efe2o3_single_variant_namai2012
+  phase: epsilon-Fe2O3
+  quantity: single_variant_particles
+  value: single-domain (MFM) single-crystal nanoparticles ~35 nm
+  unit: ''
+  conditions: epsilon-RhxFe2-xO3 / epsilon-Fe2O3
+  source:
+    doi: 10.1038/ncomms2038
+    title: Hard magnetic ferrite with a gigantic coercivity and high frequency millimetre wave rotation
+    first_author: Namai
+    year: 2012
+    url: https://www.nature.com/articles/ncomms2038.pdf
+    evidence: full_text
+    locator: Methods (Single magnetic domain of the nanoparticle)
+  quote: The magnetic force microscopy image showed that ε-Fe2O3 particles form a single magnetic domain. Therefore, ε-RhxFe2 − xO3 is considered to be composed of a single magnetic domain.
+  note: ''
+- id: efe2o3_size_window_ohkoshi2015
+  phase: epsilon-Fe2O3
+  quantity: other
+  value: 'size window: superparamagnetic limit d_p = 7.5 nm (random orientation fit) at 300 K'
+  unit: nm
+  conditions: epsilon-Fe2O3 spheres of 5.6-16.5 nm
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Results (Fig. 2b)
+  quote: Based on this equation, the Hc versus d plot was fitted, and the dp value was estimated to be 7.5 nm (Fig. 2b).
+  note: Together with the size-driven epsilon->alpha transformation, single-domain epsilon particles exist only between ~7.5 nm and a few tens of nm (longer only along a).
+- id: efe2o3_primary_crystallisation_erlebach2015
+  phase: epsilon-Fe2O3
+  quantity: primary_crystallisation
+  value: epsilon-Fe2O3 single crystals form directly from vapour/nano-melt in CO2 laser vaporisation (LAVA); MD shows ~5 nm droplets crystallise as epsilon
+  unit: ''
+  conditions: laser-vaporised Fe2O3 nanoparticles (~18 nm) and MD simulations
+  source:
+    doi: 10.1039/c4nr06989g
+    title: Structure evolution of nanoparticulate Fe2O3
+    first_author: Erlebach
+    year: 2015
+    url: https://arxiv.org/pdf/2405.18637
+    evidence: full_text
+    locator: Abstract; Results
+  quote: Simulated crystallization of larger nanoparticles with diameters of about 5 nm demonstrates pronounced melting point depression and leads to formation of ε-Fe 2O 3 single crystals with hexagonal morphology. This finding is in excellent agreement with the results obtained for Fe 2O 3 nanopowders generated by laser vaporization
+  note: Gas-phase route forms free (not silica-embedded) epsilon single crystals far above Tc.
+- id: efe2o3_alignment_namai2012
+  phase: epsilon-Fe2O3
+  quantity: other
+  value: 'alignment_method: nanoparticles dispersed in UV-curing resin, oriented in 12.7 kOe, resin cured by UV to pin the orientation'
+  unit: ''
+  conditions: epsilon-Rh0.14Fe1.86O3, ~35 nm, room temperature
+  source:
+    doi: 10.1038/ncomms2038
+    title: Hard magnetic ferrite with a gigantic coercivity and high frequency millimetre wave rotation
+    first_author: Namai
+    year: 2012
+    url: https://www.nature.com/articles/ncomms2038.pdf
+    evidence: full_text
+    locator: Methods (Preparation of an oriented sample)
+  quote: The ε-Rh0.14Fe1.86O3 nanoparticles were oriented by placing ε-Rh0.14Fe1.86O3 nanoparticles dispersed ultraviolet curing resin (SD-2200, DIC Corporation) in an applied magnetic field of 12.7 kOe. The sample was then irradiated with ultraviolet light (EX250, Hoya Candeo Optronics Corporation) to harden the curing resin and to pin the oriented nanoparticles.
+  note: '12.7 kOe is far below the anisotropy field (53 kOe): rotation is driven by the remanent moment of each single-domain particle, not by saturating it.'
+- id: efe2o3_alignment_ohkoshi2015
+  phase: epsilon-Fe2O3
+  quantity: other
+  value: 'alignment_method: nanocrystals dispersed in a vehicle matrix under an external field to make an oriented thin film (a axis normal to film); field value not stated'
+  unit: ''
+  conditions: 8.2 nm epsilon-Fe2O3 (S-1020), colloidal solution
+  source:
+    doi: 10.1038/srep14414
+    title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric effect
+    first_author: Ohkoshi
+    year: 2015
+    url: https://www.nature.com/articles/srep14414.pdf
+    evidence: full_text
+    locator: Results (Fig. 3)
+  quote: In addition, we prepared oriented nanocrystal thin film, which was obtained by dispersing the nanocrystals in a vehicle matrix under external magnetic field. The XRPD pattern of the S-1020 shows that the nanocrystals oriented along the crystallographic a-axis, perpendicular to the film (Fig. 3a).
+  note: ''
+- id: efe2o3_field_effect_chan2018
+  phase: epsilon-Fe2O3
+  quantity: field_effect_on_formation
+  value: annealing the Fe-O/SiO2 precursor in a static field (permanent magnets) induces magnetic ordering at 450-600 C, ~300 C lower than without field; effect negligible above 800 C; no orientation/texture reported
+  unit: ''
+  conditions: Si-O-90 powder annealed 450-950 C with and without field
+  source:
+    doi: null
+    title: Phase Control and Processing Methods for High-Coercivity Magnets based on Metastable Fe2O3
+    first_author: Chan
+    year: 2018
+    url: https://escholarship.org/content/qt8q08q7pp/qt8q08q7pp.pdf
+    evidence: full_text
+    locator: Abstract; Chapter 4.6
+  quote: It was found that magnetic ordering was induced at 600°C, which is 300°C lower than samples annealed without field. [...] At termperatures higher than 800˚C, the effects of the external field become negligible as the thermal effects on phase transformations/magnetic ordering becomes dominant.
+  note: Field acts on phase formation kinetics (low-T ferrimagnetic polymorph), not demonstrated as variant/orientation selection. Epsilon forms at >= 875-1050 C, i.e. well above its Tc.
+- id: efe2o3_consolidation_chan2018
+  phase: epsilon-Fe2O3
+  quantity: other
+  value: 'consolidation: CAPAD (SPS) of the amorphous Fe-O/Si-O precursor at 450-600 C, 100-300 MPa, 1-5 min in vacuum, then 1025 C / 1 h anneal to grow epsilon nanorods inside the dense silica matrix (no field); ~99% relative density reached for Na-Si-O-15'
+  unit: ''
+  conditions: reverse-micelle/sol-gel Fe-O/Si-O powders (15-90 mol% Fe/Ba)
+  source:
+    doi: null
+    title: Phase Control and Processing Methods for High-Coercivity Magnets based on Metastable Fe2O3
+    first_author: Chan
+    year: 2018
+    url: https://escholarship.org/content/qt8q08q7pp/qt8q08q7pp.pdf
+    evidence: full_text
+    locator: Chapter 5.2; Abstract
+  quote: The applied pressure varied from 100-300 MPa, with a load rate of 28 MPa min-1. The maximum temperature reached during processing ranged from 450-600˚C, with average heating rates between 100-300˚C min-1. [...] Following the densification process, the bulk samples were extracted from the die and annealed at 1025˚C for one hour in order to grow the ε-Fe2O3 [...] nanorods inside the silica matrix.
+  note: Greek letters are Symbol-font glyphs in the PDF text layer (rendered page checked). Published as Chan et al., J. Mater. Chem. C 5 (2017) 7911, doi:10.1039/c7tc01789h (only a one-line abstract accessible). The route densifies before the epsilon phase exists, so it is isotropic by construction.
+- id: efe2o3_phase_fraction_chan2018
+  phase: epsilon-Fe2O3
+  quantity: phase_fraction_limit
+  value: high Fe2O3 fraction in dense composites (90 mol% cation) yields alpha-Fe2O3 because epsilon stability needs nano-size/diffusion barriers
+  unit: ''
+  conditions: CAPAD-densified Fe-O/Si-O composites after 1025 C anneal
+  source:
+    doi: null
+    title: Phase Control and Processing Methods for High-Coercivity Magnets based on Metastable Fe2O3
+    first_author: Chan
+    year: 2018
+    url: https://escholarship.org/content/qt8q08q7pp/qt8q08q7pp.pdf
+    evidence: full_text
+    locator: Chapter 5.3
+  quote: It is [...] believed that because the stability of ε-Fe2O3 is inherently size-dependent, and therefore can only exist as a nano-phase material, leading to the formation of α-Fe2O3 in the high concentration samples due to the significantly decreased diffusion lengths.
+  note: Greek letters are Symbol-font glyphs in the PDF text layer (rendered page checked).
+- id: efe2o3_n_variants_suturin2021
+  phase: epsilon-Fe2O3
+  quantity: n_variants
+  value: 3
+  unit: ''
+  conditions: 'PLD epitaxial epsilon-Fe2O3 films on GaN(0001): columns with in-plane easy axes at 120 deg'
+  source:
+    doi: 10.1080/14686996.2020.1870870
+    title: Correlation between crystal structure and magnetism in PLD grown epitaxial films of ε-Fe2O3 on GaN
+    first_author: Suturin
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8856044/fullTextXML
+    evidence: full_text
+    locator: Sections 3.2 and 3.4
+  quote: The columns in ε-Fe2O3 film can be considered as such weakly interacting objects as they are crystallographically non-coherent to the neighbors, have differently oriented easy magnetization axes at 120 deg to each other and are small enough to be single domain. [...] From this point of view, fabricating a film with the true single axis anisotropy is a challenge that might lead to a better understanding of the magnetization dynamics in this material.
+  note: EP on hexagonal substrates gives three in-plane easy-axis variants (c axis out of plane).
+- id: efe2o3_or_gich2014
+  phase: epsilon-Fe2O3
+  quantity: OR
+  value: epsilon-Fe2O3(001) || AlFeO3(001) || SrTiO3(111); six in-plane domains rotated 60 deg; one domain [100]epsilon || [1-21]STO
+  unit: ''
+  conditions: PLD films on AlFeO3-buffered Nb:SrTiO3(111)
+  source:
+    doi: 10.1002/adma.201400990
+    title: Multiferroic Iron Oxide Thin Films at Room Temperature
+    first_author: Gich
+    year: 2014
+    url: https://arxiv.org/pdf/1405.4909
+    evidence: full_text
+    locator: Results (Fig. 1)
+  quote: This indicates the epitaxial growth of ε-Fe2O3 in six domains rotated 60° to each other as a result of the six-fold symmetry of the STO(111) surface (see Supporting Information for further details). The in-plane orientation of one of the domains is [100] ε-Fe2O3 ║ [121] STO
+  note: Six 60-deg domains = three distinct easy-axis (a) directions in the film plane. '[121]' carries an overbar in the original.
+- id: efe2o3_tc_gich2014
+  phase: epsilon-Fe2O3
+  quantity: Tc
+  value: 500
+  unit: K
+  conditions: epsilon-Fe2O3 (value quoted by the authors, ref. 15)
+  source:
+    doi: 10.1002/adma.201400990
+    title: Multiferroic Iron Oxide Thin Films at Room Temperature
+    first_author: Gich
+    year: 2014
+    url: https://arxiv.org/pdf/1405.4909
+    evidence: review
+    locator: Introduction
+  quote: ε-Fe2O3 is a robust room-temperature insulating ferrimagnet with a Curie temperature of about 500 K[15] which is driving current interest for possible applications.
+  note: ''
+- id: bctfeco_k1_kota2012
+  phase: bct-FeCo
+  quantity: K1
+  value: 700-800
+  unit: ueV/atom
+  conditions: DFT (VCA) prediction of Burkert et al. for bct Fe1-xCox, c/a = 1.20-1.25, x = 0.5-0.6, 0 K
+  source:
+    doi: 10.1143/apex.5.113002
+    title: Degree of Order Dependence on Magnetocrystalline Anisotropy in Body-Centered Tetragonal FeCo Alloys
+    first_author: Kota
+    year: 2012
+    url: https://arxiv.org/pdf/1210.4386
+    evidence: review
+    locator: Introduction (arXiv 1210.4386)
+  quote: In their paper, tetragonal distorted Fe1−x Cox alloys exhibit a large uniaxial magnetic anisotropy constant Ku , as high as about 700 – 800 µeV/atom, which is sufficiently comparable to the Ku value of a series of L10 type alloys such as FePt, CoPt, and FePd,2 under the conditions that the axial ratio between the a and c axes, c/a, is 1.20–1.25 and that the composition x is 0.5–0.6.
+  note: 'Original: Burkert et al., PRL 93 (2004) 027203 (abstract only accessible). Kota & Sakuma show this value depends strongly on chemical order/disorder treatment. Cui 2018 quotes a theoretical 10 MJ/m3 for ''L10-FeCo''.'
+- id: bctfeco_k1_delczeg2014
+  phase: bct-FeCo
+  quantity: K1
+  value: 0.75
+  unit: MJ/m3
+  conditions: DFT, Fe-Co with interstitial C (martensite-like bct), up to 0.75 MJ/m3; mu0Ms 1.9 T
+  source:
+    doi: 10.1103/physrevb.89.144403
+    title: 'Stabilization of the tetragonal distortion of FexCo1−x alloys by C impurities: A potential new permanent magnet'
+    first_author: Delczeg-Czirjak
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1103/physrevb.89.144403
+    evidence: abstract
+    locator: abstract
+  quote: In analogy with the formation of martensite in steels we predict that such a structure also forms for Fe-Co alloys in a wide range of concentrations. These alloys are predicted to have a stable tetragonal distortion, which in turn leads to an enhanced magnetocrystalline anisotropy energy of up to 0.75 MJ/m${}^{3}$ and a saturated magnetization field of 1.9 T.
+  note: Only the abstract was accessible. Reichel 2014 cites the maximum for (FexCo1-x)16C (5.9 at% C, c/a = 1.12).
+- id: bctfeco_k1_andersson2006_40k
+  phase: bct-FeCo
+  quantity: K1
+  value: 2.9
+  unit: MJ/m3
+  uncertainty: 0.2
+  conditions: Fe0.36Co0.64 (3 ML) in Fe-Co/Pt superlattice (7 ML Pt) on MgO(001), c/a = 1.18 +- 0.03, 40 K
+  source:
+    doi: 10.1103/physrevlett.96.037205
+    title: Perpendicular Magnetocrystalline Anisotropy in Tetragonally Distorted Fe-Co Alloys
+    first_author: Andersson
+    year: 2006
+    url: https://uu.diva-portal.org/smash/get/diva2:103158/FULLTEXT01.pdf
+    evidence: full_text
+    locator: p. 037205-3 (rendered page checked)
+  quote: From these data a very large experimental Ku = (2.9 ± 0.2) MJ/m3 is obtained at 40 K.
+  note: 'Quote typed from the rendered page (APS text layer garbles ''='' and ''±''). At 300 K: 153 +- 2 ueV/atom (record bctfeco_k1_andersson2006_300k).'
+- id: bctfeco_k1_andersson2006_300k
+  phase: bct-FeCo
+  quantity: K1
+  value: 153
+  unit: ueV/atom
+  uncertainty: 2
+  conditions: same superlattice, 300 K; 2.2 muB/atom
+  source:
+    doi: 10.1103/physrevlett.96.037205
+    title: Perpendicular Magnetocrystalline Anisotropy in Tetragonally Distorted Fe-Co Alloys
+    first_author: Andersson
+    year: 2006
+    url: https://uu.diva-portal.org/smash/get/diva2:103158/FULLTEXT01.pdf
+    evidence: full_text
+    locator: p. 037205-3 (rendered page checked)
+  quote: The corresponding values at 300 K are 2.2µB/atom and (153 ± 2) µeV/atom, respectively, and the magnetization retains its perpendicular direction at room temperature.
+  note: Typed from the rendered page. With the stated a = 0.268 nm, c = 0.317 nm (2 atoms per bct cell) 153 ueV/atom corresponds to ~2.2 MJ/m3 (conversion done here, not stated).
+- id: bctfeco_js_andersson2006
+  phase: bct-FeCo
+  quantity: Js
+  value: 2.27
+  unit: T
+  conditions: Fe0.36Co0.64 in Fe-Co/Pt superlattice (c/a = 1.18), SQUID, 300 K (2.52 T at 40 K)
+  source:
+    doi: 10.1103/physrevlett.96.037205
+    title: Perpendicular Magnetocrystalline Anisotropy in Tetragonally Distorted Fe-Co Alloys
+    first_author: Andersson
+    year: 2006
+    url: https://uu.diva-portal.org/smash/get/diva2:103158/FULLTEXT01.pdf
+    evidence: full_text
+    locator: p. 037205-3 (rendered page checked)
+  quote: The saturation magnetization, obtained from the SQUID measurements, was µ0Ms = 2.52 T at 40 K and µ0Ms = 2.27 T at 300 K.
+  note: Typed from the rendered page.
+- id: bctfeco_tetragonality_andersson2006
+  phase: bct-FeCo
+  quantity: tetragonality
+  value: 1.18
+  unit: c/a
+  uncertainty: 0.03
+  conditions: 'Fe0.36Co0.64 layers (3 ML) between Pt (7 ML): a = 0.268 nm, c = 0.317 nm'
+  source:
+    doi: 10.1103/physrevlett.96.037205
+    title: Perpendicular Magnetocrystalline Anisotropy in Tetragonally Distorted Fe-Co Alloys
+    first_author: Andersson
+    year: 2006
+    url: https://uu.diva-portal.org/smash/get/diva2:103158/FULLTEXT01.pdf
+    evidence: full_text
+    locator: p. 037205-2/3 (rendered page checked)
+  quote: Given the above assumptions, the error introduced in the c/a ratio is estimated to be on the order of ±0.03. The tetragonal distortion nevertheless falls in the immediate vicinity of the predicted high-Ku region, 1.2–1.25.
+  note: c/a = 1.18 stated on p. 037205-2 ('cFeCo = 0.317 nm, i.e., c/a = 1.18').
+- id: bctfeco_k1_hasegawa2017
+  phase: bct-FeCo
+  quantity: K1
+  value: 2.1
+  unit: MJ/m3
+  conditions: FeCo(Al) (10 at% Al), 2.0 nm on Rh(001)/MgO(001); Ku = Ku(eff) + Ms^2/(2 mu0); 300 K; drops to 0.68 MJ/m3 at 20 nm (c/a ~1.01)
+  source:
+    doi: 10.1038/s41598-017-13602-x
+    title: Conversion of FeCo from soft to hard magnetic material by lattice engineering and nanopatterning
+    first_author: Hasegawa
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13602-x.pdf
+    evidence: full_text
+    locator: Results (Fig. 1c)
+  quote: At t = 2.0 nm, the magnetic easy-axis [...] to the film plane, and the magnitude of Ku was about 2.1 × 106 J·m−3 with Ms = 1.95 Wb·m−2. At t ≥ 3.0 nm, the effective magnetic hard-axis was perpendicular to the film plane, and the value of Ku decreased with increasing t, reaching 6.8 × 105 J·m−3 at t = 20.0 nm.
+  note: '''106'' = 10^6, ''105'' = 10^5. Interface anisotropy found negligible by the authors (Ku x t analysis).'
+- id: bctfeco_js_hasegawa2017
+  phase: bct-FeCo
+  quantity: Js
+  value: 1.95
+  unit: T
+  conditions: FeCo(Al) 2.0 nm film on Rh, 300 K (VSM)
+  source:
+    doi: 10.1038/s41598-017-13602-x
+    title: Conversion of FeCo from soft to hard magnetic material by lattice engineering and nanopatterning
+    first_author: Hasegawa
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13602-x.pdf
+    evidence: full_text
+    locator: Results
+  quote: At t = 2.0 nm, the magnetic easy-axis [...] to the film plane, and the magnitude of Ku was about 2.1 × 106 J·m−3 with Ms = 1.95 Wb·m−2.
+  note: Ms in Wb/m2 = mu0Ms in T.
+- id: bctfeco_tetragonality_hasegawa2017
+  phase: bct-FeCo
+  quantity: tetragonality
+  value: 1.41 (t -> 0) relaxing to 1.01 at t = 20 nm
+  unit: c/a
+  conditions: FeCo(Al) films on Rh(001) buffer (mismatch ~5%), XRD
+  source:
+    doi: 10.1038/s41598-017-13602-x
+    title: Conversion of FeCo from soft to hard magnetic material by lattice engineering and nanopatterning
+    first_author: Hasegawa
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13602-x.pdf
+    evidence: full_text
+    locator: Results (Fig. 1a)
+  quote: The c/a value at t = 0 is equal to 1.41, which is consistent with the value determined for the Rh fcc structure. The c/a value decreased with increasing t, reaching 1.01 at t = 20.0 nm because of the structural relaxation, and was slightly larger than that required for a bcc structure.
+  note: 'Epitaxial (coherent) strain route: tetragonality survives only a few nm.'
+- id: bctfeco_or_hasegawa2017
+  phase: bct-FeCo
+  quantity: OR
+  value: bct FeCo(001)[110] // Rh(001)[100] // MgO(001)[100]
+  unit: ''
+  conditions: epitaxial FeCo(Al)/Rh/MgO(001)
+  source:
+    doi: 10.1038/s41598-017-13602-x
+    title: Conversion of FeCo from soft to hard magnetic material by lattice engineering and nanopatterning
+    first_author: Hasegawa
+    year: 2017
+    url: https://www.nature.com/articles/s41598-017-13602-x.pdf
+    evidence: full_text
+    locator: Results
+  quote: The [001] growth of FeCo on the Rh buffer surface characterized by the structural relation bct FeCo (001)[110] //Rh(001)[100] //MgO(001)[100] was confirmed by scanning transmission electron microscopy 22.
+  note: Single c-variant (c normal to the film) by epitaxy.
+- id: bctfeco_k1_reichel2014
+  phase: bct-FeCo
+  quantity: K1
+  value: 0.44
+  unit: MJ/m3
+  uncertainty: 0.14
+  conditions: (Fe0.4Co0.6)0.98C0.02 film, 100 nm, PLD on Au0.53Cu0.47/Cr/MgO(001), c/a = 1.03, 300 K
+  source:
+    doi: 10.1063/1.4901595
+    title: Increased magnetocrystalline anisotropy in epitaxial Fe-Co-C thin films with spontaneous strain
+    first_author: Reichel
+    year: 2014
+    url: https://arxiv.org/pdf/1409.4952
+    evidence: full_text
+    locator: Section V (Fig. 6b)
+  quote: Comparing the results from both applied DFT approaches we find a good agreement with our experimental data e. g. M AE = 0.44 ± 0.14 MJ/m3 for the 100 nm thick (Fe0.4 Co0.6 )0.98 C0.02 film.
+  note: DFT bounds 0.224 (CPA) - 0.51 (VCA) MJ/m3 for (Fe0.4Co0.6)32C at c/a 1.03.
+- id: bctfeco_js_reichel2014
+  phase: bct-FeCo
+  quantity: Js
+  value: 2.1
+  unit: T
+  conditions: (Fe0.4Co0.6)0.98C0.02 strained films, 300 K
+  source:
+    doi: 10.1063/1.4901595
+    title: Increased magnetocrystalline anisotropy in epitaxial Fe-Co-C thin films with spontaneous strain
+    first_author: Reichel
+    year: 2014
+    url: https://arxiv.org/pdf/1409.4952
+    evidence: full_text
+    locator: abstract
+  quote: In these strained (Fe0.4 Co0.6 )0.98 C0.02 films, a magnetocrystalline anisotropy above 0.4 MJ/m3 is observed while the large polarization of 2.1 T is maintained.
+  note: Above 5 at% C, mu0Ms falls below 2 T and films destabilise (same paper).
+- id: bctfeco_tetragonality_reichel2014
+  phase: bct-FeCo
+  quantity: tetragonality
+  value: 1.03
+  unit: c/a
+  conditions: '(Fe0.4Co0.6)0.98C0.02 films 20-100 nm: spontaneous strain; critical thickness for relaxation ~3 nm; binary Fe0.46Co0.54 relaxes to c/a = 1'
+  source:
+    doi: 10.1063/1.4901595
+    title: Increased magnetocrystalline anisotropy in epitaxial Fe-Co-C thin films with spontaneous strain
+    first_author: Reichel
+    year: 2014
+    url: https://arxiv.org/pdf/1409.4952
+    evidence: full_text
+    locator: Section III and Summary
+  quote: After relaxation (c/a)bct adapts a higher final value for the ternary Fe-Co-C film, in contrast to the binary film where c/a is 1. For the (Fe0.4 Co0.6 )0.98 C0.02 film it remains at approx. 1.03. [...] (2) This lattice distortion is independent of film thickness, as it is observed in films with thicknesses between 20 nm and 100 nm. We find no indications for a driving force that promotes a further relaxation.
+  note: Interstitial (spontaneous) strain is not limited by a critical thickness, unlike coherent epitaxial strain.
+- id: bctfeco_k1_reichel2015
+  phase: bct-FeCo
+  quantity: K1
+  value: 0.5
+  unit: MJ/m3
+  conditions: 'epitaxial Fe-Co-B films with up to 4 at% B: spontaneous strain up to 5%; more B gives partial amorphisation'
+  source:
+    doi: 10.1088/0953-8984/27/47/476002
+    title: 'From soft to hard magnetic Fe–Co–B by spontaneous strain: a combined first principles and thin film study'
+    first_author: Reichel
+    year: 2015
+    url: https://arxiv.org/pdf/1509.04126
+    evidence: full_text
+    locator: abstract
+  quote: A spontaneous strain up to 5 % lattice distortion is obtained for B contents up to 4 at%, which leads to uniaxial anisotropy constants exceeding 0.5 MJ/m3 . However, a further addition of B results in a partial amorphization, which degrades both anisotropy and magnetization.
+  note: Lower bound ('exceeding').
+- id: bctfeco_n_variants_reichel2015
+  phase: bct-FeCo
+  quantity: n_variants
+  value: 3
+  unit: ''
+  conditions: 'bulk interstitially strained Fe-Co(-B/C): three tetragonal (Bain-type) orientations joined by twin boundaries (90 deg domain walls); films select one by the substrate'
+  source:
+    doi: 10.1088/0953-8984/27/47/476002
+    title: 'From soft to hard magnetic Fe–Co–B by spontaneous strain: a combined first principles and thin film study'
+    first_author: Reichel
+    year: 2015
+    url: https://arxiv.org/pdf/1509.04126
+    evidence: full_text
+    locator: Section III.B
+  quote: The connection of different tetragonal building blocks is possible by twin boundaries, but they require additional twin boundary energy. A twin boundary is connected with a 90◦ domain wall in these uniaxial ferromagnets, which further requires magnetic exchange energy. [...] Twin boundaries must be introduced, however, to minimize elastic stress energy and magnetostatic energy, and in bulk samples all three orientations are thus equivalent and should occur together.
+  note: Variant selection would require a bias (stress, field) acting on interstitial ordering; not demonstrated.
+- id: bctfeco_formation_path_reichel2015
+  phase: bct-FeCo
+  quantity: formation_path
+  value: interstitial B (or C) on octahedral sites strains bcc Fe-Co along one axis (Snoek/martensite-like); interstitials diffuse much faster than Fe/Co, so the distortion axis can switch when an interstitial hops to another octahedral site
+  unit: ''
+  conditions: DFT + epitaxial films; martensite analogy
+  source:
+    doi: 10.1088/0953-8984/27/47/476002
+    title: 'From soft to hard magnetic Fe–Co–B by spontaneous strain: a combined first principles and thin film study'
+    first_author: Reichel
+    year: 2015
+    url: https://arxiv.org/pdf/1509.04126
+    evidence: full_text
+    locator: Section III.B
+  quote: We consider martensite theory as reasonable since the diffusion of B as interstitial33 is much faster in contrast to Fe (or Co) atoms68 . In this picture, the orientation of the tetragonal distortion of the Fe-Co ”martensite” changes, when B moves from one octahedral site to another.
+  note: Implies interstitial (re)ordering is the variant-defining step; a field or stress applied while interstitials are mobile and the matrix is ferromagnetic could bias it (not tested in the sources read).
+- id: bctfeco_t_stab_reichel2015
+  phase: bct-FeCo
+  quantity: T_stab
+  value: metastable (equilibrium C/B solubility ~0.1 at%)
+  unit: ''
+  conditions: interstitial Fe-Co-C/B; requires non-equilibrium deposition (PLD)
+  source:
+    doi: 10.1088/0953-8984/27/47/476002
+    title: 'From soft to hard magnetic Fe–Co–B by spontaneous strain: a combined first principles and thin film study'
+    first_author: Reichel
+    year: 2015
+    url: https://arxiv.org/pdf/1509.04126
+    evidence: full_text
+    locator: Introduction
+  quote: Using non-equilibrium preparation methods like Pulsed Laser Deposition (PLD), the limit of solubility, which is only about 0.1 at% for C or B in bcc Fe-Co in thermal equilibrium24 , can be shifted to significantly higher values.
+  note: No decomposition temperature of the strained phase was found in the sources read (gap).
+- id: bctfeco_tetragonality_hasegawa2019
+  phase: bct-FeCo
+  quantity: tetragonality
+  value: 1.14
+  unit: c/a
+  conditions: (Fe0.5Co0.5)89V9N2, 100 nm on amorphous SiO2 (no epitaxy), interstitial N along c (authors' assumption)
+  source:
+    doi: 10.1038/s41598-019-41825-7
+    title: Stabilisation of tetragonal FeCo structure with high magnetic anisotropy by the addition of V and N elements
+    first_author: Hasegawa
+    year: 2019
+    url: https://www.nature.com/articles/s41598-019-41825-7.pdf
+    evidence: full_text
+    locator: Results (Fig. 4)
+  quote: The calculated lattice constants of FeCoVN are abcc = 0.272 nm and cbcc = 0.310 nm, resulting in the bct structure with c/a = 1.14 (it was assumed that the added N atoms were attached only to the interstitial sites of the c-axis, which was consistent with the previous results obtained for the epitaxially grown FeCoTiN film with c/a = 1.0824).
+  note: Shows a bulk-compatible (substrate-independent) bct state; c-axis orientation distribution in such a film is not reported.
+- id: bctfeco_formation_path_hasegawa2019
+  phase: bct-FeCo
+  quantity: formation_path
+  value: 'N interstitials in FeCoV move the lattice along the Bain path: c/a 1.02 (bcc, x = 0) to 1.43 (fcc, x = 5.5 at% N); bct with 1.05 < c/a < 1.30 for 1.0 < x < 5.5 at%; stable on amorphous substrate'
+  unit: ''
+  conditions: (Fe0.5Co0.5)90-x/2V10-x/2Nx films, 20 nm on Rh and 100 nm on SiO2
+  source:
+    doi: 10.1038/s41598-019-41825-7
+    title: Stabilisation of tetragonal FeCo structure with high magnetic anisotropy by the addition of V and N elements
+    first_author: Hasegawa
+    year: 2019
+    url: https://www.nature.com/articles/s41598-019-41825-7.pdf
+    evidence: full_text
+    locator: Results
+  quote: The obtained c/a ratio increases from 1.02 (bcc) at x = 0 at.% to 1.43 (fcc) at x = 5.5 at.%. [...] The bct structure of FeCoVN (1.0 < x < 5.5 at.%) is stable even in the case of its deposition on an amorphous substrate, suggesting a possibility of its realisation in bulk systems without any epitaxial effects, which can be used for the development of an optimum manufacturing procedure for bct FeCo-based permanent magnets.
+  note: ''
+- id: bctfeco_k1_hasegawa2019
+  phase: bct-FeCo
+  quantity: K1
+  value: 1.24
+  unit: MJ/m3
+  conditions: (Fe0.5Co0.5)89V9N2 (x = 2.0 at%), 20 nm on Rh(001), 298 K; mu0Ms = 1.60 T
+  source:
+    doi: 10.1038/s41598-019-41825-7
+    title: Stabilisation of tetragonal FeCo structure with high magnetic anisotropy by the addition of V and N elements
+    first_author: Hasegawa
+    year: 2019
+    url: https://www.nature.com/articles/s41598-019-41825-7.pdf
+    evidence: full_text
+    locator: Results (Fig. 6c)
+  quote: At x = 2.0 at.%, the magnetic easy-axis was perpendicular to the film plane (Fig. 5), and the maximum magnitude of Ku is equal to about 1.24 × 106 J·m−3 with μ0Ms = 1.60 Wb·m−2.
+  note: '''106'' = 10^6.'
+- id: bctfeco_js_hasegawa2019
+  phase: bct-FeCo
+  quantity: Js
+  value: 1.6
+  unit: T
+  conditions: (Fe0.5Co0.5)89V9N2, 20 nm, 298 K (V and N dilute the moment)
+  source:
+    doi: 10.1038/s41598-019-41825-7
+    title: Stabilisation of tetragonal FeCo structure with high magnetic anisotropy by the addition of V and N elements
+    first_author: Hasegawa
+    year: 2019
+    url: https://www.nature.com/articles/s41598-019-41825-7.pdf
+    evidence: full_text
+    locator: Results
+  quote: At x = 2.0 at.%, the magnetic easy-axis was perpendicular to the film plane (Fig. 5), and the maximum magnitude of Ku is equal to about 1.24 × 106 J·m−3 with μ0Ms = 1.60 Wb·m−2.
+  note: ''
+- id: bctfeco_easy_axis_reichel2017
+  phase: bct-FeCo
+  quantity: easy_axis
+  value: strained c axis (c > a)
+  unit: ''
+  conditions: Fe-Co with octahedral interstitials (B, C)
+  source:
+    doi: 10.1088/1361-6463/aa51af
+    title: On the origin of perpendicular magnetic anisotropy in strained Fe–Co(–X) films
+    first_author: Reichel
+    year: 2017
+    url: https://arxiv.org/pdf/1609.02903
+    evidence: full_text
+    locator: Introduction
+  quote: Such atoms occupying octahedral interstitial sites in the Fe-Co lattice indeed result in a tetragonal strain of the Fe-Co lattice, which support a magnetocrystalline anisotropy (MCA) with its easy axis parallel to the strained c axis14,21.
+  note: ''
+- id: bctfeco_k1_caveat_reichel2017
+  phase: bct-FeCo
+  quantity: other
+  value: 'anisotropy caveat: in thin strained Fe-Co(-X) films the perpendicular anisotropy is dominated by surface/interface electronic effects rather than lattice strain; volume MCA of interstitial films ~0.4 MJ/m3'
+  unit: ''
+  conditions: Fe-Co(-X) single layers and multilayers with Au-Cu buffers
+  source:
+    doi: 10.1088/1361-6463/aa51af
+    title: On the origin of perpendicular magnetic anisotropy in strained Fe–Co(–X) films
+    first_author: Reichel
+    year: 2017
+    url: https://arxiv.org/pdf/1609.02903
+    evidence: full_text
+    locator: Abstract
+  quote: The analysis of their magnetic anisotropy reveals a negligible influence of the lattice parameter of the buffer. Electronic effects, originating from both, the Au-Cu interface and the film surface, outrange the elastic effects. Surface anisotropy, however, exceeds the interface anisotropy by more than a factor of three.
+  note: Ultrathin-film Ku values (Andersson, Hasegawa) may overstate the bulk volume K1 obtainable.
+- id: bctfeco_tc_jakobsson2013
+  phase: bct-FeCo
+  quantity: Tc
+  value: 1575 (c/a = 1) to 940 (c/a = 2)
+  unit: K
+  conditions: B2-type FeCo, DFT + classical Monte Carlo
+  source:
+    doi: 10.1063/1.4819773
+    title: Tuning the Curie temperature of FeCo compounds by tetragonal distortion
+    first_author: Jakobsson
+    year: 2013
+    url: https://arxiv.org/pdf/1309.4232
+    evidence: full_text
+    locator: Abstract
+  quote: The TC monotonically decreases from 1575 K (for c/a = 1) to 940 K (for c/a = 2).
+  note: 'Computed (mean-field-type MC overestimates). Either way Tc >> any interstitial-ordering or deposition temperature: Fe-Co is ferromagnetic while the tetragonal variant forms.'
+- id: bctfeco_t_stab_winkelmann2006
+  phase: bct-FeCo
+  quantity: T_stab
+  value: 4-14 ML (thickness limit of perpendicular easy axis)
+  unit: ''
+  conditions: Fe0.5Co0.5 on Pd(001), coherent epitaxial strain
+  source:
+    doi: 10.1103/physrevlett.96.257205
+    title: Perpendicular Magnetic Anisotropy Induced by Tetragonal Distortion of FeCo Alloy Films Grown on Pd(001)
+    first_author: Winkelmann
+    year: 2006
+    url: https://api.openalex.org/works/doi:10.1103/physrevlett.96.257205
+    evidence: abstract
+    locator: abstract
+  quote: An out-of-plane easy axis of magnetization was observed for Fe0.5Co0.5 films in the thickness range of 4 to 14 monolayers. The magnetic anisotropy energy induced by the tetragonal distortion is estimated to be almost 2 orders of magnitude larger than the value for bulk FeCo alloys. Using LEED Kikuchi patterns, a change of the easy axis of magnetization can be related to a decrease of the tetragonal distortion with thickness.
+  note: Stability limit expressed as thickness (strain relaxation), not temperature. Only the abstract was accessible.
+- id: bctfeco_formation_path_gong2014
+  phase: bct-FeCo
+  quantity: formation_path
+  value: 'chemically made AuCu@FeCo core-shell particles: fcc->L10 ordering of the AuCu core strains the FeCo shell from bcc to bct; shell relaxes beyond a critical thickness'
+  unit: ''
+  conditions: solution synthesis + thermal ordering anneal of the core
+  source:
+    doi: 10.1021/nl5030485
+    title: Phase Transformation-Induced Tetragonal FeCo Nanostructures
+    first_author: Gong
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1021/nl5030485
+    evidence: abstract
+    locator: abstract
+  quote: In this study, we demonstrate AuCu templated FeCo shell growth followed by thermally induced phase transformation of AuCu core from face-centered cubic to L10 structure, which triggers the FeCo shell to transform from the body-centered cubic structure to a body-centered tetragonal phase. [...] Beyond a critical FeCo shell thickness, confirmed experimentally and by lattice mismatch calculations, the FeCo shell relaxes.
+  note: Only the abstract was accessible. Each particle's FeCo c axis is slaved to its core's L10 variant (three possible), so a free-particle field alignment step would be needed for texture.
+- id: bctfeco_candidate_cui2018
+  phase: bct-FeCo
+  quantity: other
+  value: 'candidate_status: no bulk tetragonal (''L10'') FeCo synthesised to date (review, 2018)'
+  unit: ''
+  conditions: review statement
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 6 (L10-FeCo)
+  quote: To date, no bulk L10-FeCo phase has been successfully synthesized in any laboratory.
+  note: Cui et al. use 'L10-FeCo' for the tetragonal Fe-Co of Burkert et al.
+- id: bctfeco_k1_marciniak2023
+  phase: bct-FeCo
+  quantity: other
+  value: 'DFT trend: broad MAE maximum near 50% Co for (Fe1-xCox)16C; bct structure unstable above ~70% Co'
+  unit: ''
+  conditions: first-principles (Fe1-xCox)16C supercells, one C per supercell
+  source:
+    doi: 10.1103/physrevb.108.214433
+    title: 'Structural and magnetic properties of Fe-Co-C alloys with tetragonal deformation: A first-principles study'
+    first_author: Marciniak
+    year: 2023
+    url: https://arxiv.org/pdf/2307.05709
+    evidence: full_text
+    locator: Abstract (arXiv 2307.05709v2)
+  quote: We observe a structural phase transition from the body-centered tetragonal structure above 70% Co concentration and confirm the structural stability of Fe-Co-C alloys in the tetragonal range. We show the presence of a broad MAE maximum around about 50% Co concentration and notably high MAE values for Co content x as low as 25%.
+  note: ''
+- id: bctfeco_k1_hirosawa2015
+  phase: bct-FeCo
+  quantity: K1
+  value: 1.4-2.3
+  unit: MJ/m3
+  conditions: tetragonally distorted FeCo in FeCo/Pt(001) multilayers (Warnicke et al., ref. 45); JS = 2.1 T
+  source:
+    doi: 10.3379/msjmag.1504r004
+    title: Current Status of Research and Development toward Permanent Magnets Free from Critical Elements
+    first_author: Hirosawa
+    year: 2015
+    url: https://www.jstage.jst.go.jp/article/msjmag/39/3/39_1504R004/_pdf
+    evidence: review
+    locator: p. 89 (non-rare-earth materials)
+  quote: Warnicke et al. fabricated FeCo/Pt(001) multi-layers and estimated Ku = 1.4-2.3 MJ/m3 and JS = 2.1 T for tetragonally distorted FeCo45).
+  note: Review value. The same review concludes for L10-FeNi, tet-FeCo and Fe16N2 that the anisotropy falls short of requirements and/or thermodynamic stability is not assured.
+- id: bctfeco_candidate_hirosawa2015
+  phase: bct-FeCo
+  quantity: other
+  value: 'candidate_status: tet-FeCo intrinsic properties measured in films; anisotropy short of requirement and/or thermodynamic stability not assured'
+  unit: ''
+  conditions: review statement
+  source:
+    doi: 10.3379/msjmag.1504r004
+    title: Current Status of Research and Development toward Permanent Magnets Free from Critical Elements
+    first_author: Hirosawa
+    year: 2015
+    url: https://www.jstage.jst.go.jp/article/msjmag/39/3/39_1504R004/_pdf
+    evidence: review
+    locator: p. 89
+  quote: In these ways, the intrinsic magnetic properties of L10-FeNi, tet-FeCo, and α”-Fe16N2 have been clearly measured and several problems to be regarded as base materials for the permanent magnet application, have become evident; namely, the magnetocrystalline anisotropy falls far short of the requirement and/or the thermodynamic stability is not assured unless higher order parameters are achieved.
+  note: ''
+- id: fe5sib2_structure_mcguire2015
+  phase: Fe5SiB2
+  quantity: structure
+  value: tetragonal Cr5B3-type (I4/mcm)
+  unit: ''
+  conditions: polycrystalline, room temperature
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Abstract
+  quote: Crystallographic and magnetic properties of Fe5 PB2 , Fe4 CoPB2 , Fe4 MnPB2 , Fe5 SiB2 , Fe4 CoSiB2 , and Fe4 MnSiB2 are reported. All adopt the tetragonal Cr5 B3 structure-type and are ferromagnetic at room temperature with easy axis of magnetization along the c-axis.
+  note: Space group I4/mcm from Lamichhane 2016 (Cr5B3 prototype).
+- id: fe5sib2_easy_axis_mcguire2015
+  phase: Fe5SiB2
+  quantity: easy_axis
+  value: c axis at 300 K; spin reorientation near 170 K to an in-plane (ab) easy direction at low T
+  unit: ''
+  conditions: Fe5SiB2, field-aligned powders and magnetisation
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Abstract; Section III.A
+  quote: The spin reorientation in Fe5 SiB2 is observed as an anomaly in the magnetization near 170 K, and is suppressed by substitution of Co or Mn for Fe. [...] This compound is known to undergo a spin reorientation below room temperature, with the easy axis reported to be in the ab-plane at low temperature [8].
+  note: DFT (Werwinski 2016) gives a negative (easy-plane) MAE of -0.28 MJ/m3 at 0 K for Fe5SiB2.
+- id: fe5sib2_js_mcguire2015
+  phase: Fe5SiB2
+  quantity: Js
+  value: 1.21
+  unit: T
+  conditions: polycrystalline Fe5SiB2, 300 K
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Table I
+  quote: nominal composition Fe5 PB2 Fe4 CoPB2 Fe4 MnPB2 Fe5 SiB2 Fe4 CoSiB2 Fe4 MnSiB2 [...] JS 300 K (T) 1.09 0.87 1.00 1.21 0.961 1.17
+  note: 'Table I of McGuire & Parker; columns: Fe5PB2, Fe4CoPB2, Fe4MnPB2, Fe5SiB2, Fe4CoSiB2, Fe4MnSiB2.'
+- id: fe5sib2_density_mcguire2015
+  phase: Fe5SiB2
+  quantity: density
+  value: 6.864
+  unit: g/cm3
+  conditions: x-ray density, Fe5SiB2
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Table I
+  quote: nominal composition Fe5 PB2 Fe4 CoPB2 Fe4 MnPB2 Fe5 SiB2 Fe4 CoSiB2 Fe4 MnSiB2 [...] density (g / cm3 ) 7.075 7.227 7.020 6.864 7.017 6.785
+  note: 'Table I of McGuire & Parker; columns: Fe5PB2, Fe4CoPB2, Fe4MnPB2, Fe5SiB2, Fe4CoSiB2, Fe4MnSiB2.'
+- id: fe5sib2_tc_mcguire2015
+  phase: Fe5SiB2
+  quantity: Tc
+  value: 784
+  unit: K
+  conditions: 'literature value quoted (measurement in this paper limited to 780 K: Tc > 780 K)'
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Section III.B
+  quote: The Curie temperature of Fe5 SiB2 could not be determined because it is above 780 K, the maximum temperature for these measurements. The downturn seen at the highest temperatures indicates TC is near but larger than this value. This is consistent with the literature report of TC = 784 K for Fe5 SiB2
+  note: ''
+- id: fe5sib2_k1_werwinski2016
+  phase: Fe5SiB2
+  quantity: K1
+  value: 0.25
+  unit: MJ/m3
+  conditions: polycrystalline Fe5SiB2, 300 K, law of approach to saturation (uniaxial crystallites assumed)
+  source:
+    doi: 10.1103/physrevb.93.174412
+    title: Magnetic properties of Fe5SiB2 and its alloys with P, S, and Co
+    first_author: Werwiński
+    year: 2016
+    url: https://arxiv.org/pdf/1603.00253
+    evidence: full_text
+    locator: Abstract; Section III
+  quote: Fe5 SiB2 has been synthesized and magnetic measurements have been carried out, revealing that Msat = 0.92 MA/m at T = 300 K. The M vs T curve shows a broad peak around T = 160 K. The anisotropy constant, K1 , estimated at T = 300 K, is 0.25 MJ/m3 .
+  note: Estimate from LAS on a polycrystal; sensitive to fit interval.
+- id: fe5sib2_ms_hedlund2017
+  phase: Fe5SiB2
+  quantity: other
+  value: Ms = 1.03 MA/m at 300 K (mu0Ms = 1.29 T); Cedervall et al. 1.02 MA/m
+  unit: MA/m
+  conditions: Fe5SiB2 polycrystal, 300 K
+  source:
+    doi: 10.1103/physrevb.96.094433
+    title: Magnetic properties of the Fe5SiB2−Fe5PB2 system
+    first_author: Hedlund
+    year: 2017
+    url: https://arxiv.org/pdf/2512.08043
+    evidence: full_text
+    locator: Section III.B
+  quote: The highest saturation magnetization is observed for Fe5 SiB2 (MS = 1.03 MA/m). In a previous publication by Cedervall et al.1 it was reported that MS = 1.02 MA/m for Fe5 SiB2 at 300 K, in good agreement with the present results.
+  note: 'Spread of Js(300 K) between sources: 1.16 T (Werwinski 0.92 MA/m), 1.21 T (McGuire), 1.29 T (Hedlund).'
+- id: fe5sib2_t_formation_werwinski2016
+  phase: Fe5SiB2
+  quantity: T_formation
+  value: 1273
+  unit: K
+  conditions: arc-melted, crushed, pressed, annealed in sealed silica 19 days at 1273 K, water quenched
+  source:
+    doi: 10.1103/physrevb.93.174412
+    title: Magnetic properties of Fe5SiB2 and its alloys with P, S, and Co
+    first_author: Werwiński
+    year: 2016
+    url: https://arxiv.org/pdf/1603.00253
+    evidence: full_text
+    locator: Section II (Experimental details)
+  quote: The samples were crushed, pressed into pellets and sealed in silica tubes, annealed at 1273 K for 19 days and then quenched in cold water.
+  note: 'Formation/annealing at 1273 K, far above Tc (~784 K): the phase forms paramagnetic.'
+- id: fe5sib2_primary_crystallisation_mcguire2015
+  phase: Fe5SiB2
+  quantity: primary_crystallisation
+  value: arc-melted Fe-Si-B is not single phase; grinding, pelletising and long annealing are needed (melting point 1491 K by DTA)
+  unit: ''
+  conditions: Fe5SiB2 and Co/Mn variants
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Section II
+  quote: For the silicon-containing samples (with no phosphorus), the initial mixing of the elements can be done by arc-melting, but subsequent grinding, pelletizing, and annealing are needed to improve the phase purity.
+  note: 'Hedlund 2017 DTA: melting 1491 K (Fe5SiB2), 1566 K (Fe5Si0.5P0.5B2), 1603 K (Fe5PB2). Whether Fe5SiB2 forms congruently from the melt is not stated in the sources read.'
+- id: fe5sib2_melting_hedlund2017
+  phase: Fe5SiB2
+  quantity: other
+  value: 'melting temperature (DTA, 10 K/min, Ar): 1491 K for Fe5SiB2; 1603 K for Fe5PB2'
+  unit: K
+  conditions: DTA
+  source:
+    doi: 10.1103/physrevb.96.094433
+    title: Magnetic properties of the Fe5SiB2−Fe5PB2 system
+    first_author: Hedlund
+    year: 2017
+    url: https://arxiv.org/pdf/2512.08043
+    evidence: full_text
+    locator: Section III.A (Fig. 3)
+  quote: It becomes clear since the lowest melting temperature is observed for Fe5 SiB2 (1491 K) and the highest for Fe5 PB2 (1603 K), with the intermediate sample (Fe5 Si0.5 P0.5 B2 ) exhibiting a melting temperature in between (1566 K).
+  note: ''
+- id: fe5sib2_alignment_mcguire2015
+  phase: Fe5SiB2
+  quantity: other
+  value: 'alignment_method: fine powder sprinkled on a grease-coated slide over a strong permanent magnet (XRD); powder in epoxy cured in a field (magnetisation along easy axis)'
+  unit: ''
+  conditions: Fe5PB2, Fe5SiB2 and Co/Mn-substituted powders, room temperature
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Section II; Section III.A
+  quote: To determine the easy axis of magnetization by diffraction, finely ground samples were sprinkled onto a vacuum grease coated glass slide with a strong permanent magnet underneath. [...] For these measurements, finely ground powders were mixed in epoxy and cured at room temperature in a magnetic field.
+  note: Room-temperature field alignment of free powder particles (FP-type R) works because the phase is ferromagnetic and uniaxial at 300 K.
+- id: fe5sib2_candidate_werwinski2016
+  phase: Fe5SiB2
+  quantity: other
+  value: 'candidate_status: DFT (VCA) predicts MAE up to 1.16 MJ/m3 for (Fe0.7Co0.3)5SiB2 (moment reduction), proposed as RE-free magnet candidate'
+  unit: ''
+  conditions: first-principles (FPLO-14), 0 K
+  source:
+    doi: 10.1103/physrevb.93.174412
+    title: Magnetic properties of Fe5SiB2 and its alloys with P, S, and Co
+    first_author: Werwiński
+    year: 2016
+    url: https://arxiv.org/pdf/1603.00253
+    evidence: full_text
+    locator: Abstract
+  quote: MAE calculated in virtual crystal approximation (VCA) for a full range of (Fe1−x Cox )5 SiB2 compositions reaches the maximum value of 1.16 MJ/m3 at Co concentration x = 0.3, with the magnetic moment 7.75µB per formula unit. Thus, (Fe0.7 Co0.3 )5 SiB2 is suggested as a candidate for a rare-earth free permanent magnet.
+  note: Prediction; Werwinski 2018 finds Co lowers the measured anisotropy of Fe5PB2.
+- id: fe5pb2_structure_lamichhane2016
+  phase: Fe5PB2
+  quantity: structure
+  value: tetragonal Cr5B3 prototype, space group I4/mcm
+  unit: ''
+  conditions: single crystals
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: Introduction
+  quote: Its structural prototype is tetragonal Cr5 B3 with the space group Dls 4h − I4/mcm.
+  note: '''Dls 4h'' is the garbled Schoenflies symbol D4h^18.'
+- id: fe5pb2_easy_axis_lamichhane2016
+  phase: Fe5PB2
+  quantity: easy_axis
+  value: c axis (K1 > 0 at all T up to Tc)
+  unit: ''
+  conditions: single crystals, 2-655 K
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: Section 3.5
+  quote: The temperature dependence of K1 is shown in Fig. 9. K1 is positive, indicating that the c axis is the easy axis of magnetization, in agreement with a previous calculation using a simple point charge model [4].
+  note: No spin reorientation (McGuire 2015).
+- id: fe5pb2_k1_lamichhane2016
+  phase: Fe5PB2
+  quantity: K1
+  value: 0.38
+  unit: MJ/m3
+  conditions: single crystal, 300 K (0.50 MJ/m3 at 2 K)
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: review
+    locator: Section III.C
+  quote: This was recently done for Fe5 PB2 single crystals [9], and K1 was determined to be 0.38 MJ/m3 at room temperature. The anisotropy field can then be estimated by µ0 HA = 2K1 /JS to be 0.83 T.
+  note: Value of Lamichhane et al. 2016 (single crystal) as quoted by McGuire & Parker; Hedlund 2017 quotes the same 0.38 MJ/m3 at 300 K.
+- id: fe5pb2_tc_lamichhane2016
+  phase: Fe5PB2
+  quantity: Tc
+  value: 655
+  unit: K
+  uncertainty: 2
+  conditions: single crystal (Arrott plots)
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: Abstract
+  quote: The Curie temperature of Fe5 B2 P is determined to be 655 ± 2 K.
+  note: 'McGuire 2015: 640 K on polycrystals.'
+- id: fe5pb2_js_mcguire2015
+  phase: Fe5PB2
+  quantity: Js
+  value: 1.09
+  unit: T
+  conditions: polycrystalline Fe5PB2, 300 K
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Table I
+  quote: nominal composition Fe5 PB2 Fe4 CoPB2 Fe4 MnPB2 Fe5 SiB2 Fe4 CoSiB2 Fe4 MnSiB2 [...] JS 300 K (T) 1.09 0.87 1.00 1.21 0.961 1.17
+  note: 'Table I of McGuire & Parker; columns: Fe5PB2, Fe4CoPB2, Fe4MnPB2, Fe5SiB2, Fe4CoSiB2, Fe4MnSiB2. Lamichhane 2016: 915 kA/m (1.15 T) at 300 K on single crystals.'
+- id: fe5pb2_ms_lamichhane2016
+  phase: Fe5PB2
+  quantity: other
+  value: Ms = 1.53 muB/Fe = 915 kA/m at 300 K (mu0Ms = 1.15 T)
+  unit: kA/m
+  conditions: single crystal, 300 K
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: Section 3.4
+  quote: The saturation magnetization of Fe5 B2 P is 1.53 µB /Fe at 300 K, which is already larger than the value of 1.16 µB /Fe in SrFe12 O19 . Since Fe5 B2 P contains less nonmagnetic elements, the volume magnetization of 915 kA/m for Fe5 B2 P is more than twice that of SrFe12 O19 (377 kA/m [22]).
+  note: ''
+- id: fe5pb2_density_mcguire2015
+  phase: Fe5PB2
+  quantity: density
+  value: 7.075
+  unit: g/cm3
+  conditions: x-ray density, Fe5PB2
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Table I
+  quote: nominal composition Fe5 PB2 Fe4 CoPB2 Fe4 MnPB2 Fe5 SiB2 Fe4 CoSiB2 Fe4 MnSiB2 [...] density (g / cm3 ) 7.075 7.227 7.020 6.864 7.017 6.785
+  note: 'Table I of McGuire & Parker; columns: Fe5PB2, Fe4CoPB2, Fe4MnPB2, Fe5SiB2, Fe4CoSiB2, Fe4MnSiB2.'
+- id: fe5pb2_t_formation_mcguire2015
+  phase: Fe5PB2
+  quantity: T_formation
+  value: 1273
+  unit: K
+  conditions: 'solid-state reaction of elements in sealed silica: 1000 C/12 h, then pellets 1000 C for one week and 5 days (>~90% pure)'
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Section II
+  quote: The tubes were heated to 1000 ◦ C at 100 ◦ C per hour, and held at this temperature for 12 hours. The resulting mixtures were then ground into powders and pressed into 1/2 inch diameter pellets at room temperature. The pellets were sealed in evacuated silica tubes and heated at 1000 ◦ C for one week.
+  note: Formation far above Tc (640-655 K).
+- id: fe5pb2_primary_crystallisation_lamichhane2016
+  phase: Fe5PB2
+  quantity: primary_crystallisation
+  value: 'yes: plate-like single crystals grow from a Fe-P-B self-flux (initial Fe72P18B10), homogeneous liquid at 1200 C, crystals form on cooling 1200 -> 1160 C over 75 h, then decanted'
+  unit: ''
+  conditions: self-flux solution growth
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: Section 2.1
+  quote: Single crystals of Fe5 B2 P were grown by self-flux growth technique. [...] ampoule was heated over 3 hours to 250 °C, remained at 250 °C for 3 hours, heated to 1200 °C over 12 hours, held at 1200 °C for 10 hours, and then cooled to 1160 °C over 75 hours. After cooling to 1160 °C the ampoule was decanted using a centrifuge and plate like single crystals of Fe5 B2 P could be found on the growth side of the alumina filter.
+  note: 'Crystals form from the liquid at ~1433-1473 K, far above Tc: a field during crystallisation could only act through paramagnetic anisotropy (no data).'
+- id: fe5pb2_growth_direction_lamichhane2016
+  phase: Fe5PB2
+  quantity: growth_direction
+  value: 'plate habit: c [001] normal to the plates, facets along [100]'
+  unit: ''
+  conditions: self-flux grown single crystals (Laue)
+  source:
+    doi: 10.1016/j.jmmm.2015.10.088
+    title: A study of the physical properties of single crystalline Fe5B2P
+    first_author: Lamichhane
+    year: 2016
+    url: https://arxiv.org/pdf/1508.05629
+    evidence: full_text
+    locator: Section 3.2
+  quote: The Laue diffraction pattern shown in figure 2(b) was obtained with the X-ray beam parallel to the plane of the plate [100]. The Laue pattern shown in figure 2(c) was obtained with the X-ray beam perpendicular to the plane of the plate [001].
+  note: 'Plates with the easy axis along the plate normal: platelet stacking (pressing, tape casting) would favour c-texture mechanically.'
+- id: fe5pb2_melting_hedlund2017
+  phase: Fe5PB2
+  quantity: other
+  value: melting temperature (DTA) 1603 K
+  unit: K
+  conditions: DTA, 10 K/min, Ar
+  source:
+    doi: 10.1103/physrevb.96.094433
+    title: Magnetic properties of the Fe5SiB2−Fe5PB2 system
+    first_author: Hedlund
+    year: 2017
+    url: https://arxiv.org/pdf/2512.08043
+    evidence: full_text
+    locator: Section III.A
+  quote: It becomes clear since the lowest melting temperature is observed for Fe5 SiB2 (1491 K) and the highest for Fe5 PB2 (1603 K), with the intermediate sample (Fe5 Si0.5 P0.5 B2 ) exhibiting a melting temperature in between (1566 K).
+  note: ''
+- id: feco5pb2_js_mcguire2015
+  phase: (Fe,Co)5PB2
+  quantity: Js
+  value: 0.87
+  unit: T
+  conditions: Fe4CoPB2 polycrystal, 300 K
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Table I
+  quote: nominal composition Fe5 PB2 Fe4 CoPB2 Fe4 MnPB2 Fe5 SiB2 Fe4 CoSiB2 Fe4 MnSiB2 [...] JS 300 K (T) 1.09 0.87 1.00 1.21 0.961 1.17
+  note: 'Table I of McGuire & Parker; columns: Fe5PB2, Fe4CoPB2, Fe4MnPB2, Fe5SiB2, Fe4CoSiB2, Fe4MnSiB2.'
+- id: feco5pb2_tc_mcguire2015
+  phase: (Fe,Co)5PB2
+  quantity: Tc
+  value: 515
+  unit: K
+  conditions: Fe4CoPB2
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Table I
+  quote: nominal composition Fe5 PB2 Fe4 CoPB2 Fe4 MnPB2 Fe5 SiB2 Fe4 CoSiB2 Fe4 MnSiB2 [...] TC (K) 640 515 650 > 780 675 770
+  note: 'Table I of McGuire & Parker; columns: Fe5PB2, Fe4CoPB2, Fe4MnPB2, Fe5SiB2, Fe4CoSiB2, Fe4MnSiB2.'
+- id: feco5pb2_density_mcguire2015
+  phase: (Fe,Co)5PB2
+  quantity: density
+  value: 7.227
+  unit: g/cm3
+  conditions: Fe4CoPB2, x-ray density
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Table I
+  quote: nominal composition Fe5 PB2 Fe4 CoPB2 Fe4 MnPB2 Fe5 SiB2 Fe4 CoSiB2 Fe4 MnSiB2 [...] density (g / cm3 ) 7.075 7.227 7.020 6.864 7.017 6.785
+  note: 'Table I of McGuire & Parker; columns: Fe5PB2, Fe4CoPB2, Fe4MnPB2, Fe5SiB2, Fe4CoSiB2, Fe4MnSiB2.'
+- id: feco5pb2_k1_werwinski2018
+  phase: (Fe,Co)5PB2
+  quantity: other
+  value: 'anisotropy trend: effective anisotropy (low T) is highest (0.94 MJ/m3) for Fe5PB2 and decreases with Co (samples 0 <= x <= 0.7); Co also lowers Tc and Ms'
+  unit: ''
+  conditions: (Fe1-xCox)5PB2 polycrystals, law of approach to saturation, low temperature
+  source:
+    doi: 10.1103/physrevb.98.214431
+    title: 'Magnetocrystalline anisotropy of Fe5PB2 and its alloys with Co and 5d elements: A combined first-principles and experimental study'
+    first_author: Werwiński
+    year: 2018
+    url: https://arxiv.org/pdf/1807.10649
+    evidence: full_text
+    locator: Abstract
+  quote: Low temperature measurements of an effective anisotropy constant for a series of (Fe1−x Cox )5 PB2 samples determined the highest value of 0.94 MJ m−3 for the terminal Fe5 PB2 composition, which then decreases with increasing Co concentration, thus confirming the computational result that Co alloying of Fe5 PB2 is not a good strategy to increase the MAE of the system.
+  note: ''
+- id: feco5pb2_easy_axis_mcguire2015
+  phase: (Fe,Co)5PB2
+  quantity: easy_axis
+  value: c axis (Fe4CoPB2, from field-aligned powder XRD)
+  unit: ''
+  conditions: room temperature
+  source:
+    doi: 10.1063/1.4934496
+    title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and Mn substitutions
+    first_author: McGuire
+    year: 2015
+    url: https://arxiv.org/pdf/1509.02544
+    evidence: full_text
+    locator: Section III.A
+  quote: For each material, the intensity of the 004 reflection is strongly increased relative to the 022 and 121 reflections when the powders are magnetically aligned. This indicates that the easy axis of magnetization is parallel to the c* reciprocal lattice vector.
+  note: ''
+- id: fe3sn_structure_sales2014
+  phase: Fe3Sn
+  quantity: structure
+  value: hexagonal Ni3Sn-type
+  unit: ''
+  conditions: solid-state synthesised Fe3Sn (>=95% single phase)
+  source:
+    doi: 10.1038/srep07024
+    title: Ferromagnetism of Fe3Sn and Alloys
+    first_author: Sales
+    year: 2014
+    url: https://www.nature.com/articles/srep07024.pdf
+    evidence: full_text
+    locator: Results
+  quote: Fe3Sn phase is at least 95% single phase, and the crystal structure can be described by the hexagonal Ni3Sn structure7 with the lattice constants given in Table 2.
+  note: ''
+- id: fe3sn_lattice_sales2014
+  phase: Fe3Sn
+  quantity: lattice
+  value: a = 5.4624, c = 4.3544
+  unit: Å
+  conditions: Fe3Sn
+  source:
+    doi: 10.1038/srep07024
+    title: Ferromagnetism of Fe3Sn and Alloys
+    first_author: Sales
+    year: 2014
+    url: https://www.nature.com/articles/srep07024.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: Fe3Sn 5.4624 4.3544 0.7972 112.52
+  note: 'Table 2 row: a (Å), c (Å), c/a, cell volume (Å3).'
+- id: fe3sn_easy_axis_sales2014
+  phase: Fe3Sn
+  quantity: easy_axis
+  value: easy plane (basal plane), not uniaxial
+  unit: ''
+  conditions: field-oriented powder XRD and DFT
+  source:
+    doi: 10.1038/srep07024
+    title: Ferromagnetism of Fe3Sn and Alloys
+    first_author: Sales
+    year: 2014
+    url: https://www.nature.com/articles/srep07024.pdf
+    evidence: full_text
+    locator: Abstract
+  quote: However, contrary to earlier experimental reports, we found both experimentally and theoretically that the easy magnetic axis lies in the hexagonal plane, which is undesirable for a permanent magnet material.
+  note: Co or Mn substitution does not switch it (calculations and experiment); Sn-site substitution might.
+- id: fe3sn_k1_sales2014
+  phase: Fe3Sn
+  quantity: K1
+  value: 1.8
+  unit: MJ/m3
+  conditions: magnitude of easy-plane anisotropy at room temperature (oriented powder vs polycrystal curves merge near 3 T); DFT 1.59 MJ/m3
+  source:
+    doi: 10.1038/srep07024
+    title: Ferromagnetism of Fe3Sn and Alloys
+    first_author: Sales
+    year: 2014
+    url: https://www.nature.com/articles/srep07024.pdf
+    evidence: full_text
+    locator: Fig. 4 caption; Abstract
+  quote: Hexagonal Fe3Sn has many of the desirable properties for a new permanent magnet phase with a Curie temperature of 725 K, a saturation moment of 1.18 MA/m. and anisotropy energy, K1 of 1.8 MJ/m3.
+  note: 'Sign convention in the paper: positive K1 in their expansion = easy plane.'
+- id: fe3sn_tc_sales2014
+  phase: Fe3Sn
+  quantity: Tc
+  value: 725
+  unit: K
+  conditions: Fe3Sn
+  source:
+    doi: 10.1038/srep07024
+    title: Ferromagnetism of Fe3Sn and Alloys
+    first_author: Sales
+    year: 2014
+    url: https://www.nature.com/articles/srep07024.pdf
+    evidence: full_text
+    locator: Abstract
+  quote: Hexagonal Fe3Sn has many of the desirable properties for a new permanent magnet phase with a Curie temperature of 725 K, a saturation moment of 1.18 MA/m. and anisotropy energy, K1 of 1.8 MJ/m3.
+  note: ''
+- id: fe3sn_js_sales2014
+  phase: Fe3Sn
+  quantity: Js
+  value: 1.48
+  unit: T
+  conditions: room temperature, x-ray density used
+  source:
+    doi: 10.1038/srep07024
+    title: Ferromagnetism of Fe3Sn and Alloys
+    first_author: Sales
+    year: 2014
+    url: https://www.nature.com/articles/srep07024.pdf
+    evidence: full_text
+    locator: Fig. 4 caption
+  quote: Using the x-ray density of Fe3Sn, the room temperature saturation moment is 1.18 MA/m, or about 2.37 mB/Fe.
+  note: mu0 x 1.18 MA/m = 1.48 T (conversion). 'mB' = muB in the text layer.
+- id: fe3sn_t_formation_sales2014
+  phase: Fe3Sn
+  quantity: T_formation
+  value: 1078
+  unit: K
+  conditions: solid-state reaction of pressed Fe+Sn powder at 805 C (2 days + 2-3 days), water quenched
+  source:
+    doi: 10.1038/srep07024
+    title: Ferromagnetism of Fe3Sn and Alloys
+    first_author: Sales
+    year: 2014
+    url: https://www.nature.com/articles/srep07024.pdf
+    evidence: full_text
+    locator: Methods
+  quote: Upon the first firing, the pressed pellets were heated to 805 C at 2uC/min and held for 2 days and then quenched into water. The pellets were reground and then loaded into a furnace that was preheated to 805 C, left for another 2–3 days and then quenched into water.
+  note: '''805 C'' and ''2uC/min'' are degree signs lost in the text layer. Formation above Tc (725 K); quenching implies a high-temperature phase (stability range not stated in the paper).'
+- id: fe3sn_alignment_sales2014
+  phase: Fe3Sn
+  quantity: other
+  value: 'alignment_method: <37 um powder in epoxy in a gelcap cured in 4 T (easy plane aligned along the capsule axis); ''two-rotation'' method (field perpendicular to capsule, capsule rotated 90 deg about its axis during curing) aligns the hard c axis along the capsule axis'
+  unit: ''
+  conditions: Fe3Sn powder (single-crystal grains), room temperature
+  source:
+    doi: 10.1038/srep07024
+    title: Ferromagnetism of Fe3Sn and Alloys
+    first_author: Sales
+    year: 2014
+    url: https://www.nature.com/articles/srep07024.pdf
+    evidence: full_text
+    locator: Methods
+  quote: Each particle was essentially a single crystal grain and the particles were aligned by the field with the easy direction along the long axis of the capsule. [...] After about 20–30 minutes the capsule was rotated by 90u about the cylindrical axis in the 4T field. The long axis of the capsule remained perpendicular to the field. After the epoxy hardened, the field was set to zero and the capsule removed from the cryostat. After these steps, the c axis of most of the powder grains were aligned along the long axis of the capsule.
+  note: 'Two-rotation alignment gives c-axis (hard-axis) texture for easy-plane phases: alignment is possible, but an easy-plane phase gives no uniaxial coercivity.'
+- id: fe3sn_single_variant_sales2014
+  phase: Fe3Sn
+  quantity: single_variant_particles
+  value: 'yes: sieved (<37 um) powder particles are essentially single-crystal grains'
+  unit: ''
+  conditions: ground solid-state-reacted Fe3Sn
+  source:
+    doi: 10.1038/srep07024
+    title: Ferromagnetism of Fe3Sn and Alloys
+    first_author: Sales
+    year: 2014
+    url: https://www.nature.com/articles/srep07024.pdf
+    evidence: full_text
+    locator: Methods
+  quote: Each particle was essentially a single crystal grain and the particles were aligned by the field with the easy direction along the long axis of the capsule.
+  note: ''
+- id: fe2p_k1_yiderigu2024
+  phase: Fe2P-based
+  quantity: K1
+  value: 2.4
+  unit: MJ/m3
+  conditions: binary Fe2P (hexagonal), literature values quoted; Tc = 214 K, so not usable at room temperature
+  source:
+    doi: 10.3390/ma17112476
+    title: Optimizing the Sintering Conditions of (Fe,Co)1.95(P,Si) Compounds for Permanent Magnet Applications
+    first_author: Yiderigu
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/materials/materials-17-02476/article_deploy/materials-17-02476.pdf
+    evidence: review
+    locator: Introduction
+  quote: The parent binary compound Fe2 P crystallizes in a hexagonal structure with a strong uniaxial magnetocrystalline anisotropy (K1 ~2.4 MJ m−3 ) and a significant saturation magnetization (~120 A m2 kg−1 ), but the Curie temperature (TC = 214 K) is too low for applications [19–21].
+  note: Low-temperature value (below Tc = 214 K).
+- id: fe2p_k1_he2021
+  phase: Fe2P-based
+  quantity: K1
+  value: 1.09
+  unit: MJ/m3
+  conditions: (Fe1-yCoy)2P1-xSix single crystal, y ~ 0.09, x = 0.22, room temperature; mu0Ms = 0.96 T; Tc = 506 K
+  source:
+    doi: 10.1002/adfm.202107513
+    title: Intrinsic Magnetic Properties of a Highly Anisotropic Rare‐Earth‐Free Fe2P‐Based Magnet
+    first_author: He
+    year: 2021
+    url: https://api.crossref.org/works/10.1002/adfm.202107513
+    evidence: abstract
+    locator: abstract
+  quote: The maximum room temperature magnetocrystalline anisotropy K1 = 1.09 MJ m−3 is achieved for x = 0.22, with saturation magnetization µ0Ms = 0.96 T and TC = 506 K.
+  note: Only the abstract was accessible.
+- id: fe2p_js_he2021
+  phase: Fe2P-based
+  quantity: Js
+  value: 0.96
+  unit: T
+  conditions: (Fe0.91Co0.09)2P0.78Si0.22 single crystal, room temperature
+  source:
+    doi: 10.1002/adfm.202107513
+    title: Intrinsic Magnetic Properties of a Highly Anisotropic Rare‐Earth‐Free Fe2P‐Based Magnet
+    first_author: He
+    year: 2021
+    url: https://api.crossref.org/works/10.1002/adfm.202107513
+    evidence: abstract
+    locator: abstract
+  quote: The maximum room temperature magnetocrystalline anisotropy K1 = 1.09 MJ m−3 is achieved for x = 0.22, with saturation magnetization µ0Ms = 0.96 T and TC = 506 K.
+  note: ''
+- id: fe2p_tc_he2021
+  phase: Fe2P-based
+  quantity: Tc
+  value: 506
+  unit: K
+  conditions: (Fe0.91Co0.09)2P0.78Si0.22 single crystal
+  source:
+    doi: 10.1002/adfm.202107513
+    title: Intrinsic Magnetic Properties of a Highly Anisotropic Rare‐Earth‐Free Fe2P‐Based Magnet
+    first_author: He
+    year: 2021
+    url: https://api.crossref.org/works/10.1002/adfm.202107513
+    evidence: abstract
+    locator: abstract
+  quote: The maximum room temperature magnetocrystalline anisotropy K1 = 1.09 MJ m−3 is achieved for x = 0.22, with saturation magnetization µ0Ms = 0.96 T and TC = 506 K.
+  note: Yiderigu 2024 quotes Tc up to 650 K for bulk (Fe,Co)2(P,Si).
+- id: fe2p_easy_axis_yiderigu2024
+  phase: Fe2P-based
+  quantity: easy_axis
+  value: c axis (uniaxial), hexagonal Fe2P-type
+  unit: ''
+  conditions: (Fe,Co)2(P,Si) bulk and single crystals (review statement)
+  source:
+    doi: 10.3390/ma17112476
+    title: Optimizing the Sintering Conditions of (Fe,Co)1.95(P,Si) Compounds for Permanent Magnet Applications
+    first_author: Yiderigu
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/materials/materials-17-02476/article_deploy/materials-17-02476.pdf
+    evidence: review
+    locator: Introduction
+  quote: Recent experimental studies in bulk (Fe,Co)2 (P,Si) polycrystalline materials have indeed shown that simultaneous metal and metalloid substitutions can raise the Curie temperature (TC up to 650 K) while maintaining a relatively large c-axis uniaxial magnetocrystalline anisotropy and the desired hexagonal Fe2 P-type structure [26–28].
+  note: ''
+- id: fe2p_phase_fraction_yiderigu2024
+  phase: Fe2P-based
+  quantity: phase_fraction_limit
+  value: Co:Fe <= 15:85; beyond, orthorhombic Co2P-type competes
+  unit: ''
+  conditions: (Fe,Co)2P
+  source:
+    doi: 10.3390/ma17112476
+    title: Optimizing the Sintering Conditions of (Fe,Co)1.95(P,Si) Compounds for Permanent Magnet Applications
+    first_author: Yiderigu
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/materials/materials-17-02476/article_deploy/materials-17-02476.pdf
+    evidence: review
+    locator: Introduction
+  quote: This compounding strategy can, however, not be pursued at a Co:Fe ratio higher than 15:85 due to the appearance of a competing Co2 P-type orthorhombic structure with lower anisotropy, lower transition temperature and smaller saturation magnetization [22].
+  note: ''
+- id: fe2p_t_formation_yiderigu2024
+  phase: Fe2P-based
+  quantity: T_formation
+  value: 973-1373
+  unit: K
+  conditions: ball-milled elemental Fe1.85Co0.1P0.8Si0.2 precursor sintered in sealed ampoules 15 s - 10 min at 700-1100 C (nominal furnace T), water quenched
+  source:
+    doi: 10.3390/ma17112476
+    title: Optimizing the Sintering Conditions of (Fe,Co)1.95(P,Si) Compounds for Permanent Magnet Applications
+    first_author: Yiderigu
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/materials/materials-17-02476/article_deploy/materials-17-02476.pdf
+    evidence: full_text
+    locator: Section 2
+  quote: After a hot insertion, different sintering durations (tsinter. = 15 s, 30 s, 2 min, 5 min and 10 min) and different furnace temperatures considered hereafter as the nominal sintering temperatures (Tsinter. = 700 ◦ C, 800 ◦ C, 900 ◦ C, 1000 ◦ C and 1100 ◦ C) were used and followed by a quenching in room-temperature water (no breaking of the ampule).
+  note: Phase forms by solid-state reaction far above Tc; minutes suffice (abstract).
+- id: fe2p_other_coercivity_yiderigu2024
+  phase: Fe2P-based
+  quantity: other
+  value: 'microstructure: single crystals and conventional bulk polycrystals have no noticeable room-temperature coercivity; short sintering gives Hc ~0.6 kOe only'
+  unit: ''
+  conditions: (Fe,Co)2(P,Si)
+  source:
+    doi: 10.3390/ma17112476
+    title: Optimizing the Sintering Conditions of (Fe,Co)1.95(P,Si) Compounds for Permanent Magnet Applications
+    first_author: Yiderigu
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/materials/materials-17-02476/article_deploy/materials-17-02476.pdf
+    evidence: full_text
+    locator: Abstract
+  quote: Single crystals or conventionally prepared bulk polycrystalline (Fe,Co)2 (P,Si) samples do not, however, show a significant coercivity.
+  note: Remanence of any aligned Fe2P-based magnet presupposes a coercivity mechanism not yet available.
+- id: mn4n_candidate_hirosawa2015
+  phase: Mn4N
+  quantity: other
+  value: 'candidate_status: Mn-Sn-(Co)-N alloys with a perovskite Mn4N-like phase + beta-Mn reach HcJ 1270 kA/m but JS only 26 mT; judged not ready for development'
+  unit: ''
+  conditions: review statement (refs 47-49)
+  source:
+    doi: 10.3379/msjmag.1504r004
+    title: Current Status of Research and Development toward Permanent Magnets Free from Critical Elements
+    first_author: Hirosawa
+    year: 2015
+    url: https://www.jstage.jst.go.jp/article/msjmag/39/3/39_1504R004/_pdf
+    evidence: review
+    locator: Section on search for novel hard magnetic materials
+  quote: Among these alloys, Mn82.5Sn10Co7.5 alloy showed a low JS of 26mT but a large HcJ of 1270 kA/m. The high coercivity was attributed to a phase separation and formation of a two-phase microstructure during a two-step heat-treatment in N2 at 900 ºC followed by at 500 ºC. The fine two-phase microstructure was composed of a perovskite-type Mn4N-like phase and β-Mn phase.
+  note: 'The review adds: ''these compounds are not ready for the industrial development for permanent magnet materials''.'
+- id: mn4n_structure_zhou2021
+  phase: Mn4N
+  quantity: structure
+  value: cubic anti-perovskite (Mn fcc with N at body centre), ferrimagnetic
+  unit: ''
+  conditions: Mn4N films and bulk description
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Introduction (arXiv 2012.10493)
+  quote: Anti-perovskite Mn4N has been known as a crystalline, rare-earth-free ferrimagnetic material. In Mn4N, the Mn-atoms have a face-centered cubic structure with one N-atom at the body center.
+  note: ''
+- id: mn4n_easy_axis_zhou2021
+  phase: Mn4N
+  quantity: easy_axis
+  value: 'bulk: <111> (cubic); films on MgO show perpendicular anisotropy'
+  unit: ''
+  conditions: bulk vs epitaxial films
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Introduction
+  quote: Although the easy axis of bulk Mn4N is along the [111] direction, PMA is repeatedly and reproducibly observed in crystalline Mn4N films 22-28.
+  note: Cubic bulk -> no uniaxial anisotropy without strain.
+- id: mn4n_ms_zhou2021
+  phase: Mn4N
+  quantity: other
+  value: Ms = 43 emu/cm3 (mu0Ms ~0.054 T) and anisotropy 0.7 Merg/cc (0.07 MJ/m3) in optimal films at room temperature
+  unit: ''
+  conditions: reactive-sputtered sub-20 nm Mn4N films on MgO
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Abstract
+  quote: The optimal films showed low saturation magnetization (Ms = 43 emu/cc), low magnetic anisotropy energy (0.7 Merg/cc), and a remanent magnetization to saturation magnetization ratio
+  note: Quote truncated before the remanence value (recorded in the sealed file). Js far too low for a permanent magnet.
+- id: mn4n_t_formation_zhou2021
+  phase: Mn4N
+  quantity: T_formation
+  value: 673-723
+  unit: K
+  conditions: thin films (reactive sputtering / literature)
+  source:
+    doi: 10.1063/5.0032167
+    title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic material
+    first_author: Zhou
+    year: 2021
+    url: https://arxiv.org/pdf/2012.10493
+    evidence: full_text
+    locator: Introduction
+  quote: First, in most thin film studies, it has been shown that the anti-perovskite crystal structure is formed at 400-450 °C.
+  note: ''
+- id: mnn_candidate_yang2023
+  phase: MnN
+  quantity: other
+  value: 'candidate_status: crystal-structure prediction (CALYPSO/DFT) proposes hypothetical MnN (I-42d) with giant easy-axis MAE (~1000 ueV/atom); not synthesised'
+  unit: ''
+  conditions: preprint, first-principles
+  source:
+    doi: null
+    title: Predicting synthesizable manganese nitride with unprecedentedly giant magnetocrystalline anisotropy energy
+    first_author: Yang
+    year: 2023
+    url: https://arxiv.org/pdf/2309.06110
+    evidence: full_text
+    locator: Abstract (arXiv 2309.06110)
+  quote: MnN ( I 42d ) shows giant MAE with values of E001=1006, E010=0, E100=920 μeV/atom (same hereinafter), respectively.
+  note: arXiv preprint without DOI; prediction only. No experimental MnN hard-magnet data found.

@@ -1,0 +1,2063 @@
+# Topic: mnbi -- low-temperature phase (LTP) MnBi: NiAs-type hexagonal (P63/mmc), easy axis c at room temperature.
+# INPUT records (visible) per data/SCHEMA.md. Every value carries a verbatim quote from the fetched source
+# (text layer of the PDF/HTML/API record named in source.url; glyphs lost in text layers are explained in note).
+# Derived values (unit conversions, Js from Ms, X-ray density from lattice, figure readings) are flagged in note.
+# Phase names used in this file:
+#   LTP-MnBi      low-temperature phase MnBi (alpha-MnBi), the hard magnetic phase
+#   HTP-Mn1.08Bi  high-temperature phase (beta, ~Mn1.08Bi), stable between ~628-632 K and ~719-721 K, paramagnetic
+#   QHTP-MnBi     quenched (retained) high-temperature phase / HTP-like metastable phases (ferro/ferrimagnetic at low T)
+#   Bi, liquid    bismuth matrix and Bi-rich melt
+# Collected 2026-10-03 for the magnet-align-frontier project (literature agent, topic mnbi).
+
+- id: mnbi_lattice_mcguire2014
+  phase: LTP-MnBi
+  quantity: lattice
+  value: a=4.287, c=6.117
+  unit: Å
+  conditions: single crystal grown from Bi flux; XRD on crystal faces at room temperature
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: full_text
+    locator: Fig. 1(b) and caption; Sec. II
+  quote: 'a = 4.287 Å c = 6.117 Å ... FIG. 1: X-ray diffraction patterns from MnBi single crystal faces at room temperature.'
+  note: Values are printed in Fig. 1(b) (text layer of the figure). arXiv preprint version (1411.2448) of the PRB article.
+- id: mnbi_easyaxis_mcguire2014
+  phase: LTP-MnBi
+  quantity: easy_axis
+  value: c axis near room temperature; perpendicular to c (basal plane) at 5 K; spin reorientation at TSR = 90 K
+  unit: ''
+  conditions: single crystals; magnetization with H parallel/perpendicular to c at 5 K and 300 K
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: full_text
+    locator: Abstract; Sec. III (Fig. 4b)
+  quote: X-ray diffraction reveals a structural phase transition at the spin reorientation temperature TSR = 90 K. ... This data demonstrates the change in the easy axis of magnetization from along c near room temperature to perpendicular to c at 5 K.
+  note: Below TSR the structure is orthorhombic (Cmcm). Easy axis is c over the whole range relevant to processing (>150 K up to decomposition).
+- id: mnbi_other_spinreorientation_mcguire2014
+  phase: LTP-MnBi
+  quantity: other
+  value: moment rotates away from c on cooling below ~140 K, completes abruptly at TSR = 90 K
+  unit: K
+  conditions: single crystals and powders (literature summary in introduction)
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: full_text
+    locator: Sec. I
+  quote: The NMR results from powders [25] and magnetization measurements on single crystals [12] show the rotation away from the c-axis upon cooling begins near 140 K, increases gradually upon further cooing to TSR = 90 K, and then abruptly completes, with the moment flopping discontinuously into the ab-plane.
+  note: '''cooing'' [sic] in source.'
+- id: mnbi_tc_mcguire2014
+  phase: LTP-MnBi
+  quantity: Tc
+  value: 680
+  unit: K
+  conditions: single crystal; hypothetical Curie temperature from a fit of M(T) up to the decomposition at 630 K
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: full_text
+    locator: Sec. III, Fig. 4a
+  quote: Upon heating above room temperature (Fig. 4a), the magnetization decreases and then abruptly drops by orders of magnitude near Tdec = 630 K, signaling the decomposition of MnBi. A simple model [34] is used to fit the temperature dependence up to Tdec , giving an estimate of the hypothetical Curie temperature of 680 K.
+  note: Extrapolated (virtual) Tc; the ferromagnetic LTP never reaches it because it decomposes at ~630 K.
+- id: mnbi_tstab_mcguire2014
+  phase: LTP-MnBi
+  quantity: T_stab
+  value: 630
+  unit: K
+  conditions: single crystal, heating (M(T) measurement); decomposition into Mn1.08Bi + Bi
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: full_text
+    locator: Sec. I and Sec. III
+  quote: It has since been determined that near 630 K MnBi decomposes into Mn1.08 Bi and Bi [15], both of which are paramagnetic at this temperature. ... Upon heating above room temperature (Fig. 4a), the magnetization decreases and then abruptly drops by orders of magnitude near Tdec = 630 K, signaling the decomposition of MnBi.
+  note: Both decomposition products are paramagnetic at the decomposition temperature (first fragment cites ref. [15]).
+- id: mnbi_msmass_mcguire2014
+  phase: LTP-MnBi
+  quantity: Ms_mass
+  value: 76.2
+  unit: Am2/kg
+  uncertainty: 1.5
+  conditions: 'single crystal, 300 K (magnetization measurement: 3.6 μB per formula unit)'
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: full_text
+    locator: Sec. III (neutron/magnetization comparison)
+  quote: We find an ordered moment on Mn of 3.50(2) μB at 300 K, and 3.90(2) μB at 5 K. These compare well with the values of 3.6 and 4.1 μB determined from our magnetization measurements at 300 and 5 K, respectively (see below).
+  note: 'Value derived here: 3.6 μB/f.u. x 5.5849 A m2 mol-1 per μB / 0.263918 kg/mol (MnBi) = 76.2 Am2/kg. Uncertainty reflects the 2-digit precision of 3.6 μB (estimate).'
+- id: mnbi_js_mcguire2014
+  phase: LTP-MnBi
+  quantity: Js
+  value: 0.73
+  unit: T
+  conditions: room temperature; literature value quoted in introduction (Ms = 0.58 MA/m)
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: review
+    locator: Sec. I, item (2)
+  quote: (2) high ordered moment and saturation magnetization of 0.58 MA m−1 or about 3.5 μB per Mn at room temperature [9]
+  note: Js derived here as μ0 x 0.58 MA/m = 0.729 T. Value cited by McGuire from ref. [9] (not their own measurement), hence evidence=review.
+- id: mnbi_k1_mcguire2014
+  phase: LTP-MnBi
+  quantity: K1
+  value: 1.0
+  unit: MJ/m3
+  conditions: room temperature; literature value quoted in introduction; increases on heating above RT
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: review
+    locator: Sec. I, item (4)
+  quote: (4) large and uniaxial magnetocrystalline anisotropy energy near 1 MJ m−3 at room temperature (moments along the c-axis), which increases upon heating above room temperature [10–13].
+  note: Approximate ('near 1 MJ/m3'); positive temperature coefficient of anisotropy above RT. Cited from refs. [10-13].
+- id: mnbi_structure_mcguire2014_lowt
+  phase: LTP-MnBi
+  quantity: structure
+  value: hexagonal NiAs-type above TSR; orthorhombic Cmcm below TSR = 90 K (a=4.269, b=7.404, c=6.062 Å at 20 K)
+  unit: ''
+  conditions: annealed powder from single crystals, 20 K (Rietveld)
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: full_text
+    locator: Sec. III
+  quote: Rietveld analysis of data collected at 20 K from annealed powder indicate the low temperature structure adopts space group Cmcm with lattice constants a = 4.269 Å, b = 7.404 Å, and c = 6.062 Å, in good agreement with those determined from the single crystal measurements shown in Fig. 2c
+  note: Low-temperature distortion only; irrelevant for processing at or above room temperature.
+- id: mnbi_structure_mcguire2014_htp
+  phase: HTP-Mn1.08Bi
+  quantity: structure
+  value: orthorhombic variant of NiAs structure, excess Mn in trigonal prismatic interstices
+  unit: ''
+  conditions: literature summary (ref. [16])
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: review
+    locator: Sec. I
+  quote: The Mn rich phase is an orthorhombic variant of the NiAs-structure with the excess Mn occupying trigonal prismatic interstices similar to those occupied by the Bi atoms [16].
+  note: ''
+- id: mnbi_other_oxidation_mcguire2014
+  phase: LTP-MnBi
+  quantity: other
+  value: 'powdered crystals decompose slowly in air at room temperature (>12 h: MnBi + MnO2 + Bi)'
+  unit: ''
+  conditions: powdered single crystals exposed to air, room temperature
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: full_text
+    locator: Sec. II
+  quote: When exposed to air for hours, crystals developed a visible patina. X-ray diffraction from crystals which had been powdered and then exposed to air for more than 12 hours indicated slow decomposition into MnBi, MnO2 , and Bi.
+  note: Oxidation sensitivity of fine powder (relevant to powder handling before consolidation).
+- id: mnbi_primcryst_mcguire2014
+  phase: LTP-MnBi
+  quantity: primary_crystallisation
+  value: mm-cm LTP single crystals grow from Bi-rich melt (0.65 g Mn + 35 g Bi) on slow cooling 440 -> 275 C, flux decanted at 275 C
+  unit: ''
+  conditions: Bi flux growth, ~1.8 wt% Mn (computed from 0.65 g Mn + 35 g Bi), cooling 0.4 C/h from 440 to 275 C
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: full_text
+    locator: Sec. II
+  quote: The ampoule was heated to 1000 ◦ C at 1 ◦ C/min, held for 24 h, cooled to 440 ◦ C at 1 ◦ C/min, held at 440 ◦ C for 1 h, and then cooled to 275 ◦ C at 0.4 ◦ C/h. At 275 ◦ C, the excess Bi flux was centrifuged into the catch crucible. Several mm-cm sized MnBi single crystals were produced via this method
+  note: Shows discrete LTP crystals forming from a Bi-rich liquid between the peritectic (~355 C) and eutectic (262 C) temperatures (cooling range spans 440 -> 275 C). Mn content 0.65/(35.65) = 1.8 wt% computed here.
+- id: mnbi_primcryst_mcguire2014b
+  phase: LTP-MnBi
+  quantity: primary_crystallisation
+  value: MnBi grows from melts with excess Bi; cooling in a field gives coaligned MnBi crystallites in Bi
+  unit: ''
+  conditions: literature summary (refs [5], [17], [19])
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: review
+    locator: Sec. I
+  quote: Synthesis of high quality single phase samples and in particular large single crystals of MnBi is complicated by the peritectic nature of this reaction, the relatively low temperature at which it occurs (630 K), and the nearness to the eutectic temperature (535 K). MnBi can be grown from a melt with excess Bi, as first described by Adams et al. [5] By cooling the melt in a magnetic field, textured composites with coaligned MnBi crystallites embedded in a Bi matrix have been obtained and studied [17, 19].
+  note: ''
+- id: mnbi_fieldeffect_mcguire2014
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 'a strong field stabilizes ferromagnetic MnBi against peritectic decomposition: up to ~650 K in 10 T'
+  unit: K
+  conditions: literature summary (refs [17, 18])
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: review
+    locator: Sec. I
+  quote: Since MnBi is ferromagnetic and the decomposition products are paramagnetic (at the peritectic temperature), application of strong magnetic field has been shown to stabilize MnBi to higher temperatures, up to about 650 K in a 10 Tesla magnetic field [17, 18].
+  note: Zeeman energy of the ferromagnetic LTP vs paramagnetic HTP + liquid shifts the peritectic upward (~20 K in 10 T relative to ~630 K).
+- id: mnbi_tstab_antonov2020
+  phase: LTP-MnBi
+  quantity: T_stab
+  value: 628
+  unit: K
+  conditions: heating; coupled structural + magnetic transition to paramagnetic HTP (review)
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 1 (Introduction)
+  quote: The low-temperature phase (LTP) of MnBi is ferromagnetic and has the hexagonal NiAs structure. With increasing temperature, the material remains ferromagnetic up to 628 K and then undergoes a coupled structural and magnetic phase transition to a paramagnetic high-temperature phase (HTP).
+  note: ''
+- id: mnbi_formationpath_antonov2020
+  phase: LTP-MnBi
+  quantity: formation_path
+  value: 'heating 628 K: LTP -> Mn1.08Bi + Bi-rich liquid; 719 K: Mn1.08Bi -> Mn + liquid; cooling 613 K: Mn1.08Bi -> LTP + Mn; 535 K eutectic'
+  unit: K
+  conditions: Mn-Bi phase diagram, review summary (ASM diagram, ref. [6])
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 2.1 Crystal structure
+  quote: 'MnBi exhibits a first-order structural transition between temperatures of 613 K and 628 K [91]. The LTP possesses the desired magnetic properties. Researchers also refer to this phase as α -MnBi. The Mn–Bi phase diagram is shown in Fig. 1 [6]. Key phase transformations are: 1) at 628 K upon heating, α -MnBi → Mn1.08Bi + Birich liquid; 2) at 719 K upon heating Mn1.08Bi → Mn + Bi-rich liquid; 3) at 613 K during cooling Mn1.08Bi → α -MnBi + Mn; 4) at 535 K during cooling, MnBi + Bi → Bi-rich liquid.'
+  note: Item 4 is written as in the source (the eutectic reaction L <-> Bi + MnBi at 535 K). 'Birich' in item 1 is as in the PDF text layer (printed 'Bi-rich' across a line break).
+- id: mnbi_lattice_antonov2020
+  phase: LTP-MnBi
+  quantity: lattice
+  value: a=4.290, c=6.126
+  unit: Å
+  conditions: 300 K, P63/mmc (review)
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 2.1 Crystal structure
+  quote: For the LTP phase (α -MnBi) at 300 K, they are Mn50Bi50, P 63 / mmc symmetry, (group number 194), and a = b = = 4.290 Å, c = 6.126 Å, α = β = 90°, γ = 120°.
+  note: '''a = b = = 4.290'' as in the text layer.'
+- id: mnbi_lattice_antonov2020_htp
+  phase: HTP-Mn1.08Bi
+  quantity: lattice
+  value: Mn2.23Bi1.88, Pmma, a=5.959, b=4.334, c=7.505 (at 630 K)
+  unit: Å
+  conditions: 630 K (review, ref. [47])
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 2.1 Crystal structure
+  quote: Currently the generally accepted composition, lattice structure and parameters for the high temperature phase (β-MnBi) at 630 K are Mn2.23Bi1.88, Pmma symmetry, and a = 5.959 Å, b = 4.334 Å, c = 7.505 Å, α = β = γ = 90° [47].
+  note: Orthorhombic cell; relation to hexagonal LTP axes not stated in this quote.
+- id: mnbi_structure_antonov2020_htp
+  phase: HTP-Mn1.08Bi
+  quantity: structure
+  value: disordered NiAs phase, 10-15% of bipyramidal interstitial sites occupied by Mn; paramagnetic; quenched HTP ferromagnetic with larger K, smaller Ms and Tc
+  unit: ''
+  conditions: review summary (ref. [6] Chen & Stutius 1974)
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 1 (Introduction)
+  quote: The HTP is a disordered NiAs phase where 10–15% of the large bipyramidal interstitial sites are occupied by Mn atoms [6]. Rapid cooling of HTP MnBi yields a quenched high-temperature phase, which is also ferromagnetic with even larger uniaxial magneto-crystalline anisotropy energy (MAE), but smaller magnetization and Curie temperature.
+  note: ''
+- id: mnbi_other_spinreorientation_antonov2020
+  phase: LTP-MnBi
+  quantity: other
+  value: easy axis in-plane at low T, starts to reorient to c at ~90 K, fully along c above 150 K
+  unit: K
+  conditions: neutron and x-ray diffraction (review, refs [48,49])
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 2.1
+  quote: Neutron and x-ray diffraction measurements [48,49] showed that the magnetic easy axis of MnBi is in-plane at lower temperature and starts to reorient out-of-plane to c-axis at about 90 K, and completely aligned with c-axis when temperature is above 150 K (see Fig. 2).
+  note: ''
+- id: mnbi_tc_park2014
+  phase: LTP-MnBi
+  quantity: Tc
+  value: 711
+  unit: K
+  conditions: first-principles (FPLAPW, LSDA) + mean-field theory; calculation, not measurement
+  source:
+    doi: 10.3390/met4030455
+    title: Electronic Structure and Maximum Energy Product of MnBi
+    first_author: Park, Jihoon
+    year: 2014
+    url: https://mdpi-res.com/d_attachment/metals/metals-04-00455/article_deploy/metals-04-00455.pdf
+    evidence: full_text
+    locator: Abstract
+  quote: The calculated magnetic moment, MAE, and Tc are 3.63 μB/f.u. (formula unit) (79 emu/g or 714 emu/cm3), −0.163 meV/u.c. (or K = −0.275 × 106 J/m3) and 711 K, respectively.
+  note: Calculated values at 0 K lattice (a=4.256, c=6.042 Å at 4.2 K); the negative K corresponds to in-plane easy direction at 0 K. '106' = 10^6 (superscript lost in text layer).
+- id: mnbi_msmass_park2014
+  phase: LTP-MnBi
+  quantity: Ms_mass
+  value: 79
+  unit: Am2/kg
+  conditions: first-principles calculation, 0 K (3.63 μB/f.u.); 714 emu/cm3
+  source:
+    doi: 10.3390/met4030455
+    title: Electronic Structure and Maximum Energy Product of MnBi
+    first_author: Park, Jihoon
+    year: 2014
+    url: https://mdpi-res.com/d_attachment/metals/metals-04-00455/article_deploy/metals-04-00455.pdf
+    evidence: full_text
+    locator: Abstract
+  quote: The calculated magnetic moment, MAE, and Tc are 3.63 μB/f.u. (formula unit) (79 emu/g or 714 emu/cm3), −0.163 meV/u.c. (or K = −0.275 × 106 J/m3) and 711 K, respectively.
+  note: Theoretical 0 K value, not 300 K. 714 emu/cm3 corresponds to μ0Ms = 0.90 T at 0 K (derived).
+- id: mnbi_tc_guo1992
+  phase: LTP-MnBi
+  quantity: Tc
+  value: 775
+  unit: K
+  conditions: melt-spun + annealed LTP MnBi; fit of Ms(T) measured 80-625 K (pulsed field) -> virtual Curie point
+  source:
+    doi: 10.1103/physrevb.46.14578
+    title: Magnetic properties of MnBi prepared by rapid solidification
+    first_author: Guo, X.
+    year: 1992
+    url: https://api.openalex.org/works/doi:10.1103/physrevb.46.14578
+    evidence: abstract
+    locator: abstract
+  quote: A fit to the saturation-magnetization measurement gives a virtual Curie point of 775 K.
+  note: 'Extrapolated (virtual) Tc; compare 680 K (McGuire 2014 fit) and 711 K (Park 2014 mean-field calculation): the extrapolated Tc is model dependent, but all exceed the decomposition at ~628-630 K.'
+- id: mnbi_k1_guo1992
+  phase: LTP-MnBi
+  quantity: other
+  value: anisotropy field increases with temperature, maximum 9 T at 530 K
+  unit: T
+  conditions: melt-spun + annealed LTP MnBi, singular-point detection, 80-625 K
+  source:
+    doi: 10.1103/physrevb.46.14578
+    title: Magnetic properties of MnBi prepared by rapid solidification
+    first_author: Guo, X.
+    year: 1992
+    url: https://api.openalex.org/works/doi:10.1103/physrevb.46.14578
+    evidence: abstract
+    locator: abstract
+  quote: The anisotropy field, obtained by the singular-point-detection technique, is found to increase with temperature and has a maximum value of 9 T at 530 K.
+  note: Positive temperature coefficient of anisotropy above room temperature (anisotropy field, not K1 itself).
+- id: mnbi_tstab_chen1974a
+  phase: LTP-MnBi
+  quantity: T_stab
+  value: 628
+  unit: K
+  conditions: 'single crystals; heating: MnBi -> Mn1.08Bi + Bi (628 K); cooling: Mn1.08Bi -> MnBi + Mn (613 K)'
+  source:
+    doi: 10.1109/tmag.1974.1058367
+    title: The phase transformation and physical properties of the MnBi and Mn1.08Bi compounds
+    first_author: Tu Chen
+    year: 1974
+    url: https://api.openalex.org/works/doi:10.1109/tmag.1974.1058367
+    evidence: abstract
+    locator: abstract
+  quote: It was established that the LTP and HTP are separate compounds with the chemical formulae MnBi and Mn1.08Bi respectively. The ferro-to-paramagnetic transition upon heating to 628 K and para-to-ferromagnetic transition upon cooling to 613 K correspond respectively to the phase decomposition of MnBi → Mn1.08Bi + Bi and Mn1.08Bi → MnBi + Mn.
+  note: Crossref title contains markup (Mn<inf>1.08</inf>Bi); cleaned here. The 15 K hysteresis (628 K heating / 613 K cooling) is the transformation hysteresis.
+- id: mnbi_formationpath_chen1974a
+  phase: LTP-MnBi
+  quantity: formation_path
+  value: on cooling, LTP forms from HTP by decomposition Mn1.08Bi -> MnBi + Mn at 613 K (HTP paramagnetic above; LTP ferromagnetic as formed)
+  unit: K
+  conditions: single crystals (LTP and quenched HTP)
+  source:
+    doi: 10.1109/tmag.1974.1058367
+    title: The phase transformation and physical properties of the MnBi and Mn1.08Bi compounds
+    first_author: Tu Chen
+    year: 1974
+    url: https://api.openalex.org/works/doi:10.1109/tmag.1974.1058367
+    evidence: abstract
+    locator: abstract
+  quote: The ferro-to-paramagnetic transition upon heating to 628 K and para-to-ferromagnetic transition upon cooling to 613 K correspond respectively to the phase decomposition of MnBi → Mn1.08Bi + Bi and Mn1.08Bi → MnBi + Mn.
+  note: 'The para-to-ferro transition on cooling coincides with LTP formation: the LTP is ferromagnetic at its formation temperature (613 K < extrapolated Tc 680-775 K).'
+- id: mnbi_msmass_chen1974a_qhtp
+  phase: QHTP-MnBi
+  quantity: other
+  value: QHTP single crystal Ms at 4 K = 3.04 μB/Mn (86% of LTP); K of QHTP much larger than LTP
+  unit: μB/Mn
+  conditions: quenched HTP single crystals, 4 K
+  source:
+    doi: 10.1109/tmag.1974.1058367
+    title: The phase transformation and physical properties of the MnBi and Mn1.08Bi compounds
+    first_author: Tu Chen
+    year: 1974
+    url: https://api.openalex.org/works/doi:10.1109/tmag.1974.1058367
+    evidence: abstract
+    locator: abstract
+  quote: For the QHTP single crystals, the saturation magnetization, Ms, at 4 K is 3.04 μBper Mn atom. This is 86% of the Msof the LTP. At 300 K we find Msto be 1.8 times larger than previously reported. The anisotropy energy K in the QHTP was found to be much larger than that of the LTP.
+  note: Missing spaces ('μBper', 'Msof', 'Msto') as in the abstract text.
+- id: mnbi_other_stutius1974
+  phase: LTP-MnBi
+  quantity: other
+  value: 'single crystals: 4.2 K moment 3.84 μB/Mn perpendicular to c; rotates to c between 90 and 140 K; K1..K4 given up to the first-order transition at 625 K'
+  unit: ''
+  conditions: Bi-free single crystals, VSM to 21 kOe, 4.2-635 K
+  source:
+    doi: 10.1063/1.2947245
+    title: Magnetic Properties of MnBi Single Crystals
+    first_author: Stutius, W. E.
+    year: 1974
+    url: https://api.openalex.org/works/doi:10.1063/1.2947245
+    evidence: abstract
+    locator: abstract
+  quote: The magnetization at 4.2 K is 3.84±0.03 μB/Mn atom and is perpendicular to the c‐axis. Between 90 K and 140 K the magnetization rotates into a direction parallel to the c‐axis. This behavior is described in terms of an anisotropy energy of the form EA=K1sin2Θ+K2sin4Θ+(K3+K4cos6ψ)·sin6Θ. The magnitudes and temperature dependences of the anisotropy coefficients are given over the range of temperatures up to the first order phase transition at 625 K.
+  note: Numerical K1(T) values are in the paper body (not accessible).
+- id: mnbi_k1_williams1957
+  phase: LTP-MnBi
+  quantity: K1
+  value: 0.91
+  unit: MJ/m3
+  conditions: oriented polycrystalline MnBi (aligned hexagonal crystallites), fit to magnetization curve perpendicular to c; K2 = 0.26 MJ/m3; temperature not stated in abstract (room temperature implied)
+  source:
+    doi: 10.1063/1.1722768
+    title: Magnetostriction and Magnetic Anisotropy of MnBi
+    first_author: Williams, H. J.
+    year: 1957
+    url: https://api.crossref.org/works/10.1063/1.1722768
+    evidence: abstract
+    locator: abstract
+  quote: Magnetic anisotropy constants of K1=9.1×106 ergs per cm3 and K2=2.6×106 ergs per cm3 were obtained by fitting a calculated curve to the experimental magnetization curve.
+  note: 'Converted: 9.1x10^6 erg/cm3 = 0.91 MJ/m3; K2 = 2.6x10^6 erg/cm3 = 0.26 MJ/m3 (''106'' = 10^6 in the abstract text). Measurement temperature not given in the abstract.'
+- id: mnbi_tstab_chen1974b
+  phase: LTP-MnBi
+  quantity: T_stab
+  value: 628
+  unit: K
+  conditions: 'single crystals grown from Bi-rich solution; heating: peritectic decomposition at 355 C; cooling: HTP decomposes at 340 C'
+  source:
+    doi: 10.1063/1.1663594
+    title: Contribution to the equilibrium phase diagram of the Mn–Bi system near MnBi
+    first_author: Chen, Tu
+    year: 1974
+    url: https://api.crossref.org/works/10.1063/1.1663594
+    evidence: abstract
+    locator: abstract
+  quote: The results show that the high-temperature phase of MnBi is in fact a separate compound with chemical formula Mn1.08Bi, when grown from a Bi-rich solution. It was found that the transformation of MnBi at 355°C upon heating is associated with a peritectic decomposition of MnBi into Mn1.08Bi+liquid, and the transformation at 340°C upon cooling of the high-temperature phase is the result of decomposition of Mn1.08Bi to MnBi±Mn.
+  note: 355 C = 628 K (value given in K, converted). '±' as in the Crossref abstract text (presumably '+'). On cooling the HTP decomposes at 340 C (613 K).
+- id: mnbi_formationpath_chen1974b
+  phase: LTP-MnBi
+  quantity: formation_path
+  value: LTP forms from HTP (Mn1.08Bi) on cooling at 340 C by Mn1.08Bi -> MnBi + Mn; on heating LTP -> Mn1.08Bi + liquid (peritectic, 355 C)
+  unit: K
+  conditions: single crystals as-grown and heat-treated
+  source:
+    doi: 10.1063/1.1663594
+    title: Contribution to the equilibrium phase diagram of the Mn–Bi system near MnBi
+    first_author: Chen, Tu
+    year: 1974
+    url: https://api.crossref.org/works/10.1063/1.1663594
+    evidence: abstract
+    locator: abstract
+  quote: It was found that the transformation of MnBi at 355°C upon heating is associated with a peritectic decomposition of MnBi into Mn1.08Bi+liquid, and the transformation at 340°C upon cooling of the high-temperature phase is the result of decomposition of Mn1.08Bi to MnBi±Mn.
+  note: '340 C = 613 K. Formation temperature of LTP from HTP (613 K) is below the extrapolated LTP Tc (680-775 K): the LTP is ferromagnetic when it forms.'
+- id: mnbi_tstab_kainzbauer2019
+  phase: LTP-MnBi
+  quantity: T_stab
+  value: 626
+  unit: K
+  conditions: 'phase diagram (Massalski compilation): LTP stable up to 353 C, peritectic L + HTP; HTP decomposes peritectically at 446 C'
+  source:
+    doi: 10.1007/s11669-019-00719-x
+    title: The Ternary Bi-Mn-Sb Phase Diagram and the Crystal Structure of the Ternary Τ Phase Bi0.8MnSb0.2
+    first_author: Kainzbauer, Peter
+    year: 2019
+    url: https://link.springer.com/content/pdf/10.1007/s11669-019-00719-x.pdf
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: According to Massalski et al.,[2] a-BiMn crystallizes in the hexagonal NiAs (B81) type structure (space group P63/ mmc) and is stable up to 353 C where it decomposes in a peritectic reaction into a Bi-rich liquid and the high-temperature modification b-BiMn (which itself decomposes peritectically at 446 C).
+  note: Text layer lost the degree sign and Greek letters (a-BiMn = alpha-BiMn = LTP; b-BiMn = beta = HTP). 353 C = 626 K; 446 C = 719 K. Value cited from the Massalski compilation, hence evidence=review.
+- id: mnbi_primcryst_kainzbauer2019
+  phase: HTP-Mn1.08Bi
+  quantity: primary_crystallisation
+  value: HTP (beta-BiMn) forms peritectically at 446 C (719 K) from L + Mn; stable to 353 C, where L + HTP -> LTP
+  unit: K
+  conditions: Bi-Mn phase diagram (Massalski compilation)
+  source:
+    doi: 10.1007/s11669-019-00719-x
+    title: The Ternary Bi-Mn-Sb Phase Diagram and the Crystal Structure of the Ternary Τ Phase Bi0.8MnSb0.2
+    first_author: Kainzbauer, Peter
+    year: 2019
+    url: https://link.springer.com/content/pdf/10.1007/s11669-019-00719-x.pdf
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: a-BiMn crystallizes in the hexagonal NiAs (B81) type structure (space group P63/ mmc) and is stable up to 353 C where it decomposes in a peritectic reaction into a Bi-rich liquid and the high-temperature modification b-BiMn (which itself decomposes peritectically at 446 C).
+  note: From a Bi-rich melt the phase that crystallises between 446 C and ~353-355 C is HTP (paramagnetic there); below ~355 C (down to the 262 C eutectic) LTP crystallises.
+- id: mnbi_tstab_koyama2007
+  phase: LTP-MnBi
+  quantity: T_stab
+  value: 628
+  unit: K
+  conditions: polycrystalline MnBi, DTA and magnetization, zero field; 3 K/min heating
+  source:
+    doi: 10.2320/matertrans.maw200721
+    title: Magnetic Phase Transition of MnBi under High Magnetic Fields and High Temperature
+    first_author: Koyama, Keiichi
+    year: 2007
+    url: https://www.jstage.jst.go.jp/article/matertrans/48/9/48_MAW200721/_pdf
+    evidence: full_text
+    locator: Abstract
+  quote: The magnetic phase transition temperature (Tt ) at a zero magnetic field is 628 K and linearly increases with increasing fields up to 14 T at the rate of 2 KT1 .
+  note: '''2 KT1'' = 2 K/T (superscript minus lost in text layer). The Results section gives the DTA onset as 638 K (possible typo; abstract and conclusion say 628 K).'
+- id: mnbi_tc_koyama2007
+  phase: LTP-MnBi
+  quantity: Tc
+  value: 720
+  unit: K
+  conditions: mean-field calculation cited in introduction (ref. 6)
+  source:
+    doi: 10.2320/matertrans.maw200721
+    title: Magnetic Phase Transition of MnBi under High Magnetic Fields and High Temperature
+    first_author: Koyama, Keiichi
+    year: 2007
+    url: https://www.jstage.jst.go.jp/article/matertrans/48/9/48_MAW200721/_pdf
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: The mean field calculations on m of LTP-MnBi indicated that the Curie temperature TC would reach up to 720 K.6)
+  note: Extrapolated (hypothetical) Curie temperature; cited from ref. 6.
+- id: mnbi_structure_koyama2007_htp
+  phase: HTP-Mn1.08Bi
+  quantity: structure
+  value: distorted Ni2In-type hexagonal; cell volume shrinks by 0.03% from LTP to HTP
+  unit: ''
+  conditions: literature (Roberts, ref. 5) quoted in introduction
+  source:
+    doi: 10.2320/matertrans.maw200721
+    title: Magnetic Phase Transition of MnBi under High Magnetic Fields and High Temperature
+    first_author: Koyama, Keiichi
+    year: 2007
+    url: https://www.jstage.jst.go.jp/article/matertrans/48/9/48_MAW200721/_pdf
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: 'accompanied by a structural transformation from the NiAs-type to distorted Ni2 In-type hexagonal structure (high temperature phase: HTP).5) The cell volume slightly shrinks by 0.03% in the transformation from LTP to HTP.'
+  note: Ni2In type = NiAs type with the trigonal-bipyramidal interstices filled; the HTP keeps the hexagonal NiAs-derived framework with partial Mn occupation of these sites.
+- id: mnbi_other_koyama2007_dta
+  phase: LTP-MnBi
+  quantity: other
+  value: 'DTA zero field: Bi melting 535 K, LTP->HTP 638 K (onset), HTP peritectic 719 K; Bi melting and HTP peritectic independent of field'
+  unit: K
+  conditions: polycrystalline MnBi (with a little Bi), DTA heating 3 K/min, 0-14 T
+  source:
+    doi: 10.2320/matertrans.maw200721
+    title: Magnetic Phase Transition of MnBi under High Magnetic Fields and High Temperature
+    first_author: Koyama, Keiichi
+    year: 2007
+    url: https://www.jstage.jst.go.jp/article/matertrans/48/9/48_MAW200721/_pdf
+    evidence: full_text
+    locator: Sec. 3, Fig. 1
+  quote: 'In a zero magnetic field, three endothermic peaks were observed: the melting of Bi at 535 K (Tm Bi ), the phase transition from LTP to HTP at 638 K (Tt ), and the peritectic temperature (Tm MnBi ) of HTP at 719 K. Here, these transition temperatures were determined at the onset of the endothermic peaks. As seen in this figure, Tm Bi and Tm MnBi are not affected by applying B, but Tt increases with increasing B.'
+  note: Only the ferromagnetic LTP transition shifts with field.
+- id: mnbi_fieldeffect_koyama2008
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: LTP->HTP transition temperature rises linearly by ~2 K/T up to 14 T (Zeeman energy of ferromagnetic LTP); would reach HTP peritectic (~720 K) at ~45 T (extrapolation)
+  unit: K/T
+  conditions: polycrystalline MnBi, DTA in fields up to 14 T
+  source:
+    doi: 10.1088/1468-6996/9/2/024204
+    title: Magnetic and structural phase transitions of MnBi under high magnetic fields
+    first_author: Koyama, Keiichi
+    year: 2008
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5099712/
+    evidence: full_text
+    locator: Abstract; Discussion
+  quote: DTA data show that the magnetic phase transition temperature from the ferromagnetic state to the paramagnetic state increases linearly at a rate of 2 KT−1 with increasing magnetic field up to 14 T. ... Upon applying a magnetic field to the compound, the decrease in the magnetic free energy of FM (FFM)-LTP MnBi is much larger than that of PM-HTP Mn1.08Bi because of the addition of the Zeeman energy. Therefore, we observe the increase in T t by applying a magnetic field to this compound.
+  note: 'Mechanism for field-assisted formation: a field favours the ferromagnetic LTP over paramagnetic HTP + liquid thermodynamically (shift of the peritectic), independent of crystal orientation.'
+- id: mnbi_tc_koyama2008
+  phase: LTP-MnBi
+  quantity: Tc
+  value: 720
+  unit: K
+  conditions: mean-field calculation (refs 8, 16) quoted in discussion
+  source:
+    doi: 10.1088/1468-6996/9/2/024204
+    title: Magnetic and structural phase transitions of MnBi under high magnetic fields
+    first_author: Koyama, Keiichi
+    year: 2008
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5099712/
+    evidence: review
+    locator: Discussion
+  quote: The mean field calculation shows that the Curie temperature T C of LTP-MnBi is ∼720 K [ 8 , 16 ].
+  note: Same estimate as Koyama 2007; not independent.
+- id: mnbi_structure_koyama2008_htp
+  phase: HTP-Mn1.08Bi
+  quantity: structure
+  value: distorted Ni2In-type hexagonal; cell volume decreases <0.1% from LTP to HTP; transition first order at ~630 K
+  unit: ''
+  conditions: literature (ref. 5) quoted in introduction
+  source:
+    doi: 10.1088/1468-6996/9/2/024204
+    title: Magnetic and structural phase transitions of MnBi under high magnetic fields
+    first_author: Koyama, Keiichi
+    year: 2008
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5099712/
+    evidence: review
+    locator: Introduction
+  quote: 'LTP-MnBi undergoes a first-order magnetic phase transition from the ferromagnetic (FM) state to the paramagnetic (PM) state at T t∼630 K, accompanied by a structural transformation from the NiAs-type to a distorted Ni2In-type hexagonal structure (high-temperature phase: HTP) [ 5 ]. The cell volume slightly decreases (<0.1%) in the transformation from LTP to HTP.'
+  note: ''
+- id: mnbi_other_andresen_ctrans_antonov2020
+  phase: HTP-Mn1.08Bi
+  quantity: other
+  value: above the 613-633 K transition 15% of Mn moves into the trigonal-bipyramidal holes of the NiAs structure; c axis contracts
+  unit: ''
+  conditions: neutron diffraction (Andresen et al. 1967) as summarised in review
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 2.1
+  quote: Andresen et al. [7] also showed that above the transition between 613 and 633 K, 15% of the Mn atoms have left their regular lattice sites and occupied the large trigonal bipyramidal holes of the NiAs structure. This also explains the observed contraction of the c-axis.
+  note: Describes the LTP<->HTP change as an occupancy change within the same NiAs framework (c axis contracts). No explicit orientation relationship (e.g. c_HTP || c_LTP) was found stated in an accessible source; see gaps.
+- id: mnbi_phasefraction_pirich1979
+  phase: LTP-MnBi
+  quantity: phase_fraction_limit
+  value: eutectic composition 97.8 at.% Bi (2.2 at.% Mn); DS eutectic = elongated aligned MnBi particles in Bi matrix
+  unit: at.%
+  conditions: plane-front directionally solidified eutectic Bi/MnBi
+  source:
+    doi: 10.1063/1.326974
+    title: 'Magnetic and metallurgical properties of directionally solidified eutectic Bi/MnBi composites: The effects of annealing'
+    first_author: Pirich, Ron G.
+    year: 1979
+    url: https://api.crossref.org/works/10.1063/1.326974
+    evidence: abstract
+    locator: abstract
+  quote: Eutectic Bi/MnBi (97.8 a/o Bi) samples have been plane-front directionally solidified. The resultant microstructures consist of elongated, aligned particles of MnBi dispersed in a Bi-matrix.
+  note: 'Lever rule input: eutectic liquid ~2.2 at.% Mn vs MnBi 50 at.% Mn -> MnBi mole fraction of eutectic ~0.045 (computed here, not in source).'
+- id: mnbi_phasefraction_notis1978
+  phase: LTP-MnBi
+  quantity: phase_fraction_limit
+  value: eutectic Mn-Bi alloy 2 at.% Mn; DS gives aligned MnBi needles 0.1-1.5 μm diameter in diamagnetic Bi
+  unit: at.%
+  conditions: directional solidification of eutectic composition, ~50 cm/h, annealed 200 C
+  source:
+    doi: 10.1063/1.324788
+    title: Magnetic anisotropy in MnBi particles grown by directional solidification of the Mn-Bi eutectic
+    first_author: Notis, M. R.
+    year: 1978
+    url: https://api.crossref.org/works/10.1063/1.324788
+    evidence: abstract
+    locator: abstract
+  quote: Directional solidification of the eutectic Mn-Bi alloy (2 at% Mn) produces an aligned array of ferromagnetic Mn-Bi needles, 0.1 to 1.5 μm in diameter, in a matrix of diamagnetic Bi.
+  note: ''
+- id: mnbi_other_notis1978_metastable
+  phase: QHTP-MnBi
+  quantity: other
+  value: fast-grown DS eutectic contains a second magnetic phase crystallographically similar to HTP Mn1.08Bi with Curie temperature 240 K
+  unit: K
+  conditions: DS eutectic grown at ~50 cm/h, annealed 200 C
+  source:
+    doi: 10.1063/1.324788
+    title: Magnetic anisotropy in MnBi particles grown by directional solidification of the Mn-Bi eutectic
+    first_author: Notis, M. R.
+    year: 1978
+    url: https://api.crossref.org/works/10.1063/1.324788
+    evidence: abstract
+    locator: abstract
+  quote: Samples grown at about 50 cm/hr and then annealed at 200 °C contain two magnetic phases. One phase is normal equilibrium MnBi, known in the recent literature as the low-temperature phase (LTP). The second phase is crystallographically similar to the high-temperature phase (HTP) Mn1.08Bi, but has a much lower Curie temperature of 240 K.
+  note: Rapid DS can retain an HTP-like phase that is paramagnetic at room temperature (reduces phi).
+- id: mnbi_growthdir_yim1967
+  phase: LTP-MnBi
+  quantity: growth_direction
+  value: MnBi needles in Bi-MnBi eutectic grow with their long axis = c axis of MnBi; needle axis along preferred growth direction, perpendicular to the trigonal axis of the Bi matrix
+  unit: ''
+  conditions: eutectic Bi-MnBi single crystals (~4 vol.% MnBi) grown by zone melting in a longitudinal magnetic field; needles ~4 μm x ~200 μm
+  source:
+    doi: 10.1063/1.1709304
+    title: Preparation and Properties of Eutectic Bi-MnBi Single Crystals
+    first_author: Yim, W. M.
+    year: 1967
+    url: https://api.crossref.org/works/10.1063/1.1709304
+    evidence: abstract
+    locator: abstract
+  quote: Single crystals of Bi containing ordered MnBi filaments (∼4% by volume) have been grown by a zone-melting technique in the presence of a longitudinal magnetic field. Metallographic and x-ray examinations showed that the long axis of the MnBi needles (∼4 μ in diameter and ∼200 μ long) was aligned along the preferred growth direction, which is perpendicular to the trigonal axis, of the single crystalline Bi matrix. The long axis of the needles is the c axis of MnBi, the direction of easy magnetization.
+  note: 'Growth in a longitudinal field: whether the c-along-needle relation is a pure growth habit or partly field-selected cannot be separated from the abstract alone. Volume fraction ~4% MnBi in the eutectic.'
+- id: mnbi_growthdir_pirich1981
+  phase: LTP-MnBi
+  quantity: growth_direction
+  value: DS eutectic Bi/MnBi = low-volume-fraction faceted/nonfaceted aligned rod eutectic (faceted MnBi rods along growth axis)
+  unit: ''
+  conditions: Bridgman-Stockbarger directional solidification of eutectic Bi/MnBi, 1 g and low g (SPAR rocket)
+  source:
+    doi: 10.1557/PROC-9-523
+    title: Influence of Gravity Driven Convection on the Directional Solidification of Bi/MnBi Eutectic Composites
+    first_author: Pirich, Ron G.
+    year: 1981
+    url: https://api.crossref.org/works/10.1557/PROC-9-523
+    evidence: abstract
+    locator: abstract
+  quote: The directional solidification of eutectic Ri/MnBi results in a low volume fraction, faceted/nonfaceted aligned rod eutectic whose MnRi rod size, interrod spacing, thermal and magnetic properties are sensitive functions of solidification processing conditions.
+  note: '''Ri/MnBi'' and ''MnRi'' are typos in the Crossref abstract (Bi/MnBi, MnBi). Crystallographic orientation of the rods is not stated in the abstract.'
+- id: mnbi_primcryst_pirich1981b
+  phase: LTP-MnBi
+  quantity: primary_crystallisation
+  value: 'off-eutectic Bi-Mn: aligned rod-like composite when grown cooperatively, dendritic otherwise; severe macrosegregation'
+  unit: ''
+  conditions: vertical directional solidification of Bi- and Mn-rich off-eutectic compositions
+  source:
+    doi: 10.1557/proc-9-593
+    title: Gravitationally Induced Convection During Directional Solidification of off-Eutectic Mn-Bi Alloys
+    first_author: Pirich, Ron G.
+    year: 1981
+    url: https://api.crossref.org/works/10.1557/proc-9-593
+    evidence: abstract
+    locator: abstract
+  quote: Since the morphology of these alloys is characterized by an aligned, rodlike permanent magnet composite when grown cooperatively, the magnetic properties were used to measure composition segregation and the transition from dendritic to composite growth. Severe macrosegregation was observed in all cases studied
+  note: ''
+- id: mnbi_fieldeffect_decarlo1986
+  phase: LTP-MnBi
+  quantity: other
+  value: 'DS of off-eutectic Bi-Mn in transverse fields up to 3 kG (0.3 T): field changes convective mixing (increase for Bi-rich, decrease for Mn-rich)'
+  unit: T
+  conditions: directional solidification, transverse field up to 0.3 T
+  source:
+    doi: 10.1557/proc-87-353
+    title: Effects of an Applied Magnetic Field on Directional Solidification of Off-Eutectic Bi-Mn Alloys
+    first_author: Decarlo, J. L.
+    year: 1986
+    url: https://api.crossref.org/works/10.1557/proc-87-353
+    evidence: abstract
+    locator: abstract
+  quote: Off-eutectic compositions of Bi-Mn were directionally solidified in applied transverse magnetic fields up to 3 kG to determine the effects odn thermal and solutal convection. For Bi-rich compositions, the magnetic field appeared to increase mixing as determined from thermal, morphological, chemical and magnetic analyses.
+  note: '''odn'' [sic]. Field used here as a convection control, not for crystal alignment.'
+- id: mnbi_fieldeffect_chen1974c
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 'magnetic annealing of ferromagnetic MnBi single crystal with field perpendicular to c: recrystallization turns the c axis (easy axis) parallel to the field; driven by magnetocrystalline anisotropy energy; thermally activated nucleation + interface-controlled growth'
+  unit: ''
+  conditions: MnBi single crystal heated in a magnetic field perpendicular to its easy axis (temperature/field not in abstract)
+  source:
+    doi: 10.1063/1.1663100
+    title: Magnetic-field-induced recrystallization in MnBi
+    first_author: Chen, Tu
+    year: 1974
+    url: https://api.crossref.org/works/10.1063/1.1663100
+    evidence: abstract
+    locator: abstract
+  quote: It was found that by heating an MnBi single crystal in a magnetic field perpendicular to the easy axis of magnetization of the crystal, the easy axis of the magnetization and the hexagonal c axis of the crystal would change into the direction parallel to the field through a recrystallization process induced by the magnetic annealing. This recrystallization phenomenon is similar to that observed by Boothby et al. on a polycrystalline sample. Based on the microstructure investigation and transformation kinetic analysis, it was found that the mechanism of the recrystallization in a single crystal is a thermally activated nucleation and interface controlled growth process. It was established that the magnetocrystalline anisotropy energy of the crystal is responsible for the recrystallization.
+  note: A field bias that acts in the ferromagnetic solid (B1-type selection by anisotropy energy during recrystallization), also reported for polycrystals (Boothby et al. 1958, doi 10.1063/1.1723130; abstract not accessible).
+- id: mnbi_formationpath_guo1990
+  phase: LTP-MnBi
+  quantity: formation_path
+  value: melt-spun amorphous MnBi crystallises to Bi + Mn3Bi + ferrimagnetic MnBi; LTP forms right after eutectic melting near 540 K; >95% LTP after annealing
+  unit: K
+  conditions: rapid solidification (melt spinning) + annealing, equiatomic MnBi
+  source:
+    doi: 10.1557/jmr.1990.2646
+    title: The formation of single-phase equiatomic MnBi by rapid solidification
+    first_author: Guo, X.
+    year: 1990
+    url: https://api.crossref.org/works/10.1557/jmr.1990.2646
+    evidence: abstract
+    locator: abstract
+  quote: The low temperature phase (LTP) of MnBi, which is of interest because of its large magnetic anisotropy, has been obtained in almost single-phase form (>95%) by rapid solidification, followed by thermal annealing. X-ray and electron microscope studies indicate that the melt-spun ribbons are amorphous, contrary to the accepted rules for glass formation. The transformation of the amorphous phase is a complex process. The amorphous phase crystallizes first into Bi, Mn3Bi, and ferrimagnetic MnBi. The formation of the LTP begins immediately after the eutectic melting of these phases around 540 K.
+  note: 'LTP formation temperature ~540 K, far below the extrapolated LTP Tc: formation in a field below ~628 K occurs in the ferromagnetic state.'
+- id: mnbi_tformation_guo1990
+  phase: LTP-MnBi
+  quantity: T_formation
+  value: 540
+  unit: K
+  conditions: annealing of melt-spun (amorphous) equiatomic MnBi
+  source:
+    doi: 10.1557/jmr.1990.2646
+    title: The formation of single-phase equiatomic MnBi by rapid solidification
+    first_author: Guo, X.
+    year: 1990
+    url: https://api.crossref.org/works/10.1557/jmr.1990.2646
+    evidence: abstract
+    locator: abstract
+  quote: The formation of the LTP begins immediately after the eutectic melting of these phases around 540 K.
+  note: Onset temperature on heating.
+- id: mnbi_other_antonov2020_mnsegregation
+  phase: LTP-MnBi
+  quantity: other
+  value: 'single-phase LTP hard: peritectic -> Mn precipitates from melt in conventional casting; Mn/Bi diffusion through MnBi slow; historical sintering of Mn+Bi powders gives ~60% MnBi'
+  unit: ''
+  conditions: review summary
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 6.1
+  quote: The peritectic reaction between Mn and Bi dictates that regardless of the starting stock composition, the conventional casting process will always result in Mn precipitating out from the MnBi liquid. The diffusion of Mn or Bi to MnBi is slow, which indicates that low-temperature sintering will cost a long time to complete, and it is likely the reaction is only partly complete, leaving behind Mn and Bi as impurities. Historically, the alloy was obtained by sintering Mn and Bi powders at high temperatures. Such a process will yield 60% pure MnBi phases.
+  note: Limits phi (hard-phase volume fraction) for cast/sintered routes.
+- id: mnbi_tstab_antonov2020_eutectic
+  phase: LTP-MnBi
+  quantity: T_stab
+  value: 535
+  unit: K
+  conditions: practical consolidation limit when free Bi is present (eutectic L <-> Bi + MnBi at 262 C); oxidation of Mn in Bi-rich liquid to MnO
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 6.1
+  quote: The Mn–Bi phase diagram shows that in addition to the peritectic reaction, there is a eutectic reaction at 535 K (262 °C), L ↔ Bi + MnBi . This reaction limits the maximum temperature to which the material can be exposed. While this eutectic temperature is about 62 K higher than the desired operating temperature of 473 K (200 °C), it is rather low for a typical bulk magnet fabrication method such as sintering and hot pressing. In practice, the feedstock powder always contains several percent of Bi metal as the result of the peritectic reaction. Once the fabrication temperature exceeds the eutectic temperature at 535 K, Bi and part of the MnBi will transform to Bi rich liquid. Any trace amounts of oxygen may react with the Mn atoms in the liquid resulting in MnO formation.
+  note: 'Consolidation window for LTP powder: below ~535 K if free Bi is present (liquid-phase/oxidation risk above), absolute upper limit ~628 K (LTP -> HTP + L).'
+- id: mnbi_primcryst_antonov2020_pulling
+  phase: LTP-MnBi
+  quantity: primary_crystallisation
+  value: MnBi single crystals pulled with a seed from Bi-rich melt, growth possible in LTP region (<355 C) or HTP region; c-axis seed normal to melt surface minimises Bi inclusions (0.5 cm/day)
+  unit: ''
+  conditions: Czochralski-type pulling from Bi-rich solution (Chen & Stutius; Chen 1974 J. Cryst. Growth), review summary
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 6.1 b. Single crystals
+  quote: MnBi single crystals were grown by pulling with a seed from a bismuth-rich melt [6,123]. By varying the amount ... of excess Bi, the growth could be performed at a temperature in either the low-temperature phase region (below 355 °C) or high-temperature phase region of the compound. The effects of pulling rate and seed orientation on Bi inclusions in the grown crystals were investigated. It was established that at a pulling rate of 0.5 cm per day, Bi inclusions can be minimized by pulling with the crystallographic c-axis of the seed normal to the surface of the melt. By changing the growth temperature and Mn concentration in the melt, the effects of phase transformation on the degree of crystallinity and orientation of the crystals grown by this method were investigated.
+  note: The ' ... ' skips a page header in the PDF text layer. The outcome of the 'effects of phase transformation on ... orientation' study (Chen 1974, J. Cryst. Growth, doi 10.1016/0022-0248(74)90357-1) could not be accessed (no abstract online) -> gap for the HTP->LTP orientation relationship.
+- id: mnbi_primcryst_antonov2020_brammeier
+  phase: LTP-MnBi
+  quantity: primary_crystallisation
+  value: slow cooling of 10 at.% Mn / 90 at.% Bi melt from 410 C to 272 C gives dozens of MnBi crystals, often hexagonal platelets or prisms
+  unit: ''
+  conditions: Bi-flux growth (Brammeier et al. 2004), review summary
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 6.1 b. Single crystals
+  quote: Brammeier at al. [124] were grown single crystals of MnBi by slowly cooling a melt of 10 at% Mn and 90 at% Bi from 410 °C to 272 °C, at which temperature the excess Bi was decanted by centrifuging. Each growth process produced dozens of crystals, often in the form of hexagonal platelets or prisms.
+  note: 'Primary LTP crystal habit from Bi-rich solution: hexagonal platelets or prisms (aspect not specified).'
+- id: mnbi_or_kang_antonov2020
+  phase: LTP-MnBi
+  quantity: OR
+  value: 'MnBi nanorods in Bi: atomically coherent contact between basal planes of MnBi and Bi, incoherent along c; rods self-assembled along hexagonal basal-plane axial directions of Bi grains'
+  unit: ''
+  conditions: rapidly solidified + annealed (MnBi)5Bi95, ~7 vol.% nanorods 10-22 nm x 30 nm (Kang et al.), review summary
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 6.1 d. MnBi nanoparticles
+  quote: Transmission electron microscopy (TEM) studies revealed well-separated (7 vol.%) nanorods with dimensions 10 nm 22 diameter ×30 nm length that were regularly self-assembled along the hexagonal basal plane axial directions of large Bi grains [130]. High-resolution TEM revealed atomically coherent contact between the basal planes of the MnBi and Bi phases but incoherent bonding along the c axes due to a very large lattice constant difference between the two phases.
+  note: Orientation relationship MnBi(0001) || Bi basal plane (hexagonal setting of Bi), per Kang et al. (J. Appl. Phys. 97, 10K302 (2005)). Volume fraction of MnBi in the near-eutectic alloy ~7 vol.%.
+- id: mnbi_fieldeffect_morikawa1998
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: primary MnBi dendrite arms in Bi-4 mass% Mn align along the field during solidification
+  unit: ''
+  conditions: solidification of Bi-4 mass% Mn in a high static field (field value not in abstract)
+  source:
+    doi: 10.2320/matertrans1989.39.814
+    title: Control of Precipitating Phase Alignment and Crystal Orientation by Imposition of a High Magnetic Field
+    first_author: Morikawa, Hiroshi
+    year: 1998
+    url: https://api.semanticscholar.org/graph/v1/paper/DOI:10.2320/matertrans1989.39.814?fields=title,abstract,openAccessPdf,externalIds
+    evidence: abstract
+    locator: abstract
+  quote: It was found that the application of a magnetic field makes the primary dendrite arms of MnBi in a Bi-4 mass%Mn alloy align along the magnetic field
+  note: Full text PDF on J-STAGE is a scanned image without text layer (not quoted).
+- id: mnbi_fieldeffect_yasuda2003a
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: LTP grains formed by peritectic solidification (melt above 719 K, cooled in field) do not align (grains cannot rotate); LTP grains suspended in a semi-solid Bi-rich liquid at 573 K rotate and then grow -> c-axes aligned
+  unit: ''
+  conditions: Bi-20/30/40/50 at.% Mn; rapidly solidified powder compacts heated to 573 K (above 535 K eutectic) in 0.3 T or 4 T vs melted at 733 K and cooled 0.026 K/s in field
+  source:
+    doi: 10.2320/matertrans.44.2207
+    title: Formation of Crystallographically Aligned BiMn Grains by Semi-solid Processing of Rapidly Solidified Bi-Mn Alloys under a Magnetic Field
+    first_author: Yasuda, Hideyuki
+    year: 2003
+    url: https://www.jstage.jst.go.jp/article/matertrans/44/10/44_10_2207/_pdf
+    evidence: full_text
+    locator: Abstract
+  quote: During the conventional peritectic solidification, the BiMn grains produced through the peritectic reaction did not align because of difficulties of the grain rotation. Rapid solidification produced the finely distributed BiMn grains in the Bi-rich matrix or the Bi-BiMn eutectic structure at offeutectic compositions. Heating the rapidly solidified structure resulted in the semi-solid state even for Bi-50 at%Mn alloy, in which no semi-solid state containing BiMn phase in equilibrium. The BiMn grains suspended in the semi-solid state rotated in the favorable direction. Growth of the BiMn grains following the rotation achieved c-axes alignment of the BiMn grains.
+  note: Rotation (free-body R) of ferromagnetic LTP grains in liquid Bi at 573 K (below the LTP decomposition, LTP ferromagnetic), followed by growth.
+- id: mnbi_other_yasuda2003_rotation
+  phase: LTP-MnBi
+  quantity: other
+  value: grain anisotropy energy >> kT at 573 K; rotation resisted by melt viscosity and by electromagnetic (eddy-current) damping that grows with r^2 B^2 in a conducting melt
+  unit: ''
+  conditions: analysis for LTP grains (assumed Ku = 630 kJ/m3) in liquid metal at 573 K, 4 T
+  source:
+    doi: 10.2320/matertrans.44.2207
+    title: Formation of Crystallographically Aligned BiMn Grains by Semi-solid Processing of Rapidly Solidified Bi-Mn Alloys under a Magnetic Field
+    first_author: Yasuda, Hideyuki
+    year: 2003
+    url: https://www.jstage.jst.go.jp/article/matertrans/44/10/44_10_2207/_pdf
+    evidence: full_text
+    locator: Sec. 3 Results and Discussion
+  quote: The value is much higher than the thermal activation energy, kT, at the annealing temperature of 573 K. The anisotropy energy is sufficiently high to align c-axes of the BiMn grains in a favorable direction if the grains can freely rotate. ... The first term and the second term in the numerator correspond to resistance due to viscosity of the melt and the electromagnetic force operating the melt surrounding the particle, respectively.
+  note: Eq. (2) in the paper (time constant ~ (30 eta + sigma r^2 B^2)/(10 Ku)) is garbled in the text layer and not quoted; the eddy-current term implies rotation slows as B^2 at high field. Paper assumes Ku = 630 kJ/m3 for BiMn (ref. 12).
+- id: mnbi_other_tang2022_consolidation
+  phase: LTP-MnBi
+  quantity: other
+  value: field-pressed (1.5 T, 7 MPa) + CIP 500 MPa (80% green) + warm sintering 250-300 C, 0.5-1 h -> 8.0-8.2 g/cm3
+  unit: ''
+  conditions: Ames Lab bulk-magnet process; 3-5 μm powders
+  source:
+    doi: 10.1016/j.jmmm.2022.169912
+    title: Engineering microstructure to improve coercivity of bulk MnBi magnet
+    first_author: Tang, Wei
+    year: 2022
+    url: https://www.osti.gov/servlets/purl/1902756
+    evidence: full_text
+    locator: Sec. 2.1
+  quote: The bulk magnet fabrication process started with loading the powders into a non-magnetic metal die, then applying 1.5 T field to align the powers while simultaneously pressing the powders with 7 MPa stress perpendicular to the field direction. The obtained green compact was further densified by cold-isostatic-pressing at 500 MPa, reaching 80% green density. Afterward, it was sealed in a vacuumed quartz tube (10 mTorr) and warm-sintered at 250300 °C for 0.5-1 hour. ... The dimensions of the bulk magnets fabricated in this work were about 10.014.010.5 mm3, while the densities are between 8.0 to 8.2 g/cm3.
+  note: '''250300'' = 250-300 (dash lost in text layer). Attainable density ~8.0-8.2 g/cm3, i.e. roughly 0.89-0.91 of an X-ray density ~9.0 g/cm3 (ratio computed here; X-ray density not stated in this paper).'
+- id: mnbi_js_tang2022
+  phase: LTP-MnBi
+  quantity: Js
+  value: 0.91
+  unit: T
+  conditions: room temperature, 9 T; literature value (refs 7, 8) quoted in introduction
+  source:
+    doi: 10.1016/j.jmmm.2022.169912
+    title: Engineering microstructure to improve coercivity of bulk MnBi magnet
+    first_author: Tang, Wei
+    year: 2022
+    url: https://www.osti.gov/servlets/purl/1902756
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: At room temperature, its saturation magnetization (Ms) is 81 emu/g or 9.1 kG in a 9 T field [ 7 , 8 ]. The corresponding theoretical (BH)max is 20 MGOe, based on the formula (BH)max=M /4.
+  note: '4piMs = 9.1 kG -> Js = 0.91 T (converted). Note the spread of Js(300 K) values in the literature: 0.73 T (McGuire intro, 0.58 MA/m), ~0.83 T (Pirich patent, 660 emu/cm3 per MnBi volume), 0.91 T (here).'
+- id: mnbi_singlevariant_tang2022
+  phase: LTP-MnBi
+  quantity: single_variant_particles
+  value: feedstock milled to ~3-5 μm (average ~3.5 μm); coercive fine powder
+  unit: μm
+  conditions: melt-spun + 290 C/5 days annealed MnBi, milled
+  source:
+    doi: 10.1016/j.jmmm.2022.169912
+    title: Engineering microstructure to improve coercivity of bulk MnBi magnet
+    first_author: Tang, Wei
+    year: 2022
+    url: https://www.osti.gov/servlets/purl/1902756
+    evidence: full_text
+    locator: Fig. 1 flow chart; Sec. 4
+  quote: Our experimental results showed that the annealed MnBi ingot has a small coercivity (<100 Oe), while the fine powder with an average particle size of ~3.5 μm exhibits an Hcj over 12 kOe and typical bulk MnBi magnet exhibits only 30% of the feedstock powder.
+  note: Whether each particle is a single crystal is not stated.
+- id: mnbi_other_tang2022_fieldsinter
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: a 3 T field is applied during warm sintering (250-300 C, 0.5 h) of a field-pressed compact, i.e. while the LTP is ferromagnetic and grains grow
+  unit: ''
+  conditions: 3 T during warm sintering, 0.5 h; LTP ferromagnetic during sintering
+  source:
+    doi: 10.1016/j.jmmm.2022.169912
+    title: Engineering microstructure to improve coercivity of bulk MnBi magnet
+    first_author: Tang, Wei
+    year: 2022
+    url: https://www.osti.gov/servlets/purl/1902756
+    evidence: full_text
+    locator: Sec. 3.2
+  quote: Annealing in magnetic field improves MnBi’s texture [23]. In this work, we applied 3 T magnetic field during the warm-sintering process (250-300 oC for 0.5 hr).
+  note: Field acts on the already-ferromagnetic LTP during grain growth/recrystallization (cf. Chen 1974 field-induced recrystallization).
+- id: mnbi_other_jiang2016_consolidation
+  phase: LTP-MnBi
+  quantity: other
+  value: 5 μm powders aligned in 10 T pulsed field, isostatically pressed 35 kpsi at RT, sintered at 300 C -> 88% density
+  unit: ''
+  conditions: PNNL/Ames sintered magnet for mechanical testing
+  source:
+    doi: 10.1063/1.4939811
+    title: Mechanical and electrical properties of low temperature phase MnBi
+    first_author: Jiang, Xiujuan
+    year: 2016
+    url: https://www.osti.gov/servlets/purl/1243183
+    evidence: full_text
+    locator: Sec. II
+  quote: The 5 lm powders were aligned using a pulsed magnetic field (10 T), then packed under 35 kpsi isostatic pressure at room temperature. The obtained green compact was sintered at 300 C to achieve optimum green density (88%).
+  note: '''5 lm'' = 5 μm and ''300 C'' = 300 °C (glyphs lost in text layer).'
+- id: mnbi_deformation_jiang2016
+  phase: LTP-MnBi
+  quantity: deformation
+  value: sintered MnBi brittle at 20-50 C (fracture at 193-220 MPa compression); ductility from 100 C; at 150-200 C long stress-strain plateaus by intergranular sliding; hardness 109 +- 15 HV
+  unit: ''
+  conditions: sintered aligned MnBi magnet (88% dense, Bi shells around MnBi grains), compression tests 20-200 C in Ar
+  source:
+    doi: 10.1063/1.4939811
+    title: Mechanical and electrical properties of low temperature phase MnBi
+    first_author: Jiang, Xiujuan
+    year: 2016
+    url: https://www.osti.gov/servlets/purl/1243183
+    evidence: full_text
+    locator: Sec. III.B, Table I
+  quote: At 20 C and 50 C, sintered samples fractured abruptly at 193 MPa and 220 MPa, respectively, indicating the brittle nature of the ... At 100 C, the sample started to exhibit ductility. The compressive stress reached a maximum 213 MPa before it dropped to 180 MPa, where the sample started to break. At 150 C and 200 C, the samples exhibited long stress-strain plateaus, indicating extensive intergranular sliding.
+  note: 'The only accessible deformation data for LTP MnBi: deformation above ~100 C proceeds by intergranular sliding (Bi grain-boundary phase), not by reported crystallographic slip/twinning; no study of deformation texture (hot deformation route) was found.'
+- id: mnbi_other_nguyen2014_consolidation
+  phase: LTP-MnBi
+  quantity: other
+  value: LTLEBM (-120 C) to 1-5 μm (95 wt% LTP retained), aligned in 18 kOe, warm compacted 300 C, 10 min -> ~8.4 g/cm3
+  unit: ''
+  conditions: UT Arlington / Ames process
+  source:
+    doi: 10.1088/2053-1591/1/3/036108
+    title: Novel processing of high-performance MnBi magnets
+    first_author: Nguyen, V Vuong
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1088/2053-1591/1/3/036108
+    evidence: abstract
+    locator: abstract
+  quote: A low-temperature (−120 °C), low-energy ball-milling (LTLEBM) process has been adopted in the initial MnBi powder preparation that reduces the particle size to 1–5 μ m from the 35–75 μ m size of raw material powders of the MnBi low-temperature phase (LTP) (∼97 wt%) made by melting and annealing. The LTLEBM process has significantly suspended the decomposition of the LTP MnBi that occurs excessively during ordinary room-temperature ball milling. ... The as-milled powders were then aligned in an 18 kOe field and warm-compacted into a dense bulk magnet at 300 °C for 10 min to reach a mass density of ∼8.4 g cm −3 .
+  note: Milling at room temperature decomposes LTP; cryogenic milling preserves it.
+- id: mnbi_other_chen2016_consolidation
+  phase: LTP-MnBi
+  quantity: other
+  value: hot compaction 573 K (Mn55Bi45) or 523 K (Mn45Bi55), 200 MPa, 5 min; >90 wt% LTP powder by arc melting + 2 h low-energy ball milling + magnetic separation
+  unit: K
+  conditions: MPI Stuttgart process
+  source:
+    doi: 10.1063/1.4971759
+    title: On the synthesis and microstructure analysis of high performance MnBi
+    first_author: Chen, Yu-Chun
+    year: 2016
+    url: https://api.crossref.org/works/10.1063/1.4971759
+    evidence: abstract
+    locator: abstract
+  quote: Highly anisotropic MnBi powder with over 90 wt% low-temperature phase can be prepared using conventional arc-melting and 2 hour-low energy ball milling (BM) followed by magnetic separation. ... while they were consolidated at 573(523) K by a pressure of 200 MPa for 5 minutes using hot-compaction method.
+  note: Bi-rich composition consolidated below the 535 K eutectic.
+- id: mnbi_singlevariant_jensen2019
+  phase: LTP-MnBi
+  quantity: single_variant_particles
+  value: 8 h low-energy ball milling gives 0.5-5 μm particles; as-milled particles are strained, partly amorphous and nanocrystalline (not single crystals); 290 C post-anneal recrystallizes
+  unit: μm
+  conditions: Mn52Bi48 melt-spun + annealed, ball milled 7-10 h
+  source:
+    doi: 10.1016/j.actamat.2019.10.003
+    title: Optimizing composition in MnBi permanent magnet alloys
+    first_author: Jensen, Brandt A.
+    year: 2019
+    url: https://www.osti.gov/servlets/purl/1574017
+    evidence: full_text
+    locator: Sec. 3.2; Discussion
+  quote: The particle sizes of the milled powders were between 0.5 – 5 μm and were seemingly independent of the chemistries explored in this experiment. ... Therefore, the as-milled powders consist of a strained and disordered LTP-MnBi phase, an amorphous phase fraction, and a nanocrystalline microstructure, all of which will effect coercivity.
+  note: 'Relevant to free-body rotation: a milled particle may contain several crystallites (not necessarily a single variant).'
+- id: mnbi_other_jensen2019_neck
+  phase: LTP-MnBi
+  quantity: other
+  value: 290 C post-mill annealing reduces squareness of aligned powder (neck growth between particles)
+  unit: ''
+  conditions: wax-aligned Mn52Bi48 powders, anneal 290 C under Ar
+  source:
+    doi: 10.1016/j.actamat.2019.10.003
+    title: Optimizing composition in MnBi permanent magnet alloys
+    first_author: Jensen, Brandt A.
+    year: 2019
+    url: https://www.osti.gov/servlets/purl/1574017
+    evidence: full_text
+    locator: Discussion
+  quote: In both sets of annealed powders, the 290°C post-sinter annealing process reduced the magnetic squareness of the powders. This is likely a result from neck growth of powder particles at these elevated temperatures.
+  note: ''
+- id: mnbi_formationpath_jensen2019
+  phase: LTP-MnBi
+  quantity: formation_path
+  value: 'melt processing: ~4 at.% excess Mn needed to first form HTP Mn1.08Bi (stable 340-446 C), difficult to by-pass; LTP first-order transition 340-355 C'
+  unit: ''
+  conditions: literature summary in introduction
+  source:
+    doi: 10.1016/j.actamat.2019.10.003
+    title: Optimizing composition in MnBi permanent magnet alloys
+    first_author: Jensen, Brandt A.
+    year: 2019
+    url: https://www.osti.gov/servlets/purl/1574017
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: LTP-MnBi is a peritectic compound that exhibits a first-order structural transition between the temperatures of 340 °C and 355 °C, at which point it transforms into the paramagnetic high temperature phase [3][4][5]. ... About 4 at.% excessive Mn is needed to first form the high temperature Mn1.08Bi phase, which exists in the temperature range from 340 to 446 °C and is found difficult to by-pass with conventional processing methods
+  note: ''
+- id: mnbi_singlevariant_gabay2020a
+  phase: LTP-MnBi
+  quantity: single_variant_particles
+  value: earlier routes sinter fine single-crystal MnBi particles (easily degrading); in annealed Mn50Bi50 melt-spun ribbons alpha crystallites are 10-20 μm (ribbon thickness), so coarsely crushed ribbon flakes can be field-oriented without fine milling
+  unit: μm
+  conditions: melt-spun + annealed Mn50Bi50
+  source:
+    doi: 10.1016/j.jmmm.2019.165860
+    title: New anisotropic MnBi permanent magnets by field-annealing of compacted melt-spun alloys modified with Mg and Sb
+    first_author: Gabay, A.M.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1561557
+    evidence: full_text
+    locator: Abstract; Sec. 3.2
+  quote: Whereas the earlier approaches relied on sintering of fine and easily degrading single-crystal MnBi particles, the new method achieves refinement of the key α-MnBi phase through melt-spinning combined with appropriate alloying. ... In the Mn50Bi50 sample shown in Fig. 6(a), the α crystallites are typically as large as the thickness of the melt-spun ribbons, 10–20 μm. This large grain size is consistent with the fact that the coarsely crushed annealed Mn50Bi50 ribbons can be crystallographically oriented with a magnetic field even without being finely milled [12,15].
+  note: ''
+- id: mnbi_other_gabay2020a_compaction
+  phase: LTP-MnBi
+  quantity: other
+  value: melt-spun (beta'-containing) flakes warm-compacted at 150 C (270-375 MPa, 1 h) to full density, beta' -> alpha
+  unit: ''
+  conditions: Mn-Bi-Mg-Sb melt-spun alloys
+  source:
+    doi: 10.1016/j.jmmm.2019.165860
+    title: New anisotropic MnBi permanent magnets by field-annealing of compacted melt-spun alloys modified with Mg and Sb
+    first_author: Gabay, A.M.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1561557
+    evidence: full_text
+    locator: Abstract; Sec. 2; Table 1
+  quote: A subsequent compaction at 150 °C produces fully dense materials while converting the β' phase into the stable α phase. Finally, a short annealing at 265–300 °C in a magnetic field of 3 T increases the fraction of the α phase to 97– 98% and aligns the c axes of the α crystallites.
+  note: Measured densities of compacts 8.82-9.11 g/cm3 (Table 1). Consolidation of a non-magnetic/weakly magnetic precursor at low temperature, followed by in-field formation, decouples densification from alignment.
+- id: mnbi_fieldeffect_gabay2020a
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 'field annealing of compacted precursors (30 kOe, up to 300 C): field-independent alpha formation 150-230 C; above ~200 C and especially above the ~255 C solidus the field accelerates magnetization rise; mechanisms: preferred growth of [001]-aligned alpha crystallites and, with liquid present, rotation of misaligned crystallites; texture not saturated at 30 kOe'
+  unit: ''
+  conditions: Mn50Bi46.5Mg3Sb0.5 compacted melt-spun alloy, 0/10/30 kOe
+  source:
+    doi: 10.1016/j.jmmm.2019.165860
+    title: New anisotropic MnBi permanent magnets by field-annealing of compacted melt-spun alloys modified with Mg and Sb
+    first_author: Gabay, A.M.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1561557
+    evidence: full_text
+    locator: Sec. 3.3
+  quote: Generally, a magnetic field applied during the annealing, is expected to favor a larger volume fraction of magnetic phases. However, a comparison of the XRD data for the alloys annealed at 0 kOe and at 30 kOe suggested only a minor, 0.4 vol.%, α phase increase. Two other mechanisms of the observed annealing field effect on the magnetization are the preferred growth of those α crystallites which already have their [001] axes lined up with the field and, particularly in the presence of the liquid phase above the T2, the rotation of the misaligned α crystallites.
+  note: B1-type variant/grain selection in the ferromagnetic state plus free-body rotation in a partially liquid matrix.
+- id: mnbi_fieldeffect_gabay2020b
+  phase: HTP-Mn1.08Bi
+  quantity: field_effect_on_formation
+  value: 'alpha->beta->alpha cycling in 30 kOe improves [001] fibre texture of re-formed alpha (LTP); mechanism open: paramagnetic beta grains may align by susceptibility anisotropy, or beta->alpha may start by in-phase atomic rearrangement so ferromagnetic alpha briefly coexists with liquid'
+  unit: ''
+  conditions: compacted melt-spun Mn-Bi-(Mg,Sb,In) alloys; alpha->beta at 322 C, beta->alpha at 298 C (Mn50Bi46Mg3Sb0.5In0.5)
+  source:
+    doi: 10.1016/j.jmmm.2020.167340
+    title: 'MnBi-based magnets prepared from melt-spun alloys: Effect of α → β phase transformation during field annealing'
+    first_author: Gabay, A.M.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1656764
+    evidence: full_text
+    locator: Abstract; Sec. 3 (model of microstructure evolution)
+  quote: In all the studied alloys, the α → β transformation was found to improve the [001] fiber texture induced by the applied magnetic field, although it simultaneously decreased the coercivity. ... It must be noted that the above model does not immediately explain why the recrystallized α grains become better aligned. Alignment of the paramagnetic β grains with a strong magnetic field was reported before [25], and it could be the result of anisotropy in the paramagnetic susceptibility; field-induced alignment while in the paramagnetic state was also reported for the Sm–Co and Nd–Fe–B hard magnetic materials [34–36]. Another possibility is that the β → α transformation begin with rearrangement of the atoms within the phase before involving interphase diffusion [37]; in this case, the re-emerging ferromagnetic α phase could briefly coexist with the liquid phase.
+  note: 'Directly relevant to HTP->LTP crystallography: no orientation relationship measured; two candidate mechanisms named by the authors.'
+- id: mnbi_tformation_gabay2020b
+  phase: LTP-MnBi
+  quantity: T_formation
+  value: beta -> alpha at 298 C (571 K) on cooling; alpha -> beta at 322 C on heating (alloyed Mn50Bi46Mg3Sb0.5In0.5)
+  unit: K
+  conditions: 'in-situ magnetization/DTA in field; alloyed (binary values higher: 355/340 C)'
+  source:
+    doi: 10.1016/j.jmmm.2020.167340
+    title: 'MnBi-based magnets prepared from melt-spun alloys: Effect of α → β phase transformation during field annealing'
+    first_author: Gabay, A.M.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1656764
+    evidence: full_text
+    locator: Sec. 3
+  quote: The α → β and reverse β → α transformations occur in the Mn50Bi46Mg3Sb0.5In0.5(I) alloy at 322 °C and 298 °C, respectively.
+  note: 'Converted: 298 C = 571 K; 322 C = 595 K.'
+- id: mnbi_fieldeffect_gabay2020b_liu
+  phase: HTP-Mn1.08Bi
+  quantity: field_effect_on_formation
+  value: paramagnetic beta (HTP) crystallites align in a strong field in Bi-rich Mn-Bi (Liu et al.)
+  unit: ''
+  conditions: literature summary
+  source:
+    doi: 10.1016/j.jmmm.2020.167340
+    title: 'MnBi-based magnets prepared from melt-spun alloys: Effect of α → β phase transformation during field annealing'
+    first_author: Gabay, A.M.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1656764
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: Even though the stable β phase is paramagnetic, alignment of its crystallites with a strong magnetic field was observed by Liu et al. [25] in a Bi-rich Mn–Bi alloy.
+  note: No delta_chi value for HTP was found in accessible sources (gap).
+- id: mnbi_other_gabay2020c_ha
+  phase: LTP-MnBi
+  quantity: other
+  value: anisotropy field Ha = 45 kOe (4.5 T) at room temperature for Mn50Bi50 (field-annealed textured ingot); 65 kOe with Mg/In/Sb alloying
+  unit: kOe
+  conditions: magnetic-field annealed (30 kOe, 300 C) ingots, textured; RT
+  source:
+    doi: 10.1016/j.jallcom.2020.153663
+    title: Development of rare-earth-free bulk magnets with energy product up to 12 MGOe in field annealed Mn–Bi–Mg–In–Sb alloys
+    first_author: Gabay, A.M.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1580855
+    evidence: full_text
+    locator: Abstract
+  quote: The high degree of texture of the magnetic α phase induced with annealing of the ingot samples (except the Mn–Bi–Sb one) allowed for accurate determination of the phase anisotropy field. Alloying was found to increase the anisotropy field from 45 kOe in the Mn50Bi50 alloy to 65 kOe in the Mn50Bi45Mg3In0.5Sb1.5 alloy.
+  note: K1 ~ Ha*Ms/2 (not computed here). Field annealing produced strong texture even in arc-melted ingots (FA on cast material).
+- id: mnbi_fieldeffect_zhang2019
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 'melt-spun ribbons annealed 10 min at 400 C (above LTP stability) in 0-4 T: LTP forms on cooling in field; strong c-axis texture along the field'
+  unit: ''
+  conditions: MnBi and MnBi0.9Sn0.1 ribbons (20 m/s), field along ribbon length
+  source:
+    doi: 10.1063/1.5128659
+    title: High energy product of MnBi by field annealing and Sn alloying
+    first_author: Zhang, Wenyong
+    year: 2019
+    url: https://www.osti.gov/servlets/purl/1800206
+    evidence: full_text
+    locator: Sec. Experimental
+  quote: The rapidly quenched ribbons were annealed at 400 ○ C for 10 min in a high-field annealing furnace and pumped to a base pressure of 8 × 10−8 Torr. The samples were annealed at 0, 1, 2, and 4 T, setting the field direction parallel to the length of the
+  note: 400 C (673 K) lies in the HTP + liquid field of the binary diagram; the LTP therefore forms during cooling (at <=355 C) in the field, i.e. ferromagnetic at formation.
+- id: mnbi_lattice_zhang2019
+  phase: LTP-MnBi
+  quantity: lattice
+  value: a=4.286, c=6.122
+  unit: Å
+  conditions: zero-field-annealed melt-spun MnBi ribbons, room temperature XRD
+  source:
+    doi: 10.1063/1.5128659
+    title: High energy product of MnBi by field annealing and Sn alloying
+    first_author: Zhang, Wenyong
+    year: 2019
+    url: https://www.osti.gov/servlets/purl/1800206
+    evidence: full_text
+    locator: Fig. 2(b) discussion
+  quote: The lattice parameters obtained from the XRD patterns of the zero-field annealed samples, Fig. 2(b), are a = 4.286 Å and c = 6.122 Å for MnBi and a = 4.284 Å and c = 6.119 Å for MnBi0.9 Sn0.1 .
+  note: ''
+- id: mnbi_fieldeffect_takaki2016
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 'in-field heat treatment: MnBi grains formed with Bi-rich liquid elongate and align along the field; MnBi formed by solid-phase reaction is hard to orient'
+  unit: ''
+  conditions: Bi-Mn alloys, in-field heat treatment (conference abstract)
+  source:
+    doi: 10.1109/icaums.2016.8479945
+    title: Magnetic Field Effects on the Morphology of Bi-Mn System
+    first_author: Takaki, A.
+    year: 2016
+    url: https://api.openalex.org/works/doi:10.1109/icaums.2016.8479945
+    evidence: abstract
+    locator: abstract
+  quote: The ferromagnetic MnBi grain elongated and aligned along the magnetic field direction in the Bi-rich matrix [1]. On the other hand, the magnetic orientation of the reacted MnBi phase is difficult during the solid-phase reaction.
+  note: ''
+- id: mnbi_fieldeffect_weissitsch2023
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: field (Zeeman energy) lowers nucleation barrier / raises nucleation rate of alpha-MnBi; local reaction heat partially melts Mn/Bi so crystallites can rotate -> textured formation in field (literature argument)
+  unit: ''
+  conditions: discussion of field-assisted reactive annealing of Mn+Bi at 240 C
+  source:
+    doi: 10.1016/j.jmmm.2023.171082
+    title: Synthesis of hard magnetic α-MnBi phase by high pressure torsion and field assisted annealing
+    first_author: Weissitsch, Lukas
+    year: 2023
+    url: https://arxiv.org/pdf/2312.14580
+    evidence: review
+    locator: Discussion
+  quote: Furthermore, a decrease of free energy for the α-MnBi phase formation is reported to result in a negative 22 formation enthalpy and an enhanced nucleation rate [22,23]. The resulting localized reaction heat is believed to be responsible that Mn and Bi particles partially melt. Thus, a rotation of crystallites occurs leading to a textured and anisotropic phase formation if a magnetic field is applied [15,58,59].
+  note: '''22'' inside the quote is a page number in the text layer.'
+- id: mnbi_tformation_weissitsch2023
+  phase: LTP-MnBi
+  quantity: T_formation
+  value: alpha-MnBi forms by solid-state reaction of HPT-deformed Mn+Bi at 230-240 C (503-513 K) within hours
+  unit: K
+  conditions: HPT-compacted/deformed ball-milled Mn+Bi blends; conventional anneal 230 C (4-120 h) and in-field vacuum anneal 240 C (3-4 h); in-situ HEXRD
+  source:
+    doi: 10.1016/j.jmmm.2023.171082
+    title: Synthesis of hard magnetic α-MnBi phase by high pressure torsion and field assisted annealing
+    first_author: Weissitsch, Lukas
+    year: 2023
+    url: https://arxiv.org/pdf/2312.14580
+    evidence: full_text
+    locator: Conclusion
+  quote: The initial phase nucleation and formation is studied by means of in-situ HEXRD annealing and it is found that the α-MnBi phase forms shortly after beginning of the heat treatment for HPT-deformed samples. This process depends on the applied pressure and is slower for HPT-compacted samples without severe deformation, thus lower microstructural defects.
+  note: Formation below the 262 C eutectic (solid-state diffusion), far below the LTP Curie point -> ferromagnetic at formation.
+- id: mnbi_k1_weissitsch2023
+  phase: LTP-MnBi
+  quantity: K1
+  value: 2.2
+  unit: MJ/m3
+  conditions: above 400 K (peak value; literature refs 6, 10, 11)
+  source:
+    doi: 10.1016/j.jmmm.2023.171082
+    title: Synthesis of hard magnetic α-MnBi phase by high pressure torsion and field assisted annealing
+    first_author: Weissitsch, Lukas
+    year: 2023
+    url: https://arxiv.org/pdf/2312.14580
+    evidence: review
+    locator: Introduction
+  quote: originating in a large and peaking magnetocrystalline anisotropy of about 2.2 MJ/m3 above 400 K [6,10,11].
+  note: 'Positive temperature coefficient: ~1 MJ/m3 at 300 K rising to ~2.2 MJ/m3 above 400 K (compare McGuire 2014 intro).'
+- id: mnbi_tstab_cui2014
+  phase: LTP-MnBi
+  quantity: T_stab
+  value: 473
+  unit: K
+  conditions: MnBi powder (>90% purity) in air (thermal stability study)
+  source:
+    doi: 10.1088/0953-8984/26/6/064212
+    title: Thermal stability of MnBi magnetic materials
+    first_author: Cui, J
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/26/6/064212
+    evidence: abstract
+    locator: abstract
+  quote: MnBi phase is difficult to obtain, partly because the reaction between Mn and Bi is peritectic, and partly because Mn reacts readily with oxygen. MnO formation is irreversible and harmful to magnet performance. ... A comprehensive study of thermal stability shows that MnBi powder is stable up to 473 K in air.
+  note: 'Oxidation limit for powder handling/consolidation in air: 473 K.'
+- id: mnbi_msmass_cui2014
+  phase: LTP-MnBi
+  quantity: Ms_mass
+  value: 74.6
+  unit: Am2/kg
+  conditions: produced powder (>90% MnBi), room temperature, 9 T
+  source:
+    doi: 10.1088/0953-8984/26/6/064212
+    title: Thermal stability of MnBi magnetic materials
+    first_author: Cui, J
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/26/6/064212
+    evidence: abstract
+    locator: abstract
+  quote: To date, high purity MnBi (>90%) can be routinely produced in large quantities. The produced powder exhibits 74.6 emu g(-1) saturation magnetization at room temperature with 9 T applied field.
+  note: Powder value (purity >90%), a lower bound for the pure phase.
+- id: mnbi_phasefraction_pirich_patent1988
+  phase: LTP-MnBi
+  quantity: phase_fraction_limit
+  value: Bi-MnBi eutectic at 0.72 wt% Mn; off-eutectic Mn-rich compositions up to 20.8 wt% Mn directionally solidified
+  unit: wt.%
+  conditions: Bridgman directional solidification (patent)
+  source:
+    doi: null
+    title: Directional solidification and densification of permanent magnets having single domain size MnBi particles (US Patent 4,784,703)
+    first_author: Pirich, Ronald G.
+    year: 1988
+    url: https://patents.google.com/patent/US4784703A/en
+    evidence: full_text
+    locator: Detailed description, Sample preparation
+  quote: Eutectic (0.72 w/o Mn) and off-eutectic (0.1 to 20.8 w/o Mn) Bi-Mn samples (see FIG. 1) were prepared from com
+  note: '0.72 wt% Mn = ~2.7 at.% Mn (computed here); other sources give the eutectic at 2.2 at.% (Pirich 1979) or 2 at.% (Notis 1978). Lever rule (computed here): eutectic gives only a few vol% MnBi.'
+- id: mnbi_growthdir_pirich_patent1988
+  phase: LTP-MnBi
+  quantity: growth_direction
+  value: 'DS Bi-MnBi: aligned chevron-section MnBi rods, length/diameter ~100, rod diameter ~ V^-1/2 (0.4 μm at 50 cm/h to 10 μm at 0.5 cm/h), G 10-1000 C/cm'
+  unit: ''
+  conditions: plane-front Bridgman-Stockbarger DS of eutectic and Mn-rich off-eutectic Bi-Mn
+  source:
+    doi: null
+    title: Directional solidification and densification of permanent magnets having single domain size MnBi particles (US Patent 4,784,703)
+    first_author: Pirich, Ronald G.
+    year: 1988
+    url: https://patents.google.com/patent/US4784703A/en
+    evidence: full_text
+    locator: Detailed description
+  quote: Controlled directional solidification of Mn-Bi produces an aligned array of chevron-type cross-section shaped MnBi rods, with length to diameter ratios 100, whose average effective rod diameter follows a (growth velocity)-1/2 law in thermal gradients varying from 10° C./cm to 1000° C./cm and whose rod diameter can be varied from 0.4 m at V=50 cm/h/ to 10μm at V=0.5 cm/h as shown in FIGS. 4 and 5.
+  note: '''0.4 m'' = 0.4 μm (glyph lost). The crystallographic axis of the rods is not stated in the patent; Yim & Stofko 1967 report needle axis = c axis for zone-melted eutectic (grown in a longitudinal field).'
+- id: mnbi_js_pirich_patent1988
+  phase: LTP-MnBi
+  quantity: Js
+  value: 0.83
+  unit: T
+  conditions: room temperature, MnBi rods in DS composite after full HC->LTP transformation (magnetization normalised per MnBi volume)
+  source:
+    doi: null
+    title: Directional solidification and densification of permanent magnets having single domain size MnBi particles (US Patent 4,784,703)
+    first_author: Pirich, Ronald G.
+    year: 1988
+    url: https://patents.google.com/patent/US4784703A/en
+    evidence: full_text
+    locator: Detailed description (end)
+  quote: P MnBi phase or a fully transformed sample, the saturization magnetization is 660 emu/cm3 and the intrinsic coercivity approaches 35 kOe at room temperature (FIGS. 6 and 0).
+  note: 'Converted: 4pi x 660 G = 8.29 kG -> Js = 0.83 T. Normalised to MnBi volume (accuracy depends on the volume-fraction estimate). Patent text ''saturization'' [sic].'
+- id: mnbi_other_pirich_patent1988_hc
+  phase: QHTP-MnBi
+  quantity: other
+  value: fast DS produces a 'high coercive' HC phase (paramagnetic at RT, ferrimagnetic below 40 K); fraction rises with growth velocity/gradient; converted to LTP by 24 h anneal at 250 C
+  unit: ''
+  conditions: DS eutectic/off-eutectic Bi-Mn
+  source:
+    doi: null
+    title: Directional solidification and densification of permanent magnets having single domain size MnBi particles (US Patent 4,784,703)
+    first_author: Pirich, Ronald G.
+    year: 1988
+    url: https://patents.google.com/patent/US4784703A/en
+    evidence: full_text
+    locator: Detailed description
+  quote: We find more of the HC phase and correspondingly less of the LTP for higher growth velocities and thermal gradients. ... We have seen dramatic improvement at room temperature not only in saturation magnetization and remanent induction but also in intrinsic coercivity and energy product after a 24 hour heat-treatment anneal at 250° C., since the HC phase undergoes conversion to the LTP phase as a function of the heat treatment anneal as shown in FIGS. 6, 7 and 8.
+  note: 'Rapid DS limits phi(LTP) unless post-annealed (cf. Notis 1978: second phase with Tc 240 K).'
+- id: mnbi_fieldeffect_wooten2020
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 'melt-quenched Bi-MnBi ingots annealed 16 h at 230 C in 1.4 T: complete reaction of Mn to MnBi, grains elongate (needles) with c along the field'
+  unit: ''
+  conditions: 1-35 at.% MnBi in Bi; anneal below the 262 C eutectic
+  source:
+    doi: 10.3390/nano10102083
+    title: Combining Spin-Seebeck and Nernst Effects in Aligned MnBi/Bi Composites
+    first_author: Wooten, Brandi L.
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-02083/article_deploy/nanomaterials-10-02083.pdf
+    evidence: full_text
+    locator: Sec. 2.1
+  quote: To promote phase purity and align the MnBi grains, the ampules were then placed in a homemade magnetic annealing apparatus where they were exposed to a 1.4 T magnetic field and heated to 230 ◦ C for approximately 16 h.
+  note: LTP grows in the solid state at 230 C (ferromagnetic) in a modest field.
+- id: mnbi_formationpath_mitsui2013
+  phase: LTP-MnBi
+  quantity: formation_path
+  value: 'zero-field DTA: Tp1 (HTP Mn1.08Bi + Bi-rich liquid -> LTP) = 632 K; Tp2 (alpha-Mn + Bi-rich liquid -> HTP) = 721 K; eutectic TE (liquid -> Bi + LTP) = 538 K'
+  unit: K
+  conditions: Bi-Mn alloys 13.6-53.3 at.% Mn, HF-DTA, onset of endothermic peaks on heating
+  source:
+    doi: 10.2320/matertrans.m2012310
+    title: Bi–Mn Binary Phase Diagram in High Magnetic Fields
+    first_author: Mitsui, Yoshifuru
+    year: 2013
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/2/54_M2012310/_pdf
+    evidence: full_text
+    locator: Abstract
+  quote: For zero field, the peritectic temperatures Tp1 (BiMn1.08 + Bi-rich liquid 1⁄4 BiMn) and Tp2 (¡Mn + Bi-rich liquid 1⁄4 BiMn1.08), and the eutectic temperature TE (the Bi-rich liquid 1⁄4 Bi solid + BiMn) were determined to be 632, 721 and 538 K, respectively.
+  note: 'Text-layer glyphs: ''1⁄4'' = reaction arrow, ''¡Mn'' = alpha-Mn (checked against rendered page). Crossref title has an HTML entity (Bi&ndash;Mn); cleaned.'
+- id: mnbi_fieldeffect_mitsui2013
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: Tp1 (HTP + L -> LTP peritectic) rises ~2 K/T (632 K at 0 T -> 667 K at 18 T); TE field independent; the LTP + liquid field widens and HTP + liquid field narrows in high fields; liquidus (HTP+L / L) rises nonlinearly
+  unit: K/T
+  conditions: HF-DTA up to 18 T
+  source:
+    doi: 10.2320/matertrans.m2012310
+    title: Bi–Mn Binary Phase Diagram in High Magnetic Fields
+    first_author: Mitsui, Yoshifuru
+    year: 2013
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/2/54_M2012310/_pdf
+    evidence: full_text
+    locator: Sec. 3, Figs. 2-5
+  quote: As seen in Fig. 2(b), Tp1 increases from 632 K (at zero field) to 667 K by applying B = 18 T, whereas TE seems to be independent of B. From the DTA measurements under B = 18 T, the BiMn phase diagram at a field of 18 T was determined (Fig. 4). By comparing this phase diagram with that at zero field (Fig. 3), we see that the area of the BiMn + Bi-rich liquid extends out, whereas the area for BiMn1.08 + liquid narrows by applying higher B.
+  note: A field enlarges the temperature window in which ferromagnetic LTP coexists with liquid Bi (where crystals can rotate).
+- id: mnbi_tc_mitsui2013_qhtp
+  phase: QHTP-MnBi
+  quantity: Tc
+  value: 473
+  unit: K
+  conditions: 'quenched HTP at room temperature: moment 1.7 μB (literature value, ref. 6)'
+  source:
+    doi: 10.2320/matertrans.m2012310
+    title: Bi–Mn Binary Phase Diagram in High Magnetic Fields
+    first_author: Mitsui, Yoshifuru
+    year: 2013
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/2/54_M2012310/_pdf
+    evidence: review
+    locator: Sec. 1 Introduction
+  quote: HTP has m of 1.7 ®B at room temperature and TC is 3473 K.6)
+  note: 'Text layer garbles the printed ''1.7 μB'' as ''1.7 ®B'' and ''~473 K'' as ''3473 K'' (verified on the rendered page: ''TC is ~473 K''). Refers to the HTP retained at room temperature (quenched HTP). Approximate value cited from ref. 6.'
+- id: mnbi_primcryst_mitsui2013_liquidus
+  phase: HTP-Mn1.08Bi
+  quantity: primary_crystallisation
+  value: liquidus boundary (HTP + liquid / liquid) at 712 K for Bi-24 at.% Mn; from Bi-rich melts the HTP is primary between the liquidus and Tp1 = 632 K, LTP below Tp1
+  unit: K
+  conditions: zero-field DTA, Bi-24 at.% Mn
+  source:
+    doi: 10.2320/matertrans.m2012310
+    title: Bi–Mn Binary Phase Diagram in High Magnetic Fields
+    first_author: Mitsui, Yoshifuru
+    year: 2013
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/2/54_M2012310/_pdf
+    evidence: full_text
+    locator: Sec. 3
+  quote: A gentle change of the baseline of the DTA curve can be seen at Tliq = 712 K for Bi 24 at%Mn. From Fig. 1, this change at Tliq corresponds to the liquidus boundary between BiMn1.08 + liquid and Bi-rich liquid. For T > Tp1, the volume of the liquid phase in the Birich sample increases with increasing T.
+  note: ''
+- id: mnbi_primcryst_mitsui2013_fig1
+  phase: LTP-MnBi
+  quantity: primary_crystallisation
+  value: 'liquidus composition at Tp1 = 628 K is ~10 at.% Mn and at Tp2 = 719 K ~20 at.% Mn (Fig. 1, reproduction of Chen''s diagram): LTP is the primary phase for ~eutectic to ~10 at.% Mn (liquidus 535-628 K); HTP primary for ~10-20 at.% Mn; Mn primary above ~20 at.% Mn'
+  unit: at.%
+  uncertainty: 2
+  conditions: zero field; Bi-Mn diagram after Chen (ref. 11)
+  source:
+    doi: 10.2320/matertrans.m2012310
+    title: Bi–Mn Binary Phase Diagram in High Magnetic Fields
+    first_author: Mitsui, Yoshifuru
+    year: 2013
+    url: https://www.jstage.jst.go.jp/article/matertrans/54/2/54_M2012310/_pdf
+    evidence: full_text
+    locator: Fig. 1 (read from plot)
+  quote: Fig. 1 Bi–Mn binary phase diagram.11)
+  note: 'Values read off the schematic Fig. 1 (rendered at 400 dpi): liquidus meets the 628 K line at 9.9 at.% and the 719 K line at 20.3 at.% Mn; estimated reading uncertainty +-2 at.%. 10 at.% Mn = ~2.8 wt%; 20 at.% Mn = ~6.2 wt% (converted). The schematic places the eutectic near 3-4 at.% Mn, higher than the 2-2.7 at.% of other sources.'
+- id: mnbi_tformation_miyazaki2017
+  phase: LTP-MnBi
+  quantity: T_formation
+  value: 'solid-state reaction Mn(s) + Bi(s) -> MnBi(s) at 523 K (just below eutectic): slow (reacted Mn fraction ~2% after 3-12 h in 0 T)'
+  unit: K
+  conditions: pressed Mn (<150 μm) + Bi (<150 μm) pellets, 523 K, 3 h and 12 h, 0 or 10 T
+  source:
+    doi: 10.2320/matertrans.mbw201609
+    title: Enhancement of the Phase Formation Rate during In-Field Solid-Phase Reactive Sintering of Mn-Bi
+    first_author: Miyazaki, Daiki
+    year: 2017
+    url: https://www.jstage.jst.go.jp/article/matertrans/58/5/58_MBW201609/_pdf
+    evidence: full_text
+    locator: Sec. 2; Table 1
+  quote: After that, the heat treatments were carried out at 523 K for 3 h and 12 h with or without magnetic field of 10 T. The annealing temperature was chosen as just lower than eutectic temperature of Mn and Bi. Herein, it is noted that the eutectic temperature of Mn and Bi was not influenced by magnetic fields11). That is, this reactive sintering was Mn (solid) + Bi (solid) → MnBi (solid). ... NMnBi fMnBi (%) fMnBi/NMnBi(%) 3 h, 0 T 5.55 2.28 0.41 3 h, 10 T 15.5 8.53 0.55 12 h, 0 T 8.60 1.78 0.20 12 h, 10 T 9.66 12.6 1.30
+  note: fMnBi = reacted fraction (MnBi area / (Mn + MnBi) area).
+- id: mnbi_fieldeffect_miyazaki2017
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: '10 T increases the number of MnBi nuclei around Mn grains ~3x and the reacted fraction ~4x (3 h, 523 K): field enhances nucleation/formation rate of the ferromagnetic phase'
+  unit: ''
+  conditions: solid-state reactive sintering at 523 K
+  source:
+    doi: 10.2320/matertrans.mbw201609
+    title: Enhancement of the Phase Formation Rate during In-Field Solid-Phase Reactive Sintering of Mn-Bi
+    first_author: Miyazaki, Daiki
+    year: 2017
+    url: https://www.jstage.jst.go.jp/article/matertrans/58/5/58_MBW201609/_pdf
+    evidence: full_text
+    locator: Abstract
+  quote: The number of formed MnBi phase around Mn grain in 10 T was almost 3 times larger than that in a zero field. The results indicated that the magnetic field enhanced the phase formation rate of MnBi phase. Due to the enhancement of the phase formation rate, the fraction of MnBi phase was drastically increased by in-field annealing.
+  note: ''
+- id: mnbi_fieldeffect_abematsu2016
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 'reactive sintering of Mn + Bi: optimum 280 C (93 wt% MnBi); 15 T raises reacted fraction in solid-state sintering but not in liquid-state sintering; both in-field routes give strong c-axis orientation along the field'
+  unit: ''
+  conditions: in-field reactive sintering (solid- and liquid-state), 15 T (conference proceedings abstract)
+  source:
+    doi: 10.1063/1.4961343
+    title: Magnetic field effects on reactive sintering of MnBi
+    first_author: Abematsu, Ken-ichi
+    year: 2016
+    url: https://api.openalex.org/works/doi:10.1063/1.4961343
+    evidence: abstract
+    locator: abstract
+  quote: Annealing temperature of reactive sintering of MnBi was optimized. The highest fraction of MnBi phase was obtained to be 93wt.% at annealing temperature of 280°C. Magnetic field effects on solid- and liquid-state sintering of MnBi were described. The reacted fraction of MnBi was enhanced by the application of magnetic field of 15 T for solid- state sintering. In contract, reacted fraction was not influenced by magnetic field for liquid-state sintering.
+  note: Texture result (Lotgering factor) recorded as an outcome.
+- id: mnbi_fieldeffect_ren2006
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 'Bi-3-6 wt% Mn solidified in up to 10 T: primary BiMn grains rotate and align with <001> along the field; rod-like grains form below the ''Curie point'' (LTP region), flake-like grains above it (HTP region, below liquidus); alignment of rods survives reheating below the Curie point but breaks down above it'
+  unit: ''
+  conditions: Bi-3 and Bi-6 wt.% Mn (= ~10.5 and ~19.5 at.% Mn, converted), static fields up to 10 T, solidification starting in different zones
+  source:
+    doi: 10.22364/mhd.42.2-3.25
+    title: Investigation on the solidification of Bi-Mn alloys under a high magnetic field
+    first_author: Ren, Z.
+    year: 2006
+    url: https://www.mhd.sal.lv/contents/2006/2/MG.42.2.25.R.html
+    evidence: abstract
+    locator: abstract (journal page)
+  quote: Solidification experiments of Bi3--6wt%Mn alloys under a high magnetic field up to 10 T have been carried out. It is found that the primary BiMn grains in the BiMn alloy rotate and align along the direction of the magnetic field. There are 3 kinds of structures of the BiMn phase according to the starting solidification zone. In the zone below the Curie point rodlike BiMn grains appear, in the zone above the Curie point and below the liquidus flakelike BiMn grains appear, and in the case above the liquidus temperature tightly piled flakelike BiMn grains are produced. In all these cases, the grains are aligned and orientated at <001> along the direction of the field. When the alloy with aligned rod like BiMn grains is reheated to below the Curie point, the alignment of BiMn is kept; and when reheated to above the Curie point, the alignment breaks down.
+  note: 'Soft hyphens in the web text (Bi-3, Bi-Mn, rod-like, flake-like) are dropped in the normalised quote. ''Curie point'' here = the LTP->HTP transition (~628 K). Crossref lists no authors; authors from the journal page: Z. Ren, X. Li, K. Deng, H. Wang, Y. Zhong (Shanghai Univ.). Implies (i) HTP crystals forming above ~628 K in 10 T also align with <001> || field (paramagnetic, susceptibility anisotropy) and (ii) after HTP->LTP on cooling the c-axis alignment is retained when the field is on; reheating above the transition without (or with?) field destroys it.'
+- id: mnbi_primcryst_ren2006
+  phase: LTP-MnBi
+  quantity: primary_crystallisation
+  value: 'morphology of primary BiMn from Bi-rich melt: rod-like when formed below the LTP transition (LTP), flake-like when formed above it (HTP, below liquidus)'
+  unit: ''
+  conditions: Bi-3-6 wt% Mn, solidification in up to 10 T
+  source:
+    doi: 10.22364/mhd.42.2-3.25
+    title: Investigation on the solidification of Bi-Mn alloys under a high magnetic field
+    first_author: Ren, Z.
+    year: 2006
+    url: https://www.mhd.sal.lv/contents/2006/2/MG.42.2.25.R.html
+    evidence: abstract
+    locator: abstract (journal page)
+  quote: In the zone below the Curie point rodlike BiMn grains appear, in the zone above the Curie point and below the liquidus flakelike BiMn grains appear, and in the case above the liquidus temperature tightly piled flakelike BiMn grains are produced.
+  note: Combined with the <001> alignment along the field for all morphologies, this suggests rods grow along c (LTP) and flakes have c normal to the flake plane? (not stated; inference not recorded as fact).
+- id: mnbi_fieldeffect_ren2006_conditions
+  phase: LTP-MnBi
+  quantity: other
+  value: 'earlier field-solidification conditions: Savitsky et al. and Asai et al. aligned MnBi in Bi-0.9-10 wt% Mn solidified in 2.5-5 T; Ren et al.: alignment produced in the semisolid zone; Yasuda: rotation of MnBi particles'
+  unit: T
+  conditions: literature summary in the introduction of Ren et al. 2006
+  source:
+    doi: 10.22364/mhd.42.2-3.25
+    title: Investigation on the solidification of Bi-Mn alloys under a high magnetic field
+    first_author: Ren, Z.
+    year: 2006
+    url: https://api.openalex.org/works/doi:10.22364/mhd.42.2-3.25
+    evidence: review
+    locator: Introduction (text available via OpenAlex abstract field)
+  quote: Savitisky et al. [1] and Asai et al. [2, 3] found that MnBiphase aligned along the magnetic ﬁeld and aligned regularly in Bi-0.9–10wt% Mnalloy solidiﬁed in the 2.5–5 T magnetic ﬁeld. Ren et al. [4] found that the alignedsolidiﬁcation structure of MnBi phase was basicallyproduced in the semisolid zoneof the alloy. Yasuda [5] contributed the aligned solidiﬁcation structure to rotationof the MnBi particles.
+  note: Missing spaces as in the OpenAlex text. Savitsky's own paper (J. Cryst. Growth 52 (1981) 519, doi 10.1016/0022-0248(81)90332-8) had no accessible abstract.
+- id: mnbi_fieldeffect_wang2003
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: in the mushy zone 262-355 C, ferromagnetic primary MnBi crystals are magnetized and rotate c || field, then congregate and grow into aligned rod-like MnBi; orientation sets in above a critical temperature/field
+  unit: ''
+  conditions: Bi-3 and Bi-6 wt.% Mn, 0.05-1.0 T
+  source:
+    doi: null
+    title: Alignment behavior of MnBi phase in Bi-Mn alloy solidified in static magnetic field
+    first_author: Wang, Hui
+    year: 2003
+    url: https://tnmsc.csu.edu.cn/EN/Y2003/V13/I06/1405
+    evidence: abstract
+    locator: abstract (page meta description)
+  quote: During the solidification of Bi-Mn alloys from the mushy zone between 262℃ and 355℃ in a static magnetic field up to 1.0T, the alignment behavior of the MnBi primary phase in the alloys was studied experimentally. The ferromagnetic MnBi crystals are magnetized and rotate their /c/-axes parallel to the field. Then, the oriented crystals congregate and grow up under the influence of magnetic interactions so that the alignment structure of the rod-like MnBi phase is produced.
+  note: Critical conditions (275 C/1.0 T, 290 C/0.1 T; 0.4 T or 0.05 T at 275 C) are in the outcome record mnbi_fs_wang2003. Free-body rotation of ferromagnetic LTP crystals in liquid Bi works already at 0.05-1 T.
+- id: mnbi_fieldeffect_liu2007
+  phase: HTP-Mn1.08Bi
+  quantity: field_effect_on_formation
+  value: above the LTP 'Curie temperature' (paramagnetic regime) a 10 T field still rotates MnBi crystals so their c axes align in the Bi matrix
+  unit: ''
+  conditions: Bi-rich Mn-Bi alloy, 10 T, temperature above ~630 K
+  source:
+    doi: 10.1088/0256-307x/24/1/057
+    title: In-Situ Alignment of MnBi Crystals Induced by High Magnetic Field above Curie Temperature
+    first_author: Yong-Sheng, Liu
+    year: 2007
+    url: https://api.openalex.org/works/doi:10.1088/0256-307x/24/1/057
+    evidence: abstract
+    locator: abstract
+  quote: The successful alignment may result from the fact that the easy magnetization direction is along the c -axis of MnBi and the high fabrication field of 10 T is large enough to rotate the MnBi crystal to this direction even though the temperature is above the Curie temperature.
+  note: Paramagnetic (HTP) crystals align via susceptibility anisotropy in 10 T; c-axis alignment present after cooling, consistent with the hexagonal c axis carrying over HTP -> LTP (not explicitly measured). No delta_chi value given.
+- id: mnbi_fieldeffect_wangq2008
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 'high-gradient field solidification of dilute Bi-Mn: magnetized MnBi grains rotate (c || field) and are pulled by the magnetization force to one end (local MnBi > 40 vol%)'
+  unit: ''
+  conditions: dilute Bi-Mn master alloy, high field gradient
+  source:
+    doi: 10.1088/0022-3727/42/2/025001
+    title: Fabrication of MnBi/Bi composite using dilute master alloy solidification under high magnetic field gradients
+    first_author: Wang, Qiang
+    year: 2008
+    url: https://api.openalex.org/works/doi:10.1088/0022-3727/42/2/025001
+    evidence: abstract
+    locator: abstract
+  quote: The easy magnetization c axis of MnBi grains parallel to the imposed field is attributed to the rotation of magnetized MnBi grains under the effect of a high magnetic field, and the agglomeration of grains at the specified end results from the magnetization force induced by the field gradient.
+  note: Route to raise phi above the lever-rule fraction of the dilute alloy.
+- id: mnbi_growthdir_li2011
+  phase: LTP-MnBi
+  quantity: growth_direction
+  value: 'DS Bi-MnBi in an axial strong field: MnBi eutectic fibres aligned, regularized and coarsened; field enhances non-faceted -> faceted transition and Mn enrichment ahead of fibres'
+  unit: ''
+  conditions: directional solidification of Bi-MnBi composite under axial strong magnetic field (value not in abstract)
+  source:
+    doi: 10.1016/j.actamat.2011.06.040
+    title: Structure, growth characteristic and magnetic properties in directionally solidified Bi–MnBi composite under strong magnetic field
+    first_author: Li, Xi
+    year: 2011
+    url: https://api.archives-ouvertes.fr/search/?q=halId_s:hal-00639975&fl=halId_s,title_s,abstract_s,authFullName_s,producedDateY_i,journalTitle_s,doiId_s
+    evidence: abstract
+    locator: abstract (HAL record hal-00639975)
+  quote: Experimental results show that MnBi eutectic fiber is aligned, regularized and coarsened during directional solidification under an axial strong magnetic field. In particular, the alignment of irregular eutectic fiber under a magnetic field may offer a new method to prepare regular fiber composite and extend the range of uses of such composite. It has also been found that the strong magnetic field has modified the growth mode of the MnBi fiber and enhanced the transition from non-faceted to faceted.
+  note: Without field the eutectic fibres are irregular (per this abstract).
+- id: mnbi_fieldeffect_xili2007
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: high field enhances MnBi fibre growth along the solidification direction in DS rod eutectic and increases fibre spacing; 10 T raises the MnBi/Mn1.08Bi transformation temperature by ~20 K
+  unit: K
+  conditions: 'PhD thesis (static fields up to 12 T): Bi-Mn hypo- and hypereutectic alloys'
+  source:
+    doi: null
+    title: Solidification en présence de champs magnétiques intenses
+    first_author: Li, Xi
+    year: 2007
+    url: https://api.archives-ouvertes.fr/search/?q=halId_s:tel-01331342&fl=halId_s,title_s,abstract_s,authFullName_s,producedDateY_i,journalTitle_s,doiId_s
+    evidence: abstract
+    locator: thesis abstract (English version, HAL tel-01331342)
+  quote: However, the field has enhanced the growth of the MnBi fiber along the solidification direction and increased the fiber spacing. It is found that the field has promoted the MnBi/Mn1.08Bi compounds phase transformation. As a result, a 10T magnetic field has raised the phase transformation temperature about 20K.
+  note: Thesis full text on hal.science is behind a bot challenge (not accessed).
+- id: mnbi_k1_zhang2015
+  phase: LTP-MnBi
+  quantity: K1
+  value: 1.5
+  unit: MJ/m3
+  conditions: room temperature, K = K1 + K2 of the hard MnBi phase determined on high-purity c-axis-oriented films
+  source:
+    doi: 10.1002/pssb.201552075
+    title: High‐energy‐product MnBi films with controllable anisotropy
+    first_author: Zhang, Wenyong
+    year: 2015
+    url: https://api.crossref.org/works/10.1002/pssb.201552075
+    evidence: abstract
+    locator: abstract
+  quote: In addition, the room‐temperature magnetocrystalline anisotropy constant and saturation polarization of the hard magnetic MnBi phase are determined to be K = K1 + K2 = 15.0 Mergs cm−3 and Js = 8.2 kG, respectively.
+  note: Converted 15.0 Merg/cm3 = 1.50 MJ/m3 (this is K1+K2, not K1 alone).
+- id: mnbi_js_zhang2015
+  phase: LTP-MnBi
+  quantity: Js
+  value: 0.82
+  unit: T
+  conditions: room temperature, MnBi phase in films
+  source:
+    doi: 10.1002/pssb.201552075
+    title: High‐energy‐product MnBi films with controllable anisotropy
+    first_author: Zhang, Wenyong
+    year: 2015
+    url: https://api.crossref.org/works/10.1002/pssb.201552075
+    evidence: abstract
+    locator: abstract
+  quote: In addition, the room‐temperature magnetocrystalline anisotropy constant and saturation polarization of the hard magnetic MnBi phase are determined to be K = K1 + K2 = 15.0 Mergs cm−3 and Js = 8.2 kG, respectively.
+  note: Converted 8.2 kG = 0.82 T.
+- id: mnbi_fieldeffect_zhang2015_film
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 2 μm thick MnBi film changes from isotropic to anisotropic after magnetic-field annealing; out-of-plane or in-plane anisotropy set by the field direction
+  unit: ''
+  conditions: films from Bi/Mn/Bi trilayers / multilayers, in-situ annealed, then field annealed
+  source:
+    doi: 10.1002/pssb.201552075
+    title: High‐energy‐product MnBi films with controllable anisotropy
+    first_author: Zhang, Wenyong
+    year: 2015
+    url: https://api.crossref.org/works/10.1002/pssb.201552075
+    evidence: abstract
+    locator: abstract
+  quote: The MnBi thick film (t = 2 μm) changes from isotropic to anisotropic after magnetic field annealing. Depending on the direction of the applied field during magnetic field annealing, the MnBi thick film may have out‐of‐plane or in‐plane anisotropy.
+  note: Field annealing re-orients an already-formed (ferromagnetic) polycrystalline film (recrystallization-type B1), cf. Chen 1974.
+- id: mnbi_k1_sabet2017
+  phase: LTP-MnBi
+  quantity: K1
+  value: 1.86
+  unit: MJ/m3
+  conditions: c-axis textured LTP MnBi film on glass (sputtered from Mn55Bi45, vacuum annealed), torque magnetometry; temperature not stated in abstract (RT implied)
+  source:
+    doi: 10.1109/tmag.2016.2636817
+    title: Low-Temperature Phase c-axis Oriented Manganese Bismuth Thin Films With High Anisotropy Grown From an Alloy Mn55Bi45 Target
+    first_author: Sabet, S.
+    year: 2017
+    url: https://api.openalex.org/works/doi:10.1109/tmag.2016.2636817
+    evidence: abstract
+    locator: abstract
+  quote: Magnetic measurement shows a maximum saturation magnetization of 600 emu/cm3(0.60 MA/m). A magnetic uniaxial anisotropy energy density of ~1.86·107erg/cm3(~1.86 MJ/m3) was measured by torque magnetometry.
+  note: Effective uniaxial anisotropy energy density of a film (not necessarily K1). Film Ms (0.60 MA/m) is lower than bulk values.
+- id: mnbi_k1_shanavas2014
+  phase: LTP-MnBi
+  quantity: other
+  value: Ku from ~-0.2 MJ/m3 near 0 K (easy plane) to ~2 MJ/m3 'at room temperature' (literature summary; note conflicts with ~1 MJ/m3 at 300 K in other sources)
+  unit: MJ/m3
+  conditions: experimental trend quoted in introduction of a theory paper
+  source:
+    doi: 10.1038/srep07222
+    title: Theoretical study on the role of dynamics on the unusual magnetic properties in MnBi
+    first_author: Shanavas, K. V.
+    year: 2014
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4245533/
+    evidence: review
+    locator: Introduction
+  quote: A spin-reorientation transition takes place at T SR ≈ 90 K, when the magnetization changes direction towards c axis. Thus, Ku starts at −0.2 MJ/m3 close to 0 K and reaches 2 MJ/m3 at room temperature.
+  note: 'Kept to document the literature spread of K(300 K): 0.91 (Williams 1957), ~1 (McGuire intro), 1.5 (K1+K2, Zhang 2015 film), 1.86 (Sabet film), 2 (this statement).'
+- id: mnbi_singlevariant_gabay2019
+  phase: LTP-MnBi
+  quantity: single_variant_particles
+  value: crushed (not milled) annealed Mn50Bi50 melt-spun ribbon flakes contain locally co-oriented alpha crystallites and align well in a field (better at higher wheel speed); Sb-substituted ribbons form fine (<200 nm) randomly oriented alpha crystallites via beta' and their flakes barely align
+  unit: ''
+  conditions: melt-spun Mn50Bi50-xSbx ribbons (5-65 m/s), annealed, crushed, field-oriented
+  source:
+    doi: 10.1016/j.jallcom.2019.03.407
+    title: Effect of Sb substitution on crystal structure, texture and hard magnetic properties of melt-spun MnBi alloys
+    first_author: Gabay, A.M.
+    year: 2019
+    url: https://www.osti.gov/servlets/purl/1504700
+    evidence: full_text
+    locator: Sec. 3.5
+  quote: Magnetic-field orientation of the crushedbut-not-milled Mn50Bi50 ribbons [Fig. 12(a–c)] results in a net alignment of the local easy magnetization directions. According to Yang et al. [25], this is possible due to the prior preferential orientation of the α crystallites. ... Crystallization of the α phase in the melt-spun Mn50Bi48.5Sb1.5 alloy, which occurs through the nanostructured metastable β' phase, leads to fine (smaller than 200 nm) α crystallites and Hc values of 7–9 kOe. Moreover, the "rectangularity" of the σ(H) curves is much better than for the Mn50Bi50 alloy. At the same time, the preferential orientation of the crystallites is almost absent
+  note: 'Direct evidence for the free-body-rotation rule: multi-crystal particles with random internal orientation cannot be aligned by rotation. Texture coefficients recorded as outcomes.'
+- id: mnbi_fieldeffect_gabay2019
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: alpha-MnBi crystallizes/recrystallizes with local easy axes aligned when annealed in a field; most effective for Bi-rich compositions with liquid Bi present
+  unit: ''
+  conditions: literature summary (refs 54-57)
+  source:
+    doi: 10.1016/j.jallcom.2019.03.407
+    title: Effect of Sb substitution on crystal structure, texture and hard magnetic properties of melt-spun MnBi alloys
+    first_author: Gabay, A.M.
+    year: 2019
+    url: https://www.osti.gov/servlets/purl/1504700
+    evidence: review
+    locator: Sec. 3.5
+  quote: The α-MnBi phase in the Mn–Bi alloys is well known to crystallize/re-crystallize with the local easy magnetization directions aligned if the alloy is annealed in a magnetic field [54–57]. The magnetic-field annealing is most effective for Bi-rich compositions and in the presence of the liquid Bi phase.
+  note: ''
+- id: mnbi_density_mcguire2014_xray
+  phase: LTP-MnBi
+  quantity: density
+  value: 9.0
+  unit: g/cm3
+  uncertainty: 0.02
+  conditions: X-ray density computed here from the room-temperature single-crystal lattice (a=4.287, c=6.117 Å), NiAs type with Z = 2 MnBi per cell
+  source:
+    doi: 10.1103/PhysRevB.90.174425
+    title: Symmetry-lowering lattice distortion at the spin reorientation in MnBi single crystals
+    first_author: McGuire, Michael A.
+    year: 2014
+    url: https://arxiv.org/pdf/1411.2448
+    evidence: full_text
+    locator: Fig. 1(b) (lattice); density derived
+  quote: 'a = 4.287 Å c = 6.117 Å ... FIG. 1: X-ray diffraction patterns from MnBi single crystal faces at room temperature.'
+  note: 'DERIVED VALUE (no source states the density): V = (sqrt(3)/2) a^2 c = 97.36 Å3; m = 2 x 263.918 g/mol / N_A; rho = 9.00 g/cm3. Measured bulk densities of compacted alloys: 8.82-9.11 g/cm3 (Gabay 2020, Table 1), 9.21 g/cm3 for a compacted Mg-free ribbon alloy (Gabay & Hadjipanayis 2020 IEEE Magn. Lett.).'
+- id: mnbi_k1_kronmuller2014
+  phase: LTP-MnBi
+  quantity: K1
+  value: 1.2
+  unit: MJ/m3
+  conditions: 300 K; rises to 2.4 MJ/m3 at 450 K (positive temperature coefficient)
+  source:
+    doi: 10.1088/0953-8984/26/6/064210
+    title: Micromagnetic analysis of the hardening mechanisms of nanocrystalline MnBi and nanopatterned FePt intermetallic compounds
+    first_author: Kronmüller, H
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/26/6/064210
+    evidence: abstract
+    locator: abstract
+  quote: Its extraordinary magnetic properties in the temperature range up to 600 K are due to an increase of the magnetocrystalline anisotropy constant from 1.2 MJ m(-3) at 300 K to 2.4 MJ m(-3) at 450 K.
+  note: Positive dK1/dT between 300 and 450 K.
+- id: mnbi_k1_zhang2019
+  phase: LTP-MnBi
+  quantity: K1
+  value: 1.2
+  unit: MJ/m3
+  conditions: room temperature, K = K1 + K2 from Sucksmith-Thompson analysis of field-annealed (textured) MnBi ribbons; Fig. 4(d) annotations give K1 = 0.5 and K2 = 0.7 MJ/m3
+  source:
+    doi: 10.1063/1.5128659
+    title: High energy product of MnBi by field annealing and Sn alloying
+    first_author: Zhang, Wenyong
+    year: 2019
+    url: https://www.osti.gov/servlets/purl/1800206
+    evidence: full_text
+    locator: text after Fig. 4; Fig. 4(d)
+  quote: The values of K = K 1 + K 2 are 1.2 MJ/m3 and 2.0 MJ/m3 at room temperature for MnBi and MnBi0.9 Sn0.1 , respectively.
+  note: Value is K1 + K2 (the K1 alone from Fig. 4(d) is 0.5 MJ/m3, read from the figure annotation).
+- id: mnbi_phasefraction_vuong2018
+  phase: LTP-MnBi
+  quantity: phase_fraction_limit
+  value: isothermal annealing of arc-melted Mn-Bi (Ta < 340 C) limited to ~59.8 wt% LTP (calculated upper limit); diffusion-controlled formation with D ~ 5e-12 cm2/s; temperature-gradient annealing (2 C/cm) reaches 83 wt% LTP
+  unit: wt%
+  conditions: arc-melted MnxBi100-x, annealed below 340 C
+  source:
+    doi: 10.15625/2525-2518/54/1a/11805
+    title: LOW TEMPERATURE PHASE OF THE RARE-EARTH-FREE MnBi MAGNETIC MATERIAL
+    first_author: Vuong, Nguyen Van
+    year: 2018
+    url: https://api.crossref.org/works/10.15625/2525-2518/54/1a/11805
+    evidence: abstract
+    locator: abstract
+  quote: LTP in MnBi samples alloyed by the arc-melting is timely developed when they are annealed at the annealing temperatures Ta < 340 oC. Because of the complexity of the phase diagram of MnxBi(100-x) system, the content hardly reaches the value of 100 wt%. Based on the phase diagram of MnxBi(100-x) system, the upper limit * was calculated and 59.8 wt% is the highest content which can be reached when the alloy is isothermally annealed for a long time. The time-dependent behavior of (t) reveals that the LTP is formed from Mn and Bi phases by the diffusion mechanism.
+  note: Greek symbols (LTP content) and the approx/multiplication signs are lost in the Crossref abstract text ('upper limit *', 'D 510-12 cm2/s' = D ~ 5x10^-12 cm2/s).
+- id: mnbi_tformation_vuong2018
+  phase: LTP-MnBi
+  quantity: T_formation
+  value: LTP forms from Mn + Bi by diffusion at Ta < 340 C (613 K); mutual diffusion coefficient ~5e-12 cm2/s
+  unit: K
+  conditions: annealing of arc-melted Mn-Bi
+  source:
+    doi: 10.15625/2525-2518/54/1a/11805
+    title: LOW TEMPERATURE PHASE OF THE RARE-EARTH-FREE MnBi MAGNETIC MATERIAL
+    first_author: Vuong, Nguyen Van
+    year: 2018
+    url: https://api.crossref.org/works/10.15625/2525-2518/54/1a/11805
+    evidence: abstract
+    locator: abstract
+  quote: The comparison between the theoretical and experimental data allowed to estimate the mutual diffusion coefficient D 510-12 cm2/s. This small value of D is suggested due to not only the low value of Ta necessary for forming LTP but the high surface tension of Bi melted at Ta as well.
+  note: '''D 510-12'' = D ~ 5x10^-12 (symbols lost).'
+- id: mnbi_or_antonov2020_films
+  phase: LTP-MnBi
+  quantity: OR
+  value: 'reactive Mn/Bi films: c axis generally perpendicular to the substrate surface, a axis random (fibre texture), except on mica (same basal-plane symmetry) where films are essentially single crystals (epitaxial)'
+  unit: ''
+  conditions: vapour-deposited Mn + Bi layers annealed 225-350 C for days; substrates glass, mica, rock salt, quartz, teflon (review summary)
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 6.1 e. Thin films
+  quote: Favorable results were obtained with freshly cleaved mica substrates [23]. This material has the same basal plane symmetry as MnBi and makes it possible to have epitaxial growth. Thin MnBi films prepared on mica often were ... found to be essentially single crystals. Other types of substrate material can also be used (rock salt, quartz, teflon). It was found, in general, that the MnBi films have the c-axis oriented perpendicular to the substrate surface. The a -axis commonly adopts a random orientation, excepting films prepared on mica substrates.
+  note: ''' ... '' skips a page header. Film formation by Mn-Bi interdiffusion produces a c-perpendicular fibre texture even without epitaxy (growth/interface-energy selection, no field).'
+- id: mnbi_tformation_antonov2020_films
+  phase: LTP-MnBi
+  quantity: T_formation
+  value: MnBi films form by annealing Mn + Bi layers at 225-350 C (498-623 K) for several days
+  unit: K
+  conditions: Williams et al. 1957 and later film work (review summary)
+  source:
+    doi: 10.1063/10.0000360
+    title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology and fabrication (Review article)'
+    first_author: Antonov, V. N.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1599882
+    evidence: review
+    locator: Sec. 6.1 e. Thin films
+  quote: The first-ever reported preparation of MnBi thin film permanent magnets was in 1957 by Williams et al. [19], in which Mn and then a Bi layer were deposited on a glass substrate and then vacuum annealed for three days in the temperature range of 225–350 °C.
+  note: ''
+- id: mnbi_growthdir_larson1988
+  phase: LTP-MnBi
+  quantity: growth_direction
+  value: 'DS Bi-MnBi rod eutectic: MnBi fibre growth axis = c axis of hexagonal MnBi; rod cross-section in the basal plane (bounded by prismatic planes); circular at high V, chevrons -> hexagonal segments -> platelets as V decreases'
+  unit: ''
+  conditions: Bridgman-Stockbarger DS of eutectic Bi-Mn, V 0.5-50 cm/h, G 5-125 C/cm, no applied field
+  source:
+    doi: null
+    title: The influences of convection on directional solidification of eutectic Bi/MnBi
+    first_author: Larson, David J., Jr.
+    year: 1988
+    url: https://ntrs.nasa.gov/api/citations/19890010932/downloads/19890010932.pdf
+    evidence: full_text
+    locator: Sec. 3 Experimental results and discussion (NTRS 19890010932, N89-20303)
+  quote: The solidification morphology of the dispersed MnBi rods was found to be a regular array of high aspect ratio fibers whose growth axis coincided with the 'c' direction of the equilibrium MnBi phase, which is hexagonal. The rodcross-section was found to vary in morphology as a function of solidification velocity and to coincide with the basal plane of the hexagonal cell.
+  note: '''rodcross-section'' as in the OCR text layer. Establishes c || growth direction for DS without a field (cf. Yim & Stofko 1967 with field).'
+- id: mnbi_primcryst_larson1988
+  phase: LTP-MnBi
+  quantity: primary_crystallisation
+  value: 'eutectic MnBi rods: faceted (MnBi)/non-faceted (Bi) cooperative growth above ~2 cm/h; cross-section circular at high V, chevron, hexagonal segments, platelets at very low V; rod diameter and spacing ~ V^-1/2'
+  unit: ''
+  conditions: DS of eutectic Bi-Mn
+  source:
+    doi: null
+    title: The influences of convection on directional solidification of eutectic Bi/MnBi
+    first_author: Larson, David J., Jr.
+    year: 1988
+    url: https://ntrs.nasa.gov/api/citations/19890010932/downloads/19890010932.pdf
+    evidence: full_text
+    locator: Abstract / Sec. 3
+  quote: At high solidification velocities the rods appear circular in cross-section, but as the velocity is slowed the cross-section becomes more faceted changing to chevrons, then to hexagonal segments and finally to a platelet structure at very low velocities. Interrod spacing and mean rod diameter were found to vary as the inverse square root of the solidification velocity, as expected.
+  note: ''
+- id: mnbi_growthdir_pirich1980spar6
+  phase: LTP-MnBi
+  quantity: growth_direction
+  value: c axis of LTP MnBi rods parallel to the solidification direction (from coercivity anisotropy); rods' long axis || solidification direction, length/diameter ~100
+  unit: ''
+  conditions: plane-front DS of eutectic Bi/MnBi (SPAR VI and ground tests), with and without HC phase
+  source:
+    doi: null
+    title: 'SPAR VI Technical Report for Experiment 76-22: Directional Solidification of Magnetic Composites (NASA-CR-161671, Grumman RE-602)'
+    first_author: Pirich, R. G.
+    year: 1980
+    url: https://ntrs.nasa.gov/api/citations/19810010704/downloads/19810010704.pdf
+    evidence: full_text
+    locator: Magnetic properties section, p. 44
+  quote: The expected anisotropy in intrinsic coercivity was observed in all samoles suggesting that the c-axis of the hexagonal NiAs structure of LTP MnBi (easy axis of magnetization) lies parallel to the solidif ication direction regardless of the amount of HC phase present.
+  note: '''samoles'', ''solidif ication'' as in OCR text layer.'
+- id: mnbi_phasefraction_pirich1980spar6
+  phase: LTP-MnBi
+  quantity: phase_fraction_limit
+  value: eutectic at 0.72 +- 0.03 wt% Mn (2.69 +- 0.08 at.% Mn) -> MnBi volume fraction 3.18 +- 0.09 vol% in the Bi/MnBi eutectic
+  unit: vol%
+  uncertainty: 0.09
+  conditions: Bi-Mn diagram near the eutectic determined by DSC and chemical analysis
+  source:
+    doi: null
+    title: 'SPAR VI Technical Report for Experiment 76-22: Directional Solidification of Magnetic Composites (NASA-CR-161671, Grumman RE-602)'
+    first_author: Pirich, R. G.
+    year: 1980
+    url: https://ntrs.nasa.gov/api/citations/19810010704/downloads/19810010704.pdf
+    evidence: full_text
+    locator: Experimental section, p. 2
+  quote: The eutectic composition was found to be 0.72 ~ 0.03 w/o Mn (2.69 ~ 0.08 a/a Mn), which results in an MnBi volume fraction of 3.18 ~ 0.09 v/o.
+  note: '''~'' is the OCR rendering of ''±''. Lever-rule fraction for the DS eutectic composite: phi ~ 0.032.'
+- id: mnbi_other_pirich1980spar6_hc
+  phase: QHTP-MnBi
+  quantity: other
+  value: DS at V = 30 cm/h, G ~100 C/cm gives >95 vol% of the non-equilibrium HC phase (paramagnetic at RT) in the MnBi rods; it transforms to LTP on isothermal annealing (250 C, >24 h)
+  unit: ''
+  conditions: plane-front DS eutectic, ground 'All-Systems Test' samples
+  source:
+    doi: null
+    title: 'SPAR VI Technical Report for Experiment 76-22: Directional Solidification of Magnetic Composites (NASA-CR-161671, Grumman RE-602)'
+    first_author: Pirich, R. G.
+    year: 1980
+    url: https://ntrs.nasa.gov/api/citations/19810010704/downloads/19810010704.pdf
+    evidence: full_text
+    locator: Magnetic properties section, p. 44
+  quote: In addition. the magnetic properties of the All-Systems Test (1-9 comparison to SPAR IV flight samples) samples indicated that they contained >95 v/o HC phase regardless of growth orientation at V- 30 cm/h and GL100 °C/cm.
+  note: Fast DS freezes an HTP-derived phase; LTP fraction (and hence phi) requires post-annealing.
+- id: mnbi_fieldeffect_morikawa1998_ocr
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: 'Bi-4 mass% Mn held in the primary-precipitation temperature range in 4.5 T: primary MnBi dendrite arms align along the field (no alignment without field); analysis treats needle-shaped ferromagnetic dendrites (demagnetizing-factor/shape anisotropy) in a non-magnetic melt'
+  unit: T
+  conditions: Bi-4 mass% Mn (= ~13.6 at.% Mn, converted), superconducting magnet up to 5.5 T, inert gas; held in primary-phase range then cooled
+  source:
+    doi: 10.2320/matertrans1989.39.814
+    title: Control of Precipitating Phase Alignment and Crystal Orientation by Imposition of a High Magnetic Field
+    first_author: Morikawa, Hiroshi
+    year: 1998
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/39/8/39_8_814/_pdf
+    evidence: full_text
+    locator: Sec. II-III, Fig. 2 (OCR of scanned PDF)
+  quote: Specimens were kept in the temperature range precipitating a primary phase for a given period of time under an inert gas at- mosphere in presence and absence of the magnetic field and then were cooled to the room temperature. ... Figure 2(a) is with a magnetic field of 4.5 ... T and (b) is without any. It was found that the applica- tion of the magnetic field makes the primary dendrite arms of MnBi align along the magnetic field direction.
+  note: Quote from OCR (tesseract) of the scanned J-STAGE PDF; line-break hyphens kept as OCRed. Temperature of the hold is not given in the OCR text read.
+- id: mnbi_tformation_qian2020
+  phase: LTP-MnBi
+  quantity: T_formation
+  value: amorphous melt-spun Mn56Bi44 begins to crystallize to LTP at ~220 C (in 2.5 T, VSM heating); maximum moment 310-340 C; 320 C/5 min gives 98 wt% LTP
+  unit: K
+  conditions: compacted amorphous ribbons, heating in VSM under 2.5 T
+  source:
+    doi: 10.3390/nano10112265
+    title: Effects of Mg and Sb Substitution on the Magnetic Properties of Magnetic Field Annealed MnBi Alloys
+    first_author: Qian, Hui-Dong
+    year: 2020
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-10-02265/article_deploy/nanomaterials-10-02265.pdf
+    evidence: full_text
+    locator: Sec. 3, Fig. 3
+  quote: The measured magnetic moment of the paramagnetic amorphous bulk sample initially decreased with increasing temperature but began increasing at 220 °C due to crystallization of the amorphous phase. The highest magnetic moment was measured at temperatures ranging from 310 to 340 °C.
+  note: 220 C = 493 K; LTP forms far below its Curie point, i.e. ferromagnetic as it nucleates in the field.
+- id: mnbi_fieldeffect_gabay2020c_ingot
+  phase: LTP-MnBi
+  quantity: field_effect_on_formation
+  value: in arc-melted ingots annealed at 300 C in 30 kOe, MnBi regions grow along the field at the expense of liquid Bi and solid Mn; magnetization rise from ~257 C combines beta'->alpha, more alpha, and [001] alignment
+  unit: ''
+  conditions: Mn50Bi47Mg3 ingot, 30 kOe, 300 C, 60 min
+  source:
+    doi: 10.1016/j.jallcom.2020.153663
+    title: Development of rare-earth-free bulk magnets with energy product up to 12 MGOe in field annealed Mn–Bi–Mg–In–Sb alloys
+    first_author: Gabay, A.M.
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1580855
+    evidence: full_text
+    locator: Sec. 3.1
+  quote: As Fig. 2(d) and Fig. 2(e) demonstrate, during the magnetic-field annealing at 300 °C the MnBi regions expand in the direction of the field at the expense of the liquid Bi phase and the solid Mn phase. This microstructure evolution is typical of the field-annealed Mn-Bi alloys [15–17].
+  note: Growth-selection in the ferromagnetic state with a liquid Bi phase present (peritectic/solution-reprecipitation).

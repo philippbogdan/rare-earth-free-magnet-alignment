@@ -2257,6 +2257,894 @@
        "doi": "10.2320/matertrans1989.41.917"
       }
      ]
+    },
+    "nano_other_outcomes.yaml": {
+     "sha256": "28b6eee303d9100bf946f05d576be71267bddcfd7b5a2174fcd9f846775b1e0c",
+     "n_records": 126,
+     "cases": [
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r22a1_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r22a1_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r22a1_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r22a2_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r22a2_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r22a2_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r22a3_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r22a3_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r22a3_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r24a1_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r24a1_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r24a1_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r28a2_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r28a2_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r28a2_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r28a4_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r28a4_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r28a4_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r31a4_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r31a4_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r31a4_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r17a1_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_anagnostopoulou2016_r17a2_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_riou2014_review_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "hcpco_fp_ener2018_pre204_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2017.12.009"
+      },
+      {
+       "id": "hcpco_fp_ener2018_pre109_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2017.12.009"
+      },
+      {
+       "id": "hcpco_fp_ener2018_pre283_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2017.12.009"
+      },
+      {
+       "id": "hcpco_fp_ener2018_randompowder_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2017.12.009"
+      },
+      {
+       "id": "hcpco_fp_ener2018_magnet1_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2017.12.009"
+      },
+      {
+       "id": "hcpco_fp_ener2018_magnet3_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2017.12.009"
+      },
+      {
+       "id": "hcpco_fp_ener2018_magnet2_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2017.12.009"
+      },
+      {
+       "id": "hcpco_fp_ener2018_magnet4_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1016/j.actamat.2017.12.009"
+      },
+      {
+       "id": "hcpco_fp_ener2018_magnets_br_range",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1016/j.actamat.2017.12.009"
+      },
+      {
+       "id": "hcpco_fp_ener2018_magnet4_texture",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.actamat.2017.12.009"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_film_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_film_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_film_js",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_film_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_hc300_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_hc300_js",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_hc300_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_hc450_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_hc450_js",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_hc450_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_cc1000_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_cc1000_js",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r10_cc1000_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r30_film_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r30_film_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r30_film_js",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r30_film_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r30_hc450_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r30_hc450_br",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_r30_hc450_js",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_bonded_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_hcpowder_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_chloroform_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_preneedles_cc_epoxy_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_preneedles_sps_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_fp_thesis2016_preneedles_sps_bhmax",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.70675/56e09751z2b09z425cz9a17z060d283abcda"
+      },
+      {
+       "id": "hcpco_iso_gandha2014_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep05345"
+      },
+      {
+       "id": "hcpco_fp_gandha2014_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep05345"
+      },
+      {
+       "id": "hcpco_fp_gandha2014_bhmax_est",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1038/srep05345"
+      },
+      {
+       "id": "hcpco_fp_gandha2014_texture",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/srep05345"
+      },
+      {
+       "id": "hcpco_iso_pousthomis2015_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s12274-015-0734-x"
+      },
+      {
+       "id": "hcpco_fp_pousthomis2015_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s12274-015-0734-x"
+      },
+      {
+       "id": "hcpco_fp_pousthomis2015_thick_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s12274-015-0734-x"
+      },
+      {
+       "id": "hcpco_fp_aitatmane2013_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jssc.2012.08.009"
+      },
+      {
+       "id": "hcpco_iso_aitatmane2013_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jssc.2012.08.009"
+      },
+      {
+       "id": "hcpco_iso_ibrahim2013_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/jp3125457"
+      },
+      {
+       "id": "hcpconi_iso_maurer2007_mrms",
+       "phase": "hcp-CoNi",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.2800786"
+      },
+      {
+       "id": "hcpconi_fp_maurer2007_pmma_mrms",
+       "phase": "hcp-CoNi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.2800786"
+      },
+      {
+       "id": "hcpconi_fp_maurer2007_frozen_mrms",
+       "phase": "hcp-CoNi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.2800786"
+      },
+      {
+       "id": "hcpconi_fp_maurer2007_frozen_texture",
+       "phase": "hcp-CoNi",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.2800786"
+      },
+      {
+       "id": "hcpco_iso_fang2014_si_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_iso_fang2014_ps192k_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_iso_fang2014_pmma350k_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_iso_fang2014_pvp360k_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_iso_fang2014_pvp40k_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_iso_fang2014_pvp10k_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_fp_fang2014_ps_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_fp_fang2014_pvp_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_fp_fang2014_ps_texture_sw",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_fp_fang2014_pvp_texture_sw",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_fp_fang2014_ps_texture_tem",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_fp_fang2014_si004_aniso",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_fp_fang2014_si04_aniso",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_fp_fang2014_pvp02_aniso",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_fp_fang2014_pvp08_aniso",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1007/s11051-014-2265-x"
+      },
+      {
+       "id": "hcpco_iso_bousnina2020_h0_mrms",
+       "phase": "hcp-Co",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano10020334"
+      },
+      {
+       "id": "hcpco_oth_bousnina2020_h025_mrms",
+       "phase": "hcp-Co",
+       "route": "other: field during growth (B1+R)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano10020334"
+      },
+      {
+       "id": "hcpco_oth_bousnina2020_h05_mrms",
+       "phase": "hcp-Co",
+       "route": "other: field during growth (B1+R)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano10020334"
+      },
+      {
+       "id": "hcpco_oth_bousnina2020_h075_mrms",
+       "phase": "hcp-Co",
+       "route": "other: field during growth (B1+R)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano10020334"
+      },
+      {
+       "id": "hcpco_oth_bousnina2020_h10_mrms",
+       "phase": "hcp-Co",
+       "route": "other: field during growth (B1+R)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano10020334"
+      },
+      {
+       "id": "hcpco_oth_bousnina2020_h125_mrms",
+       "phase": "hcp-Co",
+       "route": "other: field during growth (B1+R)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano10020334"
+      },
+      {
+       "id": "hcpco_fp_bousnina2020_frozen_mrms",
+       "phase": "hcp-Co",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano10020334"
+      },
+      {
+       "id": "fecoesd_fp_mendelsohn1955_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.1721888"
+      },
+      {
+       "id": "fecoesd_fp_luborsky1957_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.1722744"
+      },
+      {
+       "id": "fecoesd_fp_luborsky1961_fe_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.2000392"
+      },
+      {
+       "id": "fecoesd_fp_luborsky1961_feco_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.2000392"
+      },
+      {
+       "id": "fecoesd_fp_falk1959_fe_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.2185852"
+      },
+      {
+       "id": "fecoesd_fp_falk1959_feco_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.2185852"
+      },
+      {
+       "id": "fecoesd_fp_lever1958_fe_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.1723110"
+      },
+      {
+       "id": "fecoesd_fp_lever1958_feco_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.1723110"
+      },
+      {
+       "id": "fecoesd_fp_luborsky1959_comm_fe_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1179/pom.1959.2.4.006"
+      },
+      {
+       "id": "fecoesd_fp_luborsky1959_comm_feco_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1179/pom.1959.2.4.006"
+      },
+      {
+       "id": "fecoesd_fp_luborsky1959_lab_fe_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1179/pom.1959.2.4.006"
+      },
+      {
+       "id": "fecoesd_fp_luborsky1959_lab_feco_bhmax",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "BHmax",
+       "doi": "10.1179/pom.1959.2.4.006"
+      },
+      {
+       "id": "fecoesd_fp_luborsky1960_angular",
+       "phase": "FeCo-elongated",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.1984605"
+      },
+      {
+       "id": "co3c_iso_harris2010_bhmax",
+       "phase": "Co3C",
+       "route": "isotropic",
+       "quantity": "BHmax",
+       "doi": "10.1088/0022-3727/43/16/165003"
+      },
+      {
+       "id": "co3c_iso_huba2012_bhmax",
+       "phase": "Co3C",
+       "route": "isotropic",
+       "quantity": "BHmax",
+       "doi": "10.1063/1.3677816"
+      },
+      {
+       "id": "co3c_iso_sutradhar2019_texture",
+       "phase": "Co3C",
+       "route": "isotropic",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jmmm.2018.08.026"
+      },
+      {
+       "id": "efe2o3_fp_namai2012_mrms",
+       "phase": "epsilon-Fe2O3",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/ncomms2038"
+      },
+      {
+       "id": "efe2o3_iso_namai2012_mrms",
+       "phase": "epsilon-Fe2O3",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/ncomms2038"
+      },
+      {
+       "id": "efe2o3_fp_ohkoshi2015_mrms",
+       "phase": "epsilon-Fe2O3",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep14414"
+      },
+      {
+       "id": "efe2o3_fp_ohkoshi2015_texture",
+       "phase": "epsilon-Fe2O3",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/srep14414"
+      },
+      {
+       "id": "efe2o3_ep_gich2014_mrms",
+       "phase": "epsilon-Fe2O3",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1002/adma.201400990"
+      },
+      {
+       "id": "efe2o3_ep_gich2014_js",
+       "phase": "epsilon-Fe2O3",
+       "route": "EP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1002/adma.201400990"
+      },
+      {
+       "id": "efe2o3_iso_chan2018_br",
+       "phase": "epsilon-Fe2O3",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "bctfeco_ep_andersson2006_perp_mrms",
+       "phase": "bct-FeCo",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1103/physrevlett.96.037205"
+      },
+      {
+       "id": "fe5pb2_fp_mcguire2015_texture",
+       "phase": "Fe5PB2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.4934496"
+      },
+      {
+       "id": "fe5sib2_fp_mcguire2015_texture",
+       "phase": "Fe5SiB2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.4934496"
+      },
+      {
+       "id": "feco5pb2_fp_mcguire2015_texture",
+       "phase": "(Fe,Co)5PB2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.4934496"
+      },
+      {
+       "id": "fe5sib2_iso_hedlund2017_mrms",
+       "phase": "Fe5SiB2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1103/physrevb.96.094433"
+      },
+      {
+       "id": "fe3sn_fp_sales2014_texture",
+       "phase": "Fe3Sn",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/srep07024"
+      },
+      {
+       "id": "mn4n_ep_zhou2021_mrms",
+       "phase": "Mn4N",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/5.0032167"
+      }
+     ]
     }
    },
    "opened": false

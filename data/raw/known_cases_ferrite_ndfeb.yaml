@@ -1,0 +1,698 @@
+# Known case (visible): field-pressed sintered NdFeB (route FP), outcome-record schema.
+# Phase: Nd2Fe14B (commercial grades may contain Pr, Dy, Tb, Co, Cu, Ga; composition given where stated).
+# Compiled 2026-10-03 by the literature agent for topic ferrite_ndfeb (M-type hexaferrites; sintered Nd2Fe14B as reference).
+# Every record carries a verbatim quote from a fetched page/PDF; quotes were machine-checked against the saved text of the
+# source (scratch copies in .tmp/fn_work/src, not committed). OCR sources (scanned Philips Technical Review 1951/52 and 1954,
+# J-STAGE scans) are marked in `note`; OCR character errors were corrected to the printed text.
+# Conventions: unit conversions (G, kG, Wb/m2, erg/cm3, degC -> SI/K) are done by the compiler and stated in `note`;
+# datasheet ranges -> value = midpoint (or typical/nominal if given), uncertainty = half-range; values read from figures say
+# 'read from plot' in the locator. Datasheet/web records without a printed year omit `year` (accessed 2026-10-03).
+# Philips Technical Review articles have no DOI (doi: null, stated in note).
+
+- id: nd2fe14b_fp_br_sagawa1984
+  phase: Nd2Fe14B
+  route: FP
+  process: first sintered Nd-Fe-B magnets based on the new compound; typical specimen Nd15B8Fe77 (process details not given in the abstract)
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    density_g_cm3: 7.4
+    composition: Nd15B8Fe77 (at.%)
+  quantity: Br
+  value: 1.23
+  unit: T
+  measured_along: alignment direction (assumed; not stated in abstract)
+  measurement: not stated in abstract
+  n_samples: one 'typical specimen'
+  source:
+    doi: 10.1063/1.333572
+    title: New material for permanent magnets on a base of Nd and Fe (invited)
+    first_author: Sagawa, M.
+    year: 1984
+    url: https://api.crossref.org/works/10.1063/1.333572
+    evidence: abstract
+    locator: abstract
+  quote: 'Permanent magnet properties and physical properties of a typical specimen which has the composition Nd15B8Fe77 are as follows: Br =1.23 T, HcB =880 kA/m, HcI =960 kA/m, (BH)max =290 kJ/m3, temperature
+    coefficient of Br =−1260 ppm/K, density=7.4 Mg/m3,'
+  note: Alignment field and sintering temperature not given in the abstract.
+- id: nd2fe14b_fp_br_rodewald2002
+  phase: Nd2Fe14B
+  route: FP
+  process: sintered Nd-Fe-B by powder metallurgy; powder alignment in a constant field plus alternating field pulses (parallel/antiparallel to easy axis)
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    alignment: constant field + alternating field pulses
+  quantity: Br
+  value: 1.519
+  unit: T
+  measured_along: alignment direction
+  measurement: remanent polarization; method not stated in abstract
+  n_samples: best magnet reported
+  source:
+    doi: 10.1109/tmag.2002.803075
+    title: Top Nd-Fe-B magnets with greater than 56 MGOe energy density and 9.8 kOe coercivity
+    first_author: Rodewald, W.
+    year: 2002
+    url: https://api.openalex.org/works/doi:10.1109/tmag.2002.803075
+    evidence: abstract
+    locator: abstract
+  quote: Besides the composition of the alloy, the alignment of the powder particles is decisive for achieving high remanent polarizations. The alignment of the powder particles can be improved by applying
+    field pulses in addition to an alignment in a constant magnetic field. Alternating field pulses parallel and antiparallel to the easy axis proved to be more efficient than unidirectional field pulses.
+    By such a refined processing route sintered Nd-Fe-B magnets with a remanent polarization of 1.519 T, a coercivity H/sub cJ/ of 7.8 kA/cm (9.8 kOe), and a maximum energy density of 451 kJ/m/sup 3/ (56.7
+    MGOe) could be prepared.
+  note: Vacuumschmelze lab result. Composition, density and Js not in abstract.
+- id: nd2fe14b_fp_br_rodewald2003
+  phase: Nd2Fe14B
+  route: FP
+  process: optimized composition (B content) and refined powder-metallurgy route
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+  quantity: Br
+  value: 1.528
+  unit: T
+  measured_along: alignment direction
+  measurement: not stated in abstract
+  n_samples: best magnet reported
+  source:
+    doi: 10.1109/tmag.2003.815750
+    title: Topology of Nd-Fe-B magnets with a high energy density
+    first_author: Rodewald, W.
+    year: 2003
+    url: https://api.openalex.org/works/doi:10.1109/tmag.2003.815750
+    evidence: abstract
+    locator: abstract
+  quote: By optimizing the composition and refining the processing route sintered Nd-Fe-B magnets with a remanence of 1.528 T, a coercivity H/sub cJ/ of 840 kA/m (10.6 kOe) and a maximum energy density
+    of 454 kJ/m/sup 3/ (57 MGOe) could be prepared.
+  note: ''
+- id: nd2fe14b_fp_alpha_mag_kitai2014_dy0_017t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: &id001
+    field_T: 0.17
+    T_process_K: 1350
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    composition: Nd13.7B5.8Co1.0Fe(bal), Dy-free
+  quantity: texture_metric
+  value: 0.88
+  unit: A_reported
+  uncertainty: 0.01
+  measured_along: alignment direction
+  measurement: alpha = Br/Js from magnetic measurement (B-H tracer / pulsed B-H tracer to 10 T / VSM per experimental section)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: Fig. 4 (read from plot, filled 'Experimental data' symbols)
+  quote: Fig.4 Expected coercive force using EBSD data and the Gaussian distribution function. Experimental data in this figure was obtained by magnetic properties measurement. The calculated alignment
+    has good agreement with experimental data but the coercive force is different for each.
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Value read from plot by
+    compiler (x position of the experimental-data symbol); uncertainty is read-off estimate.'
+- id: nd2fe14b_fp_alpha_ebsd_kitai2014_dy0_017t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: *id001
+  quantity: texture_metric
+  value: 0.875
+  unit: A_reported
+  uncertainty: 0.01
+  measured_along: alignment direction
+  measurement: alpha computed from EBSD c-axis misalignment distribution (eq. 4)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: Fig. 4 (read from plot, open 'from EBSD data' symbols)
+  quote: Fig.4 Expected coercive force using EBSD data and the Gaussian distribution function. Experimental data in this figure was obtained by magnetic properties measurement. The calculated alignment
+    has good agreement with experimental data but the coercive force is different for each.
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Value read from plot by
+    compiler; uncertainty is read-off estimate.'
+- id: nd2fe14b_fp_pfmax_kitai2014_dy0_017t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: *id001
+  quantity: texture_metric
+  value: 9.8
+  unit: pole_figure_max_mrd
+  measured_along: (001) pole figure centred on alignment direction
+  measurement: EBSD pole figure maximum (multiples of random)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: 'Fig. 2 (value printed in figure: ''Max'')'
+  quote: Fig.2 Pole figure using electron back-scattering diffraction (EBSD) for magnets of different alignment at 0% Dy sample (Sample D) and 2.1 atomic % Dy sample (Sample E).
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Max values printed in
+    the figure panels: 0.17 T Dy0 9.8, 1.7 T Dy0 20.1, 0.17 T Dy2.1 9.7, 1.7 T Dy2.1 21.2.'
+- id: nd2fe14b_fp_alpha_mag_kitai2014_dy0_17t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: &id002
+    field_T: 1.7
+    T_process_K: 1350
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    composition: Nd13.7B5.8Co1.0Fe(bal), Dy-free
+  quantity: texture_metric
+  value: 0.95
+  unit: A_reported
+  uncertainty: 0.01
+  measured_along: alignment direction
+  measurement: alpha = Br/Js from magnetic measurement (B-H tracer / pulsed B-H tracer to 10 T / VSM per experimental section)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: Fig. 4 (read from plot, filled 'Experimental data' symbols)
+  quote: Fig.4 Expected coercive force using EBSD data and the Gaussian distribution function. Experimental data in this figure was obtained by magnetic properties measurement. The calculated alignment
+    has good agreement with experimental data but the coercive force is different for each.
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Value read from plot by
+    compiler (x position of the experimental-data symbol); uncertainty is read-off estimate.'
+- id: nd2fe14b_fp_alpha_ebsd_kitai2014_dy0_17t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: *id002
+  quantity: texture_metric
+  value: 0.946
+  unit: A_reported
+  uncertainty: 0.01
+  measured_along: alignment direction
+  measurement: alpha computed from EBSD c-axis misalignment distribution (eq. 4)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: Fig. 4 (read from plot, open 'from EBSD data' symbols)
+  quote: Fig.4 Expected coercive force using EBSD data and the Gaussian distribution function. Experimental data in this figure was obtained by magnetic properties measurement. The calculated alignment
+    has good agreement with experimental data but the coercive force is different for each.
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Value read from plot by
+    compiler; uncertainty is read-off estimate.'
+- id: nd2fe14b_fp_pfmax_kitai2014_dy0_17t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: *id002
+  quantity: texture_metric
+  value: 20.1
+  unit: pole_figure_max_mrd
+  measured_along: (001) pole figure centred on alignment direction
+  measurement: EBSD pole figure maximum (multiples of random)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: 'Fig. 2 (value printed in figure: ''Max'')'
+  quote: Fig.2 Pole figure using electron back-scattering diffraction (EBSD) for magnets of different alignment at 0% Dy sample (Sample D) and 2.1 atomic % Dy sample (Sample E).
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Max values printed in
+    the figure panels: 0.17 T Dy0 9.8, 1.7 T Dy0 20.1, 0.17 T Dy2.1 9.7, 1.7 T Dy2.1 21.2.'
+- id: nd2fe14b_fp_alpha_mag_kitai2014_dy21_017t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: &id003
+    field_T: 0.17
+    T_process_K: 1350
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    composition: Nd11.7Dy2.1B6.0Co1.0Fe(bal)
+  quantity: texture_metric
+  value: 0.9
+  unit: A_reported
+  uncertainty: 0.01
+  measured_along: alignment direction
+  measurement: alpha = Br/Js from magnetic measurement (B-H tracer / pulsed B-H tracer to 10 T / VSM per experimental section)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: Fig. 4 (read from plot, filled 'Experimental data' symbols)
+  quote: Fig.4 Expected coercive force using EBSD data and the Gaussian distribution function. Experimental data in this figure was obtained by magnetic properties measurement. The calculated alignment
+    has good agreement with experimental data but the coercive force is different for each.
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Value read from plot by
+    compiler (x position of the experimental-data symbol); uncertainty is read-off estimate.'
+- id: nd2fe14b_fp_alpha_ebsd_kitai2014_dy21_017t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: *id003
+  quantity: texture_metric
+  value: 0.88
+  unit: A_reported
+  uncertainty: 0.01
+  measured_along: alignment direction
+  measurement: alpha computed from EBSD c-axis misalignment distribution (eq. 4)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: Fig. 4 (read from plot, open 'from EBSD data' symbols)
+  quote: Fig.4 Expected coercive force using EBSD data and the Gaussian distribution function. Experimental data in this figure was obtained by magnetic properties measurement. The calculated alignment
+    has good agreement with experimental data but the coercive force is different for each.
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Value read from plot by
+    compiler; uncertainty is read-off estimate.'
+- id: nd2fe14b_fp_pfmax_kitai2014_dy21_017t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: *id003
+  quantity: texture_metric
+  value: 9.7
+  unit: pole_figure_max_mrd
+  measured_along: (001) pole figure centred on alignment direction
+  measurement: EBSD pole figure maximum (multiples of random)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: 'Fig. 2 (value printed in figure: ''Max'')'
+  quote: Fig.2 Pole figure using electron back-scattering diffraction (EBSD) for magnets of different alignment at 0% Dy sample (Sample D) and 2.1 atomic % Dy sample (Sample E).
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Max values printed in
+    the figure panels: 0.17 T Dy0 9.8, 1.7 T Dy0 20.1, 0.17 T Dy2.1 9.7, 1.7 T Dy2.1 21.2.'
+- id: nd2fe14b_fp_alpha_mag_kitai2014_dy21_17t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: &id004
+    field_T: 1.7
+    T_process_K: 1350
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    composition: Nd11.7Dy2.1B6.0Co1.0Fe(bal)
+  quantity: texture_metric
+  value: 0.95
+  unit: A_reported
+  uncertainty: 0.01
+  measured_along: alignment direction
+  measurement: alpha = Br/Js from magnetic measurement (B-H tracer / pulsed B-H tracer to 10 T / VSM per experimental section)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: Fig. 4 (read from plot, filled 'Experimental data' symbols)
+  quote: Fig.4 Expected coercive force using EBSD data and the Gaussian distribution function. Experimental data in this figure was obtained by magnetic properties measurement. The calculated alignment
+    has good agreement with experimental data but the coercive force is different for each.
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Value read from plot by
+    compiler (x position of the experimental-data symbol); uncertainty is read-off estimate.'
+- id: nd2fe14b_fp_alpha_ebsd_kitai2014_dy21_17t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: *id004
+  quantity: texture_metric
+  value: 0.95
+  unit: A_reported
+  uncertainty: 0.01
+  measured_along: alignment direction
+  measurement: alpha computed from EBSD c-axis misalignment distribution (eq. 4)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: Fig. 4 (read from plot, open 'from EBSD data' symbols)
+  quote: Fig.4 Expected coercive force using EBSD data and the Gaussian distribution function. Experimental data in this figure was obtained by magnetic properties measurement. The calculated alignment
+    has good agreement with experimental data but the coercive force is different for each.
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Value read from plot by
+    compiler; uncertainty is read-off estimate.'
+- id: nd2fe14b_fp_pfmax_kitai2014_dy21_17t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions: *id004
+  quantity: texture_metric
+  value: 21.2
+  unit: pole_figure_max_mrd
+  measured_along: (001) pole figure centred on alignment direction
+  measurement: EBSD pole figure maximum (multiples of random)
+  n_samples: 1
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: 'Fig. 2 (value printed in figure: ''Max'')'
+  quote: Fig.2 Pole figure using electron back-scattering diffraction (EBSD) for magnets of different alignment at 0% Dy sample (Sample D) and 2.1 atomic % Dy sample (Sample E).
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Max values printed in
+    the figure panels: 0.17 T Dy0 9.8, 1.7 T Dy0 20.1, 0.17 T Dy2.1 9.7, 1.7 T Dy2.1 21.2.'
+- id: nd2fe14b_fp_gauss_sigma_kitai2014_017t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions:
+    field_T: 0.17
+    T_process_K: 1350
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    composition: Dy-free and 2.1 at.% Dy (same distribution)
+  quantity: texture_metric
+  value: 44.7
+  unit: rocking_fwhm_deg
+  measured_along: c-axis misalignment from alignment direction
+  measurement: EBSD misalignment distribution fitted by Gaussian
+  n_samples: 2
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: Fig. 3 caption
+  quote: Fig.3 Data based on pole figure by EBSD and calculated alignment distribution using EBSD data. The alignment distributions are similar to a Gaussian distribution and the approximate Gaussian distribution
+    has σ= 19° for the 0.17 T alignment magnetic field and σ= 12° for the 1.7 T alignment magnetic field. The difference between magnets without Dy (Sample D) and with Dy (Sample E) is very small.
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Paper gives Gaussian sigma
+    = 19 deg; value here is FWHM = 2.3548*sigma (conversion by compiler); not an XRD rocking curve.'
+- id: nd2fe14b_fp_gauss_sigma_kitai2014_17t
+  phase: Nd2Fe14B
+  route: FP
+  process: strip-cast alloy pulverised to 3-5 um, aligned in 0.17 T or 1.7 T, pressed, sintered at 1350 K, annealed at 773 K (Japanese text p. 118, read from page image)
+  conditions:
+    field_T: 1.7
+    T_process_K: 1350
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    composition: Dy-free and 2.1 at.% Dy (same distribution)
+  quantity: texture_metric
+  value: 28.3
+  unit: rocking_fwhm_deg
+  measured_along: c-axis misalignment from alignment direction
+  measurement: EBSD misalignment distribution fitted by Gaussian
+  n_samples: 2
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/3/61_117/_pdf
+    evidence: full_text
+    locator: Fig. 3 caption
+  quote: Fig.3 Data based on pole figure by EBSD and calculated alignment distribution using EBSD data. The alignment distributions are similar to a Gaussian distribution and the approximate Gaussian distribution
+    has σ= 19° for the 0.17 T alignment magnetic field and σ= 12° for the 1.7 T alignment magnetic field. The difference between magnets without Dy (Sample D) and with Dy (Sample E) is very small.
+  note: 'Scanned Japanese paper; English captions OCR-transcribed (tesseract). alpha is defined in the paper (eq. 4) as alpha = Br/Js = (1/2) * integral P(theta) sin(2 theta) d theta, i.e. the mean cos
+    of the c-axis misalignment. Compositions (Table 1): Nd13.7B5.8Co1.0Fe(bal) and Nd11.7Dy2.1B6.0Co1.0Fe(bal); the paper labels the samples A/B in Table 1 and D/E in the figures. Paper gives Gaussian sigma
+    = 12 deg; value here is FWHM = 2.3548*sigma (conversion by compiler); not an XRD rocking curve.'
+- id: nd2fe14b_fp_br_arnold_n55
+  phase: Nd2Fe14B
+  route: FP
+  process: commercial sintered NdFeB grade N55
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    density_g_cm3: 7.6
+  quantity: Br
+  value: 1.49
+  unit: T
+  uncertainty: 0.03
+  measured_along: alignment direction
+  measurement: datasheet specification (min/nominal/max)
+  n_samples: grade/datasheet range
+  source:
+    doi: null
+    title: N55 Sintered Neodymium-Iron-Boron Magnets (datasheet)
+    first_author: Arnold Magnetic Technologies
+    url: https://www.arnoldmagnetics.com/wp-content/uploads/2017/11/N55-151021.pdf
+    evidence: datasheet
+    locator: Magnetic Properties table
+  quote: Characteristic Units min. nominal max. ... Gauss 14,600 14,900 15,200 ... Br, Residual Induction mT 1460 1490 1520 ... Density g/cm3 7.6
+  note: Datasheet values (no year printed on the accessed page; accessed 2026-10-03). Measurement method, sample count and demagnetisation correction not stated; datasheet values are grade specifications
+    (closed-circuit BH-tracer is customary but not stated). value = nominal; uncertainty = half of min-max range.
+- id: nd2fe14b_fp_br_arnold_n52
+  phase: Nd2Fe14B
+  route: FP
+  process: commercial sintered NdFeB grade N52
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+  quantity: Br
+  value: 1.45
+  unit: T
+  measured_along: alignment direction
+  measurement: datasheet typical value
+  n_samples: grade/datasheet typical
+  source:
+    doi: null
+    title: Neodymium Iron Boron Magnet Catalog
+    first_author: Arnold Magnetic Technologies
+    url: https://www.arnoldmagnetics.com/wp-content/uploads/2019/06/Arnold-Neo-Catalog.pdf
+    evidence: datasheet
+    locator: p. 1, Summary Product List, Basic Grades
+  quote: Properties Br HcB HcJ (BH)max Temp. Coef. Tw Grade** Typical Typical min min min min Typical Typical ... N52 1450 14500 836 10500 875 11000 406 51
+  note: 'Datasheet values (no year printed on the accessed page; accessed 2026-10-03). Measurement method, sample count and demagnetisation correction not stated; datasheet values are grade specifications
+    (closed-circuit BH-tracer is customary but not stated). Columns: Br typical (mT, gauss), HcB min, HcJ min, (BH)max typical.'
+- id: nd2fe14b_fp_br_shinetsu_n56f
+  phase: Nd2Fe14B
+  route: FP
+  process: commercial sintered NdFeB, perpendicular magnetic field press-type, grade N56-F
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    pressing: field perpendicular to pressing direction
+  quantity: Br
+  value: 1.48
+  unit: T
+  uncertainty: 0.03
+  measured_along: alignment direction
+  measurement: datasheet range
+  n_samples: grade/datasheet range
+  source:
+    doi: null
+    title: N Series Lineup (Nd-Fe-B), Shin-Etsu Rare Earth Magnets
+    first_author: Shin-Etsu Chemical Co., Ltd.
+    url: https://www.shinetsu-rare-earth-magnet.jp/e/products/data_nd.html
+    evidence: datasheet
+    locator: N Series Lineup table
+  quote: Perpendicular Magnetic Field Press-Type Remanence Coercivity Maximum Energy Product B r H cJ H cB (BH) max [T] [G] [kA/m] [Oe] [kA/m] [Oe] [kJ/m 3 ] [MGOe] N56-F 1.45～1.51
+  note: Datasheet values (no year printed on the accessed page; accessed 2026-10-03). Measurement method, sample count and demagnetisation correction not stated; datasheet values are grade specifications
+    (closed-circuit BH-tracer is customary but not stated). value = midpoint of 1.45-1.51 T; uncertainty = half-range. A GBD grade N56AS-HGF lists 1.46-1.52 T.
+- id: nd2fe14b_fp_br_shinetsu_n44ma
+  phase: Nd2Fe14B
+  route: FP
+  process: commercial sintered NdFeB, parallel magnetic field press-type, grade N44MA (highest Br of this type)
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    pressing: field parallel to pressing direction
+  quantity: Br
+  value: 1.325
+  unit: T
+  uncertainty: 0.035
+  measured_along: alignment direction
+  measurement: datasheet range
+  n_samples: grade/datasheet range
+  source:
+    doi: null
+    title: N Series Lineup (Nd-Fe-B), Shin-Etsu Rare Earth Magnets
+    first_author: Shin-Etsu Chemical Co., Ltd.
+    url: https://www.shinetsu-rare-earth-magnet.jp/e/products/data_nd.html
+    evidence: datasheet
+    locator: N Series Lineup table
+  quote: N44MA 1.29 — 1.36
+  note: 'Datasheet values (no year printed on the accessed page; accessed 2026-10-03). Measurement method, sample count and demagnetisation correction not stated; datasheet values are grade specifications
+    (closed-circuit BH-tracer is customary but not stated). Table section ''Parallel Magnetic Field Press-Type''. value = midpoint; uncertainty = half-range. Shin-Etsu process page: ''Given an equal grade
+    of magnet, the perpendicular press method will result in a higher performance magnet.'''
+- id: nd2fe14b_fp_br_vac_722hr
+  phase: Nd2Fe14B
+  route: FP
+  process: commercial sintered NdFeB VACODYM 722 HR (isostatically pressed after field alignment)
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    pressing: isostatic (HR)
+  quantity: Br
+  value: 1.47
+  unit: T
+  measured_along: alignment direction
+  measurement: datasheet typical (min 1.42 T)
+  n_samples: grade/datasheet typical
+  source:
+    doi: null
+    title: VACODYM VACOMAX Product Information (rare earth permanent magnets)
+    first_author: VACUUMSCHMELZE GmbH & Co. KG
+    url: https://vacuumschmelze.com/03_Documents/Brochures/Product%20Information%20VACODYM-VACOMAX%20en.pdf
+    evidence: datasheet
+    locator: p. 4 (process) and Table 1, p. 8
+  quote: Br typ. Br min. HcB typ HcB min. HcJ min. (BH)max typ. T T kA/m kOe kA/m kOe kA/m kOe kJ/m3 MGOe ... VACODYM 722 HR 1.47 1.42 915 11.5 835 10.5 875 11 415 53
+  note: Datasheet values (no year printed on the accessed page; accessed 2026-10-03). Measurement method, sample count and demagnetisation correction not stated; datasheet values are grade specifications
+    (closed-circuit BH-tracer is customary but not stated). Highest Br in the VAC brochure table.
+- id: nd2fe14b_fp_br_vac_745hr
+  phase: Nd2Fe14B
+  route: FP
+  process: 'commercial sintered NdFeB VACODYM 745 HR: same alloy, pressing mode = isostatic (HR)'
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    pressing: isostatic (HR)
+  quantity: Br
+  value: 1.44
+  unit: T
+  measured_along: alignment direction
+  measurement: datasheet typical (min 1.4 T)
+  n_samples: grade/datasheet typical
+  source:
+    doi: null
+    title: VACODYM VACOMAX Product Information (rare earth permanent magnets)
+    first_author: VACUUMSCHMELZE GmbH & Co. KG
+    url: https://vacuumschmelze.com/03_Documents/Brochures/Product%20Information%20VACODYM-VACOMAX%20en.pdf
+    evidence: datasheet
+    locator: p. 4 (process) and Table 1, p. 8
+  quote: In die-pressed designs, we differentiate between TP (Transverse-Pressed) and AP (Axial-Pressed). During TP-processes, the powder particles are aligned by strong magnetic fields perpendicular to
+    the direction of pressing, while they are aligned parallel to the direction of pressing for the AP process. Isostatically and transverse-field pressed parts have approximately 5-8 % higher remanence
+    values when compared to axial-field pressed magnets. ... VACODYM 745 HR 1.44 1.40 1115 14.0 1065 13.4 1115 14 400 50
+  note: Datasheet values (no year printed on the accessed page; accessed 2026-10-03). Measurement method, sample count and demagnetisation correction not stated; datasheet values are grade specifications
+    (closed-circuit BH-tracer is customary but not stated). Same alloy 745 in three pressing modes isolates the effect of compaction on alignment.
+- id: nd2fe14b_fp_br_vac_745tp
+  phase: Nd2Fe14B
+  route: FP
+  process: 'commercial sintered NdFeB VACODYM 745 TP: same alloy, pressing mode = transverse field die pressing (TP)'
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    pressing: transverse field die pressing (TP)
+  quantity: Br
+  value: 1.41
+  unit: T
+  measured_along: alignment direction
+  measurement: datasheet typical (min 1.37 T)
+  n_samples: grade/datasheet typical
+  source:
+    doi: null
+    title: VACODYM VACOMAX Product Information (rare earth permanent magnets)
+    first_author: VACUUMSCHMELZE GmbH & Co. KG
+    url: https://vacuumschmelze.com/03_Documents/Brochures/Product%20Information%20VACODYM-VACOMAX%20en.pdf
+    evidence: datasheet
+    locator: p. 4 (process) and Table 1, p. 8
+  quote: In die-pressed designs, we differentiate between TP (Transverse-Pressed) and AP (Axial-Pressed). During TP-processes, the powder particles are aligned by strong magnetic fields perpendicular to
+    the direction of pressing, while they are aligned parallel to the direction of pressing for the AP process. Isostatically and transverse-field pressed parts have approximately 5-8 % higher remanence
+    values when compared to axial-field pressed magnets. ... VACODYM 745 TP 1.41 1.37 1090 13.7 1035 13.0 1115 14 385 48
+  note: Datasheet values (no year printed on the accessed page; accessed 2026-10-03). Measurement method, sample count and demagnetisation correction not stated; datasheet values are grade specifications
+    (closed-circuit BH-tracer is customary but not stated). Same alloy 745 in three pressing modes isolates the effect of compaction on alignment.
+- id: nd2fe14b_fp_br_vac_745ap
+  phase: Nd2Fe14B
+  route: FP
+  process: 'commercial sintered NdFeB VACODYM 745 AP: same alloy, pressing mode = axial field die pressing (AP)'
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: alignment direction
+    density_rel: null
+    pressing: axial field die pressing (AP)
+  quantity: Br
+  value: 1.34
+  unit: T
+  measured_along: alignment direction
+  measurement: datasheet typical (min 1.31 T)
+  n_samples: grade/datasheet typical
+  source:
+    doi: null
+    title: VACODYM VACOMAX Product Information (rare earth permanent magnets)
+    first_author: VACUUMSCHMELZE GmbH & Co. KG
+    url: https://vacuumschmelze.com/03_Documents/Brochures/Product%20Information%20VACODYM-VACOMAX%20en.pdf
+    evidence: datasheet
+    locator: p. 4 (process) and Table 1, p. 8
+  quote: In die-pressed designs, we differentiate between TP (Transverse-Pressed) and AP (Axial-Pressed). During TP-processes, the powder particles are aligned by strong magnetic fields perpendicular to
+    the direction of pressing, while they are aligned parallel to the direction of pressing for the AP process. Isostatically and transverse-field pressed parts have approximately 5-8 % higher remanence
+    values when compared to axial-field pressed magnets. ... VACODYM 745 AP 1.34 1.31 1025 12.9 970 12.2 1115 14 340 43
+  note: Datasheet values (no year printed on the accessed page; accessed 2026-10-03). Measurement method, sample count and demagnetisation correction not stated; datasheet values are grade specifications
+    (closed-circuit BH-tracer is customary but not stated). Same alloy 745 in three pressing modes isolates the effect of compaction on alignment.

@@ -101,20 +101,37 @@ def abstracts(doi):
 
 
 def url_text(url):
+    """Text at a URL; PDFs are recognised by their content, not their URL."""
     if not url:
         return ''
-    if url.lower().endswith('.pdf') or 'pdf' in url.lower().split('/')[-1]:
-        data = _get(url, binary=True)
-        if not data or not data[:5] == b'%PDF-':
-            return strip_tags(data.decode('utf-8', 'ignore')) if data else ''
+    data = _get(url, binary=True)
+    if not data:
+        return ''
+    if data[:5] == b'%PDF-':
         key = hashlib.sha1(url.encode()).hexdigest()
         pdf = os.path.join(CACHE, key + '.bin')
         r = subprocess.run(['pdftotext', '-q', pdf, '-'], capture_output=True, text=True)
         return r.stdout
-    s = _get(url)
-    if s and s[:5] == '%PDF-':
-        return ''
-    return strip_tags(s or '')
+    return strip_tags(data.decode('utf-8', 'ignore'))
+
+
+_LOCAL = None
+
+
+def local_texts():
+    """Saved source texts from the collection work (.tmp/**/*.txt), normalised once."""
+    global _LOCAL
+    if _LOCAL is None:
+        _LOCAL = []
+        for f in glob.glob(os.path.join(ROOT, '.tmp', '**', '*.txt'), recursive=True):
+            try:
+                if os.path.getsize(f) > 30_000_000:
+                    continue
+                t = open(f, encoding='utf-8', errors='ignore').read()
+                _LOCAL.append((os.path.relpath(f, ROOT), t, norm(t)))
+            except OSError:
+                pass
+    return _LOCAL
 
 
 def find_quote(quote, text):
@@ -215,8 +232,16 @@ def verify_record(r):
         s = find_quote(quote, ut)
         if s > best:
             best, where, btext = s, 'url', ut
+    if best < 0.9:
+        q = norm(quote)
+        frags = [norm(f) for f in re.split(r'\.\.\.|…', quote or '') if len(norm(f)) >= 12]
+        for rel, raw, nt in local_texts():
+            if frags and all(f in nt for f in frags):
+                best, where, btext = 1.0, 'local:' + rel, raw
+                break
     out['quote_score'] = round(best, 3)
     out['quote_where'] = where
+    out['level'] = (None if best < 0.9 else ('local' if (where or '').startswith('local:') else 'online'))
     nf = numbers_found(quote, btext) if btext else None
     out['numbers_found'] = None if nf is None else round(nf, 3)
     out['value_in_quote'] = value_in_quote(r.get('value'), quote)

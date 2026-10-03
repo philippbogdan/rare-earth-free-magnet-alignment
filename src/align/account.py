@@ -40,8 +40,12 @@ def _verdict(A, acts=True):
     return 'full' if A >= 0.95 - 1e-9 else 'capped'
 
 
+RANK = {'full': 3, 'capped': 2, 'open': 1, 'none': 0}
+
+
 def _best_path_value(cells):
-    return max(cells, key=lambda c: c.A_max)
+    """Highest ceiling; on ties a settled verdict is preferred over an open one."""
+    return max(cells, key=lambda c: (round(c.A_max, 3), RANK.get(c.verdict, 0)))
 
 
 CANDIDATE_FIBRES = {'hexagonal': ([0, 0, 0, 1], [1, 0, -1, 0], [1, 1, -2, 0]),
@@ -131,6 +135,12 @@ def route_MO(ph):
                     + h.get('reason', ''), refs=h.get('refs', []))
     key = (h['shape'], h.get('easy') if h['shape'] != 'equiaxed' else None)
     A, ax = SHAPE_A[key]
+    if h.get('single_crystal') is None and A > ISO + 1e-3:
+        outs = {f"single-crystal {h['shape']}s": A, 'polycrystalline particles': ISO}
+        return Cell(ph['id'], 'MO', 'open', A, ax,
+                    chain=f"{h.get('reason', '')}; whether such particles are single crystals is unpublished",
+                    decides=[('single-crystal anisometric particles', outs, 'EBSD of crushed particles')],
+                    A_alt=outs, refs=h.get('refs', []))
     return Cell(ph['id'], 'MO', _verdict(A, A > ISO + 1e-3), A, ax,
                 chain=f"single-crystal {h['shape']}s with the easy axis {h.get('easy', '')} to the shape; "
                       'pressing/shear flow orients the shape', refs=h.get('refs', []))
@@ -141,6 +151,10 @@ def _texture_route(ph, route, key):
     out = []
     for p in ph['paths']:
         path = Path(ph, p)
+        if path.mode == 'random_nucleation':
+            out.append(Cell(ph['id'], route, 'none', ISO, '',
+                            chain='product nucleates without an orientation relationship: parent texture not inherited'))
+            continue
         src = (p.get('parent') or ph).get(key) if path.mode != 'direct' else ph.get(key)
         if src is None:
             continue
@@ -308,8 +322,12 @@ def _bias_route(ph, route, kind, source):
     cells = []
     for p in ph['paths']:
         path = Path(ph, p)
-        if path.mode == 'direct':
-            if source != 'random':
+        if path.mode == 'random_nucleation' and kind == 'stress':
+            cells.append(Cell(ph['id'], route, 'none', ISO, '',
+                              chain='nucleation without an orientation relationship: no coherent strain to bias'))
+            continue
+        if path.mode in ('direct', 'random_nucleation'):
+            if source != 'random' and path.mode == 'direct':
                 continue
             if kind == 'field':
                 mag, why = formation_magnetic(ph, path)
@@ -437,6 +455,13 @@ def route_FS(ph):
                            'anisotropy decides the axis), then transform with equal variant weights'),
                     decides=[('sign of dchi of the parent', out, 'texture of the parent solidified in a '
                               'field (quenched before transforming)')], A_alt=out)
+    if fs.get('primary') == 'unknown':
+        A_hard = 1.0 if ph['structure']['laue'] != 'm-3m' else ISO
+        outs = {'hard phase crystallises as free primary crystals': A_hard, 'it does not': ISO}
+        return Cell(ph['id'], 'FS', 'open', A_hard, '', chain=fs.get('reason', ''),
+                    decides=[('primary crystallisation of the hard phase from a melt (liquidus)', outs,
+                              'DTA/quench series of an off-stoichiometric melt; then solidify in >= 10 T and '
+                              'measure the pole figure')], A_alt=outs, refs=fs.get('refs', []))
     return Cell(ph['id'], 'FS', 'none', ISO, '',
                 chain=fs.get('reason', 'neither the hard phase nor its parent crystallises from a melt '
                                        'as free crystals'))
@@ -510,8 +535,46 @@ def _settle(c):
     return c
 
 
+def _hypotheses(ph):
+    """Expand formation paths whose orientation relationship is unpublished into two
+    hypotheses: random nucleation (nothing inherited) and the stated analogue OR."""
+    import copy
+    unk = [i for i, p in enumerate(ph['paths']) if p.get('OR') == 'unknown']
+    if not unk:
+        return None
+    a, b = copy.deepcopy(ph), copy.deepcopy(ph)
+    for i in unk:
+        a['paths'][i]['mode'] = 'random_nucleation'
+        b['paths'][i]['OR'] = b['paths'][i]['OR_analogue']
+        b['paths'][i]['mode'] = b['paths'][i].get('mode_analogue', 'OR')
+        if 'intermediate_analogue' in b['paths'][i]:
+            b['paths'][i]['intermediate'] = b['paths'][i]['intermediate_analogue']
+    return a, b, [ph['paths'][i] for i in unk]
+
+
 def evaluate(ph):
-    return [_settle(FUN[r](ph)) for r in ROUTES]
+    hyp = _hypotheses(ph)
+    if not hyp:
+        return [_settle(FUN[r](ph)) for r in ROUTES]
+    a, b, unk = hyp
+    out = []
+    lab_a = 'no orientation relationship (random nucleation)'
+    lab_b = 'orientation relationship as in ' + unk[0].get('OR_analogue_name', 'the analogue')
+    for r in ROUTES:
+        ca, cb = _settle(FUN[r](a)), _settle(FUN[r](b))
+        if abs(ca.A_max - cb.A_max) < 0.005 and ca.verdict == cb.verdict:
+            ca.chain += ' (same under either orientation relationship hypothesis)'
+            out.append(ca)
+            continue
+        outs = {lab_a: ca.A_max, lab_b: cb.A_max}
+        c = Cell(ph['id'], r, 'open', max(outs.values()), '',
+                 chain=f'orientation relationship of {unk[0]["parent"].get("name", "parent")} -> product '
+                       f'unpublished. If none: {ca.chain}. If as analogue: {cb.chain}',
+                 decides=[('orientation relationship of the transformation', outs,
+                           'EBSD/TEM of a partially transformed parent crystal')] + ca.decides + cb.decides,
+                 A_alt=outs)
+        out.append(_settle(c))
+    return out
 
 
 # ---------------------------------------------------------------- the single measurement

@@ -1,0 +1,1781 @@
+# Inputs for topic ferrite_ndfeb (see docs/METHOD.md, data/SCHEMA.md).
+# Phase names used: SrFe12O19 (SrM), BaFe12O19 (BaM), (Sr,La)(Fe,Co)12O19 (La-Co substituted SrM; La is a rare earth),
+#   (Ca,La)(Fe,Co)12O19 (Ca-La-Co M-type; contains La), Nd2Fe14B (reference phase of today's sintered magnets).
+# Records stated for 'M-type hexaferrites' in general are filed under SrFe12O19 (conditions say so).
+# Compiled 2026-10-03 by the literature agent for topic ferrite_ndfeb (M-type hexaferrites; sintered Nd2Fe14B as reference).
+# Every record carries a verbatim quote from a fetched page/PDF; quotes were machine-checked against the saved text of the
+# source (scratch copies in .tmp/fn_work/src, not committed). OCR sources (scanned Philips Technical Review 1951/52 and 1954,
+# J-STAGE scans) are marked in `note`; OCR character errors were corrected to the printed text.
+# Conventions: unit conversions (G, kG, Wb/m2, erg/cm3, degC -> SI/K) are done by the compiler and stated in `note`;
+# datasheet ranges -> value = midpoint (or typical/nominal if given), uncertainty = half-range; values read from figures say
+# 'read from plot' in the locator. Datasheet/web records without a printed year omit `year` (accessed 2026-10-03).
+# Philips Technical Review articles have no DOI (doi: null, stated in note).
+
+- id: srm_js_shirk1969
+  phase: SrFe12O19
+  quantity: Js
+  value: 0.478
+  unit: T
+  conditions: single crystal grown from Na2O flux; static magnetic measurement; room temperature
+  source:
+    doi: 10.1063/1.1657636
+    title: Temperature Dependence of Ms and K1 of BaFe12O19 and SrFe12O19 Single Crystals
+    first_author: Shirk, B. T.
+    year: 1969
+    url: https://api.crossref.org/works/10.1063/1.1657636
+    evidence: abstract
+    locator: abstract
+  quote: It was found that Ms of BaFe12O19 and SrFe12O19 are practically identical over the temperature range 77°K to the Curie point with a room-temperature value of 380 G.
+  note: Ms = 380 G (emu/cm3) at room temperature; Js = mu0*Ms = 4*pi*380 G = 4775 G = 0.478 T (unit conversion by compiler). Same value given for BaM and SrM.
+- id: bam_js_shirk1969
+  phase: BaFe12O19
+  quantity: Js
+  value: 0.478
+  unit: T
+  conditions: single crystal grown from Na2O flux; static magnetic measurement; room temperature
+  source:
+    doi: 10.1063/1.1657636
+    title: Temperature Dependence of Ms and K1 of BaFe12O19 and SrFe12O19 Single Crystals
+    first_author: Shirk, B. T.
+    year: 1969
+    url: https://api.crossref.org/works/10.1063/1.1657636
+    evidence: abstract
+    locator: abstract
+  quote: It was found that Ms of BaFe12O19 and SrFe12O19 are practically identical over the temperature range 77°K to the Curie point with a room-temperature value of 380 G.
+  note: Ms = 380 G (emu/cm3) at room temperature; Js = mu0*Ms = 4*pi*380 G = 4775 G = 0.478 T (unit conversion by compiler). Same value given for BaM and SrM.
+- id: srm_tc_shirk1969
+  phase: SrFe12O19
+  quantity: Tc
+  value: 750
+  unit: K
+  conditions: single crystal (Na2O flux)
+  source:
+    doi: 10.1063/1.1657636
+    title: Temperature Dependence of Ms and K1 of BaFe12O19 and SrFe12O19 Single Crystals
+    first_author: Shirk, B. T.
+    year: 1969
+    url: https://api.crossref.org/works/10.1063/1.1657636
+    evidence: abstract
+    locator: abstract
+  quote: Extrapolations to absolute zero reveal that the Bohr magneton numbers are approximately 19.3 and 19.7 per molecule, respectively, while the Curie points are 740° and 750°K, respectively, for BaFe12O19
+    and SrFe12O19.
+  note: ''
+- id: bam_tc_shirk1969
+  phase: BaFe12O19
+  quantity: Tc
+  value: 740
+  unit: K
+  conditions: single crystal (Na2O flux)
+  source:
+    doi: 10.1063/1.1657636
+    title: Temperature Dependence of Ms and K1 of BaFe12O19 and SrFe12O19 Single Crystals
+    first_author: Shirk, B. T.
+    year: 1969
+    url: https://api.crossref.org/works/10.1063/1.1657636
+    evidence: abstract
+    locator: abstract
+  quote: Extrapolations to absolute zero reveal that the Bohr magneton numbers are approximately 19.3 and 19.7 per molecule, respectively, while the Curie points are 740° and 750°K, respectively, for BaFe12O19
+    and SrFe12O19.
+  note: ''
+- id: srm_k1_shirk1969
+  phase: SrFe12O19
+  quantity: K1
+  value: 0.357
+  unit: MJ/m3
+  conditions: single crystal (Na2O flux); room temperature
+  source:
+    doi: 10.1063/1.1657636
+    title: Temperature Dependence of Ms and K1 of BaFe12O19 and SrFe12O19 Single Crystals
+    first_author: Shirk, B. T.
+    year: 1969
+    url: https://api.crossref.org/works/10.1063/1.1657636
+    evidence: abstract
+    locator: abstract
+  quote: K1 for SrFe12O19 is 10% higher than that of BaFe12O19 over the entire temperature range. Room temperature values are 3.25×106 and 3.57×106 erg/cc, respectively, for BaFe12O19 and SrFe12O19.
+  note: 3.57x10^6 erg/cm3 = 0.357 MJ/m3 (exponent shown flattened as '106' in the Crossref abstract).
+- id: bam_k1_shirk1969
+  phase: BaFe12O19
+  quantity: K1
+  value: 0.325
+  unit: MJ/m3
+  conditions: single crystal (Na2O flux); room temperature
+  source:
+    doi: 10.1063/1.1657636
+    title: Temperature Dependence of Ms and K1 of BaFe12O19 and SrFe12O19 Single Crystals
+    first_author: Shirk, B. T.
+    year: 1969
+    url: https://api.crossref.org/works/10.1063/1.1657636
+    evidence: abstract
+    locator: abstract
+  quote: K1 for SrFe12O19 is 10% higher than that of BaFe12O19 over the entire temperature range. Room temperature values are 3.25×106 and 3.57×106 erg/cc, respectively, for BaFe12O19 and SrFe12O19.
+  note: 3.25x10^6 erg/cm3 = 0.325 MJ/m3.
+- id: srm_ms_mass_granados2021
+  phase: SrFe12O19
+  quantity: Ms_mass
+  value: 74.5
+  unit: Am2/kg
+  conditions: room temperature; values compiled by the review from refs [33, 37-39]
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... SrFe12O19 74.5 0.48 473 0.35–0.36 1.47–1.59
+  note: ''
+- id: srm_js_granados2021
+  phase: SrFe12O19
+  quantity: Js
+  value: 0.48
+  unit: T
+  conditions: room temperature; 'Bs' column of the review table (saturation induction)
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... SrFe12O19 74.5 0.48 473 0.35–0.36 1.47–1.59
+  note: Review lists Bs = 0.48 T; taken as Js = mu0*Ms.
+- id: srm_tc_granados2021
+  phase: SrFe12O19
+  quantity: Tc
+  value: 746
+  unit: K
+  conditions: compiled by review
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... SrFe12O19 74.5 0.48 473 0.35–0.36 1.47–1.59
+  note: Review gives TC = 473 °C; converted to K by compiler.
+- id: srm_k1_granados2021
+  phase: SrFe12O19
+  quantity: K1
+  value: 0.355
+  unit: MJ/m3
+  uncertainty: 0.005
+  conditions: room temperature; compiled by review
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... SrFe12O19 74.5 0.48 473 0.35–0.36 1.47–1.59
+  note: Review gives a range; value = midpoint, uncertainty = half-range.
+- id: bam_ms_mass_granados2021
+  phase: BaFe12O19
+  quantity: Ms_mass
+  value: 72
+  unit: Am2/kg
+  conditions: room temperature; values compiled by the review from refs [33, 37-39]
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... BaFe12O19 72 0.48 467 0.32–0.33 1.34–1.35
+  note: ''
+- id: bam_js_granados2021
+  phase: BaFe12O19
+  quantity: Js
+  value: 0.48
+  unit: T
+  conditions: room temperature; 'Bs' column of the review table (saturation induction)
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... BaFe12O19 72 0.48 467 0.32–0.33 1.34–1.35
+  note: Review lists Bs = 0.48 T; taken as Js = mu0*Ms.
+- id: bam_tc_granados2021
+  phase: BaFe12O19
+  quantity: Tc
+  value: 740
+  unit: K
+  conditions: compiled by review
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... BaFe12O19 72 0.48 467 0.32–0.33 1.34–1.35
+  note: Review gives TC = 467 °C; converted to K by compiler.
+- id: bam_k1_granados2021
+  phase: BaFe12O19
+  quantity: K1
+  value: 0.325
+  unit: MJ/m3
+  uncertainty: 0.005
+  conditions: room temperature; compiled by review
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... BaFe12O19 72 0.48 467 0.32–0.33 1.34–1.35
+  note: Review gives a range; value = midpoint, uncertainty = half-range.
+- id: srm_lattice_granados2021
+  phase: SrFe12O19
+  quantity: lattice
+  value:
+    a: 5.884
+    c: 23.05
+  unit: Å
+  conditions: room temperature; compiled by review from refs [31, 32]
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 1, p. 2
+  quote: The crystal lattice has very anisotropic dimensions (a = 5.892 Å, c = 23.18 Å for BaM and a = 5.884 Å, c = 23.05 Å for SrM) and the crystallographic (theoretical) densities are 5.30 and 5.10 g
+    cm−3, respectively. [31, 32]
+  note: ''
+- id: bam_lattice_granados2021
+  phase: BaFe12O19
+  quantity: lattice
+  value:
+    a: 5.892
+    c: 23.18
+  unit: Å
+  conditions: room temperature; compiled by review from refs [31, 32]
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 1, p. 2
+  quote: The crystal lattice has very anisotropic dimensions (a = 5.892 Å, c = 23.18 Å for BaM and a = 5.884 Å, c = 23.05 Å for SrM) and the crystallographic (theoretical) densities are 5.30 and 5.10 g
+    cm−3, respectively. [31, 32]
+  note: ''
+- id: srm_density_granados2021
+  phase: SrFe12O19
+  quantity: density
+  value: 5.1
+  unit: g/cm3
+  conditions: crystallographic (theoretical, X-ray) density
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 1, p. 2
+  quote: The crystal lattice has very anisotropic dimensions (a = 5.892 Å, c = 23.18 Å for BaM and a = 5.884 Å, c = 23.05 Å for SrM) and the crystallographic (theoretical) densities are 5.30 and 5.10 g
+    cm−3, respectively. [31, 32]
+  note: ''
+- id: bam_density_granados2021
+  phase: BaFe12O19
+  quantity: density
+  value: 5.3
+  unit: g/cm3
+  conditions: crystallographic (theoretical, X-ray) density
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 1, p. 2
+  quote: The crystal lattice has very anisotropic dimensions (a = 5.892 Å, c = 23.18 Å for BaM and a = 5.884 Å, c = 23.05 Å for SrM) and the crystallographic (theoretical) densities are 5.30 and 5.10 g
+    cm−3, respectively. [31, 32]
+  note: ''
+- id: srm_structure_granados2021
+  phase: SrFe12O19
+  quantity: structure
+  value: hexagonal magnetoplumbite (M-type), space group P63/mmc, Z = 2
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 1, p. 2
+  quote: The M-type hexaferrites have general formula MFe12O19, M = Ba2+ or Sr2+, and are typically abbreviated as BaM and SrM. They crystallize in a hexagonal magnetoplumbite structure (P63/mmc) with two
+    formula units per unit cell.
+  note: ''
+- id: bam_structure_granados2021
+  phase: BaFe12O19
+  quantity: structure
+  value: hexagonal magnetoplumbite (M-type), space group P63/mmc, Z = 2
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 1, p. 2
+  quote: The M-type hexaferrites have general formula MFe12O19, M = Ba2+ or Sr2+, and are typically abbreviated as BaM and SrM. They crystallize in a hexagonal magnetoplumbite structure (P63/mmc) with two
+    formula units per unit cell.
+  note: ''
+- id: srm_easy_axis_granados2021
+  phase: SrFe12O19
+  quantity: easy_axis
+  value: c axis [001] (normal to the platelet plane)
+  unit: ''
+  conditions: M-type hexaferrites (BaM and SrM), room temperature
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 1, p. 2
+  quote: This shape favors a crystallographic alignment during compaction under a uniaxial pressure, during which the plate-like particles will have a tendency to spontaneously lay on their larger surface
+    side, just as a deck of cards would. This shape-induced orientation implicitly entails a magnetic alignment, as the easy magnetization axis lies parallel to the c-axis (perpendicular to the platelet
+    plane) [52, 58], vanishing the need for an external magnetic field applied prior or during compaction, which considerably simplifies manufacturing the magnetic piece.
+  note: ''
+- id: srm_growth_direction_granados2021
+  phase: SrFe12O19
+  quantity: growth_direction
+  value: 'platelet habit: fast growth in the basal plane, platelet plane perpendicular to c'
+  unit: ''
+  conditions: M-type hexaferrite particles (BaM and SrM) from powder synthesis
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 1, p. 2
+  quote: The last one is particularly interesting here, as the particles of the M-type hexaferrites have a tendency to acquire a platelike shape, with the platelet plane perpendicular to the c-axis (see
+    figure 2) [58, 59].
+  note: Habit (crystal shape) rather than solidification growth; relevant to shape-driven alignment.
+- id: srm_other_shape_alignment_granados2021
+  phase: SrFe12O19
+  quantity: other
+  value: shape-induced (mechanical) c-axis alignment of platelets under uniaxial compaction, no field needed
+  unit: ''
+  conditions: uniaxial compaction of plate-like M-type particles
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 1, p. 2
+  quote: This shape favors a crystallographic alignment during compaction under a uniaxial pressure, during which the plate-like particles will have a tendency to spontaneously lay on their larger surface
+    side, just as a deck of cards would. This shape-induced orientation implicitly entails a magnetic alignment, as the easy magnetization axis lies parallel to the c-axis (perpendicular to the platelet
+    plane) [52, 58], vanishing the need for an external magnetic field applied prior or during compaction, which considerably simplifies manufacturing the magnetic piece.
+  note: Mechanism input for routes without a field (pressing/SPS of platelets).
+- id: bam_easy_axis_went1952
+  phase: BaFe12O19
+  quantity: easy_axis
+  value: hexagonal c axis
+  unit: ''
+  conditions: single crystals of BaFe12O19 (small crystals) and BaFe18O27; room temperature
+  source:
+    doi: null
+    title: Ferroxdure, a class of new permanent magnet materials
+    first_author: Went, J. J.
+    year: 1952
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1951.pdf
+    evidence: full_text
+    locator: Part II, 'The crystal anisotropy', p. 197
+  quote: For both hexagonal oxides mentioned above, the crystal anisotropy was measured on single crystals. It was found in both cases that the hexagonal axis is the direction of easy magnetization.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text.
+- id: bam_growth_direction_went1952
+  phase: BaFe12O19
+  quantity: growth_direction
+  value: basal plane well developed (platelets, c normal to plate)
+  unit: ''
+  conditions: small BaFe12O19 crystals from polycrystalline material
+  source:
+    doi: null
+    title: Ferroxdure, a class of new permanent magnet materials
+    first_author: Went, J. J.
+    year: 1952
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1951.pdf
+    evidence: full_text
+    locator: Part II, p. 198
+  quote: As the basal plane is well developed for these oxides, small crystals obtained from polycrystalline material could easily be fixed on a glass plate in such a way that the hexagonal axes were perpendicular
+    to the plate, as was confirmed by X-ray diffraction.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text.
+- id: bam_other_single_domain_went1952
+  phase: BaFe12O19
+  quantity: other
+  value: 'critical diameter for domain-wall formation in isolated spheres: 1.3 micron'
+  unit: µm
+  conditions: calculated, room temperature (single-domain size)
+  source:
+    doi: null
+    title: Ferroxdure, a class of new permanent magnet materials
+    first_author: Went, J. J.
+    year: 1952
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1951.pdf
+    evidence: full_text
+    locator: Part II, Table II, p. 199
+  quote: Table II. The critical diameter d0 for wall formation in isolated spheres and the turn-over field strength 2K/Js ... BaFe12O19 1.3 1.66 [16600]
+  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected
+    to the printed text. Columns: d0 (microns), mu0*2K/Js (Wb/m2) [oersted].'
+- id: bam_density_went1952
+  phase: BaFe12O19
+  quantity: density
+  value: 5.3
+  unit: g/cm3
+  conditions: X-ray density
+  source:
+    doi: null
+    title: Ferroxdure, a class of new permanent magnet materials
+    first_author: Went, J. J.
+    year: 1952
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1951.pdf
+    evidence: full_text
+    locator: Part II, p. 201
+  quote: The X-ray density of the material is 5300 kg/m3 [5.3 g/cm3] and the highest induction would be obtained with material having this maximum density.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text.
+- id: bam_tc_went1952
+  phase: BaFe12O19
+  quantity: Tc
+  value: 723
+  unit: K
+  conditions: Ferroxdure (essential phase BaFe12O19), sintered ceramic
+  source:
+    doi: null
+    title: Ferroxdure, a class of new permanent magnet materials
+    first_author: Went, J. J.
+    year: 1952
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1951.pdf
+    evidence: full_text
+    locator: Table IV, p. 203
+  quote: Table IV. Some approximate data on Ferroxdure at room temperature. The composition of the essential phase is BaFe12O19. ... Curie temperature 450 °C
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text. 450 °C converted to 723 K by compiler.
+- id: bam_js_stuijts1954
+  phase: BaFe12O19
+  quantity: Js
+  value: 0.475
+  unit: T
+  conditions: BaFe12O19, room temperature
+  source:
+    doi: null
+    title: Ferroxdure II and III, anisotropic permanent magnet materials
+    first_author: Stuijts, A. L.
+    year: 1954
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
+    evidence: full_text
+    locator: p. 141
+  quote: Again, at room temperature the value Js for this compound is 0.475 Wb/m2 [4πJs = 4750 gauss], whereas the corresponding value for iron is 2.15 Wb/m2 [21500 gauss].
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text. 1 Wb/m2 = 1 T.
+- id: bam_k1_stuijts1954
+  phase: BaFe12O19
+  quantity: K1
+  value: 0.31
+  unit: MJ/m3
+  conditions: Ferroxdure (BaFe12O19), room temperature
+  source:
+    doi: null
+    title: Ferroxdure II and III, anisotropic permanent magnet materials
+    first_author: Stuijts, A. L.
+    year: 1954
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
+    evidence: full_text
+    locator: p. 142
+  quote: For Ferroxdure at room temperature, K = 3.1 x 105 J/m3 [3.1 x 106 erg/cm3] and Js = 0.475 Wb/m2 [4πJs = 4750 gauss]
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text. 3.1x10^5 J/m3 = 0.31 MJ/m3.
+- id: bam_other_single_domain_stuijts1954
+  phase: BaFe12O19
+  quantity: other
+  value: critical (single-domain) particle diameter about 1 micron
+  unit: µm
+  conditions: Ferroxdure (BaFe12O19), room temperature
+  source:
+    doi: null
+    title: Ferroxdure II and III, anisotropic permanent magnet materials
+    first_author: Stuijts, A. L.
+    year: 1954
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
+    evidence: full_text
+    locator: p. 142
+  quote: Now, no stable Bloch walls can be formed in particles of diameter less than a certain critical value. In the case here considered, the critical diameter is about 1µ, which, again by reason of the
+    distinct crystal anisotropy and relatively low saturation magnetization of the material, is considerably larger than the critical diameter for iron and cobalt crystals.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text.
+- id: bam_growth_direction_stuijts1954
+  phase: BaFe12O19
+  quantity: growth_direction
+  value: very strong growth along the basal plane, slight growth along c (platelets)
+  unit: ''
+  conditions: Ferroxdure (BaFe12O19) single crystals
+  source:
+    doi: null
+    title: Ferroxdure II and III, anisotropic permanent magnet materials
+    first_author: Stuijts, A. L.
+    year: 1954
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
+    evidence: full_text
+    locator: p. 143
+  quote: These crystals exhibit very strong growth along the basal plane, but relatively slight growth in the hexagonal direction coinciding with the preferred direction of magnetization.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text.
+- id: bam_deformation_stuijts1954
+  phase: BaFe12O19
+  quantity: deformation
+  value: hot rolling of powder in a steel tube gives easy axis normal to rolling plane; high-pressure compaction gives slight anisotropy
+  unit: ''
+  conditions: Ferroxdure (BaFe12O19) powder; qualitative, no texture values given
+  source:
+    doi: null
+    title: Ferroxdure II and III, anisotropic permanent magnet materials
+    first_author: Stuijts, A. L.
+    year: 1954
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
+    evidence: full_text
+    locator: p. 143
+  quote: By packing the powder in a steel tube, welding the ends of this tube and passing it through rolls at a high temperature, a preferred direction of magnetization at right-angles to the plane of rolling
+    is obtained. Similarly, it is possible to produce a small amount of anisotropy merely by compressing the Ferroxdure powder under high pressure.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text. Mechanism (platelet rotation/flattening vs. grain growth) not stated.
+- id: bam_single_variant_particles_stuijts1954
+  phase: BaFe12O19
+  quantity: single_variant_particles
+  value: 'yes: sintered Ferroxdure ground until no multi-crystal aggregates remain (single-crystal particles)'
+  unit: ''
+  conditions: feed powder for field alignment
+  source:
+    doi: null
+    title: Ferroxdure II and III, anisotropic permanent magnet materials
+    first_author: Stuijts, A. L.
+    year: 1954
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
+    evidence: full_text
+    locator: p. 144
+  quote: 'Firstly, the particles subjected to the field treatment must be magnetic: the basic material is isotropic Ferroxdure. Secondly, the basic material must consist of separate particles, each having
+    only one crystal orientation; this condition can be fulfilled by grinding the sintered material until it contains no aggregates comprising more than one crystal.'
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text.
+- id: bam_other_fp_packing_stuijts1954
+  phase: BaFe12O19
+  quantity: other
+  value: free rotation of particles in the field is hindered by platelet flatness; avoid close packing during alignment
+  unit: ''
+  conditions: field alignment of powder before pressing
+  source:
+    doi: null
+    title: Ferroxdure II and III, anisotropic permanent magnet materials
+    first_author: Stuijts, A. L.
+    year: 1954
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
+    evidence: full_text
+    locator: p. 144
+  quote: A magnetic particle introduced into a magnetic field will turn to the particular direction most favourable from a magnetic point of view, if able to overcome the local forces opposing this orientation.
+    To procure optimum efficiency, then, it is necessary to minimize the tendency of one particle to impede the orientation of another. Since the flatness of Ferroxdure crystals is unfavourable in this
+    respect, too close a packing of the powder subjected to the magnetic field treatment has to be avoided.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text.
+- id: bam_other_fp_pressing_stuijts1954
+  phase: BaFe12O19
+  quantity: other
+  value: pressing in the field stabilises alignment without seriously disturbing it; aqueous sludge; force/field directions immaterial
+  unit: ''
+  conditions: wet pressing in a magnetic field
+  source:
+    doi: null
+    title: Ferroxdure II and III, anisotropic permanent magnet materials
+    first_author: Stuijts, A. L.
+    year: 1954
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
+    evidence: full_text
+    locator: p. 144
+  quote: Experience has shown that pressing is an excellent method of stabilizing the particles, provided that it takes place in a magnetic field; although the forces exerted during this process far exceed
+    the aligning force of the magnetic field, they do not seriously disturb the texture of the material. ... The powder is press-formed as an aqueous sludge. ... Experience has shown that the relative directions
+    of the compressing force and the magnetic field are immaterial.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text.
+- id: bam_other_sinter_above_tc_stuijts1954
+  phase: BaFe12O19
+  quantity: other
+  value: sintering of field-pressed compacts takes place well above Tc (paramagnetic); texture must survive it
+  unit: ''
+  conditions: anisotropic Ferroxdure processing
+  source:
+    doi: null
+    title: Ferroxdure II and III, anisotropic permanent magnet materials
+    first_author: Stuijts, A. L.
+    year: 1954
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
+    evidence: full_text
+    locator: p. 144
+  quote: Finally, the high temperature employed in the sintering process, which is well above the Curie point, must not spoil the magnetic texture of the material.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text.
+- id: bam_other_sinter_texture_stuijts1954
+  phase: BaFe12O19
+  quantity: other
+  value: 'sintering preserves and enhances field-induced texture: misaligned grains eliminated by grain growth of aligned matrix'
+  unit: ''
+  conditions: field-pressed BaM compacts, sintering
+  source:
+    doi: null
+    title: Ferroxdure II and III, anisotropic permanent magnet materials
+    first_author: Stuijts, A. L.
+    year: 1954
+    url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
+    evidence: full_text
+    locator: pp. 144-146
+  quote: It is also necessary that the texture be preserved during sintering. However, the notable feature of this process is that it not only preserves, but actually enhances, the texture. ... However,
+    experience has shown that the most significant improvement of the texture takes place when the density of the material is already about 90% of that of an ideal single crystal ... Given a matrix of identically,
+    or almost identically, oriented crystals surrounding one crystal differently aligned, this odd crystal will usually be eliminated, whereas the boundaries between the similarly aligned crystals will
+    be preserved. Again, it is found that the odd crystal can grow only if it is large in relation to the crystals of the matrix.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (text layer re-OCRed with tesseract at 300 dpi); obvious OCR character errors (e.g. subscripts, Greek letters) corrected to
+    the printed text. Remanence values vs sintering temperature (Table I) are outcomes and are in the sealed file.
+- id: bam_other_sinter_texture_stablein1966
+  phase: BaFe12O19
+  quantity: other
+  value: fibre texture <c> after field orientation; sintering grows large well-oriented crystallites at expense of small misoriented ones; remanence follows from texture assuming moments relax to nearest
+    c axis (non-interacting)
+  unit: ''
+  conditions: oriented barium ferrite specimens sintered 1100-1350 °C
+  source:
+    doi: 10.1109/tmag.1966.1065942
+    title: Changes in crystal texture of barium ferrite upon sintering
+    first_author: Stablein, H.
+    year: 1966
+    url: https://api.openalex.org/works/doi:10.1109/tmag.1966.1065942
+    evidence: abstract
+    locator: abstract
+  quote: Upon sintering, the large, better oriented crystallites grow, at the expense of the smaller ones whose orientation is not as good. The changes this involves in the crystal texture were determined
+    quantitatively. The crystallites are arranged in the form of a simple, normal fibre-texture, with the c axis as the fibre axis and with the lattice in random azimuthal position around the c axis. ...
+    From the texture, the remanence and its angular dependence can be calculated on the assumption that, upon de-energizing of the saturating field, the vectors of magnetization in the individual crystallites
+    swing back into the nearest c axis and there is no interaction between neighboring crystallites. Densely sintered specimens showed good agreement between theory and experiment.
+  note: OpenAlex abstract prints 'thecaxis' (italic c lost spacing). Texture values (pole densities) are outcomes, in the sealed file.
+- id: srm_other_sintering_T_granados2021
+  phase: SrFe12O19
+  quantity: other
+  value: 'conventional sintering temperature range of hexaferrites: 1100-1350 °C'
+  unit: K
+  conditions: M-type hexaferrites (BaM, SrM); conventional ceramic sintering
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 2, p. 4
+  quote: Hexaferrites are generally sintered between 1100 °C and 1350 °C [30], and these high temperatures trigger an exaggerated grain growth which translates into a dramatic loss in coercivity [62].
+  note: 1373-1623 K; far above Tc (~740-750 K).
+- id: srm_other_single_domain_granados2021
+  phase: SrFe12O19
+  quantity: other
+  value: single-domain size limit about 1 micron
+  unit: µm
+  conditions: ferrite particles/grains (general statement)
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 2, p. 4
+  quote: In most ferrites, the particles/grains are in a single domain state when their size does not exceed one micron [33].
+  note: ''
+- id: bam_other_fp_process_granados2021
+  phase: BaFe12O19
+  quantity: other
+  value: 'industrial anisotropic route: non-aggregated powder pressed as aqueous slurry in a field, dried, sintered (Philips, 1950s)'
+  unit: ''
+  conditions: wet pressing in magnetic field
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Section 3.1, p. 5
+  quote: To prepare an anisotropic ferrite magnet, they used randomly oriented non-aggregated Ba-ferrite powder, which was pressed-formed as an aqueous sludge under an applied external magnetic field. The
+    excess water was then removed by drying followed by the sintering of the pre-forms. This process developed in Philips Research Laboratories in 1950s is, with some modifications, still in use for the
+    preparation of commercial sintered ferrite magnets.
+  note: ''
+- id: srm_t_formation_iida1999
+  phase: SrFe12O19
+  quantity: T_formation
+  value: 1473
+  unit: K
+  conditions: calcination of SrCO3/La2O3/Co3O4/Fe2O3 mixtures, Sr1-xLaxCoxFe12-xO19 (x = 0 is SrFe12O19), 3 h in air
+  source:
+    doi: 10.3379/jmsjmag.23.1093
+    title: 'Hgh-Performance Ferrite Magnets: M-Type Sr-Ferrite Containing Lanthanum and Cobalt.'
+    first_author: Iida, K.
+    year: 1999
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/23/4_2/23_4_2_1093/_pdf
+    evidence: full_text
+    locator: Sect. 2 Experimental, p. 1093
+  quote: Mixtures of these raw materials were attrition-milled in water for 2hours, dried, granulated, and then calcined at 1200°C for 3hours in air.
+  note: J-STAGE PDF is a scan without text layer; quote transcribed by OCR (tesseract), OCR character errors corrected. Single M phase after calcination for x = 0-0.2 (Table 1). Formation temperature far
+    above Tc (paramagnetic formation).
+- id: srm_other_fp_wetpress_iida1999
+  phase: SrFe12O19
+  quantity: other
+  value: wet pressing of submicron slurry (xylene + oleic acid surfactant) in ~10 kOe (~1 T) field
+  unit: ''
+  conditions: calcined, milled (Sr,La)(Fe,Co)12O19 powder with SiO2/CaCO3 additives
+  source:
+    doi: 10.3379/jmsjmag.23.1093
+    title: 'Hgh-Performance Ferrite Magnets: M-Type Sr-Ferrite Containing Lanthanum and Cobalt.'
+    first_author: Iida, K.
+    year: 1999
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/23/4_2/23_4_2_1093/_pdf
+    evidence: full_text
+    locator: Sect. 2, p. 1093
+  quote: After adjusting the slurry content, the slurry was wet-pressed into pellets of 30φ X 15mmh under a magnetic field of approximately 10 kOe. This wet-process using an organic solvent and surfactant
+    together with a magnetic field is very effective for achieving high orientation for submicron-sized particles
+  note: J-STAGE PDF is a scan without text layer; quote transcribed by OCR (tesseract), OCR character errors corrected.
+- id: srm_other_sintering_T_iida1999
+  phase: SrFe12O19
+  quantity: other
+  value: sintering 1180-1240 °C, 1 h, air
+  unit: K
+  conditions: field-wet-pressed (Sr,La)(Fe,Co)12O19 pellets
+  source:
+    doi: 10.3379/jmsjmag.23.1093
+    title: 'Hgh-Performance Ferrite Magnets: M-Type Sr-Ferrite Containing Lanthanum and Cobalt.'
+    first_author: Iida, K.
+    year: 1999
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/23/4_2/23_4_2_1093/_pdf
+    evidence: full_text
+    locator: Sect. 2, p. 1093
+  quote: Finally, the pressed pellets were sintered at 1180~1240°C for 1hour in air.
+  note: J-STAGE PDF is a scan without text layer; quote transcribed by OCR (tesseract), OCR character errors corrected. 1453-1513 K.
+- id: srm_other_single_domain_iida1999
+  phase: SrFe12O19
+  quantity: other
+  value: critical single-domain diameter 0.97 micron (x = 0)
+  unit: µm
+  conditions: calculated for SrFe12O19 (x = 0)
+  source:
+    doi: 10.3379/jmsjmag.23.1093
+    title: 'Hgh-Performance Ferrite Magnets: M-Type Sr-Ferrite Containing Lanthanum and Cobalt.'
+    first_author: Iida, K.
+    year: 1999
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/23/4_2/23_4_2_1093/_pdf
+    evidence: full_text
+    locator: Sect. 3, p. 1094
+  quote: The critical diameters of the single domain state were calculated as around 0.97µm for x = 0 and 1.03µm for x = 0.3, respectively.
+  note: J-STAGE PDF is a scan without text layer; quote transcribed by OCR (tesseract), OCR character errors corrected.
+- id: laco_other_single_domain_iida1999
+  phase: (Sr,La)(Fe,Co)12O19
+  quantity: other
+  value: critical single-domain diameter 1.03 micron (x = 0.3)
+  unit: µm
+  conditions: calculated for Sr0.7La0.3Co0.3Fe11.7O19
+  source:
+    doi: 10.3379/jmsjmag.23.1093
+    title: 'Hgh-Performance Ferrite Magnets: M-Type Sr-Ferrite Containing Lanthanum and Cobalt.'
+    first_author: Iida, K.
+    year: 1999
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/23/4_2/23_4_2_1093/_pdf
+    evidence: full_text
+    locator: Sect. 3, p. 1094
+  quote: The critical diameters of the single domain state were calculated as around 0.97µm for x = 0 and 1.03µm for x = 0.3, respectively.
+  note: 'J-STAGE PDF is a scan without text layer; quote transcribed by OCR (tesseract), OCR character errors corrected. La is a rare earth: La-Co grades are not rare-earth-free.'
+- id: srm_single_variant_particles_iida1999
+  phase: SrFe12O19
+  quantity: single_variant_particles
+  value: calcined primary particles ~0.5 micron
+  unit: µm
+  conditions: Sr1-xLaxCoxFe12-xO19 calcined 1200 °C, x = 0-1.0
+  source:
+    doi: 10.3379/jmsjmag.23.1093
+    title: 'Hgh-Performance Ferrite Magnets: M-Type Sr-Ferrite Containing Lanthanum and Cobalt.'
+    first_author: Iida, K.
+    year: 1999
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/23/4_2/23_4_2_1093/_pdf
+    evidence: full_text
+    locator: Sect. 3, p. 1093
+  quote: The primary particle size of the calcined granules was estimated at around 0.5 µm on average by SEM observation in the compositional range 0 to 1.0.
+  note: J-STAGE PDF is a scan without text layer; quote transcribed by OCR (tesseract), OCR character errors corrected. Whether each primary particle is a single crystal is not stated.
+- id: laco_k1_nishio1999
+  phase: (Sr,La)(Fe,Co)12O19
+  quantity: K1
+  value: 0.42
+  unit: MJ/m3
+  conditions: Sr0.7La0.3Fe11.7Co0.3O19, 298 K, torque magnetometry (extrapolated)
+  source:
+    doi: 10.3379/jmsjmag.23.1097
+    title: Magnetocrystalline Anisotropy of M-Type Sr-Ferrite Containing Lanthanum and Cobalt.
+    first_author: Nishio, H.
+    year: 1999
+    url: https://api.openalex.org/works/doi:10.3379/jmsjmag.23.1097
+    evidence: abstract
+    locator: abstract
+  quote: The K1 value was 4.2 × 106 erg/cm3 at 298 K, which was determined by extrapolation to the high field of the coefficient of the sin(2 φ) term calculated by Fourier analysis of unsaturated torque
+    curves. This value was 15% larger than that of conventional Sr-ferrite (SrFe12O19) in the temperature range from 77 to 373 K.
+  note: 4.2x10^6 erg/cm3 = 0.42 MJ/m3. La is a rare earth.
+- id: srm_formation_path_vogel1979
+  phase: SrFe12O19
+  quantity: formation_path
+  value: solid-state reaction SrCO3 + Fe2O3 -> SrFeO3-x (only intermediate) -> + Fe2O3 -> SrFe12O19 (incoherent, reaction-controlled; no parent OR)
+  unit: ''
+  conditions: ceramic (calcination) route
+  source:
+    doi: 10.1051/jphyscol:1979298
+    title: MÖSSBAUER SPECTROSCOPY OF STRONTIUM FERRITES RELATED TO PERMANENT MAGNET MATERIALS
+    first_author: Vogel, R.
+    year: 1979
+    url: https://api.openalex.org/works/doi:10.1051/jphyscol:1979298
+    evidence: abstract
+    locator: abstract
+  quote: In the synthesis of SrFe12O19 from SrCO3 and Fe2O3, SrFeO3-x is formed as the only intermediate phase, which reacts subsequently with Fe2O3 to form SrFe12O19.
+  note: Temperature not given in the abstract (see T_formation records).
+- id: bam_formation_path_bye1971
+  phase: BaFe12O19
+  quantity: formation_path
+  value: solid-state reaction BaCO3 + Fe2O3 -> BaFe2O4 (monoferrite) -> BaFe12O19
+  unit: ''
+  conditions: powder reaction in air; pseudobinary BaO-Fe2O3 examined at 1000 °C
+  source:
+    doi: 10.1002/jctb.5020211104
+    title: 'The synthesis of barium hexaferrite from iron oxide and barium carbonate: 1. General features of the reaction'
+    first_author: Bye, G. C.
+    year: 1971
+    url: https://api.crossref.org/works/10.1002/jctb.5020211104
+    evidence: abstract
+    locator: abstract
+  quote: The only kinetically important intermediate found was the monoferrite and its rate of formation could be correlated with the rate of decarbonation.
+  note: ''
+- id: srm_t_stab_goto1971
+  phase: SrFe12O19
+  quantity: T_stab
+  value: 1663
+  unit: K
+  uncertainty: 10
+  conditions: in air; incongruent melting (equilibrium phase diagram)
+  source:
+    doi: 10.2497/jjspm.17.193
+    title: Phase Diagram of The SrO-Fe2O3 System in It's Fe2O3-Rich Region and The Growth of SrO⋅6Fe2O3 Single Crystal in Composition-Deviated Melts
+    first_author: Goto, Yasumasa
+    year: 1971
+    url: https://api.openalex.org/works/doi:10.2497/jjspm.17.193
+    evidence: abstract
+    locator: English abstract (paper in Japanese)
+  quote: SrO⋅6Fe2O3 melts also incongruently at 1390°±10°C to form SrFe18O27 and liquid.
+  note: 1390 ± 10 °C converted to K. Upper limit for sintering/consolidation of SrM.
+- id: bam_t_stab_goto1960
+  phase: BaFe12O19
+  quantity: T_stab
+  value: 1643
+  unit: K
+  conditions: BaO-Fe2O3 system under 1 atm O2 where liquid present; eutectic with BaFe2O4 (Ba-rich side)
+  source:
+    doi: 10.2497/jjspm.7.35
+    title: On the Phase Diagram of the Condensed System BaO-Fe2O3
+    first_author: Goto, Yasumasa
+    year: 1960
+    url: https://api.openalex.org/works/doi:10.2497/jjspm.7.35
+    evidence: abstract
+    locator: English abstract
+  quote: The two binary eutectic reactions, Liquid ?? BaO.6Fe2O3+BaO⋅Fe2O3 at 1370°C and Liquid ?? BaO⋅Fe2O3+2BaO⋅Fe2O3 at 1330°C ware observed at the composition of 60.0 mole% and 41.2 mole% Fe2O3 respectively.
+  note: '''??'' is a garbled reaction-arrow symbol in the source abstract. 1370 °C is the first liquid in Ba-rich BaM mixtures, not the melting point of stoichiometric BaM (not given in the abstract).'
+- id: bam_lattice_goto1960
+  phase: BaFe12O19
+  quantity: lattice
+  value:
+    a: 5.877
+    c: 23.02
+  unit: Å
+  conditions: BaO·6Fe2O3, room temperature
+  source:
+    doi: 10.2497/jjspm.7.35
+    title: On the Phase Diagram of the Condensed System BaO-Fe2O3
+    first_author: Goto, Yasumasa
+    year: 1960
+    url: https://api.openalex.org/works/doi:10.2497/jjspm.7.35
+    evidence: abstract
+    locator: English abstract
+  quote: The compound BaO⋅6Fe2O3 is a hexagonal lattice, a =5.877, c=23.02Å
+  note: ''
+- id: bam_formation_path_tgg_hovis2001
+  phase: BaFe12O19
+  quantity: formation_path
+  value: 'reactive templated grain growth: field-aligned BaM seed platelets in a gelcast Fe2O3 + BaCO3 matrix; matrix reacts to fine BaM around aligned seeds'
+  unit: ''
+  conditions: magnetic-field-assisted gelcasting, high-temperature reaction/sintering
+  source:
+    doi: 10.1016/s1359-6462(01)00957-5
+    title: Textured microstructures in barium hexaferrite by magnetic field assisted gelcasting and templated grain growth
+    first_author: Hovis, David B
+    year: 2001
+    url: https://authors.library.caltech.edu/49393/
+    evidence: abstract
+    locator: abstract (CaltechAUTHORS metadata record)
+  quote: The objective of this paper is to describe a method of producing textured barium hexaferrite by magnetic field assisted gelcasting while avoiding the limited solids loading caused by stacking of
+    barium hexaferrite plates. We illustrate here a method of gelcasting a matrix of non-magnetic iron (III) oxide and barium carbonate in the presence of barium ferrite seeds for templated grain growth.
+    At high temperatures, the iron oxide and barium carbonate react to form a fine-grained barium ferrite matrix surrounding the previously aligned barium ferrite seeds.
+  note: Templates (seeds) are aligned by the field at room temperature (ferrimagnetic, free to rotate); the matrix phase forms above Tc and acquires texture only by growth on/consumption by the templates.
+- id: bam_formation_path_tgg_hovis2008
+  phase: BaFe12O19
+  quantity: formation_path
+  value: 'TGG texture controlled by Fe2O3/BaCO3 ratio: excess BaCO3 -> abnormal grain growth of templates and maximum texture'
+  unit: ''
+  conditions: gelcasting with field-oriented templates; sintering temperature varied
+  source:
+    doi: 10.1007/s10853-007-2375-2
+    title: Texture and microstructural development in gelcast barium hexaferrite
+    first_author: Hovis, D. B.
+    year: 2008
+    url: https://authors.library.caltech.edu/records/55195-d3w23
+    evidence: abstract
+    locator: abstract (CaltechAUTHORS metadata record)
+  quote: The development of texture in barium hexaferrite by templated grain growth was studied as a function of the Fe_2O_3/BaCO_3 ratio, B_2O_3 additions in the starting materials, and sintering temperature.
+    A magnetic field was used to orient the template particles during the gelcasting process. Excess BaCO_3 resulted in abnormal grain growth and maximized texture, while B_2O_3 additions promoted coarsening,
+    but no abnormal grain growth.
+  note: Underscores are subscript markup in the repository record.
+- id: bam_deformation_vonbasel1981
+  phase: BaFe12O19
+  quantity: deformation
+  value: 'uniaxial hot pressing: texture increases with pressing time, mainly by oriented grain growth in the later stage'
+  unit: ''
+  conditions: coprecipitated BaM powder (pure and SiO2-doped), uniaxial hot pressing
+  source:
+    doi: 10.1109/tmag.1981.1061510
+    title: Texture of uniaxially hot-pressed coprecipitated Barium ferrite
+    first_author: von Basel, H.
+    year: 1981
+    url: https://api.openalex.org/works/doi:10.1109/tmag.1981.1061510
+    evidence: abstract
+    locator: abstract
+  quote: The experiments show that in the later stage of hot-pressing oriented grain growth is the main reason for the increase of the degree of texture with increasing pressing time.
+  note: Easy-axis direction relative to the pressing axis not stated in the abstract.
+- id: srm_field_effect_on_formation_wallace1993
+  phase: SrFe12O19
+  quantity: field_effect_on_formation
+  value: 'yes: field applied during KCl-flux synthesis from SrCO3 + Fe2O3 induced c-axis texture (preferential growth of nuclei with c parallel to field)'
+  unit: ''
+  conditions: KCl flux synthesis; firing temperature and field strength not given in the abstract
+  source:
+    doi: 10.1016/0304-8853(93)90062-7
+    title: Magnetic field induced texture during KCl flux synthesis of strontium hexaferrite
+    first_author: Wallace, J.B.
+    year: 1993
+    url: https://impact.ornl.gov/en/publications/magnetic-field-induced-texture-during-kcl-flux-synthesis-of-stron/
+    evidence: abstract
+    locator: abstract (ORNL publication record)
+  quote: An orientation texture was induced by the application of a magnetic field during the preparation of strontium hexaferrite from SrCO3 and Fe2O3 by a KCl flux synthesis method. The degree of this
+    texture was increased when the magnetic field was applied throughout the firing process. The magnetically induced texture is attributed to the preferential growth of hexaferrite nuclei which are oriented
+    with their c-axes parallel to the applied magnetic field.
+  note: Whether formation occurred above Tc (paramagnetic bias) or nuclei rotated/grew below Tc during cooling cannot be decided from the abstract; firing temperature and field strength are needed (full
+    text not accessible).
+- id: calaco_t_formation_obara2014
+  phase: (Ca,La)(Fe,Co)12O19
+  quantity: T_formation
+  value: 1523
+  unit: K
+  conditions: (Ca0.5La0.5)1.1Fe11.6Co0.4O19 from CaCO3, La2O3, alpha-Fe2O3, CoO; reaction firing 4 h in air
+  source:
+    doi: 10.2497/jjspm.61.s258
+    title: Magnetic Properties of Ca-La-Co M-Type Ferrite Sintered Magnets with CaO and SiO2 Inter-Additives
+    first_author: Obara, G.
+    year: 2014
+    url: https://www.jstage.jst.go.jp/article/jjspm/61/S1/61_S258/_pdf
+    evidence: full_text
+    locator: Sect. II Experimental method
+  quote: Mixed samples were sintered to initiate a chemical reaction at 1250°C for 4 hrs in air.
+  note: 1250 °C = 1523 K, far above Tc of M-type ferrites (paramagnetic formation). Magnets then sintered 1160-1260 °C after field pressing. La is a rare earth.
+- id: nd2fe14b_js_hirosawa2015
+  phase: Nd2Fe14B
+  quantity: Js
+  value: 1.61
+  unit: T
+  conditions: room temperature; value quoted by review
+  source:
+    doi: 10.3379/msjmag.1504r004
+    title: Current Status of Research and Development toward Permanent Magnets Free from Critical Elements
+    first_author: Hirosawa, Satoshi
+    year: 2015
+    url: https://www.jstage.jst.go.jp/article/msjmag/39/3/39_1504R004/_pdf
+    evidence: review
+    locator: Sect. 3, p. 90
+  quote: The compound has the ThMn12-type tetragonal structure and has JS and K1 values at room temperature of 1.66±0.08 T and 5.3 MJ/m3, respectively. These values exceed those of Nd2Fe14B, namely, 1.61
+    T and 4.9 MJ/m3.
+  note: 'Context: comparison with NdFe12N; the Nd2Fe14B values are quoted, not measured, in this review.'
+- id: nd2fe14b_k1_hirosawa2015
+  phase: Nd2Fe14B
+  quantity: K1
+  value: 4.9
+  unit: MJ/m3
+  conditions: room temperature; value quoted by review
+  source:
+    doi: 10.3379/msjmag.1504r004
+    title: Current Status of Research and Development toward Permanent Magnets Free from Critical Elements
+    first_author: Hirosawa, Satoshi
+    year: 2015
+    url: https://www.jstage.jst.go.jp/article/msjmag/39/3/39_1504R004/_pdf
+    evidence: review
+    locator: Sect. 3, p. 90
+  quote: The compound has the ThMn12-type tetragonal structure and has JS and K1 values at room temperature of 1.66±0.08 T and 5.3 MJ/m3, respectively. These values exceed those of Nd2Fe14B, namely, 1.61
+    T and 4.9 MJ/m3.
+  note: ''
+- id: nd2fe14b_js_granados2021
+  phase: Nd2Fe14B
+  quantity: Js
+  value: 1.61
+  unit: T
+  conditions: room temperature; 'Bs' column of review table
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... Nd2Fe14B 165 1.61 315 4.9 6.13
+  note: ''
+- id: nd2fe14b_ms_mass_granados2021
+  phase: Nd2Fe14B
+  quantity: Ms_mass
+  value: 165
+  unit: Am2/kg
+  conditions: room temperature
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... Nd2Fe14B 165 1.61 315 4.9 6.13
+  note: ''
+- id: nd2fe14b_tc_granados2021
+  phase: Nd2Fe14B
+  quantity: Tc
+  value: 588
+  unit: K
+  conditions: compiled by review
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... Nd2Fe14B 165 1.61 315 4.9 6.13
+  note: 315 °C converted to 588 K by compiler.
+- id: nd2fe14b_k1_granados2021
+  phase: Nd2Fe14B
+  quantity: K1
+  value: 4.9
+  unit: MJ/m3
+  conditions: room temperature
+  source:
+    doi: 10.1088/1361-6463/abfad4
+    title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering strategies
+    first_author: Granados-Miralles, Cecilia
+    year: 2021
+    url: https://arxiv.org/pdf/2309.15680
+    evidence: review
+    locator: Table 1, p. 3
+  quote: Table 1. Basic intrinsic magnetic properties of BaFe12O19 and SrFe12O19, along with those of Nd2Fe14B for comparison. All temperature-sensitive parameters are room temperature values [33, 37–39].
+    Ms (Am2 kg−1) Bs (T) TC (°C) K1 (MJ m−3) HA (MA m−1) ... Nd2Fe14B 165 1.61 315 4.9 6.13
+  note: ''
+- id: nd2fe14b_tc_sagawa1984
+  phase: Nd2Fe14B
+  quantity: Tc
+  value: 585
+  unit: K
+  conditions: compound ~Nd12Fe82B6 (at.%)
+  source:
+    doi: 10.1063/1.333572
+    title: New material for permanent magnets on a base of Nd and Fe (invited)
+    first_author: Sagawa, M.
+    year: 1984
+    url: https://api.crossref.org/works/10.1063/1.333572
+    evidence: abstract
+    locator: abstract
+  quote: The magnetization versus temperature curve shows a Curie temperature of 585 K, which is much higher than those of the Fe and light rare earth binary compounds.
+  note: ''
+- id: nd2fe14b_lattice_sagawa1984
+  phase: Nd2Fe14B
+  quantity: lattice
+  value:
+    a: 8.8
+    c: 12.21
+  unit: Å
+  conditions: room temperature
+  source:
+    doi: 10.1063/1.333572
+    title: New material for permanent magnets on a base of Nd and Fe (invited)
+    first_author: Sagawa, M.
+    year: 1984
+    url: https://api.crossref.org/works/10.1063/1.333572
+    evidence: abstract
+    locator: abstract
+  quote: A new compound composed of Nd, Fe, and a small quantity of B (about 1 wt. %) has been found, which has a tetragonal structure with lattice constants a=0.880 nm and c=1.221 nm.
+  note: 0.880 nm and 1.221 nm converted to Å.
+- id: nd2fe14b_structure_sagawa1984
+  phase: Nd2Fe14B
+  quantity: structure
+  value: tetragonal
+  unit: ''
+  conditions: ''
+  source:
+    doi: 10.1063/1.333572
+    title: New material for permanent magnets on a base of Nd and Fe (invited)
+    first_author: Sagawa, M.
+    year: 1984
+    url: https://api.crossref.org/works/10.1063/1.333572
+    evidence: abstract
+    locator: abstract
+  quote: A new compound composed of Nd, Fe, and a small quantity of B (about 1 wt. %) has been found, which has a tetragonal structure with lattice constants a=0.880 nm and c=1.221 nm.
+  note: Space group (P42/mnm) not stated in the accessible abstract.
+- id: nd2fe14b_k1_sagawa1984
+  phase: Nd2Fe14B
+  quantity: K1
+  value: 3.5
+  unit: MJ/m3
+  conditions: from approach to saturation (early estimate)
+  source:
+    doi: 10.1063/1.333572
+    title: New material for permanent magnets on a base of Nd and Fe (invited)
+    first_author: Sagawa, M.
+    year: 1984
+    url: https://api.crossref.org/works/10.1063/1.333572
+    evidence: abstract
+    locator: abstract
+  quote: From the approach to saturation an anisotroy constant of about 3.5 MJ/m3 can be calculated, while saturation magnetization amounts to 1.35 T.
+  note: Early (1984) estimate; the saturation value 1.35 T in the same sentence is far below single-crystal values (1.61 T) and is not recorded as Js here.
+- id: nd2fe14b_easy_axis_kreyssig2009
+  phase: Nd2Fe14B
+  quantity: easy_axis
+  value: c axis [001] above T_SR = 135 K (easy cone below)
+  unit: ''
+  conditions: single crystal; 300 K is above T_SR
+  source:
+    doi: 10.1103/physrevlett.102.047204
+    title: Probing Fractal Magnetic Domains on Multiple Length Scales in Nd2Fe14B
+    first_author: Kreyssig, A.
+    year: 2009
+    url: https://arxiv.org/pdf/0901.3515
+    evidence: full_text
+    locator: p. 1 (arXiv:0901.3515 version)
+  quote: Below the Curie temperature, Tc = 565 K[1, 2], the Nd and Fe moments order ferromagnetically. The crystal-electric field produces a strong magnetic anisotropy with the easy axis along the tetragonal
+    c direction. Below the spin-reorientation temperature, TSR = 135 K, the magnetic structure (and easy axis direction) changes via a second order transition[3] and becomes cone-like[4], in which the moments
+    are canted away from the c direction by an angle that increases from 0 deg at TSR to 28 deg at 4 K[5, 6].
+  note: ''
+- id: nd2fe14b_tc_kreyssig2009
+  phase: Nd2Fe14B
+  quantity: Tc
+  value: 565
+  unit: K
+  conditions: quoted from refs [1, 2] of the paper
+  source:
+    doi: 10.1103/physrevlett.102.047204
+    title: Probing Fractal Magnetic Domains on Multiple Length Scales in Nd2Fe14B
+    first_author: Kreyssig, A.
+    year: 2009
+    url: https://arxiv.org/pdf/0901.3515
+    evidence: full_text
+    locator: p. 1 (arXiv:0901.3515 version)
+  quote: Below the Curie temperature, Tc = 565 K[1, 2], the Nd and Fe moments order ferromagnetically. The crystal-electric field produces a strong magnetic anisotropy with the easy axis along the tetragonal
+    c direction. Below the spin-reorientation temperature, TSR = 135 K, the magnetic structure (and easy axis direction) changes via a second order transition[3] and becomes cone-like[4], in which the moments
+    are canted away from the c direction by an angle that increases from 0 deg at TSR to 28 deg at 4 K[5, 6].
+  note: Lower than 585-588 K given by other sources; spread noted.
+- id: nd2fe14b_other_sintering_li2021
+  phase: Nd2Fe14B
+  quantity: other
+  value: liquid-phase sintering of magnetically aligned single-crystal fine particles at ~950-1100 °C; post-sinter anneal ~520-600 °C
+  unit: ''
+  conditions: industrial sintered Nd-Fe-B route
+  source:
+    doi: 10.1080/14686996.2021.1916377
+    title: Most frequently asked questions about the coercivity of Nd-Fe-B permanent magnets
+    first_author: Li, Jiangnan
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8183520/fullTextXML
+    evidence: review
+    locator: Sect. 2
+  quote: Nd-Fe-B sintered magnets are produced by a liquid sintering process. Magnetically aligned single crystalline fine particles are isostatically pressured to make a green compact followed by liquid
+    sintering at an elevated temperature of ~950–1100°C.
+  note: '1223-1373 K; well above Tc (~585 K): densification proceeds in the paramagnetic state; alignment is fixed before sintering.'
+- id: nd2fe14b_single_variant_particles_takagi2021
+  phase: Nd2Fe14B
+  quantity: single_variant_particles
+  value: 'yes: sintered magnets are made from single-crystal fine powder (ingot or strip cast alloy pulverised by ball/jet milling)'
+  unit: ''
+  conditions: powder metallurgy route
+  source:
+    doi: 10.1080/14686996.2021.1875791
+    title: Novel powder processing technologies for production of rare-earth permanent magnets
+    first_author: Takagi, Kenta
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7935123/fullTextXML
+    evidence: review
+    locator: Sect. 1 and Sect. 3
+  quote: In general, sintered magnets of rare-earth-containing compounds are produced by powder metallurgy processes, that is, preparation of a single crystal fine powder, compaction with a crystalline
+    orientation using an external magnetic field, and sintering. ... A sintered magnet is commonly produced from single crystal powder in order to align the crystalline orientation of the magnet with the
+    axis of easy magnetization. Single crystal magnetic powders are previously prepared through a polycrystalline ingot casting process followed by a mechanical pulverizing process such as ball milling
+    and jet milling.
+  note: 'Particle size not given here (gap: 3-5 um jet-milled size only found in a Japanese-language source, see kitai2014 known-case records).'
+- id: nd2fe14b_phase_fraction_limit_li2021
+  phase: Nd2Fe14B
+  quantity: phase_fraction_limit
+  value: 'commercial N50-type composition Nd13.9Fe79.5B6Cu0.1 vs stoichiometric Nd11.7Fe82.4B5.8: excess Nd forms intergranular/Nd-rich phases'
+  unit: ''
+  conditions: sintered magnets
+  source:
+    doi: 10.1080/14686996.2021.1916377
+    title: Most frequently asked questions about the coercivity of Nd-Fe-B permanent magnets
+    first_author: Li, Jiangnan
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8183520/fullTextXML
+    evidence: review
+    locator: Sect. 2
+  quote: As a result, the chemical composition of the N50 type sintered magnet was around Nd13.9Fe79.5B6Cu0.1, which is slightly richer in Nd with respect to the stoichiometry of Nd2Fe14B, Nd11.7Fe82.4B5.8.
+  note: Measured volume fraction of Nd-rich/grain-boundary phases in commercial magnets not found in an accessible source (gap).
+- id: nd2fe14b_phase_fraction_limit_gb_li2021
+  phase: Nd2Fe14B
+  quantity: phase_fraction_limit
+  value: 'intergranular phase fraction f_GB = 3t/D (t ~ 3 nm): >=90% main phase requires D >= 90 nm'
+  unit: ''
+  conditions: geometric estimate for non-ferromagnetic grain boundaries
+  source:
+    doi: 10.1080/14686996.2021.1916377
+    title: Most frequently asked questions about the coercivity of Nd-Fe-B permanent magnets
+    first_author: Li, Jiangnan
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8183520/fullTextXML
+    evidence: review
+    locator: Sect. 7
+  quote: On the other hand, the volume fraction of intergranular phase increases with reducing grain size, which will lead to a drop of remanence if all the grain boundaries are nonferromagnetic. ... This
+    simple calculation indicates that the optimized grain size of a Nd-Fe-B magnet is in the order of 100 nm, and further reduction of grain size is not suggested since the volume fraction of the intergranular
+    phase becomes too large and the degradation of remanence is unavoidable.
+  note: 'Formula in source: f_GB = 3t/D for cubic grains of edge D with boundary thickness t; t = 3 nm and f_GB <= 10% give D >= 90 nm.'
+- id: nd2fe14b_other_gb_width_koyama2021
+  phase: Nd2Fe14B
+  quantity: other
+  value: grain-boundary phase often amorphous, width ~3 nm
+  unit: ''
+  conditions: sintered Nd-Fe-B
+  source:
+    doi: 10.1080/14686996.2020.1859339
+    title: Computational thermodynamics and microstructure simulations to understand the role of grain boundary phase in Nd-Fe-B hard magnets
+    first_author: Koyama, Toshiyuki
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7850396/fullTextXML
+    evidence: review
+    locator: Sect. 3
+  quote: Experimental measurements elucidate that the grain boundary phase often takes an amorphous sate, with a width of ~3 nm [ 26 ].
+  note: ''
+- id: nd2fe14b_other_alignment_method_kitai2014
+  phase: Nd2Fe14B
+  quantity: other
+  value: alignment of sintered magnets measured by EBSD orientation distribution; alignment computed from the distribution agrees with magnetization (Br/Js)
+  unit: ''
+  conditions: sintered NdFeB, with and without Dy
+  source:
+    doi: 10.2497/jjspm.61.117
+    title: Relation Between Nd2Fe14B Grain Alignment and Coercive Force Change Ratio in NdFeB Sintered Magnets
+    first_author: KITAI, Nobuyuki
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.2497/jjspm.61.117
+    evidence: abstract
+    locator: English abstract
+  quote: The alignment distribution of Nd2Fe14B grains in NdFeB sintered magnet was measured by electron back-scattering diffraction (EBSD). The alignments and the coercive force decrease ratios were calculated
+    using these alignment distributions. These data were compared against the results obtained from magnetization measurements. From EBSD data, it was found that the alignment distributions of magnets used
+    in this experiment were close to a Gaussian distribution. ... The calculated alignments using the alignment distribution functions were close to the values of magnetization measurements.
+  note: Full text (Japanese, scanned) defines alignment alpha = Br/Js = (1/2) * integral of P(theta) sin(2 theta) d theta, i.e. <cos theta> (eq. 4, read from page image). Measured values are in the known-case
+    file.
+- id: nd2fe14b_other_alignment_coercivity_hirosawa2015
+  phase: Nd2Fe14B
+  quantity: other
+  value: coercivity of sintered magnets decreases sharply as c-axis alignment increases (trade-off at high alignment)
+  unit: ''
+  conditions: sintered Nd-Fe-B
+  source:
+    doi: 10.3379/msjmag.1504r004
+    title: Current Status of Research and Development toward Permanent Magnets Free from Critical Elements
+    first_author: Hirosawa, Satoshi
+    year: 2015
+    url: https://www.jstage.jst.go.jp/article/msjmag/39/3/39_1504R004/_pdf
+    evidence: review
+    locator: Sect. 5, p. 91
+  quote: The phenomenon is characterized by a general tendency that coercivity sharply decreases with increasing the degree of alignment, indicating that the coercivity mechanism involves domain wall unpinning54),
+    and for this reason, can be regarded as a challenging test case for multi-phase, large-scale LLG simulations.
+  note: Relevant to the practical (not physical) ceiling of A in FP magnets.
+- id: nd2fe14b_deformation_mishra1987
+  phase: Nd2Fe14B
+  quantity: deformation
+  value: die-upsetting produces platelet Nd2Fe14B grains with c parallel to the stress axis; diffusion slip critical for alignment
+  unit: ''
+  conditions: hot-pressed then die-upset melt-spun NdFeB (MQ2 -> MQ3)
+  source:
+    doi: 10.1063/1.339709
+    title: Microstructure of hot-pressed and die-upset NdFeB magnets
+    first_author: Mishra, Raja K.
+    year: 1987
+    url: https://api.crossref.org/works/10.1063/1.339709
+    evidence: abstract
+    locator: abstract
+  quote: The grains in the hot-pressed material are polygonal and isotropic, while those in the die-upset material are flat platelets. The alignment of die-upset magnets arises exclusively from the fact
+    that hot deformation produces platelets of Nd2Fe14B grains with their c axes parallel to the stress axis. It is argued that yielding plays an important role in the densification of the hot-pressed samples,
+    and diffusion slip is critical to the alignment.
+  note: ''
+- id: nd2fe14b_deformation_hioki2021
+  phase: Nd2Fe14B
+  quantity: deformation
+  value: 'hot deformation ~800 °C of hot-pressed nanocrystalline compacts: liquid grain-boundary phase, stress-driven anisotropic grain growth + grain rotation/boundary sliding on c-planes; c of platelets
+    aligns parallel to press direction; no dislocations observed'
+  unit: ''
+  conditions: melt-spun Nd-Fe-B flakes (10-30 nm grains), hot pressed ~800 °C, die-upset/extruded ~800 °C
+  source:
+    doi: 10.1080/14686996.2020.1868049
+    title: High performance hot-deformed Nd-Fe-B magnets (Review)
+    first_author: Hioki, Keiko
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7850326/fullTextXML
+    evidence: full_text
+    locator: Sect. 2.1-2.2
+  quote: Then, the powder was cold-pressed at room temperature followed by hot-pressing at approximately 800°C to obtain a fully dense body. A hot-pressed body is an isotropic magnet with grains that are
+    approximately 20–50 nm. Finally, to obtain anisotropic magnets, a hot-pressed body was hot-deformed at approximately 800°C; this is the point at which thermo-mechanical alignment of the crystal grains
+    occurs. ... In Figure 3(a–d) , the grains align gradually in the same direction as the compression direction, as R became larger. The grain size and its aspect ratio simultaneously became larger, whilst
+    no dislocations or slip lines were observed in normal area [ 13 ]. ... Therefore, we inferred possible mechanism as follows. First, the grain boundary phase melts and anisotropic grain growth occurs
+    during hot pressing. Then, the anisotropic grain growth and crystal rotation with the grain boundary sliding of the c-plane (broad surface of platelet-shaped grain) are promoted by a stress under hot
+    deforming [ 17 ]. Here, the liquid grain boundary phase acts as a lubricant and a path for the transfer of atoms which promotes the anisotropic grain growth under a compression stress. Finally, the
+    c -axis of platelet grains align parallel to the press direction.
+  note: Sect. 2.1 of the same review also contains the sentence 'the direction of the c-axis (easy axis) is perpendicular to the compression direction', which contradicts Sect. 2.2 and Mishra 1987 (c parallel
+    to stress axis); Sect. 2.2 is taken. Mechanism stated by the authors as not fully understood (grain boundary migration, interface-controlled solution-precipitation creep also proposed).
+- id: nd2fe14b_growth_direction_hioki2021
+  phase: Nd2Fe14B
+  quantity: growth_direction
+  value: solid-state anisotropic grain growth along the a axis (platelets with c normal)
+  unit: ''
+  conditions: melt-spun ribbons annealed at 750 °C (no stress)
+  source:
+    doi: 10.1080/14686996.2020.1868049
+    title: High performance hot-deformed Nd-Fe-B magnets (Review)
+    first_author: Hioki, Keiko
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7850326/fullTextXML
+    evidence: full_text
+    locator: Sect. 2.2, Fig. 2
+  quote: Figure 2 shows that the grains grow anisotropically with an increase in heat treatment time. The grain growth direction corresponds to the a -axis of the R2Fe14B crystal (tetragonal) [ 15 ]. Based
+    on this result, the anisotropic growth direction of the R2Fe14B crystal was in the a -axis, as reported in previous studies [ 16 ].
+  note: ''
+- id: nd2fe14b_other_single_domain_hioki2021
+  phase: Nd2Fe14B
+  quantity: other
+  value: critical single-domain diameter 0.3 micron
+  unit: µm
+  conditions: quoted from ref. [24] of the review
+  source:
+    doi: 10.1080/14686996.2020.1868049
+    title: High performance hot-deformed Nd-Fe-B magnets (Review)
+    first_author: Hioki, Keiko
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7850326/fullTextXML
+    evidence: full_text
+    locator: Sect. 3.1
+  quote: As shown in Figure 5(c, d) , there were numberless platelet-shaped grains stacked in the c -axis direction; this is one order of magnitude finer than the sintered magnet. The grain size was similar
+    to the critical diameter of single-domain Nd2Fe14B grains (0.3 μm) [ 24 ].
+  note: ''
+- id: nd2fe14b_formation_path_hddr_horikawa2021
+  phase: Nd2Fe14B
+  quantity: formation_path
+  value: 'HDDR: Nd2Fe14B + H2 -> NdH2 + Fe + Fe2B (disproportionation); vacuum desorption -> recombined fine Nd2Fe14B grains; c axes can be aligned (anisotropic powder) by additives or controlled H2 pressure/temperature'
+  unit: ''
+  conditions: hydrogen-decrepitated Nd2Fe14B powder
+  source:
+    doi: 10.1080/14686996.2021.1944780
+    title: Recent progress in the development of high-performance bonded magnets using rare earth–Fe compounds
+    first_author: Horikawa, Takashi
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8451657/fullTextXML
+    evidence: review
+    locator: Sect. 2.1
+  quote: In typical HDDR treatment, Nd2Fe14B powder prepared by hydrogen decrepitation is used as a starting material and is then decomposed into NdH2, Fe, and Fe2B by heat treatment in hydrogen. During
+    subsequent heat treatment in a vacuum, the hydrogen is removed from NdH2, and the finely disproportionated Nd, Fe, and Fe2B recombine into fine Nd2Fe14B grains. Compared with melt-spinning, the HDDR
+    process offers the advantage of producing anisotropic powders in which the c -axes of the Nd2Fe14B grains can be aligned in one direction by adding additional elements or by controlling the hydrogen
+    pressure and temperature during the HDDR process.
+  note: ''
+- id: nd2fe14b_t_formation_dhddr_horikawa2021
+  phase: Nd2Fe14B
+  quantity: T_formation
+  value: 1093
+  unit: K
+  conditions: 'd-HDDR: HD at 820 °C under reduced hydrogen pressure P_HD = 30 kPa (slow reaction near equilibrium)'
+  source:
+    doi: 10.1080/14686996.2021.1944780
+    title: Recent progress in the development of high-performance bonded magnets using rare earth–Fe compounds
+    first_author: Horikawa, Takashi
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8451657/fullTextXML
+    evidence: review
+    locator: Sect. 2.2.1
+  quote: At a typical d -HDDR treatment temperature of 820°C, P HD of 30 kPa is closer to the equilibrium curve [ 26 , 27 ], and the change in free energy due to the HD reaction is smaller than that at
+    100 kPa. Therefore, the reaction rate is expected to be slow at 30 kPa, and this was confirmed by observing the hydrogen flow during HD treatment
+  note: '820 °C = 1093 K, far above Tc (~585 K): no magnetic-field bias possible during recombination; texture comes only from memory of the parent.'
+- id: nd2fe14b_or_hddr_horikawa2021
+  phase: Nd2Fe14B
+  quantity: OR
+  value: one of the <113> directions of Fe and of NdH2 tends to align with [001] of the original Nd2Fe14B (EBSD, Takizawa et al.)
+  unit: ''
+  conditions: HD-treated (disproportionated) lamellar structure
+  source:
+    doi: 10.1080/14686996.2021.1944780
+    title: Recent progress in the development of high-performance bonded magnets using rare earth–Fe compounds
+    first_author: Horikawa, Takashi
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8451657/fullTextXML
+    evidence: review
+    locator: Sect. 2.1
+  quote: Recently, Takizawa et al. [ 38 ] reported that one of the <113> directions of Fe and NdH2 tends to align with the [001] direction of the original Nd2Fe14B. This was demonstrated for the first time
+    by using EBSD measurements in the region that contained many crystal grains. The average preferred orientation direction was <113>, but each grain was slightly inclined from this direction.
+  note: 'Compiler note: the cubic <113> family has 12 distinct axes, so this is a statistical (fibre-like) relation to the parent c axis, not a single-variant OR.'
+- id: nd2fe14b_other_memory_site_horikawa2021
+  phase: Nd2Fe14B
+  quantity: other
+  value: 'texture-memory site debated: residual fine Nd2Fe14B particles, Fe2B (same tetragonal symmetry), or aligned Fe/NdH2 lamellae'
+  unit: ''
+  conditions: d-HDDR
+  source:
+    doi: 10.1080/14686996.2021.1944780
+    title: Recent progress in the development of high-performance bonded magnets using rare earth–Fe compounds
+    first_author: Horikawa, Takashi
+    year: 2021
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8451657/fullTextXML
+    evidence: review
+    locator: Sect. 2.1
+  quote: The difficulty of further improving magnetic properties using d -HDDR treatment is that the mechanism by which this crystallographic alignment occurs is still not fully understood despite much
+    effort by many researchers [ 26 , 28–38 ]. ... The anisotropy model with Fe2B as the memory site was first proposed by Gutfleisch et al. [ 34 , 35 ]. Among the disproportionation products (Fe, NdH2,
+    Fe2B), only the Fe2B phase has the same tetragonal symmetry as the original Nd2Fe14B, so they proposed it as a candidate for the memory site.
+  note: ''
+- id: nd2fe14b_formation_path_dhddr_gutfleisch2003
+  phase: Nd2Fe14B
+  quantity: formation_path
+  value: 'd-HDDR: iron boride as anisotropy-mediating phase; texture controlled by H2 partial pressure during exothermic disproportionation'
+  unit: ''
+  conditions: Nd12.5FebalB6.3 and Ga/Nb-doped alloys
+  source:
+    doi: 10.1109/tmag.2003.815749
+    title: Memory of texture during HDDR processing of NdFeB
+    first_author: Gutfleisch, O.
+    year: 2003
+    url: https://api.openalex.org/works/doi:10.1109/tmag.2003.815749
+    evidence: abstract
+    locator: abstract
+  quote: Crystallographic relationships between parent, disproportionated and recombined phases are described and it is suggested that the iron boride phase could act as the anisotropy-mediating phase throughout
+    the different stages of the process. The nucleation and growth of the various phases are controlled by the hydrogen partial pressure during the exothermic disproportionation, thereby strongly effecting
+    the final degree of texture. This d-HDDR (dynamic-) process yields a highly stable memory carrier, thus, allowing to maximize texture without Co addition.
+  note: ''
+- id: nd2fe14b_or_hddr_sugimoto2002
+  phase: Nd2Fe14B
+  quantity: OR
+  value: retained OR between parent Nd2Fe14B and alpha-Fe / NdH2 ([110]Fe and [110]NdH2 // [100]Nd2Fe14B) is important for anisotropy
+  unit: ''
+  conditions: HDDR of anisotropic sintered bodies; XRD + TEM
+  source:
+    doi: 10.1109/tmag.2002.803079
+    title: Effect of crystal orientation relationship on inducement of anisotropy in HDDR-treated Nd-Fe-B alloys
+    first_author: Sugimoto, S.
+    year: 2002
+    url: https://api.openalex.org/works/doi:10.1109/tmag.2002.803079
+    evidence: abstract
+    locator: abstract
+  quote: It can be concluded that retaining the crystallographic orientation relationship such as/sub /spl alpha/-Fe/ and(NdH/sub 2/)//(Nd/sub 2/Fe/sub 14/B), [110]/sub /spl alpha/-Fe/ and [110](NdH/sub
+    2/)//[100](Nd/sub 2/Fe/sub 14/B) during HDDR treatment is important for the inducement of anisotropy.
+  note: Plane indices of the OR are lost in the abstract markup (only directions survive). Full text not accessible.
+- id: nd2fe14b_or_hddr_kim2018
+  phase: Nd2Fe14B
+  quantity: OR
+  value: Fe2B formed in d-HDDR (30 kPa) has the same c-axis orientation as the parent Nd2Fe14B and transfers it to the recombined grains
+  unit: ''
+  conditions: dynamic HDDR, HD at 30 kPa H2
+  source:
+    doi: 10.1016/j.jallcom.2017.10.173
+    title: Crystallographic alignment of Fe2B and Nd2Fe14B for texture memory in hydrogenation–disproportionation–desorption–recombination-processed Nd–Fe–B powders
+    first_author: Kim, Tae-Hoon
+    year: 2018
+    url: https://pure.skku.edu/en/publications/crystallographic-alignment-of-fesub2subb-and-ndsub2subfesub14subb/
+    evidence: abstract
+    locator: abstract (SKKU research portal record)
+  quote: The magnetic anisotropy was significantly dependent on the hydrogen pressure during the HD process and highly aligned Fe 2 B phases, with the same c-axis orientation as the initial Nd 2 Fe 14 B
+    phase, were formed under the dynamic HDDR treatment at a hydrogen pressure of 30 kPa under controlled HD conditions. During the DR reaction following the HD process, the orientation of the initial Nd
+    2 Fe 14 B was recovered by a highly aligned Fe 2 B phase.
+  note: ''
+- id: nd2fe14b_other_dr_kinetics_kim2016
+  phase: Nd2Fe14B
+  quantity: other
+  value: slow desorption-recombination (low driving force) favours growth of nuclei at NdH2/Fe2B interfaces -> high texture
+  unit: ''
+  conditions: HDDR, DR stage varied
+  source:
+    doi: 10.1016/j.jallcom.2016.02.206
+    title: Effect of desorption and recombination on texture development in hydrogenation–disproportionation–desorption–recombination processed Nd–Fe–B magnets
+    first_author: Kim, Tae-Hoon
+    year: 2016
+    url: https://pure.skku.edu/en/publications/effect-of-desorption-and-recombination-on-texture-development-in-/
+    evidence: abstract
+    locator: abstract (SKKU research portal record)
+  quote: Preferential growth of nuclei at the NdH 2 /Fe 2 B interfaces, which led to a highly textured Nd 2 Fe 14 B phase, could be induced by slow desorption and recombination with a low driving force.
+    Hydrogen desorption at a slower rate was important for achieving high magnetic anisotropy in the HDDR-processed Nd–Fe–B powders.
+  note: ''
+- id: nd2fe14b_other_hddr_conditions_nakamura1999
+  phase: Nd2Fe14B
+  quantity: other
+  value: heating to >=800 °C in vacuum before H2 exposure and slow desorption under Ar raise remanence (anisotropy)
+  unit: ''
+  conditions: HDDR of Nd-Fe-B(-Co,Ga) powders
+  source:
+    doi: 10.3379/jmsjmag.23.300
+    title: Enhancement of the anisotropy of Nd-Fe-B powders by varying the HDDR conditions
+    first_author: Nakamura, H.
+    year: 1999
+    url: https://api.openalex.org/works/doi:10.3379/jmsjmag.23.300
+    evidence: abstract
+    locator: abstract
+  quote: The alloys disproportionated by heating from room temperature under hydrogen, exhibited high coercivities and moderate remanences, whereas those heated up to the HDDR treatment temperature (≥800°C)
+    under vacuum, and then disproportionated by exposing to hydrogen, showed higher remanences with lower coercivities.
+  note: The Br/Js value reached is an outcome (sealed).
+- id: nd2fe14b_other_memory_remnant_liu2025
+  phase: Nd2Fe14B
+  quantity: other
+  value: 'alternative memory mechanism: undisproportionated remnants of the parent phase template the recombined texture'
+  unit: ''
+  conditions: solid HDDR of sintered (Nd,Pr,Gd)-Fe-B magnets, HD 700-785 °C at 10-50 kPa, DR 750-850 °C
+  source:
+    doi: 10.3390/ma18174019
+    title: Features of the Solid HDDR Process in Sintered (Nd,Pr,Gd)-Fe-B Magnets at Low Hydrogen Pressure and Low Temperature
+    first_author: Liu, Renhui
+    year: 2025
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12429476/fullTextXML
+    evidence: full_text
+    locator: Sect. 3
+  quote: Despite the prevailing opinion among researchers regarding the texture memory mechanism in HDDR-treated Nd-Fe-B-type materials [ 31 ], we did not reject the well-known suggestion [ 11 ] that the
+    residues of the ferromagnetic phase present after the disproportionation reaction cause the texture.
+  note: ''
+- id: nd2fe14b_primary_crystallisation_zhong2008
+  phase: Nd2Fe14B
+  quantity: primary_crystallisation
+  value: 'peritectic: at low growth velocity primary alpha/gamma-Fe dendrites lead and Nd2Fe14B forms interdendritically; at 1-5 mm/s Nd2Fe14B dendrites grow directly'
+  unit: ''
+  conditions: Bridgman directional solidification of Nd14Fe79B7, 1 um/s - 5 mm/s
+  source:
+    doi: 10.1016/j.jcrysgro.2008.04.022
+    title: Microstructure evolution of peritectic Nd14Fe79B7 alloy during directional solidification
+    first_author: Zhong, Hong
+    year: 2008
+    url: https://pure.nwpu.edu.cn/en/publications/microstructure-evolution-of-peritectic-ndsub14subfesub79subbsub7s/
+    evidence: abstract
+    locator: abstract (NWPU research portal record)
+  quote: At low velocities from 1 to 200 μm/s, the microstructures consisted of leading α-Fe dendrites and peritectic Nd 2 Fe 14 B phase in the interdendritic region. At medium velocities of 425 and 500
+    μm/s, an incomplete banded structure formed, containing circles of α-Fe/Nd 2 Fe 14 B-Nd 2 Fe 14 B dendrites. At high velocities of 1, 3 and 5 mm/s, a transition from γ-Fe dendrites to Nd 2 Fe 14 B dendrites
+    occurred.
+  note: Growth direction of the Nd2Fe14B dendrites not given in the abstract (gap).
+- id: nd2fe14b_phase_fraction_limit_zhong2008ds
+  phase: Nd2Fe14B
+  quantity: phase_fraction_limit
+  value: up to ~90 vol% Nd2Fe14B in zone-melted DS Nd13.5Fe79.75B6.75 (300 K/cm, 50 um/s); remainder primary alpha-Fe + Nd-rich
+  unit: ''
+  conditions: directional solidification, peritectic alloy
+  source:
+    doi: null
+    title: Directional solidification of Nd-Fe-B alloys with high temperature gradient
+    first_author: Zhong, Hong
+    year: 2008
+    url: https://pure.nwpu.edu.cn/en/publications/directional-solidification-of-nd-fe-b-alloys-with-high-temperatur
+    evidence: abstract
+    locator: abstract (NWPU research portal record); Tezhong Zhuzao Ji Youse Hejin 28(4) 251-253
+  quote: The results indicate that the microstructure of the alloy is composed of primary α-Fe dendrites, peritectic Nd 2 Fe 14 B phase and minor Nd-rich phase. ... Grown at 50 μm/s, the volumetric fraction
+    of ferromagnetic Nd 2 Fc 14 B phase reaches up to 90% in the zone melting specimens (given a temperature gradient at 300 K/cm), which is about 30% higher than that in the total melting specimens (given
+    a temperature gradient at 180 K/cm).
+  note: No DOI found for this Chinese-language journal article (Tezhong Zhuzao Ji Youse Hejin 2008). 'Fc' is a typo in the source.
+- id: nd2fe14b_primary_crystallisation_bernardi1998
+  phase: Nd2Fe14B
+  quantity: primary_crystallisation
+  value: fast cooling in strip casting suppresses primary alpha-Fe dendrites; columnar Nd2Fe14B grains with Nd-rich lamellae parallel to the thermal gradient
+  unit: ''
+  conditions: strip-cast Nd-Fe-B alloys for sintered magnets
+  source:
+    doi: 10.1063/1.367557
+    title: Microstructural analysis of strip cast Nd–Fe–B alloys for high (BH)max magnets
+    first_author: Bernardi, J.
+    year: 1998
+    url: https://api.crossref.org/works/10.1063/1.367557
+    evidence: abstract
+    locator: abstract
+  quote: The fast cooling rate during strip casting suppresses the formation of α-Fe dendrites and of large Nd-rich pockets. Directional solidification causes a formation of columnar grains containing a
+    typical arrangement of hard magnetic Nd2Fe14B regions and Nd-rich regions. The Nd regions occur as intragranular platelets as well as intergranular phases. Intragranular lamellae show a periodicity
+    which corresponds to a eutectoidal solidification according to the composition of the liquid and are directed parallel to the temperature gradient during solidification.
+  note: ''
+- id: nd2fe14b_growth_direction_hattori2009
+  phase: Nd2Fe14B
+  quantity: growth_direction
+  value: 'strip-cast alloy: near the wheel side c axis tends to align perpendicular to the wheel surface (parallel to heat flow); I(006)/I(410) peaks ~25 um from wheel; no preferred orientation beyond ~80
+    um'
+  unit: ''
+  conditions: (Nd,Dy)-Fe-B strip-cast flakes, XRD on sections at various depths
+  source:
+    doi: 10.2320/matertrans.mbw200821
+    title: Microstructural Evaluation of Nd-Fe-B Strip Cast Alloys
+    first_author: Hattori, Takashi
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/matertrans/50/3/50_MBW200821/_pdf
+    evidence: full_text
+    locator: Sect. 3, pp. 480-481
+  quote: From the strong intensity of XRD peaks from the (0 0 l) (l = 2n) planes of R2Fe14B phase, it is said that the c-axis of R2Fe14B phase has a tendency to align along the direction perpendicular to
+    the wheel surface in the sample.
+  note: pdftotext renders '=' as '¼' and 'µm' as 'mm' (font encoding); quote corrected. The texture is partial and depth dependent (I(006)/I(410) maximum at ~25 µm, none beyond ~80 µm, per the same section);
+    i.e. c roughly along the heat-flow (growth) direction, not perpendicular to it.
+- id: nd2fe14b_other_alignment_method_kawai1990
+  phase: Nd2Fe14B
+  quantity: other
+  value: 'XRD-based alignment: Gaussian sigma of c-axis distribution; remanence vs alignment follows Stoner-Wohlfarth (non-interacting) prediction; aligning field of 8 kOe needed'
+  unit: ''
+  conditions: sintered Nd15.4Fe77.8B6.8 with various degrees of alignment
+  source:
+    doi: 10.1063/1.344828
+    title: Effect of crystal alignment on the remanence of sintered NdFeB magnets
+    first_author: Kawai, T.
+    year: 1990
+    url: https://api.crossref.org/works/10.1063/1.344828
+    evidence: abstract
+    locator: abstract
+  quote: The alignment of these magnets have been determined by x-ray diffraction and fitting the standard deviation of a Gaussian distribution for the relative intensity versus the angle between the normals
+    of (hkl) and the tetragonal c axis. The standard deviation is a good indicator for crystal alignment. An aligning field of 8 kOe is found to be essential to obtain a well-aligned NdFeB magnet. The remanence
+    of sintered magnets is directly affected by the crystal alignment. Furthermore, the effect of crystal alignment on the remanence follows the theoretical prediction of the Stoner–Wohlfarth model.
+  note: Supports Br = Js * phi * <cos theta> for sintered NdFeB (A as defined in METHOD.md).
+- id: nd2fe14b_other_alignment_method_yeqing2001
+  phase: Nd2Fe14B
+  quantity: other
+  value: XRD (105) reflection in aligned sintered magnets comes from grains tilted ~15.5 deg; used to quantify alignment degree
+  unit: ''
+  conditions: sintered Nd-Fe-B, XRD on face normal to alignment direction
+  source:
+    doi: 10.1088/0256-307x/18/10/335
+    title: Origin of (105) Reflection of X-Ray Diffraction and Quantitative Evaluation of Alignment Degree for Sintered Nd-Fe-B Magnets
+    first_author: Ye-Qing, He
+    year: 2001
+    url: https://api.openalex.org/works/doi:10.1088/0256-307x/18/10/335
+    evidence: abstract
+    locator: abstract
+  quote: A new method for quantitatively evaluating the alignment degree of sintered Nd-Fe-B magnets by x-ray diffraction spectra has been proposed. It has been experimentally revealed that the strong (105)
+    reflection existing in almost all x-ray diffraction spectra of sintered Nd-Fe-B magnets stems from the misalignment grains whose easy axes are at an angle of 15.5° with respect to the orientated direction
+    of the magnet.
+  note: 'Crossref first author given as ''Ye-Qing'' (Chinese name order). Compiler note: 15.5 deg equals the angle between the (105) and (001) plane normals for a = 8.80, c = 12.21 Angstrom.'
+- id: nd2fe14b_single_variant_particles_shinetsu
+  phase: Nd2Fe14B
+  quantity: single_variant_particles
+  value: ingots pulverised to particles of several microns under inert gas, then compacted in a magnetic field (green density ~50%)
+  unit: ''
+  conditions: industrial sintered NdFeB (Shin-Etsu)
+  source:
+    doi: null
+    title: 'Manufacturing Process: Raw material to sintering Block (Shin-Etsu Rare Earth Magnets)'
+    first_author: Shin-Etsu Chemical Co., Ltd.
+    url: https://www.shinetsu-rare-earth-magnet.jp/e/masspro/sintering_p.html
+    evidence: datasheet
+    locator: steps 4-6
+  quote: After completion of various process steps, the ingots are pulverized into particles that are several microns in size. In order to prevent oxidation from occurring, the small particles are protected
+    by inert gas.
+  note: 'Manufacturer process description (evidence: datasheet/manufacturer web page, accessed 2026-10-03).'
+- id: nd2fe14b_other_fp_pressing_shinetsu
+  phase: Nd2Fe14B
+  quantity: other
+  value: field alignment during pressing; perpendicular-field pressing gives better magnets than parallel-field pressing; green density ~50% of true density, sintered to ~100%
+  unit: ''
+  conditions: industrial sintered NdFeB (Shin-Etsu)
+  source:
+    doi: null
+    title: 'Manufacturing Process: Raw material to sintering Block (Shin-Etsu Rare Earth Magnets)'
+    first_author: Shin-Etsu Chemical Co., Ltd.
+    url: https://www.shinetsu-rare-earth-magnet.jp/e/masspro/sintering_p.html
+    evidence: datasheet
+    locator: steps 4-6
+  quote: 'The magnetic particles are placed in a jig and a magnetic field is applied while the magnets are pressed into shape. Through this process, we achieve magnetic anisotropy. Two methods of pressing
+    exist: perpendicular pressing where magnets are pressed in a perpendicular magnetic field and parallel pressing where they are pressed in a parallel field. Given an equal grade of magnet, the perpendicular
+    press method will result in a higher performance magnet. However, ring magnets must be pressed using the parallel method. ... The density of the ingots prior to sintering is about 50% of true density
+    but after sintering, the true density is 100%.'
+  note: 'Mechanism input: uniaxial compaction along the field direction disturbs the field-induced alignment (relevant to A of FP route).'
+- id: nd2fe14b_deformation_lee1985
+  phase: Nd2Fe14B
+  quantity: deformation
+  value: 'die-upsetting of hot-pressed melt-spun ribbons: anisotropic grain growth + grain rotation -> platelet grains normal to press direction (c parallel to press direction); lateral plastic flow of
+    ribbons'
+  unit: ''
+  conditions: Nd0.14(Fe0.91B0.09)0.86 melt-spun ribbons, hot pressed 700-750 °C then die-upset
+  source:
+    doi: 10.1109/tmag.1985.1064031
+    title: Processing of Neodymium-Iron-Boron melt-spun ribbons to fully dense magnets
+    first_author: Lee, R.
+    year: 1985
+    url: https://api.openalex.org/works/doi:10.1109/tmag.1985.1064031
+    evidence: abstract
+    locator: abstract
+  quote: The alignment arises from anisotropic grain growth and grain rotation which produces platelet shaped grains oriented perpendicular to the press direction.
+  note: '''Platelets oriented perpendicular to the press direction'' = platelet plane normal to the press axis, i.e. c parallel to the press axis (consistent with Mishra 1987).'
+- id: nd2fe14b_phase_fraction_limit_bonded_mqi
+  phase: Nd2Fe14B
+  quantity: phase_fraction_limit
+  value: 'compression-bonded isotropic NdFeB magnets: typical powder loading 77.5 vol% (HD powders ~80 vol%)'
+  unit: ''
+  conditions: compression-bonded magnets from melt-spun MQP powders
+  source:
+    doi: null
+    title: MQP-15-12-20439 bonded neo powder product page
+    first_author: Magnequench (Neo Performance Materials)
+    url: https://mqitechnology.com/product/mqp-15-12-20439/
+    evidence: datasheet
+    locator: product table legend
+  quote: Most compression bonded magnets exhibit a typical MQP volumetric loading of 77.5%, a typical HD powder has 80% by volume loading.
+  note: Manufacturer web page (accessed 2026-10-03); phi for bonded routes.

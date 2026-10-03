@@ -1,0 +1,469 @@
+# Curated phase descriptions for the account (docs/METHOD.md).
+# Every physical magnitude is {ref: <record id>} into data/raw/*.yaml or data/curated/records.yaml,
+# or {est: value, why: text} for an estimate made here (listed in FINDINGS.md). Plain values are
+# crystallographic conventions only (Miller indices, Laue class, cell content).
+# Selection rules, the same for every phase:
+#   Js  - highest measured 300 K value on bulk/powder/ribbon material (films and DFT not used);
+#   Tc  - measured on the same material as Js where available;
+#   T_f - the published formation window of each path; parents' textures only where published.
+#   single_variant particles: 'yes' only if demonstrated; otherwise 'unknown' (never assumed 'no').
+
+# ------------------------------------------------------------------ tau-MnAl (binary)
+- id: tau-MnAl
+  name: "τ-MnAl (binary, L1_0)"
+  universe: tau-MnAl
+  structure: {system: tetragonal, a: {ref: mnal_lattice_kubo1976_tau, key: a}, c: {ref: mnal_lattice_kubo1976_tau, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: mnal_easyaxis_tyrman2017}
+  Js: {ref: mnal_js_wei2014}
+  K1: {ref: mnal_k1_koch1960}
+  Tc: {ref: mnal_tc_zhang2025}
+  T_stab: {ref: mnal_tstab_feng2021_binary}
+  cell: {atoms: 4, magnetic_fraction: {est: 0.54, why: "Mn54Al46-type composition; only the Mn fraction carries moments"}}
+  paths:
+    - name: massive (incoherent)
+      mode: massive
+      refs: [mnal_formation_path_hoydick1997a, mnal_formation_path_yanar2000a, mnal_formation_path_si2017b]
+      parent:
+        name: ε (hcp)
+        structure: {system: hexagonal, a: {ref: mnal_lattice_eps_pasko2013a, key: a}, c: {ref: mnal_lattice_eps_pasko2013a, key: c}, laue: 6/mmm}
+        family: hexagonal
+        ds_texture: {dir: [0, 0, 0, 1], refs: [mnal_growth_zhang2025, mnal_growth_pasko2013]}
+        am_texture: {dir: [0, 0, 0, 1], refs: [mnal_growth_direction_pacheco2023, mnal_growth_direction_tiden2024]}
+      OR: {plane_P: [0, 0, 0, 1], plane_H: [1, 1, 1], dir_P: [1, -1, 0, 0], dir_H: [-1, -1, 2], ref: mnal_OR_kojima1975}
+      T_f: [{ref: mnal_T_formation_hoydick1997, index: 0}, {ref: mnal_T_formation_hoydick1997, index: 1}]
+    - name: displacive ε → ε' → τ
+      mode: OR
+      refs: [mnal_formation_path_kojima1975, mnal_formation_path_si2017a, mnal_formation_path_keller2023b, mnal_n_variants_jia2022]
+      parent:
+        name: ε (hcp)
+        structure: {system: hexagonal, a: {ref: mnal_lattice_eps_pasko2013a, key: a}, c: {ref: mnal_lattice_eps_pasko2013a, key: c}, laue: 6/mmm}
+        family: hexagonal
+        ds_texture: {dir: [0, 0, 0, 1], refs: [mnal_growth_zhang2025, mnal_growth_pasko2013]}
+        am_texture: {dir: [0, 0, 0, 1], refs: [mnal_growth_direction_pacheco2023, mnal_growth_direction_tiden2024]}
+      intermediate:
+        name: "ε' (B19)"
+        structure: {system: orthorhombic, a: {ref: mnal_lattice_kubo1976_epsprime, key: a}, b: {ref: mnal_lattice_kubo1976_epsprime, key: b}, c: {ref: mnal_lattice_kubo1976_epsprime, key: c}, laue: mmm}
+        OR_PI: {plane_P: [0, 0, 0, 1], plane_H: [1, 0, 0], dir_P: [1, -1, 0, 0], dir_H: [0, 0, 1], ref: mnal_OR_kojima1975}
+        OR_IH: {plane_P: [1, 0, 0], plane_H: [1, 1, 1], dir_P: [0, 0, 1], dir_H: [-1, -1, 2], ref: mnal_OR_kojima1975}
+        ferromagnetic: true
+        ferromagnetic_ref: mnal_other_keller2023a
+        strain: true
+        strain_ref: mnal_tetragonality_sologubenko2004
+      T_f: [{ref: mnal_T_formation_si2017a, index: 0}, {ref: mnal_T_formation_si2017a, index: 1}]
+      stress_refs: [mnal_stress_effect_on_formation_kubo1976a, mnal_stress_effect_on_formation_mullner2002]
+  particles:
+    single_variant: 'yes'
+    reason: "twin-free single-crystal τ-MnAl nanoparticles (calciothermic reduction); twin-free τ below ~300 nm grain size"
+    refs: [mnal_single_variant_particles_jia2022c, mnal_single_variant_particles_jia2022a]
+  melt: {primary: parent, path: 1, refs: [mnal_primary_crystallisation_kim1992, mnal_primary_crystallisation_kubo1976]}
+  hd: {possible: false, reason: "carbon-free MnAl gains no anisotropy by warm working; τ decomposes", refs: [mnal_deformation_kubo1976c]}
+  epitaxy: {}
+  tgg: {}
+
+# ------------------------------------------------------------------ tau-MnAl-C
+- id: tau-MnAl-C
+  name: "τ-MnAl-C (L1_0, carbon-stabilised)"
+  universe: tau-MnAl
+  structure: {system: tetragonal, a: {ref: mnal_lattice_zhao2021, key: a}, c: {ref: mnal_lattice_zhao2021, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: mnal_easyaxis_tyrman2017}
+  Js: {ref: mnal_js_zhao2021}
+  K1: {ref: mnal_k1_pasko2014}
+  Tc: {ref: mnal_tc_zhao2021}
+  T_stab: {ref: mnal_tstab_feng2021_carbon}
+  cell: {atoms: 4, magnetic_fraction: {est: 0.53, why: "Mn53Al45C2 composition"}}
+  paths:
+    - name: massive (incoherent)
+      mode: massive
+      refs: [mnal_formation_path_hoydick1997a, mnal_formation_path_sologubenko2004a, mnal_formation_path_si2017b]
+      parent:
+        name: ε (hcp)
+        structure: {system: hexagonal, a: {ref: mnal_lattice_eps_pasko2013b, key: a}, c: {ref: mnal_lattice_eps_pasko2013b, key: c}, laue: 6/mmm}
+        family: hexagonal
+        ds_texture: {dir: [0, 0, 0, 1], refs: [mnal_growth_direction_kubo1976, mnal_growth_pasko2013]}
+        am_texture: {dir: [0, 0, 0, 1], refs: [mnal_growth_direction_pacheco2023, mnal_growth_direction_tiden2024]}
+      OR: {plane_P: [0, 0, 0, 1], plane_H: [1, 1, 1], dir_P: [1, -1, 0, 0], dir_H: [-1, -1, 2], ref: mnal_OR_kojima1975}
+      T_f: [{ref: mnal_T_formation_hoydick1997, index: 0}, {ref: mnal_T_formation_hoydick1997, index: 1}]
+    - name: displacive ε → ε' → τ
+      mode: OR
+      refs: [mnal_formation_path_kojima1975, mnal_formation_path_sologubenko2004b, mnal_formation_path_si2017a]
+      parent:
+        name: ε (hcp)
+        structure: {system: hexagonal, a: {ref: mnal_lattice_eps_pasko2013b, key: a}, c: {ref: mnal_lattice_eps_pasko2013b, key: c}, laue: 6/mmm}
+        family: hexagonal
+        ds_texture: {dir: [0, 0, 0, 1], refs: [mnal_growth_direction_kubo1976, mnal_growth_pasko2013]}
+        am_texture: {dir: [0, 0, 0, 1], refs: [mnal_growth_direction_pacheco2023, mnal_growth_direction_tiden2024]}
+      intermediate:
+        name: "ε' (B19)"
+        structure: {system: orthorhombic, a: {ref: mnal_lattice_kubo1976_epsprime, key: a}, b: {ref: mnal_lattice_kubo1976_epsprime, key: b}, c: {ref: mnal_lattice_kubo1976_epsprime, key: c}, laue: mmm}
+        OR_PI: {plane_P: [0, 0, 0, 1], plane_H: [1, 0, 0], dir_P: [1, -1, 0, 0], dir_H: [0, 0, 1], ref: mnal_OR_kojima1975}
+        OR_IH: {plane_P: [1, 0, 0], plane_H: [1, 1, 1], dir_P: [0, 0, 1], dir_H: [-1, -1, 2], ref: mnal_OR_kojima1975}
+        ferromagnetic: true
+        ferromagnetic_ref: mnal_other_keller2023a
+        strain: true
+        strain_ref: mnal_tetragonality_sologubenko2004
+      T_f: [{ref: mnal_T_formation_si2017b, index: 0}, {ref: mnal_T_formation_si2017b, index: 1}]
+      stress_refs: [mnal_stress_effect_on_formation_kubo1976a, mnal_stress_effect_on_formation_kubo1976c, mnal_stress_effect_on_formation_mullner2002]
+  particles:
+    single_variant: 'yes'
+    reason: "mm-size single-variant τ-MnAl-C crystals made by compressing ε single crystals during the transformation"
+    refs: [mnal_single_variant_particles_kubo1976]
+  melt: {primary: parent, path: 1, refs: [mnal_primary_crystallisation_kubo1976, mnal_primary_crystallisation_kim1992]}
+  hd:
+    fibre: [0, 0, 1]
+    reason: "warm extrusion (600-780 C) gives an approximately [001] fibre along the extrusion axis by {111}<112> shear/twinning under radial compression with recrystallisation by strain-induced boundary migration; upsetting gives a planar texture instead"
+    refs: [mnal_deformation_sakamoto1979, mnal_deformation_feng2020a, mnal_deformation_sakamoto1977b, mnal_deformation_kubo1976d]
+  epitaxy: {}
+  tgg: {}
+
+# ------------------------------------------------------------------ L1_0 FeNi
+- id: L10-FeNi
+  name: "L1_0 FeNi (tetrataenite)"
+  universe: L10-FeNi
+  structure: {system: tetragonal, a: {ref: feni_lattice_albertsen1981, key: a}, c: {ref: feni_lattice_albertsen1981, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: feni_easyaxis_goto2017}
+  Js: {ref: feni_js_goto2017}
+  K1: {ref: feni_k1_poirier2015}
+  Tc: {ref: feni_tc_lewis2014}
+  T_stab: {ref: feni_tstab_pauleve1962}
+  cell: {atoms: 4, magnetic_fraction: 1.0}
+  paths:
+    - name: chemical ordering A1 → L1_0 (irradiation-assisted or geological)
+      mode: OR
+      refs: [feni_formation_path_neel1964, feni_or_poirier2015, feni_nvariants_neel1964, feni_kinetics_lewis2023]
+      parent:
+        name: A1 FeNi (fcc)
+        structure: {system: cubic, a: {ref: a1feni_lattice_goto2017, key: a}, laue: m-3m}
+        family: fcc
+        Tc: {ref: a1feni_tc_nagata1987a}
+        rollable: true
+        rx_texture: {kind: sheet, nd: [0, 0, 1], rd: [1, 0, 0], refs: [rx_cube_feni_soubeyroux2008]}
+      OR: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: feni_or_poirier2015}
+      T_f: [{ref: feni_tformation_lewis2023}, {ref: feni_tstab_pauleve1962}]
+      stress_sign: +1
+      stress_refs: [feni_tetragonality_albertsen1981, feni_stress_effect_lewis2023]
+    - name: NITE (A1 → FeNiN by nitriding → L1_0 by topotactic denitriding)
+      mode: OR
+      refs: [feni_formation_path_goto2017, feni_or_nite_ito2019, feninitride_structure_ito2020]
+      parent:
+        name: A1 FeNi (fcc)
+        structure: {system: cubic, a: {ref: a1feni_lattice_goto2017, key: a}, laue: m-3m}
+        family: fcc
+        rollable: true
+        rx_texture: {kind: sheet, nd: [0, 0, 1], rd: [1, 0, 0], refs: [rx_cube_feni_soubeyroux2008]}
+      OR: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: feni_or_nite_ito2019}
+      T_f: [{ref: feninitride_tformation_hlova2024, index: 0}, {ref: feninitride_tformation_hlova2024, index: 1}]
+      product_ferromagnetic: false
+      product_ferromagnetic_ref: feninitride_tn_goto2019
+      strain_known: false
+  particles:
+    single_variant: unknown
+    reason: "NITE powders are polycrystalline; single-variant islands exist only in meteorites (not as free particles)"
+    refs: [feni_single_variant_particles_ito2019, feni_single_variant_particles_bryson2014b]
+    measurement: "EBSD/TEM of particles made by field-assisted ordering of single-crystal FeNi particles"
+  melt: {primary: parent, path: 0, refs: [a1feni_lattice_goto2017]}
+  epitaxy: {demonstrated: true, refs: [feni_k1_mizuguchi2011, feni_k1_kojima2014]}
+  tgg: {}
+
+# ------------------------------------------------------------------ L1_0 FePt
+- id: L10-FePt
+  name: "L1_0 FePt"
+  universe: L10-FePt
+  structure: {system: tetragonal, a: {ref: fept_lattice_barmak2004, key: a}, c: {ref: fept_lattice_barmak2004, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: fept_easy_axis_barmak2004}
+  Js: {ref: fept_js_barmak2004}
+  K1: {ref: fept_k1_barmak2004}
+  Tc: {ref: fept_tc_weller2016}
+  T_stab: {ref: fept_t_stab_barmak2004}
+  cell: {atoms: 4, magnetic_fraction: {est: 0.5, why: "equiatomic; Pt moments induced (counted as non-magnetic for the estimate)"}}
+  paths:
+    - name: chemical ordering A1 → L1_0
+      mode: OR
+      refs: [fept_n_variants_tanaka2003, fept_t_formation_tanaka2003]
+      parent:
+        name: A1 FePt (fcc)
+        structure: {system: cubic, a: {ref: a1fept_lattice_barmak2004, key: a}, laue: m-3m}
+        family: fcc
+        Tc: {ref: a1fept_tc_abel2018}
+      OR: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: fept_n_variants_inoue2006}
+      T_f: [{ref: fept_t_formation_barmak2004}, {ref: fept_t_formation_yamamoto2005}]
+      stress_sign: -1
+      stress_refs: [fept_tetragonality_barmak2004, fept_stress_effect_on_formation_inoue2006]
+  particles:
+    single_variant: 'yes'
+    reason: "dispersible single-crystalline L1_0 FePt nanoparticles (SiO2-nanoreactor annealing)"
+    refs: [fept_single_variant_particles_yamamoto2006, fept_other_harrell2005]
+  melt: {primary: parent, path: 0, refs: [a1fept_lattice_barmak2004]}
+  epitaxy: {demonstrated: true, refs: [fept_t_formation_barmak2004]}
+  tgg: {}
+
+# ------------------------------------------------------------------ L1_0 CoPt
+- id: L10-CoPt
+  name: "L1_0 CoPt"
+  universe: L10-CoPt
+  structure: {system: tetragonal, a: {ref: copt_lattice_barmak2004, key: a}, c: {ref: copt_lattice_barmak2004, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: copt_easy_axis_barmak2004}
+  Js: {ref: copt_js_barmak2004}
+  K1: {ref: copt_k1_shima2005}
+  Tc: {ref: copt_tc_farjami2009}
+  T_stab: {ref: copt_t_stab_farjami2009}
+  cell: {atoms: 4, magnetic_fraction: {est: 0.5, why: "equiatomic; Pt moments induced"}}
+  paths:
+    - name: chemical ordering A1 → L1_0
+      mode: OR
+      refs: [copt_n_variants_farjami2009, copt_t_formation_farjami2009]
+      parent:
+        name: A1 CoPt (fcc)
+        structure: {system: cubic, a: {ref: a1copt_lattice_barmak2004, key: a}, laue: m-3m}
+        family: fcc
+        Tc: {ref: a1copt_tc_farjami2009}
+      OR: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: copt_n_variants_farjami2009}
+      T_f: [{ref: copt_tf_nucleation_farjami2009}, {ref: copt_t_formation_farjami2009}]
+      stress_sign: -1
+      stress_refs: [copt_tetragonality_shima2005, copt_stress_effect_on_formation_shimizu1968]
+  particles:
+    single_variant: unknown
+    reason: "no single-variant CoPt particles reported"
+    refs: []
+  melt: {primary: parent, path: 0, refs: [a1copt_lattice_barmak2004]}
+  epitaxy: {demonstrated: true, refs: [copt_t_formation_barmak2004]}
+  tgg: {}
+
+# ------------------------------------------------------------------ L1_0 FePd (calibration phase for field/stress selection)
+- id: L10-FePd
+  name: "L1_0 FePd"
+  universe: L10-FePd
+  structure: {system: tetragonal, a: {ref: fepd_lattice_aledealat2021, key: a}, c: {ref: fepd_lattice_aledealat2021, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: fepd_easy_axis_tanaka2000}
+  Js: {ref: fepd_js_tanaka2000}
+  K1: {ref: fepd_k1_shima2004}
+  Tc: {ref: fepd_tc_tanaka2000}
+  T_stab: {ref: fepd_t_stab_ichitsubo1998}
+  cell: {atoms: 4, magnetic_fraction: {est: 0.5, why: "equiatomic; Pd moments induced"}}
+  paths:
+    - name: chemical ordering A1 → L1_0
+      mode: OR
+      refs: [fepd_formation_path_farjami2009, fepd_or_ichitsubo1998, fepd_n_variants_ichitsubo1998]
+      parent:
+        name: A1 FePd (fcc)
+        structure: {system: cubic, a: {ref: a1fepd_lattice_ichitsubo1998, key: a0}, laue: m-3m}
+        family: fcc
+        Tc: {ref: a1fepd_tc_tanaka2000}
+      OR: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: fepd_or_ichitsubo1998}
+      T_f: [{ref: fepd_tf_nucleation_farjami2008}, {ref: fepd_tf_saturation_farjami2009, index: 1}]
+      stress_sign: -1
+      stress_refs: [fepd_tetragonality_ichitsubo1998, fepd_stress_effect_on_formation_ichitsubo1998a]
+  particles:
+    single_variant: 'yes'
+    reason: "~10 nm epitaxial FePd nanoparticles are almost all single-variant single crystals"
+    refs: [fepd_single_variant_particles_sato2005]
+  melt: {primary: parent, path: 0, refs: [a1fepd_lattice_ichitsubo1998]}
+  epitaxy: {}
+  tgg: {}
+
+# ------------------------------------------------------------------ alpha''-Fe16N2
+- id: Fe16N2
+  name: "α''-Fe16N2"
+  universe: "alpha''-Fe16N2"
+  structure: {system: tetragonal, a: {ref: fe16n2_lattice_jack1951, key: a}, c: {ref: fe16n2_lattice_jack1951, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: fe16n2_easyaxis_takahashi1999}
+  Js: {ref: fe16n2_js_muller1994}
+  K1: {ref: fe16n2_k1_ogawa2013_rt}
+  Tc: {ref: fe16n2_tc_sugita1991}
+  T_stab: {ref: fe16n2_tstab_bridges2016, pick: hi}
+  cell: {atoms: 18, magnetic_fraction: {est: 0.889, why: "Fe16N2: 16 Fe of 18 atoms per cell"}}
+  paths:
+    - name: direct nitriding of bcc α-Fe (N enters one octahedral sublattice)
+      mode: OR
+      refs: [fe16n2_or_parallel_hong1984, fe16n2_nvariants_ferrite_ferguson1984, fe16n2_tform_bridges2016]
+      parent:
+        name: α-Fe (bcc)
+        structure: {system: cubic, a: 1.0, laue: m-3m}
+        family: bcc
+        rollable: true
+        rx_texture: {kind: fibre, dir: [1, 1, 0], refs: [fe16n2_other_wiretexture_zhao2014, fe16n2_other_wiretexture_guo2013]}
+      OR: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: fe16n2_or_parallel_hong1984}
+      T_f: [{ref: fe16n2_tform_ferrite_xiong2010}, {ref: fe16n2_tform_bridges2016}]
+      stress_sign: +1
+      stress_refs: [fe16n2_tetragonality_ferguson1984, fe16n2_stress_effect_wangpatent2017]
+    - name: nitrogen martensite γ-Fe(N) → α' (variant fixed) → α'' by ordering
+      mode: OR
+      refs: [fe16n2_or_bain_koyano2000, fe16n2_nvariants_bain_thome2022, fe16n2_structure_alphaprime_jack1951a]
+      parent:
+        name: γ-Fe(N) (fcc)
+        structure: {system: cubic, a: 1.0, laue: m-3m}
+        family: fcc
+        rollable: true
+        rx_texture: {kind: fibre, dir: [1, 1, 0], refs: [fe16n2_other_gamma_texture_koyano2000]}
+      OR: {plane_P: [0, 0, 1], plane_H: [0, 0, 1], dir_P: [1, 0, 0], dir_H: [1, 0, 0], ref: fe16n2_or_bain_koyano2000}
+      T_f: [{ref: fe16n2_t_formation_alpha1_koyano2003, index: 0}, {ref: fe16n2_t_formation_alpha1_koyano2003, index: 1}]
+      Tc_forming: {ref: fe16n2_tc_alpha1_koyano2003}
+      stress_sign: +1
+      stress_refs: [fe16n2_tetragonality_alphaprime_koyano2000]
+      phase_fraction_limit: {ref: fe16n2_phasefraction_jack1994}
+  particles:
+    single_variant: 'yes'
+    reason: "50-100 nm α'' grains nearly fully converted single crystals; dispersed single-domain particles rotate as bodies"
+    refs: [fe16n2_svp_bridges2016, fe16n2_single_variant_particles_kartikowati, fe16n2_svp_shibata2006]
+    habit: {shape: equiaxed, single_crystal: true, refs: [fe16n2_svp_shibata2006]}
+  melt: {primary: none, reason: "α'' never forms from a melt; its parents (γ-Fe, α-Fe) are cubic", refs: [fe16n2_structure_gamman_jack1951a]}
+  epitaxy: {demonstrated: true, refs: [fe16n2_or_film_sugita1991, fe16n2_or_film_ji2011]}
+  tgg: {}
+
+# ------------------------------------------------------------------ L1_0 MnGa
+- id: L10-MnGa
+  name: "L1_0 Mn-Ga"
+  universe: Mn-Ga (L10/D022)
+  structure: {system: tetragonal, a: {ref: mnga_l10_lattice_mix2015, key: a}, c: {ref: mnga_l10_lattice_mix2015, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: mnga_l10_easy_zhu2012}
+  Js: {ref: mnga_l10_js_huh2013}
+  K1: {ref: mnga_l10_k1_mizukami2011}
+  Tc: {ref: mnga_l10_tc_huh2013}
+  T_stab: {ref: mnga_l10_tstab_mix2015}
+  cell: {atoms: 4, magnetic_fraction: {est: 0.55, why: "Mn1.2Ga composition"}}
+  paths:
+    - name: solid-state transformation from hcp Mn2Ga(h)
+      mode: OR
+      OR: unknown
+      OR_analogue: {plane_P: [0, 0, 0, 1], plane_H: [1, 1, 1], dir_P: [1, -1, 0, 0], dir_H: [-1, -1, 2], ref: mnal_OR_kojima1975}
+      OR_analogue_name: "ε → τ in Mn-Al (same hcp → L1_0 structural change)"
+      refs: [mnga_l10_parent_hcp_tiwari, mnga_l10_formation_hx2020]
+      parent:
+        name: Mn2Ga(h) (hcp)
+        structure: {system: hexagonal, a: {est: 2.7, why: "hcp metric (only c/a enters the analogue OR geometry; MnAl-like value)"}, c: {est: 4.37, why: "hcp metric"}, laue: 6/mmm}
+        family: hexagonal
+      T_f: [{ref: mnga_l10_tf_mix2015}, {ref: mnga_l10_tf_lu2015, index: 1}]
+  particles:
+    single_variant: unknown
+    reason: "milled + annealed L1_0 powders are polycrystalline and twinned; single-variant layers exist only as films"
+    refs: [mnga_l10_svp_cui2013, mnga_l10_twins_mix2015]
+  melt: {primary: none, reason: "L1_0 does not form from the melt; the parent forms peritectically", refs: [mnga_l10_primary_hx2020]}
+  epitaxy: {demonstrated: true, refs: [mnga_l10_or_zhu2012, mnga_l10_or_krishnan1992]}
+  tgg: {}
+
+# ------------------------------------------------------------------ D0_22 Mn3Ga
+- id: D022-Mn3Ga
+  name: "D0_22 Mn3-xGa"
+  universe: Mn-Ga (L10/D022)
+  structure: {system: tetragonal, a: {ref: mn3ga_lattice_kren, key: a}, c: {ref: mn3ga_lattice_kren, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: mn3ga_easy_niida1996}
+  Js: {ref: mn3ga_js_huh2013}
+  K1: {ref: mn3ga_k1_rode2013}
+  Tc: {ref: mn3ga_tc_huh2013}
+  T_stab: {ref: mn3ga_tstab_winterlik2008}
+  cell: {atoms: 8, magnetic_fraction: {est: 0.7, why: "Mn3-xGa, x~1"}}
+  paths:
+    - name: solid-state formation from quenched γMn / D0_19 / L2_1
+      mode: OR
+      OR: unknown
+      OR_analogue: {plane_P: [0, 0, 0, 1], plane_H: [1, 1, 2], dir_P: [1, -1, 0, 0], dir_H: [1, 1, -1], ref: mnal_OR_kojima1975}
+      OR_analogue_name: "ε → τ in Mn-Al (hexagonal close-packed parent, D0_22 (112) as the close-packed plane)"
+      refs: [mn3ga_formation_niida1996, mn3ga_formation_ener_kb2022, mn3ga_formation_elgendy2014]
+      parent:
+        name: D0_19 (hexagonal)
+        structure: {system: hexagonal, a: {est: 5.4, why: "D0_19 metric (only c/a matters)"}, c: {est: 4.35, why: "D0_19 metric"}, laue: 6/mmm}
+        family: hexagonal
+      T_f: [{ref: mn3ga_tf_niida1996, index: 0}, {ref: mn3ga_tf_niida1996, index: 1}]
+      product_ferromagnetic: true
+  particles:
+    single_variant: unknown
+    reason: "annealed D0_22 powders are nanocrystalline (<30 nm grains)"
+    refs: [mn3ga_svp_elgendy2015]
+  melt: {primary: none, reason: "D0_22 forms only in the solid state", refs: [mn3ga_formation_kb2022]}
+  epitaxy: {demonstrated: true, refs: [mn3ga_k1_kurt2011]}
+  tgg: {}
+
+# ------------------------------------------------------------------ D0_22 Mn3Ge
+- id: D022-Mn3Ge
+  name: "D0_22 Mn3Ge"
+  universe: Mn-Ga (L10/D022)
+  structure: {system: tetragonal, a: {ref: mn3ge_lattice_you2017, key: a}, c: {ref: mn3ge_lattice_you2017, key: c}, laue: 4/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: mn3ge_easy_sugihara2014}
+  Js: {ref: mn3ge_js_kurt2012}
+  K1: {ref: mn3ge_k1_sugihara2014}
+  Tc: {ref: mn3ge_tc_you2017}
+  T_stab: {ref: mn3ge_tstab_kalache2016}
+  cell: {atoms: 8, magnetic_fraction: {est: 0.75, why: "Mn3Ge"}}
+  paths:
+    - name: solid-state formation from D0_19
+      mode: OR
+      OR: unknown
+      OR_analogue: {plane_P: [0, 0, 0, 1], plane_H: [1, 1, 2], dir_P: [1, -1, 0, 0], dir_H: [1, 1, -1], ref: mnal_OR_kojima1975}
+      OR_analogue_name: "ε → τ in Mn-Al (hexagonal close-packed parent)"
+      refs: [mn3ge_formation_you2017]
+      parent:
+        name: D0_19 Mn3Ge (hexagonal)
+        structure: {system: hexagonal, a: {ref: mn3ge_d019_lattice_you2017, key: a}, c: {ref: mn3ge_d019_lattice_you2017, key: c}, laue: 6/mmm}
+        family: hexagonal
+      T_f: [{ref: mn3ge_tf_you2017}, {ref: mn3ge_tf_you2017}]
+  particles:
+    single_variant: unknown
+    reason: "melt-spun + annealed ribbons are nanostructured"
+    refs: [mn3ge_svp_kalache2016]
+  melt: {primary: none, reason: "D0_22 forms only in the solid state from D0_19", refs: [mn3ge_formation_you2017]}
+  epitaxy: {demonstrated: true, refs: [mn3ge_k1_sugihara2014, mn3ge_twins_sugihara2015]}
+  tgg: {}
+
+# ------------------------------------------------------------------ Zr2Co11
+- id: Zr2Co11
+  name: "Zr2Co11 (rhombohedral)"
+  universe: Zr2Co11
+  structure: {system: hexagonal, a: {ref: zr2co11_lattice_cui2018, key: a}, c: {ref: zr2co11_lattice_cui2018, key: c}, laue: -3m}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: zr2co11_easy_calc_cui2018}
+  Js: {ref: zr2co11_js_cui2018}
+  K1: {ref: zr2co11_k1_cui2018}
+  Tc: {ref: zr2co11_tc_cui2018}
+  T_stab: {ref: zr2co11_tstab_cui2018}
+  cell: {atoms: {est: 39, why: "3 formula units of Zr2Co11 per hexagonal-setting cell assumed"}, magnetic_fraction: {est: 0.846, why: "11 Co of 13 atoms"}}
+  paths:
+    - name: crystallisation from the melt (high-temperature rhombohedral form, retained by quenching)
+      mode: direct
+      refs: [zr2co11_formation_jin2016, zr2co11_primary_cui2018, zr2co11_field_cui2018]
+      T_f: [{ref: zr2co11_tf_lo_cui2018}, {ref: zr2co11_tf_hi_cui2018}]
+  particles:
+    single_variant: 'yes'
+    reason: "cluster deposition gives monodisperse single-crystalline ordered particles (8.7 nm)"
+    refs: [zr2co11_svp_bal2013, zr2co11_cluster_bal2013]
+    habit: {shape: plate, easy: normal, single_crystal: null, refs: [zr2co11_twins_ivanova2009], reason: "bulk grains are thin (0001) plates, neighbours twin-related"}
+  melt: {primary: unknown, reason: "whether rhombohedral Zr2Co11 crystallises as free primary crystals is unpublished", refs: [zr2co11_primary_cui2018]}
+  epitaxy: {}
+  tgg: {}
+
+# ------------------------------------------------------------------ HfCo7
+- id: HfCo7
+  name: "HfCo7 (orthorhombic)"
+  universe: HfCo7
+  structure: {system: orthorhombic, a: {ref: hfco7_lattice_das2013, key: a}, b: {ref: hfco7_lattice_das2013, key: b}, c: {ref: hfco7_lattice_das2013, key: c}, laue: mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: hfco7_easy_bal2012}
+  Js: {ref: hfco7_js_cui2018}
+  K1: {ref: hfco7_k1_cui2018}
+  Tc: {ref: hfco7_tc_cui2018}
+  T_stab: {ref: hfco7_tstab_mcguire2015, pick: lo}
+  cell: {atoms: {est: 14, why: "cell volume (163 A^3) / ~11.5 A^3 per atom of a Co-rich intermetallic"}, magnetic_fraction: {est: 0.875, why: "7 Co of 8 atoms"}}
+  paths:
+    - name: crystallisation from the melt (high-temperature phase, retained by quenching)
+      mode: direct
+      refs: [hfco7_formation_cui2018, hfco7_field_cui2018]
+      T_f: [{ref: hfco7_tf_cui2018, index: 0}, {ref: hfco7_tf_cui2018, index: 1}]
+    - name: crystallisation of amorphous Hf2Co11B
+      mode: direct
+      refs: [hfco7_tf_amorph_mcguire2015, hfco7_field_mcguire2015]
+      T_f: [{ref: hfco7_tf_amorph_mcguire2015, index: 0}, {ref: hfco7_tf_amorph_mcguire2015, index: 1}]
+  particles:
+    single_variant: 'yes'
+    reason: "cluster deposition gives single-crystalline 12.7 nm particles aligned in flight"
+    refs: [hfco7_svp_bal2014, hfco7_cluster_bal2014]
+  melt: {primary: unknown, reason: "whether HfCo7 crystallises as free primary crystals is unpublished", refs: [hfco7_formation_cui2018]}
+  epitaxy: {}
+  tgg: {}

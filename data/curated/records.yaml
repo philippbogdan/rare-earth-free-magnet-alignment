@@ -2,31 +2,168 @@
 - id: rx_cube_feni_soubeyroux2008
   phase: all
   quantity: other
-  value: "Fe-Ni alloys develop a cube {100}<001> recrystallisation texture after cold rolling and annealing; best in-plane/out-of-plane disorientations 5.5 deg / 4.5 deg"
-  unit: ""
-  conditions: "industrial Fe-Ni alloy tapes, rolled and annealed up to 1100 C"
-  source: {doi: 10.1088/1742-6596/97/1/012069, title: "Industrial Fe-Ni alloys for HTS coated conductor tapes",
-           first_author: Soubeyroux, year: 2008,
-           url: "https://api.openalex.org/works/doi:10.1088/1742-6596/97/1/012069", evidence: abstract, locator: abstract}
-  quote: "The effects of annealing conditions (temperature and atmosphere) on the cubique texture were analyzed. RX pole figures have been achieved on samples annealed up to 1100°C."
-  note: "Same abstract: 'Pole figure measurements gave the global in-plane and out-of-plane disorientations of our samples which are in-plane 5.5° and out-plane (RD) 4.5° for best samples.'"
+  value: Fe-Ni alloys develop a cube {100}<001> recrystallisation texture after cold rolling and annealing; best
+    in-plane/out-of-plane disorientations 5.5 deg / 4.5 deg
+  unit: ''
+  conditions: industrial Fe-Ni alloy tapes, rolled and annealed up to 1100 C
+  source:
+    doi: 10.1088/1742-6596/97/1/012069
+    title: Industrial Fe-Ni alloys for HTS coated conductor tapes
+    first_author: Soubeyroux
+    year: 2008
+    url: https://api.openalex.org/works/doi:10.1088/1742-6596/97/1/012069
+    evidence: abstract
+    locator: abstract
+  quote: The effects of annealing conditions (temperature and atmosphere) on the cubique texture were analyzed.
+    RX pole figures have been achieved on samples annealed up to 1100°C.
+  note: 'Same abstract: ''Pole figure measurements gave the global in-plane and out-of-plane disorientations of
+    our samples which are in-plane 5.5° and out-plane (RD) 4.5° for best samples.'''
 - id: rx_cube_feni_spread_soubeyroux2008
   phase: all
   quantity: other
-  value: [5.5, 4.5]
+  value:
+  - 5.5
+  - 4.5
   unit: deg
-  conditions: "best Fe-Ni cube-textured tapes: in-plane and out-of-plane (RD) disorientation"
-  source: {doi: 10.1088/1742-6596/97/1/012069, title: "Industrial Fe-Ni alloys for HTS coated conductor tapes",
-           first_author: Soubeyroux, year: 2008,
-           url: "https://api.openalex.org/works/doi:10.1088/1742-6596/97/1/012069", evidence: abstract, locator: abstract}
-  quote: "Pole figure measurements gave the global in-plane and out-of-plane disorientations of our samples which are in-plane 5.5° and out-plane (RD) 4.5° for best samples."
+  conditions: 'best Fe-Ni cube-textured tapes: in-plane and out-of-plane (RD) disorientation'
+  source:
+    doi: 10.1088/1742-6596/97/1/012069
+    title: Industrial Fe-Ni alloys for HTS coated conductor tapes
+    first_author: Soubeyroux
+    year: 2008
+    url: https://api.openalex.org/works/doi:10.1088/1742-6596/97/1/012069
+    evidence: abstract
+    locator: abstract
+  quote: Pole figure measurements gave the global in-plane and out-of-plane disorientations of our samples which
+    are in-plane 5.5° and out-plane (RD) 4.5° for best samples.
 - id: rx_goss_bcc_liang2023
   phase: all
   quantity: other
-  value: "bcc Fe-Si: Goss {110}<001> texture with <001> parallel to the rolling direction, sharpened by secondary recrystallisation"
-  unit: ""
-  conditions: "grain-oriented 6.5% Si steel"
-  source: {doi: 10.3390/ma16206731, title: "Evolution of Microstructure and Texture in Grain-Oriented 6.5% Si Steel Processed by Rolling with Intrinsic Inhibitors and Additional Inhibitors",
-           first_author: Liang, year: 2023,
-           url: "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10608260/fullTextXML", evidence: full_text, locator: "Introduction"}
-  quote: "Goss ({110}<001>) orientation, due to the crystal orientation direction parallel to the rolling direction (RD), has better susceptibility to magnetization under directional magnetic fields and therefore, it mostly exists in grain-oriented silicon steel."
+  value: 'bcc Fe-Si: Goss {110}<001> texture with <001> parallel to the rolling direction, sharpened by secondary
+    recrystallisation'
+  unit: ''
+  conditions: grain-oriented 6.5% Si steel
+  source:
+    doi: 10.3390/ma16206731
+    title: Evolution of Microstructure and Texture in Grain-Oriented 6.5% Si Steel Processed by Rolling with Intrinsic
+      Inhibitors and Additional Inhibitors
+    first_author: Liang
+    year: 2023
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10608260/fullTextXML
+    evidence: full_text
+    locator: Introduction
+  quote: Goss ({110}<001>) orientation, due to the crystal orientation direction parallel to the rolling direction
+    (RD), has better susceptibility to magnetization under directional magnetic fields and therefore, it mostly
+    exists in grain-oriented silicon steel.
+- id: fepd_tf_nucleation_farjami2008
+  phase: L10-FePd
+  quantity: T_formation
+  value: 673
+  unit: K
+  conditions: Fe-55 at.% Pd single crystals
+  source:
+    doi: 10.2320/matertrans.maw200810
+    title: Effect of Magnetic Field on Microstructure Evolution during Disorder-Order Transformation in an Fe-Pd
+      Alloy
+    first_author: Sahar Farjami
+    year: 2008
+    url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
+    evidence: full_text
+    locator: Sec. 3, p. 1971-1972
+  quote: 'Considering the result of the resistivity measurements, we have determined the ordering temperatures of
+    the two-step ordering heat-treatment as follows: the first step of ordering at 673 K (close to Tc(o) and slightly
+    below Tc(d)) under a magnetic field up to 10 T (maximum field-strength of the utilized superconducting magnet)
+    applied in the [001] (Z-direction).'
+  note: 'numeric value transcribed from the quote of fepd_field_effect_on_formation_farjami2008: first (nucleation)
+    step of the two-step field ordering'
+- id: fepd_tf_saturation_farjami2009
+  phase: L10-FePd
+  quantity: T_formation
+  value:
+  - 773
+  - 873
+  unit: K
+  conditions: Fe-55 at.% Pd single crystal quenched from 1173 K, isothermal anneals, resistivity at 273 K
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Sec. 3.1, Fig. 1, p. 1611
+  quote: In the case of Fe–55Pd alloy, the resistivity saturates within 3 h by the heat-treatment at 873 K, within
+    21 h at 773 K, while not within 163 h by heat-treatment at 673 K.
+  note: 'numeric value transcribed from the quote of fepd_t_formation_farjami2009: temperatures at which ordering
+    saturates (21 h, 3 h)'
+- id: mn3ge_d019_lattice_you2017
+  phase: D019-Mn3Ge
+  quantity: lattice
+  value:
+    a: 5.337
+    c: 4.311
+  unit: Angstrom
+  conditions: bulk Mn3.4Ge, D022 (and D019 parent a = 5.337, c = 4.311 A)
+  source:
+    doi: 10.1016/j.jmmm.2016.12.140
+    title: Designing magnetic compensated states in tetragonal Mn 3 Ge-based Heusler alloys
+    first_author: Yurong You
+    year: 2017
+    url: https://arxiv.org/pdf/1610.04971
+    evidence: full_text
+    locator: Section 3 (arXiv:1610.04971)
+  quote: As Fig. 4 shows, the refined lattice constants of tetragonal samples are a = 3.803 Å and c = 7.236 Å, and
+    those of hexagonal samples are a = 5.337 Å and c = 4.311 Å.
+  note: 'numeric value transcribed from the quote of mn3ge_lattice_you2017: hexagonal (D0_19) parent lattice constants'
+- id: copt_tf_nucleation_farjami2009
+  phase: L10-CoPt
+  quantity: T_formation
+  value: 773
+  unit: K
+  conditions: Co-50Pt single crystal, first (field) ordering step 0.5 h
+  source:
+    doi: 10.2355/isijinternational.49.1610
+    title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd Alloys
+    first_author: Sahar Farjami
+    year: 2009
+    url: https://www.jstage.jst.go.jp/article/isijinternational/49/10/49_10_1610/_pdf
+    evidence: full_text
+    locator: Section 3.2, p. 1612; Discussion p. 1613
+  quote: Then the specimen of the Co–50Pt (Fe–55Pd) alloy was kept at 773 K for 0.5 h (673 K for 1 h) followed by
+    cooling down to room temperature with a cooling rate of 5 K/min under H1.
+  note: process condition sentence (Sect. 2); verified against the saved full text
+- id: zr2co11_tf_lo_cui2018
+  phase: Zr2Co11
+  quantity: T_formation
+  value: 1198
+  unit: K
+  conditions: rhombohedral Zr2Co11
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7
+  quote: A calculation of its free energy also suggests that the rhombohedral Zr2Co11 structure is stable only at
+    above 1198 K [176].
+  note: lower bound of the rhombohedral (hard) form, transcribed from zr2co11_tf_cui2018
+- id: zr2co11_tf_hi_cui2018
+  phase: Zr2Co11
+  quantity: T_formation
+  value: 1527
+  unit: K
+  conditions: Zr-Co phase diagram / DFT
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; refs. [175] Okamoto phase diagram, [176] Zhao et al.
+  quote: According to the Zr-Co phase diagram, Zr2Co11 seems to be a stable phase for the temperature range of 573–1527
+    K at 15.4 at.% of Zr (Fig. 10b) [175]. ... A calculation of its free energy also suggests that the rhombohedral
+    Zr2Co11 structure is stable only at above 1198 K [176].
+  note: upper end of the Zr2Co11 phase field, transcribed from zr2co11_tstab_cui2018
