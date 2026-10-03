@@ -3145,6 +3145,404 @@
        "doi": "10.1063/5.0032167"
       }
      ]
+    },
+    "ferrite_ndfeb_outcomes.yaml": {
+     "sha256": "a3ab49ea41b644218fa318c37a818e900403d8d1c7b8f0b9b7af0b63231b04ce",
+     "n_records": 56,
+     "cases": [
+      {
+       "id": "hexa_iso_br_went1952",
+       "phase": "BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_iso_mrms_went1952",
+       "phase": "BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "hexa_iso_br_stuijts1954_ferroxdure1",
+       "phase": "BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_iso_br_goudsmit_f10",
+       "phase": "M-type ferrite (unspecified)",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_iso_br_eclipse_c1",
+       "phase": "M-type ferrite (unspecified)",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_par_stuijts1954_1250",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_perp_stuijts1954_1250",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_par_stuijts1954_1275",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_perp_stuijts1954_1275",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_par_stuijts1954_1300",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_perp_stuijts1954_1300",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_par_stuijts1954_1320",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_perp_stuijts1954_1320",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_par_stuijts1954_1340",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_perp_stuijts1954_1340",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_stuijts1954_ferroxdure2",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_stuijts1954_ferroxdure3",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_texture_stablein1966_1100",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1109/tmag.1966.1065942"
+      },
+      {
+       "id": "hexa_fp_texture_stablein1966_1350",
+       "phase": "BaFe12O19",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1109/tmag.1966.1065942"
+      },
+      {
+       "id": "hexa_other_br_cochardt1963",
+       "phase": "SrFe12O19",
+       "route": "other: not stated (high-energy modified Sr ferrite magnet)",
+       "quantity": "Br",
+       "doi": "10.1063/1.1729468"
+      },
+      {
+       "id": "hexa_fp_br_iida1999_laco_x03",
+       "phase": "(Sr,La)(Fe,Co)12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3379/jmsjmag.23.1093"
+      },
+      {
+       "id": "hexa_fp_br_iida1999_x0_x04",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3379/jmsjmag.23.1093"
+      },
+      {
+       "id": "hexa_fp_orientation_iida1999",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3379/jmsjmag.23.1093"
+      },
+      {
+       "id": "hexa_cs_br_lee1999_review",
+       "phase": "SrFe12O19",
+       "route": "other: conventional sintering (alignment method not stated in review)",
+       "quantity": "Br",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "hexa_cs_br_topfer2005_review",
+       "phase": "SrFe12O19",
+       "route": "other: conventional sintering (alignment method not stated in review)",
+       "quantity": "Br",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "hexa_cs_br_huang2018_review",
+       "phase": "SrFe12O19",
+       "route": "other: conventional sintering (alignment method not stated in review)",
+       "quantity": "Br",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "hexa_cs_br_du2019_review",
+       "phase": "SrFe12O19",
+       "route": "other: two-step conventional sintering (alignment method not stated in review)",
+       "quantity": "Br",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "hexa_cs_br_besenicar1991_review",
+       "phase": "SrFe12O19",
+       "route": "other: conventional sintering, 'highly anisotropic' (alignment method not stated in review)",
+       "quantity": "Br",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "hexa_sps_br_obara2002_review",
+       "phase": "(Sr,La)(Fe,Co)12O19",
+       "route": "other: SPS (uniaxial pressure 50 MPa; field alignment not stated)",
+       "quantity": "Br",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "hexa_sps_mrms_sauramuzquiz2016_review",
+       "phase": "SrFe12O19",
+       "route": "other: SPS of hydrothermal SrM nanoplatelets (shape alignment under uniaxial pressure, no field)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "hexa_fp_sps_mrms_field_review",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "hexa_sps_mrms_anneal_review",
+       "phase": "SrFe12O19",
+       "route": "other: SPS of SrM platelets + post-anneal 4 h at 850 \u00b0C (no field)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "hexa_fp_br_goudsmit_f47",
+       "phase": "M-type ferrite (unspecified)",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_goudsmit_f25",
+       "phase": "M-type ferrite (unspecified)",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_eclipse_y40",
+       "phase": "M-type ferrite (unspecified)",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_eclipse_c8",
+       "phase": "M-type ferrite (unspecified)",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_allstar_c11",
+       "phase": "M-type ferrite (unspecified)",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_bonded_br_arnold_plastiform2039",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_bonded_br_arnold_plastiform1044",
+       "phase": "SrFe12O19",
+       "route": "other: calendering (mechanical orientation of platelets in rubber sheet)",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_bonded_br_arnold_plastiform1037",
+       "phase": "BaFe12O19",
+       "route": "other: flexible rubber-bonded ferrite, 'preferentially oriented' (method not stated)",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "hexa_tgg_texture_metu2012_md",
+       "phase": "BaFe12O19",
+       "route": "TGG",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "hexa_tgg_texture_metu2012_shindex",
+       "phase": "BaFe12O19",
+       "route": "TGG",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "hexa_fp_br_obara2014_calaco",
+       "phase": "(Ca,La)(Fe,Co)12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.2497/jjspm.61.s258"
+      },
+      {
+       "id": "hexa_sint_br_shon2021_lanaco",
+       "phase": "(La,Na)(Fe,Co)12O19",
+       "route": "other: sintered (alignment method not stated in abstract)",
+       "quantity": "Br",
+       "doi": "10.4283/jkms.2021.31.5.249"
+      },
+      {
+       "id": "hexa_sint_js_same_sample_shon2021_lanaco",
+       "phase": "(La,Na)(Fe,Co)12O19",
+       "route": "other: sintered (alignment method not stated in abstract)",
+       "quantity": "Js_same_sample",
+       "doi": "10.4283/jkms.2021.31.5.249"
+      },
+      {
+       "id": "nd2fe14b_hd_br_lee1985",
+       "phase": "Nd2Fe14B",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.1109/tmag.1985.1064031"
+      },
+      {
+       "id": "nd2fe14b_hp_br_lee1985",
+       "phase": "Nd2Fe14B",
+       "route": "other: hot pressing of melt-spun ribbons (MQ2), 'only slightly magnetically aligned'",
+       "quantity": "Br",
+       "doi": "10.1109/tmag.1985.1064031"
+      },
+      {
+       "id": "nd2fe14b_dhddr_jr_powder_horikawa2021_tdec23",
+       "phase": "Nd2Fe14B",
+       "route": "other: d-HDDR (texture memory) powder",
+       "quantity": "Br",
+       "doi": "10.1080/14686996.2021.1944780"
+      },
+      {
+       "id": "nd2fe14b_dhddr_doa_powder_horikawa2021_tdec23",
+       "phase": "Nd2Fe14B",
+       "route": "other: d-HDDR (texture memory) powder",
+       "quantity": "texture_metric",
+       "doi": "10.1080/14686996.2021.1944780"
+      },
+      {
+       "id": "nd2fe14b_dhddr_jr_powder_horikawa2021_tdec500",
+       "phase": "Nd2Fe14B",
+       "route": "other: d-HDDR (texture memory) powder",
+       "quantity": "Br",
+       "doi": "10.1080/14686996.2021.1944780"
+      },
+      {
+       "id": "nd2fe14b_dhddr_doa_powder_horikawa2021_tdec500",
+       "phase": "Nd2Fe14B",
+       "route": "other: d-HDDR (texture memory) powder",
+       "quantity": "texture_metric",
+       "doi": "10.1080/14686996.2021.1944780"
+      },
+      {
+       "id": "nd2fe14b_dhddr_br_bonded_horikawa2021_tdec23",
+       "phase": "Nd2Fe14B",
+       "route": "other: d-HDDR powder + field-aligned compression bonding",
+       "quantity": "Br",
+       "doi": "10.1080/14686996.2021.1944780"
+      },
+      {
+       "id": "nd2fe14b_dhddr_br_bonded_horikawa2021_tdec500",
+       "phase": "Nd2Fe14B",
+       "route": "other: d-HDDR powder + field-aligned compression bonding",
+       "quantity": "Br",
+       "doi": "10.1080/14686996.2021.1944780"
+      },
+      {
+       "id": "nd2fe14b_hddr_brjs_nakamura1999",
+       "phase": "Nd2Fe14B",
+       "route": "other: HDDR (texture memory) powder",
+       "quantity": "texture_metric",
+       "doi": "10.3379/jmsjmag.23.300"
+      },
+      {
+       "id": "nd2fe14b_iso_br_arnold_plastiform3202",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "nd2fe14b_iso_br_arnold_plastiform3201",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      }
+     ]
     }
    },
    "opened": false
