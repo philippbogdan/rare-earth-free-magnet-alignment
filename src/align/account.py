@@ -286,7 +286,7 @@ def _parents_for(path, source):
     Several entries mean the source texture is unpublished (candidates)."""
     par = path.parent
     if source == 'random':
-        return [('untextured parent', E.texture_random(20000), 'random')], True
+        return [('untextured parent: each grain keeps the variant nearest the bias axis', E.texture_random(20000), 'random')], True
     if source == 'sc':
         return [('single-crystal parent', E.texture_single(), 'single')], True
     key = {'ds': 'ds_texture', 'am': 'am_texture', 'rx': 'rx_texture'}[source]
@@ -719,9 +719,15 @@ def _evaluate(ph):
         outs = {lab_a: ca.A_max, lab_b: cb.A_max}
         qname = unk[0].get('unknown_name', 'orientation relationship of the transformation')
         qmeas = unk[0].get('unknown_measurement', 'EBSD/TEM of a partially transformed parent crystal')
+        or_decides = abs(ca.A_max - cb.A_max) >= 0.005
+        dec = ([(qname, outs, qmeas)] if or_decides else []) + ca.decides + cb.decides
+        if not dec:                       # same ceiling either way and nothing else unpublished
+            ca.chain += ' (same ceiling under either orientation relationship hypothesis)'
+            out.append(ca)
+            continue
         c = Cell(ph['id'], r, 'open', max(outs.values()), '',
                  chain=f'{qname} unpublished. If {lab_a}: {ca.chain}. If {lab_b}: {cb.chain}',
-                 decides=[(qname, outs, qmeas)] + ca.decides + cb.decides, A_alt=outs)
+                 decides=dec, A_alt=outs)
         out.append(_settle(c))
     return out
 
@@ -767,6 +773,22 @@ def test_for(c, ph):
                     f'the variant fractions (A) differ by more than {DELTA:.2f}.')
         return (f'Form {name} under uniaxial stress of the favoured sign and measure variant fractions: '
                 f'predicted ceiling {A:.3f}; refuted if no selection occurs.')
+    if r == 'MO':
+        if c.verdict == 'none':
+            return (f'Press or extrude {name} particles without a field and measure the pole figure along the '
+                    f'pressing/flow axis: refuted if A exceeds {A + DELTA:.2f}.')
+        return (f'Orient single-crystal {name} particles by pressing or shear flow (no field) and measure the '
+                f'pole figure or Mr/Ms along the orientation axis: predicted ceiling {A:.3f}; refuted if A > '
+                f'{A + DELTA:.2f}' + (', or if verified single-crystal particles of the stated habit stay at the '
+                                      'random value' if c.verdict == 'full' else '') + '.')
+    if r in ('SC+FA', 'SC+SA'):
+        bias = 'a saturating field below the Curie point' if r == 'SC+FA' else 'a uniaxial stress near the yield stress'
+        if c.verdict == 'none':
+            return (f'Form {name} from a single-crystal parent with and without {bias}: refuted if the variant '
+                    f'fractions (A) differ by more than {DELTA:.2f}.')
+        return (f'Form {name} from a single-crystal parent under {bias} along the best crystal direction and '
+                f'measure variant fractions (XRD) or Mr/Ms along it: predicted ceiling {A:.3f}; refuted if the '
+                'favoured-variant fraction stays at the unbiased value.')
     if r == 'FS':
         if c.verdict == 'none':
             return (f'Solidify in 0 and >= 10 T and compare the pole figures of {name}: refuted if A '

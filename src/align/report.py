@@ -416,12 +416,21 @@ def build(reg, phases, rows, R, st, univ=None):
                   f"conversion range); 'cannot align' was refuted in {h1['none_refuted']} of {h1['none_n']}; "
                   f"{s1['summary']['pairs']['ok']} of {s1['summary']['pairs']['n']} field/no-field pairs moved "
                   f"as predicted. Every failure is diagnosed in §6.")
-    sm.append(f"- **Settled by the held-back data**: in Ti-free AlNiCo 5 the α1 rods follow the field "
-              f"(equiaxed field-cooled Br/Js above the 0.831 that rods held on the nearest <100> allow); "
-              f"unbiased spinodal alloys (AlNiCo, Fe-Cr-Co, the alnico-like HEA) behave as one coupled network "
-              f"per grain (the independent-rod reading was refuted {hyp_ref[('independent rods', 'refuted')]} "
-              f"times, the coupled reading never).")
-    for r in sorted(caps, key=lambda r: r['A_max'])[:8]:
+    a5 = [x for x in (s1['cases'] if s1 else []) if x['status'] == 'heldout' and x['phase'] == 'AlNiCo-5'
+          and (x.get('hyp') or {}).get('rods on the nearest <100>') == 'refuted']
+    sm.append(f"- **Settled by the held-back data**: in Ti-free AlNiCo 5 the α1 rods are not held on the parent "
+              f"<100> nearest the field: {len(a5)} held-out equiaxed magnets exceed the 0.831 that this would "
+              f"allow (up to {fmt(max((x['m_lo'] for x in a5), default=None))} with the same-sample Js), and in "
+              "columnar crystals A falls with the cosine of the field angle; the account now lets the rods follow "
+              "the field (ceiling 1 for any grain). Without a bias, spinodal alloys (AlNiCo, Fe-Cr-Co, the "
+              "alnico-like HEA) reach more remanence than independent rods allow: that reading was refuted "
+              f"{hyp_ref[('independent rods', 'refuted')]} times, the coupled-network bound "
+              f"(0.866 for random grains) held every time.")
+    seen = set()
+    for r in sorted(caps, key=lambda r: r['A_max']):
+        if r['phase'] in seen:
+            continue
+        seen.add(r['phase'])
         sm.append(f"- **Cap**: {r['phase']} by {r['route']}: A_max = {fmt(r['A_max'])} — "
                   f"{r['chain'].split(';')[0]}.")
     ctx['summary'] = '\n'.join(sm)
@@ -495,7 +504,58 @@ def build(reg, phases, rows, R, st, univ=None):
         f"- v2 has been tested on {s2h.get('n_scored', 0)} held-out measurements so far "
         f"({s2h.get('ceiling_violated', 0)} violations).",
     ])
-    ctx['complete_table'] = ''
+    # ---------------- COMPLETE.md: each GOAL.md measurement, computed
+    n_ph, n_rt = len(phases), len(ROUTES)
+    acc_ok = all(r['verdict'] in ('full', 'capped', 'none', 'open') and r['chain'] and r['A_max'] is not None
+                 for r in rows) and len(rows) == n_ph * n_rt
+    tests_ok = all(r['test'] for r in rows)
+    fid_n = sum(1 for k in kr if k['violated'] == 0 and k['refuted'] == 0 and (k['shown'] or k['consistent']))
+    undiag = [f for f in fails if f[-1] == '–']
+    untried = [r for r in rows if r['verdict'] == 'none' and any(
+        w in r['chain'] for w in ('not reported', 'unreported', 'is reported', 'not densified'))]
+    srcless = [rid for rid in R.used if not ((reg.rec[rid].get('source') or {}).get('doi')
+                                             or (reg.rec[rid].get('source') or {}).get('url'))
+               or not reg.rec[rid].get('quote')]
+    s2h = s2['summary'].get('heldout', {}) if s2 else {}
+    checks = [
+        ('Deliverable 1 — the account', f"{n_ph} phases × {n_rt} route classes = {len(rows)} cells, each with "
+         f"verdict, mechanism/reason and A_max (full {verd['full']}, capped {verd['capped']}, none "
+         f"{verd['none']}, open {verd['open']})", acc_ok),
+        ('Deliverable 2 — tests', f"{sum(1 for r in rows if r['test'])} of {len(rows)} cells carry one "
+         'measurement that would refute them', tests_ok),
+        ('Deliverable 3 — FINDINGS.md, REPORT.md, one command', f"written by ./regenerate.sh from commit "
+         f"{st['commit']} ({ctx['clean']})", st['clean_inputs']),
+        ('Fidelity — known cases', f"{fid_n} of {len(kr)} known cases reproduced (verdict right, every "
+         'published value at or below its ceiling)', fid_n == len(kr) and len(kr) == 4),
+        ('Accuracy — held-out (frozen v1)', f"ceilings held for {h1.get('ceiling_ok', 0) + h1.get('ceiling_possible', 0)}"
+         f" of {h1.get('n_scored', 0)} held-out measurements ({h1.get('ceiling_violated', 0)} certain "
+         f"violations); 'cannot align' refuted {h1.get('none_refuted', 0)} of {h1.get('none_n', 0)}; pairs "
+         f"{s1['summary']['pairs']['ok'] if s1 else 0}/{s1['summary']['pairs']['n'] if s1 else 0}; every failure "
+         f"diagnosed ({len(undiag)} undiagnosed)", bool(h1) and not undiag),
+        ('Accuracy — held-out (revised v2)', f"ceilings held for {s2h.get('ceiling_ok', 0) + s2h.get('ceiling_possible', 0)}"
+         f" of {s2h.get('n_scored', 0)} measurements opened after its freeze ({s2h.get('ceiling_violated', 0)} "
+         'violations)', s2h.get('n_scored', 0) > 0 and s2h.get('ceiling_violated', 1) == 0),
+        ('Frontier', f"phases {fr[-1]['phases_covered']}/{fr[-1]['phases_universe']}, routes "
+         f"{fr[-1]['routes_covered']}/{fr[-1]['routes_universe']}, accuracy {fmt(fr[0]['accuracy'])} (v1 held-out); "
+         f"non-dominated: {', '.join(ndv)}; furthest from its limit: {far}" if fr else '–',
+         bool(fr) and fr[-1]['phases_covered'] == fr[-1]['phases_universe']
+         and fr[-1]['routes_covered'] == fr[-1]['routes_universe']),
+        ('Limits', f"{sum(len(v) for v in opened.values())} open cells, each with the unpublished quantity that "
+         f"decides it and its measurement ({len(bad)} without); {len(untried)} 'cannot align' cells resting on "
+         "'not reported'", not bad and not untried),
+        ('Evidence', f"{len(R.used)} input records, each with a named source and verbatim quote "
+         f"({len(srcless)} without); quote found at the source for {vc['verified_online'] + vc['verified_local']}; "
+         f"{len(R.estimates)} labelled estimates; one commit", not srcless and st['clean_inputs']),
+    ]
+    ctx['complete_table'] = table(['criterion (GOAL.md)', 'measured', 'holds'],
+                                  [[a, b, 'yes' if c else 'NO'] for a, b, c in checks])
+    ctx['complete_overall'] = ('every criterion holds' if all(c for _, _, c in checks) else
+                               'not complete: ' + '; '.join(a for a, _, c in checks if not c))
+    notes = []
+    if untried:
+        notes.append("'Cannot align' cells still resting on an untried route: "
+                     + ', '.join(f"{r['phase']}/{r['route']}" for r in untried[:12]) + (' …' if len(untried) > 12 else ''))
+    ctx['complete_notes'] = '\n'.join(notes)
     return ctx
 
 
