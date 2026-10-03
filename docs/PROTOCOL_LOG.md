@@ -132,3 +132,14 @@ measuring field, and particles sintered together can be exchange-coupled; the 'n
 step' rule had treated a loose powder as a fixed random sample. Post-hoc rule v5: loose powders
 measured without fixing are open (random if held fixed; up to 1 if they turn), decided by
 whether the particles were immobilised during the measurement.
+
+## Freeze v5 before opening batch 6 (heldout3: 81 records from sources not used before)
+
+Rules v5 = v4 plus: loose powders and powders whose fixing is not reported are open (random if
+fixed, up to 1 if the particles turn in the measuring field); composites with a soft or second
+magnetic phase (MnO2, CoFe2O4, Fe) are not tests; substituted M-type ferrite labels map to the
+hexaferrite phase; pressing/SPS of platelets is shape orientation (MO); textured hexaferrite
+films are tested along the normal only. Account: HDDR from hydride thermodynamics, physical
+TGG, textured-parent variant angles (no case prediction of batches 1-5 depends on them).
+
+    sha256 data/curated/cases_v5.yaml  0c7a5fd10bc6252afbdd1f9a24101db312ed32ec76170e6650a0e308afe15583

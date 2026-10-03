@@ -293,6 +293,8 @@ def encode(ctx, topic, c):
     """One case -> spec; rules by (phase, route) group with per-case conditions."""
     cid, route = c['id'], str(c.get('route'))
     pid = PHASE_MAP.get(c.get('phase'))
+    if pid is None and re.search(r'm-type|fe12[^ ]*o19|fe\(12-x\)o19', str(c.get('phase') or '').lower()):
+        pid = 'SrM-hexaferrite'                     # substituted Ba/Sr M-type ferrites
     if pid == 'tau-MnAl' and re.search(r'mn-?al-?c\b|mnal\(c\)|mn-al-c|mnal-c', str(c.get('process') or '').lower()):
         pid = 'tau-MnAl-C'                    # carbon-containing alloy labelled with the binary phase
     mk = meas_kind(c)
@@ -307,6 +309,9 @@ def encode(ctx, topic, c):
     if mk == 'skip':
         return {**base, 'pred': pred(1, ISO, 'quantity is not remanence or texture', cls='info')}
     r = route.lower()
+    if re.search(r'/\s*(mno2|cofe2o4|fe\b|fe composite|alpha-fe)', str(c.get('phase') or '').lower()):
+        return {**base, 'pred': pred(1.0, ISO, 'composite with a soft or second magnetic phase: exchange coupling and '
+                                               'the second phase\'s magnetisation enter the remanence', cls='info')}
     if topic not in KNOWN_TOPICS and pid is not None:      # mixed-phase collections: rules by phase
         topic = PHASE_TOPIC.get(pid, topic)
     t_first = 'alnico_fecrco' if (c.get('phase') in ('AlNiCo', 'Fe-Cr-Co')
@@ -317,7 +322,9 @@ def encode(ctx, topic, c):
             extra = res.pop('meas_extra', {})
             return {**base, **res, 'meas': {**base['meas'], **extra}}
     # ------------------------------------------------ isotropic samples (no alignment step)
-    loose = 'loose' in str(cond.get('parent_texture') or '').lower() or 'loose' in str(cond.get('alignment_medium') or '').lower()
+    med = str(cond.get('alignment_medium') or '').lower()
+    loose = ('loose' in str(cond.get('parent_texture') or '').lower() or 'loose' in med
+             or ('fixation not reported' in med and 'pellet' not in med and 'sintered' not in med))
     if loose and (r.startswith('isotropic') or 'no alignment' in r):
         return {**base, 'pred': _hyp({'particles held fixed (random)': ISO,
                                       'particles turn in the measuring field (or sinter into coupled clusters)': 1.0},
@@ -634,6 +641,14 @@ def enc_ferrite_ndfeb(ctx, pid, c, route, r, proc, cond, al, mk):
         if 'hot pressing' in r:
             return {'pred': pred(1.0, ISO, 'hot pressing without upsetting: little strain', cls='info')}
         return None
+    if 'film' in r and pid == 'SrM-hexaferrite':
+        if 'in plane' in str(c.get('measured_along')).lower() or 'in-plane' in str(c.get('measured_along')).lower():
+            return {'pred': pred(1.0, ISO, 'textured film measured in plane: film shape anisotropy enters', cls='info')}
+        return {'pred': pred(1.0, ISO, '[0001]-textured film measured along the film normal (EP-type ceiling)')}
+    if r.startswith('mo') or 'sps texture' in r or 'field-assisted sps' in r:
+        if al == 'perp':
+            return {'pred': pred(ISO, ISO, 'measured across the orientation axis', cls='none')}
+        return {'pred': pred(1.0, ISO, 'platelets (c normal) oriented by pressing/flow (MO cell)')}
     if 'calendering' in r or 'spss' in r or 'sps of' in r or 'shape alignment' in r or 'tgg' in r.lower() or 'shape-induced' in r:
         return {'pred': pred(1.0, ISO, 'platelets (c normal) oriented by pressure/flow or templates')}
     if r.startswith('fp') or 'rubber-bonded' in r or 'sintered' in r or 'conventional sintering' in r or 'not stated' in r:
