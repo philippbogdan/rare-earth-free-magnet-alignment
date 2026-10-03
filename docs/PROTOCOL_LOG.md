@@ -121,3 +121,4 @@ biased grain growth with unmeasured texture not a test; Fe-Cr-Co cold rolling be
 steps = deformation ageing; '8h' in an id no longer read as grade 8H.
 
     sha256 data/curated/cases_v4.yaml  b8ce592f93b14a5bc774115a5cfe590a3fd1c647e7332174071f77fe0123c91b
+freeze v4: 92b950f
