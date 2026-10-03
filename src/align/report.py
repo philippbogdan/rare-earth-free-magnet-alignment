@@ -321,7 +321,10 @@ def _push_history(fr):
     for a, b in zip(fr, fr[1:]):
         sa = _frontier_scores(a)
         far = min(sa, key=sa.get)
-        out.append(f"after {a['version']} the furthest criterion was {far} ({sa[far]:.3f}); {b['version']} pushed it "
+        if len({round(v, 3) for v in sa.values()}) == 1:
+            far = 'accuracy'                          # all at their limits: accuracy has the fewest held-out tests
+        out.append(f"after {a['version']} the furthest criterion was {far} ({sa[far]:.3f}"
+                   + (f", on {a['n_cases']} held-out cases" if far == 'accuracy' else '') + f"); {b['version']} pushed it "
                    f"({b['note']}; phases {b['phases_covered']}/{b['phases_universe']}, held-out accuracy "
                    f"{fmt(b['accuracy'])} on {b['n_cases']} new cases)")
     return out
