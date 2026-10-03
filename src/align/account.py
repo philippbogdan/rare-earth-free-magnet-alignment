@@ -296,6 +296,16 @@ def route_HD(ph):
                 chain=hd['reason'], refs=hd.get('refs', []))
 
 
+def route_HDDR(ph):
+    h = ph.get('hddr')
+    if not h:
+        return Cell(ph['id'], 'HDDR', 'none', ISO, '',
+                    chain='no reversible disproportionation-recombination reaction with an orientation '
+                          'memory is reported for this phase')
+    return Cell(ph['id'], 'HDDR', _verdict(h['A']), h['A'], 'memory axis', chain=h['reason'],
+                refs=h.get('refs', []))
+
+
 def route_EP(ph):
     ep = ph.get('epitaxy', {})
     if ep.get('demonstrated'):
@@ -317,7 +327,7 @@ def route_TGG(ph):
 
 FUN = {'FP': route_FP, 'FS': route_FS, 'DS': route_DS, 'AM': route_AM, 'FA': route_FA,
        'DS+FA': route_DSFA, 'AM+FA': route_AMFA, 'RX+FA': route_RXFA, 'SA': route_SA,
-       'DS+SA': route_DSSA, 'RX+SA': route_RXSA, 'HD': route_HD, 'EP': route_EP,
+       'DS+SA': route_DSSA, 'RX+SA': route_RXSA, 'HD': route_HD, 'HDDR': route_HDDR, 'EP': route_EP,
        'TGG': route_TGG}
 
 

@@ -14,7 +14,7 @@ from .orient import Lattice
 from .variants import or_rotation, variant_rotations, twin_rotation
 
 ROUTES = ['FP', 'FS', 'DS', 'AM', 'FA', 'DS+FA', 'AM+FA', 'RX+FA', 'SA', 'DS+SA', 'RX+SA',
-          'HD', 'EP', 'TGG']
+          'HD', 'HDDR', 'EP', 'TGG']
 
 ROUTE_NAMES = {
     'FP': 'field alignment of free particles, then consolidation',
@@ -29,6 +29,7 @@ ROUTE_NAMES = {
     'DS+SA': 'columnar parent + formation under stress',
     'RX+SA': 'rolled/recrystallised parent + formation under stress',
     'HD': 'hot deformation of the hard phase',
+    'HDDR': 'reversible disproportionation-recombination with texture memory',
     'EP': 'epitaxial or template-defined growth (films, wire arrays; not bulk)',
     'TGG': 'templated grain growth during sintering',
 }
