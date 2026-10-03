@@ -498,10 +498,13 @@ def build(reg, phases, rows, R, st, univ=None):
                       f"exceeds that cap in {len(fcc)} held-out cases (up to {fmt(max(x['m_lo'] for x in fcc))}).")
     groups = collections.defaultdict(list)
     for r in caps:
-        groups[(round(r['A_max'], 2), ';'.join(r['chain'].split(';')[:2]).strip())].append(f"{r['phase']} {r['route']}")
-    for (a, why), cells in sorted(groups.items(), key=lambda kv: (kv[0][0], -len(kv[1])))[:6]:
-        sm.append(f"- **Geometric cap A_max ≈ {a:.2f}** ({len(cells)} cells: {', '.join(cells[:8])}"
-                  f"{' …' if len(cells) > 8 else ''}) — {why}.")
+        parts = [x.strip() for x in r['chain'].split(';')]
+        groups[(round(r['A_max'], 2), parts[0])].append((f"{r['phase']} {r['route']}", parts[1] if len(parts) > 1 else ''))
+    for (a, first), cells in sorted(groups.items(), key=lambda kv: (kv[0][0], -len(kv[1])))[:6]:
+        names = [c for c, _ in cells]
+        sm.append(f"- **Geometric cap A_max ≈ {a:.2f}** ({len(cells)} cells: {', '.join(names[:8])}"
+                  f"{' …' if len(cells) > 8 else ''}) — {first}"
+                  + (f"; {cells[0][1]}" if cells[0][1] and len({c for _, c in cells}) == 1 else '') + '.')
     ctx['summary'] = '\n'.join(sm)
     # ---------------- REPORT: fidelity
     fid = []
