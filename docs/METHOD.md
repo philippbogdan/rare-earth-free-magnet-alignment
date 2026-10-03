@@ -179,3 +179,20 @@ and the scoring code (src/align/scoring.py), before `tools/seal.py open` was run
    predicted sign. Known cases (PROBLEM.md) are scored with the same rules and reported
    separately as fidelity; exposed cases (docs/PROTOCOL_LOG.md) are reported separately from
    held-out ones.
+
+## 9. Changes made after the first sealed batches were opened
+
+Listed item by item, with their triggers, in docs/PROTOCOL_LOG.md (post-hoc revision v2). They
+are scored separately and never as held-out; v2 is held-out only on batches opened after its
+freeze. Additions that do not change any earlier prediction:
+
+1. **Cubic phases with several easy directions** (Mn4N, <111>): each grain keeps the easy
+   direction nearest the measuring axis, so a random polycrystal has A = 0.866 and alignment can
+   only raise A to 1; cells use that value instead of the uniaxial 1/2.
+2. **Epitaxy** is a film route: its ceiling is the geometric value of a single-variant film
+   (A = 1, or less with several in-plane variants); whether a film has been grown is stated, not
+   used as a limit.
+3. **Open cells** list first the unpublished quantity whose possible values change the ceiling;
+   if two hypotheses give the same ceiling, the cell is settled on it.
+4. **Scoring statuses**: 'post hoc' marks cases scored with rules revised after their outcomes
+   were seen.

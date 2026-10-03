@@ -68,7 +68,18 @@ EXPOSED = {   # docs/PROTOCOL_LOG.md
 }
 
 
-TOPIC_FIRST = ('alnico_fecrco', 'fese_hea', 'ndfeb_routes', 'mn4n')
+KNOWN_TOPICS = ('alnico_fecrco', 'fese_hea', 'ndfeb_routes', 'mn4n', 'mnal', 'l10', 'universe', 'fe16n2',
+                'mnbi', 'mnga_co', 'nano_other', 'ferrite_ndfeb', 'borides_feta')
+PHASE_TOPIC = {   # rule set for each phase when a collection mixes phases (held-out batch 4)
+    'tau-MnAl': 'mnal', 'tau-MnAl-C': 'mnal', 'LTP-MnBi': 'mnbi', 'L10-FeNi': 'l10', 'L10-FePt': 'l10',
+    'L10-CoPt': 'l10', 'L10-FePd': 'l10', 'Fe16N2': 'fe16n2', 'D022-Mn3Ga': 'mnga_co', 'D022-Mn3Ge': 'mnga_co',
+    'L10-MnGa': 'mnga_co', 'Zr2Co11': 'mnga_co', 'HfCo7': 'mnga_co', 'Co-nanorods': 'nano_other',
+    'eps-Fe2O3': 'nano_other', 'Co3C': 'nano_other', 'bct-FeCo': 'nano_other', 'Fe5SiB2': 'nano_other',
+    'Fe5PB2': 'nano_other', 'Fe2P-based': 'nano_other', 'SrM-hexaferrite': 'ferrite_ndfeb',
+    'Nd2Fe14B': 'ndfeb_all', 'HEA-FeCoNiAlCuTi': 'fese_hea', 'L10-HEA-Pt': 'fese_hea', 'Fe3Se4': 'fese_hea',
+    'Mn4N': 'mn4n', '(Fe,Co)2B': 'nano_other', 'Fe2Ta-C14': 'borides_feta',
+}
+TOPIC_FIRST = ('alnico_fecrco', 'fese_hea', 'ndfeb_routes', 'mn4n', 'ndfeb_all')
 
 
 def exposed(cid):
@@ -286,7 +297,10 @@ def encode(ctx, topic, c):
     if mk == 'skip':
         return {**base, 'pred': pred(1, ISO, 'quantity is not remanence or texture', cls='info')}
     r = route.lower()
-    t_first = 'alnico_fecrco' if c.get('phase') in ('AlNiCo', 'Fe-Cr-Co') else topic
+    if topic not in KNOWN_TOPICS and pid is not None:      # mixed-phase collections: rules by phase
+        topic = PHASE_TOPIC.get(pid, topic)
+    t_first = 'alnico_fecrco' if (c.get('phase') in ('AlNiCo', 'Fe-Cr-Co')
+                                  or pid in ('AlNiCo-5', 'AlNiCo-8-9', 'Fe-Cr-Co')) else topic
     if t_first in TOPIC_FIRST:                # topic rules that also cover unbiased samples
         res = globals()['enc_' + t_first](ctx, pid, c, route, r, proc, cond, al, mk)
         if res is not None:
@@ -870,6 +884,14 @@ def enc_ndfeb_routes(ctx, pid, c, route, r, proc, cond, al, mk):
         return {'pred': pred(1.0, ISO, 'printed Nd-Fe-B: crystal orientation not measured (AM cell open)',
                              cls='open'), 'meas_extra': meas}
     return None
+
+
+def enc_ndfeb_all(ctx, pid, c, route, r, proc, cond, al, mk):
+    """Nd2Fe14B in a mixed collection: the sintered/HD/HDDR rules, then the other-route rules."""
+    res = enc_ndfeb_routes(ctx, pid, c, route, r, proc, cond, al, mk)
+    if res is None and not r.startswith('isotropic'):
+        res = enc_ferrite_ndfeb(ctx, pid, c, route, r, proc, cond, al, mk)
+    return res
 
 
 def enc_mn4n(ctx, pid, c, route, r, proc, cond, al, mk):
