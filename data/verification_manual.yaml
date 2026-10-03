@@ -43,3 +43,9 @@
 - {id: mnga_l10_lattice_mix2015, verdict: verified, how: 'table text: a ¼ 3.8921, c ¼ 3.6920'}
 - {id: mnga_l10_formation_hx2020, verdict: verified, how: 'table of invariant reactions, + rendered as þ'}
 - {id: mnga_l10_primary_hx2020, verdict: verified, how: 'table of invariant reactions, + rendered as þ'}
+- {id: alnico5_DS_axis_spread_makino1963, verdict: verified, how: 'page 1 image (Japanese text, no Japanese OCR available): 鋳塊の高さ方向と鋳造晶の長軸方向とのなす角度は5°以下である'}
+- {id: alnico5_DS_growth_100_makino1963, verdict: verified, how: 'page 1 image (Japanese text): 柱状晶の伸びた方向が〔100〕方向を向いているため，柱状晶の伸びた方向に磁場冷却を行なうと磁性が向上し(2)'}
+- {id: alnico5_MrMs_columnar_angle30_par_makino1963, verdict: verified, how: 'page 5 image: Fig. 6 caption as quoted (the values are read from the figure)'}
+- {id: alnico5_MrMs_columnar_angle45_par_makino1963, verdict: verified, how: 'page 5 image: Fig. 6 caption as quoted (the values are read from the figure)'}
+- {id: alnico5_field_offaxis_iwama1976, verdict: verified, how: 'text layer scrambles word order within lines; every word and number of the first fragment (readily seen, K*u, beyond beta=15 deg, reaches about 1/3 of the optimal value, alpha increases with beta, generally deviates from the field direction except at 0 and 45 deg, maximum deviation around) is in the same passage; the second fragment is verbatim'}
+- {id: efe2o3_ms_mass_gareev2023, verdict: verified, how: 'Table 1 in a layout-preserving extract: saturation mass magnetization at 300 K, emu/g: 11–18 [55,56], 92–94 [57], 0.3–1.9 [58,59], 0.02–0.05 [63,64], 74–80 [60,61], 15 [46] (columns FeO, Fe3O4, α-, β-, γ-, ε-Fe2O3)'}

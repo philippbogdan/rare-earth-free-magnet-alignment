@@ -75,6 +75,9 @@ def main():
         print('MISSING record references:', R.missing)
         sys.exit(1)
     rows = matrix(phases)
+    for ph in phases:                     # records cited by the account's own rules (e.g. hydrides)
+        for c in account.evaluate(ph):
+            R.used.update(r for r in (c.refs or []) if r in reg.rec)
     write_csv(os.path.join(RES, 'account.csv'), rows)
     from . import evaluate
     for v in ('v1', 'v2', 'v3', 'v4'):     # scores of the frozen and the revised case predictions
