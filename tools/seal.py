@@ -86,13 +86,14 @@ def conditions_only(recs):
     return out
 
 
-def seal(batch):
+def seal(batch, only=None):
+    """Seal unsealed files of .tmp/sealed (only the named ones if `only` is given)."""
     os.makedirs(DST, exist_ok=True)
     man = _manifest()
     sealed_files = {f for b in man['batches'].values() for f in b['files']}
     entry = man['batches'].setdefault(batch, {'files': {}, 'opened': False})
     for fn in sorted(os.listdir(SRC)):
-        if not fn.endswith('.yaml') or fn in sealed_files:
+        if not fn.endswith('.yaml') or fn in sealed_files or (only and fn not in only):
             continue
         p = os.path.join(SRC, fn)
         raw = open(p, 'rb').read()
@@ -143,5 +144,7 @@ if __name__ == '__main__':
     cmd, batch = sys.argv[1], sys.argv[2]
     if cmd == 'export':
         export_conditions()
+    elif cmd == 'seal':
+        seal(batch, sys.argv[3:] or None)
     else:
-        {'seal': seal, 'open': open_batch}[cmd](batch)
+        open_batch(batch)
