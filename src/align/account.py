@@ -44,6 +44,28 @@ def _best_path_value(cells):
     return max(cells, key=lambda c: c.A_max)
 
 
+CANDIDATE_FIBRES = {'hexagonal': ([0, 0, 0, 1], [1, 0, -1, 0], [1, 1, -2, 0]),
+                    'tetragonal': ([0, 0, 1], [1, 0, 0], [1, 1, 0], [1, 0, 1], [1, 1, 1]),
+                    'cubic': ([0, 0, 1], [1, 1, 0], [1, 1, 1]),
+                    'orthorhombic': ([1, 0, 0], [0, 1, 0], [0, 0, 1])}
+
+
+def _fibre_outcomes(path, on_parent=True):
+    """Ceiling for each low-index candidate fibre (equal variant weights): used when the
+    fibre/growth direction is unpublished, to show whether it decides the answer."""
+    L = path.LP if on_parent else path.LH
+    out = {}
+    for d in CANDIDATE_FIBRES[L.system]:
+        par = E.texture_fibre(L.direction(d))
+        if on_parent:
+            A, _ = _equal_best(path, par)
+        else:
+            A, _ = _equal_best(Path({'structure': path.ph['structure'],
+                                      'easy_axis_vec': path.ph['easy_axis_vec']}, {'mode': 'direct'}), par)
+        out['<' + ''.join(str(x) for x in d) + '> fibre'] = A
+    return out
+
+
 # ---------------------------------------------------------------- FP
 def route_FP(ph):
     sp = ph['particles']
@@ -114,9 +136,16 @@ def _texture_route(ph, route, key):
                             chain=(f'parent fibre {d}; {len(path.V)} variants with equal weights'),
                             refs=src.get('refs', []) + p.get('refs', [])))
     if not out:
-        return Cell(ph['id'], route, 'open', 1.0, '', chain=f'{route} texture of the parent unpublished',
-                    decides=[(f'{route} growth texture of the parent/hard phase', {}, 'EBSD of a '
-                              f'{route} sample')])
+        p0 = ph['paths'][0]
+        path = Path(ph, p0)
+        outs = _fibre_outcomes(path, on_parent=path.mode != 'direct')
+        if path.mode == 'massive':
+            outs = {k: v for k, v in outs.items()}
+        return Cell(ph['id'], route, 'open', max(outs.values()), '',
+                    chain=f'{route} growth texture of the ' + ('parent' if path.mode != 'direct' else
+                                                               'hard phase') + ' unpublished',
+                    decides=[(f'{route} growth direction', outs,
+                              f'EBSD pole figure of a {route} sample')], A_alt=outs)
     return _best_path_value(out)
 
 
@@ -286,8 +315,12 @@ def route_FS(ph):
 def route_HD(ph):
     hd = ph.get('hd')
     if not hd:
-        return Cell(ph['id'], 'HD', 'open', 1.0, '', chain='deformation texture of the phase unpublished',
-                    decides=[('fibre formed by hot deformation', {}, 'pole figure after hot deformation')])
+        path = Path(ph, {'mode': 'direct'})
+        outs = _fibre_outcomes(path, on_parent=False)
+        return Cell(ph['id'], 'HD', 'open', max(outs.values()), '',
+                    chain='deformation texture of the phase unpublished',
+                    decides=[('fibre formed by hot deformation', outs,
+                              'pole figure after hot deformation')], A_alt=outs)
     if hd.get('possible') is False:
         return Cell(ph['id'], 'HD', 'none', ISO, '', chain=hd['reason'], refs=hd.get('refs', []))
     path = Path(ph, {'mode': 'direct'})
