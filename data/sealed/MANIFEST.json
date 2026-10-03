@@ -8015,6 +8015,584 @@
     }
    },
    "opened": true
+  },
+  "batch6": {
+   "files": {
+    "heldout3_outcomes.yaml": {
+     "sha256": "c052b2fb44a7617ab20ce56dbea5e951ec96e5dde40d0e52b3f7b4dc1d0921ae",
+     "n_records": 81,
+     "cases": [
+      {
+       "id": "heldout3_pmc12127982_ac_0",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_ac_0p5",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_ac_1",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_ac_2",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_ac_2p5",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_ac_3",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_ssm_0",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_ssm_1",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_ssm_2",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_ssm_3",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_sg_0",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_sg_1",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_sg_2",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc12127982_sg_3",
+       "phase": "M-type SrFe12-xAlxO19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acs.chemmater.4c02205"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_8_1",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_8_2",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_8_3",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_8_3d",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_10_1",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_10_1d",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_10_2",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_10_3",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_10_4",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_12_1",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_12_2",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_12_3",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9053871_bam_12_4",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra01619e"
+      },
+      {
+       "id": "heldout3_pmc9092050_zr_0p0",
+       "phase": "M-type BaZrxFe(12-x)O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c8ra08783k"
+      },
+      {
+       "id": "heldout3_pmc9092050_zr_0p3",
+       "phase": "M-type BaZrxFe(12-x)O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c8ra08783k"
+      },
+      {
+       "id": "heldout3_pmc9092050_zr_0p6",
+       "phase": "M-type BaZrxFe(12-x)O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c8ra08783k"
+      },
+      {
+       "id": "heldout3_pmc9092050_zr_0p9",
+       "phase": "M-type BaZrxFe(12-x)O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c8ra08783k"
+      },
+      {
+       "id": "heldout3_pmc9092050_zr_1p2",
+       "phase": "M-type BaZrxFe(12-x)O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c8ra08783k"
+      },
+      {
+       "id": "heldout3_pmc8510479_cu_0p0",
+       "phase": "M-type BaFe12-xCuxO19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma14195873"
+      },
+      {
+       "id": "heldout3_pmc8510479_cu_0p1",
+       "phase": "M-type BaFe12-xCuxO19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma14195873"
+      },
+      {
+       "id": "heldout3_pmc8510479_cu_0p3",
+       "phase": "M-type BaFe12-xCuxO19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma14195873"
+      },
+      {
+       "id": "heldout3_pmc8510479_cu_0p5",
+       "phase": "M-type BaFe12-xCuxO19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma14195873"
+      },
+      {
+       "id": "heldout3_pmc7995991_bam_pellet",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano11030558"
+      },
+      {
+       "id": "heldout3_pmc7995991_bam80_abs20",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano11030558"
+      },
+      {
+       "id": "heldout3_pmc7995991_bam70_abs30",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano11030558"
+      },
+      {
+       "id": "heldout3_pmc7995991_bam60_abs40",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano11030558"
+      },
+      {
+       "id": "heldout3_pmc12421872_sf",
+       "phase": "M-type SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d5ra04855a"
+      },
+      {
+       "id": "heldout3_pmc12421872_cf41",
+       "phase": "M-type SrFe12O19 / CoFe2O4 composite",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d5ra04855a"
+      },
+      {
+       "id": "heldout3_pmc12421872_cf21",
+       "phase": "M-type SrFe12O19 / CoFe2O4 composite",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d5ra04855a"
+      },
+      {
+       "id": "heldout3_pmc12421872_cf11",
+       "phase": "M-type SrFe12O19 / CoFe2O4 composite",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d5ra04855a"
+      },
+      {
+       "id": "heldout3_pmc9655212_m_out_of_plane",
+       "phase": "M-type BaFe12O19",
+       "route": "other: plasma-textured film",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma15217865"
+      },
+      {
+       "id": "heldout3_pmc9655212_m_in_plane",
+       "phase": "M-type BaFe12O19",
+       "route": "other: plasma-textured film",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma15217865"
+      },
+      {
+       "id": "heldout3_pmc9655212_a_out_of_plane",
+       "phase": "M-type BaFe12O19",
+       "route": "other: plasma-textured film",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma15217865"
+      },
+      {
+       "id": "heldout3_pmc9655212_a_in_plane",
+       "phase": "M-type BaFe12O19",
+       "route": "other: plasma-textured film",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma15217865"
+      },
+      {
+       "id": "heldout3_pmc9585520_sfo",
+       "phase": "M-type SrFe12-xNbxO19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acsami.2c13088"
+      },
+      {
+       "id": "heldout3_pmc9585520_sfn3o",
+       "phase": "M-type SrFe12-xNbxO19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/acsami.2c13088"
+      },
+      {
+       "id": "heldout3_pmc13208351_pechini",
+       "phase": "M-type SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma19101992"
+      },
+      {
+       "id": "heldout3_pmc5943258_csg_powder",
+       "phase": "M-type SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-018-25662-8"
+      },
+      {
+       "id": "heldout3_pmc5943258_csg_sps",
+       "phase": "M-type SrFe12O19",
+       "route": "other: SPS texture",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-018-25662-8"
+      },
+      {
+       "id": "heldout3_pmc5943258_msg_powder",
+       "phase": "M-type SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-018-25662-8"
+      },
+      {
+       "id": "heldout3_pmc10505901_mnox_1_0p25_br",
+       "phase": "M-type BaFe12O19 / MnO2 composite",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1039/d3ra05114e"
+      },
+      {
+       "id": "heldout3_pmc10505901_mnox_1_0p25_js",
+       "phase": "M-type BaFe12O19 / MnO2 composite",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.1039/d3ra05114e"
+      },
+      {
+       "id": "heldout3_pmc10505901_mnox_1_0p5_br",
+       "phase": "M-type BaFe12O19 / MnO2 composite",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1039/d3ra05114e"
+      },
+      {
+       "id": "heldout3_pmc10505901_mnox_1_0p5_js",
+       "phase": "M-type BaFe12O19 / MnO2 composite",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.1039/d3ra05114e"
+      },
+      {
+       "id": "heldout3_pmc10505901_mnox_1_0p75_br",
+       "phase": "M-type BaFe12O19 / MnO2 composite",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1039/d3ra05114e"
+      },
+      {
+       "id": "heldout3_pmc10505901_mnox_1_0p75_js",
+       "phase": "M-type BaFe12O19 / MnO2 composite",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.1039/d3ra05114e"
+      },
+      {
+       "id": "heldout3_pmc10505901_mnox_1_1_br",
+       "phase": "M-type BaFe12O19 / MnO2 composite",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1039/d3ra05114e"
+      },
+      {
+       "id": "heldout3_pmc10505901_mnox_1_1_js",
+       "phase": "M-type BaFe12O19 / MnO2 composite",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.1039/d3ra05114e"
+      },
+      {
+       "id": "heldout3_pmc10386164_bonded_1",
+       "phase": "M-type SrFe12O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/nano13142097"
+      },
+      {
+       "id": "heldout3_pmc10386164_bonded_2",
+       "phase": "M-type SrFe12O19 / Fe composite",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/nano13142097"
+      },
+      {
+       "id": "heldout3_pmc10386164_bonded_3",
+       "phase": "M-type SrFe12O19 / Fe composite",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/nano13142097"
+      },
+      {
+       "id": "heldout3_pmc10386164_bonded_4",
+       "phase": "M-type SrFe12O19 / Fe composite",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/nano13142097"
+      },
+      {
+       "id": "heldout3_pmc6766333_fecrco_2",
+       "phase": "Fe-Cr-Co",
+       "route": "other: torsion+tension+FA",
+       "quantity": "Br",
+       "doi": "10.3390/ma12183019"
+      },
+      {
+       "id": "heldout3_pmc6766333_fecrco_3",
+       "phase": "Fe-Cr-Co",
+       "route": "other: torsion+tension+FA",
+       "quantity": "Br",
+       "doi": "10.3390/ma12183019"
+      },
+      {
+       "id": "heldout3_pmc6766333_fecrco_4",
+       "phase": "Fe-Cr-Co",
+       "route": "other: torsion+tension+FA",
+       "quantity": "Br",
+       "doi": "10.3390/ma12183019"
+      },
+      {
+       "id": "heldout3_pmc6766333_fecrco_5",
+       "phase": "Fe-Cr-Co",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.3390/ma12183019"
+      },
+      {
+       "id": "heldout3_pmc8158506_sps_tc_initial",
+       "phase": "M-type BaFe12O19",
+       "route": "other: field-assisted SPS",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma14102650"
+      },
+      {
+       "id": "heldout3_pmc8158506_sps_tc_opt",
+       "phase": "M-type BaFe12O19",
+       "route": "other: field-assisted SPS",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma14102650"
+      },
+      {
+       "id": "heldout3_pmc9585087_printed_parallel",
+       "phase": "M-type SrFe12O19",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-022-20669-8"
+      },
+      {
+       "id": "heldout3_pmc9585087_printed_perpendicular",
+       "phase": "M-type SrFe12O19",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-022-20669-8"
+      },
+      {
+       "id": "heldout3_pmc13329756_undoped_sr_control",
+       "phase": "M-type SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d6ra02983c"
+      },
+      {
+       "id": "heldout3_pmc13456046_undoped_ba_control",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d6ra03457h"
+      },
+      {
+       "id": "heldout3_pmc8705690_undoped_composite_1000",
+       "phase": "M-type SrFe12O19 / CoFe2O4 composite",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma14247820"
+      },
+      {
+       "id": "heldout3_pmc8705690_undoped_composite_1100",
+       "phase": "M-type SrFe12O19 / CoFe2O4 composite",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma14247820"
+      },
+      {
+       "id": "heldout3_pmc8705690_undoped_composite_1200",
+       "phase": "M-type SrFe12O19 / CoFe2O4 composite",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma14247820"
+      },
+      {
+       "id": "heldout3_pmc9080718_undoped_ba_control",
+       "phase": "M-type BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c8ra02455c"
+      },
+      {
+       "id": "heldout3_pmc4788672_sr_pani_control",
+       "phase": "M-type SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1186/s11671-016-1340-x"
+      }
+     ]
+    }
+   },
+   "opened": false
   }
  }
 }

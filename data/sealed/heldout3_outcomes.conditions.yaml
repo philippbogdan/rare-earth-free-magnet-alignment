@@ -1,0 +1,2427 @@
+- id: heldout3_pmc12127982_ac_0
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: AC synthesis at 240 °C, nominal Al substitution x=0; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 513.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=0
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_ac_0p5
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: AC synthesis at 240 °C, nominal Al substitution x=0.5; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 513.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=0.5
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_ac_1
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: AC synthesis at 240 °C, nominal Al substitution x=1; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 513.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=1
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_ac_2
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: AC synthesis at 240 °C, nominal Al substitution x=2; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 513.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=2
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_ac_2p5
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: AC synthesis at 240 °C, nominal Al substitution x=2.5; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 513.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=2.5
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_ac_3
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: AC synthesis at 240 °C, nominal Al substitution x=3; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 513.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=3
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_ssm_0
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: SSM synthesis at 790 °C, nominal Al substitution x=0; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1063.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=0
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_ssm_1
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: SSM synthesis at 790 °C, nominal Al substitution x=1; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1063.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=1
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_ssm_2
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: SSM synthesis at 790 °C, nominal Al substitution x=2; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1063.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=2
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_ssm_3
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: SSM synthesis at 790 °C, nominal Al substitution x=3; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1063.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=3
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_sg_0
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: SG synthesis at 925 °C, nominal Al substitution x=0; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1198.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=0
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_sg_1
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: SG synthesis at 925 °C, nominal Al substitution x=1; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1198.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=1
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_sg_2
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: SG synthesis at 925 °C, nominal Al substitution x=2; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1198.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=2
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc12127982_sg_3
+  phase: M-type SrFe12-xAlxO19
+  route: MO
+  process: SG synthesis at 925 °C, nominal Al substitution x=3; powder pressed into a 3 mm pellet for
+    VSM
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field along pellet normal / pressing direction
+  measurement: VSM, 300 K; saturation field not stated in the table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1198.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: pellet normal / pressing direction
+    composition: SrFe12-xAlxO19, nominal x=3
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: hand-pressed powder pellet fixed with Kapton tape
+  source:
+    doi: 10.1021/acs.chemmater.4c02205
+    title: Synthesis, Crystal Structure, Site Occupancy, and Magnetic Properties of Aluminum-Substituted
+      M-Type Sr Hexaferrite SrFe12-xAlxO19 Nanoparticles
+    first_author: Saura-Múzquiz
+    year: 2025
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12127982/fullTextXML
+- id: heldout3_pmc9053871_bam_8_1
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 8; sample BaM_8_1
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 8
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_8_2
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 8; sample BaM_8_2
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 8
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_8_3
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 8; sample BaM_8_3
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 8
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_8_3d
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 8; sample BaM_8_3D
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 8
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_10_1
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 10; sample BaM_10_1
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 10
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_10_1d
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 10; sample BaM_10_1D
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 10
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_10_2
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 10; sample BaM_10_2
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 10
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_10_3
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 10; sample BaM_10_3
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 10
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_10_4
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 10; sample BaM_10_4
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 10
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_12_1
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 12; sample BaM_12_1
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 12
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_12_2
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 12; sample BaM_12_2
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 12
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_12_3
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 12; sample BaM_12_3
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 12
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9053871_bam_12_4
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: CTAB-assisted coprecipitation; Fe/Ba precursor ratio 12; sample BaM_12_4
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: PPMS field; specimen axis not stated
+  measurement: PPMS, 293 K, field range 0 to 3 T
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Fe3+/Ba2+ precursor ratio 12
+    particle_size: null
+    density_rel: null
+    phase_content: BaM with listed impurity fractions where present
+    alignment_medium: particles; fixation in PPMS not reported
+  source:
+    doi: 10.1039/d0ra01619e
+    title: Pseudo-superparamagnetic behaviour of barium hexaferrite particles
+    first_author: Dudziak
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9053871/fullTextXML
+- id: heldout3_pmc9092050_zr_0p0
+  phase: M-type BaZrxFe(12-x)O19
+  route: isotropic
+  process: coprecipitation with KCl additive, sintered at 900 °C for 2 h; x=0.0
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature hysteresis; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1173.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaZrxFe(12-x)O19, x=0.0
+    particle_size: about 500 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.1039/c8ra08783k
+    title: Magnetic and microwave absorbing properties of low-temperature sintered BaZr x Fe (12−x) O
+      19
+    first_author: Deng
+    year: 2018
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9092050/fullTextXML
+- id: heldout3_pmc9092050_zr_0p3
+  phase: M-type BaZrxFe(12-x)O19
+  route: isotropic
+  process: coprecipitation with KCl additive, sintered at 900 °C for 2 h; x=0.3
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature hysteresis; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1173.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaZrxFe(12-x)O19, x=0.3
+    particle_size: about 500 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.1039/c8ra08783k
+    title: Magnetic and microwave absorbing properties of low-temperature sintered BaZr x Fe (12−x) O
+      19
+    first_author: Deng
+    year: 2018
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9092050/fullTextXML
+- id: heldout3_pmc9092050_zr_0p6
+  phase: M-type BaZrxFe(12-x)O19
+  route: isotropic
+  process: coprecipitation with KCl additive, sintered at 900 °C for 2 h; x=0.6
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature hysteresis; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1173.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaZrxFe(12-x)O19, x=0.6
+    particle_size: about 500 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.1039/c8ra08783k
+    title: Magnetic and microwave absorbing properties of low-temperature sintered BaZr x Fe (12−x) O
+      19
+    first_author: Deng
+    year: 2018
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9092050/fullTextXML
+- id: heldout3_pmc9092050_zr_0p9
+  phase: M-type BaZrxFe(12-x)O19
+  route: isotropic
+  process: coprecipitation with KCl additive, sintered at 900 °C for 2 h; x=0.9
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature hysteresis; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1173.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaZrxFe(12-x)O19, x=0.9
+    particle_size: about 500 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.1039/c8ra08783k
+    title: Magnetic and microwave absorbing properties of low-temperature sintered BaZr x Fe (12−x) O
+      19
+    first_author: Deng
+    year: 2018
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9092050/fullTextXML
+- id: heldout3_pmc9092050_zr_1p2
+  phase: M-type BaZrxFe(12-x)O19
+  route: isotropic
+  process: coprecipitation with KCl additive, sintered at 900 °C for 2 h; x=1.2
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature hysteresis; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1173.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaZrxFe(12-x)O19, x=1.2
+    particle_size: about 500 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.1039/c8ra08783k
+    title: Magnetic and microwave absorbing properties of low-temperature sintered BaZr x Fe (12−x) O
+      19
+    first_author: Deng
+    year: 2018
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9092050/fullTextXML
+- id: heldout3_pmc8510479_cu_0p0
+  phase: M-type BaFe12-xCuxO19
+  route: isotropic
+  process: sol-gel auto-combustion synthesis, x=0.0
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature, swept between -30 and +30 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12-xCuxO19, x=0.0
+    particle_size: crystallite size 71 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.3390/ma14195873
+    title: Magnetic Properties and Morphology Copper-Substituted Barium Hexaferrites from Sol-Gel Auto-Combustion
+      Synthesis
+    first_author: Lohmaah
+    year: 2021
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8510479/fullTextXML
+- id: heldout3_pmc8510479_cu_0p1
+  phase: M-type BaFe12-xCuxO19
+  route: isotropic
+  process: sol-gel auto-combustion synthesis, x=0.1
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature, swept between -30 and +30 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12-xCuxO19, x=0.1
+    particle_size: crystallite size 68 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.3390/ma14195873
+    title: Magnetic Properties and Morphology Copper-Substituted Barium Hexaferrites from Sol-Gel Auto-Combustion
+      Synthesis
+    first_author: Lohmaah
+    year: 2021
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8510479/fullTextXML
+- id: heldout3_pmc8510479_cu_0p3
+  phase: M-type BaFe12-xCuxO19
+  route: isotropic
+  process: sol-gel auto-combustion synthesis, x=0.3
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature, swept between -30 and +30 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12-xCuxO19, x=0.3
+    particle_size: crystallite size 72 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.3390/ma14195873
+    title: Magnetic Properties and Morphology Copper-Substituted Barium Hexaferrites from Sol-Gel Auto-Combustion
+      Synthesis
+    first_author: Lohmaah
+    year: 2021
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8510479/fullTextXML
+- id: heldout3_pmc8510479_cu_0p5
+  phase: M-type BaFe12-xCuxO19
+  route: isotropic
+  process: sol-gel auto-combustion synthesis, x=0.5
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature, swept between -30 and +30 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12-xCuxO19, x=0.5
+    particle_size: crystallite size 96 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.3390/ma14195873
+    title: Magnetic Properties and Morphology Copper-Substituted Barium Hexaferrites from Sol-Gel Auto-Combustion
+      Synthesis
+    first_author: Lohmaah
+    year: 2021
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8510479/fullTextXML
+- id: heldout3_pmc7995991_bam_pellet
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: sol-gel BaM; BaM pellet pressed pellet or ABS polymer composite without field alignment
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: VSM hysteresis loop to 17,500 Oe; saturation estimated by law-of-approach-to-saturation
+    fit; temperature not stated in table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaM pellet
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed pellet or ABS composite
+  source:
+    doi: 10.3390/nano11030558
+    title: Loading Effect of Sol-Gel Derived Barium Hexaferrite on Magnetic Polymer Composites
+    first_author: Charoensuk
+    year: 2021
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7995991/fullTextXML
+- id: heldout3_pmc7995991_bam80_abs20
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: sol-gel BaM; BaM80-ABS20 pressed pellet or ABS polymer composite without field alignment
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: VSM hysteresis loop to 17,500 Oe; saturation estimated by law-of-approach-to-saturation
+    fit; temperature not stated in table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaM80-ABS20
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed pellet or ABS composite
+  source:
+    doi: 10.3390/nano11030558
+    title: Loading Effect of Sol-Gel Derived Barium Hexaferrite on Magnetic Polymer Composites
+    first_author: Charoensuk
+    year: 2021
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7995991/fullTextXML
+- id: heldout3_pmc7995991_bam70_abs30
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: sol-gel BaM; BaM70-ABS30 pressed pellet or ABS polymer composite without field alignment
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: VSM hysteresis loop to 17,500 Oe; saturation estimated by law-of-approach-to-saturation
+    fit; temperature not stated in table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaM70-ABS30
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed pellet or ABS composite
+  source:
+    doi: 10.3390/nano11030558
+    title: Loading Effect of Sol-Gel Derived Barium Hexaferrite on Magnetic Polymer Composites
+    first_author: Charoensuk
+    year: 2021
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7995991/fullTextXML
+- id: heldout3_pmc7995991_bam60_abs40
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: sol-gel BaM; BaM60-ABS40 pressed pellet or ABS polymer composite without field alignment
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: VSM hysteresis loop to 17,500 Oe; saturation estimated by law-of-approach-to-saturation
+    fit; temperature not stated in table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaM60-ABS40
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed pellet or ABS composite
+  source:
+    doi: 10.3390/nano11030558
+    title: Loading Effect of Sol-Gel Derived Barium Hexaferrite on Magnetic Polymer Composites
+    first_author: Charoensuk
+    year: 2021
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7995991/fullTextXML
+- id: heldout3_pmc12421872_sf
+  phase: M-type SrFe12O19
+  route: isotropic
+  process: glass-crystallized Al-substituted Sr hexaferrite with Co-ferrite shell; sample SF
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field; random fixed powder
+  measurement: VSM, 300 K, maximum applied field 30 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: SF
+    particle_size: null
+    density_rel: null
+    phase_content: Co-ferrite fraction varies by sample; Table 1
+    alignment_medium: powder fixed with polymer varnish
+  source:
+    doi: 10.1039/d5ra04855a
+    title: Tuning the magnetic properties of sandwiched hexaferrite/cobalt ferrite exchange-coupled nanocomposites
+      obtained in high-boiling organic solvent
+    first_author: Nygaard
+    year: 2025
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12421872/fullTextXML
+- id: heldout3_pmc12421872_cf41
+  phase: M-type SrFe12O19 / CoFe2O4 composite
+  route: isotropic
+  process: glass-crystallized Al-substituted Sr hexaferrite with Co-ferrite shell; sample CF41
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field; random fixed powder
+  measurement: VSM, 300 K, maximum applied field 30 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: CF41
+    particle_size: null
+    density_rel: null
+    phase_content: Co-ferrite fraction varies by sample; Table 1
+    alignment_medium: powder fixed with polymer varnish
+  source:
+    doi: 10.1039/d5ra04855a
+    title: Tuning the magnetic properties of sandwiched hexaferrite/cobalt ferrite exchange-coupled nanocomposites
+      obtained in high-boiling organic solvent
+    first_author: Nygaard
+    year: 2025
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12421872/fullTextXML
+- id: heldout3_pmc12421872_cf21
+  phase: M-type SrFe12O19 / CoFe2O4 composite
+  route: isotropic
+  process: glass-crystallized Al-substituted Sr hexaferrite with Co-ferrite shell; sample CF21
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field; random fixed powder
+  measurement: VSM, 300 K, maximum applied field 30 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: CF21
+    particle_size: null
+    density_rel: null
+    phase_content: Co-ferrite fraction varies by sample; Table 1
+    alignment_medium: powder fixed with polymer varnish
+  source:
+    doi: 10.1039/d5ra04855a
+    title: Tuning the magnetic properties of sandwiched hexaferrite/cobalt ferrite exchange-coupled nanocomposites
+      obtained in high-boiling organic solvent
+    first_author: Nygaard
+    year: 2025
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12421872/fullTextXML
+- id: heldout3_pmc12421872_cf11
+  phase: M-type SrFe12O19 / CoFe2O4 composite
+  route: isotropic
+  process: glass-crystallized Al-substituted Sr hexaferrite with Co-ferrite shell; sample CF11
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: VSM field; random fixed powder
+  measurement: VSM, 300 K, maximum applied field 30 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: CF11
+    particle_size: null
+    density_rel: null
+    phase_content: Co-ferrite fraction varies by sample; Table 1
+    alignment_medium: powder fixed with polymer varnish
+  source:
+    doi: 10.1039/d5ra04855a
+    title: Tuning the magnetic properties of sandwiched hexaferrite/cobalt ferrite exchange-coupled nanocomposites
+      obtained in high-boiling organic solvent
+    first_author: Nygaard
+    year: 2025
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12421872/fullTextXML
+- id: heldout3_pmc9655212_m_out_of_plane
+  phase: M-type BaFe12O19
+  route: 'other: plasma-textured film'
+  process: magnetron deposition on C-sapphire followed by plasma treatment mode M
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: out of plane
+  measurement: film hysteresis, field -5000 to +5000 Oe; temperature not stated in table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: film [0001] texture axis
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed film on sapphire
+  source:
+    doi: 10.3390/ma15217865
+    title: Synthesis of Superhydrophobic Barium Hexaferrite Coatings with Low Magnetic Hardness
+    first_author: Muslimov
+    year: 2022
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9655212/fullTextXML
+- id: heldout3_pmc9655212_m_in_plane
+  phase: M-type BaFe12O19
+  route: 'other: plasma-textured film'
+  process: magnetron deposition on C-sapphire followed by plasma treatment mode M
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: in plane
+  measurement: film hysteresis, field -5000 to +5000 Oe; temperature not stated in table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: film [0001] texture axis
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed film on sapphire
+  source:
+    doi: 10.3390/ma15217865
+    title: Synthesis of Superhydrophobic Barium Hexaferrite Coatings with Low Magnetic Hardness
+    first_author: Muslimov
+    year: 2022
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9655212/fullTextXML
+- id: heldout3_pmc9655212_a_out_of_plane
+  phase: M-type BaFe12O19
+  route: 'other: plasma-textured film'
+  process: magnetron deposition on C-sapphire followed by plasma treatment mode A
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: out of plane
+  measurement: film hysteresis, field -5000 to +5000 Oe; temperature not stated in table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: film [0001] texture axis
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed film on sapphire
+  source:
+    doi: 10.3390/ma15217865
+    title: Synthesis of Superhydrophobic Barium Hexaferrite Coatings with Low Magnetic Hardness
+    first_author: Muslimov
+    year: 2022
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9655212/fullTextXML
+- id: heldout3_pmc9655212_a_in_plane
+  phase: M-type BaFe12O19
+  route: 'other: plasma-textured film'
+  process: magnetron deposition on C-sapphire followed by plasma treatment mode A
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: in plane
+  measurement: film hysteresis, field -5000 to +5000 Oe; temperature not stated in table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: film [0001] texture axis
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed film on sapphire
+  source:
+    doi: 10.3390/ma15217865
+    title: Synthesis of Superhydrophobic Barium Hexaferrite Coatings with Low Magnetic Hardness
+    first_author: Muslimov
+    year: 2022
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9655212/fullTextXML
+- id: heldout3_pmc9585520_sfo
+  phase: M-type SrFe12-xNbxO19
+  route: isotropic
+  process: conventional solid-state ceramic, sintered at 1200 °C for 6 h, SFO
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis stated
+  measurement: room-temperature magnetic parameters; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: SrFe12-xNbxO19, x=0
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: sintered ceramic
+  source:
+    doi: 10.1021/acsami.2c13088
+    title: Terahertz Faraday Rotation of SrFe 12 O 19 Hexaferrites Enhanced by Nb Doping
+    first_author: Hu
+    year: 2022
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9585520/fullTextXML
+- id: heldout3_pmc9585520_sfn3o
+  phase: M-type SrFe12-xNbxO19
+  route: isotropic
+  process: conventional solid-state ceramic, sintered at 1200 °C for 6 h, SFN3O
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis stated
+  measurement: room-temperature magnetic parameters; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: SrFe12-xNbxO19, x=0.03
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: sintered ceramic
+  source:
+    doi: 10.1021/acsami.2c13088
+    title: Terahertz Faraday Rotation of SrFe 12 O 19 Hexaferrites Enhanced by Nb Doping
+    first_author: Hu
+    year: 2022
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9585520/fullTextXML
+- id: heldout3_pmc13208351_pechini
+  phase: M-type SrFe12O19
+  route: isotropic
+  process: Pechini synthesis, sintered at 900 °C for 5 h
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature magnetization, Hmax 20 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1173.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: SrFe12O19
+    particle_size: mean 116 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: nanoparticle powder; fixation not reported
+  source:
+    doi: 10.3390/ma19101992
+    title: M-Type Strontium Hexaferrite Nanoestructures Derived from the Pechini Method as Magnetically
+      Hard Adsorbents for Cadmium Removal in Aqueous Solution
+    first_author: Murillo-Ortíz
+    year: 2026
+    evidence: full_text
+    locator: Results, Figure 5a paragraph
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13208351/fullTextXML
+- id: heldout3_pmc5943258_csg_powder
+  phase: M-type SrFe12O19
+  route: isotropic
+  process: conventional sol-gel Sr ferrite powder
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; pressing direction not established in quoted passage
+  measurement: hysteresis, room temperature; saturation field not specified for this ratio
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.1038/s41598-018-25662-8
+    title: Enhancement of magnetic properties through morphology control of SrFe12O19 nanocrystallites
+    first_author: Eikeland
+    year: 2018
+    evidence: full_text
+    locator: Results, SPS compact paragraph
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5943258/fullTextXML
+- id: heldout3_pmc5943258_csg_sps
+  phase: M-type SrFe12O19
+  route: 'other: SPS texture'
+  process: SPS compacted conventional sol-gel Sr ferrite pellet
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; pressing direction not established in quoted passage
+  measurement: hysteresis, room temperature; saturation field not specified for this ratio
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: SPS pressing direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed SPS pellet
+  source:
+    doi: 10.1038/s41598-018-25662-8
+    title: Enhancement of magnetic properties through morphology control of SrFe12O19 nanocrystallites
+    first_author: Eikeland
+    year: 2018
+    evidence: full_text
+    locator: Results, SPS compact paragraph
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5943258/fullTextXML
+- id: heldout3_pmc5943258_msg_powder
+  phase: M-type SrFe12O19
+  route: isotropic
+  process: modified sol-gel Sr ferrite powder before SPS
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature hysteresis; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.1038/s41598-018-25662-8
+    title: Enhancement of magnetic properties through morphology control of SrFe12O19 nanocrystallites
+    first_author: Eikeland
+    year: 2018
+    evidence: full_text
+    locator: Results, SPS compact paragraph
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5943258/fullTextXML
+- id: heldout3_pmc10505901_mnox_1_0p25_[redacted]
+  phase: M-type BaFe12O19 / MnO2 composite
+  route: isotropic
+  process: 'molten-salt BaM followed by hydrothermal MnO2 growth, BaM:MnO2 mass ratio 1 : 0.25'
+  quantity: '[redacted]'
+  unit: T
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 'BaFe12O19:MnO2 mass ratio 1 : 0.25'
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: core-shell composite powder; fixation not reported
+  source:
+    doi: 10.1039/d3ra05114e
+    title: High-performance microwave absorption by optimizing hydrothermal synthesis of BaFe 12 O 19
+      @MnO 2 core–shell composites
+    first_author: Yustanti
+    year: 2023
+    evidence: full_text
+    locator: Table 4
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10505901/fullTextXML
+- id: heldout3_pmc10505901_mnox_1_0p25_js
+  phase: M-type BaFe12O19 / MnO2 composite
+  route: isotropic
+  process: 'molten-salt BaM followed by hydrothermal MnO2 growth, BaM:MnO2 mass ratio 1 : 0.25'
+  quantity: Js_same_sample
+  unit: T
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 'BaFe12O19:MnO2 mass ratio 1 : 0.25'
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: core-shell composite powder; fixation not reported
+  source:
+    doi: 10.1039/d3ra05114e
+    title: High-performance microwave absorption by optimizing hydrothermal synthesis of BaFe 12 O 19
+      @MnO 2 core–shell composites
+    first_author: Yustanti
+    year: 2023
+    evidence: full_text
+    locator: Table 4
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10505901/fullTextXML
+- id: heldout3_pmc10505901_mnox_1_0p5_[redacted]
+  phase: M-type BaFe12O19 / MnO2 composite
+  route: isotropic
+  process: 'molten-salt BaM followed by hydrothermal MnO2 growth, BaM:MnO2 mass ratio 1 : 0.5'
+  quantity: '[redacted]'
+  unit: T
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 'BaFe12O19:MnO2 mass ratio 1 : 0.5'
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: core-shell composite powder; fixation not reported
+  source:
+    doi: 10.1039/d3ra05114e
+    title: High-performance microwave absorption by optimizing hydrothermal synthesis of BaFe 12 O 19
+      @MnO 2 core–shell composites
+    first_author: Yustanti
+    year: 2023
+    evidence: full_text
+    locator: Table 4
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10505901/fullTextXML
+- id: heldout3_pmc10505901_mnox_1_0p5_js
+  phase: M-type BaFe12O19 / MnO2 composite
+  route: isotropic
+  process: 'molten-salt BaM followed by hydrothermal MnO2 growth, BaM:MnO2 mass ratio 1 : 0.5'
+  quantity: Js_same_sample
+  unit: T
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 'BaFe12O19:MnO2 mass ratio 1 : 0.5'
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: core-shell composite powder; fixation not reported
+  source:
+    doi: 10.1039/d3ra05114e
+    title: High-performance microwave absorption by optimizing hydrothermal synthesis of BaFe 12 O 19
+      @MnO 2 core–shell composites
+    first_author: Yustanti
+    year: 2023
+    evidence: full_text
+    locator: Table 4
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10505901/fullTextXML
+- id: heldout3_pmc10505901_mnox_1_0p75_[redacted]
+  phase: M-type BaFe12O19 / MnO2 composite
+  route: isotropic
+  process: 'molten-salt BaM followed by hydrothermal MnO2 growth, BaM:MnO2 mass ratio 1 : 0.75'
+  quantity: '[redacted]'
+  unit: T
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 'BaFe12O19:MnO2 mass ratio 1 : 0.75'
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: core-shell composite powder; fixation not reported
+  source:
+    doi: 10.1039/d3ra05114e
+    title: High-performance microwave absorption by optimizing hydrothermal synthesis of BaFe 12 O 19
+      @MnO 2 core–shell composites
+    first_author: Yustanti
+    year: 2023
+    evidence: full_text
+    locator: Table 4
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10505901/fullTextXML
+- id: heldout3_pmc10505901_mnox_1_0p75_js
+  phase: M-type BaFe12O19 / MnO2 composite
+  route: isotropic
+  process: 'molten-salt BaM followed by hydrothermal MnO2 growth, BaM:MnO2 mass ratio 1 : 0.75'
+  quantity: Js_same_sample
+  unit: T
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 'BaFe12O19:MnO2 mass ratio 1 : 0.75'
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: core-shell composite powder; fixation not reported
+  source:
+    doi: 10.1039/d3ra05114e
+    title: High-performance microwave absorption by optimizing hydrothermal synthesis of BaFe 12 O 19
+      @MnO 2 core–shell composites
+    first_author: Yustanti
+    year: 2023
+    evidence: full_text
+    locator: Table 4
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10505901/fullTextXML
+- id: heldout3_pmc10505901_mnox_1_1_[redacted]
+  phase: M-type BaFe12O19 / MnO2 composite
+  route: isotropic
+  process: 'molten-salt BaM followed by hydrothermal MnO2 growth, BaM:MnO2 mass ratio 1 : 1'
+  quantity: '[redacted]'
+  unit: T
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 'BaFe12O19:MnO2 mass ratio 1 : 1'
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: core-shell composite powder; fixation not reported
+  source:
+    doi: 10.1039/d3ra05114e
+    title: High-performance microwave absorption by optimizing hydrothermal synthesis of BaFe 12 O 19
+      @MnO 2 core–shell composites
+    first_author: Yustanti
+    year: 2023
+    evidence: full_text
+    locator: Table 4
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10505901/fullTextXML
+- id: heldout3_pmc10505901_mnox_1_1_js
+  phase: M-type BaFe12O19 / MnO2 composite
+  route: isotropic
+  process: 'molten-salt BaM followed by hydrothermal MnO2 growth, BaM:MnO2 mass ratio 1 : 1'
+  quantity: Js_same_sample
+  unit: T
+  measured_along: measurement field; no alignment axis
+  measurement: VSM, room temperature; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 'BaFe12O19:MnO2 mass ratio 1 : 1'
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: core-shell composite powder; fixation not reported
+  source:
+    doi: 10.1039/d3ra05114e
+    title: High-performance microwave absorption by optimizing hydrothermal synthesis of BaFe 12 O 19
+      @MnO 2 core–shell composites
+    first_author: Yustanti
+    year: 2023
+    evidence: full_text
+    locator: Table 4
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10505901/fullTextXML
+- id: heldout3_pmc10386164_bonded_1
+  phase: M-type SrFe12O19
+  route: FP
+  process: magnetically oriented powder, injection-moulded bonded magnet; SFO
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction of bonded magnet
+  measurement: Permagraph [redacted]; room temperature, saturation field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: powder-orientation field
+    composition: SFO
+    particle_size: null
+    density_rel: 0.962
+    phase_content: SFO
+    alignment_medium: oriented powder immobilized in injection-moulded polymer
+  source:
+    doi: 10.3390/nano13142097
+    title: Remanence Increase in SrFe12O19/Fe Exchange-Decoupled Hard-Soft Composite Magnets Owing to
+      Dipolar Interactions
+    first_author: Guzmán-Mínguez
+    year: 2023
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10386164/fullTextXML
+- id: heldout3_pmc10386164_bonded_2
+  phase: M-type SrFe12O19 / Fe composite
+  route: FP
+  process: magnetically oriented powder, injection-moulded bonded magnet; SFO + 10 vol% Fe 50 nm
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction of bonded magnet
+  measurement: Permagraph [redacted]; room temperature, saturation field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: powder-orientation field
+    composition: SFO + 10 vol% Fe 50 nm
+    particle_size: Fe 50 nm
+    density_rel: 0.938
+    phase_content: SFO + 10 vol% Fe 50 nm
+    alignment_medium: oriented powder immobilized in injection-moulded polymer
+  source:
+    doi: 10.3390/nano13142097
+    title: Remanence Increase in SrFe12O19/Fe Exchange-Decoupled Hard-Soft Composite Magnets Owing to
+      Dipolar Interactions
+    first_author: Guzmán-Mínguez
+    year: 2023
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10386164/fullTextXML
+- id: heldout3_pmc10386164_bonded_3
+  phase: M-type SrFe12O19 / Fe composite
+  route: FP
+  process: magnetically oriented powder, injection-moulded bonded magnet; SFO + 10 vol% Fe 1 µm
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction of bonded magnet
+  measurement: Permagraph [redacted]; room temperature, saturation field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: powder-orientation field
+    composition: SFO + 10 vol% Fe 1 µm
+    particle_size: Fe 1 µm
+    density_rel: 0.938
+    phase_content: SFO + 10 vol% Fe 1 µm
+    alignment_medium: oriented powder immobilized in injection-moulded polymer
+  source:
+    doi: 10.3390/nano13142097
+    title: Remanence Increase in SrFe12O19/Fe Exchange-Decoupled Hard-Soft Composite Magnets Owing to
+      Dipolar Interactions
+    first_author: Guzmán-Mínguez
+    year: 2023
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10386164/fullTextXML
+- id: heldout3_pmc10386164_bonded_4
+  phase: M-type SrFe12O19 / Fe composite
+  route: FP
+  process: magnetically oriented powder, injection-moulded bonded magnet; SFO + 10 vol% Fe 11 µm
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction of bonded magnet
+  measurement: Permagraph [redacted]; room temperature, saturation field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: powder-orientation field
+    composition: SFO + 10 vol% Fe 11 µm
+    particle_size: Fe 11 µm
+    density_rel: 0.94
+    phase_content: SFO + 10 vol% Fe 11 µm
+    alignment_medium: oriented powder immobilized in injection-moulded polymer
+  source:
+    doi: 10.3390/nano13142097
+    title: Remanence Increase in SrFe12O19/Fe Exchange-Decoupled Hard-Soft Composite Magnets Owing to
+      Dipolar Interactions
+    first_author: Guzmán-Mínguez
+    year: 2023
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10386164/fullTextXML
+- id: heldout3_pmc6766333_fecrco_2
+  phase: Fe-Cr-Co
+  route: 'other: torsion+tension+FA'
+  process: torsion plus tension at 750 °C with 20% elongation; solution anneal at 1000 °C for 10 min,
+    then magnetic aging at 620-650 °C and multistage tempering
+  quantity: '[redacted]'
+  unit: T
+  measured_along: external field parallel to tension direction
+  measurement: Permagraph C-300; field parallel to tension direction; measurement temperature and maximum
+    field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: magnetic aging 893-923 K; prior deformation 1023.15 K
+    stress_MPa: null
+    strain_percent: 20
+    parent_texture: torsion plus tension after casting and rolling; EBSD texture not quantified
+    magnet_axis: magnetic-aging field parallel to tension direction
+    composition: FeCr30Co8
+    particle_size: null
+    density_rel: null
+    phase_content: Fe-rich magnetic alpha1 precipitates in Cr-rich paramagnetic alpha2 matrix
+    alignment_medium: solid metal specimen
+  source:
+    doi: 10.3390/ma12183019
+    title: Microstructure Evolution and Some Properties of Hard Magnetic FeCr30Co8 Alloy Subjected to
+      Torsion Combined with Tension
+    first_author: Korneva
+    year: 2019
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6766333/fullTextXML
+- id: heldout3_pmc6766333_fecrco_3
+  phase: Fe-Cr-Co
+  route: 'other: torsion+tension+FA'
+  process: torsion plus tension at 800 °C with 20% elongation; solution anneal at 1000 °C for 10 min,
+    then magnetic aging at 620-650 °C and multistage tempering
+  quantity: '[redacted]'
+  unit: T
+  measured_along: external field parallel to tension direction
+  measurement: Permagraph C-300; field parallel to tension direction; measurement temperature and maximum
+    field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: magnetic aging 893-923 K; prior deformation 1073.15 K
+    stress_MPa: null
+    strain_percent: 20
+    parent_texture: torsion plus tension after casting and rolling; EBSD texture not quantified
+    magnet_axis: magnetic-aging field parallel to tension direction
+    composition: FeCr30Co8
+    particle_size: null
+    density_rel: null
+    phase_content: Fe-rich magnetic alpha1 precipitates in Cr-rich paramagnetic alpha2 matrix
+    alignment_medium: solid metal specimen
+  source:
+    doi: 10.3390/ma12183019
+    title: Microstructure Evolution and Some Properties of Hard Magnetic FeCr30Co8 Alloy Subjected to
+      Torsion Combined with Tension
+    first_author: Korneva
+    year: 2019
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6766333/fullTextXML
+- id: heldout3_pmc6766333_fecrco_4
+  phase: Fe-Cr-Co
+  route: 'other: torsion+tension+FA'
+  process: torsion plus tension at 850 °C with 20% elongation; solution anneal at 1000 °C for 10 min,
+    then magnetic aging at 620-650 °C and multistage tempering
+  quantity: '[redacted]'
+  unit: T
+  measured_along: external field parallel to tension direction
+  measurement: Permagraph C-300; field parallel to tension direction; measurement temperature and maximum
+    field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: magnetic aging 893-923 K; prior deformation 1123.15 K
+    stress_MPa: null
+    strain_percent: 20
+    parent_texture: torsion plus tension after casting and rolling; EBSD texture not quantified
+    magnet_axis: magnetic-aging field parallel to tension direction
+    composition: FeCr30Co8
+    particle_size: null
+    density_rel: null
+    phase_content: Fe-rich magnetic alpha1 precipitates in Cr-rich paramagnetic alpha2 matrix
+    alignment_medium: solid metal specimen
+  source:
+    doi: 10.3390/ma12183019
+    title: Microstructure Evolution and Some Properties of Hard Magnetic FeCr30Co8 Alloy Subjected to
+      Torsion Combined with Tension
+    first_author: Korneva
+    year: 2019
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6766333/fullTextXML
+- id: heldout3_pmc6766333_fecrco_5
+  phase: Fe-Cr-Co
+  route: FA
+  process: magnetic aging at 620-650 °C and multistage tempering without prior torsion/tension
+  quantity: '[redacted]'
+  unit: T
+  measured_along: external field parallel to tension direction
+  measurement: Permagraph C-300; field parallel to tension direction; measurement temperature and maximum
+    field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: magnetic aging 893-923 K
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: cast and rolled; texture not quantified
+    magnet_axis: magnetic-aging field parallel to tension direction
+    composition: FeCr30Co8
+    particle_size: null
+    density_rel: null
+    phase_content: Fe-rich magnetic alpha1 precipitates in Cr-rich paramagnetic alpha2 matrix
+    alignment_medium: solid metal specimen
+  source:
+    doi: 10.3390/ma12183019
+    title: Microstructure Evolution and Some Properties of Hard Magnetic FeCr30Co8 Alloy Subjected to
+      Torsion Combined with Tension
+    first_author: Korneva
+    year: 2019
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6766333/fullTextXML
+- id: heldout3_pmc8158506_sps_tc_initial
+  phase: M-type BaFe12O19
+  route: 'other: field-assisted SPS'
+  process: in situ magnetic-anisotropy spark plasma sintering, initial process parameters
+  quantity: texture_metric
+  unit: texture_coefficient_006
+  measured_along: XRD from horizontal pellet surface, (006) reflection
+  measurement: XRD [redacted]; not a direct <|cos θ|> measurement
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: SPS field direction
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed sintered pellet
+  source:
+    doi: 10.3390/ma14102650
+    title: Process Optimization of In Situ Magnetic-Anisotropy Spark Plasma Sintering of M-Type-Based
+      Barium Hexaferrite BaFe12O19
+    first_author: Mohammed
+    year: 2021
+    evidence: full_text
+    locator: Table 9
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8158506/fullTextXML
+- id: heldout3_pmc8158506_sps_tc_opt
+  phase: M-type BaFe12O19
+  route: 'other: field-assisted SPS'
+  process: in situ magnetic-anisotropy spark plasma sintering, optimized process parameters
+  quantity: texture_metric
+  unit: texture_coefficient_006
+  measured_along: XRD from horizontal pellet surface, (006) reflection
+  measurement: XRD [redacted]; not a direct <|cos θ|> measurement
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: 0.09
+    T_process_K: 1453.15
+    stress_MPa: 30
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: SPS field direction
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: fixed sintered pellet
+  source:
+    doi: 10.3390/ma14102650
+    title: Process Optimization of In Situ Magnetic-Anisotropy Spark Plasma Sintering of M-Type-Based
+      Barium Hexaferrite BaFe12O19
+    first_author: Mohammed
+    year: 2021
+    evidence: full_text
+    locator: Table 9
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8158506/fullTextXML
+- id: heldout3_pmc9585087_printed_parallel
+  phase: M-type SrFe12O19
+  route: FP
+  process: field aligned Sprox Sr ferrite particles in extruded PA6 filament during 3D printing
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: printing field direction
+  measurement: VSM on cut printed cube, room temperature; maximum field not stated in quoted passage
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: field applied at nozzle
+    composition: SrFe12O19 + PA6
+    particle_size: cuboid flakes about 6 × 2 × 2 µm3
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten PA6 filament, then fixed printed cube
+  source:
+    doi: 10.1038/s41598-022-20669-8
+    title: In-situ alignment of 3D printed anisotropic hard magnets
+    first_author: Suppan
+    year: 2022
+    evidence: full_text
+    locator: Results, Figure 5a paragraph
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9585087/fullTextXML
+- id: heldout3_pmc9585087_printed_perpendicular
+  phase: M-type SrFe12O19
+  route: FP
+  process: field aligned Sprox Sr ferrite particles in extruded PA6 filament during 3D printing
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: perpendicular to printing field
+  measurement: VSM on cut printed cube, room temperature; maximum field not stated in quoted passage
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: field applied at nozzle
+    composition: SrFe12O19 + PA6
+    particle_size: cuboid flakes about 6 × 2 × 2 µm3
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten PA6 filament, then fixed printed cube
+  source:
+    doi: 10.1038/s41598-022-20669-8
+    title: In-situ alignment of 3D printed anisotropic hard magnets
+    first_author: Suppan
+    year: 2022
+    evidence: full_text
+    locator: Results, Figure 5a paragraph
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9585087/fullTextXML
+- id: heldout3_pmc13329756_undoped_sr_control
+  phase: M-type SrFe12O19
+  route: isotropic
+  process: sol-gel auto-combustion control x=0; calcined at 1100 °C for 6 h
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature magnetic loop; maximum applied field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1373.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: SrFe12O19, Dy/Ce x=0
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder; fixation not reported
+  source:
+    doi: 10.1039/d6ra02983c
+    title: Tuning the electromagnetic and magnetic response of SrFe 12 O 19 by Dy–Ce co-substitution for
+      X-band microwave absorption
+    first_author: Atkare
+    year: 2026
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13329756/fullTextXML
+- id: heldout3_pmc13456046_undoped_ba_control
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: undoped BF control nanopowder
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature magnetic loop; maximum field not stated
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, no Ce/Nd substitution
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: nanopowder; fixation not reported
+  source:
+    doi: 10.1039/d6ra03457h
+    title: Synergistic tailoring of structural, optical, dielectric, and magnetic responses in Ce/Ni-
+      and Nd/Ni-co-doped M-type BaFe 12 O 19 nano-compositions
+    first_author: Wahba
+    year: 2026
+    evidence: full_text
+    locator: Table 2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13456046/fullTextXML
+- id: heldout3_pmc8705690_undoped_composite_1000
+  phase: M-type SrFe12O19 / CoFe2O4 composite
+  route: isotropic
+  process: tartaric acid precursor nanocomposite, 2CoFe2O4/SrFe12O19, annealed at 1000 °C for 2 h
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature M-H loop, maximum applied field 20 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1273.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 2CoFe2O4/SrFe12O19, no La/Sm substitution
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: nanocomposite powder; fixation not reported
+  source:
+    doi: 10.3390/ma14247820
+    title: Boost the Crystal Installation and Magnetic Features of Cobalt Ferrite/M-Type Strontium Ferrite
+      Nanocomposites Double Substituted by La3+ and Sm3+ Ions (2CoFe2O4/SrFe12−2xSmxLaxO19)
+    first_author: Hessien
+    year: 2021
+    evidence: full_text
+    locator: Table 3
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8705690/fullTextXML
+- id: heldout3_pmc8705690_undoped_composite_1100
+  phase: M-type SrFe12O19 / CoFe2O4 composite
+  route: isotropic
+  process: tartaric acid precursor nanocomposite, 2CoFe2O4/SrFe12O19, annealed at 1100 °C for 2 h
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature M-H loop, maximum applied field 20 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1373.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 2CoFe2O4/SrFe12O19, no La/Sm substitution
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: nanocomposite powder; fixation not reported
+  source:
+    doi: 10.3390/ma14247820
+    title: Boost the Crystal Installation and Magnetic Features of Cobalt Ferrite/M-Type Strontium Ferrite
+      Nanocomposites Double Substituted by La3+ and Sm3+ Ions (2CoFe2O4/SrFe12−2xSmxLaxO19)
+    first_author: Hessien
+    year: 2021
+    evidence: full_text
+    locator: Table 3
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8705690/fullTextXML
+- id: heldout3_pmc8705690_undoped_composite_1200
+  phase: M-type SrFe12O19 / CoFe2O4 composite
+  route: isotropic
+  process: tartaric acid precursor nanocomposite, 2CoFe2O4/SrFe12O19, annealed at 1200 °C for 2 h
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: room-temperature M-H loop, maximum applied field 20 kOe
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: 2CoFe2O4/SrFe12O19, no La/Sm substitution
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: nanocomposite powder; fixation not reported
+  source:
+    doi: 10.3390/ma14247820
+    title: Boost the Crystal Installation and Magnetic Features of Cobalt Ferrite/M-Type Strontium Ferrite
+      Nanocomposites Double Substituted by La3+ and Sm3+ Ions (2CoFe2O4/SrFe12−2xSmxLaxO19)
+    first_author: Hessien
+    year: 2021
+    evidence: full_text
+    locator: Table 3
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8705690/fullTextXML
+- id: heldout3_pmc9080718_undoped_ba_control
+  phase: M-type BaFe12O19
+  route: isotropic
+  process: citrate-nitrate auto-combustion and sintering, x=0 BFO control
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: 300 K magnetic hysteresis; maximum field not stated in table
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: 1573
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: BaFe12O19, Ce/Zn x=0
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: sintered pellet
+  source:
+    doi: 10.1039/c8ra02455c
+    title: Investigation of crystal structure, microstructure and low temperature magnetic behavior of
+      Ce 4+ and Zn 2+ co-doped barium hexaferrites (BaFe 12 O 19 )
+    first_author: Tanwar
+    year: 2018
+    evidence: full_text
+    locator: Table 5
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9080718/fullTextXML
+- id: heldout3_pmc4788672_sr_pani_control
+  phase: M-type SrFe12O19
+  route: isotropic
+  process: coprecipitated SrFe12O19 nanoparticles before polymer/graphene composite formation
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: measurement field; no alignment axis
+  measurement: magnetic hysteresis; temperature and maximum field not stated in the quoted paragraph
+  n_samples: one tabulated condition; independent specimen count not reported
+  conditions:
+    field_T: null
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: null
+    magnet_axis: measurement field
+    composition: SrFe12O19, no polymer or graphene
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: nanoparticle powder; fixation not reported
+  source:
+    doi: 10.1186/s11671-016-1340-x
+    title: Synthesis, Characterization, and Microwave Absorption Properties of Reduced Graphene Oxide/Strontium
+      Ferrite/Polyaniline Nanocomposites
+    first_author: Luo
+    year: 2016
+    evidence: full_text
+    locator: Results, Figure 6a paragraph
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4788672/fullTextXML
