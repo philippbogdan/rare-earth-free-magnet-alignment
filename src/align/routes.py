@@ -49,27 +49,41 @@ V_STAR = (1e-26, 1e-23)      # nucleus volume bounds (r ~ 1.3-13 nm), an estimat
 
 
 def L_of(s):
-    return Lattice(s['system'], s['a'], s.get('c'))
+    return Lattice(s['system'], s['a'], s.get('c'), s.get('b'))
 
 
 class Path:
-    """Formation path parent -> hard phase with its variants and twins."""
+    """Formation path parent -> (intermediate ->) hard phase with its variants and twins.
+
+    groups[k] is the intermediate variant product variant k comes from (one group per
+    variant for a single-step path)."""
 
     def __init__(self, ph, p):
+        from .variants import two_step_variants
         self.ph, self.p = ph, p
         self.mode = p['mode']                       # direct | OR | massive | spinodal
         self.LH = L_of(ph['structure'])
         self.eH = np.asarray(ph['easy_axis_vec'], float)
         self.eH = self.eH / np.linalg.norm(self.eH)
         par = p.get('parent')
+        self.two_step = bool(p.get('intermediate'))
         if par and self.mode in ('OR', 'spinodal', 'massive'):
             self.LP = L_of(par['structure'])
-            o = p['OR']
-            R = or_rotation(self.LP, self.LH, o['plane_P'], o['plane_H'], o['dir_P'], o['dir_H'])
-            self.V = variant_rotations(R, par['structure']['laue'], ph['structure']['laue'])
+            if self.two_step:
+                it = p['intermediate']
+                LI = L_of(it['structure'])
+                self.V, self.groups = two_step_variants(
+                    self.LP, LI, self.LH, it['OR_PI'], it['OR_IH'], par['structure']['laue'],
+                    it['structure']['laue'], ph['structure']['laue'])
+            else:
+                o = p['OR']
+                R = or_rotation(self.LP, self.LH, o['plane_P'], o['plane_H'], o['dir_P'], o['dir_H'])
+                self.V = variant_rotations(R, par['structure']['laue'], ph['structure']['laue'])
+                self.groups = np.arange(len(self.V))
         else:
             self.LP = self.LH
             self.V = np.eye(3)[None]
+            self.groups = np.arange(1)
         self.twins = [(twin_rotation(self.LH, t['axis'], t['angle']), 0.0)
                       for t in p.get('twins', [])]
 
@@ -79,6 +93,10 @@ class Path:
 
     def axes(self, parents):
         return E.product_axes(parents, self.V, self.eH)
+
+    def weights(self, ax, fr, kind, h, level1=True, level2=True):
+        """Complete selection by a bias along h, step by step (see engine.grouped_weights)."""
+        return E.grouped_weights(ax, fr, self.groups, kind, h, level1, level2)
 
 
 def _fibre(path, d):
@@ -93,16 +111,17 @@ def _equal_best(path, parents):
     return (A_par, 'fibre axis') if A_par >= A_perp else (A_perp, 'perpendicular to fibre axis')
 
 
-def _select_best(path, parents, kind='field', sign=+1, fibre=True):
-    """Complete selection; bias axis scanned over polar angle to the fibre axis
-    (fibre parents) or fixed (random parents)."""
+def _select_best(path, parents, kind='field', sign=+1, fibre=True, level1=True, level2=True):
+    """Complete selection (per step: level1 = intermediate/variant choice, level2 = product
+    choice within it); bias axis scanned over polar angle to the fibre axis (fibre parents)
+    or fixed (random parents). Returns (A along the bias axis, angle)."""
     ax, fr, per = path.axes(parents)
     angles = range(0, 91, 1) if fibre else (0,)
     best = (-1.0, None)
     for al in angles:
         h = (np.sin(np.radians(al)), 0.0, np.cos(np.radians(al)))
-        w = E.bias_weights(ax, fr, len(path.V), per, kind, h, sign=sign)
-        A = E.alignment(ax, w, h) if (kind == 'field' or sign > 0) else E.best_axis(ax, w, 400)[0]
+        w = path.weights(ax, fr, kind, h, level1, level2)
+        A = E.alignment(ax, w, h)
         if A > best[0] + 1e-9:
             best = (A, al)
     return best

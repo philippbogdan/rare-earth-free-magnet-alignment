@@ -166,3 +166,41 @@ def best_axis(axes, weights, n_dir=2000):
     vals = (np.abs(flat @ D.T) * w[:, None]).sum(0) / w.sum()
     i = int(np.argmax(vals))
     return float(vals[i]), D[i]
+
+
+def grouped_weights(axes, frac, groups, kind, direction, level1=True, level2=True):
+    """Complete selection for a two-step transformation P -> I -> H.
+
+    groups[k] = index of the intermediate (I) variant that product variant k comes from.
+    level1: the bias can choose the I variant (I magnetically ordered / strained at T_f);
+            in the ceiling the I variant holding the best product variant is chosen.
+    level2: the bias can choose among the product variants of one I variant.
+    Neither: equal weights. Returns weights shaped like frac.
+    """
+    h = np.asarray(direction, float)
+    h /= np.linalg.norm(h)
+    n, m = frac.shape
+    groups = np.asarray(groups)
+    G = groups.max() + 1
+    c2 = np.einsum('nmi,i->nm', axes, h) ** 2
+    if kind == 'stress':
+        c2 = c2           # complete selection of c parallel to the stress axis (sign chosen)
+    w = np.zeros_like(frac)
+    gmask = np.stack([groups == g for g in range(G)])          # (G, m)
+    best_in_group = np.where(gmask[None], c2[:, None, :], -np.inf).max(2)   # (n, G)
+    if level1:
+        gb = best_in_group.max(1, keepdims=True)
+        gsel = (best_in_group >= gb - TIE).astype(float)
+    else:
+        gsel = np.ones((n, G))
+    gsel /= gsel.sum(1, keepdims=True)
+    for g in range(G):
+        cols = np.where(gmask[g])[0]
+        if level2:
+            sub = c2[:, cols]
+            keep = (sub >= sub.max(1, keepdims=True) - TIE).astype(float)
+        else:
+            keep = np.ones((n, len(cols)))
+        keep /= keep.sum(1, keepdims=True)
+        w[:, cols] = gsel[:, [g]] * keep
+    return w

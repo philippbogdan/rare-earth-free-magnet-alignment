@@ -1,0 +1,3258 @@
+# fe16n2 — INPUT records (visible). Topic: α''-Fe16N2 (body-centred tetragonal, I4/mmm, 2 ordered N per 16 Fe
+# on one octahedral sublattice; easy axis c).
+# Phase names used in this file:
+#   "α''-Fe16N2"  hard phase (ordered nitride)
+#   "α'-Fe8N"     N-martensite (bct, N disordered on the c-type octahedral sublattice), parent of α'' on the Jack route
+#   "γ-Fe(N)"     N-austenite (fcc), parent of α'
+#   "α-Fe"        bcc iron, parent for direct low-temperature nitriding (and reference for strain)
+#   "γ'-Fe4N"     decomposition / competing phase
+# Records follow data/SCHEMA.md; every value carries a verbatim quote from the source page/file named in `url`.
+# Sources without a Crossref DOI (patents, theses, reports, slides, DataCite posters) have doi: null or a note.
+- id: fe16n2_js_kim1972
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.58
+  unit: T
+  conditions: polycrystalline Fe–N films evaporated in N2 (2e-5 to 7e-3 Torr) on glass; multiphase film; room temperature
+  source:
+    doi: 10.1063/1.1654030
+    title: New Magnetic Material Having Ultrahigh Magnetic Moment
+    first_author: T. K. Kim
+    year: 1972
+    url: https://api.crossref.org/works/10.1063/1.1654030
+    evidence: abstract
+    locator: abstract
+  quote: We found a new magnetic material which has the highest saturation magnetization at room temperature, 2050 G, among those of all the magnetic materials. This was attributed to Fe16N2, which has a bct structure, and the magnetic moment associated with Fe atoms of Fe16N2 was deduced to be 3.0 μB.
+  note: First 'giant moment' report. 2050 G read as CGS Ms (emu/cm3) of the film -> 4π·2050 G = 25.8 kG = 2.58 T (conversion and CGS reading by collector). The 3.0 μB/Fe is the moment deduced for Fe16N2 (phase fraction correction), i.e. higher than the film value; Okamoto 1996 cites it as 28.3 kG for α''.
+- id: fe16n2_js_komuro1990
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.8-3.0
+  unit: T
+  conditions: MBE Fe–N films 70–1000 Å on Fe/GaAs(100), Fe16N2 + Fe; value extrapolated to pure Fe16N2 from films with up to 85 vol% Fe16N2 (max film Bs 2.66 T); room temperature
+  source:
+    doi: 10.1063/1.344689
+    title: Epitaxial growth and magnetic properties of Fe16N2 films with high saturation magnetic flux density (invited)
+    first_author: Matahiro Komuro
+    year: 1990
+    url: https://api.crossref.org/works/10.1063/1.344689
+    evidence: abstract
+    locator: abstract
+  quote: The maximum value for Bs is 2.66 T, and the volume ratio is 85%. These results indicate that Fe16N2 has a high saturation magnetic flux density of 2.8–3.0 T.
+  note: '''Giant'' side. Extrapolation from a two-phase film using an XRD/TEM volume ratio; not a direct single-phase measurement.'
+- id: fe16n2_js_sugita1991
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.8-3.0
+  unit: T
+  conditions: single-crystal Fe16N2 films grown by MBE on Fe(001)/InGaAs(001) and InGaAs(001); room temperature
+  source:
+    doi: 10.1063/1.350067
+    title: Giant magnetic moment and other magnetic properties of epitaxially grown Fe16N2 single-crystal films (invited)
+    first_author: Y. Sugita
+    year: 1991
+    url: https://api.crossref.org/works/10.1063/1.350067
+    evidence: abstract
+    locator: abstract
+  quote: Saturation flux density Bs of Fe16N2 films has been demonstrated to be 2.8–3.0 T at room temperature, which is very close to the value obtained by Kim and Takahashi using polycrystalline evaporated Fe–N films.
+  note: '''Giant'' side; the most-cited single-crystal film value. Film volume from thickness measurement (see Sugita 1996 for RBS check).'
+- id: fe16n2_moment_sugita1991
+  phase: α''-Fe16N2
+  quantity: other
+  value: average Fe moment 3.2 μB (room temperature, Bs 2.9 T) and 3.5 μB (−268 °C, Bs 3.2 T)
+  unit: μB/Fe
+  conditions: single-crystal MBE Fe16N2 films; room temperature and −268 °C
+  source:
+    doi: 10.1063/1.350067
+    title: Giant magnetic moment and other magnetic properties of epitaxially grown Fe16N2 single-crystal films (invited)
+    first_author: Y. Sugita
+    year: 1991
+    url: https://api.crossref.org/works/10.1063/1.350067
+    evidence: abstract
+    locator: abstract
+  quote: The above mentioned Bs of 2.9 T at room temperature and 3.2 T at −268 °C corresponded to an average magnetic moment of 3.2μB per Fe atom and 3.5μB, respectively. These values of the magnetic moment of Fe atoms are literally giant, far beyond the Slater–Pauling curves.
+  note: Low-temperature Bs 3.2 T of the same films; quantity 'other' = moment per Fe.
+- id: fe16n2_js_sugita1994
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.9
+  unit: T
+  conditions: single-phase single-crystal Fe16N2(001) films 200–900 Å on In0.2Ga0.8As(001) (Fe evaporated in N2+NH3, then annealed); VSM; room temperature
+  source:
+    doi: 10.1063/1.358157
+    title: Magnetic and Mössbauer studies of single-crystal Fe16N2 and Fe-N martensite films epitaxially grown by molecular beam epitaxy (invited)
+    first_author: Yutaka Sugita
+    year: 1994
+    url: https://api.crossref.org/works/10.1063/1.358157
+    evidence: abstract
+    locator: abstract
+  quote: The saturation magnetizations 4πMs’s for Fe16N2 and Fe-N martensite films have been measured to be around 29 and 24 kG at room temperature, respectively, and almost constant in the above thickness range by using a vibrating sample magnetometer.
+  note: 29 kG = 2.9 T (conversion by collector). 'Giant' side. Same quote gives α' martensite (record fe16n2_js_alphaprime_sugita1994).
+- id: fe16n2_moment_sugita1996
+  phase: α''-Fe16N2
+  quantity: other
+  value: average Fe moment 3.5 μB at room temperature (VSM + Rutherford backscattering); 3.3 μB with VSM + thickness
+  unit: μB/Fe
+  conditions: single-phase single-crystal Fe16N2(001) film on GaAs(001) by MBE; room temperature
+  source:
+    doi: 10.1063/1.362246
+    title: Magnetic and electrical properties of single-phase, single-crystal Fe16N2 films epitaxially grown by molecular beam epitaxy (invited)
+    first_author: Yutaka Sugita
+    year: 1996
+    url: https://api.crossref.org/works/10.1063/1.362246
+    evidence: abstract
+    locator: abstract
+  quote: The average magnetic moment per Fe atom for a single-phase, single-crystal Fe16N2(001) film epitaxially grown on a GaAs(001) substrate by molecular beam epitaxy has been confirmed to be 3.5μB at room temperature by using a vibrating sample magnetometer (VSM) and Rutherford backscattering. The value was in good agreement with that obtained by using a VSM and by measuring the film thickness (3.3μB per Fe atom).
+  note: '''Giant'' side; RBS used to remove the film-volume uncertainty.'
+- id: fe16n2_ms_huang1994
+  phase: α''-Fe16N2
+  quantity: Ms_mass
+  value: 285
+  unit: Am2/kg
+  uncertainty: 10
+  conditions: 'bulk: Fe powder nitrided in NH3/H2 at 660–670 °C (γ), quenched to α'', annealed 120–150 °C; α'''' at 50% purity (α-Fe, γ-Fe-N impurities); value attributed to α''''; room temperature'
+  source:
+    doi: 10.1063/1.356925
+    title: Synthesis and characterization of Fe16N2 in bulk form
+    first_author: M. Q. Huang
+    year: 1994
+    url: https://api.crossref.org/works/10.1063/1.356925
+    evidence: abstract
+    locator: abstract
+  quote: Magnetic measurements give saturation magnetizations at room temperature of 250±10 emu/g (2.6μB/Fe) for the α′ phase, 285±10 emu/g (2.9μB/Fe) for the α″ phase, and essentially zero for the γ phase.
+  note: emu/g = Am²/kg. 'Giant' side from bulk multiphase samples (phase-fraction correction). Same quote gives α' (record fe16n2_ms_alphaprime_huang1994).
+- id: fe16n2_js_wang2012
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.68
+  unit: T
+  conditions: sputtered thin films, Fe16N2 + Fe8N mixture with high degree of N ordering; room temperature
+  source:
+    doi: 10.1109/tmag.2011.2170156
+    title: Fabrication of Fe16N2 Films by Sputtering Process and Experimental Investigation of Origin of Giant Saturation Magnetization in Fe16N2
+    first_author: Jian-Ping Wang
+    year: 2012
+    url: https://api.openalex.org/works/doi:10.1109/tmag.2011.2170156
+    evidence: abstract
+    locator: abstract (OpenAlex)
+  quote: It is observed that thin films with Fe16N2+Fe8N mixture phases and high degree of N ordering, exhibit a saturation magnetization up to 2.68T at room temperature, which substantially exceeds the ferromagnetism limit based on the traditional band magnetism understanding.
+  note: '''Giant'' side (Minnesota group); value is for the two-phase film (collector''s reading: a lower bound for the authors'' Fe16N2 value).'
+- id: fe16n2_js_hang2020_pnd
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.6-2.8
+  unit: T
+  conditions: 40 nm epitaxial Fe16N2(001) films on Cr/MgO(001), order parameter 0.6–0.75 (annealed 160 °C), ten pieces stacked; half-polarized neutron diffraction, saturated in 3 T, room temperature; Ms from site moments with bulk lattice constants
+  source:
+    doi: 10.1103/physrevb.102.104402
+    title: Magnetic structure of Fe16N2 determined by polarized neutron diffraction on thin-film samples
+    first_author: Xudong Hang
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1675049
+    evidence: full_text
+    locator: Sec. III E, Table IV (accepted manuscript)
+  quote: Out of 64 combinations, 5 lead to reasonable solutions, and the average magnetic moment, represented by Ms , is between 2.6 T and 2.8 T.
+  note: '''Giant'' side from a volume-independent (diffraction) method; depends on assumed Fe valence form factors. Same films gave 2.31 T by polarized neutron reflectometry (record fe16n2_js_hang2020_pnr).'
+- id: fe16n2_js_hang2020_pnr
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.31
+  unit: T
+  conditions: same Fe16N2 films on Cr/MgO(001) measured by polarized neutron reflectometry (ref. [18] of the paper); room temperature
+  source:
+    doi: 10.1103/physrevb.102.104402
+    title: Magnetic structure of Fe16N2 determined by polarized neutron diffraction on thin-film samples
+    first_author: Xudong Hang
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1675049
+    evidence: full_text
+    locator: Sec. III E (accepted manuscript)
+  quote: Using polarized neutron reflectometry, the Ms of these films (MgO substrate and Cr seed layer) was found to be 2.31 T [18], significantly lower than the values in Table IV. However, the density of the film is lower than its nominal value due to the post-annealing release of strain, which results in grain boundaries as substantiated by our TEM results.
+  note: Authors attribute low (volume-based) values on MgO to overestimated film volume; shows the controversy is partly a volume-normalisation problem.
+- id: fe16n2_ms_takahashi1993
+  phase: α''-Fe16N2
+  quantity: Ms_mass
+  value: 235 (plasma evaporation); 218 (sputtering)
+  unit: Am2/kg
+  conditions: α''-Fe16N2 films on MgO single-crystal substrates by reactive plasma (sputtering 0.03–1 μm; plasma evaporation 0.2 μm); room temperature
+  source:
+    doi: 10.1109/20.281111
+    title: Synthesis of Fe16N2 films by using reactive plasma
+    first_author: M. Takahashi
+    year: 1993
+    url: https://api.openalex.org/works/doi:10.1109/20.281111
+    evidence: abstract
+    locator: abstract (OpenAlex)
+  quote: sigma /sub s/ for alpha "-Fe/sub 16/N/sub 2/ films fabricated by plasma evaporation shows 235 emu/g and for the sputtered films shows 218 emu/g. These values are very small compared to the earlier reported value, 2.9 T (310 emu/g).
+  note: Non-giant side (Tohoku group). IEEE legacy markup in the database abstract ('/sub s/' = subscript s).
+- id: fe16n2_ms_takahashi1994
+  phase: α''-Fe16N2
+  quantity: Ms_mass
+  value: 240
+  unit: Am2/kg
+  conditions: upper bound proposed for perfectly ordered α''; (α''+α')-Fe16N2 films by facing-target reactive sputtering on Fe/MgO, annealed 150 °C; max measured 232 emu/g; 300 K
+  source:
+    doi: 10.1063/1.358431
+    title: Magnetic moment of α″-Fe16N2 films (invited)
+    first_author: Migaku Takahashi
+    year: 1994
+    url: https://api.crossref.org/works/10.1063/1.358431
+    evidence: abstract
+    locator: abstract (full text read at https://tohoku.repo.nii.ac.jp/record/25799/files/JApplPhys_76_6642.pdf)
+  quote: the experimentally obtained maximum value of σs for the (α ″+α′)-Fe16N2 film was 232 emu/g. The intrinsic value of σs in the α ″ phase (in the perfectly ordered state) is proposed to be no more than 240 emu/g at 300 K.
+  note: 'Non-giant side: value is an upper bound (''no more than''). With ρ = 7.4 g/cm3 (same paper) 240 emu/g ≈ 2.23 T (conversion by collector).'
+- id: fe16n2_js_coey1994jpcm
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.1-2.5
+  unit: T
+  conditions: bulk powder and foils with up to 40% α'' made by annealing nitrogen martensite; α'' magnetization deduced with Mössbauer phase analysis; room temperature (225–270 J/T/kg)
+  source:
+    doi: 10.1088/0953-8984/6/4/001
+    title: The magnetization of alpha"Fe16N2
+    first_author: J M D Coey
+    year: 1994
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/6/4/001
+    evidence: abstract
+    locator: abstract (OpenAlex)
+  quote: At room temperature the values are 225-270 J T -1 kg -1 corresponding to J s =2.1-2.5 T. The average iron moment at T approximately O K is 2.3-2.6 mu B, which is in accord with the results of spin-polarized band structure calculations.
+  note: Non-giant (consensus) side. 'O K' in the database text = 0 K.
+- id: fe16n2_moment_coey1994jap
+  phase: α''-Fe16N2
+  quantity: other
+  value: average Fe moment 2.3–2.6 μB at T≈0 (review conclusion); ≈2.9 μB on 4d sites
+  unit: μB/Fe
+  conditions: review of electronic-structure calculations, Mössbauer spectra and magnetization of bulk multiphase samples
+  source:
+    doi: 10.1063/1.358156
+    title: The magnetization of bulk α″Fe16N2 (invited)
+    first_author: J. M. D. Coey
+    year: 1994
+    url: https://api.crossref.org/works/10.1063/1.358156
+    evidence: abstract
+    locator: abstract
+  quote: It is concluded from a survey of electronic structure calculations, Mössbauer spectra, and magnetization measurements on bulk multiphase samples that the average iron moment in α″Fe16N2 at T∼0 lies in the range 2.3–2.6 μB. A significantly larger moment of about 2.9 μB appears on the 4d sites which have no nitrogen neighbors.
+  note: Non-giant (consensus) side, bulk.
+- id: fe16n2_js_muller1994
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.3
+  unit: T
+  uncertainty: 0.2
+  conditions: 'bulk Fe–N: NH3/H2 nitriding in austenite field, quench (water + liquid N2), tempering 130–150 °C; α'''' precipitates 1–5 nm, 10–44 wt%; value extracted from mean specific magnetization of the multiphase material; room temperature'
+  source:
+    doi: 10.1002/pssa.2211460108
+    title: Spontaneous magnetization of α″-Fe16N2 precipitates in bulk Fe–N
+    first_author: K.-H. Müller
+    year: 1994
+    url: https://api.openalex.org/works/doi:10.1002/pssa.2211460108
+    evidence: abstract
+    locator: abstract (OpenAlex)
+  quote: The room temperature values of the specific magnetization and spontaneous polarization of α′′-Fe16N2, σs = (250 ± 20) Am2/kg and Js = (2.3 ± 0.2) T, are extracted from the mean specific magnetization of the multiphase material.
+  note: Non-giant side, bulk. Same quote gives σs = 250 ± 20 Am²/kg.
+- id: fe16n2_ms_ogawa2013_rt
+  phase: α''-Fe16N2
+  quantity: Ms_mass
+  value: 226
+  unit: Am2/kg
+  conditions: single-phase α''-Fe16N2 nanoparticles (Ogawa et al., Appl. Phys. Express 6 (2013) 073007, made by H2 reduction of iron oxide then NH3 nitriding); 300 K
+  source:
+    doi: 10.3379/msjmag.1704r003
+    title: Morphology and magnetic properties of α”-Fe16N2 nanoparticles synthesized from iron hydroxide and iron oxides
+    first_author: M. Tobise
+    year: 2017
+    url: https://www.magnetics.jp/wp-content/uploads/41-3_58-62.pdf
+    evidence: review
+    locator: Sec. 1 Introduction, ref. 8
+  quote: In 2013, a procedure for the synthesis of single phase α”-Fe16N2 nanoparticles was established, and α”-Fe16N2 was reported8) to exhibit Ms ≃ 226 emu/g and Ku ≃ 9.6×106 erg/cm3 at 300 K.
+  note: Value quoted (same group) from Ogawa 2013 APEX (doi 10.7567/APEX.6.073007), whose abstract/full text could not be retrieved. '9.6×106' = 9.6×10^6 (superscript lost in PDF text). With ρ = 7.44 g/cm3, 226 emu/g ≈ 2.11 T (conversion by collector). Phase-pure powder is the cleanest volume-independent bulk-type value and is on the non-giant side.
+- id: fe16n2_ms_ogawa2013_5k
+  phase: α''-Fe16N2
+  quantity: Ms_mass
+  value: 234
+  unit: Am2/kg
+  conditions: high-purity α''-Fe16N2 powder (10 g/batch, Ogawa et al. 2013); 5 K
+  source:
+    doi: 10.1039/c3cc43590c
+    title: Quantitative understanding of thermal stability of α′′-Fe16N2
+    first_author: Shinpei Yamamoto
+    year: 2013
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/189733/1/c3cc43590c.pdf
+    evidence: full_text
+    locator: p. 1, introduction (accepted manuscript); also abstract
+  quote: reported that the Ms and the uniaxial magnetocrystalline anisotropy, Ku, were as high as 234 emu/g and ca. 1 × 107 erg/cm3, respectively at 5 K.
+  note: '5 K value, not 300 K. ''1 × 107'' = 1×10^7 (superscript lost). Same group''s 300 K value: 226 emu/g (fe16n2_ms_ogawa2013_rt).'
+- id: fe16n2_js_dirba2025
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.3
+  unit: T
+  conditions: assessment value used for performance estimate (conference poster, TU Darmstadt / Fraunhofer IWKS)
+  source:
+    doi: 10.48505/nims.5649
+    title: 'Iron nitride Fe16N2: intrinsic properties, synthesis, stability and bulk magnets'
+    first_author: Imants Dirba
+    year: 2025
+    url: https://mdr.nims.go.jp/datasets/258f442c-4320-4a25-8db2-3c0739528d0f
+    evidence: full_text
+    locator: poster panel 'Assessing the theoretically possible performance'
+  quote: Saturation magnetization Ms ≈ 2.3 T
+  note: 'Conference poster REPM 2025 (Dirba, Gassmann, Diehl, Gutfleisch), ''Iron nitride Fe16N2: intrinsic properties, synthesis, stability and bulk magnets''; DOI is a DataCite DOI (not in Crossref); title/author/year from DataCite. Quote from fork D''s decoded text (Symbol-font characters restored).'
+- id: fe16n2_js_saito2024_table
+  phase: α''-Fe16N2
+  quantity: Js
+  value: 2.4
+  unit: T
+  conditions: compiled intrinsic value (Table 1 of a 2024 paper; sources cited there)
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+    evidence: review
+    locator: Table 1
+  quote: Curie Temperature Tc (K) Nd2 Fe14 B 1.6 4.5 586 L10 -FeNi 1.6 1.0 773 α′′ -Fe16 N2 2.4 1.0 810
+  note: 'Table row read in column order: saturation magnetization Is (T), anisotropy constant K1 (MJ m−3), Curie temperature Tc (K). Compiled value, not a measurement of that paper.'
+- id: fe16n2_moment_ke2013_calc
+  phase: α''-Fe16N2
+  quantity: other
+  value: calculated spin magnetization 2.38 μB/Fe (LDA), 2.59 μB/Fe (QSGW)
+  unit: μB/Fe
+  conditions: first-principles, experimental structure a = 5.72 Å, c = 6.29 Å
+  source:
+    doi: 10.1103/physrevb.88.024404
+    title: Effects of alloying and strain on the magnetic properties of Fe16N2
+    first_author: Liqin Ke
+    year: 2013
+    url: https://arxiv.org/pdf/1304.2428
+    evidence: full_text
+    locator: Sec. III A (arXiv version)
+  quote: Within the LDA, M =2.38μB /Fe was obtained, in good agreement with previously reported calculations4–6 . The enhancement relative to elemental bcc-Fe has been attributed to the size effect35 . QSGW gives M =2.59μB /Fe, about 9% larger than LDA.
+  note: Theory supports the non-giant side (QSGW 'somewhat larger ... but not anomalously large').
+- id: fe16n2_moment_sakuma1996_calc
+  phase: α''-Fe16N2
+  quantity: other
+  value: calculated moment ≈2.4 μB/Fe (spin-polarized band calculation)
+  unit: μB/Fe
+  conditions: first-principles band calculation
+  source:
+    doi: 10.1063/1.362245
+    title: Electronic and magnetic structure of iron nitride, Fe16N2 (invited)
+    first_author: Akimasa Sakuma
+    year: 1996
+    url: https://api.crossref.org/works/10.1063/1.362245
+    evidence: abstract
+    locator: abstract
+  quote: Quantitatively speaking, the calculated moment of Fe16N2 is about 2.4 μB which is much smaller than the measured value reported.
+  note: Theory, non-giant.
+- id: fe16n2_ms_controversy_okamoto1996
+  phase: α''-Fe16N2
+  quantity: other
+  value: 'reported 4πMs range: ≈30 kG, 25–28 kG, down to ≈α-Fe'
+  unit: kG
+  conditions: literature summary (1996)
+  source:
+    doi: 10.1063/1.361301
+    title: α″-Fe16N2 phase epitaxially grown by sputter beam method
+    first_author: Satoshi Okamoto
+    year: 1996
+    url: https://tohoku.repo.nii.ac.jp/record/48817/files/JApplPhys_79_5250.pdf
+    evidence: full_text
+    locator: p. 5250, Introduction (transcribed from page image)
+  quote: The reported values of the saturation magnetization (4πMs) range from about 30 kG2,3 or 25–28 kG4–7 to almost the same for α-Fe.8
+  note: Quote transcribed by the collector from the rendered page image (PDF text layer garbled). Range of the controversy as of 1996 (30 kG = 3.0 T; α-Fe ≈ 21.5 kG). Superscript reference numbers kept inline.
+- id: fe16n2_ms_controversy_ji2011
+  phase: α''-Fe16N2
+  quantity: other
+  value: no decisive conclusion on giant Ms (1996 MMM symposium)
+  unit: ''
+  conditions: status of the controversy as summarised in 2011
+  source:
+    doi: 10.1103/PhysRevB.84.245310
+    title: Perpendicular magnetic anisotropy and high spin-polarization ratio in epitaxial Fe-N thin films
+    first_author: Nian Ji
+    year: 2011
+    url: https://link.aps.org/accepted/10.1103/PhysRevB.84.245310
+    evidence: full_text
+    locator: ref. 6 (accepted manuscript)
+  quote: At the annual conference on Magnetism and Magnetic Materials in 1996, a symposium was held on the topic Fe16N2, on which both theorists and experimentalists presented their work. The papers were published in J. Appl. Phys. 79 5564-5581 (1996). No decisive conclusion was drawn on whether it has giant saturation magnetization.
+  note: ''
+- id: fe16n2_ms_controversy_ke2013
+  phase: α''-Fe16N2
+  quantity: other
+  value: giant moment remains controversial (2013)
+  unit: ''
+  conditions: status of the controversy as summarised in 2013
+  source:
+    doi: 10.1103/physrevb.88.024404
+    title: Effects of alloying and strain on the magnetic properties of Fe16N2
+    first_author: Liqin Ke
+    year: 2013
+    url: https://arxiv.org/pdf/1304.2428
+    evidence: full_text
+    locator: Introduction (arXiv version)
+  quote: However, the existence of the “giant” Fe moment remains controversial as many researchers did not reproduce these findings, while others confirmed them.
+  note: ''
+- id: fe16n2_js_alphaprime_sugita1994
+  phase: α'-Fe8N
+  quantity: Js
+  value: 2.4
+  unit: T
+  conditions: Fe-11 at.% N martensite single-crystal films 200–900 Å on In0.2Ga0.8As(001); VSM; room temperature
+  source:
+    doi: 10.1063/1.358157
+    title: Magnetic and Mössbauer studies of single-crystal Fe16N2 and Fe-N martensite films epitaxially grown by molecular beam epitaxy (invited)
+    first_author: Yutaka Sugita
+    year: 1994
+    url: https://api.crossref.org/works/10.1063/1.358157
+    evidence: abstract
+    locator: abstract
+  quote: The saturation magnetizations 4πMs’s for Fe16N2 and Fe-N martensite films have been measured to be around 29 and 24 kG at room temperature, respectively, and almost constant in the above thickness range by using a vibrating sample magnetometer.
+  note: 24 kG = 2.4 T (conversion by collector); 2.6 μB/Fe per the same abstract.
+- id: fe16n2_ms_alphaprime_huang1994
+  phase: α'-Fe8N
+  quantity: Ms_mass
+  value: 250
+  unit: Am2/kg
+  uncertainty: 10
+  conditions: bulk α' (80% purity, rest γ-Fe-N) from NH3/H2-nitrided Fe powder quenched from 660–670 °C; room temperature
+  source:
+    doi: 10.1063/1.356925
+    title: Synthesis and characterization of Fe16N2 in bulk form
+    first_author: M. Q. Huang
+    year: 1994
+    url: https://api.crossref.org/works/10.1063/1.356925
+    evidence: abstract
+    locator: abstract
+  quote: Magnetic measurements give saturation magnetizations at room temperature of 250±10 emu/g (2.6μB/Fe) for the α′ phase, 285±10 emu/g (2.9μB/Fe) for the α″ phase, and essentially zero for the γ phase.
+  note: emu/g = Am²/kg.
+- id: fe16n2_k1_takahashi1999
+  phase: α''-Fe16N2
+  quantity: K1
+  value: 1.6
+  unit: MJ/m3
+  conditions: Fe16N2[001] single-crystal films (MBE), 34–83 nm; torque measurement; Ku2 = 0.4×10^7 erg/cm3
+  source:
+    doi: 10.1109/20.801054
+    title: Perpendicular uniaxial magnetic anisotropy of Fe16N2[001] single crystal films grown by molecular beam epitaxy
+    first_author: H. Takahashi
+    year: 1999
+    url: https://api.openalex.org/works/doi:10.1109/20.801054
+    evidence: abstract
+    locator: abstract (OpenAlex)
+  quote: It has been found that Fe/sub 16/N/sub 2/[001] films exhibits perpendicular uniaxial anisotropy which makes the easy axis along the [001] direction, and those anisotropy constants K/sub U1/ and K/sub U2/ for Fe/sub 16/N/sub 2/ were 1.6/spl times/10/sup 7/ and 0.4/spl times/10/sup 7/ erg/cm/sup 3/ respectively.
+  note: 1.6×10^7 erg/cm3 = 1.6 MJ/m3 (conversion by collector); IEEE legacy markup in database abstract. Ke et al. 2013 list this group's value as (K1+K2) = 200×10^5 erg/cm3.
+- id: fe16n2_easyaxis_takahashi1999
+  phase: α''-Fe16N2
+  quantity: easy_axis
+  value: c ([001])
+  unit: ''
+  conditions: Fe16N2[001] single-crystal MBE films; torque
+  source:
+    doi: 10.1109/20.801054
+    title: Perpendicular uniaxial magnetic anisotropy of Fe16N2[001] single crystal films grown by molecular beam epitaxy
+    first_author: H. Takahashi
+    year: 1999
+    url: https://api.openalex.org/works/doi:10.1109/20.801054
+    evidence: abstract
+    locator: abstract (OpenAlex)
+  quote: It has been found that Fe/sub 16/N/sub 2/[001] films exhibits perpendicular uniaxial anisotropy which makes the easy axis along the [001] direction
+  note: ''
+- id: fe16n2_k1_ji2011
+  phase: α''-Fe16N2
+  quantity: K1
+  value: 1.0
+  unit: MJ/m3
+  conditions: partially ordered Fe16N2 + Fe8N layer (≤ ~39% Fe16N2) on Fe(001)/GaAs(001), annealed 120 °C 40 h; Ku from Hk≈Hs and Ms; room temperature
+  source:
+    doi: 10.1103/PhysRevB.84.245310
+    title: Perpendicular magnetic anisotropy and high spin-polarization ratio in epitaxial Fe-N thin films
+    first_author: Nian Ji
+    year: 2011
+    url: https://link.aps.org/accepted/10.1103/PhysRevB.84.245310
+    evidence: full_text
+    locator: Sec. II C (accepted manuscript)
+  quote: The highest Ku is seen around ~107erg/cc, which agrees well with the previous reported value determined by torque curve measurements (Ref.7).
+  note: '''~107erg/cc'' = ~10^7 erg/cm3 (superscript lost in PDF text) = ~1.0 MJ/m3. Authors state Ku increases with N ordering and ''should be much higher for pure phase Fe16N2''. Ref. 7 = Takahashi et al. IEEE Trans. Magn. 35, 2982 (1999).'
+- id: fe16n2_easyaxis_ji2011
+  phase: α''-Fe16N2
+  quantity: easy_axis
+  value: c (perpendicular to (001) film plane)
+  unit: ''
+  conditions: epitaxial bct Fe–N / partially ordered Fe16N2 on Fe(001)/GaAs(001)
+  source:
+    doi: 10.1103/PhysRevB.84.245310
+    title: Perpendicular magnetic anisotropy and high spin-polarization ratio in epitaxial Fe-N thin films
+    first_author: Nian Ji
+    year: 2011
+    url: https://link.aps.org/accepted/10.1103/PhysRevB.84.245310
+    evidence: full_text
+    locator: Introduction (accepted manuscript)
+  quote: morphology, which shows that the c-axis of the Fe-N layer is perpendicular to the film plane and is coherently adapted on the Fe(001)/GaAs(001) template. A complementary study of magnetometry and polarized neutron reflectometry show that an MCA perpendicular to the film plane is developed in the Fe-N layer.
+  note: ''
+- id: fe16n2_k1_ogawa2013_rt
+  phase: α''-Fe16N2
+  quantity: K1
+  value: 0.96
+  unit: MJ/m3
+  conditions: single-phase α''-Fe16N2 nanoparticles (Ogawa et al. 2013); 300 K
+  source:
+    doi: 10.3379/msjmag.1704r003
+    title: Morphology and magnetic properties of α”-Fe16N2 nanoparticles synthesized from iron hydroxide and iron oxides
+    first_author: M. Tobise
+    year: 2017
+    url: https://www.magnetics.jp/wp-content/uploads/41-3_58-62.pdf
+    evidence: review
+    locator: Sec. 1 Introduction, ref. 8
+  quote: In 2013, a procedure for the synthesis of single phase α”-Fe16N2 nanoparticles was established, and α”-Fe16N2 was reported8) to exhibit Ms ≃ 226 emu/g and Ku ≃ 9.6×106 erg/cm3 at 300 K.
+  note: 9.6×10^6 erg/cm3 = 0.96 MJ/m3 (conversion by collector); original source Ogawa 2013 APEX (doi 10.7567/APEX.6.073007) not retrievable.
+- id: fe16n2_k1_takahashi1993_via_tobise
+  phase: α''-Fe16N2
+  quantity: K1
+  value: 1.0
+  unit: MJ/m3
+  conditions: reactively sputtered films with high α'' volume fraction (Takahashi et al. 1993)
+  source:
+    doi: 10.3379/msjmag.1704r003
+    title: Morphology and magnetic properties of α”-Fe16N2 nanoparticles synthesized from iron hydroxide and iron oxides
+    first_author: M. Tobise
+    year: 2017
+    url: https://www.magnetics.jp/wp-content/uploads/41-3_58-62.pdf
+    evidence: review
+    locator: Sec. 1 Introduction, ref. 4
+  quote: In 1993, a thin film method was established to achieve a relatively high volume fraction of α”-Fe16N2 using reactive sputtering, where a saturation magnetization of Ms ≃ 240 emu/g and uniaxial magnetocrystalline anisotropy constant of Ku ≃ 1×107 erg/cm3 were determined4).
+  note: '''1×107'' = 1×10^7 erg/cm3 = 1.0 MJ/m3. Ref. 4 = M. Takahashi et al., IEEE Trans. Magn. 29, 3040 (1993).'
+- id: fe16n2_k1_yamamoto2013
+  phase: α''-Fe16N2
+  quantity: K1
+  value: 1.0
+  unit: MJ/m3
+  conditions: high-purity α''-Fe16N2 powder; 5 K (per the introduction of the same paper)
+  source:
+    doi: 10.1039/c3cc43590c
+    title: Quantitative understanding of thermal stability of α′′-Fe16N2
+    first_author: Shinpei Yamamoto
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1039/c3cc43590c
+    evidence: abstract
+    locator: abstract (OpenAlex)
+  quote: The thermal stability of α''-Fe16N2, which attracts much interest because of its superior magnetic properties featuring a large magnetocrystalline anisotropy (Ku ~ 1 × 10(7) erg cm(-3)) and a large saturation magnetization (Ms ~ 234 emu g(-1)), though unfortunately thermally unstable, has been quantitatively studied.
+  note: 1×10^7 erg/cm3 = 1.0 MJ/m3. Database rendering '10(7)' = 10^7.
+- id: fe16n2_k1_ke2013_calc
+  phase: α''-Fe16N2
+  quantity: K1
+  value: 1.44 (experimental atomic coordinates); 1.03 (relaxed)
+  unit: MJ/m3
+  conditions: LDA with spin–orbit coupling; K = E100 − E001 (uniaxial, easy c)
+  source:
+    doi: 10.1103/physrevb.88.024404
+    title: Effects of alloying and strain on the magnetic properties of Fe16N2
+    first_author: Liqin Ke
+    year: 2013
+    url: https://arxiv.org/pdf/1304.2428
+    evidence: full_text
+    locator: Sec. III C (arXiv version)
+  quote: Within LDA, a uniaxial magnetic anisotropy K=144× 105 erg/cm3 was obtained with experimental atomic coordinates. Structural optimization gives a smaller MAE with K= 103×105 erg/cm3 .
+  note: '''144× 105'' = 144×10^5 erg/cm3 = 1.44 MJ/m3; 103×10^5 = 1.03 MJ/m3 (superscripts lost; conversion by collector). Paper also: MAE increases with c/a.'
+- id: fe16n2_k1_controversy_ke2013
+  phase: α''-Fe16N2
+  quantity: other
+  value: 'experimental MAE inconsistent: in-plane (Sugita) vs large uniaxial (Takahashi)'
+  unit: ''
+  conditions: literature summary 2013 (Table IV of the paper lists 4.8–200 ×10^5 erg/cm3)
+  source:
+    doi: 10.1103/physrevb.88.024404
+    title: Effects of alloying and strain on the magnetic properties of Fe16N2
+    first_author: Liqin Ke
+    year: 2013
+    url: https://arxiv.org/pdf/1304.2428
+    evidence: full_text
+    locator: Introduction (arXiv version)
+  quote: Sugita et al.3 obtained an in-plane MAE, while Takahashi18 found a large uniaxial MAE.
+  note: Early MBE films (Sugita 1991) reported an in-plane easy axis; later torque (Takahashi 1999) and powder (Ogawa 2013) give uniaxial c-axis K ≈ 1 MJ/m3.
+- id: fe16n2_k1_huang1994
+  phase: α''-Fe16N2
+  quantity: K1
+  value: small but detectable (qualitative)
+  unit: ''
+  conditions: bulk multiphase α''(50%) + α-Fe + γ-Fe-N
+  source:
+    doi: 10.1063/1.356925
+    title: Synthesis and characterization of Fe16N2 in bulk form
+    first_author: M. Q. Huang
+    year: 1994
+    url: https://api.crossref.org/works/10.1063/1.356925
+    evidence: abstract
+    locator: abstract
+  quote: The anisotropy of Fe16N2 is small but detectable.
+  note: Bulk multiphase sample; contrasts with ≈1 MJ/m3 from films/powders.
+- id: fe16n2_k1_saito2024_table
+  phase: α''-Fe16N2
+  quantity: K1
+  value: 1.0
+  unit: MJ/m3
+  conditions: compiled intrinsic value (Table 1)
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+    evidence: review
+    locator: Table 1
+  quote: Curie Temperature Tc (K) Nd2 Fe14 B 1.6 4.5 586 L10 -FeNi 1.6 1.0 773 α′′ -Fe16 N2 2.4 1.0 810
+  note: 'Columns: Is (T), K1 (MJ m−3), Tc (K).'
+- id: fe16n2_k1_dirba2025
+  phase: α''-Fe16N2
+  quantity: K1
+  value: 1.0
+  unit: MJ/m3
+  conditions: assessment value (conference poster)
+  source:
+    doi: 10.48505/nims.5649
+    title: 'Iron nitride Fe16N2: intrinsic properties, synthesis, stability and bulk magnets'
+    first_author: Imants Dirba
+    year: 2025
+    url: https://mdr.nims.go.jp/datasets/258f442c-4320-4a25-8db2-3c0739528d0f
+    evidence: full_text
+    locator: poster panel 'Assessing the theoretically possible performance'
+  quote: Anisotropy constant Ku ≈ 1.0 MJ
+  note: Unit continues on the next text line as 'm3' (MJ/m3). Poster also derives hardness parameter ≈0.5 (<1, 'semi-hard') and μ0Ha ≈ 1.1 T. DataCite DOI.
+- id: fe16n2_tc_sugita1991
+  phase: α''-Fe16N2
+  quantity: Tc
+  value: 813
+  unit: K
+  conditions: estimated (extrapolated) with a Langevin fit to Bs(T) of single-crystal MBE films measured only up to 400 °C (above which the phase decomposes); not a measured Curie point
+  source:
+    doi: 10.1063/1.350067
+    title: Giant magnetic moment and other magnetic properties of epitaxially grown Fe16N2 single-crystal films (invited)
+    first_author: Y. Sugita
+    year: 1991
+    url: https://api.crossref.org/works/10.1063/1.350067
+    evidence: abstract
+    locator: abstract
+  quote: From the temperature dependence of Bs up to 400 °C, the Curie temperature of Fe16N2 is estimated to be around 540 °C by using the Langevin function.
+  note: 540 °C = 813 K (conversion by collector). Tc is far above the formation/ordering temperatures (≈120–200 °C) and the decomposition range, so α'' (and its ferromagnetic parents α'/α-Fe) are ferromagnetic while forming.
+- id: fe16n2_tc_ke2013
+  phase: α''-Fe16N2
+  quantity: Tc
+  value: 810
+  unit: K
+  conditions: extrapolated experimental estimate (Sugita et al.) as cited; theory (same paper) gives higher values
+  source:
+    doi: 10.1103/physrevb.88.024404
+    title: Effects of alloying and strain on the magnetic properties of Fe16N2
+    first_author: Liqin Ke
+    year: 2013
+    url: https://arxiv.org/pdf/1304.2428
+    evidence: full_text
+    locator: Sec. III B (arXiv version)
+  quote: In the present case, however, the reported extrapolated experimental estimate TC =810K3 is smaller than both of MFA and RPA values, and smaller than the one in bcc-Fe24 .
+  note: Calculated values in record fe16n2_tc_ke2013_calc.
+- id: fe16n2_tc_ke2013_calc
+  phase: α''-Fe16N2
+  quantity: Tc
+  value: 1065-1374 (RPA); 1552-1840 (MFA)
+  unit: K
+  conditions: first-principles exchange (ASA, FP-LMTO, QSGW) + mean-field / RPA; pure Fe16N2
+  source:
+    doi: 10.1103/physrevb.88.024404
+    title: Effects of alloying and strain on the magnetic properties of Fe16N2
+    first_author: Liqin Ke
+    year: 2013
+    url: https://arxiv.org/pdf/1304.2428
+    evidence: full_text
+    locator: Table II and Sec. III B (arXiv version)
+  quote: Thus we conclude that TC in high quality samples of pure Fe16 N2 is probably larger than what has been reported so far, and larger than in pure bcc-Fe.
+  note: Table II gives TC (MFA) 1552/1621/1840 K and TC (RPA) 1118/1065/1374 K for ASA/FP/GW exchange; authors note RPA is usually closer to experiment. The measured value is limited by decomposition.
+- id: fe16n2_tc_saito2024_table
+  phase: α''-Fe16N2
+  quantity: Tc
+  value: 810
+  unit: K
+  conditions: compiled value (Table 1)
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+    evidence: review
+    locator: Table 1
+  quote: Curie Temperature Tc (K) Nd2 Fe14 B 1.6 4.5 586 L10 -FeNi 1.6 1.0 773 α′′ -Fe16 N2 2.4 1.0 810
+  note: 'Columns: Is (T), K1 (MJ m−3), Tc (K). Traces back to the extrapolated 540 °C estimate.'
+- id: fe16n2_density_yamamoto2014
+  phase: α''-Fe16N2
+  quantity: density
+  value: 7.44
+  unit: g/cm3
+  conditions: specific gravity used by the authors as input to a theoretical performance estimate; origin of the number not stated
+  source:
+    doi: 10.1039/c4cc01839g
+    title: Stability of α′′-Fe16N2 in hydrogenous atmospheres
+    first_author: Shinpei Yamamoto
+    year: 2014
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/198772/1/c4cc01839g.pdf
+    evidence: full_text
+    locator: footnote ‡ (accepted manuscript)
+  quote: Ms at room temperature (226 emu/g) , specific gravity of α”-Fe16N2 (7.44), and Ku (1 × 107 erg/cm3)6.
+  note: Consistent with the X-ray density of the Jack cell (a = 5.72 Å, c = 6.29 Å, Fe16N2 per cell) — collector's remark, not from the paper. '1 × 107' = 1×10^7.
+- id: fe16n2_density_takahashi1994
+  phase: α''-Fe16N2
+  quantity: density
+  value: 7.4
+  unit: g/cm3
+  conditions: density assumed by the authors to convert 2.9 T to emu/g
+  source:
+    doi: 10.1063/1.358431
+    title: Magnetic moment of α″-Fe16N2 films (invited)
+    first_author: Migaku Takahashi
+    year: 1994
+    url: https://tohoku.repo.nii.ac.jp/record/25799/files/JApplPhys_76_6642.pdf
+    evidence: full_text
+    locator: p. 6642, Introduction (transcribed from page image)
+  quote: even though σs showed 2.9 T (≈315 emu/g, assuming ρ=7.4 g/cm3 for α″-Fe16N2)
+  note: Quote transcribed by the collector from the rendered page image (PDF text layer garbled).
+- id: fe16n2_lattice_jack1951
+  phase: α''-Fe16N2
+  quantity: lattice
+  value: a = 5.72, c = 6.29
+  unit: Å
+  conditions: bulk α'' from tempered nitrogen martensite (powder XRD); 2×2×2 superstructure of the bct martensite cell
+  source:
+    doi: 10.1098/rspa.1951.0155
+    title: The occurrence and the crystal structure of α" -iron nitride; a new type of interstitial alloy formed during the tempering of nitrogen-martensite
+    first_author: Kenneth Henderson Jack
+    year: 1951
+    url: https://api.crossref.org/works/10.1098/rspa.1951.0155
+    evidence: abstract
+    locator: abstract
+  quote: The contents of the unit cell, which has dimensions a ═ 5⋅72, c ═ 6⋅29 Å, c/a ═ 1⋅10, are ideally Fe16N2 with the atoms occupying special positions of space group I4/mmm.
+  note: Pseudo-cell (bct Fe sublattice) a/2 = 2.86 Å, c/2 = 3.145 Å vs bcc Fe 2.866 Å (arithmetic by collector).
+- id: fe16n2_structure_jack1951
+  phase: α''-Fe16N2
+  quantity: structure
+  value: I4/mmm; ideally Fe16N2; N orders on 1/24 of the octahedral interstices (one sublattice); up to half the N sites may be vacant
+  unit: ''
+  conditions: bulk α'' (tempered nitrogen martensite)
+  source:
+    doi: 10.1098/rspa.1951.0155
+    title: The occurrence and the crystal structure of α" -iron nitride; a new type of interstitial alloy formed during the tempering of nitrogen-martensite
+    first_author: Kenneth Henderson Jack
+    year: 1951
+    url: https://api.crossref.org/works/10.1098/rspa.1951.0155
+    evidence: abstract
+    locator: abstract
+  quote: The iron atoms are displaced from sites occupied in the ferrite lattice by the presence of nitrogen atoms which occupy one twenty-fourth of the number of octahedral interstices in a completely ordered manner. Up to one-half of the number of nitrogen-atom sites may be vacant.
+  note: N-site vacancy tolerance means α'' can form with sub-stoichiometric N (partial order, cf. order parameter in films). 1/24 of all octahedral interstices = 1/8 of the c-type (Oz) sublattice; the other two sublattices are empty.
+- id: fe16n2_tetragonality_jack1951
+  phase: α''-Fe16N2
+  quantity: tetragonality
+  value: c/a = 1.10 (superstructure cell); pseudo-cell c/a ≈ 1.10
+  unit: ''
+  conditions: bulk α''
+  source:
+    doi: 10.1098/rspa.1951.0155
+    title: The occurrence and the crystal structure of α" -iron nitride; a new type of interstitial alloy formed during the tempering of nitrogen-martensite
+    first_author: Kenneth Henderson Jack
+    year: 1951
+    url: https://api.crossref.org/works/10.1098/rspa.1951.0155
+    evidence: abstract
+    locator: abstract
+  quote: The contents of the unit cell, which has dimensions a ═ 5⋅72, c ═ 6⋅29 Å, c/a ═ 1⋅10, are ideally Fe16N2 with the atoms occupying special positions of space group I4/mmm.
+  note: ''
+- id: fe16n2_tetragonality_ferguson1984
+  phase: α''-Fe16N2
+  quantity: tetragonality
+  value: +9.7% along c, −0.2% along a, relative to ferrite (bcc α-Fe)
+  unit: ''
+  conditions: α'' precipitates from quench-aged nitrogen ferrite (Fe-0.08wt%N); c = the cube axis parallel to the tetrad axes of the occupied octahedral interstices
+  source:
+    doi: 10.1016/0036-9748(84)90089-9
+    title: Morphological aspects of α”-Fe16N2 precipitation in α-Fe
+    first_author: P. Ferguson
+    year: 1984
+    url: https://escholarship.org/content/qt0td555gj/qt0td555gj.pdf
+    evidence: full_text
+    locator: LBL report version, p. 2, Introduction (transcribed from page image)
+  quote: Its b.c. tetragonal structure (2) shown in Fig. 1 can be considered as a tetragonal distortion of ferrite with an expansion (9.7%) in the c-direction and a slight contraction (0.2%) in the a-direction due to the ordered occupation by nitrogen atoms of two of the sixteen octahedral interstices whose tetrad axes are parallel with one of the cube directions, i.e. the c-edge.
+  note: 'Quote transcribed by the collector from the rendered page image (PDF text layer garbled). Quote read in the LBL report (preprint) of the Scripta Metall. 18 (1984) 57 paper. Transformation (Bain-type) strain of bcc→α'''': ε_c ≈ +0.097, ε_a ≈ −0.002; this anisotropic strain is what couples to applied stress (variant selection). The c-axis is set by which of the three bcc <100> octahedral sublattices the N occupies.'
+- id: fe16n2_lattice_hang2020
+  phase: α''-Fe16N2
+  quantity: lattice
+  value: a = 5.71, c = 6.28
+  unit: Å
+  conditions: epitaxial Fe16N2(001) films (40 nm) on Cr/MgO(001) after annealing at 160 °C; XRD peak positions; 'relaxed to the bulk values'
+  source:
+    doi: 10.1103/physrevb.102.104402
+    title: Magnetic structure of Fe16N2 determined by polarized neutron diffraction on thin-film samples
+    first_author: Xudong Hang
+    year: 2020
+    url: https://www.osti.gov/servlets/purl/1675049
+    evidence: full_text
+    locator: Sec. III A (accepted manuscript)
+  quote: Table I, from which lattice constants of Fe16 N2 were calculated to be a = 5.71 Å, and c = 6.28 Å[40], close to bulk values.
+  note: ''
+- id: fe16n2_lattice_yamamoto2014
+  phase: α''-Fe16N2
+  quantity: lattice
+  value: a = 5.72, c = 6.30 (α''); α-Fe a = 2.87
+  unit: Å
+  conditions: α''-Fe16N2 nanoparticles (Rietveld refinement, values in ESI)
+  source:
+    doi: 10.1039/c4cc01839g
+    title: Stability of α′′-Fe16N2 in hydrogenous atmospheres
+    first_author: Shinpei Yamamoto
+    year: 2014
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/198772/1/c4cc01839g.pdf
+    evidence: full_text
+    locator: 'footnote # (accepted manuscript)'
+  quote: Volume ratio of α-Fe to α”-Fe16N2 is ca. 0.92 by using the following lattice constants of α”-Fe16N2 (a = 0.572 nm, c = 0.630 nm)
+  note: Quoted in nm (0.572, 0.630); α-Fe a = 0.287 nm follows in the same footnote. Volume ratio α-Fe/α'' ≈ 0.92 per 8 Fe (i.e. ≈ +9% volume on nitriding).
+- id: fe16n2_tetragonality_yamamoto2014
+  phase: α''-Fe16N2
+  quantity: tetragonality
+  value: 'volume per Fe: α-Fe/α'''' ≈ 0.92'
+  unit: ''
+  conditions: α''-Fe16N2 nanoparticles vs α-Fe
+  source:
+    doi: 10.1039/c4cc01839g
+    title: Stability of α′′-Fe16N2 in hydrogenous atmospheres
+    first_author: Shinpei Yamamoto
+    year: 2014
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/198772/1/c4cc01839g.pdf
+    evidence: full_text
+    locator: 'footnote # (accepted manuscript)'
+  quote: Volume ratio of α-Fe to α”-Fe16N2 is ca. 0.92 by using the following lattice constants of α”-Fe16N2 (a = 0.572 nm, c = 0.630 nm)
+  note: Volume change accompanying direct nitriding of bcc Fe (relevant to stress/strain-assisted formation).
+- id: fe16n2_structure_yamamoto2014
+  phase: α''-Fe16N2
+  quantity: structure
+  value: bct; α-Fe with N ordered on interstitial sites (metastable)
+  unit: ''
+  conditions: general
+  source:
+    doi: 10.1039/c4cc01839g
+    title: Stability of α′′-Fe16N2 in hydrogenous atmospheres
+    first_author: Shinpei Yamamoto
+    year: 2014
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/198772/1/c4cc01839g.pdf
+    evidence: full_text
+    locator: p. 1 (accepted manuscript)
+  quote: α”-Fe16N2 is a meta-stable compound with body-centered tetragonal (bct) structure, which is essentially α-Fe containing the nitrogen atoms ordered on interstitial sites.
+  note: ''
+- id: fe16n2_structure_ke2013
+  phase: α''-Fe16N2
+  quantity: structure
+  value: bct, I4/mmm (#139); distorted 2×2×2 bct-Fe superlattice, c/a = 1.1
+  unit: ''
+  conditions: general (structure used for calculations, from Jack)
+  source:
+    doi: 10.1103/physrevb.88.024404
+    title: Effects of alloying and strain on the magnetic properties of Fe16N2
+    first_author: Liqin Ke
+    year: 2013
+    url: https://arxiv.org/pdf/1304.2428
+    evidence: full_text
+    locator: Sec. III (arXiv version)
+  quote: The crystal structure of Fe16 N2 is body-centertetragonal (bct) with space group I4/mmm (#139). It may be viewed as a distorted 2×2×2 bct-Fe superlattice with c/a=1.1.
+  note: ''
+- id: fe16n2_structure_takahashi1994
+  phase: α''-Fe16N2
+  quantity: structure
+  value: 'α'''' = ordered-N superstructure of the α'' bct cell: a'' = 2a, c'' = 2c'
+  unit: ''
+  conditions: general
+  source:
+    doi: 10.1063/1.358431
+    title: Magnetic moment of α″-Fe16N2 films (invited)
+    first_author: Migaku Takahashi
+    year: 1994
+    url: https://tohoku.repo.nii.ac.jp/record/25799/files/JApplPhys_76_6642.pdf
+    evidence: full_text
+    locator: p. 6643, Sec. III A (transcribed from page image)
+  quote: The α″ phase has an ordered N site location of the octahedral interstices. The unit cell of the α″ phase contains eight of the expanded bct pseudo-unit cells and has dimensions a′=2a and c′=2c, where a and c are the lattice constants of the pseudocell.
+  note: Quote transcribed by the collector from the rendered page image (PDF text layer garbled).
+- id: fe16n2_lattice_alphaprime_takahashi1994
+  phase: α'-Fe8N
+  quantity: lattice
+  value: 'c: 2.866 → 3.195; a: 2.866 → 2.832 (with increasing N content)'
+  unit: Å
+  conditions: nitrogen martensite α' (after Jack), range set by N content
+  source:
+    doi: 10.1063/1.358431
+    title: Magnetic moment of α″-Fe16N2 films (invited)
+    first_author: Migaku Takahashi
+    year: 1994
+    url: https://tohoku.repo.nii.ac.jp/record/25799/files/JApplPhys_76_6642.pdf
+    evidence: full_text
+    locator: p. 6643, Sec. III A (transcribed from page image)
+  quote: As a result, the lattice constant c of the α′ phase is elongated from 2.866 to 3.195 Å and the lattice constant a is shortened from 2.866 to 2.832 Å, respectively, depending on the N content.
+  note: 'Quote transcribed by the collector from the rendered page image (PDF text layer garbled). End-point strains relative to bcc Fe: c +11.5%, a −1.2% (arithmetic by collector); N content at the end point not given in the sentence. Per-at.%N coefficients (Cheng et al., Scripta Metall. Mater. 24 (1990) 509) could not be accessed.'
+- id: fe16n2_tetragonality_alphaprime_jack1994
+  phase: α'-Fe8N
+  quantity: tetragonality
+  value: α'-Fe8N can reach the same c/a as α'' without complete N ordering
+  unit: ''
+  conditions: bulk tempering of α' (XRD) and α'' precipitation from supersaturated ferrite (HRTEM)
+  source:
+    doi: 10.1063/1.358482
+    title: The synthesis, structure, and characterization of α″-Fe16N2 (invited)
+    first_author: K. H. Jack
+    year: 1994
+    url: https://api.crossref.org/works/10.1063/1.358482
+    evidence: abstract
+    locator: abstract
+  quote: Thus α′-Fe8N can be obtained with a tetragonality c/a equal to that of α″, but without the complete N ordering that is characteristic of Fe16N2.
+  note: Tetragonality (and hence c-axis choice) is established when N occupies one octahedral sublattice; ordering into α'' then occurs within it.
+- id: fe16n2_tetragonality_ji2011
+  phase: α''-Fe16N2
+  quantity: tetragonality
+  value: c-lattice constant enhanced by >10% with a clamped to bcc Fe
+  unit: ''
+  conditions: epitaxial Fe–N films on Fe(001)/GaAs(001), increasing N2 partial pressure
+  source:
+    doi: 10.1103/PhysRevB.84.245310
+    title: Perpendicular magnetic anisotropy and high spin-polarization ratio in epitaxial Fe-N thin films
+    first_author: Nian Ji
+    year: 2011
+    url: https://link.aps.org/accepted/10.1103/PhysRevB.84.245310
+    evidence: full_text
+    locator: Sec. II A (accepted manuscript)
+  quote: This suggests the c-lattice constant substantially enhances (>10%) as the increase of N interstitial solubility given the progressively higher N2 partial pressure (Fig. 1d) used in depositing these samples.
+  note: Epitaxial clamping of a selects the variant with c normal to the film.
+- id: fe16n2_tetragonality_okamoto1996
+  phase: α'-Fe8N
+  quantity: tetragonality
+  value: α' lattice elongated along [001] by N in octahedral interstices of α-Fe
+  unit: ''
+  conditions: epitaxial Fe–N films on Fe or Ag (001) underlayers (sputter beam)
+  source:
+    doi: 10.1063/1.361301
+    title: α″-Fe16N2 phase epitaxially grown by sputter beam method
+    first_author: Satoshi Okamoto
+    year: 1996
+    url: https://api.crossref.org/works/10.1063/1.361301
+    evidence: abstract
+    locator: abstract
+  quote: The Fe-N films on both underlayers have a bct structure (α′-martensite), whose lattice is elongated along the [001] direction by nitrogen atoms located in octahedral interstices of α-Fe.
+  note: ''
+- id: fe16n2_tstab_yamamoto2013_kinetics
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: first-order decomposition, k_app = k0·exp(−Eapp/RT), k0 = e^48.9 h^-1, Eapp = 199 kJ/mol
+  unit: ''
+  conditions: free-standing high-purity nanoparticles (≈30 nm) sealed in N2 or Ar, isothermal 473, 493, 503, 513 K; Rietveld XRD
+  source:
+    doi: 10.1039/c3cc43590c
+    title: Quantitative understanding of thermal stability of α′′-Fe16N2
+    first_author: Shinpei Yamamoto
+    year: 2013
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/189733/1/c3cc43590c.pdf
+    evidence: full_text
+    locator: p. 2, Fig. 1f (accepted manuscript)
+  quote: From the so-called Arrhenius plot of ln(kapp) vs. 1/T shown in Fig. 1f, k0 and ΔEapp have been deduced to be e48.9 [1/h] and 199 [kJ/mol], respectively.
+  note: '''e48.9'' = e^48.9 (superscript lost). Half-lives implied by these parameters (computed by collector, t½ = ln2/k_app, not stated in the paper): ≈3.8 h at 473 K (200 °C), ≈0.5 h at 493 K, ≈4 min at 513 K, ≈11 h at 463 K, ≈2.7 d at 448 K, ≈63 d at 423 K (150 °C), ≈13 years at 393 K (120 °C). Hence any consolidation above ≈200 °C must be minutes-short.'
+- id: fe16n2_tstab_yamamoto2013_100yr
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 355
+  unit: K
+  conditions: 'inert atmosphere; criterion: >99% of α'''' intact after 100 years (prediction from the kinetics above)'
+  source:
+    doi: 10.1039/c3cc43590c
+    title: Quantitative understanding of thermal stability of α′′-Fe16N2
+    first_author: Shinpei Yamamoto
+    year: 2013
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/189733/1/c3cc43590c.pdf
+    evidence: full_text
+    locator: p. 2, Fig. 2 (accepted manuscript)
+  quote: α”-Fe16N2 devices should be kept below about 355 K in order to maintain their performance better than 99 % for 100 years, for instance.
+  note: Service-temperature limit, not a processing limit.
+- id: fe16n2_tstab_yamamoto2013_scatter
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 473-673
+  unit: K
+  conditions: literature range of reported decomposition temperatures (different sample types, mostly indirect magnetic measurements)
+  source:
+    doi: 10.1039/c3cc43590c
+    title: Quantitative understanding of thermal stability of α′′-Fe16N2
+    first_author: Shinpei Yamamoto
+    year: 2013
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/189733/1/c3cc43590c.pdf
+    evidence: full_text
+    locator: p. 1 (accepted manuscript)
+  quote: difficulties in obtaining monophasic samples have made even the reported decomposition temperature highly scattered from about 473 to 673 K.
+  note: ''
+- id: fe16n2_tstab_products_yamamoto2014
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 'decomposition products: α-Fe + γ''-Fe4N (4:1 molar), no N loss, intra-solid'
+  unit: ''
+  conditions: inert atmosphere (N2, Ar), nanoparticles (result of Yamamoto 2013 as restated)
+  source:
+    doi: 10.1039/c4cc01839g
+    title: Stability of α′′-Fe16N2 in hydrogenous atmospheres
+    first_author: Shinpei Yamamoto
+    year: 2014
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/198772/1/c4cc01839g.pdf
+    evidence: full_text
+    locator: p. 1 (accepted manuscript)
+  quote: 'proceeds by intra-solid atomic rearrangements to form a 4 : 1 molar mixture of α-Fe and γ’-Fe4N, without releasing nitrogen.'
+  note: Yamamoto 2013 also reports Eapp closer to Fe self-diffusion than to N diffusion (Fe diffusion is rate-limiting).
+- id: fe16n2_tstab_h2_yamamoto2014
+  phase: α''-Fe16N2
+  quantity: other
+  value: unstable in H2-containing atmospheres (denitrification to α-Fe via NH3 formation)
+  unit: ''
+  conditions: α''-Fe16N2 nanoparticles in hydrogenous atmospheres; SiO2 coating improves stability
+  source:
+    doi: 10.1039/c4cc01839g
+    title: Stability of α′′-Fe16N2 in hydrogenous atmospheres
+    first_author: Shinpei Yamamoto
+    year: 2014
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/198772/1/c4cc01839g.pdf
+    evidence: full_text
+    locator: abstract / p. 1 (accepted manuscript)
+  quote: We revealed inherent instability of α”-Fe16N2 in hydrogenous atmospheres due to denitrification toward α-Fe by forming NH3 at the particle surface.
+  note: Relevant to processing steps under reducing gas (e.g. H2 reduction, hydrogen-containing anneals).
+- id: fe16n2_tstab_sugita1991
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 673
+  unit: K
+  conditions: single-crystal MBE films on (In)GaAs; Bs reversible up to 400 °C; above 400 °C dissolves into Fe + Fe4N (plus film–substrate reaction); heating time not stated in abstract
+  source:
+    doi: 10.1063/1.350067
+    title: Giant magnetic moment and other magnetic properties of epitaxially grown Fe16N2 single-crystal films (invited)
+    first_author: Y. Sugita
+    year: 1991
+    url: https://api.crossref.org/works/10.1063/1.350067
+    evidence: abstract
+    locator: abstract
+  quote: X-ray diffraction showed that Fe16N2 crystal is stable up to 400 °C, while beyond 400 °C, Fe16N2 dissolves into Fe and Fe4N, and also some chemical reactions between Fe16N2 and the substrate occurs.
+  note: Upper end of reported stability; epitaxial films appear more stable than powders/bulk (cf. 473–513 K kinetics in powders).
+- id: fe16n2_tstab_takahashi1994
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: ≈473 (bulk powder, Jack) vs reversible to 673 K (MBE films)
+  unit: K
+  conditions: comparison of Jack's bulk powder result with MBE films
+  source:
+    doi: 10.1063/1.358431
+    title: Magnetic moment of α″-Fe16N2 films (invited)
+    first_author: Migaku Takahashi
+    year: 1994
+    url: https://tohoku.repo.nii.ac.jp/record/25799/files/JApplPhys_76_6642.pdf
+    evidence: full_text
+    locator: p. 6642, Introduction (transcribed from page image)
+  quote: According to the experiment by Jack using powder, the α″ phase is metastable and it must decompose into α+γ′ phases at about 200 °C.10
+  note: Quote transcribed by the collector from the rendered page image (PDF text layer garbled). Same paragraph notes MBE-film σs reversible up to 400 °C. 200 °C = 473 K.
+- id: fe16n2_tstab_zhang2014
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: stable to 498 K; decomposed at 523 K
+  unit: K
+  conditions: partially ordered (001)-textured Fe16N2 film on Ag underlayer (facing target sputtering); XRD (002) superlattice peak after heating
+  source:
+    doi: 10.1063/1.4869065
+    title: Thermal stability of partially ordered Fe16N2 film on non-magnetic Ag under layer
+    first_author: Xiaowei Zhang
+    year: 2014
+    url: https://api.crossref.org/works/10.1063/1.4869065
+    evidence: abstract
+    locator: abstract
+  quote: It is found that Fe16N2 phase can be stable up to 225 °C, which is demonstrated by the Fe16N2 finger print peak (002) in XRD. After heating to 250 °C, the Fe16N2 phase decomposes, which leads to low Ms and soft magnetic behavior.
+  note: 225 °C = 498 K; 250 °C = 523 K. Heating duration not in abstract.
+- id: fe16n2_tstab_ke2013
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: '≈500 K (literature: >200 °C, 230–300 °C, 400 °C)'
+  unit: K
+  conditions: literature summary
+  source:
+    doi: 10.1103/physrevb.88.024404
+    title: Effects of alloying and strain on the magnetic properties of Fe16N2
+    first_author: Liqin Ke
+    year: 2013
+    url: https://arxiv.org/pdf/1304.2428
+    evidence: full_text
+    locator: Introduction (arXiv version)
+  quote: The latter is a metastable phase with a distorted body-centered tetragonal structure, which decomposes into α-Fe and Fe4 N near 500 K.
+  note: 'Same paper: decomposition ''reported to occur above 200◦ C, in the 230-300◦ C range, or at 400◦ C'' depending on sample.'
+- id: fe16n2_tstab_jiang2016
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 487
+  unit: K
+  conditions: statement used to set the strained-wire anneal ≤180 °C; microstructure refinement would need ≥350 °C
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+    evidence: full_text
+    locator: Sec. I (accepted manuscript)
+  quote: The main reason is that α˝-Fe16N2 is martensite phase and can only be stable under 214 ºC. However, the minimum temperature to adjust the microstructure of α˝-Fe16N2 is 350 ºC22, as shown in FIG.S1 in supplementary materials23 .
+  note: '214 °C = 487 K. The 214 °C traces to the α/γ''/ε triple point of the Lehrer diagram (van Voorthuysen 2002; record fe16n2_tstab_voorthuysen2002), i.e. an equilibrium-diagram number, not a measured α'''' decomposition temperature. Consequence: no recrystallisation/grain refinement or conventional sintering window.'
+- id: fe16n2_tstab_voorthuysen2002
+  phase: α''-Fe16N2
+  quantity: other
+  value: α/γ'/ε triple point in the Lehrer diagram ≈214 °C (487 K); Fe–N diagram extended to 240 °C, extrapolated to 200 °C
+  unit: °C
+  conditions: low-temperature NH3/H2 nitriding of Ni-capped Fe layers
+  source:
+    doi: 10.1007/s11661-002-0380-2
+    title: Low-temperature extension of the lehrer diagram and the iron-nitrogen phase diagram
+    first_author: E. H. Du Marchie van Voorthuysen
+    year: 2002
+    url: https://link.springer.com/article/10.1007/s11661-002-0380-2
+    evidence: abstract
+    locator: abstract (publisher page)
+  quote: Using these data, the Fe-N phase diagram is extended from 350 °C to 240 °C and extrapolated down to 200 °C. The α, γ ′, and ε phases probably coexist in a triple point in the Lehrer diagram around 214 °C.
+  note: Origin of the '214 °C' limit cited by Jiang et al. 2016; concerns equilibrium α/γ'/ε, α'' is metastable and not in this diagram.
+- id: fe16n2_tstab_cheng1990
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 'tempering of bulk Fe–N martensite: nitride precipitation 100–220 °C; conversion to γ'' 220–290 °C'
+  unit: °C
+  conditions: Fe–N martensite (0.8–7.0 at.% N), dilatometry + DSC at several heating rates (non-isothermal)
+  source:
+    doi: 10.1007/bf02656420
+    title: The tempering of iron-nitrogen martensite; Dilatometric and calorimetric analysis
+    first_author: Liu Cheng
+    year: 1990
+    url: https://link.springer.com/article/10.1007/BF02656420
+    evidence: abstract
+    locator: abstract (publisher page)
+  quote: (3) precipitation of incoherent α′ nitride (between 100 °C and 220 °C); (4) conversion of α′ nitride into γ′ nitride (between 220 °C and 290 °C)
+  note: The publisher-page abstract writes 'α′ nitride'; from context (transition nitride converting to γ′) this is the α″-Fe16N2 transition nitride of Jack — collector's interpretation, not verified in the full text. Temperatures are heating-rate dependent.
+- id: fe16n2_tstab_okamoto1996
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: ordering rate and stability depend on crystal quality (fast ordering and easy decomposition on Ag underlayer)
+  unit: ''
+  conditions: epitaxial films on Fe vs Ag (001) underlayers
+  source:
+    doi: 10.1063/1.361301
+    title: α″-Fe16N2 phase epitaxially grown by sputter beam method
+    first_author: Satoshi Okamoto
+    year: 1996
+    url: https://api.crossref.org/works/10.1063/1.361301
+    evidence: abstract
+    locator: abstract
+  quote: While both Fe and Ag underlayers can promote epitaxial growth of the Fe-N films, very fast ordering of nitrogen atoms and easily decomposed α″-Fe16N2 have been observed in the sample on a Ag underlayer. This fact leads to the fact that the ordering rate and the stability of α″-Fe16N2 are very sensitive to its crystal quality.
+  note: ''
+- id: fe16n2_tstab_stoeckl2025
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: ≈425 K (DFT + statistical corrections) → α-Fe + ε-Fe3N; experiment ≈500 K
+  unit: K
+  conditions: theory (Quantum ESPRESSO + Compound Energy Formalism), equilibrium stability vs neighbouring Fe–N phases
+  source:
+    doi: 10.1063/9.0000916
+    title: Theoretical study of thermal stability range of α″–Fe16N2 within the iron nitride binary phase diagram
+    first_author: Peter Stoeckl
+    year: 2025
+    url: https://api.crossref.org/works/10.1063/9.0000916
+    evidence: abstract
+    locator: abstract
+  quote: With statistical correction terms that estimate contributions from solid phases, we instead find Fe16N2 to be stable up to ∼425 K, yielding to α–Fe + ε–Fe3N at higher temperatures. We compare against experimental observations of the Fe–N phase diagram including Fe16N2 decomposition at around 500 K, and discuss the effect and relative accuracy of different correction terms.
+  note: With simple N2-gas corrections the same work predicts persistence 'well above 800 K' — the theoretical estimate is correction-dependent.
+- id: fe16n2_tstab_saito2024
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 539
+  unit: K
+  conditions: Fe–N powder containing α''; thermomagnetic analysis peak (heating), decomposition α'' → α-Fe + γ'-Fe4N
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+    evidence: full_text
+    locator: abstract; Sec. 3 (thermomagnetic T1 peak)
+  quote: Fe-N powder with the α′′ -Fe16 N2 phase has a high saturation magnetization comparable to high-performance rare-earth magnets but is not stable at temperatures over 539 K.
+  note: Dynamic (heating-scan) value; isothermal stability is lower (cf. Yamamoto 2013 kinetics).
+- id: fe16n2_tstab_dirba2025
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 463
+  unit: K
+  conditions: α''-Fe16N2 nanoparticles in Ar (XRD and thermomagnetic); in air oxidation begins at ≈433 K; decomposition α'' → α-Fe + γ'-Fe4N → α-Fe + N2
+  source:
+    doi: 10.48505/nims.5649
+    title: 'Iron nitride Fe16N2: intrinsic properties, synthesis, stability and bulk magnets'
+    first_author: Imants Dirba
+    year: 2025
+    url: https://mdr.nims.go.jp/datasets/258f442c-4320-4a25-8db2-3c0739528d0f
+    evidence: full_text
+    locator: poster panel 'α′′-Fe16N2 thermal stability'
+  quote: 'In inert atmosphere (Ar): α′′-Fe16N2 is stable up to ≈ 463 K.'
+  note: 'Conference poster (REPM 2025); DataCite DOI. Same poster: ''Decomposition of α′′-Fe16N2 phase starts at ≈ 460 K''. Time scale not stated.'
+- id: fe16n2_tstab_grigoras2024
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: decomposes above ≈473 K; partial decomposition under compaction >5 GPa
+  unit: ''
+  conditions: powders; consolidation context (abstract of a 2024 INTERMAG short paper, citing earlier work)
+  source:
+    doi: 10.1109/intermagshortpapers61879.2024.10576797
+    title: Development of Bonded α″-Fe16N2 Permanent Magnet
+    first_author: Marian Grigoras
+    year: 2024
+    url: https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/intermagshortpapers61879.2024.10576797?fields=abstract
+    evidence: abstract
+    locator: abstract (Semantic Scholar)
+  quote: But the $\alpha^{\prime\prime}\text{-Fe}_{16}\mathrm{N}_{2}$ powders are considered difficult to compact by sintering techniques that are commonly used for bulk magnets because the $\alpha^{\prime\prime}\text{-phase}$ decomposes at temperatures higher than 200°C. In addition, it was reported that ultra-high pressure compaction above 5 GPa led to partial decomposition of the $\alpha^{\prime\prime}$ phase transition into $\gamma^{\prime}\text{-Fe}_{4}\mathrm{N}$ and $\gamma^{\prime\prime}-\text{FeN}$ phases [13].
+  note: LaTeX markup as in the database abstract. Ref. [13] is presumably Oka et al., Scripta Mater. 229 (2023) 115390 (compaction at several GPa) — abstract not retrievable. Authors therefore choose polymer bonding.
+- id: fe16n2_consolidation_takagi2014
+  phase: α''-Fe16N2
+  quantity: other
+  value: 'consolidation window: dense at 1.2 GPa / ≈190–200 °C; 222 °C decomposes α'''' → α-Fe + ε-Fe3N'
+  unit: ''
+  conditions: α''-Fe16N2 nanopowder, high-pressure sintering 1.2 GPa
+  source:
+    doi: 10.1063/1.4868295
+    title: High-pressure sintering behavior of α″-Fe16N2 nanopowder
+    first_author: Kenta Takagi
+    year: 2014
+    url: https://api.crossref.org/works/10.1063/1.4868295
+    evidence: abstract
+    locator: abstract
+  quote: However, XRD analysis revealed that sintering at 222 °C caused the decomposition α″ → α-Fe + ε-Fe3N, which reduced the saturated magnetization (Ms) and coercivity (Hc). Consequently, sintering at 190 °C produced a dense magnet that retained the Ms of the raw powder due to the avoidances of oxidization and decomposition.
+  note: Warm high-pressure compaction below ≈200 °C is the only sintering-type densification shown; conventional sintering (≫200 °C) is excluded. Sintering duration not in abstract.
+- id: fe16n2_consolidation_saito2024
+  phase: α''-Fe16N2
+  quantity: other
+  value: SPS and SPS with dynamic compression at 373–573 K
+  unit: ''
+  conditions: Fe–N powder with α''
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+    evidence: full_text
+    locator: abstract
+  quote: We consolidated Fe-N powder into bulk material at low temperatures by spark plasma sintering (SPS) and spark plasma sintering with dynamic compression (SPS-DC). Fe-N magnets were successfully obtained at low temperatures of 373–573 K.
+  note: Upper part of this range exceeds the 539 K decomposition reported in the same paper; magnet outcomes are collected separately (sealed).
+- id: fe16n2_consolidation_jiang2016aem
+  phase: α''-Fe16N2
+  quantity: other
+  value: shock (explosive) compaction of ball-milled α'' powder into a bulk magnet
+  unit: ''
+  conditions: α''-Fe16N2 powder from ball milling with NH4NO3
+  source:
+    doi: 10.1002/adem.201500455
+    title: Preparation of an α″‐Fe16N2 Magnet via a Ball Milling and Shock Compaction Approach
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://api.crossref.org/works/10.1002/adem.201500455
+    evidence: abstract
+    locator: abstract
+  quote: After ball milling, shock compaction is used to compact the milled powder sample into a bulk magnet.
+  note: Dynamic compaction avoids long exposure to temperature; outcome values collected separately.
+- id: fe16n2_phasefraction_jack1994
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: < 0.5 (bulk γ → α' → α'' route)
+  unit: volume/weight fraction
+  conditions: 'bulk: nitrided Fe powder (700–750 °C) quenched to α'', tempered 120 °C; repeated in three laboratories'
+  source:
+    doi: 10.1063/1.358482
+    title: The synthesis, structure, and characterization of α″-Fe16N2 (invited)
+    first_author: K. H. Jack
+    year: 1994
+    url: https://api.crossref.org/works/10.1063/1.358482
+    evidence: abstract
+    locator: abstract
+  quote: The final product was a mixture of either α+α″ or α+α″+γ with less than 50%α″. Recent repetitions of this preparative method in three different laboratories have given mixtures with varying amounts of α″, again never greater than 50%, and with magnetic moments of α″—assessed from measurements made on the mixtures—that show considerable variation.
+  note: Limits φ for the martensite route; also why bulk Ms values are model-dependent.
+- id: fe16n2_phasefraction_saito2024
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: pure α'' not obtainable via γ → α' → α'' because N solubility in γ < 12.5 at.% required
+  unit: ''
+  conditions: bulk nitrogenation–quench–temper route
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+    evidence: full_text
+    locator: Sec. 1 Introduction
+  quote: However, it is not possible to obtain a pure α′′ -Fe16 N2 phase in this way because the solubility of N in the γ-FeN phase is less than required (12.5%).
+  note: 'Mechanistic reason for the <50% limit: lever rule α'''' + α-Fe after tempering a sub-stoichiometric martensite (collector''s reading).'
+- id: fe16n2_phasefraction_coey1994
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: ≤ 0.40
+  unit: fraction
+  conditions: bulk powder and foils by annealing nitrogen martensite
+  source:
+    doi: 10.1088/0953-8984/6/4/001
+    title: The magnetization of alpha"Fe16N2
+    first_author: J M D Coey
+    year: 1994
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/6/4/001
+    evidence: abstract
+    locator: abstract (OpenAlex)
+  quote: Powder and foils containing up to 40% alpha"Fe 16 N 2 have been prepared by annealing nitrogen-martensite.
+  note: ''
+- id: fe16n2_phasefraction_muller1994
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: 0.10-0.44 (weight fraction)
+  unit: wt fraction
+  conditions: 'bulk: NH3/H2 nitriding in austenite field, quench, tempering 130–150 °C'
+  source:
+    doi: 10.1002/pssa.2211460108
+    title: Spontaneous magnetization of α″-Fe16N2 precipitates in bulk Fe–N
+    first_author: K.-H. Müller
+    year: 1994
+    url: https://api.openalex.org/works/doi:10.1002/pssa.2211460108
+    evidence: abstract
+    locator: abstract (OpenAlex)
+  quote: Precipitates of α′′-Fe16N2 amounting to a fraction of 10 to 44 wt% in α-Fe (25 to 90 wt%) in the presence of residual γ-Fe (0 to 30 wt%)
+  note: ''
+- id: fe16n2_phasefraction_huang1994
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: 0.5 (α''); α' 0.8
+  unit: fraction
+  conditions: 'bulk: Fe powder nitrided in NH3/H2 at 660–670 °C, quenched, 120–150 °C'
+  source:
+    doi: 10.1063/1.356925
+    title: Synthesis and characterization of Fe16N2 in bulk form
+    first_author: M. Q. Huang
+    year: 1994
+    url: https://api.crossref.org/works/10.1063/1.356925
+    evidence: abstract
+    locator: abstract
+  quote: The α′ phase has been prepared in 80% purity, the other phase being nonmagnetic γ-Fe-N. The α″ phase has been prepared in 50% purity, the impurity phases being α-Fe and γ-Fe-N.
+  note: ''
+- id: fe16n2_phasefraction_yamamoto2013
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: ≈0.91 (weight fraction α''), ≈9% amorphous, no crystalline impurity
+  unit: wt fraction
+  conditions: nanoparticles by H2 reduction of iron oxide to α-Fe then NH3 nitriding (direct low-temperature nitriding route)
+  source:
+    doi: 10.1039/c3cc43590c
+    title: Quantitative understanding of thermal stability of α′′-Fe16N2
+    first_author: Shinpei Yamamoto
+    year: 2013
+    url: https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/189733/1/c3cc43590c.pdf
+    evidence: full_text
+    locator: p. 1–2 (accepted manuscript)
+  quote: where wFe16N2(300, 0) and wFe16N2(T, t) represent the fraction of α”-Fe16N2 before (= 0.9056) and after a heat-treatment at T [K] for a certain period of time (t), respectively.
+  note: 'Same text: ''the presence of ca. 9 % of an amorphous phase, which we suppose to be insufficiently nitrided''. Direct nitriding of bcc Fe particles reaches near-single-phase α'''', unlike the martensite route.'
+- id: fe16n2_phasefraction_tobise2017
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: single-phase α'' nanoparticles (since 2013)
+  unit: ''
+  conditions: nanoparticles via reduction + low-temperature nitriding
+  source:
+    doi: 10.3379/msjmag.1704r003
+    title: Morphology and magnetic properties of α”-Fe16N2 nanoparticles synthesized from iron hydroxide and iron oxides
+    first_author: M. Tobise
+    year: 2017
+    url: https://www.magnetics.jp/wp-content/uploads/41-3_58-62.pdf
+    evidence: full_text
+    locator: Sec. 1 Introduction
+  quote: In 2013, a procedure for the synthesis of single phase α”-Fe16N2 nanoparticles was established
+  note: ''
+- id: fe16n2_structure_gamman_jack1951a
+  phase: γ-Fe(N)
+  quantity: structure
+  value: fcc Fe; N randomly on up to ~1/10 of the octahedral interstices
+  unit: ''
+  conditions: nitrogen-austenite (parent of N-martensite)
+  source:
+    doi: 10.1098/rspa.1951.0154
+    title: 'The iron-nitrogen system: the preparation and the crystal structures of nitrogen-austenite (γ) and nitrogen-martensite (α'')'
+    first_author: Kenneth Henderson Jack
+    year: 1951
+    url: https://api.openalex.org/works/doi:10.1098/rspa.1951.0154
+    evidence: abstract
+    locator: abstract
+  quote: The nitrogen atoms of nitrogen-austenite occupy up to a maximum of about one in ten of the octahedral interstices of the face-centred cubic arrangement of iron atoms in a completely random manner.
+  note: Parent phase of route (a). One N per ten octahedral sites corresponds to ~Fe10N; the alpha" stoichiometry Fe8N (Fe16N2) needs ~11 at.% N.
+- id: fe16n2_structure_alphaprime_jack1951a
+  phase: α'-Fe8N
+  quantity: structure
+  value: bct Fe; N randomly occupies only the octahedral interstices at ½,½,0 and 0,0,½ (the c-axis sublattice)
+  unit: ''
+  conditions: nitrogen-martensite (quenched N-austenite)
+  source:
+    doi: 10.1098/rspa.1951.0154
+    title: 'The iron-nitrogen system: the preparation and the crystal structures of nitrogen-austenite (γ) and nitrogen-martensite (α'')'
+    first_author: Kenneth Henderson Jack
+    year: 1951
+    url: https://api.openalex.org/works/doi:10.1098/rspa.1951.0154
+    evidence: abstract
+    locator: abstract
+  quote: In nitrogen-martensite the same proportion of the octahedral interstices at ½, ½, 0 and 0, 0, ½ of the body-centred tetragonal iron-atom lattice is randomly occupied. Nitrogen-austenite and nitrogen-martensite are therefore isostructural with the corresponding iron-carbon alloys.
+  note: Sites ½,½,0 and 0,0,½ are the octahedral interstices whose tetrad axis is c, i.e. N sits on ONE of the three octahedral sublattices, the one selected by the Bain correspondence (c of each martensite variant = the contracted cube axis of the parent austenite). Ordering to alpha" then happens within this sublattice, so the martensite c axis is kept (see Jack 1951b, Koyano 2000, Böttger 1997 records).
+- id: fe16n2_formpath_jack1951b
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: N-martensite (α') -> α'' (transition phase, N ordering) -> γ'-Fe4N; α'' unit cell = 2x2x2 expanded bct cells of the original martensite
+  unit: ''
+  conditions: tempering of nitrogen-martensite
+  source:
+    doi: 10.1098/rspa.1951.0155
+    title: The occurrence and the crystal structure of α"-iron nitride; a new type of interstitial alloy formed during the tempering of nitrogen-martensite
+    first_author: Kenneth Henderson Jack
+    year: 1951
+    url: https://api.openalex.org/works/doi:10.1098/rspa.1951.0155
+    evidence: abstract
+    locator: abstract
+  quote: A new iron-nitrogen phase, α'', occurs as an intermediate in the decomposition nitrogen-martensite (α') → Fe4N(γ'). Although it is a transition phase, α'' is relatively stable and has a structural unit which contains eight (2 x 2 x 2) distorted and expanded body-centred tetragonal units of the original martensite structure.
+  note: The alpha" cell is built from 2x2x2 units of the original martensite cell, i.e. the alpha" c axis is the martensite c axis (ordering keeps c).
+- id: fe16n2_formpath_ferrite_jack1951b
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: alpha" also precipitates from supersaturated nitrogen-ferrite (bcc parent)
+  unit: ''
+  conditions: quench-aged nitrogen-ferrite
+  source:
+    doi: 10.1098/rspa.1951.0155
+    title: The occurrence and the crystal structure of α"-iron nitride; a new type of interstitial alloy formed during the tempering of nitrogen-martensite
+    first_author: Kenneth Henderson Jack
+    year: 1951
+    url: https://api.openalex.org/works/doi:10.1098/rspa.1951.0155
+    evidence: abstract
+    locator: abstract
+  quote: The unknown nitride reported by previous workers to be precipitated from nitrogen-ferrite is identified as the α'' -phase.
+  note: 'Second formation path from a bcc parent (precipitation, three {001} variants: see Ferguson 1984 / Xiong 2010 records).'
+- id: fe16n2_formpath_jack1994
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: α-Fe powder nitrided at 700–750 °C -> N-austenite γ -> quench -> N-martensite α' -> α + α'' after long tempering at 120 °C
+  unit: ''
+  conditions: original 1951 preparation (bulk powder)
+  source:
+    doi: 10.1063/1.358482
+    title: The synthesis, structure, and characterization of α″-Fe16N2 (invited)
+    first_author: K. H. Jack
+    year: 1994
+    url: https://api.openalex.org/works/doi:10.1063/1.358482
+    evidence: abstract
+    locator: abstract
+  quote: In the original preparation and crystal structure determination of α″ in 1951, N-austenite (γ) prepared by nitriding α-iron powder at 700–750 °C was quenched to give N-martensite (α′) which then gave α+α″ on long tempering at 120 °C.
+  note: Ordering (tempering) temperature 120 °C = 393 K.
+- id: fe16n2_tform_ordering_jack1994
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 393
+  unit: K
+  conditions: long tempering of N-martensite at 120 °C (original 1951 preparation)
+  source:
+    doi: 10.1063/1.358482
+    title: The synthesis, structure, and characterization of α″-Fe16N2 (invited)
+    first_author: K. H. Jack
+    year: 1994
+    url: https://api.openalex.org/works/doi:10.1063/1.358482
+    evidence: abstract
+    locator: abstract
+  quote: In the original preparation and crystal structure determination of α″ in 1951, N-austenite (γ) prepared by nitriding α-iron powder at 700–750 °C was quenched to give N-martensite (α′) which then gave α+α″ on long tempering at 120 °C.
+  note: 120 °C converted to 393 K. Same quote as fe16n2_formpath_jack1994.
+- id: fe16n2_ordering_mechanism_jack1994
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: N clustering to the Fe8N composition precedes slow N ordering (both in α' tempering and in α'' precipitation from N-ferrite); α' can have the c/a of α'' without full order
+  unit: ''
+  conditions: alpha' tempering and alpha'' precipitation from supersaturated N-ferrite
+  source:
+    doi: 10.1063/1.358482
+    title: The synthesis, structure, and characterization of α″-Fe16N2 (invited)
+    first_author: K. H. Jack
+    year: 1994
+    url: https://api.openalex.org/works/doi:10.1063/1.358482
+    evidence: abstract
+    locator: abstract
+  quote: Studies of α′ tempering by XRD, and of α″ precipitation from supersaturated N ferrite (α) by high-resolution TEM, both show that slow ordering of N atoms to produce α″ occurs only after localized regions of α′ and α reach the Fe8N composition by a clustering process. Thus α′-Fe8N can be obtained with a tetragonality c/a equal to that of α″, but without the complete N ordering that is characteristic of Fe16N2.
+  note: Tetragonality (c axis) is already fixed in the disordered alpha-prime; ordering does not change which axis is c.
+- id: fe16n2_ordering_bct_bottger1997
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: α'' forms in Fe–N martensite by local N enrichment plus N ordering; the Fe sublattice stays bct
+  unit: ''
+  conditions: tempering of Fe-N martensite (alpha')
+  source:
+    doi: 10.1051/jp4:1997540
+    title: The Role of Misfit-Strain Energies during Precipitation of α"-Nitride in Fe-N Martensite
+    first_author: A. Böttger
+    year: 1997
+    url: https://api.openalex.org/works/doi:10.1051/jp4:1997540
+    evidence: abstract
+    locator: abstract
+  quote: The formation of a"-nitride involves both a local enrichment and ordering of N atoms; the Fe sublattice remains of b.c.t.type.
+  note: The OpenAlex abstract renders alpha" as a" and alpha as a (OCR of the original). Fe sublattice remains bct => the c axis of the parent martensite is kept.
+- id: fe16n2_misfit_bottger1997
+  phase: α''-Fe16N2
+  quantity: tetragonality
+  value: misfit between α'' precipitates and the matrix up to ~10% once the matrix has become ferrite
+  unit: '%'
+  conditions: late-stage tempering of Fe-N martensite
+  source:
+    doi: 10.1051/jp4:1997540
+    title: The Role of Misfit-Strain Energies during Precipitation of α"-Nitride in Fe-N Martensite
+    first_author: A. Böttger
+    year: 1997
+    url: https://api.openalex.org/works/doi:10.1051/jp4:1997540
+    evidence: abstract
+    locator: abstract
+  quote: Upon tempering the matrix becomes ferrite and the misfit increases considerably (up to about 10 pct).
+  note: Consistent with the ~9.7% c-axis expansion of alpha" relative to ferrite (Ferguson 1984). The misfit is accommodated by N vacancies (Fe16N2-x) and later by ferrite deformation (same abstract).
+- id: fe16n2_formpath_bell1970
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: low-N body-centred cubic (massive/lath) Fe–N martensite -> ferrite + Fe16N2 below 200 °C
+  unit: ''
+  conditions: Fe-0.18, 0.35, 0.51 wt.% N massive martensite, first-stage tempering
+  source:
+    doi: 10.1179/msc.1970.4.1.171
+    title: The Tempering of Iron–Nitrogen Massive Martensite
+    first_author: T. Bell
+    year: 1970
+    url: https://api.openalex.org/works/doi:10.1179/msc.1970.4.1.171
+    evidence: abstract
+    locator: abstract
+  quote: Transformation of the martensite took place below 200° C (475 K) to ferrite and the body-centred tetragonal nitride, Fe16N2.
+  note: Low-N martensite is cubic; alpha" forms as coherent precipitates (ribbons) rather than by in-situ ordering of a tetragonal martensite.
+- id: fe16n2_or_habit_bell1970
+  phase: α''-Fe16N2
+  quantity: OR
+  value: '{100}α'' habit planes, growth in <100>α'' directions'
+  unit: ''
+  conditions: Fe16N2 precipitates in low-N massive martensite
+  source:
+    doi: 10.1179/msc.1970.4.1.171
+    title: The Tempering of Iron–Nitrogen Massive Martensite
+    first_author: T. Bell
+    year: 1970
+    url: https://api.openalex.org/works/doi:10.1179/msc.1970.4.1.171
+    evidence: abstract
+    locator: abstract
+  quote: Electron-diffraction and trace-analysis experiments revealed that the nitrides precipitate with {100}α′ habit planes in 〈100〉α′ directions.
+  note: Plate habit {100} of the cubic parent; together with Ferguson 1984 this implies c of each precipitate along one of the three parent <100>.
+- id: fe16n2_twins_garwood1972
+  phase: α''-Fe16N2
+  quantity: twins
+  value: '{112} transformation twins in Fe–1.5 wt.% N martensite plates; α'''' lamellae form on {001} habit planes in both matrix and twin'
+  unit: ''
+  conditions: tempering of Fe-1.5 wt.% N martensite up to 300 °C; stage 1 below 270 °C
+  source:
+    doi: 10.2172/4459081
+    title: Inorganic Materials Research Division annual report, 1972
+    first_author: null
+    year: 1973
+    url: https://www.osti.gov/servlets/purl/4459081
+    evidence: abstract
+    locator: LBL-1400, p. -111- (summary "3. The tempering of martensite in an iron 1.5% nitrogen", R. D. Garwood and G. Thomas)
+  quote: Stage 1 decomposition occurs below 270°C by the general precipitation, resembling spinodal morphology, of fine α" (Fe16N2) lamellae on {001} habit planes in both matrix and twin crystals of the partially {112} twinned martensite plates (Fig. 1).
+  note: Report summary of Garwood & Thomas, Metall. Trans. 4 (1973) 225, doi:10.1007/BF02649622 (journal text not accessible). Quote transcribed from a 400-dpi page image of the scanned report (OCR garbled). A {112}-twinned plate holds two martensite orientations related by the twin, so alpha" formed in one plate inherits two c-axis directions. Crossref lists no author for the report.
+- id: fe16n2_stress_internal_garwood1972
+  phase: α''-Fe16N2
+  quantity: stress_effect_on_formation
+  value: nucleation of coherent α'' plates is controlled by the internal stress field of the martensite
+  unit: ''
+  conditions: tempering of Fe-1.5 wt.% N martensite
+  source:
+    doi: 10.2172/4459081
+    title: Inorganic Materials Research Division annual report, 1972
+    first_author: null
+    year: 1973
+    url: https://www.osti.gov/servlets/purl/4459081
+    evidence: abstract
+    locator: LBL-1400, p. -111- (Garwood & Thomas summary)
+  quote: It is believed that transformation occurs in this manner because the nucleation of coherent α" plates is controlled by the prevailing internal stress field.
+  note: Quote transcribed by the collector from the rendered page image (PDF text layer garbled). Evidence that alpha" variant nucleation responds to stress (internal stresses here; applied stress is the strained-wire idea, fork D).
+- id: fe16n2_ms_koyano2000
+  phase: α'-Fe8N
+  quantity: T_formation
+  value: 180
+  unit: K
+  conditions: γ-FeN with 9.8 at.% N (a0 = 0.3646–0.3647 nm), cooled in zero field; martensite start
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″ Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+    evidence: full_text
+    locator: p. 924, left column
+  quote: As already reported in Ref. 14), the Martensitic transformation temperature for 9.8 at%N sample is 180 K and samples undergo structural phase transformation when cooled lower than this temperature.
+  note: 'Ms (180 K) is far below room temperature for ~10 at.% N: water quench keeps single-phase gamma; martensite needs sub-ambient cooling (4.2 K here). Scanned PDF without text layer; quote transcribed from page image.'
+- id: fe16n2_formpath_koyano2000
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: γ (NH3+H2, ~970 K) -> quench -> partial fcc->bct martensite α' (residual γ) -> 393 K anneal orders N in α' -> α'' precipitates
+  unit: ''
+  conditions: bulk foils / Jack route as described by the authors
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″ Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+    evidence: full_text
+    locator: p. 923, Introduction
+  quote: The γ phase is produced in NH3 + H2 gas at around 970 K and quenched to room temperature. During this process, the γ phase partially transforms into the α′ phase through the fcc → bct Martensitic transformation. Heat treatment at 393 K orders interstitial nitrogen atoms in the α′ phase and then α″ phase precipitates are formed.
+  note: Transcribed from page image.
+- id: fe16n2_cretained_koyano2000
+  phase: α''-Fe16N2
+  quantity: structure
+  value: 'α'''' = ordered N-martensite: 8 bct Fe units with 2 N on c-axis octahedral sites (11.1 at.% N)'
+  unit: ''
+  conditions: alpha"-Fe16N2
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″ Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+    evidence: full_text
+    locator: p. 923, Introduction
+  quote: The unit cell of α″ phase consists of eight bct units of Fe atoms and two nitrogen atoms located at octahedral sites on the c axis distributed in a regular manner. Therefore, the α″ phase is “ordered” nitrogen Martensite (α′ phase) with composition of 11.1 at%N.
+  note: States that the N sits on the c-axis octahedral sites of the martensite cell; alpha" is the ordered alpha-prime (c axis retained). Transcribed from page image; superscript reference omitted.
+- id: fe16n2_or_bain_koyano2000
+  phase: α'-Fe8N
+  quantity: OR
+  value: (110)γ -> (100) or (010) α' (Bain-type lattice correspondence)
+  unit: ''
+  conditions: gamma-FeN foils with (110) rolling texture transformed to alpha-prime at 4.2 K
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″ Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+    evidence: full_text
+    locator: p. 924, right column
+  quote: In this case, the (110) plane of the γ phase transforms into (100) or (010) planes of α′ phase after the transformation.
+  note: 'Lattice correspondence as used by the authors (Bain correspondence: one parent cube axis -> c, the two <110> normal to it -> a). The texture observation that precedes this sentence in the paper belongs to the sealed outcome file. Transcribed from page image.'
+- id: fe16n2_magstate_koyano2000
+  phase: α'-Fe8N
+  quantity: field_effect_on_formation
+  value: 'α'' ferromagnetic, γ non-magnetic at the transformation: a field lowers the free energy of α'' and raises the γ->α'' fraction (no variant information)'
+  unit: ''
+  conditions: gamma-FeN 9.8 at.% N, fields to 28 T (static) / 40 T (pulsed) applied at 4.2 K in the foil plane
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″ Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+    evidence: full_text
+    locator: p. 923, right column
+  quote: A large magnetization of ferromagnetic α′ phase lowers its free energy more than non-magnetic γ phase does in an external magnetic field, and this would contribute to an increased probability of transformation from γ to α′ phase.
+  note: Forming phase alpha' is ferromagnetic at T_f (Ms ~180 K) -> B1 bias can act on the martensite; whether it selects Bain variants is not reported here. Fork D records Koyano 2003 (Tc of alpha' bound). Transcribed from page image.
+- id: fe16n2_phasefrac_field_koyano2000
+  phase: α'-Fe8N
+  quantity: phase_fraction_limit
+  value: α' molar fraction rises monotonically with field at 4.2 K, 92% at 28 T
+  unit: '%'
+  conditions: gamma-FeN 9.8 at.% N, field applied at 4.2 K
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″ Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+    evidence: full_text
+    locator: p. 923, abstract
+  quote: Magnetic field assists the Martensitic transformation occurring in γ-FeN. The molar fraction of the α′ phase monotonically increases with an increasing magnetic field at 4.2 K and reaches 92% at 28 T of static field.
+  note: Field mainly removes residual austenite (phase fraction), not orientation. Transcribed from page image.
+- id: fe16n2_tform_ordering_koyano2000
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 393
+  unit: K
+  conditions: anneal of alpha' (9.8 at.% N) foils/powder at 393 K
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″ Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+    evidence: full_text
+    locator: p. 923, abstract
+  quote: Heat treatment for α′ phase at 393 K results in formation of α″-Fe16N2.
+  note: Page 926 adds that alpha" (004) appears after 30 min and that the alpha-prime -> alpha" + alpha reaction is almost complete within ~100 h at 393 K (see transcription file). Transcribed from page image.
+- id: fe16n2_tstab_koyano2000
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 430
+  unit: K
+  conditions: decomposition to alpha-Fe + gamma-prime Fe4N (excessive heat treatment or T > 430 K)
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″ Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+    evidence: full_text
+    locator: p. 923, right column
+  quote: The α″ phase decomposes into the equilibrium state consisting of α-Fe and γ′-Fe4N by excessive heat treatment or temperature above 430 K.
+  note: Cited by the authors from Jack (ref. 2). Transcribed from page image.
+- id: fe16n2_tetragonality_alphaprime_koyano2000
+  phase: α'-Fe8N
+  quantity: tetragonality
+  value: a = 0.2851 nm, c = 0.3135 nm (c/a = 1.10, computed by fork B)
+  unit: nm
+  conditions: alpha' from gamma-FeN 9.8 at.% N cooled to 4.2 K in zero field (WPPF refinement)
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″ Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+    evidence: full_text
+    locator: p. 924, left column
+  quote: Lattice parameters for α′ phase are refined using WPPF program. They are a = 0.2851 nm and c = 0.3135 nm, respectively.
+  note: 'c/a = 0.3135/0.2851 = 1.0996 (arithmetic by fork B). Relative to bcc Fe (0.2866 nm, not from this source) ~ -0.5% along a and ~ +9.4% along c: the martensite already carries the full alpha'''' tetragonality. Transcribed from page image.'
+- id: fe16n2_or_ks_lath_morito2016
+  phase: α'-Fe8N
+  quantity: OR
+  value: near Kurdjumov–Sachs (KS); experimental OR deviates slightly from exact KS
+  unit: ''
+  conditions: Fe–0.87 to 2.70 at.% N lath martensite (gas-nitrided at 1203 K, water-quenched); EBSD
+  source:
+    doi: 10.2320/matertrans.MB201503
+    title: Effect of Solution Carbon and Nitrogen on the Microstructural Size and Crystallography of Lath Martensite in Fe–N and Fe–C Alloys
+    first_author: Shigekazu Morito
+    year: 2016
+    url: https://www.jstage.jst.go.jp/article/matertrans/57/3/57_MB201503/_pdf
+    evidence: full_text
+    locator: Section 3, p. 228
+  quote: The misorientation angles are slightly different from the theoretical angle values calculated from the KS orientation relationship between austenite and martensite; this is because the experimental orientation relationship is not exactly the same as the KS orientation relationship.
+  note: Low-N LATH martensite, not the ~11 at.% N plate martensite used for alpha" (Ms 180 K at 9.8 at.% N, Koyano 2000). No OR measurement for high-N Fe–N plate martensite was found (gap). The same paragraph analyses Fe-C and Fe-N together.
+- id: fe16n2_nvariants_bain_thome2022
+  phase: α'-Fe8N
+  quantity: n_variants
+  value: 3
+  unit: Bain correspondences (c-axis choices per parent grain)
+  conditions: fcc -> bcc/bct martensite, general crystallography (study on Fe-Ni)
+  source:
+    doi: 10.3390/cryst12020156
+    title: Crystallographic Analysis of Plate and Lath Martensite in Fe-Ni Alloys
+    first_author: Pascal Thome
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/crystals/crystals-12-00156/article_deploy/crystals-12-00156.pdf
+    evidence: full_text
+    locator: Section 3 (discussion of Figure 4a,b)
+  quote: First, as can be seen in Figure 4a, there are three Bain correspondences, which highlighted in blue, green, and red. These correspond to three possible MV orientations, which are shown in the same color coding in the pole figure of Figure 4b.
+  note: General geometry from an Fe-Ni paper, not an Fe-N measurement. For a tetragonal martensite each Bain correspondence fixes which parent <100> becomes c, so 3 c-axis orientations per austenite grain.
+- id: fe16n2_nvariants_ksnw_thome2022
+  phase: α'-Fe8N
+  quantity: n_variants
+  value: 12 (NW), 24 (KS)
+  unit: martensite variants per parent grain
+  conditions: fcc -> bcc/bct martensite, general crystallography (study on Fe-Ni)
+  source:
+    doi: 10.3390/cryst12020156
+    title: Crystallographic Analysis of Plate and Lath Martensite in Fe-Ni Alloys
+    first_author: Pascal Thome
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/crystals/crystals-12-00156/article_deploy/crystals-12-00156.pdf
+    evidence: full_text
+    locator: Section 3 (discussion of Figure 4c,d)
+  quote: In the case of the NW relationship, each Bain correspondence allows four possible permutations, resulting in twelve distinct MVs. In contrast, for the KS orientation relationship, where all three angles differ from zero and from each other, one obtains the pole figure shown in Figure 4d. Here we find 24 variants, which can be considered as the general 24 variant case.
+  note: 'NW: 4 variants per Bain correspondence; KS: 8 per Bain correspondence. All variants of one Bain correspondence share (approximately) the same c axis, so for easy-axis alignment only the 3 Bain groups matter. General geometry, not Fe-N specific.'
+- id: fe16n2_nvariants_ferrite_ferguson1984
+  phase: α''-Fe16N2
+  quantity: n_variants
+  value: 3
+  unit: sets of {001} plates (c along the plate normal)
+  conditions: Fe-0.08 wt.% N ferrite (nitrided 590 °C, quenched), aged 200–250 °C
+  source:
+    doi: 10.1016/0036-9748(84)90089-9
+    title: Morphological aspects of α”-Fe16N2 precipitation in α-Fe
+    first_author: P. Ferguson
+    year: 1984
+    url: https://escholarship.org/content/qt0td555gj/qt0td555gj.pdf
+    evidence: full_text
+    locator: preprint LBL-16661 p. 2 (Introduction)
+  quote: The intermediate precipitate α"-Fe16N2 formed during the quench-aging of nitrogen-ferrite occurs via a nitrogen GP zone stage as thin disc-shaped plates on the three sets of matrix {001} planes (1).
+  note: Preprint of the Scripta paper (eScholarship); quote transcribed from page image (OCR garbles the underlined c and a). In unstressed ferrite all three {001} plate families (three c-axis variants) form.
+- id: fe16n2_tform_ferrite_ferguson1984
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 200 °C (100 min) to 250 °C (3–10 min) aging of supersaturated N-ferrite
+  unit: ''
+  conditions: Fe-0.08 wt.% N ferrite quenched from 590 °C (10.5NH3:89.5H2 nitriding)
+  source:
+    doi: 10.1016/0036-9748(84)90089-9
+    title: Morphological aspects of α”-Fe16N2 precipitation in α-Fe
+    first_author: P. Ferguson
+    year: 1984
+    url: https://escholarship.org/content/qt0td555gj/qt0td555gj.pdf
+    evidence: full_text
+    locator: preprint LBL-16661 p. 3 (Results)
+  quote: Figure 2 shows a typical micrograph of α"-Fe16N2 precipitates in a [100] projection formed by bulk-aging a specimen 100 min. at 200°C. Three sets of disc-shaped plates on the {001} matrix planes are visible as is the "rosette" contrast of the plates which are perpendicular to the electron beam.
+  note: Precipitation route from a bcc parent at 473–523 K; three plate families coexist. Transcribed from page image.
+- id: fe16n2_variantsel_ferguson1984
+  phase: α''-Fe16N2
+  quantity: other
+  value: variant selection by elastic anisotropy is not significant at 200 °C (precipitation in unstressed ferrite)
+  unit: ''
+  conditions: alpha" rosette plates, aging at 200 °C
+  source:
+    doi: 10.1016/0036-9748(84)90089-9
+    title: Morphological aspects of α”-Fe16N2 precipitation in α-Fe
+    first_author: P. Ferguson
+    year: 1984
+    url: https://escholarship.org/content/qt0td555gj/qt0td555gj.pdf
+    evidence: full_text
+    locator: preprint LBL-16661 p. 5 (Discussion)
+  quote: Thus at this temperature elastic anisotropy does not seem to be a major influence in the selection of variants.
+  note: Refers to the habit-segment variants within one {001} plate family (segments inclined ~10° to (001)); together with the presence of all three {001} plate families (p. 3) it suggests no strong intrinsic bias in unstressed ferrite (fork B reading; populations were not quantified). Transcribed from page image.
+- id: fe16n2_nvariants_ferrite_xiong2010
+  phase: α''-Fe16N2
+  quantity: n_variants
+  value: 3
+  unit: sets of {001} plates
+  conditions: Fe-0.5 wt.% N dual-phase steel, ferrite matrix aged at 85 °C
+  source:
+    doi: 10.1016/j.scriptamat.2010.08.045
+    title: In situ transmission electron microscopy investigations of the kinetics of α″-Fe16N2 precipitation during the ageing of nitrogen–ferrite
+    first_author: X.C. Xiong
+    year: 2010
+    url: https://mmm.sjtu.edu.cn/userfiles/1/files/2010Scripta-Materialia.pdf
+    evidence: full_text
+    locator: p. 1232, paragraph 1
+  quote: During the quenching–ageing of nitrogen–ferrite, the metastable nitride α''-Fe16N2 formed as thin disc-shaped plates on the three sets of α-ferrite matrix {0 0 1} planes.
+  note: 'Text check against a glyph-corrected copy: the PDF font encodes α as ''a'' and ″ as ''00'' (substitutions listed in the file header).'
+- id: fe16n2_tform_ferrite_xiong2010
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 358
+  unit: K
+  conditions: in situ TEM aging of supersaturated nitrogen-ferrite at 85 °C
+  source:
+    doi: 10.1016/j.scriptamat.2010.08.045
+    title: In situ transmission electron microscopy investigations of the kinetics of α″-Fe16N2 precipitation during the ageing of nitrogen–ferrite
+    first_author: X.C. Xiong
+    year: 2010
+    url: https://mmm.sjtu.edu.cn/userfiles/1/files/2010Scripta-Materialia.pdf
+    evidence: full_text
+    locator: abstract
+  quote: In situ transmission electron microscopy investigations were carried out on a supersaturated nitrogen–ferrite to characterise the precipitation kinetics of α''-Fe16N2 nitrides at 85 °C.
+  note: First precipitates seen after 80 min at 85 °C (same paper). 85 °C converted to 358 K.
+- id: fe16n2_or_parallel_hong1984
+  phase: α''-Fe16N2
+  quantity: OR
+  value: principal axes of α'' parallel to the cube axes of the α-Fe matrix (Bain-type, c ∥ one <100>α)
+  unit: ''
+  conditions: coherent Fe16N2 precipitate in bcc iron, elastic theory
+  source:
+    doi: 10.1016/0001-6160(84)90056-7
+    title: 'The state and habit of the Fe16N2 Precipitate in b.c.c. iron: elastic theory'
+    first_author: M. Hong
+    year: 1984
+    url: https://escholarship.org/content/qt40n9j39h/qt40n9j39h.pdf
+    evidence: full_text
+    locator: preprint LBL-12973, Section II (stress-free strain)
+  quote: If the principal axes of the inclusion (in its stress-free state) parallel those of the matrix, as they do in Fe16N2, then the tetragonal stress-free strain may be written
+  note: Preprint of the Acta Metall. paper (eScholarship OCR text; whitespace in "Fe 16N2" normalised). The same preprint finds the elastic-energy-minimising habit shifts from {100} to near {102} as the aspect ratio grows.
+- id: fe16n2_formpath_ogi2013
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: 'nitriding 45 nm α-Fe/Al2O3 core–shell nanoparticles: bcc -> single-phase α′′ (no austenite step)'
+  unit: ''
+  conditions: plasma-synthesised core-shell NPs, gas-phase nitriding
+  source:
+    doi: 10.1063/1.4798959
+    title: Facile synthesis of single-phase spherical α″-Fe16N2/Al2O3 core-shell nanoparticles via a gas-phase method
+    first_author: Takashi Ogi
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1063/1.4798959
+    evidence: abstract
+    locator: abstract
+  quote: When nitrogen was inserted into the spherical α-Fe/Al2O3 core shell of 45 nm nanoparticles, the XRD pattern showed a clear change in the crystal modification from a body-centered cubic crystal to that of a single-phase α″-Fe16N2 structure.
+  note: Direct bcc -> bct route (b). Nitriding temperature not stated in the abstract.
+- id: fe16n2_tform_bridges2016
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 433
+  unit: K
+  conditions: carbon-coated Fe nanopowder, H2 400 °C 1 h then NH3 50 sccm at 160 °C for 21 h
+  source:
+    doi: 10.1039/C6CP00737F
+    title: The impact of carbon coating on the synthesis and properties of α′′-Fe16N2 powders
+    first_author: C. A. Bridges
+    year: 2016
+    url: https://www.osti.gov/servlets/purl/1252149
+    evidence: full_text
+    locator: Section 2.1
+  quote: The powder was nitrided under a 50 sccm flow of ammonia at 160 oC for 21 h, followed by cooling to room temperature.
+  note: 160 °C converted to 433 K. Accepted manuscript on OSTI.
+- id: fe16n2_prereduction_bridges2016
+  phase: α-Fe
+  quantity: formation_path
+  value: precursor must be H2-reduced at 300–500 °C before ammonolysis; oxide passivation inhibits nitriding
+  unit: ''
+  conditions: iron oxide or passivated Fe precursors
+  source:
+    doi: 10.1039/C6CP00737F
+    title: The impact of carbon coating on the synthesis and properties of α′′-Fe16N2 powders
+    first_author: C. A. Bridges
+    year: 2016
+    url: https://www.osti.gov/servlets/purl/1252149
+    evidence: full_text
+    locator: Section 3.2
+  quote: Regardless of which Fe-containing precursor is used, it is typically required to reduce the precursor in the temperature range from 300 ºC to 500 ºC (depending upon particle size, composition and reactor design) before ammonolysis to form a nitrided product
+  note: The bcc parent of route (b) is made in situ by reduction (in loose powders the parent orientations are random - fork B inference).
+- id: fe16n2_svp_bridges2016
+  phase: α''-Fe16N2
+  quantity: single_variant_particles
+  value: 50–100 nm α'' grains nearly fully converted single crystals; residual disordered α' at grain boundaries
+  unit: nm
+  conditions: NH3 160 °C / 21 h nitrided carbon-coated Fe nanoparticles; TEM microarea diffraction
+  source:
+    doi: 10.1039/C6CP00737F
+    title: The impact of carbon coating on the synthesis and properties of α′′-Fe16N2 powders
+    first_author: C. A. Bridges
+    year: 2016
+    url: https://www.osti.gov/servlets/purl/1252149
+    evidence: full_text
+    locator: Section 3.1
+  quote: Larger (50-100nm) α’’-Fe16N2 grains were typically nearly fully converted single crystals, but often showed residual disordered α’- Fe16N2 at boundaries between adjacent grains
+  note: A single crystal of alpha" has one c axis, so these grains are single-variant; the particles (aggregates 30–300 nm) can contain several such grains.
+- id: fe16n2_phasefrac_bridges2016
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: 40–60
+  unit: '% (Fe16N2 in nitrided powder)'
+  conditions: NH3 160 °C / 21 h, carbon-coated Fe precursors; neutron + X-ray Rietveld
+  source:
+    doi: 10.1039/C6CP00737F
+    title: The impact of carbon coating on the synthesis and properties of α′′-Fe16N2 powders
+    first_author: C. A. Bridges
+    year: 2016
+    url: https://www.osti.gov/servlets/purl/1252149
+    evidence: full_text
+    locator: abstract
+  quote: Neutron and X-ray powder diffraction indicate that the powders contain typically 40-60% Fe16N2, with the remaining phases being unreacted iron, Fe4N or Fe3N.
+  note: ''
+- id: fe16n2_tstab_bridges2016
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 441–473
+  unit: K
+  conditions: in situ TEM heating in vacuum, carbon-coated nitrided powder; significant loss of order after 5 min at 200 °C
+  source:
+    doi: 10.1039/C6CP00737F
+    title: The impact of carbon coating on the synthesis and properties of α′′-Fe16N2 powders
+    first_author: C. A. Bridges
+    year: 2016
+    url: https://www.osti.gov/servlets/purl/1252149
+    evidence: full_text
+    locator: abstract
+  quote: In situ TEM was used to observe loss of ordering in the nitrogen sublattice of carbon composite Fe16N2 powders in the range of 168 oC to 200 oC.
+  note: 168–200 °C converted to 441–473 K.
+- id: fe16n2_formpath_bennett2016
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: iron oxide -> H2 reduction ~350–400 °C (fluidized bed) -> NH3 nitriding at 140–180 °C for several hours
+  unit: ''
+  conditions: nanocrystalline powder (fluidized bed)
+  source:
+    doi: 10.1007/s11837-016-1886-1
+    title: Phase Concentration Determination of Fe16N2 Using State of the Art Neutron Scattering Techniques
+    first_author: S. P. Bennett
+    year: 2016
+    url: https://www.osti.gov/servlets/purl/1257902
+    evidence: full_text
+    locator: 'Methods: Sample Preparation'
+  quote: Powder samples were synthesized by first reducing iron oxide to alpha-iron nanocrystalline powder, then heating to ~350-400°C in a fluidized bed reactor under flowing hydrogen for a few hours. This was followed by reaction with flowing ammonia at a temperature between 140 and 180°C for several hours for nitridation.
+  note: Direct low-T nitriding window 413–453 K.
+- id: fe16n2_phasefrac_bennett2016
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: 97.2
+  unit: wt.%
+  conditions: fluidized-bed reduced/nitrided powder; neutron diffraction Rietveld (NOMAD)
+  source:
+    doi: 10.1007/s11837-016-1886-1
+    title: Phase Concentration Determination of Fe16N2 Using State of the Art Neutron Scattering Techniques
+    first_author: S. P. Bennett
+    year: 2016
+    url: https://www.osti.gov/servlets/purl/1257902
+    evidence: full_text
+    locator: main text, after Table I
+  quote: The result was and almost fully single phase specimen (97.2 wt. %) of α˝-Fe16N2 which, to our knowledge, is the highest reported to date phase concentrations of 16:2 in a bulk powder specimen.
+  note: Highest phase fraction found for route (b) powders. Text check normalises "Fe16 N2".
+- id: fe16n2_tform_masubuchi2011
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 383
+  unit: K
+  conditions: alpha-Fe fine powder from reduced gamma-Fe2O3, NH3 at 110 °C for 10 days
+  source:
+    doi: 10.1016/j.jeurceramsoc.2011.02.001
+    title: Magnetite/maghemite mixture prepared in benzyl alcohol for the preparation of α″-Fe16N2 with α-Fe
+    first_author: Y. Masubuchi
+    year: 2011
+    url: https://eprints.lib.hokudai.ac.jp/repo/huscap/all/47362/JECS31-14_2471-2474.pdf
+    evidence: review
+    locator: Introduction (citing their ref. 12)
+  quote: Single phase of α”-Fe16N2 confirmed by powder x-ray diffraction was prepared by low temperature nitridation at 110 °C for 10 days in ammonia gas of α-Fe fine powder obtained from reduction of γ-Fe2O3
+  note: Lowest nitriding temperature found for single-phase (XRD) alpha" powder; statement about earlier work, hence evidence review. 110 °C converted to 383 K.
+- id: fe16n2_phasefrac_masubuchi2011
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: 66
+  unit: wt.%
+  conditions: alpha-Fe (~100 nm) from benzyl-alcohol iron oxide, NH3 at 160 °C for 15 h
+  source:
+    doi: 10.1016/j.jeurceramsoc.2011.02.001
+    title: Magnetite/maghemite mixture prepared in benzyl alcohol for the preparation of α″-Fe16N2 with α-Fe
+    first_author: Y. Masubuchi
+    year: 2011
+    url: https://eprints.lib.hokudai.ac.jp/repo/huscap/all/47362/JECS31-14_2471-2474.pdf
+    evidence: full_text
+    locator: abstract
+  quote: After the successive nitridation under ammonia flow at 160 °C, the highest yield of α”-Fe16N2 in 66 wt% was observed on the nitrided product
+  note: Accepted manuscript (HUSCAP).
+- id: fe16n2_phasefrac_li2016
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: 59.8
+  unit: wt.%
+  conditions: Fe3O4 NPs, H2 400 °C 4 h, NH3 170 °C 16 h
+  source:
+    doi: 10.1063/1.4967950
+    title: Synthesis of fine α″-Fe16N2 powders by low-temperature nitridation of α-Fe from magnetite nanoparticles
+    first_author: Jing Li
+    year: 2016
+    url: https://doaj.org/api/articles/accaf1bfd00442ae86346d3f7d10b406
+    evidence: abstract
+    locator: abstract
+  quote: The results show that the combination of 4-h reduction at 400 °C and 16-h nitridation at 170 °C gives the highest yield of α″-Fe16N2 up to 59.8 wt. %
+  note: ''
+- id: fe16n2_phasefrac_zulhijah2014
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: 90
+  unit: '% of the core'
+  conditions: core-shell alpha-Fe/SiO2 NPs, oxidation before nitridation
+  source:
+    doi: 10.1039/c3nr06867f
+    title: Gas phase preparation of spherical core–shell α′′-Fe16N2/SiO2 magnetic nanoparticles
+    first_author: Rizka Zulhijah
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1039/c3nr06867f
+    evidence: abstract
+    locator: abstract
+  quote: Introduction of oxidation prior to the nitridation process gives 90% of α''-Fe16N2 phase contained in the core while no phase change is observed without oxidation.
+  note: ''
+- id: fe16n2_mechanism_ma2020
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: heterogeneous nucleation of α'' at high-energy surface sites of reduced Fe NPs, growth inward, stopped by ε-Fe3N/γ'-Fe4N nucleation
+  unit: ''
+  conditions: alpha-Fe and gamma-Fe2O3 NPs, NH3 at <= 180 °C
+  source:
+    doi: 10.1063/5.0033577
+    title: Critical thickness of α″-Fe16N2 layer prepared in low-temperature nitriding
+    first_author: Bin Ma
+    year: 2020
+    url: https://api.openalex.org/works/doi:10.1063/5.0033577
+    evidence: abstract
+    locator: abstract
+  quote: The adsorbed NH3 molecules on the Fe surface decompose into N and H atoms, and then N atoms react with Fe and nucleation of α″-Fe16N2 simultaneously occurs at the high-energy surface sites of reduced Fe nanoparticles.
+  note: 'Nucleation at surface sites: each nucleus picks one of the three bcc <100> as c; nothing in the abstract on orientation choice.'
+- id: fe16n2_critthick_ma2020
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: critical α'' layer thickness 10–15 nm from the surface; single-phase α'' expected for particles < 30 nm
+  unit: nm
+  conditions: low-temperature NH3 nitriding of Fe NPs
+  source:
+    doi: 10.1063/5.0033577
+    title: Critical thickness of α″-Fe16N2 layer prepared in low-temperature nitriding
+    first_author: Bin Ma
+    year: 2020
+    url: https://api.openalex.org/works/doi:10.1063/5.0033577
+    evidence: abstract
+    locator: abstract
+  quote: Then, there is critical thickness for the α″-Fe16N2 layer, which is estimated to be 10–15 nm from the surface. Therefore, single-phase α″-Fe16N2 nanoparticles are expected in fine particles with less than 30 nm in diameter.
+  note: Sets the particle size for single-phase (and possibly single-variant) alpha" by direct nitriding.
+- id: fe16n2_phasefrac_ma2020
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: 93
+  unit: vol.%
+  conditions: low-temperature nitrided NPs (<= 180 °C)
+  source:
+    doi: 10.1063/5.0033577
+    title: Critical thickness of α″-Fe16N2 layer prepared in low-temperature nitriding
+    first_author: Bin Ma
+    year: 2020
+    url: https://api.openalex.org/works/doi:10.1063/5.0033577
+    evidence: abstract
+    locator: abstract
+  quote: The synthesized α″-Fe16N2 nanoparticles have a high α″-Fe16N2 volume ratio up to 93%
+  note: ''
+- id: fe16n2_formpath_lowt_liu2019
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: low-temperature (< 200 °C) nitridation of α-Fe or iron-oxide nanoparticles
+  unit: ''
+  conditions: review statement in introduction
+  source:
+    doi: 10.1039/C9NA00008A
+    title: Synthesis of α′′-Fe16N2 ribbons with a porous structure
+    first_author: Jinming Liu
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9419178/fullTextXML
+    evidence: review
+    locator: Introduction
+  quote: In the late 1990s, a low-temperature nitridation (<200 °C) method was proposed to fabricate α′′-Fe16N2 using α-Fe or iron oxide NPs as raw materials.
+  note: Secondary statement (introduction of a research paper).
+- id: fe16n2_formpath_gamma_liu2019
+  phase: γ-Fe(N)
+  quantity: formation_path
+  value: 'Jack route: nitriding above the Fe–N eutectoid (γ-FeN only above 592 °C) in NH3/H2, quench to α′-Fe8N, temper < 200 °C to α′′'
+  unit: ''
+  conditions: review statement in introduction
+  source:
+    doi: 10.1039/C9NA00008A
+    title: Synthesis of α′′-Fe16N2 ribbons with a porous structure
+    first_author: Jinming Liu
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9419178/fullTextXML
+    evidence: review
+    locator: Introduction
+  quote: In his method, nitridation was performed at a high temperature (>600 °C) using a gas mixture of ammonia and hydrogen since γ-FeN only exists at a temperature above 592 °C, based on the Fe–N binary phase diagram.19 α′-Fe8N was then formed by quenching γ-FeN to the martensite starting temperature and then α′′-Fe16N2 could be obtained from α′-Fe8N after a low-temperature (<200 °C) tempering process.
+  note: Parent gamma must be formed above 865 K (592 °C) and quenched; secondary statement citing Jack 1951 and the Fe–N phase diagram.
+- id: fe16n2_formpath_nponly_liu2019
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: low-temperature nitridation used only on nanoparticles because of their surface-to-volume ratio
+  unit: ''
+  conditions: review statement in introduction
+  source:
+    doi: 10.1039/C9NA00008A
+    title: Synthesis of α′′-Fe16N2 ribbons with a porous structure
+    first_author: Jinming Liu
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9419178/fullTextXML
+    evidence: review
+    locator: Introduction
+  quote: Up to now, only NPs, however, are used for the low-temperature nitridation method since they have a much higher surface to volume ratio that provides a higher nitridation efficiency.
+  note: 'Diffusion limit of route (b) at <200 °C: bulk bcc parents (wires, foils, ribbons) need porosity, implantation or thin sections.'
+- id: fe16n2_tform_ribbons_liu2019
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 433
+  unit: K
+  conditions: melt-spun FeCuB ribbons (~20 µm), 930 °C quench, H2 reduction 300–350 °C 2 h, NH3 at 160 °C for 42–84 h
+  source:
+    doi: 10.1039/C9NA00008A
+    title: Synthesis of α′′-Fe16N2 ribbons with a porous structure
+    first_author: Jinming Liu
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9419178/fullTextXML
+    evidence: full_text
+    locator: Experimental details
+  quote: After that, the nitridation process was carried out in the same furnace at 160 °C for 42–84 h with an ammonia flow rate of 40–80 sccm.
+  note: Nitrogen stays in the porous surface region (same paper). 160 °C converted to 433 K.
+- id: fe16n2_formpath_kikkawa2018
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: ammonolysis of fine α-Fe powder below 200 °C
+  unit: ''
+  conditions: review
+  source:
+    doi: 10.1016/j.progsolidstchem.2017.06.001
+    title: Magnetic iron nitrides inspired by historic research on α″-Fe16N2
+    first_author: Shinichi Kikkawa
+    year: 2018
+    url: https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.progsolidstchem.2017.06.001?fields=title,abstract,openAccessPdf
+    evidence: abstract
+    locator: abstract
+  quote: A powdered α″-Fe 16 N 2 -like compound was prepared by the ammonolysis of fine α-Fe powder in low temperature below 200 °C
+  note: Review abstract (Semantic Scholar).
+- id: fe16n2_svp_kartikowati2016
+  phase: α''-Fe16N2
+  quantity: single_variant_particles
+  value: single-domain core–shell α''-Fe16N2/Al2O3 NPs; each particle turns as a body (Brownian rotation) to bring its easy c axis to the field
+  unit: ''
+  conditions: well-dispersed NPs in resin on Si, fields applied before fixation
+  source:
+    doi: 10.1039/C5NR07859H
+    title: Effect of magnetic field strength on the alignment of α′′-Fe16N2 nanoparticle films
+    first_author: Christina W. Kartikowati
+    year: 2016
+    url: https://api.openalex.org/works/doi:10.1039/C5NR07859H
+    evidence: abstract
+    locator: abstract
+  quote: The fixation of the easy c-axis alignment of each nanoparticle caused by Brownian rotation under the magnetic field, instead of Néel rotation, was the reason for the enhancement in the magnetic performance.
+  note: Supports free-body rotation R for route FA/FP with single-easy-axis particles; the measured alignment of these films belongs to the sealed outcome file (fork C).
+- id: fe16n2_svp_shibata2006
+  phase: α''-Fe16N2
+  quantity: single_variant_particles
+  value: ~20 nm spherical NH3-nitrided Fe16N2 particles behave as weakly interacting uniaxial units in field-aligned coatings
+  unit: ''
+  conditions: Fe3O4 (~18–20 nm) -> H2 430–450 °C 4 h -> NH3 140–200 °C; particles dispersed in binder and field-aligned
+  source:
+    doi: 10.3379/jmsjmag.30.501
+    title: Magnetic Moment and Anisotropy of Iron Nitride Fe16N2 Nanoparticles
+    first_author: K. Shibata
+    year: 2006
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/30/5/30_5_501/_pdf
+    evidence: full_text
+    locator: abstract (English)
+  quote: The angle dependence of the MH curves for the magnetically aligned samples indicates that the magnetic interaction between the particles is negligibly small, suggesting that the magnetocrystalline anisotropy is significantly large.
+  note: Japanese text (conclusion 4) states the particles are single-domain with small interparticle interaction. Hitachi Maxell co-authors (tape particles). Measured values of the aligned samples are outcomes (fork C).
+- id: fe16n2_or_film_ji2011
+  phase: α''-Fe16N2
+  quantity: OR
+  value: c axis of the Fe–N layer perpendicular to the film; a coherent with Fe(001)/GaAs(001)
+  unit: ''
+  conditions: facing-target sputtered Fe-N (45–50 nm) on Fe(22 nm)/GaAs(001)
+  source:
+    doi: 10.1103/PhysRevB.84.245310
+    title: Perpendicular magnetic anisotropy and high spin-polarization ratio in epitaxial Fe-N thin films
+    first_author: Nian Ji
+    year: 2011
+    url: https://link.aps.org/accepted/10.1103/PhysRevB.84.245310
+    evidence: full_text
+    locator: Introduction, p. 3
+  quote: A structural characterization based on x-ray diffraction (XRD) and transmission electron microscopy (TEM) imaging reveal the crystal quality and film morphology, which shows that the c-axis of the Fe-N layer is perpendicular to the film plane and is coherently adapted on the Fe(001)/GaAs(001) template.
+  note: Epitaxial selection of the variant with c along the film normal (the a lattice is locked to bcc Fe in-plane).
+- id: fe16n2_stress_film_ji2011
+  phase: α''-Fe16N2
+  quantity: stress_effect_on_formation
+  value: in-plane a of α′′ matches bcc Fe, so epitaxy on Fe(001) selects c out of plane
+  unit: ''
+  conditions: epitaxial films on Fe(001)
+  source:
+    doi: 10.1103/PhysRevB.84.245310
+    title: Perpendicular magnetic anisotropy and high spin-polarization ratio in epitaxial Fe-N thin films
+    first_author: Nian Ji
+    year: 2011
+    url: https://link.aps.org/accepted/10.1103/PhysRevB.84.245310
+    evidence: full_text
+    locator: Introduction, p. 2
+  quote: Since its a-lattice constant (in-plane lattice constant) closely matches that of bcc Fe, this allows the epitaxial control and consequently the realization of an MCA perpendicular to thin film plane if Fe (001) substrate is provided.
+  note: Substrate clamping as a variant-selecting bias (route EP).
+- id: fe16n2_tform_film_ji2011
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 393
+  unit: K
+  conditions: post-anneal of epitaxial Fe-N/Fe/GaAs films, 120 °C for 40 h
+  source:
+    doi: 10.1103/PhysRevB.84.245310
+    title: Perpendicular magnetic anisotropy and high spin-polarization ratio in epitaxial Fe-N thin films
+    first_author: Nian Ji
+    year: 2011
+    url: https://link.aps.org/accepted/10.1103/PhysRevB.84.245310
+    evidence: full_text
+    locator: Section II.C
+  quote: by systematically analyzing MH loops of optimally annealed (120 °C for 40 hrs) samples with same bilayer structure
+  note: 120 °C converted to 393 K; anneal raises N-site order (chemically ordered Fe16N2).
+- id: fe16n2_nsolubility_ji2011
+  phase: α'-Fe8N
+  quantity: other
+  value: α'-Fe–N martensite can accommodate up to ~13 at.% N
+  unit: at.%
+  conditions: interstitial solubility (literature value cited by the authors)
+  source:
+    doi: 10.1103/PhysRevB.84.245310
+    title: Perpendicular magnetic anisotropy and high spin-polarization ratio in epitaxial Fe-N thin films
+    first_author: Nian Ji
+    year: 2011
+    url: https://link.aps.org/accepted/10.1103/PhysRevB.84.245310
+    evidence: full_text
+    locator: Section II.A
+  quote: It is known that the α’-Fe-N martensites form interstitial solid and can accommodate N concentration up to ~13 at.%
+  note: Upper N limit of the parent martensite; Fe16N2 needs 11.1 at.%.
+- id: fe16n2_or_film_sugita1991
+  phase: α''-Fe16N2
+  quantity: OR
+  value: single-crystal Fe16N2 epitaxial on Fe(001)/InGaAs(001) and on InGaAs(001)
+  unit: ''
+  conditions: MBE films
+  source:
+    doi: 10.1063/1.350067
+    title: Giant magnetic moment and other magnetic properties of epitaxially grown Fe16N2 single-crystal films (invited)
+    first_author: Y. Sugita
+    year: 1991
+    url: https://api.openalex.org/works/doi:10.1063/1.350067
+    evidence: abstract
+    locator: abstract
+  quote: Single-crystal Fe16N2 films have been grown epitaxially on Fe(001)/InGaAs(001) and InGaAs(001) substrates by molecular beam epitaxy (MBE).
+  note: ''
+- id: fe16n2_formpath_film_sugita1994
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: Fe evaporated in N2+NH3 onto In0.2Ga0.8As(001) -> Fe–11 at.% N martensite films -> anneal -> single-crystal Fe16N2(001)
+  unit: ''
+  conditions: MBE films 200–900 Å
+  source:
+    doi: 10.1063/1.358157
+    title: Magnetic and Mössbauer studies of single-crystal Fe16N2 and Fe-N martensite films epitaxially grown by molecular beam epitaxy (invited)
+    first_author: Yutaka Sugita
+    year: 1994
+    url: https://api.openalex.org/works/doi:10.1063/1.358157
+    evidence: abstract
+    locator: abstract
+  quote: Single-phase, single-crystal Fe16N2(001) films and Fe-11 at. %N martensite films of 200–900 Å thickness have been epitaxially grown on In0.2Ga0.8As(001) substrates by evaporating Fe in an atmosphere of mixed gas of N2 and NH3, followed by annealing.
+  note: Film route = epitaxial martensite + ordering anneal (c along film normal).
+- id: fe16n2_or_film_komuro1990
+  phase: α''-Fe16N2
+  quantity: OR
+  value: Fe16N2 (001)//Fe(110) (as printed in the abstract)
+  unit: ''
+  conditions: MBE Fe-N films (70–1000 Å) on Fe/GaAs(100)
+  source:
+    doi: 10.1063/1.344689
+    title: Epitaxial growth and magnetic properties of Fe16N2 films with high saturation magnetic flux density (invited)
+    first_author: Matahiro Komuro
+    year: 1990
+    url: https://api.openalex.org/works/doi:10.1063/1.344689
+    evidence: abstract
+    locator: abstract
+  quote: TEM observations and x-ray diffraction patterns showed that the epitaxially grown Fe-N films consist of Fe16N2 and Fe, and that crystal orientation is Fe16N2 (001)//Fe(110).
+  note: Printed as Fe(110) although the Fe underlayer is grown on GaAs(100); not resolved from the abstract.
+- id: fe16n2_or_film_brewer1997
+  phase: α''-Fe16N2
+  quantity: OR
+  value: Fe16N2(001)‖Ag(001)‖Si(001) and Fe16N2[100]‖Ag[110]‖Si[100]
+  unit: ''
+  conditions: reactive-sputtered films on Ag/Si(001), ~100 Å grains
+  source:
+    doi: 10.1063/1.365102
+    title: Magnetic and physical microstructure of Fe16N2 films grown epitaxially on Si(001)
+    first_author: M. A. Brewer
+    year: 1997
+    url: https://api.openalex.org/works/doi:10.1063/1.365102
+    evidence: abstract
+    locator: abstract
+  quote: Plan-view transmission electron microscopy of the films confirms the orientation relationship Fe16N2(001)‖Ag(001)‖Si(001) and Fe16N2[100]‖Ag[110]‖Si[100]
+  note: Single c orientation (normal) by epitaxy.
+- id: fe16n2_phasefrac_film_brewer1996
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: 46
+  unit: vol.%
+  conditions: annealed α'-Fe8N epitaxial films on Ag/Si(001)
+  source:
+    doi: 10.1063/1.361365
+    title: Epitaxial Fe16N2 films grown on Si(001) by reactive sputtering
+    first_author: M. A. Brewer
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.361365
+    evidence: abstract
+    locator: abstract
+  quote: In addition to the crystallographic and structural analysis, quantification of x-ray diffraction peak intensities confirmed that the α′/α″ mixtures contained as much as 46 vol % α″ (remaining α′).
+  note: Ordering of epitaxial martensite films is incomplete (rest alpha-prime).
+- id: fe16n2_or_film_sun1996
+  phase: α''-Fe16N2
+  quantity: OR
+  value: α″-Fe16N2(001)∥NaCl(001), α″-Fe16N2[100]∥NaCl[100]
+  unit: ''
+  conditions: facing-targets sputtering on NaCl(100)
+  source:
+    doi: 10.1063/1.361843
+    title: Epitaxial single crystal Fe16N2 films grown by facing targets sputtering
+    first_author: D. C. Sun
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.361843
+    evidence: abstract
+    locator: abstract
+  quote: The x-ray diffraction patterns show that α″-Fe16N2 epitaxially grows on the NaCl(100) substrate with an orientation relationship α″-Fe16N2(001)∥NaCl(001) and α″-Fe16N2[100]∥NaCl[100].
+  note: ''
+- id: fe16n2_or_film_ortiz1994
+  phase: α''-Fe16N2
+  quantity: OR
+  value: (001) epitaxial films, single-crystalline in plane (underlayer template)
+  unit: ''
+  conditions: reactive N2 sputtering
+  source:
+    doi: 10.1063/1.112552
+    title: Epitaxial Fe16N2 films grown by sputtering
+    first_author: C. Ortiz
+    year: 1994
+    url: https://api.openalex.org/works/doi:10.1063/1.112552
+    evidence: abstract
+    locator: abstract
+  quote: They are epitaxial in the (001) direction and show single crystallinity in plane.
+  note: ''
+- id: fe16n2_formpath_film_okamoto1996
+  phase: α'-Fe8N
+  quantity: formation_path
+  value: epitaxial bct α'-martensite on Fe or Ag (001) underlayers, lattice elongated along [001] (film normal)
+  unit: ''
+  conditions: sputter-beam epitaxial Fe-N films
+  source:
+    doi: 10.1063/1.361301
+    title: α″-Fe16N2 phase epitaxially grown by sputter beam method
+    first_author: Satoshi Okamoto
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.361301
+    evidence: abstract
+    locator: abstract
+  quote: The Fe-N films on both underlayers have a bct structure (α′-martensite), whose lattice is elongated along the [001] direction by nitrogen atoms located in octahedral interstices of α-Fe.
+  note: 'N enters the octahedral sites along the growth normal: the substrate selects the c variant during deposition.'
+- id: fe16n2_ordering_film_okamoto1996
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: post-annealing orders N within the bct lattice -> α'' precipitates
+  unit: ''
+  conditions: sputter-beam epitaxial Fe-N films
+  source:
+    doi: 10.1063/1.361301
+    title: α″-Fe16N2 phase epitaxially grown by sputter beam method
+    first_author: Satoshi Okamoto
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.361301
+    evidence: abstract
+    locator: abstract
+  quote: Postannealing promotes ordering of nitrogen atoms in the bct lattice, resulting in precipitation of a metastable α″-Fe16N2 phase in Fe-N films.
+  note: Ordering inside the bct lattice keeps the c axis set during growth.
+- id: fe16n2_formpath_impl_nakajima1989
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: N2+ implantation (140 keV) into epitaxial bcc Fe films on MgO(100) -> partially ordered bct N-martensite; 150 °C 2 h vacuum anneal increases the ordered part
+  unit: ''
+  conditions: room-temperature implantation, then 150 °C anneal
+  source:
+    doi: 10.1063/1.101543
+    title: Nitrogen-implantation-induced transformation of iron to crystalline Fe16N2 in epitaxial iron films
+    first_author: Kensuke Nakajima
+    year: 1989
+    url: https://api.openalex.org/works/doi:10.1063/1.101543
+    evidence: abstract
+    locator: abstract
+  quote: Implantations of N+2 at an acceleration voltage of 140 keV transformed the bcc iron into a partially ordered nitrogen martensite with a body-centered-tetragonal (bct) structure. The amount of the ordered part was increased to some extent by an annealing treatment in vacuum at 150 °C for 2 hr.
+  note: Direct bcc -> bct route without austenite (implantation).
+- id: fe16n2_phasefrac_impl_nakajima1989
+  phase: α''-Fe16N2
+  quantity: phase_fraction_limit
+  value: 60% of Fe -> bct martensite; ordered Fe16N2 16 wt.% of martensite, 24% after anneal
+  unit: '%'
+  conditions: 4×10^16 N2/cm2 implanted epitaxial Fe film
+  source:
+    doi: 10.1063/1.101543
+    title: Nitrogen-implantation-induced transformation of iron to crystalline Fe16N2 in epitaxial iron films
+    first_author: Kensuke Nakajima
+    year: 1989
+    url: https://api.openalex.org/works/doi:10.1063/1.101543
+    evidence: abstract
+    locator: abstract
+  quote: An implantation with a dose of 4×1016 N2/cm2 transformed 60% iron in a film into the bct martensite. The constituent of the ordered phase (Fe16 N2 ) in the bct martensite was 16 wt. %. After the annealing, the constituent increased to 24%.
+  note: ''
+- id: fe16n2_pma_impl_nakajima1990
+  phase: α'-Fe8N
+  quantity: stress_effect_on_formation
+  value: implantation into single-crystal Fe films produces perpendicular anisotropy attributed to the N-martensite (c out of plane, inferred)
+  unit: ''
+  conditions: 200 nm single-crystal Fe films, multiple implantation to 11.1 at.% N
+  source:
+    doi: 10.1063/1.102614
+    title: Large magnetization induced in single crystalline iron films by high-dose nitrogen implantation
+    first_author: Kensuke Nakajima
+    year: 1990
+    url: https://api.openalex.org/works/doi:10.1063/1.102614
+    evidence: abstract
+    locator: abstract
+  quote: It was also found that the implantation induced a perpendicular magnetic anisotropy due to the characteristics of the nitrogen martensite.
+  note: Interpretation (c normal to film from in-plane clamping) is fork B's, not stated in the abstract.
+- id: fe16n2_formpath_impl_jiang2016
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: (110) single-crystal Fe foil 500 nm bonded to Si(111) -> N+ 100 keV implantation at RT -> 500 °C 0.5 h pre-anneal (N2/Ar) -> 150 °C 40 h post-anneal
+  unit: ''
+  conditions: free-standing foils (ion implantation route)
+  source:
+    doi: 10.1038/srep25436
+    title: Synthesis of Fe16N2 compound Free-Standing Foils with 20 MGOe Magnetic Energy Product by Nitrogen Ion-Implantation
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://www.osti.gov/servlets/purl/1624833
+    evidence: full_text
+    locator: Experiment method
+  quote: Pure (110) iron foils with 500 nm thickness are positioned on mirror-polished (111) Si substrate. The surfaces of the substrates and iron foils are cleaned beforehand. The foils are directly bonded with the substrate using a wafer bonder in fusion mode (SB6, Karl Suss Wafer Bonder) at 450 °C for 30 minutes. Nitrogen ion implantation was conducted at the Los Alamos National Laboratory. Ions of atomic N+ were accelerated to 100 keV and implanted into foils vertically with fluences ranging from 2 × 1016/cm2 to 1 × 1018/cm2 at room temperature. After that, a two-step post-annealing process was applied on the implanted foils. The first step was pre-annealing at 500 °C in N2 and Ar mixed atmosphere for 0.5 hour. Post-annealing followed at 150 °C for 40 hours in a vacuum.
+  note: Starting foil is a (110) single crystal ("the starting single crystal iron foil", Results). Sample outcomes (loops, energy product) are in the sealed file (fork C).
+- id: fe16n2_stress_effect_jiang2016scirep
+  phase: α''-Fe16N2
+  quantity: stress_effect_on_formation
+  value: stretching force along in-plane <001> of a (110) Fe foil (thermal mismatch with Si during 150 C anneal) held responsible for bcc -> bct (alpha'') formation
+  unit: ''
+  uncertainty: null
+  conditions: N-implanted free-standing 500 nm (110) single-crystal Fe foil bonded to (111) Si, post-anneal 150 C, 40 h
+  source:
+    doi: 10.1038/srep25436
+    title: Synthesis of Fe16N2 compound Free-Standing Foils with 20 MGOe Magnetic Energy Product by Nitrogen Ion-Implantation
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://www.nature.com/articles/srep25436.pdf
+    evidence: full_text
+    locator: Discussion
+  quote: In this way, a stretching force is generated along < 001> crystalline direction in the foil with (110) face, which is responsible for the phase transformation from bcc to bct3.
+  note: 'Mechanism claim, not a measured variant fraction. Note an inconsistency in the paper: the CTE mismatch (Fe 11.8 vs Si 2.6 um/m K) is said to give a compressive in-plane strain (~0.2%), yet a ''stretching force'' along <001> is invoked. In a (110) foil the in-plane directions are [001] and [1-10], so one of the three bcc <100> lies in-plane and two lie at 45 deg to the normal.'
+- id: fe16n2_stress_magnitude_jiang2016scirep
+  phase: α''-Fe16N2
+  quantity: stress_effect_on_formation
+  value: 0.2
+  unit: '% (calculated linear strain)'
+  uncertainty: null
+  conditions: Fe foil on Si, mechanical equilibrium at 150 C anneal
+  source:
+    doi: 10.1038/srep25436
+    title: Synthesis of Fe16N2 compound Free-Standing Foils with 20 MGOe Magnetic Energy Product by Nitrogen Ion-Implantation
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://www.nature.com/articles/srep25436.pdf
+    evidence: full_text
+    locator: Discussion, Eq. (1)
+  quote: The calculated linear compressive strain at 150 °C annealing is about 0.2%.
+  note: Calculated, not measured (Fig. S6 compares XRD before/after annealing).
+- id: fe16n2_formation_path_jiang2016scirep
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: N+ implanted into bcc alpha-Fe (disordered N) -> 500 C 0.5 h activation -> N ordering into alpha''-Fe16N2 during 150 C, 40 h anneal
+  unit: ''
+  uncertainty: null
+  conditions: free-standing (110) Fe foil, 100 keV N+, RT implantation (beam heating <= 50 C)
+  source:
+    doi: 10.1038/srep25436
+    title: Synthesis of Fe16N2 compound Free-Standing Foils with 20 MGOe Magnetic Energy Product by Nitrogen Ion-Implantation
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://www.nature.com/articles/srep25436.pdf
+    evidence: full_text
+    locator: Discussion
+  quote: Before post-annealing, nitrogen atoms are arranged in a disordered manner. The phase transformation into α˝ corresponds to a rearrangement of nitrogen atoms, resulting in an ordered pattern. Therefore, the post-annealing step assists with the ordering of the nitrogen atoms.
+  note: 'Direct route in a bcc parent: no fcc->bcc martensitic step; the c-axis of each alpha'''' domain is one of the three <100> of the parent Fe crystal.'
+- id: fe16n2_t_formation_jiang2016scirep
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 423
+  unit: K
+  uncertainty: null
+  conditions: post-anneal 40 h in vacuum after N+ implantation and 500 C pre-anneal
+  source:
+    doi: 10.1038/srep25436
+    title: Synthesis of Fe16N2 compound Free-Standing Foils with 20 MGOe Magnetic Energy Product by Nitrogen Ion-Implantation
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://www.nature.com/articles/srep25436.pdf
+    evidence: full_text
+    locator: Conclusions
+  quote: A post-annealing step at 150 °C for 40 hours was found to assist nitrogen atom diffusion and form the chemically ordered Fe16N2 phase in iron foils.
+  note: ''
+- id: fe16n2_t_stab_takagi2014
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: 495
+  unit: K
+  uncertainty: null
+  conditions: nanopowder sintered at 1.2 GPa (high-pressure sintering); decomposition alpha'' -> alpha-Fe + epsilon-Fe3N at 222 C, Ms retained at 190 C
+  source:
+    doi: 10.1063/1.4868295
+    title: High-pressure sintering behavior of α″-Fe16N2 nanopowder
+    first_author: Kenta Takagi
+    year: 2014
+    url: https://api.crossref.org/works/10.1063/1.4868295
+    evidence: abstract
+    locator: abstract
+  quote: However, XRD analysis revealed that sintering at 222 °C caused the decomposition α″ → α-Fe + ε-Fe3N, which reduced the saturated magnetization (Ms) and coercivity (Hc). Consequently, sintering at 190 °C produced a dense magnet that retained the Ms of the raw powder due to the avoidances of oxidization and decomposition.
+  note: 'Consolidation window: dense at ~190-200 C under 1.2 GPa; decomposition at 222 C. Sintering time not in abstract.'
+- id: fe16n2_consolidation_akdogan2022
+  phase: α''-Fe16N2
+  quantity: other
+  value: 0.8
+  unit: relative density
+  uncertainty: null
+  conditions: flake powder (97% Fe16N2) cold-compacted at 1 GPa, then compacted while annealing below 200 C at 2 GPa; 4 mm cylinder
+  source:
+    doi: 10.1016/j.actamat.2022.118064
+    title: Production and characterization of compacted Fe16N2 permanent magnets
+    first_author: N.G. Akdogan
+    year: 2022
+    url: https://research.sabanciuniv.edu/id/eprint/44190/
+    evidence: abstract
+    locator: abstract
+  quote: Fe16N2 permanent magnets were then developed utilizing cold compaction at a pressure of 1 GPa. Further compaction by annealing at a temperature below 200 °C and under 2 GPa enabled consolidation of a 4 mm cylinder with ca 80% density while preserving the Fe16N2 phase.
+  note: 'Consolidation input for phi below T_stab. Abstract only (no remanence given). Powder: flakes by surfactant-assisted ball milling of Fe, oxidised/reduced, nitrided 150-180 C up to 12 h.'
+- id: fe16n2_consolidation_density_saito2024
+  phase: α''-Fe16N2
+  quantity: other
+  value: 0.815
+  unit: relative density
+  uncertainty: null
+  conditions: SPS-DC (spark plasma sintering with dynamic compression) at 373 K; 82.3% at 573 K
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+    evidence: full_text
+    locator: Sec. 3, Fig. 8
+  quote: increased from 6.06 Mg/m3 (relative density of 81.5%) at 373 K to 6.12 Mg/m3 (82.3%) at 573 K.
+  note: phi achievable below T_stab by SPS-DC; conventional SPS gave 79.8% at 373 K.
+- id: fe16n2_or_epitaxy_hang2021
+  phase: α''-Fe16N2
+  quantity: OR
+  value: MgO (001)[110] || Cr (001)[100] || Fe16N2 (001)[100]
+  unit: ''
+  uncertainty: null
+  conditions: facing-target sputtered film on Cr seed layer, MgO(001) substrate
+  source:
+    doi: null
+    title: Magnetic properties and potential applications of Fe16N2 (PhD dissertation, University of Minnesota; hdl 11299/219403)
+    first_author: Xudong Hang
+    year: 2021
+    url: https://conservancy.umn.edu/server/api/core/bitstreams/54709037-1164-4fa4-9df4-d968fe211207/content
+    evidence: full_text
+    locator: Ch. 3
+  quote: 'Now the epitaxial relation can be summarized as follows: MgO (001)[110] k Cr (001)[100] k Fe16 N2 (001)[100].'
+  note: '''k'' is the pdftotext rendering of the parallel sign. Single c-variant (c along film normal) selected by the (001) epitaxial template.'
+- id: fe16n2_other_filmshape_hang2021
+  phase: α''-Fe16N2
+  quantity: other
+  value: '(001)-textured Fe16N2 films have an in-plane easy axis: shape anisotropy 2piMs^2 exceeds the magnetocrystalline anisotropy'
+  unit: ''
+  uncertainty: null
+  conditions: thin films (9-40 nm) on MgO/MgAl2O4 with Cr or Fe seed layers
+  source:
+    doi: null
+    title: Magnetic properties and potential applications of Fe16N2 (PhD dissertation, University of Minnesota; hdl 11299/219403)
+    first_author: Xudong Hang
+    year: 2021
+    url: https://conservancy.umn.edu/server/api/core/bitstreams/54709037-1164-4fa4-9df4-d968fe211207/content
+    evidence: full_text
+    locator: Ch. 5, Introduction and Conclusions
+  quote: Considering the large Ms of Fe16 N2 , it is expected that Fe16 N2 thin films, including (001) textured ones, have an in-plane easy axis dominated by the shape anisotropy.
+  note: 'Consequence for route EP: a c-normal single-variant film still cannot show remanence along c; film texture must be judged from diffraction, not from out-of-plane Mr/Ms.'
+- id: fe16n2_k1_kita2017
+  phase: α''-Fe16N2
+  quantity: K1
+  value: 0.69
+  unit: MJ/m3
+  uncertainty: null
+  conditions: spherical core-shell alpha''-Fe16N2 nanoparticles, rotational hysteresis loss from torque measurements
+  source:
+    doi: 10.1063/1.4974276
+    title: Magnetic anisotropy in spherical Fe16N2 core–shell nanoparticles determined by torque measurements
+    first_author: Eiji Kita
+    year: 2017
+    url: https://doaj.org/api/articles/c2e2508d9cae4405b51c8fd1290943ff
+    evidence: abstract
+    locator: abstract
+  quote: The saturation magnetization and the anisotropy energy were found to be 234 emu/cc and 6.9 Merg/cm3, respectively.
+  note: '6.9 Merg/cm3 = 0.69 MJ/m3 (converted here). The quoted Ms unit ''emu/cc'' looks inconsistent with 234 (typical emu/g); recorded verbatim. Same abstract: thin-film shape anisotropy 2piMs^2 = 20 Merg/cm3 exceeds this K, so no perpendicular state expected in films.'
+- id: fe16n2_single_variant_particles_kartikowati
+  phase: α''-Fe16N2
+  quantity: single_variant_particles
+  value: dispersed single-domain alpha''-Fe16N2/Al2O3 NPs (~47-50 nm) rotate as bodies (Brownian) in a liquid film so that c aligns with the field; agglomerated NPs cannot rotate (Neel rotation only)
+  unit: ''
+  uncertainty: null
+  conditions: bead-mill-dispersed NPs in toluene/epoxy, 0.6-1.2 T at room temperature, fixed by resin
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2 NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+    evidence: full_text
+    locator: Ch. 3, Sec. 3.3
+  quote: Due to the rotation of the particle (Brownian rotation) during the alignment process, the c-axis and the magnetic moment of the particles were aligned in the same direction along the magnetic field. In other words, the alignment of the c-axis represents the alignment of the magnetic moment.
+  note: 'Dissertation without DOI. Chapter 2 = Suhendi et al., Adv. Powder Technol. 26 (2015) 1618-1623; chapter 3 = Kartikowati et al., Nanoscale 8 (2016) 2648-2655, doi:10.1039/c5nr07859h (only abstract accessible); chapter 4 = Kartikowati et al., Nanotechnology 27 (2016) 025601 (journal per the dissertation''s chapter map). Particles: single-domain core-shell alpha''''-Fe16N2/Al2O3, ~47-50 nm, made by NH3 nitriding (145 C) of plasma-made alpha-Fe/Al2O3, bead-mill dispersed in toluene; films ~1 um on Si, fixed by resin (cyanoacrylate in ch. 2, epoxy in ch. 3). The dissertation calls the particles ''single domain''; it does not show by diffraction that each particle is a single c-variant.'
+- id: fe16n2_stress_effect_jiang2016a
+  phase: α''-Fe16N2
+  quantity: stress_effect_on_formation
+  value: 'proposed: uniaxial stress along a cube axis makes the elongated (001) octahedral sublattice the lowest-energy site for N, biasing the c-axis toward the stress axis'
+  unit: ''
+  conditions: α'→α'' post-anneal of quenched Fe–N under uniaxial tension
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+    evidence: full_text
+    locator: Sec. I (Introduction), Fig. 1
+  quote: During nitriding process, nitrogen atoms are introduced in the octahedral interstices in a random manner with equal possibility on every orientation. With the assistance of stress along c-axis, as shown in FIG.1, (001) axis would be turned into the most preferred position for nitrogen atoms because the elongated axis corresponds to the lowest energy state.
+  note: Mechanism as proposed by the authors (schematic Fig. 1); the paper reports no pole figure, variant fraction or c-axis texture of the product. Stress here acts during the α'→α'' ordering anneal, not during the γ→α' martensitic transformation.
+- id: fe16n2_stress_effect_jiang2016b
+  phase: α''-Fe16N2
+  quantity: stress_effect_on_formation
+  value: tensile strain during the 150 °C anneal increased the α'' volume ratio from 22.4 % (unstrained) to 37 % (0.4 % strain)
+  unit: vol%
+  conditions: FeN 'wires' (0.2-0.3 mm2 x 10 mm) annealed at 150 °C, 40 h, tensile strain 0-0.4 %; phase ratio by XPS
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+    evidence: full_text
+    locator: Sec. III, Fig. 5(a)
+  quote: The 150 °C annealing temperature shows the most promise because the Fe16N2 volume ratio continues to increase as the strain rises. With up to a 0.4% strain, the α˝-Fe16N2 phase ratio increases from 22.4% to 37%.
+  note: Phase fraction (φ) effect of stress, not an orientation measurement. XPS-based volume ratios with fitting-dependent error bars (Fig. 5a).
+- id: fe16n2_stress_effect_jiang2016c
+  phase: α''-Fe16N2
+  quantity: stress_effect_on_formation
+  value: tensile strain along the wire claimed to make interstices elongated along the wire axis the preferred N sites during α'→α''
+  unit: ''
+  conditions: tension along wire length during α'→α'' anneal (120-180 °C)
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+    evidence: full_text
+    locator: Sec. III (Strained wire method)
+  quote: The applied strain induces an elongated lattice along the wire’s length orientation, which becomes nitrogen’s most preferred position among all possible octahedral interstices. As a result, more α΄-Fe8N phase will be transformed into α”-Fe16N2 phase.
+  note: Claim; the authors also state 'Further characterizations on the sample’s structure and orientation need to be investigated' (Sec. IV), i.e. no measured texture.
+- id: fe16n2_t_formation_jiang2016
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 423
+  unit: K
+  conditions: α'→α'' ordering anneal under tension (strained-wire method); 120, 150 and 180 °C were tried, 150 °C chosen
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+    evidence: full_text
+    locator: Sec. IV
+  quote: 'SEM characterizations (Type: JSM-6610LV) on the samples with different strains at 150 °C annealing temperature for 40 hrs are investigated'
+  note: '150 °C for 40 h is the anneal used for all magnetic results in the paper (Sec. III: ''The following magnetic results are all based on the samples produced with the 150 °C annealing temperature'').'
+- id: fe16n2_t_stab_jiang2016_stress
+  phase: α''-Fe16N2
+  quantity: T_stab
+  value: partial decomposition at 453 K (180 °C) under 0.4 % tensile strain (40 h anneal)
+  unit: K
+  conditions: FeN wire under 0.4 % tensile strain, 180 °C
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+    evidence: full_text
+    locator: Sec. III, Fig. 5(a)
+  quote: The martensite fraction at 180 °C has a reverse tendency with larger applied strain. Its phase volume is reduced to 15.6% under a 0.4% strain, showing that parts of the phase decompose at this situation.
+  note: 'Stress lowers the practical stability limit: at 180 °C the α'''' fraction fell to 15.6 % under 0.4 % strain.'
+- id: fe16n2_formation_path_jiang2016
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: bulk Fe + urea melted in cold crucible → 660 °C 4 h (γ) → water quench (α'-Fe8N + γ'-Fe4N + γ) → flattened and cut into bars ('wires') → strained anneal α'→α''
+  unit: ''
+  conditions: top-down bulk route of the strained-wire magnet
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+    evidence: full_text
+    locator: Sec. II
+  quote: First, the bulk iron was melted in the cold crucible system with a prefixed percentage of urea. Urea was chemically decomposed to generate nitrogen atoms. In the second step, the prepared FeN mixture was removed from the cold crucible system and heated to 660 °C for 4 hrs and then quenched with water at room temperature. After that, the quenched sample was flattened and cut into square, column wires, 0.2-0.3 mm2 and 10 mm long.
+  note: The 'wires' are cut from a flattened cast-and-quenched piece; they are not drawn wire.
+- id: fe16n2_other_parent_texture_jiang2016
+  phase: α''-Fe16N2
+  quantity: other
+  value: 'parent texture of strained-wire samples: cast (cold-crucible) Fe–N with XRD intensity enhanced by a unidirectional thermal gradient; no pole figure reported'
+  unit: ''
+  conditions: FeN after cold-crucible melting, before quench
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+    evidence: full_text
+    locator: Sec. II, Fig. 3
+  quote: Compared with the pure iron sample, the FeN sample’s crystalline intensity after cold-crucible melting is enhanced by a unidirectional thermal gradient in the crucible during melting and a quick turn-off effect.
+  note: Parent texture for the SA (strained-wire) route; qualitative only. Drawing texture does not apply (bars cut from a flattened casting).
+- id: fe16n2_structure_alpha1_jiang2016
+  phase: α'-Fe8N
+  quantity: structure
+  value: bct martensite of the austenite composition; N on octahedral holes at c-edge midpoints and C-face centres (one sublattice, c-axis fixed by the martensitic transformation)
+  unit: ''
+  conditions: N-martensite from quenched N-austenite
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+    evidence: review
+    locator: Sec. II
+  quote: So, a body center tetragonal (bct) martensite phase (α΄ phase) of the same composition with austenite phase is generated, and N atoms occupy one in ten of the holes at the midpoints of the c edges and the centers of the C faces3.
+  note: 'Restatement of Jack (1951) in the strained-wire paper (evidence: review). Implies that in α'' formed from γ the N already sits on the c-type sublattice, so α''→α'''' ordering keeps the martensite c-axis.'
+- id: fe16n2_other_youngs_modulus_jiang2016
+  phase: α''-Fe16N2
+  quantity: other
+  value: 132
+  unit: GPa
+  uncertainty: 3
+  conditions: prepared FeN wire material (α''/α'/γ'/α-Fe mixture)
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+    evidence: full_text
+    locator: Sec. III (details in supplementary material)
+  quote: Young’s modulus was measured to be 132±3 GPa and the hardness was measured to be 2.4±0.4 GPa.
+  note: Young's modulus of the strained material; converts imposed strain (0.15-0.4 %) to stress if elastic (≈0.2-0.5 GPa, estimate). The paper says the strain was applied in the plastic region.
+- id: fe16n2_field_effect_jiang2014a
+  phase: α''-Fe16N2
+  quantity: field_effect_on_formation
+  value: 9 T during α'→α'' anneal (150 °C, 20 h) raised the transformed fraction of α' from 35 % (0 T) to 78 %
+  unit: ''
+  conditions: FeN bulk rod 10 mm x 1 mm x 1 mm; water quench + 20 h at liquid-N2 temperature; anneal 150 °C, 20 h, 9 T along rod length
+  source:
+    doi: 10.1063/1.4868493
+    title: 9 T high magnetic field annealing effects on FeN bulk sample
+    first_author: Yanfeng Jiang
+    year: 2014
+    url: https://dept.aem.umn.edu/~james/research/Publications_Files/PDF/1.4868493.pdf
+    evidence: full_text
+    locator: abstract; Table I
+  quote: It was found by X-ray Diffraction measurement that the volume ratio of Fe16N2 phase was increased up to 22%, which corresponds to an increase in the amount of transformation from α′ → α″ up to 78%.
+  note: 'Quote taken from the abstract (Crossref/OpenAlex) because the PDF text layer renders α′ → α″ as ''a0 ! a00''. Table I: normal anneal 10 % Fe16N2 + 18 % Fe8N; 9 T anneal 22 % Fe16N2 + 6 % Fe8N (of 28 % α'' after quench). Shows a field effect on the amount transformed (φ), not a measured variant selection.'
+- id: fe16n2_field_effect_jiang2014b
+  phase: α''-Fe16N2
+  quantity: field_effect_on_formation
+  value: 'authors'' interpretation: field along the FeN (002) direction lowers the free energy of the elongated c-axis, favouring (002)/(004)-oriented α'''''
+  unit: ''
+  conditions: 9 T, 150 °C, 20 h; α' and α'' ferromagnetic at 150 °C
+  source:
+    doi: 10.1063/1.4868493
+    title: 9 T high magnetic field annealing effects on FeN bulk sample
+    first_author: Yanfeng Jiang
+    year: 2014
+    url: https://dept.aem.umn.edu/~james/research/Publications_Files/PDF/1.4868493.pdf
+    evidence: full_text
+    locator: Sec. III
+  quote: Since the magnetic field is aligned with the FeN (002) orientation, Gibbs free energy on the prolonged c axis is decreased and thus is helpful for Fe16N2 (004) and Fe16N2 (002) phase transformation.
+  note: 'Interpretation only. Reader''s caution: XRD was taken with the incident beam perpendicular to the rod side plane and the field lay along the rod length (in-plane), so the reported increase of Fe16N2 (002)/(004) intensities (Table II) refers to c-axes along the side-plane normal, i.e. not along the field; it is not direct evidence of c-axis selection parallel to the field.'
+- id: fe16n2_field_effect_jiang2014c
+  phase: α''-Fe16N2
+  quantity: field_effect_on_formation
+  value: 9
+  unit: T
+  conditions: applied during the α'→α'' post-anneal, 150 °C, 20 h, field parallel to the rod length; FeN bulk rod after water quench + 20 h liquid-N2 cooling
+  source:
+    doi: 10.1063/1.4868493
+    title: 9 T high magnetic field annealing effects on FeN bulk sample
+    first_author: Yanfeng Jiang
+    year: 2014
+    url: https://dept.aem.umn.edu/~james/research/Publications_Files/PDF/1.4868493.pdf
+    evidence: full_text
+    locator: Sec. II
+  quote: "Then, a post-annealing process at 150 \x02 C with 9 T magnetic field was conducted for 20 h. Magnetic field was applied in parallel with the wire’s length direction (inplane orientation) in order to minimize the eddy current and the demagnetization factor."
+  note: Field strength and geometry of the field-annealing experiment. Degree sign lost in the PDF text layer ('150 C' = 150 °C).
+- id: fe16n2_formation_path_ordering_jiang2014
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: α'→α'' is ordering of N that already sits (disordered) on the octahedral sites along the martensite c axis, i.e. the c-axis is inherited from α'
+  unit: ''
+  conditions: tempering/annealing of N-martensite (150 °C here)
+  source:
+    doi: 10.1063/1.4868493
+    title: 9 T high magnetic field annealing effects on FeN bulk sample
+    first_author: Yanfeng Jiang
+    year: 2014
+    url: https://dept.aem.umn.edu/~james/research/Publications_Files/PDF/1.4868493.pdf
+    evidence: full_text
+    locator: Sec. III
+  quote: At the beginning, for a0 phase, nitrogen atoms are arranged in a disordered manner on octahedral sites along the c axis. Its phase transformation into a00 corresponds to nitrogen reassembled in an ordered way.
+  note: '''a0'' and ''a00'' are the PDF text layer''s rendering of α′ and α″ (kept verbatim). The same section states that strain energy accumulated in the quench hinders α''→α'''' (''This accumulation will hinder the following a0 ! a00 transformation'').'
+- id: fe16n2_other_parent_texture_jiang2014
+  phase: α'-Fe8N
+  quantity: other
+  value: 'parent (FeN rod) shows strongest (110) line in XRD from the rod side plane: possible (110) preferred orientation'
+  unit: ''
+  conditions: FeN bulk rod (cold-crucible route) before/after quench, θ-2θ XRD on the side plane
+  source:
+    doi: 10.1063/1.4868493
+    title: 9 T high magnetic field annealing effects on FeN bulk sample
+    first_author: Yanfeng Jiang
+    year: 2014
+    url: https://dept.aem.umn.edu/~james/research/Publications_Files/PDF/1.4868493.pdf
+    evidence: full_text
+    locator: Sec. III, Fig. 1
+  quote: X-ray test configuration was that the incident X-ray is perpendicular to the rod’s side plane. The strongest diffraction line is (110), which implies that the FeN bulk sample might possess (110) preferred texture orientation.
+  note: Only a θ-2θ intensity argument (the authors write 'might possess'); no pole figure. Relevant to the parent texture of the strained-wire/field-annealed rods.
+- id: fe16n2_formation_path_jiang2014
+  phase: α'-Fe8N
+  quantity: formation_path
+  value: γ-Fe(N) → α'-Fe8N by water quench plus 20 h at liquid-nitrogen temperature (sub-zero treatment)
+  unit: ''
+  conditions: FeN bulk rod, cold-crucible route
+  source:
+    doi: 10.1063/1.4868493
+    title: 9 T high magnetic field annealing effects on FeN bulk sample
+    first_author: Yanfeng Jiang
+    year: 2014
+    url: https://dept.aem.umn.edu/~james/research/Publications_Files/PDF/1.4868493.pdf
+    evidence: full_text
+    locator: Sec. II
+  quote: After the bulk pure iron was mixed with nitrogen and cut into the FeN bulk rod,22 it was water quenched and cooled at liquid nitrogen temperature for 20 h to aid the FeN transformation from austenite phase into martensite phase.
+  note: Sub-zero step needed because Ms of N-austenite can lie below room temperature (see Koyano 2003 record).
+- id: fe16n2_phase_fraction_jiang2014
+  phase: α'-Fe8N
+  quantity: phase_fraction_limit
+  value: α'-Fe8N 28 vol% after quench (rest α-Fe 54 %, γ'-Fe4N 12 %, Fe3O4 6 %)
+  unit: vol%
+  conditions: FeN bulk rod, water quench + liquid-N2 20 h; XRD peak-area estimate
+  source:
+    doi: 10.1063/1.4868493
+    title: 9 T high magnetic field annealing effects on FeN bulk sample
+    first_author: Yanfeng Jiang
+    year: 2014
+    url: https://dept.aem.umn.edu/~james/research/Publications_Files/PDF/1.4868493.pdf
+    evidence: full_text
+    locator: Sec. III, Fig. 1
+  quote: As shown in Fig. 1, the Fe8N phase appeared after quenching, with 28% volume ratio calculated with Fe8N(202) peak. Additionally, the oxide line Fe3O4(121) also appeared with 6%, which could come from the preparation stage. The Fe volume ratio was estimated to be 54%
+  note: 'The sentence continues: the rest (≈12 %) is Fe4N (a symbol before 12 % is not rendered in the PDF text layer). Upper bound of α'''' obtainable from this parent by ordering is the α'' fraction (28 %); 22 % α'''' reached with 9 T (Table I).'
+- id: fe16n2_tc_alpha1_koyano2003
+  phase: α'-Fe8N
+  quantity: Tc
+  value: '>400'
+  unit: K
+  conditions: N-martensite from γ-Fe–9.6 at.% N
+  source:
+    doi: 10.2320/matertrans.44.2541
+    title: Isothermal Martensitic Transformation of γ-FeN in a Magnetic Field
+    first_author: Tamotsu Koyano
+    year: 2003
+    url: https://www.jstage.jst.go.jp/article/matertrans/44/12/44_12_2541/_pdf
+    evidence: full_text
+    locator: Sec. 4 (Discussion), p. 2542
+  quote: Here, the author stresses that the Curie temperature of the α′ phase is well above 400 K and γ-FeN is paramagnetic at 1.7 K.
+  note: Greek letters are in a non-Unicode symbol font in the PDF; decoded from glyph names (/C13 = γ, /C110 = α′, /C11 = α) in the pypdf text. Lower bound only. α' is ferromagnetic at its own formation temperature (170-230 K) and at α'' ordering temperatures (393-473 K) only if Tc exceeds those; this source bounds Tc > 400 K.
+- id: fe16n2_other_magstate_koyano2003
+  phase: γ-Fe(N)
+  quantity: other
+  value: γ-Fe(N) paramagnetic; α'-Fe8N ferromagnetic
+  unit: ''
+  conditions: γ-Fe–9.6 at.% N and its martensite
+  source:
+    doi: 10.2320/matertrans.44.2541
+    title: Isothermal Martensitic Transformation of γ-FeN in a Magnetic Field
+    first_author: Tamotsu Koyano
+    year: 2003
+    url: https://www.jstage.jst.go.jp/article/matertrans/44/12/44_12_2541/_pdf
+    evidence: full_text
+    locator: Sec. 1 (Introduction)
+  quote: Because magnetic character of γ and α′ phases are paramagnetic and ferromagnetic, respectively, spontaneous magnetization of samples is proportional to the f .
+  note: 'Greek letters are in a non-Unicode symbol font in the PDF; decoded from glyph names (/C13 = γ, /C110 = α′, /C11 = α) in the pypdf text. Magnetic state of the parent: a field cannot act on γ through ferromagnetic anisotropy; it acts on the γ→α'' step through the magnetization of the product α''.'
+- id: fe16n2_t_formation_alpha1_koyano2003
+  phase: α'-Fe8N
+  quantity: T_formation
+  value: 170-200
+  unit: K
+  conditions: martensite start Ms of γ-Fe(N) with 9.6 at.% N (lattice parameter 0.3646-0.3647 nm), 10 μm foils nitrided at 923 K and water-quenched, DSC at 10 K/min
+  source:
+    doi: 10.2320/matertrans.44.2541
+    title: Isothermal Martensitic Transformation of γ-FeN in a Magnetic Field
+    first_author: Tamotsu Koyano
+    year: 2003
+    url: https://www.jstage.jst.go.jp/article/matertrans/44/12/44_12_2541/_pdf
+    evidence: full_text
+    locator: Sec. 3 (Results), Fig. 1 (DSC)
+  quote: The author admits the Ms thus determined tends to scatter for sample by sample ranging 170 K < Ms < 200 K, but is in agreement with the data in Ref. 9).
+  note: 'Greek letters are in a non-Unicode symbol font in the PDF; decoded from glyph names (/C13 = γ, /C110 = α′, /C11 = α) in the pypdf text. Ms below room temperature: a water quench leaves γ, sub-zero cooling is needed for α''. The DSC peaks are attributed by the author to variant formation.'
+- id: fe16n2_field_effect_gamma_koyano2003
+  phase: α'-Fe8N
+  quantity: field_effect_on_formation
+  value: magnetic field drives isothermal γ→α' above Ms; saturated martensite fraction proportional to H; no variant selection reported
+  unit: ''
+  conditions: γ-Fe–9.6 at.% N foils, isothermal at 231 K and above Ms, fields up to 4×10^5 A/m and higher
+  source:
+    doi: 10.2320/matertrans.44.2541
+    title: Isothermal Martensitic Transformation of γ-FeN in a Magnetic Field
+    first_author: Tamotsu Koyano
+    year: 2003
+    url: https://www.jstage.jst.go.jp/article/matertrans/44/12/44_12_2541/_pdf
+    evidence: full_text
+    locator: abstract
+  quote: Isothermal martensitic transformation of the γ-FeN was found to occur in magnetic ﬁeld at temperatures above the Ms. Molar fraction of martensite monotonically increases with increasing isothermal aging time, and saturates at a value proportional to applied magnetic ﬁeld.
+  note: Greek letters are in a non-Unicode symbol font in the PDF; decoded from glyph names (/C13 = γ, /C110 = α′, /C11 = α) in the pypdf text. The author attributes the driving force to the magnetostatic energy of the ferromagnetic α′ phase (proportional to H). Amount effect only; orientation/variant selection by the field was not measured.
+- id: fe16n2_k1_alpha1_mehedi2018
+  phase: α'-Fe8N
+  quantity: K1
+  value: 0.46
+  unit: MJ/m3
+  conditions: α'-Fe8N martensite
+  source:
+    doi: null
+    title: Microstructural Engineering and Phase Transformations Study of α″-Fe16N2 for Rare-Earth-Free Permanent Magnets
+    first_author: Md Mehedi
+    year: 2018
+    url: https://conservancy.umn.edu/server/api/core/bitstreams/29531694-71af-45de-9b7e-5fc82553c4bf/content
+    evidence: review
+    locator: Ch. 7.4.1, p. 125-126
+  quote: αʹ-Fe8N and αʹ-Fe8C have magnetocrystalline anisotropy of 4.6×106 erg/cm3, and -2.1×106 erg/cm3, respectively [65,155,156].
+  note: Thesis (no DOI) quoting refs [65,155,156]; 4.6×10^6 erg/cm3 = 0.46 MJ/m3. The parent martensite is already uniaxial (easy axis [001]) before ordering.
+- id: fe16n2_easy_axis_alpha1_mehedi2018
+  phase: α'-Fe8N
+  quantity: easy_axis
+  value: '[001] (c)'
+  unit: ''
+  conditions: α'-Fe8N martensite
+  source:
+    doi: null
+    title: Microstructural Engineering and Phase Transformations Study of α″-Fe16N2 for Rare-Earth-Free Permanent Magnets
+    first_author: Md Mehedi
+    year: 2018
+    url: https://conservancy.umn.edu/server/api/core/bitstreams/29531694-71af-45de-9b7e-5fc82553c4bf/content
+    evidence: review
+    locator: Ch. 7.4.1, p. 126
+  quote: The easy axis of magnetization of the αʹ- Fe8N and αʹ-Fe8C is along [001] and [100], respectively.
+  note: 'Thesis quoting refs [65,155,156] (evidence: review).'
+- id: fe16n2_other_wiretexture_zhao2014
+  phase: α-Fe
+  quantity: other
+  value: 'cold-drawn bcc Fe (ferrite) wire: <110> fibre parallel to the drawing direction (perfect at centre, quasi-<110> at sub-surface)'
+  unit: ''
+  conditions: ferrite in continuously cold-drawn pearlitic steel wire, EBSD/ODF
+  source:
+    doi: 10.1007/s11665-014-1098-1
+    title: Crystallographic Texture Difference Between Center and Sub-Surface of Thin Cold-Drawn Pearlitic Steel Wires
+    first_author: Tian-Zhang Zhao
+    year: 2014
+    url: https://link.springer.com/article/10.1007/s11665-014-1098-1
+    evidence: abstract
+    locator: abstract
+  quote: A perfect 〈110〉 fiber texture parallel to drawing direction develops gradually with drawing strain increasing at the wire center, while at the sub-surface, a quasi 〈110〉 fiber texture with the 〈111〉 orientation nearly parallel to the circumferential direction is found.
+  note: 'Drawing texture of bcc Fe: with a <110> fibre along the wire, two of the three <100> axes lie at 45° and one at 90° to the wire axis (geometry).'
+- id: fe16n2_other_wiretexture_guo2013
+  phase: α-Fe
+  quantity: other
+  value: 'cold-drawn bcc Fe (ferrite) wire: <110> fibre texture develops with drawing strain'
+  unit: ''
+  conditions: ferrite matrix in fully pearlitic steel wire, wire drawing
+  source:
+    doi: 10.1007/s11431-013-5184-7
+    title: Microstructure and texture evolution in fully pearlitic steel during wire drawing
+    first_author: Ning Guo
+    year: 2013
+    url: https://link.springer.com/article/10.1007/s11431-013-5184-7
+    evidence: abstract
+    locator: abstract
+  quote: The study revealed that a fiber structure of the pearlite morphology and a <110> fiber texture of the ferrite matrix begin to take shape and develop gradually with increasing strain.
+  note: Second source for the <110> drawing fibre of bcc Fe.
+- id: fe16n2_stress_effect_wangpatent2017
+  phase: α''-Fe16N2
+  quantity: stress_effect_on_formation
+  value: 'patent route: strain the iron workpiece along a <001> axis of its crystals (0.1-7 % strain) and nitride/anneal so that the bct c-axis forms along the strain'
+  unit: ''
+  conditions: iron wire/sheet strained along <001>, then nitrided and annealed
+  source:
+    doi: null
+    title: Iron nitride permanent magnet and technique for forming iron nitride permanent magnet (US 9,715,957 B2)
+    first_author: Jian-Ping Wang
+    year: 2017
+    url: https://patents.google.com/patent/US9715957B2/en
+    evidence: full_text
+    locator: Detailed description (FIG. 12 technique)
+  quote: includes straining iron workpiece 128 along a direction substantially parallel (e.g., parallel or nearly parallel) to a ⁇ 001> axis of at least one iron crystal in the iron workpiece 128 ( 112 ).
+  note: US patent (not peer-reviewed); no DOI. Google Patents text renders '<' as '⁇' (kept verbatim). The design rule is stress along bcc <001>, which a <110>-fibre drawn wire does not provide.
+- id: fe16n2_other_texturedsheet_wangpatent2017
+  phase: α-Fe
+  quantity: other
+  value: patent proposes textured iron sheets/ribbons (e.g. by fast belt casting) with (100) or (110) sheet texture as parents
+  unit: ''
+  conditions: textured Fe sheet parent for N implantation/nitriding
+  source:
+    doi: null
+    title: Iron nitride permanent magnet and technique for forming iron nitride permanent magnet (US 9,715,957 B2)
+    first_author: Jian-Ping Wang
+    year: 2017
+    url: https://patents.google.com/patent/US9715957B2/en
+    evidence: full_text
+    locator: Detailed description (fast belt casting, FIG. 9-10)
+  quote: Each of textured iron sheets 74 may include, for example, a (100) or (110) crystal texture.
+  note: US patent (not peer-reviewed); no DOI. Proposed parent texture; no measured texture given in this passage.
+- id: fe16n2_formation_path_nironpatent2023
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: 'direct nitriding of bcc Fe nanoparticles: γ-Fe2O3 nanoparticles reduced in H2 (≈340 °C, 17 h) → α-Fe → NH3 at ≈145 °C, 19 h → α''''-Fe16N2 (+ α-Fe) → passivation'
+  unit: ''
+  conditions: agglomerated nanoparticle powder (25-53 μm agglomerate sieve fraction), rotary tube furnace
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    url: https://patents.google.com/patent/US11830644B2/en
+    evidence: full_text
+    locator: Example I
+  quote: The iron nitride nanoparticles were formed by first by first reducing the nanoparticles into elemental iron Fe by annealing at a temperature of about 340° C. for about 17 hours in hydrogen gas flowing at about 200 standard cubic centimeters per minute (sccm). The Fe nanoparticles were then transformed into iron nitride by annealing at a temperature of about 145° C. for 19 hours in ammonia gas flowing at about 60 sccm.
+  note: 'US patent (not peer-reviewed); no DOI. Niron''s published route: no γ/martensite step; α'''' forms from bcc α-Fe by low-temperature nitriding (XRD of the products shows α''''-Fe16N2 + α-Fe).'
+- id: fe16n2_t_formation_nironpatent2023
+  phase: α''-Fe16N2
+  quantity: T_formation
+  value: 418
+  unit: K
+  conditions: NH3 nitriding of H2-reduced Fe nanoparticles, 19 h
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    url: https://patents.google.com/patent/US11830644B2/en
+    evidence: full_text
+    locator: Example I
+  quote: The Fe nanoparticles were then transformed into iron nitride by annealing at a temperature of about 145° C. for 19 hours in ammonia gas flowing at about 60 sccm.
+  note: US patent (not peer-reviewed); no DOI. Formation (nitriding) temperature of α'' directly from α-Fe; the general description gives 120-250 °C.
+- id: fe16n2_formation_path_kinetics_nironpatent2023
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: direct gas nitriding below 200 °C needs high-surface-area precursors (nanoparticles, nanoporous foams) because of slow kinetics
+  unit: ''
+  conditions: low-temperature NH3 nitriding of Fe
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    url: https://patents.google.com/patent/US11830644B2/en
+    evidence: full_text
+    locator: Detailed description
+  quote: Iron nitride nanoparticles may be produced from iron-based precursor nanoparticles via a gas nitriding process that takes place at low temperatures (for example, less than 200° C.). This process may incorporate ammonia gas to transform the precursor nanoparticles directly into an iron nitride nanoparticle that contains the ⁇ ′′-Fe 16 N 2 phase. the low temperature range at which this nitriding process can proceed may require an iron-based precursor with high specific surface area (such as nanoparticles or nanoporous foams) because of slow reaction kinetics.
+  note: US patent (not peer-reviewed); no DOI. Google Patents text renders '<' as '⁇' (kept verbatim). Limits the direct-nitriding route to fine particles, i.e. to powder routes needing a separate alignment (rotation) step.
+- id: fe16n2_other_rotation_nironpatent2023
+  phase: α''-Fe16N2
+  quantity: other
+  value: agglomeration of nitrided nanoparticles blocks free-body rotation in an alignment field; deagglomeration is required
+  unit: ''
+  conditions: α''-Fe16N2 nanoparticle agglomerates (porous, up to hundreds of μm)
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    url: https://patents.google.com/patent/US11830644B2/en
+    evidence: full_text
+    locator: Detailed description
+  quote: It is thus difficult to deagglomerate the nanoparticles to the extent needed to provide the individual nanoparticles the ability to rotate in response to an externally applied alignment force.
+  note: US patent (not peer-reviewed); no DOI. Mobility prerequisite of the free-body rotation operator R; the patent's comparative sample without deagglomeration showed no alignment (see sealed outcomes).
+- id: fe16n2_other_xrdrandom_nironpatent2023
+  phase: α''-Fe16N2
+  quantity: other
+  value: reference I(004)/I(202) of α''-Fe16N2 for randomly oriented nanoparticles = 0.07
+  unit: ''
+  conditions: XRD, Cu radiation, integrated intensities
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    url: https://patents.google.com/patent/US11830644B2/en
+    evidence: full_text
+    locator: Examples, Table 3 discussion
+  quote: The relative intensity of the (004) peak for a randomly oriented sample of iron nitride nanoparticles would be 0.07.
+  note: US patent (not peer-reviewed); no DOI. Random-powder reference needed to turn the patent's (004)/(202) ratios into a texture measure.
+- id: fe16n2_tc_dirba2025
+  phase: α''-Fe16N2
+  quantity: Tc
+  value: 634
+  unit: K
+  conditions: lab-scale pressed bulk sample from α''-Fe16N2 nanoparticles
+  source:
+    doi: 10.48505/nims.5649
+    title: 'Iron nitride Fe16N2: intrinsic properties, synthesis, stability and bulk magnets'
+    first_author: Imants Dirba
+    year: 2025
+    url: https://mdr.nims.go.jp/filesets/6fb5702a-12bb-4239-ab97-1650fd3803a0/download
+    evidence: full_text
+    locator: panel 'Lab-scale production of bulk α′′-Fe16N2 magnets'
+  quote: Curie TemperatureTc = 634 K
+  note: Conference poster (CC-BY; DataCite DOI, not in Crossref). Measured on a sample that decomposes from ≈460 K (same poster), so this is not a clean Tc of α''; it still exceeds the α'' formation temperatures (393-473 K).
+- id: fe16n2_formation_path_fenix2021
+  phase: α''-Fe16N2
+  quantity: formation_path
+  value: 'three-step powder route after Jack: nitride + quench α-Fe(M) → γ-(Fe,M):N; cryo-deformation γ → α'' martensite; anneal α'' → α'''''
+  unit: ''
+  conditions: Fe(M) powder nitrided in a fluidized-bed reactor (planned), then cryo-deformed and annealed
+  source:
+    doi: null
+    title: 'Advanced Manufacturing of Alpha Double Prime Iron Nitride (ADPIN): An Innovative Rare Earth Element (REE) Free Ultra-High Performance Permanent Magnet for Clean Energy Applications (DOE final technical report DE-EE0008306; OSTI 1866484)'
+    first_author: David Matthiesen
+    year: 2021
+    url: https://www.osti.gov/servlets/purl/1866484
+    evidence: full_text
+    locator: Sec. 2 (Introduction), p. 8
+  quote: 'The technology was a three step process based on the pioneering work of Jack [2]: Step 1) nitriding & quench to transform the initial α-Fe(M) phase to γ-(Fe, M): N phase; Step 2) cryo-deformation to transform the γ-(Fe,M):N phase to α’-(Fe,M)N martensite phase; and Step 3) annealing to transform the α’-(Fe,M)N martensite phase to α”-(Fe,M)16N2 phase (alpha double prime iron nitride, ADPIN).'
+  note: DOE final technical report of FeNix Magnetics (no DOI; OSTI ID 1866484). Greek letters decoded from Symbol-font characters in the pypdf text layer. Deformation-induced γ→α' is a point where stress could bias martensite variants; the report gives no orientation data. The company ceased operation; nitrogen uptake was not verified (XRD unavailable).
+- id: fe16n2_other_cryomill_fenix2021
+  phase: α'-Fe8N
+  quantity: other
+  value: cryomilling used to transform γ-(Fe,M):N to α' martensite rendered the powder amorphous
+  unit: ''
+  conditions: cryomilled nitrided Fe(M) powder
+  source:
+    doi: null
+    title: 'Advanced Manufacturing of Alpha Double Prime Iron Nitride (ADPIN): An Innovative Rare Earth Element (REE) Free Ultra-High Performance Permanent Magnet for Clean Energy Applications (DOE final technical report DE-EE0008306; OSTI 1866484)'
+    first_author: David Matthiesen
+    year: 2021
+    url: https://www.osti.gov/servlets/purl/1866484
+    evidence: full_text
+    locator: Table 5 (task summary), p. 28
+  quote: Cryomill the output of the GEN-2 FBR to transform the γ-(Fe,M):N phase to α’(Fe,M)8:N martensite phase 09/2020 03/2020 100 Complete but renders the powder amorphous therefore investigating other techniques
+  note: DOE final technical report of FeNix Magnetics (no DOI; OSTI ID 1866484). Greek letters decoded from Symbol-font characters in the pypdf text layer. Table cell text (task 5.0; dates '09/2020 03/2020' and '100' % complete are table columns, kept verbatim). Severe deformation to induce martensite destroyed crystallinity, i.e. it removes any orientation relationship.
+- id: fe16n2_other_gamma_texture_koyano2000
+  phase: γ-Fe(N)
+  quantity: other
+  value: γ-Fe(N) foils made by nitriding rolled Fe foil carry a (110) preferred orientation (strongest γ(220) line)
+  unit: ''
+  conditions: 10 μm rolled Fe foils nitrided at 923 K, 12 h in NH3+H2, water-quenched; single-phase γ, 9.8 at.% N
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″ Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+    evidence: full_text
+    locator: Sec. 3.1, p. 924, Fig. 1(a)
+  quote: The strongest diffraction line is (220), and this indicates the γ phase foils possess (110) preferred orientation induced by a rolling process to produce the starting iron foils.
+  note: Quote transcribed by the collector from the rendered page image (scanned PDF without a usable text layer). Parent (S3, rolling) texture for the martensite route; the authors relate it to the Bain correspondence (110)γ → (100) or (010) α′ (recorded by fork B).
+- id: fe16n2_k1_core_shibata2006
+  phase: α''-Fe16N2
+  quantity: K1
+  value: 0.41
+  unit: MJ/m3
+  uncertainty: 0.04
+  conditions: ≈20 nm NH3-nitrided Fe16N2 particle cores (oxide-shelled), torque on field-aligned coating, room temperature
+  source:
+    doi: 10.3379/jmsjmag.30.501
+    title: Magnetic Moment and Anisotropy of Iron Nitride Fe16N2 Nanoparticles
+    first_author: K. Shibata
+    year: 2006
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/30/5/30_5_501/_pdf
+    evidence: full_text
+    locator: abstract (English)
+  quote: Under the assumption that only the ferromagnetic core is responsible for magnetization, the magnetization and the anisotropy constant of the core Fe16N2 powders were estimated as 196±10 emu/g of Fe and K Ufp1 =4.1 ± 0.4 x 106 erg/cm3, respectively.
+  note: 4.1×10^6 erg/cm3 = 0.41 MJ/m3 (conversion by collector); 'K Ufp1' is the text layer's rendering of the subscripted symbol. Effective core value from torque, limited by imperfect alignment per the authors; lower than film/powder values near 1 MJ/m3.

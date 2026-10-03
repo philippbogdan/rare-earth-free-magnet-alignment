@@ -49,3 +49,18 @@ def twin_rotation(LH, axis_hkl, angle_deg, axis_is_plane_normal=True):
 def axis_angle_deg(u, v):
     c = abs(np.dot(u, v)) / (np.linalg.norm(u) * np.linalg.norm(v))
     return float(np.degrees(np.arccos(np.clip(c, -1, 1))))
+
+
+def two_step_variants(LP, LI, LH, or_PI, or_IH, laue_P, laue_I, laue_H):
+    """Product variants of a two-step transformation P -> I -> H, with the index of the
+    intermediate variant each comes from. Returns (V (k,3,3) product->parent, groups (k,))."""
+    R1 = or_rotation(LP, LI, or_PI['plane_P'], or_PI['plane_H'], or_PI['dir_P'], or_PI['dir_H'])
+    V1 = variant_rotations(R1, laue_P, laue_I)
+    R2 = or_rotation(LI, LH, or_IH['plane_P'], or_IH['plane_H'], or_IH['dir_P'], or_IH['dir_H'])
+    V2 = variant_rotations(R2, laue_I, laue_H)
+    V, groups = [], []
+    for i, A in enumerate(V1):
+        for B in V2:
+            V.append(A @ B)
+            groups.append(i)
+    return np.array(V), np.array(groups)

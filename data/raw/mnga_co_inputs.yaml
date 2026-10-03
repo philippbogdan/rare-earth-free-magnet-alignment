@@ -1,0 +1,3268 @@
+# mnga_co inputs (visible). Topic: Mn-Ga hard phases and Co-rich rare-earth-free compounds.
+# Phases (names used in `phase`):
+#   L10-MnGa    L1_0 (AuCu-type, P4/mmm) Mn_xGa, x ~ 1-1.8 (Mn2Ga(r) / Mn3Ga2 in the Mn-Ga diagram)
+#   D022-Mn3Ga  D0_22 (Al3Ti-type, I4/mmm) Mn3-xGa, 0 <= x <= 1 (Mn3Ga ... Mn2Ga); composition in `conditions`
+#   D022-Mn3Ge  D0_22 tetragonal Mn3Ge (bulk metastable; parent hexagonal D0_19)
+#   Zr2Co11     hard Zr2Co11 phase (rhombohedral R32 polymorph carries the anisotropy), incl. Zr-Co-B, Zr-Co-Mo(-Si) alloys
+#   HfCo7       hard Hf-Co phase 'HfCo7' (orthorhombic; incl. Hf2Co11, Hf2Co11B, Co-Hf-B, Co-Hf-Zr-B alloys)
+# Conventions: temperatures in K (converted from C where needed, see note); Js = mu0*Ms in T (converted from
+# emu/cm3, kA/m or 4*pi*Ms in kG where needed, formula in note); K1 in MJ/m3 (1 Merg/cm3 = 0.1 MJ/m3);
+# lattice values in Angstrom as {a, b, c}. Quotes are verbatim; '...' joins verbatim fragments of the same source.
+# Values quoted from reviews carry evidence: review. Outcome data (remanence, Mr/Ms, texture) are NOT in this file.
+- id: mnga_l10_ms5k_lu2015
+  phase: L10-MnGa
+  quantity: Ms_mass
+  value: 92.0
+  unit: Am2/kg
+  conditions: bulk single-phase Mn1.15Ga, annealed 740 K, ice-water quenched; 5 K, max field 14 T
+  source:
+    doi: 10.1038/srep17086
+    title: Intrinsic magnetic properties of single-phase Mn1+xGa (0 < x < 1) alloys
+    first_author: Q. M. Lu
+    year: 2015
+    url: https://www.nature.com/articles/srep17086.pdf
+    evidence: full_text
+    locator: abstract; Table 2
+  quote: The saturation magnetization Ms, measured at 5 K, has a value of 92.0 emu/g for x = 0.15.
+  note: 5 K value, not 300 K. 1 emu/g = 1 Am2/kg. Table 2 gives 88.1 (Mn1.20Ga), 85.7 (Mn1.33Ga), 69.6 (Mn1.50Ga),
+    60.7 (Mn1.86Ga) emu/g at 5 K; Ms decreases with excess Mn (antiparallel Mn on Ga sites).
+- id: mnga_l10_ms5k_mn15_lu2015
+  phase: L10-MnGa
+  quantity: Ms_mass
+  value: 69.6
+  unit: Am2/kg
+  conditions: bulk single-phase Mn1.50Ga, annealed 885 K; 5 K, max field 14 T
+  source:
+    doi: 10.1038/srep17086
+    title: Intrinsic magnetic properties of single-phase Mn1+xGa (0 < x < 1) alloys
+    first_author: Q. M. Lu
+    year: 2015
+    url: https://www.nature.com/articles/srep17086.pdf
+    evidence: full_text
+    locator: 'Table 2 (row Mn1.50Ga: Ms emu/g / muB per f.u., Ha kOe, Tc K)'
+  quote: Table 2. Intrinsic magnetic properties of Mn1 + xGa alloys (Ms and Ha are measured at 5 K). ... Mn1.50Ga
+    69.6/1.90 80 697
+  note: 5 K value. Same row gives 1.90 muB/f.u., Ha = 80 kOe (5 K), Tc = 697 K.
+- id: mnga_l10_msrt_lu2014
+  phase: L10-MnGa
+  quantity: Ms_mass
+  value: 50.81
+  unit: Am2/kg
+  conditions: bulk single-phase Mn3Ga2 (= Mn1.5Ga, P4/mmm), annealed 773 K 24 h; room temperature
+  source:
+    doi: 10.1063/1.4868080
+    title: Phase structure and magnetic properties of Mn3Ga2 alloy
+    first_author: Q. M. Lu
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1063/1.4868080
+    evidence: abstract
+    locator: abstract
+  quote: The hysteresis curve of its easy axis for this single phase alloy shows that the room temperature coercivity
+    and saturation magnetization are 4.18 kOe and 50.81 emu/g, respectively.
+  note: Room temperature. Maximum field and sample form (oriented or not) not stated in the abstract; saturation
+    not demonstrated.
+- id: mnga_l10_js_huh2013
+  phase: L10-MnGa
+  quantity: Js
+  value: 0.78
+  unit: T
+  uncertainty: 0.05
+  conditions: melt-spun + heat-treated nanostructured Mn1.2Ga ribbons (L10); measurement temperature not stated
+    in abstract
+  source:
+    doi: 10.1063/1.4812561
+    title: Magnetism and electron transport of MnyGa (1 < y < 2) nanostructures
+    first_author: Y. Huh
+    year: 2013
+    url: https://api.crossref.org/works/10.1063/1.4812561
+    evidence: abstract
+    locator: abstract
+  quote: We have found a maximum saturation magnetization of 621 emu/cm3 in Mn1.2Ga which decreases monotonically
+    to 300 emu/cm3 as y reaches 1.9.
+  note: 'Converted: Js = 4*pi*621 emu/cm3 * 1e-4 T = 0.780 T. Uncertainty (estimate) covers rounding only; the measurement
+    temperature is not given in the abstract, so the 300 K value may be lower. y = 1.9 (300 emu/cm3) is D022.'
+- id: mnga_l10_js_mizukami2012
+  phase: L10-MnGa
+  quantity: Js
+  value:
+  - 0.25
+  - 0.75
+  unit: T
+  conditions: epitaxial sputtered MnxGa1-x films, x ~ 0.5-0.75 (L10 at the Ga-rich end, D022 towards x = 0.75)
+  source:
+    doi: 10.1103/PhysRevB.85.014416
+    title: Composition dependence of magnetic properties in perpendicularly magnetized epitaxial thin films of Mn-Ga
+      alloys
+    first_author: S. Mizukami
+    year: 2012
+    url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.85.014416
+    evidence: abstract
+    locator: abstract
+  quote: The MS values decrease linearly from approximately 600 to 200 emu/cm3 with increasing x, whereas the Ku
+    values decrease slightly from approximately 15 to 10 Merg/cm3 with increasing x.
+  note: Converted 600 and 200 emu/cm3 to 0.754 and 0.251 T (4*pi*M*1e-4). Range spans L10 and D022 compositions;
+    films. Measurement temperature not in abstract.
+- id: mnga_l10_k1_mizukami2012
+  phase: L10-MnGa
+  quantity: K1
+  value:
+  - 1.0
+  - 1.5
+  unit: MJ/m3
+  conditions: epitaxial MnxGa1-x films, x ~ 0.5-0.75; uniaxial anisotropy Ku
+  source:
+    doi: 10.1103/PhysRevB.85.014416
+    title: Composition dependence of magnetic properties in perpendicularly magnetized epitaxial thin films of Mn-Ga
+      alloys
+    first_author: S. Mizukami
+    year: 2012
+    url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.85.014416
+    evidence: abstract
+    locator: abstract
+  quote: The MS values decrease linearly from approximately 600 to 200 emu/cm3 with increasing x, whereas the Ku
+    values decrease slightly from approximately 15 to 10 Merg/cm3 with increasing x.
+  note: 15 and 10 Merg/cm3 = 1.5 and 1.0 MJ/m3. Ku (uniaxial, films), not separated into K1/K2.
+- id: mnga_l10_k1_mizukami2011
+  phase: L10-MnGa
+  quantity: K1
+  value: 1.5
+  unit: MJ/m3
+  conditions: Mn3-dGa epitaxial films, d = 1.46 (Mn1.54Ga, L10) and 0.88 (Mn2.12Ga, D022)
+  source:
+    doi: 10.1103/PhysRevLett.106.117201
+    title: Long-Lived Ultrafast Spin Precession in Manganese Alloys Films with a Large Perpendicular Magnetic Anisotropy
+    first_author: S. Mizukami
+    year: 2011
+    url: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.106.117201
+    evidence: abstract
+    locator: abstract
+  quote: Spin precession with frequencies up to 280 GHz is observed in Mn3−δGa alloy films with a perpendicular
+    magnetic anisotropy constant Ku∼15 M erg/cm3.
+  note: ~15 Merg/cm3 = 1.5 MJ/m3 (approximate, films).
+- id: mnga_l10_k1_zhu2012
+  phase: L10-MnGa
+  quantity: K1
+  value: 2.17
+  unit: MJ/m3
+  conditions: MBE-grown epitaxial L10-Mn1.5Ga films on GaAs(001), room temperature
+  source:
+    doi: 10.1002/adma.201200805
+    title: Multifunctional L10‐Mn1.5Ga Films with Ultrahigh Coercivity, Giant Perpendicular Magnetocrystalline Anisotropy
+      and Large Magnetic Energy Product
+    first_author: Lijun Zhu
+    year: 2012
+    url: https://api.openalex.org/works/doi:10.1002/adma.201200805
+    evidence: abstract
+    locator: abstract (published version)
+  quote: giant perpendicular magnetic anisotropy with a maximum of 21.7 Merg/cm(3)
+  note: 21.7 Merg/cm3 = 2.17 MJ/m3; Ku = Keff + 2*pi*Ms^2 (arXiv version gives a maximum of 22.9 Merg/cc). Films
+    are strained (c = 3.47-3.51 A vs bulk 3.69 A) and have low Ms (27-271 emu/cc).
+- id: mnga_l10_k1_calc_sakuma
+  phase: L10-MnGa
+  quantity: K1
+  value: 2.6
+  unit: MJ/m3
+  conditions: DFT calculation (Sakuma 1998) for stoichiometric L10-MnGa
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 4
+  quote: Sakuma [46] used the DFT calculations to predict the spin configu­ ration in the L10-MnGa phase, and determined
+    the magnetic moments for Mn and Ga to be 2.51 and 0.09 μB, respectively. They reported that the magnetic moments
+    of Mn atoms are along the c axis, thus leading to a magnetocrystalline anisotropy of 2600 kJ/m3.
+  note: Theoretical value quoted by a review; not a measurement.
+- id: mnga_l10_ha_lu2015
+  phase: L10-MnGa
+  quantity: other
+  value: 6.6
+  unit: T (mu0*HA, anisotropy field, 5 K)
+  conditions: bulk single-phase Mn1.15Ga; HA from initial magnetization/differential susceptibility at 5 K
+  source:
+    doi: 10.1038/srep17086
+    title: Intrinsic magnetic properties of single-phase Mn1+xGa (0 < x < 1) alloys
+    first_author: Q. M. Lu
+    year: 2015
+    url: https://www.nature.com/articles/srep17086.pdf
+    evidence: full_text
+    locator: Results and Discussion; Table 2
+  quote: Even with this decrease, Ha and TC of the Mn1.15Ga alloy are 66 kOe and 595 K, respectively, which are
+    comparable with those of Nd2Fe14B.
+  note: 'Anisotropy field at 5 K (66 kOe = 6.6 T). Table 2: 69 (Mn1.20Ga), 75 (Mn1.33Ga), 80 (Mn1.50Ga), 94 kOe
+    (Mn1.86Ga).'
+- id: mnga_l10_tc_lu2015
+  phase: L10-MnGa
+  quantity: Tc
+  value: 595
+  unit: K
+  conditions: bulk single-phase Mn1.15Ga
+  source:
+    doi: 10.1038/srep17086
+    title: Intrinsic magnetic properties of single-phase Mn1+xGa (0 < x < 1) alloys
+    first_author: Q. M. Lu
+    year: 2015
+    url: https://www.nature.com/articles/srep17086.pdf
+    evidence: full_text
+    locator: Results and Discussion; Table 2
+  quote: Even with this decrease, Ha and TC of the Mn1.15Ga alloy are 66 kOe and 595 K, respectively, which are
+    comparable with those of Nd2Fe14B.
+  note: 'Table 2: 640 K (Mn1.20Ga), 673 K (Mn1.33Ga), 697 K (Mn1.50Ga), 738 K (Mn1.86Ga); Tc rises with Mn content.'
+- id: mnga_l10_tc_mn15_lu2015
+  phase: L10-MnGa
+  quantity: Tc
+  value: 697
+  unit: K
+  conditions: bulk single-phase Mn1.50Ga (annealed 885 K)
+  source:
+    doi: 10.1038/srep17086
+    title: Intrinsic magnetic properties of single-phase Mn1+xGa (0 < x < 1) alloys
+    first_author: Q. M. Lu
+    year: 2015
+    url: https://www.nature.com/articles/srep17086.pdf
+    evidence: full_text
+    locator: Table 2 (row Mn1.50Ga)
+  quote: Table 2. Intrinsic magnetic properties of Mn1 + xGa alloys (Ms and Ha are measured at 5 K). ... Mn1.50Ga
+    69.6/1.90 80 697
+  note: ''
+- id: mnga_l10_tc_huh2013
+  phase: L10-MnGa
+  quantity: Tc
+  value: 551
+  unit: K
+  conditions: melt-spun + heat-treated Mn1.2Ga ribbons (L10)
+  source:
+    doi: 10.1063/1.4812561
+    title: Magnetism and electron transport of MnyGa (1 < y < 2) nanostructures
+    first_author: Y. Huh
+    year: 2013
+    url: https://api.crossref.org/works/10.1063/1.4812561
+    evidence: abstract
+    locator: abstract
+  quote: Although both the L10- and D022-MnyGa samples show a high Curie temperature (Tc) well above room temperature,
+    the value of Tc decreases almost linearly from 702 K for Mn1.9Ga to 551 K for Mn1.2Ga.
+  note: 702 K for Mn1.9Ga refers to the D022 composition.
+- id: mnga_l10_tc_lu2014
+  phase: L10-MnGa
+  quantity: Tc
+  value: 650
+  unit: K
+  conditions: bulk single-phase Mn3Ga2 (= Mn1.5Ga, P4/mmm)
+  source:
+    doi: 10.1063/1.4868080
+    title: Phase structure and magnetic properties of Mn3Ga2 alloy
+    first_author: Q. M. Lu
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1063/1.4868080
+    evidence: abstract
+    locator: abstract
+  quote: The thermomagnetic curves indicate that the Curie temperature is about 650 K and a phase transformation
+    occurs above 823 K.
+  note: ''
+- id: mnga_l10_tc_cui2013
+  phase: L10-MnGa
+  quantity: Tc
+  value: 629
+  unit: K
+  conditions: ball-milled + annealed Mn56Ga44 microparticles
+  source:
+    doi: 10.1109/TMAG.2013.2245868
+    title: Ferromagnetic Tetragonal ${\rm L}1_{0}$-Type MnGa Isotropic Nanocrystalline Microparticles
+    first_author: B. Z. Cui
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1109/TMAG.2013.2245868
+    evidence: abstract
+    locator: abstract
+  quote: The L10-type microparticles with a nominal composition of Mn56Ga44size mainly in the range of 10-50 μm,
+    an average crystallite size in the range of 40-62 nm and a Curie temperature of 356°C.
+  note: 356 C = 629 K.
+- id: mnga_l10_tc_bither1965
+  phase: L10-MnGa
+  quantity: Tc
+  value: 748
+  unit: K
+  conditions: 'Mn2Ga(r) (L10, AuCu-type) phase; original: Bither & Cloud, J. Appl. Phys. 36 (1965) 1501'
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 4
+  quote: Bither and Cloud [64] used the mag­ netic measurements to determine the Curie temperature and the mag­
+    netic moment of the Mn2Ga(r) phase to be 748 K and 0.502 μB/Mn, respectively.
+  note: ''
+- id: mnga_l10_tc_tsuboya1965
+  phase: L10-MnGa
+  quantity: Tc
+  value: 690
+  unit: K
+  conditions: 'Mn3Ga2 (L10) phase; original: Tsuboya & Sugihara, J. Phys. Soc. Jpn. 20 (1965) 170'
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 4
+  quote: The Curie temperature and the magnetic moment of the Mn3Ga2 phase were measured to be 690 K and 1.5 μB/Mn
+    by Tsuboya and Sugihara [65].
+  note: ''
+- id: mnga_l10_structure_hx2020
+  phase: L10-MnGa
+  quantity: structure
+  value: L10 (AuCu-type, P4/mmm); in the Mn-Ga diagram the L10 phases are Mn2Ga(r) and Mn3Ga2
+  unit: ''
+  conditions: Mn-rich Mn-Ga (about 32-45 at.% Ga)
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 3.1
+  quote: It needs to be mentioned here that both Mn2Ga(r) and Mn3Ga2 phases have the L10-type ordered structure
+    similar to AuCu, and their phase regions are close to each other.
+  note: ''
+- id: mnga_l10_structure_lu2015
+  phase: L10-MnGa
+  quantity: structure
+  value: tetragonal; best model the disordered I4/mmm (D022-like) cell for off-stoichiometric Mn1+xGa; L10 (P4/mmm)
+    cell has half the c axis
+  unit: ''
+  conditions: bulk single-phase Mn1+xGa, x = 0.15-0.86
+  source:
+    doi: 10.1038/srep17086
+    title: Intrinsic magnetic properties of single-phase Mn1+xGa (0 < x < 1) alloys
+    first_author: Q. M. Lu
+    year: 2015
+    url: https://www.nature.com/articles/srep17086.pdf
+    evidence: full_text
+    locator: Results and Discussion
+  quote: The only conclusion we can draw from our diffraction (XRD and NPD) experiments is that the most likely
+    structure for all the alloys is the disordered tetragonal structure with space group I4/mmm as shown in Fig.
+    3. For MnGa (x = 0), the c-axis is half of that shown in the figure.
+  note: ''
+- id: mnga_l10_lattice_lu2015
+  phase: L10-MnGa
+  quantity: lattice
+  value:
+    a: 3.8796
+    c: 7.428
+  unit: Å
+  conditions: bulk single-phase Mn1.15Ga, room temperature XRD
+  source:
+    doi: 10.1038/srep17086
+    title: Intrinsic magnetic properties of single-phase Mn1+xGa (0 < x < 1) alloys
+    first_author: Q. M. Lu
+    year: 2015
+    url: https://www.nature.com/articles/srep17086.pdf
+    evidence: full_text
+    locator: Table 1 (a, c, V in the doubled I4/mmm cell)
+  quote: Mn1.15Ga 3.8796 7.4280 111.80
+  note: 'c refers to the doubled (I4/mmm) cell; L10 cell c = 3.714 A (c/2). Table 1 also: Mn1.33Ga a 3.8877, c 7.3407;
+    Mn1.50Ga a 3.8934, c 7.2918; Mn1.86Ga a 3.8992, c 7.2221 (a grows, c shrinks with Mn).'
+- id: mnga_l10_lattice_mix2015
+  phase: L10-MnGa
+  quantity: lattice
+  value:
+    a: 3.8921
+    c: 3.692
+  unit: Å
+  conditions: 'L10 MnGa, 45 at.% Ga; original: Mix et al., JMMM 391 (2015) 89'
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Table 4, MnGa row tP4 P4/mmm AuCu, 45 at.% Ga, ref. [12] (row checked on page image)
+  quote: a = 3.8921, c = 3.6920
+  note: L10 primitive-setting c (not doubled). Table 4 also lists Mn2Ga(r) tP4 P4/mmm AuCu a = 3.898, c = 3.586
+    (Meissner 1965).
+- id: mnga_l10_lattice_mn2gar_meissner
+  phase: L10-MnGa
+  quantity: lattice
+  value:
+    a: 3.898
+    c: 3.586
+  unit: Å
+  conditions: 'Mn2Ga(r) (L10) phase; original: Meissner et al. 1965'
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Table 4, Mn2Ga(r) row (<760 C, tP4, P4/mmm, AuCu), ref. [16] (row checked on page image)
+  quote: a = 3.898, c = 3.586
+  note: c/a = 0.92.
+- id: mnga_l10_easy_zhu2012
+  phase: L10-MnGa
+  quantity: easy_axis
+  value: c axis (perpendicular anisotropy of c-axis-normal epitaxial films)
+  unit: ''
+  conditions: epitaxial L10-Mn1.5Ga films on GaAs(001), 300 K
+  source:
+    doi: 10.1002/adma.201200805
+    title: Multifunctional L10‐Mn1.5Ga Films with Ultrahigh Coercivity, Giant Perpendicular Magnetocrystalline Anisotropy
+      and Large Magnetic Energy Product
+    first_author: Lijun Zhu
+    year: 2012
+    url: https://arxiv.org/pdf/1203.6176
+    evidence: full_text
+    locator: p. 1-2 (arXiv:1203.6176v1)
+  quote: Mn1.5Ga films prepared below 300 oC are good single-crystalline films with c-axis along the normal direction
+    ... This observation offers a direct evidence for the giant perpendicular anisotropy.
+  note: Text from the arXiv version of the paper.
+- id: mnga_l10_easy_calc
+  phase: L10-MnGa
+  quantity: easy_axis
+  value: c axis (DFT)
+  unit: ''
+  conditions: DFT (Sakuma) for L10-MnGa
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 4
+  quote: They reported that the magnetic moments of Mn atoms are along the c axis, thus leading to a magnetocrystalline
+    anisotropy of 2600 kJ/m3.
+  note: ''
+- id: mnga_l10_formation_hx2020
+  phase: L10-MnGa
+  quantity: formation_path
+  value: 'solid-state: Mn2Ga(r) (L10) forms peritectoidally from Mn8Ga5 + Mn2Ga(h) at 760 C and eutectoidally from
+    Mn2Ga(h) (-> Mn2Ga(r) + Mn3Ga) at 711 C; Mn2Ga(h) is the disordered hcp (Mg-type) high-temperature phase'
+  unit: ''
+  conditions: recommended Mn-Ga phase diagram (Mn-rich side after Minakuchi et al. 2012)
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: 'Table 2 (invariant reactions: reaction, T [C], compositions at.% Ga); rows checked on page image'
+  quote: Mn8Ga5 + Mn2Ga(h) ⇌ Mn2Ga(r) 760 36.3 32.2 33.4 ... Mn2Ga(h) ⇌ Mn2Ga(r) + Mn3Ga 711 29.4 31.4 28.9
+  note: 'Parent Mn2Ga(h): 711-1040 C, hP2 P63/mmc Mg-type (Table 4). This is the analogue of epsilon(hcp) -> tau(L10)
+    in Mn-Al. In practice bulk L10 MnGa is made by annealing retained high-temperature phase(s) (see mnga_l10_tf_lu2015).
+    Mechanism (massive vs ordered/displacive), OR and variants of this solid-state reaction: not found.'
+- id: mnga_l10_tf_hx2020
+  phase: L10-MnGa
+  quantity: T_formation
+  value:
+  - 984
+  - 1033
+  unit: K
+  conditions: 'equilibrium formation temperatures of Mn2Ga(r) (L10): 711 C (eutectoid) to 760 C (peritectoid)'
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Table 2
+  quote: Mn8Ga5 + Mn2Ga(h) ⇌ Mn2Ga(r) 760 36.3 32.2 33.4 ... Mn2Ga(h) ⇌ Mn2Ga(r) + Mn3Ga 711 29.4 31.4 28.9
+  note: '711 C = 984 K, 760 C = 1033 K, i.e. above every reported Tc of L10 MnGa (551-748 K): the L10 phase is paramagnetic
+    when it forms at equilibrium.'
+- id: mnga_l10_parent_hcp_tiwari
+  phase: L10-MnGa
+  quantity: formation_path
+  value: parent Mn2Ga(h) is hcp Mg-type (P63/mmc); Mn2Ga(r) is AuCu-type (P4/mmm)
+  unit: ''
+  conditions: 'Mn2Ga(r)/Mn2Ga(h); original: Meissner et al. 1965'
+  source:
+    doi: null
+    title: Development of a self-consistent thermodynamically optimized database along with phase transition experiments
+      in Ni-Mn-Ga system for magnetocaloric applications
+    first_author: Nishant Tiwari
+    year: 2023
+    url: https://arxiv.org/pdf/2309.02694
+    evidence: review
+    locator: Section 2.3
+  quote: The crystal structure of Mn2Ga (r) (Room Temperature) is AuCu type with the space group P4/mmm reported
+    by Meissner et al. [55]. ... Meissner et al. [55] determined the crystal structure of the Mn2Ga(h) (High Temperature)
+    phase to be Mg type with P63/mmc space group.
+  note: arXiv preprint (no Crossref DOI); structural assignments quoted from Meissner et al. 1965.
+- id: mnga_l10_tf_lu2015
+  phase: L10-MnGa
+  quantity: T_formation
+  value:
+  - 740
+  - 885
+  unit: K
+  conditions: bulk induction-melted Mn1+xGa annealed to single-phase L10/tetragonal
+  source:
+    doi: 10.1038/srep17086
+    title: Intrinsic magnetic properties of single-phase Mn1+xGa (0 < x < 1) alloys
+    first_author: Q. M. Lu
+    year: 2015
+    url: https://www.nature.com/articles/srep17086.pdf
+    evidence: full_text
+    locator: Methods
+  quote: The as-melted ingots were then annealed in a tubular vacuum furnace at temperatures, Ta, ranging from 700
+    K to 900 K for annealing times, ta, extending from one day to up to one week. The ingots were subsequently quenched
+    into ice water. The annealing step is crucial for obtaining single-phase alloys. ... The annealing temperatures
+    were 740 K, 825 K and 870K for x = 0.15, 0.20 and 0.33, respectively, and 885K for the alloys with higher Mn
+    content.
+  note: Each anneal is above the Tc of the same alloy (740 > 595 K for x = 0.15; 825 > 640 K; 870 > 673 K; 885 >
+    697-738 K), so the tetragonal phase formed while paramagnetic in this route.
+- id: mnga_l10_tf_lu2014
+  phase: L10-MnGa
+  quantity: T_formation
+  value: 773
+  unit: K
+  conditions: levitation-melted Mn3Ga2 (= Mn1.5Ga), annealed
+  source:
+    doi: 10.1063/1.4868080
+    title: Phase structure and magnetic properties of Mn3Ga2 alloy
+    first_author: Q. M. Lu
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1063/1.4868080
+    evidence: abstract
+    locator: abstract
+  quote: A single phase alloy Mn3Ga2, which has tetragonal P4/mmm structure, was obtained with an annealing temperature
+    of 773 K and annealing time of 24 h.
+  note: 773 K is above this alloy's Tc (~650 K).
+- id: mnga_l10_tstab_hx2020
+  phase: L10-MnGa
+  quantity: T_stab
+  value: 1033
+  unit: K
+  conditions: equilibrium upper limit of Mn2Ga(r) (L10)
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Table 2; Table 4 gives Mn2Ga(r) <760 C and Mn3Ga2 <721 C
+  quote: Mn8Ga5 + Mn2Ga(h) ⇌ Mn2Ga(r) 760 36.3 32.2 33.4
+  note: '760 C = 1033 K (equilibrium). The Ga-richer L10 phase Mn3Ga2 is limited to < 721 C (994 K): it forms by
+    Mn8Ga5 + Mn7Ga6 at 721 C in the Minakuchi diagram.'
+- id: mnga_l10_tstab_lu2014
+  phase: L10-MnGa
+  quantity: T_stab
+  value: 823
+  unit: K
+  conditions: bulk Mn3Ga2 (= Mn1.5Ga), heating in thermomagnetic measurement (time scale of a M(T) scan)
+  source:
+    doi: 10.1063/1.4868080
+    title: Phase structure and magnetic properties of Mn3Ga2 alloy
+    first_author: Q. M. Lu
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1063/1.4868080
+    evidence: abstract
+    locator: abstract
+  quote: The thermomagnetic curves indicate that the Curie temperature is about 650 K and a phase transformation
+    occurs above 823 K.
+  note: ''
+- id: mnga_l10_tstab_cui2013
+  phase: L10-MnGa
+  quantity: T_stab
+  value: 973
+  unit: K
+  conditions: ball-milled Mn56Ga44 microparticles, 20 min anneals
+  source:
+    doi: 10.1109/TMAG.2013.2245868
+    title: Ferromagnetic Tetragonal ${\rm L}1_{0}$-Type MnGa Isotropic Nanocrystalline Microparticles
+    first_author: B. Z. Cui
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1109/TMAG.2013.2245868
+    evidence: abstract
+    locator: abstract
+  quote: After annealing at 700°C for 20 min ... re-precipitation of a nonmagnetic ζ - Mn8Ga5phase.
+  note: Decomposition (zeta-Mn8Ga5 + grain growth) after 20 min at 700 C (973 K); 400-650 C anneals kept the L10
+    phase.
+- id: mnga_l10_primary_hx2020
+  phase: L10-MnGa
+  quantity: primary_crystallisation
+  value: 'no: L10 does not form from the melt; Mn-rich melts give (deltaMn) and peritectic Mn2Ga(h) at 1040 C, and
+    Mn8Ga5 forms peritectically from L + Mn2Ga(h) at 910 C; L10 forms below 760 C in the solid state'
+  unit: ''
+  conditions: Mn-Ga, 25-40 at.% Ga
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Table 2 (rows checked on page image)
+  quote: L + (δMn) ⇌ Mn2Ga(h) ... 1040 29.3 24.6 25.0 ... L + Mn2Ga(h) ⇌ Mn8Ga5 ... 910 40.2 33.1 38.0
+  note: ''
+- id: mnga_l10_comp_hx2020
+  phase: L10-MnGa
+  quantity: phase_fraction_limit
+  value: L10 single phase only in a narrow Ga window (36-37 at.% Ga in annealed alloys per Niida et al.; 38-45 at.%
+    Ga in melt-spun ribbons per Huh et al.); D022 at 26-34 at.% Ga
+  unit: ''
+  conditions: annealed bulk and melt-spun ribbons
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 3.1
+  quote: Niida et al. [36] obtained the L10-type phase in annealed alloys with 36 to 37 at.% Ga, and the D022-type
+    phase in annealed alloys with 26 to 34 ... at.% Ga. Huh et al. [51] determined that the melt-spun Mn–Ga ribbons
+    exhibit the L10 structure when the Ga content is 38 to 45 at.%, and the D022 structure when the Ga content is
+    34 at.%.
+  note: ''
+- id: mnga_l10_svp_cui2013
+  phase: L10-MnGa
+  quantity: single_variant_particles
+  value: 'milled + annealed L10 microparticles are polycrystalline: 10-50 um particles with 40-62 nm crystallites'
+  unit: ''
+  conditions: high-energy ball milling + annealing 400-650 C
+  source:
+    doi: 10.1109/TMAG.2013.2245868
+    title: Ferromagnetic Tetragonal ${\rm L}1_{0}$-Type MnGa Isotropic Nanocrystalline Microparticles
+    first_author: B. Z. Cui
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1109/TMAG.2013.2245868
+    evidence: abstract
+    locator: abstract
+  quote: The L10-type microparticles with a nominal composition of Mn56Ga44size mainly in the range of 10-50 μm,
+    an average crystallite size in the range of 40-62 nm and a Curie temperature of 356°C.
+  note: ''
+- id: mnga_l10_svp_zhu2012
+  phase: L10-MnGa
+  quantity: single_variant_particles
+  value: single-crystalline, single-variant (c-axis normal) L10 layers are obtained by epitaxy (films, not particles)
+  unit: ''
+  conditions: MBE on GaAs(001), growth 100-300 C
+  source:
+    doi: 10.1002/adma.201200805
+    title: Multifunctional L10‐Mn1.5Ga Films with Ultrahigh Coercivity, Giant Perpendicular Magnetocrystalline Anisotropy
+      and Large Magnetic Energy Product
+    first_author: Lijun Zhu
+    year: 2012
+    url: https://arxiv.org/pdf/1203.6176
+    evidence: full_text
+    locator: p. 1-2 (arXiv:1203.6176v1)
+  quote: Mn1.5Ga films prepared below 300 oC are good single-crystalline films with c-axis along the normal direction,
+    in agreement with both RHEED patterns and cross-sectional TEM images.
+  note: ''
+- id: mnga_l10_or_zhu2012
+  phase: L10-MnGa
+  quantity: OR
+  value: MnGa(001)[100]||GaAs(001)[110] (epitaxial)
+  unit: ''
+  conditions: epitaxial film on GaAs(001)
+  source:
+    doi: 10.1002/adma.201200805
+    title: Multifunctional L10‐Mn1.5Ga Films with Ultrahigh Coercivity, Giant Perpendicular Magnetocrystalline Anisotropy
+      and Large Magnetic Energy Product
+    first_author: Lijun Zhu
+    year: 2012
+    url: https://arxiv.org/pdf/1203.6176
+    evidence: full_text
+    locator: p. 1 (arXiv:1203.6176v1)
+  quote: Moreover, the epitaxial relationship of MnGa(001)[100]||GaAs(001)[110] can be derived from high-resolution
+    TEM image, in consistent with in situ reflection high-energy electron diffraction (RHEED) patterns during growth
+    of Mn1.5Ga.
+  note: ''
+- id: mnga_l10_or_krishnan1992
+  phase: L10-MnGa
+  quantity: OR
+  value: c axis normal to GaAs{001} (epitaxial delta-MnGa films)
+  unit: ''
+  conditions: delta-MnGa (62 +- 2 % Mn) single-crystal films on GaAs
+  source:
+    doi: 10.1063/1.108245
+    title: Ferromagnetic δ-Mn1−xGax thin films with perpendicular anisotropy
+    first_author: Kannan M. Krishnan
+    year: 1992
+    url: https://api.openalex.org/works/doi:10.1063/1.108245
+    evidence: abstract
+    locator: abstract
+  quote: X-ray Θ–2Θ scans and grazing-incidence scattering measurements confirmed that the unit cell of this phase
+    is tetragonal (a=0.279 nm, c=0.351 nm) and grows with the c-axis oriented normal to the {001} GaAs substrate
+    surface.
+  note: a = 0.279 nm is the primitive (P4/mmm) setting, i.e. a(fct) / sqrt(2).
+- id: mnga_l10_tetr_zhu2012
+  phase: L10-MnGa
+  quantity: tetragonality
+  value: 'films: c = 3.47-3.51 A (strained) vs bulk ~3.69 A'
+  unit: ''
+  conditions: epitaxial L10-Mn1.5Ga on GaAs(001)
+  source:
+    doi: 10.1002/adma.201200805
+    title: Multifunctional L10‐Mn1.5Ga Films with Ultrahigh Coercivity, Giant Perpendicular Magnetocrystalline Anisotropy
+      and Large Magnetic Energy Product
+    first_author: Lijun Zhu
+    year: 2012
+    url: https://arxiv.org/pdf/1203.6176
+    evidence: full_text
+    locator: p. 3 (arXiv:1203.6176v1)
+  quote: Lattice constant c for Mn1.5Ga films plotted as a function of Ts in Fig. 3d slightly varies from 3.47 to
+    3.51 Å，which is much smaller than the bulk value of 3.69
+  note: Film strain alters Ms and Ku; film values are not intrinsic bulk values.
+- id: mnga_l10_js_fowley2015
+  phase: L10-MnGa
+  quantity: Js
+  value: 0.452
+  unit: T
+  conditions: 30 nm L10 Mn1.6Ga film on Cr/MgO(001), room temperature presumably
+  source:
+    doi: 10.1088/0022-3727/48/16/164006
+    title: Direct measurement of the magnetic anisotropy field in Mn–Ga and Mn–Co–Ga Heusler films
+    first_author: Ciarán Fowley
+    year: 2015
+    url: https://arxiv.org/pdf/1501.03973
+    evidence: full_text
+    locator: abstract (arXiv:1501.03973v1)
+  quote: For the pure Mn1.6 Ga film, the saturation magnetisation is 0.36 MA/m and the coercivity is 0.29 T.
+  note: 'Converted: Js = mu0*0.36 MA/m = 0.452 T. Film value.'
+- id: mnga_l10_keff_fowley2015
+  phase: L10-MnGa
+  quantity: K1
+  value: 0.81
+  unit: MJ/m3
+  conditions: 30 nm L10 Mn1.6Ga film
+  source:
+    doi: 10.1088/0022-3727/48/16/164006
+    title: Direct measurement of the magnetic anisotropy field in Mn–Ga and Mn–Co–Ga Heusler films
+    first_author: Ciarán Fowley
+    year: 2015
+    url: https://arxiv.org/pdf/1501.03973
+    evidence: full_text
+    locator: abstract (arXiv:1501.03973v1)
+  quote: The anisotropy field is determined from both SQUID and TR-MOKE to be 4.5 T, corresponding to an effective
+    anisotropy density of 0.81 MJ/m3 .
+  note: This is Keff of a film; the paper defines Keff = Ku - mu0*Ms^2/2, so Ku is larger by the shape term (not
+    computed here).
+- id: mnga_l10_ha_fowley2015
+  phase: L10-MnGa
+  quantity: other
+  value: 4.5
+  unit: T (mu0*HK, anisotropy field)
+  conditions: 30 nm L10 Mn1.6Ga film (effective field, includes demagnetising term)
+  source:
+    doi: 10.1088/0022-3727/48/16/164006
+    title: Direct measurement of the magnetic anisotropy field in Mn–Ga and Mn–Co–Ga Heusler films
+    first_author: Ciarán Fowley
+    year: 2015
+    url: https://arxiv.org/pdf/1501.03973
+    evidence: full_text
+    locator: abstract (arXiv:1501.03973v1)
+  quote: The anisotropy field is determined from both SQUID and TR-MOKE to be 4.5 T, corresponding to an effective
+    anisotropy density of 0.81 MJ/m3 .
+  note: ''
+- id: mnga_l10_density_kb2022
+  phase: L10-MnGa
+  quantity: density
+  value: 7.3
+  unit: g/cm3
+  conditions: L10 MnGa
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.1; refs [12,13] = Lu et al. 2019, 2015
+  quote: The theoretical saturation magnetization, Ms, is ~116 Am2/kg, which implies a (BH)max of ~223 kJ/m3 at
+    a density of 7300 kg/m3 [12,13].
+  note: Density used by the review for unit conversion (7300 kg/m3).
+- id: mnga_l10_formation_kb2022
+  phase: L10-MnGa
+  quantity: formation_path
+  value: 'alternative diagram (Okamoto 2014): equilibrium L10 forms below 1045 K peritectically from liquid + tau
+    (45-52 at.% Ga); in practice L10 forms in the solid state from quenched-in high-temperature tau on heating (630
+    K, DSC, Mn55Ga45)'
+  unit: ''
+  conditions: Mn55Ga45
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.1; ref. [15] = Mix et al., JMMM 391 (2015) 89; Fig. 1 after Okamoto 2014
+  quote: The equilibrium tetragonal MnGa L10 phase forms below 1045 K from a peritectic reaction between the liquid
+    and τ phases, within a limited range of Ga concentration from ~45–52 at.%. Mix et al. performed differential
+    scanning calorimetry (DSC) analysis to examine the formation of the L10 phase in a Mn55Ga45 alloy, see Fig.
+    3 [15]. Starting with a sample composed of quenched-in high-temperature τ phase (see Fig. 1), they found upon
+    heating that the transformation from the τ phase to the L10 phase occurred at 630 K.
+  note: Phase labels follow the Okamoto 2014 diagram ('tau' = high-temperature Mn-Ga phase, not tau-MnAl). Conflicts
+    in detail with the Minakuchi/Hao-Xiong diagram (peritectoid 760 C, eutectoid 711 C).
+- id: mnga_l10_tf_mix2015
+  phase: L10-MnGa
+  quantity: T_formation
+  value: 630
+  unit: K
+  conditions: Mn55Ga45, DSC on heating
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.1 (Mix et al. 2015, DSC)
+  quote: Starting with a sample composed of quenched-in high-temperature τ phase (see Fig. 1), they found upon heating
+    that the transformation from the τ phase to the L10 phase occurred at 630 K.
+  note: 'Tc of the same alloy (furnace-cooled bulk) is 610 K (review Table 1): L10 forms here ~20 K above its Tc.'
+- id: mnga_l10_tstab_mix2015
+  phase: L10-MnGa
+  quantity: T_stab
+  value: 928
+  unit: K
+  conditions: Mn55Ga45, DSC heating rate time scale
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.1 (Mix et al. 2015, DSC)
+  quote: They observed that the L10 phase began to transform into τ phase at 928 K in the Mn55Ga45 alloy and that
+    the transformation is reversible.
+  note: ''
+- id: mnga_l10_ms_mix2015
+  phase: L10-MnGa
+  quantity: Ms_mass
+  value: 85
+  unit: Am2/kg
+  conditions: bulk Mn55Ga45, 973 K 7 days + furnace cooling 5 K/min; room temperature, 4 MA/m
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.2 (Mix et al. 2015)
+  quote: To improve Ms, they raised the annealing temperature to 973 K, which is above the L10 to τ phase transition,
+    for the same duration and rate of furnace cooling. This method produced a magnet with a higher saturation magnetization
+    of M4MA/m = 85 Am2/kg.
+  note: 'Table 1 of the review: 87.97 Am2/kg at 11141 kA/m. The 723 K/7 d anneal gave poorly ordered L10 with 62
+    Am2/kg.'
+- id: mnga_l10_tc_mix2015
+  phase: L10-MnGa
+  quantity: Tc
+  value:
+  - 610
+  - 704
+  unit: K
+  conditions: bulk L10 Mn55Ga45, Mn60Ga40, Mn65Ga35 (723-923 K anneals, furnace cooled)
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: 'Table 1 (rows Mix et al. 2015: Mn55Ga45 610 K, Mn60Ga40 653 K, Mn65Ga35 704 K; transcribed from page
+      image)'
+  quote: Mn55Ga45 ... 610 ... Mn60Ga40 ... 653 ... Mn65Ga35 ... 704
+  note: Quote fragments from a table; values read on the page image (Tcurie column).
+- id: mnga_l10_tetr_mix2015
+  phase: L10-MnGa
+  quantity: tetragonality
+  value: c/a = 0.9486 (bulk) ; 0.9077 (milled) ; 0.9574 (milled + 673 K anneal)
+  unit: ''
+  conditions: Mn55Ga45
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.2 (Mix et al. 2015)
+  quote: They also observed that the c/a ratio of the tetragonal L10 structure was significantly lower in the milled
+    powder, c/a = 0.9077, than in the original bulk material, c/a = 0.9486. ... They also found that the c/a ratio
+    increased to greater than the original bulk value, c/a = 0.9574, showing that the annealing relaxed the tetragonal
+    distortion caused by milling.
+  note: ''
+- id: mnga_l10_twins_mix2015
+  phase: L10-MnGa
+  quantity: twins
+  value: milled L10 powder particles are polycrystalline with high twin densities
+  unit: ''
+  conditions: Mn55Ga45 vibration-milled to <100 um
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.2 (Mix et al. 2015)
+  quote: They observed that the resulting powder particles were polycrystalline and showed significant densities
+    of twin defects.
+  note: ''
+- id: mnga_l10_twins_lu2022
+  phase: L10-MnGa
+  quantity: twins
+  value: '{111}<11-2> twins in hot-deformed L10-Mn1.33Ga'
+  unit: ''
+  conditions: hot-deformed L10-Mn1.33Ga (HD-88%)
+  source:
+    doi: 10.1063/5.0080903
+    title: Grain refinement leading to the ultra-high coercivity in L1-Mn1.33Ga bulk magnet via hot deformation
+    first_author: Q. M. Lu
+    year: 2022
+    url: https://api.crossref.org/works/10.1063/5.0080903
+    evidence: abstract
+    locator: abstract
+  quote: It was found that small grains were formed, accompanied by a certain number of {111} ⟨11-2⟩ twins for HD
+    magnets.
+  note: Effect of the twin on the c-axis direction not stated in the abstract.
+- id: mnga_l10_deform_lu2019
+  phase: L10-MnGa
+  quantity: deformation
+  value: hot deformation (SPS-based) at 873 K to 92% height reduction possible; full dynamic recrystallisation,
+    grain ~1.4 um, structure unchanged
+  unit: ''
+  conditions: L10-Mn1.8Ga, hot deformation via spark plasma sintering, 873 K
+  source:
+    doi: 10.1016/j.jmmm.2018.11.005
+    title: Recrystallization induced coercivity and magnetic properties enhancement in hot-deformed L1-Mn1.8Ga magnet
+    first_author: Q.M. Lu
+    year: 2019
+    url: https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.jmmm.2018.11.005
+    evidence: abstract
+    locator: abstract (Semantic Scholar)
+  quote: During the HD process, recrystallization and grain size refinements were observed without changing the
+    crystal structure, which led to the magnetic hardening and improvement of the magnetic properties. By optimizing
+    the HD parameters, maximum height reduction of up to 92% can be achieved where full recrystallization with few
+    defects were observed from EBSD and TEM measurements. ... with a height reduction of 92% and a homogeneous average
+    grain size of about 1.4 µm.
+  note: ''
+- id: mnga_l10_deform_lu2022
+  phase: L10-MnGa
+  quantity: deformation
+  value: hot deformation -> recrystallisation and grain refinement to ~1.5 um (HD-88%)
+  unit: ''
+  conditions: L10-Mn1.33Ga
+  source:
+    doi: 10.1063/5.0080903
+    title: Grain refinement leading to the ultra-high coercivity in L1-Mn1.33Ga bulk magnet via hot deformation
+    first_author: Q. M. Lu
+    year: 2022
+    url: https://api.crossref.org/works/10.1063/5.0080903
+    evidence: abstract
+    locator: abstract
+  quote: Hot deformation led to recrystallization and grain refinement, where the average grain size was reduced
+    to about 1.5 μm for HD-88% magnet.
+  note: ''
+- id: mnga_l10_deform_kb2022
+  phase: L10-MnGa
+  quantity: deformation
+  value: uniaxial hot compression of bulk Mn64Ga36 at 873 K / 500 MPa leaves c/a unchanged
+  unit: ''
+  conditions: bulk Mn64Ga36
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.2
+  quote: Lu et al. examined the effects of uniaxial hot compression under 500 MPa at 873 K of a bulk Mn64Ga36 ingot
+    without an intermediate milling step [12]. Unlike Mix et al. [15], this study showed that the c/a ratio before
+    and after hot compression was the same
+  note: ''
+- id: mnga_ep_orient_kb2022
+  phase: L10-MnGa
+  quantity: OR
+  value: sputtered/MBE films on suitable crystalline substrates (MgO/Cr, GaAs) grow with c axis perpendicular to
+    the film; on Si/SiO2 only partial
+  unit: ''
+  conditions: L10 and D022 Mn-Ga films
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.4
+  quote: Generally, the direction perpendicular to the thin film provided the best magnetic properties for a hard
+    magnet, due to the alignment of the magnetically easy c-axis perpendicular to the film surface.
+  note: ''
+- id: mn3ga_density_kb2022
+  phase: D022-Mn3Ga
+  quantity: density
+  value: 7.18
+  unit: g/cm3
+  conditions: D022 Mn3Ga
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.1; ref. [8] = Wei et al. 2014
+  quote: The theoretical (BH)max has been reported to be ~143 kJ/m3 at a density of 7180 kg/m3, a saturation magnetization
+    of 0.26 µB per Mn atom, and uniaxial magneto-crystalline anisotropy energy of 1 MJ/m3 [8].
+  note: ''
+- id: mn3ga_k1_kb2022
+  phase: D022-Mn3Ga
+  quantity: K1
+  value: 1.0
+  unit: MJ/m3
+  conditions: D022 Mn3Ga (bulk)
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.1; ref. [8]
+  quote: The theoretical (BH)max has been reported to be ~143 kJ/m3 at a density of 7180 kg/m3, a saturation magnetization
+    of 0.26 µB per Mn atom, and uniaxial magneto-crystalline anisotropy energy of 1 MJ/m3 [8].
+  note: ''
+- id: mn3ga_lattice_kb2022
+  phase: D022-Mn3Ga
+  quantity: lattice
+  value:
+    a: 3.91
+    c: 7.10-7.17
+  unit: Å
+  conditions: D022 Mn3-xGa
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.1
+  quote: The ferrimagnetic D022 unit cell has lattice parameters a = 0.391 nm and c = 0.710–0.717 nm [6–8], see
+    Fig. 2(a), with the c parameter increasing with an increase in Ga content.
+  note: ''
+- id: mn3ga_formation_kb2022
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: Mn3Ga forms from high-temperature epsilon (hcp) or gamma-Mn (fcc) on cooling below 1003 K (24-30 at.% Ga);
+    D022 obtained by annealing the cubic high-temperature phase below 800 K
+  unit: ''
+  conditions: Mn3Ga region
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.1
+  quote: Depending on the composition, in the range from 24 to 30 at.% Ga, the Mn3Ga phase forms from either the
+    high temperature ε or γ-Mn phases when cooled below 1003 K. ... This indicates that the tetragonal phase is
+    relatively stable down to room temperature and can be produced from annealing the high-temperature cubic phase
+    below 800 K.
+  note: ''
+- id: mn3ga_formation_ener_kb2022
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: in arc-melted Mn70Ga30 the D019 phase dominates; D022 forms by nucleation and growth inside the D019 matrix
+    on annealing; cold-rolling defects act as nucleation sites; a field raises the D022 nucleation rate
+  unit: ''
+  conditions: Mn70Ga30, anneals 650-750 K, 0 or 796 kA/m
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.2 (Ener et al. 2015)
+  quote: The high temperature D019 phase dominated their as-cast ingots, thus they required nucleation and growth
+    of the D022 phase within this existing matrix through an annealing treatment. By examining the microstructure
+    with magneto-optical Kerr microscopy, they concluded that the external magnetic field increased the nucleation
+    rate of the D022 phase. ... Cold rolling also introduced a high number of defects which likely served as nucleation
+    sites for the D022 phase
+  note: 'Diffusional nucleation-and-growth path: orientation relationship and variant selection not reported.'
+- id: mn3ga_formation_niida_kb2022
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: from quenched gamma-Mn the transformation at 573 K passes through hexagonal D019 before D022 forms
+  unit: ''
+  conditions: Mn70Ga30 powder annealed at 573 K for several days
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.3 (Niida et al. 1996)
+  quote: However, since the starting phase was the γ-Mn phase, the material had to proceed through the D019 hexagonal
+    structure during the magnetic field-assisted anneal before transforming to the tetragonal D022 phase.
+  note: 'The D019 intermediate is antiferromagnetic with TN ~450-490 K, i.e. paramagnetic at 573 K: no magnetic
+    torque on the intermediate.'
+- id: mn3ga_tstab_kb2022
+  phase: D022-Mn3Ga
+  quantity: T_stab
+  value: 800
+  unit: K
+  conditions: melt-spun Mn3-xGa
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    url: https://par.nsf.gov/servlets/purl/10314453
+    evidence: review
+    locator: Section 2.1; ref. [17] = Huh et al. 2013
+  quote: However, related work has also shown that if the tetragonal D022 phase is formed by annealing and not heated
+    above 800 K, the D022 structure remains when cooled back to room temperature [17].
+  note: ''
+- id: mn3ga_formation_elgendy2014
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: 'melt-spun D019 ribbons (microrods 0.5-1 um) transform at 450 C into D022 as spherical nanoparticles (<100
+    nm): nucleation of new grains, not a lattice-coherent shear of the rods'
+  unit: ''
+  conditions: melt-spun Mn2-3Ga ribbons, annealed 450 C
+  source:
+    doi: 10.1109/tmag.2014.2317460
+    title: High Coercivity in Annealed Melt-Spun Mn-Ga Ribbons
+    first_author: Ahmed A. El-Gendy
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1109/tmag.2014.2317460
+    evidence: abstract
+    locator: abstract
+  quote: X-ray diffraction results show the formation of D022after annealing the as-prepared ribbons with the D019structure
+    at 450 °C for different times. ... SEM images in the as-prepared ribbons show the presence of a microrod-like
+    D019microstructure with the size of the rods in the range of 0.5-1 μm. This homogeneous structure, after annealing
+    for long time is transformed to D022spherical shape nanoparticles with an average size below 100 nm.
+  note: Interpretation (nucleation and growth, orientation not inherited) is ours, from the morphology change; no
+    orientation relationship is reported.
+- id: mn3ga_formation_elgendy2015
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: ground arc-melted ingot powder with cubic structure -> nearly pure D022 after annealing at 673 K; grains
+    < 30 nm
+  unit: ''
+  conditions: Mn3Ga powder annealed 673 K
+  source:
+    doi: 10.1088/0022-3727/48/12/125001
+    title: Nanostructured D022-Mn3Ga with high coercivity
+    first_author: Ahmed A El-Gendy
+    year: 2015
+    url: https://api.openalex.org/works/doi:10.1088/0022-3727/48/12/125001
+    evidence: abstract
+    locator: abstract
+  quote: Mn 3 Ga alloys with a nearly pure D0 22 phase were obtained via a heat treatment of ground arc-melted ingot
+    powders with a cubic structure. X-ray difraction results show the formation of D0 22 after annealing the as-prepared
+    ingot at 673 K for different annealing time intervals. ... Microstructure studies on the annealed powders showed
+    the presence of small grains with size below 30 nm.
+  note: ''
+- id: mn3ga_svp_elgendy2015
+  phase: D022-Mn3Ga
+  quantity: single_variant_particles
+  value: annealed D022 powders are nanocrystalline (grains < 30 nm); ribbon-derived D022 particles < 100 nm
+  unit: ''
+  conditions: Mn3Ga powder annealed 673 K
+  source:
+    doi: 10.1088/0022-3727/48/12/125001
+    title: Nanostructured D022-Mn3Ga with high coercivity
+    first_author: Ahmed A El-Gendy
+    year: 2015
+    url: https://api.openalex.org/works/doi:10.1088/0022-3727/48/12/125001
+    evidence: abstract
+    locator: abstract
+  quote: Microstructure studies on the annealed powders showed the presence of small grains with size below 30 nm.
+  note: ''
+- id: mn3ga_structure_hx2020
+  phase: D022-Mn3Ga
+  quantity: structure
+  value: D022 (Al3Ti-type, I4/mmm, tI8)
+  unit: ''
+  conditions: Mn3-xGa, 23.5-31.2 at.% Ga
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 3.1
+  quote: After annealing alloys containing 23.5–31.2 at.% Ga at 350–450 °C, tetragonal Mn3Ga with D022 ordering
+    (I4/mmm) will precipitate from the high-temperature (γMn) phase [35,36].
+  note: ''
+- id: mn3ga_lattice_kren
+  phase: D022-Mn3Ga
+  quantity: lattice
+  value:
+    a: 3.901
+    c: 7.12
+  unit: Å
+  conditions: 'Mn3Ga (28.75 at.% Ga); original: Kren & Kadar, Solid State Commun. 8 (1970) 1653'
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Table 4, Mn3Ga tI8 I4/mmm Al3Ti row, 28.75 at.% Ga, ref. [30] (row checked on page image)
+  quote: a = 3.901, c = 7.120
+  note: c/a = 1.83 (D022 cell = two stacked L10-like cells). Table 4 lists the D019 form at 28.75 at.% Ga (quenched
+    from 800 C) as a = 5.363, c = 4.327.
+- id: mn3ga_easy_niida1996
+  phase: D022-Mn3Ga
+  quantity: easy_axis
+  value: c axis
+  unit: ''
+  conditions: bulk Mn3-dGa, D022
+  source:
+    doi: 10.1063/1.362115
+    title: Magnetization and coercivity of Mn3−δGa alloys with a D022-type structure
+    first_author: Hiroshi Niida
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.362115
+    evidence: abstract
+    locator: abstract
+  quote: The D022-type (Al3Ti-type) phase in the Mn–Ga system is ferrimagnetic; the spin direction is parallel to
+    the tetragonal c axis.
+  note: ''
+- id: mn3ga_easy_kren
+  phase: D022-Mn3Ga
+  quantity: easy_axis
+  value: c axis (collinear ferrimagnet, neutron diffraction)
+  unit: ''
+  conditions: neutron diffraction (Kren & Kadar 1970)
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 4
+  quote: D019-Mn3Ga has a triangular antiferromagnetic arrangement of Mn magnetic moments in the basal plane of
+    the hexagonal lattice. In contrast, D022-Mn3Ga aligns all mag­ netic moments with the opposite sign along the
+    c axis of the tetragonal
+  note: Rode et al. 2013 add that the 2b site has hard-axis anisotropy, giving a soft in-plane magnetization component
+    in films (see mn3ga_k1_rode2013).
+- id: mn3ga_tc_niida1996
+  phase: D022-Mn3Ga
+  quantity: Tc
+  value: 765
+  unit: K
+  conditions: bulk Mn2.33Ga (d = 0.67), D022
+  source:
+    doi: 10.1063/1.362115
+    title: Magnetization and coercivity of Mn3−δGa alloys with a D022-type structure
+    first_author: Hiroshi Niida
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.362115
+    evidence: abstract
+    locator: abstract
+  quote: The Curie temperature is about 765 K (for δ=0.67), near the decomposition temperature.
+  note: ''
+- id: mn3ga_tc_hx2020
+  phase: D022-Mn3Ga
+  quantity: Tc
+  value: '>770 (not measurable; D022 -> D019 at 770 K)'
+  unit: K
+  conditions: D022 Mn3Ga
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 4
+  quote: Since the Curie temperature for D022-Mn3Ga is higher than the structural transition temperature (770 K)
+    from D022-to D019-Mn3Ga, it is difficult to measure it via experiments. Kübler [37] estimated the Curie temperature
+    of D022-Mn3Ga to be 762 K, using the DFT method.
+  note: ''
+- id: mn3ga_tc_winterlik2008
+  phase: D022-Mn3Ga
+  quantity: Tc
+  value: ~770 (limited by D022->D019 transition)
+  unit: K
+  conditions: bulk Mn3-xGa, x = 0-1.0
+  source:
+    doi: 10.1103/PhysRevB.77.054406
+    title: 'Structural, electronic, and magnetic properties of tetragonal Mn 3 − x Ga : Experiments and first-principles
+      calculations'
+    first_author: Jürgen Winterlik
+    year: 2008
+    url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.77.054406
+    evidence: abstract
+    locator: abstract
+  quote: The Curie temperature of the compounds is restricted to approximately 770K because of a structural phase
+    transition to the hexagonal DO19 phase.
+  note: ''
+- id: mn3ga_tc_balke2007
+  phase: D022-Mn3Ga
+  quantity: Tc
+  value: '>730'
+  unit: K
+  conditions: bulk D022 Mn3Ga
+  source:
+    doi: 10.1063/1.2722206
+    title: Mn 3 Ga , a compensated ferrimagnet with high Curie temperature and low magnetic moment for spin torque
+      transfer applications
+    first_author: Benjamin Balke
+    year: 2007
+    url: https://api.openalex.org/works/doi:10.1063/1.2722206
+    evidence: abstract
+    locator: abstract
+  quote: The Curie temperature is above 730K where the onset of decomposition is observed.
+  note: ''
+- id: mn3ga_tc_saito2012
+  phase: D022-Mn3Ga
+  quantity: Tc
+  value: 730
+  unit: K
+  conditions: annealed Mn70Ga30 melt-spun ribbons
+  source:
+    doi: 10.1063/1.4759351
+    title: Hard magnetic properties of Mn-Ga melt-spun ribbons
+    first_author: Tetsuji Saito
+    year: 2012
+    url: https://api.crossref.org/works/10.1063/1.4759351
+    evidence: abstract
+    locator: abstract
+  quote: The Curie temperature of the DO22-Mn3Ga phase was found to be around 730 K.
+  note: ''
+- id: mn3ga_tc_huh2013
+  phase: D022-Mn3Ga
+  quantity: Tc
+  value: 702
+  unit: K
+  conditions: melt-spun + heat-treated Mn1.9Ga ribbons (D022)
+  source:
+    doi: 10.1063/1.4812561
+    title: Magnetism and electron transport of MnyGa (1 < y < 2) nanostructures
+    first_author: Y. Huh
+    year: 2013
+    url: https://api.crossref.org/works/10.1063/1.4812561
+    evidence: abstract
+    locator: abstract
+  quote: Although both the L10- and D022-MnyGa samples show a high Curie temperature (Tc) well above room temperature,
+    the value of Tc decreases almost linearly from 702 K for Mn1.9Ga to 551 K for Mn1.2Ga.
+  note: ''
+- id: mn3ga_js_huh2013
+  phase: D022-Mn3Ga
+  quantity: Js
+  value: 0.377
+  unit: T
+  conditions: melt-spun + annealed Mn1.9Ga ribbons (D022); temperature not stated in abstract
+  source:
+    doi: 10.1063/1.4812561
+    title: Magnetism and electron transport of MnyGa (1 < y < 2) nanostructures
+    first_author: Y. Huh
+    year: 2013
+    url: https://api.crossref.org/works/10.1063/1.4812561
+    evidence: abstract
+    locator: abstract
+  quote: We have found a maximum saturation magnetization of 621 emu/cm3 in Mn1.2Ga which decreases monotonically
+    to 300 emu/cm3 as y reaches 1.9.
+  note: Converted 300 emu/cm3 -> 0.377 T. Mn-poor end of D022 (Mn1.9Ga).
+- id: mn3ga_ms_huhieee2013
+  phase: D022-Mn3Ga
+  quantity: Ms_mass
+  value: 57
+  unit: Am2/kg
+  conditions: melt-spun + 450 C/50 h annealed Mn1.9Ga ribbons (D022)
+  source:
+    doi: 10.1109/TMAG.2013.2244856
+    title: Magnetic and Structural Properties of Rapidly Quenched Tetragonal Mn$_{3 - {\rm x}}$Ga Nanostructures
+    first_author: Y. Huh
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1109/TMAG.2013.2244856
+    evidence: abstract
+    locator: abstract
+  quote: The maximum magnetization of 57 emu/g (300 emu/cm3) and the coercivity of 6.5 kOe were measured in the
+    Mn1.9Ga and Mn3.0Ga ribbons, respectively.
+  note: '''maximum magnetization'' (high-field value; saturation not stated).'
+- id: mn3ga_js_kurt2011
+  phase: D022-Mn3Ga
+  quantity: Js
+  value: 0.138
+  unit: T
+  conditions: epitaxial c-axis Mn3Ga films
+  source:
+    doi: 10.1103/PhysRevB.83.020405
+    title: High spin polarization in epitaxial films of ferrimagnetic Mn3Ga
+    first_author: H. Kurt
+    year: 2011
+    url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.83.020405
+    evidence: abstract
+    locator: abstract
+  quote: Ferrimagnetic Mn3Ga exhibits a unique combination of low saturation magnetization (Ms=0.11 MA m−1) and
+    high perpendicular anisotropy with a uniaxial anisotropy constant of Ku = 0.89 MJ m−3.
+  note: 'Converted: Js = mu0*Ms = 4*pi*1e-7*0.11e6 = 0.138 T. Film value; temperature presumably room temperature
+    (not stated in abstract).'
+- id: mn3ga_k1_kurt2011
+  phase: D022-Mn3Ga
+  quantity: K1
+  value: 0.89
+  unit: MJ/m3
+  conditions: epitaxial c-axis Mn3Ga films
+  source:
+    doi: 10.1103/PhysRevB.83.020405
+    title: High spin polarization in epitaxial films of ferrimagnetic Mn3Ga
+    first_author: H. Kurt
+    year: 2011
+    url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.83.020405
+    evidence: abstract
+    locator: abstract
+  quote: Ferrimagnetic Mn3Ga exhibits a unique combination of low saturation magnetization (Ms=0.11 MA m−1) and
+    high perpendicular anisotropy with a uniaxial anisotropy constant of Ku = 0.89 MJ m−3.
+  note: ''
+- id: mn3ga_k1_rode2013
+  phase: D022-Mn3Ga
+  quantity: K1
+  value: 1.0
+  unit: MJ/m3
+  conditions: Mn3Ga bulk and thin films (D022)
+  source:
+    doi: 10.1103/PhysRevB.87.184429
+    title: Site-specific order and magnetism in tetragonal Mn3Ga thin films
+    first_author: Karsten Rode
+    year: 2013
+    url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.87.184429
+    evidence: abstract
+    locator: abstract
+  quote: The material nevertheless exhibits substantial uniaxial anisotropy, Ku=1.0MJm−3, which originates from
+    the 4d site. The 2b site has hard axis anisotropy, which together with an oscillatory exchange coupling from
+    the first and second nearest neighbors, leads to a soft component of the magnetization in the c plane, coexisting
+    with c-axis hysteresis loops exhibiting coercivity of up to 1.2 T, and magnetization in the range 110–220 kA
+    m−1 at room temperature, depending on preparation conditions.
+  note: 'Room-temperature magnetization 110-220 kA/m = Js 0.14-0.28 T. Mn2Ga films: 480 kA/m and Ku = 2.35 MJ/m3
+    (same abstract).'
+- id: mn3ga_k1_mn2ga_rode2013
+  phase: D022-Mn3Ga
+  quantity: K1
+  value: 2.35
+  unit: MJ/m3
+  conditions: tetragonal Mn2Ga films
+  source:
+    doi: 10.1103/PhysRevB.87.184429
+    title: Site-specific order and magnetism in tetragonal Mn3Ga thin films
+    first_author: Karsten Rode
+    year: 2013
+    url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.87.184429
+    evidence: abstract
+    locator: abstract
+  quote: Tetragonal Mn2Ga films behave similarly. Manganese is lost from both sites, but the films have substantially
+    larger magnetization (480 kA m−1) and anisotropy constant (2.35 MJ m−3) than Mn3Ga.
+  note: Js = mu0*480 kA/m = 0.60 T for these Mn2Ga films.
+- id: mn3ga_ms_winterlik2008
+  phase: D022-Mn3Ga
+  quantity: other
+  value: 0.26 (Mn3Ga) to 0.47 (Mn2Ga)
+  unit: muB/atom (average saturation moment)
+  conditions: bulk Mn3-xGa, D022, x = 0-1
+  source:
+    doi: 10.1103/PhysRevB.77.054406
+    title: 'Structural, electronic, and magnetic properties of tetragonal Mn 3 − x Ga : Experiments and first-principles
+      calculations'
+    first_author: Jürgen Winterlik
+    year: 2008
+    url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.77.054406
+    evidence: abstract
+    locator: abstract
+  quote: With decreasing Mn content, the average saturation magnetization per atom increases from 0.26μB for Mn3Ga
+    to 0.47μB for Mn2Ga.
+  note: ''
+- id: mn3ga_ms_niida1996
+  phase: D022-Mn3Ga
+  quantity: Ms_mass
+  value: 50
+  unit: Am2/kg
+  conditions: powder of Mn2.33Ga (d = 0.67), D022, room temperature, fields up to 150 kOe
+  source:
+    doi: 10.1063/1.362115
+    title: Magnetization and coercivity of Mn3−δGa alloys with a D022-type structure
+    first_author: Hiroshi Niida
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.362115
+    evidence: abstract
+    locator: abstract
+  quote: The room-temperature values of saturation magnetization ... of the powder sample of the alloy with δ=0.67
+    are 50 emu/g
+  note: Quote elided to keep the remanence of the same sample (an outcome, sealed) out of the inputs file.
+- id: mn3ga_formation_niida1996
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: 'solid state: D022 forms from the quenched high-temperature gamma-Mn (fcc) solid solution on long annealing
+    at 300-400 C; faster if the ingot is first powdered by filing'
+  unit: ''
+  conditions: bulk Mn3-dGa, 0.15 <= d <= 1.06 single phase
+  source:
+    doi: 10.1063/1.362115
+    title: Magnetization and coercivity of Mn3−δGa alloys with a D022-type structure
+    first_author: Hiroshi Niida
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.362115
+    evidence: abstract
+    locator: abstract
+  quote: We have prepared the D022-type alloys by annealing the quenched ingots of the high-temperature phase (γMn
+    phase) at 400 or 300 °C for a long time. The preparation becomes much easier if the ingots are powdered by filing
+    before the annealing.
+  note: Parent gamma-Mn is cubic; D022 is a tetragonal ordered superstructure of an fcc-based lattice (c/a of D022
+    cell ~1.83 i.e. ~0.91 per fcc subcell).
+- id: mn3ga_tf_niida1996
+  phase: D022-Mn3Ga
+  quantity: T_formation
+  value:
+  - 573
+  - 673
+  unit: K
+  conditions: bulk Mn3-dGa
+  source:
+    doi: 10.1063/1.362115
+    title: Magnetization and coercivity of Mn3−δGa alloys with a D022-type structure
+    first_author: Hiroshi Niida
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.362115
+    evidence: abstract
+    locator: abstract
+  quote: We have prepared the D022-type alloys by annealing the quenched ingots of the high-temperature phase (γMn
+    phase) at 400 or 300 °C for a long time.
+  note: '300-400 C = 573-673 K, well below Tc (~765 K): D022 forms while ferrimagnetic, so a field applied during
+    the gamma-Mn -> D022 transition can act (Niida et al. studied ''magnetic annealing during the transition'';
+    result not in the abstract).'
+- id: mn3ga_tf_hx2020
+  phase: D022-Mn3Ga
+  quantity: T_formation
+  value:
+  - 623
+  - 723
+  unit: K
+  conditions: 'Mn3-xGa, 23.5-31.2 at.% Ga; originals: Masumoto et al. 1978, Niida et al. 1996'
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 3.1
+  quote: After annealing alloys containing 23.5–31.2 at.% Ga at 350–450 °C, tetragonal Mn3Ga with D022 ordering
+    (I4/mmm) will precipitate from the high-temperature (γMn) phase [35,36].
+  note: 350-450 C = 623-723 K < Tc.
+- id: mn3ga_formation_wei2014
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: D022 obtained by annealing ingots that contain the cubic gamma phase
+  unit: ''
+  conditions: bulk Mn3-xGa, x = 0-1.15
+  source:
+    doi: 10.1063/1.4866844
+    title: Structural properties and large coercivity of bulk Mn3−xGa (0 ≤ x ≤ 1.15)
+    first_author: J. Z. Wei
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1063/1.4866844
+    evidence: abstract
+    locator: abstract
+  quote: The tetragonal DO22 phase of the Mn3−xGa compounds, with x varying from 0 to 1.15, has been successfully
+    synthesized by annealing the ingots with the cubic γ-phase.
+  note: ''
+- id: mn3ga_formation_huhieee2013
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: melt-spun ribbons are D019 + cubic (L21) as spun; 450 C ~50 h converts both to D022
+  unit: ''
+  conditions: melt-spun Mn3-xGa ribbons, x = 0, 0.4, 0.9, 1.1
+  source:
+    doi: 10.1109/TMAG.2013.2244856
+    title: Magnetic and Structural Properties of Rapidly Quenched Tetragonal Mn$_{3 - {\rm x}}$Ga Nanostructures
+    first_author: Y. Huh
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1109/TMAG.2013.2244856
+    evidence: abstract
+    locator: abstract
+  quote: As-spun samples crystallized into hexagonal D019and cubic L21Heusler crystal structures based on the concentration
+    of Mn in Mn3-xGa. Upon vacuum-annealing the samples at 450 °C for about 50 hours, both the hexagonal and cubic
+    structures transformed into a tetragonal D022structure.
+  note: 450 C = 723 K < Tc of D022.
+- id: mn3ga_formation_kharel2014
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: melt-spun cubic (disordered Cu3Au-type) Mn3Ga transforms on heating at ~600 K (to D022) and ~800 K (to
+    D019)
+  unit: ''
+  conditions: cubic Mn3Ga ribbons
+  source:
+    doi: 10.1088/0953-8984/26/12/126001
+    title: Structural and magnetic transitions in cubic Mn 3 Ga
+    first_author: P Kharel
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/26/12/126001
+    evidence: abstract
+    locator: abstract
+  quote: The alloys prepared by arc melting and melt-spinning show an antiferromagnetic spin order at room temperature
+    but undergo coupled structural and magnetic phase transitions at 600 and 800 K.
+  note: Assignment of the two transitions (cubic -> D022 at 327 C, D022 -> D019 at 527 C) is given by the review
+    Hao & Xiong 2020, Section 3.1.
+- id: mn3ga_formation_ener2015
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: D022 is metastable; D019 (antiferromagnetic) is normally stable at Mn70Ga30; D022 content increased by
+    cold rolling + annealing at 730 K
+  unit: ''
+  conditions: arc-melted, cold-rolled Mn70Ga30 annealed at 730 K
+  source:
+    doi: 10.1016/j.jmmm.2015.02.001
+    title: Magnet properties of Mn70Ga30 prepared by cold rolling and magnetic field annealing
+    first_author: Semih Ener
+    year: 2015
+    url: https://istina.ipmnet.ru/publications/article/80330998/
+    evidence: abstract
+    locator: abstract
+  quote: the increase of the content of a metastable ferrimagnetic D022 phase at the expense of the normally stable
+    anti-ferromagnetic D019.
+  note: ''
+- id: mn3ga_field_ener2015
+  phase: D022-Mn3Ga
+  quantity: field_effect_on_formation
+  value: a 1 T field during annealing at 730 K raises the nucleation rate of D022 (grain refinement)
+  unit: ''
+  conditions: cold-rolled Mn70Ga30, anneal 730 K in 1 T
+  source:
+    doi: 10.1016/j.jmmm.2015.02.001
+    title: Magnet properties of Mn70Ga30 prepared by cold rolling and magnetic field annealing
+    first_author: Semih Ener
+    year: 2015
+    url: https://istina.ipmnet.ru/publications/article/80330998/
+    evidence: abstract
+    locator: abstract
+  quote: Magnetic field significantly increases the nucleation rate of the ferromagnetic D022 phase that leads to
+    grain size refinement
+  note: '730 K is just below Tc of D022 (~730-770 K): the forming phase is (weakly) ferrimagnetic. Whether the field
+    selects c-axis variants (texture) is not stated in the abstract.'
+- id: mn3ga_field_niida1996
+  phase: D022-Mn3Ga
+  quantity: field_effect_on_formation
+  value: magnetic annealing during gamma-Mn -> D022 was studied (outcome not in the abstract)
+  unit: ''
+  conditions: bulk Mn3-dGa
+  source:
+    doi: 10.1063/1.362115
+    title: Magnetization and coercivity of Mn3−δGa alloys with a D022-type structure
+    first_author: Hiroshi Niida
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.362115
+    evidence: abstract
+    locator: abstract
+  quote: We have also studied the effect of magnetic annealing during the transition from the γMn phase to the D022-type
+    phase and the effect of the addition of Fe to Mn3−δGa of the D022-type phase.
+  note: Full text (J. Appl. Phys. 79, 5946) not accessible; the size of the field-induced anisotropy is unknown
+    here (gap).
+- id: mn3ga_tstab_winterlik2008
+  phase: D022-Mn3Ga
+  quantity: T_stab
+  value: 770
+  unit: K
+  conditions: bulk Mn3-xGa (heating in magnetometer; time scale of an M(T) scan)
+  source:
+    doi: 10.1103/PhysRevB.77.054406
+    title: 'Structural, electronic, and magnetic properties of tetragonal Mn 3 − x Ga : Experiments and first-principles
+      calculations'
+    first_author: Jürgen Winterlik
+    year: 2008
+    url: https://journals.aps.org/prb/abstract/10.1103/PhysRevB.77.054406
+    evidence: abstract
+    locator: abstract
+  quote: The Curie temperature of the compounds is restricted to approximately 770K because of a structural phase
+    transition to the hexagonal DO19 phase.
+  note: ''
+- id: mn3ga_tstab_huhieee2013
+  phase: D022-Mn3Ga
+  quantity: T_stab
+  value:
+  - 800
+  - 850
+  unit: K
+  conditions: 'D022 ribbons: Mn2.6Ga, Mn3.0Ga transform ~800 K; Mn1.9Ga, Mn2.1Ga stable to 850 K (high-temperature
+    XRD/magnetometry time scale)'
+  source:
+    doi: 10.1109/TMAG.2013.2244856
+    title: Magnetic and Structural Properties of Rapidly Quenched Tetragonal Mn$_{3 - {\rm x}}$Ga Nanostructures
+    first_author: Y. Huh
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1109/TMAG.2013.2244856
+    evidence: abstract
+    locator: abstract
+  quote: High-temperature x-ray diffraction and high-temperature magnetometry showed that the samples with low Mn
+    content (Mn1.9Ga and Mn2.1Ga) retain their tetragonal structure up to 850 K but the samples with high Mn concentrations
+    (Mn2.6Ga and Mn3.0Ga) undergo a structural phase transition from tetragonal to hexagonal phases around 800 K.
+  note: ''
+- id: mn3ga_tstab_balke2007
+  phase: D022-Mn3Ga
+  quantity: T_stab
+  value: 730
+  unit: K
+  conditions: bulk D022 Mn3Ga (onset of decomposition on heating)
+  source:
+    doi: 10.1063/1.2722206
+    title: Mn 3 Ga , a compensated ferrimagnet with high Curie temperature and low magnetic moment for spin torque
+      transfer applications
+    first_author: Benjamin Balke
+    year: 2007
+    url: https://api.openalex.org/works/doi:10.1063/1.2722206
+    evidence: abstract
+    locator: abstract
+  quote: The Curie temperature is above 730K where the onset of decomposition is observed.
+  note: ''
+- id: mn3ga_parent_d019_niida1988
+  phase: D022-Mn3Ga
+  quantity: other
+  value: 'parent/competing D019 (epsilon) phase: stable at 600 C for 70-74 at.% Mn; antiferromagnetic, TN 450-490
+    K'
+  unit: ''
+  conditions: epsilon-MnGa (D019), annealed 600 C, quenched
+  source:
+    doi: 10.1051/jphyscol:1988873
+    title: MAGNETIC PROPERTIES OF ε-MnGa ALLOYS WITH THE DO19 TYPE STRUCTURE
+    first_author: H. Niida
+    year: 1988
+    url: https://hal.science/jpa-00228969/document
+    evidence: abstract
+    locator: abstract
+  quote: X-ray diffraction and magnetic measurements have shown that ε-MnGa alloys with the DO19 type structure
+    are stable at 600 °C in a composition range of 70-74 at% Mn. The Néel temperature is 450-490 K depending on
+    the composition.
+  note: 'The D019 phase is antiferromagnetic (weak ferromagnetism below TN): above TN it is paramagnetic, so a field
+    cannot bias a D019 parent texture before it orders.'
+- id: mn3ga_parent_d019_hx2020
+  phase: D022-Mn3Ga
+  quantity: other
+  value: 'D019 Mn3Ga: antiferromagnetic, TN 460 K; obtained by water quenching from 600-800 C (26-30 at.% Ga)'
+  unit: ''
+  conditions: D019 Mn3Ga (Kren & Kadar 1970)
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 4
+  quote: D019-Mn3Ga is antiferromagnetic with the N�eel temperature of 460 K and the magnetic moment of 2.4 μB/Mn
+    [30]
+  note: Text layer renders 'Néel' as 'N?eel'; quote copied as extracted.
+- id: mn3ga_d019_quench_hx2020
+  phase: D022-Mn3Ga
+  quantity: other
+  value: parent/competing D019 obtainable by water quenching from 873-1073 K (600-800 C), 26-30 at.% Ga
+  unit: K
+  conditions: Mn3Ga, 26-30 at.% Ga
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Section 3.1
+  quote: Hexagonal Mn3Ga with D019 ordering (P63/mmc) can be obtained in the water-quenched alloys containing 26
+    to 30 at.% Ga between 600 and 800 °C [28–32].
+  note: 'Upper side of the D022 window: above ~770-850 K the hexagonal D019 is the stable form; D022 must be formed
+    below this.'
+- id: mn3ga_phasediagram_hx2020
+  phase: D022-Mn3Ga
+  quantity: formation_path
+  value: equilibrium Mn3Ga (<730 C) forms peritectoidally from Mn2Ga(h) + (gammaMn) at 730 C and eutectoidally (gammaMn
+    -> betaMn + Mn3Ga) at 662 C; Mn2Ga(h) -> Mn2Ga(r) + Mn3Ga at 711 C
+  unit: ''
+  conditions: recommended diagram (Mn-rich side after Minakuchi et al. 2012)
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic properties'
+    first_author: Liangyan Hao
+    year: 2020
+    url: https://par.nsf.gov/servlets/purl/10159800
+    evidence: review
+    locator: Table 2 (rows checked on page image; 662 C row is (gammaMn) = (betaMn) + Mn3Ga)
+  quote: Mn2Ga(h) + (γMn) ⇌ Mn3Ga 730 28.4 27.1 27.9 ... Mn2Ga(h) ⇌ Mn2Ga(r) + Mn3Ga 711 29.4 31.4 28.9 662 22.2
+    20.1 24.1
+  note: Table 4 lists for 'Mn3Ga (<730 C)' the D019, D022 and D03 structures; the stable form is reported as D019
+    (DFT favours D022).
+- id: mn3ga_comp_niida1996
+  phase: D022-Mn3Ga
+  quantity: phase_fraction_limit
+  value: single-phase D022 for Mn3-dGa with 0.15 <= d <= 1.06
+  unit: ''
+  conditions: bulk annealed powders
+  source:
+    doi: 10.1063/1.362115
+    title: Magnetization and coercivity of Mn3−δGa alloys with a D022-type structure
+    first_author: Hiroshi Niida
+    year: 1996
+    url: https://api.openalex.org/works/doi:10.1063/1.362115
+    evidence: abstract
+    locator: abstract
+  quote: The single-phase specimens of Mn3−δGa were obtained in the composition range 0.15≤δ≤1.06.
+  note: ''
+- id: mn3ge_formation_you2017
+  phase: D022-Mn3Ge
+  quantity: formation_path
+  value: 'solid state: D019 hexagonal (high-temperature; 800 C 5 days + water quench) -> D022 tetragonal by annealing
+    at 450 C for 2 weeks'
+  unit: ''
+  conditions: bulk Mn3.4Ge
+  source:
+    doi: 10.1016/j.jmmm.2016.12.140
+    title: Designing magnetic compensated states in tetragonal Mn 3 Ge-based Heusler alloys
+    first_author: Yurong You
+    year: 2017
+    url: https://arxiv.org/pdf/1610.04971
+    evidence: full_text
+    locator: Section 3 (arXiv:1610.04971)
+  quote: We synthesized the high-temperature hexagonal phase by annealing the as-cast Mn3.4Ge samples at 800oC for
+    5 days before water-quenching, then the tetragonal phase was obtained by annealing the hexagonal samples at
+    450oC for 2 weeks.
+  note: '450 C = 723 K, below the reported Tc of tetragonal Mn3Ge (920 K): D022-Mn3Ge forms in the ferrimagnetic
+    state; the D019 parent is the antiferromagnetic hexagonal Mn3Ge.'
+- id: mn3ge_tf_you2017
+  phase: D022-Mn3Ge
+  quantity: T_formation
+  value: 723
+  unit: K
+  conditions: bulk Mn3.4Ge, 2 weeks
+  source:
+    doi: 10.1016/j.jmmm.2016.12.140
+    title: Designing magnetic compensated states in tetragonal Mn 3 Ge-based Heusler alloys
+    first_author: Yurong You
+    year: 2017
+    url: https://arxiv.org/pdf/1610.04971
+    evidence: full_text
+    locator: Section 3 (arXiv:1610.04971)
+  quote: then the tetragonal phase was obtained by annealing the hexagonal samples at 450oC for 2 weeks.
+  note: ''
+- id: mn3ge_lattice_you2017
+  phase: D022-Mn3Ge
+  quantity: lattice
+  value:
+    a: 3.803
+    c: 7.236
+  unit: Å
+  conditions: bulk Mn3.4Ge, D022 (and D019 parent a = 5.337, c = 4.311 A)
+  source:
+    doi: 10.1016/j.jmmm.2016.12.140
+    title: Designing magnetic compensated states in tetragonal Mn 3 Ge-based Heusler alloys
+    first_author: Yurong You
+    year: 2017
+    url: https://arxiv.org/pdf/1610.04971
+    evidence: full_text
+    locator: Section 3 (arXiv:1610.04971)
+  quote: As Fig. 4 shows, the refined lattice constants of tetragonal samples are a = 3.803 Å and c = 7.236 Å, and
+    those of hexagonal samples are a = 5.337 Å and c = 4.311 Å.
+  note: ''
+- id: mn3ge_tc_you2017
+  phase: D022-Mn3Ge
+  quantity: Tc
+  value: 920
+  unit: K
+  conditions: tetragonal Mn3Ge
+  source:
+    doi: 10.1016/j.jmmm.2016.12.140
+    title: Designing magnetic compensated states in tetragonal Mn 3 Ge-based Heusler alloys
+    first_author: Yurong You
+    year: 2017
+    url: https://arxiv.org/pdf/1610.04971
+    evidence: review
+    locator: Section 3; ref. [12] = Kadar & Kren, Int. J. Magn. 1 (1971) 143
+  quote: This indicates the high Curie temperature of Mn3Ge, which is reported as high as 920 K [12].
+  note: Value quoted from Kadar & Kren 1971 (original not accessed).
+- id: mn3ge_comp_you2017
+  phase: D022-Mn3Ge
+  quantity: phase_fraction_limit
+  value: single-phase Mn3Ge only for Mn3.2Ge-Mn3.4Ge (excess Mn on Ge sites)
+  unit: ''
+  conditions: bulk
+  source:
+    doi: 10.1016/j.jmmm.2016.12.140
+    title: Designing magnetic compensated states in tetragonal Mn 3 Ge-based Heusler alloys
+    first_author: Yurong You
+    year: 2017
+    url: https://arxiv.org/pdf/1610.04971
+    evidence: full_text
+    locator: Section 3 (arXiv:1610.04971)
+  quote: According to the early report, single phase of Mn3Ge exists only when the composition is among the range
+    between Mn3.2Ge and Mn3.4Ge, since the excess Mn atoms that occupy the site of Ge can help to stabilize a single
+    hexagonal D019 or tetragonal D022 phase [24-26].
+  note: ''
+- id: mn3ge_tstab_kalache2016
+  phase: D022-Mn3Ge
+  quantity: T_stab
+  value: 800
+  unit: K
+  conditions: melt-spun + heat-treated Mn3Ge ribbons (77-74 at.% Mn)
+  source:
+    doi: 10.1063/1.4961660
+    title: Isotropic, high coercive field in melt-spun tetragonal Heusler Mn3Ge
+    first_author: Adel Kalache
+    year: 2016
+    url: https://api.openalex.org/works/doi:10.1063/1.4961660
+    evidence: abstract
+    locator: abstract
+  quote: The Curie temperature was found to be higher than 800 K, which is the temperature of the phase transition
+    from the tetragonal D022 structure to the hexagonal D019 structure.
+  note: Tc of the D022 phase therefore exceeds its stability limit in these ribbons.
+- id: mn3ge_tc_kalache2016
+  phase: D022-Mn3Ge
+  quantity: Tc
+  value: '>800'
+  unit: K
+  conditions: melt-spun Mn3Ge ribbons
+  source:
+    doi: 10.1063/1.4961660
+    title: Isotropic, high coercive field in melt-spun tetragonal Heusler Mn3Ge
+    first_author: Adel Kalache
+    year: 2016
+    url: https://api.openalex.org/works/doi:10.1063/1.4961660
+    evidence: abstract
+    locator: abstract
+  quote: The Curie temperature was found to be higher than 800 K, which is the temperature of the phase transition
+    from the tetragonal D022 structure to the hexagonal D019 structure.
+  note: ''
+- id: mn3ge_k1_kurt2012
+  phase: D022-Mn3Ge
+  quantity: K1
+  value: 0.91
+  unit: MJ/m3
+  conditions: D022-Mn3Ge (001) films on SrTiO3, 300 K
+  source:
+    doi: 10.1063/1.4754123
+    title: Magnetic and electronic properties of D22-Mn3Ge (001) films
+    first_author: H. Kurt
+    year: 2012
+    url: https://api.openalex.org/works/doi:10.1063/1.4754123
+    evidence: abstract
+    locator: abstract
+  quote: Oriented thin films of Mn3Ge with the tetragonal D022 structure, grown on strontium titanate substrates,
+    exhibit a low magnetization Ms = 73 kA m−1 combined with high uniaxial anisotropy Ku = 0.91 MJ m−3 at 300 K
+  note: ''
+- id: mn3ge_js_kurt2012
+  phase: D022-Mn3Ge
+  quantity: Js
+  value: 0.092
+  unit: T
+  conditions: D022-Mn3Ge (001) films, 300 K
+  source:
+    doi: 10.1063/1.4754123
+    title: Magnetic and electronic properties of D22-Mn3Ge (001) films
+    first_author: H. Kurt
+    year: 2012
+    url: https://api.openalex.org/works/doi:10.1063/1.4754123
+    evidence: abstract
+    locator: abstract
+  quote: Oriented thin films of Mn3Ge with the tetragonal D022 structure, grown on strontium titanate substrates,
+    exhibit a low magnetization Ms = 73 kA m−1 combined with high uniaxial anisotropy Ku = 0.91 MJ m−3 at 300 K
+  note: 'Converted: Js = mu0*73 kA/m = 0.092 T.'
+- id: mn3ge_k1_sugihara2014
+  phase: D022-Mn3Ge
+  quantity: K1
+  value: 1.18
+  unit: MJ/m3
+  uncertainty: 0.05
+  conditions: epitaxial D022-Mn3+xGe films on Cr/MgO(001), torque at 140 kOe
+  source:
+    doi: 10.1063/1.4870625
+    title: High perpendicular magnetic anisotropy in D22-Mn3+xGe tetragonal Heusler alloy films
+    first_author: A. Sugihara
+    year: 2014
+    url: https://api.crossref.org/works/10.1063/1.4870625
+    evidence: abstract
+    locator: abstract
+  quote: Performing magnetic torque measurements at an applied field of 140 kOe, we estimated a perpendicular magnetic
+    anisotropy constant of 11.8 ± 0.5 Merg/cm3, the highest and the most reliable value yet reported.
+  note: 11.8 +- 0.5 Merg/cm3 = 1.18 +- 0.05 MJ/m3.
+- id: mn3ge_easy_sugihara2014
+  phase: D022-Mn3Ge
+  quantity: easy_axis
+  value: c axis (perpendicular magnetization of (001) films)
+  unit: ''
+  conditions: epitaxial (001) films
+  source:
+    doi: 10.1063/1.4870625
+    title: High perpendicular magnetic anisotropy in D22-Mn3+xGe tetragonal Heusler alloy films
+    first_author: A. Sugihara
+    year: 2014
+    url: https://api.crossref.org/works/10.1063/1.4870625
+    evidence: abstract
+    locator: abstract
+  quote: We prepared D022-Mn3+xGe (−0.67 ≤ x ≤ 0.35) epitaxial thin films on MgO(001) substrates with Cr(001) buffer
+    layers and systematically investigated the dependence of their perpendicular magnetic anisotropy constant ...
+    we estimated a perpendicular magnetic anisotropy constant of 11.8 ± 0.5 Merg/cm3
+  note: '(001) films: perpendicular = c axis.'
+- id: mn3ge_twins_sugihara2015
+  phase: D022-Mn3Ge
+  quantity: twins
+  value: no stacking faults or twins seen in epitaxial D022-Mn3Ge grown at 400 C
+  unit: ''
+  conditions: epitaxial film, grown at 400 C
+  source:
+    doi: 10.1088/0022-3727/48/16/164009
+    title: Structure and magnetic properties of tetragonal HeuslerD022-Mn3Ge compound epitaxial films with high
+      perpendicular magnetic anisotropy
+    first_author: A Sugihara
+    year: 2015
+    url: https://api.openalex.org/works/doi:10.1088/0022-3727/48/16/164009
+    evidence: abstract
+    locator: abstract
+  quote: Nanobeam diffraction patterns from the D 0 22 -Mn 3 Ge film grown at 400 °C suggests the absence of planar
+    defects such as stacking faults and twins in the film.
+  note: ''
+- id: mn3ge_d019_oka2019
+  phase: D022-Mn3Ge
+  quantity: T_stab
+  value: D022 thermal stability limited; raised by Al substitution (value not in abstract)
+  unit: ''
+  conditions: bulk Mn3(Ge,Al)
+  source:
+    doi: 10.1063/1.5079907
+    title: Al substitution effects on phase stabilities and magnetic properties of tetragonal Mn3Ge
+    first_author: Hironari Okada
+    year: 2019
+    url: https://api.crossref.org/works/10.1063/1.5079907
+    evidence: abstract
+    locator: abstract
+  quote: Thermal stability of the D022 structure is enhanced by the Al substitution.
+  note: ''
+- id: mn3ge_svp_kalache2016
+  phase: D022-Mn3Ge
+  quantity: single_variant_particles
+  value: melt-spun + annealed D022-Mn3Ge ribbons are nanostructured (polycrystalline)
+  unit: ''
+  conditions: melt-spun ribbons
+  source:
+    doi: 10.1063/1.4961660
+    title: Isotropic, high coercive field in melt-spun tetragonal Heusler Mn3Ge
+    first_author: Adel Kalache
+    year: 2016
+    url: https://api.openalex.org/works/doi:10.1063/1.4961660
+    evidence: abstract
+    locator: abstract
+  quote: Nanostructured Mn3Ge ribbons with a composition ranging from 77 to 74 at.% Mn were prepared using induction
+    melting, melt-spinning, and subsequent heat treatment.
+  note: ''
+- id: zr2co11_js_cui2018
+  phase: Zr2Co11
+  quantity: Js
+  value: 0.97
+  unit: T
+  conditions: melt-spun Zr2Co11 (rhombohedral hard phase), room temperature
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: 'Section 7 (HfCo7 and Zr2Co11); ref. [163] = Balamurugan et al., J. Phys.: Condens. Matter 26 (2014)
+      064204'
+  quote: and for Zr2Co11, they are K1 = 1.35 MJ/m3, Ms = 9.7 kG, and Tc = 783 K [163].
+  note: '''Ms = 9.7 kG'' is 4*pi*Ms (CGS polarization) -> Js = 0.97 T. Table 4 of the same review gives 9.7 kG at
+    300 K for Zr2Co11 and 6.9 kG for Zr2Co11B.'
+- id: zr2co11_k1_cui2018
+  phase: Zr2Co11
+  quantity: K1
+  value: 1.35
+  unit: MJ/m3
+  conditions: melt-spun Zr2Co11, room temperature (law of approach to saturation in the original)
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; ref. [163]
+  quote: and for Zr2Co11, they are K1 = 1.35 MJ/m3, Ms = 9.7 kG, and Tc = 783 K [163].
+  note: ''
+- id: zr2co11_tc_cui2018
+  phase: Zr2Co11
+  quantity: Tc
+  value: 783
+  unit: K
+  conditions: melt-spun Zr2Co11
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; ref. [163]; Table 4
+  quote: and for Zr2Co11, they are K1 = 1.35 MJ/m3, Ms = 9.7 kG, and Tc = 783 K [163].
+  note: 'Table 4 of the review: Zr2Co11B 773 K.'
+- id: zr2co11_tc_ishikawa1990
+  phase: Zr2Co11
+  quantity: Tc
+  value: 773
+  unit: K
+  conditions: rapidly quenched Zr-Co-B and Zr-Co ribbons and Zr-Co ingots
+  source:
+    doi: 10.1109/20.104381
+    title: Hard magnetic phase in rapidly quenched Zr-Co-B alloys
+    first_author: T. Ishikawa
+    year: 1990
+    url: https://api.openalex.org/works/doi:10.1109/20.104381
+    evidence: abstract
+    locator: abstract
+  quote: The hard magnetic phase is interpreted as a Zr/sub 2/Co/sub 11/ intermetallic compound. This compound has
+    a Curie temperature of 500 degrees C and uniaxial magnetic anisotropy with an anisotropy field of 34 kOe.
+  note: 500 C = 773 K. Anisotropy field 34 kOe (mu0*HA = 3.4 T).
+- id: zr2co11_ha_ishikawa1990
+  phase: Zr2Co11
+  quantity: other
+  value: 3.4
+  unit: T (mu0*HA, anisotropy field)
+  conditions: Zr2Co11 in Zr-Co-B / Zr-Co ribbons
+  source:
+    doi: 10.1109/20.104381
+    title: Hard magnetic phase in rapidly quenched Zr-Co-B alloys
+    first_author: T. Ishikawa
+    year: 1990
+    url: https://api.openalex.org/works/doi:10.1109/20.104381
+    evidence: abstract
+    locator: abstract
+  quote: This compound has a Curie temperature of 500 degrees C and uniaxial magnetic anisotropy with an anisotropy
+    field of 34 kOe.
+  note: Temperature of the HA determination not stated in abstract.
+- id: zr2co11_ms_ishikawa1990
+  phase: Zr2Co11
+  quantity: Ms_mass
+  value: 67
+  unit: Am2/kg
+  conditions: Zr2Co11 in rapidly quenched Zr-Co(-B); at 15 kOe (not saturating for HA = 34 kOe)
+  source:
+    doi: 10.1109/20.104381
+    title: Hard magnetic phase in rapidly quenched Zr-Co-B alloys
+    first_author: T. Ishikawa
+    year: 1990
+    url: https://api.openalex.org/works/doi:10.1109/20.104381
+    evidence: abstract
+    locator: abstract
+  quote: The magnetization of this compound was estimated to be 67 emu/g at 15 kOe.
+  note: ''
+- id: zr2co11_tc_jin2016
+  phase: Zr2Co11
+  quantity: Tc
+  value:
+  - 707
+  - 736
+  unit: K
+  conditions: rhombohedral Zr2Co11-type phase in melt-spun Zr16Co82.5-xMo1.5Bx, x = 0-3
+  source:
+    doi: 10.1063/1.4942556
+    title: Effect of boron doping on nanostructure and magnetism of rapidly quenched Zr2Co11-based alloys
+    first_author: Yunlong Jin
+    year: 2016
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4760965/
+    evidence: full_text
+    locator: Section III, Fig. 3
+  quote: The Curie temperatures increases from 707 K for x = 0 to 736 K for x = 3.
+  note: ''
+- id: zr2co11_easy_ishikawa1990
+  phase: Zr2Co11
+  quantity: easy_axis
+  value: uniaxial (single easy axis)
+  unit: ''
+  conditions: Zr2Co11 (structure variant not specified in abstract)
+  source:
+    doi: 10.1109/20.104381
+    title: Hard magnetic phase in rapidly quenched Zr-Co-B alloys
+    first_author: T. Ishikawa
+    year: 1990
+    url: https://api.openalex.org/works/doi:10.1109/20.104381
+    evidence: abstract
+    locator: abstract
+  quote: This compound has a Curie temperature of 500 degrees C and uniaxial magnetic anisotropy with an anisotropy
+    field of 34 kOe.
+  note: ''
+- id: zr2co11_easy_calc_cui2018
+  phase: Zr2Co11
+  quantity: easy_axis
+  value: uniaxial for rhombohedral R32 Zr2Co11 (DFT); i.e. the c axis of the hexagonal setting
+  unit: ''
+  conditions: DFT, rhombohedral Zr2Co11
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; ref. [176] = Zhao et al., PRL 112 (2014) 045502
+  quote: First-principle calculations show a uniaxial anisotropy for the rhombohedral Zr2Co11 structure with K1
+    = 1.4 MJ/m3 and Ms = 10.3 kG [176].
+  note: '''Uniaxial'' with K1 > 0 in a trigonal (R32) cell means the easy axis is the threefold c axis; the axis
+    is not named explicitly in the accessible text.'
+- id: zr2co11_polymorph_jin2016
+  phase: Zr2Co11
+  quantity: structure
+  value: 'polymorphs near Zr2Co11: cubic, orthorhombic, rhombohedral; only rhombohedral gives significant coercivity'
+  unit: ''
+  conditions: Zr2Co11-based alloys
+  source:
+    doi: 10.1063/1.4942556
+    title: Effect of boron doping on nanostructure and magnetism of rapidly quenched Zr2Co11-based alloys
+    first_author: Yunlong Jin
+    year: 2016
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4760965/
+    evidence: full_text
+    locator: Section I
+  quote: Alloys with the approximate stoichiometry Zr2Co11 crystallize in cubic, orthorhombic, and rhombohedral
+    structures, but only the rhombohedral phase, which is predicted to be metastable by formation-energy calculations,
+    leads to significant coercivity.
+  note: ''
+- id: zr2co11_polymorph_cui2018
+  phase: Zr2Co11
+  quantity: structure
+  value: hard phase = rhombohedral R32, a = 4.69 A, c = 24.0 A; low-temperature orthorhombic form is comparatively
+    soft
+  unit: ''
+  conditions: Zr2Co11
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7
+  quote: However, the rhombohedral Zr2Co11 with a space group R32 (a = 4.69 Å and c = 24.0 Å as schematically shown
+    in (Fig. 10c) is the hard-magnetic structure that is found to be a high-temperature metastable phase [170,176,177].
+  note: ''
+- id: zr2co11_polymorph_zhao2014
+  phase: Zr2Co11
+  quantity: structure
+  value: orthorhombic, rhombohedral and hexagonal polymorphs near Zr2Co11 solved by adaptive genetic algorithm;
+    hard phase identified
+  unit: ''
+  conditions: DFT/AGA structure solution
+  source:
+    doi: 10.1103/PhysRevLett.112.045502
+    title: Exploring the Structural Complexity of Intermetallic Compounds by an Adaptive Genetic Algorithm
+    first_author: X. Zhao
+    year: 2014
+    url: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.045502
+    evidence: abstract
+    locator: abstract
+  quote: This approach is demonstrated by solving a long-standing puzzle in the complex crystal structures of the
+    orthorhombic, rhombohedral, and hexagonal polymorphs close to the Zr2Co11 intermetallic compound. From our calculations,
+    we identified the hard magnetic phase and the origin of high coercivity in this compound
+  note: The abstract does not name the hard polymorph; the review Cui et al. 2018 (citing this work) names it as
+    rhombohedral R32.
+- id: zr2co11_polymorph_demczyk1991
+  phase: Zr2Co11
+  quantity: structure
+  value: orthorhombic Pcna (TEM), long-period superlattices in antiphase along [001]
+  unit: ''
+  conditions: 'bulk Zr2Co11 and HfCo7 (TEM: SAED, CBED)'
+  source:
+    doi: 10.1107/s0021889891007331
+    title: Structures of Zr2Co11 and HfCo7 intermetallic compounds
+    first_author: B. G. Demczyk
+    year: 1991
+    url: https://api.crossref.org/works/10.1107/s0021889891007331
+    evidence: abstract
+    locator: abstract
+  quote: Results show that both have an orthorhombic crystal structure, space group Pcna . The unit cells of both
+    compounds appear to be comprised of two long-period superlattices in antiphase relation to one another along
+    [001].
+  note: ''
+- id: zr2co11_lattice_jin2016
+  phase: Zr2Co11
+  quantity: lattice
+  value:
+    a: 4.71
+    c: 24.36
+  unit: Å
+  conditions: rhombohedral Zr2Co11 phase in melt-spun Zr16Co82.5Mo1.5 (x = 0), hexagonal setting
+  source:
+    doi: 10.1063/1.4942556
+    title: Effect of boron doping on nanostructure and magnetism of rapidly quenched Zr2Co11-based alloys
+    first_author: Yunlong Jin
+    year: 2016
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4760965/
+    evidence: full_text
+    locator: Section III
+  quote: For x = 0, these values a = 4.71 Å, c = 24.36 Å, and V = 469 Å3, for x = 3, they are a = 4.74 Å, c = 24.45
+    Å, and V = 476 Å3.
+  note: ''
+- id: zr2co11_lattice_cui2018
+  phase: Zr2Co11
+  quantity: lattice
+  value:
+    a: 4.69
+    c: 24.0
+  unit: Å
+  conditions: rhombohedral Zr2Co11 (R32)
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7
+  quote: However, the rhombohedral Zr2Co11 with a space group R32 (a = 4.69 Å and c = 24.0 Å
+  note: ''
+- id: zr2co11_formation_jin2016
+  phase: Zr2Co11
+  quantity: formation_path
+  value: rhombohedral Zr2Co11 is the high-temperature form, retained by quenching the melt at a sufficiently high
+    rate; orthorhombic is the low-temperature form
+  unit: ''
+  conditions: Zr2Co11-based alloys
+  source:
+    doi: 10.1063/1.4942556
+    title: Effect of boron doping on nanostructure and magnetism of rapidly quenched Zr2Co11-based alloys
+    first_author: Yunlong Jin
+    year: 2016
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4760965/
+    evidence: full_text
+    locator: Section I
+  quote: Rhombohedral Zr2Co11 is a high-temperature phase, whereas the orthorhombic phase is more stable at low
+    temperatures. Rhombohedral Zr2Co11 can therefore be produced by quenching the molten mixture so long as the
+    quench rate is sufficiently high.
+  note: ''
+- id: zr2co11_formation_zhang2013
+  phase: Zr2Co11
+  quantity: formation_path
+  value: high quench rate favours rhombohedral Zr2Co11 in melt-spun ZrxCo100-x (x = 16-21)
+  unit: ''
+  conditions: melt-spun ZrxCo100-x, x = 16-21
+  source:
+    doi: 10.1088/0022-3727/46/13/135004
+    title: Magnetism of rapidly quenched rhombohedral Zr2Co11-based nanocomposites
+    first_author: W Y Zhang
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1088/0022-3727/46/13/135004
+    evidence: abstract
+    locator: abstract
+  quote: High quench rate favours the formation of rhombohedral Zr 2 Co 11 , which is the hard phase.
+  note: ''
+- id: zr2co11_formation_cui2018
+  phase: Zr2Co11
+  quantity: formation_path
+  value: rapid quenching needed to keep rhombohedral Zr2Co11 after its formation/crystallisation at high temperature;
+    on slower cooling or lower-temperature holding it transforms to orthorhombic Zr2Co11 + hcp Co + cubic Zr6Co23
+  unit: ''
+  conditions: Zr2Co11
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7
+  quote: A calculation of its free energy also suggests that the rhombohedral Zr2Co11 structure is stable only at
+    above 1198 K [176]. At lower temperatures, the rhombohedral structure transforms into a comparatively soft-magnetic
+    orthorhombic Zr2Co11 phase along with hexagonal Co and cubic Zr6Co23 [170,177]. ... These results indicate that
+    rapid quenching is essential to stabilize the rhombohedral Zr2Co11 and orthorhombic HfCo7, following the compound
+    formation and crystallization at high temperatures.
+  note: ''
+- id: zr2co11_tstab_cui2018
+  phase: Zr2Co11
+  quantity: T_stab
+  value: rhombohedral form stable only above ~1198 K (calculated); equilibrium Zr2Co11 573-1527 K at 15.4 at.% Zr
+  unit: K
+  conditions: Zr-Co phase diagram / DFT
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; refs. [175] Okamoto phase diagram, [176] Zhao et al.
+  quote: According to the Zr-Co phase diagram, Zr2Co11 seems to be a stable phase for the temperature range of 573–1527
+    K at 15.4 at.% of Zr (Fig. 10b) [175]. ... A calculation of its free energy also suggests that the rhombohedral
+    Zr2Co11 structure is stable only at above 1198 K [176].
+  note: Time scale for decomposition of retained rhombohedral Zr2Co11 at lower temperature not given in the accessible
+    sources (gap).
+- id: zr2co11_tf_cui2018
+  phase: Zr2Co11
+  quantity: T_formation
+  value: '>1198 (rhombohedral); phase field up to 1527 K'
+  unit: K
+  conditions: rhombohedral Zr2Co11
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7
+  quote: A calculation of its free energy also suggests that the rhombohedral Zr2Co11 structure is stable only at
+    above 1198 K [176].
+  note: 'Formation temperature (> 1198 K) is far above Tc (~707-783 K): the hard phase is paramagnetic when it forms
+    from the melt or at high temperature.'
+- id: zr2co11_phasediag_bal2013
+  phase: Zr2Co11
+  quantity: phase_fraction_limit
+  value: equilibrium Zr2Co11 only at one composition; conventional processing gives Co + Zr6Co23 during cooling;
+    cluster deposition gives predominantly rhombohedral Zr2Co11 for 13.5 <= x <= 16.3
+  unit: ''
+  conditions: Co-Zr
+  source:
+    doi: 10.1002/adma.201302704
+    title: Novel Nanostructured Rare‐Earth‐Free Magnetic Materials with High Energy Products
+    first_author: Balamurugan Balasubramanian
+    year: 2013
+    url: https://www.osti.gov/servlets/purl/1768827
+    evidence: full_text
+    locator: p. 1
+  quote: Note that the Co-Zr bulk phase diagram, shown in Figure 2b, indicates the formation of Zr2Co11 equilibrium
+    phase only at a single composition (solid red vertical line). However, in practice it is found that standard
+    processing methods lead to the formation of secondary phases such as Co and Zr6Co23 having low magnetocrystalline
+    anisotropies during the cooling process.
+  note: ''
+- id: zr2co11_primary_cui2018
+  phase: Zr2Co11
+  quantity: primary_crystallisation
+  value: Zr2Co11 forms and crystallises at high temperature (from the melt in melt spinning); retention requires
+    rapid quenching
+  unit: ''
+  conditions: Zr2Co11, HfCo7
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7
+  quote: These results indicate that rapid quenching is essential to stabilize the rhombohedral Zr2Co11 and orthorhombic
+    HfCo7, following the compound formation and crystallization at high temperatures.
+  note: Whether Zr2Co11 forms congruently, peritectically or by another reaction from the melt is not stated in
+    the accessible sources (the Okamoto Co-Zr diagram itself was not accessible) - gap.
+- id: zr2co11_field_cui2018
+  phase: Zr2Co11
+  quantity: field_effect_on_formation
+  value: 'field during crystal growth cannot align: crystallisation temperatures are well above Tc'
+  unit: ''
+  conditions: bulk HfCo7 and Zr2Co11
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7
+  quote: Since the crystallization temperatures for bulk HfCo7 and Zr2Co11 are well above their corresponding Curie
+    temperatures, the easy-axis alignment process for achieving high Mr/Ms ratio using magnetic field during the
+    crystal growth is hindered.
+  note: ''
+- id: zr2co11_cluster_bal2013
+  phase: Zr2Co11
+  quantity: formation_path
+  value: 'cluster deposition: rhombohedral Zr2Co11 nanoparticles form directly ordered in a water-cooled gas-aggregation
+    chamber (no annealing), then are aligned in flight (~5 kOe) and deposited on room-temperature substrates'
+  unit: ''
+  conditions: DC magnetron sputtering into gas aggregation (Ar/He), ZrxCo100-x, 10 <= x <= 20
+  source:
+    doi: 10.1002/adma.201302704
+    title: Novel Nanostructured Rare‐Earth‐Free Magnetic Materials with High Energy Products
+    first_author: Balamurugan Balasubramanian
+    year: 2013
+    url: https://www.osti.gov/servlets/purl/1768827
+    evidence: full_text
+    locator: p. 1 and Experimental Section
+  quote: The sputtered atoms gain sufficient energy via collisions with ions to form nanoparticles with high-anisotropy
+    structures in the gasaggregation chamber, before deposition on substrates kept at room temperature in the deposition
+    chamber. ... The nanoparticles were extracted as a collimated beam moving toward the deposition chamber, and
+    aligned by applying a magnetic field (Hal ≈ 5 kOe) before deposition on substrates, which were kept at room
+    temperature.
+  note: Alignment is free-body rotation of already ordered, single-crystalline particles in flight (not a field
+    bias during formation).
+- id: zr2co11_svp_bal2013
+  phase: Zr2Co11
+  quantity: single_variant_particles
+  value: 'yes (cluster deposition): monodisperse single-crystalline ordered particles d = 8.7 nm (sigma/d = 0.18)'
+  unit: ''
+  conditions: cluster-deposited rhombohedral Zr2Co11
+  source:
+    doi: 10.1002/adma.201302704
+    title: Novel Nanostructured Rare‐Earth‐Free Magnetic Materials with High Energy Products
+    first_author: Balamurugan Balasubramanian
+    year: 2013
+    url: https://www.osti.gov/servlets/purl/1768827
+    evidence: full_text
+    locator: p. 1, Fig. 1
+  quote: The Zr2Co11 nanoparticles are monodisperse with an average particle size d = 8.7 nm and an rms standard
+    deviation of σ/d = 0.18, as shown in the transmission electron microscopy (TEM) image (Figure 1a) and in the
+    corresponding particle-size histogram of Zr2Co11 nanoparticles (Figure 1b). High-resolution TEM (HRTEM) of a
+    single Zr2Co11 nanoparticle reveals a high-degree of atomic ordering by showing lattice fringes (Figure 1c).
+  note: ''
+- id: zr2co11_svp_jin2016
+  phase: Zr2Co11
+  quantity: single_variant_particles
+  value: melt-spun grains 35 nm (no B) to 110 nm (1 at.% B), containing defects and twins
+  unit: ''
+  conditions: melt-spun Zr16Co82.5-xMo1.5Bx, 30 m/s
+  source:
+    doi: 10.1063/1.4942556
+    title: Effect of boron doping on nanostructure and magnetism of rapidly quenched Zr2Co11-based alloys
+    first_author: Yunlong Jin
+    year: 2016
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4760965/
+    evidence: full_text
+    locator: Section III, Fig. 2
+  quote: The average grain size of the rhombohedral Zr2Co11 increased from 35 nm for x = 0 to 110 nm for x = 1 (d),
+    which is in good agreement with the XRD results of Fig. 1(a). The corresponding HRTEM images, Figs. 2(e)-2(f),
+    show that the hard magnetic phase contains defects and twinned crystals, which contributes to the coercivity.
+  note: ''
+- id: zr2co11_twins_ivanova2009
+  phase: Zr2Co11
+  quantity: twins
+  value: bulk grains = thin plates of rhombohedral phase parallel to (0001), neighbouring plates twin-related
+  unit: ''
+  conditions: magnetically hard bulk Zr2Co11 alloy (TEM, electron diffraction)
+  source:
+    doi: 10.1134/s0031918x09030089
+    title: The microstructure of a magnetically hard Zr2Co11 alloy
+    first_author: G. V. Ivanova
+    year: 2009
+    url: https://api.openalex.org/works/doi:10.1134/s0031918x09030089
+    evidence: abstract
+    locator: abstract
+  quote: All grains consist of thin plates of a high-temperature rhombohedral phase, which are parallel to the (0001)
+    crystallographic plane; the crystal lattices in the neighboring regions have a twin orientation relative to
+    each other.
+  note: Plates parallel to (0001) imply a common c axis across the twin boundary (stacking-type twins); the twin
+    operation is not given in the abstract.
+- id: zr2co11_or_ivanova2009
+  phase: Zr2Co11
+  quantity: OR
+  value: '[001]orth || [0001]rhomb; [010]orth of neighbouring regions rotated by ~120 deg'
+  unit: ''
+  conditions: rhombohedral -> orthorhombic Zr2Co11 (TEM)
+  source:
+    doi: 10.1134/s0031918x09030089
+    title: The microstructure of a magnetically hard Zr2Co11 alloy
+    first_author: G. V. Ivanova
+    year: 2009
+    url: https://api.openalex.org/works/doi:10.1134/s0031918x09030089
+    evidence: abstract
+    locator: abstract
+  quote: The transformation of the rhombohedral phase into a low-temperature orthorhombic phase is accompanied by
+    an additional splitting of these plates into regions in which the [001] orth axes are parallel to the [0001]
+    rhomb axes, and the [010] orth axes are rotated through an angle of about 120°.
+  note: ''
+- id: zr2co11_nvar_ivanova2009
+  phase: Zr2Co11
+  quantity: n_variants
+  value: 3
+  unit: ''
+  conditions: orthorhombic variants formed from one rhombohedral plate
+  source:
+    doi: 10.1134/s0031918x09030089
+    title: The microstructure of a magnetically hard Zr2Co11 alloy
+    first_author: G. V. Ivanova
+    year: 2009
+    url: https://api.openalex.org/works/doi:10.1134/s0031918x09030089
+    evidence: abstract
+    locator: abstract
+  quote: the [001] orth axes are parallel to the [0001] rhomb axes, and the [010] orth axes are rotated through
+    an angle of about 120°.
+  note: 'Inferred count: 120 deg rotations about the common c axis give 3 orientation variants; the abstract does
+    not state the number explicitly. The c axis is common to all variants.'
+- id: zr2co11_mo_zhang2012
+  phase: Zr2Co11
+  quantity: other
+  value: 'Mo substitution: anisotropy field of Zr2Co11 unchanged; more Zr2Co11, less Co, larger grains'
+  unit: ''
+  conditions: Zr16Co78-xMoxSi3B3, x = 0-5
+  source:
+    doi: 10.1109/tmag.2012.2198453
+    title: Coercivity Enhancement in ${\rm Zr}_{2}{\rm Co}_{11}$-Based Nanocrystalline Materials Due to Mo Addition
+    first_author: Wenyong Zhang
+    year: 2012
+    url: https://api.openalex.org/works/doi:10.1109/tmag.2012.2198453
+    evidence: abstract
+    locator: abstract
+  quote: The substitution of Mo for Co restrains the formation of Co, raises the content of Zr2Co11, and increases
+    the mean grain size of Zr2Co11. ... The anisotropy field of Zr2Co11remains almost unchanged with increasing
+    Mo content.
+  note: ''
+- id: zr2co11_mo_jin2014
+  phase: Zr2Co11
+  quantity: other
+  value: Mo enters rhombohedral Zr2Co11 on Co sites and raises its volume fraction
+  unit: ''
+  conditions: melt-spun Zr16Co84-xMox (x = 0-2.0), 55 m/s
+  source:
+    doi: 10.1063/1.4867226
+    title: Phase composition and nanostructure of Zr2Co11-based alloys
+    first_author: Y. L. Jin
+    year: 2014
+    url: https://api.crossref.org/works/10.1063/1.4867226
+    evidence: abstract
+    locator: abstract
+  quote: All the ribbons consist mainly of a hard magnetic Zr2Co11 phase with rhombohedral crystal structure but
+    also contain minor amounts of soft-magnetic phases. The increase in cell volume on alloying suggests that Mo
+    mainly enters the rhombohedral Zr2Co11 structure and occupies the Co site. Mo addition promotes the formation
+    of the hard magnetic phase and increases its volume fraction.
+  note: ''
+- id: zr2co11_b_jin2016
+  phase: Zr2Co11
+  quantity: other
+  value: B occupies interstitial (interruption) sites of rhombohedral Zr2Co11; raises hard-phase fraction and grain
+    size
+  unit: ''
+  conditions: melt-spun Zr16Co82.5-xMo1.5Bx
+  source:
+    doi: 10.1063/1.4942556
+    title: Effect of boron doping on nanostructure and magnetism of rapidly quenched Zr2Co11-based alloys
+    first_author: Yunlong Jin
+    year: 2016
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4760965/
+    evidence: full_text
+    locator: abstract
+  quote: We show that the addition of B increases the amount of hard-magnetic phase, reduces the amount of soft-magnetic
+    Co and coarsens the grain size from about 35 nm to 110 nm. There is a monotonic increase in the volume of the
+    rhombohedral Zr2Co11 unit cell with increasing B concentration.
+  note: ''
+- id: zr2co11_cozrb_saito2003
+  phase: Zr2Co11
+  quantity: structure
+  value: hard phase in Co-Zr-B ribbons reported as metastable 'Co5Zr'
+  unit: ''
+  conditions: melt-spun + annealed Co-Zr-B ribbons
+  source:
+    doi: 10.1063/1.1565694
+    title: High performance Co–Zr–B melt-spun ribbons
+    first_author: Tetsuji Saito
+    year: 2003
+    url: https://api.crossref.org/works/10.1063/1.1565694
+    evidence: abstract
+    locator: abstract
+  quote: The hard magnetic phase of the Co–Zr–B system alloys is found to be the metastable Co5Zr phase.
+  note: Co5Zr is the composition region of Zr2Co11 (Co5.5Zr); nomenclature differs between groups.
+- id: zr2co11_cozrb_gao1990
+  phase: Zr2Co11
+  quantity: Tc
+  value: 723
+  unit: K
+  conditions: melt-spun Co76Zr18B3Si3 (and Co78Hf16B3Si3)
+  source:
+    doi: 10.1063/1.344747
+    title: High coercivity in non-rare-earth containing alloys
+    first_author: C. Gao
+    year: 1990
+    url: https://api.crossref.org/works/10.1063/1.344747
+    evidence: abstract
+    locator: abstract
+  quote: Thermomagnetic data showed the presence of two phases with the major phase having a Curie temperature at
+    around 450 °C.
+  note: 450 C = 723 K; major phase identity not named in abstract. Grain size 100-500 nm in these ribbons.
+- id: zr2co11_competing_ishikawa1990
+  phase: Zr2Co11
+  quantity: other
+  value: 'competing phases: fcc Zr6Co23 (Tc 180 C) and Co'
+  unit: ''
+  conditions: Zr-Co(-B) ribbons and ingots
+  source:
+    doi: 10.1109/20.104381
+    title: Hard magnetic phase in rapidly quenched Zr-Co-B alloys
+    first_author: T. Ishikawa
+    year: 1990
+    url: https://api.openalex.org/works/doi:10.1109/20.104381
+    evidence: abstract
+    locator: abstract
+  quote: The low T/sub c/ phase is FCC Zr/sub 6/Co/sub 23/ with T/sub c/=180 degrees C.
+  note: ''
+- id: hfco7_js_cui2018
+  phase: HfCo7
+  quantity: Js
+  value: 1.18
+  unit: T
+  conditions: melt-spun HfCo7, room temperature
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; ref. [163] = Balamurugan et al. 2014
+  quote: For HfCo7, these properties are K1 = 1.4 MJ/m3, Ms = 11.8 kG, and Tc = 751 K
+  note: '''Ms = 11.8 kG'' is 4*pi*Ms -> Js = 1.18 T.'
+- id: hfco7_k1_cui2018
+  phase: HfCo7
+  quantity: K1
+  value: 1.4
+  unit: MJ/m3
+  conditions: melt-spun HfCo7
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; ref. [163]
+  quote: For HfCo7, these properties are K1 = 1.4 MJ/m3, Ms = 11.8 kG, and Tc = 751 K
+  note: ''
+- id: hfco7_tc_cui2018
+  phase: HfCo7
+  quantity: Tc
+  value: 751
+  unit: K
+  conditions: melt-spun HfCo7
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; ref. [163]; Table 4
+  quote: For HfCo7, these properties are K1 = 1.4 MJ/m3, Ms = 11.8 kG, and Tc = 751 K
+  note: 'Table 4 of the review: Hf2Co11B 770 K, Hf12Co85B3 790 K.'
+- id: hfco7_tc_bal2014jpcm
+  phase: HfCo7
+  quantity: Tc
+  value: '>750'
+  unit: K
+  conditions: cluster-deposited and melt-spun Co(100-x)TMx, TM = Hf, Zr, 10 <= x <= 18
+  source:
+    doi: 10.1088/0953-8984/26/6/064204
+    title: Hf–Co and Zr–Co alloys for rare-earth-free permanent magnets
+    first_author: B Balamurugan
+    year: 2014
+    url: https://api.openalex.org/works/doi:10.1088/0953-8984/26/6/064204
+    evidence: abstract
+    locator: abstract
+  quote: The high-anisotropy HfCo7 and Zr2Co11 structures were formed for a rather broad composition region as compared
+    to the equilibrium bulk phase diagrams, and exhibit high Curie temperatures of above 750 K.
+  note: ''
+- id: hfco7_tc_mcguire2012
+  phase: HfCo7
+  quantity: Tc
+  value: 770
+  unit: K
+  conditions: melt-spun Hf2Co11B (crystalline)
+  source:
+    doi: 10.1063/1.4766283
+    title: Hard ferromagnetism in melt-spun Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2012
+    url: https://api.crossref.org/works/10.1063/1.4766283
+    evidence: abstract
+    locator: abstract
+  quote: The Curie temperature of both crystalline and amorphous Hf2Co11B is near 770 K.
+  note: ''
+- id: hfco7_js_bal2012
+  phase: HfCo7
+  quantity: Js
+  value: 1.09
+  unit: T
+  conditions: cluster-deposited HfCo7 nanoparticles, 300 K
+  source:
+    doi: 10.1063/1.4753950
+    title: Assembly of uniaxially aligned rare-earth-free nanomagnets
+    first_author: B. Balamurugan
+    year: 2012
+    url: https://api.crossref.org/works/10.1063/1.4753950
+    evidence: abstract
+    locator: abstract
+  quote: We report HfCo7 nanoparticles with appreciable permanent-magnet properties (magnetocrystalline anisotropy
+    K1 ≈ 10 Mergs/cm3, coercivity Hc ≈ 4.4 kOe, and magnetic polarization Js ≈ 10.9 kG at 300 K) deposited by a
+    single-step cluster-deposition method.
+  note: 10.9 kG = 1.09 T.
+- id: hfco7_k1_bal2012
+  phase: HfCo7
+  quantity: K1
+  value: 1.0
+  unit: MJ/m3
+  conditions: cluster-deposited HfCo7 nanoparticles, 300 K
+  source:
+    doi: 10.1063/1.4753950
+    title: Assembly of uniaxially aligned rare-earth-free nanomagnets
+    first_author: B. Balamurugan
+    year: 2012
+    url: https://api.crossref.org/works/10.1063/1.4753950
+    evidence: abstract
+    locator: abstract
+  quote: We report HfCo7 nanoparticles with appreciable permanent-magnet properties (magnetocrystalline anisotropy
+    K1 ≈ 10 Mergs/cm3, coercivity Hc ≈ 4.4 kOe, and magnetic polarization Js ≈ 10.9 kG at 300 K) deposited by a
+    single-step cluster-deposition method.
+  note: ''
+- id: hfco7_k1_bal2014
+  phase: HfCo7
+  quantity: K1
+  value: 1.06
+  unit: MJ/m3
+  conditions: isotropic HfCo7 nanoparticle film, law of approach to saturation fitted 20-70 kOe, room temperature
+  source:
+    doi: 10.1038/srep06265
+    title: Magnetic nanostructuring and overcoming Brown's paradox to realize extraordinary high-temperature energy
+      products
+    first_author: Balamurugan Balasubramanian
+    year: 2014
+    url: https://www.nature.com/articles/srep06265
+    evidence: full_text
+    locator: Results, Nanoparticle building blocks
+  quote: This analysis yields K1 ≈ 10.6 Mergs/cm3, which is in the range of the reported value, K1 = 14 Mergs/cm3,
+    for bulk HfCo7 alloys26.
+  note: 'Bulk value quoted in the same sentence: 1.4 MJ/m3 (ref. 26 = Das et al. 2013).'
+- id: hfco7_k1_das2013
+  phase: HfCo7
+  quantity: K1
+  value:
+  - 0.96
+  - 1.65
+  unit: MJ/m3
+  conditions: melt-spun HfCo7, HfCo7-xFex (0.25-1), HfCo7Six (0.2-1.2)
+  source:
+    doi: 10.1109/TMAG.2013.2242856
+    title: ${\rm HfCo}_{7}$-Based Rare-Earth-Free Permanent-Magnet Alloys
+    first_author: B. Das
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1109/TMAG.2013.2242856
+    evidence: abstract
+    locator: abstract
+  quote: Appreciable permanent-magnet properties with a magnetocrystalline anisotropy of about 9.6-16.5 Mergs/cm3,
+    a magnetic polarization Js≈ 7.2-10.6 kG, and coercivities Hc= 0.5-3.0 kOe were obtained by varying the composition
+    of these alloys.
+  note: Range over compositions; Js = 0.72-1.06 T in the same sentence.
+- id: hfco7_lattice_das2013
+  phase: HfCo7
+  quantity: lattice
+  value:
+    a: 4.719
+    b: 4.278
+    c: 8.07
+  unit: Å
+  conditions: melt-spun HfCo7
+  source:
+    doi: 10.1109/TMAG.2013.2242856
+    title: ${\rm HfCo}_{7}$-Based Rare-Earth-Free Permanent-Magnet Alloys
+    first_author: B. Das
+    year: 2013
+    url: https://api.openalex.org/works/doi:10.1109/TMAG.2013.2242856
+    evidence: abstract
+    locator: abstract
+  quote: Structural analysis reveals that the positions of x-ray diffraction peaks of HfCo7show good agreement with
+    those corresponding to an orthorhombic structure having lattice parameters of about α = 4.719 Å, b = 4.278 Å,
+    and c = 8.070 Å.
+  note: '''α'' in the abstract denotes the lattice parameter a.'
+- id: hfco7_structure_demczyk1991
+  phase: HfCo7
+  quantity: structure
+  value: orthorhombic Pcna (TEM)
+  unit: ''
+  conditions: bulk HfCo7 (and Zr2Co11)
+  source:
+    doi: 10.1107/s0021889891007331
+    title: Structures of Zr2Co11 and HfCo7 intermetallic compounds
+    first_author: B. G. Demczyk
+    year: 1991
+    url: https://api.crossref.org/works/10.1107/s0021889891007331
+    evidence: abstract
+    locator: abstract
+  quote: Results show that both have an orthorhombic crystal structure, space group Pcna .
+  note: ''
+- id: hfco7_hf2co11_cui2018
+  phase: HfCo7
+  quantity: structure
+  value: 'related Hf2Co11: orthorhombic a 4.7, b 38, c 8.3 A (with Hf6Co23 + alpha-Co after annealing > 973 K);
+    melt-spun HfCo6+d: orthorhombic a 4.7, b 8.2, c 38.6 A'
+  unit: ''
+  conditions: Hf-Co near 12.5 at.% Hf
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; ref. [179] = Lu et al., J. Alloys Compd. 627 (2015) 251
+  quote: For the compositions close to HfCo7, a formation of a new phase Hf2Co11 is also reported along with Hf6Co23
+    and a-Co for the bulk alloys prepared by arcmelting and subsequent annealing at above 973 K [179]. Interestingly,
+    the Hf2Co11 phase also crystallizes into an orthorhombic structure with a = 4.7 Å, b = 38 Å, and c = 8.3 Å and
+    exhibits magnetic properties similar to those of HfCo7.
+  note: ''
+- id: hfco7_easy_calc_cui2018
+  phase: HfCo7
+  quantity: easy_axis
+  value: 'DFT: easy-plane for orthorhombic HfCo7 (Keff = 3.5 MJ/m3) - unresolved experimentally'
+  unit: ''
+  conditions: DFT, orthorhombic HfCo7
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; refs. [178] Das et al. 2013, [181] Kumar et al. 2014
+  quote: The calculations indicate an easy-plane anisotropy for the orthorhombic HfCo7 structure with an effective
+    anisotropy constant Keff = 3.5 MJ/m3 and Ms = 11.4 kG [178,181].
+  note: Experimental K1 values (1.0-1.65 MJ/m3) come from law-of-approach fits that do not give the sign/axis. Cluster
+    papers state the easy axes were aligned 'uniaxially'. Direction of the easy axis in the orthorhombic cell is
+    not reported (gap).
+- id: hfco7_easy_bal2012
+  phase: HfCo7
+  quantity: easy_axis
+  value: treated experimentally as uniaxial (easy axes aligned 'uniaxially' by ~5 kOe in flight)
+  unit: ''
+  conditions: cluster-deposited HfCo7 nanoparticles
+  source:
+    doi: 10.1063/1.4753950
+    title: Assembly of uniaxially aligned rare-earth-free nanomagnets
+    first_author: B. Balamurugan
+    year: 2012
+    url: https://api.crossref.org/works/10.1063/1.4753950
+    evidence: abstract
+    locator: abstract
+  quote: The direct crystalline-ordering of nanoparticles during the gas-aggregation process, without the requirement
+    of a high-temperature thermal annealing, provides an unique opportunity to align their easy axes uniaxially
+    by applying a magnetic field of about 5 kOe prior to deposition
+  note: ''
+- id: hfco7_formation_cui2018
+  phase: HfCo7
+  quantity: formation_path
+  value: HfCo7 is metastable; forms only at high temperature (1323-1403 K) at 12.5 at.% Hf; retained by rapid quenching
+    (melt spinning) or formed directly in cluster deposition
+  unit: ''
+  conditions: Co-Hf
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; ref. [174] Okamoto, Desk Handbook (2000) p. 248
+  quote: HfCo7 is a metastable phase and can be formed only at high temperature of about 1323–1403 K for a single
+    composition of 12.5 at.% of Hf as shown in the Co-Hf phase diagram (Fig. 10a) [174].
+  note: ''
+- id: hfco7_tf_cui2018
+  phase: HfCo7
+  quantity: T_formation
+  value:
+  - 1323
+  - 1403
+  unit: K
+  conditions: Co-Hf, 12.5 at.% Hf
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7
+  quote: HfCo7 is a metastable phase and can be formed only at high temperature of about 1323–1403 K for a single
+    composition of 12.5 at.% of Hf
+  note: 'T_f (1323-1403 K) far above Tc (~751-790 K): paramagnetic during formation.'
+- id: hfco7_tstab_cui2018
+  phase: HfCo7
+  quantity: T_stab
+  value: equilibrium window 1323-1403 K; below this Hf2Co11/Hf6Co23/Co or Co + Hf2Co7 form on annealing (above 973
+    K; 1313 K)
+  unit: K
+  conditions: melt-spun HfCo6+d (0.6 <= d <= 1) annealed 1313 K
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7; ref. [180] = Li et al., Intermetallics 75 (2016) 54
+  quote: In another study, the melt-spun Hf-Co alloys with a range of composition HfCo6+d ... is shown to form orthorhombic
+    structure with a = 4.7 Å, b = 8.2 Å, and c = 38.6 Å along with Co and Hf2Co7 upon annealing at 1313 K [180].
+  note: Text layer of the review renders '+δ' as 'þd' and drops the inequality signs; quote elided at that point.
+- id: hfco7_field_cui2018
+  phase: HfCo7
+  quantity: field_effect_on_formation
+  value: 'field during crystal growth cannot align: crystallisation temperatures are well above Tc'
+  unit: ''
+  conditions: bulk HfCo7 and Zr2Co11
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Section 7
+  quote: Since the crystallization temperatures for bulk HfCo7 and Zr2Co11 are well above their corresponding Curie
+    temperatures, the easy-axis alignment process for achieving high Mr/Ms ratio using magnetic field during the
+    crystal growth is hindered.
+  note: ''
+- id: hfco7_cluster_bal2014
+  phase: HfCo7
+  quantity: formation_path
+  value: 'cluster deposition: HfCo7 particles form ordered in the water-cooled gas-aggregation chamber without annealing;
+    easy axes aligned in flight by ~5 kOe (0.8-5 kOe suffice in the gas phase)'
+  unit: ''
+  conditions: Co-Hf composite target, gas aggregation, Si(001) substrate
+  source:
+    doi: 10.1038/srep06265
+    title: Magnetic nanostructuring and overcoming Brown's paradox to realize extraordinary high-temperature energy
+      products
+    first_author: Balamurugan Balasubramanian
+    year: 2014
+    url: https://www.nature.com/articles/srep06265
+    evidence: full_text
+    locator: Results
+  quote: The high-anisotropy crystal structure in Hf-Co nanoparticles is achieved during the gas-aggregation process
+    without a subsequent high-temperature anneal, often required in the case of wet-chemical and conventional physical
+    vapor-deposition methods14,17,18,19,23. ... As compared to the magnetic alignment performed in the solid phase,
+    relatively small fields of about 0.8 to 5 kOe are sufficient for the alignment of nanoparticles in the gas phase21,22,24,25.
+  note: Alignment = free-body rotation of single-crystalline particles before landing.
+- id: hfco7_svp_bal2014
+  phase: HfCo7
+  quantity: single_variant_particles
+  value: 'yes (cluster deposition): single-crystalline particles d = 12.7 nm (sigma/d ~ 0.15), far below the single-domain
+    size (~248 nm)'
+  unit: ''
+  conditions: cluster-deposited HfCo7 nanoparticles
+  source:
+    doi: 10.1038/srep06265
+    title: Magnetic nanostructuring and overcoming Brown's paradox to realize extraordinary high-temperature energy
+      products
+    first_author: Balamurugan Balasubramanian
+    year: 2014
+    url: https://www.nature.com/articles/srep06265
+    evidence: full_text
+    locator: Results, Fig. 1
+  quote: The corresponding particle-size histogram, shown in Fig. 1b, yields an average particle size of about 12.7
+    nm with an rms standard deviation of σ/d ≈ 0.15. The Hf-Co nanoparticles are single-crystalline with a high
+    degree of atomic ordering, as can be seen from the high-resolution TEM image in Fig. 1c.
+  note: ''
+- id: hfco7_dsd_bal2014
+  phase: HfCo7
+  quantity: other
+  value: 248
+  unit: nm (critical single-domain size)
+  conditions: HfCo7
+  source:
+    doi: 10.1038/srep06265
+    title: Magnetic nanostructuring and overcoming Brown's paradox to realize extraordinary high-temperature energy
+      products
+    first_author: Balamurugan Balasubramanian
+    year: 2014
+    url: https://www.nature.com/articles/srep06265
+    evidence: full_text
+    locator: Results
+  quote: Besides having high K1 and average particles size of about 12.7 nm, far less than the critical single-domain
+    size (Dsd ≈ 248 nm), the aligned HfCo7 nanoparticles show only Hc = 8.65 kOe at 300 K.
+  note: ''
+- id: hfco7_svp_chang2014
+  phase: HfCo7
+  quantity: single_variant_particles
+  value: 'melt-spun Co-Hf(-Zr)-B ribbons: grains 10-35 nm (5-15 nm with 1 at.% Zr)'
+  unit: ''
+  conditions: melt-spun Co86.5Hf11.5-xZrxB2, 40 m/s
+  source:
+    doi: 10.1063/1.4866085
+    title: A study on the magnetic properties of melt spun Co-Hf-Zr-B nanocomposite ribbons
+    first_author: H. W. Chang
+    year: 2014
+    url: https://api.crossref.org/works/10.1063/1.4866085
+    evidence: abstract
+    locator: abstract
+  quote: Proper Zr substitution for Hf was helpful in refining the grain size from 10–35 nm for x = 0 to 5–15 nm
+    for x = 1, and thus improving the magnetic properties effectively.
+  note: ''
+- id: hfco7_b_chang2014
+  phase: HfCo7
+  quantity: other
+  value: B enters orthorhombic Co7Hf interstitially as spun (raises Tc); B diffuses out on post-annealing
+  unit: ''
+  conditions: melt-spun Co85Hf12B3
+  source:
+    doi: 10.1063/1.4901737
+    title: Hard magnetic property enhancement of Co7Hf-based ribbons by boron doping
+    first_author: H. W. Chang
+    year: 2014
+    url: https://api.crossref.org/works/10.1063/1.4901737
+    evidence: abstract
+    locator: abstract
+  quote: The structural analysis confirms that B enters the orthorhombic Co7Hf (7:1) crystal structure as interstitial
+    atoms, forming Co7HfBx, in the as-spun state. Yet B may diffuse out from the 7:1 phase after post-annealing,
+    leading to the reduction of Curie temperature and the magnetic properties.
+  note: ''
+- id: hfco7_tstab_mcguire2015
+  phase: HfCo7
+  quantity: T_stab
+  value:
+  - 1323
+  - 1518
+  unit: K
+  conditions: equilibrium Hf-Co diagram
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1185598
+    evidence: full_text
+    locator: Section I (citing the Hf-Co diagram of Ishida & Nishizawa in Massalski 1990)
+  quote: The phase labeled HfCo7 is the magnetically hard phase of interest to permanent magnet research. It is
+    reported to be thermodynamically stable only between 1050 and 1245◦ C.
+  note: 1050-1245 C = 1323-1518 K; the review Cui et al. 2018 gives 1323-1403 K. Below the window HfCo7 is metastable
+    (retained by quenching).
+- id: hfco7_structure_mcguire2015
+  phase: HfCo7
+  quantity: structure
+  value: crystal structure and exact stoichiometry of the hard Hf-Co phase not established; HfCo7 and Zr2Co11 patterns
+    very similar
+  unit: ''
+  conditions: HfCo7 / Zr2Co11
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1185598
+    evidence: full_text
+    locator: Section I
+  quote: The crystal structure and precise stoichiometry of this phase is unknown. The Zr-Co phase diagram shows
+    a related phase which is known as Zr2 Co11 . Powder diﬀraction patterns from hard ferromagnetic samples of HfCo7
+    and Zr2 Co11 are quite similar
+  note: ''
+- id: hfco7_tc_mcguire2015
+  phase: HfCo7
+  quantity: Tc
+  value: 770
+  unit: K
+  conditions: HfCo7 (main phase of Hf-Co(-B) samples)
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1185598
+    evidence: full_text
+    locator: Section I
+  quote: This compound has a Curie temperature near 770 K and the saturation magnetization (JS = 4πMS ) of samples
+    containing this as the main phase range from about 8−11 kG
+  note: ''
+- id: hfco7_js_mcguire2015
+  phase: HfCo7
+  quantity: Js
+  value:
+  - 0.8
+  - 1.1
+  unit: T
+  conditions: samples with HfCo7 as main phase, room temperature
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1185598
+    evidence: full_text
+    locator: Section I
+  quote: This compound has a Curie temperature near 770 K and the saturation magnetization (JS = 4πMS ) of samples
+    containing this as the main phase range from about 8−11 kG
+  note: 8-11 kG = 0.8-1.1 T (samples, not single phase).
+- id: hfco7_density_mcguire2015
+  phase: HfCo7
+  quantity: density
+  value: 10.7
+  unit: g/cm3
+  conditions: Hf2Co11B alloy (value used for unit conversion, from McGuire et al. 2012)
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1185598
+    evidence: full_text
+    locator: Section II
+  quote: A density of 10.7 g/cm3 was used in the calculations [9].
+  note: ''
+- id: hfco7_tf_amorph_mcguire2015
+  phase: HfCo7
+  quantity: T_formation
+  value:
+  - 773
+  - 973
+  unit: K
+  conditions: crystallisation of amorphous melt-spun Hf2Co11B by annealing 500-700 C (ex situ)
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1185598
+    evidence: full_text
+    locator: abstract; Section I
+  quote: Crystallization of the phase denoted HfCo7 , which is associated with the development of coercivity, occurs
+    slowly at 500 ◦ C. ... The temperature range investigated spans the two exothermic phase transitions at 565
+    and 630 ◦ C in the amorphous material, which were identiﬁed in thermal analysis and magnetization measurements
+    [9].
+  note: 500-700 C = 773-973 K; DTA exotherms at 565 C (838 K) and 630 C (903 K). This crystallisation route lies
+    at or above Tc (~770 K) rather than far above it; long anneals at 500 C give large-grained, soft, nearly single-phase
+    HfCo7; at 800 C equilibrium HfCo3B2 + Hf6Co23 + Co.
+- id: hfco7_field_mcguire2015
+  phase: HfCo7
+  quantity: field_effect_on_formation
+  value: '9 T during crystallisation of amorphous Hf2Co11B at 600 C (above Tc) strongly changes the microstructure:
+    plate-like crystallites to ~1 um, accelerated coarsening; no alignment reported'
+  unit: ''
+  conditions: amorphous Hf2Co11B ribbons, 600 C, 2 h, 9 T (RF-heated susceptor in a superconducting magnet)
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1185598
+    evidence: full_text
+    locator: Section III, Fig. 6
+  quote: The thermo-magnetically processed sample in Fig. 6(a) shows well-deﬁned platelike crystallites which extend
+    to length scales near 1 µm. This microstructure is distinct from that observed in the sample annealed at the
+    same temperature and for the same amount of time but with no applied magnetic ﬁeld [Fig. 6(b)]. ... In the case
+    demonstrated in Fig. 6, the ﬁeld appears to accelerate the coarsening of the microstructure
+  note: '600 C = 873 K > Tc (~770 K): the forming phase is paramagnetic; the reported field effect is on kinetics/microstructure,
+    not on crystallographic alignment (none reported).'
+- id: hfco7_svp_mcguire2015
+  phase: HfCo7
+  quantity: single_variant_particles
+  value: 'annealed amorphous ribbons: fine-grained multiphase; long 500 C anneals give relatively large HfCo7 grains
+    (soft)'
+  unit: ''
+  conditions: Hf2Co11B ribbons annealed 500 C up to 260 h
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1185598
+    evidence: full_text
+    locator: Summary
+  quote: Long annealing times at 500◦ C gives mostly crystalline and nearly single phase HfCo7 with relatively large
+    grains that result in soft ferromagnetic behavior.
+  note: ''

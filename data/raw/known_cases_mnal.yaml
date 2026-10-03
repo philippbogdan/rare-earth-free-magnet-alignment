@@ -1,0 +1,2650 @@
+# Known cases for topic mnal (visible): (ii) printed MnAl(C) - Pacheco et al. 2023 (L-PBF);
+# (i) hot/warm-extruded MnAl-C magnets - Ohtani 1977, Sakamoto 1979, Matsushita patents US 3,976,519 / 4,023,991 / 4,051,706, Feng 2020/2022.
+# Outcome-record format of data/SCHEMA.md; quantity BHmax (kJ/m3) added at the lead's request for extruded magnets.
+# Feng 2020 Table 5 rows are transcribed from the rendered PDF table (text layer scrambles table cells).
+- id: mnal_am_pacheco2023a
+  phase: epsilon-MnAl-C
+  route: AM
+  process: L-PBF (EOS M100) of gas-atomised (Mn60.7Al39.3)100C2.8 powder, laser power 18-25 W, scan speed 160-240
+    mm/s, hatch 70 um, layer 20 um, re-melting step at each layer; as-printed (parent epsilon phase, before any
+    heat treatment)
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: this record IS the parent texture
+    magnet_axis: build direction (BD)
+    composition_at: (Mn60.7Al39.3)100C2.8 (powder)
+  quantity: texture_metric
+  value: 5.44
+  unit: pole_figure_max_mrd
+  uncertainty: null
+  measured_along: epsilon (0001) pole figure from EBSD; maximum located at the BD position on the pole-figure rim
+    (position read from figure)
+  measurement: EBSD (Hitachi SU6600, Oxford Symmetry), one map of an as-printed sample; (0001) pole figure, Min
+    0.07, Max 5.44 (multiples of uniform density as printed in legend)
+  n_samples: 1
+  source:
+    doi: 10.3390/alloys2020007
+    title: Additive Manufacturing of MnAl(C)-Magnets
+    first_author: Pacheco, Victor
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/alloys/alloys-02-00007/article_deploy/alloys-02-00007.pdf
+    evidence: full_text
+    locator: Fig. 2c legend (value printed in the figure); text p. 103
+  quote: 'Min: 0.07 Max: 5.44'
+  note: 'Fig. 2 caption: ''(c) (0001) pole figure for an as-printed MnAl(C) sample.'' Text: ''The pole figure for
+    the as-printed sample suggests that the <001> directions were in parallel to the build direction (although some
+    misalignment of the poles was also observed)''. A second map (Fig. A3) showed ''some misalignment of the poles''
+    and ''an extra pole was observed at an orthogonal direction''. Units of the legend are not stated in the caption;
+    MTEX/Oxford pole figures are normally in multiples of uniform density (assumption, stated as such).'
+- id: mnal_am_pacheco2023b
+  phase: epsilon-MnAl-C
+  route: AM
+  process: L-PBF as-printed, same samples as mnal_am_pacheco2023a
+  conditions:
+    field_T: 0
+    parent_texture: this record IS the parent texture
+    magnet_axis: build direction (BD)
+  quantity: texture_metric
+  value: strong <002> (c-axis) fibre parallel to the build direction (XRD, enhanced (002) reflection)
+  unit: qualitative
+  uncertainty: null
+  measured_along: XRD on YZ cross-section (Bragg-Brentano, Cu Ka), compared with raw powder
+  measurement: XRD (Bruker D8 Advance), powder vs as-built part
+  n_samples: 1
+  source:
+    doi: 10.3390/alloys2020007
+    title: Additive Manufacturing of MnAl(C)-Magnets
+    first_author: Pacheco, Victor
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/alloys/alloys-02-00007/article_deploy/alloys-02-00007.pdf
+    evidence: full_text
+    locator: p. 102, Fig. 1b
+  quote: This was clearly observed when comparing the black (powder) and blue (LPBF) diffractograms in Figure 1b
+    and reveals a preferential orientation (texture) of the <002> directions parallel to the build direction.
+  note: Texture strength 'seems to be correlated with the specific laser scan-strategies and parameters, as variations
+    were observed through the samples produced with different parameters and scan-strategies'.
+- id: mnal_am_pacheco2023c
+  phase: tau-MnAl-C
+  route: AM
+  process: L-PBF as above, then heat treatment 580 C for 5 min (vacuum-sealed quartz, 10 C/min heating, water quench)
+  conditions:
+    field_T: 0
+    T_process_K: 853
+    parent_texture: epsilon <001> (c-axis) fibre along BD, (0001) PF max 5.44 (mnal_am_pacheco2023a)
+    magnet_axis: build direction (BD)
+  quantity: texture_metric
+  value: 2.71
+  unit: pole_figure_max_mrd
+  uncertainty: null
+  measured_along: tau (101) and (001) pole figures from EBSD sharing one colour scale (Min 0.42, Max 2.71); the
+    maximum lies in the (001) pole figure near the pole-figure centre, i.e. not at the BD rim position where the
+    epsilon c-axis maximum was (position read from figure)
+  measurement: EBSD after 580 C / 5 min; not all areas indexed (dark areas in Fig. 3a and A4); fine grains
+  n_samples: 1
+  source:
+    doi: 10.3390/alloys2020007
+    title: Additive Manufacturing of MnAl(C)-Magnets
+    first_author: Pacheco, Victor
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/alloys/alloys-02-00007/article_deploy/alloys-02-00007.pdf
+    evidence: full_text
+    locator: Fig. 3b legend (value printed in the figure); text p. 103
+  quote: 'Min: 0.42 Max: 2.71'
+  note: 'Fig. 3 caption: ''(b) pole figures for the τ-phase for a MnAl(C) sample after 580 °C during 5 min.'' Text:
+    ''It is evident that the texture observed in the ε-phase does not translate into the τ-phase for the present
+    samples.'' Note the authors expected a <101> (primitive cell) = <111> (fct cell) alignment with BD from the
+    Kojima OR; the max position near the PF centre is our reading of the plot, uncertain.'
+- id: mnal_am_pacheco2023d
+  phase: tau-MnAl-C
+  route: AM
+  process: L-PBF as above, then heat treatment 580 C for 5 min
+  conditions:
+    field_T: 0
+    T_process_K: 853
+    parent_texture: epsilon <001> fibre along BD
+    magnet_axis: build direction (BD)
+  quantity: texture_metric
+  value: no significant preferential orientation of tau (XRD vs simulated pattern)
+  unit: qualitative
+  uncertainty: null
+  measured_along: XRD on yz cross-section
+  measurement: XRD compared with simulated tau pattern (Fig. A2)
+  n_samples: 1
+  source:
+    doi: 10.3390/alloys2020007
+    title: Additive Manufacturing of MnAl(C)-Magnets
+    first_author: Pacheco, Victor
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/alloys/alloys-02-00007/article_deploy/alloys-02-00007.pdf
+    evidence: full_text
+    locator: p. 102-103, Fig. A2
+  quote: Conversely, the formed τ-phase does not exhibit a significant preferential orientation, as evidenced by
+    the comparison with the simulated XRD pattern for this phase (Figure A2).
+  note: 'Abstract: ''Although we successfully obtained a preferential orientation of the ε-phase with <001> parallel
+    to the build direction, this did not translate into a strong preferential orientation in the τ-phase, thus indicating
+    that the phase transformation occurs by the migration of incoherent interfaces.'''
+- id: mnal_am_pacheco2023e
+  phase: tau-MnAl-C
+  route: AM
+  process: L-PBF as above (cylinder ~10 mm diameter x 4 mm), then flash heating 570 C for 30 min under vacuum (a
+    different heat treatment from the EBSD sample)
+  conditions:
+    field_T: 0
+    T_process_K: 843
+    parent_texture: epsilon <001> fibre along BD (measured on other as-printed samples)
+    magnet_axis: not stated
+    density_g_cm3: 4.46
+    Ms_Am2_kg: 39.3
+    Mr_Am2_kg: 17.5
+    Hc_kA_m: 168
+    max_field_T: 1.5
+  quantity: Mr_over_Ms
+  value: 0.445
+  unit: ''
+  uncertainty: null
+  measured_along: not stated
+  measurement: M-meter (Epping GmbH), maximum applied field 1.5 T (loop in Fig. 5 reaches about 1100 kA/m); not
+    saturating for tau (needs >~5 T); temperature not stated (room temperature assumed); demagnetisation correction
+    not stated
+  n_samples: 1
+  source:
+    doi: 10.3390/alloys2020007
+    title: Additive Manufacturing of MnAl(C)-Magnets
+    first_author: Pacheco, Victor
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/alloys/alloys-02-00007/article_deploy/alloys-02-00007.pdf
+    evidence: full_text
+    locator: Table 1, Section 4 Conclusions, Fig. 5
+  quote: The MnAl(C) produced by LPBF in this work was characterized by a density of ≈4.4 g/cm3, a saturation magnetization
+    of 39.3 Am2/kg, a coercivity of 168 kA/m, and a remanence of 17.5 Am2/kg, respectively.
+  note: 'Mr/Ms = 17.5/39.3 = 0.445, computed here from the two quoted values (derived, not printed in the paper);
+    Ms is the magnetisation at 1.5 T, not true saturation. Ms is low because of ''additional, non-magnetic phases
+    besides the ε-phase, such as γ2, Mn3AlC, and β phases (see Figure A5)''. Table 1 gives density 4.46 g/cm3. Measurement
+    set-up: ''The magnetic measurements were performed using an M-meter from Epping GmbH with an applied maximum
+    field of 1.5 T.'''
+- id: mnal_hd_ohtani1977a
+  phase: tau-MnAl-C
+  route: HD
+  process: warm plastic deformation (extrusion) of bulk Mn-Al-C (Matsushita)
+  conditions:
+    magnet_axis: 'extrusion direction (Feng et al. 2020, Table 7: bulk, final rod 10 mm)'
+    composition_at: Mn52.9Al45.4C1.7 (as listed by Feng et al. 2020, Table 7)
+    T_process_K: null
+    BHmax_kJ_m3: 55.7
+  quantity: Br
+  value: 0.61
+  unit: T
+  uncertainty: null
+  measured_along: direction of anisotropy (axis of the warm-deformed magnet)
+  measurement: not stated in abstract (hysteresigraph assumed by compiler, unverified)
+  n_samples: 1
+  source:
+    doi: 10.1109/tmag.1977.1059574
+    title: Magnetic properties of Mn-Al-C permanent magnet alloys
+    first_author: Ohtani, T.
+    year: 1977
+    url: https://api.openalex.org/works/doi:10.1109/tmag.1977.1059574
+    evidence: abstract
+    locator: abstract
+  quote: 'A new anisotropic permanent magnet was developed in the Mn-Al-C system, using warm-plastic deformation,
+    with the following magnetic properties : Br = 6100 G, bHc = 2700 Oe and (BH)max = 7.0 MG-Oe.'
+  note: converted from Br = 6100 G; (BH)max 7.0 MG-Oe = 55.7 kJ/m3; bHc 2700 Oe. Composition and rod diameter from
+    Feng et al. 2020 Table 7 (review). Full paper (IEEE Trans. Magn. 13 (1977) 1328) not accessible.
+- id: mnal_hd_ohtani1977b
+  phase: tau-MnAl-C
+  route: HD
+  process: warm plastic deformation (extrusion) of bulk Mn-Al-C (Matsushita)
+  conditions:
+    magnet_axis: extrusion direction
+    composition_at: Mn52.9Al45.4C1.7 (Feng et al. 2020, Table 7)
+  quantity: BHmax
+  value: 55.7
+  unit: kJ/m3
+  uncertainty: null
+  measured_along: direction of anisotropy
+  measurement: not stated in abstract
+  n_samples: 1
+  source:
+    doi: 10.1109/tmag.1977.1059574
+    title: Magnetic properties of Mn-Al-C permanent magnet alloys
+    first_author: Ohtani, T.
+    year: 1977
+    url: https://api.openalex.org/works/doi:10.1109/tmag.1977.1059574
+    evidence: abstract
+    locator: abstract
+  quote: 'A new anisotropic permanent magnet was developed in the Mn-Al-C system, using warm-plastic deformation,
+    with the following magnetic properties : Br = 6100 G, bHc = 2700 Oe and (BH)max = 7.0 MG-Oe.'
+  note: converted from 7.0 MG-Oe (x7.958). Quantity BHmax added for the known-case file at the lead's request (not
+    in SCHEMA outcome list).
+- id: mnal_hd_sakamoto1979a
+  phase: tau-MnAl-C
+  route: HD
+  process: commercial warm-extruded anisotropic Mn-Al-C magnet (Matsushita)
+  conditions:
+    magnet_axis: extrusion direction
+  quantity: texture_metric
+  value: P(phi) = 3.42 exp[-phi^2/(2*30.8^2)] + 0.11 (phi in degrees from the extrusion axis)
+  unit: 'other: normalised (001) pole density vs tilt angle phi from the extrusion axis (Gaussian + constant fit)'
+  uncertainty: null
+  measured_along: extrusion axis
+  measurement: X-ray (001) pole-density measurement with normalisation; fibre symmetry assumed
+  n_samples: 1
+  source:
+    doi: 10.1063/1.327000
+    title: Crystal orientation and its formation process of an anisotropic Mn-Al-C permanent magnet
+    first_author: Sakamoto, Y.
+    year: 1979
+    url: https://api.openalex.org/works/doi:10.1063/1.327000
+    evidence: abstract
+    locator: abstract
+  quote: The distribution is expressed only as a function of tilt angle φ, and is found to consist of the following
+    Gaussian distribution term and constant. P(φ) = 3.42 exp [−φ2/(2×30.82) ] + 0.11.
+  note: '''30.82'' in the fetched abstract is 30.8 squared (superscript lost). Feng et al. 2020 (Table 4) re-list
+    these parameters: a = 3.4 MUD, mu = 0, sigma = 30.8 deg, c = 0.11 MUD.'
+- id: mnal_hd_sakamoto1979b
+  phase: tau-MnAl-C
+  route: HD
+  process: commercial warm-extruded anisotropic Mn-Al-C magnet (Matsushita)
+  conditions:
+    magnet_axis: extrusion direction
+  quantity: Mr_over_Ms
+  value: 0.88
+  unit: ''
+  uncertainty: null
+  measured_along: extrusion axis (presumed)
+  measurement: magnetic measurement; max field not stated in abstract
+  n_samples: 1
+  source:
+    doi: 10.1063/1.327000
+    title: Crystal orientation and its formation process of an anisotropic Mn-Al-C permanent magnet
+    first_author: Sakamoto, Y.
+    year: 1979
+    url: https://api.openalex.org/works/doi:10.1063/1.327000
+    evidence: abstract
+    locator: abstract
+  quote: Magnetically measured Mr/Ms = 0.88 is significantly higher than 0.74, the value calculated from this total
+    distribution when assuming that the magnetization in every grain points in the direction of each easy axis.
+  note: Mr/Ms (0.88) exceeds the value 0.74 computed from the measured easy-axis distribution, which the authors
+    note assumes each grain's magnetisation lies along its easy axis.
+- id: mnal_hd_sakamoto1979c
+  phase: tau-MnAl-C
+  route: HD
+  process: commercial warm-extruded anisotropic Mn-Al-C magnet (Matsushita)
+  conditions:
+    magnet_axis: extrusion direction
+  quantity: texture_metric
+  value: 0.74
+  unit: A_reported
+  uncertainty: null
+  measured_along: extrusion axis
+  measurement: computed by the authors from the X-ray (001) pole distribution (mean cosine)
+  n_samples: 1
+  source:
+    doi: 10.1063/1.327000
+    title: Crystal orientation and its formation process of an anisotropic Mn-Al-C permanent magnet
+    first_author: Sakamoto, Y.
+    year: 1979
+    url: https://api.openalex.org/works/doi:10.1063/1.327000
+    evidence: abstract
+    locator: abstract
+  quote: Magnetically measured Mr/Ms = 0.88 is significantly higher than 0.74, the value calculated from this total
+    distribution when assuming that the magnetization in every grain points in the direction of each easy axis.
+  note: 0.74 = remanence ratio expected from the measured easy-axis distribution if every grain is magnetised along
+    its easy axis, i.e. A in the METHOD definition.
+- id: mnal_hd_feng2020_a_mrms
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material A: crushed powder (<250 um) of homogenised (eps) (Mn53Al45C2)Ni0.6, Cu-canned,
+    preheated 700 C 20 min, extruded at 650 C (ratio 8.5, 0.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    Vf_tau: 0.97
+    extrusion_ratio: 8.5
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+  quantity: Mr_over_Ms
+  value: 0.74
+  unit: ''
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: PPMS-VSM, saturated at 14 T, room temperature, corrected for demagnetisation (Aharoni); average of
+    edge and centre samples
+  n_samples: 2 (edge + centre)
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 6
+  quote: Table 6 The ratio of the remanence, Jr , to the saturation polarisation, Js (both are average values of
+    the edge and centre samples in Table 5), and values of the integral, γ , calculated from the texture parameters
+    in Table 4 and Eqn. (2). ... Jr /Js γ A B C 0.74 0.82 0.75 0.82 (0.80) 0.71 0.75
+  note: 'Jr/Js with Js of the same samples (Table 5). Same table gives gamma (EBSD-derived equivalent): see mnal_hd_feng2020_a_gamma.'
+- id: mnal_hd_feng2020_a_gamma
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material A: crushed powder (<250 um) of homogenised (eps) (Mn53Al45C2)Ni0.6, Cu-canned,
+    preheated 700 C 20 min, extruded at 650 C (ratio 8.5, 0.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    Vf_tau: 0.97
+    extrusion_ratio: 8.5
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+    P001_gauss_fit_Table4: a=3.9, mu=9.2, sigma=24.7, c=0.00
+    XRD_I002_over_I200: 2.71
+  quantity: texture_metric
+  value: 0.82
+  unit: A_reported
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: EBSD (4-5 x 10^4 grains, 3 positions centre-edge, 1 um step), ODF / pole plot of {001}; gamma = integral
+    of P001(phi) cos(phi) sin(phi) dphi
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 6 (gamma), Table 4 (fit), Section 3.2
+  quote: Table 6 The ratio of the remanence, Jr , to the saturation polarisation, Js (both are average values of
+    the edge and centre samples in Table 5), and values of the integral, γ , calculated from the texture parameters
+    in Table 4 and Eqn. (2). ... Jr /Js γ A B C 0.74 0.82 0.75 0.82 (0.80) 0.71 0.75
+  note: gamma equals the METHOD's A (mean |cos| of easy axis to ED). For B the value in brackets (0.80) is from
+    discrete binning. The pole-figure maximum was not exactly at (001) but in a band between (118) and (115), i.e.
+    9.2-14.6 deg from (001) ('mu = 9.6 +- 2.9 deg' average Gaussian centre).
+- id: mnal_hd_feng2020_b_mrms
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material B: milled powder (89 wt.% 20-60 um) of homogenised (eps) (Mn53Al45C2)Ni0.6,
+    Cu-canned, preheated 700 C 20 min, extruded at 650 C (ratio 8.5, 0.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    Vf_tau: 0.95
+    extrusion_ratio: 8.5
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+  quantity: Mr_over_Ms
+  value: 0.75
+  unit: ''
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: PPMS-VSM, saturated at 14 T, room temperature, corrected for demagnetisation (Aharoni); average of
+    edge and centre samples
+  n_samples: 2 (edge + centre)
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 6
+  quote: Table 6 The ratio of the remanence, Jr , to the saturation polarisation, Js (both are average values of
+    the edge and centre samples in Table 5), and values of the integral, γ , calculated from the texture parameters
+    in Table 4 and Eqn. (2). ... Jr /Js γ A B C 0.74 0.82 0.75 0.82 (0.80) 0.71 0.75
+  note: 'Jr/Js with Js of the same samples (Table 5). Same table gives gamma (EBSD-derived equivalent): see mnal_hd_feng2020_b_gamma.'
+- id: mnal_hd_feng2020_b_gamma
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material B: milled powder (89 wt.% 20-60 um) of homogenised (eps) (Mn53Al45C2)Ni0.6,
+    Cu-canned, preheated 700 C 20 min, extruded at 650 C (ratio 8.5, 0.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    Vf_tau: 0.95
+    extrusion_ratio: 8.5
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+    P001_gauss_fit_Table4: a=3.9, mu=13.7 (10.9), sigma=20.8 (22.0), c=0.03 (0.05)
+    XRD_I002_over_I200: 2.75
+  quantity: texture_metric
+  value: 0.82
+  unit: A_reported
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: EBSD (4-5 x 10^4 grains, 3 positions centre-edge, 1 um step), ODF / pole plot of {001}; gamma = integral
+    of P001(phi) cos(phi) sin(phi) dphi
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 6 (gamma), Table 4 (fit), Section 3.2
+  quote: Table 6 The ratio of the remanence, Jr , to the saturation polarisation, Js (both are average values of
+    the edge and centre samples in Table 5), and values of the integral, γ , calculated from the texture parameters
+    in Table 4 and Eqn. (2). ... Jr /Js γ A B C 0.74 0.82 0.75 0.82 (0.80) 0.71 0.75
+  note: gamma equals the METHOD's A (mean |cos| of easy axis to ED). For B the value in brackets (0.80) is from
+    discrete binning. The pole-figure maximum was not exactly at (001) but in a band between (118) and (115), i.e.
+    9.2-14.6 deg from (001) ('mu = 9.6 +- 2.9 deg' average Gaussian centre).
+- id: mnal_hd_feng2020_c_mrms
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material C: milled powder (89 wt.% 20-60 um) of homogenised (eps) (Mn53Al45C2)Ni0.6,
+    Cu-canned, preheated 700 C 20 min, extruded at 700 C (ratio 8.5, 1.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    Vf_tau: 0.92
+    extrusion_ratio: 8.5
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+  quantity: Mr_over_Ms
+  value: 0.71
+  unit: ''
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: PPMS-VSM, saturated at 14 T, room temperature, corrected for demagnetisation (Aharoni); average of
+    edge and centre samples
+  n_samples: 2 (edge + centre)
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 6
+  quote: Table 6 The ratio of the remanence, Jr , to the saturation polarisation, Js (both are average values of
+    the edge and centre samples in Table 5), and values of the integral, γ , calculated from the texture parameters
+    in Table 4 and Eqn. (2). ... Jr /Js γ A B C 0.74 0.82 0.75 0.82 (0.80) 0.71 0.75
+  note: 'Jr/Js with Js of the same samples (Table 5). Same table gives gamma (EBSD-derived equivalent): see mnal_hd_feng2020_c_gamma.'
+- id: mnal_hd_feng2020_c_gamma
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material C: milled powder (89 wt.% 20-60 um) of homogenised (eps) (Mn53Al45C2)Ni0.6,
+    Cu-canned, preheated 700 C 20 min, extruded at 700 C (ratio 8.5, 1.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    Vf_tau: 0.92
+    extrusion_ratio: 8.5
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+    P001_gauss_fit_Table4: a=3.2, mu=8.7, sigma=25.8, c=0.14
+    XRD_I002_over_I200: 1.64
+  quantity: texture_metric
+  value: 0.75
+  unit: A_reported
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: EBSD (4-5 x 10^4 grains, 3 positions centre-edge, 1 um step), ODF / pole plot of {001}; gamma = integral
+    of P001(phi) cos(phi) sin(phi) dphi
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 6 (gamma), Table 4 (fit), Section 3.2
+  quote: Table 6 The ratio of the remanence, Jr , to the saturation polarisation, Js (both are average values of
+    the edge and centre samples in Table 5), and values of the integral, γ , calculated from the texture parameters
+    in Table 4 and Eqn. (2). ... Jr /Js γ A B C 0.74 0.82 0.75 0.82 (0.80) 0.71 0.75
+  note: gamma equals the METHOD's A (mean |cos| of easy axis to ED). For B the value in brackets (0.80) is from
+    discrete binning. The pole-figure maximum was not exactly at (001) but in a band between (118) and (115), i.e.
+    9.2-14.6 deg from (001) ('mu = 9.6 +- 2.9 deg' average Gaussian centre).
+- id: mnal_hd_feng2020_a_edge_br
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material A: crushed powder (<250 um) of homogenised (eps) (Mn53Al45C2)Ni0.6, Cu-canned,
+    preheated 700 C 20 min, extruded at 650 C (ratio 8.5, 0.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    position: edge
+    Js_same_sample_T: 0.76
+    Vf_tau: 0.97
+    Jr_perp_T: 0.27
+    omega: 0.52
+    mu0Hc_par_T: 0.32
+    mu0Hc_perp_T: 0.4
+    Hk_over_Hc: 0.35
+    BHmax_kJ_m3: 38
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+  quantity: Br
+  value: 0.56
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (parallel)
+  measurement: PPMS-VSM after saturation at 14 T, room temperature, demagnetisation-corrected; cuboid 1.5x1.5x2.5
+    mm from edge of transverse section
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 5, row A-Edge (as printed; transcribed from the rendered PDF page)
+  quote: "Table 5 Magnetic and other properties derived from hysteresis loops of samples taken from the edge and\
+    \ centre regions of the three materials (A, B and C), measured parallel (\x05) and perpendicular (⊥) to the\
+    \ extrusion direction. The saturation polarisation (Js ), remanence (Jr ), coercivity (μ0 Hc ) and energy product\
+    \ ((BH)max ) were measured. The volume fraction of the τ-phase, Vf (τ ), was estimated by dividing the Js measured\
+    \ for each sample by that of a single-phase, as-transformed material of the same composition (Js = 0.78 T).\
+    \ The degree of texture, ω, was calculated from: ω = (Jr \x05 -Jr ⊥ )/Jr \x05 . The squareness factor was defined\
+    \ as Hk /Hc where Hk is the reverse field required to reduce the polarisation to 90% of Jr . ... A-Edge 0.76\
+    \ 0.97 ‖ 0.56 0.52 0.32 0.35 38 ⊥ 0.27 0.40"
+  note: 'The table row in the quote is transcribed from the rendered table (columns: Sample, Js/T, Vf(tau), Direction,
+    Jr/T, omega, mu0Hc/T, Hk/Hc, (BH)max/kJm-3; second line = perpendicular Jr and mu0Hc); the PDF text layer scrambles
+    table cells. Jr/Js = 0.74 for this sample (computed here).'
+- id: mnal_hd_feng2020_a_centre_br
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material A: crushed powder (<250 um) of homogenised (eps) (Mn53Al45C2)Ni0.6, Cu-canned,
+    preheated 700 C 20 min, extruded at 650 C (ratio 8.5, 0.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    position: centre
+    Js_same_sample_T: 0.76
+    Vf_tau: 0.97
+    Jr_perp_T: 0.27
+    omega: 0.51
+    mu0Hc_par_T: 0.29
+    mu0Hc_perp_T: 0.36
+    Hk_over_Hc: 0.31
+    BHmax_kJ_m3: 33
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+  quantity: Br
+  value: 0.56
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (parallel)
+  measurement: PPMS-VSM after saturation at 14 T, room temperature, demagnetisation-corrected; cuboid 1.5x1.5x2.5
+    mm from centre of transverse section
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 5, row A-Centre (as printed; transcribed from the rendered PDF page)
+  quote: "Table 5 Magnetic and other properties derived from hysteresis loops of samples taken from the edge and\
+    \ centre regions of the three materials (A, B and C), measured parallel (\x05) and perpendicular (⊥) to the\
+    \ extrusion direction. The saturation polarisation (Js ), remanence (Jr ), coercivity (μ0 Hc ) and energy product\
+    \ ((BH)max ) were measured. The volume fraction of the τ-phase, Vf (τ ), was estimated by dividing the Js measured\
+    \ for each sample by that of a single-phase, as-transformed material of the same composition (Js = 0.78 T).\
+    \ The degree of texture, ω, was calculated from: ω = (Jr \x05 -Jr ⊥ )/Jr \x05 . The squareness factor was defined\
+    \ as Hk /Hc where Hk is the reverse field required to reduce the polarisation to 90% of Jr . ... A-Centre 0.76\
+    \ 0.97 ‖ 0.56 0.51 0.29 0.31 33 ⊥ 0.27 0.36"
+  note: 'The table row in the quote is transcribed from the rendered table (columns: Sample, Js/T, Vf(tau), Direction,
+    Jr/T, omega, mu0Hc/T, Hk/Hc, (BH)max/kJm-3; second line = perpendicular Jr and mu0Hc); the PDF text layer scrambles
+    table cells. Jr/Js = 0.74 for this sample (computed here).'
+- id: mnal_hd_feng2020_b_edge_br
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material B: milled powder (89 wt.% 20-60 um) of homogenised (eps) (Mn53Al45C2)Ni0.6,
+    Cu-canned, preheated 700 C 20 min, extruded at 650 C (ratio 8.5, 0.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    position: edge
+    Js_same_sample_T: 0.73
+    Vf_tau: 0.94
+    Jr_perp_T: 0.26
+    omega: 0.54
+    mu0Hc_par_T: 0.32
+    mu0Hc_perp_T: 0.42
+    Hk_over_Hc: 0.63
+    BHmax_kJ_m3: 49
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+  quantity: Br
+  value: 0.56
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (parallel)
+  measurement: PPMS-VSM after saturation at 14 T, room temperature, demagnetisation-corrected; cuboid 1.5x1.5x2.5
+    mm from edge of transverse section
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 5, row B-Edge (as printed; transcribed from the rendered PDF page)
+  quote: "Table 5 Magnetic and other properties derived from hysteresis loops of samples taken from the edge and\
+    \ centre regions of the three materials (A, B and C), measured parallel (\x05) and perpendicular (⊥) to the\
+    \ extrusion direction. The saturation polarisation (Js ), remanence (Jr ), coercivity (μ0 Hc ) and energy product\
+    \ ((BH)max ) were measured. The volume fraction of the τ-phase, Vf (τ ), was estimated by dividing the Js measured\
+    \ for each sample by that of a single-phase, as-transformed material of the same composition (Js = 0.78 T).\
+    \ The degree of texture, ω, was calculated from: ω = (Jr \x05 -Jr ⊥ )/Jr \x05 . The squareness factor was defined\
+    \ as Hk /Hc where Hk is the reverse field required to reduce the polarisation to 90% of Jr . ... B-Edge 0.73\
+    \ 0.94 ‖ 0.56 0.54 0.32 0.63 49 ⊥ 0.26 0.42"
+  note: 'The table row in the quote is transcribed from the rendered table (columns: Sample, Js/T, Vf(tau), Direction,
+    Jr/T, omega, mu0Hc/T, Hk/Hc, (BH)max/kJm-3; second line = perpendicular Jr and mu0Hc); the PDF text layer scrambles
+    table cells. Jr/Js = 0.77 for this sample (computed here).'
+- id: mnal_hd_feng2020_b_centre_br
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material B: milled powder (89 wt.% 20-60 um) of homogenised (eps) (Mn53Al45C2)Ni0.6,
+    Cu-canned, preheated 700 C 20 min, extruded at 650 C (ratio 8.5, 0.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 923
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    position: centre
+    Js_same_sample_T: 0.75
+    Vf_tau: 0.96
+    Jr_perp_T: 0.28
+    omega: 0.5
+    mu0Hc_par_T: 0.3
+    mu0Hc_perp_T: 0.38
+    Hk_over_Hc: 0.46
+    BHmax_kJ_m3: 40
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+  quantity: Br
+  value: 0.55
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (parallel)
+  measurement: PPMS-VSM after saturation at 14 T, room temperature, demagnetisation-corrected; cuboid 1.5x1.5x2.5
+    mm from centre of transverse section
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 5, row B-Centre (as printed; transcribed from the rendered PDF page)
+  quote: "Table 5 Magnetic and other properties derived from hysteresis loops of samples taken from the edge and\
+    \ centre regions of the three materials (A, B and C), measured parallel (\x05) and perpendicular (⊥) to the\
+    \ extrusion direction. The saturation polarisation (Js ), remanence (Jr ), coercivity (μ0 Hc ) and energy product\
+    \ ((BH)max ) were measured. The volume fraction of the τ-phase, Vf (τ ), was estimated by dividing the Js measured\
+    \ for each sample by that of a single-phase, as-transformed material of the same composition (Js = 0.78 T).\
+    \ The degree of texture, ω, was calculated from: ω = (Jr \x05 -Jr ⊥ )/Jr \x05 . The squareness factor was defined\
+    \ as Hk /Hc where Hk is the reverse field required to reduce the polarisation to 90% of Jr . ... B-Centre 0.75\
+    \ 0.96 ‖ 0.55 0.50 0.30 0.46 40 ⊥ 0.28 0.38"
+  note: 'The table row in the quote is transcribed from the rendered table (columns: Sample, Js/T, Vf(tau), Direction,
+    Jr/T, omega, mu0Hc/T, Hk/Hc, (BH)max/kJm-3; second line = perpendicular Jr and mu0Hc); the PDF text layer scrambles
+    table cells. Jr/Js = 0.73 for this sample (computed here).'
+- id: mnal_hd_feng2020_c_edge_br
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material C: milled powder (89 wt.% 20-60 um) of homogenised (eps) (Mn53Al45C2)Ni0.6,
+    Cu-canned, preheated 700 C 20 min, extruded at 700 C (ratio 8.5, 1.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    position: edge
+    Js_same_sample_T: 0.72
+    Vf_tau: 0.92
+    Jr_perp_T: 0.28
+    omega: 0.46
+    mu0Hc_par_T: 0.34
+    mu0Hc_perp_T: 0.42
+    Hk_over_Hc: 0.53
+    BHmax_kJ_m3: 41
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+  quantity: Br
+  value: 0.52
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (parallel)
+  measurement: PPMS-VSM after saturation at 14 T, room temperature, demagnetisation-corrected; cuboid 1.5x1.5x2.5
+    mm from edge of transverse section
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 5, row C-Edge (as printed; transcribed from the rendered PDF page)
+  quote: "Table 5 Magnetic and other properties derived from hysteresis loops of samples taken from the edge and\
+    \ centre regions of the three materials (A, B and C), measured parallel (\x05) and perpendicular (⊥) to the\
+    \ extrusion direction. The saturation polarisation (Js ), remanence (Jr ), coercivity (μ0 Hc ) and energy product\
+    \ ((BH)max ) were measured. The volume fraction of the τ-phase, Vf (τ ), was estimated by dividing the Js measured\
+    \ for each sample by that of a single-phase, as-transformed material of the same composition (Js = 0.78 T).\
+    \ The degree of texture, ω, was calculated from: ω = (Jr \x05 -Jr ⊥ )/Jr \x05 . The squareness factor was defined\
+    \ as Hk /Hc where Hk is the reverse field required to reduce the polarisation to 90% of Jr . ... C-Edge 0.72\
+    \ 0.92 ‖ 0.52 0.46 0.34 0.53 41 ⊥ 0.28 0.42"
+  note: 'The table row in the quote is transcribed from the rendered table (columns: Sample, Js/T, Vf(tau), Direction,
+    Jr/T, omega, mu0Hc/T, Hk/Hc, (BH)max/kJm-3; second line = perpendicular Jr and mu0Hc); the PDF text layer scrambles
+    table cells. Jr/Js = 0.72 for this sample (computed here).'
+- id: mnal_hd_feng2020_c_centre_br
+  phase: tau-MnAl-C
+  route: HD
+  process: 'hot extrusion, material C: milled powder (89 wt.% 20-60 um) of homogenised (eps) (Mn53Al45C2)Ni0.6,
+    Cu-canned, preheated 700 C 20 min, extruded at 700 C (ratio 8.5, 1.1 mm/s)'
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: none (powder)
+    magnet_axis: extrusion direction
+    density_g_cm3: 5.1
+    position: centre
+    Js_same_sample_T: 0.72
+    Vf_tau: 0.92
+    Jr_perp_T: 0.29
+    omega: 0.41
+    mu0Hc_par_T: 0.33
+    mu0Hc_perp_T: 0.39
+    Hk_over_Hc: 0.44
+    BHmax_kJ_m3: 35
+    composition_at: (Mn53Al45C2)Ni0.6 nominal
+  quantity: Br
+  value: 0.5
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (parallel)
+  measurement: PPMS-VSM after saturation at 14 T, room temperature, demagnetisation-corrected; cuboid 1.5x1.5x2.5
+    mm from centre of transverse section
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Table 5, row C-Centre (as printed; transcribed from the rendered PDF page)
+  quote: "Table 5 Magnetic and other properties derived from hysteresis loops of samples taken from the edge and\
+    \ centre regions of the three materials (A, B and C), measured parallel (\x05) and perpendicular (⊥) to the\
+    \ extrusion direction. The saturation polarisation (Js ), remanence (Jr ), coercivity (μ0 Hc ) and energy product\
+    \ ((BH)max ) were measured. The volume fraction of the τ-phase, Vf (τ ), was estimated by dividing the Js measured\
+    \ for each sample by that of a single-phase, as-transformed material of the same composition (Js = 0.78 T).\
+    \ The degree of texture, ω, was calculated from: ω = (Jr \x05 -Jr ⊥ )/Jr \x05 . The squareness factor was defined\
+    \ as Hk /Hc where Hk is the reverse field required to reduce the polarisation to 90% of Jr . ... C-Centre 0.72\
+    \ 0.92 ‖ 0.50 0.41 0.33 0.44 35 ⊥ 0.29 0.39"
+  note: 'The table row in the quote is transcribed from the rendered table (columns: Sample, Js/T, Vf(tau), Direction,
+    Jr/T, omega, mu0Hc/T, Hk/Hc, (BH)max/kJm-3; second line = perpendicular Jr and mu0Hc); the PDF text layer scrambles
+    table cells. Jr/Js = 0.69 for this sample (computed here).'
+- id: mnal_hd_feng2020_b_section_bhmax
+  phase: tau-MnAl-C
+  route: HD
+  process: hot extrusion, material B (see mnal_hd_feng2020_b_mrms)
+  conditions:
+    magnet_axis: extrusion direction
+    T_process_K: 923
+    sample: whole transverse section ~3 mm thick, 9.6 mm diameter
+    Hk_over_Hc: 0.54
+  quantity: BHmax
+  value: 46
+  unit: kJ/m3
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: permeameter (Magnet-Physik), room temperature, after 5 T pulse
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: full_text
+    locator: Section 3.3, Fig. 12
+  quote: The maximum energy product of the whole section of material B is (BH)max = 46 kJm−3
+  note: 'Fig. 12 legend gives whole-section values A: 37, B: 46, C: 41 kJ/m3 (A and C read from the printed legend).'
+- id: mnal_hd_feng2020_commercial_br
+  phase: tau-MnAl-C
+  route: HD
+  process: commercially produced MnAl-C magnet extruded from bulk (Matsushita), as tested by Abdelnour et al. 1981
+  conditions:
+    magnet_axis: extrusion direction
+    Jr_perp_T: 0.3
+    omega: 0.51
+  quantity: Br
+  value: 0.58
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (parallel); perpendicular 0.30 T
+  measurement: as reported in refs [8, 13] (Abdelnour et al. 1981)
+  n_samples: 1
+  source:
+    doi: 10.1016/j.actamat.2020.08.031
+    title: Rare-earth-free MnAl-C-Ni permanent magnets produced by extrusion of powder milled from bulk
+    first_author: Feng, Le
+    year: 2020
+    url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
+    evidence: review
+    locator: Section 3.3, p. 164
+  quote: "For comparison with the ω values in Table 5, a commerciallyproduced MnAl-C magnet, extruded from bulk\
+    \ rather than powder, showed Jr \x05 = 0.58 T and Jr ⊥ = 0.30 T [8,13], and resultingly, ω = 0.51."
+  note: 'Review-level: original is Abdelnour et al., IEEE Trans. Magn. 17 (1981) 2651 (doi 10.1109/tmag.1981.1061537)
+    and an unpublished 1981 report; their abstract gives no values. Bars of 24-31 mm diameter (Feng Table 7).'
+- id: mnal_hd_feng2022_bhmax
+  phase: tau-MnAl-C
+  route: HD
+  process: hot extrusion of pulverised melt-spun MnAl-C-Ni ribbons (tau formed during holding at 700 C before extrusion)
+  conditions:
+    magnet_axis: extrusion direction
+    T_process_K: 973
+  quantity: BHmax
+  value: 42
+  unit: kJ/m3
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated in abstract
+  n_samples: several (>= 42 is a lower bound over the materials)
+  source:
+    doi: 10.1016/j.jallcom.2021.163248
+    title: Elimination of the non-recrystallised regions in the extruded MnAl-C-Ni magnet using pulverised melt-spun
+      ribbons
+    first_author: Feng, Le
+    year: 2022
+    url: https://api.openalex.org/works/doi:10.1016/j.jallcom.2021.163248
+    evidence: abstract
+    locator: abstract
+  quote: MnAl-C-Ni magnets with maximum energy products, (BH)max ≥ 42 kJ m−3, were produced by hot extruding pulverised
+    melt-spun ribbons.
+  note: Value is a lower bound ('(BH)max ≥ 42 kJ m−3'). Full text (hybrid OA at ScienceDirect) blocked for scripts;
+    Br not available here.
+- id: mnal_hd_sakamoto1977_ex1_sa2p5
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of tau billets (1150 C 2 h, cooled ~500 C/min, tempered 550 C 30 min) at 700 C through
+    conical die, semiangle 2.5 deg, 64% area reduction, graphite-Cu-glass lubricant
+  conditions:
+    T_process_K: 973
+    die_semiangle_deg: 2.5
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 69.48 Mn, 29.98 Al, 0.54 C
+    BHmax_kJ_m3: 40.6
+    bHc_Oe: 1750
+    extrusion_pressure_kg_mm2: 67
+  quantity: Br
+  value: 0.6
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 1, Table 1, row semiangle 2.5
+  quote: From a casting having a composition of 69.48% Mn, 29.98% Al and 0.54% C, as chemically analyzed, cylindrical
+    billets of 20mm φ × 35mm were cut. After holding them at a temperature of 1150° C for 2 hours, the billets were
+    rapidly cooled at a rate of about 500° C/min., and were further subjected to tempering at 550° C for 30 minutes.
+    As examined by X-ray difraction, τ-phase was detected. Said billets of Mn-Al-C polycrystalline alloy were subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64 %, at a temperature of 700° C. The experiment
+    was performed, respectively, by extruding through a conical die of different die angles. A dummy billet of various
+    lengths for each case was employed in order to push the test billet through the converging die. The billet was
+    lubricated with a graphite-copper-glass system composite lubricant. ... Semiangle extrusion pressure Br bHc
+    (BH)max degree Kg/mm.sup.2 G. Oe. x 10.sup.6 G.Oe. ... 2.5 67 6000 1750 5.1
+  note: converted from Br = 6000 G; (BH)max 5.1 x10^6 G.Oe. Patent example (one billet per die). Js of the alloy
+    not given.
+- id: mnal_hd_sakamoto1977_ex1_sa5
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of tau billets (1150 C 2 h, cooled ~500 C/min, tempered 550 C 30 min) at 700 C through
+    conical die, semiangle 5 deg, 64% area reduction, graphite-Cu-glass lubricant
+  conditions:
+    T_process_K: 973
+    die_semiangle_deg: 5
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 69.48 Mn, 29.98 Al, 0.54 C
+    BHmax_kJ_m3: 49.3
+    bHc_Oe: 2200
+    extrusion_pressure_kg_mm2: 54
+  quantity: Br
+  value: 0.64
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 1, Table 1, row semiangle 5
+  quote: From a casting having a composition of 69.48% Mn, 29.98% Al and 0.54% C, as chemically analyzed, cylindrical
+    billets of 20mm φ × 35mm were cut. After holding them at a temperature of 1150° C for 2 hours, the billets were
+    rapidly cooled at a rate of about 500° C/min., and were further subjected to tempering at 550° C for 30 minutes.
+    As examined by X-ray difraction, τ-phase was detected. Said billets of Mn-Al-C polycrystalline alloy were subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64 %, at a temperature of 700° C. The experiment
+    was performed, respectively, by extruding through a conical die of different die angles. A dummy billet of various
+    lengths for each case was employed in order to push the test billet through the converging die. The billet was
+    lubricated with a graphite-copper-glass system composite lubricant. ... Semiangle extrusion pressure Br bHc
+    (BH)max degree Kg/mm.sup.2 G. Oe. x 10.sup.6 G.Oe. ... 5 54 6400 2200 6.2
+  note: converted from Br = 6400 G; (BH)max 6.2 x10^6 G.Oe. Patent example (one billet per die). Js of the alloy
+    not given.
+- id: mnal_hd_sakamoto1977_ex1_sa7p5
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of tau billets (1150 C 2 h, cooled ~500 C/min, tempered 550 C 30 min) at 700 C through
+    conical die, semiangle 7.5 deg, 64% area reduction, graphite-Cu-glass lubricant
+  conditions:
+    T_process_K: 973
+    die_semiangle_deg: 7.5
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 69.48 Mn, 29.98 Al, 0.54 C
+    BHmax_kJ_m3: 56.5
+    bHc_Oe: 2600
+    extrusion_pressure_kg_mm2: 46
+  quantity: Br
+  value: 0.65
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 1, Table 1, row semiangle 7.5
+  quote: From a casting having a composition of 69.48% Mn, 29.98% Al and 0.54% C, as chemically analyzed, cylindrical
+    billets of 20mm φ × 35mm were cut. After holding them at a temperature of 1150° C for 2 hours, the billets were
+    rapidly cooled at a rate of about 500° C/min., and were further subjected to tempering at 550° C for 30 minutes.
+    As examined by X-ray difraction, τ-phase was detected. Said billets of Mn-Al-C polycrystalline alloy were subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64 %, at a temperature of 700° C. The experiment
+    was performed, respectively, by extruding through a conical die of different die angles. A dummy billet of various
+    lengths for each case was employed in order to push the test billet through the converging die. The billet was
+    lubricated with a graphite-copper-glass system composite lubricant. ... Semiangle extrusion pressure Br bHc
+    (BH)max degree Kg/mm.sup.2 G. Oe. x 10.sup.6 G.Oe. ... 7.5 46 6500 2600 7.1
+  note: converted from Br = 6500 G; (BH)max 7.1 x10^6 G.Oe. Patent example (one billet per die). Js of the alloy
+    not given.
+- id: mnal_hd_sakamoto1977_ex1_sa10
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of tau billets (1150 C 2 h, cooled ~500 C/min, tempered 550 C 30 min) at 700 C through
+    conical die, semiangle 10 deg, 64% area reduction, graphite-Cu-glass lubricant
+  conditions:
+    T_process_K: 973
+    die_semiangle_deg: 10
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 69.48 Mn, 29.98 Al, 0.54 C
+    BHmax_kJ_m3: 57.3
+    bHc_Oe: 2700
+    extrusion_pressure_kg_mm2: 42
+  quantity: Br
+  value: 0.645
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 1, Table 1, row semiangle 10
+  quote: From a casting having a composition of 69.48% Mn, 29.98% Al and 0.54% C, as chemically analyzed, cylindrical
+    billets of 20mm φ × 35mm were cut. After holding them at a temperature of 1150° C for 2 hours, the billets were
+    rapidly cooled at a rate of about 500° C/min., and were further subjected to tempering at 550° C for 30 minutes.
+    As examined by X-ray difraction, τ-phase was detected. Said billets of Mn-Al-C polycrystalline alloy were subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64 %, at a temperature of 700° C. The experiment
+    was performed, respectively, by extruding through a conical die of different die angles. A dummy billet of various
+    lengths for each case was employed in order to push the test billet through the converging die. The billet was
+    lubricated with a graphite-copper-glass system composite lubricant. ... Semiangle extrusion pressure Br bHc
+    (BH)max degree Kg/mm.sup.2 G. Oe. x 10.sup.6 G.Oe. ... 10 42 6450 2700 7.2
+  note: converted from Br = 6450 G; (BH)max 7.2 x10^6 G.Oe. Patent example (one billet per die). Js of the alloy
+    not given.
+- id: mnal_hd_sakamoto1977_ex1_sa15
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of tau billets (1150 C 2 h, cooled ~500 C/min, tempered 550 C 30 min) at 700 C through
+    conical die, semiangle 15 deg, 64% area reduction, graphite-Cu-glass lubricant
+  conditions:
+    T_process_K: 973
+    die_semiangle_deg: 15
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 69.48 Mn, 29.98 Al, 0.54 C
+    BHmax_kJ_m3: 54.9
+    bHc_Oe: 2700
+    extrusion_pressure_kg_mm2: 40
+  quantity: Br
+  value: 0.63
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 1, Table 1, row semiangle 15
+  quote: From a casting having a composition of 69.48% Mn, 29.98% Al and 0.54% C, as chemically analyzed, cylindrical
+    billets of 20mm φ × 35mm were cut. After holding them at a temperature of 1150° C for 2 hours, the billets were
+    rapidly cooled at a rate of about 500° C/min., and were further subjected to tempering at 550° C for 30 minutes.
+    As examined by X-ray difraction, τ-phase was detected. Said billets of Mn-Al-C polycrystalline alloy were subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64 %, at a temperature of 700° C. The experiment
+    was performed, respectively, by extruding through a conical die of different die angles. A dummy billet of various
+    lengths for each case was employed in order to push the test billet through the converging die. The billet was
+    lubricated with a graphite-copper-glass system composite lubricant. ... Semiangle extrusion pressure Br bHc
+    (BH)max degree Kg/mm.sup.2 G. Oe. x 10.sup.6 G.Oe. ... 15 40 6300 2700 6.9
+  note: converted from Br = 6300 G; (BH)max 6.9 x10^6 G.Oe. Patent example (one billet per die). Js of the alloy
+    not given.
+- id: mnal_hd_sakamoto1977_ex1_sa20
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of tau billets (1150 C 2 h, cooled ~500 C/min, tempered 550 C 30 min) at 700 C through
+    conical die, semiangle 20 deg, 64% area reduction, graphite-Cu-glass lubricant
+  conditions:
+    T_process_K: 973
+    die_semiangle_deg: 20
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 69.48 Mn, 29.98 Al, 0.54 C
+    BHmax_kJ_m3: 48.5
+    bHc_Oe: 2550
+    extrusion_pressure_kg_mm2: 39
+  quantity: Br
+  value: 0.595
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 1, Table 1, row semiangle 20
+  quote: From a casting having a composition of 69.48% Mn, 29.98% Al and 0.54% C, as chemically analyzed, cylindrical
+    billets of 20mm φ × 35mm were cut. After holding them at a temperature of 1150° C for 2 hours, the billets were
+    rapidly cooled at a rate of about 500° C/min., and were further subjected to tempering at 550° C for 30 minutes.
+    As examined by X-ray difraction, τ-phase was detected. Said billets of Mn-Al-C polycrystalline alloy were subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64 %, at a temperature of 700° C. The experiment
+    was performed, respectively, by extruding through a conical die of different die angles. A dummy billet of various
+    lengths for each case was employed in order to push the test billet through the converging die. The billet was
+    lubricated with a graphite-copper-glass system composite lubricant. ... Semiangle extrusion pressure Br bHc
+    (BH)max degree Kg/mm.sup.2 G. Oe. x 10.sup.6 G.Oe. ... 20 39 5950 2550 6.1
+  note: converted from Br = 5950 G; (BH)max 6.1 x10^6 G.Oe. Patent example (one billet per die). Js of the alloy
+    not given.
+- id: mnal_hd_sakamoto1977_ex1_sa25
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of tau billets (1150 C 2 h, cooled ~500 C/min, tempered 550 C 30 min) at 700 C through
+    conical die, semiangle 25 deg, 64% area reduction, graphite-Cu-glass lubricant
+  conditions:
+    T_process_K: 973
+    die_semiangle_deg: 25
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 69.48 Mn, 29.98 Al, 0.54 C
+    BHmax_kJ_m3: 35.8
+    bHc_Oe: 2350
+    extrusion_pressure_kg_mm2: 42
+  quantity: Br
+  value: 0.505
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 1, Table 1, row semiangle 25
+  quote: From a casting having a composition of 69.48% Mn, 29.98% Al and 0.54% C, as chemically analyzed, cylindrical
+    billets of 20mm φ × 35mm were cut. After holding them at a temperature of 1150° C for 2 hours, the billets were
+    rapidly cooled at a rate of about 500° C/min., and were further subjected to tempering at 550° C for 30 minutes.
+    As examined by X-ray difraction, τ-phase was detected. Said billets of Mn-Al-C polycrystalline alloy were subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64 %, at a temperature of 700° C. The experiment
+    was performed, respectively, by extruding through a conical die of different die angles. A dummy billet of various
+    lengths for each case was employed in order to push the test billet through the converging die. The billet was
+    lubricated with a graphite-copper-glass system composite lubricant. ... Semiangle extrusion pressure Br bHc
+    (BH)max degree Kg/mm.sup.2 G. Oe. x 10.sup.6 G.Oe. ... 25 42 5050 2350 4.5
+  note: converted from Br = 5050 G; (BH)max 4.5 x10^6 G.Oe. Patent example (one billet per die). Js of the alloy
+    not given.
+- id: mnal_hd_sakamoto1977_ex1_sa30
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of tau billets (1150 C 2 h, cooled ~500 C/min, tempered 550 C 30 min) at 700 C through
+    conical die, semiangle 30 deg, 64% area reduction, graphite-Cu-glass lubricant
+  conditions:
+    T_process_K: 973
+    die_semiangle_deg: 30
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 69.48 Mn, 29.98 Al, 0.54 C
+    BHmax_kJ_m3: 28.6
+    bHc_Oe: 2300
+    extrusion_pressure_kg_mm2: 44
+  quantity: Br
+  value: 0.41
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 1, Table 1, row semiangle 30
+  quote: From a casting having a composition of 69.48% Mn, 29.98% Al and 0.54% C, as chemically analyzed, cylindrical
+    billets of 20mm φ × 35mm were cut. After holding them at a temperature of 1150° C for 2 hours, the billets were
+    rapidly cooled at a rate of about 500° C/min., and were further subjected to tempering at 550° C for 30 minutes.
+    As examined by X-ray difraction, τ-phase was detected. Said billets of Mn-Al-C polycrystalline alloy were subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64 %, at a temperature of 700° C. The experiment
+    was performed, respectively, by extruding through a conical die of different die angles. A dummy billet of various
+    lengths for each case was employed in order to push the test billet through the converging die. The billet was
+    lubricated with a graphite-copper-glass system composite lubricant. ... Semiangle extrusion pressure Br bHc
+    (BH)max degree Kg/mm.sup.2 G. Oe. x 10.sup.6 G.Oe. ... 30 44 4100 2300 3.6
+  note: converted from Br = 4100 G; (BH)max 3.6 x10^6 G.Oe. Patent example (one billet per die). Js of the alloy
+    not given.
+- id: mnal_hd_sakamoto1977_ex1_sa45
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of tau billets (1150 C 2 h, cooled ~500 C/min, tempered 550 C 30 min) at 700 C through
+    conical die, semiangle 45 deg, 64% area reduction, graphite-Cu-glass lubricant
+  conditions:
+    T_process_K: 973
+    die_semiangle_deg: 45
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 69.48 Mn, 29.98 Al, 0.54 C
+    BHmax_kJ_m3: 23.9
+    bHc_Oe: 2250
+    extrusion_pressure_kg_mm2: 61
+  quantity: Br
+  value: 0.39
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 1, Table 1, row semiangle 45
+  quote: From a casting having a composition of 69.48% Mn, 29.98% Al and 0.54% C, as chemically analyzed, cylindrical
+    billets of 20mm φ × 35mm were cut. After holding them at a temperature of 1150° C for 2 hours, the billets were
+    rapidly cooled at a rate of about 500° C/min., and were further subjected to tempering at 550° C for 30 minutes.
+    As examined by X-ray difraction, τ-phase was detected. Said billets of Mn-Al-C polycrystalline alloy were subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64 %, at a temperature of 700° C. The experiment
+    was performed, respectively, by extruding through a conical die of different die angles. A dummy billet of various
+    lengths for each case was employed in order to push the test billet through the converging die. The billet was
+    lubricated with a graphite-copper-glass system composite lubricant. ... Semiangle extrusion pressure Br bHc
+    (BH)max degree Kg/mm.sup.2 G. Oe. x 10.sup.6 G.Oe. ... 45 61 3900 2250 3.0
+  note: converted from Br = 3900 G; (BH)max 3.0 x10^6 G.Oe. Patent example (one billet per die). Js of the alloy
+    not given.
+- id: mnal_hd_sakamoto1977_ex1_sa60
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of tau billets (1150 C 2 h, cooled ~500 C/min, tempered 550 C 30 min) at 700 C through
+    conical die, semiangle 60 deg, 64% area reduction, graphite-Cu-glass lubricant
+  conditions:
+    T_process_K: 973
+    die_semiangle_deg: 60
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 69.48 Mn, 29.98 Al, 0.54 C
+    BHmax_kJ_m3: 22.3
+    bHc_Oe: 2150
+    extrusion_pressure_kg_mm2: 89
+  quantity: Br
+  value: 0.385
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 1, Table 1, row semiangle 60
+  quote: From a casting having a composition of 69.48% Mn, 29.98% Al and 0.54% C, as chemically analyzed, cylindrical
+    billets of 20mm φ × 35mm were cut. After holding them at a temperature of 1150° C for 2 hours, the billets were
+    rapidly cooled at a rate of about 500° C/min., and were further subjected to tempering at 550° C for 30 minutes.
+    As examined by X-ray difraction, τ-phase was detected. Said billets of Mn-Al-C polycrystalline alloy were subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64 %, at a temperature of 700° C. The experiment
+    was performed, respectively, by extruding through a conical die of different die angles. A dummy billet of various
+    lengths for each case was employed in order to push the test billet through the converging die. The billet was
+    lubricated with a graphite-copper-glass system composite lubricant. ... Semiangle extrusion pressure Br bHc
+    (BH)max degree Kg/mm.sup.2 G. Oe. x 10.sup.6 G.Oe. ... 60 89 3850 2150 2.8
+  note: converted from Br = 3850 G; (BH)max 2.8 x10^6 G.Oe. Patent example (one billet per die). Js of the alloy
+    not given.
+- id: mnal_hd_sakamoto1977_ex2
+  phase: tau-MnAl-C
+  route: HD
+  process: warm extrusion of an eps-phase billet (with lamellar Mn3AlC, 'M treatment') at 750 C through a plane-symmetric
+    converging die (7.5 deg), 75% area reduction, then tempered 550 C 30 min
+  conditions:
+    T_process_K: 1023
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    parent_phase_at_extrusion: epsilon + lamellar Mn3AlC
+    composition_wt: 71.73 Mn, 27.39 Al, 0.88 C
+    BHmax_kJ_m3: 46.2
+  quantity: Br
+  value: 0.58
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 2
+  quote: 'From a casting having a composition of 71.73% Mn, 27.39% Al and 0.88% C, as chemically analyzed, a 20
+    mm cubic test billet was cut out. Then after subjecting said test billet to heat treatment at a temperature
+    of 1150° C for 2 hours, it was gradually cooled to 830° C at a cooling rate of 10°˜15° C/min, and was then held
+    at 830° C for 15 minutes. It was quenched from 830° C at a cooling rate of about 700° C/min. After the above
+    heat-treatment, the test billet was found to consist of ε-phase crystals and lamellae of a compound Mn 3 AlC.
+    ... Said test billet was extruded with a dummy billet through the plane-symmetric converging die mentioned hereinabove,
+    whose reduction of area was 75%. Extrusion temperature was at 750° C and punch speed was 5 mm.sec. -1 . The
+    extruded product was sound and without any ruptures. Thereafter, it was tempered at 550° C for 30 min. Then,
+    magnetic properties were measured in the extrusion direction. The result was as follows: Br = 5800 G Bhc = 2350
+    Oe (BH)max = 5.8×10 6 G.Oe'
+  note: converted from 5800 G. Rectangular 20 x 5 mm product; compression only in one transverse direction (plane
+    strain), slightly worse than axisymmetric extrusion per the patent.
+- id: mnal_hd_sakamoto1977_ex3
+  phase: tau-MnAl-C
+  route: HD
+  process: billet (1050 C 1 h, cooled ~400 C/min) extruded at 650 C through a sigmoidal converging die (max semiangle
+    16 deg, mean 7.5 deg), 64% area reduction, colloidal graphite; then tempered 600 C 20 min
+  conditions:
+    T_process_K: 923
+    area_reduction: 0.64
+    magnet_axis: extrusion direction
+    composition_wt: 70.36 Mn, 29.02 Al, 0.62 C
+    BHmax_kJ_m3: 61.3
+    Br_before_tempering_T: 0.65
+  quantity: Br
+  value: 0.655
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Method of making anisotropic permanent magnets of Mn-Al-C alloys (US Patent 4,051,706)
+    first_author: Sakamoto, Yoichi
+    year: 1977
+    url: https://patents.google.com/patent/US4051706A/en
+    evidence: full_text
+    locator: Example 3
+  quote: 'From a casting having a composition of 70.36% Mn, 29.02% Al and 0.62% C, as chemically analyzed, a cylindrical
+    billet of 20mmφ × 30mm was cut out. After holding it at a temperature of 1050° C for 1 hour, the billet was
+    rapidily cooled at a rate of about 400° C/min. ... Said billet of Mn-Al-C polycrystalline alloy was subjected
+    to an axi-symmetric extrusion, whose reduction of area was 64%, at a temperature of 650° C with a dummy billet
+    to push the test billet through the converging portion. The punch speed was 12mm.sec -1 . Both the test billet
+    and a dummy billet were coated with colloidal graphite lubricant, which was applied as a dispersion. ... The
+    extruded product was sound, and the magnetic properties in the extrusion direction was as follows: Br =6500
+    G Bhc =2550 Oe (BH)max =7.0×10 6 G.Oe Then the measured specimen was subjected to tempering at a temperature
+    of 600° C for 20 min. The magnetic properties in the extrusion direction after tempering were as follows: Br
+    =6550 G Bhc =2750 Oe (BH)max =7.7×10 6 G.Oe'
+  note: converted from 6550 G after tempering (6500 G as extruded, 7.0 MGOe).
+- id: mnal_hd_kubo1976_t6_500
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled to 830 C (10-15 C/min), held 830 C 20 min (''M treatment''), quenched,
+    tempered 600 C 1 h (tau_c(M) + lamellar Mn3AlC), extruded 50% area reduction at 500 C'
+  conditions:
+    T_process_K: 773
+    area_reduction: 0.5
+    magnet_axis: extrusion direction (preferred direction)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 8.8
+    bHc_Oe: 1400
+  quantity: Br
+  value: 0.27
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization (extrusion direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 11, Table 6, row 500 C
+  quote: The test pieces having the composition of P 5 were subjected to an extrusion to a degree of extrusion of
+    50% in the axial direction of its cylinder, with the extruding temperature varied in the range of 500°C to 850°C.
+    Table 6 shows the relation between the extruding temperature and the magnetic properties in the preferred direction
+    of magnetization. ... 500 2,700 1,400 1.1
+  note: converted from 2700 G. Below 500 C little plasticity and no anisotropy; above 830 C cracks and no anisotropy
+    (patent text).
+- id: mnal_hd_kubo1976_t6_580
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled to 830 C (10-15 C/min), held 830 C 20 min (''M treatment''), quenched,
+    tempered 600 C 1 h (tau_c(M) + lamellar Mn3AlC), extruded 50% area reduction at 580 C'
+  conditions:
+    T_process_K: 853
+    area_reduction: 0.5
+    magnet_axis: extrusion direction (preferred direction)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 39.8
+    bHc_Oe: 2050
+  quantity: Br
+  value: 0.565
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization (extrusion direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 11, Table 6, row 580 C
+  quote: The test pieces having the composition of P 5 were subjected to an extrusion to a degree of extrusion of
+    50% in the axial direction of its cylinder, with the extruding temperature varied in the range of 500°C to 850°C.
+    Table 6 shows the relation between the extruding temperature and the magnetic properties in the preferred direction
+    of magnetization. ... 580 5,650 2,050 5.0
+  note: converted from 5650 G. Below 500 C little plasticity and no anisotropy; above 830 C cracks and no anisotropy
+    (patent text).
+- id: mnal_hd_kubo1976_t6_630
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled to 830 C (10-15 C/min), held 830 C 20 min (''M treatment''), quenched,
+    tempered 600 C 1 h (tau_c(M) + lamellar Mn3AlC), extruded 50% area reduction at 630 C'
+  conditions:
+    T_process_K: 903
+    area_reduction: 0.5
+    magnet_axis: extrusion direction (preferred direction)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 44.6
+    bHc_Oe: 2150
+  quantity: Br
+  value: 0.605
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization (extrusion direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 11, Table 6, row 630 C
+  quote: The test pieces having the composition of P 5 were subjected to an extrusion to a degree of extrusion of
+    50% in the axial direction of its cylinder, with the extruding temperature varied in the range of 500°C to 850°C.
+    Table 6 shows the relation between the extruding temperature and the magnetic properties in the preferred direction
+    of magnetization. ... 630 6,050 2,150 5.6
+  note: converted from 6050 G. Below 500 C little plasticity and no anisotropy; above 830 C cracks and no anisotropy
+    (patent text).
+- id: mnal_hd_kubo1976_t6_730
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled to 830 C (10-15 C/min), held 830 C 20 min (''M treatment''), quenched,
+    tempered 600 C 1 h (tau_c(M) + lamellar Mn3AlC), extruded 50% area reduction at 730 C'
+  conditions:
+    T_process_K: 1003
+    area_reduction: 0.5
+    magnet_axis: extrusion direction (preferred direction)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 43.8
+    bHc_Oe: 2100
+  quantity: Br
+  value: 0.6
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization (extrusion direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 11, Table 6, row 730 C
+  quote: The test pieces having the composition of P 5 were subjected to an extrusion to a degree of extrusion of
+    50% in the axial direction of its cylinder, with the extruding temperature varied in the range of 500°C to 850°C.
+    Table 6 shows the relation between the extruding temperature and the magnetic properties in the preferred direction
+    of magnetization. ... 730 6,000 2,100 5.5
+  note: converted from 6000 G. Below 500 C little plasticity and no anisotropy; above 830 C cracks and no anisotropy
+    (patent text).
+- id: mnal_hd_kubo1976_t6_830
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled to 830 C (10-15 C/min), held 830 C 20 min (''M treatment''), quenched,
+    tempered 600 C 1 h (tau_c(M) + lamellar Mn3AlC), extruded 50% area reduction at 830 C'
+  conditions:
+    T_process_K: 1103
+    area_reduction: 0.5
+    magnet_axis: extrusion direction (preferred direction)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 38.2
+    bHc_Oe: 2000
+  quantity: Br
+  value: 0.55
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization (extrusion direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 11, Table 6, row 830 C
+  quote: The test pieces having the composition of P 5 were subjected to an extrusion to a degree of extrusion of
+    50% in the axial direction of its cylinder, with the extruding temperature varied in the range of 500°C to 850°C.
+    Table 6 shows the relation between the extruding temperature and the magnetic properties in the preferred direction
+    of magnetization. ... 830 5,500 2,000 4.8
+  note: converted from 5500 G. Below 500 C little plasticity and no anisotropy; above 830 C cracks and no anisotropy
+    (patent text).
+- id: mnal_hd_kubo1976_t6_850
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled to 830 C (10-15 C/min), held 830 C 20 min (''M treatment''), quenched,
+    tempered 600 C 1 h (tau_c(M) + lamellar Mn3AlC), extruded 50% area reduction at 850 C'
+  conditions:
+    T_process_K: 1123
+    area_reduction: 0.5
+    magnet_axis: extrusion direction (preferred direction)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 5.6
+    bHc_Oe: 950
+  quantity: Br
+  value: 0.255
+  unit: T
+  uncertainty: null
+  measured_along: preferred direction of magnetization (extrusion direction)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 11, Table 6, row 850 C
+  quote: The test pieces having the composition of P 5 were subjected to an extrusion to a degree of extrusion of
+    50% in the axial direction of its cylinder, with the extruding temperature varied in the range of 500°C to 850°C.
+    Table 6 shows the relation between the extruding temperature and the magnetic properties in the preferred direction
+    of magnetization. ... 850 2,550 950 0.7
+  note: converted from 2550 G. Below 500 C little plasticity and no anisotropy; above 830 C cracks and no anisotropy
+    (patent text).
+- id: mnal_hd_kubo1976_t7_500
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled 10 C/min to 830 C, M treatment 830 C 20 min, quenched at 1000 C/min (eps_c(M)
+    state), extruded 40% area reduction at 500 C, then tempered'
+  conditions:
+    T_process_K: 773
+    area_reduction: 0.4
+    magnet_axis: extrusion direction
+    parent_phase_at_extrusion: epsilon_c(M) (eps + lamellar Mn3AlC)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 8.0
+    bHc_Oe: 1200
+  quantity: Br
+  value: 0.27
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14, Table 7, row 500 C
+  quote: a test piece having the composition of P 5 was extruded to a degree of extrusion of 40% in the axial direction
+    of its cylinder, with the temperature varied in the range of 500°C to 850°C. In Table 7, its magnetic characteristics
+    in the extruding direction as measured upon tempering it after the extruding, related to the working temperature,
+    were shown. ... 500 2700 1200 1.0
+  note: converted from 2700 G. Extrusion of the epsilon parent (transformation during/after deformation).
+- id: mnal_hd_kubo1976_t7_530
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled 10 C/min to 830 C, M treatment 830 C 20 min, quenched at 1000 C/min (eps_c(M)
+    state), extruded 40% area reduction at 530 C, then tempered'
+  conditions:
+    T_process_K: 803
+    area_reduction: 0.4
+    magnet_axis: extrusion direction
+    parent_phase_at_extrusion: epsilon_c(M) (eps + lamellar Mn3AlC)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 43.8
+    bHc_Oe: 1950
+  quantity: Br
+  value: 0.6
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14, Table 7, row 530 C
+  quote: a test piece having the composition of P 5 was extruded to a degree of extrusion of 40% in the axial direction
+    of its cylinder, with the temperature varied in the range of 500°C to 850°C. In Table 7, its magnetic characteristics
+    in the extruding direction as measured upon tempering it after the extruding, related to the working temperature,
+    were shown. ... 530 6000 1950 5.5
+  note: converted from 6000 G. Extrusion of the epsilon parent (transformation during/after deformation).
+- id: mnal_hd_kubo1976_t7_630
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled 10 C/min to 830 C, M treatment 830 C 20 min, quenched at 1000 C/min (eps_c(M)
+    state), extruded 40% area reduction at 630 C, then tempered'
+  conditions:
+    T_process_K: 903
+    area_reduction: 0.4
+    magnet_axis: extrusion direction
+    parent_phase_at_extrusion: epsilon_c(M) (eps + lamellar Mn3AlC)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 50.1
+    bHc_Oe: 2450
+  quantity: Br
+  value: 0.63
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14, Table 7, row 630 C
+  quote: a test piece having the composition of P 5 was extruded to a degree of extrusion of 40% in the axial direction
+    of its cylinder, with the temperature varied in the range of 500°C to 850°C. In Table 7, its magnetic characteristics
+    in the extruding direction as measured upon tempering it after the extruding, related to the working temperature,
+    were shown. ... 630 6300 2450 6.3
+  note: converted from 6300 G. Extrusion of the epsilon parent (transformation during/after deformation).
+- id: mnal_hd_kubo1976_t7_730
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled 10 C/min to 830 C, M treatment 830 C 20 min, quenched at 1000 C/min (eps_c(M)
+    state), extruded 40% area reduction at 730 C, then tempered'
+  conditions:
+    T_process_K: 1003
+    area_reduction: 0.4
+    magnet_axis: extrusion direction
+    parent_phase_at_extrusion: epsilon_c(M) (eps + lamellar Mn3AlC)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 48.5
+    bHc_Oe: 2200
+  quantity: Br
+  value: 0.615
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14, Table 7, row 730 C
+  quote: a test piece having the composition of P 5 was extruded to a degree of extrusion of 40% in the axial direction
+    of its cylinder, with the temperature varied in the range of 500°C to 850°C. In Table 7, its magnetic characteristics
+    in the extruding direction as measured upon tempering it after the extruding, related to the working temperature,
+    were shown. ... 730 6150 2200 6.1
+  note: converted from 6150 G. Extrusion of the epsilon parent (transformation during/after deformation).
+- id: mnal_hd_kubo1976_t7_830
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled 10 C/min to 830 C, M treatment 830 C 20 min, quenched at 1000 C/min (eps_c(M)
+    state), extruded 40% area reduction at 830 C, then tempered'
+  conditions:
+    T_process_K: 1103
+    area_reduction: 0.4
+    magnet_axis: extrusion direction
+    parent_phase_at_extrusion: epsilon_c(M) (eps + lamellar Mn3AlC)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 40.6
+    bHc_Oe: 2000
+  quantity: Br
+  value: 0.57
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14, Table 7, row 830 C
+  quote: a test piece having the composition of P 5 was extruded to a degree of extrusion of 40% in the axial direction
+    of its cylinder, with the temperature varied in the range of 500°C to 850°C. In Table 7, its magnetic characteristics
+    in the extruding direction as measured upon tempering it after the extruding, related to the working temperature,
+    were shown. ... 830 5700 2000 5.1
+  note: converted from 5700 G. Extrusion of the epsilon parent (transformation during/after deformation).
+- id: mnal_hd_kubo1976_t7_850
+  phase: tau-MnAl-C
+  route: HD
+  process: 'P5 alloy: 1150 C 2 h, cooled 10 C/min to 830 C, M treatment 830 C 20 min, quenched at 1000 C/min (eps_c(M)
+    state), extruded 40% area reduction at 850 C, then tempered'
+  conditions:
+    T_process_K: 1123
+    area_reduction: 0.4
+    magnet_axis: extrusion direction
+    parent_phase_at_extrusion: epsilon_c(M) (eps + lamellar Mn3AlC)
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 9.5
+    bHc_Oe: 1350
+  quantity: Br
+  value: 0.28
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14, Table 7, row 850 C
+  quote: a test piece having the composition of P 5 was extruded to a degree of extrusion of 40% in the axial direction
+    of its cylinder, with the temperature varied in the range of 500°C to 850°C. In Table 7, its magnetic characteristics
+    in the extruding direction as measured upon tempering it after the extruding, related to the working temperature,
+    were shown. ... 850 2800 1350 1.2
+  note: converted from 2800 G. Extrusion of the epsilon parent (transformation during/after deformation).
+- id: mnal_hd_kubo1976_t11_530
+  phase: tau-MnAl-C
+  route: HD
+  process: 'alloy No. 17: homogenised 1150 C 2 h, quenched, tempered 600 C 30 min (tau, no lamellar Mn3AlC), extruded
+    75% area reduction at 530 C'
+  conditions:
+    T_process_K: 803
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 11.9
+    bHc_Oe: 1350
+    isotropic_reference_same_alloy: mnal_isotropic_kubo1976_no17 (sealed file)
+  quantity: Br
+  value: 0.315
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 16, Table 11, code b
+  quote: The test specimen of No. 17 of Example 15 was subjected to homogenization and quenching treatment similarly
+    as in Example 15 and to a tempering at 600°C for 30 minutes after a quenching, and in the same way as in the
+    preceding example, was extruded by an extruding pressure of 12.6 tons at a surface reduction percentage of 75%.
+    The magnetic characteristics in the extrusion direction obtained after these treatments were carried out were
+    as shown in Table 11. ... b 530 3150 1350 1.5 ... The test specimens of Codes b, c and k were almost isotropic,
+    and the test specimens of d and j were lower in the degree of anisotropization than those of e - j. That is
+    to say, only by the warm deformation at 600° - 780°C, preferably 650° - 780°C, anisotropic magnets showing a
+    high degree of anisotropy were obtained.
+  note: 'converted from 3150 G. Patent: codes b, c, k ''almost isotropic''; d, j lower anisotropy; best 650-780
+    C.'
+- id: mnal_hd_kubo1976_t11_580
+  phase: tau-MnAl-C
+  route: HD
+  process: 'alloy No. 17: homogenised 1150 C 2 h, quenched, tempered 600 C 30 min (tau, no lamellar Mn3AlC), extruded
+    75% area reduction at 580 C'
+  conditions:
+    T_process_K: 853
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 14.3
+    bHc_Oe: 1500
+    isotropic_reference_same_alloy: mnal_isotropic_kubo1976_no17 (sealed file)
+  quantity: Br
+  value: 0.32
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 16, Table 11, code c
+  quote: The test specimen of No. 17 of Example 15 was subjected to homogenization and quenching treatment similarly
+    as in Example 15 and to a tempering at 600°C for 30 minutes after a quenching, and in the same way as in the
+    preceding example, was extruded by an extruding pressure of 12.6 tons at a surface reduction percentage of 75%.
+    The magnetic characteristics in the extrusion direction obtained after these treatments were carried out were
+    as shown in Table 11. ... c 580 3200 1500 1.8 ... The test specimens of Codes b, c and k were almost isotropic,
+    and the test specimens of d and j were lower in the degree of anisotropization than those of e - j. That is
+    to say, only by the warm deformation at 600° - 780°C, preferably 650° - 780°C, anisotropic magnets showing a
+    high degree of anisotropy were obtained.
+  note: 'converted from 3200 G. Patent: codes b, c, k ''almost isotropic''; d, j lower anisotropy; best 650-780
+    C.'
+- id: mnal_hd_kubo1976_t11_590
+  phase: tau-MnAl-C
+  route: HD
+  process: 'alloy No. 17: homogenised 1150 C 2 h, quenched, tempered 600 C 30 min (tau, no lamellar Mn3AlC), extruded
+    75% area reduction at 590 C'
+  conditions:
+    T_process_K: 863
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 26.3
+    bHc_Oe: 1650
+    isotropic_reference_same_alloy: mnal_isotropic_kubo1976_no17 (sealed file)
+  quantity: Br
+  value: 0.505
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 16, Table 11, code d
+  quote: The test specimen of No. 17 of Example 15 was subjected to homogenization and quenching treatment similarly
+    as in Example 15 and to a tempering at 600°C for 30 minutes after a quenching, and in the same way as in the
+    preceding example, was extruded by an extruding pressure of 12.6 tons at a surface reduction percentage of 75%.
+    The magnetic characteristics in the extrusion direction obtained after these treatments were carried out were
+    as shown in Table 11. ... d 590 5050 1650 3.3 ... The test specimens of Codes b, c and k were almost isotropic,
+    and the test specimens of d and j were lower in the degree of anisotropization than those of e - j. That is
+    to say, only by the warm deformation at 600° - 780°C, preferably 650° - 780°C, anisotropic magnets showing a
+    high degree of anisotropy were obtained.
+  note: 'converted from 5050 G. Patent: codes b, c, k ''almost isotropic''; d, j lower anisotropy; best 650-780
+    C.'
+- id: mnal_hd_kubo1976_t11_600
+  phase: tau-MnAl-C
+  route: HD
+  process: 'alloy No. 17: homogenised 1150 C 2 h, quenched, tempered 600 C 30 min (tau, no lamellar Mn3AlC), extruded
+    75% area reduction at 600 C'
+  conditions:
+    T_process_K: 873
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 43.8
+    bHc_Oe: 1960
+    isotropic_reference_same_alloy: mnal_isotropic_kubo1976_no17 (sealed file)
+  quantity: Br
+  value: 0.62
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 16, Table 11, code e
+  quote: The test specimen of No. 17 of Example 15 was subjected to homogenization and quenching treatment similarly
+    as in Example 15 and to a tempering at 600°C for 30 minutes after a quenching, and in the same way as in the
+    preceding example, was extruded by an extruding pressure of 12.6 tons at a surface reduction percentage of 75%.
+    The magnetic characteristics in the extrusion direction obtained after these treatments were carried out were
+    as shown in Table 11. ... e 600 6200 1960 5.5 ... The test specimens of Codes b, c and k were almost isotropic,
+    and the test specimens of d and j were lower in the degree of anisotropization than those of e - j. That is
+    to say, only by the warm deformation at 600° - 780°C, preferably 650° - 780°C, anisotropic magnets showing a
+    high degree of anisotropy were obtained.
+  note: 'converted from 6200 G. Patent: codes b, c, k ''almost isotropic''; d, j lower anisotropy; best 650-780
+    C.'
+- id: mnal_hd_kubo1976_t11_650
+  phase: tau-MnAl-C
+  route: HD
+  process: 'alloy No. 17: homogenised 1150 C 2 h, quenched, tempered 600 C 30 min (tau, no lamellar Mn3AlC), extruded
+    75% area reduction at 650 C'
+  conditions:
+    T_process_K: 923
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 53.3
+    bHc_Oe: 2500
+    isotropic_reference_same_alloy: mnal_isotropic_kubo1976_no17 (sealed file)
+  quantity: Br
+  value: 0.645
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 16, Table 11, code f
+  quote: The test specimen of No. 17 of Example 15 was subjected to homogenization and quenching treatment similarly
+    as in Example 15 and to a tempering at 600°C for 30 minutes after a quenching, and in the same way as in the
+    preceding example, was extruded by an extruding pressure of 12.6 tons at a surface reduction percentage of 75%.
+    The magnetic characteristics in the extrusion direction obtained after these treatments were carried out were
+    as shown in Table 11. ... f 650 6450 2500 6.7 ... The test specimens of Codes b, c and k were almost isotropic,
+    and the test specimens of d and j were lower in the degree of anisotropization than those of e - j. That is
+    to say, only by the warm deformation at 600° - 780°C, preferably 650° - 780°C, anisotropic magnets showing a
+    high degree of anisotropy were obtained.
+  note: 'converted from 6450 G. Patent: codes b, c, k ''almost isotropic''; d, j lower anisotropy; best 650-780
+    C.'
+- id: mnal_hd_kubo1976_t11_700
+  phase: tau-MnAl-C
+  route: HD
+  process: 'alloy No. 17: homogenised 1150 C 2 h, quenched, tempered 600 C 30 min (tau, no lamellar Mn3AlC), extruded
+    75% area reduction at 700 C'
+  conditions:
+    T_process_K: 973
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 54.1
+    bHc_Oe: 2550
+    isotropic_reference_same_alloy: mnal_isotropic_kubo1976_no17 (sealed file)
+  quantity: Br
+  value: 0.645
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 16, Table 11, code g
+  quote: The test specimen of No. 17 of Example 15 was subjected to homogenization and quenching treatment similarly
+    as in Example 15 and to a tempering at 600°C for 30 minutes after a quenching, and in the same way as in the
+    preceding example, was extruded by an extruding pressure of 12.6 tons at a surface reduction percentage of 75%.
+    The magnetic characteristics in the extrusion direction obtained after these treatments were carried out were
+    as shown in Table 11. ... g 700 6450 2550 6.8 ... The test specimens of Codes b, c and k were almost isotropic,
+    and the test specimens of d and j were lower in the degree of anisotropization than those of e - j. That is
+    to say, only by the warm deformation at 600° - 780°C, preferably 650° - 780°C, anisotropic magnets showing a
+    high degree of anisotropy were obtained.
+  note: 'converted from 6450 G. Patent: codes b, c, k ''almost isotropic''; d, j lower anisotropy; best 650-780
+    C.'
+- id: mnal_hd_kubo1976_t11_750
+  phase: tau-MnAl-C
+  route: HD
+  process: 'alloy No. 17: homogenised 1150 C 2 h, quenched, tempered 600 C 30 min (tau, no lamellar Mn3AlC), extruded
+    75% area reduction at 750 C'
+  conditions:
+    T_process_K: 1023
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 51.7
+    bHc_Oe: 2400
+    isotropic_reference_same_alloy: mnal_isotropic_kubo1976_no17 (sealed file)
+  quantity: Br
+  value: 0.635
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 16, Table 11, code h
+  quote: The test specimen of No. 17 of Example 15 was subjected to homogenization and quenching treatment similarly
+    as in Example 15 and to a tempering at 600°C for 30 minutes after a quenching, and in the same way as in the
+    preceding example, was extruded by an extruding pressure of 12.6 tons at a surface reduction percentage of 75%.
+    The magnetic characteristics in the extrusion direction obtained after these treatments were carried out were
+    as shown in Table 11. ... h 750 6350 2400 6.5 ... The test specimens of Codes b, c and k were almost isotropic,
+    and the test specimens of d and j were lower in the degree of anisotropization than those of e - j. That is
+    to say, only by the warm deformation at 600° - 780°C, preferably 650° - 780°C, anisotropic magnets showing a
+    high degree of anisotropy were obtained.
+  note: 'converted from 6350 G. Patent: codes b, c, k ''almost isotropic''; d, j lower anisotropy; best 650-780
+    C.'
+- id: mnal_hd_kubo1976_t11_780
+  phase: tau-MnAl-C
+  route: HD
+  process: 'alloy No. 17: homogenised 1150 C 2 h, quenched, tempered 600 C 30 min (tau, no lamellar Mn3AlC), extruded
+    75% area reduction at 780 C'
+  conditions:
+    T_process_K: 1053
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 50.1
+    bHc_Oe: 2300
+    isotropic_reference_same_alloy: mnal_isotropic_kubo1976_no17 (sealed file)
+  quantity: Br
+  value: 0.635
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 16, Table 11, code i
+  quote: The test specimen of No. 17 of Example 15 was subjected to homogenization and quenching treatment similarly
+    as in Example 15 and to a tempering at 600°C for 30 minutes after a quenching, and in the same way as in the
+    preceding example, was extruded by an extruding pressure of 12.6 tons at a surface reduction percentage of 75%.
+    The magnetic characteristics in the extrusion direction obtained after these treatments were carried out were
+    as shown in Table 11. ... i 780 6350 2300 6.3 ... The test specimens of Codes b, c and k were almost isotropic,
+    and the test specimens of d and j were lower in the degree of anisotropization than those of e - j. That is
+    to say, only by the warm deformation at 600° - 780°C, preferably 650° - 780°C, anisotropic magnets showing a
+    high degree of anisotropy were obtained.
+  note: 'converted from 6350 G. Patent: codes b, c, k ''almost isotropic''; d, j lower anisotropy; best 650-780
+    C.'
+- id: mnal_hd_kubo1976_t11_790
+  phase: tau-MnAl-C
+  route: HD
+  process: 'alloy No. 17: homogenised 1150 C 2 h, quenched, tempered 600 C 30 min (tau, no lamellar Mn3AlC), extruded
+    75% area reduction at 790 C'
+  conditions:
+    T_process_K: 1063
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 29.4
+    bHc_Oe: 1900
+    isotropic_reference_same_alloy: mnal_isotropic_kubo1976_no17 (sealed file)
+  quantity: Br
+  value: 0.495
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 16, Table 11, code j
+  quote: The test specimen of No. 17 of Example 15 was subjected to homogenization and quenching treatment similarly
+    as in Example 15 and to a tempering at 600°C for 30 minutes after a quenching, and in the same way as in the
+    preceding example, was extruded by an extruding pressure of 12.6 tons at a surface reduction percentage of 75%.
+    The magnetic characteristics in the extrusion direction obtained after these treatments were carried out were
+    as shown in Table 11. ... j 790 4950 1900 3.7 ... The test specimens of Codes b, c and k were almost isotropic,
+    and the test specimens of d and j were lower in the degree of anisotropization than those of e - j. That is
+    to say, only by the warm deformation at 600° - 780°C, preferably 650° - 780°C, anisotropic magnets showing a
+    high degree of anisotropy were obtained.
+  note: 'converted from 4950 G. Patent: codes b, c, k ''almost isotropic''; d, j lower anisotropy; best 650-780
+    C.'
+- id: mnal_hd_kubo1976_t11_800
+  phase: tau-MnAl-C
+  route: HD
+  process: 'alloy No. 17: homogenised 1150 C 2 h, quenched, tempered 600 C 30 min (tau, no lamellar Mn3AlC), extruded
+    75% area reduction at 800 C'
+  conditions:
+    T_process_K: 1073
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 68.99 Mn, 30.49 Al, 0.52 C
+    BHmax_kJ_m3: 6.4
+    bHc_Oe: 1300
+    isotropic_reference_same_alloy: mnal_isotropic_kubo1976_no17 (sealed file)
+  quantity: Br
+  value: 0.23
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 16, Table 11, code k
+  quote: The test specimen of No. 17 of Example 15 was subjected to homogenization and quenching treatment similarly
+    as in Example 15 and to a tempering at 600°C for 30 minutes after a quenching, and in the same way as in the
+    preceding example, was extruded by an extruding pressure of 12.6 tons at a surface reduction percentage of 75%.
+    The magnetic characteristics in the extrusion direction obtained after these treatments were carried out were
+    as shown in Table 11. ... k 800 2300 1300 0.8 ... The test specimens of Codes b, c and k were almost isotropic,
+    and the test specimens of d and j were lower in the degree of anisotropization than those of e - j. That is
+    to say, only by the warm deformation at 600° - 780°C, preferably 650° - 780°C, anisotropic magnets showing a
+    high degree of anisotropy were obtained.
+  note: 'converted from 2300 G. Patent: codes b, c, k ''almost isotropic''; d, j lower anisotropy; best 650-780
+    C.'
+- id: mnal_hd_kubo1976_ex11_p4
+  phase: tau-MnAl-C
+  route: HD
+  process: P4 alloy (72.36 Mn, 26.40 Al, 1.24 C wt.%), tau_c(M) state, extruded 65% at 720 C, 40 kg/mm2
+  conditions:
+    T_process_K: 993
+    area_reduction: 0.65
+    magnet_axis: extrusion direction
+    composition_wt: 72.36 Mn, 26.40 Al, 1.24 C
+    BHmax_kJ_m3: 43.8
+  quantity: Br
+  value: 0.61
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (preferred direction of magnetization)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 11
+  quote: 'A test piece having the composition of P 4 was extruded to a degree of 65%, at a pressure of 40 kg/mm
+    2 and a temperature of 720°C, and in the axial direction of the cylinder. The degree of extrusion is expressed
+    by the percentage of the decrease in the sectional area of the test piece, as measured before and after being
+    extruded. The test piece which had been subjected to the extrusion was found to be an excellent anisotropic
+    magnet with its preferred direction of magnetization in the axial direction of the extruding direction, namely,
+    the axial direction of the cylindrical test piece, and its magnetic characteristics in the preferred direction
+    of magnetization were: Br = 6,100 G .sub.B Hc = 2,200 Oe (BH).sub.max = 5.5 × 10.sup.6 G.Oe'
+  note: converted from 6100 G (5.5 x10^6 G.Oe).
+- id: mnal_hd_kubo1976_ex11_p5
+  phase: tau-MnAl-C
+  route: HD
+  process: P5 alloy, tau_c(M) state, extruded 65% at 630 C, 40 kg/mm2
+  conditions:
+    T_process_K: 903
+    area_reduction: 0.65
+    magnet_axis: extrusion direction
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 45.4
+  quantity: Br
+  value: 0.585
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (preferred direction of magnetization)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 11
+  quote: 'A test piece having the composition of P 5 was subjected to an extrusion to a degree of extrusion of 65%
+    by applying a pressuring force of 40 kg/mm 2 in the axial direction of its cylinder at 630°C. The preferred
+    direction of magnetization of the extruded specimen was found in the extruding direction with its magnetic characteristics
+    being: Br = 5,850 G .sub.B Hc = 2,250Oe (BH).sub.max = 5.7 × 10.sup.6 G.Oe'
+  note: converted from 5850 G (5.7 x10^6 G.Oe).
+- id: mnal_hd_kubo1976_ex12
+  phase: tau-MnAl-C
+  route: HD
+  process: P5 alloy held 1000 C 5 h, cooled to 835 C, quenched, held 500 C 10 min (70% eps_c(M) + 30% tau_c(M)),
+    extruded 40% at 730 C, tempered 600 C 2 h
+  conditions:
+    T_process_K: 1003
+    area_reduction: 0.4
+    magnet_axis: extrusion direction
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 47.7
+  quantity: Br
+  value: 0.62
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (preferred direction of magnetization)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 12
+  quote: 'This test piece was extruded to a degree of extrusion of 40% by applying a force of 40 kg/mm 2 at a temperature
+    of 730°C in the axial direction of its cylinder. As the magnetic characteristics in the extruding direction
+    of the test piece after being extruded were found low, and the existence of the ε c '' phase was recognized
+    by the X-ray diffraction, then it was further tempered at 600°C for 2 hours. In this way, an anisotropic magnet
+    having very excellent magnetic characteristics with its preferred direction of magnetization in its axial direction
+    was obtained. Its magnetic characteristics in the preferred direction of magnetization were found to be: Br
+    = 6,200 G .sub.B Hc = 2,300 Oe (BH).sub.max = 6.0 × 10.sup.6 G.Oe'
+  note: converted from 6200 G (6.0 x10^6 G.Oe).
+- id: mnal_hd_kubo1976_ex13
+  phase: tau-MnAl-C
+  route: HD
+  process: P5 alloy quenched from 1000 C (eps_c, no lamellar Mn3AlC), extruded 40% at 730 C (eps_c + eps_c' after
+    extrusion), tempered 600 C 2 h
+  conditions:
+    T_process_K: 1003
+    area_reduction: 0.4
+    magnet_axis: extrusion direction
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 38.2
+  quantity: Br
+  value: 0.52
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (preferred direction of magnetization)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 13
+  quote: 'This test piece in the ε c phase after being quenched was extruded to a degree of extrusion of 40% by
+    applying a pressuring force of 60 kg/mm 2 at a temperature of 730°C in the axial direction of its cylinder.
+    Its deformation velocity was lower than that in the extrusion of the τ c (M) phase test piece of the same composition
+    of Example 11, showing low deformability. The test piece, after being extruded, was found to be in the ε c phase
+    and ε c '' phase, as examined by way of X-ray diffraction. The magnetic characteristics of the test piece after
+    being extruded, as measured after tempering it at 600°C for 2 hours, were found, in the extruding direction,
+    to be: Br = 5,200 G .sub.B Hc = 1,950 Oe (BH).sub.max = 4.8 × 10.sup.6 G.Oe'
+  note: converted from 5200 G (4.8 x10^6 G.Oe).
+- id: mnal_hd_kubo1976_ex14_p4
+  phase: tau-MnAl-C
+  route: HD
+  process: P4 alloy, M-treated and quenched (eps_c(M)), extruded 50% at 720 C, tempered 550 C 10 h
+  conditions:
+    T_process_K: 993
+    area_reduction: 0.5
+    magnet_axis: extrusion direction
+    composition_wt: 72.36 Mn, 26.40 Al, 1.24 C
+    BHmax_kJ_m3: 49.3
+  quantity: Br
+  value: 0.64
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (preferred direction of magnetization)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14
+  quote: 'A test piece having the composition of P 4 was extruded to a degree of extrusion of 50% by applying a
+    pressure of 40 kg/mm 2 at a temperature of 720°C in the axial direction of its cylinder. The test piece, after
+    being extruded, by way of X-ray diffraction showed the existence of the ε c '' phase, besides the Mn 3 AlC phase.
+    The magnetic characteristics of this test piece, as measured after tempering it at 550°C for 10 hours, were
+    found in the extruding direction to be: Br = 6,400 G .sub.B Hc = 2,550 Oe (BH)max = 6.2 × 10.sup.6 G.Oe'
+  note: converted from 6400 G (6.2 x10^6 G.Oe).
+- id: mnal_hd_kubo1976_ex14_p6
+  phase: tau-MnAl-C
+  route: HD
+  process: P6 alloy (68.86 Mn, 30.78 Al, 0.40 C wt.%), M-treated, extruded 31% at 650 C, tempered 620 C 2 h
+  conditions:
+    T_process_K: 923
+    area_reduction: 0.31
+    magnet_axis: extrusion direction
+    composition_wt: 68.86 Mn, 30.78 Al, 0.40 C
+    BHmax_kJ_m3: 42.2
+  quantity: Br
+  value: 0.63
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (preferred direction of magnetization)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14
+  quote: 'A test piece having the composition of P 6 was extruded to a degree of extrusion of 31% by applying a
+    pressure of 40 kg/mm 2 at 650°C in the axial direction of its cylinder. After being extruded, it was tempered
+    at 620°C for 2 hours, then was identified as an anisotropic magnet with its preferred direction of magnetization
+    in the extrusion direction. Its magnetic characteristics in that direction were found to be: Br = 6,300 G .sub.B
+    Hc = 2,150 Oe (BH).sub.max = 5.3 × 10.sup.6 G.Oe'
+  note: converted from 6300 G (5.3 x10^6 G.Oe).
+- id: mnal_hd_kubo1976_ex17_no23
+  phase: tau-MnAl-C
+  route: HD
+  process: alloy No. 23 (69.50 Mn, 29.95 Al, 0.55 C wt.%) quenched, tempered 600 C 30 min, extruded 75% at 700 C,
+    then tempered 550 C 30 min
+  conditions:
+    T_process_K: 973
+    area_reduction: 0.75
+    magnet_axis: extrusion direction
+    composition_wt: 69.50 Mn, 29.95 Al, 0.55 C
+    BHmax_kJ_m3: 62.1
+  quantity: Br
+  value: 0.66
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (preferred direction of magnetization)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 17, Table 13 code a
+  quote: The test specimen of No. 23 of Example 16 was further tempered at 550°C for 30 - 240 minutes after having
+    been extruded as in Example 16. The magnetic characteristics in the extrusion direction obtained as the result
+    was as shown in Table 13. Besides, in the case of varying the temperature for tempering, in the temperature
+    range of 480° - 750°C, magnetic characteristics thereof were improved more than just after extrusion by holding
+    it under tempering conditions for a proper time. Table 13 ______________________________________ Tempering Code
+    time length Br (G) B.sup.HC (Oe) (BH)max (min) (× 10.sup.6 G.Oe) ______________________________________ a 30
+    6600 2750 7.8
+  note: converted from 6600 G (7.8 x10^6 G.Oe).
+- id: mnal_hd_kubo1976_ex18_no24
+  phase: tau-MnAl-C
+  route: HD
+  process: alloy No. 24 (69.53 Mn, 29.79 Al, 0.68 C wt.%) quenched, tempered 600 C 30 min, extruded 25% then to
+    65% total at 730 C, annealed 550 C 30 min
+  conditions:
+    T_process_K: 1003
+    area_reduction: 0.65
+    magnet_axis: extrusion direction
+    composition_wt: 69.53 Mn, 29.79 Al, 0.68 C
+    BHmax_kJ_m3: 59.7
+  quantity: Br
+  value: 0.65
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction (preferred direction of magnetization)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 18
+  quote: 'The magnetic characteristics in the extrusion direction obtained by further subjecting the test specimen
+    twice extrude to an annealing at 550°C for 30 minutes, were found to be: Br = 6500 G .sub.b Hc = 2700 Oe (BH).sub.max
+    = 7.5 × 10.sup.6 G.Oe.'
+  note: converted from 6500 G (7.5 x10^6 G.Oe).
+- id: mnal_hd_kubo1976_ex14_p5_br
+  phase: tau-MnAl-C
+  route: HD
+  process: P5 alloy, M-treated and quenched (eps_c(M)), extruded 50% at 630 C, tempered 550 C 20 h
+  conditions:
+    T_process_K: 903
+    area_reduction: 0.5
+    magnet_axis: extrusion direction
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+    BHmax_kJ_m3: 50.1
+    J_at_10kOe_T: 0.68
+    iHc_Oe: 2800
+  quantity: Br
+  value: 0.625
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated; 4πI at 10 kOe also given
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14
+  quote: 'A test piece having the composition of P 5 was extruded to degree of extrusion of 50% by applying a pressure
+    of 45 kg/mm 2 at a temperature of 630°C in the axial direction of its cylinder. As examined after tempering
+    it at 550°C for 20 hours, it was identified to be an anisotropic magnet with its preferred direction of magnetization
+    in the extruding direction, its characteristics were: Br = 6,250 G .sub.B Hc = 2,500 Oe (BH)max = 6.3 × 10.sup.6
+    G.Oe 4πI.sub.10000 = 6,800 G .sub.I Hc = 2,800 Oe Br/4πI.sub.10,000 = 0.92'
+  note: converted from 6250 G; 4πI(10 kOe) = 6800 G.
+- id: mnal_hd_kubo1976_ex14_p5_mrms
+  phase: tau-MnAl-C
+  route: HD
+  process: P5 alloy, M-treated and quenched (eps_c(M)), extruded 50% at 630 C, tempered 550 C 20 h
+  conditions:
+    T_process_K: 903
+    area_reduction: 0.5
+    magnet_axis: extrusion direction
+    composition_wt: 71.63 Mn, 27.23 Al, 1.14 C
+  quantity: Mr_over_Ms
+  value: 0.92
+  unit: ''
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: 'Br / 4πI at 10 kOe (1 T): NOT saturating for tau (needs >~5 T), so this ratio overestimates Mr/Ms'
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14
+  quote: 'A test piece having the composition of P 5 was extruded to degree of extrusion of 50% by applying a pressure
+    of 45 kg/mm 2 at a temperature of 630°C in the axial direction of its cylinder. As examined after tempering
+    it at 550°C for 20 hours, it was identified to be an anisotropic magnet with its preferred direction of magnetization
+    in the extruding direction, its characteristics were: Br = 6,250 G .sub.B Hc = 2,500 Oe (BH)max = 6.3 × 10.sup.6
+    G.Oe 4πI.sub.10000 = 6,800 G .sub.I Hc = 2,800 Oe Br/4πI.sub.10,000 = 0.92'
+  note: Ratio printed by the patent (Br/4πI10000). With M at 1 T in the denominator, true Mr/Ms is lower; treat
+    as an upper bound for A.
+- id: mnal_hd_kubo1976_ex14_torque
+  phase: tau-MnAl-C
+  route: HD
+  process: P5 alloy extruded 50% at 630 C and tempered (the (BH)max = 6.3 MGOe magnet of Example 14)
+  conditions:
+    magnet_axis: extrusion direction
+    torque_dyne_cm_cm3: 8600000.0
+    single_crystal_torque_dyne_cm_cm3: 10700000.0
+  quantity: texture_metric
+  value: 0.8
+  unit: 'other: torque amplitude ratio to a single-variant tau_c crystal (1.07e7 dyne cm/cm3)'
+  uncertainty: null
+  measured_along: disc containing the preferred direction
+  measurement: torque magnetometry; field not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 14
+  quote: Furthermore, as disc test pieces with their preferred direction of magnetization in the direction parallel
+    to the disc surface were cut out from the respective test pieces having the above mentioned magnetic characteristics,
+    and their magnetic torques were measured. Every test piece gave a unidirectional magnetic torque curve. The
+    magnetic torques of these test pieces were found falling within the range of 0.63 - 0.86 × 10 7 dyne-cm/cm 3
+    . Then, if the degree of anisotropization is expressed by its ratio to the magnetic torque of 1.07 × 10 7 dyne-cm/cm
+    2 of the τ c monocrystal of Example 3, all of these test pieces gave such high degrees of anisotropization as
+    above about 0.6. Especially the test piece with (BH) max = 6.3 × 10 6 G.Oe obtained by extruding an alloy of
+    the composition of P 5 was found to have the high magnetic torque of 0.86 × 10 7 dyne-cm/cm 3 , and be excellent
+    in orientation, and was thus identified as an anisotropic magnet having a very high degree of anisotropization.
+  note: 0.80 = 0.86/1.07 computed here from the printed torques (patent calls the ratio 'degree of anisotropization';
+    all Example 14 extruded/upset pieces > about 0.6). Not equal to A; for an ideal fibre the torque ratio scales
+    with a texture moment, not <cos>.
+- id: mnal_hd_kubo1976_ex19_no39
+  phase: tau-MnAl-C
+  route: HD
+  process: alloy No. 39 (72.05 Mn, 26.90 Al, 1.05 C wt.%) quenched, tempered 600 C 30 min, extruded 65% at 730 C
+  conditions:
+    T_process_K: 1003
+    area_reduction: 0.65
+    magnet_axis: extrusion direction
+    composition_wt: 72.05 Mn, 26.90 Al, 1.05 C
+    BHmax_kJ_m3: 18.3
+    Br_perpendicular_T: 0.33
+  quantity: Br
+  value: 0.33
+  unit: T
+  uncertainty: null
+  measured_along: both extrusion direction and perpendicular (identical)
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Machinable anisotropic permanent magnets of Mn-Al-C alloys (US Patent 3,976,519)
+    first_author: Kubo, Takao
+    year: 1976
+    url: https://patents.google.com/patent/US3976519A/en
+    evidence: full_text
+    locator: Example 19
+  quote: 'The test specimen of No. 39 of Example 15 was extruded under the same conditions as in Example 18. After
+    the extrusion to a surface reduction percentage of 65%, the magnetic characteristics both in the extrusion direction
+    and in right angles to the extrusion direction were: Br = 3300 G .sub.B Hc = 2450 Oe (BH).sub.max = 2.3 × 10.sup.6
+    G.Oe'
+  note: 'converted from 3300 G. Same Br along and perpendicular to the extrusion direction: extrusion produced NO
+    anisotropy for Mn 70.5-73 wt.% after quench-and-temper (patent: spheroidised Mn3AlC, little lamellar Mn3AlC).'
+- id: mnal_hd_kubo1977_ex21
+  phase: tau-MnAl-C
+  route: HD
+  process: alloy No. 24 homogenised and quenched, extruded 75% at 700 C, then tempered 600 C 30 min
+  conditions:
+    T_process_K: 973
+    magnet_axis: extrusion direction
+    composition_wt: 69.53 Mn, 29.79 Al, 0.68 C
+    BHmax_kJ_m3: 54.1
+  quantity: Br
+  value: 0.66
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic permanent magnet of Mn-Al-C alloy (US Patent 4,023,991)
+    first_author: Kubo, Takao
+    year: 1977
+    url: https://patents.google.com/patent/US4023991A/en
+    evidence: full_text
+    locator: Example 21
+  quote: 'From the casting of No. 24 of Example 15, a test piece of 20 mm φ × 35mm was cut out. It was subjected
+    to the homogenizing treatment and quenching similarly as in Example 15, and then, extruded by a pressure of
+    15 tons, using a die having a reduction percentage of 75% at 700° C theirafter tempered at 600° C for 30 minutes.
+    The magnetic characteristics in the extruding direction of the test piece obtained in this way were found to
+    be: Br = 6600 G B Hc = 2300 Oe (BH) max = 6.8 × 10 6 G.Oe'
+  note: 'converted from 6600 G. '
+- id: mnal_hd_kubo1977_ex24_field
+  phase: tau-MnAl-C
+  route: HD
+  process: alloy No. 16 homogenised and quenched, extruded at 700 C (12.5 t) WHILE applying a 3000 Oe field along
+    the extrusion direction (solenoid), then tempered 600 C 30 min
+  conditions:
+    T_process_K: 973
+    magnet_axis: extrusion direction
+    composition_wt: 69.04 Mn, 30.64 Al, 0.32 C
+    BHmax_kJ_m3: 54.1
+    field_T: 0.3
+    field_direction: extrusion direction
+    field_vs_Tc: 'applied at 700 C, far above Tc(tau) (~550-600 K): paramagnetic'
+  quantity: Br
+  value: 0.655
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic permanent magnet of Mn-Al-C alloy (US Patent 4,023,991)
+    first_author: Kubo, Takao
+    year: 1977
+    url: https://patents.google.com/patent/US4023991A/en
+    evidence: full_text
+    locator: Example 24
+  quote: 'From the casting of No. 16 of Example 15, a cylindrical test piece of 20mm φ × 35mm was cut out. It was
+    subjected to the homogenization and quenching similarly as in Example 15, and was then extruded at 700° C and
+    at a pressure of 12.5 tons, while applying a magnetic field of 3,000 Oe in the extrusion direction by use of
+    a solenoid and was then tempered at 600° C for 30 minutes. The test piece obtained in this way turned out to
+    be an anisotropic magnet with its preferred direction of magnetization in the extruding direction. The magnetic
+    characteristics in the extrusion direction were found to be: Br = 6550 G B Hc = 2250 Oe (BH) max = 6.8 × 10
+    6 G.Oe'
+  note: 'converted from 6550 G. Field applied during hot extrusion above Tc. Compare US 3,976,519 Table 12 alloy
+    No. 16 (tempered 600 C 30 min BEFORE extrusion at 700 C, 75%, no field): Br 6400 G, 6.5 MGOe - different heat-treatment
+    order, so not a clean field/no-field pair.'
+- id: mnal_hd_kubo1977_ex25_ultrasonic
+  phase: tau-MnAl-C
+  route: HD
+  process: alloy No. 10 quenched, tempered 600 C 30 min, extruded at 700 C (75% reduction) with 27 kHz ultrasonic
+    vibration on die or punch
+  conditions:
+    T_process_K: 973
+    magnet_axis: extrusion direction
+    composition_wt: 68.53 Mn, 30.95 Al, 0.52 C
+    BHmax_kJ_m3: 54.1
+  quantity: Br
+  value: 0.635
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic permanent magnet of Mn-Al-C alloy (US Patent 4,023,991)
+    first_author: Kubo, Takao
+    year: 1977
+    url: https://patents.google.com/patent/US4023991A/en
+    evidence: full_text
+    locator: Example 25
+  quote: 'From the casting of No. 10 of Example 15, a test piece of 10mm φ × 20mm was cut out. It was tempered at
+    600° C for 30 minutes after subjecting it to the homogenization treatment and quenching similarly as in Example
+    15. It was then, extruded at 700° C, using a die having reduction percentage of 75%, with an ultrasonic vibration
+    applied either on the die or punch, while making th extrusion. The magnetic characteristics observed in the
+    extruding direction when a vibration of 27 KHz was applied were: Br = 6350 G B Hc = 2600 Oe (BH) max = 6.8 ×
+    10 6 G.Oe'
+  note: 'converted from 6350 G. '
+- id: mnal_hd_kubo1977_ex26_highspeed
+  phase: tau-MnAl-C
+  route: HD
+  process: alloy No. 16 quenched, tempered 600 C 1 h, extruded at high speed (10 m/s) at 750 C, 75% reduction
+  conditions:
+    T_process_K: 1023
+    magnet_axis: extrusion direction
+    composition_wt: 69.04 Mn, 30.64 Al, 0.32 C
+    BHmax_kJ_m3: 50.9
+  quantity: Br
+  value: 0.62
+  unit: T
+  uncertainty: null
+  measured_along: extrusion direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic permanent magnet of Mn-Al-C alloy (US Patent 4,023,991)
+    first_author: Kubo, Takao
+    year: 1977
+    url: https://patents.google.com/patent/US4023991A/en
+    evidence: full_text
+    locator: Example 26
+  quote: 'From the casting of No. 16 of Example 15, a test piece of 10 mmφ × 20mm was cut out. It was tempered at
+    600° C for 1 hour after subjecting it to the homogenizing treatment and quenching similarly as in Example 15,
+    and was then, extruded at a high speed at 750° C, using a die having a reduction percentage of 75%. When the
+    extrusion speed was 10 m/sec., the magnetic characteristics in the extrusion direction were found to be: Br
+    = 6200 G B HC = 2600 Oe (BH) max = 6.4 × 10 4 G.Oe.'
+  note: converted from 6200 G. Patent prints '(BH) max = 6.4 × 10 4 G.Oe' (evidently a misprint for 10^6); BHmax
+    in conditions assumes 6.4 MGOe.

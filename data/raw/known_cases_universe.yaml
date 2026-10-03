@@ -1,4 +1,36 @@
-# Known-case outcome records (PROBLEM.md: field-aged columnar AlNiCo) met while collecting the `universe` topic
+# Known-case outcome records (PROBLEM.md known cases: field-aged columnar AlNiCo; hot-extruded MnAl-C) met while collecting the `universe` topic
+- id: uni_out_mnalc_hd_extrusion_cui2018
+  phase: tau-MnAl
+  route: HD
+  process: warm extrusion of Mn-Al-C at about 973 K followed by annealing (best bulk anisotropic MnAl(C) magnets,
+    as summarised by the review)
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: not stated
+    magnet_axis: not stated (extrusion axis implied)
+    density_rel: not stated
+  quantity: Br
+  value: 0.6
+  unit: T
+  uncertainty: null
+  measured_along: not stated in the review
+  measurement: room temperature (bulk); details not stated in the review
+  n_samples: review summary of refs. [9,87,90]
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Cui, J.
+    year: 2018
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+    evidence: review
+    locator: Sect. 2 (p. 121) and Sect. 10 'Summary and future challenges' (p. 131)
+  quote: The warm extrusion followed by annealing yielded anisotropic magnets exhibiting, despite the fairly modest
+    Hc of 3 kOe, the highest (BH)max of 7–8 MGOe [9,87,90]. ... For MnAl(C), the highest bulk (BH)max ~ 7.5 MGOe
+    has been realized only at relatively low Hci ~ 3 kOe and imperfect texture (Br ~ 6 kG).
+  note: KNOWN CASE (hot-extruded MnAl-C). Br ~6 kG = 0.6 T (unit conversion). That the summary's 'highest bulk'
+    magnet is the warm-extruded one of Sect. 2 is our reading (same Hc ~3 kOe and (BH)max 7-8 MGOe); the summary
+    itself does not name the route. The PDF text layer renders the en-dash in '7–8' as 'e'.
 - id: uni_out_dussa2024_alnico8_columnar_durandcharre1978
   phase: AlNiCo
   route: DS+FA

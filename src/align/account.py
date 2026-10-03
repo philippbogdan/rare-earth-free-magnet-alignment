@@ -187,194 +187,222 @@ def route_AM(ph):
 
 
 # ---------------------------------------------------------------- biased formation
-def _bias_acts(ph, p, kind):
-    path = Path(ph, p)
-    if kind == 'field':
-        mag, why = formation_magnetic(ph, path)
-        if mag in ('yes', 'partly'):
-            return True, why, None
-        x1 = para_bound(ph, path, FIELD_PRACTICAL_T)
+def _field_status(ph, path):
+    """(level1, level2, why, extra_decides) for a field bias.
+
+    level = True (acts), False (cannot), None (decided by an unpublished quantity).
+    Single-step paths: both levels equal. Two-step paths: level2 = product choice within an
+    intermediate variant (product, or ferromagnetic intermediate, ordered at T_f); level1 =
+    choice of the intermediate variant (intermediate ferromagnetic at T_f)."""
+    p = path.p
+    mag, why = formation_magnetic(ph, path)
+    acts2 = mag in ('yes', 'partly')
+    extra = []
+    if not acts2:
+        A_label = 'forms below Tc'
+        if p.get('product_ferromagnetic', True):
+            extra.append((f'formation of the phase below its Curie point '
+                          f'({p.get("Tc_forming", ph["Tc"]):.0f} K) at a practical rate',
+                          f'isothermal anneal of the parent ~50 K below Tc: phase fraction vs time (XRD)'))
         x10 = para_bound(ph, path, FIELD_HIGH_T)
-        if x10 < 0.1:
-            return False, why + f'; paramagnetic bias < {x10:.2g} kT even at 10 T', None
-        return False, why + (f'; paramagnetic bias <= {x1:.2g} kT at 2 T but up to {x10:.2g} kT at '
-                             '10 T if dchi ~ chi'), x10
+        if x10 >= 0.1:
+            x1 = para_bound(ph, path, FIELD_PRACTICAL_T)
+            why += (f'; paramagnetic bias <= {x1:.2g} kT at 2 T, up to {x10:.2g} kT at 10 T '
+                    'only if dchi ~ chi (upper bound)')
+            extra.append(('paramagnetic susceptibility anisotropy dchi/chi of the forming phase at T_f',
+                          'torque magnetometry above Tc on a single crystal, or formation in 10 T '
+                          'followed by a pole figure'))
+        else:
+            why += f'; paramagnetic bias < {x10:.2g} kT even at 10 T'
+    if not path.two_step:
+        lv = True if acts2 else (None if extra else False)
+        return lv, lv, why, extra
+    it = p['intermediate']
+    l2 = True if acts2 else (None if extra else False)
+    if it.get('ferromagnetic') is False:
+        l1, w1 = False, 'intermediate not ferromagnetic: its variant choice cannot be biased'
+    elif it.get('Tc') is not None:
+        lo, hi = p['T_f']
+        l1 = bool(it['Tc'] > lo)
+        w1 = f"intermediate Tc {it['Tc']:.0f} K vs formation from {lo:.0f} K"
+    else:
+        l1, w1 = None, 'intermediate ferromagnetic but its Curie point/easy axis are unpublished'
+        extra = extra + [('Curie point and easy axis of the intermediate ' + it.get('name', ''),
+                          'M(T) and torque on the intermediate made by low-temperature ordering')]
+    return l1, l2, why + '; ' + w1, extra
+
+
+def _stress_status(ph, path):
+    p = path.p
     if p['mode'] == 'massive':
-        return False, 'incoherent (massive) growth: no coherent transformation strain to couple to', None
+        return False, False, 'incoherent (massive) growth: no coherent transformation strain', []
     if p['mode'] == 'direct':
-        return False, 'no parent lattice: no transformation strain', None
-    st = p.get('stress_sign', 0)
-    if st == 0 and p.get('strain_known', True) is False:
-        return None, 'transformation strain of the variants unpublished', None
-    how = {+1: 'tension along the axis selects c parallel to it',
-           -1: 'compression along the axis selects c parallel to it',
-           0: 'the sign of the tetragonal strain sets whether tension or compression selects c'}[st]
-    return True, f'coherent transformation with a tetragonal strain ({how})', None
+        return False, False, 'no parent lattice: no transformation strain', []
+    if p.get('strain_known', True) is False:
+        return None, None, 'transformation strain of the variants unpublished', [
+            ('transformation strain of the variants', 'lattice parameters of parent and product at T_f')]
+    if path.two_step:
+        it = p['intermediate']
+        l1 = it.get('strain', True)
+        return l1, True, ('coherent shear/ordering strains at both steps (stress sign chosen to suit)'
+                          if l1 else 'coherent strain at the second step only'), []
+    return True, True, 'coherent transformation with a tetragonal strain (stress sign chosen to suit)', []
 
 
-def _biased(ph, route, kind, texture_key=None):
+def _parents_for(path, source):
+    """List of (label, parents, kind) for a texture source; kind: 'random'|'fibre'|'single'.
+    Several entries mean the source texture is unpublished (candidates)."""
+    par = path.parent
+    if source == 'random':
+        return [('untextured parent', E.texture_random(20000), 'random')], True
+    if source == 'sc':
+        return [('single-crystal parent', E.texture_single(), 'single')], True
+    key = {'ds': 'ds_texture', 'am': 'am_texture', 'rx': 'rx_texture'}[source]
+    if source == 'rx' and par.get('rollable') is False:
+        return [], False
+    t = par.get(key)
+    if t:
+        if t.get('kind', 'fibre') == 'sheet':
+            return [(f"sheet texture {t['nd']}||ND {t['rd']}||RD", E.texture_single(_sheet_g(path, t)),
+                     'single')], True
+        return [(f"parent fibre {t['dir']}", _fibre(path, t['dir']), 'fibre')], True
+    out = []
+    for d in CANDIDATE_FIBRES[path.LP.system]:
+        out.append((f"<{''.join(str(x) for x in d)}> parent fibre", _fibre(path, d), 'fibre'))
+    return out, None
+
+
+def _sheet_g(path, t):
+    nd = path.LP.direction(t['nd'])
+    rd = path.LP.direction(t['rd'])
+    rd = rd - (rd @ nd) * nd
+    rd /= np.linalg.norm(rd)
+    td = np.cross(nd, rd)
+    return np.stack([rd, td, nd], 0)        # rows: crystal directions along sample x, y, z
+
+
+def _A_bias(path, parents, kind, tex_kind, l1, l2):
+    """Ceiling for given level statuses (True/False) and texture."""
+    if not l1 and not l2:
+        if tex_kind == 'random':
+            return ISO, 'untextured: no alignment'
+        if tex_kind == 'single':
+            ax, fr, per = path.axes(parents)
+            A, _ = E.best_axis(ax, fr, 1500)
+            return A, 'best axis'
+        return _equal_best(path, parents)
+    if tex_kind == 'single':
+        ax, fr, per = path.axes(parents)
+        best = (-1.0, None)
+        for h in E.fibonacci_hemisphere(600):
+            w = path.weights(ax, fr, kind, h, l1, l2)
+            A = E.alignment(ax, w, h)
+            if A > best[0]:
+                best = (A, h)
+        return best[0], 'bias along the best crystal direction'
+    A, al = _select_best(path, parents, kind, +1, fibre=(tex_kind == 'fibre'), level1=l1, level2=l2)
+    return A, (f'bias axis at {al} deg to the parent fibre axis' if tex_kind == 'fibre' else 'bias axis')
+
+
+def _bias_route(ph, route, kind, source):
     cells = []
     for p in ph['paths']:
         path = Path(ph, p)
-        acts, why, x10 = _bias_acts(ph, p, kind)
-        sign = +1          # complete selection of c parallel to the bias axis (stress sign chosen to suit)
-        if texture_key is None:
-            parents, fib = E.texture_random(20000), False
-            tex = 'untextured parent'
-        elif texture_key == 'rx':
-            fam = (p.get('parent') or {}).get('family')
-            if fam not in RX_TEXTURE or not (p.get('parent') or {}).get('rollable'):
-                cells.append(Cell(ph['id'], route, 'none', ISO, '',
-                                  chain='parent cannot be rolled/drawn and recrystallised to a sheet texture'))
-                continue
-            nd, rd = RX_TEXTURE[fam]
-            parents, fib = _fibre(path, nd), True
-            tex = f'{fam} rolling/recrystallisation texture ({nd} || ND)'
-        else:
-            src = (p.get('parent') or {}).get(texture_key)
-            if path.mode == 'direct':
-                continue
-            if src is None:
-                outs = {}
-                for d in CANDIDATE_FIBRES[path.LP.system]:
-                    if acts is True:
-                        A_d, _ = _select_best(path, _fibre(path, d), kind, sign, fibre=True)
-                    else:
-                        A_d, _ = _equal_best(path, _fibre(path, d))
-                    outs['<' + ''.join(str(x) for x in d) + '> parent fibre'] = A_d
-                cells.append(Cell(ph['id'], route, 'open', max(outs.values()), '',
-                                  chain=f'parent {texture_key.split("_")[0].upper()} texture unpublished; {why}',
-                                  decides=[(f'{texture_key.split("_")[0].upper()} texture of the parent', outs,
-                                            'EBSD pole figure of the parent as made')], A_alt=outs))
-                continue
-            parents, fib = _fibre(path, src['dir']), True
-            tex = f"parent fibre {src['dir']}"
         if path.mode == 'direct':
-            if acts:
-                cells.append(Cell(ph['id'], route, 'full', 1.0, 'field direction',
-                                  chain=f'nuclei form without an orientation constraint; {why}'))
-            else:
-                cells.append(Cell(ph['id'], route, 'none', ISO, '', chain=why))
-            continue
-        A_eq, _ = _equal_best(path, parents) if fib else (ISO, '')
-        if acts is True:
-            A, al = _select_best(path, parents, kind, sign, fibre=fib)
-            ax = (f'bias axis at {al} deg to the parent fibre axis' if fib else 'bias axis')
-            if path.mode == 'massive' and kind == 'field':
-                chain = (f'{tex}; {why}; complete selection of the nucleus variant nearest the field '
-                         f'({len(path.V)} variants)')
-            else:
-                chain = f'{tex}; {why}; complete selection among {len(path.V)} variants'
-            cells.append(Cell(ph['id'], route, _verdict(A), A, ax, chain=chain,
-                              prereq=[(kind + ' bias acts at formation', True, why)],
-                              A_alt={'no bias': A_eq}))
-        elif acts is None:
-            A, al = _select_best(path, parents, kind, +1, fibre=fib)
-            A2, al2 = _select_best(path, parents, kind, -1, fibre=fib)
-            cells.append(Cell(ph['id'], route, 'open', max(A, A2), '',
-                              chain=f'{tex}; {why}',
-                              decides=[('transformation strain of the variant', {
-                                  'c elongated (tension selects)': A, 'c shortened (compression selects)': A2},
-                                  'lattice parameters of parent and product at T_f')]))
-        else:
-            dec = []
-            A_sel, _ = _select_best(path, parents, kind, +1, fibre=fib)
+            if source != 'random':
+                continue
             if kind == 'field':
-                dec.append((f'rate of formation of the phase below its Curie point ({ph["Tc"]:.0f} K)',
-                            {'forms below Tc': A_sel, 'does not': A_eq},
-                            f'isothermal anneal of the parent at ~{ph["Tc"] - 50:.0f} K: phase fraction '
-                            'vs time by XRD (then repeat in a field and measure the pole figure)'))
-            if x10 is not None:
-                dec.append(('paramagnetic susceptibility anisotropy dchi/chi of the forming phase at T_f',
-                            {'dchi/chi >~ 0.1 at 10 T': A_sel, 'small': A_eq},
-                            'torque magnetometry above Tc on a single crystal, or formation in 10 T '
-                            'followed by a pole figure'))
-            cells.append(Cell(ph['id'], route, 'open' if dec else _verdict(A_eq, A_eq > ISO + 1e-3), A_eq,
-                              '', chain=f'{tex}; {why}', prereq=[(kind + ' bias acts at formation', False, why)],
-                              decides=dec, A_alt={'bias acts': A_sel}))
+                mag, why = formation_magnetic(ph, path)
+                acts = mag in ('yes', 'partly')
+                cells.append(Cell(ph['id'], route, 'full' if acts else 'none', 1.0 if acts else ISO,
+                                  'field direction' if acts else '',
+                                  chain=(f'forms without a parent crystal; {why}' +
+                                         ('; nuclei take the orientation the field favours' if acts else ''))))
+            continue
+        l1, l2, why, extra = (_field_status if kind == 'field' else _stress_status)(ph, path)
+        texs, avail = _parents_for(path, source)
+        if avail is False:
+            cells.append(Cell(ph['id'], route, 'none', ISO, '', chain='parent cannot be rolled or drawn'))
+            continue
+        # scenarios over unknown levels
+        if path.two_step:
+            lv1 = [l1] if l1 is not None else [True, False]
+            lv2 = [l2] if l2 is not None else [True, False]
+            scen = [(a, b) for a in lv1 for b in lv2]
+        else:
+            scen = [(l1, l2)] if l1 is not None else [(True, True), (False, False)]
+        outcomes, axis_of = {}, {}
+        for lab, par, tk in texs:
+            for a, b in scen:
+                if True:
+                    if path.mode == 'massive' and not (a or b):
+                        A_or, ax_ = _A_bias(path, par, kind, tk, False, False)
+                        A, ax_ = max(A_or, ISO), ax_
+                    else:
+                        A, ax_ = _A_bias(path, par, kind, tk, a, b)
+                    key = (lab if len(texs) > 1 else '') + (
+                        '' if (l1 is not None and l2 is not None) else
+                        f"{' ; ' if len(texs) > 1 else ''}bias {'acts' if (a or b) else 'cannot act'}"
+                        + (' (both steps)' if (a and b and path.two_step) else
+                           (' (product step only)' if (b and not a and path.two_step) else
+                            (' (intermediate step only)' if (a and not b and path.two_step) else ''))))
+                    outcomes[key or 'value'] = A
+                    axis_of[key or 'value'] = ax_
+        tex_label = texs[0][0] if len(texs) == 1 else 'parent texture unpublished'
+        if len(outcomes) == 1:
+            A = list(outcomes.values())[0]
+            acts = bool(l1 or l2)
+            cells.append(Cell(ph['id'], route, _verdict(A, A > ISO + 1e-3), A, list(axis_of.values())[0],
+                              chain=f'{tex_label}; {why}',
+                              prereq=[(kind + ' bias acts at formation', acts, why)]))
+            continue
+        dec = []
+        if l1 is None or l2 is None:
+            for q, meas in extra:
+                dec.append((q, outcomes, meas))
+        if len(texs) > 1:
+            dec.append((f'{source.upper()} texture of the parent', outcomes, 'EBSD pole figure of the parent as made'))
+        cells.append(Cell(ph['id'], route, 'open', max(outcomes.values()), '',
+                          chain=f'{tex_label}; {why}', decides=dec, A_alt=outcomes))
     if not cells:
-        return Cell(ph['id'], route, 'none', ISO, '', chain='no formation path to bias')
+        return Cell(ph['id'], route, 'none', ISO, '', chain='no formation path to bias with this texture source')
     return _best_path_value(cells)
 
 
 def route_FA(ph):
-    return _biased(ph, 'FA', 'field')
-
-
-def _single_crystal(ph, route, kind):
-    """Single-crystal parent + bias: with the bias along one variant's easy axis, complete
-    selection leaves that variant only (A = 1); without a bias the variants of one crystal
-    give the best-axis average."""
-    cells = []
-    for p in ph['paths']:
-        path = Path(ph, p)
-        if path.mode == 'direct':
-            continue
-        acts, why, x10 = _bias_acts(ph, p, kind)
-        g = E.texture_single()
-        ax, fr, per = path.axes(g)
-        A_eq, _ = E.best_axis(ax, fr, 1500)
-        if acts is True:
-            h = ax[0, 0]
-            w = E.bias_weights(ax, fr, len(path.V), per, kind, h)
-            A = E.alignment(ax, w, h)
-            cells.append(Cell(ph['id'], route, _verdict(A), A, 'along one variant easy axis',
-                              chain=f'single-crystal parent; {why}; the bias along one variant axis leaves '
-                                    'that variant only', A_alt={'no bias': A_eq}))
-        elif acts is None:
-            cells.append(Cell(ph['id'], route, 'open', 1.0, '', chain=f'single-crystal parent; {why}',
-                              decides=[('transformation strain', {'acts': 1.0, 'none': A_eq},
-                                        'lattice parameters of parent and product')]))
-        else:
-            dec = []
-            if kind == 'field':
-                dec = [(f'rate of formation of the phase below its Curie point ({ph["Tc"]:.0f} K)',
-                        {'forms below Tc': 1.0, 'does not': A_eq},
-                        f'isothermal anneal of a parent single crystal at ~{ph["Tc"] - 50:.0f} K: phase '
-                        'fraction vs time by XRD')]
-                if x10 is not None:
-                    dec.append(('paramagnetic susceptibility anisotropy dchi/chi of the forming phase at T_f',
-                                {'dchi/chi >~ 0.1 at 10 T': 1.0, 'small': A_eq},
-                                'torque magnetometry above Tc on a single crystal, or formation in 10 T '
-                                'followed by a pole figure'))
-            cells.append(Cell(ph['id'], route, 'open' if dec else _verdict(A_eq), A_eq, 'best axis',
-                              chain=f'single-crystal parent; {why}; variants equal', decides=dec,
-                              A_alt={'bias acts': 1.0}))
-    if not cells:
-        return Cell(ph['id'], route, 'none', ISO, '', chain='forms without a parent crystal')
-    return _best_path_value(cells)
-
-
-def route_SCFA(ph):
-    return _single_crystal(ph, 'SC+FA', 'field')
-
-
-def route_SCSA(ph):
-    return _single_crystal(ph, 'SC+SA', 'stress')
+    return _bias_route(ph, 'FA', 'field', 'random')
 
 
 def route_DSFA(ph):
-    return _biased(ph, 'DS+FA', 'field', 'ds_texture')
+    return _bias_route(ph, 'DS+FA', 'field', 'ds')
 
 
 def route_AMFA(ph):
-    return _biased(ph, 'AM+FA', 'field', 'am_texture')
+    return _bias_route(ph, 'AM+FA', 'field', 'am')
 
 
 def route_RXFA(ph):
-    return _biased(ph, 'RX+FA', 'field', 'rx')
+    return _bias_route(ph, 'RX+FA', 'field', 'rx')
+
+
+def route_SCFA(ph):
+    return _bias_route(ph, 'SC+FA', 'field', 'sc')
 
 
 def route_SA(ph):
-    return _biased(ph, 'SA', 'stress')
+    return _bias_route(ph, 'SA', 'stress', 'random')
 
 
 def route_DSSA(ph):
-    return _biased(ph, 'DS+SA', 'stress', 'ds_texture')
+    return _bias_route(ph, 'DS+SA', 'stress', 'ds')
 
 
 def route_RXSA(ph):
-    return _biased(ph, 'RX+SA', 'stress', 'rx')
+    return _bias_route(ph, 'RX+SA', 'stress', 'rx')
+
+
+def route_SCSA(ph):
+    return _bias_route(ph, 'SC+SA', 'stress', 'sc')
 
 
 # ---------------------------------------------------------------- FS
