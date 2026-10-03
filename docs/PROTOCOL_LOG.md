@@ -109,3 +109,15 @@ the same-sample Js is reported next to it (scores_v3.json, sensitivity_js), and 
 fixed for later versions. In that rescoring one isotropic bonded Nd-Fe-B print exceeds 1/2 by
 exchange enhancement of its rapidly solidified powder (excluded from A by definition); the
 v3 rules had not flagged 'Nd-Fe-B/PPS bonded' as such (fixed for later versions).
+
+## Freeze v4 before opening batch 5 (heldout2_a: 60 records from sources not used before)
+
+Rules v4 = v3 plus: same-sample Js linked for every phase; bonded isotropic Nd-Fe-B and
+hard/soft mixtures (phase content with alpha-Fe, cubic Co3Pt, soft phases) flagged as
+exchange-coupled (not tests); thin films measured in plane not tests (shape anisotropy),
+unbiased (111)-fibre L1_0 films capped at 0.577 out of plane; epitaxial L1_0 films measured
+along the normal tested; alnico abnormal grain growth to near-[111] grains as a tie; stress-
+biased grain growth with unmeasured texture not a test; Fe-Cr-Co cold rolling between ageing
+steps = deformation ageing; '8h' in an id no longer read as grade 8H.
+
+    sha256 data/curated/cases_v4.yaml  b8ce592f93b14a5bc774115a5cfe590a3fd1c647e7332174071f77fe0123c91b

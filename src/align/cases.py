@@ -329,6 +329,9 @@ def encode(ctx, topic, c):
             exch = True
         if pid == 'Nd2Fe14B' and 'bonded' in proc:    # bonded isotropic Nd-Fe-B: rapidly solidified powder
             exch = True
+        pc = str(cond.get('phase_content') or '').lower()
+        if re.search(r'alpha-fe|α-fe|co3pt|cubic|soft', pc):  # hard + soft phase mixture
+            exch = True
         return {**base, 'pred': pred(ISO, ISO, 'no alignment step: random grains' +
                                      ('; fine-grained, exchange enhancement possible (not alignment)' if exch else ''),
                                      cls='info' if exch else 'none')}
@@ -432,6 +435,14 @@ def enc_mnal(ctx, pid, c, route, r, proc, cond, al, mk):
 
 def enc_l10(ctx, pid, c, route, r, proc, cond, al, mk):
     ph = ctx.ph[pid]
+    if 'film' in r and 'annealed' in r and str(cond.get('field_T')) in ('0', '0.0'):
+        if 'in-plane' in str(c.get('measured_along')).lower():
+            return {'pred': pred(1.0, ISO, 'thin film measured in plane: film shape anisotropy dominates the remanence',
+                                 cls='info')}
+        if '(111) fibre' in str(cond.get('parent_texture')):
+            return {'pred': pred(0.5774, 0.5774, 'unbiased ordering of a (111)-fibre film: every variant c axis at '
+                                                 '54.7 deg from the normal (either reading), film shape anisotropy only '
+                                                 'lowers it', cls='none')}
     p = ph['paths'][0]
     Tc_prod, Tc_par = ph['Tc'], (p.get('parent') or {}).get('Tc')
     Tmag = max(x for x in (Tc_prod, Tc_par) if x is not None)
@@ -488,7 +499,9 @@ def enc_l10(ctx, pid, c, route, r, proc, cond, al, mk):
         return {'pred': pred(ISO, ISO, 'field during A1 synthesis; ordering later at 973 K without field: '
                                        'no selection', cls='none')}
     if r.startswith('ep'):
-        return {'pred': pred(1.0, ISO, 'epitaxial film', cls='info')}
+        if al == 'par':
+            return {'pred': pred(1.0, ISO, 'epitaxial film measured along its easy axis (EP cell)')}
+        return {'pred': pred(1.0, ISO, 'epitaxial film measured in plane: film shape anisotropy dominates', cls='info')}
     return None
 
 
@@ -647,7 +660,7 @@ def _alnico_grade(cid, proc):
         return 'AlNiCo-5', 'alnico5'
     if re.search(r'alnico9|_9_|lngt60|lngt72|lngt80', k) or ('_mmpa' in k and 'alnico8_' in k):
         return 'AlNiCo-8-9', 'alnico8n'
-    if re.search(r'alnico8h|8hc|8he|8h_|kassen2018|white20|ames2023|rinko2023|zou2016|no4_takeuchi', k):
+    if re.search(r'alnico8h|8hc|8he|kassen2018|white20|ames2023|rinko2023|zou2016|no4_takeuchi', k):
         return 'AlNiCo-8-9', 'alnico8H'
     return 'AlNiCo-8-9', 'alnico8'
 
@@ -733,7 +746,7 @@ def enc_alnico_fecrco(ctx, pid, c, route, r, proc, cond, al, mk):
         return out(pred(1.0, ISO, 'cold-rolled strip aged without field: deformation state and texture not '
                                   'reported', cls='info'))
     # ---------------------------------------------------- deformation ageing (Fe-Cr-Co)
-    if re.search(r'deformation[- ]ag', r):
+    if re.search(r'deformation[- ]ag', r) or ('cold rolling' in r and 'aging' in r):
         cell = ctx.cell('Fe-Cr-Co', 'HD')
         return out(pred(cell.A_max, ISO, 'deformation ageing elongates α1 along the deformation axis (HD cell)'))
     # ---------------------------------------------------- stress anneal without field (AlNiCo)
@@ -832,6 +845,13 @@ def enc_alnico_fecrco(ctx, pid, c, route, r, proc, cond, al, mk):
     if '(200)' in ptex or '<200>' in ptex:
         return out(pred(1.0, ISO, '(200)-textured button, field along <200>: between 0.831 (random) and 1 '
                                   '(perfect fibre); texture degree not quantified'))
+    if ('[111] giant grains' in ptex or 'near-[111]' in ptex) and ('abnormal' in r or '8 h' in proc):
+        d = np.ones(3)
+        ind, cou = rods_A('single', d, d, 'near')
+        return out(_hyp({'independent rods': ind, 'coupled sets (tie)': cou},
+                        'abnormal grain growth to near-[111] grains along the field: the three <100> tie', base=ind))
+    if 'sa+fa' in r or 'stress-biased grain growth' in ptex:
+        return out(pred(1.0, ISO, 'parent texture after stress-biased grain growth not measured', cls='info'))
     if 'near single crystal with [111]' in ptex:
         d = np.ones(3)
         ind, cou = rods_A('single', d, d, 'near')

@@ -270,7 +270,9 @@ VERSIONS = [  # version, freeze commit, scores file, statuses that are held-out 
     ('v2', 'e94871b', 'results/scores_v2.json', ('heldout',),
      'post-hoc revision; held-out on the Mn4N batch opened after its freeze'),
     ('v3', None, 'results/scores_v3.json', ('heldout',),
-     'rules after the HDDR/TGG/EP reasons were made physical; held-out on batch 4'),
+     'account reasons made physical (EP, TGG, direct formation); held-out on batch 4'),
+    ('v4', None, 'results/scores_v4.json', ('heldout',),
+     'v3 plus same-sample Js for all phases, composites and thin-film rules; held-out on batch 5'),
 ]
 FREEZE = os.path.join(ROOT, 'docs', 'PROTOCOL_LOG.md')
 
