@@ -2,17 +2,17 @@
   phase: LTP-MnBi
   route: FP
   process: finely pulverized MnBi hot pressed in a strong magnetic field (Bell Labs 'new permanent magnet')
+  quantity: '[redacted]'
+  unit: T
+  measured_along: alignment direction (implied)
+  measurement: not stated in abstract; room temperature
+  n_samples: best of several compacts ('some of these compacts')
   conditions:
     field_T: not stated in abstract ('strong magnetic field')
     T_process_K: not stated (hot pressing)
     parent_texture: none (powder)
     magnet_axis: field direction
     density_rel: not stated
-  quantity: '[redacted]'
-  unit: T
-  measured_along: alignment direction (implied)
-  measurement: not stated in abstract; room temperature
-  n_samples: best of several compacts ('some of these compacts')
   source:
     doi: 10.1063/1.1702032
     title: A New Permanent Magnet from Powdered Manganese Bismuthide
@@ -26,17 +26,17 @@
   route: FP
   process: arc-melted MnBi, low-energy ball milled powder, field-aligned and hot compacted to a fully
     dense bulk magnet
+  quantity: Mr_over_Ms
+  unit: '1'
+  measured_along: alignment direction (implied)
+  measurement: room temperature; instrument/max field not in abstract
+  n_samples: 1
   conditions:
     field_T: not stated in abstract
     T_process_K: not stated in abstract (hot compaction)
     parent_texture: none (powder)
     magnet_axis: alignment direction
     density_rel: fully dense (stated)
-  quantity: Mr_over_Ms
-  unit: '1'
-  measured_along: alignment direction (implied)
-  measurement: room temperature; instrument/max field not in abstract
-  n_samples: 1
   source:
     doi: 10.1088/0022-3727/46/6/062001
     title: Anisotropic fully dense MnBi permanent magnet with high energy product and high coercivity
@@ -50,17 +50,17 @@
   phase: LTP-MnBi
   route: FP
   process: low-energy ball-milled MnBi powder, field aligned (not consolidated)
+  quantity: Mr_over_Ms
+  unit: '1'
+  measured_along: alignment direction (implied)
+  measurement: room temperature; instrument/max field not in abstract
+  n_samples: 1
   conditions:
     field_T: not stated in abstract
     T_process_K: room temperature alignment (implied)
     parent_texture: none (powder)
     magnet_axis: alignment direction
     density_rel: powder
-  quantity: Mr_over_Ms
-  unit: '1'
-  measured_along: alignment direction (implied)
-  measurement: room temperature; instrument/max field not in abstract
-  n_samples: 1
   source:
     doi: 10.1088/0022-3727/46/6/062001
     title: Anisotropic fully dense MnBi permanent magnet with high energy product and high coercivity
@@ -75,6 +75,11 @@
   route: FP
   process: arc-melted Mn55Bi45, 2 h low-energy ball milling, magnetic separation (>90 wt% LTP), aligned,
     hot compacted 573 K, 200 MPa, 5 min
+  quantity: '[redacted]'
+  unit: T
+  measured_along: alignment direction (implied)
+  measurement: 300 K; 'volume [redacted]; instrument not in abstract
+  n_samples: best of series ('highest volume [redacted]
   conditions:
     field_T: not stated in abstract
     T_process_K: 573
@@ -82,11 +87,6 @@
     magnet_axis: alignment direction
     density_rel: not stated in abstract
     composition: Mn55Bi45
-  quantity: '[redacted]'
-  unit: T
-  measured_along: alignment direction (implied)
-  measurement: 300 K; 'volume [redacted]; instrument not in abstract
-  n_samples: best of series ('highest volume [redacted]
   source:
     doi: 10.1063/1.4971759
     title: On the synthesis and microstructure analysis of high performance MnBi
@@ -100,6 +100,11 @@
   route: FP
   process: arc-melted Mn45Bi55, 2 h low-energy ball milling, magnetic separation, aligned, hot compacted
     523 K, 200 MPa, 5 min
+  quantity: '[redacted]'
+  unit: T
+  measured_along: alignment direction (implied)
+  measurement: 300 K; 'volume [redacted]
+  n_samples: best of series
   conditions:
     field_T: not stated in abstract
     T_process_K: 523
@@ -107,11 +112,6 @@
     magnet_axis: alignment direction
     density_rel: not stated in abstract
     composition: Mn45Bi55
-  quantity: '[redacted]'
-  unit: T
-  measured_along: alignment direction (implied)
-  measurement: 300 K; 'volume [redacted]
-  n_samples: best of series
   source:
     doi: 10.1063/1.4971759
     title: On the synthesis and microstructure analysis of high performance MnBi
@@ -125,6 +125,11 @@
   route: FP
   process: Mn52Bi48 arc melt + melt spin + 290 C anneal, low-energy ball milled 8 h (0.5-5 μm), aligned
     in wax in 9 T at 335 K and cooled in field
+  quantity: Mr_over_Ms
+  unit: '1'
+  measured_along: alignment direction
+  measurement: PPMS/VSM, max 9 T, 300 K
+  n_samples: 1
   conditions:
     field_T: 9
     T_process_K: 335
@@ -133,11 +138,6 @@
     density_rel: powder in wax (not dense)
     composition: Mn52Bi48
     particle_size_um: 0.5-5
-  quantity: Mr_over_Ms
-  unit: '1'
-  measured_along: alignment direction
-  measurement: PPMS/VSM, max 9 T, 300 K
-  n_samples: 1
   source:
     doi: 10.1016/j.actamat.2019.10.003
     title: Optimizing composition in MnBi permanent magnet alloys
@@ -150,6 +150,11 @@
   phase: LTP-MnBi
   route: FP
   process: same wax-aligned Mn52Bi48 powder as mnbi_fp_jensen2019_best
+  quantity: Js_same_sample
+  unit: Am2/kg
+  measured_along: alignment direction
+  measurement: PPMS/VSM, 9 T, 300 K
+  n_samples: 1
   conditions:
     field_T: 9
     T_process_K: 335
@@ -157,11 +162,6 @@
     magnet_axis: alignment field
     density_rel: powder in wax
     composition: Mn52Bi48
-  quantity: Js_same_sample
-  unit: Am2/kg
-  measured_along: alignment direction
-  measurement: PPMS/VSM, 9 T, 300 K
-  n_samples: 1
   source:
     doi: 10.1016/j.actamat.2019.10.003
     title: Optimizing composition in MnBi permanent magnet alloys
@@ -174,6 +174,11 @@
   phase: LTP-MnBi
   route: FP
   process: Mn52Bi48 powders ball milled 7-10 h, wax aligned in 9 T at 335 K
+  quantity: Mr_over_Ms
+  unit: '1'
+  measured_along: alignment direction
+  measurement: PPMS/VSM, max 9 T, 300 K
+  n_samples: 4
   conditions:
     field_T: 9
     T_process_K: 335
@@ -181,11 +186,6 @@
     magnet_axis: alignment field
     density_rel: powder in wax
     composition: Mn52Bi48
-  quantity: Mr_over_Ms
-  unit: '1'
-  measured_along: alignment direction
-  measurement: PPMS/VSM, max 9 T, 300 K
-  n_samples: 4
   source:
     doi: 10.1016/j.actamat.2019.10.003
     title: Optimizing composition in MnBi permanent magnet alloys
@@ -200,19 +200,18 @@
   process: Mn52.2Bi47.7 powder (3-5 μm) aligned in 1.5 T while pressed at 7 MPa (pressure perpendicular
     to field), CIP 500 MPa (80% green density), warm-sintered 250-300 C, 0.5-1 h in vacuum (no grain-boundary
     phase)
-  conditions:
-    field_T: 1.5
-    T_process_K: 523-573
-    parent_texture: none (powder)
-    magnet_axis: alignment field (perpendicular to pressing)
-    density_gcm3: 8.0-8.2 (range for all bulk magnets)
-    composition: Mn52.2Bi47.7
   quantity: Mr_over_Ms
   unit: '1'
   measured_along: alignment direction
   measurement: 9 T PPMS VSM (small blocks, demag factor 0.2) or hysteresisgraph 2 T (large blocks); 300
     K
   n_samples: 1
+  conditions:
+    field_T: 1.5
+    T_process_K: 523-573
+    parent_texture: none (powder)
+    magnet_axis: alignment field (perpendicular to pressing)
+    composition: Mn52.2Bi47.7
   source:
     doi: 10.1016/j.jmmm.2022.169912
     title: Engineering microstructure to improve coercivity of bulk MnBi magnet
@@ -225,18 +224,17 @@
   phase: LTP-MnBi
   route: FP
   process: same as mnbi_fp_tang2022_nongbp
-  conditions:
-    field_T: 1.5
-    T_process_K: 523-573
-    parent_texture: none (powder)
-    magnet_axis: alignment field
-    density_gcm3: 8.0-8.2
-    composition: Mn52.2Bi47.7
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction
   measurement: as mnbi_fp_tang2022_nongbp
   n_samples: 1
+  conditions:
+    field_T: 1.5
+    T_process_K: 523-573
+    parent_texture: none (powder)
+    magnet_axis: alignment field
+    composition: Mn52.2Bi47.7
   source:
     doi: 10.1016/j.jmmm.2022.169912
     title: Engineering microstructure to improve coercivity of bulk MnBi magnet
@@ -250,17 +248,16 @@
   route: FP
   process: as mnbi_fp_tang2022_nongbp but with Bi grain-boundary phase (Mn50.8Bi49.2) or silicate-coated
     powder (Mn49.5Bi50.5, 0.5 and 1.0 wt% Bakelite)
-  conditions:
-    field_T: 1.5
-    T_process_K: 523-573
-    parent_texture: none (powder)
-    magnet_axis: alignment field
-    density_gcm3: 8.0-8.2
   quantity: Mr_over_Ms
   unit: '1'
   measured_along: alignment direction
   measurement: as mnbi_fp_tang2022_nongbp
   n_samples: 3
+  conditions:
+    field_T: 1.5
+    T_process_K: 523-573
+    parent_texture: none (powder)
+    magnet_axis: alignment field
   source:
     doi: 10.1016/j.jmmm.2022.169912
     title: Engineering microstructure to improve coercivity of bulk MnBi magnet
@@ -274,18 +271,17 @@
   route: 'other: FP + warm sintering in 3 T field'
   process: Mn50.8Bi49.2 powder coated with 0.5 wt% Bakelite, aligned 1.5 T + pressed, CIP, warm-sintered
     0.5 h at 300 C in a 3 T field
-  conditions:
-    field_T: 3
-    T_process_K: 573
-    parent_texture: field-pressed compact
-    magnet_axis: alignment / annealing field
-    density_gcm3: 8.0-8.2
-    composition: Mn50.8Bi49.2
   quantity: Mr_over_Ms
   unit: '1'
   measured_along: alignment direction
   measurement: as mnbi_fp_tang2022_nongbp; 300 K
   n_samples: 1
+  conditions:
+    field_T: 3
+    T_process_K: 573
+    parent_texture: field-pressed compact
+    magnet_axis: alignment / annealing field
+    composition: Mn50.8Bi49.2
   source:
     doi: 10.1016/j.jmmm.2022.169912
     title: Engineering microstructure to improve coercivity of bulk MnBi magnet
@@ -298,18 +294,17 @@
   phase: LTP-MnBi
   route: 'other: FP + warm sintering in 3 T field'
   process: 'as mnbi_other_tang2022_fieldsinter300 but sintered at 250 C (270 C: 0.86)'
-  conditions:
-    field_T: 3
-    T_process_K: 523
-    parent_texture: field-pressed compact
-    magnet_axis: alignment / annealing field
-    density_gcm3: 8.0-8.2
-    composition: Mn50.8Bi49.2
   quantity: Mr_over_Ms
   unit: '1'
   measured_along: alignment direction
   measurement: as mnbi_fp_tang2022_nongbp; 300 K
   n_samples: 1
+  conditions:
+    field_T: 3
+    T_process_K: 523
+    parent_texture: field-pressed compact
+    magnet_axis: alignment / annealing field
+    composition: Mn50.8Bi49.2
   source:
     doi: 10.1016/j.jmmm.2022.169912
     title: Engineering microstructure to improve coercivity of bulk MnBi magnet
@@ -324,6 +319,12 @@
   process: 'Mn50Bi46.5Mg3Sb0.5 melt-spun (metastable beta'' phase), warm compacted at 150 C (fully dense),
     annealed in 30 kOe: heated 15 C/min to 300 C, 10 min, cooled; alpha (LTP) fraction raised to 97-98%
     and c axes aligned'
+  quantity: '[redacted]'
+  unit: T
+  measured_along: annealing-field direction
+  measurement: VSM (Quantum Design VersaLab, max 30 kOe) after 100 kOe pulse magnetization, demagnetization
+    corrected, 27 C
+  n_samples: 1
   conditions:
     field_T: 3
     T_process_K: 573
@@ -331,12 +332,6 @@
     magnet_axis: annealing field
     density_rel: fully dense (8.93 g/cm3 measured)
     composition: Mn50Bi46.5Mg3Sb0.5
-  quantity: '[redacted]'
-  unit: T
-  measured_along: annealing-field direction
-  measurement: VSM (Quantum Design VersaLab, max 30 kOe) after 100 kOe pulse magnetization, demagnetization
-    corrected, 27 C
-  n_samples: 1
   source:
     doi: 10.1016/j.jmmm.2019.165860
     title: New anisotropic MnBi permanent magnets by field-annealing of compacted melt-spun alloys modified
@@ -350,6 +345,11 @@
   phase: LTP-MnBi
   route: FA
   process: as mnbi_fa_gabay2020a_[redacted]
+  quantity: texture_metric
+  unit: 'other: magnetic [redacted]'
+  measured_along: parallel and perpendicular to annealing field
+  measurement: VSM, 27 C, demag corrected
+  n_samples: 1
   conditions:
     field_T: 3
     T_process_K: 573
@@ -357,11 +357,6 @@
     magnet_axis: annealing field
     density_rel: fully dense
     composition: Mn50Bi46.5Mg3Sb0.5
-  quantity: texture_metric
-  unit: 'other: magnetic [redacted]'
-  measured_along: parallel and perpendicular to annealing field
-  measurement: VSM, 27 C, demag corrected
-  n_samples: 1
   source:
     doi: 10.1016/j.jmmm.2019.165860
     title: New anisotropic MnBi permanent magnets by field-annealing of compacted melt-spun alloys modified
@@ -375,6 +370,11 @@
   phase: LTP-MnBi
   route: FA
   process: Mn50Bi48.5Sb1.5 melt-spun, compacted, annealed in 30 kOe at 300 C for 150 min (low texture)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: annealing-field direction
+  measurement: VSM VersaLab, 27 C, demag corrected
+  n_samples: 1
   conditions:
     field_T: 3
     T_process_K: 573
@@ -382,11 +382,6 @@
     magnet_axis: annealing field
     density_rel: fully dense (9.10 g/cm3)
     composition: Mn50Bi48.5Sb1.5
-  quantity: '[redacted]'
-  unit: T
-  measured_along: annealing-field direction
-  measurement: VSM VersaLab, 27 C, demag corrected
-  n_samples: 1
   source:
     doi: 10.1016/j.jmmm.2019.165860
     title: New anisotropic MnBi permanent magnets by field-annealing of compacted melt-spun alloys modified
@@ -401,6 +396,11 @@
   route: 'other: FA through alpha->beta->alpha (HTP) cycle in field'
   process: compacted melt-spun Mn50Bi46Mg3Sb0.5In0.5 heated in 30 kOe into the alpha->beta range (alpha->beta
     at 322 C, beta->alpha at 298 C on cooling), complete transformation
+  quantity: texture_metric
+  unit: 'other: ''[redacted]'
+  measured_along: parallel and perpendicular to annealing field
+  measurement: VSM VersaLab (max 3 T) after 100 kOe pulse, demag corrected, room temperature
+  n_samples: series (2 alloys, increasing transformation degree)
   conditions:
     field_T: 3
     T_process_K: ~595 peak (alpha->beta at 322 C)
@@ -408,11 +408,6 @@
     magnet_axis: annealing field
     density_rel: fully dense compact
     composition: Mn50Bi46Mg3Sb0.5In0.5 (two Mg-containing alloys)
-  quantity: texture_metric
-  unit: 'other: ''[redacted]'
-  measured_along: parallel and perpendicular to annealing field
-  measurement: VSM VersaLab (max 3 T) after 100 kOe pulse, demag corrected, room temperature
-  n_samples: series (2 alloys, increasing transformation degree)
   source:
     doi: 10.1016/j.jmmm.2020.167340
     title: 'MnBi-based magnets prepared from melt-spun alloys: Effect of α → β phase transformation during
@@ -427,17 +422,17 @@
   route: 'other: FA through alpha->beta->alpha (HTP) cycle in field'
   process: compacted melt-spun Mn50Bi49Sb0.5In0.5, partial and complete alpha->beta transformation during
     30 kOe anneal
+  quantity: texture_metric
+  unit: 'other: magnetic [redacted]'
+  measured_along: parallel and perpendicular to annealing field
+  measurement: VSM VersaLab, room temperature, demag corrected
+  n_samples: series
   conditions:
     field_T: 3
     T_process_K: above alpha->beta temperature
     parent_texture: none
     magnet_axis: annealing field
     composition: Mn50Bi49Sb0.5In0.5
-  quantity: texture_metric
-  unit: 'other: magnetic [redacted]'
-  measured_along: parallel and perpendicular to annealing field
-  measurement: VSM VersaLab, room temperature, demag corrected
-  n_samples: series
   source:
     doi: 10.1016/j.jmmm.2020.167340
     title: 'MnBi-based magnets prepared from melt-spun alloys: Effect of α → β phase transformation during
@@ -452,17 +447,17 @@
   route: 'other: FA through HTP (anneal at 400 C in field, LTP forms on cooling in field)'
   process: melt-spun MnBi and MnBi0.9Sn0.1 ribbons (20 m/s) annealed at 400 C for 10 min in 0, 1, 2, 4
     T, field along ribbon length
+  quantity: Mr_over_Ms
+  unit: '1'
+  measured_along: ribbon length (annealing-field direction)
+  measurement: PPMS, room temperature (data 'not shown here')
+  n_samples: 2 compositions
   conditions:
     field_T: 4
     T_process_K: 673
     parent_texture: melt-spun ribbon
     magnet_axis: ribbon length (field direction)
     density_rel: ribbon
-  quantity: Mr_over_Ms
-  unit: '1'
-  measured_along: ribbon length (annealing-field direction)
-  measurement: PPMS, room temperature (data 'not shown here')
-  n_samples: 2 compositions
   source:
     doi: 10.1063/1.5128659
     title: High energy product of MnBi by field annealing and Sn alloying
@@ -475,16 +470,16 @@
   phase: LTP-MnBi
   route: 'other: FA through HTP (anneal at 400 C in field)'
   process: as mnbi_fa_zhang2019
-  conditions:
-    field_T: 2 and 4
-    T_process_K: 673
-    parent_texture: melt-spun ribbon
-    magnet_axis: ribbon length
   quantity: texture_metric
   unit: 'other: qualitative XRD / tilt-angle XRD'
   measured_along: out-of-plane XRD and tilt
   measurement: XRD Co Kalpha, tilt-angle XRD (Fig. S1)
   n_samples: several
+  conditions:
+    field_T: 2 and 4
+    T_process_K: 673
+    parent_texture: melt-spun ribbon
+    magnet_axis: ribbon length
   source:
     doi: 10.1063/1.5128659
     title: High energy product of MnBi by field annealing and Sn alloying
@@ -498,18 +493,17 @@
   route: 'other: HPT-deformed Mn+Bi powder blend + field-assisted reactive annealing'
   process: ball-milled Mn+Bi (1:1) blend, HPT deformed (10 rev, 2 GPa), vacuum annealed 240 C, 4 h in
     2 T (MVA), alpha-MnBi forms during the anneal; MVA field along HPT axial / radial / tangential directions
+  quantity: Mr_over_Ms
+  unit: '1'
+  measured_along: the MVA field direction (diagonal entries); off-diagonal entries 0.26-0.45
+  measurement: SQUID magnetometry, loops +-65 kOe, room temperature (Ms 33-35 emu/g of composite)
+  n_samples: 3
   conditions:
     field_T: 2
     T_process_K: 513
     parent_texture: HPT shear texture of the Mn+Bi composite
     magnet_axis: field direction
     density_rel: dense HPT disc
-    ltp_fraction: '>50 vol% (stated for HPT-deformed)'
-  quantity: Mr_over_Ms
-  unit: '1'
-  measured_along: the MVA field direction (diagonal entries); off-diagonal entries 0.26-0.45
-  measurement: SQUID magnetometry, loops +-65 kOe, room temperature (Ms 33-35 emu/g of composite)
-  n_samples: 3
   source:
     doi: 10.1016/j.jmmm.2023.171082
     title: Synthesis of hard magnetic α-MnBi phase by high pressure torsion and field assisted annealing
@@ -523,17 +517,17 @@
   route: FA
   process: Bi + (1-35 at.%) MnBi compositions melted 16 h, water quenched, then annealed 230 C for ~16
     h in 1.4 T (MnBi forms/grows in field, below 262 C eutectic)
+  quantity: texture_metric
+  unit: 'other: qualitative (microstructure + magnetization anisotropy)'
+  measured_along: parallel/perpendicular to annealing field
+  measurement: SQUID MPMS hysteresis at 300 K; microscopy
+  n_samples: 5 compositions
   conditions:
     field_T: 1.4
     T_process_K: 503
     parent_texture: none (quenched ingot)
     magnet_axis: annealing field
     composition: 1-35 at.% MnBi in Bi
-  quantity: texture_metric
-  unit: 'other: qualitative (microstructure + magnetization anisotropy)'
-  measured_along: parallel/perpendicular to annealing field
-  measurement: SQUID MPMS hysteresis at 300 K; microscopy
-  n_samples: 5 compositions
   source:
     doi: 10.3390/nano10102083
     title: Combining Spin-Seebeck and Nernst Effects in Aligned MnBi/Bi Composites
@@ -548,17 +542,17 @@
   process: rapidly solidified Bi-50 at.% Mn powder compacts heated to 573 K (above 535 K eutectic) in
     0.3 T or 4 T and cooled 0.1 K/s; compared with peritectic solidification (melted at 733 K, cooled
     0.026 K/s in field)
+  quantity: texture_metric
+  unit: 'other: qualitative XRD (I(002) vs I(110))'
+  measured_along: planes parallel/perpendicular to the processing field; magnetization parallel/perpendicular
+  measurement: XRD; magnetization curves to ~1.2 MA/m (anisotropy energy estimated by integration)
+  n_samples: several compositions
   conditions:
     field_T: 0.3 and 4
     T_process_K: 573
     parent_texture: none
     magnet_axis: applied field
     composition: Bi-20/30/40/50 at.% Mn
-  quantity: texture_metric
-  unit: 'other: qualitative XRD (I(002) vs I(110))'
-  measured_along: planes parallel/perpendicular to the processing field; magnetization parallel/perpendicular
-  measurement: XRD; magnetization curves to ~1.2 MA/m (anisotropy energy estimated by integration)
-  n_samples: several compositions
   source:
     doi: 10.2320/matertrans.44.2207
     title: Formation of Crystallographically Aligned BiMn Grains by Semi-solid Processing of Rapidly Solidified
@@ -573,17 +567,17 @@
   route: FS
   process: Bi-3 and Bi-6 wt.% Mn alloys held/solidified in the mushy zone between 262 and 355 C in static
     fields up to 1.0 T
+  quantity: texture_metric
+  unit: 'other: [redacted]'
+  measured_along: field direction
+  measurement: metallography/[redacted]
+  n_samples: series
   conditions:
     field_T: 0.05-1.0
     T_process_K: 535-628 (mushy zone); critical 548-563 K
     parent_texture: none
     magnet_axis: field direction
     composition: Bi-3 and Bi-6 wt.% Mn
-  quantity: texture_metric
-  unit: 'other: [redacted]'
-  measured_along: field direction
-  measurement: metallography/[redacted]
-  n_samples: series
   source:
     doi: null
     title: Alignment behavior of MnBi phase in Bi-Mn alloy solidified in static magnetic field
@@ -597,16 +591,16 @@
   route: 'other: FS above the LTP transition (HTP crystals in Bi melt, 10 T)'
   process: Bi-rich Mn-Bi alloy held above the MnBi 'Curie temperature' (i.e. above the LTP->HTP transition)
     in 10 T and solidified/quenched
-  conditions:
-    field_T: 10
-    T_process_K: above ~630 K (not specified in abstract)
-    parent_texture: none
-    magnet_axis: fabrication field
   quantity: texture_metric
   unit: 'other: qualitative'
   measured_along: parallel and normal to fabrication field
   measurement: magnetic testing (details not in abstract)
   n_samples: not stated
+  conditions:
+    field_T: 10
+    T_process_K: above ~630 K (not specified in abstract)
+    parent_texture: none
+    magnet_axis: fabrication field
   source:
     doi: 10.1088/0256-307x/24/1/057
     title: In-Situ Alignment of MnBi Crystals Induced by High Magnetic Field above Curie Temperature
@@ -619,16 +613,16 @@
   phase: LTP-MnBi
   route: 'other: FS above the LTP transition (quenched from ~653 K in 10 T)'
   process: MnBi crystals in Bi matrix quenched from ~653 K in a 10 T field
-  conditions:
-    field_T: 10
-    T_process_K: 653
-    parent_texture: none
-    magnet_axis: fabrication field
   quantity: texture_metric
   unit: 'other: qualitative'
   measured_along: parallel and normal to fabrication field
   measurement: microstructure + magnetization (details not in abstract)
   n_samples: not stated
+  conditions:
+    field_T: 10
+    T_process_K: 653
+    parent_texture: none
+    magnet_axis: fabrication field
   source:
     doi: 10.1063/1.2966456
     title: Magnetic anisotropy and spin disorder in textured MnBi crystals synthesized by a field-inducing
@@ -643,17 +637,16 @@
   route: 'other: FS in high field gradient (dilute Bi-Mn master alloy)'
   process: dilute Bi-Mn master alloy solidified in a high-gradient magnetic field; MnBi grains rotate
     (c || field) and migrate to one end
-  conditions:
-    field_T: high field gradient (value not in abstract)
-    T_process_K: solidification range (not in abstract)
-    parent_texture: none
-    magnet_axis: field direction
-    mnbi_fraction: '>40 vol% locally at the enriched end'
   quantity: texture_metric
   unit: 'other: qualitative'
   measured_along: field direction
   measurement: microstructure (details not in abstract)
   n_samples: not stated
+  conditions:
+    field_T: high field gradient (value not in abstract)
+    T_process_K: solidification range (not in abstract)
+    parent_texture: none
+    magnet_axis: field direction
   source:
     doi: 10.1088/0022-3727/42/2/025001
     title: Fabrication of MnBi/Bi composite using dilute master alloy solidification under high magnetic
@@ -669,6 +662,12 @@
   process: Bridgman-Stockbarger plane-front directional solidification of eutectic (0.72 wt% Mn) and Mn-rich
     off-eutectic Bi-Mn (G 10-1000 C/cm, V 0.5-100 cm/h) -> aligned MnBi rods (<1 μm) in Bi, post-annealed
     200-260 C (24 h at 250 C converts HC phase to LTP)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: parallel to growth direction (magnetization measured parallel and perpendicular)
+  measurement: magnetization to +-230 kG at 4.2-538 K; values normalised to MnBi volume ('magnetization
+    per unit volume of dispersed MnBi')
+  n_samples: not stated
   conditions:
     field_T: 0
     T_process_K: solidification ~535 K (eutectic) + anneal 473-533 K
@@ -676,12 +675,6 @@
     magnet_axis: growth direction
     density_rel: MnBi volume fraction of eutectic only a few %
     composition: eutectic 0.72 wt% Mn and off-eutectic up to 20.8 wt% Mn
-  quantity: '[redacted]'
-  unit: T
-  measured_along: parallel to growth direction (magnetization measured parallel and perpendicular)
-  measurement: magnetization to +-230 kG at 4.2-538 K; values normalised to MnBi volume ('magnetization
-    per unit volume of dispersed MnBi')
-  n_samples: not stated
   source:
     doi: null
     title: Directional solidification and densification of permanent magnets having single domain size
@@ -696,16 +689,16 @@
   route: DS
   process: directionally solidified LTP MnBi (as cited by Park et al. from the Pirich-Larson patent US
     4,784,703)
-  conditions:
-    field_T: 0
-    T_process_K: not stated
-    parent_texture: DS
-    magnet_axis: growth direction (presumed)
   quantity: '[redacted]'
   unit: T
   measured_along: not stated
   measurement: 290 K (as cited)
   n_samples: not stated
+  conditions:
+    field_T: 0
+    T_process_K: not stated
+    parent_texture: DS
+    magnet_axis: growth direction (presumed)
   source:
     doi: 10.3390/met4030455
     title: Electronic Structure and Maximum Energy Product of MnBi
@@ -719,17 +712,16 @@
   route: 'other: DS (zone melting) in longitudinal magnetic field'
   process: zone-melted eutectic Bi-MnBi single crystals (~4 vol.% MnBi needles, ~4 μm x ~200 μm) grown
     in a longitudinal magnetic field
-  conditions:
-    field_T: not stated in abstract
-    T_process_K: eutectic solidification (~535 K)
-    parent_texture: single-crystal Bi matrix
-    magnet_axis: growth/needle axis
-    mnbi_fraction: ~4 vol.%
   quantity: texture_metric
   unit: 'other: qualitative (metallography + x-ray)'
   measured_along: needle/growth axis
   measurement: magnetic moment measurements (details not in abstract)
   n_samples: not stated
+  conditions:
+    field_T: not stated in abstract
+    T_process_K: eutectic solidification (~535 K)
+    parent_texture: single-crystal Bi matrix
+    magnet_axis: growth/needle axis
   source:
     doi: 10.1063/1.1709304
     title: Preparation and Properties of Eutectic Bi-MnBi Single Crystals
@@ -743,18 +735,17 @@
   route: FA
   process: in-field reactive sintering of Mn + Bi (solid-state and liquid-state sintering) in 15 T; optimum
     anneal 280 C
+  quantity: texture_metric
+  unit: '[redacted]'
+  measured_along: surface normal to the applied field (XRD)
+  measurement: XRD [redacted]; anisotropy field of bulk sample 4 T at RT
+  n_samples: 2
   conditions:
     field_T: 15
     T_process_K: solid-state (<535 K) and liquid-state (553 K = 280 C) sintering (exact temperatures per
       route not in abstract)
     parent_texture: none (pressed Mn + Bi powders)
     magnet_axis: field direction
-    ltp_fraction: up to 93 wt% (280 C)
-  quantity: texture_metric
-  unit: '[redacted]'
-  measured_along: surface normal to the applied field (XRD)
-  measurement: XRD [redacted]; anisotropy field of bulk sample 4 T at RT
-  n_samples: 2
   source:
     doi: 10.1063/1.4961343
     title: Magnetic field effects on reactive sintering of MnBi
@@ -767,17 +758,17 @@
   phase: LTP-MnBi
   route: FA
   process: melt-spun Mn50Bi50 ribbons annealed in a magnetic field (conditions not given in abstract)
+  quantity: Mr_over_Ms
+  unit: '1'
+  measured_along: annealing-field direction (implied)
+  measurement: not stated (conference abstract)
+  n_samples: 1
   conditions:
     field_T: not stated
     T_process_K: not stated
     parent_texture: melt-spun ribbon
     magnet_axis: annealing field
     composition: Mn50Bi50
-  quantity: Mr_over_Ms
-  unit: '1'
-  measured_along: annealing-field direction (implied)
-  measurement: not stated (conference abstract)
-  n_samples: 1
   source:
     doi: null
     title: Control of anisotropy and magnetism of MnBi nanomaterials (APS March Meeting 2015, abstract
@@ -792,6 +783,11 @@
   route: FP
   process: Mn50Bi50 melt-spun at 65 m/s, annealed (alpha phase), gently crushed (<0.1 mm, not milled),
     immobilized in paraffin wax in 16 kOe
+  quantity: texture_metric
+  unit: 'other: [redacted]'
+  measured_along: parallel and perpendicular to orienting field
+  measurement: VSM after 100 kOe pulse; not demagnetization corrected
+  n_samples: 1
   conditions:
     field_T: 1.6
     T_process_K: wax solidification (near RT)
@@ -799,11 +795,6 @@
     magnet_axis: orienting field
     density_rel: powder in wax
     composition: Mn50Bi50
-  quantity: texture_metric
-  unit: 'other: [redacted]'
-  measured_along: parallel and perpendicular to orienting field
-  measurement: VSM after 100 kOe pulse; not demagnetization corrected
-  n_samples: 1
   source:
     doi: 10.1016/j.jallcom.2019.03.407
     title: Effect of Sb substitution on crystal structure, texture and hard magnetic properties of melt-spun
@@ -818,6 +809,11 @@
   route: FP
   process: Mn50Bi48.5Sb1.5 melt-spun at 65 m/s, annealed (fine <200 nm alpha crystallites via beta'),
     crushed, oriented in wax in 16 kOe
+  quantity: texture_metric
+  unit: 'other: [redacted]'
+  measured_along: parallel and perpendicular to orienting field
+  measurement: VSM, not demagnetization corrected
+  n_samples: 1
   conditions:
     field_T: 1.6
     T_process_K: near RT
@@ -825,11 +821,6 @@
     magnet_axis: orienting field
     density_rel: powder in wax
     composition: Mn50Bi48.5Sb1.5
-  quantity: texture_metric
-  unit: 'other: [redacted]'
-  measured_along: parallel and perpendicular to orienting field
-  measurement: VSM, not demagnetization corrected
-  n_samples: 1
   source:
     doi: 10.1016/j.jallcom.2019.03.407
     title: Effect of Sb substitution on crystal structure, texture and hard magnetic properties of melt-spun
@@ -843,16 +834,16 @@
   phase: LTP-MnBi
   route: 'other: DS + axial strong magnetic field'
   process: directional solidification of Bi-MnBi composite under an axial strong magnetic field
-  conditions:
-    field_T: strong axial field (value not in abstract)
-    T_process_K: eutectic solidification ~535 K
-    parent_texture: DS fibre composite
-    magnet_axis: growth/field axis
   quantity: texture_metric
   unit: 'other: qualitative'
   measured_along: growth/field axis (implied)
   measurement: magnetic measurement (details not in abstract)
   n_samples: not stated
+  conditions:
+    field_T: strong axial field (value not in abstract)
+    T_process_K: eutectic solidification ~535 K
+    parent_texture: DS fibre composite
+    magnet_axis: growth/field axis
   source:
     doi: 10.1016/j.actamat.2011.06.040
     title: Structure, growth characteristic and magnetic properties in directionally solidified Bi–MnBi
@@ -867,17 +858,17 @@
   route: FS
   process: Bi-3 and Bi-6 wt% Mn solidified in up to 10 T, solidification starting below the LTP transition
     (rods), above it (HTP flakes) or above the liquidus
+  quantity: texture_metric
+  unit: 'other: qualitative'
+  measured_along: field direction
+  measurement: metallography/XRD (details not in abstract)
+  n_samples: series
   conditions:
     field_T: 10
     T_process_K: below/above ~628 K and above liquidus
     parent_texture: none
     magnet_axis: field direction
     composition: Bi-3 and Bi-6 wt% Mn
-  quantity: texture_metric
-  unit: 'other: qualitative'
-  measured_along: field direction
-  measurement: metallography/XRD (details not in abstract)
-  n_samples: series
   source:
     doi: 10.22364/mhd.42.2-3.25
     title: Investigation on the solidification of Bi-Mn alloys under a high magnetic field
@@ -891,17 +882,16 @@
   route: 'other: textured film (in-situ annealed Bi/Mn/Bi trilayer/multilayer)'
   process: Bi/Mn/Bi trilayers and [Bi/Mn/Bi]n multilayers annealed in situ (+ field annealing), x = 50,
     t = 100 nm
-  conditions:
-    field_T: not stated for the 100 nm film
-    T_process_K: in-situ anneal (not in abstract)
-    parent_texture: film
-    magnet_axis: film normal (c axis)
-    thickness_nm: 100
   quantity: texture_metric
   unit: 'other: qualitative XRD'
   measured_along: film normal
   measurement: XRD (details not in abstract)
   n_samples: series
+  conditions:
+    field_T: not stated for the 100 nm film
+    T_process_K: in-situ anneal (not in abstract)
+    parent_texture: film
+    magnet_axis: film normal (c axis)
   source:
     doi: 10.1002/pssb.201552075
     title: High‐energy‐product MnBi films with controllable anisotropy
@@ -915,17 +905,17 @@
   route: 'other: textured film on glass (sputtered + vacuum annealed)'
   process: dc magnetron sputtering from Mn55Bi45 alloy target onto glass at room temperature, then vacuum
     annealing to form LTP
+  quantity: texture_metric
+  unit: 'other: qualitative XRD'
+  measured_along: film normal
+  measurement: XRD; SQUID; torque magnetometry
+  n_samples: series
   conditions:
     field_T: 0
     T_process_K: vacuum anneal (temperature not in abstract)
     parent_texture: film on amorphous glass
     magnet_axis: film normal
     substrate: glass
-  quantity: texture_metric
-  unit: 'other: qualitative XRD'
-  measured_along: film normal
-  measurement: XRD; SQUID; torque magnetometry
-  n_samples: series
   source:
     doi: 10.1109/tmag.2016.2636817
     title: Low-Temperature Phase c-axis Oriented Manganese Bismuth Thin Films With High Anisotropy Grown
@@ -940,17 +930,16 @@
   route: FP
   process: MnBi powder loaded and compacted in an 18 kOe field perpendicular to the pressing direction
     (grains free to rotate during loading); compaction pressure optimized
-  conditions:
-    field_T: 1.8
-    T_process_K: not stated in abstract
-    parent_texture: none (powder)
-    magnet_axis: field direction (perpendicular to pressing)
-    density_gcm3: 8.4
   quantity: Mr_over_Ms
   unit: '1'
   measured_along: alignment direction (implied)
   measurement: not stated in abstract
   n_samples: 1-2 ('[redacted]
+  conditions:
+    field_T: 1.8
+    T_process_K: not stated in abstract
+    parent_texture: none (powder)
+    magnet_axis: field direction (perpendicular to pressing)
   source:
     doi: 10.15625/2525-2518/54/1a/11806
     title: HIGHLY ANISOTROPIC MnBi MAGNETS
@@ -963,6 +952,11 @@
   phase: LTP-MnBi
   route: 'other: FA through HTP (anneal at 400 C in 4 T, LTP forms on cooling in field)'
   process: melt-spun MnBi ribbon annealed 10 min at 400 C in 4 T (field along ribbon length)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: ribbon length (annealing-field direction)
+  measurement: PPMS, 300 K, loop to ~4.5 T (max J ~0.82 T at the loop tip, not saturated)
+  n_samples: 1
   conditions:
     field_T: 4
     T_process_K: 673
@@ -970,11 +964,6 @@
     magnet_axis: ribbon length
     density_rel: dense ribbon
     composition: MnBi
-  quantity: '[redacted]'
-  unit: T
-  measured_along: ribbon length (annealing-field direction)
-  measurement: PPMS, 300 K, loop to ~4.5 T (max J ~0.82 T at the loop tip, not saturated)
-  n_samples: 1
   source:
     doi: 10.1063/1.5128659
     title: High energy product of MnBi by field annealing and Sn alloying
@@ -988,18 +977,16 @@
   route: DS
   process: plane-front Bridgman-Stockbarger DS of eutectic Bi/MnBi (0.72 wt% Mn), V = 30 cm/h, G ~100
     C/cm ('All-Systems Test' ground samples)
-  conditions:
-    field_T: 0
-    T_process_K: eutectic solidification ~535 K
-    parent_texture: DS rod composite
-    magnet_axis: solidification direction
-    mnbi_fraction: ~3.2 vol% (eutectic)
-    note_phase: '>95 vol% of the MnBi in these samples was the non-equilibrium HC phase'
   quantity: texture_metric
   unit: 'other: angular spread of rod/easy axes from [redacted]'
   measured_along: '[redacted]'
   measurement: magnetization vs angle (details in report Fig. 34)
   n_samples: several (All-Systems Test samples)
+  conditions:
+    field_T: 0
+    T_process_K: eutectic solidification ~535 K
+    parent_texture: DS rod composite
+    magnet_axis: solidification direction
   source:
     doi: null
     title: 'SPAR VI Technical Report for Experiment 76-22: Directional Solidification of Magnetic Composites
@@ -1014,19 +1001,18 @@
   route: FP
   process: Mn50.8Bi49.2 powder coated with 0.5 wt% Bakelite, aligned in 1.5 T + pressed, CIP, warm-sintered
     0.5 h at 250 C or 300 C WITHOUT field (control for mnbi_other_tang2022_fieldsinter*)
-  conditions:
-    field_T: 1.5
-    T_process_K: 523 and 573
-    parent_texture: none (powder)
-    magnet_axis: pressing-alignment field
-    density_gcm3: 8.0-8.2
-    composition: Mn50.8Bi49.2
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction
   measurement: as Table 2 of the paper (9 T PPMS VSM, demag corrected) - instrument for Fig. 4 not explicitly
     stated; 300 K
   n_samples: 2
+  conditions:
+    field_T: 1.5
+    T_process_K: 523 and 573
+    parent_texture: none (powder)
+    magnet_axis: pressing-alignment field
+    composition: Mn50.8Bi49.2
   source:
     doi: 10.1016/j.jmmm.2022.169912
     title: Engineering microstructure to improve coercivity of bulk MnBi magnet
@@ -1040,18 +1026,17 @@
   route: FA
   process: melt-spun (40 m/s, amorphous) Mn56Bi44 ribbons ground, pressed at 500 MPa into pellets, annealed
     5 min at 320 C in 2.5 T (amorphous -> LTP crystallization in field)
+  quantity: Mr_over_Ms
+  unit: '1'
+  measured_along: annealing-field direction (implied)
+  measurement: VSM (Microsense EZ9), demagnetization factor 0.1655 applied; room temperature
+  n_samples: 1
   conditions:
     field_T: 2.5
     T_process_K: 593
     parent_texture: none (amorphous compact)
     magnet_axis: annealing field
     composition: Mn56Bi44
-    ltp_fraction: 98.15 wt% after 320 C/5 min (Rietveld)
-  quantity: Mr_over_Ms
-  unit: '1'
-  measured_along: annealing-field direction (implied)
-  measurement: VSM (Microsense EZ9), demagnetization factor 0.1655 applied; room temperature
-  n_samples: 1
   source:
     doi: 10.3390/nano10112265
     title: Effects of Mg and Sb Substitution on the Magnetic Properties of Magnetic Field Annealed MnBi
@@ -1065,17 +1050,17 @@
   phase: LTP-MnBi
   route: FA
   process: as mnbi_fa_qian2020_binary with Mg substitution (Mn56Bi44-xMgx), 2.5 T, 320 C
+  quantity: Mr_over_Ms
+  unit: '1'
+  measured_along: annealing-field direction (implied)
+  measurement: VSM, demag corrected (N = 0.1655), room temperature
+  n_samples: series (x = 0-5)
   conditions:
     field_T: 2.5
     T_process_K: 593
     parent_texture: none (amorphous compact)
     magnet_axis: annealing field
     composition: Mn56Bi44-xMgx (best)
-  quantity: Mr_over_Ms
-  unit: '1'
-  measured_along: annealing-field direction (implied)
-  measurement: VSM, demag corrected (N = 0.1655), room temperature
-  n_samples: series (x = 0-5)
   source:
     doi: 10.3390/nano10112265
     title: Effects of Mg and Sb Substitution on the Magnetic Properties of Magnetic Field Annealed MnBi
@@ -1090,18 +1075,17 @@
   route: EP
   process: MnBi films 260-2500 Å grown by vacuum deposition on mica + prolonged annealing (Chen, J. Appl.
     Phys. 1966/1967, as summarised in review)
+  quantity: texture_metric
+  unit: 'other: qualitative (single crystal)'
+  measured_along: film normal
+  measurement: magneto-optic and torque measurements along c (review statement)
+  n_samples: series
   conditions:
     field_T: 0
     T_process_K: prolonged anneal (not stated)
     parent_texture: epitaxial on mica
     magnet_axis: film normal
     substrate: mica
-    thickness_nm: 26-250
-  quantity: texture_metric
-  unit: 'other: qualitative (single crystal)'
-  measured_along: film normal
-  measurement: magneto-optic and torque measurements along c (review statement)
-  n_samples: series
   source:
     doi: 10.1063/10.0000360
     title: 'Low-temperature MnBi alloys: Electronic and magnetic properties, constitution, morphology
@@ -1116,17 +1100,17 @@
   route: FA
   process: arc-melted Mn50Bi50 / Mn50Bi47Mg3 (and Mg/In-modified) ingot blocks magnetized (100 kOe pulse)
     then annealed 60 min at 300 C in 30 kOe (liquid Bi present above ~257-262 C)
+  quantity: texture_metric
+  unit: 'other: qualitative XRD + magnetization (values only in Fig. 4b)'
+  measured_along: XRD of sample face parallel to field; magnetization parallel/perpendicular
+  measurement: XRD (Cu Kalpha) on intact and ground samples; VSM VersaLab
+  n_samples: several alloys
   conditions:
     field_T: 3
     T_process_K: 573
     parent_texture: 'as-cast ingot (no texture: zero-field anneal gives none)'
     magnet_axis: annealing field
     composition: Mn50Bi50 and modified
-  quantity: texture_metric
-  unit: 'other: qualitative XRD + magnetization (values only in Fig. 4b)'
-  measured_along: XRD of sample face parallel to field; magnetization parallel/perpendicular
-  measurement: XRD (Cu Kalpha) on intact and ground samples; VSM VersaLab
-  n_samples: several alloys
   source:
     doi: 10.1016/j.jallcom.2020.153663
     title: Development of rare-earth-free bulk magnets with energy product up to 12 MGOe in field annealed
@@ -1140,16 +1124,16 @@
   phase: LTP-MnBi
   route: isotropic
   process: same arc-melted ingots annealed at 300 C in zero field (reference)
-  conditions:
-    field_T: 0
-    T_process_K: 573
-    parent_texture: as-cast ingot (thermal gradient of arc melting)
-    magnet_axis: former ingot gradient direction
   quantity: texture_metric
   unit: 'other: qualitative (Fig. S2)'
   measured_along: parallel/perpendicular
   measurement: magnetization (supplementary Fig. S2)
   n_samples: not stated
+  conditions:
+    field_T: 0
+    T_process_K: 573
+    parent_texture: as-cast ingot (thermal gradient of arc melting)
+    magnet_axis: former ingot gradient direction
   source:
     doi: 10.1016/j.jallcom.2020.153663
     title: Development of rare-earth-free bulk magnets with energy product up to 12 MGOe in field annealed
@@ -1163,6 +1147,11 @@
   phase: LTP-MnBi
   route: FA
   process: Mn50Bi46.5Mg3Sb0.5 compacted melt-spun alloy annealed to 300 C (10 min) in 10 kOe
+  quantity: texture_metric
+  unit: 'other: magnetic [redacted]'
+  measured_along: parallel and perpendicular to annealing field
+  measurement: VSM VersaLab, 27 C, demag corrected
+  n_samples: 1
   conditions:
     field_T: 1
     T_process_K: 573
@@ -1170,11 +1159,6 @@
     magnet_axis: annealing field
     density_rel: fully dense
     composition: Mn50Bi46.5Mg3Sb0.5
-  quantity: texture_metric
-  unit: 'other: magnetic [redacted]'
-  measured_along: parallel and perpendicular to annealing field
-  measurement: VSM VersaLab, 27 C, demag corrected
-  n_samples: 1
   source:
     doi: 10.1016/j.jmmm.2019.165860
     title: New anisotropic MnBi permanent magnets by field-annealing of compacted melt-spun alloys modified
@@ -1188,6 +1172,11 @@
   phase: LTP-MnBi
   route: isotropic
   process: Mn50Bi46.5Mg3Sb0.5 compacted melt-spun alloy annealed to 300 C (10 min) in zero field (reference)
+  quantity: texture_metric
+  unit: 'other: magnetic [redacted]'
+  measured_along: two orthogonal directions
+  measurement: VSM VersaLab, 27 C, demag corrected
+  n_samples: 1
   conditions:
     field_T: 0
     T_process_K: 573
@@ -1195,11 +1184,6 @@
     magnet_axis: reference direction of the series
     density_rel: fully dense
     composition: Mn50Bi46.5Mg3Sb0.5
-  quantity: texture_metric
-  unit: 'other: magnetic [redacted]'
-  measured_along: two orthogonal directions
-  measurement: VSM VersaLab, 27 C, demag corrected
-  n_samples: 1
   source:
     doi: 10.1016/j.jmmm.2019.165860
     title: New anisotropic MnBi permanent magnets by field-annealing of compacted melt-spun alloys modified

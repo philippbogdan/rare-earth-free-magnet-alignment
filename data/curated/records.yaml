@@ -185,3 +185,21 @@
     locator: Abstract
   quote: The TC monotonically decreases from 1575 K (for c/a = 1) to 940 K (for c/a = 2).
   note: numeric range transcribed from bctfeco_tc_jakobsson2013 (c/a = 2 to c/a = 1)
+- id: mnbi_phi_eutectic_pirich1980
+  phase: LTP-MnBi
+  quantity: phase_fraction_limit
+  value: 0.0318
+  unit: volume fraction
+  conditions: Bi-Mn diagram near the eutectic determined by DSC and chemical analysis
+  source:
+    doi: null
+    title: 'SPAR VI Technical Report for Experiment 76-22: Directional Solidification of Magnetic Composites (NASA-CR-161671,
+      Grumman RE-602)'
+    first_author: Pirich, R. G.
+    year: 1980
+    url: https://ntrs.nasa.gov/api/citations/19810010704/downloads/19810010704.pdf
+    evidence: full_text
+    locator: Experimental section, p. 2
+  quote: The eutectic composition was found to be 0.72 ~ 0.03 w/o Mn (2.69 ~ 0.08 a/a Mn), which results in an MnBi
+    volume fraction of 3.18 ~ 0.09 v/o.
+  note: 3.18 vol% MnBi in the Bi/MnBi eutectic, transcribed from mnbi_phasefraction_pirich1980spar6

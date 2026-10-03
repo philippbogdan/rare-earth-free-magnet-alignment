@@ -3,16 +3,6 @@
   route: FP
   process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field
     (free rotation in liquid); needle cut from wafer
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.487
-    rod_dm_over_Lm_nm: 22/166
-    squareness_SQ: 0.93
-    washing: chloroform, standard washing
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction (needle long axis)
@@ -20,6 +10,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -32,16 +28,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.487
-    rod_dm_over_Lm_nm: 22/166
-    squareness_SQ: 0.93
-    washing: chloroform, standard washing
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction (needle long axis)
@@ -49,6 +35,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -61,16 +53,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.487
-    rod_dm_over_Lm_nm: 22/166
-    squareness_SQ: 0.93
-    washing: chloroform, standard washing
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction (needle long axis)
@@ -78,6 +60,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -91,16 +79,6 @@
   route: FP
   process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field
     (free rotation in liquid); needle cut from wafer
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.479
-    rod_dm_over_Lm_nm: 22/166
-    squareness_SQ: 0.79
-    washing: toluene, standard washing
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction (needle long axis)
@@ -108,6 +86,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -120,16 +104,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.479
-    rod_dm_over_Lm_nm: 22/166
-    squareness_SQ: 0.79
-    washing: toluene, standard washing
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction (needle long axis)
@@ -137,6 +111,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -149,16 +129,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.479
-    rod_dm_over_Lm_nm: 22/166
-    squareness_SQ: 0.79
-    washing: toluene, standard washing
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction (needle long axis)
@@ -166,6 +136,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -179,16 +155,6 @@
   route: FP
   process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field
     (free rotation in liquid); needle cut from wafer
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.544
-    rod_dm_over_Lm_nm: 22/166
-    squareness_SQ: 0.96
-    washing: chloroform, extended washing
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction (needle long axis)
@@ -196,6 +162,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -208,16 +180,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.544
-    rod_dm_over_Lm_nm: 22/166
-    squareness_SQ: 0.96
-    washing: chloroform, extended washing
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction (needle long axis)
@@ -225,6 +187,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -237,16 +205,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.544
-    rod_dm_over_Lm_nm: 22/166
-    squareness_SQ: 0.96
-    washing: chloroform, extended washing
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction (needle long axis)
@@ -254,6 +212,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -267,16 +231,6 @@
   route: FP
   process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field
     (free rotation in liquid); needle cut from wafer
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.487
-    rod_dm_over_Lm_nm: 24/190
-    squareness_SQ: 0.74
-    washing: 'chloroform, standard washing (labelled R24A2 in Fig. 4 and Tab. S1: toluene)'
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction (needle long axis)
@@ -284,6 +238,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -296,16 +256,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.487
-    rod_dm_over_Lm_nm: 24/190
-    squareness_SQ: 0.74
-    washing: 'chloroform, standard washing (labelled R24A2 in Fig. 4 and Tab. S1: toluene)'
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction (needle long axis)
@@ -313,6 +263,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -325,16 +281,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.487
-    rod_dm_over_Lm_nm: 24/190
-    squareness_SQ: 0.74
-    washing: 'chloroform, standard washing (labelled R24A2 in Fig. 4 and Tab. S1: toluene)'
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction (needle long axis)
@@ -342,6 +288,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -355,16 +307,6 @@
   route: FP
   process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field
     (free rotation in liquid); needle cut from wafer
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.551
-    rod_dm_over_Lm_nm: 28/190
-    squareness_SQ: 0.81
-    washing: toluene, standard washing
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction (needle long axis)
@@ -372,6 +314,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -384,16 +332,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.551
-    rod_dm_over_Lm_nm: 28/190
-    squareness_SQ: 0.81
-    washing: toluene, standard washing
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction (needle long axis)
@@ -401,6 +339,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -413,16 +357,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.551
-    rod_dm_over_Lm_nm: 28/190
-    squareness_SQ: 0.81
-    washing: toluene, standard washing
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction (needle long axis)
@@ -430,6 +364,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -443,16 +383,6 @@
   route: FP
   process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field
     (free rotation in liquid); needle cut from wafer
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.488
-    rod_dm_over_Lm_nm: 28/190
-    squareness_SQ: 0.57
-    washing: toluene, limited washing (large scale)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction (needle long axis)
@@ -460,6 +390,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -472,16 +408,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.488
-    rod_dm_over_Lm_nm: 28/190
-    squareness_SQ: 0.57
-    washing: toluene, limited washing (large scale)
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction (needle long axis)
@@ -489,6 +415,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -501,16 +433,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.488
-    rod_dm_over_Lm_nm: 28/190
-    squareness_SQ: 0.57
-    washing: toluene, limited washing (large scale)
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction (needle long axis)
@@ -518,6 +440,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -531,16 +459,6 @@
   route: FP
   process: polyol Co nanorods washed, dispersed in chloroform and dried at RT in a homogeneous 1 T field
     (free rotation in liquid); needle cut from wafer
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.568
-    rod_dm_over_Lm_nm: 31/190
-    squareness_SQ: 0.69
-    washing: toluene, limited washing (large scale)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction (needle long axis)
@@ -548,6 +466,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -560,16 +484,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.568
-    rod_dm_over_Lm_nm: 31/190
-    squareness_SQ: 0.69
-    washing: toluene, limited washing (large scale)
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction (needle long axis)
@@ -577,6 +491,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -589,16 +509,6 @@
   phase: hcp-Co
   route: FP
   process: as above (field-dried dense nanorod assembly, no matrix)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    parent_texture: none (colloidal rods)
-    magnet_axis: drying-field direction
-    alignment_medium: chloroform suspension dried in the field (no matrix)
-    phi_magnetic: 0.568
-    rod_dm_over_Lm_nm: 31/190
-    squareness_SQ: 0.69
-    washing: toluene, limited washing (large scale)
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction (needle long axis)
@@ -606,6 +516,12 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    parent_texture: none (colloidal rods)
+    magnet_axis: drying-field direction
+    alignment_medium: chloroform suspension dried in the field (no matrix)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -618,11 +534,6 @@
   phase: hcp-Co
   route: FP
   process: polyol Co nanorods (dm 17.5 nm, Lm 120 nm) washed in chloroform, dried in 1 T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    alignment_medium: chloroform suspension dried in field
-    squareness_SQ: 0.86
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
@@ -630,6 +541,10 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension dried in field
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -642,11 +557,6 @@
   phase: hcp-Co
   route: FP
   process: polyol Co nanorods (dm 17.5 nm, Lm 120 nm) washed in toluene, dried in 1 T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    alignment_medium: chloroform suspension dried in field
-    squareness_SQ: 0.75
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
@@ -654,6 +564,10 @@
     ~5 x 0.5 x 0.1 mm); maximum field not stated (loops shown to about +-1.5 T); demagnetisation correction
     not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension dried in field
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -667,13 +581,13 @@
   route: FP
   process: organometallic Co nanorods grafted with liquid crystals / in LC polymer, oriented in a magnetic
     field (statement in Anagnostopoulou 2016 intro, citing Riou 2014)
-  conditions:
-    alignment_medium: liquid-crystalline polymer (grafted)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
   measurement: not stated (review statement)
   n_samples: 1
+  conditions:
+    alignment_medium: liquid-crystalline polymer (grafted)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -686,16 +600,16 @@
   phase: hcp-Co
   route: FP
   process: Co nanorods (dm 20.4 nm, AR 4.5) dried from chloroform under 1 T (pre-aligned pellet/needle)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    alignment_medium: chloroform suspension dried in field
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
   measurement: VSM (PPMS) on needle-shaped assemblies, room temperature, field parallel to the alignment
     direction (loops to +-2 T shown); demagnetisation correction not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension dried in field
   source:
     doi: 10.1016/j.actamat.2017.12.009
     title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent
@@ -709,16 +623,16 @@
   phase: hcp-Co
   route: FP
   process: Co nanorods (dm 10.9 nm, AR 18) dried from chloroform under 1 T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    alignment_medium: chloroform suspension dried in field
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
   measurement: VSM (PPMS) on needle-shaped assemblies, room temperature, field parallel to the alignment
     direction (loops to +-2 T shown); demagnetisation correction not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension dried in field
   source:
     doi: 10.1016/j.actamat.2017.12.009
     title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent
@@ -732,16 +646,16 @@
   phase: hcp-Co
   route: FP
   process: Co nanorods (dm 28.3 nm, AR 6.7) dried from chloroform under 1 T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    alignment_medium: chloroform suspension dried in field
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
   measurement: VSM (PPMS) on needle-shaped assemblies, room temperature, field parallel to the alignment
     direction (loops to +-2 T shown); demagnetisation correction not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension dried in field
   source:
     doi: 10.1016/j.actamat.2017.12.009
     title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent
@@ -756,17 +670,17 @@
   route: FP
   process: dried, randomly agglomerated Co nanorod powder compacted in a die with a 1.7 T field applied
     during consolidation
-  conditions:
-    field_T: 1.7
-    T_process_K: room temperature or 453
-    parent_texture: random dried powder
-    alignment_medium: dry powder in die
   quantity: Mr_over_Ms
   unit: ''
   measured_along: field direction
   measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample
     shape, field parallel to the green-body alignment field
   n_samples: 1
+  conditions:
+    field_T: 1.7
+    T_process_K: room temperature or 453
+    parent_texture: random dried powder
+    alignment_medium: dry powder in die
   source:
     doi: 10.1016/j.actamat.2017.12.009
     title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent
@@ -781,17 +695,16 @@
   route: FP
   process: pre-aligned 10.9 nm rod assembly re-aligned in die (1.7 T), hot compacted 300 MPa, 180 C, 2
     min (magnet I)
-  conditions:
-    field_T: 1.7
-    T_process_K: 453
-    pressure_MPa: 300
-    parent_texture: pre-aligned assembly [redacted]
   quantity: Mr_over_Ms
   unit: ''
   measured_along: green-body alignment field direction
   measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample
     shape, field parallel to the green-body alignment field
   n_samples: 1
+  conditions:
+    field_T: 1.7
+    T_process_K: 453
+    parent_texture: pre-aligned assembly [redacted]
   source:
     doi: 10.1016/j.actamat.2017.12.009
     title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent
@@ -805,19 +718,16 @@
   phase: hcp-Co
   route: FP
   process: pre-aligned 10.9 nm rod assembly, cold compacted 1 GPa at room temperature (magnet III)
-  conditions:
-    field_T: 1.7
-    T_process_K: 295
-    pressure_MPa: 1000
-    phi_magnetic: 0.34
-    density_g_cm3: 5.0
-    parent_texture: pre-aligned assembly [redacted]
   quantity: Mr_over_Ms
   unit: ''
   measured_along: green-body alignment field direction
   measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample
     shape, field parallel to the green-body alignment field
   n_samples: 1
+  conditions:
+    field_T: 1.7
+    T_process_K: 295
+    parent_texture: pre-aligned assembly [redacted]
   source:
     doi: 10.1016/j.actamat.2017.12.009
     title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent
@@ -831,17 +741,16 @@
   phase: hcp-Co
   route: FP
   process: pre-aligned 10.9 nm rod assembly, hot compacted 450 MPa, 180 C, 2 min (magnet II)
-  conditions:
-    field_T: 1.7
-    T_process_K: 453
-    pressure_MPa: 450
-    parent_texture: pre-aligned assembly [redacted]
   quantity: Mr_over_Ms
   unit: ''
   measured_along: green-body alignment field direction
   measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample
     shape, field parallel to the green-body alignment field
   n_samples: 1
+  conditions:
+    field_T: 1.7
+    T_process_K: 453
+    parent_texture: pre-aligned assembly [redacted]
   source:
     doi: 10.1016/j.actamat.2017.12.009
     title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent
@@ -855,18 +764,15 @@
   phase: hcp-Co
   route: FP
   process: pre-aligned 28.3 nm rod assembly, hot compacted 450 MPa, 180 C, 2 min (magnet IV)
-  conditions:
-    field_T: 1.7
-    T_process_K: 453
-    pressure_MPa: 450
-    phi_magnetic: 0.64
-    density_g_cm3: 7.1
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: green-body alignment field direction
   measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample
     shape, field parallel to the green-body alignment field
   n_samples: 1
+  conditions:
+    field_T: 1.7
+    T_process_K: 453
   source:
     doi: 10.1016/j.actamat.2017.12.009
     title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent
@@ -880,16 +786,15 @@
   phase: hcp-Co
   route: FP
   process: consolidated magnets I-IV (see other records)
-  conditions:
-    field_T: 1.7
-    T_process_K: 295-453
-    pressure_MPa: 300-1000
   quantity: '[redacted]'
   unit: T
   measured_along: green-body alignment field direction
   measurement: Metis pulse magnetometer, room temperature, +-3.6 T, demagnetisation corrected from sample
     shape, field parallel to the green-body alignment field
   n_samples: 4
+  conditions:
+    field_T: 1.7
+    T_process_K: 295-453
   source:
     doi: 10.1016/j.actamat.2017.12.009
     title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent
@@ -903,13 +808,13 @@
   phase: hcp-Co
   route: FP
   process: magnet IV (28.3 nm rods, HC 450 MPa) vs II/III
-  conditions:
-    T_process_K: 453
   quantity: texture_metric
   unit: qualitative_xrd_sans
   measured_along: alignment axis in diffraction plane
   measurement: theta-theta XRD (Co K-alpha1) and SANS (PA20, 6 A)
   n_samples: 1
+  conditions:
+    T_process_K: 453
   source:
     doi: 10.1016/j.actamat.2017.12.009
     title: 'Consolidation of cobalt nanorods: A new route for rare-earth free nanostructured permanent
@@ -924,17 +829,14 @@
   route: FP
   process: pre-compacted R10 rod film (dm 10 +- 1 nm, lm 200 +- 46 nm) aligned in a Teflon mould in 1
     T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    pressure_MPa: null
-    phi_magnetic: 0.43
-    rods: R10 (dm 10 nm)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -949,17 +851,14 @@
   route: FP
   process: pre-compacted R10 rod film (dm 10 +- 1 nm, lm 200 +- 46 nm) aligned in a Teflon mould in 1
     T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    pressure_MPa: null
-    phi_magnetic: 0.43
-    rods: R10 (dm 10 nm)
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -974,17 +873,14 @@
   route: FP
   process: pre-compacted R10 rod film (dm 10 +- 1 nm, lm 200 +- 46 nm) aligned in a Teflon mould in 1
     T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    pressure_MPa: null
-    phi_magnetic: 0.43
-    rods: R10 (dm 10 nm)
   quantity: Js_same_sample
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -999,17 +895,14 @@
   route: FP
   process: pre-compacted R10 rod film (dm 10 +- 1 nm, lm 200 +- 46 nm) aligned in a Teflon mould in 1
     T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    pressure_MPa: null
-    phi_magnetic: 0.43
-    rods: R10 (dm 10 nm)
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1023,17 +916,14 @@
   phase: hcp-Co
   route: FP
   process: R10 needles re-aligned in a disc cavity (1.6 T) then hot compacted 300 MPa, 180-190 C, 2 min
-  conditions:
-    field_T: 1.6
-    T_process_K: 458
-    pressure_MPa: 300
-    phi_magnetic: 0.266
-    rods: R10 (dm 10 nm)
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 458
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1047,17 +937,14 @@
   phase: hcp-Co
   route: FP
   process: R10 needles re-aligned in a disc cavity (1.6 T) then hot compacted 300 MPa, 180-190 C, 2 min
-  conditions:
-    field_T: 1.6
-    T_process_K: 458
-    pressure_MPa: 300
-    phi_magnetic: 0.266
-    rods: R10 (dm 10 nm)
   quantity: Js_same_sample
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 458
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1071,17 +958,14 @@
   phase: hcp-Co
   route: FP
   process: R10 needles re-aligned in a disc cavity (1.6 T) then hot compacted 300 MPa, 180-190 C, 2 min
-  conditions:
-    field_T: 1.6
-    T_process_K: 458
-    pressure_MPa: 300
-    phi_magnetic: 0.266
-    rods: R10 (dm 10 nm)
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 458
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1095,17 +979,14 @@
   phase: hcp-Co
   route: FP
   process: the same magnet re-compacted at 450 MPa, 180-190 C, 2 min
-  conditions:
-    field_T: 1.6
-    T_process_K: 458
-    pressure_MPa: 450
-    phi_magnetic: 0.325
-    rods: R10 (dm 10 nm)
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 458
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1119,17 +1000,14 @@
   phase: hcp-Co
   route: FP
   process: the same magnet re-compacted at 450 MPa, 180-190 C, 2 min
-  conditions:
-    field_T: 1.6
-    T_process_K: 458
-    pressure_MPa: 450
-    phi_magnetic: 0.325
-    rods: R10 (dm 10 nm)
   quantity: Js_same_sample
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 458
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1143,17 +1021,14 @@
   phase: hcp-Co
   route: FP
   process: the same magnet re-compacted at 450 MPa, 180-190 C, 2 min
-  conditions:
-    field_T: 1.6
-    T_process_K: 458
-    pressure_MPa: 450
-    phi_magnetic: 0.325
-    rods: R10 (dm 10 nm)
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 458
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1167,17 +1042,14 @@
   phase: hcp-Co
   route: FP
   process: the same magnet finally cold pressed at 1000 MPa under 1.6 T
-  conditions:
-    field_T: 1.6
-    T_process_K: 295
-    pressure_MPa: 1000
-    phi_magnetic: 0.344
-    rods: R10 (dm 10 nm)
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1191,17 +1063,14 @@
   phase: hcp-Co
   route: FP
   process: the same magnet finally cold pressed at 1000 MPa under 1.6 T
-  conditions:
-    field_T: 1.6
-    T_process_K: 295
-    pressure_MPa: 1000
-    phi_magnetic: 0.344
-    rods: R10 (dm 10 nm)
   quantity: Js_same_sample
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1215,17 +1084,14 @@
   phase: hcp-Co
   route: FP
   process: the same magnet finally cold pressed at 1000 MPa under 1.6 T
-  conditions:
-    field_T: 1.6
-    T_process_K: 295
-    pressure_MPa: 1000
-    phi_magnetic: 0.344
-    rods: R10 (dm 10 nm)
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1239,17 +1105,14 @@
   phase: hcp-Co
   route: FP
   process: pre-compacted R30 rod film (dm 30 +- 6 nm, lm 190 +- 40 nm) dried in 1 T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    pressure_MPa: null
-    phi_magnetic: 0.49
-    rods: R30 (dm 30 nm)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1263,17 +1126,14 @@
   phase: hcp-Co
   route: FP
   process: pre-compacted R30 rod film (dm 30 +- 6 nm, lm 190 +- 40 nm) dried in 1 T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    pressure_MPa: null
-    phi_magnetic: 0.49
-    rods: R30 (dm 30 nm)
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1287,17 +1147,14 @@
   phase: hcp-Co
   route: FP
   process: pre-compacted R30 rod film (dm 30 +- 6 nm, lm 190 +- 40 nm) dried in 1 T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    pressure_MPa: null
-    phi_magnetic: 0.49
-    rods: R30 (dm 30 nm)
   quantity: Js_same_sample
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1311,17 +1168,14 @@
   phase: hcp-Co
   route: FP
   process: pre-compacted R30 rod film (dm 30 +- 6 nm, lm 190 +- 40 nm) dried in 1 T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    pressure_MPa: null
-    phi_magnetic: 0.49
-    rods: R30 (dm 30 nm)
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1335,17 +1189,14 @@
   phase: hcp-Co
   route: FP
   process: R30 film hot compacted 450 MPa, 180-190 C (needle-shaped magnet; = Ener 2018 magnet IV)
-  conditions:
-    field_T: 1.0
-    T_process_K: 458
-    pressure_MPa: 450
-    phi_magnetic: 0.64
-    rods: R30 (dm 30 nm)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 458
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1359,17 +1210,14 @@
   phase: hcp-Co
   route: FP
   process: R30 film hot compacted 450 MPa, 180-190 C (needle-shaped magnet; = Ener 2018 magnet IV)
-  conditions:
-    field_T: 1.0
-    T_process_K: 458
-    pressure_MPa: 450
-    phi_magnetic: 0.64
-    rods: R30 (dm 30 nm)
   quantity: '[redacted]'
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 458
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1383,17 +1231,14 @@
   phase: hcp-Co
   route: FP
   process: R30 film hot compacted 450 MPa, 180-190 C (needle-shaped magnet; = Ener 2018 magnet IV)
-  conditions:
-    field_T: 1.0
-    T_process_K: 458
-    pressure_MPa: 450
-    phi_magnetic: 0.64
-    rods: R30 (dm 30 nm)
   quantity: Js_same_sample
   unit: T
   measured_along: alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 458
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1408,16 +1253,15 @@
   route: FP
   process: dried random Co nanorod powder (dm 20 nm, lm 250 nm) mixed with 15 wt% epoxy and pressed at
     150 MPa for 2 min in 1.6 T
-  conditions:
-    field_T: 1.6
-    T_process_K: 295
-    pressure_MPa: 150
-    alignment_medium: dry agglomerated powder + epoxy
   quantity: Mr_over_Ms
   unit: ''
   measured_along: field direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 295
+    alignment_medium: dry agglomerated powder + epoxy
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1432,16 +1276,15 @@
   route: FP
   process: dried random Co nanorod powder pre-aligned in 1.6 T then hot compacted at 180 C, 40 MPa, 2
     min (no binder)
-  conditions:
-    field_T: 1.6
-    T_process_K: 453
-    pressure_MPa: 40
-    alignment_medium: dry agglomerated powder
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: field direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 453
+    alignment_medium: dry agglomerated powder
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1455,15 +1298,15 @@
   phase: hcp-Co
   route: FP
   process: the same rods (dm 20 nm, lm 250 nm) aligned from a chloroform suspension (preliminary)
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    alignment_medium: chloroform suspension
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
   measurement: magnetometry, room temperature (details not stated)
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: chloroform suspension
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1477,17 +1320,15 @@
   phase: hcp-Co
   route: FP
   process: pre-aligned needles (dm 18 nm, lm 320 nm; [redacted]
-  conditions:
-    field_T: 1.6
-    T_process_K: 295
-    pressure_MPa: 70
-    phi_magnetic: 0.39
-    parent_texture: pre-aligned needles [redacted]
   quantity: Mr_over_Ms
   unit: ''
   measured_along: field direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 1.6
+    T_process_K: 295
+    parent_texture: pre-aligned needles [redacted]
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1501,17 +1342,15 @@
   phase: hcp-Co
   route: FP
   process: pre-aligned needles (dm 18 nm, lm 320 nm; [redacted]
-  conditions:
-    field_T: 0
-    T_process_K: <473
-    pressure_MPa: 40
-    phi_magnetic: 0.41
-    parent_texture: pre-aligned needles [redacted]
   quantity: Mr_over_Ms
   unit: ''
   measured_along: pre-alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 0
+    T_process_K: <473
+    parent_texture: pre-aligned needles [redacted]
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1525,15 +1364,14 @@
   phase: hcp-Co
   route: FP
   process: same SPS sample
-  conditions:
-    field_T: 0
-    T_process_K: <473
-    phi_magnetic: 0.41
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: pre-alignment direction
   measurement: Metis pulse magnetometer (TU Darmstadt), room temperature; field along the alignment direction
   n_samples: 1
+  conditions:
+    field_T: 0
+    T_process_K: <473
   source:
     doi: 10.70675/56e09751z2b09z425cz9a17z060d283abcda
     title: 'A new route for rare-earth free permanent magnets : synthesis, structural and magnetic characterizations
@@ -1547,15 +1385,15 @@
   phase: hcp-Co
   route: isotropic
   process: solvothermal Co nanowires (d ~15 nm, L ~200 nm) dispersed and cured in epoxy without field
-  conditions:
-    field_T: 0
-    alignment_medium: epoxy, no field
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: SQUID (Quantum Design MPMS), 300 K; magnetisation calibrated with ICP-MS Co content; maximum
     field not stated in text
   n_samples: 1
+  conditions:
+    field_T: 0
+    alignment_medium: epoxy, no field
   source:
     doi: 10.1038/srep05345
     title: High Energy Product Developed from Cobalt Nanowires
@@ -1568,16 +1406,16 @@
   phase: hcp-Co
   route: FP
   process: same nanowires in toluene/epoxy, cured in a mould in a 2.0 T field
-  conditions:
-    field_T: 2.0
-    T_process_K: 295
-    alignment_medium: epoxy (dilute, cured in field)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction
   measurement: SQUID (Quantum Design MPMS), 300 K; magnetisation calibrated with ICP-MS Co content; maximum
     field not stated in text
   n_samples: 1
+  conditions:
+    field_T: 2.0
+    T_process_K: 295
+    alignment_medium: epoxy (dilute, cured in field)
   source:
     doi: 10.1038/srep05345
     title: High Energy Product Developed from Cobalt Nanowires
@@ -1590,16 +1428,14 @@
   phase: hcp-Co
   route: FP
   process: aligned-in-epoxy loop rescaled to 100% Co volume fraction (authors' estimate)
-  conditions:
-    field_T: 2.0
-    phi_magnetic: 1.0
-    phi_note: assumed 100% (not a real dense magnet)
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: SQUID (Quantum Design MPMS), 300 K; magnetisation calibrated with ICP-MS Co content; maximum
     field not stated in text; [redacted]
   n_samples: 1
+  conditions:
+    field_T: 2.0
   source:
     doi: 10.1038/srep05345
     title: High Energy Product Developed from Cobalt Nanowires
@@ -1612,13 +1448,13 @@
   phase: hcp-Co
   route: FP
   process: aligned nanowires in epoxy (2 T)
-  conditions:
-    field_T: 2.0
   quantity: texture_metric
   unit: qualitative_xrd
   measured_along: XRD along the alignment direction
   measurement: powder XRD, Cu K-alpha
   n_samples: 1
+  conditions:
+    field_T: 2.0
   source:
     doi: 10.1038/srep05345
     title: High Energy Product Developed from Cobalt Nanowires
@@ -1631,15 +1467,15 @@
   phase: hcp-Co
   route: isotropic
   process: Co nanorods (Dm 9 nm, Lm 62 nm) dispersed 0.5-1 vol% in tetracosane, no field
-  conditions:
-    field_T: 0
-    alignment_medium: tetracosane (dilute)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: VSM, room temperature, field along the wire axis for aligned samples; maximum field not
     stated
   n_samples: 1
+  conditions:
+    field_T: 0
+    alignment_medium: tetracosane (dilute)
   source:
     doi: 10.1007/s12274-015-0734-x
     title: Localized magnetization reversal processes in cobalt nanorods with different aspect ratios
@@ -1652,16 +1488,16 @@
   phase: hcp-Co
   route: FP
   process: same rods aligned at 5 T in molten tetracosane (above 330 K), frozen at 300 K
-  conditions:
-    field_T: 5.0
-    T_process_K: 335
-    alignment_medium: molten tetracosane (0.5-1 vol%)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: wire axis (alignment direction)
   measurement: VSM, room temperature, field along the wire axis for aligned samples; maximum field not
     stated
   n_samples: 1
+  conditions:
+    field_T: 5.0
+    T_process_K: 335
+    alignment_medium: molten tetracosane (0.5-1 vol%)
   source:
     doi: 10.1007/s12274-015-0734-x
     title: Localized magnetization reversal processes in cobalt nanorods with different aspect ratios
@@ -1674,15 +1510,15 @@
   phase: hcp-Co
   route: FP
   process: larger rods (Dm ~20 nm) aligned at 5 T in molten tetracosane
-  conditions:
-    field_T: 5.0
-    alignment_medium: molten tetracosane (0.5-1 vol%)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: wire axis
   measurement: VSM, room temperature, field along the wire axis for aligned samples; maximum field not
     stated
   n_samples: several
+  conditions:
+    field_T: 5.0
+    alignment_medium: molten tetracosane (0.5-1 vol%)
   source:
     doi: 10.1007/s12274-015-0734-x
     title: Localized magnetization reversal processes in cobalt nanorods with different aspect ratios
@@ -1695,15 +1531,15 @@
   phase: hcp-Co
   route: FP
   process: washed Co nanowires (dm 13 nm) deposited from toluene on Al foil and dried in 1 T
-  conditions:
-    field_T: 1.0
-    T_process_K: 295
-    alignment_medium: toluene drops evaporated on Al foil
   quantity: Mr_over_Ms
   unit: ''
   measured_along: field direction (presumably)
   measurement: SQUID (MPMS-5S), room temperature; maximum field not stated
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 295
+    alignment_medium: toluene drops evaporated on Al foil
   source:
     doi: 10.1016/j.jssc.2012.08.009
     title: High temperature structural and magnetic properties of cobalt nanorods
@@ -1716,15 +1552,14 @@
   phase: hcp-Co
   route: isotropic
   process: Co nanowire pellet pressed (about 6 t, 13 mm die) without field, packing ~30%
-  conditions:
-    field_T: 0
-    T_process_K: 295
-    phi_magnetic: 0.3
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: SQUID (MPMS-5S), room temperature; maximum field not stated
   n_samples: 1
+  conditions:
+    field_T: 0
+    T_process_K: 295
   source:
     doi: 10.1016/j.jssc.2012.08.009
     title: High temperature structural and magnetic properties of cobalt nanorods
@@ -1737,13 +1572,13 @@
   phase: hcp-Co
   route: isotropic
   process: carbon-coated Co nanorods, random powder, before and after 2 h at 400 C
-  conditions:
-    field_T: 0
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: magnetometry at room temperature (details not stated)
   n_samples: 2
+  conditions:
+    field_T: 0
   source:
     doi: 10.1021/jp3125457
     title: Carbon Coating, Carburization, and High-Temperature Stability Improvement of Cobalt Nanorods
@@ -1756,14 +1591,13 @@
   phase: hcp-CoNi
   route: isotropic
   process: Co80Ni20 nanowire powder pressed (density 4.4 g/cm3), no alignment step
-  conditions:
-    field_T: 0
-    density_g_cm3: 4.4
   quantity: Mr_over_Ms
   unit: ''
   measured_along: not stated
   measurement: SQUID/VSM; maximum field not stated, 300 K
   n_samples: 1
+  conditions:
+    field_T: 0
   source:
     doi: 10.1063/1.2800786
     title: Magnetic nanowires as permanent magnet materials
@@ -1776,14 +1610,14 @@
   phase: hcp-CoNi
   route: FP
   process: Co80Ni20 nanowires in PMMA/toluene solidified under a magnetic field (room temperature)
-  conditions:
-    alignment_medium: PMMA + toluene, solvent evaporated in field
-    field_T: not stated
   quantity: Mr_over_Ms
   unit: ''
   measured_along: easy axis (field direction)
   measurement: SQUID/VSM; maximum field not stated, 300 K
   n_samples: 1
+  conditions:
+    alignment_medium: PMMA + toluene, solvent evaporated in field
+    field_T: not stated
   source:
     doi: 10.1063/1.2800786
     title: Magnetic nanowires as permanent magnet materials
@@ -1796,15 +1630,15 @@
   phase: hcp-CoNi
   route: FP
   process: Co80Ni20 nanowires in liquid toluene frozen (180 K) in 10 kOe; measured at 140 K
-  conditions:
-    field_T: 1.0
-    T_process_K: 180
-    alignment_medium: toluene frozen in field
   quantity: Mr_over_Ms
   unit: ''
   measured_along: field direction
   measurement: SQUID/VSM; maximum field not stated, 140 K
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 180
+    alignment_medium: toluene frozen in field
   source:
     doi: 10.1063/1.2800786
     title: Magnetic nanowires as permanent magnet materials
@@ -1817,14 +1651,14 @@
   phase: hcp-CoNi
   route: FP
   process: same frozen-toluene sample
-  conditions:
-    field_T: 1.0
-    T_process_K: 180
   quantity: texture_metric
   unit: orientation_spread_hwhm_deg (Gaussian, Stoner-Wohlfarth fit)
   measured_along: field direction
   measurement: SQUID/VSM; maximum field not stated, 140 K
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 180
   source:
     doi: 10.1063/1.2800786
     title: Magnetic nanowires as permanent magnet materials
@@ -1837,14 +1671,14 @@
   phase: hcp-Co
   route: isotropic
   process: Co nanowires cast without field in NW powder on Si (no polymer) (film), chloroform
-  conditions:
-    field_T: 0
-    alignment_medium: NW powder on Si (no polymer)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: in-plane (film)
   measurement: VSM, room temperature; maximum field not stated
   n_samples: 1
+  conditions:
+    field_T: 0
+    alignment_medium: NW powder on Si (no polymer)
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -1858,14 +1692,14 @@
   phase: hcp-Co
   route: isotropic
   process: Co nanowires cast without field in PS 192k (film), chloroform
-  conditions:
-    field_T: 0
-    alignment_medium: PS 192k
   quantity: Mr_over_Ms
   unit: ''
   measured_along: in-plane (film)
   measurement: VSM, room temperature; maximum field not stated
   n_samples: 1
+  conditions:
+    field_T: 0
+    alignment_medium: PS 192k
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -1879,14 +1713,14 @@
   phase: hcp-Co
   route: isotropic
   process: Co nanowires cast without field in PMMA 350k (film), chloroform
-  conditions:
-    field_T: 0
-    alignment_medium: PMMA 350k
   quantity: Mr_over_Ms
   unit: ''
   measured_along: in-plane (film)
   measurement: VSM, room temperature; maximum field not stated
   n_samples: 1
+  conditions:
+    field_T: 0
+    alignment_medium: PMMA 350k
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -1900,14 +1734,14 @@
   phase: hcp-Co
   route: isotropic
   process: Co nanowires cast without field in PVP 360k (film), chloroform
-  conditions:
-    field_T: 0
-    alignment_medium: PVP 360k
   quantity: Mr_over_Ms
   unit: ''
   measured_along: in-plane (film)
   measurement: VSM, room temperature; maximum field not stated
   n_samples: 1
+  conditions:
+    field_T: 0
+    alignment_medium: PVP 360k
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -1921,14 +1755,14 @@
   phase: hcp-Co
   route: isotropic
   process: Co nanowires cast without field in PVP 40k (film), chloroform
-  conditions:
-    field_T: 0
-    alignment_medium: PVP 40k
   quantity: Mr_over_Ms
   unit: ''
   measured_along: in-plane (film)
   measurement: VSM, room temperature; maximum field not stated
   n_samples: 1
+  conditions:
+    field_T: 0
+    alignment_medium: PVP 40k
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -1942,14 +1776,14 @@
   phase: hcp-Co
   route: isotropic
   process: Co nanowires cast without field in PVP 10k (film), chloroform
-  conditions:
-    field_T: 0
-    alignment_medium: PVP 10k
   quantity: Mr_over_Ms
   unit: ''
   measured_along: in-plane (film)
   measurement: VSM, room temperature; maximum field not stated
   n_samples: 1
+  conditions:
+    field_T: 0
+    alignment_medium: PVP 10k
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -1963,15 +1797,15 @@
   phase: hcp-Co
   route: FP
   process: Co nanowires cast in PS 192k / chloroform under a homogeneous field (0.6 T per Fig. 5)
-  conditions:
-    field_T: 0.6
-    T_process_K: 283
-    alignment_medium: PS 192k + chloroform, cast ~5 days at ~10 C
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction (in plane)
   measurement: VSM, room temperature
   n_samples: 1
+  conditions:
+    field_T: 0.6
+    T_process_K: 283
+    alignment_medium: PS 192k + chloroform, cast ~5 days at ~10 C
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -1985,14 +1819,14 @@
   phase: hcp-Co
   route: FP
   process: Co nanowires cast in PVP 360k / chloroform under field
-  conditions:
-    field_T: <=0.8 (not stated for this sample)
-    alignment_medium: PVP 360k + chloroform
   quantity: Mr_over_Ms
   unit: ''
   measured_along: alignment direction (in plane)
   measurement: VSM, room temperature
   n_samples: 1
+  conditions:
+    field_T: <=0.8 (not stated for this sample)
+    alignment_medium: PVP 360k + chloroform
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -2006,13 +1840,13 @@
   phase: hcp-Co
   route: FP
   process: Co-PS aligned film
-  conditions:
-    field_T: 0.6
   quantity: texture_metric
   unit: orientation_spread_sigma_deg (Gaussian sigma_phi = sigma_theta, Stoner-Wohlfarth fit)
   measured_along: alignment direction
   measurement: fit of VSM loops
   n_samples: 1
+  conditions:
+    field_T: 0.6
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -2026,12 +1860,12 @@
   phase: hcp-Co
   route: FP
   process: Co-PVP aligned film
-  conditions: {}
   quantity: texture_metric
   unit: orientation_spread_sigma_deg (in-plane sigma_phi; out-of-plane sigma_theta about 20)
   measured_along: alignment direction
   measurement: fit of VSM loops
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -2045,13 +1879,13 @@
   phase: hcp-Co
   route: FP
   process: Co-PS aligned at 0.6 T
-  conditions:
-    field_T: 0.6
   quantity: texture_metric
   unit: orientation_fwhm_deg (TEM image analysis)
   measured_along: alignment direction
   measurement: TEM of ultramicrotomed slices, ImageJ
   n_samples: 1
+  conditions:
+    field_T: 0.6
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -2065,14 +1899,14 @@
   phase: hcp-Co
   route: FP
   process: Co nanowires dried/cast in 0.04 T (NW layer dried on Si)
-  conditions:
-    field_T: 0.04
-    alignment_medium: NW layer dried on Si
   quantity: texture_metric
   unit: '[redacted]'
   measured_along: easy vs hard in-plane
   measurement: VSM, room temperature
   n_samples: 1
+  conditions:
+    field_T: 0.04
+    alignment_medium: NW layer dried on Si
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -2086,14 +1920,14 @@
   phase: hcp-Co
   route: FP
   process: Co nanowires dried/cast in 0.4 T (NW layer dried on Si)
-  conditions:
-    field_T: 0.4
-    alignment_medium: NW layer dried on Si
   quantity: texture_metric
   unit: '[redacted]'
   measured_along: easy vs hard in-plane
   measurement: VSM, room temperature
   n_samples: 1
+  conditions:
+    field_T: 0.4
+    alignment_medium: NW layer dried on Si
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -2107,14 +1941,14 @@
   phase: hcp-Co
   route: FP
   process: Co nanowires dried/cast in 0.2 T (PVP 40k film)
-  conditions:
-    field_T: 0.2
-    alignment_medium: PVP 40k film
   quantity: texture_metric
   unit: '[redacted]'
   measured_along: easy vs hard in-plane
   measurement: VSM, room temperature
   n_samples: 1
+  conditions:
+    field_T: 0.2
+    alignment_medium: PVP 40k film
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -2128,14 +1962,14 @@
   phase: hcp-Co
   route: FP
   process: Co nanowires dried/cast in 0.8 T (PVP 40k film)
-  conditions:
-    field_T: 0.8
-    alignment_medium: PVP 40k film
   quantity: texture_metric
   unit: '[redacted]'
   measured_along: easy vs hard in-plane
   measurement: VSM, room temperature
   n_samples: 1
+  conditions:
+    field_T: 0.8
+    alignment_medium: PVP 40k film
   source:
     doi: 10.1007/s11051-014-2265-x
     title: Optimization of the magnetic properties of aligned Co nanowires/polymer composites for the
@@ -2150,16 +1984,15 @@
   route: isotropic
   process: Co nanorods synthesised by polyol at 170 C in 0.0 T (open reactor), dried, then mechanically
     blocked in resin without organisation (random)
-  conditions:
-    field_T: 0.0
-    T_process_K: 443
-    alignment_medium: none at measurement (random in resin)
-    aspect_ratio: 6.5
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
   n_samples: 1
+  conditions:
+    field_T: 0.0
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
   source:
     doi: 10.3390/nano10020334
     title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with
@@ -2174,16 +2007,15 @@
   route: 'other: field during growth (B1+R)'
   process: Co nanorods synthesised by polyol at 170 C in 0.25 T (open reactor), dried, then mechanically
     blocked in resin without organisation (random)
-  conditions:
-    field_T: 0.25
-    T_process_K: 443
-    alignment_medium: none at measurement (random in resin)
-    aspect_ratio: 10.8
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
   n_samples: 1
+  conditions:
+    field_T: 0.25
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
   source:
     doi: 10.3390/nano10020334
     title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with
@@ -2198,16 +2030,15 @@
   route: 'other: field during growth (B1+R)'
   process: Co nanorods synthesised by polyol at 170 C in 0.5 T (open reactor), dried, then mechanically
     blocked in resin without organisation (random)
-  conditions:
-    field_T: 0.5
-    T_process_K: 443
-    alignment_medium: none at measurement (random in resin)
-    aspect_ratio: 13.1
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
   n_samples: 1
+  conditions:
+    field_T: 0.5
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
   source:
     doi: 10.3390/nano10020334
     title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with
@@ -2222,16 +2053,15 @@
   route: 'other: field during growth (B1+R)'
   process: Co nanorods synthesised by polyol at 170 C in 0.75 T (open reactor), dried, then mechanically
     blocked in resin without organisation (random)
-  conditions:
-    field_T: 0.75
-    T_process_K: 443
-    alignment_medium: none at measurement (random in resin)
-    aspect_ratio: 18.6
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
   n_samples: 1
+  conditions:
+    field_T: 0.75
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
   source:
     doi: 10.3390/nano10020334
     title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with
@@ -2246,16 +2076,15 @@
   route: 'other: field during growth (B1+R)'
   process: Co nanorods synthesised by polyol at 170 C in 1.0 T (open reactor), dried, then mechanically
     blocked in resin without organisation (random)
-  conditions:
-    field_T: 1.0
-    T_process_K: 443
-    alignment_medium: none at measurement (random in resin)
-    aspect_ratio: 20.1
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
   n_samples: 1
+  conditions:
+    field_T: 1.0
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
   source:
     doi: 10.3390/nano10020334
     title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with
@@ -2270,16 +2099,15 @@
   route: 'other: field during growth (B1+R)'
   process: Co nanorods synthesised by polyol at 170 C in 1.25 T (open reactor), dried, then mechanically
     blocked in resin without organisation (random)
-  conditions:
-    field_T: 1.25
-    T_process_K: 443
-    alignment_medium: none at measurement (random in resin)
-    aspect_ratio: 28.2
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: magnetometer, 300 K, -2 to +2 T (loops saturated above 1.5 T)
   n_samples: 1
+  conditions:
+    field_T: 1.25
+    T_process_K: 443
+    alignment_medium: none at measurement (random in resin)
   source:
     doi: 10.3390/nano10020334
     title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with
@@ -2294,15 +2122,15 @@
   route: FP
   process: rods grown in 1.25 T (closed reactor, L/D 37.5) dispersed in liquid toluene, frozen below 140
     K in 50 kOe; measured at 140 K
-  conditions:
-    field_T: 5.0
-    T_process_K: 140
-    alignment_medium: toluene frozen in field
   quantity: Mr_over_Ms
   unit: ''
   measured_along: field direction
   measurement: SQUID magnetometer at 140 K
   n_samples: 1
+  conditions:
+    field_T: 5.0
+    T_process_K: 140
+    alignment_medium: toluene frozen in field
   source:
     doi: 10.3390/nano10020334
     title: Enhanced Magnetic Behavior of Cobalt Nano-Rods Elaborated by the Polyol Process Assisted with
@@ -2316,14 +2144,13 @@
   phase: FeCo-elongated
   route: FP
   process: ESD Fe particles (150 A, L/D 3:1) aligned in a field and compacted (laboratory)
-  conditions:
-    alignment_medium: powder/slurry (details not in abstract)
-    phi_magnetic: varied (not in abstract)
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: 1
+  conditions:
+    alignment_medium: powder/slurry (details not in abstract)
   source:
     doi: 10.1063/1.1721888
     title: Permanent-Magnet Properties of Elongated Single-Domain Iron Particles
@@ -2336,13 +2163,12 @@
   phase: FeCo-elongated
   route: FP
   process: 40:60 Co-Fe ESD particles compacted to various packing densities and degrees of alignment
-  conditions:
-    phi_magnetic: varied (not in abstract)
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1063/1.1722744
     title: Reproducing the Properties of Alnico Permanent Magnet Alloys with Elongated Single-Domain Cobalt-Iron
@@ -2356,12 +2182,12 @@
   phase: FeCo-elongated
   route: FP
   process: ESD iron particle magnets (laboratory, electrolysis into Hg)
-  conditions: {}
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1063/1.2000392
     title: Development of Elongated Particle Magnets
@@ -2374,12 +2200,12 @@
   phase: FeCo-elongated
   route: FP
   process: ESD iron-cobalt particle magnets (laboratory, electrolysis into Hg)
-  conditions: {}
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1063/1.2000392
     title: Development of Elongated Particle Magnets
@@ -2392,13 +2218,12 @@
   phase: FeCo-elongated
   route: FP
   process: commercial ESD iron magnets (particles in metallic matrix)
-  conditions:
-    matrix: metallic
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: commercial product
+  conditions: {}
   source:
     doi: 10.1063/1.2185852
     title: Recent Developments in the Field of Elongated Single-Domain Iron and Iron-Cobalt Permanent
@@ -2412,13 +2237,12 @@
   phase: FeCo-elongated
   route: FP
   process: commercial ESD iron-cobalt magnets (particles in metallic matrix)
-  conditions:
-    matrix: metallic
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: commercial product
+  conditions: {}
   source:
     doi: 10.1063/1.2185852
     title: Recent Developments in the Field of Elongated Single-Domain Iron and Iron-Cobalt Permanent
@@ -2432,12 +2256,12 @@
   phase: FeCo-elongated
   route: FP
   process: compacts of ESD iron particles with metal or organic matrices
-  conditions: {}
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1063/1.1723110
     title: Physical and Magnetic Properties of Elongated Single-Domain Iron and Iron-Cobalt Permanent
@@ -2451,12 +2275,12 @@
   phase: FeCo-elongated
   route: FP
   process: compacts of ESD iron-cobalt particles with metal or organic matrices
-  conditions: {}
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1063/1.1723110
     title: Physical and Magnetic Properties of Elongated Single-Domain Iron and Iron-Cobalt Permanent
@@ -2470,12 +2294,12 @@
   phase: FeCo-elongated
   route: FP
   process: commercial ESD iron magnets (Hg electrodeposition, field alignment twice, matrix)
-  conditions: {}
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1179/pom.1959.2.4.006
     title: PERMANENT MAGNETS FROM ELONGATED SINGLE-DOMAIN PARTICLES
@@ -2488,12 +2312,12 @@
   phase: FeCo-elongated
   route: FP
   process: commercial ESD iron-cobalt magnets (Hg electrodeposition, field alignment twice, matrix)
-  conditions: {}
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1179/pom.1959.2.4.006
     title: PERMANENT MAGNETS FROM ELONGATED SINGLE-DOMAIN PARTICLES
@@ -2506,12 +2330,12 @@
   phase: FeCo-elongated
   route: FP
   process: laboratory ESD iron magnets (Hg electrodeposition, field alignment twice, matrix)
-  conditions: {}
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1179/pom.1959.2.4.006
     title: PERMANENT MAGNETS FROM ELONGATED SINGLE-DOMAIN PARTICLES
@@ -2524,12 +2348,12 @@
   phase: FeCo-elongated
   route: FP
   process: laboratory ESD iron-cobalt magnets (Hg electrodeposition, field alignment twice, matrix)
-  conditions: {}
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: alignment direction
   measurement: demagnetisation curve along the alignment direction (details not in abstract)
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1179/pom.1959.2.4.006
     title: PERMANENT MAGNETS FROM ELONGATED SINGLE-DOMAIN PARTICLES
@@ -2542,12 +2366,12 @@
   phase: FeCo-elongated
   route: FP
   process: oriented ESD Fe compacts at several packing fractions; demagnetisation curves vs angle
-  conditions: {}
   quantity: texture_metric
   unit: qualitative_angular_[redacted]
   measured_along: angle to alignment axis
   measurement: demagnetisation curves vs angle
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1063/1.1984605
     title: Angular Variation of the Magnetic Properties of Elongated Single-Domain Iron Particles
@@ -2560,16 +2384,14 @@
   phase: Co3C
   route: isotropic
   process: polyol Co2C+Co3C nanoparticle powder, rinsed and dried, measured as free (not compacted) powder
-  conditions:
-    field_T: 0
-    phi_magnetic: not stated (free powder)
-    phases: Co3C + Co2C
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: not applicable (random powder)
   measurement: VSM at room temperature, max ~17 kOe (not saturating per authors); magnetisation corrected
     for graphitic shell; demagnetisation not stated
   n_samples: 1
+  conditions:
+    field_T: 0
   source:
     doi: 10.1088/0022-3727/43/16/165003
     title: 'High coercivity cobalt carbide nanoparticles processed via polyol reaction: a new permanent
@@ -2583,14 +2405,13 @@
   phase: Co3C
   route: isotropic
   process: CoxC (Co2C+Co3C) nanocomposite of capped nanorods from polyol (0.25 M OH-/Cl-)
-  conditions:
-    field_T: 0
-    phases: Co3C + Co2C
   quantity: '[redacted]'
   unit: kJ/m3
   measured_along: not stated
   measurement: room temperature magnetometry (abstract only)
   n_samples: 1
+  conditions:
+    field_T: 0
   source:
     doi: 10.1063/1.3677816
     title: Size and phase control of cobalt–carbide nanoparticles using OH− and Cl− anions in a polyol
@@ -2605,13 +2426,13 @@
   route: isotropic
   process: Co3C nanoparticle assembly made without field (El-Gendy et al. data), interpreted with an LLG/Stoner-Wohlfarth
     model of 16 interacting 4 nm particles
-  conditions:
-    field_T: 0
   quantity: texture_metric
   unit: model_inferred_orientation_window_deg
   measured_along: measuring field direction
   measurement: LLG simulation fitted to published M(H)
   n_samples: 1
+  conditions:
+    field_T: 0
   source:
     doi: 10.1016/j.jmmm.2018.08.026
     title: Magnetic behaviour of assemblies of interacting cobalt-carbide nanoparticles
@@ -2625,16 +2446,16 @@
   route: FP
   process: epsilon-Rh0.14Fe1.86O3 nanoparticles (~35 nm, silica-etched) in UV-curing resin oriented in
     12.7 kOe, UV-cured
-  conditions:
-    field_T: 1.27
-    T_process_K: 295
-    alignment_medium: UV-curing resin (dilute)
-    composition: Rh0.14Fe1.86O3
   quantity: Mr_over_Ms
   unit: ''
   measured_along: orientation field direction (presumably)
   measurement: SQUID (MPMS 7), 300 K, max ~55 kOe, NOT saturating (Ha = 53 kOe); ratio is [redacted]
   n_samples: 1
+  conditions:
+    field_T: 1.27
+    T_process_K: 295
+    alignment_medium: UV-curing resin (dilute)
+    composition: Rh0.14Fe1.86O3
   source:
     doi: 10.1038/ncomms2038
     title: Hard magnetic ferrite with a gigantic coercivity and high frequency millimetre wave rotation
@@ -2647,14 +2468,14 @@
   phase: epsilon-Fe2O3
   route: isotropic
   process: non-oriented epsilon-Rh0.14Fe1.86O3 nanoparticle powder
-  conditions:
-    field_T: 0
-    composition: Rh0.14Fe1.86O3
   quantity: Mr_over_Ms
   unit: ''
   measured_along: any (random)
   measurement: SQUID, 300 K, max ~50 kOe, not saturating; ratio [redacted]
   n_samples: 1
+  conditions:
+    field_T: 0
+    composition: Rh0.14Fe1.86O3
   source:
     doi: 10.1038/ncomms2038
     title: Hard magnetic ferrite with a gigantic coercivity and high frequency millimetre wave rotation
@@ -2668,15 +2489,15 @@
   route: FP
   process: 8.2 nm epsilon-Fe2O3 (S-1020) dispersed in a vehicle matrix and dried under an external field
     into an oriented film
-  conditions:
-    field_T: not stated
-    alignment_medium: vehicle matrix film
-    particle_size_nm: 8.2
   quantity: Mr_over_Ms
   unit: ''
   measured_along: parallel to easy axis (a, normal to film)
   measurement: magnetometer, 300 K, +-60 kOe (saturated); demagnetisation correction not stated
   n_samples: 1
+  conditions:
+    field_T: not stated
+    alignment_medium: vehicle matrix film
+    particle_size_nm: 8.2
   source:
     doi: 10.1038/srep14414
     title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric
@@ -2690,12 +2511,12 @@
   phase: epsilon-Fe2O3
   route: FP
   process: same oriented film
-  conditions: {}
   quantity: texture_metric
   unit: qualitative_xrd
   measured_along: film normal
   measurement: XRPD (Cu K-alpha)
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1038/srep14414
     title: Nanometer-size hard magnetic ferrite exhibiting high optical-transparency and nonlinear optical-magnetoelectric
@@ -2710,15 +2531,15 @@
   route: EP
   process: 'PLD epsilon-Fe2O3 film on AlFeO3-buffered Nb:SrTiO3(111): c out of plane, six 60-deg in-plane
     domains'
-  conditions:
-    T_process_K: not stated
-    substrate: AlFeO3/Nb:SrTiO3(111)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: in-plane
   measurement: magnetometry at room temperature, substrate and buffer contributions subtracted; maximum
     field not stated
   n_samples: 1
+  conditions:
+    T_process_K: not stated
+    substrate: AlFeO3/Nb:SrTiO3(111)
   source:
     doi: 10.1002/adma.201400990
     title: Multiferroic Iron Oxide Thin Films at Room Temperature
@@ -2731,12 +2552,12 @@
   phase: epsilon-Fe2O3
   route: EP
   process: same film
-  conditions: {}
   quantity: Js_same_sample
   unit: T
   measured_along: in-plane
   measurement: magnetometry at room temperature
   n_samples: 1
+  conditions: {}
   source:
     doi: 10.1002/adma.201400990
     title: Multiferroic Iron Oxide Thin Films at Room Temperature
@@ -2750,15 +2571,15 @@
   route: isotropic
   process: 'CAPAD-densified Fe-O/Si-O (IO-90, ~89% dense) annealed 1025 C / 1 h: epsilon nanorods (56
     x 195 nm) in thin silica, minor alpha'
-  conditions:
-    field_T: 0
-    T_process_K: 723-873 (CAPAD) then 1298 (anneal)
-    density_rel: 0.89
   quantity: '[redacted]'
   unit: T
   measured_along: not stated
   measurement: VSM at 300 K, volume-normalised
   n_samples: 1
+  conditions:
+    field_T: 0
+    T_process_K: 723-873 (CAPAD) then 1298 (anneal)
+    density_rel: 0.89
   source:
     doi: null
     title: Phase Control and Processing Methods for High-Coercivity Magnets based on Metastable Fe2O3
@@ -2772,16 +2593,15 @@
   route: EP
   process: Fe0.36Co0.64 (3 ML)/Pt (7 ML) x 23 superlattice sputtered on Pt/MgO(001) at 470 K; c axis normal
     to film (single variant by epitaxy), c/a = 1.18
-  conditions:
-    T_process_K: 470
-    substrate: Pt buffer/MgO(001)
-    Ku_over_Kd_40K: ~1.16 (2.9 vs 2.5 MJ/m3)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: perpendicular (film normal = c axis)
   measurement: 'polar MOKE normalised to SQUID Ms, 300 K, NOT demagnetisation-corrected (thin film, N
     ~ 1): loop sheared by the film demagnetising field'
   n_samples: 1
+  conditions:
+    T_process_K: 470
+    substrate: Pt buffer/MgO(001)
   source:
     doi: 10.1103/physrevlett.96.037205
     title: Perpendicular Magnetocrystalline Anisotropy in Tetragonally Distorted Fe-Co Alloys
@@ -2795,15 +2615,15 @@
   route: FP
   process: finely ground polycrystal powder sprinkled on grease-coated glass slide over a strong permanent
     magnet (room temperature)
-  conditions:
-    field_T: not stated (permanent magnet)
-    T_process_K: 295
-    alignment_medium: vacuum grease on slide
   quantity: texture_metric
   unit: qualitative_xrd
   measured_along: normal to sample plane (field direction)
   measurement: powder XRD (Cu K-alpha1), room temperature
   n_samples: 1
+  conditions:
+    field_T: not stated (permanent magnet)
+    T_process_K: 295
+    alignment_medium: vacuum grease on slide
   source:
     doi: 10.1063/1.4934496
     title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and
@@ -2818,15 +2638,15 @@
   route: FP
   process: finely ground polycrystal powder sprinkled on grease-coated glass slide over a strong permanent
     magnet (room temperature)
-  conditions:
-    field_T: not stated (permanent magnet)
-    T_process_K: 295
-    alignment_medium: vacuum grease on slide
   quantity: texture_metric
   unit: qualitative_xrd
   measured_along: normal to sample plane (field direction)
   measurement: powder XRD (Cu K-alpha1), room temperature
   n_samples: 1
+  conditions:
+    field_T: not stated (permanent magnet)
+    T_process_K: 295
+    alignment_medium: vacuum grease on slide
   source:
     doi: 10.1063/1.4934496
     title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and
@@ -2841,15 +2661,15 @@
   route: FP
   process: finely ground polycrystal powder sprinkled on grease-coated glass slide over a strong permanent
     magnet (room temperature)
-  conditions:
-    field_T: not stated (permanent magnet)
-    T_process_K: 295
-    alignment_medium: vacuum grease on slide
   quantity: texture_metric
   unit: qualitative_xrd
   measured_along: normal to sample plane (field direction)
   measurement: powder XRD (Cu K-alpha1), room temperature
   n_samples: 1
+  conditions:
+    field_T: not stated (permanent magnet)
+    T_process_K: 295
+    alignment_medium: vacuum grease on slide
   source:
     doi: 10.1063/1.4934496
     title: Magnetic and structural properties of ferromagnetic Fe5PB2 and Fe5SiB2 and effects of Co and
@@ -2864,13 +2684,13 @@
   route: isotropic
   process: arc-melted/drop-synthesised, annealed 1273 K 33 days, polycrystalline bulk (Fe5SiB2, Fe5Si0.5P0.5B2,
     Fe5PB2)
-  conditions:
-    field_T: 0
   quantity: Mr_over_Ms
   unit: ''
   measured_along: not applicable
   measurement: magnetometry M(H) at 300 K
   n_samples: 3
+  conditions:
+    field_T: 0
   source:
     doi: 10.1103/physrevb.96.094433
     title: Magnetic properties of the Fe5SiB2−Fe5PB2 system
@@ -2883,15 +2703,15 @@
   phase: Fe3Sn
   route: FP
   process: <37 um single-crystal-grain powder in epoxy (gelcap) cured in 4 T along the capsule axis
-  conditions:
-    field_T: 4.0
-    T_process_K: 295
-    alignment_medium: epoxy in gelcap
   quantity: texture_metric
   unit: qualitative_xrd
   measured_along: capsule axis
   measurement: powder XRD
   n_samples: 1
+  conditions:
+    field_T: 4.0
+    T_process_K: 295
+    alignment_medium: epoxy in gelcap
   source:
     doi: 10.1038/srep07024
     title: Ferromagnetism of Fe3Sn and Alloys
@@ -2904,14 +2724,14 @@
   phase: Mn4N
   route: EP
   process: reactive sputtering of sub-20 nm Mn4N films on annealed MgO at 400-450 C (perpendicular anisotropy)
-  conditions:
-    T_process_K: 673-723
-    substrate: MgO
   quantity: Mr_over_Ms
   unit: ''
   measured_along: out of plane (perpendicular)
   measurement: magnetometry at room temperature (details in paper)
   n_samples: 1
+  conditions:
+    T_process_K: 673-723
+    substrate: MgO
   source:
     doi: 10.1063/5.0032167
     title: Rare-earth-free ferrimagnetic Mn4N sub-20 nm thin films as potential high-temperature spintronic

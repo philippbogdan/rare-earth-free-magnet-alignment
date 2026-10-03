@@ -720,3 +720,52 @@
   melt: {primary: unknown, reason: "primary crystallisation from a melt unpublished", refs: []}
   epitaxy: {}
   tgg: {}
+
+# ------------------------------------------------------------------ LTP MnBi
+- id: LTP-MnBi
+  name: "LTP MnBi (NiAs-type)"
+  universe: LTP-MnBi
+  structure: {system: hexagonal, a: {ref: mnbi_lattice_mcguire2014, key: a}, c: {ref: mnbi_lattice_mcguire2014, key: c}, laue: 6/mmm}
+  easy_axis_vec: [0, 0, 1]
+  easy_axis: {ref: mnbi_easyaxis_mcguire2014}
+  Js: {ref: mnbi_js_tang2022}
+  K1: {ref: mnbi_k1_kronmuller2014}
+  Tc: {ref: mnbi_tc_mcguire2014}
+  T_stab: {ref: mnbi_tstab_antonov2020}
+  cell: {atoms: 4, magnetic_fraction: 0.5}
+  phi_routes:
+    FS: {est: 0.15, why: "MnBi volume fraction of a Bi-rich alloy at the liquidus composition (~10 at.% Mn, mnbi_primcryst_mitsui2013_fig1) where LTP is primary, with X-ray densities of MnBi (9.0 g/cm3, mnbi_density_mcguire2014_xray) and Bi"}
+    DS: {ref: mnbi_phi_eutectic_pirich1980}
+  paths:
+    - name: LTP primary crystals from Bi-rich melts below 628 K
+      mode: direct
+      refs: [mnbi_primcryst_mcguire2014, mnbi_primcryst_mitsui2013_fig1, mnbi_primcryst_ren2006]
+      T_f: [{ref: mnbi_tstab_antonov2020_eutectic}, {ref: mnbi_tstab_antonov2020}]
+    - name: solid-state reaction of Mn + Bi below the eutectic
+      mode: direct
+      refs: [mnbi_tformation_weissitsch2023, mnbi_tformation_miyazaki2017]
+      T_f: [{est: 503, why: "230 C, mnbi_tformation_weissitsch2023"}, {est: 523, why: "250 C, mnbi_tformation_miyazaki2017"}]
+    - name: crystallisation of amorphous melt-spun MnBi
+      mode: direct
+      refs: [mnbi_tformation_guo1990, mnbi_tformation_qian2020]
+      T_f: [{ref: mnbi_tformation_guo1990}, {ref: mnbi_tformation_guo1990}]
+    - name: HTP (paramagnetic, primary 628-719 K) -> LTP on cooling at ~613 K
+      mode: OR
+      OR: unknown
+      OR_analogue: {plane_P: [0, 0, 0, 1], plane_H: [0, 0, 0, 1], dir_P: [1, 1, -2, 0], dir_H: [1, 1, -2, 0], ref: mnbi_structure_koyama2008_htp}
+      OR_analogue_name: "a shared NiAs framework (c axis carried over)"
+      refs: [mnbi_formationpath_chen1974a, mnbi_structure_koyama2008_htp]
+      parent:
+        name: HTP Mn1.08Bi
+        structure: {system: hexagonal, a: {ref: mnbi_lattice_mcguire2014, key: a}, c: {ref: mnbi_lattice_mcguire2014, key: c}, laue: 6/mmm}
+        family: hexagonal
+      T_f: [{est: 613, why: "HTP -> LTP on cooling (mnbi_formationpath_chen1974a)"}, {ref: mnbi_tstab_antonov2020}]
+  particles:
+    single_variant: 'yes'
+    reason: "single-crystal fine particles are field-aligned and sintered in established routes; LTP single crystals grow from Bi flux"
+    refs: [mnbi_singlevariant_gabay2020a, mnbi_singlevariant_tang2022, mnbi_primcryst_mcguire2014]
+    habit: {shape: rod, easy: axis, single_crystal: true, refs: [mnbi_growthdir_yim1967, mnbi_primcryst_ren2006], reason: "LTP grows as rods/needles with c along the long axis"}
+  ds_texture: {dir: [0, 0, 0, 1], refs: [mnbi_growthdir_yim1967, mnbi_growthdir_larson1988, mnbi_growthdir_pirich1980spar6]}
+  melt: {primary: hard, reason: "LTP crystals grow and turn freely in liquid Bi below 628 K", refs: [mnbi_fieldeffect_wang2003, mnbi_fieldeffect_ren2006, mnbi_primcryst_mitsui2013_fig1]}
+  epitaxy: {demonstrated: true, refs: [mnbi_or_antonov2020_films]}
+  tgg: {}

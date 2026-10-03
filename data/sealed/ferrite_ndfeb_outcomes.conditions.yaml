@@ -2,19 +2,18 @@
   phase: BaFe12O19
   route: isotropic
   process: Ferroxdure (sintered BaFe12O19-based ceramic, random grain orientation)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: any direction (isotropic)
+  measurement: not stated
+  n_samples: material class (typical)
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: none
     magnet_axis: any (isotropic)
     density_rel: null
-    density_g_cm3: 4.8
     la_co: 'no'
-  quantity: '[redacted]'
-  unit: T
-  measured_along: any direction (isotropic)
-  measurement: not stated
-  n_samples: material class (typical)
   source:
     doi: null
     title: Ferroxdure, a class of new permanent magnet materials
@@ -27,6 +26,11 @@
   phase: BaFe12O19
   route: isotropic
   process: sintered Ferroxdure, approximate composition BaFe12O19
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: any direction (isotropic)
+  measurement: '[redacted]'
+  n_samples: not stated
   conditions:
     field_T: null
     T_process_K: null
@@ -34,11 +38,6 @@
     magnet_axis: any (isotropic)
     density_rel: null
     la_co: 'no'
-  quantity: Mr_over_Ms
-  unit: ''
-  measured_along: any direction (isotropic)
-  measurement: '[redacted]'
-  n_samples: not stated
   source:
     doi: null
     title: Ferroxdure, a class of new permanent magnet materials
@@ -51,6 +50,11 @@
   phase: BaFe12O19
   route: isotropic
   process: Ferroxdure I (isotropic sintered BaM), production material
+  quantity: '[redacted]'
+  unit: T
+  measured_along: any (isotropic)
+  measurement: average value of production material (Table II)
+  n_samples: average of production
   conditions:
     field_T: null
     T_process_K: null
@@ -58,11 +62,6 @@
     magnet_axis: any (isotropic)
     density_rel: null
     la_co: 'no'
-  quantity: '[redacted]'
-  unit: T
-  measured_along: any (isotropic)
-  measurement: average value of production material (Table II)
-  n_samples: average of production
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -75,6 +74,11 @@
   phase: M-type ferrite (unspecified)
   route: isotropic
   process: commercial isotropic sintered ferrite grade F10
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: datasheet minimum value
+  n_samples: grade minimum
   conditions:
     field_T: null
     T_process_K: null
@@ -82,11 +86,6 @@
     magnet_axis: any (isotropic)
     density_rel: null
     la_co: unknown
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: datasheet minimum value
-  n_samples: grade minimum
   source:
     doi: null
     title: Goudsmit ferrite grade system (ferrite grades available at Goudsmit)
@@ -99,6 +98,11 @@
   phase: M-type ferrite (unspecified)
   route: isotropic
   process: commercial isotropic sintered ferrite grade C1 (US designation)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: datasheet typical
+  n_samples: grade typical
   conditions:
     field_T: null
     T_process_K: null
@@ -106,11 +110,6 @@
     magnet_axis: any (isotropic)
     density_rel: null
     la_co: unknown
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: datasheet typical
-  n_samples: grade typical
   source:
     doi: null
     title: Technical Data Sheet - Ferrite Magnets / Ceramic Magnets
@@ -123,20 +122,19 @@
   route: FP
   process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried,
     sintered at 1250 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: parallel to alignment field
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1523
     parent_texture: none
     magnet_axis: field direction
     density_rel: 0.766
-    density_g_cm3: 4.06
     la_co: 'no'
     consolidation: wet (aqueous sludge) pressing in field, then sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: parallel to alignment field
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -150,20 +148,19 @@
   route: FP
   process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried,
     sintered at 1250 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: perpendicular to alignment field
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1523
     parent_texture: none
     magnet_axis: field direction
     density_rel: 0.766
-    density_g_cm3: 4.06
     la_co: 'no'
     consolidation: wet (aqueous sludge) pressing in field, then sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: perpendicular to alignment field
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -177,20 +174,19 @@
   route: FP
   process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried,
     sintered at 1275 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: parallel to alignment field
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1548
     parent_texture: none
     magnet_axis: field direction
     density_rel: 0.823
-    density_g_cm3: 4.36
     la_co: 'no'
     consolidation: wet (aqueous sludge) pressing in field, then sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: parallel to alignment field
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -204,20 +200,19 @@
   route: FP
   process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried,
     sintered at 1275 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: perpendicular to alignment field
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1548
     parent_texture: none
     magnet_axis: field direction
     density_rel: 0.823
-    density_g_cm3: 4.36
     la_co: 'no'
     consolidation: wet (aqueous sludge) pressing in field, then sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: perpendicular to alignment field
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -231,20 +226,19 @@
   route: FP
   process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried,
     sintered at 1300 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: parallel to alignment field
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1573
     parent_texture: none
     magnet_axis: field direction
     density_rel: 0.879
-    density_g_cm3: 4.66
     la_co: 'no'
     consolidation: wet (aqueous sludge) pressing in field, then sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: parallel to alignment field
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -258,20 +252,19 @@
   route: FP
   process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried,
     sintered at 1300 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: perpendicular to alignment field
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1573
     parent_texture: none
     magnet_axis: field direction
     density_rel: 0.879
-    density_g_cm3: 4.66
     la_co: 'no'
     consolidation: wet (aqueous sludge) pressing in field, then sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: perpendicular to alignment field
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -285,20 +278,19 @@
   route: FP
   process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried,
     sintered at 1320 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: parallel to alignment field
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1593
     parent_texture: none
     magnet_axis: field direction
     density_rel: 0.913
-    density_g_cm3: 4.84
     la_co: 'no'
     consolidation: wet (aqueous sludge) pressing in field, then sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: parallel to alignment field
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -312,20 +304,19 @@
   route: FP
   process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried,
     sintered at 1320 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: perpendicular to alignment field
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1593
     parent_texture: none
     magnet_axis: field direction
     density_rel: 0.913
-    density_g_cm3: 4.84
     la_co: 'no'
     consolidation: wet (aqueous sludge) pressing in field, then sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: perpendicular to alignment field
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -339,20 +330,19 @@
   route: FP
   process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried,
     sintered at 1340 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: parallel to alignment field
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1613
     parent_texture: none
     magnet_axis: field direction
     density_rel: 0.921
-    density_g_cm3: 4.88
     la_co: 'no'
     consolidation: wet (aqueous sludge) pressing in field, then sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: parallel to alignment field
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -366,20 +356,19 @@
   route: FP
   process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried,
     sintered at 1340 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: perpendicular to alignment field
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1613
     parent_texture: none
     magnet_axis: field direction
     density_rel: 0.921
-    density_g_cm3: 4.88
     la_co: 'no'
     consolidation: wet (aqueous sludge) pressing in field, then sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: perpendicular to alignment field
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -392,6 +381,11 @@
   phase: BaFe12O19
   route: FP
   process: 'Ferroxdure II: anisotropic BaM, wet-pressed in magnetic field and sintered (production, 1954)'
+  quantity: '[redacted]'
+  unit: T
+  measured_along: alignment direction
+  measurement: product specification range
+  n_samples: grade range
   conditions:
     field_T: null
     T_process_K: null
@@ -399,12 +393,6 @@
     magnet_axis: field direction
     density_rel: null
     la_co: 'no'
-    density_g_cm3: 4.8-4.9 (Table II)
-  quantity: '[redacted]'
-  unit: T
-  measured_along: alignment direction
-  measurement: product specification range
-  n_samples: grade range
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -417,6 +405,11 @@
   phase: BaFe12O19
   route: FP
   process: 'Ferroxdure III: anisotropic BaM (higher coercivity variant), field-pressed and sintered'
+  quantity: '[redacted]'
+  unit: T
+  measured_along: alignment direction
+  measurement: product specification range
+  n_samples: grade range
   conditions:
     field_T: null
     T_process_K: null
@@ -424,11 +417,6 @@
     magnet_axis: field direction
     density_rel: null
     la_co: 'no'
-  quantity: '[redacted]'
-  unit: T
-  measured_along: alignment direction
-  measurement: product specification range
-  n_samples: grade range
   source:
     doi: null
     title: Ferroxdure II and III, anisotropic permanent magnet materials
@@ -441,6 +429,11 @@
   phase: BaFe12O19
   route: FP
   process: oriented barium ferrite specimens sintered at 1100 °C
+  quantity: texture_metric
+  unit: pole_figure_max_[redacted]
+  measured_along: c-axis frequency in preferred direction (fibre texture)
+  measurement: radiographic (X-ray) texture measurement
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1373
@@ -448,11 +441,6 @@
     magnet_axis: fibre (c) axis
     density_rel: null
     la_co: 'no'
-  quantity: texture_metric
-  unit: pole_figure_max_[redacted]
-  measured_along: c-axis frequency in preferred direction (fibre texture)
-  measurement: radiographic (X-ray) texture measurement
-  n_samples: 1
   source:
     doi: 10.1109/tmag.1966.1065942
     title: Changes in crystal texture of barium ferrite upon sintering
@@ -465,6 +453,11 @@
   phase: BaFe12O19
   route: FP
   process: oriented barium ferrite specimens sintered at 1350 °C
+  quantity: texture_metric
+  unit: pole_figure_max_[redacted]
+  measured_along: c-axis frequency in preferred direction (fibre texture)
+  measurement: radiographic (X-ray) texture measurement
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1623
@@ -472,11 +465,6 @@
     magnet_axis: fibre (c) axis
     density_rel: null
     la_co: 'no'
-  quantity: texture_metric
-  unit: pole_figure_max_[redacted]
-  measured_along: c-axis frequency in preferred direction (fibre texture)
-  measurement: radiographic (X-ray) texture measurement
-  n_samples: 1
   source:
     doi: 10.1109/tmag.1966.1065942
     title: Changes in crystal texture of barium ferrite upon sintering
@@ -490,6 +478,11 @@
   route: 'other: not stated (high-energy modified Sr ferrite magnet)'
   process: modified strontium ferrite magnet (composition modifications in M1O-M2O-Fe2O3 systems), typical
     production values
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: rapid test method on several thousand specimens
+  n_samples: typical values
   conditions:
     field_T: null
     T_process_K: null
@@ -497,11 +490,6 @@
     magnet_axis: not stated
     density_rel: null
     la_co: 'no'
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: rapid test method on several thousand specimens
-  n_samples: typical values
   source:
     doi: 10.1063/1.1729468
     title: Modified Strontium Ferrite, a New Permanent Magnet Material
@@ -515,6 +503,11 @@
   route: FP
   process: Sr1-xLaxCoxFe12-xO19 (x = 0.3) calcined 1200 °C, milled to submicron, wet-pressed (xylene+oleic
     acid) in ~10 kOe, sintered 1180-1240 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: alignment direction
+  measurement: not stated in abstract (DC recording fluxmeter per full text)
+  n_samples: best composition
   conditions:
     field_T: 1.0
     T_process_K: 1473
@@ -522,11 +515,6 @@
     magnet_axis: field direction
     density_rel: null
     la_co: yes (x = 0.3)
-  quantity: '[redacted]'
-  unit: T
-  measured_along: alignment direction
-  measurement: not stated in abstract (DC recording fluxmeter per full text)
-  n_samples: best composition
   source:
     doi: 10.3379/jmsjmag.23.1093
     title: 'Hgh-Performance Ferrite Magnets: M-Type Sr-Ferrite Containing Lanthanum and Cobalt.'
@@ -540,6 +528,11 @@
   route: FP
   process: same process as La-Co series; x = 0 (SrFe12O19 with SiO2/CaCO3 additives) sintered at 1200
     °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: alignment direction
+  measurement: DC recording fluxmeter (per experimental section)
+  n_samples: 1 per composition
   conditions:
     field_T: 1.0
     T_process_K: 1473
@@ -547,11 +540,6 @@
     magnet_axis: field direction
     density_rel: ~0.97-0.98
     la_co: no (x = 0)
-  quantity: '[redacted]'
-  unit: T
-  measured_along: alignment direction
-  measurement: DC recording fluxmeter (per experimental section)
-  n_samples: 1 per composition
   source:
     doi: 10.3379/jmsjmag.23.1093
     title: 'Hgh-Performance Ferrite Magnets: M-Type Sr-Ferrite Containing Lanthanum and Cobalt.'
@@ -564,6 +552,11 @@
   phase: SrFe12O19
   route: FP
   process: as above, x = 0-0.4, sintered 1200 °C
+  quantity: texture_metric
+  unit: orientation_factor
+  measured_along: alignment direction
+  measurement: orientation degree Jr/Js (magnetic)
+  n_samples: series x = 0-0.4
   conditions:
     field_T: 1.0
     T_process_K: 1473
@@ -571,11 +564,6 @@
     magnet_axis: field direction
     density_rel: null
     la_co: x = 0 (no) to 0.4 (yes)
-  quantity: texture_metric
-  unit: orientation_factor
-  measured_along: alignment direction
-  measurement: orientation degree Jr/Js (magnetic)
-  n_samples: series x = 0-0.4
   source:
     doi: 10.3379/jmsjmag.23.1093
     title: 'Hgh-Performance Ferrite Magnets: M-Type Sr-Ferrite Containing Lanthanum and Cobalt.'
@@ -588,6 +576,11 @@
   phase: SrFe12O19
   route: 'other: conventional sintering (alignment method not stated in review)'
   process: SrM + 0.6 wt% SiO2 + 0.7 wt% CaO sintered 1200 °C, 4 h
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated
+  n_samples: 1 (best)
   conditions:
     field_T: null
     T_process_K: 1473
@@ -595,11 +588,6 @@
     magnet_axis: not stated
     density_rel: null
     la_co: 'no'
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated
-  n_samples: 1 (best)
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -613,6 +601,11 @@
   phase: SrFe12O19
   route: 'other: conventional sintering (alignment method not stated in review)'
   process: Sr-ferrite + 0.5 wt% SiO2 and CaO (1:1), sintered 1280 °C short time; 98% dense
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated
+  n_samples: 1 (best)
   conditions:
     field_T: null
     T_process_K: 1553
@@ -620,11 +613,6 @@
     magnet_axis: not stated
     density_rel: 0.98
     la_co: 'no'
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated
-  n_samples: 1 (best)
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -639,6 +627,11 @@
   route: 'other: conventional sintering (alignment method not stated in review)'
   process: SrM + 1.1 wt% CaCO3 + 0.4 wt% SiO2 + 0.3 wt% Co3O4 + dispersant, conventionally sintered; 99%
     dense
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated
+  n_samples: 1 (best)
   conditions:
     field_T: null
     T_process_K: null
@@ -646,11 +639,6 @@
     magnet_axis: not stated
     density_rel: 0.99
     la_co: no La (Co3O4 additive)
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated
-  n_samples: 1 (best)
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -664,6 +652,11 @@
   phase: SrFe12O19
   route: 'other: two-step conventional sintering (alignment method not stated in review)'
   process: 'two-step sintering: 1200 °C 10 min then 1000 °C 2 h; fully dense'
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated
+  n_samples: 1 (best)
   conditions:
     field_T: null
     T_process_K: 1473
@@ -671,11 +664,6 @@
     magnet_axis: not stated
     density_rel: 1.0
     la_co: 'no'
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated
-  n_samples: 1 (best)
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -689,6 +677,11 @@
   phase: SrFe12O19
   route: 'other: conventional sintering, ''highly anisotropic'' (alignment method not stated in review)'
   process: fine SrM + 0.5 wt% SiO2 sintered 1260 °C, 3 min hold; 97% dense; SiO2 promoted particle rearrangement
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated
+  n_samples: 1 (best)
   conditions:
     field_T: null
     T_process_K: 1533
@@ -696,11 +689,6 @@
     magnet_axis: not stated
     density_rel: 0.97
     la_co: 'no'
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated
-  n_samples: 1 (best)
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -715,6 +703,11 @@
   route: 'other: SPS (uniaxial pressure 50 MPa; field alignment not stated)'
   process: La,Co-doped SrM fine particles (1.0 wt% La2O3, 0.1 wt% Co3O4), SPS 1100 °C, 5 min, 50 MPa;
     fully dense (5.15 g/cm3)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated
+  n_samples: '1'
   conditions:
     field_T: null
     T_process_K: 1373
@@ -722,11 +715,6 @@
     magnet_axis: not stated
     density_rel: 1.0
     la_co: 'yes'
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated
-  n_samples: '1'
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -741,6 +729,11 @@
   route: 'other: SPS of hydrothermal SrM nanoplatelets (shape alignment under uniaxial pressure, no field)'
   process: hydrothermally synthesised thin SrM platelets consolidated by SPS; c-axis texture confirmed
     by pole figures
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: out of pellet plane (pressing direction)
+  measurement: M-H loop, [redacted]
+  n_samples: '1'
   conditions:
     field_T: null
     T_process_K: null
@@ -748,11 +741,6 @@
     magnet_axis: pressing axis (normal to pellet)
     density_rel: null
     la_co: 'no'
-  quantity: Mr_over_Ms
-  unit: ''
-  measured_along: out of pellet plane (pressing direction)
-  measurement: M-H loop, [redacted]
-  n_samples: '1'
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -766,6 +754,11 @@
   phase: SrFe12O19
   route: FP
   process: hydrothermal SrM platelets aligned in a magnetic field prior to SPS consolidation
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: alignment direction
+  measurement: M-H loop, [redacted]
+  n_samples: '1'
   conditions:
     field_T: null
     T_process_K: null
@@ -774,11 +767,6 @@
     density_rel: null
     la_co: 'no'
     consolidation: SPS
-  quantity: Mr_over_Ms
-  unit: ''
-  measured_along: alignment direction
-  measurement: M-H loop, [redacted]
-  n_samples: '1'
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -792,6 +780,11 @@
   phase: SrFe12O19
   route: 'other: SPS of SrM platelets + post-anneal 4 h at 850 °C (no field)'
   process: SPS pellet of hydrothermal SrM platelets post-annealed 4 h at 850 °C
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: pressing axis
+  measurement: M-H loop, [redacted]
+  n_samples: '1'
   conditions:
     field_T: null
     T_process_K: 1123
@@ -799,11 +792,6 @@
     magnet_axis: pressing axis
     density_rel: null
     la_co: 'no'
-  quantity: Mr_over_Ms
-  unit: ''
-  measured_along: pressing axis
-  measurement: M-H loop, [redacted]
-  n_samples: '1'
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -817,6 +805,11 @@
   phase: M-type ferrite (unspecified)
   route: FP
   process: commercial anisotropic sintered ferrite grade F47 (highest [redacted]
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction
+  measurement: datasheet minimum value
+  n_samples: grade minimum
   conditions:
     field_T: null
     T_process_K: null
@@ -824,11 +817,6 @@
     magnet_axis: orientation direction
     density_rel: null
     la_co: unknown
-  quantity: '[redacted]'
-  unit: T
-  measured_along: orientation direction
-  measurement: datasheet minimum value
-  n_samples: grade minimum
   source:
     doi: null
     title: Goudsmit ferrite grade system (ferrite grades available at Goudsmit)
@@ -841,6 +829,11 @@
   phase: M-type ferrite (unspecified)
   route: FP
   process: commercial anisotropic sintered ferrite grade F25 (lowest anisotropic in list)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction
+  measurement: datasheet minimum value
+  n_samples: grade minimum
   conditions:
     field_T: null
     T_process_K: null
@@ -848,11 +841,6 @@
     magnet_axis: orientation direction
     density_rel: null
     la_co: unknown
-  quantity: '[redacted]'
-  unit: T
-  measured_along: orientation direction
-  measurement: datasheet minimum value
-  n_samples: grade minimum
   source:
     doi: null
     title: Goudsmit ferrite grade system (ferrite grades available at Goudsmit)
@@ -865,6 +853,11 @@
   phase: M-type ferrite (unspecified)
   route: FP
   process: commercial anisotropic sintered ferrite, Chinese standard grade Y40
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction
+  measurement: datasheet range (typical values table)
+  n_samples: grade range
   conditions:
     field_T: null
     T_process_K: null
@@ -872,11 +865,6 @@
     magnet_axis: orientation direction
     density_rel: null
     la_co: unknown
-  quantity: '[redacted]'
-  unit: T
-  measured_along: orientation direction
-  measurement: datasheet range (typical values table)
-  n_samples: grade range
   source:
     doi: null
     title: Technical Data Sheet - Ferrite Magnets / Ceramic Magnets
@@ -888,6 +876,11 @@
   phase: M-type ferrite (unspecified)
   route: FP
   process: commercial anisotropic sintered ferrite, US grade C8/C8A (common grade)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction
+  measurement: datasheet typical
+  n_samples: grade typical
   conditions:
     field_T: null
     T_process_K: null
@@ -895,11 +888,6 @@
     magnet_axis: orientation direction
     density_rel: null
     la_co: unknown
-  quantity: '[redacted]'
-  unit: T
-  measured_along: orientation direction
-  measurement: datasheet typical
-  n_samples: grade typical
   source:
     doi: null
     title: Technical Data Sheet - Ferrite Magnets / Ceramic Magnets
@@ -911,6 +899,11 @@
   phase: M-type ferrite (unspecified)
   route: FP
   process: commercial anisotropic ceramic magnet grade C11 (US designation)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction
+  measurement: datasheet typical
+  n_samples: grade typical
   conditions:
     field_T: null
     T_process_K: null
@@ -918,11 +911,6 @@
     magnet_axis: orientation direction
     density_rel: null
     la_co: unknown
-  quantity: '[redacted]'
-  unit: T
-  measured_along: orientation direction
-  measurement: datasheet typical
-  n_samples: grade typical
   source:
     doi: null
     title: 'Technical Data: Magnetic Properties of Ceramic Magnets'
@@ -934,6 +922,11 @@
   phase: SrFe12O19
   route: FP
   process: polymer-bonded anisotropic Sr-ferrite, injection moulded (alignment field during moulding)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction
+  measurement: datasheet range at 23 °C
+  n_samples: grade range
   conditions:
     field_T: null
     T_process_K: null
@@ -942,12 +935,6 @@
     density_rel: null
     la_co: unknown
     consolidation: injection-moulded polymer bonded
-    density_g_cm3: 3.8
-  quantity: '[redacted]'
-  unit: T
-  measured_along: orientation direction
-  measurement: datasheet range at 23 °C
-  n_samples: grade range
   source:
     doi: null
     title: Plastiform 2039 Magnetic Material Datasheet
@@ -959,6 +946,11 @@
   phase: SrFe12O19
   route: 'other: calendering (mechanical orientation of platelets in rubber sheet)'
   process: nitrile rubber bonded strontium ferrite, made by calendering (sheet process); anisotropic
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction
+  measurement: typical, standard test plug, 23 °C
+  n_samples: typical
   conditions:
     field_T: null
     T_process_K: null
@@ -967,12 +959,6 @@
     density_rel: null
     la_co: unknown
     consolidation: rubber bonded, calendered
-    density_g_cm3: 3.71
-  quantity: '[redacted]'
-  unit: T
-  measured_along: orientation direction
-  measurement: typical, standard test plug, 23 °C
-  n_samples: typical
   source:
     doi: null
     title: PLASTIFORM 1044/1046 Magnet Material Product Data Sheet
@@ -984,6 +970,11 @@
   phase: BaFe12O19
   route: 'other: flexible rubber-bonded ferrite, ''preferentially oriented'' (method not stated)'
   process: rubber barium ferrite composite sheets/strips; 'highly anisotropic'
+  quantity: '[redacted]'
+  unit: T
+  measured_along: orientation direction
+  measurement: typical at 23 °C
+  n_samples: typical
   conditions:
     field_T: null
     T_process_K: null
@@ -992,12 +983,6 @@
     density_rel: null
     la_co: 'no'
     consolidation: rubber bonded
-    density_g_cm3: 3.71
-  quantity: '[redacted]'
-  unit: T
-  measured_along: orientation direction
-  measurement: typical at 23 °C
-  n_samples: typical
   source:
     doi: null
     title: PLASTIFORM 1037 Permanent Magnet Material
@@ -1010,6 +995,11 @@
   route: TGG
   process: BaM matrix powder + BaM platelets (from RTGG on BiFeO3 seeds) aligned by tape casting, laminated,
     sintered (TGG); no magnetic field
+  quantity: texture_metric
+  unit: march_dollase_r
+  measured_along: (00l) normal to tape plane
+  measurement: Rietveld refinement, March-Dollase function (r = 1 random, 0 perfect)
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: null
@@ -1017,11 +1007,6 @@
     magnet_axis: tape normal
     density_rel: null
     la_co: 'no'
-  quantity: texture_metric
-  unit: march_dollase_r
-  measured_along: (00l) normal to tape plane
-  measurement: Rietveld refinement, March-Dollase function (r = 1 random, 0 perfect)
-  n_samples: 1
   source:
     doi: null
     title: Processing and characterization of textured barium ferrite ceramics (M.Sc. thesis, METU)
@@ -1034,6 +1019,11 @@
   phase: BaFe12O19
   route: TGG
   process: same sample as March-Dollase record
+  quantity: texture_metric
+  unit: texture_index_J
+  measured_along: fibre texture, [001] normal to tape
+  measurement: Rietveld refinement with spherical harmonics (12th order), texture index
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: null
@@ -1041,11 +1031,6 @@
     magnet_axis: tape normal
     density_rel: null
     la_co: 'no'
-  quantity: texture_metric
-  unit: texture_index_J
-  measured_along: fibre texture, [001] normal to tape
-  measurement: Rietveld refinement with spherical harmonics (12th order), texture index
-  n_samples: 1
   source:
     doi: null
     title: Processing and characterization of textured barium ferrite ceramics (M.Sc. thesis, METU)
@@ -1059,6 +1044,11 @@
   route: FP
   process: (Ca0.5La0.5)1.1Fe11.6Co0.4O19 calcined 1250 °C 4 h, wet-milled, slurry compacted in a magnetic
     field, sintered 1200 °C 1 h; 0.3 wt% SiO2 + 0.5 wt% CaO
+  quantity: '[redacted]'
+  unit: T
+  measured_along: alignment direction
+  measurement: DC recording fluxmeter
+  n_samples: optimum condition
   conditions:
     field_T: null
     T_process_K: 1473
@@ -1067,11 +1057,6 @@
     density_rel: null
     la_co: yes (Ca-La-Co)
     consolidation: wet (slurry) pressing in field, sintering
-  quantity: '[redacted]'
-  unit: T
-  measured_along: alignment direction
-  measurement: DC recording fluxmeter
-  n_samples: optimum condition
   source:
     doi: 10.2497/jjspm.61.s258
     title: Magnetic Properties of Ca-La-Co M-Type Ferrite Sintered Magnets with CaO and SiO2 Inter-Additives
@@ -1084,6 +1069,11 @@
   phase: (La,Na)(Fe,Co)12O19
   route: 'other: sintered (alignment method not stated in abstract)'
   process: Na-doped La-based M-type ferrite (La0.8Na0.2)Fe7.9Co0.1O19 sintered magnet
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated in abstract
+  n_samples: 1 composition
   conditions:
     field_T: null
     T_process_K: null
@@ -1091,11 +1081,6 @@
     magnet_axis: not stated
     density_rel: null
     la_co: yes (La-based M-type, Na and Co doped)
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated in abstract
-  n_samples: 1 composition
   source:
     doi: 10.4283/jkms.2021.31.5.249
     title: Magnetic Properties of Na-Dopped La-Base M-Type Sintered Ferrite Magnet
@@ -1108,6 +1093,11 @@
   phase: (La,Na)(Fe,Co)12O19
   route: 'other: sintered (alignment method not stated in abstract)'
   process: Na-doped La-based M-type ferrite (La0.8Na0.2)Fe7.9Co0.1O19 sintered magnet
+  quantity: Js_same_sample
+  unit: T
+  measured_along: not stated
+  measurement: not stated in abstract
+  n_samples: 1 composition
   conditions:
     field_T: null
     T_process_K: null
@@ -1115,11 +1105,6 @@
     magnet_axis: not stated
     density_rel: null
     la_co: yes (La-based M-type, Na and Co doped)
-  quantity: Js_same_sample
-  unit: T
-  measured_along: not stated
-  measurement: not stated in abstract
-  n_samples: 1 composition
   source:
     doi: 10.4283/jkms.2021.31.5.249
     title: Magnetic Properties of Na-Dopped La-Base M-Type Sintered Ferrite Magnet
@@ -1133,18 +1118,17 @@
   route: HD
   process: melt-spun ribbons Nd0.14(Fe0.91B0.09)0.86 hot-pressed 700-750 °C (MQ2), then die-upset to 50%
     thickness reduction (MQ3)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: press direction (assumed)
+  measurement: not stated in abstract (room temperature)
+  n_samples: not stated
   conditions:
     field_T: null
     T_process_K: 973-1023 (hot pressing); die-upset temperature not stated
     parent_texture: none
     magnet_axis: press direction
     density_rel: fully dense
-    strain: 50% height reduction
-  quantity: '[redacted]'
-  unit: T
-  measured_along: press direction (assumed)
-  measurement: not stated in abstract (room temperature)
-  n_samples: not stated
   source:
     doi: 10.1109/tmag.1985.1064031
     title: Processing of Neodymium-Iron-Boron melt-spun ribbons to fully dense magnets
@@ -1157,17 +1141,17 @@
   phase: Nd2Fe14B
   route: 'other: hot pressing of melt-spun ribbons (MQ2), ''only slightly magnetically aligned'''
   process: melt-spun ribbons hot-pressed to full density at 700-750 °C (no die-upset)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated in abstract (room temperature)
+  n_samples: not stated
   conditions:
     field_T: null
     T_process_K: 973-1023
     parent_texture: none
     magnet_axis: press direction
     density_rel: fully dense
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated in abstract (room temperature)
-  n_samples: not stated
   source:
     doi: 10.1109/tmag.1985.1064031
     title: Processing of Neodymium-Iron-Boron melt-spun ribbons to fully dense magnets
@@ -1180,19 +1164,17 @@
   phase: Nd2Fe14B
   route: 'other: d-HDDR (texture memory) powder'
   process: d-HDDR treated Nd-Fe-B powder; hydrogen decrepitation of starting alloy at 23 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: easy axis of aligned powder
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1093
     parent_texture: single-crystal (HD) powder particles
     magnet_axis: powder alignment direction
     density_rel: null
-    hydrogen_decrepitation_C: 23
-    HD_conditions: 820 °C, 30 kPa H2 (typical d-HDDR)
-  quantity: '[redacted]'
-  unit: T
-  measured_along: easy axis of aligned powder
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: 10.1080/14686996.2021.1944780
     title: Recent progress in the development of high-performance bonded magnets using rare earth–Fe compounds
@@ -1205,19 +1187,17 @@
   phase: Nd2Fe14B
   route: 'other: d-HDDR (texture memory) powder'
   process: d-HDDR treated Nd-Fe-B powder; hydrogen decrepitation of starting alloy at 23 °C
+  quantity: texture_metric
+  unit: DOA_(Jr-Jrhard)/Jr
+  measured_along: easy vs hard axis
+  measurement: degree of anisotropy from [redacted]
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1093
     parent_texture: single-crystal (HD) powder particles
     magnet_axis: powder alignment direction
     density_rel: null
-    hydrogen_decrepitation_C: 23
-    HD_conditions: 820 °C, 30 kPa H2 (typical d-HDDR)
-  quantity: texture_metric
-  unit: DOA_(Jr-Jrhard)/Jr
-  measured_along: easy vs hard axis
-  measurement: degree of anisotropy from [redacted]
-  n_samples: 1
   source:
     doi: 10.1080/14686996.2021.1944780
     title: Recent progress in the development of high-performance bonded magnets using rare earth–Fe compounds
@@ -1230,19 +1210,17 @@
   phase: Nd2Fe14B
   route: 'other: d-HDDR (texture memory) powder'
   process: d-HDDR treated Nd-Fe-B powder; hydrogen decrepitation of starting alloy at 500 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: easy axis of aligned powder
+  measurement: '[redacted]'
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1093
     parent_texture: single-crystal (HD) powder particles
     magnet_axis: powder alignment direction
     density_rel: null
-    hydrogen_decrepitation_C: 500
-    HD_conditions: 820 °C, 30 kPa H2 (typical d-HDDR)
-  quantity: '[redacted]'
-  unit: T
-  measured_along: easy axis of aligned powder
-  measurement: '[redacted]'
-  n_samples: 1
   source:
     doi: 10.1080/14686996.2021.1944780
     title: Recent progress in the development of high-performance bonded magnets using rare earth–Fe compounds
@@ -1255,19 +1233,17 @@
   phase: Nd2Fe14B
   route: 'other: d-HDDR (texture memory) powder'
   process: d-HDDR treated Nd-Fe-B powder; hydrogen decrepitation of starting alloy at 500 °C
+  quantity: texture_metric
+  unit: DOA_(Jr-Jrhard)/Jr
+  measured_along: easy vs hard axis
+  measurement: degree of anisotropy from [redacted]
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: 1093
     parent_texture: single-crystal (HD) powder particles
     magnet_axis: powder alignment direction
     density_rel: null
-    hydrogen_decrepitation_C: 500
-    HD_conditions: 820 °C, 30 kPa H2 (typical d-HDDR)
-  quantity: texture_metric
-  unit: DOA_(Jr-Jrhard)/Jr
-  measured_along: easy vs hard axis
-  measurement: degree of anisotropy from [redacted]
-  n_samples: 1
   source:
     doi: 10.1080/14686996.2021.1944780
     title: Recent progress in the development of high-performance bonded magnets using rare earth–Fe compounds
@@ -1281,6 +1257,11 @@
   route: 'other: d-HDDR powder + field-aligned compression bonding'
   process: d-HDDR powder (decrepitation at 23 °C) mixed with ~3 wt% epoxy, compression moulded and cured
     in vacuum (field alignment during moulding implied, not stated explicitly)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: alignment direction
+  measurement: Jr of bonded magnet
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: null
@@ -1288,11 +1269,6 @@
     magnet_axis: alignment direction
     density_rel: null
     consolidation: epoxy bonded (~3 wt%), compression moulded
-  quantity: '[redacted]'
-  unit: T
-  measured_along: alignment direction
-  measurement: Jr of bonded magnet
-  n_samples: 1
   source:
     doi: 10.1080/14686996.2021.1944780
     title: Recent progress in the development of high-performance bonded magnets using rare earth–Fe compounds
@@ -1306,6 +1282,11 @@
   route: 'other: d-HDDR powder + field-aligned compression bonding'
   process: d-HDDR powder (decrepitation at 500 °C) mixed with ~3 wt% epoxy, compression moulded and cured
     in vacuum (field alignment during moulding implied, not stated explicitly)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: alignment direction
+  measurement: Jr of bonded magnet
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: null
@@ -1313,11 +1294,6 @@
     magnet_axis: alignment direction
     density_rel: null
     consolidation: epoxy bonded (~3 wt%), compression moulded
-  quantity: '[redacted]'
-  unit: T
-  measured_along: alignment direction
-  measurement: Jr of bonded magnet
-  n_samples: 1
   source:
     doi: 10.1080/14686996.2021.1944780
     title: Recent progress in the development of high-performance bonded magnets using rare earth–Fe compounds
@@ -1331,17 +1307,17 @@
   route: 'other: HDDR (texture memory) powder'
   process: 'HDDR of Nd-Fe-B(-Co,Ga) powder: heated to >=800 °C in vacuum, disproportionated in H2, recombined
     with slow desorption under Ar'
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis
+  measurement: '[redacted]'
+  n_samples: best condition
   conditions:
     field_T: null
     T_process_K: '>=1073'
     parent_texture: single-crystal powder particles
     magnet_axis: powder alignment direction
     density_rel: null
-  quantity: texture_metric
-  unit: A_reported
-  measured_along: easy axis
-  measurement: '[redacted]'
-  n_samples: best condition
   source:
     doi: 10.3379/jmsjmag.23.300
     title: Enhancement of the anisotropy of Nd-Fe-B powders by varying the HDDR conditions
@@ -1354,6 +1330,11 @@
   phase: Nd2Fe14B
   route: isotropic
   process: epoxy-bonded, compression-moulded isotropic NdFeB (rapidly quenched powder)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: any (isotropic)
+  measurement: typical datasheet value
+  n_samples: grade typical
   conditions:
     field_T: null
     T_process_K: null
@@ -1361,12 +1342,6 @@
     magnet_axis: any (isotropic)
     density_rel: null
     consolidation: epoxy bonded, compression moulded
-    density_g_cm3: 5.95
-  quantity: '[redacted]'
-  unit: T
-  measured_along: any (isotropic)
-  measurement: typical datasheet value
-  n_samples: grade typical
   source:
     doi: null
     title: PLASTIFORM 3202 Isotropic Magnets, Product Data Sheet
@@ -1378,6 +1353,11 @@
   phase: Nd2Fe14B
   route: isotropic
   process: epoxy-bonded, compression-moulded isotropic NdFeB (higher-HcJ grade)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: any (isotropic)
+  measurement: typical datasheet value
+  n_samples: grade typical
   conditions:
     field_T: null
     T_process_K: null
@@ -1385,11 +1365,6 @@
     magnet_axis: any (isotropic)
     density_rel: null
     consolidation: epoxy bonded, compression moulded
-  quantity: '[redacted]'
-  unit: T
-  measured_along: any (isotropic)
-  measurement: typical datasheet value
-  n_samples: grade typical
   source:
     doi: null
     title: PLASTIFORM 3201 Isotropic Magnets, Product Data Sheet

@@ -1,0 +1,834 @@
+# fese_hea inputs: source-grounded phase physics; measured route outcomes are sealed.
+- id: fese_structure_saucedo2021
+  phase: Fe3Se4 (monoclinic)
+  quantity: structure
+  value: Cr3S4-type NiAs-derived, C2/m with ordered Fe vacancies
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1021/acs.jpcc.1c06841
+    title: Increasing Magnetic Hardness of Fe 3 Se 4 via Cu Doping
+    first_author: Luis A. Saucedo
+    year: 2021
+    url: https://par.nsf.gov/servlets/purl/10345242
+    evidence: full_text
+    locator: Introduction
+  quote: 'It belongs to the Cr3S4
+
+    structure type, which can be described as a variant of the NiAs-
+
+    type structure that lacks 50% of metal sites in every other layer
+
+    parallel to the bc plane of the monoclinic lattice (space group
+
+    C2/m).'
+  note: The ordered vacancies occur in alternate metal layers; primary structural description quoted within a later
+    research article.
+- id: fese_easy_axis_saucedo2021
+  phase: Fe3Se4 (monoclinic)
+  quantity: easy_axis
+  value: b axis, within monoclinic bc plane
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1021/acs.jpcc.1c06841
+    title: Increasing Magnetic Hardness of Fe 3 Se 4 via Cu Doping
+    first_author: Luis A. Saucedo
+    year: 2021
+    url: https://par.nsf.gov/servlets/purl/10345242
+    evidence: full_text
+    locator: Introduction
+  quote: 'both types of moments point along the b
+
+    axis'
+  note: Magnetic moments from prior neutron diffraction, reported in the introduction of this research paper. The
+    b axis lies in the bc plane; do not replace it by a generic hexagonal c axis.
+- id: fese_tc_ampoule_saucedo2021
+  phase: Fe3Se4 (monoclinic)
+  quantity: Tc
+  value: 330
+  unit: K
+  conditions: undoped Fe3Se4, high-temperature ampoule anneal, ZFC/FC divergence at 100 Oe
+  source:
+    doi: 10.1021/acs.jpcc.1c06841
+    title: Increasing Magnetic Hardness of Fe 3 Se 4 via Cu Doping
+    first_author: Luis A. Saucedo
+    year: 2021
+    url: https://par.nsf.gov/servlets/purl/10345242
+    evidence: full_text
+    locator: Magnetic Properties, Fig. 8
+  quote: 'was equal to 330 K for the undoped A-sample and 323 K
+
+    for the undoped B-sample.'
+  note: ''
+- id: fese_tc_solvo_saucedo2021
+  phase: Fe3Se4 (monoclinic)
+  quantity: Tc
+  value: 323
+  unit: K
+  conditions: undoped Fe3Se4, solvothermal sample, ZFC/FC divergence at 100 Oe
+  source:
+    doi: 10.1021/acs.jpcc.1c06841
+    title: Increasing Magnetic Hardness of Fe 3 Se 4 via Cu Doping
+    first_author: Luis A. Saucedo
+    year: 2021
+    url: https://par.nsf.gov/servlets/purl/10345242
+    evidence: full_text
+    locator: Magnetic Properties, Fig. 8
+  quote: 'was equal to 330 K for the undoped A-sample and 323 K
+
+    for the undoped B-sample.'
+  note: ''
+- id: fese_tc_wires_li2015
+  phase: Fe3Se4 (monoclinic)
+  quantity: Tc
+  value: 334
+  unit: K
+  conditions: Fe3Se4 wires in anodic aluminium oxide membrane
+  source:
+    doi: 10.1063/1.4908297
+    title: Magnetization reversal and coercivity of Fe3Se4 nanowire arrays
+    first_author: D. Li
+    year: 2015
+    url: https://api.crossref.org/works/10.1063/1.4908297
+    evidence: abstract
+    locator: abstract
+  quote: The field-cooled magnetization dependent on the temperature indicates a Curie temperature around 334 K
+    for the Fe3Se4 nanowires.
+  note: Approximate as reported.
+- id: fese_ku_long2011
+  phase: Fe3Se4 (monoclinic)
+  quantity: K1
+  value: 1.0
+  unit: MJ/m3
+  conditions: Fe3Se4 nanoparticles; temperature of stated constant not explicit in abstract
+  source:
+    doi: 10.1063/1.3662388
+    title: Magnetic anisotropy and coercivity of Fe3Se4 nanostructures
+    first_author: Gen Long
+    year: 2011
+    url: https://api.crossref.org/works/10.1063/1.3662388
+    evidence: abstract
+    locator: abstract
+  quote: The measured anisotropy constant is 1.0 × 107 erg/cm3
+  note: Reported uniaxial anisotropy constant Ku, not explicitly a 300 K K1. Converted 1.0×10^7 erg/cm3 to 1.0 MJ/m3.
+- id: fese_ku_zhang2011
+  phase: Fe3Se4 (monoclinic)
+  quantity: K1
+  value: 0.6
+  unit: MJ/m3
+  conditions: Fe3Se4 nanostructures; temperature not stated in abstract
+  source:
+    doi: 10.1021/cm201610k
+    title: Fe 3 Se 4 Nanostructures with Giant Coercivity Synthesized by Solution Chemistry
+    first_author: Hongwang Zhang
+    year: 2011
+    url: https://pubs.acs.org/doi/10.1021/cm201610k
+    evidence: abstract
+    locator: abstract
+  quote: The estimated magnetocrystalline anisotropy constant is 6 × 10 ⁶ erg cm –3
+  note: Estimated constant, not a direct 300 K intrinsic K1. 6×10^6 erg/cm3 = 0.6 MJ/m3.
+- id: fese_formation_ampoule_saucedo2021
+  phase: Fe3Se4 (monoclinic)
+  quantity: formation_path
+  value: solid-state reaction of elemental Fe and Se in sealed evacuated fused-silica tube; quenched
+  unit: text
+  conditions: undoped x=0 is included; 1050 °C for 10 days
+  source:
+    doi: 10.1021/acs.jpcc.1c06841
+    title: Increasing Magnetic Hardness of Fe 3 Se 4 via Cu Doping
+    first_author: Luis A. Saucedo
+    year: 2021
+    url: https://par.nsf.gov/servlets/purl/10345242
+    evidence: full_text
+    locator: Materials and Methods, Method A
+  quote: 'The samples of (Fe1−xCux)3Se4 (x
+
+    = 0, 0.01, 0.02, 0.03, 0.04, 0.05) were prepared by annealing
+
+    pelletized stoichiometric mixtures of elements (the total mass
+
+    of each sample300 mg) sealed in 10 mm inner diameter
+
+    fused-silica tubes that were sealed under vacuum (<10−4
+
+    mbar). The mixtures were heated to 1050 °C in 10.5 h,
+
+    maintained at this temperature for 10 days, and quenched into
+
+    an ice bath.'
+  note: This route demonstrates product formation from solid elements; it does not establish primary crystallization
+    from a melt or an orientation relationship.
+- id: fese_tform_ampoule_saucedo2021
+  phase: Fe3Se4 (monoclinic)
+  quantity: T_formation
+  value: 1323.15
+  unit: K
+  conditions: high-temperature ampoule reaction, 10 days
+  source:
+    doi: 10.1021/acs.jpcc.1c06841
+    title: Increasing Magnetic Hardness of Fe 3 Se 4 via Cu Doping
+    first_author: Luis A. Saucedo
+    year: 2021
+    url: https://par.nsf.gov/servlets/purl/10345242
+    evidence: full_text
+    locator: Materials and Methods, Method A
+  quote: 'The mixtures were heated to 1050 °C in 10.5 h,
+
+    maintained at this temperature for 10 days, and quenched into
+
+    an ice bath.'
+  note: Converted 1050 °C to K. This is the hold temperature, not an observed nucleation temperature. Above undoped
+    sample Tc, so Fe3Se4 cannot be ferrimagnetic at this hold.
+- id: fese_formation_solvo_saucedo2021
+  phase: Fe3Se4 (monoclinic)
+  quantity: formation_path
+  value: solvothermal reaction of Fe3(CO)12 and Ph2Se2 in oleylamine/octadecene
+  unit: text
+  conditions: undoped x=0 included; 300 °C for 1 h
+  source:
+    doi: 10.1021/acs.jpcc.1c06841
+    title: Increasing Magnetic Hardness of Fe 3 Se 4 via Cu Doping
+    first_author: Luis A. Saucedo
+    year: 2021
+    url: https://par.nsf.gov/servlets/purl/10345242
+    evidence: full_text
+    locator: Materials and Methods, Method B
+  quote: 'SynthesisMethod B. The samples of (Fe1−xCux)3Se4 (x
+
+    = 0, 0.01, 0.03, 0.05, 0.07, 0.10, 0.15) were prepared by
+
+    combining Fe3(CO)12 and Cu(acac)2 in the required
+
+    stoichiometric ratio, for a total of 0.75 mmol of the metal
+
+    ions, with 234 mg (0.75 mmol) of Ph2Se2 in a mixture of 8 mL
+
+    of oleylamine and 2 mL of octadecene. The mixture was
+
+    degassed under vacuum at 80 °C for 40 min, after which the
+
+    reaction vessel was reﬁlled with Ar and heated to 300 °C at a
+
+    rate of 5 °C/min. The reaction was allowed to progress for 1 h,
+
+    followed by air-cooling.'
+  note: Chemical synthesis rather than a coherent parent-to-product solid-state transformation. No OR or crystallographic
+    variant count is established.
+- id: fese_tform_solvo_saucedo2021
+  phase: Fe3Se4 (monoclinic)
+  quantity: T_formation
+  value: 573.15
+  unit: K
+  conditions: solvothermal reaction for 1 h
+  source:
+    doi: 10.1021/acs.jpcc.1c06841
+    title: Increasing Magnetic Hardness of Fe 3 Se 4 via Cu Doping
+    first_author: Luis A. Saucedo
+    year: 2021
+    url: https://par.nsf.gov/servlets/purl/10345242
+    evidence: full_text
+    locator: Materials and Methods, Method B
+  quote: 'heated to 300 °C at a
+
+    rate of 5 °C/min. The reaction was allowed to progress for 1 h,
+
+    followed by air-cooling.'
+  note: Converted 300 °C to K. Above this sample Tc of 323 K, so no ferrimagnetic formation bias at the hold.
+- id: fese_particle_habit_zhang2011
+  phase: Fe3Se4 (monoclinic)
+  quantity: single_variant_particles
+  value: nanostructures 50–500 nm; nanosheets, nanocacti and nanoplatelets
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1021/cm201610k
+    title: Fe 3 Se 4 Nanostructures with Giant Coercivity Synthesized by Solution Chemistry
+    first_author: Hongwang Zhang
+    year: 2011
+    url: https://pubs.acs.org/doi/10.1021/cm201610k
+    evidence: abstract
+    locator: abstract
+  quote: The size of these nanostructures can be tuned from 50 to 500 nm, and their shapes can be varied from nanosheets
+    and nanocacti to nanoplatelets.
+  note: Morphology is established; abstract does not establish single-crystal or single-variant state, nor platelet
+    plane relative to b easy axis.
+- id: fese_nanowire_array_li2015
+  phase: Fe3Se4 (monoclinic)
+  quantity: other
+  value: Fe3Se4 nanowire arrays synthesized inside anodic aluminium oxide pores
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1063/1.4908297
+    title: Magnetization reversal and coercivity of Fe3Se4 nanowire arrays
+    first_author: D. Li
+    year: 2015
+    url: https://api.crossref.org/works/10.1063/1.4908297
+    evidence: abstract
+    locator: abstract
+  quote: The microstructure and magnetic properties of Fe3Se4 nanowire (NW) arrays in anodic aluminum oxide (AAO)
+    porous membrane are studied.
+  note: An array alignment attempt. The abstract does not index the wire growth direction against the b easy axis.
+- id: fese_rod_habit_bishwas2014
+  phase: Fe3Se4 (monoclinic)
+  quantity: single_variant_particles
+  value: Mn-substituted Fe3Se4 nanorods
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1021/jp411956q
+    title: Large Increase in the Energy Product of Fe3Se4 by Fe-Site Doping
+    first_author: Mousumi Sen Bishwas
+    year: 2014
+    url: https://pubs.acs.org/doi/10.1021/jp411956q
+    evidence: abstract
+    locator: abstract
+  quote: Here, we report the synthesis of Fe 3– _x_ Mn _x_ Se ₄ ( _x_ = 0.01–0.2) nanorods.
+  note: Doped derivative, not proof of a single-variant rod or growth direction relative to the b easy axis.
+- id: fese_epitaxy_vasconcelos2016
+  phase: Fe3Se4 (monoclinic)
+  quantity: other
+  value: Fe3Se4 platelet inclusions embedded within MBE Bi2Se3 epilayers on GaAs(111)
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1021/acsnano.5b06430
+    title: Magnetically Hard Fe3Se4 Embedded in Bi2Se3 Topological Insulator Thin Films Grown by Molecular Beam
+      Epitaxy
+    first_author: Hugo Menezes do Nascimento Vasconcelos
+    year: 2015
+    url: https://pubs.acs.org/doi/10.1021/acsnano.5b06430
+    evidence: abstract
+    locator: abstract
+  quote: 'of Bi ₂ Se ₃ epilayers containing Fe grown on GaAs(111)
+
+    by molecular beam epitaxy. It is shown that, in the window of growth
+
+    parameters leading to Bi ₂ Se ₃ epilayers with
+
+    optimized quality, Fe atom clustering leads to the formation of Fe _x_ Se _y_ inclusions.
+
+    These objects have platelet shape and are embedded within Bi ₂ Se ₃ . Monoclinic Fe ₃ Se ₄ is identified
+
+    as the main secondary phase through detailed structural measurements.'
+  note: Demonstrates phase formation in an epitaxial host, not epitaxial single-phase Fe3Se4 film growth or a known
+    Fe3Se4 orientation relationship.
+- id: hea_a_arc_melt_na2021
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  quantity: formation_path
+  value: arc melted under argon, remelted five times, then thermally aged
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+    evidence: full_text
+    locator: Methods
+  quote: Ingots weighing approximately 60 grams with nominal compositions of equiatomic FeCoNiAl, FeCoNiAlCu X (X=0.1
+    – 1.0), FeCoNiAlCu X Ti X (X=0.2 – 0.4) and Fe X Co Y NiAlCu 0\.4 Ti 0\.4 (X and/or Y = 1.0, 2.0) were prepared
+    by arc melting under an argon atmosphere. The purity of the elements was higher than 99.99 atomic percent (at.
+    %) and the ingots were remelted five times.
+  note: The alloy is cast from a melt, but this paper does not determine its primary crystal growth direction.
+- id: hea_a_spinodal_na2021
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  quantity: formation_path
+  value: proposed BCC spinodal decomposition on annealing
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+    evidence: full_text
+    locator: Results and Discussion
+  quote: all alloys exhibiting a maximum value after an anneal at ∼700 °C, which might be due to spinodal decomposition
+  note: Authors say might be; morphology and Fe-Co rod alignment were not demonstrated for this alloy.
+- id: hea_a_tform_na2021
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  quantity: T_formation
+  value: 650–700 °C (923–973 K)
+  unit: K
+  conditions: ''
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+    evidence: full_text
+    locator: Results and Discussion
+  quote: All samples showed a drastic increase in H C after an anneal around 650 – 700 °C, which may be strongly
+    related to spinodal decomposition at this annealing temperature.
+  note: Candidate decomposition interval inferred by authors from anneal response, not in situ observation of onset.
+    Below alloy A Tc.
+- id: hea_a_tc_na2021
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  quantity: Tc
+  value: 1093.15
+  unit: K
+  conditions: ''
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+    evidence: full_text
+    locator: Results and Discussion, Fig. 4
+  quote: measured as T C = 820 and 840 °C for Alloy A and D, respectively.
+  note: Converted 820 °C to K. Alloy level magnetic transition; not isolated precipitate Tc.
+- id: hea_d_tc_na2021
+  phase: Fe2CoNiAlCu0.4Ti0.4 (alloy D)
+  quantity: Tc
+  value: 1113.15
+  unit: K
+  conditions: ''
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+    evidence: full_text
+    locator: Results and Discussion, Fig. 4
+  quote: measured as T C = 820 and 840 °C for Alloy A and D, respectively.
+  note: Converted 840 °C to K. Alloy level magnetic transition; not isolated precipitate Tc.
+- id: hea_a_js_na2021
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  quantity: Js
+  value: 0.516
+  unit: T
+  conditions: thermal anneal; room temperature, alloy-level saturation polarization
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+    evidence: full_text
+    locator: Table I, alloy A TA row
+  quote: '|Alloy A (TA) |22\.8 |24\.1 |24\.0 |11\.0 |10\.4 |7\.8 |881 |5\.16 |2\.18 |0\.47 |'
+  note: Table M_S in kG is cgs 4πMs; 5.16 kG equals 0.516 T. Single sample, not phase-resolved intrinsic Js.
+- id: hea_d_js_na2021
+  phase: Fe2CoNiAlCu0.4Ti0.4 (alloy D)
+  quantity: Js
+  value: 0.903
+  unit: T
+  conditions: thermal anneal; room temperature, alloy-level saturation polarization
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+    evidence: full_text
+    locator: Table I, alloy D TA row
+  quote: '|Alloy D (TA) |37\.1 |19\.6 |19\.5 |9\.0 |8\.5 |6\.4 |1,078 |9\.03 |4\.93 |2\.06 |'
+  note: Table M_S in kG is cgs 4πMs; 9.03 kG equals 0.903 T. Single sample, not phase-resolved intrinsic Js.
+- id: hea_a_field_anneal_na2021
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  quantity: field_effect_on_formation
+  value: 10 kOe field during 650 °C anneal for 1 h and cooling
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+    evidence: full_text
+    locator: Field annealing paragraph
+  quote: The as-cast Alloy A sample was annealed at 650 °C for 1h under an applied field of 10 kOe and cooled down
+    under the same field.
+  note: Field anneal is below alloy Tc. This establishes a tested process, not a measured precipitate orientation
+    or complete variant selection.
+- id: hea_d_precipitate_na2021
+  phase: Fe2CoNiAlCu0.4Ti0.4 (alloy D)
+  quantity: formation_path
+  value: Cu-rich phase precipitates at and inside grains after 650 °C anneal; wall pinning mechanism proposed
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+    evidence: full_text
+    locator: Results and Discussion, Fig. 3
+  quote: The copper-rich phase was observed at grain boundaries and inside grains, with an area fraction of only
+    ∼0.7% and an average diameter of 0.82 μm. Therefore, the increase in coercivity is here associated with the
+    copper-rich phase precipitation, which may act as pinning sites for domain wall motion, thus increasing the
+    coercivity.
+  note: Cu-rich precipitation is observed by EBSD. Authors attribute coercivity to pinning; this is different from
+    proof of elongated Fe-Co-rich rods.
+- id: hea_d_structure_na2021
+  phase: Fe2CoNiAlCu0.4Ti0.4 (alloy D)
+  quantity: structure
+  value: majority BCC as-cast; Cu-rich phase after anneal
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+    evidence: full_text
+    locator: Results and Discussion, Fig. 3
+  quote: The as-cast ingot samples have a majority BCC structure and a small copper-rich FCC phase in alloys A and
+    C, as shown in Figure 3(a) .
+  note: The quoted minor Cu-rich FCC statement applies specifically to alloys A and C; phase fraction in alloy D
+    is treated separately.
+- id: hea_fcc_formation_beeson2024
+  phase: FeCoNiMnCu (fcc film)
+  quantity: formation_path
+  value: sputter deposit then rapid thermal anneal to single fcc phase
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Fig. 1
+  quote: In contrast, the films sputtered at 20 °C and 350 °C with post‐deposition RTA at 600 °C for 30 s exhibit
+    a single‐phase fcc pattern
+  note: Thin-film route on amorphous SiO2, not epitaxy or primary solidification.
+- id: hea_fcc_tform_beeson2024
+  phase: FeCoNiMnCu (fcc film)
+  quantity: T_formation
+  value: 873.15
+  unit: K
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Fig. 1
+  quote: post‐deposition RTA at 600 °C for 30 s exhibit a single‐phase fcc pattern
+  note: Converted 600 °C to K; RTA endpoint, not exact onset temperature. Tc for this film was not determined in
+    the paper.
+- id: hea_fcc_structure_beeson2024
+  phase: FeCoNiMnCu (fcc film)
+  quantity: structure
+  value: single fcc after rapid thermal annealing
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Fig. 1
+  quote: In contrast, the films sputtered at 20 °C and 350 °C with post‐deposition RTA at 600 °C for 30 s exhibit
+    a single‐phase fcc pattern
+  note: Do not conflate with high-temperature grown films, where fcc plus bcc was observed.
+- id: hea_fcc_ms_mass_beeson2024
+  phase: FeCoNiMnCu (fcc film)
+  quantity: Ms_mass
+  value: 70
+  unit: Am2/kg
+  conditions: 350 °C sputtered film before RTA; nominal room-temperature magnetometry
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Table S2
+  quote: " = 595 ± 45 emu cm−3 (σ\ns\n = 70 ± 6 emu g−1) as‐grown"
+  note: 70 emu/g = 70 Am2/kg. Paper also reports volumetric Ms, so separate density is unnecessary for Js conversion.
+  uncertainty: 6
+- id: hea_fcc_js_beeson2024
+  phase: FeCoNiMnCu (fcc film)
+  quantity: Js
+  value: 0.741
+  unit: T
+  conditions: 350 °C sputtered film after RTA at 600 °C for 30 s; nominal room-temperature magnetometry
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Table S2
+  quote: 590 ± 30 emu cm−3 after RTA for 30 s
+  note: 'Computed μ0Ms from 590 emu/cm3 = 590 kA/m: 0.741 T. ±30 emu/cm3 gives ±0.038 T.'
+  uncertainty: 0.038
+- id: hea_fcc_pinning_beeson2024
+  phase: FeCoNiMnCu (fcc film)
+  quantity: other
+  value: RTA-induced microstructure and strain enhance pinning-controlled in-plane coercivity
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion
+  quote: Therefore, the hard magnetic properties in FeCoNiMnCu film may be explained by RTA‐induced microstructure
+    changes and anisotropy enhancement which strengthens domain wall pinning.
+  note: Authors present a mechanism, not direct evidence for uniaxial alignment of cubic grains.
+- id: hea_fcc_decomposition_beeson2024
+  phase: FeCoNiMnCu (fcc film)
+  quantity: formation_path
+  value: at higher deposition temperature, fcc and bcc phases segregate
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Fig. 1
+  quote: For the film grown at Ts = 500 °C, new peaks are observed, corresponding to a face‐centered‐cubic (fcc)
+    phase with lattice parameter of 3.58 Å and a body‐centered‐cubic (bcc) phase with lattice parameter of 2.84
+    Å.
+  note: This is a separate processing state, not the 600 °C RTA single-fcc state.
+- id: hea_fcc_lattice_beeson2024
+  phase: FeCoNiMnCu (fcc film)
+  quantity: lattice
+  value: fcc a=3.58 Å; bcc a=2.84 Å
+  unit: Å
+  conditions: film grown at substrate 500 °C; two phase
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Fig. 1
+  quote: For the film grown at Ts = 500 °C, new peaks are observed, corresponding to a face‐centered‐cubic (fcc)
+    phase with lattice parameter of 3.58 Å and a body‐centered‐cubic (bcc) phase with lattice parameter of 2.84
+    Å.
+  note: ''
+- id: hea_l10_formation_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  quantity: formation_path
+  value: sputtered disordered fcc A1 film chemically orders to L10 during RTA
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Fig. 3
+  quote: The as‐grown films are in a disordered fcc (A1) phase with a lattice parameter of 3.80 Å (not shown). After
+    RTA for 60 s at 600 °C, L10 ordering appears
+  note: The quoted path is A1 to L10 in a sputtered film. Crystallographic OR and variant count were not measured.
+- id: hea_l10_tform_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  quantity: T_formation
+  value: 873.15
+  unit: K
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Fig. 3
+  quote: After RTA for 60 s at 600 °C, L10 ordering appears
+  note: Converted 600 °C to K; observed after hold, not exact onset. Tc at formation is unreported.
+- id: hea_l10_structure_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  quantity: structure
+  value: tetragonal L10 high-entropy intermetallic with Pt on one sublattice
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, STEM
+  quote: Therefore, we consider the film to be a single‐phase high entropy intermetallic, with the 3d transition
+    metals ordering onto a high entropy sublattice of the L10 structure, opposite to Pt.
+  note: L10 order identified by superlattice reflections and STEM. Unlike FeCoNiMnCu, Pt is half the atoms.
+- id: hea_l10_lattice_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  quantity: lattice
+  value: a=3.83 Å, c=3.60 Å
+  unit: Å
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Fig. 3
+  quote: The extracted lattice parameters of the L10 phase are c = 3.60 Å and a = 3.83 Å, respectively.
+  note: ''
+- id: hea_l10_tetragonality_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  quantity: tetragonality
+  value: 0.94
+  unit: c/a
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, Fig. 3
+  quote: The extracted lattice parameters of the L10 phase are c = 3.60 Å and a = 3.83 Å, respectively.
+  note: Calculated 3.60/3.83 = 0.940. The parent A1 lattice parameter is 3.80 Å; no measured OR or transformation
+    strain tensor is provided.
+- id: hea_l10_easy_axis_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  quantity: easy_axis
+  value: tetragonal c axis with perpendicular magnetic anisotropy in (001)-textured grains
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, FORC
+  quote: "The high Mr\n/Ms\n in the OOP loop relative to IP indicates the perpendicular anisotropy resulting from\
+    \ the (001) texture"
+  note: The quote contains qualitative Mr/Ms comparison only, no outcome value. Intrinsic c-axis easy direction
+    is inferred from L10 (001) texture and out-of-plane anisotropy.
+- id: hea_l10_ku_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  quantity: K1
+  value: 0.2
+  unit: MJ/m3
+  conditions: polycrystalline L10 film after 600 °C RTA
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, hysteresis loops
+  quote: ' = 2 × 106 erg cm−3 was extracted from the area between IP and OOP hysteresis loops'
+  note: Effective uniaxial Ku after shape correction, explicitly not intrinsic single-crystal K1; 2×10^6 erg/cm3
+    = 0.2 MJ/m3.
+- id: hea_l10_js_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  quantity: Js
+  value: 0.302
+  unit: T
+  conditions: 20 nm (FeCoNiMnCu)Pt film after 600 °C RTA; nominal room temperature
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, hysteresis loops
+  quote: "The saturation magnetization Ms\n of 240 ± 25 emu cm−3 for the Pt‐inserted film"
+  note: 'Computed μ0Ms from 240 emu/cm3 = 240 kA/m: 0.302 T; ±25 emu/cm3 gives ±0.031 T.'
+  uncertainty: 0.031
+- id: hea_l10_ep_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  quantity: other
+  value: thin film grown on amorphous SiO2, with some (001) texture after RTA
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Experimental Section
+  quote: The (FeCoNiMnCu)Pt films of 20 nm thickness were deposited onto thermally oxidized Si (100) substrates
+    at room temperature
+  note: The SiO2 interlayer is amorphous; study does not demonstrate epitaxial growth on a crystalline template.
+    Texture measurement is sealed.
+- id: hea_l10_grains_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  quantity: single_variant_particles
+  value: 5–10 nm as-grown grains; grains grow to tens to 300 nm after RTA
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+    evidence: full_text
+    locator: Results and Discussion, STEM
+  quote: HAADF‐STEM imaging on the as‐grown (FeCoNiMnCu)Pt film shows a uniform grain size ≈5–10 nm. SAED analysis
+    (Figure 3d) shows that the as‐grown film was crystallized into a well‐defined fcc structure. After RTA processing,
+    the grains grew substantially from several tens of nm up to 300 nm
+  note: Single-variant state is not established. The L10 grains are in a continuous film, not free particles.
+- id: hea_candidate_popa2024
+  phase: FeCoNiCuMn (review candidate)
+  quantity: other
+  value: named as proposed permanent-magnet HEA
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.3390/ma17225442
+    title: Securing Rare Earth Permanent Magnet Needs for Sustainable Energy Initiatives
+    first_author: Dan-Cristian Popa
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/materials/materials-17-05442/article_deploy/materials-17-05442.pdf
+    evidence: review
+    locator: Section 4, non-REM materials
+  quote: "High Entropy Alloys (HEAs), composed of five or more principal elements in near-\n                   \
+    \        equal proportions (such as FeCoNiCuMn or FeCoNiAlCuTi), are emerging as promising"
+  note: Review proposal only. This name has same elements as FeCoNiMnCu but does not specify atomic fractions or
+    microstructure.
+- id: hea_candidate2_popa2024
+  phase: FeCoNiAlCuTi (review candidate)
+  quantity: other
+  value: named as proposed permanent-magnet HEA
+  unit: text
+  conditions: ''
+  source:
+    doi: 10.3390/ma17225442
+    title: Securing Rare Earth Permanent Magnet Needs for Sustainable Energy Initiatives
+    first_author: Dan-Cristian Popa
+    year: 2024
+    url: https://mdpi-res.com/d_attachment/materials/materials-17-05442/article_deploy/materials-17-05442.pdf
+    evidence: review
+    locator: Section 4, non-REM materials
+  quote: "High Entropy Alloys (HEAs), composed of five or more principal elements in near-\n                   \
+    \        equal proportions (such as FeCoNiCuMn or FeCoNiAlCuTi), are emerging as promising"
+  note: Review proposal only. Na et al. measured specific non-equimolar Cu/Ti HEAs; do not treat the broad review
+    name as a measured composition.

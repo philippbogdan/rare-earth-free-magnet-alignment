@@ -1,0 +1,251 @@
+- id: hea_a_ta_br_na2021
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  route: isotropic
+  process: arc cast then thermal anneal at optimal temperature
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not specified; likely sample measurement direction
+  measurement: VSM at room temperature; applied field up to ±20 kOe, demagnetization corrected; saturation
+    not explicitly demonstrated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 650–700 °C anneal; paper groups optimal thermal anneal
+    parent_texture: as-cast, unreported
+    magnet_axis: not reported
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    evidence: full_text
+    locator: Table I
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+- id: hea_a_ta_[redacted]
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  route: isotropic
+  process: arc cast then thermal anneal at optimal temperature
+  quantity: '[redacted]'
+  unit: MGOe
+  measured_along: not specified
+  measurement: VSM at room temperature; applied field up to ±20 kOe, demagnetization corrected; saturation
+    not explicitly demonstrated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 650–700 °C anneal; paper groups optimal thermal anneal
+    parent_texture: as-cast, unreported
+    magnet_axis: not reported
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    evidence: full_text
+    locator: Table I
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+- id: hea_a_ta_mrms_na2021
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  route: isotropic
+  process: arc cast then thermal anneal at optimal temperature
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: not specified
+  measurement: VSM at room temperature; applied field up to ±20 kOe, demagnetization corrected; saturation
+    not explicitly demonstrated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 650–700 °C anneal; paper groups optimal thermal anneal
+    parent_texture: as-cast, unreported
+    magnet_axis: not reported
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    evidence: full_text
+    locator: Table I
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+- id: hea_a_fa_br_na2021
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  route: FA
+  process: arc cast; 650 °C, 1 h under 10 kOe; cool in field
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not specified; likely sample measurement direction
+  measurement: VSM at room temperature; applied field up to ±20 kOe, demagnetization corrected; saturation
+    not explicitly demonstrated
+  n_samples: not reported
+  conditions:
+    field_T: 1.0
+    T_process_K: 923.15
+    parent_texture: as-cast, unreported
+    magnet_axis: applied field, measurement axis not explicit
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    evidence: full_text
+    locator: Table I
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+- id: hea_a_fa_[redacted]
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  route: FA
+  process: arc cast; 650 °C, 1 h under 10 kOe; cool in field
+  quantity: '[redacted]'
+  unit: MGOe
+  measured_along: not specified
+  measurement: VSM at room temperature; applied field up to ±20 kOe, demagnetization corrected; saturation
+    not explicitly demonstrated
+  n_samples: not reported
+  conditions:
+    field_T: 1.0
+    T_process_K: 923.15
+    parent_texture: as-cast, unreported
+    magnet_axis: applied field, measurement axis not explicit
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    evidence: full_text
+    locator: Table I
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+- id: hea_a_fa_mrms_na2021
+  phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
+  route: FA
+  process: arc cast; 650 °C, 1 h under 10 kOe; cool in field
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: not specified
+  measurement: VSM at room temperature; applied field up to ±20 kOe, demagnetization corrected; saturation
+    not explicitly demonstrated
+  n_samples: not reported
+  conditions:
+    field_T: 1.0
+    T_process_K: 923.15
+    parent_texture: as-cast, unreported
+    magnet_axis: applied field, measurement axis not explicit
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    evidence: full_text
+    locator: Table I
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+- id: hea_d_ta_br_na2021
+  phase: Fe2CoNiAlCu0.4Ti0.4 (alloy D)
+  route: isotropic
+  process: arc cast; anneal at 650 °C
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not specified; likely sample measurement direction
+  measurement: VSM at room temperature; applied field up to ±20 kOe, demagnetization corrected; saturation
+    not explicitly demonstrated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 923.15
+    parent_texture: as-cast isotropic polycrystal
+    magnet_axis: not reported
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    evidence: full_text
+    locator: Table I
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+- id: hea_d_ta_[redacted]
+  phase: Fe2CoNiAlCu0.4Ti0.4 (alloy D)
+  route: isotropic
+  process: arc cast; anneal at 650 °C
+  quantity: '[redacted]'
+  unit: MGOe
+  measured_along: not specified
+  measurement: VSM at room temperature; applied field up to ±20 kOe, demagnetization corrected; saturation
+    not explicitly demonstrated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 923.15
+    parent_texture: as-cast isotropic polycrystal
+    magnet_axis: not reported
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    evidence: full_text
+    locator: Table I
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+- id: hea_d_ta_mrms_na2021
+  phase: Fe2CoNiAlCu0.4Ti0.4 (alloy D)
+  route: isotropic
+  process: arc cast; anneal at 650 °C
+  quantity: Mr_over_Ms
+  unit: dimensionless
+  measured_along: not specified
+  measurement: VSM at room temperature; applied field up to ±20 kOe, demagnetization corrected; saturation
+    not explicitly demonstrated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 923.15
+    parent_texture: as-cast isotropic polycrystal
+    magnet_axis: not reported
+  source:
+    doi: 10.1063/9.0000097
+    title: Hard magnetic properties of FeCoNiAlCuXTiX based high entropy alloys
+    first_author: Suok-Min Na
+    year: 2021
+    evidence: full_text
+    locator: Table I
+    url: https://pubs.aip.org/aip/adv/article/11/1/015210/1075317/Hard-magnetic-properties-of-FeCoNiAlCuXTiX
+- id: hea_l10_rocking_beeson2024
+  phase: (FeCoNiMnCu)Pt (L10 film)
+  route: 'other: sputtered film plus RTA'
+  process: co-sputtered 20 nm on Si/SiO2, 600 °C RTA for 60 s
+  quantity: texture_metric
+  unit: rocking_fwhm_deg
+  measured_along: (001) reflection, film normal
+  measurement: theta-2theta XRD rocking curve; not a full orientation distribution
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: as-grown A1 fcc film
+    magnet_axis: film normal
+  source:
+    doi: 10.1002/advs.202308574
+    title: Single‐Phase L10‐Ordered High Entropy Thin Films with High Magnetic Anisotropy
+    first_author: Willie B. Beeson
+    year: 2024
+    evidence: full_text
+    locator: Results and Discussion, Fig. 3
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11426066/fullTextXML
+- id: fese_mnrod_bh_bishwas2014
+  phase: Fe3-xMnxSe4 nanorods (x=0.03)
+  route: isotropic
+  process: Mn-substituted nanorods synthesized chemically
+  quantity: '[redacted]'
+  unit: MGOe
+  measured_along: not reported
+  measurement: 10 K; maximum field and demagnetization correction not in abstract
+  n_samples: not reported
+  conditions:
+    field_T: not reported
+    T_process_K: not reported
+    parent_texture: not reported
+    magnet_axis: not reported
+  source:
+    doi: 10.1021/jp411956q
+    title: Large Increase in the Energy Product of Fe3Se4 by Fe-Site Doping
+    first_author: Mousumi Sen Bishwas
+    year: 2014
+    evidence: abstract
+    locator: abstract
+    url: https://pubs.acs.org/doi/10.1021/jp411956q

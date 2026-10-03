@@ -4,17 +4,17 @@
     stated in the review)'
   process: arc-melted MnBi, low-temperature ball milled, hot compacted to a dense solid (as summarised
     by the review)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated in the review
+  measurement: room temperature; instrument/field not stated in the review
+  n_samples: not stated (review summary)
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: not stated
     magnet_axis: not stated
     density_rel: fully dense (stated qualitatively)
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated in the review
-  measurement: room temperature; instrument/field not stated in the review
-  n_samples: not stated (review summary)
   source:
     doi: 10.1146/annurev-matsci-070813-113457
     title: Practical Aspects of Modern and Future Permanent Magnets
@@ -27,17 +27,17 @@
   phase: LTP-MnBi
   route: 'other: bulk magnet, route not stated in the review summary'
   process: state-of-the-art room-temperature bulk MnBi (review summary)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: room temperature; not stated
+  n_samples: review summary
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: not stated
     magnet_axis: not stated
     density_rel: not stated
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: room temperature; not stated
-  n_samples: review summary
   source:
     doi: 10.1016/j.actamat.2018.07.049
     title: Current progress and future challenges in rare-earth-free permanent magnets
@@ -50,17 +50,17 @@
   phase: LTP-MnBi
   route: 'other: thick film (deposition; details not in the review summary)'
   process: MnBi thick film (Zhang et al., ref. [103] of the review)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: room temperature; not stated
+  n_samples: 1
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: not stated
     magnet_axis: not stated
     density_rel: not stated
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: room temperature; not stated
-  n_samples: 1
   source:
     doi: 10.1016/j.actamat.2018.07.049
     title: Current progress and future challenges in rare-earth-free permanent magnets
@@ -73,17 +73,17 @@
   phase: LTP-MnBi
   route: 'other: powder (alignment step not stated in the review summary)'
   process: MnBi powder (Cui et al., ref. [219] of the review)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: room temperature; not stated
+  n_samples: not stated
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: not stated
     magnet_axis: not stated
     density_rel: powder
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: room temperature; not stated
-  n_samples: not stated
   source:
     doi: 10.1016/j.actamat.2018.07.049
     title: Current progress and future challenges in rare-earth-free permanent magnets
@@ -96,17 +96,17 @@
   phase: Co nanorods/nanowires (shape anisotropy)
   route: 'other: assembly of Co nanorods (details not in the review)'
   process: Co nanorod assemblies (ref. [81] = Niarchos et al. 2015, JOM 67, 1318)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated
+  n_samples: not stated
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: n/a
     magnet_axis: not stated
     density_rel: not stated (spacing kept between particles)
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated
-  n_samples: not stated
   source:
     doi: 10.1088/2043-6254/aa597c
     title: 'Perspectives for high-performance permanent magnets: applications, coercivity, and new materials'
@@ -120,17 +120,17 @@
   route: 'other: shape-induced orientation of platelets by uniaxial pressure during SPS (no field)'
   process: hydrothermally synthesized SrFe12O19 platelets, spark plasma sintered 900 C, 5 min, 92 MPa
     (Jenus et al. 2016, ref. [115] of the review)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: out of the pellet plane (pressing direction)
+  measurement: mass-normalised [redacted]; max field and demagnetisation correction not stated
+  n_samples: '1'
   conditions:
     field_T: 0
     T_process_K: 1173
     parent_texture: none (random powder)
     magnet_axis: pressing direction (out of pellet plane)
     density_rel: '>0.90'
-  quantity: Mr_over_Ms
-  unit: ''
-  measured_along: out of the pellet plane (pressing direction)
-  measurement: mass-normalised [redacted]; max field and demagnetisation correction not stated
-  n_samples: '1'
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -145,17 +145,17 @@
   route: 'other: shape-induced orientation of platelets by uniaxial pressure during SPS (no field)'
   process: hydrothermally synthesized ultrathin SrFe12O19 hexagonal platelets, SPS with tuned routine
     (Saura-Muzquiz et al. 2016, ref. [58] of the review)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: pressing direction (c-axis texture confirmed by x-ray pole figures)
+  measurement: mass-normalised [redacted]; max field not stated
+  n_samples: '1'
   conditions:
     field_T: 0
     T_process_K: null
     parent_texture: none (random powder, confirmed by XRD)
     magnet_axis: pressing direction
     density_rel: null
-  quantity: Mr_over_Ms
-  unit: ''
-  measured_along: pressing direction (c-axis texture confirmed by x-ray pole figures)
-  measurement: mass-normalised [redacted]; max field not stated
-  n_samples: '1'
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -170,17 +170,17 @@
   route: FP + SPS (field applied to the powder prior to sintering, then uniaxial SPS)
   process: SrFe12O19 nanocrystallites, magnetic field applied prior to SPS (Stingaciu et al. 2019, ref.
     [114] of the review)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: alignment direction (not stated explicitly)
+  measurement: mass-normalised [redacted]
+  n_samples: '1'
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: none
     magnet_axis: field / pressing direction
     density_rel: null
-  quantity: Mr_over_Ms
-  unit: ''
-  measured_along: alignment direction (not stated explicitly)
-  measurement: mass-normalised [redacted]
-  n_samples: '1'
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -196,17 +196,17 @@
     4 h'
   process: HT SrFe12O19 SPS pellet post-annealed 4 h at 850 C (refs. [48, 112-114, 116] of the review;
     exact study not separable)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: pressing direction (presumed)
+  measurement: mass-normalised [redacted]
+  n_samples: '1'
   conditions:
     field_T: null
     T_process_K: 1123
     parent_texture: none
     magnet_axis: pressing direction
     density_rel: null
-  quantity: Mr_over_Ms
-  unit: ''
-  measured_along: pressing direction (presumed)
-  measurement: mass-normalised [redacted]
-  n_samples: '1'
   source:
     doi: 10.1088/1361-6463/abfad4
     title: On the potential of hard ferrite ceramics for permanent magnet technology—a review on sintering
@@ -221,17 +221,17 @@
   route: FA
   process: cast Alnico 8 with equiaxed microstructure (comparison in Durand-Charre et al. 1978, ref. [69]
     of the review)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated in the review
+  n_samples: '1'
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: equiaxed (random)
     magnet_axis: not stated
     density_rel: 1.0
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated in the review
-  n_samples: '1'
   source:
     doi: 10.3390/magnetism4020010
     title: Additively Manufactured Alnico Permanent Magnet Materials—A Review
@@ -245,17 +245,17 @@
   route: AM (+ post heat treatment as in the original; not stated in the review)
   process: net-shape alnico by laser engineered net shaping (70-200 W) and electron beam melting, gas-atomized
     powder (White et al.; refs. [24,25] of the review)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated; 'as high as' = best of several samples
+  n_samples: several (best value)
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: as printed (not stated)
     magnet_axis: not stated
     density_rel: null
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated
-  measurement: not stated; 'as high as' = best of several samples
-  n_samples: several (best value)
   source:
     doi: 10.3390/inventions7030071
     title: Recent Developments in 3D Printing of Rare-Earth-Free Permanent Magnets
@@ -269,17 +269,17 @@
   route: FA
   process: cooling in a magnetic field (magnetic heat treatment) of Alcomax II, Al 8 Ni 11 Co 24 Cu 6
     bal. Fe (wt%); schedule not given (refers to Hoselitz 1946)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: parallel to the cooling field
+  measurement: demagnetization curve (from Hoselitz 1946); 'typical values'
+  n_samples: typical values for the alloy
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: not stated (Alcomax II, not described as columnar)
     magnet_axis: cooling-field direction
     density_rel: null
-  quantity: '[redacted]'
-  unit: T
-  measured_along: parallel to the cooling field
-  measurement: demagnetization curve (from Hoselitz 1946); 'typical values'
-  n_samples: typical values for the alloy
   source:
     doi: 10.1098/rsta.1948.0007
     title: A mechanism of magnetic hysteresis in heterogeneous alloys
@@ -292,17 +292,17 @@
   phase: AlNiCo
   route: FA
   process: as uni_out_alcomax2_fc_along_sw1948
+  quantity: '[redacted]'
+  unit: T
+  measured_along: perpendicular to the cooling field
+  measurement: demagnetization curve (from Hoselitz 1946); 'typical values'
+  n_samples: typical values for the alloy
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: not stated
     magnet_axis: cooling-field direction
     density_rel: null
-  quantity: '[redacted]'
-  unit: T
-  measured_along: perpendicular to the cooling field
-  measurement: demagnetization curve (from Hoselitz 1946); 'typical values'
-  n_samples: typical values for the alloy
   source:
     doi: 10.1098/rsta.1948.0007
     title: A mechanism of magnetic hysteresis in heterogeneous alloys
@@ -315,17 +315,17 @@
   phase: L10-FePd
   route: FA
   process: ordering heat treatment of FePd in a magnetic field (details not given in the citing review)
+  quantity: texture_metric
+  unit: variant_fraction
+  measured_along: n/a
+  measurement: not stated in the citing review
+  n_samples: not stated
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: not stated (single crystal or polycrystal not stated)
     magnet_axis: field direction
     density_rel: null
-  quantity: texture_metric
-  unit: variant_fraction
-  measured_along: n/a
-  measurement: not stated in the citing review
-  n_samples: not stated
   source:
     doi: 10.1088/1468-6996/9/1/013004
     title: Structural control of Fe-based alloys through diffusional solid/solid phase transformations
@@ -339,17 +339,17 @@
   phase: L10-CoPt
   route: FA
   process: ordering heat treatment of CoPt in a magnetic field (details not given in the citing review)
+  quantity: texture_metric
+  unit: variant_fraction
+  measured_along: n/a
+  measurement: not stated in the citing review
+  n_samples: not stated
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: not stated (single crystal or polycrystal not stated)
     magnet_axis: field direction
     density_rel: null
-  quantity: texture_metric
-  unit: variant_fraction
-  measured_along: n/a
-  measurement: not stated in the citing review
-  n_samples: not stated
   source:
     doi: 10.1088/1468-6996/9/1/013004
     title: Structural control of Fe-based alloys through diffusional solid/solid phase transformations
@@ -364,18 +364,18 @@
   route: 'other: colloidal field assembly (R on rods in a wet suspension)'
   process: polyol-synthesised hcp Co nanorods assembled from wet suspensions under a magnetic field; dense
     assemblies
-  conditions:
-    field_T: null
-    T_process_K: null
-    parent_texture: n/a (free rods)
-    magnet_axis: alignment-field direction (not stated in abstract)
-    density_rel: magnetic volume fraction 45-55% (abstract)
   quantity: Mr_over_Ms
   unit: ''
   measured_along: not stated in the abstract (presumably the alignment direction)
   measurement: magnetization loops; field, temperature and demagnetisation correction not given in the
     abstract
   n_samples: dense assemblies (number not given)
+  conditions:
+    field_T: null
+    T_process_K: null
+    parent_texture: n/a (free rods)
+    magnet_axis: alignment-field direction (not stated in abstract)
+    density_rel: magnetic volume fraction 45-55% (abstract)
   source:
     doi: 10.1039/c5nr07143g
     title: Dense arrays of cobalt nanorods as rare-earth free permanent magnets
@@ -391,6 +391,11 @@
     (one- or two-step), primary recrystallisation (1200 or 1000 C) and secondary recrystallisation (HTSR:
     alpha -> alpha+gamma -> alpha+gamma+sigma -> alpha), then solution 1200 C 1 h, field ageing 635 C
     20 min and 615 C 4 h in 160 kA/m, step ageing 610 C 2 h, cooling 4 C/h, 500 C 10 h'
+  quantity: '[redacted]'
+  unit: T
+  measured_along: TD of the strip (TD alloys)
+  measurement: automatic fluxmeter, room temperature (closed circuit implied)
+  n_samples: best value of the study
   conditions:
     field_T: 0.2
     T_process_K: 888
@@ -398,11 +403,6 @@
       in the abstract)
     magnet_axis: strip transverse direction (TD)
     density_rel: 1.0
-  quantity: '[redacted]'
-  unit: T
-  measured_along: TD of the strip (TD alloys)
-  measurement: automatic fluxmeter, room temperature (closed circuit implied)
-  n_samples: best value of the study
   source:
     doi: 10.1109/20.79083
     title: The development of 100 texture in Fe-Cr-Co-Mo permanent magnet alloys
@@ -416,17 +416,17 @@
   route: FA (parent texture not stated)
   process: magnetic field aging of 52Fe-30Cr-15Co-3Mo (wt%), best value "achieved to date" as summarised
     in the introduction
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated (presumably field direction)
+  measurement: not stated
+  n_samples: literature best value
   conditions:
     field_T: null
     T_process_K: null
     parent_texture: not stated
     magnet_axis: field direction
     density_rel: null
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated (presumably field direction)
-  measurement: not stated
-  n_samples: literature best value
   source:
     doi: 10.3390/ma15072344
     title: Optimization of Single α-Phase for Promoting Ferromagnetic Properties of 44Fe–28Cr–22Co–3Mo–1Ti–2V
@@ -441,17 +441,17 @@
   route: 'other: deformation ageing'
   process: deformation aging (spinodal ageing to near-spherical particles, then extrusion/wire drawing
     or rolling, then ageing) of 42Fe-33Cr-23Co-2Cu
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated (presumably deformation direction)
+  measurement: not stated
+  n_samples: literature best value
   conditions:
     field_T: 0
     T_process_K: null
     parent_texture: not stated
     magnet_axis: deformation (wire/rolling) direction
     density_rel: 1.0
-  quantity: '[redacted]'
-  unit: T
-  measured_along: not stated (presumably deformation direction)
-  measurement: not stated
-  n_samples: literature best value
   source:
     doi: 10.3390/ma15072344
     title: Optimization of Single α-Phase for Promoting Ferromagnetic Properties of 44Fe–28Cr–22Co–3Mo–1Ti–2V
@@ -466,17 +466,17 @@
   route: EP
   process: alternate monatomic layer deposition of Fe(001) and Pt(001) on MgO(001) at substrate temperatures
     160-230 C (films)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: 'film normal (abstract: all samples perpendicularly magnetized)'
+  measurement: magnetization curves; instrument/field not read
+  n_samples: samples grown at Ts >= 160 C
   conditions:
     field_T: 0
     T_process_K: 433
     parent_texture: epitaxial on MgO(001)
     magnet_axis: film normal
     density_rel: 1.0
-  quantity: Mr_over_Ms
-  unit: ''
-  measured_along: 'film normal (abstract: all samples perpendicularly magnetized)'
-  measurement: magnetization curves; instrument/field not read
-  n_samples: samples grown at Ts >= 160 C
   source:
     doi: 10.1063/1.1432446
     title: Low-temperature fabrication of L10 ordered FePt alloy by alternate monatomic layer deposition
@@ -490,17 +490,17 @@
   route: SC+SA
   process: equiatomic FePd single crystal; 40 MPa uniaxial compression along <100> kept applied during
     slow cooling across the ordering temperature (650 C) to 600 C, then furnace cooling (treatment 2)
+  quantity: texture_metric
+  unit: variant_fraction
+  measured_along: '-'
+  measurement: X-ray diffraction
+  n_samples: 1
   conditions:
     field_T: 0
     T_process_K: 923
     parent_texture: single crystal (A1)
     magnet_axis: compression axis <100> (c/a < 1 variant)
     density_rel: 1.0
-  quantity: texture_metric
-  unit: variant_fraction
-  measured_along: '-'
-  measurement: X-ray diffraction
-  n_samples: 1
   source:
     doi: 10.2320/matertrans1989.39.24
     title: Effect of Applied Stress on fcc-L10 Transformation of FePd Single Crystal
@@ -514,17 +514,17 @@
   route: SC+FA
   process: 'Co-50Pt (at%) single crystal; two-step ordering: 773 K 0.5 h in field H1 (along Z) below Tc
     of the disordered phase, then 1023 K without field'
+  quantity: texture_metric
+  unit: variant_fraction
+  measured_along: '-'
+  measurement: variant analysis as reported in the paper (X-ray/microscopy, not re-read here)
+  n_samples: series of fields
   conditions:
     field_T: '>= about 0.5'
     T_process_K: 773
     parent_texture: single crystal (A1)
     magnet_axis: field direction <100>
     density_rel: 1.0
-  quantity: texture_metric
-  unit: variant_fraction
-  measured_along: '-'
-  measurement: variant analysis as reported in the paper (X-ray/microscopy, not re-read here)
-  n_samples: series of fields
   source:
     doi: 10.2355/isijinternational.49.1610
     title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd
@@ -539,17 +539,17 @@
   route: SC+FA
   process: 'Fe-55Pd (at%) single crystal; two-step ordering: 673 K 1 h in field H1 (along Z), then 773
     K without field'
+  quantity: texture_metric
+  unit: variant_fraction
+  measured_along: '-'
+  measurement: variant analysis as reported in the paper (not re-read here)
+  n_samples: series of fields
   conditions:
     field_T: '>= about 4'
     T_process_K: 673
     parent_texture: single crystal (A1)
     magnet_axis: field direction <100>
     density_rel: 1.0
-  quantity: texture_metric
-  unit: variant_fraction
-  measured_along: '-'
-  measurement: variant analysis as reported in the paper (not re-read here)
-  n_samples: series of fields
   source:
     doi: 10.2355/isijinternational.49.1610
     title: Ordering Process and Variant Selection under Magnetic Field in L10-type Co–50Pt and Fe–55Pd
@@ -564,17 +564,17 @@
   route: SC+FA
   process: 'FePd single crystal, treatment (i): isothermal ordering anneal at 673 K under fields up to
     10 T'
+  quantity: texture_metric
+  unit: variant_fraction
+  measured_along: '-'
+  measurement: not read (abstract statement)
+  n_samples: not stated
   conditions:
     field_T: up to 10
     T_process_K: 673
     parent_texture: single crystal (A1)
     magnet_axis: field direction
     density_rel: 1.0
-  quantity: texture_metric
-  unit: variant_fraction
-  measured_along: '-'
-  measurement: not read (abstract statement)
-  n_samples: not stated
   source:
     doi: null
     title: Effect of Magnetic Field on Ordering of FePd
@@ -588,17 +588,17 @@
   route: SC+FA
   process: 'FePd single crystal, treatment (ii): annealing near the magnetic transition temperature (763
     K) in 10 T'
+  quantity: texture_metric
+  unit: variant_fraction
+  measured_along: '-'
+  measurement: not read (abstract statement)
+  n_samples: not stated
   conditions:
     field_T: 10
     T_process_K: 763
     parent_texture: single crystal (A1)
     magnet_axis: field direction
     density_rel: 1.0
-  quantity: texture_metric
-  unit: variant_fraction
-  measured_along: '-'
-  measurement: not read (abstract statement)
-  n_samples: not stated
   source:
     doi: null
     title: Effect of Magnetic Field on Ordering of FePd
@@ -612,17 +612,17 @@
   route: SC+FA
   process: FePd single crystals ordered at various temperatures under fields up to 10 T; above 793 K with
     a field of appropriate strength
+  quantity: texture_metric
+  unit: variant_fraction
+  measured_along: '-'
+  measurement: not read (abstract)
+  n_samples: not stated
   conditions:
     field_T: appropriate strength, up to 10
     T_process_K: '> 793'
     parent_texture: single crystal (A1)
     magnet_axis: field direction
     density_rel: 1.0
-  quantity: texture_metric
-  unit: variant_fraction
-  measured_along: '-'
-  measurement: not read (abstract)
-  n_samples: not stated
   source:
     doi: 10.2320/matertrans1989.41.917
     title: Formation of Mono-variant L10 Structure on Ordering of FePd under Magnetic Fields

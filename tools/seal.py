@@ -58,11 +58,27 @@ def _redact(v):
     return v
 
 
+COND_ALLOW = re.compile(r'^(field_T|field_Oe|field_kOe|field_direction|T_process_K|T_[a-z_]*K|time_.*|'
+                        r'stress_MPa|stress_axis|stress_sign|theta1_deg|theta2_deg|strain_percent|'
+                        r'parent_texture|parent_phase.*|magnet_axis|composition.*|particle_size.*|substrate|'
+                        r'Tc_relation|la_co|route_detail|alignment.*|consolidation.*|measured_direction|'
+                        r'density_rel|phase_content|packing_fraction)$')
+
+
+def _allowed_conditions(c):
+    """Process parameters only: any key not on the allow-list is dropped (outcome-related
+    numbers such as Mr, M, Br, (BH)max, Hc, Ku placed in conditions never pass)."""
+    if not isinstance(c, dict):
+        return _redact(c)
+    return {k: _redact(v) for k, v in c.items() if COND_ALLOW.match(str(k))}
+
+
 def conditions_only(recs):
     """Value-free view of outcome records (no value, uncertainty, quote or note)."""
     out = []
     for r in recs:
-        c = {k: _redact(r.get(k)) for k in COND_KEYS if k in r}
+        c = {k: _redact(r.get(k)) for k in COND_KEYS if k in r and k != 'conditions'}
+        c['conditions'] = _allowed_conditions(r.get('conditions'))
         src = r.get('source') or {}
         c['source'] = {k: src.get(k) for k in ('doi', 'title', 'first_author', 'year',
                                                'evidence', 'locator', 'url') if k in src}
@@ -96,6 +112,17 @@ def seal(batch):
     json.dump(man, open(MAN, 'w'), indent=1)
 
 
+def export_conditions():
+    """Regenerate every value-free conditions file from the sealed plaintexts."""
+    for fn in sorted(os.listdir(SRC)):
+        if fn.endswith('.yaml'):
+            recs = yaml.safe_load(open(os.path.join(SRC, fn))) or []
+            cond = os.path.join(DST, fn.replace('.yaml', '.conditions.yaml'))
+            yaml.safe_dump(conditions_only(recs), open(cond, 'w'), sort_keys=False,
+                           allow_unicode=True, width=100)
+            print('exported', cond)
+
+
 def open_batch(batch):
     man = _manifest()
     entry = man['batches'][batch]
@@ -114,4 +141,7 @@ def open_batch(batch):
 
 if __name__ == '__main__':
     cmd, batch = sys.argv[1], sys.argv[2]
-    {'seal': seal, 'open': open_batch}[cmd](batch)
+    if cmd == 'export':
+        export_conditions()
+    else:
+        {'seal': seal, 'open': open_batch}[cmd](batch)
