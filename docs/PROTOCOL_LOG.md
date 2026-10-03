@@ -143,3 +143,4 @@ films are tested along the normal only. Account: HDDR from hydride thermodynamic
 TGG, textured-parent variant angles (no case prediction of batches 1-5 depends on them).
 
     sha256 data/curated/cases_v5.yaml  0c7a5fd10bc6252afbdd1f9a24101db312ed32ec76170e6650a0e308afe15583
+freeze v5: 330395c
