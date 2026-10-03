@@ -468,16 +468,22 @@ def build(reg, phases, rows, R, st, univ=None):
                   f"conversion range); 'cannot align' was refuted in {h1['none_refuted']} of {h1['none_n']}; "
                   f"{s1['summary']['pairs']['ok']} of {s1['summary']['pairs']['n']} field/no-field pairs moved "
                   f"as predicted. Every failure is diagnosed in §6.")
+        later = [r for r in frontier_rows(univ) if r['version'] != 'v1']
+        if later:
+            sm.append('- **Revised rules on later held-out batches** (frozen before each opening, sources never used '
+                      'before): ' + '; '.join(f"{r['version']}: {r['n_cases'] - r['violations']} of {r['n_cases']} "
+                                             'ceilings held' for r in later) + ' (failures diagnosed in §6).')
     a5 = [x for x in (s1['cases'] if s1 else []) if x['status'] == 'heldout' and x['phase'] == 'AlNiCo-5'
           and (x.get('hyp') or {}).get('rods on the nearest <100>') == 'refuted']
     sm.append(f"- **Settled by the held-back data**: in Ti-free AlNiCo 5 the α1 rods are not held on the parent "
               f"<100> nearest the field: {len(a5)} held-out equiaxed magnets exceed the 0.831 that this would "
               f"allow (up to {fmt(max((x['m_lo'] for x in a5), default=None))} with the same-sample Js), and in "
               "columnar crystals A falls with the cosine of the field angle; the account now lets the rods follow "
-              "the field (ceiling 1 for any grain). Without a bias, spinodal alloys (AlNiCo, Fe-Cr-Co, the "
-              "alnico-like HEA) reach more remanence than independent rods allow: that reading was refuted "
-              f"{hyp_ref[('independent rods', 'refuted')]} times, the coupled-network bound "
-              f"(0.866 for random grains) held every time.")
+              "the field (ceiling 1 for any grain). Where the three rod directions are equivalent (no bias, or a "
+              "field along <111> or <110> that ties them), spinodal alloys (AlNiCo, Fe-Cr-Co, the alnico-like HEA) "
+              "keep more remanence than independent rods allow: that reading was refuted "
+              f"{hyp_ref[('independent rods', 'refuted')]} times, while the bound for one coupled network per "
+              f"grain (0.866 for random grains, with the no-field easy directions <111>) held every time.")
     if s1:
         ho = [x for x in s1['cases'] if x['status'] == 'heldout' and x.get('result') == 'scored']
         a89 = [x for x in ho if x['phase'] == 'AlNiCo-8-9' and abs(x['A_hi'] - 0.8312) < 0.01
@@ -490,13 +496,12 @@ def build(reg, phases, rows, R, st, univ=None):
                       f"{fmt(max(x['m_hi'] for x in a89))} in all {len(a89)} held-out cases with a same-sample Js "
                       f"or Mr/Ms; equiaxed Mo-free Fe-Cr-Co (rods follow the field in any grain, ceiling 1) "
                       f"exceeds that cap in {len(fcc)} held-out cases (up to {fmt(max(x['m_lo'] for x in fcc))}).")
-    seen = set()
-    for r in sorted(caps, key=lambda r: r['A_max']):
-        if r['phase'] in seen:
-            continue
-        seen.add(r['phase'])
-        sm.append(f"- **Cap**: {r['phase']} by {r['route']}: A_max = {fmt(r['A_max'])} — "
-                  f"{r['chain'].split(';')[0]}.")
+    groups = collections.defaultdict(list)
+    for r in caps:
+        groups[(round(r['A_max'], 2), ';'.join(r['chain'].split(';')[:2]).strip())].append(f"{r['phase']} {r['route']}")
+    for (a, why), cells in sorted(groups.items(), key=lambda kv: (kv[0][0], -len(kv[1])))[:6]:
+        sm.append(f"- **Geometric cap A_max ≈ {a:.2f}** ({len(cells)} cells: {', '.join(cells[:8])}"
+                  f"{' …' if len(cells) > 8 else ''}) — {why}.")
     ctx['summary'] = '\n'.join(sm)
     # ---------------- REPORT: fidelity
     fid = []
