@@ -1,0 +1,874 @@
+- id: mn3ga_iso_niida1996
+  phase: D022-Mn3Ga
+  route: isotropic
+  process: 'D022 Mn2.33Ga: quenched gamma-Mn ingot powdered by filing, annealed 300-400 C for a long time;
+    loose powder'
+  conditions:
+    field_T: 0
+    T_process_K: 573-673
+    parent_texture: none (filed powder)
+    magnet_axis: measurement field direction
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: applied-field direction (random powder)
+  measurement: room temperature; magnetization curves up to 150 kOe for high-coercivity specimens; demagnetisation
+    correction not stated
+  n_samples: 1
+  source:
+    doi: 10.1063/1.362115
+    title: Magnetization and coercivity of Mn3−δGa alloys with a D022-type structure
+    first_author: Hiroshi Niida
+    year: 1996
+    evidence: abstract
+    locator: abstract
+    url: https://api.openalex.org/works/doi:10.1063/1.362115
+- id: mn3ga_rxfa_ener2015
+  phase: D022-Mn3Ga
+  route: RX+FA
+  process: arc-melted Mn70Ga30, cold rolled, annealed at 730 K in a 1 T field (best condition)
+  conditions:
+    field_T: 1
+    T_process_K: 730
+    parent_texture: cold-rolled D019 (texture not stated in abstract)
+    magnet_axis: not stated in abstract
+    density_rel: null
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated in abstract
+  measurement: room temperature; method/max field not stated in abstract
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jmmm.2015.02.001
+    title: Magnet properties of Mn70Ga30 prepared by cold rolling and magnetic field annealing
+    first_author: Semih Ener
+    year: 2015
+    evidence: abstract
+    locator: abstract
+    url: https://istina.ipmnet.ru/publications/article/80330998/
+- id: mnga_fa_brown2015
+  phase: Mn-Ga (L10/D022 not specified in abstract)
+  route: FA
+  process: mechanically alloyed nanostructured Mn-Ga composite, heat treated in 31 T at low temperature
+  conditions:
+    field_T: 31
+    T_process_K: not stated (kept low)
+    parent_texture: none (mechanically alloyed powder compact)
+    magnet_axis: not stated
+    density_rel: null
+  quantity: '[redacted]'
+  unit: Am2/kg (mass [redacted]
+  measured_along: not stated
+  measurement: room temperature; method not stated in abstract
+  n_samples: series (best value)
+  source:
+    doi: 10.1557/adv.2015.26
+    title: High Magnetic Field Annealing of Mn-Ga Intermetallic Alloys
+    first_author: Daniel R. Brown
+    year: 2015
+    evidence: abstract
+    locator: abstract
+    url: https://bearworks.missouristate.edu/articles-cnas/995
+- id: mnga_l10_ep_zhu2012
+  phase: L10-MnGa
+  route: EP
+  process: MBE epitaxial L10-Mn1.5Ga films (~480 nm) on GaAs(001), growth 100-300 C, c axis normal
+  conditions:
+    field_T: 0
+    T_process_K: 373-573
+    parent_texture: single-crystal substrate GaAs(001)
+    magnet_axis: film normal (c axis)
+    density_rel: 1.0
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: film normal (perpendicular)
+  measurement: 300 K; SQUID up to 5 T and PPMS up to 9 T; film
+  n_samples: 5 films (Ts = 100-300 C)
+  source:
+    doi: 10.1002/adma.201200805
+    title: Multifunctional L10‐Mn1.5Ga Films with Ultrahigh Coercivity, Giant Perpendicular Magnetocrystalline
+      Anisotropy and Large Magnetic Energy Product
+    first_author: Lijun Zhu
+    year: 2012
+    evidence: full_text
+    locator: p. 2 and Fig. 2c (arXiv:1203.6176v1)
+    url: https://arxiv.org/pdf/1203.6176
+- id: mnga_l10_ep_krishnan1992
+  phase: L10-MnGa
+  route: EP
+  process: delta-MnGa (62 +- 2 % Mn) single-crystal films on GaAs(001), c axis normal
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: single-crystal substrate
+    magnet_axis: film normal
+    density_rel: 1.0
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: film normal
+  measurement: polar Kerr, SQUID and VSM; temperature not stated in abstract
+  n_samples: 1
+  source:
+    doi: 10.1063/1.108245
+    title: Ferromagnetic δ-Mn1−xGax thin films with perpendicular anisotropy
+    first_author: Kannan M. Krishnan
+    year: 1992
+    evidence: abstract
+    locator: abstract
+    url: https://api.openalex.org/works/doi:10.1063/1.108245
+- id: mnga_l10_iso_cui2013
+  phase: L10-MnGa
+  route: isotropic
+  process: high-energy ball-milled Mn56Ga44 microparticles (10-50 um, crystallites 40-62 nm), annealed
+    400-650 C 20 min
+  conditions:
+    field_T: 0
+    T_process_K: 673-923
+    parent_texture: none
+    magnet_axis: measurement field
+    density_rel: null
+  quantity: '[redacted]'
+  unit: Am2/kg (mass [redacted]
+  measured_along: applied-field direction (isotropic particles)
+  measurement: room temperature presumably; max field not stated in abstract
+  n_samples: series (400-650 C anneals)
+  source:
+    doi: 10.1109/TMAG.2013.2245868
+    title: Ferromagnetic Tetragonal ${\rm L}1_{0}$-Type MnGa Isotropic Nanocrystalline Microparticles
+    first_author: B. Z. Cui
+    year: 2013
+    evidence: abstract
+    locator: abstract
+    url: https://api.openalex.org/works/doi:10.1109/TMAG.2013.2245868
+- id: mnga_l10_iso_cui2013_ms
+  phase: L10-MnGa
+  route: isotropic
+  process: same as mnga_l10_iso_cui2013 (Mn56Ga44 powder annealed 600 C, 20 min)
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    parent_texture: none
+    magnet_axis: measurement field
+    density_rel: null
+  quantity: Js_same_sample
+  unit: Am2/kg (saturation magnetization, mass)
+  measured_along: applied-field direction
+  measurement: not stated
+  n_samples: 1
+  source:
+    doi: 10.1016/j.calphad.2019.101722
+    title: 'An evaluation of the Mn–Ga system: Phase diagram, crystal structure, magnetism, and thermodynamic
+      properties'
+    first_author: Liangyan Hao
+    year: 2020
+    evidence: review
+    locator: Section 4 (quoting Cui et al. [50])
+    url: https://par.nsf.gov/servlets/purl/10159800
+- id: mnga_l10_ms_gong2015
+  phase: L10-MnGa
+  route: 'other: melt-spun ribbon (rapidly quenched, texture not reported)'
+  process: rapidly quenched L10-Mn1.86Ga ribbons
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: not reported
+    magnet_axis: not stated
+    density_rel: null
+  quantity: '[redacted]'
+  unit: Am2/kg (mass [redacted]
+  measured_along: not stated in abstract
+  measurement: room temperature presumably; not stated
+  n_samples: 1
+  source:
+    doi: 10.1109/TMAG.2015.2434936
+    title: Structure, Magnetic Properties, and Coercivity Mechanism of Rapidly Quenched MnxGa Ribbons
+    first_author: Wenjie Gong
+    year: 2015
+    evidence: abstract
+    locator: abstract
+    url: https://api.openalex.org/works/doi:10.1109/TMAG.2015.2434936
+- id: mn3ge_ep_sugihara2014
+  phase: D022-Mn3Ge
+  route: EP
+  process: sputtered epitaxial D022-Mn3+xGe (0 <= x <= 0.35) films on Cr(001)/MgO(001), 400 C
+  conditions:
+    field_T: 0
+    T_process_K: 673
+    parent_texture: single-crystal substrate
+    magnet_axis: film normal (c axis)
+    density_rel: 1.0
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: film normal
+  measurement: not stated in abstract
+  n_samples: series
+  source:
+    doi: 10.1063/1.4870625
+    title: High perpendicular magnetic anisotropy in D22-Mn3+xGe tetragonal Heusler alloy films
+    first_author: A. Sugihara
+    year: 2014
+    evidence: abstract
+    locator: abstract
+    url: https://api.crossref.org/works/10.1063/1.4870625
+- id: mn3ge_ep_sugihara2015
+  phase: D022-Mn3Ge
+  route: EP
+  process: sputtered epitaxial stoichiometric D022-Mn3Ge films on Cr/MgO(001), grown at >= 300 C
+  conditions:
+    field_T: 0
+    T_process_K: '>=573'
+    parent_texture: single-crystal substrate
+    magnet_axis: film normal (c axis)
+    density_rel: 1.0
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: out-of-plane
+  measurement: not stated in abstract
+  n_samples: series
+  source:
+    doi: 10.1088/0022-3727/48/16/164009
+    title: Structure and magnetic properties of tetragonal HeuslerD022-Mn3Ge compound epitaxial films
+      with high perpendicular magnetic anisotropy
+    first_author: A Sugihara
+    year: 2015
+    evidence: abstract
+    locator: abstract
+    url: https://api.openalex.org/works/doi:10.1088/0022-3727/48/16/164009
+- id: mn3ge_ms_kalache2016
+  phase: D022-Mn3Ge
+  route: 'other: melt-spun ribbon + heat treatment'
+  process: melt-spun Mn3Ge ribbons (77-74 at.% Mn) annealed; D022 + Mn5Ge2
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: not reported
+    magnet_axis: any (isotropic)
+    density_rel: null
+  quantity: texture_metric
+  unit: qualitative
+  measured_along: several directions
+  measurement: not stated in abstract
+  n_samples: series
+  source:
+    doi: 10.1063/1.4961660
+    title: Isotropic, high coercive field in melt-spun tetragonal Heusler Mn3Ge
+    first_author: Adel Kalache
+    year: 2016
+    evidence: abstract
+    locator: abstract
+    url: https://api.openalex.org/works/doi:10.1063/1.4961660
+- id: mn3ga_fa_niida1996_kb
+  phase: D022-Mn3Ga
+  route: FA
+  process: 'Mn70Ga30: quenched gamma-Mn filed to powder, annealed 573 K for several days in 796 kA/m (path
+    gamma-Mn -> D019 -> D022)'
+  conditions:
+    field_T: 1.0
+    T_process_K: 573
+    parent_texture: none (powder)
+    magnet_axis: field direction
+    density_rel: null
+  quantity: texture_metric
+  unit: qualitative
+  measured_along: field direction vs perpendicular (not detailed)
+  measurement: as reported by the review; original J. Appl. Phys. 79 (1996) 5946 not accessible
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    evidence: review
+    locator: Section 2.3 (Niida et al. 1996)
+    url: https://par.nsf.gov/servlets/purl/10314453
+- id: mn3ga_rxfa_ener2015_kb
+  phase: D022-Mn3Ga
+  route: RX+FA
+  process: arc-melted Mn70Ga30 cold rolled, annealed 730 K for 24 h in 796 kA/m (D022 + D019)
+  conditions:
+    field_T: 1.0
+    T_process_K: 730
+    parent_texture: cold-rolled (rolling texture not reported)
+    magnet_axis: field direction
+    density_rel: null
+  quantity: '[redacted]'
+  unit: Am2/kg (mass [redacted]
+  measured_along: parallel to the annealing field
+  measurement: room temperature; review converted to Am2/kg with 7180 kg/m3
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    evidence: review
+    locator: Section 2.2 and Table 1 (Ener et al. 2015)
+    url: https://par.nsf.gov/servlets/purl/10314453
+- id: mn3ga_rx_ener2015_kb
+  phase: D022-Mn3Ga
+  route: 'other: cold rolling + annealing without field'
+  process: Mn70Ga30 cold rolled, annealed 700 K, 2 h, zero field
+  conditions:
+    field_T: 0
+    T_process_K: 700
+    parent_texture: cold-rolled
+    magnet_axis: not stated
+    density_rel: null
+  quantity: '[redacted]'
+  unit: Am2/kg (mass [redacted]
+  measured_along: not stated
+  measurement: room temperature
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    evidence: review
+    locator: Section 2.2 (Ener et al. 2015)
+    url: https://par.nsf.gov/servlets/purl/10314453
+- id: mn3ga_iso_ener2015_kb
+  phase: D022-Mn3Ga
+  route: isotropic
+  process: Mn70Ga30 not rolled, annealed 700 K, 2 h, zero field
+  conditions:
+    field_T: 0
+    T_process_K: 700
+    parent_texture: none (as-cast)
+    magnet_axis: '-'
+    density_rel: null
+  quantity: '[redacted]'
+  unit: Am2/kg (mass [redacted]
+  measured_along: not stated
+  measurement: room temperature
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    evidence: review
+    locator: Section 2.2 (Ener et al. 2015)
+    url: https://par.nsf.gov/servlets/purl/10314453
+- id: mn3ga_fa_ener2015_kb
+  phase: D022-Mn3Ga
+  route: FA
+  process: Mn70Ga30 not rolled, annealed 650-750 K in 796 kA/m
+  conditions:
+    field_T: 1.0
+    T_process_K: 650-750
+    parent_texture: none (as-cast D019)
+    magnet_axis: field direction
+    density_rel: null
+  quantity: texture_metric
+  unit: qualitative
+  measured_along: not stated
+  measurement: room temperature
+  n_samples: series
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    evidence: review
+    locator: Section 2.2 (Ener et al. 2015)
+    url: https://par.nsf.gov/servlets/purl/10314453
+- id: mn3ga_iso_balke2007_kb
+  phase: D022-Mn3Ga
+  route: isotropic
+  process: bulk Mn75Ga25 arc-melted, 673 K anneal for 7 days
+  conditions:
+    field_T: 0
+    T_process_K: 673
+    parent_texture: none
+    magnet_axis: '-'
+    density_rel: null
+  quantity: '[redacted]'
+  unit: T
+  measured_along: '-'
+  measurement: 'room temperature (review Table 1 note: isotropic unless noted)'
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    evidence: review
+    locator: Table 1 (row Balke et al. 2007; transcribed from page image)
+    url: https://par.nsf.gov/servlets/purl/10314453
+- id: mn3ga_iso_winterlik2008_kb
+  phase: D022-Mn3Ga
+  route: isotropic
+  process: bulk Mn75Ga25 arc-melted, 623 K anneal for 14 days, ice-water quench
+  conditions:
+    field_T: 0
+    T_process_K: 623
+    parent_texture: none
+    magnet_axis: '-'
+    density_rel: null
+  quantity: '[redacted]'
+  unit: T
+  measured_along: '-'
+  measurement: room temperature (0.137 T at 5 K)
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    evidence: review
+    locator: Table 1 (row Winterlik et al. 2008; transcribed from page image)
+    url: https://par.nsf.gov/servlets/purl/10314453
+- id: mnga_l10_hd_lu2019
+  phase: L10-MnGa
+  route: HD
+  process: L10-Mn1.8Ga, spark-plasma-sintering based hot deformation at 873 K, 92% height reduction, fully
+    recrystallised, grain ~1.4 um
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    parent_texture: none (sintered)
+    magnet_axis: not stated in abstract (pressing direction?)
+    density_rel: null
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated in abstract
+  measurement: room temperature presumably; not stated
+  n_samples: 1
+  source:
+    doi: 10.1016/j.jmmm.2018.11.005
+    title: Recrystallization induced coercivity and magnetic properties enhancement in hot-deformed L1-Mn1.8Ga
+      magnet
+    first_author: Q.M. Lu
+    year: 2019
+    evidence: abstract
+    locator: abstract (Semantic Scholar)
+    url: https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.jmmm.2018.11.005
+- id: mnga_l10_iso_cui2013_kb
+  phase: L10-MnGa
+  route: isotropic
+  process: Mn56Ga44 high-energy ball milled 6 h, annealed 873 K 20 min
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    parent_texture: none
+    magnet_axis: '-'
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: '-'
+  measurement: room temperature (review Table 2)
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    evidence: review
+    locator: Table 2 (row Cui et al. 2013; transcribed from page image)
+    url: https://par.nsf.gov/servlets/purl/10314453
+- id: mn3ga_ms_saito2012_kb
+  phase: D022-Mn3Ga
+  route: 'other: melt-spun ribbon (texture not reported)'
+  process: Mn70Ga30 ribbon spun at 50 m/s, annealed 973 K 1 h (D022 + minor beta-Mn)
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: not reported
+    magnet_axis: '-'
+    density_rel: null
+  quantity: '[redacted]'
+  unit: Am2/kg (mass [redacted]
+  measured_along: not stated
+  measurement: room temperature
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    evidence: review
+    locator: Section 2.3 and Table 2 (Saito & Nishimura 2012)
+    url: https://par.nsf.gov/servlets/purl/10314453
+- id: mn3ga_ms_liu2015_kb
+  phase: D022-Mn3Ga
+  route: 'other: melt-spun ribbon (texture not reported)'
+  process: Mn70Ga30 ribbon spun at 50 m/s, annealed 873 K 1 h
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    parent_texture: not reported
+    magnet_axis: '-'
+    density_rel: null
+  quantity: '[redacted]'
+  unit: Am2/kg (mass [redacted]
+  measured_along: not stated
+  measurement: room temperature; Ms ~9 Am2/kg at 1989 kA/m read from a graph (not saturating)
+  n_samples: 1
+  source:
+    doi: 10.1016/j.pmatsci.2021.100872
+    title: Manganese-based permanent magnet materials
+    first_author: Thomas Keller
+    year: 2022
+    evidence: review
+    locator: Section 2.3 and Table 2 (Liu et al. 2015)
+    url: https://par.nsf.gov/servlets/purl/10314453
+- id: zr2co11_cl_bal2013
+  phase: Zr2Co11
+  route: 'other: cluster deposition, in-flight field alignment'
+  process: dc-magnetron sputtering into gas aggregation, rhombohedral Zr2Co11 clusters d = 8.7 nm aligned
+    in flight by ~5 kOe, deposited as dense film (up to 1.4 um) on Si(001)
+  conditions:
+    field_T: 0.5
+    T_process_K: room-temperature substrate (particle formation in water-cooled gas-aggregation chamber)
+    parent_texture: none (free particles rotate in flight)
+    magnet_axis: alignment field direction x (in the film plane)
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: easy axis = alignment-field direction (in-plane x)
+  measurement: SQUID, 300 K; hysteresis along easy (x) and hard (y) axes; demagnetisation factor N = 0.26
+    estimated for B-H evaluation
+  n_samples: 1
+  source:
+    doi: 10.1002/adma.201302704
+    title: Novel Nanostructured Rare‐Earth‐Free Magnetic Materials with High Energy Products
+    first_author: Balamurugan Balasubramanian
+    year: 2013
+    evidence: full_text
+    locator: p. 2, Fig. 3b and Fig. 4
+    url: https://www.osti.gov/servlets/purl/1768827
+- id: zr2co11_cl_texture_bal2013
+  phase: Zr2Co11
+  route: 'other: cluster deposition, in-flight field alignment'
+  process: same aligned Zr2Co11 cluster film
+  conditions:
+    field_T: 0.5
+    T_process_K: room-temperature substrate (particle formation in water-cooled gas-aggregation chamber)
+    parent_texture: none (free particles rotate in flight)
+    magnet_axis: alignment field direction x (in the film plane)
+    density_rel: null
+  quantity: texture_metric
+  unit: 'fraction of particles with easy axis within 30 deg of the field (model: P(theta) ~ exp(-sin^2(theta)/delta),
+    delta ~ 0.11, fitted to [redacted]'
+  measured_along: easy axis
+  measurement: derived from [redacted]
+  n_samples: 1
+  source:
+    doi: 10.1002/adma.201302704
+    title: Novel Nanostructured Rare‐Earth‐Free Magnetic Materials with High Energy Products
+    first_author: Balamurugan Balasubramanian
+    year: 2013
+    evidence: full_text
+    locator: p. 2, Eq. (1)-(2), Fig. 4b
+    url: https://www.osti.gov/servlets/purl/1768827
+- id: zr2co11_cl_js_bal2013
+  phase: Zr2Co11
+  route: 'other: cluster deposition, in-flight field alignment'
+  process: aligned ZrxCo100-x cluster films that are predominantly Zr2Co11
+  conditions:
+    field_T: 0.5
+    T_process_K: room-temperature substrate (particle formation in water-cooled gas-aggregation chamber)
+    parent_texture: none (free particles rotate in flight)
+    magnet_axis: alignment field direction x (in the film plane)
+    density_rel: null
+  quantity: Js_same_sample
+  unit: T
+  measured_along: easy axis
+  measurement: SQUID, 300 K
+  n_samples: series
+  source:
+    doi: 10.1002/adma.201302704
+    title: Novel Nanostructured Rare‐Earth‐Free Magnetic Materials with High Energy Products
+    first_author: Balamurugan Balasubramanian
+    year: 2013
+    evidence: full_text
+    locator: p. 2, Fig. 3c
+    url: https://www.osti.gov/servlets/purl/1768827
+- id: zr2co11_cl_nc_bal2013
+  phase: Zr2Co11
+  route: 'other: cluster deposition, in-flight alignment + co-deposited soft Fe65Co35 (exchange-coupled
+    composite)'
+  process: aligned Zr2Co11 clusters co-deposited with Fe65Co35 (about 15 vol% soft phase)
+  conditions:
+    field_T: 0.5
+    T_process_K: room-temperature substrate
+    parent_texture: none
+    magnet_axis: alignment field direction
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: easy axis
+  measurement: 300 K, SQUID
+  n_samples: 1
+  source:
+    doi: 10.1002/adma.201302704
+    title: Novel Nanostructured Rare‐Earth‐Free Magnetic Materials with High Energy Products
+    first_author: Balamurugan Balasubramanian
+    year: 2013
+    evidence: full_text
+    locator: p. 2
+    url: https://www.osti.gov/servlets/purl/1768827
+- id: hfco7_cl_bal2014
+  phase: HfCo7
+  route: 'other: cluster deposition, in-flight field alignment'
+  process: cluster-deposited single-crystal HfCo7 particles (12.7 nm) aligned in flight by ~5 kOe, dense
+    film on Si(001)
+  conditions:
+    field_T: 0.5
+    T_process_K: room-temperature substrate (particle formation in water-cooled gas-aggregation chamber)
+    parent_texture: none (free particles rotate in flight)
+    magnet_axis: alignment field direction x (in the film plane)
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: easy axis (alignment-field direction, in-plane)
+  measurement: room temperature, SQUID/PPMS; easy- and hard-axis loops merge only near 40 kOe; law-of-approach
+    fits to 70 kOe
+  n_samples: 1
+  source:
+    doi: 10.1038/srep06265
+    title: Magnetic nanostructuring and overcoming Brown's paradox to realize extraordinary high-temperature
+      energy products
+    first_author: Balamurugan Balasubramanian
+    year: 2014
+    evidence: full_text
+    locator: Results, Fig. 1f
+    url: https://www.nature.com/articles/srep06265
+- id: hfco7_cl_hard_bal2014
+  phase: HfCo7
+  route: 'other: cluster deposition, in-flight field alignment'
+  process: same aligned HfCo7 cluster film, measured along the in-plane hard direction
+  conditions:
+    field_T: 0.5
+    T_process_K: room-temperature substrate (particle formation in water-cooled gas-aggregation chamber)
+    parent_texture: none (free particles rotate in flight)
+    magnet_axis: alignment field direction x (in the film plane)
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: hard axis (in-plane, perpendicular to alignment field)
+  measurement: room temperature
+  n_samples: 1
+  source:
+    doi: 10.1038/srep06265
+    title: Magnetic nanostructuring and overcoming Brown's paradox to realize extraordinary high-temperature
+      energy products
+    first_author: Balamurugan Balasubramanian
+    year: 2014
+    evidence: full_text
+    locator: Results, Fig. 1f
+    url: https://www.nature.com/articles/srep06265
+- id: hfco7_iso_cl_bal2014
+  phase: HfCo7
+  route: isotropic
+  process: cluster-deposited HfCo7 particle film deposited without alignment field (randomly oriented)
+  conditions:
+    field_T: 0
+    T_process_K: room-temperature substrate
+    parent_texture: none
+    magnet_axis: in-plane measurement direction
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: in-plane
+  measurement: room temperature
+  n_samples: 1
+  source:
+    doi: 10.1038/srep06265
+    title: Magnetic nanostructuring and overcoming Brown's paradox to realize extraordinary high-temperature
+      energy products
+    first_author: Balamurugan Balasubramanian
+    year: 2014
+    evidence: full_text
+    locator: Results, Fig. 1f
+    url: https://www.nature.com/articles/srep06265
+- id: hfco7_cl_js_bal2014
+  phase: HfCo7
+  route: 'other: cluster deposition, in-flight field alignment'
+  process: aligned HfCo7 particle film (soft-phase fraction f = 0)
+  conditions:
+    field_T: 0.5
+    T_process_K: room-temperature substrate (particle formation in water-cooled gas-aggregation chamber)
+    parent_texture: none (free particles rotate in flight)
+    magnet_axis: alignment field direction x (in the film plane)
+    density_rel: null
+  quantity: Js_same_sample
+  unit: T
+  measured_along: easy axis
+  measurement: 300 K
+  n_samples: 1
+  source:
+    doi: 10.1038/srep06265
+    title: Magnetic nanostructuring and overcoming Brown's paradox to realize extraordinary high-temperature
+      energy products
+    first_author: Balamurugan Balasubramanian
+    year: 2014
+    evidence: full_text
+    locator: Results, Fig. 4a
+    url: https://www.nature.com/articles/srep06265
+- id: hfco7_cl_nc_bal2014
+  phase: HfCo7
+  route: 'other: cluster deposition, in-flight alignment + co-deposited soft Fe65Co35 (exchange-coupled
+    composite)'
+  process: aligned HfCo7 clusters co-deposited with Fe65Co35, soft fraction f = 0.07 and 0.22
+  conditions:
+    field_T: 0.5
+    T_process_K: room-temperature substrate
+    parent_texture: none
+    magnet_axis: alignment field direction
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: easy axis
+  measurement: room temperature
+  n_samples: 2
+  source:
+    doi: 10.1038/srep06265
+    title: Magnetic nanostructuring and overcoming Brown's paradox to realize extraordinary high-temperature
+      energy products
+    first_author: Balamurugan Balasubramanian
+    year: 2014
+    evidence: full_text
+    locator: Results
+    url: https://www.nature.com/articles/srep06265
+- id: hfco7_ms_mcguire2012
+  phase: HfCo7
+  route: 'other: melt-spun ribbon (texture not reported)'
+  process: melt-spun crystalline Hf2Co11B ribbons, best-performing material
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: not reported
+    magnet_axis: not stated
+    density_rel: null
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated in abstract
+  measurement: room temperature; max field not stated
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4766283
+    title: Hard ferromagnetism in melt-spun Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2012
+    evidence: abstract
+    locator: abstract
+    url: https://api.crossref.org/works/10.1063/1.4766283
+- id: zr2co11_ms_jin2016
+  phase: Zr2Co11
+  route: 'other: melt-spun ribbon (texture not reported)'
+  process: melt-spun Zr16Co81.5Mo1.5B1 ribbons (x = 1), 30 m/s, rhombohedral Zr2Co11 + minor Co, grains
+    ~110 nm
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: not reported
+    magnet_axis: not stated (thermomagnetic data taken along ribbon length)
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not stated for loops (ribbon plane presumably)
+  measurement: SQUID up to 7 T, room temperature
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4942556
+    title: Effect of boron doping on nanostructure and magnetism of rapidly quenched Zr2Co11-based alloys
+    first_author: Yunlong Jin
+    year: 2016
+    evidence: full_text
+    locator: Fig. 4b (read from plot)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4760965/
+- id: zr2co11_iso_cui2018
+  phase: Zr2Co11
+  route: isotropic
+  process: bulk (melt-spun) Zr-Co and Hf-Co alloys of Table 4 of the review
+  conditions:
+    field_T: 0
+    T_process_K: null
+    parent_texture: none
+    magnet_axis: '-'
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: '-'
+  measurement: review statement, not a single measurement
+  n_samples: review (several alloys)
+  source:
+    doi: 10.1016/j.actamat.2018.07.049
+    title: Current progress and future challenges in rare-earth-free permanent magnets
+    first_author: Jun Cui
+    year: 2018
+    evidence: review
+    locator: Section 7
+    url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
+- id: hfco7_cryst_mcguire2015_700
+  phase: HfCo7
+  route: isotropic
+  process: amorphous Hf2Co11B ribbon (24 m/s) crystallised by annealing 700 C, 1 h, water quench (best
+    [redacted]
+  conditions:
+    field_T: 0
+    T_process_K: 973
+    parent_texture: amorphous melt-spun ribbon (no crystalline texture)
+    magnet_axis: ribbon long axis (measurement direction)
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: ribbon long axis (in-plane)
+  measurement: PPMS, room temperature, field decreasing from 60 kOe; Js taken as J(60 kOe) = 7.7 kG, [redacted]
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    evidence: full_text
+    locator: Table I (row 700 C, 1 h)
+    url: https://www.osti.gov/servlets/purl/1185598
+- id: hfco7_cryst_mcguire2015_600
+  phase: HfCo7
+  route: isotropic
+  process: amorphous Hf2Co11B ribbon crystallised by annealing 600 C, 2 h, zero field
+  conditions:
+    field_T: 0
+    T_process_K: 873
+    parent_texture: amorphous melt-spun ribbon (no crystalline texture)
+    magnet_axis: ribbon long axis (measurement direction)
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: ribbon long axis (in-plane)
+  measurement: PPMS, room temperature; J(60 kOe) = 9.2 kG, [redacted]
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    evidence: full_text
+    locator: Table I (row 600 C, 2 h)
+    url: https://www.osti.gov/servlets/purl/1185598
+- id: hfco7_fa_mcguire2015
+  phase: HfCo7
+  route: FA
+  process: amorphous Hf2Co11B ribbon crystallised at 600 C, 2 h in 9 T (above Tc)
+  conditions:
+    field_T: 9
+    T_process_K: 873
+    parent_texture: amorphous ribbon
+    magnet_axis: not stated relative to field
+    density_rel: null
+  quantity: texture_metric
+  unit: qualitative
+  measured_along: ribbon long axis
+  measurement: PPMS, room temperature
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4907575
+    title: Evolution of magnetic properties and microstructure of Hf2Co11B alloys
+    first_author: Michael A. McGuire
+    year: 2015
+    evidence: full_text
+    locator: Section III, Fig. 6d
+    url: https://www.osti.gov/servlets/purl/1185598

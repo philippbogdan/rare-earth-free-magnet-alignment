@@ -1,0 +1,1545 @@
+- id: fe16n2_sa_jiang2016_mrms_stated
+  phase: α''-Fe16N2
+  route: SA
+  process: Fe-N wire (0.2-0.3 mm2 x 10 mm) annealed 150 C, 40 h under 0.4% uniaxial tensile strain
+  conditions:
+    field_T: 0
+    T_process_K: 423
+    anneal_time_h: 40
+    stress: uniaxial tension along wire length during post-anneal, 0.4% strain
+    parent_texture: not measured as a pole figure; wires cut from a cold-crucible-melted (urea) Fe-N ingot,
+      660 C 4 h, water-quenched, flattened; alpha'' forms from alpha'-Fe8N martensite
+    magnet_axis: wire long axis
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: 'ambiguous: stated ''at the in-plane''; in Fig. 11 loop b is along the wire long axis,
+    loop a perpendicular'
+  measurement: 'Princeton Measurements VSM, room temperature, max applied field 2 T (not saturating: 220
+    emu/g at 2 T vs 245 emu/g at 4.5 T for the 9 MGOe sample); no demagnetisation correction stated'
+  n_samples: 1
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    evidence: full_text
+    locator: Sec. IV and Fig. 11 caption
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+- id: fe16n2_sa_jiang2016_mrms_along_read
+  phase: α''-Fe16N2
+  route: SA
+  process: Fe-N wire annealed 150 C, 40 h under 0.4% uniaxial tensile strain
+  conditions:
+    field_T: 0
+    T_process_K: 423
+    anneal_time_h: 40
+    stress: uniaxial tension along wire length during post-anneal, 0.4% strain
+    parent_texture: not measured as a pole figure; wires cut from a cold-crucible-melted (urea) Fe-N ingot,
+      660 C 4 h, water-quenched, flattened; alpha'' forms from alpha'-Fe8N martensite
+    magnet_axis: wire long axis
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: wire long axis (= tensile-stress axis), Fig. 11 loop b
+  measurement: 'Princeton Measurements VSM, room temperature, max applied field 2 T (not saturating: 220
+    emu/g at 2 T vs 245 emu/g at 4.5 T for the 9 MGOe sample); no demagnetisation correction stated'
+  n_samples: 1
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    evidence: full_text
+    locator: Fig. 11 loop b (read from plot)
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+- id: fe16n2_sa_jiang2016_mrms_perp_read
+  phase: α''-Fe16N2
+  route: SA
+  process: Fe-N wire annealed 150 C, 40 h under 0.4% uniaxial tensile strain
+  conditions:
+    field_T: 0
+    T_process_K: 423
+    anneal_time_h: 40
+    stress: uniaxial tension along wire length during post-anneal, 0.4% strain
+    parent_texture: not measured as a pole figure; wires cut from a cold-crucible-melted (urea) Fe-N ingot,
+      660 C 4 h, water-quenched, flattened; alpha'' forms from alpha'-Fe8N martensite
+    magnet_axis: wire long axis
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: perpendicular to the wire long axis, Fig. 11 loop a
+  measurement: 'Princeton Measurements VSM, room temperature, max applied field 2 T (not saturating: 220
+    emu/g at 2 T vs 245 emu/g at 4.5 T for the 9 MGOe sample); no demagnetisation correction stated'
+  n_samples: 1
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    evidence: full_text
+    locator: Fig. 11 loop a (read from plot)
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+- id: fe16n2_sa_jiang2016_[redacted]
+  phase: α''-Fe16N2
+  route: SA
+  process: Fe-N wire annealed 150 C, 40 h under 0.2% uniaxial tensile strain
+  conditions:
+    field_T: 0
+    T_process_K: 423
+    anneal_time_h: 40
+    stress: uniaxial tension along wire length during post-anneal, 0.2% strain
+    parent_texture: not measured as a pole figure; wires cut from a cold-crucible-melted (urea) Fe-N ingot,
+      660 C 4 h, water-quenched, flattened; alpha'' forms from alpha'-Fe8N martensite
+    magnet_axis: wire long axis
+    density_rel: null
+  quantity: 'other: [redacted]'
+  unit: MGOe
+  measured_along: not stated (loops of Fig. 6; [redacted]
+  measurement: 'Princeton Measurements VSM, room temperature, max applied field 2 T (not saturating: 220
+    emu/g at 2 T vs 245 emu/g at 4.5 T for the 9 MGOe sample); no demagnetisation correction stated'
+  n_samples: 1
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    evidence: full_text
+    locator: Sec. III; Fig. 6(b),(d)
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+- id: fe16n2_sa_jiang2016_[redacted]
+  phase: α''-Fe16N2
+  route: SA
+  process: Fe-N wire annealed 150 C, 40 h under 0.4% uniaxial tensile strain
+  conditions:
+    field_T: 0
+    T_process_K: 423
+    anneal_time_h: 40
+    stress: uniaxial tension along wire length during post-anneal, 0.4% strain
+    parent_texture: not measured as a pole figure; wires cut from a cold-crucible-melted (urea) Fe-N ingot,
+      660 C 4 h, water-quenched, flattened; alpha'' forms from alpha'-Fe8N martensite
+    magnet_axis: wire long axis
+    density_rel: null
+  quantity: 'other: [redacted]'
+  unit: MGOe
+  measured_along: not stated (loops of Fig. 6; [redacted]
+  measurement: 'Princeton Measurements VSM, room temperature, max applied field 2 T (not saturating: 220
+    emu/g at 2 T vs 245 emu/g at 4.5 T for the 9 MGOe sample); no demagnetisation correction stated'
+  n_samples: 1
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    evidence: full_text
+    locator: Sec. III; Fig. 6(b),(d)
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+- id: fe16n2_sa_jiang2016_ms
+  phase: α''-Fe16N2
+  route: SA
+  process: Fe-N wire annealed 150 C, 40 h under 0.4% uniaxial tensile strain (the 9 MGOe magnet of Fig.
+    2)
+  conditions:
+    field_T: 0
+    T_process_K: 423
+    anneal_time_h: 40
+    stress: uniaxial tension along wire length during post-anneal, 0.4% strain
+    parent_texture: not measured as a pole figure; wires cut from a cold-crucible-melted (urea) Fe-N ingot,
+      660 C 4 h, water-quenched, flattened; alpha'' forms from alpha'-Fe8N martensite
+    magnet_axis: wire long axis
+    density_rel: null
+  quantity: Js_same_sample
+  unit: emu/g
+  measured_along: not stated
+  measurement: VSM, room temperature; 220 emu/g at 2 T and 245 emu/g at 4.5 T
+  n_samples: 1
+  source:
+    doi: 10.1103/PhysRevApplied.6.024013
+    title: Synthesis of α′′−Fe16N2 Compound Anisotropic Magnet by the Strained-Wire Method
+    first_author: Yanfeng Jiang
+    year: 2016
+    evidence: full_text
+    locator: Fig. 2(a) caption
+    url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
+- id: fe16n2_ii_jiang2016_mrms_inplane
+  phase: α''-Fe16N2
+  route: 'other: N-ion implantation into single-crystal (110) Fe foil + strained post-anneal (SC+SA)'
+  process: free-standing 500 nm (110) Fe foil bonded to Si, N+ implanted 5e17/cm2 at 100 keV, 500 C 0.5
+    h + 150 C 40 h
+  conditions:
+    field_T: 0
+    T_process_K: 423
+    anneal_time_h: 40
+    parent_texture: single-crystal (110) Fe foil, 500 nm thick, bonded to (111) Si
+    implantation: N+ 100 keV, 5e17 /cm2, room temperature (beam heating <= 50 C)
+    pre_anneal: 500 C, 0.5 h
+    stress: thermal-expansion mismatch with the Si substrate during the 150 C anneal (calculated ~0.2%
+      strain)
+    magnet_axis: in the foil plane (direction within the (110) plane not stated)
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: in the foil plane
+  measurement: VSM calibrated with a Ni standard, room temperature, field in the foil plane; loop shown
+    to +-5 kOe, maximum field not stated; no demagnetisation correction stated (thin foil, in-plane field)
+  n_samples: 1
+  source:
+    doi: 10.1038/srep25436
+    title: Synthesis of Fe16N2 compound Free-Standing Foils with 20 MGOe Magnetic Energy Product by Nitrogen
+      Ion-Implantation
+    first_author: Yanfeng Jiang
+    year: 2016
+    evidence: full_text
+    locator: Fig. 1(a) caption
+    url: https://www.nature.com/articles/srep25436.pdf
+- id: fe16n2_ii_jiang2016_[redacted]
+  phase: α''-Fe16N2
+  route: 'other: N-ion implantation into single-crystal (110) Fe foil + strained post-anneal (SC+SA)'
+  process: as fe16n2_ii_jiang2016_mrms_inplane (5e17/cm2 fluence)
+  conditions:
+    field_T: 0
+    T_process_K: 423
+    anneal_time_h: 40
+    parent_texture: single-crystal (110) Fe foil, 500 nm thick, bonded to (111) Si
+    implantation: N+ 100 keV, 5e17 /cm2, room temperature (beam heating <= 50 C)
+    pre_anneal: 500 C, 0.5 h
+    stress: thermal-expansion mismatch with the Si substrate during the 150 C anneal (calculated ~0.2%
+      strain)
+    magnet_axis: in the foil plane (direction within the (110) plane not stated)
+    density_rel: null
+  quantity: 'other: [redacted]'
+  unit: MGOe
+  measured_along: in the foil plane
+  measurement: VSM calibrated with a Ni standard, room temperature, field in the foil plane; loop shown
+    to +-5 kOe, maximum field not stated; no demagnetisation correction stated (thin foil, in-plane field);
+    [redacted]
+  n_samples: 1
+  source:
+    doi: 10.1038/srep25436
+    title: Synthesis of Fe16N2 compound Free-Standing Foils with 20 MGOe Magnetic Energy Product by Nitrogen
+      Ion-Implantation
+    first_author: Yanfeng Jiang
+    year: 2016
+    evidence: full_text
+    locator: Results; Fig. 1(b)
+    url: https://www.nature.com/articles/srep25436.pdf
+- id: fe16n2_ii_jiang2016_ms
+  phase: α''-Fe16N2
+  route: 'other: N-ion implantation into single-crystal (110) Fe foil + strained post-anneal (SC+SA)'
+  process: as fe16n2_ii_jiang2016_mrms_inplane (5e17/cm2 fluence)
+  conditions:
+    field_T: 0
+    T_process_K: 423
+    anneal_time_h: 40
+    parent_texture: single-crystal (110) Fe foil, 500 nm thick, bonded to (111) Si
+    implantation: N+ 100 keV, 5e17 /cm2, room temperature (beam heating <= 50 C)
+    pre_anneal: 500 C, 0.5 h
+    stress: thermal-expansion mismatch with the Si substrate during the 150 C anneal (calculated ~0.2%
+      strain)
+    magnet_axis: in the foil plane (direction within the (110) plane not stated)
+    density_rel: null
+  quantity: Js_same_sample
+  unit: emu/g
+  measured_along: in the foil plane
+  measurement: VSM calibrated with a Ni standard, room temperature, field in the foil plane; loop shown
+    to +-5 kOe, maximum field not stated; no demagnetisation correction stated (thin foil, in-plane field)
+  n_samples: 1
+  source:
+    doi: 10.1038/srep25436
+    title: Synthesis of Fe16N2 compound Free-Standing Foils with 20 MGOe Magnetic Energy Product by Nitrogen
+      Ion-Implantation
+    first_author: Yanfeng Jiang
+    year: 2016
+    evidence: full_text
+    locator: Results
+    url: https://www.nature.com/articles/srep25436.pdf
+- id: fe16n2_ep_hang2021_rocking202
+  phase: α''-Fe16N2
+  route: EP
+  process: facing-target sputtered Fe-N on MgO(001)/Cr(10.2 nm) seed, 26.7 nm, Cr cap, annealed 160 C
+    (6-36 h)
+  conditions:
+    field_T: 0
+    T_process_K: 433
+    parent_texture: epitaxial (001) Cr seed on MgO(001)
+    magnet_axis: film normal = c
+  quantity: texture_metric
+  unit: rocking_fwhm_deg
+  measured_along: rocking curve around Fe16N2 (202)
+  measurement: XRD rocking curve (rotating-crystal geometry)
+  n_samples: 1
+  source:
+    doi: null
+    title: Magnetic properties and potential applications of Fe16N2 (PhD dissertation, University of Minnesota;
+      hdl 11299/219403)
+    first_author: Xudong Hang
+    year: 2021
+    evidence: full_text
+    locator: Ch. 3, Fig. 3.1(e) and text
+    url: https://conservancy.umn.edu/server/api/core/bitstreams/54709037-1164-4fa4-9df4-d968fe211207/content
+- id: fe16n2_ep_hang2021_rocking103
+  phase: α''-Fe16N2
+  route: EP
+  process: facing-target sputtered Fe-N on MgO(001)/Cr(10.2 nm) seed, 26.7 nm, Cr cap, annealed 160 C
+  conditions:
+    field_T: 0
+    T_process_K: 433
+    parent_texture: epitaxial (001) Cr seed on MgO(001)
+    magnet_axis: film normal = c
+  quantity: texture_metric
+  unit: rocking_fwhm_deg
+  measured_along: rocking curve around Fe16N2 (103) (ordering fingerprint peak)
+  measurement: XRD rocking curve
+  n_samples: 1
+  source:
+    doi: null
+    title: Magnetic properties and potential applications of Fe16N2 (PhD dissertation, University of Minnesota;
+      hdl 11299/219403)
+    first_author: Xudong Hang
+    year: 2021
+    evidence: full_text
+    locator: Ch. 3, Fig. 3.1(f) and text
+    url: https://conservancy.umn.edu/server/api/core/bitstreams/54709037-1164-4fa4-9df4-d968fe211207/content
+- id: fe16n2_ep_hang2021_oop_switch
+  phase: α''-Fe16N2
+  route: EP
+  process: 5 films MgO/Cr(10.2 nm)/Fe16N2(26.7 nm)/Cr(10.2 nm), annealed 160 C for 6-36.25 h
+  conditions:
+    field_T: 0
+    T_process_K: 433
+    parent_texture: epitaxial (001) on Cr/MgO(001)
+    magnet_axis: film normal = c
+  quantity: 'other: out-of-plane (c-axis) switching amplitude as fraction of Ms (Table 3.1 column ''Delta_switch
+    / 2Ms'')'
+  unit: ''
+  measured_along: film normal (= c axis of the (001) film)
+  measurement: VSM, room temperature, in-plane and out-of-plane loops to ~20 kOe (Fig. 3.3); out-of-plane
+    loop not demagnetisation-corrected (shape anisotropy 2piMs^2 dominates)
+  n_samples: 5 samples (Table 3.1)
+  source:
+    doi: null
+    title: Magnetic properties and potential applications of Fe16N2 (PhD dissertation, University of Minnesota;
+      hdl 11299/219403)
+    first_author: Xudong Hang
+    year: 2021
+    evidence: full_text
+    locator: Ch. 3, Table 3.1
+    url: https://conservancy.umn.edu/server/api/core/bitstreams/54709037-1164-4fa4-9df4-d968fe211207/content
+- id: fe16n2_ep_ji2011_rocking
+  phase: α''-Fe16N2
+  route: EP
+  process: facing-target sputtered Fe-N (45-50 nm) on Fe(22 nm)/GaAs(001); some samples post-annealed
+    120 C, 40 h
+  conditions:
+    field_T: 0
+    parent_texture: epitaxial Fe(001) buffer on GaAs(001)
+    magnet_axis: film normal = c
+  quantity: texture_metric
+  unit: rocking_fwhm_deg
+  measured_along: rocking curve on Fe-N (002)
+  measurement: Philips X'Pert XRD, Cu Ka
+  n_samples: 1
+  source:
+    doi: 10.1103/PhysRevB.84.245310
+    title: Perpendicular magnetic anisotropy and high spin-polarization ratio in epitaxial Fe-N thin films
+    first_author: Nian Ji
+    year: 2011
+    evidence: full_text
+    locator: Sec. II.A, Fig. 1(c)
+    url: https://link.aps.org/accepted/10.1103/PhysRevB.84.245310
+- id: fe16n2_ep_ji2012_mosaic002
+  phase: α''-Fe16N2
+  route: EP
+  process: facing-target sputtered Fe-N (40 nm) on Fe(2 or 20 nm)/MgO(001), post-annealed 40 h
+  conditions:
+    field_T: 0
+    parent_texture: epitaxial Fe buffer on MgO(001)
+    magnet_axis: film normal = c
+  quantity: texture_metric
+  unit: rocking_fwhm_deg
+  measured_along: 'rocking curve on Fe16N2 (002) (superlattice peak); (004): ~0.5 deg'
+  measurement: D5005 XRD, Cu Ka; Gaussian-fitted rocking curves
+  n_samples: 1
+  source:
+    doi: null
+    title: Giant saturation magnetization effect in epitaxial Fe16N2 thin films grown on MgO (001) substrate
+      (arXiv:1211.0555 preprint)
+    first_author: Nian Ji
+    year: 2012
+    evidence: full_text
+    locator: Fig. 2(b) and text
+    url: https://arxiv.org/pdf/1211.0555
+- id: fe16n2_ep_ortiz1994_texture
+  phase: α''-Fe16N2
+  route: EP
+  process: reactive N2 sputtering on an underlayer template
+  conditions:
+    field_T: 0
+    parent_texture: underlayer template (epitaxial)
+    magnet_axis: film normal = c
+  quantity: texture_metric
+  unit: variant_fraction
+  measured_along: film normal
+  measurement: not stated in abstract (XRD implied)
+  n_samples: not stated
+  source:
+    doi: 10.1063/1.112552
+    title: Epitaxial Fe16N2 films grown by sputtering
+    first_author: C. Ortiz
+    year: 1994
+    evidence: abstract
+    locator: abstract
+    url: https://api.crossref.org/works/10.1063/1.112552
+- id: fe16n2_fp_kartikowati_ch2_mrms_vert
+  phase: α''-Fe16N2
+  route: FP
+  process: spin-coated film (~1 um) of bead-mill-dispersed alpha''-Fe16N2/Al2O3 NPs on Si, 1.2 T applied
+    vertically until dry, fixed with cyanoacrylate resin
+  conditions:
+    field_T: 1.2
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal (field applied vertically during spin coating/drying)
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not stated (presumably film normal)
+  measurement: SQUID (Quantum Design), 300 K, fields 1-50 kOe; Ms by extrapolation M vs 1/H^2; measurement
+    direction and demagnetisation correction not stated for ch. 2
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 2, Sec. 2.3.3, Fig. 2.7
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_iso_kartikowati_ch2_mrms_nofield
+  phase: α''-Fe16N2
+  route: isotropic
+  process: same spin-coated NP film without applied field (authors' 'randomly oriented' film)
+  conditions:
+    field_T: 0
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal (field applied vertically during spin coating/drying)
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not stated (presumably film normal)
+  measurement: SQUID (Quantum Design), 300 K, fields 1-50 kOe; Ms by extrapolation M vs 1/H^2; measurement
+    direction and demagnetisation correction not stated for ch. 2
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 2, Sec. 2.3.3, Fig. 2.7
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_fp_kartikowati_ch2_lf
+  phase: α''-Fe16N2
+  route: FP
+  process: as fe16n2_fp_kartikowati_ch2_mrms_vert (1.2 T vertical)
+  conditions:
+    field_T: 1.2
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal (field applied vertically during spin coating/drying)
+    density_rel: null
+  quantity: texture_metric
+  unit: '[redacted]'
+  measured_along: film normal (theta/2theta XRD)
+  measurement: XRD (Bruker D2 Phaser), [redacted]
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 2, Eq. (2.1) and text
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_fp_kartikowati_ch3_lf_v3
+  phase: α''-Fe16N2
+  route: FP
+  process: spin-coated NP/epoxy film (~1 um) on Si, 1.2 T applied vertically before toluene evaporated,
+    cured
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal
+    density_rel: null
+    field_T: 1.2
+  quantity: texture_metric
+  unit: '[redacted]'
+  measured_along: film normal; LF from (004)+(224) peaks
+  measurement: XRD 2theta/theta (Bruker D2 Phaser)
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Table 3.2 (V3)
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_iso_kartikowati_ch3_lf_v0
+  phase: α''-Fe16N2
+  route: isotropic
+  process: spin-coated NP/epoxy film (~1 um) on Si, 0.0 T applied vertically before toluene evaporated,
+    cured
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal
+    density_rel: null
+    field_T: 0.0
+  quantity: texture_metric
+  unit: '[redacted]'
+  measured_along: film normal; LF from (004)+(224) peaks
+  measurement: XRD 2theta/theta (Bruker D2 Phaser)
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Table 3.2 (V0)
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_fp_kartikowati_ch3_lf_v1v2
+  phase: α''-Fe16N2
+  route: FP
+  process: spin-coated NP/epoxy film, 0.6 T (V1) and 0.9 T (V2) applied vertically
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal
+    density_rel: null
+    field_T: 0.6 and 0.9
+  quantity: texture_metric
+  unit: '[redacted]'
+  measured_along: film normal; LF from (004)+(224) peaks
+  measurement: XRD 2theta/theta
+  n_samples: 2
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Table 3.2 (V1, V2)
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_fp_kartikowati_ch3_lf_h
+  phase: α''-Fe16N2
+  route: FP
+  process: spin-coated NP/epoxy film, 0.6 T applied horizontally (in the film plane)
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: field in film plane; LF evaluated along film normal
+    density_rel: null
+    field_T: 0.6
+  quantity: texture_metric
+  unit: '[redacted]'
+  measured_along: film normal (i.e. perpendicular to the alignment field); LF from (004)+(224)
+  measurement: XRD 2theta/theta
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Sec. 3.3 (sample H)
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_fp_kartikowati_ch3_mrms_h
+  phase: α''-Fe16N2
+  route: FP
+  process: spin-coated NP/epoxy film, 0.6 T applied horizontally (in the film plane)
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: field in film plane
+    density_rel: null
+    field_T: 0.6
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not stated explicitly (same geometry as the vertical films, presumably film normal,
+    i.e. perpendicular to the alignment field)
+  measurement: SQUID (Quantum Design), 300 K, fields 1-50 kOe; loops corrected for demagnetisation and
+    normalised to Ms of the film (ch. 3); measurement direction not stated explicitly (comparison of vertical-
+    and horizontal-field films implies a fixed direction, presumably the film normal - not confirmed)
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Fig. 3.7(b) and text
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_fp_kartikowati_ch3_mrms_v3_read
+  phase: α''-Fe16N2
+  route: FP
+  process: spin-coated NP/epoxy film (~1 um), 1.2 T applied vertically before drying
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal
+    density_rel: null
+    field_T: 1.2
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not stated explicitly (presumably film normal = field direction)
+  measurement: SQUID (Quantum Design), 300 K, fields 1-50 kOe; loops corrected for demagnetisation and
+    normalised to Ms of the film (ch. 3); measurement direction not stated explicitly (comparison of vertical-
+    and horizontal-field films implies a fixed direction, presumably the film normal - not confirmed)
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Fig. 3.5, V3 (1.2 T vertical) (read from plot)
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_iso_kartikowati_ch3_mrms_v0_read
+  phase: α''-Fe16N2
+  route: isotropic
+  process: spin-coated NP/epoxy film (~1 um), 0.0 T applied vertically before drying
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal
+    density_rel: null
+    field_T: 0.0
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not stated explicitly (presumably film normal = field direction)
+  measurement: SQUID (Quantum Design), 300 K, fields 1-50 kOe; loops corrected for demagnetisation and
+    normalised to Ms of the film (ch. 3); measurement direction not stated explicitly (comparison of vertical-
+    and horizontal-field films implies a fixed direction, presumably the film normal - not confirmed)
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Fig. 3.5, V0 (no field, film) (read from plot)
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_iso_kartikowati_ch3_mrms_powder_read
+  phase: α''-Fe16N2
+  route: isotropic
+  process: as-prepared alpha''-Fe16N2/Al2O3 NP powder (sample R)
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: none (powder)
+    density_rel: null
+    field_T: 0
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not stated (powder)
+  measurement: SQUID (Quantum Design), 300 K, fields 1-50 kOe; loops corrected for demagnetisation and
+    normalised to Ms of the film (ch. 3); measurement direction not stated explicitly (comparison of vertical-
+    and horizontal-field films implies a fixed direction, presumably the film normal - not confirmed)
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Fig. 3.5, R (as-prepared NP powder) (read from plot)
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_fp_kartikowati_ch3_[redacted]
+  phase: α''-Fe16N2
+  route: FP
+  process: spin-coated NP/epoxy film, 1.2 T vertical
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal
+    density_rel: null
+    field_T: 1.2
+  quantity: 'other: [redacted]'
+  unit: MGOe
+  measured_along: not stated
+  measurement: SQUID (Quantum Design), 300 K, fields 1-50 kOe; loops corrected for demagnetisation and
+    normalised to Ms of the film (ch. 3); measurement direction not stated explicitly (comparison of vertical-
+    and horizontal-field films implies a fixed direction, presumably the film normal - not confirmed)
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Sec. 3.3, Fig. 3.6 (film prepared in 1.2 T)
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_iso_kartikowati_ch3_[redacted]
+  phase: α''-Fe16N2
+  route: isotropic
+  process: spin-coated NP/epoxy film, 0.0 T vertical
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal
+    density_rel: null
+    field_T: 0.0
+  quantity: 'other: [redacted]'
+  unit: MGOe
+  measured_along: not stated
+  measurement: SQUID (Quantum Design), 300 K, fields 1-50 kOe; loops corrected for demagnetisation and
+    normalised to Ms of the film (ch. 3); measurement direction not stated explicitly (comparison of vertical-
+    and horizontal-field films implies a fixed direction, presumably the film normal - not confirmed)
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Sec. 3.3, Fig. 3.6 (film prepared without field)
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_iso_kartikowati_ch3_[redacted]
+  phase: α''-Fe16N2
+  route: isotropic
+  process: as-prepared alpha''-Fe16N2/Al2O3 NP powder
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: none (powder)
+    density_rel: null
+    field_T: 0
+  quantity: 'other: [redacted]'
+  unit: MGOe
+  measured_along: not stated
+  measurement: SQUID (Quantum Design), 300 K, fields 1-50 kOe; loops corrected for demagnetisation and
+    normalised to Ms of the film (ch. 3); measurement direction not stated explicitly (comparison of vertical-
+    and horizontal-field films implies a fixed direction, presumably the film normal - not confirmed)
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 3, Sec. 3.3, Fig. 3.6 (as-prepared NP powder)
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_fp_kartikowati_ch2_js_vert
+  phase: α''-Fe16N2
+  route: FP
+  process: as fe16n2_fp_kartikowati_ch2_mrms_vert
+  conditions:
+    field_T: 1.2
+    T_process_K: 298
+    parent_texture: none (dispersed single-domain nanoparticles)
+    magnet_axis: film normal (field applied vertically during spin coating/drying)
+    density_rel: null
+  quantity: Js_same_sample
+  unit: T
+  measured_along: not stated
+  measurement: SQUID (Quantum Design), 300 K, fields 1-50 kOe; Ms by extrapolation M vs 1/H^2; measurement
+    direction and demagnetisation correction not stated for ch. 2
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 2, Sec. 2.3.3
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_other_kartikowati_fibre_field
+  phase: α''-Fe16N2
+  route: 'other: magneto-electrospinning (0.1 T along spinning direction)'
+  process: electrospun alpha''-Fe16N2 NP/PVP nanocomposite fibres, 0.1 T applied along spinning direction
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed NPs in PVP solution)
+    magnet_axis: field applied along the spinning direction
+    density_rel: null
+    loading: 28.4 wt% magnetic NPs in PVP
+    field_T: 0.1
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not stated (fibre mat)
+  measurement: SQUID, 300 K (Fig. 4.7); max field ~20 kOe shown; demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 4, Sec. 4.3.5, Fig. 4.7
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_iso_kartikowati_fibre_nofield
+  phase: α''-Fe16N2
+  route: isotropic
+  process: electrospun alpha''-Fe16N2 NP/PVP nanocomposite fibres, no field
+  conditions:
+    T_process_K: 298
+    parent_texture: none (dispersed NPs in PVP solution)
+    magnet_axis: field applied along the spinning direction
+    density_rel: null
+    loading: 28.4 wt% magnetic NPs in PVP
+    field_T: 0.0
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not stated (fibre mat)
+  measurement: SQUID, 300 K (Fig. 4.7); max field ~20 kOe shown; demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: PREPARATION AND EVALUATION OF MAGNETIC NANOCOMPOSITE FILMS AND FIBERS CONTAINING α″-Fe16N2
+      NANOPARTICLES (doctoral dissertation, Hiroshima University)
+    first_author: Christina Wahyu Kartikowati
+    year: 2017
+    evidence: full_text
+    locator: Ch. 4, Sec. 4.3.5, Fig. 4.7
+    url: https://hiroshima.repo.nii.ac.jp/record/2003850/files/k7404_3.pdf
+- id: fe16n2_iso_saito2024_spsdc373_mrms_read
+  phase: α''-Fe16N2
+  route: isotropic
+  process: alpha''-Fe16N2 powder consolidated by spark plasma sintering with dynamic compression (SPS-DC)
+    at 373 K
+  conditions:
+    field_T: 0
+    parent_texture: none (chemically synthesised alpha''-Fe16N2 powder, supplied by Future Materialz)
+    magnet_axis: rod long axis (no alignment)
+    T_process_K: 373
+    density_rel: 0.815
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: rod long axis
+  measurement: VSM (Riken Denshi BHV-525RSCM), room temperature, loop to +-2.0 MA/m; magnets cut into
+    0.5 x 1 x 10 mm rods 'to avoid the need to correct for demagnetization'; powder fixed in paraffin
+  n_samples: 1
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    evidence: full_text
+    locator: Fig. 12 (373 K loop, read from plot) and Table 3
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+- id: fe16n2_iso_saito2024_spsdc473_mrms_read
+  phase: α''-Fe16N2
+  route: isotropic
+  process: alpha''-Fe16N2 powder consolidated by spark plasma sintering with dynamic compression (SPS-DC)
+    at 473 K
+  conditions:
+    field_T: 0
+    parent_texture: none (chemically synthesised alpha''-Fe16N2 powder, supplied by Future Materialz)
+    magnet_axis: rod long axis (no alignment)
+    T_process_K: 473
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: rod long axis
+  measurement: VSM (Riken Denshi BHV-525RSCM), room temperature, loop to +-2.0 MA/m; magnets cut into
+    0.5 x 1 x 10 mm rods 'to avoid the need to correct for demagnetization'; powder fixed in paraffin
+  n_samples: 1
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    evidence: full_text
+    locator: Fig. 12 (473 K loop, read from plot) and Table 3
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+- id: fe16n2_iso_saito2024_spsdc373_br_read
+  phase: α''-Fe16N2
+  route: isotropic
+  process: alpha''-Fe16N2 powder consolidated by SPS-DC at 373 K
+  conditions:
+    field_T: 0
+    parent_texture: none (chemically synthesised alpha''-Fe16N2 powder, supplied by Future Materialz)
+    magnet_axis: rod long axis (no alignment)
+    T_process_K: 373
+    density_rel: 0.815
+  quantity: '[redacted]'
+  unit: T
+  measured_along: rod long axis
+  measurement: VSM (Riken Denshi BHV-525RSCM), room temperature, loop to +-2.0 MA/m; magnets cut into
+    0.5 x 1 x 10 mm rods 'to avoid the need to correct for demagnetization'; powder fixed in paraffin
+  n_samples: 1
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    evidence: full_text
+    locator: Fig. 12 (373 K loop, read from plot)
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+- id: fe16n2_iso_saito2024_spsdc373_js
+  phase: α''-Fe16N2
+  route: isotropic
+  process: alpha''-Fe16N2 powder consolidated by SPS-DC at 373 K
+  conditions:
+    field_T: 0
+    parent_texture: none (chemically synthesised alpha''-Fe16N2 powder, supplied by Future Materialz)
+    magnet_axis: rod long axis (no alignment)
+    T_process_K: 373
+    density_rel: 0.815
+  quantity: Js_same_sample
+  unit: T
+  measured_along: rod long axis
+  measurement: VSM (Riken Denshi BHV-525RSCM), room temperature, loop to +-2.0 MA/m; magnets cut into
+    0.5 x 1 x 10 mm rods 'to avoid the need to correct for demagnetization'; powder fixed in paraffin
+  n_samples: 1
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    evidence: full_text
+    locator: Sec. 3, Table 3
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+- id: fe16n2_iso_saito2024_powder_mrms_read
+  phase: α''-Fe16N2
+  route: isotropic
+  process: chemically synthesised alpha''-Fe16N2 powder (single-phase by XRD), fixed in paraffin
+  conditions:
+    field_T: 0
+    parent_texture: none (chemically synthesised alpha''-Fe16N2 powder, supplied by Future Materialz)
+    magnet_axis: none (powder)
+    T_process_K: null
+    density_rel: null
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not applicable (random powder)
+  measurement: VSM (Riken Denshi BHV-525RSCM), room temperature, loop to +-2.0 MA/m; magnets cut into
+    0.5 x 1 x 10 mm rods 'to avoid the need to correct for demagnetization'; powder fixed in paraffin
+  n_samples: 1
+  source:
+    doi: 10.3390/met14060734
+    title: Production of Rare-Earth-Free Iron Nitride Magnets (α″-Fe16N2)
+    first_author: Tetsuji Saito
+    year: 2024
+    evidence: full_text
+    locator: Fig. 3 (read from plot) and text
+    url: https://mdpi-res.com/d_attachment/metals/metals-14-00734/article_deploy/metals-14-00734.pdf
+- id: fe16n2_fp_niron2023_s8_par
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight, centrifuged (bottom of supernatant)
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: parallel to alignment field (disk normal)
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example II, FIG. 5a; Table 3 row 8
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s8_perp
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight, centrifuged (bottom of supernatant)
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: perpendicular to alignment field (in disk plane)
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example II, FIG. 5a; Table 3 row 8
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s8_tex
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight, centrifuged (bottom of supernatant)
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: texture_metric
+  unit: 'other: integrated XRD intensity ratio I(004)/I(202) of α''''-Fe16N2, diffraction vector parallel
+    to alignment (random = 0.07 per source)'
+  measured_along: diffraction vector parallel to alignment direction
+  measurement: XRD (D5005, Cu), integrated intensities of α''-Fe16N2 (004) and (202)
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example II, FIG. 6; Table 3 row 8
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s8_[redacted]
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight, centrifuged (bottom of supernatant)
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: parallel to alignment field
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: 'Table 3 row 8 (columns: Ex., Squareness Parallel, Squareness Perpendicular, Nanoparticle
+      Br (kG), Intrinsic Coercivity (Oe), Integrated Intensity (202), Integrated Intensity (004), Relative
+      Intensity (004))'
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s7_par
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight, centrifuged (top of supernatant)
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: parallel to alignment field (disk normal)
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: 'Table 3 row 7 (columns: Ex., Squareness Parallel, Squareness Perpendicular, Nanoparticle
+      Br (kG), Intrinsic Coercivity (Oe), Integrated Intensity (202), Integrated Intensity (004), Relative
+      Intensity (004))'
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s7_perp
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight, centrifuged (top of supernatant)
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: perpendicular to alignment field (in disk plane)
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: 'Table 3 row 7 (columns: Ex., Squareness Parallel, Squareness Perpendicular, Nanoparticle
+      Br (kG), Intrinsic Coercivity (Oe), Integrated Intensity (202), Integrated Intensity (004), Relative
+      Intensity (004))'
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s7_tex
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight, centrifuged (top of supernatant)
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: texture_metric
+  unit: 'other: integrated XRD intensity ratio I(004)/I(202) of α''''-Fe16N2, diffraction vector parallel
+    to alignment (random = 0.07 per source)'
+  measured_along: diffraction vector parallel to alignment direction
+  measurement: XRD (D5005, Cu), integrated intensities of α''-Fe16N2 (004) and (202)
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: 'Table 3 row 7 (columns: Ex., Squareness Parallel, Squareness Perpendicular, Nanoparticle
+      Br (kG), Intrinsic Coercivity (Oe), Integrated Intensity (202), Integrated Intensity (004), Relative
+      Intensity (004))'
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s7_[redacted]
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight, centrifuged (top of supernatant)
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: parallel to alignment field
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: 'Table 3 row 7 (columns: Ex., Squareness Parallel, Squareness Perpendicular, Nanoparticle
+      Br (kG), Intrinsic Coercivity (Oe), Integrated Intensity (202), Integrated Intensity (004), Relative
+      Intensity (004))'
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s16_par
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight; freeze-dried overnight between the magnet poles, then mixed with
+    epoxy and cured in the field
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: parallel to alignment field (disk normal)
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example III, FIG. 7a; Table 3 row 16
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s16_perp
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight; freeze-dried overnight between the magnet poles, then mixed with
+    epoxy and cured in the field
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: perpendicular to alignment field (in disk plane)
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example III, FIG. 7a; Table 3 row 16
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s16_tex
+  phase: α''-Fe16N2
+  route: FP
+  process: γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight; freeze-dried overnight between the magnet poles, then mixed with
+    epoxy and cured in the field
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: texture_metric
+  unit: 'other: integrated XRD intensity ratio I(004)/I(202) of α''''-Fe16N2, diffraction vector parallel
+    to alignment (random = 0.07 per source)'
+  measured_along: diffraction vector parallel to alignment direction
+  measurement: XRD (D5005, Cu), integrated intensities of α''-Fe16N2 (004) and (202)
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example III, FIG. 8; Table 3 row 16
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s5_par
+  phase: α''-Fe16N2
+  route: FP
+  process: 'γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight; S5: ultrasonicated 2 h in 10 % PEG-400, Al-oxide coating, freeze
+    dried, sample from top of settled epoxy mixture'
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: parallel to alignment field (disk normal)
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example I, FIG. 1A; Table 3 row 5
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s5_perp
+  phase: α''-Fe16N2
+  route: FP
+  process: 'γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight; S5: ultrasonicated 2 h in 10 % PEG-400, Al-oxide coating, freeze
+    dried, sample from top of settled epoxy mixture'
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: perpendicular to alignment field (in disk plane)
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example I, FIG. 1A; Table 3 row 5
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_s5_tex
+  phase: α''-Fe16N2
+  route: FP
+  process: 'γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight; S5: ultrasonicated 2 h in 10 % PEG-400, Al-oxide coating, freeze
+    dried, sample from top of settled epoxy mixture'
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: texture_metric
+  unit: 'other: integrated XRD intensity ratio I(004)/I(202) of α''''-Fe16N2, diffraction vector parallel
+    to alignment (random = 0.07 per source)'
+  measured_along: diffraction vector parallel to alignment direction
+  measurement: XRD (D5005, Cu), integrated intensities of α''-Fe16N2 (004) and (202)
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example I, FIG. 2; Table 3 row 5
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_cs6_par
+  phase: α''-Fe16N2
+  route: FP
+  process: 'γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight; comparative CS6: NOT deagglomerated (no sonication, milling or
+    freeze-drying), cured in the same field'
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: parallel to alignment field (disk normal)
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example I, FIG. 3a (Table 3 row 6 lists 0.47)
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_cs6_perp
+  phase: α''-Fe16N2
+  route: FP
+  process: 'γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight; comparative CS6: NOT deagglomerated (no sonication, milling or
+    freeze-drying), cured in the same field'
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: perpendicular to alignment field (in disk plane)
+  measurement: VSM; [redacted]; temperature and demagnetisation correction not stated
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example I, FIG. 3a (Table 3 row 6 lists 0.42)
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_fp_niron2023_cs6_tex
+  phase: α''-Fe16N2
+  route: FP
+  process: 'γ-Fe2O3 nanoparticles H2-reduced (≈340 °C) and NH3-nitrided at ≈145 °C (α''''-Fe16N2 + α-Fe),
+    passivated; deagglomerated by ultrasonication; mixed with liquid epoxy; aligned between permanent-magnet
+    poles (≈0.5 T) and cured overnight; comparative CS6: NOT deagglomerated (no sonication, milling or
+    freeze-drying), cured in the same field'
+  conditions:
+    field_T: 0.5
+    T_process_K: room temperature cure (not stated)
+    parent_texture: none (direct nitriding of reduced oxide nanoparticles)
+    magnet_axis: alignment field = disk normal (disk ≈6 mm diameter x 1 mm)
+    density_rel: not stated (nanoparticles in epoxy)
+  quantity: texture_metric
+  unit: 'other: integrated XRD intensity ratio I(004)/I(202) of α''''-Fe16N2, diffraction vector parallel
+    to alignment (random = 0.07 per source)'
+  measured_along: diffraction vector parallel to alignment direction
+  measurement: XRD (D5005, Cu), integrated intensities of α''-Fe16N2 (004) and (202)
+  n_samples: 1
+  source:
+    doi: null
+    title: Anisotropic iron nitride permanent magnets (US 11,830,644 B2; assignee Niron Magnetics Inc)
+    first_author: Francis Johnson
+    year: 2023
+    evidence: full_text
+    locator: Example I, FIG. 4; Table 3 row 6
+    url: https://patents.google.com/patent/US11830644B2/en
+- id: fe16n2_other_niron2024_[redacted]
+  phase: α''-Fe16N2
+  route: 'other: Niron lab-scale magnet (process, alignment and consolidation not disclosed)'
+  process: 'Niron lab-scale magnet: iron oxide powder → chemical processing → magnet powder → ''simplified
+    powder metallurgy'' (slide 5); alignment and consolidation not disclosed'
+  conditions:
+    field_T: not stated
+    T_process_K: not stated
+    parent_texture: not stated
+    magnet_axis: not stated
+    density_rel: not stated
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not stated
+  measurement: not stated (company slide)
+  n_samples: best lab-scale demonstration (chart, Q4 2023)
+  source:
+    doi: null
+    title: 'Iron Nitride: a Non-rare-earth Containing Permanent Magnet (slides: Iron Nitride Permanent
+      Magnets, The Clean Earth Magnet)'
+    first_author: Frank Johnson
+    year: 2024
+    evidence: datasheet
+    locator: slide 7, 'State-of-the-Art BR' chart, last point Q4 2023 (read from plot)
+    url: https://ndia.dtic.mil/wp-content/uploads/2024/mtm/Johnson.pdf
+- id: fe16n2_other_niron2024_[redacted]
+  phase: α''-Fe16N2
+  route: 'other: Niron lab-scale magnet (process, alignment and consolidation not disclosed)'
+  process: 'Niron lab-scale magnet: iron oxide powder → chemical processing → magnet powder → ''simplified
+    powder metallurgy'' (slide 5); alignment and consolidation not disclosed'
+  conditions:
+    field_T: not stated
+    T_process_K: not stated
+    parent_texture: not stated
+    magnet_axis: not stated
+    density_rel: not stated
+  quantity: 'other: [redacted]'
+  unit: MGOe
+  measured_along: not stated
+  measurement: not stated (company slide)
+  n_samples: best lab-scale demonstration (chart, Q4 2023)
+  source:
+    doi: null
+    title: 'Iron Nitride: a Non-rare-earth Containing Permanent Magnet (slides: Iron Nitride Permanent
+      Magnets, The Clean Earth Magnet)'
+    first_author: Frank Johnson
+    year: 2024
+    evidence: datasheet
+    locator: slide 7, 'State-of-the-Art (BH)max [MGOe]' chart, last point Q4 2023 (read from plot)
+    url: https://ndia.dtic.mil/wp-content/uploads/2024/mtm/Johnson.pdf
+- id: fe16n2_iso_dirba2025_mrms
+  phase: α''-Fe16N2
+  route: isotropic
+  process: α''-Fe16N2 nanoparticles (γ-Fe2O3 H2-reduced, NH3-nitrided, ~50 nm crystallites) filled in
+    a steel die and pressed below the decomposition temperature
+  conditions:
+    field_T: 0
+    T_process_K: below decomposition (≈460 K) - not stated exactly
+    parent_texture: none
+    magnet_axis: not stated
+    density_rel: not stated
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: not stated
+  measurement: not stated (poster); temperature not stated
+  n_samples: 1
+  source:
+    doi: 10.48505/nims.5649
+    title: 'Iron nitride Fe16N2: intrinsic properties, synthesis, stability and bulk magnets'
+    first_author: Imants Dirba
+    year: 2025
+    evidence: full_text
+    locator: panel 'Lab-scale production of bulk α′′-Fe16N2 magnets'
+    url: https://mdr.nims.go.jp/filesets/6fb5702a-12bb-4239-ab97-1650fd3803a0/download
+- id: fe16n2_iso_dirba2025_[redacted]
+  phase: α''-Fe16N2
+  route: isotropic
+  process: α''-Fe16N2 nanoparticles (γ-Fe2O3 H2-reduced, NH3-nitrided, ~50 nm crystallites) filled in
+    a steel die and pressed below the decomposition temperature
+  conditions:
+    field_T: 0
+    T_process_K: below decomposition (≈460 K) - not stated exactly
+    parent_texture: none
+    magnet_axis: not stated
+    density_rel: not stated
+  quantity: 'other: [redacted]'
+  unit: kJ/m3
+  measured_along: not stated
+  measurement: not stated (poster)
+  n_samples: 1
+  source:
+    doi: 10.48505/nims.5649
+    title: 'Iron nitride Fe16N2: intrinsic properties, synthesis, stability and bulk magnets'
+    first_author: Imants Dirba
+    year: 2025
+    evidence: full_text
+    locator: panel 'Lab-scale production of bulk α′′-Fe16N2 magnets'
+    url: https://mdr.nims.go.jp/filesets/6fb5702a-12bb-4239-ab97-1650fd3803a0/download
+- id: fe16n2_other_koyano2000_alpha1_texture
+  phase: α'-Fe8N
+  route: 'other: RX parent ((110)-textured γ-Fe(N) foil from rolled Fe) + γ→α'' martensite on cooling
+    to 4.2 K, no field'
+  process: rolled 10 μm Fe foils nitrided 923 K/12 h (NH3+H2) → single-phase γ (9.8 at.% N), water-quenched,
+    cooled to 4.2 K in zero field (Ms 180 K)
+  conditions:
+    field_T: 0
+    T_process_K: 4.2
+    parent_texture: γ (110) preferred orientation from rolling (strongest γ(220))
+    magnet_axis: foil normal (θ-2θ diffraction vector)
+    density_rel: not applicable
+  quantity: texture_metric
+  unit: 'other: XRD intensity ratio Iα′(002)/Iα′(200), diffraction vector along foil normal (random =
+    0.5, i.e. 1 : 2, per source)'
+  measured_along: foil normal
+  measurement: XRD (Mo Kα) at room temperature after cooling to 4.2 K
+  n_samples: 1
+  source:
+    doi: 10.2320/matertrans1989.41.923
+    title: Effect of Magnetic Field on γ→α′ Martensitic Transformation and Magnetization of α′ and α″
+      Iron-Nitrides
+    first_author: Tamotsu Koyano
+    year: 2000
+    evidence: full_text
+    locator: Sec. 3.1, p. 924, Fig. 1(b)
+    url: https://www.jstage.jst.go.jp/article/matertrans1989/41/8/41_8_923/_pdf
+- id: fe16n2_fp_shibata2006_mrms
+  phase: α''-Fe16N2
+  route: FP
+  process: ≈20 nm Fe3O4 particles (Y, Al or Si deposited) H2-reduced at 430-450 °C for 4 h → α-Fe, NH3-nitrided
+    at 140-200 °C for a long time → Fe16N2 cores with ≈2 nm oxide shell; dispersed in a binder, coated
+    on PET film and the anisotropy axes oriented in one direction by a magnetic field
+  conditions:
+    field_T: not stated
+    T_process_K: 413-473 (nitriding); coating at room temperature
+    parent_texture: none (spherical nanoparticles)
+    magnet_axis: in-plane orientation direction of the coated film
+    density_rel: not stated (particulate coating in binder)
+  quantity: Mr_over_Ms
+  unit: ''
+  measured_along: in-plane, along the orientation (easy-axis) direction, θ = 0°
+  measurement: VSM, maximum field 15 kOe (loop flat above ≈8 kOe in Fig. 4), room temperature; thin coating
+    measured in-plane (demagnetisation small, not corrected); Ms 108 emu/g of sample
+  n_samples: 1
+  source:
+    doi: 10.3379/jmsjmag.30.501
+    title: Magnetic Moment and Anisotropy of Iron Nitride Fe16N2 Nanoparticles
+    first_author: K. Shibata
+    year: 2006
+    evidence: full_text
+    locator: Sec. 3.3, p. 503, Fig. 4
+    url: https://www.jstage.jst.go.jp/article/jmsjmag/30/5/30_5_501/_pdf

@@ -1,0 +1,2265 @@
+{
+ "batches": {
+  "batch1": {
+   "files": {
+    "fe16n2_outcomes.yaml": {
+     "sha256": "0692da5cf553eec1ccf395535cea4de4d4a7a6688e7b7448e43751264cc42838",
+     "n_records": 60,
+     "cases": [
+      {
+       "id": "fe16n2_sa_jiang2016_mrms_stated",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "SA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1103/PhysRevApplied.6.024013"
+      },
+      {
+       "id": "fe16n2_sa_jiang2016_mrms_along_read",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "SA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1103/PhysRevApplied.6.024013"
+      },
+      {
+       "id": "fe16n2_sa_jiang2016_mrms_perp_read",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "SA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1103/PhysRevApplied.6.024013"
+      },
+      {
+       "id": "fe16n2_sa_jiang2016_bhmax_02",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "SA",
+       "quantity": "other: BHmax",
+       "doi": "10.1103/PhysRevApplied.6.024013"
+      },
+      {
+       "id": "fe16n2_sa_jiang2016_bhmax_04",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "SA",
+       "quantity": "other: BHmax",
+       "doi": "10.1103/PhysRevApplied.6.024013"
+      },
+      {
+       "id": "fe16n2_sa_jiang2016_ms",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "SA",
+       "quantity": "Js_same_sample",
+       "doi": "10.1103/PhysRevApplied.6.024013"
+      },
+      {
+       "id": "fe16n2_ii_jiang2016_mrms_inplane",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "other: N-ion implantation into single-crystal (110) Fe foil + strained post-anneal (SC+SA)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep25436"
+      },
+      {
+       "id": "fe16n2_ii_jiang2016_bhmax",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "other: N-ion implantation into single-crystal (110) Fe foil + strained post-anneal (SC+SA)",
+       "quantity": "other: BHmax",
+       "doi": "10.1038/srep25436"
+      },
+      {
+       "id": "fe16n2_ii_jiang2016_ms",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "other: N-ion implantation into single-crystal (110) Fe foil + strained post-anneal (SC+SA)",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/srep25436"
+      },
+      {
+       "id": "fe16n2_ep_hang2021_rocking202",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_ep_hang2021_rocking103",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_ep_hang2021_oop_switch",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "EP",
+       "quantity": "other: out-of-plane (c-axis) switching amplitude as fraction of Ms (Table 3.1 column 'Delta_switch / 2Ms')",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_ep_ji2011_rocking",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.1103/PhysRevB.84.245310"
+      },
+      {
+       "id": "fe16n2_ep_ji2012_mosaic002",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_ep_ortiz1994_texture",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.112552"
+      },
+      {
+       "id": "fe16n2_fp_kartikowati_ch2_mrms_vert",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_iso_kartikowati_ch2_mrms_nofield",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_kartikowati_ch2_lf",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_kartikowati_ch3_lf_v3",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_iso_kartikowati_ch3_lf_v0",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_kartikowati_ch3_lf_v1v2",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_kartikowati_ch3_lf_h",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_kartikowati_ch3_mrms_h",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_kartikowati_ch3_mrms_v3_read",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_iso_kartikowati_ch3_mrms_v0_read",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_iso_kartikowati_ch3_mrms_powder_read",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_kartikowati_ch3_bhmax_v3",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "other: BHmax",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_iso_kartikowati_ch3_bhmax_v0",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "other: BHmax",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_iso_kartikowati_ch3_bhmax_powder",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "other: BHmax",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_kartikowati_ch2_js_vert",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_other_kartikowati_fibre_field",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "other: magneto-electrospinning (0.1 T along spinning direction)",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_iso_kartikowati_fibre_nofield",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_iso_saito2024_spsdc373_mrms_read",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/met14060734"
+      },
+      {
+       "id": "fe16n2_iso_saito2024_spsdc473_mrms_read",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/met14060734"
+      },
+      {
+       "id": "fe16n2_iso_saito2024_spsdc373_br_read",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.3390/met14060734"
+      },
+      {
+       "id": "fe16n2_iso_saito2024_spsdc373_js",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/met14060734"
+      },
+      {
+       "id": "fe16n2_iso_saito2024_powder_mrms_read",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/met14060734"
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s8_par",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s8_perp",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s8_tex",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s8_br",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s7_par",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s7_perp",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s7_tex",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s7_br",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s16_par",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s16_perp",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s16_tex",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s5_par",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s5_perp",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_s5_tex",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_cs6_par",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_cs6_perp",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_fp_niron2023_cs6_tex",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_other_niron2024_br",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "other: Niron lab-scale magnet (process, alignment and consolidation not disclosed)",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_other_niron2024_bhmax",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "other: Niron lab-scale magnet (process, alignment and consolidation not disclosed)",
+       "quantity": "other: BHmax",
+       "doi": null
+      },
+      {
+       "id": "fe16n2_iso_dirba2025_mrms",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.48505/nims.5649"
+      },
+      {
+       "id": "fe16n2_iso_dirba2025_bhmax",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "isotropic",
+       "quantity": "other: BHmax",
+       "doi": "10.48505/nims.5649"
+      },
+      {
+       "id": "fe16n2_other_koyano2000_alpha1_texture",
+       "phase": "\u03b1'-Fe8N",
+       "route": "other: RX parent ((110)-textured \u03b3-Fe(N) foil from rolled Fe) + \u03b3\u2192\u03b1' martensite on cooling to 4.2 K, no field",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.41.923"
+      },
+      {
+       "id": "fe16n2_fp_shibata2006_mrms",
+       "phase": "\u03b1''-Fe16N2",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3379/jmsjmag.30.501"
+      }
+     ]
+    },
+    "l10_outcomes.yaml": {
+     "sha256": "5b6028ce005f9d9c1aa599ca1dffcf62b6b9180a99bbb35912e60732fdcb7d42",
+     "n_records": 71,
+     "cases": [
+      {
+       "id": "feni_scfa_neel1964a",
+       "phase": "L10-FeNi",
+       "route": "SC+FA",
+       "quantity": "Ku_macro",
+       "doi": "10.1063/1.1713516"
+      },
+      {
+       "id": "feni_scfa_neel1964b",
+       "phase": "L10-FeNi",
+       "route": "SC+FA",
+       "quantity": "Ku_macro",
+       "doi": "10.1063/5.0169752"
+      },
+      {
+       "id": "feni_scfa_pauleve1968a",
+       "phase": "L10-FeNi",
+       "route": "SC+FA",
+       "quantity": "Ku_macro",
+       "doi": "10.1063/5.0169752"
+      },
+      {
+       "id": "feni_scfa_pauleve1968b",
+       "phase": "L10-FeNi",
+       "route": "SC+FA",
+       "quantity": "Ku_macro",
+       "doi": "10.1063/1.1656361"
+      },
+      {
+       "id": "feni_meteorite_bryson2014b_coarse",
+       "phase": "L10-FeNi",
+       "route": "other: natural slow cooling (meteorite cloudy zone), no dynamo field expected",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.epsl.2014.04.016"
+      },
+      {
+       "id": "feni_meteorite_bryson2014b_int",
+       "phase": "L10-FeNi",
+       "route": "other: natural slow cooling (meteorite cloudy zone), no dynamo field expected",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.epsl.2014.04.016"
+      },
+      {
+       "id": "feni_meteorite_bryson2014b_fine",
+       "phase": "L10-FeNi",
+       "route": "other: natural slow cooling (meteorite cloudy zone), interaction-driven",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.epsl.2014.04.016"
+      },
+      {
+       "id": "feni_meteorite_poirier2015",
+       "phase": "L10-FeNi",
+       "route": "other: natural slow cooling (meteorite), paleofield unknown",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.4916190"
+      },
+      {
+       "id": "feni_isotropic_goto2017",
+       "phase": "L10-FeNi",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-017-13562-2"
+      },
+      {
+       "id": "feni_fp_hlova2024a",
+       "phase": "L10-FeNi",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1016/j.jallcom.2024.173619"
+      },
+      {
+       "id": "feni_fp_hlova2024b",
+       "phase": "L10-FeNi",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1016/j.jallcom.2024.173619"
+      },
+      {
+       "id": "feni_fp_hlova2024c",
+       "phase": "L10-FeNi",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1016/j.jallcom.2024.173619"
+      },
+      {
+       "id": "feni_fsa_lewis2023",
+       "phase": "L10-FeNi",
+       "route": "other: RX+FA+SA (cold-rolled strip annealed under field and tensile stress)",
+       "quantity": "Ku_macro",
+       "doi": "10.1002/advs.202302696"
+      },
+      {
+       "id": "feni_ep_ito2020",
+       "phase": "L10-FeNi",
+       "route": "EP",
+       "quantity": "Ku_macro",
+       "doi": "10.1063/5.0011875"
+      },
+      {
+       "id": "feni_other_makino2015",
+       "phase": "L10-FeNi",
+       "route": "other: crystallisation of melt-spun amorphous ribbon (no field)",
+       "quantity": "texture_metric",
+       "doi": "10.1038/srep16627"
+      },
+      {
+       "id": "copt_sc_farjami2009a",
+       "phase": "L10-CoPt",
+       "route": "other: SC, zero-field control of the SC+FA series (B0)",
+       "quantity": "texture_metric",
+       "doi": "10.2355/isijinternational.49.1610"
+      },
+      {
+       "id": "copt_scfa_farjami2009b",
+       "phase": "L10-CoPt",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2355/isijinternational.49.1610"
+      },
+      {
+       "id": "copt_scfa_farjami2009c",
+       "phase": "L10-CoPt",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2355/isijinternational.49.1610"
+      },
+      {
+       "id": "copt_scfa_farjami2009d",
+       "phase": "L10-CoPt",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2355/isijinternational.49.1610"
+      },
+      {
+       "id": "copt_scfa_yasui2006",
+       "phase": "L10-CoPt",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.1088/1742-6596/51/1/072"
+      },
+      {
+       "id": "fept_fp_yamamoto2007a",
+       "phase": "L10-FePt",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3379/jmsjmag.31.199"
+      },
+      {
+       "id": "fept_fp_yamamoto2007b",
+       "phase": "L10-FePt",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3379/jmsjmag.31.199"
+      },
+      {
+       "id": "fept_fp_yamamoto2007c",
+       "phase": "L10-FePt",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3379/jmsjmag.31.199"
+      },
+      {
+       "id": "fept_fp_yamamoto2008",
+       "phase": "L10-FePt",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3379/msjmag.32.66"
+      },
+      {
+       "id": "fept_fp_yamamoto2006",
+       "phase": "L10-FePt",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1021/cm0616634"
+      },
+      {
+       "id": "fept_isotropic_yamamoto2005",
+       "phase": "L10-FePt",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.1995959"
+      },
+      {
+       "id": "fept_fp_yamamoto2005",
+       "phase": "L10-FePt",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.1995959"
+      },
+      {
+       "id": "fept_fp_jia2006",
+       "phase": "L10-FePt",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.2159392"
+      },
+      {
+       "id": "fept_other_kamzin2015a",
+       "phase": "L10-FePt",
+       "route": "other: field re-anneal near Tc of a pre-ordered polycrystalline film (FA-like)",
+       "quantity": "texture_metric",
+       "doi": "10.1134/S1063783415090127"
+      },
+      {
+       "id": "fept_other_kamzin2015b",
+       "phase": "L10-FePt",
+       "route": "other: field re-anneal of a pre-ordered polycrystalline film away from Tc (control)",
+       "quantity": "texture_metric",
+       "doi": "10.1134/S1063783415090127"
+      },
+      {
+       "id": "fept_other_kamzin2015c",
+       "phase": "L10-FePt",
+       "route": "other: zero-field re-anneal of a pre-ordered polycrystalline film at Tc (control, mode B)",
+       "quantity": "texture_metric",
+       "doi": "10.1134/S1063783415090127"
+      },
+      {
+       "id": "fept_other_xu2016a",
+       "phase": "L10-FePt",
+       "route": "other: field (0.6 T) during wet-chemical synthesis of A1 nanoparticles at 493 K; drop-cast film on Si; ordering anneal 973 K 1 h without field",
+       "quantity": "texture_metric",
+       "doi": "10.1186/s11671-016-1543-1"
+      },
+      {
+       "id": "fept_other_xu2016b",
+       "phase": "L10-FePt",
+       "route": "other: zero-field control of the Xu 2016 series (no field in synthesis or coating; ordering anneal 973 K 1 h)",
+       "quantity": "texture_metric",
+       "doi": "10.1186/s11671-016-1543-1"
+      },
+      {
+       "id": "fept_isotropic_tanaka2003a",
+       "phase": "L10-FePt",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1063/1.1555675"
+      },
+      {
+       "id": "fept_isotropic_tanaka2003b",
+       "phase": "L10-FePt",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.1555675"
+      },
+      {
+       "id": "copt_isotropic_cui2010a",
+       "phase": "L10-CoPt",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "copt_isotropic_cui2010b",
+       "phase": "L10-CoPt",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "copt_isotropic_cui2010c",
+       "phase": "L10-CoPt",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "fepd_scfa_tanaka2000a",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.41.917"
+      },
+      {
+       "id": "fepd_scfa_tanaka2000b",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.41.917"
+      },
+      {
+       "id": "fepd_scfa_tanaka2000c",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.41.917"
+      },
+      {
+       "id": "fepd_scfa_tanaka2000d",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.41.917"
+      },
+      {
+       "id": "fepd_scfa_tanaka2000e",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.41.917"
+      },
+      {
+       "id": "fepd_ctrl_tanaka2000f",
+       "phase": "L10-FePd",
+       "route": "other: SC, no field (control)",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.41.917"
+      },
+      {
+       "id": "fepd_scfa_tanaka2000mrsja",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fepd_scfa_tanaka2000mrsjb",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fepd_scfa_tanaka2000mrsjc",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fepd_scfa_tanaka2000mrsjd",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fepd_ctrl_tanaka2000mrsje",
+       "phase": "L10-FePd",
+       "route": "other: SC, no field (control)",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fepd_scfa_tanaka2000mrsjf",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fepd_scfa_tanaka2000mrsjg",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "fepd_scfa_farjami2008a",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans.maw200810"
+      },
+      {
+       "id": "fepd_scfa_farjami2008b",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans.maw200810"
+      },
+      {
+       "id": "fepd_scfa_farjami2008c",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans.maw200810"
+      },
+      {
+       "id": "fepd_scfa_farjami2008d",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans.maw200810"
+      },
+      {
+       "id": "fepd_scfa_farjami2009a",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2355/isijinternational.49.1610"
+      },
+      {
+       "id": "fepd_scfa_farjami2009b",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2355/isijinternational.49.1610"
+      },
+      {
+       "id": "fepd_scfa_farjami2009c",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2355/isijinternational.49.1610"
+      },
+      {
+       "id": "fepd_ctrl_farjami2009d",
+       "phase": "L10-FePd",
+       "route": "other: SC, no field (control)",
+       "quantity": "texture_metric",
+       "doi": "10.2355/isijinternational.49.1610"
+      },
+      {
+       "id": "fepd_scsa_ichitsubo1998a",
+       "phase": "L10-FePd",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.39.24"
+      },
+      {
+       "id": "fepd_ctrl_ichitsubo1998b",
+       "phase": "L10-FePd",
+       "route": "other: SC, no stress (control)",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.39.24"
+      },
+      {
+       "id": "fepd_scsa_ichitsubo1998c",
+       "phase": "L10-FePd",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.39.24"
+      },
+      {
+       "id": "fepd_filmsa_ichitsubo2011a",
+       "phase": "L10-FePd",
+       "route": "other: film on amorphous substrate, ordering under thermal-mismatch biaxial tensile stress (SA in films)",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.3544466"
+      },
+      {
+       "id": "fepd_filmsa_ichitsubo2011b",
+       "phase": "L10-FePd",
+       "route": "other: film on amorphous substrate, ordering under thermal-mismatch biaxial tensile stress (SA in films)",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.3544466"
+      },
+      {
+       "id": "fepd_filmsa_ichitsubo2011c",
+       "phase": "L10-FePd",
+       "route": "other: film on amorphous substrate, ordering under thermal-mismatch biaxial tensile stress (SA in films)",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.3544466"
+      },
+      {
+       "id": "copt_sa_shimizu1968a",
+       "phase": "L10-CoPt",
+       "route": "SA",
+       "quantity": "Ku_macro",
+       "doi": "10.1063/1.1656562"
+      },
+      {
+       "id": "copt_sa_shimizu1968b",
+       "phase": "L10-CoPt",
+       "route": "SA",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.1656562"
+      },
+      {
+       "id": "copt_scsa_shima2005",
+       "phase": "L10-CoPt",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.1861977"
+      },
+      {
+       "id": "fept_scsa_inoue2006",
+       "phase": "L10-FePt",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.2177355"
+      },
+      {
+       "id": "copt_sc_kandaurova1992a",
+       "phase": "L10-CoPt",
+       "route": "other: polytwinned crystal, no bias (quench + anneal)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3367/ufnr.0162.199205d.0161"
+      },
+      {
+       "id": "copt_sc_kandaurova1992b",
+       "phase": "L10-CoPt",
+       "route": "other: polytwinned crystal, no bias (slow cooling)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3367/ufnr.0162.199205d.0161"
+      }
+     ]
+    },
+    "mnal_outcomes.yaml": {
+     "sha256": "755afe0f39715a836bd1ea64bb42f564d02ffa85e99e6b841106bc98f90e9ef7",
+     "n_records": 124,
+     "cases": [
+      {
+       "id": "mnal_hd_zhao2021_radial",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.1016/j.jallcom.2020.156998"
+      },
+      {
+       "id": "mnal_hd_zhao2021_axial",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.1016/j.jallcom.2020.156998"
+      },
+      {
+       "id": "mnal_hd_zhao2021_omega",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jallcom.2020.156998"
+      },
+      {
+       "id": "mnal_isotropic_zhao2021",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1016/j.jallcom.2020.156998"
+      },
+      {
+       "id": "mnal_hd_madugundo2016_perp",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.4943242"
+      },
+      {
+       "id": "mnal_hd_madugundo2016_par",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.4943242"
+      },
+      {
+       "id": "mnal_hd_madugundo2016_tp",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.4943242"
+      },
+      {
+       "id": "mnal_hd_madugundo2016b",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.1063/1.4939578"
+      },
+      {
+       "id": "mnal_hd_sakamoto1980",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.1109/tmag.1980.1060672"
+      },
+      {
+       "id": "mnal_hd_kubo1976_ex11_p4_upset",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_hd_kubo1976_ex11_p5_upset",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_hd_kubo1976_ex14_p4_upset",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_hd_kubo1976_ex11_p1_upset",
+       "phase": "tau-MnAl",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_kubo1976_ex1",
+       "phase": "tau-MnAl-C",
+       "route": "other: SC (single-crystal epsilon parent, no bias)",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_kubo1976_ex2",
+       "phase": "tau-MnAl-C",
+       "route": "other: SC (single-crystal epsilon parent, no bias)",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s3_br",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s3_mrms",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Mr_over_Ms",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s1_torque",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s2_torque",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s4_torque",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s5",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s6",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s7",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s8",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s9",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s10",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s11",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s12",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s13",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s14",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s15",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s16",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s17",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s18",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s19",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s20",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s21",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s22",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s23",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s24",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s25",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s26",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s27",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s28",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s29",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s30",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s31",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s32",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_s33",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_ex5",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_ex6_repress",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_ex6_s15",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_ex7_press",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_ex7_perp1",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_ex7_perp2",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_sc_sa_kubo1976_ex8_binary",
+       "phase": "tau-MnAl",
+       "route": "SC+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_ds_sa_kubo1976_ex10_press",
+       "phase": "tau-MnAl-C",
+       "route": "DS+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_ds_sa_kubo1976_ex10_par_growth",
+       "phase": "tau-MnAl-C",
+       "route": "DS+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_ds_sa_kubo1976_ex10_perp2",
+       "phase": "tau-MnAl-C",
+       "route": "DS+SA",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_isotropic_kubo1976_no17",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_hd_kubo1977_ex22_dieupset",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_hd_kubo1977_ex23_rolling",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_hd_kubo1977_ex28_binary",
+       "phase": "tau-MnAl",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": null
+      },
+      {
+       "id": "mnal_hd_kojima1979_dieupset",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "mnal_am_tiden2024_ref_mrms",
+       "phase": "tau-MnAl-C",
+       "route": "AM",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-024-51283-5"
+      },
+      {
+       "id": "mnal_am_tiden2024_isotropy",
+       "phase": "tau-MnAl-C",
+       "route": "AM",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-024-51283-5"
+      },
+      {
+       "id": "mnal_am_tiden2024_tautexture",
+       "phase": "tau-MnAl-C",
+       "route": "AM",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-024-51283-5"
+      },
+      {
+       "id": "mnal_fp_jia2022_nanoparticles",
+       "phase": "tau-MnAl",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.21203/rs.3.rs-1850627/v1"
+      },
+      {
+       "id": "mnal_isotropic_jia2022_review_cast",
+       "phase": "tau-MnAl(C)",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.21203/rs.3.rs-1850627/v1"
+      },
+      {
+       "id": "mnal_ds_jia2022_review",
+       "phase": "tau-MnAl(C)",
+       "route": "DS",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.21203/rs.3.rs-1850627/v1"
+      },
+      {
+       "id": "mnal_fp_jia2022_review_milled",
+       "phase": "tau-MnAl(C)",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.21203/rs.3.rs-1850627/v1"
+      },
+      {
+       "id": "mnal_sa_jia2022_review",
+       "phase": "tau-MnAl(C)",
+       "route": "SA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.21203/rs.3.rs-1850627/v1"
+      },
+      {
+       "id": "mnal_fp_jia2021_flakes",
+       "phase": "tau-MnAl",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jmmm.2021.167933"
+      },
+      {
+       "id": "mnal_ep_takata2018_sto",
+       "phase": "tau-MnAl",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jcrysgro.2018.01.008"
+      },
+      {
+       "id": "mnal_ep_takata2018_mgo_mn4n",
+       "phase": "tau-MnAl",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jcrysgro.2018.01.008"
+      },
+      {
+       "id": "mnal_ep_takata2018_mgo",
+       "phase": "tau-MnAl",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jcrysgro.2018.01.008"
+      },
+      {
+       "id": "mnal_ep_takata2018_rocking",
+       "phase": "tau-MnAl",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.jcrysgro.2018.01.008"
+      },
+      {
+       "id": "mnal_ep_huang2015",
+       "phase": "tau-MnAl",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.4915093"
+      },
+      {
+       "id": "mnal_ep_sands1990",
+       "phase": "tau-MnAl",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.103826"
+      },
+      {
+       "id": "mnal_meltspun_pasko2014a",
+       "phase": "tau-MnAl-C",
+       "route": "other: melt-spun ribbon, annealed (no alignment step)",
+       "quantity": "Br",
+       "doi": "10.1088/0953-8984/26/6/064203"
+      },
+      {
+       "id": "mnal_meltspun_pasko2014b",
+       "phase": "tau-MnAl-C",
+       "route": "other: melt-spun ribbon, annealed (no alignment step)",
+       "quantity": "Br",
+       "doi": "10.1088/0953-8984/26/6/064203"
+      },
+      {
+       "id": "mnal_meltspun_pasko2014c",
+       "phase": "tau-MnAl",
+       "route": "other: melt-spun ribbon, annealed (no alignment step)",
+       "quantity": "Br",
+       "doi": "10.1088/0953-8984/26/6/064203"
+      },
+      {
+       "id": "mnal_sps_pasko2014a",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1088/0953-8984/26/6/064203"
+      },
+      {
+       "id": "mnal_sps_pasko2014b",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1088/0953-8984/26/6/064203"
+      },
+      {
+       "id": "mnal_sps_pasko2014c",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1088/0953-8984/26/6/064203"
+      },
+      {
+       "id": "mnal_sps_pasko2014d",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1088/0953-8984/26/6/064203"
+      },
+      {
+       "id": "mnal_sps_pasko2014e",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1088/0953-8984/26/6/064203"
+      },
+      {
+       "id": "mnal_sps_pasko2014f",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1088/0953-8984/26/6/064203"
+      },
+      {
+       "id": "mnal_iso_juerries2020a",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-020-64697-8"
+      },
+      {
+       "id": "mnal_iso_juerries2020b",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-020-64697-8"
+      },
+      {
+       "id": "mnal_iso_fang2018a",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-018-20606-8"
+      },
+      {
+       "id": "mnal_iso_fang2018b",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-018-20606-8"
+      },
+      {
+       "id": "mnal_iso_fang2018c",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-018-20606-8"
+      },
+      {
+       "id": "mnal_iso_nguyen2018a",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jmmm.2018.05.001"
+      },
+      {
+       "id": "mnal_iso_nguyen2018b",
+       "phase": "tau-MnAl",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.jmmm.2018.05.001"
+      },
+      {
+       "id": "mnal_iso_madugundo2016a",
+       "phase": "tau-MnAl-C",
+       "route": "other: hot compaction of epsilon powder (epsilon->tau under uniaxial 275 MPa; direction of measurement not stated)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.4943242"
+      },
+      {
+       "id": "mnal_iso_madugundo2016b",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.4943242"
+      },
+      {
+       "id": "mnal_meltspun_tyrman2017thesisa",
+       "phase": "tau-MnAl-C",
+       "route": "other: melt-spun ribbon, annealed, ground to powder (no alignment step)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.70675/64180c3czeca6z420fzb956z4e7749e9c125"
+      },
+      {
+       "id": "mnal_meltspun_tyrman2017thesisb",
+       "phase": "tau-MnAl-C",
+       "route": "other: melt-spun ribbon, annealed, ground to powder (no alignment step)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.70675/64180c3czeca6z420fzb956z4e7749e9c125"
+      },
+      {
+       "id": "mnal_meltspun_tyrman2017thesisc",
+       "phase": "tau-MnAl-C",
+       "route": "other: melt-spun ribbon, annealed, ground to powder (no alignment step)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.70675/64180c3czeca6z420fzb956z4e7749e9c125"
+      },
+      {
+       "id": "mnal_sps_pasko2014hf",
+       "phase": "tau-MnAl-C",
+       "route": "isotropic",
+       "quantity": "texture_metric",
+       "doi": "10.1109/tmag.2014.2320598"
+      },
+      {
+       "id": "mnal_hd_kamino1966",
+       "phase": "tau-MnAl-B",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.1109/tmag.1966.1065887"
+      },
+      {
+       "id": "mnal_hd_juerries2020",
+       "phase": "tau-MnAl-C",
+       "route": "HD",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-020-64697-8"
+      },
+      {
+       "id": "mnal_fa_zhang2025",
+       "phase": "tau-MnAl",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.actamat.2025.120868"
+      },
+      {
+       "id": "mnal_fa_si2017a",
+       "phase": "tau-MnAl-C",
+       "route": "FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma10091016"
+      },
+      {
+       "id": "mnal_fa_si2017b",
+       "phase": "tau-MnAl-C",
+       "route": "FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma10091016"
+      },
+      {
+       "id": "mnal_other_jia2022a",
+       "phase": "tau-MnAl",
+       "route": "other: DS + hot deformation",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2022.117892"
+      },
+      {
+       "id": "mnal_hd_koch1960a",
+       "phase": "tau-MnAl",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.1063/1.1984610"
+      },
+      {
+       "id": "mnal_fa_kobayashi2017a",
+       "phase": "tau-MnAl",
+       "route": "FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.2320/matertrans.maw201709"
+      },
+      {
+       "id": "mnal_fa_kobayashi2017b",
+       "phase": "tau-MnAl",
+       "route": "FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.2320/matertrans.maw201709"
+      },
+      {
+       "id": "mnal_fa_kobayashi2017c",
+       "phase": "tau-MnAl",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans.maw201709"
+      },
+      {
+       "id": "mnal_fa_kobayashi2017d",
+       "phase": "tau-MnAl",
+       "route": "FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.2320/matertrans.maw201709"
+      },
+      {
+       "id": "mnal_isotropic_kobayashi2017e",
+       "phase": "tau-MnAl",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.2320/matertrans.maw201709"
+      },
+      {
+       "id": "mnal_sc_sa_zhang2018a",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mnal_sc_sa_zhang2018b",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "Js_same_sample",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mnal_other_sc_zhang2018c",
+       "phase": "tau-MnAl-C",
+       "route": "other: SC (single-crystal epsilon parent, no bias)",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mnal_sc_sa_kojima1975a",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.30281"
+      },
+      {
+       "id": "mnal_sc_sa_kojima1975b",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mnal_sc_sa_kojima1975c",
+       "phase": "tau-MnAl-C",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mnal_sa_tyrman2018a",
+       "phase": "tau-MnAl-C",
+       "route": "SA",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.5007241"
+      },
+      {
+       "id": "mnal_sa_tyrman2018b",
+       "phase": "tau-MnAl-C",
+       "route": "SA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.5007241"
+      },
+      {
+       "id": "mnal_sa_tyrman2018c",
+       "phase": "tau-MnAl-C",
+       "route": "SA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.5007241"
+      },
+      {
+       "id": "mnal_sa_tyrman2018d",
+       "phase": "tau-MnAl-C",
+       "route": "SA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.5007241"
+      },
+      {
+       "id": "mnal_sa_tyrman2018e",
+       "phase": "tau-MnAl-C",
+       "route": "SA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.5007241"
+      }
+     ]
+    },
+    "mnga_co_outcomes.yaml": {
+     "sha256": "edf9418c4d5602d73e3a2147de90854d7de94fd5e6170c8fd3926fc6d4de6caa",
+     "n_records": 37,
+     "cases": [
+      {
+       "id": "mn3ga_iso_niida1996",
+       "phase": "D022-Mn3Ga",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.362115"
+      },
+      {
+       "id": "mn3ga_rxfa_ener2015",
+       "phase": "D022-Mn3Ga",
+       "route": "RX+FA",
+       "quantity": "Br",
+       "doi": "10.1016/j.jmmm.2015.02.001"
+      },
+      {
+       "id": "mnga_fa_brown2015",
+       "phase": "Mn-Ga (L10/D022 not specified in abstract)",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1557/adv.2015.26"
+      },
+      {
+       "id": "mnga_l10_ep_zhu2012",
+       "phase": "L10-MnGa",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1002/adma.201200805"
+      },
+      {
+       "id": "mnga_l10_ep_krishnan1992",
+       "phase": "L10-MnGa",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.108245"
+      },
+      {
+       "id": "mnga_l10_iso_cui2013",
+       "phase": "L10-MnGa",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1109/TMAG.2013.2245868"
+      },
+      {
+       "id": "mnga_l10_iso_cui2013_ms",
+       "phase": "L10-MnGa",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.1016/j.calphad.2019.101722"
+      },
+      {
+       "id": "mnga_l10_ms_gong2015",
+       "phase": "L10-MnGa",
+       "route": "other: melt-spun ribbon (rapidly quenched, texture not reported)",
+       "quantity": "Br",
+       "doi": "10.1109/TMAG.2015.2434936"
+      },
+      {
+       "id": "mn3ge_ep_sugihara2014",
+       "phase": "D022-Mn3Ge",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.4870625"
+      },
+      {
+       "id": "mn3ge_ep_sugihara2015",
+       "phase": "D022-Mn3Ge",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/0022-3727/48/16/164009"
+      },
+      {
+       "id": "mn3ge_ms_kalache2016",
+       "phase": "D022-Mn3Ge",
+       "route": "other: melt-spun ribbon + heat treatment",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.4961660"
+      },
+      {
+       "id": "mn3ga_fa_niida1996_kb",
+       "phase": "D022-Mn3Ga",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mn3ga_rxfa_ener2015_kb",
+       "phase": "D022-Mn3Ga",
+       "route": "RX+FA",
+       "quantity": "Br",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mn3ga_rx_ener2015_kb",
+       "phase": "D022-Mn3Ga",
+       "route": "other: cold rolling + annealing without field",
+       "quantity": "Br",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mn3ga_iso_ener2015_kb",
+       "phase": "D022-Mn3Ga",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mn3ga_fa_ener2015_kb",
+       "phase": "D022-Mn3Ga",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mn3ga_iso_balke2007_kb",
+       "phase": "D022-Mn3Ga",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mn3ga_iso_winterlik2008_kb",
+       "phase": "D022-Mn3Ga",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mnga_l10_hd_lu2019",
+       "phase": "L10-MnGa",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.1016/j.jmmm.2018.11.005"
+      },
+      {
+       "id": "mnga_l10_iso_cui2013_kb",
+       "phase": "L10-MnGa",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mn3ga_ms_saito2012_kb",
+       "phase": "D022-Mn3Ga",
+       "route": "other: melt-spun ribbon (texture not reported)",
+       "quantity": "Br",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "mn3ga_ms_liu2015_kb",
+       "phase": "D022-Mn3Ga",
+       "route": "other: melt-spun ribbon (texture not reported)",
+       "quantity": "Br",
+       "doi": "10.1016/j.pmatsci.2021.100872"
+      },
+      {
+       "id": "zr2co11_cl_bal2013",
+       "phase": "Zr2Co11",
+       "route": "other: cluster deposition, in-flight field alignment",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1002/adma.201302704"
+      },
+      {
+       "id": "zr2co11_cl_texture_bal2013",
+       "phase": "Zr2Co11",
+       "route": "other: cluster deposition, in-flight field alignment",
+       "quantity": "texture_metric",
+       "doi": "10.1002/adma.201302704"
+      },
+      {
+       "id": "zr2co11_cl_js_bal2013",
+       "phase": "Zr2Co11",
+       "route": "other: cluster deposition, in-flight field alignment",
+       "quantity": "Js_same_sample",
+       "doi": "10.1002/adma.201302704"
+      },
+      {
+       "id": "zr2co11_cl_nc_bal2013",
+       "phase": "Zr2Co11",
+       "route": "other: cluster deposition, in-flight alignment + co-deposited soft Fe65Co35 (exchange-coupled composite)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1002/adma.201302704"
+      },
+      {
+       "id": "hfco7_cl_bal2014",
+       "phase": "HfCo7",
+       "route": "other: cluster deposition, in-flight field alignment",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep06265"
+      },
+      {
+       "id": "hfco7_cl_hard_bal2014",
+       "phase": "HfCo7",
+       "route": "other: cluster deposition, in-flight field alignment",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep06265"
+      },
+      {
+       "id": "hfco7_iso_cl_bal2014",
+       "phase": "HfCo7",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep06265"
+      },
+      {
+       "id": "hfco7_cl_js_bal2014",
+       "phase": "HfCo7",
+       "route": "other: cluster deposition, in-flight field alignment",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/srep06265"
+      },
+      {
+       "id": "hfco7_cl_nc_bal2014",
+       "phase": "HfCo7",
+       "route": "other: cluster deposition, in-flight alignment + co-deposited soft Fe65Co35 (exchange-coupled composite)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep06265"
+      },
+      {
+       "id": "hfco7_ms_mcguire2012",
+       "phase": "HfCo7",
+       "route": "other: melt-spun ribbon (texture not reported)",
+       "quantity": "Br",
+       "doi": "10.1063/1.4766283"
+      },
+      {
+       "id": "zr2co11_ms_jin2016",
+       "phase": "Zr2Co11",
+       "route": "other: melt-spun ribbon (texture not reported)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.4942556"
+      },
+      {
+       "id": "zr2co11_iso_cui2018",
+       "phase": "Zr2Co11",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.actamat.2018.07.049"
+      },
+      {
+       "id": "hfco7_cryst_mcguire2015_700",
+       "phase": "HfCo7",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.4907575"
+      },
+      {
+       "id": "hfco7_cryst_mcguire2015_600",
+       "phase": "HfCo7",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.4907575"
+      },
+      {
+       "id": "hfco7_fa_mcguire2015",
+       "phase": "HfCo7",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.1063/1.4907575"
+      }
+     ]
+    },
+    "universe_outcomes.yaml": {
+     "sha256": "0245e33efaca204817e50e4bdc27a1e59c1ebe643355938bd6802fa481c342c3",
+     "n_records": 26,
+     "cases": [
+      {
+       "id": "uni_out_mnbi_hotcompact_rao2013_via_mccallum2014",
+       "phase": "LTP-MnBi",
+       "route": "other: arc melting + low-temperature ball milling + hot compaction (field-alignment step not stated in the review)",
+       "quantity": "Br",
+       "doi": "10.1146/annurev-matsci-070813-113457"
+      },
+      {
+       "id": "uni_out_mnbi_bulk_sota_cui2018",
+       "phase": "LTP-MnBi",
+       "route": "other: bulk magnet, route not stated in the review summary",
+       "quantity": "Br",
+       "doi": "10.1016/j.actamat.2018.07.049"
+      },
+      {
+       "id": "uni_out_mnbi_thickfilm_zhang_via_cui2018",
+       "phase": "LTP-MnBi",
+       "route": "other: thick film (deposition; details not in the review summary)",
+       "quantity": "Br",
+       "doi": "10.1016/j.actamat.2018.07.049"
+      },
+      {
+       "id": "uni_out_mnbi_powder_cui_via_cui2018",
+       "phase": "LTP-MnBi",
+       "route": "other: powder (alignment step not stated in the review summary)",
+       "quantity": "Br",
+       "doi": "10.1016/j.actamat.2018.07.049"
+      },
+      {
+       "id": "uni_out_conanorod_niarchos_via_hirosawa2017",
+       "phase": "Co nanorods/nanowires (shape anisotropy)",
+       "route": "other: assembly of Co nanorods (details not in the review)",
+       "quantity": "Br",
+       "doi": "10.1088/2043-6254/aa597c"
+      },
+      {
+       "id": "uni_out_granados2021_srm_sps_jenus2016",
+       "phase": "M-type hexaferrite",
+       "route": "other: shape-induced orientation of platelets by uniaxial pressure during SPS (no field)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "uni_out_granados2021_srm_sps_sauramuzquiz2016",
+       "phase": "M-type hexaferrite",
+       "route": "other: shape-induced orientation of platelets by uniaxial pressure during SPS (no field)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "uni_out_granados2021_srm_fpsps_stingaciu2019",
+       "phase": "M-type hexaferrite",
+       "route": "FP + SPS (field applied to the powder prior to sintering, then uniaxial SPS)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "uni_out_granados2021_srm_sps_postanneal",
+       "phase": "M-type hexaferrite",
+       "route": "other: shape-induced orientation by uniaxial pressure during SPS, then post-annealing 850 C 4 h",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/1361-6463/abfad4"
+      },
+      {
+       "id": "uni_out_dussa2024_alnico8_equiaxed_durandcharre1978",
+       "phase": "AlNiCo",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.3390/magnetism4020010"
+      },
+      {
+       "id": "uni_out_sirisathitkul2022_alnico_am_white",
+       "phase": "AlNiCo",
+       "route": "AM (+ post heat treatment as in the original; not stated in the review)",
+       "quantity": "Br",
+       "doi": "10.3390/inventions7030071"
+      },
+      {
+       "id": "uni_out_alcomax2_fc_along_sw1948",
+       "phase": "AlNiCo",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1098/rsta.1948.0007"
+      },
+      {
+       "id": "uni_out_alcomax2_fc_perp_sw1948",
+       "phase": "AlNiCo",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1098/rsta.1948.0007"
+      },
+      {
+       "id": "uni_out_fepd_l10_fa_tanaka2000_via_ohtsuka2008",
+       "phase": "L10-FePd",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.1088/1468-6996/9/1/013004"
+      },
+      {
+       "id": "uni_out_copt_l10_fa_kakeshita2006_via_ohtsuka2008",
+       "phase": "L10-CoPt",
+       "route": "FA",
+       "quantity": "texture_metric",
+       "doi": "10.1088/1468-6996/9/1/013004"
+      },
+      {
+       "id": "uni_out_rt_conanorod_colloid_anagnostopoulou2016",
+       "phase": "Co nanorods (shape anisotropy)",
+       "route": "other: colloidal field assembly (R on rods in a wet suspension)",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c5nr07143g"
+      },
+      {
+       "id": "uni_out_rt_fecrcomo_rxfa_sugimoto1991",
+       "phase": "Fe-Cr-Co",
+       "route": "RX+FA",
+       "quantity": "Br",
+       "doi": "10.1109/20.79083"
+      },
+      {
+       "id": "uni_out_rt_fecrcomo_fa_khan2022",
+       "phase": "Fe-Cr-Co",
+       "route": "FA (parent texture not stated)",
+       "quantity": "Br",
+       "doi": "10.3390/ma15072344"
+      },
+      {
+       "id": "uni_out_rt_fecrcocu_deformageing_khan2022",
+       "phase": "Fe-Cr-Co",
+       "route": "other: deformation ageing",
+       "quantity": "Br",
+       "doi": "10.3390/ma15072344"
+      },
+      {
+       "id": "uni_out_rt_fept_ep_shima2002",
+       "phase": "L10-FePt",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1063/1.1432446"
+      },
+      {
+       "id": "uni_out_rt_fepd_scsa_ichitsubo1998",
+       "phase": "L10-FePd",
+       "route": "SC+SA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.39.24"
+      },
+      {
+       "id": "uni_out_rt_copt_scfa_farjami2009",
+       "phase": "L10-CoPt",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2355/isijinternational.49.1610"
+      },
+      {
+       "id": "uni_out_rt_fepd_scfa_farjami2009",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2355/isijinternational.49.1610"
+      },
+      {
+       "id": "uni_out_rt_fepd_scfa_tanaka2000mrsj_i",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "uni_out_rt_fepd_scfa_tanaka2000mrsj_ii",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": null
+      },
+      {
+       "id": "uni_out_rt_fepd_scfa_tanaka2000mt",
+       "phase": "L10-FePd",
+       "route": "SC+FA",
+       "quantity": "texture_metric",
+       "doi": "10.2320/matertrans1989.41.917"
+      }
+     ]
+    }
+   },
+   "opened": false
+  }
+ }
+}
