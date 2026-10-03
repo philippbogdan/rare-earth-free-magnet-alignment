@@ -14,9 +14,10 @@ from . import scoring
 from .curate import load_phases
 from .data import ROOT
 
-FILES = {'v1': 'cases.yaml', 'v2': 'cases_v2.yaml', 'v3': 'cases_v3.yaml', 'v4': 'cases_v4.yaml'}
+FILES = {'v1': 'cases.yaml', 'v2': 'cases_v2.yaml', 'v3': 'cases_v3.yaml', 'v4': 'cases_v4.yaml',
+         'v5': 'cases_v5.yaml'}
 # topics whose outcomes were opened only after the version's predictions were frozen
-HELDOUT_AFTER = {'v1': None, 'v2': {'mn4n'}, 'v3': {'heldout2_b'}, 'v4': {'heldout2_a'}}
+HELDOUT_AFTER = {'v1': None, 'v2': {'mn4n'}, 'v3': {'heldout2_b'}, 'v4': {'heldout2_a'}, 'v5': {'heldout3'}}
 
 
 def run(version, phases=None):

@@ -276,6 +276,8 @@ VERSIONS = [  # version, freeze commit, scores file, statuses that are held-out 
      'account reasons made physical (EP, TGG, direct formation); held-out on batch 4'),
     ('v4', None, 'results/scores_v4.json', ('heldout',),
      'v3 plus same-sample Js for all phases, composites and thin-film rules; held-out on batch 5'),
+    ('v5', None, 'results/scores_v5.json', ('heldout',),
+     'v4 plus loose powders open, HDDR from hydride thermodynamics, physical TGG; held-out on batch 6'),
 ]
 FREEZE = os.path.join(ROOT, 'docs', 'PROTOCOL_LOG.md')
 
@@ -571,7 +573,8 @@ def build(reg, phases, rows, R, st, univ=None):
         f"{vc['not_checked']}; DOI resolves for {vc['doi_ok']}. Estimates made here are labelled "
         f"({len(R.estimates)}, FINDINGS.md §7) and never set a ceiling.")
     allf = []
-    for lab, fn in (('v1', 'results/scores_v1.json'), ('v3', 'results/scores_v3.json'), ('v4', 'results/scores_v4.json')):
+    for lab, fn in (('v1', 'results/scores_v1.json'), ('v3', 'results/scores_v3.json'), ('v4', 'results/scores_v4.json'),
+                    ('v5', 'results/scores_v5.json')):
         sc = _load(fn)
         if sc:
             allf += [[lab] + f for f in _failures(sc)]
