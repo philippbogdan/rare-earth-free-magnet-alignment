@@ -426,6 +426,18 @@ def build(reg, phases, rows, R, st, univ=None):
               "alnico-like HEA) reach more remanence than independent rods allow: that reading was refuted "
               f"{hyp_ref[('independent rods', 'refuted')]} times, the coupled-network bound "
               f"(0.866 for random grains) held every time.")
+    if s1:
+        ho = [x for x in s1['cases'] if x['status'] == 'heldout' and x.get('result') == 'scored']
+        a89 = [x for x in ho if x['phase'] == 'AlNiCo-8-9' and abs(x['A_hi'] - 0.8312) < 0.01
+               and (x['conv'] == 'same-sample Js' or not x['conv'])]
+        fcc = [x for x in ho if x['phase'] == 'Fe-Cr-Co' and x['route'] == 'FA' and 'Mo-free' in x['why']
+               and x['m_lo'] > 0.8312 + x['tol']]
+        if a89 and fcc:
+            sm.append(f"- **The rod rule differs by alloy, as the account says**: equiaxed field-annealed AlNiCo 8/9 "
+                      f"(rods on the <100> nearest the field, cap 0.832) stays at or below "
+                      f"{fmt(max(x['m_hi'] for x in a89))} in all {len(a89)} held-out cases with a same-sample Js "
+                      f"or Mr/Ms; equiaxed Mo-free Fe-Cr-Co (rods follow the field in any grain, ceiling 1) "
+                      f"exceeds that cap in {len(fcc)} held-out cases (up to {fmt(max(x['m_lo'] for x in fcc))}).")
     seen = set()
     for r in sorted(caps, key=lambda r: r['A_max']):
         if r['phase'] in seen:
