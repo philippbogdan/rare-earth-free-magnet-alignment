@@ -1,0 +1,4228 @@
+- id: h2b_pmc12348462_v2_sl_25_mm_2_a_br_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 2 A with V2 25 mm
+    tool, debinding and sintering.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–25 mm-2 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_25_mm_2_a_js_same_sample_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 2 A with V2 25 mm
+    tool, debinding and sintering.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–25 mm-2 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_25_mm_2_a_texture_metric_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 2 A with V2 25 mm
+    tool, debinding and sintering.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–25 mm-2 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_25_mm_10_a_br_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 25 mm
+    tool, debinding and sintering.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–25 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_25_mm_10_a_js_same_sample_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 25 mm
+    tool, debinding and sintering.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–25 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_25_mm_10_a_texture_metric_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 25 mm
+    tool, debinding and sintering.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–25 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_12_5_mm_2_a_br_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 2 A with V2 12.5 mm
+    tool, debinding and sintering.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–12.5 mm-2 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_12_5_mm_2_a_js_same_sample_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 2 A with V2 12.5 mm
+    tool, debinding and sintering.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–12.5 mm-2 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_12_5_mm_2_a_texture_metric_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 2 A with V2 12.5 mm
+    tool, debinding and sintering.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–12.5 mm-2 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_12_5_mm_6_a_br_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 6 A with V2 12.5 mm
+    tool, debinding and sintering.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–12.5 mm-6 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_12_5_mm_6_a_js_same_sample_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 6 A with V2 12.5 mm
+    tool, debinding and sintering.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–12.5 mm-6 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_12_5_mm_6_a_texture_metric_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 6 A with V2 12.5 mm
+    tool, debinding and sintering.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–12.5 mm-6 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_12_5_mm_10_a_br_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 12.5
+    mm tool, debinding and sintering.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–12.5 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_12_5_mm_10_a_js_same_sample_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 12.5
+    mm tool, debinding and sintering.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–12.5 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_12_5_mm_10_a_texture_metric_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 12.5
+    mm tool, debinding and sintering.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–12.5 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_10_mm_10_a_br_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 10 mm
+    tool, debinding and sintering.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–10 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_10_mm_10_a_js_same_sample_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 10 mm
+    tool, debinding and sintering.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–10 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_10_mm_10_a_texture_metric_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 10 mm
+    tool, debinding and sintering.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–10 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_8_mm_10_a_br_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 8 mm
+    tool, debinding and sintering.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–8 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_8_mm_10_a_js_same_sample_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 8 mm
+    tool, debinding and sintering.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–8 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v2_sl_8_mm_10_a_texture_metric_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V2 8 mm
+    tool, debinding and sintering.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V2
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, V2-SL–8 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v3_sl_12_5_mm_10_a_br_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V3 12.5
+    mm tool, debinding and sintering.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V3
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 4, V3-SL–12.5 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v3_sl_12_5_mm_10_a_js_same_sample_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V3 12.5
+    mm tool, debinding and sintering.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V3
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 4, V3-SL–12.5 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12348462_v3_sl_12_5_mm_10_a_texture_metric_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: Powder extrusion moulding at 180 C last-zone setting, field alignment at 10 A with V3 12.5
+    mm tool, debinding and sintering.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: alignment direction
+  measurement: Hystograph, room temperature; magnetic maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: null
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled magnet powder, initial texture not quantified
+    magnet_axis: applied field direction
+    composition: recycled Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten powder-binder feedstock, 50 vol% powder
+    alignment_tool: V3
+  source:
+    doi: 10.3390/ma18153668
+    title: Production of Anisotropic NdFeB Permanent Magnets with In Situ Magnetic Particle Alignment
+      Using Powder Extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 4, V3-SL–12.5 mm-10 A
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12348462/fullTextXML
+- id: h2b_pmc12511325_m1_t160_c_br_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 160 C nozzle setting, then
+    debound and sintered.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T160°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t160_c_js_same_sample_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 160 C nozzle setting, then
+    debound and sintered.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T160°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t160_c_texture_metric_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 160 C nozzle setting, then
+    debound and sintered.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T160°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t170_c_br_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 170 C nozzle setting, then
+    debound and sintered.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 443.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T170°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t170_c_js_same_sample_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 170 C nozzle setting, then
+    debound and sintered.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 443.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T170°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t170_c_texture_metric_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 170 C nozzle setting, then
+    debound and sintered.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 443.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T170°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t180_c_br_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 180 C nozzle setting, then
+    debound and sintered.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T180°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t180_c_js_same_sample_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 180 C nozzle setting, then
+    debound and sintered.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T180°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t180_c_texture_metric_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 180 C nozzle setting, then
+    debound and sintered.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T180°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t190_c_br_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 190 C nozzle setting, then
+    debound and sintered.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 463.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T190°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t190_c_js_same_sample_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 190 C nozzle setting, then
+    debound and sintered.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 463.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T190°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t190_c_texture_metric_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 190 C nozzle setting, then
+    debound and sintered.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 463.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T190°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t200_c_br_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 200 C nozzle setting, then
+    debound and sintered.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T200°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t200_c_js_same_sample_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 200 C nozzle setting, then
+    debound and sintered.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T200°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m1_t200_c_texture_metric_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M1 powder; 10 A field alignment during extrusion at 200 C nozzle setting, then
+    debound and sintered.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M1 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M1–T200°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t160_c_br_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 160 C nozzle setting, then
+    debound and sintered.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T160°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t160_c_js_same_sample_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 160 C nozzle setting, then
+    debound and sintered.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T160°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t160_c_texture_metric_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 160 C nozzle setting, then
+    debound and sintered.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 433.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T160°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t170_c_br_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 170 C nozzle setting, then
+    debound and sintered.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 443.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T170°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t170_c_js_same_sample_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 170 C nozzle setting, then
+    debound and sintered.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 443.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T170°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t170_c_texture_metric_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 170 C nozzle setting, then
+    debound and sintered.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 443.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T170°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t180_c_br_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 180 C nozzle setting, then
+    debound and sintered.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T180°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t180_c_js_same_sample_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 180 C nozzle setting, then
+    debound and sintered.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T180°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t180_c_texture_metric_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 180 C nozzle setting, then
+    debound and sintered.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 453.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T180°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t190_c_br_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 190 C nozzle setting, then
+    debound and sintered.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 463.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T190°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t190_c_js_same_sample_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 190 C nozzle setting, then
+    debound and sintered.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 463.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T190°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t190_c_texture_metric_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 190 C nozzle setting, then
+    debound and sintered.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 463.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T190°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t200_c_br_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 200 C nozzle setting, then
+    debound and sintered.
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T200°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t200_c_js_same_sample_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 200 C nozzle setting, then
+    debound and sintered.
+  quantity: Js_same_sample
+  unit: mT
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T200°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc12511325_m2_t200_c_texture_metric_easy_axis_alignment_direction
+  phase: Nd2Fe14B
+  route: FP
+  process: HPMS recycled M2 powder; 10 A field alignment during extrusion at 200 C nozzle setting, then
+    debound and sintered.
+  quantity: texture_metric
+  unit: A_reported
+  measured_along: easy axis / alignment direction
+  measurement: Hystograph, room temperature, demagnetisation corrected; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 1.35
+    T_process_K: 473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: recycled sintered magnet powder; texture after milling not measured
+    magnet_axis: applied field direction
+    composition: M2 recycled Nd-Fe-B
+    particle_size: Dv50 7.68 µm for milled powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: molten 50 vol% powder-binder feedstock
+  source:
+    doi: 10.1038/s41598-025-19111-6
+    title: Process optimization to produce anisotropic NdFeB permanent magnets from recycled powder via
+      powder extrusion
+    first_author: Rathfelder
+    year: 2025
+    evidence: full_text
+    locator: Table 3, M2–T200°C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12511325/fullTextXML
+- id: h2b_pmc10988282_p_ac100_mr_over_ms_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_AC100 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS pressing direction
+  measurement: PPMS-VSM, 300 K, ±3 T; saturation from law of approach, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_AC100
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_ac100_texture_metric_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_AC100 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS pressing direction
+  measurement: X-ray pole figures and ODF; [00l] pole
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_AC100
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_dm75_mr_over_ms_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_DM75 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS pressing direction
+  measurement: PPMS-VSM, 300 K, ±3 T; saturation from law of approach, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_DM75
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_dm75_texture_metric_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_DM75 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS pressing direction
+  measurement: X-ray pole figures and ODF; [00l] pole
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_DM75
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_dm50_mr_over_ms_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_DM50 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS pressing direction
+  measurement: PPMS-VSM, 300 K, ±3 T; saturation from law of approach, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_DM50
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_dm50_texture_metric_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_DM50 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS pressing direction
+  measurement: X-ray pole figures and ODF; [00l] pole
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_DM50
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_dm25_mr_over_ms_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_DM25 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS pressing direction
+  measurement: PPMS-VSM, 300 K, ±3 T; saturation from law of approach, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_DM25
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_dm25_texture_metric_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_DM25 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS pressing direction
+  measurement: X-ray pole figures and ODF; [00l] pole
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_DM25
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_wm75_mr_over_ms_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_WM75 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS pressing direction
+  measurement: PPMS-VSM, 300 K, ±3 T; saturation from law of approach, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_WM75
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_wm75_texture_metric_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_WM75 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS pressing direction
+  measurement: X-ray pole figures and ODF; [00l] pole
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_WM75
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_wm50_mr_over_ms_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_WM50 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS pressing direction
+  measurement: PPMS-VSM, 300 K, ±3 T; saturation from law of approach, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_WM50
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_wm50_texture_metric_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_WM50 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS pressing direction
+  measurement: X-ray pole figures and ODF; [00l] pole
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_WM50
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_wm25_mr_over_ms_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_WM25 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS pressing direction
+  measurement: PPMS-VSM, 300 K, ±3 T; saturation from law of approach, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_WM25
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_wm25_texture_metric_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_WM25 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS pressing direction
+  measurement: X-ray pole figures and ODF; [00l] pole
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_WM25
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_ssm100_mr_over_ms_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_SSM100 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS pressing direction
+  measurement: PPMS-VSM, 300 K, ±3 T; saturation from law of approach, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_SSM100
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc10988282_p_ssm100_texture_metric_sps_pressing_direction
+  phase: SrFe12O19
+  route: MO
+  process: P_SSM100 autoclave/solid-salt-matrix powder mixture, uniaxial SPS to 950 C at 100 MPa without
+    alignment field.
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS pressing direction
+  measurement: X-ray pole figures and ODF; [00l] pole
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100
+    strain_percent: null
+    parent_texture: unoriented powder mixture
+    magnet_axis: SPS uniaxial pressing direction / platelet normal
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: reported range 0.92-0.98, not sample-specific
+    phase_content: null
+    alignment_medium: dry platelets during uniaxial SPS
+  source:
+    doi: 10.1039/d3ra05634a
+    title: High-performance hexaferrite magnets tailored through alignment of shape-controlled nanocomposites
+    first_author: Eikeland
+    year: 2024
+    evidence: full_text
+    locator: Table 2, P_SSM100
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10988282/fullTextXML
+- id: h2b_pmc9063944_t5min_b_mr_over_ms_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 't5min b: SPS at 950 C, 5 min, 100 MPa; no magnetic prealignment.'
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS force direction
+  measurement: VSM, room temperature, ±2 T, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.95
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, t5min b
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_t5min_b_texture_metric_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 't5min b: SPS at 950 C, 5 min, 100 MPa; no magnetic prealignment.'
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS force direction
+  measurement: X-ray pole figures, ODF texture index; reflection set (110),(008),(107),(114),(203)
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.95
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, t5min b
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_t2min_mr_over_ms_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 't2min: SPS at 950 C, 2 min, 100 MPa; no magnetic prealignment.'
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS force direction
+  measurement: VSM, room temperature, ±2 T, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.93
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, t2min
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_t2min_texture_metric_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 't2min: SPS at 950 C, 2 min, 100 MPa; no magnetic prealignment.'
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS force direction
+  measurement: X-ray pole figures, ODF texture index; reflection set (110),(008),(107),(114),(203)
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.93
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, t2min
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_t0min_mr_over_ms_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 't0min: SPS at 950 C, 0 min, 100 MPa; no magnetic prealignment.'
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS force direction
+  measurement: VSM, room temperature, ±2 T, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.86
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, t0min
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_t0min_texture_metric_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 't0min: SPS at 950 C, 0 min, 100 MPa; no magnetic prealignment.'
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS force direction
+  measurement: X-ray pole figures, ODF texture index; reflection set (110),(008),(107),(114),(203)
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.86
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, t0min
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_t900c_mr_over_ms_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 'T900C: SPS at 900 C, 5 min, 100 MPa; no magnetic prealignment.'
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS force direction
+  measurement: VSM, room temperature, ±2 T, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1173.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.92
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, T900C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_t900c_texture_metric_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 'T900C: SPS at 900 C, 5 min, 100 MPa; no magnetic prealignment.'
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS force direction
+  measurement: X-ray pole figures, ODF texture index; reflection set (110),(008),(107),(114),(203)
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1173.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.92
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, T900C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_t850c_mr_over_ms_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 'T850C: SPS at 850 C, 5 min, 100 MPa; no magnetic prealignment.'
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS force direction
+  measurement: VSM, room temperature, ±2 T, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1123.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.8
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, T850C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_t850c_texture_metric_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 'T850C: SPS at 850 C, 5 min, 100 MPa; no magnetic prealignment.'
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS force direction
+  measurement: X-ray pole figures, ODF texture index; reflection set (110),(008),(107),(114),(203)
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1123.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.8
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, T850C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_p60_mpa_mr_over_ms_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 'P60 MPa: SPS at 950 C, 5 min, 60 MPa; no magnetic prealignment.'
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS force direction
+  measurement: VSM, room temperature, ±2 T, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 60.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.91
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, P60 MPa
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_p60_mpa_texture_metric_sps_force_direction
+  phase: SrFe12O19
+  route: MO
+  process: 'P60 MPa: SPS at 950 C, 5 min, 60 MPa; no magnetic prealignment.'
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS force direction
+  measurement: X-ray pole figures, ODF texture index; reflection set (110),(008),(107),(114),(203)
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: 60.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: 0.91
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, P60 MPa
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_h_0_15t_mr_over_ms_sps_force_direction
+  phase: SrFe12O19
+  route: FP
+  process: 'H-0.15T: SPS at 950 C, 5 min, 100 MPa; powder prealigned in magnetic field.'
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS force direction
+  measurement: VSM, room temperature, ±2 T, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0.15
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, H-0.15T
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_h_0_15t_texture_metric_sps_force_direction
+  phase: SrFe12O19
+  route: FP
+  process: 'H-0.15T: SPS at 950 C, 5 min, 100 MPa; powder prealigned in magnetic field.'
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS force direction
+  measurement: X-ray pole figures, ODF texture index; reflection set (110),(008),(107),(114),(203)
+  n_samples: not reported
+  conditions:
+    field_T: 0.15
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, H-0.15T
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_h_0_45t_mr_over_ms_sps_force_direction
+  phase: SrFe12O19
+  route: FP
+  process: 'H-0.45T: SPS at 950 C, 5 min, 100 MPa; powder prealigned in magnetic field.'
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS force direction
+  measurement: VSM, room temperature, ±2 T, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0.45
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, H-0.45T
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_h_0_45t_texture_metric_sps_force_direction
+  phase: SrFe12O19
+  route: FP
+  process: 'H-0.45T: SPS at 950 C, 5 min, 100 MPa; powder prealigned in magnetic field.'
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS force direction
+  measurement: X-ray pole figures, ODF texture index; reflection set (110),(008),(107),(114),(203)
+  n_samples: not reported
+  conditions:
+    field_T: 0.45
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, H-0.45T
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_h_0_55t_mr_over_ms_sps_force_direction
+  phase: SrFe12O19
+  route: FP
+  process: 'H-0.55T: SPS at 950 C, 5 min, 100 MPa; powder prealigned in magnetic field.'
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS force direction
+  measurement: VSM, room temperature, ±2 T, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0.55
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, H-0.55T
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_h_0_55t_texture_metric_sps_force_direction
+  phase: SrFe12O19
+  route: FP
+  process: 'H-0.55T: SPS at 950 C, 5 min, 100 MPa; powder prealigned in magnetic field.'
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS force direction
+  measurement: X-ray pole figures, ODF texture index; reflection set (110),(008),(107),(114),(203)
+  n_samples: not reported
+  conditions:
+    field_T: 0.55
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, H-0.55T
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_h_0_55t_t2min_mr_over_ms_sps_force_direction
+  phase: SrFe12O19
+  route: FP
+  process: 'H-0.55T_t2min: SPS at 950 C, 2 min, 100 MPa; powder prealigned in magnetic field.'
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: SPS force direction
+  measurement: VSM, room temperature, ±2 T, demagnetisation corrected
+  n_samples: not reported
+  conditions:
+    field_T: 0.55
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, H-0.55T_t2min
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc9063944_h_0_55t_t2min_texture_metric_sps_force_direction
+  phase: SrFe12O19
+  route: FP
+  process: 'H-0.55T_t2min: SPS at 950 C, 2 min, 100 MPa; powder prealigned in magnetic field.'
+  quantity: texture_metric
+  unit: texture_index_[redacted]
+  measured_along: SPS force direction
+  measurement: X-ray pole figures, ODF texture index; reflection set (110),(008),(107),(114),(203)
+  n_samples: not reported
+  conditions:
+    field_T: 0.55
+    T_process_K: 1223.15
+    stress_MPa: 100.0
+    strain_percent: null
+    parent_texture: hydrothermally made platelets; field prealigned only for H-series
+    magnet_axis: SPS force direction
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder prior to SPS
+  source:
+    doi: 10.1039/c9ra02440a
+    title: Optimization of magnetic properties in fast consolidated SrFe 12 O 19 nanocrystallites
+    first_author: Stingaciu
+    year: 2019
+    evidence: full_text
+    locator: Table, H-0.55T_t2min
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9063944/fullTextXML
+- id: h2b_pmc7215384_fff_br_not_reported
+  phase: Nd2Fe14B
+  route: isotropic
+  process: FFF printed isotropic Nd-Fe-B bonded magnet
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: not reported
+  measurement: Permagraph closed-loop, room temperature; maximum magnetising field not reported
+  n_samples: 3
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random Nd-Fe-B powder
+    magnet_axis: none; isotropic feedstock
+    composition: MQP-S-11-9 Nd-Fe-B in polymer binder
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: polymer feedstock
+  source:
+    doi: 10.3390/ma13081916
+    title: Additive Manufactured Polymer-Bonded Isotropic NdFeB Magnets by Stereolithography and Their
+      Comparison to Fused Filament Fabricated and Selective Laser Sintered Magnets
+    first_author: Huber
+    year: 2020
+    evidence: full_text
+    locator: Table 1, FFF
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7215384/fullTextXML
+- id: h2b_pmc7215384_sls_br_not_reported
+  phase: Nd2Fe14B
+  route: isotropic
+  process: SLS printed isotropic Nd-Fe-B bonded magnet
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: not reported
+  measurement: Permagraph closed-loop, room temperature; maximum magnetising field not reported
+  n_samples: 3
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random Nd-Fe-B powder
+    magnet_axis: none; isotropic feedstock
+    composition: MQP-S-11-9 Nd-Fe-B
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: polymer feedstock
+  source:
+    doi: 10.3390/ma13081916
+    title: Additive Manufactured Polymer-Bonded Isotropic NdFeB Magnets by Stereolithography and Their
+      Comparison to Fused Filament Fabricated and Selective Laser Sintered Magnets
+    first_author: Huber
+    year: 2020
+    evidence: full_text
+    locator: Table 1, SLS
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7215384/fullTextXML
+- id: h2b_pmc7215384_sla_br_not_reported
+  phase: Nd2Fe14B
+  route: isotropic
+  process: SLA printed isotropic Nd-Fe-B bonded magnet
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: not reported
+  measurement: Permagraph closed-loop, room temperature; maximum magnetising field not reported
+  n_samples: 3
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random Nd-Fe-B powder
+    magnet_axis: none; isotropic feedstock
+    composition: MQP-S-11-9 Nd-Fe-B in polymer binder
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: polymer feedstock
+  source:
+    doi: 10.3390/ma13081916
+    title: Additive Manufactured Polymer-Bonded Isotropic NdFeB Magnets by Stereolithography and Their
+      Comparison to Fused Filament Fabricated and Selective Laser Sintered Magnets
+    first_author: Huber
+    year: 2020
+    evidence: full_text
+    locator: Table 1, SLA
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7215384/fullTextXML
+- id: h2b_pmc10385155_a_br_radial_direction
+  phase: Nd2Fe14B
+  route: HD
+  process: Hot press at 700 C/400 MPa/30 min, then backward extrude at 750 C; radial ring region a (Bottom)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: radial direction
+  measurement: VSM, max field 5 T, room temperature, demagnetisation corrected
+  n_samples: 1
+  conditions:
+    field_T: 0
+    T_process_K: 1023.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: amorphous Nd-Fe-B powder; hot-pressed precursor
+    magnet_axis: radial direction
+    composition: Nd28.47Pr0.56FebalB0.97Co3.63Al0.13Nb0.56Zr0.44 wt%
+    particle_size: 45-250 µm starting powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: solid hot-pressed ring during backward extrusion
+  source:
+    doi: 10.3390/ma16145117
+    title: Inhomogeneity of the Backward Extruded NdFeB Ring Magnet Prepared from Amorphous Powders
+    first_author: Huang
+    year: 2023
+    evidence: full_text
+    locator: Table 2, J r row, region a
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10385155/fullTextXML
+- id: h2b_pmc10385155_b_br_radial_direction
+  phase: Nd2Fe14B
+  route: HD
+  process: Hot press at 700 C/400 MPa/30 min, then backward extrude at 750 C; radial ring region b (Middle)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: radial direction
+  measurement: VSM, max field 5 T, room temperature, demagnetisation corrected
+  n_samples: 1
+  conditions:
+    field_T: 0
+    T_process_K: 1023.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: amorphous Nd-Fe-B powder; hot-pressed precursor
+    magnet_axis: radial direction
+    composition: Nd28.47Pr0.56FebalB0.97Co3.63Al0.13Nb0.56Zr0.44 wt%
+    particle_size: 45-250 µm starting powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: solid hot-pressed ring during backward extrusion
+  source:
+    doi: 10.3390/ma16145117
+    title: Inhomogeneity of the Backward Extruded NdFeB Ring Magnet Prepared from Amorphous Powders
+    first_author: Huang
+    year: 2023
+    evidence: full_text
+    locator: Table 2, J r row, region b
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10385155/fullTextXML
+- id: h2b_pmc10385155_c_br_radial_direction
+  phase: Nd2Fe14B
+  route: HD
+  process: Hot press at 700 C/400 MPa/30 min, then backward extrude at 750 C; radial ring region c (Middle)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: radial direction
+  measurement: VSM, max field 5 T, room temperature, demagnetisation corrected
+  n_samples: 1
+  conditions:
+    field_T: 0
+    T_process_K: 1023.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: amorphous Nd-Fe-B powder; hot-pressed precursor
+    magnet_axis: radial direction
+    composition: Nd28.47Pr0.56FebalB0.97Co3.63Al0.13Nb0.56Zr0.44 wt%
+    particle_size: 45-250 µm starting powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: solid hot-pressed ring during backward extrusion
+  source:
+    doi: 10.3390/ma16145117
+    title: Inhomogeneity of the Backward Extruded NdFeB Ring Magnet Prepared from Amorphous Powders
+    first_author: Huang
+    year: 2023
+    evidence: full_text
+    locator: Table 2, J r row, region c
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10385155/fullTextXML
+- id: h2b_pmc10385155_d_br_radial_direction
+  phase: Nd2Fe14B
+  route: HD
+  process: Hot press at 700 C/400 MPa/30 min, then backward extrude at 750 C; radial ring region d (Top)
+  quantity: '[redacted]'
+  unit: T
+  measured_along: radial direction
+  measurement: VSM, max field 5 T, room temperature, demagnetisation corrected
+  n_samples: 1
+  conditions:
+    field_T: 0
+    T_process_K: 1023.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: amorphous Nd-Fe-B powder; hot-pressed precursor
+    magnet_axis: radial direction
+    composition: Nd28.47Pr0.56FebalB0.97Co3.63Al0.13Nb0.56Zr0.44 wt%
+    particle_size: 45-250 µm starting powder
+    density_rel: null
+    phase_content: null
+    alignment_medium: solid hot-pressed ring during backward extrusion
+  source:
+    doi: 10.3390/ma16145117
+    title: Inhomogeneity of the Backward Extruded NdFeB Ring Magnet Prepared from Amorphous Powders
+    first_author: Huang
+    year: 2023
+    evidence: full_text
+    locator: Table 2, J r row, region d
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10385155/fullTextXML
+- id: h2b_pmc5086984_baam_br_not_reported
+  phase: Nd2Fe14B
+  route: AM
+  process: Big-area additive manufacturing of bonded Nd-Fe-B powder
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not reported
+  measurement: Magnetisation loop at 300 K, maximum field 3 T
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random bonded Nd-Fe-B powder
+    magnet_axis: none; isotropic powder
+    composition: Nd-Fe-B powder in polymer binder
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: bonded polymer composite
+  source:
+    doi: 10.1038/srep36212
+    title: Big Area Additive Manufacturing of High Performance Bonded NdFeB Magnets
+    first_author: Li
+    year: 2016
+    evidence: full_text
+    locator: Table 1, BAAM at 300 K
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5086984/fullTextXML
+- id: h2b_pmc5086984_im_br_not_reported
+  phase: Nd2Fe14B
+  route: isotropic
+  process: injection moulding of bonded Nd-Fe-B powder
+  quantity: '[redacted]'
+  unit: T
+  measured_along: not reported
+  measurement: Magnetisation loop at 300 K, maximum field 3 T
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random bonded Nd-Fe-B powder
+    magnet_axis: none; isotropic powder
+    composition: Nd-Fe-B powder in polymer binder
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: bonded polymer composite
+  source:
+    doi: 10.1038/srep36212
+    title: Big Area Additive Manufacturing of High Performance Bonded NdFeB Magnets
+    first_author: Li
+    year: 2016
+    evidence: full_text
+    locator: Table 1, IM at 300 K
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5086984/fullTextXML
+- id: h2b_pmc7435735_baam_pps_br_not_reported
+  phase: Nd2Fe14B
+  route: isotropic
+  process: Big-area additive manufacture of isotropic 63 vol% Nd-Fe-B/PPS bonded magnet
+  quantity: '[redacted]'
+  unit: kGs
+  measured_along: not reported
+  measurement: Magnetic properties at room temperature; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: isotropic Nd-Fe-B powder
+    magnet_axis: none; isotropic powder
+    composition: 63 vol% Nd-Fe-B / 37 vol% PPS
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: PPS polymer binder
+  source:
+    doi: 10.3390/ma13153319
+    title: Additive Manufacturing of Isotropic NdFeB PPS Bonded Permanent Magnets
+    first_author: Paranthaman
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7435735/fullTextXML
+- id: h2b_pmc7435735_baam_pps_js_same_sample_not_reported
+  phase: Nd2Fe14B
+  route: isotropic
+  process: Big-area additive manufacture of isotropic 63 vol% Nd-Fe-B/PPS bonded magnet
+  quantity: Js_same_sample
+  unit: kGs
+  measured_along: not reported
+  measurement: Magnetic properties at room temperature; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: isotropic Nd-Fe-B powder
+    magnet_axis: none; isotropic powder
+    composition: 63 vol% Nd-Fe-B / 37 vol% PPS
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: PPS polymer binder
+  source:
+    doi: 10.3390/ma13153319
+    title: Additive Manufacturing of Isotropic NdFeB PPS Bonded Permanent Magnets
+    first_author: Paranthaman
+    year: 2020
+    evidence: full_text
+    locator: Table 1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7435735/fullTextXML
+- id: h2b_pmc11289406_sr_4_1_br_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: SrFe12O19 powder calcined at 1150 C without alignment field
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: not reported
+  measurement: Magnetic hysteresis, room temperature; maximum applied field not stated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1423.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder, no alignment step
+  source:
+    doi: 10.1038/s41598-024-67994-8
+    title: Influence of calcination temperature and particle size distribution on the physical properties
+      of SrFe12O19 and BaFe12O19 hexaferrite powders
+    first_author: Hlosta
+    year: 2024
+    evidence: full_text
+    locator: Table 5, Sr_4.1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11289406/fullTextXML
+- id: h2b_pmc11289406_sr_4_1_js_same_sample_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: SrFe12O19 powder calcined at 1150 C without alignment field
+  quantity: Js_same_sample
+  unit: Am2/kg
+  measured_along: not reported
+  measurement: Magnetic hysteresis, room temperature; maximum applied field not stated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1423.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder, no alignment step
+  source:
+    doi: 10.1038/s41598-024-67994-8
+    title: Influence of calcination temperature and particle size distribution on the physical properties
+      of SrFe12O19 and BaFe12O19 hexaferrite powders
+    first_author: Hlosta
+    year: 2024
+    evidence: full_text
+    locator: Table 5, Sr_4.1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11289406/fullTextXML
+- id: h2b_pmc11289406_sr_5_1_br_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: SrFe12O19 powder calcined at 1200 C without alignment field
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: not reported
+  measurement: Magnetic hysteresis, room temperature; maximum applied field not stated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder, no alignment step
+  source:
+    doi: 10.1038/s41598-024-67994-8
+    title: Influence of calcination temperature and particle size distribution on the physical properties
+      of SrFe12O19 and BaFe12O19 hexaferrite powders
+    first_author: Hlosta
+    year: 2024
+    evidence: full_text
+    locator: Table 5, Sr_5.1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11289406/fullTextXML
+- id: h2b_pmc11289406_sr_5_1_js_same_sample_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: SrFe12O19 powder calcined at 1200 C without alignment field
+  quantity: Js_same_sample
+  unit: Am2/kg
+  measured_along: not reported
+  measurement: Magnetic hysteresis, room temperature; maximum applied field not stated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder, no alignment step
+  source:
+    doi: 10.1038/s41598-024-67994-8
+    title: Influence of calcination temperature and particle size distribution on the physical properties
+      of SrFe12O19 and BaFe12O19 hexaferrite powders
+    first_author: Hlosta
+    year: 2024
+    evidence: full_text
+    locator: Table 5, Sr_5.1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11289406/fullTextXML
+- id: h2b_pmc11289406_ba_3_1_br_not_reported
+  phase: BaFe12O19
+  route: isotropic
+  process: BaFe12O19 powder calcined at 1200 C without alignment field
+  quantity: '[redacted]'
+  unit: mT
+  measured_along: not reported
+  measurement: Magnetic hysteresis, room temperature; maximum applied field not stated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder, no alignment step
+  source:
+    doi: 10.1038/s41598-024-67994-8
+    title: Influence of calcination temperature and particle size distribution on the physical properties
+      of SrFe12O19 and BaFe12O19 hexaferrite powders
+    first_author: Hlosta
+    year: 2024
+    evidence: full_text
+    locator: Table 5, Ba_3.1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11289406/fullTextXML
+- id: h2b_pmc11289406_ba_3_1_js_same_sample_not_reported
+  phase: BaFe12O19
+  route: isotropic
+  process: BaFe12O19 powder calcined at 1200 C without alignment field
+  quantity: Js_same_sample
+  unit: Am2/kg
+  measured_along: not reported
+  measurement: Magnetic hysteresis, room temperature; maximum applied field not stated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1473.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder, no alignment step
+  source:
+    doi: 10.1038/s41598-024-67994-8
+    title: Influence of calcination temperature and particle size distribution on the physical properties
+      of SrFe12O19 and BaFe12O19 hexaferrite powders
+    first_author: Hlosta
+    year: 2024
+    evidence: full_text
+    locator: Table 5, Ba_3.1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11289406/fullTextXML
+- id: h2b_pmc11497450_sinter_950_mr_over_ms_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: Microwave sintering at 950 C without field alignment
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: Room-temperature magnetic hysteresis; maximum field not stated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: sintered powder compact
+  source:
+    doi: 10.1016/j.heliyon.2024.e38766
+    title: Effect of microwave sintering on density, microstructural and magnetic properties of pure strontium
+      hexaferrite at low temperatures and heating rate
+    first_author: Matran
+    year: 2024
+    evidence: full_text
+    locator: Table 5, 950 C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11497450/fullTextXML
+- id: h2b_pmc11497450_sinter_1000_mr_over_ms_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: Microwave sintering at 1000 C without field alignment
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: Room-temperature magnetic hysteresis; maximum field not stated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1273.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: sintered powder compact
+  source:
+    doi: 10.1016/j.heliyon.2024.e38766
+    title: Effect of microwave sintering on density, microstructural and magnetic properties of pure strontium
+      hexaferrite at low temperatures and heating rate
+    first_author: Matran
+    year: 2024
+    evidence: full_text
+    locator: Table 5, 1000 C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11497450/fullTextXML
+- id: h2b_pmc11497450_sinter_1050_mr_over_ms_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: Microwave sintering at 1050 C without field alignment
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: Room-temperature magnetic hysteresis; maximum field not stated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1323.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: sintered powder compact
+  source:
+    doi: 10.1016/j.heliyon.2024.e38766
+    title: Effect of microwave sintering on density, microstructural and magnetic properties of pure strontium
+      hexaferrite at low temperatures and heating rate
+    first_author: Matran
+    year: 2024
+    evidence: full_text
+    locator: Table 5, 1050 C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11497450/fullTextXML
+- id: h2b_pmc11497450_sinter_1100_mr_over_ms_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: Microwave sintering at 1100 C without field alignment
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: Room-temperature magnetic hysteresis; maximum field not stated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1373.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: sintered powder compact
+  source:
+    doi: 10.1016/j.heliyon.2024.e38766
+    title: Effect of microwave sintering on density, microstructural and magnetic properties of pure strontium
+      hexaferrite at low temperatures and heating rate
+    first_author: Matran
+    year: 2024
+    evidence: full_text
+    locator: Table 5, 1100 C
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11497450/fullTextXML
+- id: h2b_pmc10906010_sfo_mr_over_ms_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: Sol-gel synthesis and 750 C calcination, no alignment field
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: M-H loop; maximum field and exact temperature not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1023.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder
+  source:
+    doi: 10.1039/d3ra08878b
+    title: Structural, thermodynamic, and magnetic properties of SrFe 12 O 19 hexaferrite modified by
+      co-substitution of Cu and Gd
+    first_author: Islam
+    year: 2024
+    evidence: full_text
+    locator: magnetic parameters table, SFO
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10906010/fullTextXML
+- id: h2b_pmc10906010_sgfco_1_mr_over_ms_not_reported
+  phase: Sr0.95Gd0.05Fe11.7Cu0.3O19
+  route: isotropic
+  process: Sol-gel synthesis and 750 C calcination, no alignment field
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: M-H loop; maximum field and exact temperature not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1023.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: Sr0.95Gd0.05Fe11.7Cu0.3O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder
+  source:
+    doi: 10.1039/d3ra08878b
+    title: Structural, thermodynamic, and magnetic properties of SrFe 12 O 19 hexaferrite modified by
+      co-substitution of Cu and Gd
+    first_author: Islam
+    year: 2024
+    evidence: full_text
+    locator: magnetic parameters table, SGFCO-1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10906010/fullTextXML
+- id: h2b_pmc10906010_sgfco_2_mr_over_ms_not_reported
+  phase: Sr0.95Gd0.05Fe11.4Cu0.6O19
+  route: isotropic
+  process: Sol-gel synthesis and 750 C calcination, no alignment field
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: M-H loop; maximum field and exact temperature not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1023.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: Sr0.95Gd0.05Fe11.4Cu0.6O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder
+  source:
+    doi: 10.1039/d3ra08878b
+    title: Structural, thermodynamic, and magnetic properties of SrFe 12 O 19 hexaferrite modified by
+      co-substitution of Cu and Gd
+    first_author: Islam
+    year: 2024
+    evidence: full_text
+    locator: magnetic parameters table, SGFCO-2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10906010/fullTextXML
+- id: h2b_pmc11680785_bcf1_mr_over_ms_not_reported
+  phase: Ba1-xCoxFe12O19
+  route: isotropic
+  process: Chemical synthesis of Co-substituted Ba M-type hexaferrite powder without alignment
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: M-H loop, room temperature; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder
+  source:
+    doi: 10.1038/s41598-024-82273-2
+    title: Robustic and hybrid cobalt doped BaFe12O19 hexaferrites for the photocatalytic degradation
+      of Congo Red for wastewater treatment
+    first_author: Himanshi
+    year: 2024
+    evidence: full_text
+    locator: Table 5, BCF1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11680785/fullTextXML
+- id: h2b_pmc11680785_bcf2_mr_over_ms_not_reported
+  phase: Ba1-xCoxFe12O19
+  route: isotropic
+  process: Chemical synthesis of Co-substituted Ba M-type hexaferrite powder without alignment
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: M-H loop, room temperature; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: Ba0.98Co0.02Fe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder
+  source:
+    doi: 10.1038/s41598-024-82273-2
+    title: Robustic and hybrid cobalt doped BaFe12O19 hexaferrites for the photocatalytic degradation
+      of Congo Red for wastewater treatment
+    first_author: Himanshi
+    year: 2024
+    evidence: full_text
+    locator: Table 5, BCF2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11680785/fullTextXML
+- id: h2b_pmc12223264_nf11_mr_over_ms_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: Electrospun Sr-hexaferrite nanofiber mat calcined without alignment field
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: Room-temperature ensemble M-H loop, not individual fibers; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: randomly oriented nanofibers
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: electrospun fiber ensemble
+  source:
+    doi: 10.1038/s41598-025-04493-4
+    title: Enhanced magnetic properties through tailoring of morphology of electrospun strontium hexaferrite
+      nanofibers
+    first_author: Vats
+    year: 2025
+    evidence: full_text
+    locator: Table 3, NF11
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12223264/fullTextXML
+- id: h2b_pmc12223264_nf21_mr_over_ms_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: Electrospun Sr-hexaferrite nanofiber mat calcined without alignment field
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: Room-temperature ensemble M-H loop, not individual fibers; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1073.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: randomly oriented nanofibers
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: electrospun fiber ensemble
+  source:
+    doi: 10.1038/s41598-025-04493-4
+    title: Enhanced magnetic properties through tailoring of morphology of electrospun strontium hexaferrite
+      nanofibers
+    first_author: Vats
+    year: 2025
+    evidence: full_text
+    locator: Table 3, NF21
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12223264/fullTextXML
+- id: h2b_pmc12223264_nf31_mr_over_ms_not_reported
+  phase: SrFe12O19
+  route: isotropic
+  process: Electrospun Sr-hexaferrite nanofiber mat calcined without alignment field
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: Room-temperature ensemble M-H loop, not individual fibers; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1223.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: randomly oriented nanofibers
+    magnet_axis: none
+    composition: SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: electrospun fiber ensemble
+  source:
+    doi: 10.1038/s41598-025-04493-4
+    title: Enhanced magnetic properties through tailoring of morphology of electrospun strontium hexaferrite
+      nanofibers
+    first_author: Vats
+    year: 2025
+    evidence: full_text
+    locator: Table 3, NF31
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12223264/fullTextXML
+- id: h2b_pmc5343456_45_nm_mr_over_ms_in_plane_hard_axis
+  phase: BaFe12O19
+  route: EP
+  process: DC sputtering on a-cut sapphire followed by ex-situ annealing
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: in-plane hard axis
+  measurement: M-H loop, room temperature; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: a-cut sapphire single crystal
+    magnet_axis: in-plane crystallographic c axis is easy direction
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: epitaxial sputtered film
+  source:
+    doi: 10.1038/srep44193
+    title: Epitaxially grown BaM hexaferrite films having uniaxial axis in the film plane for self-biased
+      devices
+    first_author: Zhang
+    year: 2017
+    evidence: full_text
+    locator: Table 1, 45 nm, in-plane hard axis
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5343456/fullTextXML
+- id: h2b_pmc5343456_45_nm_mr_over_ms_in_plane_easy_axis
+  phase: BaFe12O19
+  route: EP
+  process: DC sputtering on a-cut sapphire followed by ex-situ annealing
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: in-plane easy axis
+  measurement: M-H loop, room temperature; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: a-cut sapphire single crystal
+    magnet_axis: in-plane crystallographic c axis is easy direction
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: epitaxial sputtered film
+  source:
+    doi: 10.1038/srep44193
+    title: Epitaxially grown BaM hexaferrite films having uniaxial axis in the film plane for self-biased
+      devices
+    first_author: Zhang
+    year: 2017
+    evidence: full_text
+    locator: Table 1, 45 nm, in-plane easy axis
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5343456/fullTextXML
+- id: h2b_pmc5343456_180_nm_mr_over_ms_in_plane_hard_axis
+  phase: BaFe12O19
+  route: EP
+  process: DC sputtering on a-cut sapphire followed by ex-situ annealing
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: in-plane hard axis
+  measurement: M-H loop, room temperature; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: a-cut sapphire single crystal
+    magnet_axis: in-plane crystallographic c axis is easy direction
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: epitaxial sputtered film
+  source:
+    doi: 10.1038/srep44193
+    title: Epitaxially grown BaM hexaferrite films having uniaxial axis in the film plane for self-biased
+      devices
+    first_author: Zhang
+    year: 2017
+    evidence: full_text
+    locator: Table 1, 180 nm, in-plane hard axis
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5343456/fullTextXML
+- id: h2b_pmc5343456_180_nm_mr_over_ms_in_plane_easy_axis
+  phase: BaFe12O19
+  route: EP
+  process: DC sputtering on a-cut sapphire followed by ex-situ annealing
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: in-plane easy axis
+  measurement: M-H loop, room temperature; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: a-cut sapphire single crystal
+    magnet_axis: in-plane crystallographic c axis is easy direction
+    composition: BaFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: epitaxial sputtered film
+  source:
+    doi: 10.1038/srep44193
+    title: Epitaxially grown BaM hexaferrite films having uniaxial axis in the film plane for self-biased
+      devices
+    first_author: Zhang
+    year: 2017
+    evidence: full_text
+    locator: Table 1, 180 nm, in-plane easy axis
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5343456/fullTextXML
+- id: h2b_pmc11707031_hf1_mr_over_ms_not_reported
+  phase: Ba1-xCoxDyyFe12-yO19
+  route: isotropic
+  process: Synthesized Co/Dy-substituted Ba M-type hexaferrite powder without alignment
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: M-H loop; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: Ba0.98Co0.02Dy0.02Fe11.98O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder
+  source:
+    doi: 10.1038/s41598-024-84251-0
+    title: Insights into the photocatalytic removal of malachite green organic pollutant by highly efficient
+      hard responsive Ba1 − xCoxDyyFe12−yO19 catalysts
+    first_author: Himanshi
+    year: 2025
+    evidence: full_text
+    locator: Table 4, HF1
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11707031/fullTextXML
+- id: h2b_pmc11707031_hf2_mr_over_ms_not_reported
+  phase: Ba1-xCoxDyyFe12-yO19
+  route: isotropic
+  process: Synthesized Co/Dy-substituted Ba M-type hexaferrite powder without alignment
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: M-H loop; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: Ba0.96Co0.04Dy0.04Fe11.96O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder
+  source:
+    doi: 10.1038/s41598-024-84251-0
+    title: Insights into the photocatalytic removal of malachite green organic pollutant by highly efficient
+      hard responsive Ba1 − xCoxDyyFe12−yO19 catalysts
+    first_author: Himanshi
+    year: 2025
+    evidence: full_text
+    locator: Table 4, HF2
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11707031/fullTextXML
+- id: h2b_pmc11707031_hf3_mr_over_ms_not_reported
+  phase: Ba1-xCoxDyyFe12-yO19
+  route: isotropic
+  process: Synthesized Co/Dy-substituted Ba M-type hexaferrite powder without alignment
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: M-H loop; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported; no alignment step described
+    magnet_axis: none
+    composition: Ba0.94Co0.06Dy0.06Fe11.94O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder
+  source:
+    doi: 10.1038/s41598-024-84251-0
+    title: Insights into the photocatalytic removal of malachite green organic pollutant by highly efficient
+      hard responsive Ba1 − xCoxDyyFe12−yO19 catalysts
+    first_author: Himanshi
+    year: 2025
+    evidence: full_text
+    locator: Table 4, HF3
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11707031/fullTextXML
+- id: h2b_pmc9783853_wet_pressed_br_out_of_plane_source_table_labels
+  phase: Ba0.8La0.2Fe11.8Cu0.2O19
+  route: FP
+  process: Aqueous slurry longitudinally pressed in approximately 15 kOe field, sintered 950-1050 C for
+    2 h.
+  quantity: '[redacted]'
+  unit: kGs
+  measured_along: out-of-plane (source table labels ⊥)
+  measurement: VSM at room temperature, max applied field 20 kOe
+  n_samples: not reported
+  conditions:
+    field_T: 1.5
+    T_process_K: 1223.15-1323.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random powder before field pressing
+    magnet_axis: field direction / c axis
+    composition: Ba0.8La0.2Fe11.8Cu0.2O19
+    particle_size: 0.6-1.0 µm before pressing
+    density_rel: 0.975
+    phase_content: null
+    alignment_medium: aqueous slurry, 60-70 wt% solids
+  source:
+    doi: 10.3390/ma15248792
+    title: Crystallographically Textured and Magnetic LaCu-Substituted Ba-Hexaferrite with Excellent Gyromagnetic
+      Properties
+    first_author: Jiao
+    year: 2022
+    evidence: full_text
+    locator: Table 1, perpendicular-to-plane 4πMr
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9783853/fullTextXML
+- id: h2b_pmc9783853_wet_pressed_js_same_sample_out_of_plane_source_table_labels
+  phase: Ba0.8La0.2Fe11.8Cu0.2O19
+  route: FP
+  process: Aqueous slurry longitudinally pressed in approximately 15 kOe field, sintered 950-1050 C for
+    2 h.
+  quantity: Js_same_sample
+  unit: kGs
+  measured_along: out-of-plane (source table labels ⊥)
+  measurement: VSM at room temperature, max applied field 20 kOe
+  n_samples: not reported
+  conditions:
+    field_T: 1.5
+    T_process_K: 1223.15-1323.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random powder before field pressing
+    magnet_axis: field direction / c axis
+    composition: Ba0.8La0.2Fe11.8Cu0.2O19
+    particle_size: 0.6-1.0 µm before pressing
+    density_rel: 0.975
+    phase_content: null
+    alignment_medium: aqueous slurry, 60-70 wt% solids
+  source:
+    doi: 10.3390/ma15248792
+    title: Crystallographically Textured and Magnetic LaCu-Substituted Ba-Hexaferrite with Excellent Gyromagnetic
+      Properties
+    first_author: Jiao
+    year: 2022
+    evidence: full_text
+    locator: Table 1, 4πMs
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9783853/fullTextXML
+- id: h2b_pmc9783853_wet_pressed_texture_metric_perpendicular_to_cylinder_plane_c_axis
+  phase: Ba0.8La0.2Fe11.8Cu0.2O19
+  route: FP
+  process: Aqueous slurry longitudinally pressed in approximately 15 kOe field, sintered 950-1050 C for
+    2 h.
+  quantity: texture_metric
+  unit: '[redacted]'
+  measured_along: perpendicular to cylinder plane / c axis
+  measurement: XRD, 00l reflection-based [redacted]
+  n_samples: not reported
+  conditions:
+    field_T: 1.5
+    T_process_K: 1223.15-1323.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random powder before field pressing
+    magnet_axis: field direction / c axis
+    composition: Ba0.8La0.2Fe11.8Cu0.2O19
+    particle_size: 0.6-1.0 µm before pressing
+    density_rel: 0.975
+    phase_content: null
+    alignment_medium: aqueous slurry, 60-70 wt% solids
+  source:
+    doi: 10.3390/ma15248792
+    title: Crystallographically Textured and Magnetic LaCu-Substituted Ba-Hexaferrite with Excellent Gyromagnetic
+      Properties
+    first_author: Jiao
+    year: 2022
+    evidence: full_text
+    locator: Fig. 2a discussion
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9783853/fullTextXML
+- id: h2b_pmc11266415_mnbi_5_mr_over_ms_not_reported
+  phase: LTP-MnBi/FeSiB
+  route: isotropic
+  process: MnBi ribbon powder mixed with 5 wt% FeSiB and SPS compacted at 200 C, 92 MPa, 2 min
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: Room-temperature M-H loop to 3 T; source notes some samples not saturated
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 473.15
+    stress_MPa: 92
+    strain_percent: null
+    parent_texture: not reported for ground MnBi ribbon powder
+    magnet_axis: none reported
+    composition: Mn55Bi45 + 5 wt% Fe70Si10B20
+    particle_size: MnBi powder <48 µm before mixing
+    density_rel: null
+    phase_content: mixed LTP-MnBi and FeSiB; exact magnetic phase volume fraction not reported
+    alignment_medium: dry powder mixture SPS
+  source:
+    doi: 10.1038/s41598-024-67353-7
+    title: Microstructure and coupling mechanisms in MnBi–FeSiB nanocomposites obtained by spark plasma
+      sintering
+    first_author: Alexandru-Dinu
+    year: 2024
+    evidence: full_text
+    locator: Fig. 7d discussion
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11266415/fullTextXML
+- id: h2b_pmc9565730_f5_mr_over_ms_not_reported
+  phase: tau-MnAl-C/alpha-Fe
+  route: isotropic
+  process: Vacuum induction melt, homogenise, mill 5 h, mix 5 wt% alpha-Fe and heat treat; no alignment
+    field reported
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: VSM, room temperature, max field 15 kOe
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: not reported for milled powder
+    magnet_axis: none
+    composition: Mn52Al45.7C2.3 + 5 wt% alpha-Fe
+    particle_size: Mn-Al-C ~100 nm; alpha-Fe 35-45 nm
+    density_rel: null
+    phase_content: null
+    alignment_medium: high-energy ball-milled nanocomposite
+  source:
+    doi: 10.3390/nano12193303
+    title: Reverse Magnetization Behavior Investigation of Mn-Al-C-(α-Fe) Nanocomposite Alloys with Different
+      α-Fe Content Using First-Order Reversal Curves Analysis
+    first_author: Attyabi
+    year: 2022
+    evidence: full_text
+    locator: Fig. 2 discussion
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9565730/fullTextXML
+- id: h2b_pmc10456279_as_deposited_mr_over_ms_parallel_to_nanowire_long_axis
+  phase: Nd-Fe-B/Fe-Co nanowires
+  route: 'other: electrodeposition'
+  process: Alternating electrodeposition in AAO template
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: parallel to nanowire long axis
+  measurement: Room-temperature M-H loop, template retained; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: AAO template cylindrical pores
+    magnet_axis: nanowire long axis
+    composition: Nd-Fe-B/Fe-Co composite nanowires
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: AAO template
+  source:
+    doi: 10.3390/ma16165541
+    title: Study on the Microstructure and Magnetic Properties of Nd-Fe-B/Fe-Co Composite Nanowires
+    first_author: Kang
+    year: 2023
+    evidence: full_text
+    locator: Table 3, composite as_deposited
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10456279/fullTextXML
+- id: h2b_pmc10456279_annealed_mr_over_ms_parallel_to_nanowire_long_axis
+  phase: Nd-Fe-B/Fe-Co nanowires
+  route: 'other: electrodeposition'
+  process: Alternating electrodeposition in AAO template; anneal 600 C for 2 h
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: parallel to nanowire long axis
+  measurement: Room-temperature M-H loop, template retained; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: AAO template cylindrical pores
+    magnet_axis: nanowire long axis
+    composition: Nd-Fe-B/Fe-Co composite nanowires
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: AAO template
+  source:
+    doi: 10.3390/ma16165541
+    title: Study on the Microstructure and Magnetic Properties of Nd-Fe-B/Fe-Co Composite Nanowires
+    first_author: Kang
+    year: 2023
+    evidence: full_text
+    locator: Table 3, composite annealed
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10456279/fullTextXML
+- id: h2b_pmc9055262_re_srm_mr_over_ms_not_reported
+  phase: RE-substituted SrFe12O19
+  route: isotropic
+  process: Sol-gel synthesized Gd-Ho-Sm substituted Sr M-type ferrite calcined 1000 C without alignment
+  quantity: Mr_over_Ms
+  unit: ratio
+  measured_along: not reported
+  measurement: M-H loop; maximum field not reported
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1273.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random sol-gel nanopowder
+    magnet_axis: none
+    composition: Gd-Ho-Sm substituted SrFe12O19
+    particle_size: null
+    density_rel: null
+    phase_content: null
+    alignment_medium: powder
+  source:
+    doi: 10.1039/d0ra04722h
+    title: 'New nanosized Gd–Ho–Sm doped M-type strontium hexaferrite for water treatment application:
+      experimental and theoretical investigations'
+    first_author: Elansary
+    year: 2020
+    evidence: full_text
+    locator: measured magnetic properties table
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9055262/fullTextXML
+- id: h2b_iop_mnbi_full_milled_175rpm_8h_mr_over_ms_not_reported
+  phase: LTP-MnBi
+  route: FP
+  process: Induction melted, melt-spun, 573 K annealed MnBi ribbon; wet ball milled 175 rpm for 8 h; powder
+    in epoxy aligned at 1.8 T
+  quantity: Mr_over_Ms
+  unit: percent
+  measured_along: not reported
+  measurement: VSM-PPMS, room temperature; sample alignment field 1.8 T, measurement maximum field not
+    separately specified
+  n_samples: not reported
+  conditions:
+    field_T: 1.8
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random ground LTP-MnBi powder
+    magnet_axis: applied alignment field
+    composition: Mn55Bi45
+    particle_size: 6.1 µm average
+    density_rel: null
+    phase_content: LTP-MnBi purity depends on milling; sample-specific value not stated in text for this
+      condition
+    alignment_medium: epoxy resin during magnetic measurement
+  source:
+    doi: 10.1088/2053-1591/ad1f99
+    title: Microstructure and magnetic properties of MnBi powders prepared by various ball milling processes
+    first_author: Li
+    year: 2024
+    evidence: full_text
+    locator: Fig. 3 or Fig. 8 discussion
+    url: https://iopscience.iop.org/article/10.1088/2053-1591/ad1f99
+- id: h2b_iop_mnbi_full_milled_200rpm_8h_mr_over_ms_not_reported
+  phase: LTP-MnBi
+  route: FP
+  process: Induction melted, melt-spun, 573 K annealed MnBi ribbon; wet ball milled 200 rpm for 8 h; powder
+    in epoxy aligned at 1.8 T
+  quantity: Mr_over_Ms
+  unit: percent
+  measured_along: not reported
+  measurement: VSM-PPMS, room temperature; sample alignment field 1.8 T, measurement maximum field not
+    separately specified
+  n_samples: not reported
+  conditions:
+    field_T: 1.8
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random ground LTP-MnBi powder
+    magnet_axis: applied alignment field
+    composition: Mn55Bi45
+    particle_size: 3.4 µm average
+    density_rel: null
+    phase_content: LTP-MnBi purity depends on milling; sample-specific value not stated in text for this
+      condition
+    alignment_medium: epoxy resin during magnetic measurement
+  source:
+    doi: 10.1088/2053-1591/ad1f99
+    title: Microstructure and magnetic properties of MnBi powders prepared by various ball milling processes
+    first_author: Li
+    year: 2024
+    evidence: full_text
+    locator: Fig. 3 or Fig. 8 discussion
+    url: https://iopscience.iop.org/article/10.1088/2053-1591/ad1f99
+- id: h2b_iop_mnbi_full_milled_175rpm_4h_mr_over_ms_not_reported
+  phase: LTP-MnBi
+  route: FP
+  process: Induction melted, melt-spun, 573 K annealed MnBi ribbon; wet ball milled 175 rpm for 4 h; powder
+    in epoxy aligned at 1.8 T
+  quantity: Mr_over_Ms
+  unit: percent
+  measured_along: not reported
+  measurement: VSM-PPMS, room temperature; sample alignment field 1.8 T, measurement maximum field not
+    separately specified
+  n_samples: not reported
+  conditions:
+    field_T: 1.8
+    T_process_K: null
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: random ground LTP-MnBi powder
+    magnet_axis: applied alignment field
+    composition: Mn55Bi45
+    particle_size: null
+    density_rel: null
+    phase_content: LTP-MnBi purity depends on milling; sample-specific value not stated in text for this
+      condition
+    alignment_medium: epoxy resin during magnetic measurement
+  source:
+    doi: 10.1088/2053-1591/ad1f99
+    title: Microstructure and magnetic properties of MnBi powders prepared by various ball milling processes
+    first_author: Li
+    year: 2024
+    evidence: full_text
+    locator: Fig. 3 or Fig. 8 discussion
+    url: https://iopscience.iop.org/article/10.1088/2053-1591/ad1f99
+- id: h2b_pmc5473884_parallel_variant_family_texture_metric_in_plane_azimuthal_scans
+  phase: epsilon-Fe2O3
+  route: EP
+  process: PLD growth at 800 C on YSZ(100) without field; six in-plane epitaxial variants; angle-resolved
+    magnetic and XRD analysis.
+  quantity: texture_metric
+  unit: variant_fraction_magnetic_percent
+  measured_along: in-plane azimuthal scans
+  measurement: Angle-resolved [redacted]; fit attributes signal to two parallel variants
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1073.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: single-crystal YSZ(100)
+    magnet_axis: in-plane epsilon-Fe2O3 a axis; azimuthally varied
+    composition: epsilon-Fe2O3 with parasitic Fe3O4 interfacial phase
+    particle_size: pillar-like film twins; 100 nm film thickness
+    density_rel: null
+    phase_content: null
+    alignment_medium: epitaxial pulsed-laser-deposited film
+  source:
+    doi: 10.1038/s41598-017-02742-9
+    title: Epitaxially stabilized thin films of ε-Fe2O3 (001) grown on YSZ (100)
+    first_author: Corbellini
+    year: 2017
+    evidence: full_text
+    locator: Fig. 4 discussion
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5473884/fullTextXML
+- id: h2b_pmc5473884_parallel_variant_family_xrd_texture_metric_in_plane_azimuthal_scans
+  phase: epsilon-Fe2O3
+  route: EP
+  process: PLD growth at 800 C on YSZ(100) without field; six in-plane epitaxial variants; angle-resolved
+    magnetic and XRD analysis.
+  quantity: texture_metric
+  unit: variant_fraction_xrd_counts_percent
+  measured_along: in-plane azimuthal scans
+  measurement: Angular XRD peak counts for parallel variant family
+  n_samples: not reported
+  conditions:
+    field_T: 0
+    T_process_K: 1073.15
+    stress_MPa: null
+    strain_percent: null
+    parent_texture: single-crystal YSZ(100)
+    magnet_axis: in-plane epsilon-Fe2O3 a axis; azimuthally varied
+    composition: epsilon-Fe2O3 with parasitic Fe3O4 interfacial phase
+    particle_size: pillar-like film twins; 100 nm film thickness
+    density_rel: null
+    phase_content: null
+    alignment_medium: epitaxial pulsed-laser-deposited film
+  source:
+    doi: 10.1038/s41598-017-02742-9
+    title: Epitaxially stabilized thin films of ε-Fe2O3 (001) grown on YSZ (100)
+    first_author: Corbellini
+    year: 2017
+    evidence: full_text
+    locator: Fig. 1b and Fig. 4 discussion
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5473884/fullTextXML

@@ -6173,6 +6173,1416 @@
     }
    },
    "opened": true
+  },
+  "batch4": {
+   "files": {
+    "heldout2_a_outcomes.yaml": {
+     "sha256": "29aa3e76dbe62191de0b11a61452004721666525c9ba0abba3c812399c26e8e4",
+     "n_records": 60,
+     "cases": [
+      {
+       "id": "fepd_dewet_0min_inplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_0min_outofplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_4min_inplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_4min_outofplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_15min_inplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_15min_outofplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_30min_inplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_30min_outofplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_60min_inplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_60min_outofplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_300min_inplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fepd_dewet_300min_outofplane",
+       "phase": "L1_0-FePd + A1-FePd",
+       "route": "other: evaporated film annealed",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16010092"
+      },
+      {
+       "id": "fept_nacl_600c_1to400",
+       "phase": "L1_0-FePt",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra06966f"
+      },
+      {
+       "id": "fept_nacl_650c_1to400",
+       "phase": "L1_0-FePt",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra06966f"
+      },
+      {
+       "id": "fept_nacl_700c_1to400",
+       "phase": "L1_0-FePt",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra06966f"
+      },
+      {
+       "id": "fept_nacl_750c_1to400",
+       "phase": "L1_0-FePt",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra06966f"
+      },
+      {
+       "id": "fept_nacl_700c_1to100",
+       "phase": "L1_0-FePt",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra06966f"
+      },
+      {
+       "id": "fept_ag_layers_0",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma9030209"
+      },
+      {
+       "id": "fept_ag_layers_1",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma9030209"
+      },
+      {
+       "id": "fept_ag_layers_2",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma9030209"
+      },
+      {
+       "id": "fept_ag_layers_0_js",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma9030209"
+      },
+      {
+       "id": "fept_ag_layers_1_js",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma9030209"
+      },
+      {
+       "id": "fept_ag_layers_2_js",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma9030209"
+      },
+      {
+       "id": "fept_bagc_8nm_001_rock",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/nano11020419"
+      },
+      {
+       "id": "fept_bagc_8nm_002_rock",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/nano11020419"
+      },
+      {
+       "id": "fept_bagc_6nm_001_rock",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/nano11020419"
+      },
+      {
+       "id": "fept_bagc_6nm_002_rock",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/nano11020419"
+      },
+      {
+       "id": "fept_bagc_6nm_rem",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano11020419"
+      },
+      {
+       "id": "fept_bagc_8nm_rem",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano11020419"
+      },
+      {
+       "id": "fept_bn_ag_001_rock",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/nano13030539"
+      },
+      {
+       "id": "fept_bn_ag_002_rock",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/nano13030539"
+      },
+      {
+       "id": "fept_bn_re_001_rock",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/nano13030539"
+      },
+      {
+       "id": "fept_bn_re_002_rock",
+       "phase": "L1_0-FePt",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/nano13030539"
+      },
+      {
+       "id": "copt_lean_700c_7h",
+       "phase": "L1_0-CoPt-containing Co-rich alloy",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano14060482"
+      },
+      {
+       "id": "alnico8_sinter_1h_br",
+       "phase": "AlNiCo 8",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1063/1.4916996"
+      },
+      {
+       "id": "alnico8_sinter_4h_br",
+       "phase": "AlNiCo 8",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1063/1.4916996"
+      },
+      {
+       "id": "alnico8_sinter_8h_br",
+       "phase": "AlNiCo 8",
+       "route": "other: abnormal grain growth + FA",
+       "quantity": "Br",
+       "doi": "10.1063/1.4916996"
+      },
+      {
+       "id": "alnico8_stress_high_br",
+       "phase": "AlNiCo 8H",
+       "route": "other: SA+FA",
+       "quantity": "Br",
+       "doi": "10.1007/s11837-017-2453-0"
+      },
+      {
+       "id": "alnico8_stress_high_mr_over_ms",
+       "phase": "AlNiCo 8H",
+       "route": "other: SA+FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s11837-017-2453-0"
+      },
+      {
+       "id": "alnico8_stress_low_br",
+       "phase": "AlNiCo 8H",
+       "route": "other: SA+FA",
+       "quantity": "Br",
+       "doi": "10.1007/s11837-017-2453-0"
+      },
+      {
+       "id": "alnico8_stress_low_mr_over_ms",
+       "phase": "AlNiCo 8H",
+       "route": "other: SA+FA",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1007/s11837-017-2453-0"
+      },
+      {
+       "id": "alnico8_field_2014_b_br",
+       "phase": "AlNiCo 8",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1007/s40553-013-0004-3"
+      },
+      {
+       "id": "alnico8_field_2014_c_br",
+       "phase": "AlNiCo 8",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.1007/s40553-013-0004-3"
+      },
+      {
+       "id": "fe16n2_sps_40mpa",
+       "phase": "alpha_double_prime-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/cryst15110969"
+      },
+      {
+       "id": "fe16n2_sps_60mpa",
+       "phase": "alpha_double_prime-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/cryst15110969"
+      },
+      {
+       "id": "fe16n2_sps_80mpa",
+       "phase": "alpha_double_prime-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/cryst15110969"
+      },
+      {
+       "id": "fe16n2_sps_40mpa_js",
+       "phase": "alpha_double_prime-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/cryst15110969"
+      },
+      {
+       "id": "fe16n2_sps_60mpa_js",
+       "phase": "alpha_double_prime-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/cryst15110969"
+      },
+      {
+       "id": "fe16n2_sps_80mpa_js",
+       "phase": "alpha_double_prime-Fe16N2",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/cryst15110969"
+      },
+      {
+       "id": "fecrco_sps_matsumoto_1173k",
+       "phase": "Fe-Cr-Co",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.2497/jjspm.51.554"
+      },
+      {
+       "id": "fecrco_sps_matsumoto_1223k",
+       "phase": "Fe-Cr-Co",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.2497/jjspm.51.554"
+      },
+      {
+       "id": "fecrco_sps_matsumoto_1273k",
+       "phase": "Fe-Cr-Co",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.2497/jjspm.51.554"
+      },
+      {
+       "id": "fecrco_sps_matsumoto_1323k",
+       "phase": "Fe-Cr-Co",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.2497/jjspm.51.554"
+      },
+      {
+       "id": "fecrco_sps_matsumoto_1723k",
+       "phase": "Fe-Cr-Co",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.2497/jjspm.51.554"
+      },
+      {
+       "id": "fecrco_tmt_rate_1cmin",
+       "phase": "Fe-Cr-Co",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.4028/www.scientific.net/kem.510-511.507"
+      },
+      {
+       "id": "fecrco_tmt_rate_2cmin",
+       "phase": "Fe-Cr-Co",
+       "route": "FA",
+       "quantity": "Br",
+       "doi": "10.4028/www.scientific.net/kem.510-511.507"
+      },
+      {
+       "id": "fecrco_isotropic_mo",
+       "phase": "Fe-Cr-Co",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.4028/www.scientific.net/kem.510-511.315"
+      },
+      {
+       "id": "fecrco_isotropic_v",
+       "phase": "Fe-Cr-Co",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.4028/www.scientific.net/kem.510-511.315"
+      },
+      {
+       "id": "fecrco_coldroll_siti_cu",
+       "phase": "Fe-Cr-Co",
+       "route": "other: cold rolling + aging",
+       "quantity": "Br",
+       "doi": "10.1063/1.338639"
+      },
+      {
+       "id": "alnico_powder_lan2025_a",
+       "phase": "AlNiCo",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma18081847"
+      }
+     ]
+    },
+    "heldout2_b_outcomes.yaml": {
+     "sha256": "d83448c59760a438388f9a93eaabad72ca5d76d46aee8a4bb68cb0a617b664f8",
+     "n_records": 139,
+     "cases": [
+      {
+       "id": "h2b_pmc12348462_v2_sl_25_mm_2_a_br_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_25_mm_2_a_js_same_sample_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_25_mm_2_a_texture_metric_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_25_mm_10_a_br_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_25_mm_10_a_js_same_sample_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_25_mm_10_a_texture_metric_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_12_5_mm_2_a_br_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_12_5_mm_2_a_js_same_sample_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_12_5_mm_2_a_texture_metric_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_12_5_mm_6_a_br_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_12_5_mm_6_a_js_same_sample_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_12_5_mm_6_a_texture_metric_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_12_5_mm_10_a_br_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_12_5_mm_10_a_js_same_sample_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_12_5_mm_10_a_texture_metric_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_10_mm_10_a_br_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_10_mm_10_a_js_same_sample_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_10_mm_10_a_texture_metric_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_8_mm_10_a_br_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_8_mm_10_a_js_same_sample_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v2_sl_8_mm_10_a_texture_metric_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v3_sl_12_5_mm_10_a_br_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v3_sl_12_5_mm_10_a_js_same_sample_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12348462_v3_sl_12_5_mm_10_a_texture_metric_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma18153668"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t160_c_br_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t160_c_js_same_sample_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t160_c_texture_metric_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t170_c_br_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t170_c_js_same_sample_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t170_c_texture_metric_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t180_c_br_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t180_c_js_same_sample_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t180_c_texture_metric_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t190_c_br_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t190_c_js_same_sample_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t190_c_texture_metric_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t200_c_br_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t200_c_js_same_sample_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m1_t200_c_texture_metric_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t160_c_br_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t160_c_js_same_sample_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t160_c_texture_metric_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t170_c_br_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t170_c_js_same_sample_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t170_c_texture_metric_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t180_c_br_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t180_c_js_same_sample_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t180_c_texture_metric_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t190_c_br_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t190_c_js_same_sample_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t190_c_texture_metric_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t200_c_br_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t200_c_js_same_sample_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc12511325_m2_t200_c_texture_metric_easy_axis_alignment_direction",
+       "phase": "Nd2Fe14B",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-025-19111-6"
+      },
+      {
+       "id": "h2b_pmc10988282_p_ac100_mr_over_ms_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_ac100_texture_metric_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_dm75_mr_over_ms_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_dm75_texture_metric_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_dm50_mr_over_ms_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_dm50_texture_metric_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_dm25_mr_over_ms_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_dm25_texture_metric_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_wm75_mr_over_ms_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_wm75_texture_metric_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_wm50_mr_over_ms_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_wm50_texture_metric_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_wm25_mr_over_ms_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_wm25_texture_metric_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_ssm100_mr_over_ms_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc10988282_p_ssm100_texture_metric_sps_pressing_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/d3ra05634a"
+      },
+      {
+       "id": "h2b_pmc9063944_t5min_b_mr_over_ms_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_t5min_b_texture_metric_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_t2min_mr_over_ms_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_t2min_texture_metric_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_t0min_mr_over_ms_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_t0min_texture_metric_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_t900c_mr_over_ms_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_t900c_texture_metric_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_t850c_mr_over_ms_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_t850c_texture_metric_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_p60_mpa_mr_over_ms_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_p60_mpa_texture_metric_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "MO",
+       "quantity": "texture_metric",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_h_0_15t_mr_over_ms_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_h_0_15t_texture_metric_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_h_0_45t_mr_over_ms_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_h_0_45t_texture_metric_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_h_0_55t_mr_over_ms_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_h_0_55t_texture_metric_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_h_0_55t_t2min_mr_over_ms_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc9063944_h_0_55t_t2min_texture_metric_sps_force_direction",
+       "phase": "SrFe12O19",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.1039/c9ra02440a"
+      },
+      {
+       "id": "h2b_pmc7215384_fff_br_not_reported",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.3390/ma13081916"
+      },
+      {
+       "id": "h2b_pmc7215384_sls_br_not_reported",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.3390/ma13081916"
+      },
+      {
+       "id": "h2b_pmc7215384_sla_br_not_reported",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.3390/ma13081916"
+      },
+      {
+       "id": "h2b_pmc10385155_a_br_radial_direction",
+       "phase": "Nd2Fe14B",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.3390/ma16145117"
+      },
+      {
+       "id": "h2b_pmc10385155_b_br_radial_direction",
+       "phase": "Nd2Fe14B",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.3390/ma16145117"
+      },
+      {
+       "id": "h2b_pmc10385155_c_br_radial_direction",
+       "phase": "Nd2Fe14B",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.3390/ma16145117"
+      },
+      {
+       "id": "h2b_pmc10385155_d_br_radial_direction",
+       "phase": "Nd2Fe14B",
+       "route": "HD",
+       "quantity": "Br",
+       "doi": "10.3390/ma16145117"
+      },
+      {
+       "id": "h2b_pmc5086984_baam_br_not_reported",
+       "phase": "Nd2Fe14B",
+       "route": "AM",
+       "quantity": "Br",
+       "doi": "10.1038/srep36212"
+      },
+      {
+       "id": "h2b_pmc5086984_im_br_not_reported",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1038/srep36212"
+      },
+      {
+       "id": "h2b_pmc7435735_baam_pps_br_not_reported",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.3390/ma13153319"
+      },
+      {
+       "id": "h2b_pmc7435735_baam_pps_js_same_sample_not_reported",
+       "phase": "Nd2Fe14B",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma13153319"
+      },
+      {
+       "id": "h2b_pmc11289406_sr_4_1_br_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-024-67994-8"
+      },
+      {
+       "id": "h2b_pmc11289406_sr_4_1_js_same_sample_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-024-67994-8"
+      },
+      {
+       "id": "h2b_pmc11289406_sr_5_1_br_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-024-67994-8"
+      },
+      {
+       "id": "h2b_pmc11289406_sr_5_1_js_same_sample_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-024-67994-8"
+      },
+      {
+       "id": "h2b_pmc11289406_ba_3_1_br_not_reported",
+       "phase": "BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Br",
+       "doi": "10.1038/s41598-024-67994-8"
+      },
+      {
+       "id": "h2b_pmc11289406_ba_3_1_js_same_sample_not_reported",
+       "phase": "BaFe12O19",
+       "route": "isotropic",
+       "quantity": "Js_same_sample",
+       "doi": "10.1038/s41598-024-67994-8"
+      },
+      {
+       "id": "h2b_pmc11497450_sinter_950_mr_over_ms_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.heliyon.2024.e38766"
+      },
+      {
+       "id": "h2b_pmc11497450_sinter_1000_mr_over_ms_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.heliyon.2024.e38766"
+      },
+      {
+       "id": "h2b_pmc11497450_sinter_1050_mr_over_ms_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.heliyon.2024.e38766"
+      },
+      {
+       "id": "h2b_pmc11497450_sinter_1100_mr_over_ms_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1016/j.heliyon.2024.e38766"
+      },
+      {
+       "id": "h2b_pmc10906010_sfo_mr_over_ms_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra08878b"
+      },
+      {
+       "id": "h2b_pmc10906010_sgfco_1_mr_over_ms_not_reported",
+       "phase": "Sr0.95Gd0.05Fe11.7Cu0.3O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra08878b"
+      },
+      {
+       "id": "h2b_pmc10906010_sgfco_2_mr_over_ms_not_reported",
+       "phase": "Sr0.95Gd0.05Fe11.4Cu0.6O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d3ra08878b"
+      },
+      {
+       "id": "h2b_pmc11680785_bcf1_mr_over_ms_not_reported",
+       "phase": "Ba1-xCoxFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-024-82273-2"
+      },
+      {
+       "id": "h2b_pmc11680785_bcf2_mr_over_ms_not_reported",
+       "phase": "Ba1-xCoxFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-024-82273-2"
+      },
+      {
+       "id": "h2b_pmc12223264_nf11_mr_over_ms_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-025-04493-4"
+      },
+      {
+       "id": "h2b_pmc12223264_nf21_mr_over_ms_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-025-04493-4"
+      },
+      {
+       "id": "h2b_pmc12223264_nf31_mr_over_ms_not_reported",
+       "phase": "SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-025-04493-4"
+      },
+      {
+       "id": "h2b_pmc5343456_45_nm_mr_over_ms_in_plane_hard_axis",
+       "phase": "BaFe12O19",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep44193"
+      },
+      {
+       "id": "h2b_pmc5343456_45_nm_mr_over_ms_in_plane_easy_axis",
+       "phase": "BaFe12O19",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep44193"
+      },
+      {
+       "id": "h2b_pmc5343456_180_nm_mr_over_ms_in_plane_hard_axis",
+       "phase": "BaFe12O19",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep44193"
+      },
+      {
+       "id": "h2b_pmc5343456_180_nm_mr_over_ms_in_plane_easy_axis",
+       "phase": "BaFe12O19",
+       "route": "EP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/srep44193"
+      },
+      {
+       "id": "h2b_pmc11707031_hf1_mr_over_ms_not_reported",
+       "phase": "Ba1-xCoxDyyFe12-yO19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-024-84251-0"
+      },
+      {
+       "id": "h2b_pmc11707031_hf2_mr_over_ms_not_reported",
+       "phase": "Ba1-xCoxDyyFe12-yO19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-024-84251-0"
+      },
+      {
+       "id": "h2b_pmc11707031_hf3_mr_over_ms_not_reported",
+       "phase": "Ba1-xCoxDyyFe12-yO19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-024-84251-0"
+      },
+      {
+       "id": "h2b_pmc9783853_wet_pressed_br_out_of_plane_source_table_labels",
+       "phase": "Ba0.8La0.2Fe11.8Cu0.2O19",
+       "route": "FP",
+       "quantity": "Br",
+       "doi": "10.3390/ma15248792"
+      },
+      {
+       "id": "h2b_pmc9783853_wet_pressed_js_same_sample_out_of_plane_source_table_labels",
+       "phase": "Ba0.8La0.2Fe11.8Cu0.2O19",
+       "route": "FP",
+       "quantity": "Js_same_sample",
+       "doi": "10.3390/ma15248792"
+      },
+      {
+       "id": "h2b_pmc9783853_wet_pressed_texture_metric_perpendicular_to_cylinder_plane_c_axis",
+       "phase": "Ba0.8La0.2Fe11.8Cu0.2O19",
+       "route": "FP",
+       "quantity": "texture_metric",
+       "doi": "10.3390/ma15248792"
+      },
+      {
+       "id": "h2b_pmc11266415_mnbi_5_mr_over_ms_not_reported",
+       "phase": "LTP-MnBi/FeSiB",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1038/s41598-024-67353-7"
+      },
+      {
+       "id": "h2b_pmc9565730_f5_mr_over_ms_not_reported",
+       "phase": "tau-MnAl-C/alpha-Fe",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/nano12193303"
+      },
+      {
+       "id": "h2b_pmc10456279_as_deposited_mr_over_ms_parallel_to_nanowire_long_axis",
+       "phase": "Nd-Fe-B/Fe-Co nanowires",
+       "route": "other: electrodeposition",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16165541"
+      },
+      {
+       "id": "h2b_pmc10456279_annealed_mr_over_ms_parallel_to_nanowire_long_axis",
+       "phase": "Nd-Fe-B/Fe-Co nanowires",
+       "route": "other: electrodeposition",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.3390/ma16165541"
+      },
+      {
+       "id": "h2b_pmc9055262_re_srm_mr_over_ms_not_reported",
+       "phase": "RE-substituted SrFe12O19",
+       "route": "isotropic",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1039/d0ra04722h"
+      },
+      {
+       "id": "h2b_iop_mnbi_full_milled_175rpm_8h_mr_over_ms_not_reported",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/2053-1591/ad1f99"
+      },
+      {
+       "id": "h2b_iop_mnbi_full_milled_200rpm_8h_mr_over_ms_not_reported",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/2053-1591/ad1f99"
+      },
+      {
+       "id": "h2b_iop_mnbi_full_milled_175rpm_4h_mr_over_ms_not_reported",
+       "phase": "LTP-MnBi",
+       "route": "FP",
+       "quantity": "Mr_over_Ms",
+       "doi": "10.1088/2053-1591/ad1f99"
+      },
+      {
+       "id": "h2b_pmc5473884_parallel_variant_family_texture_metric_in_plane_azimuthal_scans",
+       "phase": "epsilon-Fe2O3",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-017-02742-9"
+      },
+      {
+       "id": "h2b_pmc5473884_parallel_variant_family_xrd_texture_metric_in_plane_azimuthal_scans",
+       "phase": "epsilon-Fe2O3",
+       "route": "EP",
+       "quantity": "texture_metric",
+       "doi": "10.1038/s41598-017-02742-9"
+      }
+     ]
+    }
+   },
+   "opened": false
   }
  }
 }
