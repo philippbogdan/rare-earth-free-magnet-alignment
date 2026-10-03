@@ -170,12 +170,17 @@ def _bias_acts(ph, p, kind):
             return False, why + f'; paramagnetic bias < {x10:.2g} kT even at 10 T', None
         return False, why + (f'; paramagnetic bias <= {x1:.2g} kT at 2 T but up to {x10:.2g} kT at '
                              '10 T if dchi ~ chi'), x10
+    if p['mode'] == 'massive':
+        return False, 'incoherent (massive) growth: no coherent transformation strain to couple to', None
+    if p['mode'] == 'direct':
+        return False, 'no parent lattice: no transformation strain', None
     st = p.get('stress_sign', 0)
-    if p['mode'] == 'massive' and not p.get('stress_selectable', False):
-        return False, 'incoherent (massive) growth: no transformation strain to couple to', None
-    if not st:
-        return None, 'transformation strain (sign/size) unpublished', None
-    return True, f'coherent transformation strain (sign {st:+d})', None
+    if st == 0 and p.get('strain_known', True) is False:
+        return None, 'transformation strain of the variants unpublished', None
+    how = {+1: 'tension along the axis selects c parallel to it',
+           -1: 'compression along the axis selects c parallel to it',
+           0: 'the sign of the tetragonal strain sets whether tension or compression selects c'}[st]
+    return True, f'coherent transformation with a tetragonal strain ({how})', None
 
 
 def _biased(ph, route, kind, texture_key=None):
@@ -183,7 +188,7 @@ def _biased(ph, route, kind, texture_key=None):
     for p in ph['paths']:
         path = Path(ph, p)
         acts, why, x10 = _bias_acts(ph, p, kind)
-        sign = p.get('stress_sign', +1) if kind == 'stress' else +1
+        sign = +1          # complete selection of c parallel to the bias axis (stress sign chosen to suit)
         if texture_key is None:
             parents, fib = E.texture_random(20000), False
             tex = 'untextured parent'
