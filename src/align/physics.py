@@ -43,3 +43,37 @@ def selection_fraction(x, n_variants=3):
     """Fraction of the favoured variant when the bias energy per deciding volume is x kT
     and the other n-1 variants are disfavoured by the full bias (Boltzmann)."""
     return np.exp(x) / (np.exp(x) + (n_variants - 1))
+
+
+MU_B = 9.2740100783e-24
+
+
+def mean_field_chi(Js0, n_mag_per_m3, Tc, T):
+    """Mean-field estimate of the paramagnetic susceptibility above Tc from the
+    saturation polarisation Js0 (T, ~0 K) and the density of magnetic atoms:
+    moment m = Ms0/n (g=2, S=m/2), C = mu0 n g^2 S(S+1) muB^2 / (3 kB), chi = C/(T-Tc).
+    An estimate, the same for every phase; used only to bound a paramagnetic bias."""
+    m = Js0 / MU0 / n_mag_per_m3 / MU_B          # muB per magnetic atom
+    S = m / 2
+    C = MU0 * n_mag_per_m3 * 4 * S * (S + 1) * MU_B ** 2 / (3 * KB)
+    return C / (T - Tc)
+
+
+def para_bias_kT_bound(Js0, n_mag_per_m3, Tc, T, B_tesla, V_star):
+    """Upper bound on the paramagnetic variant bias in units of kT:
+    mu0 * chi * H^2 * V* / (2 kT) with dchi <= chi (uniaxial bound)."""
+    chi = mean_field_chi(Js0, n_mag_per_m3, Tc, T)
+    H = B_tesla / MU0
+    return MU0 * chi * H ** 2 * V_star / (2 * KB * T)
+
+
+def ferro_bias_kT(Js300, K300, Tc, T, B_tesla, V_star, n_callen=3):
+    """Ferromagnetic variant bias (kT units) at T < Tc: Stoner-Wohlfarth energy
+    difference between easy axis along and perpendicular to the field, with
+    Ms(T) from the Kuz'min shape and K(T) = K300 (Ms(T)/Ms(300))^n (Callen-Callen n=3).
+    Estimates; the ceiling only uses whether Tc > T."""
+    if T >= Tc:
+        return 0.0
+    Ms = ms_at(T, Js300, Tc)
+    K = K300 * (ms_ratio(T, Tc) / ms_ratio(300.0, Tc)) ** n_callen
+    return ferro_bias_density(float(K), float(Ms), B_tesla / MU0) * V_star / (KB * T)
