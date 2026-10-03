@@ -647,14 +647,16 @@ def build(reg, phases, rows, R, st, univ=None):
          f"{st['commit']} ({ctx['clean']})", st['clean_inputs']),
         ('Fidelity — known cases', f"{fid_n} of {len(kr)} known cases reproduced (verdict right, every "
          'published value at or below its ceiling)', fid_n == len(kr) and len(kr) == 4),
-        ('Accuracy — held-out (frozen v1)', f"ceilings held for {h1.get('ceiling_ok', 0) + h1.get('ceiling_possible', 0)}"
-         f" of {h1.get('n_scored', 0)} held-out measurements ({h1.get('ceiling_violated', 0)} certain "
-         f"violations); 'cannot align' refuted {h1.get('none_refuted', 0)} of {h1.get('none_n', 0)}; pairs "
+        ('Accuracy — held-out (frozen v1)', f"of {h1.get('n_scored', 0)} held-out measurements: ceiling held in "
+         f"{h1.get('ceiling_ok', 0)}, within the Js conversion range in {h1.get('ceiling_possible', 0)}, violated in "
+         f"{h1.get('ceiling_violated', 0)}; 'cannot align' refuted {h1.get('none_refuted', 0)} of {h1.get('none_n', 0)}; pairs "
          f"{s1['summary']['pairs']['ok'] if s1 else 0}/{s1['summary']['pairs']['n'] if s1 else 0}; every failure "
          f"diagnosed ({len(undiag)} undiagnosed)", bool(h1) and not undiag),
         ('Accuracy — held-out (revised versions)', '; '.join(
-            f"{r['version']}: {r['n_cases'] - r['violations']} of {r['n_cases']} ceilings held"
-            for r in fr if r['version'] != 'v1') + f" (all failures diagnosed: {len(undiag)} undiagnosed)",
+            f"{r['version']}: {r['n_cases']} measurements, ceiling held {r['n_cases'] - r['violations'] - p}, within the "
+            f"Js range {p}, violated {r['violations']}"
+            for r, (_, p) in zip([r for r in fr if r['version'] != 'v1'], _possible_by_version(fr)))
+         + f" (all failures diagnosed: {len(undiag)} undiagnosed)",
          all(r['n_cases'] > 0 for r in fr) and not undiag),
         ('Frontier', f"phases {fr[-1]['phases_covered']}/{fr[-1]['phases_universe']}, routes "
          f"{fr[-1]['routes_covered']}/{fr[-1]['routes_universe']}, held-out accuracy {fmt(fr[0]['accuracy'])} (v1, "
