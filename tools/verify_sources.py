@@ -145,7 +145,8 @@ def find_quote(quote, text):
     """Score in [0,1]; quotes with '...' elisions are checked fragment by fragment
     (fragments shorter than 12 normalised characters are ignored); the score is the
     length-weighted mean of the fragment scores."""
-    frags = [f for f in re.split(r'\.\.\.|…|\[\.\.\.\]', quote or '') if len(norm(f)) >= 12]
+    # elisions ('...') and the ' | ' that joins non-contiguous pieces (table title | header | row)
+    frags = [f for f in re.split(r'\.\.\.|…|\[\.\.\.\]|\s\|\s', quote or '') if len(norm(f)) >= 12]
     if len(frags) > 1:
         t = norm(text)
         tot = sum(len(norm(f)) for f in frags)
@@ -241,7 +242,7 @@ def verify_record(r):
             best, where, btext = s, 'url', ut
     if best < 0.9:
         q = norm(quote)
-        frags = [norm(f) for f in re.split(r'\.\.\.|…', quote or '') if len(norm(f)) >= 12]
+        frags = [norm(f) for f in re.split(r'\.\.\.|…|\s\|\s', quote or '') if len(norm(f)) >= 12]
         for rel, raw, nt in local_texts():
             if frags and all(f in nt for f in frags):
                 best, where, btext = 1.0, 'local:' + rel, raw
