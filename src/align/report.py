@@ -38,6 +38,8 @@ DIAGNOSIS = {
                                                      'nearest-<100> path'),
     'mnal_other_jia2022a': (7, 'process not specific (abstract only): temperature and sequence unknown'),
     'mnal_sc_sa_kubo1976': (8, 'physics: the transformation shear breaks ties the tetragonal strain leaves'),
+    'fept_nacl_7': ('v5', 'loose nanoparticle powder measured unfixed: particles can turn in the measuring field '
+                          'or sinter into coupled clusters'),
 }
 
 
@@ -174,8 +176,9 @@ def _failures(scores, status='heldout'):
             continue
         if x['ceiling'] == 'violated' or x.get('class') == 'refuted':
             item, why = _diag(x['case'])
+            lab = (f'v2 item {item}' if isinstance(item, int) else f'{item} rule') if item else ''
             rows.append([x['case'], x['phase'], x['route'][:30], x['cls'], fmt(x['A_hi']),
-                         f"{fmt(x['m_lo'])}-{fmt(x['m_hi'])}", f"v2 item {item}: {why}" if item else '–'])
+                         f"{fmt(x['m_lo'])}-{fmt(x['m_hi'])}", f"{lab}: {why}" if item else '–'])
     return rows
 
 
@@ -433,6 +436,18 @@ def build(reg, phases, rows, R, st, univ=None):
                        'exchange enhancement, excluded from A by definition; its phrase was not flagged by the '
                        'v3 rules (fixed for later versions).' if sv else '')
             acc.append('')
+    s4 = _load('results/scores_v4.json')
+    if s4:
+        acc.append('**v4 — frozen before opening batch 5 (sources never used before)**')
+        acc.append('')
+        acc.append(_summary_table(s4, ['heldout']))
+        acc.append('')
+        f4 = _failures(s4)
+        if f4:
+            acc.append('Held-out failures of v4, with their post-hoc diagnosis:')
+            acc.append('')
+            acc.append(table(['case', 'phase', 'route', 'predicted', 'A ceiling', 'measured A', 'diagnosis'], f4))
+            acc.append('')
     acc.append('Held-out v1 results by phase:')
     acc.append('')
     acc.append(_by_phase(s1, 'heldout') if s1 else '')
@@ -546,8 +561,13 @@ def build(reg, phases, rows, R, st, univ=None):
         f"{vc['verified_local']} in the saved source text), not found for {vc['not_found']}, not checked "
         f"{vc['not_checked']}; DOI resolves for {vc['doi_ok']}. Estimates made here are labelled "
         f"({len(R.estimates)}, FINDINGS.md §7) and never set a ceiling.")
-    ctx['failures'] = (table(['case', 'phase', 'route', 'predicted', 'A ceiling', 'measured A', 'diagnosis'], fails)
-                       if fails else 'None.')
+    allf = []
+    for lab, fn in (('v1', 'results/scores_v1.json'), ('v3', 'results/scores_v3.json'), ('v4', 'results/scores_v4.json')):
+        sc = _load(fn)
+        if sc:
+            allf += [[lab] + f for f in _failures(sc)]
+    ctx['failures'] = (table(['frozen version', 'case', 'phase', 'route', 'predicted', 'A ceiling', 'measured A',
+                              'diagnosis'], allf) if allf else 'None.')
     pv = [x for x in (s1['cases'] if s1 else []) if x['status'] == 'heldout' and x.get('ceiling') == 'possible violation']
     pv_table = table(['case', 'phase', 'A ceiling', 'measured A (Js range)', 'conversion'],
                      [[x['case'], x['phase'], fmt(x['A_hi']), f"{fmt(x['m_lo'])}-{fmt(x['m_hi'])}", x['conv']]
@@ -569,6 +589,10 @@ def build(reg, phases, rows, R, st, univ=None):
     tests_ok = all(r['test'] for r in rows)
     fid_n = sum(1 for k in kr if k['violated'] == 0 and k['refuted'] == 0 and (k['shown'] or k['consistent']))
     undiag = [f for f in fails if f[-1] == '–']
+    for fn in ('results/scores_v3.json', 'results/scores_v4.json'):
+        sc = _load(fn)
+        if sc:
+            undiag += [f for f in _failures(sc) if f[-1] == '–']
     untried = [r for r in rows if r['verdict'] == 'none' and any(
         w in r['chain'] for w in ('not reported', 'unreported', 'is reported', 'not densified'))]
     srcless = [rid for rid in R.used if not ((reg.rec[rid].get('source') or {}).get('doi')
