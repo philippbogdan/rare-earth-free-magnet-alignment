@@ -1257,3 +1257,56 @@
     - hea_l10_formation_beeson2024
   epitaxy: {}
   tgg: {}
+- id: Mn4N
+  name: Mn4N (cubic antiperovskite ferrimagnet)
+  universe: Mn4N
+  structure:
+    system: cubic
+    a:
+      ref: mn4n_lattice_odonnell2024
+    laue: m-3m
+  structure_ref:
+    ref: mn4n_structure_zhou2021
+  easy_axis_vec:
+  - 1
+  - 1
+  - 1
+  easy_multi: <111>
+  easy_axis:
+    ref: mn4n_easy_bulk_zhou2021
+  Js:
+    ref: mn4n_js_bulk_apetrei2026
+  Tc:
+    ref: mn4n_tc_li2008
+  cell:
+    atoms: 5
+    magnetic_fraction:
+      est: 0.8
+      why: 4 Mn of 5 atoms
+  paths:
+  - name: gas nitriding of solid Mn (bulk), far above Tc
+    mode: direct
+    refs:
+    - mn4n_formation_bulk_li2008
+    - mn4n_alloy_formation_shinaji2013
+    T_f:
+    - ref: mn4n_tform_bulk_li2008
+    - ref: mn4n_tform_bulk_li2008
+  particles:
+    single_variant: unknown
+    reason: no single-crystal Mn4N particles reported
+    refs: []
+  melt:
+    primary: none
+    reason: forms by nitriding solid Mn, not from a melt
+    refs:
+    - mn4n_formation_bulk_li2008
+  epitaxy:
+    demonstrated: true
+    reason: tetragonally distorted (c/a 0.987) epitaxial films on MgO(001) are magnetised perpendicular to the film
+    refs:
+    - mn4n_epitaxy_or_zhou2021
+    - mn4n_easy_film_zhou2021
+    - mn4n_tetragonality_zhou2021
+    - mn4n_pma_origin_apetrei2026
+  tgg: {}

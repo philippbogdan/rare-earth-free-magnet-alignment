@@ -616,7 +616,79 @@ def _easy_open(ph, cells):
     return cells
 
 
+def _cubic_axes(name):
+    d = {'<111>': np.array([[1, 1, 1], [1, 1, -1], [1, -1, 1], [-1, 1, 1]]) / np.sqrt(3),
+         '<100>': np.eye(3)}[name]
+    return d
+
+
+def cubic_A(name, tex='random', axis=(0, 0, 1)):
+    """A of grains whose easy directions are the cubic set `name`; each grain keeps the easy
+    direction nearest the measuring axis (multiaxial Stoner-Wohlfarth remanence)."""
+    g = {'random': lambda: E.texture_random(), 'f100': lambda: E.texture_fibre((0, 0, 1)),
+         'f111': lambda: E.texture_fibre((1, 1, 1)), 'f110': lambda: E.texture_fibre((1, 1, 0))}[tex]()
+    z = np.asarray(axis, float)
+    zc = np.einsum('nji,j->ni', g, z)              # measuring axis in each crystal frame
+    return float(np.abs(zc @ _cubic_axes(name).T).max(1).mean())
+
+
+def _cubic_multiaxial(ph):
+    """Cells for a cubic phase with several easy directions (no uniaxial axis): a random
+    polycrystal already keeps the nearest easy direction, so alignment can raise A only from the
+    random multiaxial value to 1."""
+    name = ph['easy_multi']
+    iso = cubic_A(name)
+    fib = {f'<{t[1:]}> fibre': cubic_A(name, t) for t in ('f100', 'f110', 'f111')}
+    out = []
+    P = ph.get('particles') or {}
+    T = (ph['paths'][0].get('T_f') or [None, None])
+    Tc = ph.get('Tc')
+
+    def c(route, verdict, A, chain, decides=None, outs=None):
+        out.append(Cell(ph['id'], route, verdict, A, '', chain=chain,
+                        decides=decides or [], A_alt=outs or {}))
+    sv = P.get('single_variant')
+    outs = {'single-crystal particles': 1.0, 'polycrystalline particles': iso}
+    if sv == 'yes':
+        c('FP', 'full', 1.0, 'single-crystal particles turn an easy direction to the field')
+    else:
+        c('FP', 'open', 1.0, f'cubic particles turn a {name} easy direction to the field if single crystals',
+          [('single-crystal particles of this phase', outs, 'EBSD of the particles')], outs)
+    oh = {'habit puts an easy direction along the alignment axis': 1.0, 'it does not': iso}
+    c('MO', 'open', 1.0, 'particle shape relative to the cubic easy directions unpublished',
+      [('particle habit relative to the easy directions', oh, 'SEM + EBSD of single particles')], oh)
+    c('FS', 'none', iso, 'cubic crystals: isotropic susceptibility above Tc, no torque')
+    tex_note = (f'grows by solid-state reaction of a parent at {T[0]:.0f}-{T[1]:.0f} K' if T[0] else 'growth path')
+    for r in ('DS', 'AM'):
+        c(r, 'open', max(fib.values()), f'{tex_note}; a {r} growth texture would decide the value (random {iso:.3f})',
+          [(f'{r} growth fibre of the phase', {**fib, 'random': iso}, 'pole figure of a directionally grown sample')],
+          {**fib, 'random': iso})
+    above = Tc is not None and T[0] is not None and T[0] > Tc
+    for r in ('FA', 'DS+FA', 'AM+FA', 'RX+FA', 'SC+FA'):
+        c(r, 'none', iso, (f'forms at {T[0]:.0f} K above Tc {Tc:.0f} K: no ferromagnetic bias' if above
+                           else 'formation temperature vs Tc unpublished'))
+    for r in ('SA', 'DS+SA', 'RX+SA', 'SC+SA'):
+        c(r, 'none', iso, 'cubic product: no orientation variants with distinct strain for a stress to select')
+    ho = {**fib, 'random': iso}
+    c('HD', 'open', max(fib.values()), 'deformation texture of the phase unpublished',
+      [('deformation fibre of the phase', ho, 'pole figure after hot deformation')], ho)
+    c('HDDR', 'none', iso, (ph.get('hddr_none') or 'no constituent forms a hydride that disproportionates the phase'))
+    ep = ph.get('epitaxy') or {}
+    if ep.get('demonstrated'):
+        c('EP', 'full', 1.0, ep.get('reason', 'epitaxial film with a uniaxial (strain) easy axis'))
+    else:
+        c('EP', 'full', 1.0, 'geometric ceiling of a single-variant film (no film reported)')
+    to = {'aligned templates grow': max(fib.values()), 'they do not': iso}
+    c('TGG', 'open', max(fib.values()), 'templated growth of the phase unreported',
+      [('growth of aligned templates below the stability limit', to, 'seeded anneal + pole figure')], to)
+    for x in out:
+        x.A_iso = iso
+    return out
+
+
 def evaluate(ph):
+    if ph.get('easy_multi'):
+        return _cubic_multiaxial(ph)
     return _easy_open(ph, _evaluate(ph))
 
 

@@ -43,6 +43,7 @@ PHASE_MAP = {                            # collector phase label -> account phas
     '(FeCoNiMnCu)Pt (L10 film)': 'L10-HEA-Pt', 'Fe3Se4 (monoclinic)': 'Fe3Se4',
     'Fe3-xMnxSe4 nanorods (composition for low-T value unspecified)': 'Fe3Se4',
     'Fe2+δTa-C14-meltspun': 'Fe2Ta-C14',
+    'Mn4N': 'Mn4N', 'Mn-Sn-Co-N multiphase alloy': 'Mn4N',
 }
 
 PAIRS = [   # (case, reference case, expectation): same study, same alloy, one condition changed
@@ -67,7 +68,7 @@ EXPOSED = {   # docs/PROTOCOL_LOG.md
 }
 
 
-TOPIC_FIRST = ('alnico_fecrco', 'fese_hea', 'ndfeb_routes')
+TOPIC_FIRST = ('alnico_fecrco', 'fese_hea', 'ndfeb_routes', 'mn4n')
 
 
 def exposed(cid):
@@ -868,6 +869,19 @@ def enc_ndfeb_routes(ctx, pid, c, route, r, proc, cond, al, mk):
         meas = {'phi': [0.5, 1.0]} if mk == 'Br' else {}
         return {'pred': pred(1.0, ISO, 'printed Nd-Fe-B: crystal orientation not measured (AM cell open)',
                              cls='open'), 'meas_extra': meas}
+    return None
+
+
+def enc_mn4n(ctx, pid, c, route, r, proc, cond, al, mk):
+    iso = ctx.cell('Mn4N', 'FA').A_max            # random cubic multiaxial value
+    if 'multiphase' in str(c.get('phase')).lower() or 'mn-sn-co-n' in proc.lower() or 'mn82.5' in proc.lower():
+        return {'pred': pred(1.0, iso, 'multiphase Mn-Sn-Co-N alloy: fraction and Js of the Mn4N-like phase '
+                                       'unpublished', cls='info')}
+    if r.startswith('ep'):
+        if al == 'perp':
+            return {'pred': pred(iso, iso, 'film measured in plane', cls='none')}
+        return {'pred': pred(1.0, iso, 'epitaxial film on MgO(001), tetragonally distorted: uniaxial easy axis '
+                                       'along the film normal (EP cell)')}
     return None
 
 

@@ -7521,6 +7521,90 @@
   case: copt_sc_kandaurova1992b
   topic: l10
   status: heldout
+- phase: Mn4N
+  route: EP
+  meas:
+    kind: MrMs
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.8664
+    cls: acts
+    why: 'epitaxial film on MgO(001), tetragonally distorted: uniaxial easy axis along the film normal (EP cell)'
+  case: mn4n_ep_zhou2021_s1_mrms
+  topic: mn4n
+  status: heldout
+- phase: Mn4N
+  route: EP
+  meas:
+    kind: MrMs
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.8664
+    cls: acts
+    why: 'epitaxial film on MgO(001), tetragonally distorted: uniaxial easy axis along the film normal (EP cell)'
+  case: mn4n_ep_zhou2021_s3_mrms
+  topic: mn4n
+  status: heldout
+- phase: Mn4N
+  route: EP
+  meas:
+    kind: MrMs
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.8664
+    cls: acts
+    why: 'epitaxial film on MgO(001), tetragonally distorted: uniaxial easy axis along the film normal (EP cell)'
+  case: mn4n_ep_zhou2021_s4_mrms
+  topic: mn4n
+  status: heldout
+- phase: Mn4N
+  route: EP
+  meas:
+    kind: MrMs
+    along: par
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.8664
+    cls: acts
+    why: 'epitaxial film on MgO(001), tetragonally distorted: uniaxial easy axis along the film normal (EP cell)'
+  case: mn4n_ep_zhou2021_s5_mrms
+  topic: mn4n
+  status: heldout
+- phase: Mn4N
+  route: isotropic
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.8664
+    cls: info
+    why: 'multiphase Mn-Sn-Co-N alloy: fraction and Js of the Mn4N-like phase unpublished'
+  case: mn4n_like_iso_shinaji2013_500c_br
+  topic: mn4n
+  status: heldout
+- phase: Mn4N
+  route: isotropic
+  meas:
+    kind: Br
+    along: unknown
+    saturating: true
+  pred:
+    A_hi: 1.0
+    A_base: 0.8664
+    cls: info
+    why: 'multiphase Mn-Sn-Co-N alloy: fraction and Js of the Mn4N-like phase unpublished'
+  case: mn4n_like_iso_shinaji2013_700c_br
+  topic: mn4n
+  status: heldout
 - phase: tau-MnAl-C
   route: HD
   meas:
@@ -12298,7 +12382,7 @@
   case: fe3sn_fp_sales2014_texture
   topic: nano_other
   status: heldout
-- phase: null
+- phase: Mn4N
   route: EP
   meas:
     kind: MrMs
@@ -12308,7 +12392,7 @@
     A_hi: 1.0
     A_base: 0.5
     cls: info
-    why: phase not in the account
+    why: epitaxial film
   case: mn4n_ep_zhou2021_mrms
   topic: nano_other
   status: heldout

@@ -76,3 +76,10 @@ results/scores_v2.json and are reported only as post-hoc.
    field-cooled Alnico 5 reaches Br/Js = 0.895 with the same-sample Js, above the 0.831 that
    rods held on the nearest <100> allow; in columnar crystals A follows the cosine of the field
    angle): rods follow the field. The phase entry cites these outcome records.
+
+## Freeze before opening batch3 (Mn4N)
+
+Mn4N curated (cubic, four <111> easy axes: a random polycrystal keeps the nearest one, A = 0.866)
+and its six sealed cases predicted with the v2 rules before opening batch3.
+
+    sha256 data/curated/cases_v2.yaml  fed2017ea7a6c8dc82c6ddf87cdef7f4300bca417e3ae55113b0eac10bc391af
