@@ -231,16 +231,20 @@ def _biased(ph, route, kind, texture_key=None):
                                   'lattice parameters of parent and product at T_f')]))
         else:
             dec = []
-            A_hi = None
+            A_sel, _ = _select_best(path, parents, kind, +1, fibre=fib)
+            if kind == 'field':
+                dec.append((f'rate of formation of the phase below its Curie point ({ph["Tc"]:.0f} K)',
+                            {'forms below Tc': A_sel, 'does not': A_eq},
+                            f'isothermal anneal of the parent at ~{ph["Tc"] - 50:.0f} K: phase fraction '
+                            'vs time by XRD (then repeat in a field and measure the pole figure)'))
             if x10 is not None:
-                A_hi, _ = _select_best(path, parents, kind, +1, fibre=fib)
-                dec = [('paramagnetic susceptibility anisotropy dchi/chi of the forming phase at T_f',
-                        {'dchi/chi >~ 0.1 at 10 T': A_hi, 'small': A_eq},
-                        'torque magnetometry above Tc on a single crystal, or formation in 10 T '
-                        'followed by a pole figure')]
+                dec.append(('paramagnetic susceptibility anisotropy dchi/chi of the forming phase at T_f',
+                            {'dchi/chi >~ 0.1 at 10 T': A_sel, 'small': A_eq},
+                            'torque magnetometry above Tc on a single crystal, or formation in 10 T '
+                            'followed by a pole figure'))
             cells.append(Cell(ph['id'], route, 'open' if dec else 'none', A_eq,
                               '', chain=f'{tex}; {why}', prereq=[(kind + ' bias acts at formation', False, why)],
-                              decides=dec, A_alt={'10 T, large dchi': A_hi} if A_hi else {}))
+                              decides=dec, A_alt={'bias acts': A_sel}))
     if not cells:
         return Cell(ph['id'], route, 'none', ISO, '', chain='no formation path to bias')
     return _best_path_value(cells)
