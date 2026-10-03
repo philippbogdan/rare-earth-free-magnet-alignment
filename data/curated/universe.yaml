@@ -1,5 +1,5 @@
 # Universe of the frontier (denominators), generated from data/raw/universe_inputs.yaml records.
-# phases: rare-earth-free hard phases named as permanent-magnet candidates in the 19 reviews read
+# phases: rare-earth-free hard phases named as permanent-magnet candidates in the 20 reviews read
 #   (one record per review naming the phase). route_classes: alignment routes used or proposed in the
 #   literature, grouped into the account's route classes (docs/METHOD.md), with the records describing them.
 # Classes DS+SA and RX+SA are evaluated by the account but are not in this literature universe.
@@ -10,6 +10,7 @@ phases:
   - uni_ph_kramer2012_alnico
   - uni_ph_mccallum2014_alnico
   - uni_ph_hirosawa2015_alnico
+  - uni_ph_hirosawa2017_alnico
   - uni_ph_cui2018_alnico
   - uni_ph_mohapatra2018_alnico
   - uni_ph_coey2020_alnico
@@ -24,6 +25,8 @@ phases:
   - uni_ph_kramer2012_hexaferrite
   - uni_ph_mccallum2014_hexaferrite
   - uni_ph_hirosawa2015_hexaferrite
+  - uni_ph_hirosawa2017_hexaferrite
+  - uni_ph_cui2018_hexaferrite
   - uni_ph_coey2020_hexaferrite
   - uni_ph_shao2020_hexaferrite
   - uni_ph_granados2021_hexaferrite
@@ -36,6 +39,7 @@ phases:
   - uni_ph_kramer2012_mnal
   - uni_ph_mccallum2014_mnal
   - uni_ph_hirosawa2015_mnal
+  - uni_ph_hirosawa2017_mnal
   - uni_ph_cui2018_mnal
   - uni_ph_mohapatra2018_mnal
   - uni_ph_patel2018_mnal
@@ -56,6 +60,7 @@ phases:
   - uni_ph_kramer2012_fe16n2
   - uni_ph_mccallum2014_fe16n2
   - uni_ph_hirosawa2015_fe16n2
+  - uni_ph_hirosawa2017_fe16n2
   - uni_ph_cui2018_fe16n2
   - uni_ph_mohapatra2018_fe16n2
   - uni_ph_coey2020_fe16n2
@@ -69,6 +74,7 @@ phases:
   - uni_ph_kramer2012_feni
   - uni_ph_mccallum2014_feni
   - uni_ph_hirosawa2015_feni
+  - uni_ph_hirosawa2017_feni
   - uni_ph_cui2018_feni
   - uni_ph_mohapatra2018_feni
   - uni_ph_coey2020_feni
@@ -86,6 +92,7 @@ phases:
   - uni_ph_kramer2012_mnbi
   - uni_ph_mccallum2014_mnbi
   - uni_ph_hirosawa2015_mnbi
+  - uni_ph_hirosawa2017_mnbi
   - uni_ph_cui2018_mnbi
   - uni_ph_mohapatra2018_mnbi
   - uni_ph_patel2018_mnbi
@@ -105,12 +112,21 @@ phases:
 - name: tetragonal Fe-Co
   named_in:
   - uni_ph_hirosawa2015_fecotet
+  - uni_ph_hirosawa2017_fecotet
   - uni_ph_cui2018_fecotet
   - uni_ph_shao2020_fecotet
   - uni_ph_park2025_fecotet
 - name: Mn4N
   named_in:
   - uni_ph_hirosawa2015_mn4n
+- name: Co nanorods/nanowires (shape anisotropy)
+  named_in:
+  - uni_ph_hirosawa2017_conanorod
+  - uni_ph_mohapatra2018_conanorod
+  - uni_ph_coey2020_conanorod
+- name: Fe-Cr-Co
+  named_in:
+  - uni_ph_hirosawa2017_fecrco
 - name: Co carbides (Co2C/Co3C)
   named_in:
   - uni_ph_cui2018_cocarbide
@@ -124,10 +140,6 @@ phases:
   - uni_ph_cui2018_zr2co11
   - uni_ph_mohapatra2018_zr2co11
   - uni_ph_shao2020_zr2co11
-- name: Co nanorods/nanowires (shape anisotropy)
-  named_in:
-  - uni_ph_mohapatra2018_conanorod
-  - uni_ph_coey2020_conanorod
 - name: Mn-Ga (L10/D022)
   named_in:
   - uni_ph_mohapatra2018_mnga
@@ -170,6 +182,7 @@ route_classes:
   - uni_rt_nanowire_coey2020
   - uni_rt_cluster_balamurugan2012
   - uni_rt_fieldmill_rong2010
+  - uni_rt_cluster_cui2018
 - class: MO
   sources:
   - uni_rt_calender_qu2024
@@ -196,6 +209,7 @@ route_classes:
 - class: AM+FA
   sources:
   - uni_rt_amfa_dussa2024
+  - uni_rt_am_coey2020
 - class: FA
   sources:
   - uni_rt_fa_dussa2024
