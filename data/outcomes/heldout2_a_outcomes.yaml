@@ -1,0 +1,1763 @@
+- id: fepd_dewet_0min_inplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 0 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: in-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.73
+  unit: '1'
+  measured_along: in-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 0 = c ∗ (t − t0) (1)
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.02
+- id: fepd_dewet_0min_outofplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 0 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: out-of-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.17
+  unit: '1'
+  measured_along: out-of-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 0 = c ∗ (t − t0) (1)
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.01
+- id: fepd_dewet_4min_inplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 4 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: in-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.64
+  unit: '1'
+  measured_along: in-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 4 1.49 1.91 2.97 0.64 1.38 0.81 2.96 0.27 0.26
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.02
+- id: fepd_dewet_4min_outofplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 4 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: out-of-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.27
+  unit: '1'
+  measured_along: out-of-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 4 1.49 1.91 2.97 0.64 1.38 0.81 2.96 0.27 0.26
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.01
+- id: fepd_dewet_15min_inplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 15 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: in-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.63
+  unit: '1'
+  measured_along: in-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 15 2.12 1.92 3.06 0.63 1.66 0.91 3.04 0.30 0.26
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.02
+- id: fepd_dewet_15min_outofplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 15 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: out-of-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.3
+  unit: '1'
+  measured_along: out-of-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 15 2.12 1.92 3.06 0.63 1.66 0.91 3.04 0.30 0.26
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.01
+- id: fepd_dewet_30min_inplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 30 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: in-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.66
+  unit: '1'
+  measured_along: in-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 30 min of annealing. This effect is better seen in cell volume dependence on annealing time
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.02
+- id: fepd_dewet_30min_outofplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 30 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: out-of-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.3
+  unit: '1'
+  measured_along: out-of-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 30 min of annealing. This effect is better seen in cell volume dependence on annealing time
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.01
+- id: fepd_dewet_60min_inplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 60 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: in-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.6
+  unit: '1'
+  measured_along: in-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 60 2.61 1.69 2.88 0.60 1.85 1.15 2.94 0.39 0.16
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.02
+- id: fepd_dewet_60min_outofplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 60 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: out-of-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.39
+  unit: '1'
+  measured_along: out-of-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 60 2.61 1.69 2.88 0.60 1.85 1.15 2.94 0.39 0.16
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.01
+- id: fepd_dewet_300min_inplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 300 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: in-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.61
+  unit: '1'
+  measured_along: in-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 300 2.55 1.79 3.08 0.61 1.95 1.08 3.09 0.35 0.16
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.02
+- id: fepd_dewet_300min_outofplane
+  phase: L10-FePd
+  route: 'other: evaporated film annealed'
+  process: Fe45Pd55 multilayer on Si/SiOx; vacuum annealed 600 C for 300 min
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: evaporated multilayer; (111) fibre after annealing
+    magnet_axis: out-of-plane relative to film
+    composition: Fe45Pd55
+    phase_content: mixed L1_0 and A1 even after 300 min
+  quantity: Mr_over_Ms
+  value: 0.35
+  unit: '1'
+  measured_along: out-of-plane relative to film plane
+  measurement: SQUID, room temperature, maximum applied field ±50 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma16010092
+    title: Solid-State Dewetting as a Driving Force for Structural Transformation and Magnetization Reversal Mechanism
+      in FePd Thin Films
+    first_author: Zarzycki
+    year: 2022
+    url: https://mdpi-res.com/d_attachment/materials/materials-16-00092/article_deploy/materials-16-00092.pdf
+    evidence: full_text
+    locator: Table 1
+  quote: 300 2.55 1.79 3.08 0.61 1.95 1.08 3.09 0.35 0.16
+  note: Same sample was measured along both directions; annealing time is hold time at 600 C.
+  uncertainty: 0.01
+- id: fept_nacl_600c_1to400
+  phase: L10-FePt
+  route: isotropic
+  process: Fe/Pt precursors dispersed on NaCl with hexane, then sintered in 5% H2/Ar at 600 C; precursor/NaCl mass
+    1/400
+  conditions:
+    field_T: 0
+    T_process_K: 873.15
+    parent_texture: none; loose nanoparticles
+    magnet_axis: measurement field
+    composition: nominal equiatomic FePt
+    particle_size: 3.56 nm TEM mean
+    phase_content: ordered L1_0 with possible fine superparamagnetic particles
+  quantity: Mr_over_Ms
+  value: 0.35
+  unit: '1'
+  measured_along: powder measurement field
+  measurement: SQUID, room temperature; maximum field not reported in article text
+  n_samples: 1
+  source:
+    doi: 10.1039/c9ra06966f
+    title: "Facile liquid-assisted one-step sintering synthesis of superfine L1\n                    <sub>0</sub>\n\
+      \                    -FePt nanoparticles"
+    first_author: Pei
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9075039/fullTextXML
+    evidence: full_text
+    locator: Table 1
+  quote: 600 | 1/400 | 3.56 ± 0.93 | 7.4 ± 0.1 | 0.883 | 0.20 | 0.35
+  note: ''
+- id: fept_nacl_650c_1to400
+  phase: L10-FePt
+  route: isotropic
+  process: Fe/Pt precursors dispersed on NaCl with hexane, then sintered in 5% H2/Ar at 650 C; precursor/NaCl mass
+    1/400
+  conditions:
+    field_T: 0
+    T_process_K: 923.15
+    parent_texture: none; loose nanoparticles
+    magnet_axis: measurement field
+    composition: nominal equiatomic FePt
+    particle_size: 4.29 nm TEM mean
+    phase_content: ordered L1_0 with possible fine superparamagnetic particles
+  quantity: Mr_over_Ms
+  value: 0.43
+  unit: '1'
+  measured_along: powder measurement field
+  measurement: SQUID, room temperature; maximum field not reported in article text
+  n_samples: 1
+  source:
+    doi: 10.1039/c9ra06966f
+    title: "Facile liquid-assisted one-step sintering synthesis of superfine L1\n                    <sub>0</sub>\n\
+      \                    -FePt nanoparticles"
+    first_author: Pei
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9075039/fullTextXML
+    evidence: full_text
+    locator: Table 1
+  quote: 650 | 4.29 ± 0.99 | 12.0 ± 1.4 | 0.898 | 0.55 | 0.43
+  note: ''
+- id: fept_nacl_700c_1to400
+  phase: L10-FePt
+  route: isotropic
+  process: Fe/Pt precursors dispersed on NaCl with hexane, then sintered in 5% H2/Ar at 700 C; precursor/NaCl mass
+    1/400
+  conditions:
+    field_T: 0
+    T_process_K: 973.15
+    parent_texture: none; loose nanoparticles
+    magnet_axis: measurement field
+    composition: nominal equiatomic FePt
+    particle_size: 6.25 nm TEM mean
+    phase_content: ordered L1_0 with possible fine superparamagnetic particles
+  quantity: Mr_over_Ms
+  value: 0.53
+  unit: '1'
+  measured_along: powder measurement field
+  measurement: SQUID, room temperature; maximum field not reported in article text
+  n_samples: 1
+  source:
+    doi: 10.1039/c9ra06966f
+    title: "Facile liquid-assisted one-step sintering synthesis of superfine L1\n                    <sub>0</sub>\n\
+      \                    -FePt nanoparticles"
+    first_author: Pei
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9075039/fullTextXML
+    evidence: full_text
+    locator: Table 1
+  quote: 700 | 6.25 ± 1.45 | 13.2 ± 0.3 | 0.909 | 1.02 | 0.53
+  note: ''
+- id: fept_nacl_750c_1to400
+  phase: L10-FePt
+  route: isotropic
+  process: Fe/Pt precursors dispersed on NaCl with hexane, then sintered in 5% H2/Ar at 750 C; precursor/NaCl mass
+    1/400
+  conditions:
+    field_T: 0
+    T_process_K: 1023.15
+    parent_texture: none; loose nanoparticles
+    magnet_axis: measurement field
+    composition: nominal equiatomic FePt
+    particle_size: 6.4 nm TEM mean
+    phase_content: ordered L1_0 with possible fine superparamagnetic particles
+  quantity: Mr_over_Ms
+  value: 0.58
+  unit: '1'
+  measured_along: powder measurement field
+  measurement: SQUID, room temperature; maximum field not reported in article text
+  n_samples: 1
+  source:
+    doi: 10.1039/c9ra06966f
+    title: "Facile liquid-assisted one-step sintering synthesis of superfine L1\n                    <sub>0</sub>\n\
+      \                    -FePt nanoparticles"
+    first_author: Pei
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9075039/fullTextXML
+    evidence: full_text
+    locator: Table 1
+  quote: 750 | 6.40 ± 1.70 | 14.1 ± 0.4 | 0.936 | 2.17 | 0.58
+  note: ''
+- id: fept_nacl_700c_1to100
+  phase: L10-FePt
+  route: isotropic
+  process: Fe/Pt precursors dispersed on NaCl with hexane, then sintered in 5% H2/Ar at 700 C; precursor/NaCl mass
+    1/100
+  conditions:
+    field_T: 0
+    T_process_K: 973.15
+    parent_texture: none; loose nanoparticles
+    magnet_axis: measurement field
+    composition: nominal equiatomic FePt
+    particle_size: 7.3 nm TEM mean
+    phase_content: ordered L1_0 with possible fine superparamagnetic particles
+  quantity: Mr_over_Ms
+  value: 0.61
+  unit: '1'
+  measured_along: powder measurement field
+  measurement: SQUID, room temperature; maximum field not reported in article text
+  n_samples: 1
+  source:
+    doi: 10.1039/c9ra06966f
+    title: "Facile liquid-assisted one-step sintering synthesis of superfine L1\n                    <sub>0</sub>\n\
+      \                    -FePt nanoparticles"
+    first_author: Pei
+    year: 2019
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9075039/fullTextXML
+    evidence: full_text
+    locator: Table 1
+  quote: 700 | 1/100 | 7.30 ± 2.16 | 28.0 ± 1.2 | 0.940 | 2.29 | 0.61
+  note: ''
+- id: fept_ag_layers_0
+  phase: L10-FePt
+  route: EP
+  process: '[Fe(0.5 nm)/Pt(0.5 nm)]18 deposited on MgO(100) at 300 C with 0 inserted Ag nanolayers'
+  conditions:
+    field_T: 0
+    T_process_K: 573.15
+    parent_texture: MgO(100) single-crystal substrate
+    magnet_axis: film normal
+    composition: FePt with 0 Ag layers, 0.5 nm each
+  quantity: Mr_over_Ms
+  value: 0.98
+  unit: '1'
+  measured_along: out-of-plane easy axis
+  measurement: VSM, room temperature, maximum applied field 20 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma9030209
+    title: Perpendicular Magnetization Behavior of Low- Temperature Ordered FePt Films with Insertion of Ag Nanolayers
+    first_author: Wei
+    year: 2016
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5456664/fullTextXML
+    evidence: full_text
+    locator: Results, Figure 3 and Table 1
+  quote: The out-of-plane remanent squareness ratio ( M r ﬩ / M s ﬩ ) for the pure FePt was close to unity (0.98),
+    and decreased to 0.97 and 0.95 with the insertion of a single and two Ag nanolayers into the FePt system
+  note: ''
+- id: fept_ag_layers_1
+  phase: L10-FePt
+  route: EP
+  process: '[Fe(0.5 nm)/Pt(0.5 nm)]18 deposited on MgO(100) at 300 C with 1 inserted Ag nanolayers'
+  conditions:
+    field_T: 0
+    T_process_K: 573.15
+    parent_texture: MgO(100) single-crystal substrate
+    magnet_axis: film normal
+    composition: FePt with 1 Ag layers, 0.5 nm each
+  quantity: Mr_over_Ms
+  value: 0.97
+  unit: '1'
+  measured_along: out-of-plane easy axis
+  measurement: VSM, room temperature, maximum applied field 20 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma9030209
+    title: Perpendicular Magnetization Behavior of Low- Temperature Ordered FePt Films with Insertion of Ag Nanolayers
+    first_author: Wei
+    year: 2016
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5456664/fullTextXML
+    evidence: full_text
+    locator: Results, Figure 3 and Table 1
+  quote: The out-of-plane remanent squareness ratio ( M r ﬩ / M s ﬩ ) for the pure FePt was close to unity (0.98),
+    and decreased to 0.97 and 0.95 with the insertion of a single and two Ag nanolayers into the FePt system
+  note: ''
+- id: fept_ag_layers_2
+  phase: L10-FePt
+  route: EP
+  process: '[Fe(0.5 nm)/Pt(0.5 nm)]18 deposited on MgO(100) at 300 C with 2 inserted Ag nanolayers'
+  conditions:
+    field_T: 0
+    T_process_K: 573.15
+    parent_texture: MgO(100) single-crystal substrate
+    magnet_axis: film normal
+    composition: FePt with 2 Ag layers, 0.5 nm each
+  quantity: Mr_over_Ms
+  value: 0.95
+  unit: '1'
+  measured_along: out-of-plane easy axis
+  measurement: VSM, room temperature, maximum applied field 20 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma9030209
+    title: Perpendicular Magnetization Behavior of Low- Temperature Ordered FePt Films with Insertion of Ag Nanolayers
+    first_author: Wei
+    year: 2016
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5456664/fullTextXML
+    evidence: full_text
+    locator: Results, Figure 3 and Table 1
+  quote: The out-of-plane remanent squareness ratio ( M r ﬩ / M s ﬩ ) for the pure FePt was close to unity (0.98),
+    and decreased to 0.97 and 0.95 with the insertion of a single and two Ag nanolayers into the FePt system
+  note: ''
+- id: fept_ag_layers_0_js
+  phase: L10-FePt
+  route: EP
+  process: '[Fe(0.5 nm)/Pt(0.5 nm)]18 deposited on MgO(100) at 300 C with 0 inserted Ag nanolayers'
+  conditions:
+    field_T: 0
+    T_process_K: 573.15
+    parent_texture: MgO(100) single-crystal substrate
+    magnet_axis: film normal
+    composition: FePt with 0 Ag layers, 0.5 nm each
+  quantity: Js_same_sample
+  value: 1.193805
+  unit: T
+  measured_along: out-of-plane easy axis
+  measurement: VSM, room temperature, maximum applied field 20 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma9030209
+    title: Perpendicular Magnetization Behavior of Low- Temperature Ordered FePt Films with Insertion of Ag Nanolayers
+    first_author: Wei
+    year: 2016
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5456664/fullTextXML
+    evidence: full_text
+    locator: Results, Figure 3 and Table 1
+  quote: The out-of-plane saturation magnetization ( M s ﬩ ) value decreased with the insertion of a single and
+    two Ag nanolayers into the FePt system, ranging from 950 to 900 emu/cm 3 and 875 emu/cm 3 , and the remanent
+    magnetization ( M r ﬩ ) also decreased from 932 to 876 emu/cm 3 and 835 emu/cm 3 following the slope of M s
+    .
+  note: Converted measured Ms = 950 emu/cm3 to μ0Ms using 1 emu/cm3 = 1000 A/m. Paired with remanence-ratio record
+    for the same film.
+- id: fept_ag_layers_1_js
+  phase: L10-FePt
+  route: EP
+  process: '[Fe(0.5 nm)/Pt(0.5 nm)]18 deposited on MgO(100) at 300 C with 1 inserted Ag nanolayers'
+  conditions:
+    field_T: 0
+    T_process_K: 573.15
+    parent_texture: MgO(100) single-crystal substrate
+    magnet_axis: film normal
+    composition: FePt with 1 Ag layers, 0.5 nm each
+  quantity: Js_same_sample
+  value: 1.130973
+  unit: T
+  measured_along: out-of-plane easy axis
+  measurement: VSM, room temperature, maximum applied field 20 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma9030209
+    title: Perpendicular Magnetization Behavior of Low- Temperature Ordered FePt Films with Insertion of Ag Nanolayers
+    first_author: Wei
+    year: 2016
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5456664/fullTextXML
+    evidence: full_text
+    locator: Results, Figure 3 and Table 1
+  quote: The out-of-plane saturation magnetization ( M s ﬩ ) value decreased with the insertion of a single and
+    two Ag nanolayers into the FePt system, ranging from 950 to 900 emu/cm 3 and 875 emu/cm 3 , and the remanent
+    magnetization ( M r ﬩ ) also decreased from 932 to 876 emu/cm 3 and 835 emu/cm 3 following the slope of M s
+    .
+  note: Converted measured Ms = 900 emu/cm3 to μ0Ms using 1 emu/cm3 = 1000 A/m. Paired with remanence-ratio record
+    for the same film.
+- id: fept_ag_layers_2_js
+  phase: L10-FePt
+  route: EP
+  process: '[Fe(0.5 nm)/Pt(0.5 nm)]18 deposited on MgO(100) at 300 C with 2 inserted Ag nanolayers'
+  conditions:
+    field_T: 0
+    T_process_K: 573.15
+    parent_texture: MgO(100) single-crystal substrate
+    magnet_axis: film normal
+    composition: FePt with 2 Ag layers, 0.5 nm each
+  quantity: Js_same_sample
+  value: 1.099557
+  unit: T
+  measured_along: out-of-plane easy axis
+  measurement: VSM, room temperature, maximum applied field 20 kOe
+  n_samples: 1
+  source:
+    doi: 10.3390/ma9030209
+    title: Perpendicular Magnetization Behavior of Low- Temperature Ordered FePt Films with Insertion of Ag Nanolayers
+    first_author: Wei
+    year: 2016
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5456664/fullTextXML
+    evidence: full_text
+    locator: Results, Figure 3 and Table 1
+  quote: The out-of-plane saturation magnetization ( M s ﬩ ) value decreased with the insertion of a single and
+    two Ag nanolayers into the FePt system, ranging from 950 to 900 emu/cm 3 and 875 emu/cm 3 , and the remanent
+    magnetization ( M r ﬩ ) also decreased from 932 to 876 emu/cm 3 and 835 emu/cm 3 following the slope of M s
+    .
+  note: Converted measured Ms = 875 emu/cm3 to μ0Ms using 1 emu/cm3 = 1000 A/m. Paired with remanence-ratio record
+    for the same film.
+- id: fept_bagc_8nm_001_rock
+  phase: L10-FePt
+  route: EP
+  process: FePt(B,Ag,C) 8 nm sputtered on MoC/MgTiON/CrRu seed layers
+  conditions:
+    field_T: 0
+    T_process_K: 743.15
+    parent_texture: textured MgTiON/CrRu seed layers
+    magnet_axis: film normal
+    composition: FePt(B,Ag,C)
+    particle_size: 8 nm film thickness
+  quantity: texture_metric
+  value: 5.9
+  unit: rocking_fwhm_deg
+  measured_along: XRD rocking scan about film normal
+  measurement: XRD (001) rocking curve, FWHM; room-temperature sample
+  n_samples: 1
+  source:
+    doi: 10.3390/nano11020419
+    title: Temperature Dependence and Microstructure Effects on Magnetic Properties of FePt(B, Ag, C) Film
+    first_author: Tsai
+    year: 2021
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-11-00419/article_deploy/nanomaterials-11-00419.pdf
+    evidence: full_text
+    locator: Figure 1c–f and Figures 2–4
+  quote: 'width (∆θ50) was determined by measuring the full width at half maximum (FWHM) of
+
+    the (001)/(002) reflection peaks; the measured values are 5.9◦/5.7◦ and 5.7◦/5.4◦, as shown
+
+    in Figure 1c–f, respectively.'
+  note: (001) reflection.
+- id: fept_bagc_8nm_002_rock
+  phase: L10-FePt
+  route: EP
+  process: FePt(B,Ag,C) 8 nm sputtered on MoC/MgTiON/CrRu seed layers
+  conditions:
+    field_T: 0
+    T_process_K: 743.15
+    parent_texture: textured MgTiON/CrRu seed layers
+    magnet_axis: film normal
+    composition: FePt(B,Ag,C)
+    particle_size: 8 nm film thickness
+  quantity: texture_metric
+  value: 5.7
+  unit: rocking_fwhm_deg
+  measured_along: XRD rocking scan about film normal
+  measurement: XRD (002) rocking curve, FWHM; room-temperature sample
+  n_samples: 1
+  source:
+    doi: 10.3390/nano11020419
+    title: Temperature Dependence and Microstructure Effects on Magnetic Properties of FePt(B, Ag, C) Film
+    first_author: Tsai
+    year: 2021
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-11-00419/article_deploy/nanomaterials-11-00419.pdf
+    evidence: full_text
+    locator: Figure 1c–f and Figures 2–4
+  quote: 'width (∆θ50) was determined by measuring the full width at half maximum (FWHM) of
+
+    the (001)/(002) reflection peaks; the measured values are 5.9◦/5.7◦ and 5.7◦/5.4◦, as shown
+
+    in Figure 1c–f, respectively.'
+  note: (002) reflection.
+- id: fept_bagc_6nm_001_rock
+  phase: L10-FePt
+  route: EP
+  process: FePt(B,Ag,C) 6 nm sputtered on MoC/MgTiON/CrRu seed layers
+  conditions:
+    field_T: 0
+    T_process_K: 743.15
+    parent_texture: textured MgTiON/CrRu seed layers
+    magnet_axis: film normal
+    composition: FePt(B,Ag,C)
+    particle_size: 6 nm film thickness
+  quantity: texture_metric
+  value: 5.7
+  unit: rocking_fwhm_deg
+  measured_along: XRD rocking scan about film normal
+  measurement: XRD (001) rocking curve, FWHM; room-temperature sample
+  n_samples: 1
+  source:
+    doi: 10.3390/nano11020419
+    title: Temperature Dependence and Microstructure Effects on Magnetic Properties of FePt(B, Ag, C) Film
+    first_author: Tsai
+    year: 2021
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-11-00419/article_deploy/nanomaterials-11-00419.pdf
+    evidence: full_text
+    locator: Figure 1c–f and Figures 2–4
+  quote: 'width (∆θ50) was determined by measuring the full width at half maximum (FWHM) of
+
+    the (001)/(002) reflection peaks; the measured values are 5.9◦/5.7◦ and 5.7◦/5.4◦, as shown
+
+    in Figure 1c–f, respectively.'
+  note: (001) reflection.
+- id: fept_bagc_6nm_002_rock
+  phase: L10-FePt
+  route: EP
+  process: FePt(B,Ag,C) 6 nm sputtered on MoC/MgTiON/CrRu seed layers
+  conditions:
+    field_T: 0
+    T_process_K: 743.15
+    parent_texture: textured MgTiON/CrRu seed layers
+    magnet_axis: film normal
+    composition: FePt(B,Ag,C)
+    particle_size: 6 nm film thickness
+  quantity: texture_metric
+  value: 5.4
+  unit: rocking_fwhm_deg
+  measured_along: XRD rocking scan about film normal
+  measurement: XRD (002) rocking curve, FWHM; room-temperature sample
+  n_samples: 1
+  source:
+    doi: 10.3390/nano11020419
+    title: Temperature Dependence and Microstructure Effects on Magnetic Properties of FePt(B, Ag, C) Film
+    first_author: Tsai
+    year: 2021
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-11-00419/article_deploy/nanomaterials-11-00419.pdf
+    evidence: full_text
+    locator: Figure 1c–f and Figures 2–4
+  quote: 'width (∆θ50) was determined by measuring the full width at half maximum (FWHM) of
+
+    the (001)/(002) reflection peaks; the measured values are 5.9◦/5.7◦ and 5.7◦/5.4◦, as shown
+
+    in Figure 1c–f, respectively.'
+  note: (002) reflection.
+- id: fept_bagc_6nm_rem
+  phase: L10-FePt
+  route: EP
+  process: FePt(B,Ag,C) 6 nm sputtered on MoC/MgTiON/CrRu seed layers
+  conditions:
+    field_T: 0
+    T_process_K: 743.15
+    parent_texture: textured MgTiON/CrRu seed layers
+    magnet_axis: film normal
+    composition: FePt(B,Ag,C)
+    particle_size: 6 nm film thickness
+  quantity: Mr_over_Ms
+  value: 1.0
+  unit: '1'
+  measured_along: out-of-plane easy axis
+  measurement: Field-dependent loop, maximum applied field 7 T; reported over 40–350 K
+  n_samples: 1
+  source:
+    doi: 10.3390/nano11020419
+    title: Temperature Dependence and Microstructure Effects on Magnetic Properties of FePt(B, Ag, C) Film
+    first_author: Tsai
+    year: 2021
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-11-00419/article_deploy/nanomaterials-11-00419.pdf
+    evidence: full_text
+    locator: Figure 1c–f and Figures 2–4
+  quote: remanence ratio (Mr/Ms) is almost 1.0 for two samples.
+  note: Approximate as stated (“almost 1.0”); at 40 K, 7 T was nearly insufficient to saturate.
+- id: fept_bagc_8nm_rem
+  phase: L10-FePt
+  route: EP
+  process: FePt(B,Ag,C) 8 nm sputtered on MoC/MgTiON/CrRu seed layers
+  conditions:
+    field_T: 0
+    T_process_K: 743.15
+    parent_texture: textured MgTiON/CrRu seed layers
+    magnet_axis: film normal
+    composition: FePt(B,Ag,C)
+    particle_size: 8 nm film thickness
+  quantity: Mr_over_Ms
+  value: 1.0
+  unit: '1'
+  measured_along: out-of-plane easy axis
+  measurement: Field-dependent loop, maximum applied field 7 T; reported over 40–350 K
+  n_samples: 1
+  source:
+    doi: 10.3390/nano11020419
+    title: Temperature Dependence and Microstructure Effects on Magnetic Properties of FePt(B, Ag, C) Film
+    first_author: Tsai
+    year: 2021
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-11-00419/article_deploy/nanomaterials-11-00419.pdf
+    evidence: full_text
+    locator: Figure 1c–f and Figures 2–4
+  quote: remanence ratio (Mr/Ms) is almost 1.0 for two samples.
+  note: Approximate as stated (“almost 1.0”); at 40 K, 7 T was nearly insufficient to saturate.
+- id: fept_bn_ag_001_rock
+  phase: L10-FePt
+  route: EP
+  process: Sputtered FePt(BN,Ag,C) film, (001) textured
+  conditions:
+    field_T: 0
+    parent_texture: MgO(100) substrate and seed layers
+    magnet_axis: film normal
+    composition: FePt(BN,Ag,C)
+  quantity: texture_metric
+  value: 4.09
+  unit: rocking_fwhm_deg
+  measured_along: XRD rocking scan about film normal
+  measurement: XRD (001) rocking curve, FWHM
+  n_samples: 1
+  source:
+    doi: 10.3390/nano13030539
+    title: Magnetic Properties and Microstructure of FePt(BN, X, C) (X = Ag, Re) Films
+    first_author: Tsai
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-13-00539/article_deploy/nanomaterials-13-00539.pdf
+    evidence: full_text
+    locator: Figure 1c,d
+  quote: (001)/(002); the peaks are 4.09◦/3.03◦ and 4.09◦/3.07◦ in Figure 1c,d.
+  note: (001) reflection; Figure 1c is Ag and Figure 1d is Re.
+- id: fept_bn_ag_002_rock
+  phase: L10-FePt
+  route: EP
+  process: Sputtered FePt(BN,Ag,C) film, (001) textured
+  conditions:
+    field_T: 0
+    parent_texture: MgO(100) substrate and seed layers
+    magnet_axis: film normal
+    composition: FePt(BN,Ag,C)
+  quantity: texture_metric
+  value: 3.03
+  unit: rocking_fwhm_deg
+  measured_along: XRD rocking scan about film normal
+  measurement: XRD (002) rocking curve, FWHM
+  n_samples: 1
+  source:
+    doi: 10.3390/nano13030539
+    title: Magnetic Properties and Microstructure of FePt(BN, X, C) (X = Ag, Re) Films
+    first_author: Tsai
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-13-00539/article_deploy/nanomaterials-13-00539.pdf
+    evidence: full_text
+    locator: Figure 1c,d
+  quote: (001)/(002); the peaks are 4.09◦/3.03◦ and 4.09◦/3.07◦ in Figure 1c,d.
+  note: (002) reflection; Figure 1c is Ag and Figure 1d is Re.
+- id: fept_bn_re_001_rock
+  phase: L10-FePt
+  route: EP
+  process: Sputtered FePt(BN,Re,C) film, (001) textured
+  conditions:
+    field_T: 0
+    parent_texture: MgO(100) substrate and seed layers
+    magnet_axis: film normal
+    composition: FePt(BN,Re,C)
+  quantity: texture_metric
+  value: 4.09
+  unit: rocking_fwhm_deg
+  measured_along: XRD rocking scan about film normal
+  measurement: XRD (001) rocking curve, FWHM
+  n_samples: 1
+  source:
+    doi: 10.3390/nano13030539
+    title: Magnetic Properties and Microstructure of FePt(BN, X, C) (X = Ag, Re) Films
+    first_author: Tsai
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-13-00539/article_deploy/nanomaterials-13-00539.pdf
+    evidence: full_text
+    locator: Figure 1c,d
+  quote: (001)/(002); the peaks are 4.09◦/3.03◦ and 4.09◦/3.07◦ in Figure 1c,d.
+  note: (001) reflection; Figure 1c is Ag and Figure 1d is Re.
+- id: fept_bn_re_002_rock
+  phase: L10-FePt
+  route: EP
+  process: Sputtered FePt(BN,Re,C) film, (001) textured
+  conditions:
+    field_T: 0
+    parent_texture: MgO(100) substrate and seed layers
+    magnet_axis: film normal
+    composition: FePt(BN,Re,C)
+  quantity: texture_metric
+  value: 3.07
+  unit: rocking_fwhm_deg
+  measured_along: XRD rocking scan about film normal
+  measurement: XRD (002) rocking curve, FWHM
+  n_samples: 1
+  source:
+    doi: 10.3390/nano13030539
+    title: Magnetic Properties and Microstructure of FePt(BN, X, C) (X = Ag, Re) Films
+    first_author: Tsai
+    year: 2023
+    url: https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-13-00539/article_deploy/nanomaterials-13-00539.pdf
+    evidence: full_text
+    locator: Figure 1c,d
+  quote: (001)/(002); the peaks are 4.09◦/3.03◦ and 4.09◦/3.07◦ in Figure 1c,d.
+  note: (002) reflection; Figure 1c is Ag and Figure 1d is Re.
+- id: copt_lean_700c_7h
+  phase: L10-CoPt
+  route: isotropic
+  process: Polyol-synthesized Co-rich CoPt nanoalloy, annealed at 700 C for 7 h
+  conditions:
+    field_T: 0
+    T_process_K: 973.15
+    parent_texture: none; loose particles
+    magnet_axis: powder measurement field
+    composition: Co-rich, about 3:1 Co:Pt
+    phase_content: 11.4% tetragonal phases and 88.6% cubic Co3Pt after 7 h
+  quantity: Mr_over_Ms
+  value: 0.72
+  unit: '1'
+  measured_along: powder measurement field
+  measurement: Room-temperature M(H), maximum applied field 2 T; Ms extrapolated from high-field law because loop
+    was unsaturated
+  n_samples: 1
+  source:
+    doi: 10.3390/nano14060482
+    title: Low-Platinum-Content Exchange-Coupled CoPt Nanoalloys with Enhanced Magnetic Properties
+    first_author: Basina
+    year: 2024
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10974076/fullTextXML
+    evidence: full_text
+    locator: Results, Figure 4 and Supplementary Figure S3
+  quote: Extrapolation gives M s = 36.4 emu/g, and therefore, M R /M S = 26.25/36.4 = 0.72.
+  note: Dominantly cubic Co3Pt; retain as a mixed-phase boundary case, not a pure L1_0-CoPt test.
+- id: alnico8_sinter_1h_br
+  phase: AlNiCo
+  route: FA
+  process: Gas-atomized alnico 8 powder compression-molded and vacuum sintered at 1250 C for 1 h; solutionized,
+    1 T field-annealed 840 C for 10 min, drawn 650/580 C
+  conditions:
+    field_T: 1.0
+    T_process_K: 1113.15
+    T_sinter_K: 1523.15
+    parent_texture: none deliberately; 8 h sample developed near-[111] giant grains
+    magnet_axis: cylinder axis
+    composition: modified alnico 8
+    density_rel: 0.988
+  quantity: Br
+  value: 0.8523
+  unit: T
+  measured_along: cylinder axis
+  measurement: Closed-loop hysteresisgraph, room temperature, maximum applied field 10 kOe
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4916996
+    title: 'Novel pre-alloyed powder processing of modified alnico 8: Correlation of microstructure and magnetic
+      properties'
+    first_author: Anderson
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1225377
+    evidence: full_text
+    locator: Table 1
+  quote: 'AGK-2-3 (1h)
+
+    8,523
+
+    1,521
+
+    1,632
+
+    4.87
+
+    459
+
+    0.28'
+  note: Converted from reported gauss using 10,000 G = 1 T; table identifies one specimen.
+- id: alnico8_sinter_4h_br
+  phase: AlNiCo
+  route: FA
+  process: Gas-atomized alnico 8 powder compression-molded and vacuum sintered at 1250 C for 4 h; solutionized,
+    1 T field-annealed 840 C for 10 min, drawn 650/580 C
+  conditions:
+    field_T: 1.0
+    T_process_K: 1113.15
+    T_sinter_K: 1523.15
+    parent_texture: none deliberately; 8 h sample developed near-[111] giant grains
+    magnet_axis: cylinder axis
+    composition: modified alnico 8
+    density_rel: 0.991
+  quantity: Br
+  value: 0.8789
+  unit: T
+  measured_along: cylinder axis
+  measurement: Closed-loop hysteresisgraph, room temperature, maximum applied field 10 kOe
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4916996
+    title: 'Novel pre-alloyed powder processing of modified alnico 8: Correlation of microstructure and magnetic
+      properties'
+    first_author: Anderson
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1225377
+    evidence: full_text
+    locator: Table 1
+  quote: 'AGK-2-5 (4h)
+
+    8,789
+
+    1,569
+
+    1,685
+
+    5.04
+
+    483
+
+    0.29'
+  note: Converted from reported gauss using 10,000 G = 1 T; table identifies one specimen.
+- id: alnico8_sinter_8h_br
+  phase: AlNiCo
+  route: 'other: abnormal grain growth + FA'
+  process: Gas-atomized alnico 8 powder compression-molded and vacuum sintered at 1250 C for 8 h; solutionized,
+    1 T field-annealed 840 C for 10 min, drawn 650/580 C
+  conditions:
+    field_T: 1.0
+    T_process_K: 1113.15
+    T_sinter_K: 1523.15
+    parent_texture: none deliberately; 8 h sample developed near-[111] giant grains
+    magnet_axis: cylinder axis
+    composition: modified alnico 8
+    density_rel: 0.996
+  quantity: Br
+  value: 1.0052
+  unit: T
+  measured_along: cylinder axis
+  measurement: Closed-loop hysteresisgraph, room temperature, maximum applied field 10 kOe
+  n_samples: 1
+  source:
+    doi: 10.1063/1.4916996
+    title: 'Novel pre-alloyed powder processing of modified alnico 8: Correlation of microstructure and magnetic
+      properties'
+    first_author: Anderson
+    year: 2015
+    url: https://www.osti.gov/servlets/purl/1225377
+    evidence: full_text
+    locator: Table 1
+  quote: 'AGK-2-1 (8h)
+
+    10,052
+
+    1,608
+
+    1,688
+
+    6.5
+
+    601
+
+    0.36'
+  note: Converted from reported gauss using 10,000 G = 1 T; table identifies one specimen.
+- id: alnico8_stress_high_br
+  phase: AlNiCo
+  route: 'other: SA+FA'
+  process: 4 h primary sinter; 900 g axial load during 4 h at 1250 C; solutionized; 1 T field anneal at 840 C for
+    10 min; draw at 650 and 580 C
+  conditions: &id001
+    field_T: 1.0
+    T_process_K: 1523.15
+    T_field_anneal_K: 1113.15
+    applied_load_g: 900
+    parent_texture: sintered powder before stress-biased grain growth
+    magnet_axis: cylinder axis
+    composition: alnico 8H
+    stress_MPa: 1.248
+  quantity: Br
+  value: 0.841
+  unit: T
+  measured_along: cylinder axis
+  measurement: Closed-loop hysteresisgraph, room temperature, maximum applied field 12 kOe
+  n_samples: 1
+  source:
+    doi: 10.1007/s11837-017-2453-0
+    title: Compression Molding and Novel Sintering Treatments for Alnico Type-8 Permanent Magnets in Near-Final
+      Shape with Preferred Orientation
+    first_author: Kassen
+    year: 2017
+    url: https://www.osti.gov/servlets/purl/1374730
+    evidence: full_text
+    locator: Results, Figure 4a,b
+  quote: The resulting magnetic properties for Fig. 4a corresponded to a reduction in all texture related parameters
+    (i.e. magnetic remanence, energy product, and remanence ratio) with Br of 8.41 kG, remanence ratio of only 0.71,
+    and reduced energy product of 4.34 MGOe.
+  note: Br converted from reported kG to T.
+- id: alnico8_stress_high_mr_over_ms
+  phase: AlNiCo
+  route: 'other: SA+FA'
+  process: 4 h primary sinter; 900 g axial load during 4 h at 1250 C; solutionized; 1 T field anneal at 840 C for
+    10 min; draw at 650 and 580 C
+  conditions: *id001
+  quantity: Mr_over_Ms
+  value: 0.71
+  unit: '1'
+  measured_along: cylinder axis
+  measurement: Closed-loop hysteresisgraph, room temperature, maximum applied field 12 kOe
+  n_samples: 1
+  source:
+    doi: 10.1007/s11837-017-2453-0
+    title: Compression Molding and Novel Sintering Treatments for Alnico Type-8 Permanent Magnets in Near-Final
+      Shape with Preferred Orientation
+    first_author: Kassen
+    year: 2017
+    url: https://www.osti.gov/servlets/purl/1374730
+    evidence: full_text
+    locator: Results, Figure 4a,b
+  quote: The resulting magnetic properties for Fig. 4a corresponded to a reduction in all texture related parameters
+    (i.e. magnetic remanence, energy product, and remanence ratio) with Br of 8.41 kG, remanence ratio of only 0.71,
+    and reduced energy product of 4.34 MGOe.
+  note: ''
+- id: alnico8_stress_low_br
+  phase: AlNiCo
+  route: 'other: SA+FA'
+  process: 4 h primary sinter; 75 g axial load during 4 h at 1250 C; solutionized; 1 T field anneal at 840 C for
+    10 min; draw at 650 and 580 C
+  conditions: &id002
+    field_T: 1.0
+    T_process_K: 1523.15
+    T_field_anneal_K: 1113.15
+    applied_load_g: 75
+    parent_texture: sintered powder before stress-biased grain growth
+    magnet_axis: cylinder axis
+    composition: alnico 8H
+  quantity: Br
+  value: 0.901
+  unit: T
+  measured_along: cylinder axis
+  measurement: Closed-loop hysteresisgraph, room temperature, maximum applied field 12 kOe
+  n_samples: 1
+  source:
+    doi: 10.1007/s11837-017-2453-0
+    title: Compression Molding and Novel Sintering Treatments for Alnico Type-8 Permanent Magnets in Near-Final
+      Shape with Preferred Orientation
+    first_author: Kassen
+    year: 2017
+    url: https://www.osti.gov/servlets/purl/1374730
+    evidence: full_text
+    locator: Results, Figure 4a,b
+  quote: The sample for Fig. 4b showed enhanced texture corresponding to its near [001] orientation with improvements
+    in all texture related properties with Br of 9.01 kG, remanence ratio of 0.76, and an energy product of 5.02
+    MGOe.
+  note: Br converted from reported kG to T.
+- id: alnico8_stress_low_mr_over_ms
+  phase: AlNiCo
+  route: 'other: SA+FA'
+  process: 4 h primary sinter; 75 g axial load during 4 h at 1250 C; solutionized; 1 T field anneal at 840 C for
+    10 min; draw at 650 and 580 C
+  conditions: *id002
+  quantity: Mr_over_Ms
+  value: 0.76
+  unit: '1'
+  measured_along: cylinder axis
+  measurement: Closed-loop hysteresisgraph, room temperature, maximum applied field 12 kOe
+  n_samples: 1
+  source:
+    doi: 10.1007/s11837-017-2453-0
+    title: Compression Molding and Novel Sintering Treatments for Alnico Type-8 Permanent Magnets in Near-Final
+      Shape with Preferred Orientation
+    first_author: Kassen
+    year: 2017
+    url: https://www.osti.gov/servlets/purl/1374730
+    evidence: full_text
+    locator: Results, Figure 4a,b
+  quote: The sample for Fig. 4b showed enhanced texture corresponding to its near [001] orientation with improvements
+    in all texture related properties with Br of 9.01 kG, remanence ratio of 0.76, and an energy product of 5.02
+    MGOe.
+  note: ''
+- id: alnico8_field_2014_b_br
+  phase: AlNiCo
+  route: FA
+  process: Commercial alnico 8 solutionized 1523 K for 20 min and quenched; annealed 1073 K in 1 T for 90 s
+  conditions:
+    field_T: 1.0
+    T_process_K: 1073
+    parent_texture: polycrystalline commercial alloy
+    magnet_axis: sample cylinder axis
+    composition: commercial alnico 8
+  quantity: Br
+  value: 0.74
+  unit: T
+  measured_along: sample cylinder axis
+  measurement: Closed-loop hysteresisgraph, room temperature, maximum applied field 5 kOe
+  n_samples: 1
+  source:
+    doi: 10.1007/s40553-013-0004-3
+    title: Role of the Applied Magnetic Field on the Microstructural Evolution in Alnico 8 Alloys
+    first_author: Zhou
+    year: 2014
+    url: https://link.springer.com/content/pdf/10.1007/s40553-013-0004-3.pdf
+    evidence: full_text
+    locator: Figure 8 and Results
+  quote: 'For samples B and C, the Hci values increased signif-
+
+    icantly and reached ~746 and ~788 Oe, respectively.'
+  note: Approximate values as printed with a tilde in the source.
+- id: alnico8_field_2014_c_br
+  phase: AlNiCo
+  route: FA
+  process: Commercial alnico 8 solutionized 1523 K for 20 min and quenched; annealed 1073 K in 1 T for 600 s
+  conditions:
+    field_T: 1.0
+    T_process_K: 1073
+    parent_texture: polycrystalline commercial alloy
+    magnet_axis: sample cylinder axis
+    composition: commercial alnico 8
+  quantity: Br
+  value: 0.87
+  unit: T
+  measured_along: sample cylinder axis
+  measurement: Closed-loop hysteresisgraph, room temperature, maximum applied field 5 kOe
+  n_samples: 1
+  source:
+    doi: 10.1007/s40553-013-0004-3
+    title: Role of the Applied Magnetic Field on the Microstructural Evolution in Alnico 8 Alloys
+    first_author: Zhou
+    year: 2014
+    url: https://link.springer.com/content/pdf/10.1007/s40553-013-0004-3.pdf
+    evidence: full_text
+    locator: Figure 8 and Results
+  quote: 'For samples B and C, the Hci values increased signif-
+
+    icantly and reached ~746 and ~788 Oe, respectively.'
+  note: Approximate values as printed with a tilde in the source.
+- id: fe16n2_sps_40mpa
+  phase: α''-Fe16N2
+  route: isotropic
+  process: Gas-atomized and nitrided Fe16N2 powder SPS consolidated at 548 K and 40 MPa
+  conditions:
+    field_T: 0
+    T_process_K: 548
+    stress_MPa: 40
+    parent_texture: unaligned powder
+    magnet_axis: measurement field
+    composition: Fe–N
+    density_rel: 0.7325
+    phase_content: Fe16N2 with alpha-Fe and gamma-prime-Fe4N
+  quantity: Mr_over_Ms
+  value: 0.38
+  unit: '1'
+  measured_along: measurement field
+  measurement: VSM, 300 K, maximum applied field about 1600 kA/m
+  n_samples: 1
+  source:
+    doi: 10.3390/cryst15110969
+    title: Microstructural and Magnetic Evolution of α″-Fe16N2 Bulk Magnets Consolidated by Spark Plasma Sintering
+    first_author: Grigoras
+    year: 2025
+    url: https://mdpi-res.com/d_attachment/crystals/crystals-15-00969/article_deploy/crystals-15-00969.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: 40 MPa                   60 MPa                 80 MPa
+  note: Relative density computed from Table 1 density divided by the stated theoretical 7.44 g/cm3. Exchange coupling
+    may raise remanence without texture.
+- id: fe16n2_sps_60mpa
+  phase: α''-Fe16N2
+  route: isotropic
+  process: Gas-atomized and nitrided Fe16N2 powder SPS consolidated at 548 K and 60 MPa
+  conditions:
+    field_T: 0
+    T_process_K: 548
+    stress_MPa: 60
+    parent_texture: unaligned powder
+    magnet_axis: measurement field
+    composition: Fe–N
+    density_rel: 0.7917
+    phase_content: Fe16N2 with alpha-Fe and gamma-prime-Fe4N
+  quantity: Mr_over_Ms
+  value: 0.42
+  unit: '1'
+  measured_along: measurement field
+  measurement: VSM, 300 K, maximum applied field about 1600 kA/m
+  n_samples: 1
+  source:
+    doi: 10.3390/cryst15110969
+    title: Microstructural and Magnetic Evolution of α″-Fe16N2 Bulk Magnets Consolidated by Spark Plasma Sintering
+    first_author: Grigoras
+    year: 2025
+    url: https://mdpi-res.com/d_attachment/crystals/crystals-15-00969/article_deploy/crystals-15-00969.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: 60             229.8            96.5             0.42             86.5            15.71
+  note: Relative density computed from Table 1 density divided by the stated theoretical 7.44 g/cm3. Exchange coupling
+    may raise remanence without texture.
+- id: fe16n2_sps_80mpa
+  phase: α''-Fe16N2
+  route: isotropic
+  process: Gas-atomized and nitrided Fe16N2 powder SPS consolidated at 548 K and 80 MPa
+  conditions:
+    field_T: 0
+    T_process_K: 548
+    stress_MPa: 80
+    parent_texture: unaligned powder
+    magnet_axis: measurement field
+    composition: Fe–N
+    density_rel: 0.8199
+    phase_content: Fe16N2 with alpha-Fe and gamma-prime-Fe4N
+  quantity: Mr_over_Ms
+  value: 0.4
+  unit: '1'
+  measured_along: measurement field
+  measurement: VSM, 300 K, maximum applied field about 1600 kA/m
+  n_samples: 1
+  source:
+    doi: 10.3390/cryst15110969
+    title: Microstructural and Magnetic Evolution of α″-Fe16N2 Bulk Magnets Consolidated by Spark Plasma Sintering
+    first_author: Grigoras
+    year: 2025
+    url: https://mdpi-res.com/d_attachment/crystals/crystals-15-00969/article_deploy/crystals-15-00969.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: 80             231.4            92.5             0.40             83.0            15.15
+  note: Relative density computed from Table 1 density divided by the stated theoretical 7.44 g/cm3. Exchange coupling
+    may raise remanence without texture.
+- id: fe16n2_sps_40mpa_js
+  phase: α''-Fe16N2
+  route: isotropic
+  process: Gas-atomized and nitrided Fe16N2 powder SPS consolidated at 548 K and 40 MPa
+  conditions:
+    field_T: 0
+    T_process_K: 548
+    stress_MPa: 40
+    parent_texture: unaligned powder
+    magnet_axis: measurement field
+    composition: Fe–N
+    density_rel: 0.7325
+    phase_content: Fe16N2 with alpha-Fe and gamma-prime-Fe4N
+  quantity: Js_same_sample
+  value: 1.54917
+  unit: T
+  measured_along: measurement field
+  measurement: VSM, 300 K, maximum applied field about 1600 kA/m
+  n_samples: 1
+  source:
+    doi: 10.3390/cryst15110969
+    title: Microstructural and Magnetic Evolution of α″-Fe16N2 Bulk Magnets Consolidated by Spark Plasma Sintering
+    first_author: Grigoras
+    year: 2025
+    url: https://mdpi-res.com/d_attachment/crystals/crystals-15-00969/article_deploy/crystals-15-00969.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: 40 MPa                   60 MPa                 80 MPa
+  note: Computed μ0Ms from Table 2 Ms = 226.2 Am2/kg and Table 1 measured density = 5.45 g/cm3 for the same pressure.
+    Mixed-phase compact, so this is whole-sample polarization. Paired with Mr/Ms record.
+- id: fe16n2_sps_60mpa_js
+  phase: α''-Fe16N2
+  route: isotropic
+  process: Gas-atomized and nitrided Fe16N2 powder SPS consolidated at 548 K and 60 MPa
+  conditions:
+    field_T: 0
+    T_process_K: 548
+    stress_MPa: 60
+    parent_texture: unaligned powder
+    magnet_axis: measurement field
+    composition: Fe–N
+    density_rel: 0.7917
+    phase_content: Fe16N2 with alpha-Fe and gamma-prime-Fe4N
+  quantity: Js_same_sample
+  value: 1.700886
+  unit: T
+  measured_along: measurement field
+  measurement: VSM, 300 K, maximum applied field about 1600 kA/m
+  n_samples: 1
+  source:
+    doi: 10.3390/cryst15110969
+    title: Microstructural and Magnetic Evolution of α″-Fe16N2 Bulk Magnets Consolidated by Spark Plasma Sintering
+    first_author: Grigoras
+    year: 2025
+    url: https://mdpi-res.com/d_attachment/crystals/crystals-15-00969/article_deploy/crystals-15-00969.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: 60             229.8            96.5             0.42             86.5            15.71
+  note: Computed μ0Ms from Table 2 Ms = 229.8 Am2/kg and Table 1 measured density = 5.89 g/cm3 for the same pressure.
+    Mixed-phase compact, so this is whole-sample polarization. Paired with Mr/Ms record.
+- id: fe16n2_sps_80mpa_js
+  phase: α''-Fe16N2
+  route: isotropic
+  process: Gas-atomized and nitrided Fe16N2 powder SPS consolidated at 548 K and 80 MPa
+  conditions:
+    field_T: 0
+    T_process_K: 548
+    stress_MPa: 80
+    parent_texture: unaligned powder
+    magnet_axis: measurement field
+    composition: Fe–N
+    density_rel: 0.8199
+    phase_content: Fe16N2 with alpha-Fe and gamma-prime-Fe4N
+  quantity: Js_same_sample
+  value: 1.773793
+  unit: T
+  measured_along: measurement field
+  measurement: VSM, 300 K, maximum applied field about 1600 kA/m
+  n_samples: 1
+  source:
+    doi: 10.3390/cryst15110969
+    title: Microstructural and Magnetic Evolution of α″-Fe16N2 Bulk Magnets Consolidated by Spark Plasma Sintering
+    first_author: Grigoras
+    year: 2025
+    url: https://mdpi-res.com/d_attachment/crystals/crystals-15-00969/article_deploy/crystals-15-00969.pdf
+    evidence: full_text
+    locator: Table 2
+  quote: 80             231.4            92.5             0.40             83.0            15.15
+  note: Computed μ0Ms from Table 2 Ms = 231.4 Am2/kg and Table 1 measured density = 6.1 g/cm3 for the same pressure.
+    Mixed-phase compact, so this is whole-sample polarization. Paired with Mr/Ms record.
+- id: fecrco_sps_matsumoto_1173k
+  phase: Fe-Cr-Co
+  route: FA
+  process: Water-atomized Fe-Cr-Co powder sintered by SPS at 1173 K under 39 MPa, then field heat treated
+  conditions:
+    T_process_K: 1173
+    parent_texture: random water-atomized powder
+    magnet_axis: field-treatment direction, as implied by paper
+    composition: Fe-Cr-Co type alloy
+    density_rel: 0.971
+    stress_MPa: 39
+  quantity: Br
+  value: 1.03
+  unit: T
+  measured_along: not explicitly stated for Table 1; likely treatment-field direction
+  measurement: Demagnetization curve; magnetizing field and measurement temperature not reported in English synopsis
+    or Table 1
+  n_samples: not reported
+  source:
+    doi: 10.2497/jjspm.51.554
+    title: Microstructures and Magnetic Properties of Sintered Fe-Cr-Co Type Magnets using Spark Plasma Sintering
+    first_author: Matsumoto
+    year: 2004
+    url: https://www.jstage.jst.go.jp/article/jjspm1947/51/7/51_7_554/_pdf
+    evidence: full_text
+    locator: Table 1, printed page 557, visually transcribed from PDF
+  quote: 1173 1.03 40.0 26.1 97.1
+  note: Values were visually checked against the rendered PDF table; asterisk marks the conventional-furnace control.
+    Field strength and field-treatment temperature were not extracted from the Japanese text.
+- id: fecrco_sps_matsumoto_1223k
+  phase: Fe-Cr-Co
+  route: FA
+  process: Water-atomized Fe-Cr-Co powder sintered by SPS at 1223 K under 39 MPa, then field heat treated
+  conditions:
+    T_process_K: 1223
+    parent_texture: random water-atomized powder
+    magnet_axis: field-treatment direction, as implied by paper
+    composition: Fe-Cr-Co type alloy
+    density_rel: 0.98
+    stress_MPa: 39
+  quantity: Br
+  value: 1.25
+  unit: T
+  measured_along: not explicitly stated for Table 1; likely treatment-field direction
+  measurement: Demagnetization curve; magnetizing field and measurement temperature not reported in English synopsis
+    or Table 1
+  n_samples: not reported
+  source:
+    doi: 10.2497/jjspm.51.554
+    title: Microstructures and Magnetic Properties of Sintered Fe-Cr-Co Type Magnets using Spark Plasma Sintering
+    first_author: Matsumoto
+    year: 2004
+    url: https://www.jstage.jst.go.jp/article/jjspm1947/51/7/51_7_554/_pdf
+    evidence: full_text
+    locator: Table 1, printed page 557, visually transcribed from PDF
+  quote: 1223 1.25 40.0 29.1 98.0
+  note: Values were visually checked against the rendered PDF table; asterisk marks the conventional-furnace control.
+    Field strength and field-treatment temperature were not extracted from the Japanese text.
+- id: fecrco_sps_matsumoto_1273k
+  phase: Fe-Cr-Co
+  route: FA
+  process: Water-atomized Fe-Cr-Co powder sintered by SPS at 1273 K under 39 MPa, then field heat treated
+  conditions:
+    T_process_K: 1273
+    parent_texture: random water-atomized powder
+    magnet_axis: field-treatment direction, as implied by paper
+    composition: Fe-Cr-Co type alloy
+    density_rel: 0.98
+    stress_MPa: 39
+  quantity: Br
+  value: 1.2
+  unit: T
+  measured_along: not explicitly stated for Table 1; likely treatment-field direction
+  measurement: Demagnetization curve; magnetizing field and measurement temperature not reported in English synopsis
+    or Table 1
+  n_samples: not reported
+  source:
+    doi: 10.2497/jjspm.51.554
+    title: Microstructures and Magnetic Properties of Sintered Fe-Cr-Co Type Magnets using Spark Plasma Sintering
+    first_author: Matsumoto
+    year: 2004
+    url: https://www.jstage.jst.go.jp/article/jjspm1947/51/7/51_7_554/_pdf
+    evidence: full_text
+    locator: Table 1, printed page 557, visually transcribed from PDF
+  quote: 1273 1.20 40.0 28.8 98.0
+  note: Values were visually checked against the rendered PDF table; asterisk marks the conventional-furnace control.
+    Field strength and field-treatment temperature were not extracted from the Japanese text.
+- id: fecrco_sps_matsumoto_1323k
+  phase: Fe-Cr-Co
+  route: FA
+  process: Water-atomized Fe-Cr-Co powder sintered by SPS at 1323 K under 39 MPa, then field heat treated
+  conditions:
+    T_process_K: 1323
+    parent_texture: random water-atomized powder
+    magnet_axis: field-treatment direction, as implied by paper
+    composition: Fe-Cr-Co type alloy
+    density_rel: 0.976
+    stress_MPa: 39
+  quantity: Br
+  value: 1.05
+  unit: T
+  measured_along: not explicitly stated for Table 1; likely treatment-field direction
+  measurement: Demagnetization curve; magnetizing field and measurement temperature not reported in English synopsis
+    or Table 1
+  n_samples: not reported
+  source:
+    doi: 10.2497/jjspm.51.554
+    title: Microstructures and Magnetic Properties of Sintered Fe-Cr-Co Type Magnets using Spark Plasma Sintering
+    first_author: Matsumoto
+    year: 2004
+    url: https://www.jstage.jst.go.jp/article/jjspm1947/51/7/51_7_554/_pdf
+    evidence: full_text
+    locator: Table 1, printed page 557, visually transcribed from PDF
+  quote: 1323 1.05 36.0 18.4 97.6
+  note: Values were visually checked against the rendered PDF table; asterisk marks the conventional-furnace control.
+    Field strength and field-treatment temperature were not extracted from the Japanese text.
+- id: fecrco_sps_matsumoto_1723k
+  phase: Fe-Cr-Co
+  route: FA
+  process: Water-atomized Fe-Cr-Co powder conventionally furnace sintered at 1723 K, then field heat treated
+  conditions:
+    T_process_K: 1723
+    parent_texture: random water-atomized powder
+    magnet_axis: field-treatment direction, as implied by paper
+    composition: Fe-Cr-Co type alloy
+    density_rel: 0.966
+  quantity: Br
+  value: 1.13
+  unit: T
+  measured_along: not explicitly stated for Table 1; likely treatment-field direction
+  measurement: Demagnetization curve; magnetizing field and measurement temperature not reported in English synopsis
+    or Table 1
+  n_samples: not reported
+  source:
+    doi: 10.2497/jjspm.51.554
+    title: Microstructures and Magnetic Properties of Sintered Fe-Cr-Co Type Magnets using Spark Plasma Sintering
+    first_author: Matsumoto
+    year: 2004
+    url: https://www.jstage.jst.go.jp/article/jjspm1947/51/7/51_7_554/_pdf
+    evidence: full_text
+    locator: Table 1, printed page 557, visually transcribed from PDF
+  quote: '*1723 1.13 40.0 24.0 96.6'
+  note: Values were visually checked against the rendered PDF table; asterisk marks the conventional-furnace control.
+    Field strength and field-treatment temperature were not extracted from the Japanese text.
+- id: fecrco_tmt_rate_1cmin
+  phase: Fe-Cr-Co
+  route: FA
+  process: Tri-arc melted, solution-treated 1250 C for 5 h, water quenched, then single-step thermomagnetic treated
+    while cooling 1 C/min
+  conditions:
+    parent_texture: cast polycrystal
+    magnet_axis: unreported
+    composition: Fe-Cr-Co; exact composition not in abstract
+    cooling_rate_K_per_min: 1
+    T_solution_K: 1523.15
+  quantity: Br
+  value: 0.94
+  unit: T
+  measured_along: unreported in abstract
+  measurement: Magnetic method, maximum field, and measurement temperature not reported in abstract
+  n_samples: not reported
+  source:
+    doi: 10.4028/www.scientific.net/kem.510-511.507
+    title: Development of Fe-Cr-Co Permanent Magnets by Single Step Thermo-Magnetic Treatment
+    first_author: Akbar
+    year: 2012
+    url: https://api.crossref.org/works/10.4028%2Fwww.scientific.net%2Fkem.510-511.507
+    evidence: abstract
+    locator: abstract
+  quote: The optimum magnetic properties in the alloy with two different cooling rates of 1°C per minute and 2°C
+    per minute were obtained as (i) 1010 Oe (H c ), 9400 G (B r ), 3.4 MGOe (BH max ) (ii) 810 Oe (H c ), 10590
+    G (B r ), 3.6 MGOe (BH max ) respectively.
+  note: Converted from G to T; TMT field magnitude and temperature are not reported in abstract.
+- id: fecrco_tmt_rate_2cmin
+  phase: Fe-Cr-Co
+  route: FA
+  process: Tri-arc melted, solution-treated 1250 C for 5 h, water quenched, then single-step thermomagnetic treated
+    while cooling 2 C/min
+  conditions:
+    parent_texture: cast polycrystal
+    magnet_axis: unreported
+    composition: Fe-Cr-Co; exact composition not in abstract
+    cooling_rate_K_per_min: 2
+    T_solution_K: 1523.15
+  quantity: Br
+  value: 1.059
+  unit: T
+  measured_along: unreported in abstract
+  measurement: Magnetic method, maximum field, and measurement temperature not reported in abstract
+  n_samples: not reported
+  source:
+    doi: 10.4028/www.scientific.net/kem.510-511.507
+    title: Development of Fe-Cr-Co Permanent Magnets by Single Step Thermo-Magnetic Treatment
+    first_author: Akbar
+    year: 2012
+    url: https://api.crossref.org/works/10.4028%2Fwww.scientific.net%2Fkem.510-511.507
+    evidence: abstract
+    locator: abstract
+  quote: The optimum magnetic properties in the alloy with two different cooling rates of 1°C per minute and 2°C
+    per minute were obtained as (i) 1010 Oe (H c ), 9400 G (B r ), 3.4 MGOe (BH max ) (ii) 810 Oe (H c ), 10590
+    G (B r ), 3.6 MGOe (BH max ) respectively.
+  note: Converted from G to T; TMT field magnitude and temperature are not reported in abstract.
+- id: fecrco_isotropic_mo
+  phase: Fe-Cr-Co
+  route: isotropic
+  process: Tri-arc melted, solution-treated 1250 C for 5 h, water quenched, then single-step spinodal heat treatment
+    within 620 to 645 C
+  conditions:
+    field_T: 0
+    T_process_K: 893.15 to 918.15
+    T_solution_K: 1523.15
+    parent_texture: cast polycrystal
+    magnet_axis: unreported
+    composition: Fe-25Co-30Cr-3.5Mo-0.8Ti-0.8 (last component unspecified in abstract)
+  quantity: Br
+  value: 0.796
+  unit: T
+  measured_along: unreported in abstract
+  measurement: DC magnetometer; maximum field and measurement temperature not reported in abstract
+  n_samples: not reported
+  source:
+    doi: 10.4028/www.scientific.net/kem.510-511.315
+    title: Single Step Heat Treatment Cycle for Development of Isotropic Fe-Cr-Co Magnets
+    first_author: Akbar
+    year: 2012
+    url: https://api.crossref.org/works/10.4028%2Fwww.scientific.net%2Fkem.510-511.315
+    evidence: abstract
+    locator: abstract
+  quote: The best magnetic properties in Mo and V containing alloys were obtained as 880 Oe (H c ), 7960 G (B r
+    ), 2.3 MGOe (BH max ) and 700 Oe (H c ), 7750 G (B r ), 1.8 MGOe (BH max ), respectively.
+  note: Converted from G to T. The abstract does not assign an exact spinodal-treatment temperature to each composition.
+- id: fecrco_isotropic_v
+  phase: Fe-Cr-Co
+  route: isotropic
+  process: Tri-arc melted, solution-treated 1250 C for 5 h, water quenched, then single-step spinodal heat treatment
+    within 620 to 645 C
+  conditions:
+    field_T: 0
+    T_process_K: 893.15 to 918.15
+    T_solution_K: 1523.15
+    parent_texture: cast polycrystal
+    magnet_axis: unreported
+    composition: Fe-24Co-32Cr-0.5Si-0.8V-0.8Ti
+  quantity: Br
+  value: 0.775
+  unit: T
+  measured_along: unreported in abstract
+  measurement: DC magnetometer; maximum field and measurement temperature not reported in abstract
+  n_samples: not reported
+  source:
+    doi: 10.4028/www.scientific.net/kem.510-511.315
+    title: Single Step Heat Treatment Cycle for Development of Isotropic Fe-Cr-Co Magnets
+    first_author: Akbar
+    year: 2012
+    url: https://api.crossref.org/works/10.4028%2Fwww.scientific.net%2Fkem.510-511.315
+    evidence: abstract
+    locator: abstract
+  quote: The best magnetic properties in Mo and V containing alloys were obtained as 880 Oe (H c ), 7960 G (B r
+    ), 2.3 MGOe (BH max ) and 700 Oe (H c ), 7750 G (B r ), 1.8 MGOe (BH max ), respectively.
+  note: Converted from G to T. The abstract does not assign an exact spinodal-treatment temperature to each composition.
+- id: fecrco_coldroll_siti_cu
+  phase: Fe-Cr-Co
+  route: 'other: cold rolling + aging'
+  process: Fe-Cr-Co sheet underwent spinodal-decomposition aging, intermediate cold rolling, and final aging
+  conditions:
+    parent_texture: cold-rolled sheet
+    magnet_axis: unreported
+    composition: Fe-33.3 wt.% Cr-11.9 wt.% Co-1.05 wt.% Si-0.22 wt.% Ti-2.07 wt.% Cu
+  quantity: Br
+  value: 1.06
+  unit: T
+  measured_along: unreported in abstract
+  measurement: Magnetizing field, measurement method, and temperature not reported in abstract
+  n_samples: not reported
+  source:
+    doi: 10.1063/1.338639
+    title: Magnetic properties and microstructures of Fe-Cr-Co-base cold-rolled magnets
+    first_author: Mukai
+    year: 1987
+    url: https://api.crossref.org/works/10.1063%2F1.338639
+    evidence: abstract
+    locator: abstract
+  quote: The best magnetic properties obtained in this study are iHc=790 Oe, Br=10.6 kG, and (BH)max=4.5 MGOe with
+    a Fe-33.3 wt. % Cr-11.9 wt. % Co-1.05 wt. % Si-0.22 wt. % Ti-2.07 wt. % Cu alloy.
+  note: Converted from 10.6 kG to T; sample is the stated best alloy.
+- id: alnico_powder_lan2025_a
+  phase: AlNiCo
+  route: isotropic
+  process: Pre-existing AlNiCo powder with spinodal microstructure; sample A before mixing or SPS
+  conditions:
+    field_T: 0
+    parent_texture: powder
+    magnet_axis: measurement field
+    composition: AlNiCo powder, no NdFeB
+    particle_size: 76.9 ± 21.2 µm
+  quantity: Mr_over_Ms
+  value: 0.3545
+  unit: '1'
+  measured_along: powder measurement field
+  measurement: PPMS-VSM, maximum field and measurement temperature not stated in methods text
+  n_samples: 1
+  source:
+    doi: 10.3390/ma18081847
+    title: AlNiCo Magnet with NdFeB-Nanocrystalline Phase Prepared by Spark Plasma Sintering
+    first_author: Lan
+    year: 2025
+    url: https://mdpi-res.com/d_attachment/materials/materials-18-01847/article_deploy/materials-18-01847.pdf
+    evidence: full_text
+    locator: Table 5, sample A
+  quote: A                         1250                       39                       110
+  note: Computed exactly from Table 5 Mr = 39 emu/g and Ms = 110 emu/g for sample A. Composite samples B–D omitted.
