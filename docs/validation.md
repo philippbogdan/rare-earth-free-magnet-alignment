@@ -19,6 +19,7 @@ Of the 772 records classed as held out in the v1 batches, 228 were not alignment
 Of those scored measurements, 221 had ceilings at or above 0.97. Among the 220 below 0.97, there were 193 within, 14 straddling and all 13 violations. This more restrictive subset is the better check that the mechanism imposes a useful limit.
 
 The separate mechanism tests refuted 12 of 130 `none` predictions and showed alignment beyond the baseline in 254 of 290 `acts` predictions. Failure to demonstrate an acting mechanism is not a refutation of its ceiling. All 10 scored paired comparisons had the expected relation. Open cases retain or reject each stated hypothesis separately.
+A post hoc check using the same-sample saturation in tesla that v1 had omitted when converting eight remanence measurements to alignment left all ceiling results unchanged and raised supported `acts` predictions from 254 to 260 of 290; 254 of 290 remains the frozen held-out result.
 
 ## Batch order and frozen files
 
