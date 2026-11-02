@@ -1,6 +1,8 @@
 # A textured parent need not make an aligned magnet
 
-Permanent magnets without rare earths lose remanence, the magnetisation left after saturation, when their grains' easy axes fail to line up. A NumPy orientation engine uses cited crystal structures, transformations and magnetic properties to give a ceiling, mechanism and refuting measurement for **558 phase and route combinations**, including an Nd2Fe14B reference. **394 of 441 held-out measurements stayed within the frozen v1 ceilings.** In printed MnAl(C), even perfect parent texture caps alignment at **0.61**, against **0.50** for random grains.
+Permanent magnets without rare earths lose remanence, the magnetisation left after saturation, when their grains' easy axes fail to line up. This NumPy orientation engine uses cited crystal structures, transformations and magnetic properties to assess which manufacturing routes can align the grains.
+
+**In printed MnAl(C), even perfect parent texture gives a computed alignment ceiling of 0.61, against 0.50 for random grains.** Across **558 phase and route combinations**, the [account](results/account.csv) gives a ceiling, mechanism and measurement that could refute it, and names the missing input wherever the verdict is open.
 
 ![Product easy axes inherited from random and perfectly textured MnAl(C) parents](figures/mnal-inheritance.png)
 
@@ -10,7 +12,7 @@ The cap assumes equal variant populations and no bias. [Routes that select varia
 
 ## Find the mechanism and the test
 
-The [account](results/account.csv) gives a mechanism and refuting measurement for **558 combinations**: 31 phases across 18 routes, including Nd2Fe14B as a rare-earth reference. The rare-earth-free subset contains 540 combinations.
+The account spans 31 phases across 18 routes, including Nd2Fe14B as a rare-earth reference. The rare-earth-free subset contains 540 combinations.
 
 | Verdict | Combinations | Meaning |
 |---|---:|---|
