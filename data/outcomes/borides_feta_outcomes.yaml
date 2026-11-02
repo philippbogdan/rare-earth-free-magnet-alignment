@@ -1,3 +1,5 @@
+# Published sample outcomes for boride and Fe-Ta candidate phases.
+# Batch membership and scoring eligibility are described in docs/validation.md.
 - id: feta85_bhmax_gabay2019
   phase: Fe2+δTa-C14-meltspun
   route: isotropic

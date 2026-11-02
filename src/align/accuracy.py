@@ -1,7 +1,7 @@
-"""Conditional predictions for published cases and their comparison with measurements.
+"""Lower-level interval calculations for explicitly supplied sample conditions.
 
-A case spec (data/curated/cases.yaml) describes only the process conditions of a
-published sample (never its outcome):
+The schema below belongs to predict(); the frozen case files use the separate
+cases.py and scoring.py interfaces. An interval specification can contain:
 
   - case: <outcome record id>            # value is read from the opened outcome record
     phase: <phase id>

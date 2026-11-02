@@ -1,4 +1,5 @@
-# Records sourced by the lead (same schema as data/raw/*_inputs.yaml).
+# Additional cited physical inputs, using the record schema in docs/data.md.
+# Phase descriptions refer to these records by ID.
 - id: rx_cube_feni_soubeyroux2008
   phase: all
   quantity: other
@@ -70,10 +71,9 @@
     url: https://www.jstage.jst.go.jp/article/matertrans/49/9/49_MAW200810/_pdf
     evidence: full_text
     locator: Sec. 3, p. 1971-1972
-  quote: 'Considering the result of the resistivity measurements, we have determined the ordering temperatures of
-    the two-step ordering heat-treatment as follows: the first step of ordering at 673 K (close to Tc(o) and slightly
-    below Tc(d)) under a magnetic field up to 10 T (maximum field-strength of the utilized superconducting magnet)
-    applied in the [001] (Z-direction).'
+  quote: '[...] measurements, we have determined the ordering temperatures of the two-step ordering heat-treatment
+    as follows: the first step of ordering at 673 K (close to Tc(o) and slightly below Tc(d)) under a magnetic field
+    up to 10 T (maximum field-strength of the utilized superconducting magnet) [...]'
   note: 'numeric value transcribed from the quote of fepd_field_effect_on_formation_farjami2008: first (nucleation)
     step of the two-step field ordering'
 - id: fepd_tf_saturation_farjami2009
@@ -220,8 +220,6 @@
     locator: Summary (4) and Sec. III.3
   quote: The other Curie point, which is observed in the higher temperature side in Fig. 2, lies at about 890°C
     independent of the annealing temperature. Though it appears to show a Curie point of the α1 phase, it is not
-    the case. It is because the upper Curie point is situated above its own Tc temperature for almost all the alloys,
-    so that during the measurement with an ordinary heating rate the dissolving reaction, α1 + α2→α, may probably
-    proceed in some extent before the θ1 is reached.
+    the case. It is because the upper Curie point is situated above its own Tc temperature [...]
   note: lower bound (890 C = 1163 K) transcribed from alpha1_Tc_lowerbound_iwama1970; the alpha1 Curie point lies
     above it

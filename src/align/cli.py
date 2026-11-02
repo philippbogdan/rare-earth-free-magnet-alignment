@@ -1,18 +1,18 @@
-"""The single regeneration command: ./regenerate.sh  (PYTHONPATH=src python -m align.cli)."""
+"""Write the route account, scores of frozen predictions and numerical summary.
+
+Run from the repository root with PYTHONPATH=src python -m align.cli.
+Use python reproduce.py to run checks and compare result hashes as well.
+"""
 import csv
 import json
 import os
 import sys
 
-import yaml
-
-from . import account, report
+from . import account, evaluate, summary
 from .curate import load_phases
 from .data import ROOT, Registry
-from .stamp import stamp
 
 RES = os.path.join(ROOT, 'results')
-
 
 ROUTE_INPUTS = {          # which parts of a phase description each route reads
     'FP': ['Js', 'particles', 'consolidation'], 'MO': ['Js', 'particles'],
@@ -25,8 +25,8 @@ ROUTE_INPUTS = {          # which parts of a phase description each route reads
     'TGG': ['Js', 'tgg'],
 }
 
-
 def cell_refs(ph, route):
+    """Collect the source record IDs read by a phase and route combination."""
     from .curate import refs_in
     raw = ph.get('_raw', {})
     out = []
@@ -34,8 +34,8 @@ def cell_refs(ph, route):
         out += refs_in(raw.get(k))
     return sorted(set(out))
 
-
 def matrix(phases):
+    """Return account rows with mechanisms, alternatives, source IDs and tests."""
     rows = []
     for ph in phases:
         for c in account.evaluate_with_tests(ph):
@@ -56,7 +56,6 @@ def matrix(phases):
                                                                for k, v in c.A_alt.items()})})
     return rows
 
-
 def write_csv(fn, rows):
     if not rows:
         return
@@ -65,30 +64,27 @@ def write_csv(fn, rows):
         w.writeheader()
         w.writerows(rows)
 
-
 def main():
+    """Regenerate results using current phase data and the frozen case files."""
     os.makedirs(RES, exist_ok=True)
-    st = stamp()
     reg = Registry()
     phases, R = load_phases(reg)
     if R.missing:
         print('MISSING record references:', R.missing)
         sys.exit(1)
     rows = matrix(phases)
-    for ph in phases:                     # records cited by the account's own rules (e.g. hydrides)
+    for ph in phases:
         for c in account.evaluate(ph):
             R.used.update(r for r in (c.refs or []) if r in reg.rec)
     write_csv(os.path.join(RES, 'account.csv'), rows)
-    from . import evaluate
-    for v in ('v1', 'v2', 'v3', 'v4', 'v5'):   # scores of the frozen and the revised case predictions
-        evaluate.run(v, phases)
-    ctx = report.build(reg, phases, rows, R, st)
-    json.dump({'stamp': st, 'n_phases': len(phases), 'n_cells': len(rows)},
-              open(os.path.join(RES, 'stamp.json'), 'w'), indent=1)
-    report.write_docs(ctx)
-    print(f"regenerated {len(rows)} cells for {len(phases)} phases from commit {st['commit']}"
-          + ('' if st['clean_inputs'] else ' (UNCOMMITTED INPUTS: ' + ', '.join(st['dirty_files']) + ')'))
-
+    scores = {v: evaluate.run(v, phases) for v in evaluate.FILES}
+    out = summary.build(phases, rows, scores, reg, R)
+    with open(os.path.join(RES, 'summary.json'), 'w') as f:
+        json.dump(out, f, indent=1, ensure_ascii=False)
+        f.write('\n')
+    print(f"wrote results/account.csv ({len(rows)} cells, {len(phases)} phases including Nd2Fe14B reference), "
+          f"results/scores_v1.json to scores_v5.json and results/summary.json")
+    return out
 
 if __name__ == '__main__':
     main()

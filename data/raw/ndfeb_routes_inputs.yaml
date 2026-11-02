@@ -1,13 +1,6 @@
-# Nd2Fe14B reference phase, alternative alignment routes.
-# Inputs contain intrinsic properties and mechanisms only. Measured sample outcomes are sealed.
-# Gaps:
-# - No quantitative above-Tc delta_chi at formation temperatures or critical-nucleus volume.
-# - No verified Fe/Nd2Fe14B peritectic OR or number of orientation variants.
-# - No universal crystallographic fibre established for directional solidification, EBM or L-PBF.
-# - No exact nucleation temperature or proven primary-phase order for Nd-rich flux growth.
-# - No kinetic thermal-stability limit with a specified hold time.
-# - No quantified remanence or texture factor for pure Nd2Fe14B strip cast or epitaxial films
-#   from accessible source text; a Dy-substituted strip-cast plot was excluded.
+# Physical inputs for alternative routes applied to the Nd2Fe14B reference phase.
+# Unreported transformation relationships, growth fibres and stability windows remain conditional.
+# Measured sample outcomes are in data/outcomes/ndfeb_routes_outcomes.yaml.
 - id: ndfeb_js_coey1999
   phase: Nd2Fe14B
   quantity: Js
@@ -22,10 +15,10 @@
     url: https://bdt.semi.ac.cn/download/0.8346965234794707.pdf
     evidence: review
     locator: p. 406, first paragraph
-  quote: Likewise, Nd2Fe14B is a versatile high-performance permanent magnet material but its polarisation (1.61 T) and Curie
-    temperature (585 K) both leave something to be desired.
-  note: 'Review quote restored from two-column PDF text: line-end hyphenation and chemical subscripts normalized. Saturation
-    polarization is the phase value, not sample remanence.'
+  quote: Likewise, Nd2Fe14B is a versatile high-performance permanent magnet material but its polarisation (1.61
+    T) and Curie temperature (585 K) both leave something to be desired.
+  note: 'Review quote restored from two-column PDF text: line-end hyphenation and chemical subscripts normalized.
+    Saturation polarization is the phase value, not sample remanence.'
 - id: ndfeb_k1_susner2017
   phase: Nd2Fe14B
   quantity: K1
@@ -61,8 +54,8 @@
     584 K, in accord with the established literature value of
 
     585 K [8].'
-  note: Authors report about 584 K and compare with the literature value 585 K; their Table 5 gives 583 K by TGA, 584 K by
-    DTA, 586 K by MPMS.
+  note: Authors report about 584 K and compare with the literature value 585 K; their Table 5 gives 583 K by TGA,
+    584 K by DTA, 586 K by MPMS.
 - id: ndfeb_density_ahn2024
   phase: Nd2Fe14B
   quantity: density
@@ -71,15 +64,15 @@
   conditions: theoretical density from Nd2Fe14B crystal parameters
   source:
     doi: 10.3390/ma17133371
-    title: Identifying Optimal Processing Variables and Investigating Mechanisms of Grain Alignment in Hot-Deformed NdFeB
-      Magnets through Design of Experiments
+    title: Identifying Optimal Processing Variables and Investigating Mechanisms of Grain Alignment in Hot-Deformed
+      NdFeB Magnets through Design of Experiments
     first_author: Jongbin Ahn
     year: 2024
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11243649/fullTextXML
     evidence: review
     locator: Table 1 footnote
-  quote: 'Theoretical Density: 7.59 g/cm3 (calculated based on the crystallographic parameters of Nd2Fe14B (Tetragonal crystal
-    system).'
+  quote: 'Theoretical Density: 7.59 g/cm3 (calculated based on the crystallographic parameters of Nd2Fe14B (Tetragonal
+    crystal system).'
   note: Secondary source; calculated crystal density, not bulk magnet density.
 - id: ndfeb_structure_vosegaard2025
   phase: Nd2Fe14B
@@ -155,9 +148,9 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6450867/fullTextXML
     evidence: review
     locator: Experimental Methods
-  quote: The specimen was heated to 973 K, i.e., 180 K higher than the melting point of CuNd-Nd eutectics (793 K) and approximately
-    480 K lower than the peritectic decomposition temperature of the Nd2Fe14B compound (1453 K), resulting in a semisolid
-    state of the specimen.
+  quote: The specimen was heated to 973 K, i.e., 180 K higher than the melting point of CuNd-Nd eutectics (793 K)
+    and approximately 480 K lower than the peritectic decomposition temperature of the Nd2Fe14B compound (1453 K),
+    resulting in a semisolid state of the specimen.
   note: Peritectic decomposition temperature, not a kinetic oxidation or service-temperature limit.
 - id: ndfeb_peritectic_nagashio2003
   phase: Nd2Fe14B
@@ -176,8 +169,8 @@
     locator: abstract
   quote: 'The Fe phase solidiﬁed primarily from the melt. Subsequently, the
 
-    remaining melt was undercooled below the peritectic temperature and the Nd2 Fe14 B phase surrounded the primary Fe dendrites,
-    yielding the
+    remaining melt was undercooled below the peritectic temperature and the Nd2 Fe14 B phase surrounded the primary
+    Fe dendrites, yielding the
 
     recalescence.'
   note: Peritectic morphology directly observed; does not establish a unique parent-product orientation relationship.
@@ -215,9 +208,9 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6450867/fullTextXML
     evidence: review
     locator: Experimental Methods
-  quote: The specimen was heated to 973 K, i.e., 180 K higher than the melting point of CuNd-Nd eutectics (793 K) and approximately
-    480 K lower than the peritectic decomposition temperature of the Nd2Fe14B compound (1453 K), resulting in a semisolid
-    state of the specimen.
+  quote: The specimen was heated to 973 K, i.e., 180 K higher than the melting point of CuNd-Nd eutectics (793 K)
+    and approximately 480 K lower than the peritectic decomposition temperature of the Nd2Fe14B compound (1453 K),
+    resulting in a semisolid state of the specimen.
   note: The cited value is the heating decomposition temperature; using it as the equilibrium cooling reaction temperature
     assumes negligible hysteresis.
 - id: ndfeb_flux_susner2017
@@ -234,9 +227,10 @@
     url: https://www.osti.gov/servlets/purl/1349597
     evidence: full_text
     locator: abstract
-  quote: Single crystals of (Nd1−x Cex )2 Fe14 B, some reaching ∼ 6 × 8 × 8 mm3 in volume, are grown out of Fe-(Nd,Ce) flux.
-  note: The experiment demonstrates melt growth but does not prove Nd2Fe14B nucleated first. Flux is Nd-rich relative to stoichiometric
-    2:14:1.
+  quote: Single crystals of (Nd1−x Cex )2 Fe14 B, some reaching ∼ 6 × 8 × 8 mm3 in volume, are grown out of Fe-(Nd,Ce)
+    flux.
+  note: The experiment demonstrates melt growth but does not prove Nd2Fe14B nucleated first. Flux is Nd-rich relative
+    to stoichiometric 2:14:1.
 - id: ndfeb_flux_window_susner2017
   phase: Nd2Fe14B
   quantity: T_formation
@@ -282,7 +276,8 @@
     crystals were typically ∼ 2 × 2 × 2 mm3 with some
 
     reaching ∼ 6 × 8 × 8 mm3 in volume.'
-  note: Directly grown single crystals; their three dimensions are roughly comparable, unlike thin platelets in other processes.
+  note: Directly grown single crystals; their three dimensions are roughly comparable, unlike thin platelets in
+    other processes.
 - id: ndfeb_habit_li2019
   phase: Nd2Fe14B
   quantity: single_variant_particles
@@ -298,8 +293,8 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6450867/fullTextXML
     evidence: full_text
     locator: Introduction
-  quote: Hence, a platelet morphology of macro Nd2Fe14B crystals with a high-aspect ratio is always preferred, and thus the
-    crystal size along the c axis is much shorter than that along the a axis.
+  quote: Hence, a platelet morphology of macro Nd2Fe14B crystals with a high-aspect ratio is always preferred, and
+    thus the crystal size along the c axis is much shorter than that along the a axis.
   note: ''
 - id: ndfeb_growth_li2019
   phase: Nd2Fe14B
@@ -316,8 +311,9 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6450867/fullTextXML
     evidence: full_text
     locator: Introduction
-  quote: This implies that the crystal-growth velocity along the c axis is more sluggish than that along the a axis, as the
-    driving force for the crystal growth of an effective Nd2Fe14B micro-nucleus should be similar for different growth directions.
+  quote: This implies that the crystal-growth velocity along the c axis is more sluggish than that along the a axis,
+    as the driving force for the crystal growth of an effective Nd2Fe14B micro-nucleus should be similar for different
+    growth directions.
   note: This is facet growth kinetics, not a measured directional-solidification fibre.
 - id: ndfeb_strip_growth_hattori2009
   phase: Nd2Fe14B
@@ -355,10 +351,11 @@
     url: https://www.sciencedirect.com/science/article/abs/pii/0304885395004955
     evidence: abstract
     locator: abstract
-  quote: Nd ₂ Fe ₁₄ B anisotropy in the paramagnetic state is shown to persist along the _c_ -axis direction and to be large
-    enough to allow orientation of Nd ₂ Fe ₁₄ B single-crystal grains with the _c_ -axis parallel to the applied field direction
-    for temperatures up to 1100°C.
-  note: Qualitative evidence only. The result concerns rotation of pre-existing grains, not necessarily bias of critical nuclei.
+  quote: Nd ₂ Fe ₁₄ B anisotropy in the paramagnetic state is shown to persist along the _c_ -axis direction and
+    to be large enough to allow orientation of Nd ₂ Fe ₁₄ B single-crystal grains with the _c_ -axis parallel to
+    the applied field direction for temperatures up to 1100°C.
+  note: Qualitative evidence only. The result concerns rotation of pre-existing grains, not necessarily bias of
+    critical nuclei.
 - id: ndfeb_nucleus_courtois1996
   phase: Nd2Fe14B
   quantity: field_effect_on_formation
@@ -373,8 +370,8 @@
     url: https://www.sciencedirect.com/science/article/abs/pii/0304885395004955
     evidence: abstract
     locator: abstract
-  quote: At higher temperatures, a misorientation process is observed to occur during the formation of Nd ₂ Fe ₁₄ B grains
-    in a high magnetic field.
+  quote: At higher temperatures, a misorientation process is observed to occur during the formation of Nd ₂ Fe ₁₄
+    B grains in a high magnetic field.
   note: Threshold pertains to this eutectic experiment and field, whose magnitude is not reported in abstract.
 - id: ndfeb_field_paduani2001
   phase: Nd2Fe14B
@@ -390,8 +387,9 @@
     url: https://inis.iaea.org/records/a0c3m-w8k45
     evidence: abstract
     locator: Description
-  quote: A polycrystalline sample of Nd2Fe14B was prepared by induction melting and solidification in an intense applied magnetic
-    field, to study the alignment due to residual magnetocrystalline anisotropy of this compound near the melting point.
+  quote: A polycrystalline sample of Nd2Fe14B was prepared by induction melting and solidification in an intense
+    applied magnetic field, to study the alignment due to residual magnetocrystalline anisotropy of this compound
+    near the melting point.
   note: Only abstract/metadata accessible; field strength and quantitative texture are absent.
 - id: ndfeb_emv_li2019
   phase: Nd2Fe14B
@@ -408,11 +406,9 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6450867/fullTextXML
     evidence: full_text
     locator: Discussion
-  quote: Here, it should be noted that, for the sake of clarity, the rotation and the alignment of segmented platelets at
-    f = 1000 Hz were presented first and then the impact of the static magnetic field on the c axis followed. These two forces
-    always coexist upon a platelet, i.e., the rotation and the alignment due to the EMV processing and the impact due to the
-    static magnetic field proceed simultaneously until the c axis of the platelet is well aligned, under which condition the
-    platelet becomes energetically minimum and thermodynamically stable.
+  quote: Here, it should be noted that, for the sake of clarity, the rotation and the alignment of segmented platelets
+    at f = 1000 Hz were presented first and then the impact of the static magnetic field on the c axis followed.
+    These two forces always coexist upon a platelet, i.e., the rotation and the [...]
   note: Free-body rotation in a liquid eutectic. Processing was above Nd2Fe14B Tc.
 - id: ndfeb_amorphous_kesler2019
   phase: Nd2Fe14B
@@ -448,11 +444,11 @@
     url: https://mdpi-res.com/d_attachment/magnetochemistry/magnetochemistry-05-00016/article_deploy/magnetochemistry-05-00016.pdf
     evidence: full_text
     locator: Table 1
-  quote: "Table 1. Crystallization onset temperatures measured from DSC data shown in Figure 1b.\n\n                     \
-    \          Applied Field (kOe)      Onset Temperature (◦ C)\n                                                        \
-    \           624"
-  note: 624 C = 897 K. Multiple 0-field runs show 624 C; table also shows approximately similar field runs. This is an onset
-    in dynamic heating.
+  quote: "Table 1. Crystallization onset temperatures measured from DSC data shown in Figure 1b.\n\n           \
+    \                    Applied Field (kOe)      Onset Temperature (◦ C)\n                                    \
+    \                               624"
+  note: 624 C = 897 K. Multiple 0-field runs show 624 C; table also shows approximately similar field runs. This
+    is an onset in dynamic heating.
 - id: ndfeb_field_crystallisation_kesler2019
   phase: Nd2Fe14B
   quantity: field_effect_on_formation
@@ -467,8 +463,8 @@
     url: https://mdpi-res.com/d_attachment/magnetochemistry/magnetochemistry-05-00016/article_deploy/magnetochemistry-05-00016.pdf
     evidence: full_text
     locator: abstract
-  quote: "While the applied magnetic fields do not appear to affect\n the crystallization temperature, significant effects\
-    \ on the kinetics of phase evolution are observed and\n correlated strongly to the magnetic behavior."
+  quote: "While the applied magnetic fields do not appear to affect\n the crystallization temperature, significant\
+    \ effects on the kinetics of phase evolution are observed and\n correlated strongly to the magnetic behavior."
   note: Field effect includes phase competition with alpha-Fe, not proven easy-axis variant selection.
 - id: ndfeb_ded_sridharan2018
   phase: Nd2Fe14B
@@ -501,9 +497,10 @@
     url: https://link.springer.com/article/10.1007/s00170-024-13605-9
     evidence: full_text
     locator: section 3.8
-  quote: In comparison, the dendritic grains observed in the heated bed samples are mostly oriented in the direction of the
-    building, as shown in Fig.  17 a, b, and c.
-  note: Morphological direction only. Authors explicitly recommend EBSD and grain texture study; no c-axis fibre is established.
+  quote: In comparison, the dendritic grains observed in the heated bed samples are mostly oriented in the direction
+    of the building, as shown in Fig.  17 a, b, and c.
+  note: Morphological direction only. Authors explicitly recommend EBSD and grain texture study; no c-axis fibre
+    is established.
 - id: ndfeb_ep_keavney1997
   phase: Nd2Fe14B
   quantity: formation_path
@@ -518,8 +515,8 @@
     url: https://api.openalex.org/works/doi:10.1063/1.364969
     evidence: abstract
     locator: abstract
-  quote: The 2–14–1 phase is crystallized either by sequential deposition or codeposition of Fe, Nd, and B from pure elemental
-    evaporation sources onto 600–700 °C substrates.
+  quote: The 2–14–1 phase is crystallized either by sequential deposition or codeposition of Fe, Nd, and B from
+    pure elemental evaporation sources onto 600–700 °C substrates.
   note: MBE result proves c-axis oriented film; full in-plane epitaxy corroborated by Koike et al. 2016.
 - id: ndfeb_ep_tformation_keavney1997
   phase: Nd2Fe14B
@@ -535,8 +532,8 @@
     url: https://api.openalex.org/works/doi:10.1063/1.364969
     evidence: abstract
     locator: abstract
-  quote: The 2–14–1 phase is crystallized either by sequential deposition or codeposition of Fe, Nd, and B from pure elemental
-    evaporation sources onto 600–700 °C substrates.
+  quote: The 2–14–1 phase is crystallized either by sequential deposition or codeposition of Fe, Nd, and B from
+    pure elemental evaporation sources onto 600–700 °C substrates.
   note: Substrate growth window is above Tc. Converted from Celsius by adding 273.15, rounded to kelvin.
 - id: ndfeb_ep_or_koike2016
   phase: Nd2Fe14B
@@ -552,7 +549,7 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4718914/fullTextXML
     evidence: full_text
     locator: Results, Fig. 2
-  quote: These results thus suggest that the Nd2Fe14B(001) crystallites are epitaxially grown with the relationships of MgO(100)
-    [110]∥Mo(100)[100], and Mo(100) [100]∥Nd2Fe14B(001)[100], as shown schematically in Fig. 2b.
-  note: In-plane fourfold peaks were weak; the reported epitaxial relationship is the authors interpretation. No product variant
-    fraction is supplied.
+  quote: These results thus suggest that the Nd2Fe14B(001) crystallites are epitaxially grown with the relationships
+    of MgO(100) [110]∥Mo(100)[100], and Mo(100) [100]∥Nd2Fe14B(001)[100], as shown schematically in Fig. 2b.
+  note: In-plane fourfold peaks were weak; the reported epitaxial relationship is the authors interpretation. No
+    product variant fraction is supplied.

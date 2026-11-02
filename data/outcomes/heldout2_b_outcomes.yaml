@@ -1,3 +1,5 @@
+# Published sample outcomes in the fresh batch tested by frozen v3 predictions.
+# The same-sample saturation sensitivity check is described in docs/validation.md.
 - id: h2b_pmc12348462_v2_sl_25_mm_2_a_br_alignment_direction
   phase: Nd2Fe14B
   route: FP

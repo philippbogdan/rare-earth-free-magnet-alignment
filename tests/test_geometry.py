@@ -1,4 +1,4 @@
-"""Benchmarks of the rod, cubic and scoring geometry added for the spinodal and cubic phases."""
+"""Check rod, cubic easy-axis and measurement-conversion geometry."""
 import math
 import os
 import sys

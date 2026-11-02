@@ -1,15 +1,7 @@
-# SEALED outcomes for topic ferrite_ndfeb (not to be opened before predictions are frozen).
-# Phases: SrFe12O19, BaFe12O19, (Sr,La)(Fe,Co)12O19, (Ca,La)(Fe,Co)12O19, (La,Na)(Fe,Co)12O19, M-type ferrite (unspecified),
-#   Nd2Fe14B (non-FP routes only). conditions.la_co marks Sr-only (no rare earth) vs La-Co grades ('unknown' if not stated).
-# Compiled 2026-10-03 by the literature agent for topic ferrite_ndfeb (M-type hexaferrites; sintered Nd2Fe14B as reference).
-# Every record carries a verbatim quote from a fetched page/PDF; quotes were machine-checked against the saved text of the
-# source (scratch copies in .tmp/fn_work/src, not committed). OCR sources (scanned Philips Technical Review 1951/52 and 1954,
-# J-STAGE scans) are marked in `note`; OCR character errors were corrected to the printed text.
-# Conventions: unit conversions (G, kG, Wb/m2, erg/cm3, degC -> SI/K) are done by the compiler and stated in `note`;
-# datasheet ranges -> value = midpoint (or typical/nominal if given), uncertainty = half-range; values read from figures say
-# 'read from plot' in the locator. Datasheet/web records without a printed year omit `year` (accessed 2026-10-03).
-# Philips Technical Review articles have no DOI (doi: null, stated in note).
-
+# Published outcomes for M-type ferrites and non-FP routes of the Nd2Fe14B reference.
+# Rare-earth substitutions are recorded in composition and conditions.la_co where available.
+# Unit conversions, plot readings and source-image transcription details are in note.
+# Batch membership and scoring eligibility are described in docs/validation.md.
 - id: hexa_iso_br_went1952
   phase: BaFe12O19
   route: isotropic
@@ -37,10 +29,11 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1951.pdf
     evidence: full_text
     locator: Part I, pp. 195-196
-  quote: Thus the value of the remanent induction of Ferroxdure at room temperature is rather low compared with that of "Ticonal" G, namely 0.20-0.21 Wb/m2 [2000-2100 gauss] and 1.34 Wb/m2 [13400 gauss],
-    respectively.
-  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Density ~4.8 g/cm3
-    per Table IV of the same paper (X-ray 5.3).
+  quote: Thus the value of the remanent induction of Ferroxdure at room temperature is rather low compared with
+    that of "Ticonal" G, namely 0.20-0.21 Wb/m2 [2000-2100 gauss] and 1.34 Wb/m2 [13400 gauss], respectively.
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character
+    errors corrected; table values checked against the page image. Density ~4.8 g/cm3 per Table IV of the same paper
+    (X-ray 5.3).
 - id: hexa_iso_mrms_went1952
   phase: BaFe12O19
   route: isotropic
@@ -66,10 +59,12 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1951.pdf
     evidence: full_text
     locator: Part II, 'Remanence', p. 201
-  quote: The remanent magnetization of a hard magnetic material consisting of crystals with one direction of easy magnetization oriented at random should be one half of the saturation magnetization. This
-    has been found to be true for sintered Ferroxdure of the approximate composition BaFe12O19 at temperatures up to 400°C, as can be seen from fig. 6.
-  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Qualitative ('found
-    to be true'); value 0.5 is the stated ideal.
+  quote: The remanent magnetization of a hard magnetic material consisting of crystals with one direction of easy
+    magnetization oriented at random should be one half of the saturation magnetization. This has been found to
+    be true for sintered Ferroxdure of the approximate composition BaFe12O19 at [...]
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character
+    errors corrected; table values checked against the page image. Qualitative ('found to be true'); value 0.5 is
+    the stated ideal.
 - id: hexa_iso_br_stuijts1954_ferroxdure1
   phase: BaFe12O19
   route: isotropic
@@ -95,11 +90,12 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: p. 141-142 text and Table II, p. 147
-  quote: In the isotropic material, the preferred directions of magnetization of the constituent particles are oriented at random. It is found that the remanence Br of material so constituted is equal to
-    half the saturation magnetization, i.e. about 0.21 Wb/m2 [2100 gauss]. ... Table II. Average values of certain physical properties of Ferroxdure I, Ferroxdure II and Ferroxdure III at room temperature.
-    ... Remanent induction ... 0.205 0.37 0.30 Wb/m2 2050 3700 3000 gauss
-  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Table II columns:
-    Ferroxdure I, II, III.'
+  quote: '[...] so constituted is equal to half the saturation magnetization, i.e. about 0.21 Wb/m2 [2100 gauss].
+    ... Table II. Average values of certain physical properties of Ferroxdure I, Ferroxdure II and Ferroxdure III
+    at room temperature. ... Remanent induction ... 0.205 0.37 0.30 Wb/m2 2050 3700 3000 gauss'
+  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR
+    character errors corrected; table values checked against the page image. Table II columns: Ferroxdure I, II,
+    III.'
 - id: hexa_iso_br_goudsmit_f10
   phase: M-type ferrite (unspecified)
   route: isotropic
@@ -126,7 +122,8 @@
     evidence: datasheet
     locator: p. 1, Ferrite grades table
   quote: F10 isotropic 210 127 211 6.4 -0.18 0.40 225
-  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only vs La-Co) not stated. Value is the specified minimum (mT), not typical.
+  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only
+    vs La-Co) not stated. Value is the specified minimum (mT), not typical.
 - id: hexa_iso_br_eclipse_c1
   phase: M-type ferrite (unspecified)
   route: isotropic
@@ -151,12 +148,15 @@
     url: https://www.eclipsemagnetics.com/site/assets/files/22199/eclipsemagnetics_ferrite_and_ceramic_datasheet.pdf
     evidence: datasheet
     locator: tables 'Chinese Standard' and 'US standard' (p. 1-2)
-  quote: C1 230 2.30 148 1.86 258 3.50 8.36 1.05 ... Isotropic (unoriented) grade example:− C1; Anisotropic (oriented) grade examples:− C5, C7, C8.
-  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only vs La-Co) not stated.
+  quote: C1 230 2.30 148 1.86 258 3.50 8.36 1.05 ... Isotropic (unoriented) grade example:− C1; Anisotropic (oriented)
+    grade examples:− C5, C7, C8.
+  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only
+    vs La-Co) not stated.
 - id: hexa_fp_br_par_stuijts1954_1250
   phase: BaFe12O19
   route: FP
-  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered at 1250 °C
+  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered
+    at 1250 °C
   conditions: &id001
     field_T: null
     T_process_K: 1523
@@ -180,14 +180,18 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: Table I, p. 145
-  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction of the field in which the crystals are oriented, after sintering at different temperatures.
-    ... 4060 4.06 0.270 2700 0.121 1210 0.45 0.321 3210
-  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Columns: density
-    (kg/m3, g/cm3), Br// (Wb/m2, gauss), Br-perp (Wb/m2, gauss), Br-perp/Br//, mu0*JHc (Wb/m2), JHc (Oe). density_rel computed by compiler with X-ray density 5.3 g/cm3. Br-perp/Br// = 0.45.'
+  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction
+    of the field in which the crystals are oriented, after sintering at different temperatures. ... 4060 4.06 0.270
+    2700 0.121 1210 0.45 0.321 3210
+  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR
+    character errors corrected; table values checked against the page image. Columns: density (kg/m3, g/cm3), Br//
+    (Wb/m2, gauss), Br-perp (Wb/m2, gauss), Br-perp/Br//, mu0*JHc (Wb/m2), JHc (Oe). density_rel computed by compiler
+    with X-ray density 5.3 g/cm3. Br-perp/Br// = 0.45.'
 - id: hexa_fp_br_perp_stuijts1954_1250
   phase: BaFe12O19
   route: FP
-  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered at 1250 °C
+  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered
+    at 1250 °C
   conditions: *id001
   quantity: Br
   value: 0.121
@@ -203,14 +207,17 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: Table I, p. 145
-  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction of the field in which the crystals are oriented, after sintering at different temperatures.
-    ... 4060 4.06 0.270 2700 0.121 1210 0.45 0.321 3210
-  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Same sample as the
-    parallel record; the perpendicular remanence measures misaligned grains.
+  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction
+    of the field in which the crystals are oriented, after sintering at different temperatures. ... 4060 4.06 0.270
+    2700 0.121 1210 0.45 0.321 3210
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character
+    errors corrected; table values checked against the page image. Same sample as the parallel record; the perpendicular
+    remanence measures misaligned grains.
 - id: hexa_fp_br_par_stuijts1954_1275
   phase: BaFe12O19
   route: FP
-  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered at 1275 °C
+  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered
+    at 1275 °C
   conditions: &id002
     field_T: null
     T_process_K: 1548
@@ -234,14 +241,18 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: Table I, p. 145
-  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction of the field in which the crystals are oriented, after sintering at different temperatures.
-    ... 4360 4.36 0.292 2920 0.125 1250 0.43 0.285 2850
-  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Columns: density
-    (kg/m3, g/cm3), Br// (Wb/m2, gauss), Br-perp (Wb/m2, gauss), Br-perp/Br//, mu0*JHc (Wb/m2), JHc (Oe). density_rel computed by compiler with X-ray density 5.3 g/cm3. Br-perp/Br// = 0.43.'
+  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction
+    of the field in which the crystals are oriented, after sintering at different temperatures. ... 4360 4.36 0.292
+    2920 0.125 1250 0.43 0.285 2850
+  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR
+    character errors corrected; table values checked against the page image. Columns: density (kg/m3, g/cm3), Br//
+    (Wb/m2, gauss), Br-perp (Wb/m2, gauss), Br-perp/Br//, mu0*JHc (Wb/m2), JHc (Oe). density_rel computed by compiler
+    with X-ray density 5.3 g/cm3. Br-perp/Br// = 0.43.'
 - id: hexa_fp_br_perp_stuijts1954_1275
   phase: BaFe12O19
   route: FP
-  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered at 1275 °C
+  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered
+    at 1275 °C
   conditions: *id002
   quantity: Br
   value: 0.125
@@ -257,14 +268,17 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: Table I, p. 145
-  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction of the field in which the crystals are oriented, after sintering at different temperatures.
-    ... 4360 4.36 0.292 2920 0.125 1250 0.43 0.285 2850
-  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Same sample as the
-    parallel record; the perpendicular remanence measures misaligned grains.
+  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction
+    of the field in which the crystals are oriented, after sintering at different temperatures. ... 4360 4.36 0.292
+    2920 0.125 1250 0.43 0.285 2850
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character
+    errors corrected; table values checked against the page image. Same sample as the parallel record; the perpendicular
+    remanence measures misaligned grains.
 - id: hexa_fp_br_par_stuijts1954_1300
   phase: BaFe12O19
   route: FP
-  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered at 1300 °C
+  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered
+    at 1300 °C
   conditions: &id003
     field_T: null
     T_process_K: 1573
@@ -288,14 +302,18 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: Table I, p. 145
-  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction of the field in which the crystals are oriented, after sintering at different temperatures.
-    ... 4660 4.66 0.326 3260 0.117 1170 0.36 0.247 2470
-  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Columns: density
-    (kg/m3, g/cm3), Br// (Wb/m2, gauss), Br-perp (Wb/m2, gauss), Br-perp/Br//, mu0*JHc (Wb/m2), JHc (Oe). density_rel computed by compiler with X-ray density 5.3 g/cm3. Br-perp/Br// = 0.36.'
+  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction
+    of the field in which the crystals are oriented, after sintering at different temperatures. ... 4660 4.66 0.326
+    3260 0.117 1170 0.36 0.247 2470
+  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR
+    character errors corrected; table values checked against the page image. Columns: density (kg/m3, g/cm3), Br//
+    (Wb/m2, gauss), Br-perp (Wb/m2, gauss), Br-perp/Br//, mu0*JHc (Wb/m2), JHc (Oe). density_rel computed by compiler
+    with X-ray density 5.3 g/cm3. Br-perp/Br// = 0.36.'
 - id: hexa_fp_br_perp_stuijts1954_1300
   phase: BaFe12O19
   route: FP
-  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered at 1300 °C
+  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered
+    at 1300 °C
   conditions: *id003
   quantity: Br
   value: 0.117
@@ -311,14 +329,17 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: Table I, p. 145
-  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction of the field in which the crystals are oriented, after sintering at different temperatures.
-    ... 4660 4.66 0.326 3260 0.117 1170 0.36 0.247 2470
-  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Same sample as the
-    parallel record; the perpendicular remanence measures misaligned grains.
+  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction
+    of the field in which the crystals are oriented, after sintering at different temperatures. ... 4660 4.66 0.326
+    3260 0.117 1170 0.36 0.247 2470
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character
+    errors corrected; table values checked against the page image. Same sample as the parallel record; the perpendicular
+    remanence measures misaligned grains.
 - id: hexa_fp_br_par_stuijts1954_1320
   phase: BaFe12O19
   route: FP
-  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered at 1320 °C
+  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered
+    at 1320 °C
   conditions: &id004
     field_T: null
     T_process_K: 1593
@@ -342,14 +363,18 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: Table I, p. 145
-  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction of the field in which the crystals are oriented, after sintering at different temperatures.
-    ... 4840 4.84 0.362 3620 0.072 720 0.20 0.117 1170
-  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Columns: density
-    (kg/m3, g/cm3), Br// (Wb/m2, gauss), Br-perp (Wb/m2, gauss), Br-perp/Br//, mu0*JHc (Wb/m2), JHc (Oe). density_rel computed by compiler with X-ray density 5.3 g/cm3. Br-perp/Br// = 0.2.'
+  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction
+    of the field in which the crystals are oriented, after sintering at different temperatures. ... 4840 4.84 0.362
+    3620 0.072 720 0.20 0.117 1170
+  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR
+    character errors corrected; table values checked against the page image. Columns: density (kg/m3, g/cm3), Br//
+    (Wb/m2, gauss), Br-perp (Wb/m2, gauss), Br-perp/Br//, mu0*JHc (Wb/m2), JHc (Oe). density_rel computed by compiler
+    with X-ray density 5.3 g/cm3. Br-perp/Br// = 0.2.'
 - id: hexa_fp_br_perp_stuijts1954_1320
   phase: BaFe12O19
   route: FP
-  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered at 1320 °C
+  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered
+    at 1320 °C
   conditions: *id004
   quantity: Br
   value: 0.072
@@ -365,14 +390,17 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: Table I, p. 145
-  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction of the field in which the crystals are oriented, after sintering at different temperatures.
-    ... 4840 4.84 0.362 3620 0.072 720 0.20 0.117 1170
-  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Same sample as the
-    parallel record; the perpendicular remanence measures misaligned grains.
+  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction
+    of the field in which the crystals are oriented, after sintering at different temperatures. ... 4840 4.84 0.362
+    3620 0.072 720 0.20 0.117 1170
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character
+    errors corrected; table values checked against the page image. Same sample as the parallel record; the perpendicular
+    remanence measures misaligned grains.
 - id: hexa_fp_br_par_stuijts1954_1340
   phase: BaFe12O19
   route: FP
-  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered at 1340 °C
+  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered
+    at 1340 °C
   conditions: &id005
     field_T: null
     T_process_K: 1613
@@ -396,14 +424,18 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: Table I, p. 145
-  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction of the field in which the crystals are oriented, after sintering at different temperatures.
-    ... 4880 4.88 0.385 3850 0.025 250 0.07
-  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Columns: density
-    (kg/m3, g/cm3), Br// (Wb/m2, gauss), Br-perp (Wb/m2, gauss), Br-perp/Br//, mu0*JHc (Wb/m2), JHc (Oe). density_rel computed by compiler with X-ray density 5.3 g/cm3. Br-perp/Br// = 0.07.'
+  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction
+    of the field in which the crystals are oriented, after sintering at different temperatures. ... 4880 4.88 0.385
+    3850 0.025 250 0.07
+  note: 'Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR
+    character errors corrected; table values checked against the page image. Columns: density (kg/m3, g/cm3), Br//
+    (Wb/m2, gauss), Br-perp (Wb/m2, gauss), Br-perp/Br//, mu0*JHc (Wb/m2), JHc (Oe). density_rel computed by compiler
+    with X-ray density 5.3 g/cm3. Br-perp/Br// = 0.07.'
 - id: hexa_fp_br_perp_stuijts1954_1340
   phase: BaFe12O19
   route: FP
-  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered at 1340 °C
+  process: BaM powder (single-crystal particles) aligned in a field as aqueous sludge, pressed, dried, sintered
+    at 1340 °C
   conditions: *id005
   quantity: Br
   value: 0.025
@@ -419,10 +451,12 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: Table I, p. 145
-  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction of the field in which the crystals are oriented, after sintering at different temperatures.
-    ... 4880 4.88 0.385 3850 0.025 250 0.07
-  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. Same sample as the
-    parallel record; the perpendicular remanence measures misaligned grains.
+  quote: Table I. Remanences of anisotropic Ferroxdure as measured parallel and at right-angles to the direction
+    of the field in which the crystals are oriented, after sintering at different temperatures. ... 4880 4.88 0.385
+    3850 0.025 250 0.07
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character
+    errors corrected; table values checked against the page image. Same sample as the parallel record; the perpendicular
+    remanence measures misaligned grains.
 - id: hexa_fp_br_stuijts1954_ferroxdure2
   phase: BaFe12O19
   route: FP
@@ -450,10 +484,12 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: p. 146
-  quote: 'One of them, Ferroxdure II, is intended for applications involving a fixed air-gap, in which high induction is the most important requirement, e.g. for loudspeakers. Its magnetic properties are
-    as follows: Br = 0.35-0.40 Wb/m2 [3500 - 4000 gauss]'
-  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. value = midpoint of
-    range; Table II average 0.37 Wb/m2.
+  quote: 'One of them, Ferroxdure II, is intended for applications involving a fixed air-gap, in which high induction
+    is the most important requirement, e.g. for loudspeakers. Its magnetic properties are as follows: Br = 0.35-0.40
+    Wb/m2 [3500 - 4000 gauss]'
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character
+    errors corrected; table values checked against the page image. value = midpoint of range; Table II average 0.37
+    Wb/m2.
 - id: hexa_fp_br_stuijts1954_ferroxdure3
   phase: BaFe12O19
   route: FP
@@ -480,10 +516,11 @@
     url: https://www.worldradiohistory.com/Archive-Company-Publications/Philips-Technical-Review/50s/Philips-Technical-Review-1954.pdf
     evidence: full_text
     locator: p. 146
-  quote: 'The other, Ferroxdure III, is intended for use in a strong demagnetizing field, or in circumstances where the working point may vary, as in magnetic clutches, dynamo magnets and yoke magnets.
-    The magnetic properties of this material are: Br = 0.28-0.32 Wb/m2 [2800 -3200 gauss]'
-  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character errors corrected; table values checked against the page image. value = midpoint of
-    range.
+  quote: 'The other, Ferroxdure III, is intended for use in a strong demagnetizing field, or in circumstances where
+    the working point may vary, as in magnetic clutches, dynamo magnets and yoke magnets. The magnetic properties
+    of this material are: Br = 0.28-0.32 Wb/m2 [2800 -3200 gauss]'
+  note: Philips Technical Review has no DOI. Quote read from the scanned volume (re-OCRed with tesseract); OCR character
+    errors corrected; table values checked against the page image. value = midpoint of range.
 - id: hexa_fp_texture_stablein1966_1100
   phase: BaFe12O19
   route: FP
@@ -509,8 +546,10 @@
     url: https://api.openalex.org/works/doi:10.1109/tmag.1966.1065942
     evidence: abstract
     locator: abstract
-  quote: The frequency of the c axes in the preferred direction amounted to about 14 with the 1100°C specimen and to about 41 with the 1350°C specimen (measured in units of the non-oriented specimen).
-  note: OpenAlex abstract prints 'thecaxes' (italic c). Alignment method of the 'oriented specimens' not stated in the abstract.
+  quote: The frequency of the c axes in the preferred direction amounted to about 14 with the 1100°C specimen and
+    to about 41 with the 1350°C specimen (measured in units of the non-oriented specimen).
+  note: OpenAlex abstract prints 'thecaxes' (italic c). Alignment method of the 'oriented specimens' not stated
+    in the abstract.
 - id: hexa_fp_texture_stablein1966_1350
   phase: BaFe12O19
   route: FP
@@ -536,12 +575,15 @@
     url: https://api.openalex.org/works/doi:10.1109/tmag.1966.1065942
     evidence: abstract
     locator: abstract
-  quote: The frequency of the c axes in the preferred direction amounted to about 14 with the 1100°C specimen and to about 41 with the 1350°C specimen (measured in units of the non-oriented specimen).
-  note: OpenAlex abstract prints 'thecaxes' (italic c). Alignment method of the 'oriented specimens' not stated in the abstract.
+  quote: The frequency of the c axes in the preferred direction amounted to about 14 with the 1100°C specimen and
+    to about 41 with the 1350°C specimen (measured in units of the non-oriented specimen).
+  note: OpenAlex abstract prints 'thecaxes' (italic c). Alignment method of the 'oriented specimens' not stated
+    in the abstract.
 - id: hexa_other_br_cochardt1963
   phase: SrFe12O19
   route: 'other: not stated (high-energy modified Sr ferrite magnet)'
-  process: modified strontium ferrite magnet (composition modifications in M1O-M2O-Fe2O3 systems), typical production values
+  process: modified strontium ferrite magnet (composition modifications in M1O-M2O-Fe2O3 systems), typical production
+    values
   conditions:
     field_T: null
     T_process_K: null
@@ -563,13 +605,15 @@
     url: https://api.crossref.org/works/10.1063/1.1729468
     evidence: abstract
     locator: abstract
-  quote: 'A modified strontium ferrite magnet could be developed which appears to have a higher magnetic energy than any other oxide magnet material previously known. Typical values are: Br=4100 G, IHc=3000
-    Oe, (BH)max=4.0 mgo.'
+  quote: 'A modified strontium ferrite magnet could be developed which appears to have a higher magnetic energy
+    than any other oxide magnet material previously known. Typical values are: Br=4100 G, IHc=3000 Oe, (BH)max=4.0
+    mgo.'
   note: Alignment route not stated in abstract (energy product implies an oriented magnet). 4100 G = 0.41 T.
 - id: hexa_fp_br_iida1999_laco_x03
   phase: (Sr,La)(Fe,Co)12O19
   route: FP
-  process: Sr1-xLaxCoxFe12-xO19 (x = 0.3) calcined 1200 °C, milled to submicron, wet-pressed (xylene+oleic acid) in ~10 kOe, sintered 1180-1240 °C
+  process: Sr1-xLaxCoxFe12-xO19 (x = 0.3) calcined 1200 °C, milled to submicron, wet-pressed (xylene+oleic acid)
+    in ~10 kOe, sintered 1180-1240 °C
   conditions:
     field_T: 1.0
     T_process_K: 1473
@@ -591,7 +635,8 @@
     url: https://api.openalex.org/works/doi:10.3379/jmsjmag.23.1093
     evidence: abstract
     locator: abstract
-  quote: At a composition of x = 0.3, the magnetic properties for permanent magnets were much improved, with the highest values of Br = 4.45 kG, HcJ = 4.82 kOe, and (BH)max = 4.86 MGOe.
+  quote: At a composition of x = 0.3, the magnetic properties for permanent magnets were much improved, with the
+    highest values of Br = 4.45 kG, HcJ = 4.82 kOe, and (BH)max = 4.86 MGOe.
   note: 4.45 kG = 0.445 T. La is a rare earth.
 - id: hexa_fp_br_iida1999_x0_x04
   phase: SrFe12O19
@@ -618,9 +663,10 @@
     url: https://www.jstage.jst.go.jp/article/jmsjmag/23/4_2/23_4_2_1093/_pdf
     evidence: full_text
     locator: Sect. 3.2, p. 1094
-  quote: By contrast with these slight increase of Br (4.4 kG->4.5 kG) in the compositional range x = 0 to 0.4, HcJ drastically changed (3.8 kOe->4.8 kOe) before it abruptly decreased for the compositions
-    x≥ 0.4.
-  note: J-STAGE scan, OCR transcription (tesseract), OCR errors corrected. 4.4 kG at x = 0 (Sr-only) rising to 4.5 kG at x = 0.4 (La-Co).
+  quote: By contrast with these slight increase of Br (4.4 kG->4.5 kG) in the compositional range x = 0 to 0.4,
+    HcJ drastically changed (3.8 kOe->4.8 kOe) before it abruptly decreased for the compositions x≥ 0.4.
+  note: J-STAGE scan, OCR transcription (tesseract), OCR errors corrected. 4.4 kG at x = 0 (Sr-only) rising to 4.5
+    kG at x = 0.4 (La-Co).
 - id: hexa_fp_orientation_iida1999
   phase: SrFe12O19
   route: FP
@@ -647,9 +693,11 @@
     url: https://www.jstage.jst.go.jp/article/jmsjmag/23/4_2/23_4_2_1093/_pdf
     evidence: full_text
     locator: Sect. 3.2, p. 1094
-  quote: It is well-known that Br is determined by the product of saturation magnetization (4πJs), orientation degree (Jr/Js), and bulk density (ρ). In the compositional range from 0 to 0.4, the orientation
-    degree (Jr/Js) and sintered density (ρ) kept constant at about 97~98%.
-  note: OCR transcription, corrected. Jr/Js = 0.97-0.98 (value = midpoint) is directly an alignment factor A; the same sentence gives the relative density 0.97-0.98.
+  quote: It is well-known that Br is determined by the product of saturation magnetization (4πJs), orientation degree
+    (Jr/Js), and bulk density (ρ). In the compositional range from 0 to 0.4, the orientation degree (Jr/Js) and
+    sintered density (ρ) kept constant at about 97~98%.
+  note: OCR transcription, corrected. Jr/Js = 0.97-0.98 (value = midpoint) is directly an alignment factor A; the
+    same sentence gives the relative density 0.97-0.98.
 - id: hexa_cs_br_lee1999_review
   phase: SrFe12O19
   route: 'other: conventional sintering (alignment method not stated in review)'
@@ -675,8 +723,9 @@
     url: https://arxiv.org/pdf/2309.15680
     evidence: review
     locator: Sect. 3.1, p. 5
-  quote: In 1999, Lee et al obtained an enhanced coercivity of 281 kA m−1 by sintering SrM mixed with 0.6 wt% SiO2 and 0.7 wt% CaO at 1200 °C for 4 h [101]. However, the orientation was not so high, which
-    yield only moderate values of remanence (0.36 T)
+  quote: In 1999, Lee et al obtained an enhanced coercivity of 281 kA m−1 by sintering SrM mixed with 0.6 wt% SiO2
+    and 0.7 wt% CaO at 1200 °C for 4 h [101]. However, the orientation was not so high, which yield only moderate
+    values of remanence (0.36 T)
   note: Value quoted by review (ref. [101]).
 - id: hexa_cs_br_topfer2005_review
   phase: SrFe12O19
@@ -703,8 +752,9 @@
     url: https://arxiv.org/pdf/2309.15680
     evidence: review
     locator: Sect. 3.1, p. 5
-  quote: They found out that a Sr-ferrite powder mixed with 0.5 wt% of SiO2 and CaO in a 1:1 ratio, and sintered at 1280 °C for a short period of time, resulted in a dense Srferrite magnet (98%) with refined
-    microstructure and good magnetic properties (Br = 0.42 T, H c = 282 kA m−1 , and BH max = 32.6 kJ m−3 ).
+  quote: '[...] found out that a Sr-ferrite powder mixed with 0.5 wt% of SiO2 and CaO in a 1:1 ratio, and sintered
+    at 1280 °C for a short period of time, resulted in a dense Srferrite magnet (98%) with refined microstructure
+    and good magnetic properties (Br = 0.42 T, H c = 282 kA m−1 , and BH max = 32.6 kJ m−3 ).'
   note: Value quoted by review (Töpfer et al 2005, ref. [102]).
 - id: hexa_cs_br_huang2018_review
   phase: SrFe12O19
@@ -731,8 +781,9 @@
     url: https://arxiv.org/pdf/2309.15680
     evidence: review
     locator: Sect. 3.1, p. 5
-  quote: By conventionally sintering a mixture of SrM powders with 1.1 wt% CaCO3 , 0.4 wt% SiO2 , 0.3 wt% Co3 O4 , and 0.5 wt% of a dispersant, they managed to manufacture a 99% dense piece with remarkably
-    good magnetic properties (Br = 0.44 T, H c = 264 kA m−1 , and BH max = 38.7 kJ m−3 ).
+  quote: By conventionally sintering a mixture of SrM powders with 1.1 wt% CaCO3 , 0.4 wt% SiO2 , 0.3 wt% Co3 O4
+    , and 0.5 wt% of a dispersant, they managed to manufacture a 99% dense piece with remarkably good magnetic properties
+    (Br = 0.44 T, H c = 264 kA m−1 , and BH max = 38.7 kJ m−3 ).
   note: Value quoted by review (Huang et al 2018, ref. [70]).
 - id: hexa_cs_br_du2019_review
   phase: SrFe12O19
@@ -759,7 +810,8 @@
     url: https://arxiv.org/pdf/2309.15680
     evidence: review
     locator: Sect. 3.1, p. 5
-  quote: Such a procedure resulted in a fully dense Sr-ferrite magnet with a remanence of 0.44 T, a coercivity of 328 kA m−1 , and a BH max of 37.6 kJ m−3 .
+  quote: Such a procedure resulted in a fully dense Sr-ferrite magnet with a remanence of 0.44 T, a coercivity of
+    328 kA m−1 , and a BH max of 37.6 kJ m−3 .
   note: Value quoted by review (Du et al 2019, ref. [66]).
 - id: hexa_cs_br_besenicar1991_review
   phase: SrFe12O19
@@ -786,13 +838,15 @@
     url: https://arxiv.org/pdf/2309.15680
     evidence: review
     locator: Sect. 3.1, p. 6
-  quote: They found out that SiO2 does not only suppress grain growth, but it also promotes rearrangement of Sr-ferrite particles during sintering leading to highly anisotropic magnets with elevated density
-    (97% of the theoretical value). These values were achieved at 1260 °C with a holding time of only 3 min at the final temperature, and yield a remanence of ≈0.39 T
+  quote: '[...] but it also promotes rearrangement of Sr-ferrite particles during sintering leading to highly anisotropic
+    magnets with elevated density (97% of the theoretical value). These values were achieved at 1260 °C with a holding
+    time of only 3 min at the final temperature, and yield a remanence of ≈0.39 T'
   note: Value quoted by review (Beseničar and Drofenik 1991, ref. [99]).
 - id: hexa_sps_br_obara2002_review
   phase: (Sr,La)(Fe,Co)12O19
   route: 'other: SPS (uniaxial pressure 50 MPa; field alignment not stated)'
-  process: La,Co-doped SrM fine particles (1.0 wt% La2O3, 0.1 wt% Co3O4), SPS 1100 °C, 5 min, 50 MPa; fully dense (5.15 g/cm3)
+  process: La,Co-doped SrM fine particles (1.0 wt% La2O3, 0.1 wt% Co3O4), SPS 1100 °C, 5 min, 50 MPa; fully dense
+    (5.15 g/cm3)
   conditions:
     field_T: null
     T_process_K: 1373
@@ -814,8 +868,9 @@
     url: https://arxiv.org/pdf/2309.15680
     evidence: review
     locator: Sect. 3.3, p. 7
-  quote: With a final temperature of 1100 °C, a holding time of only 5 min and an applied pressure of 50 MPa, they prepared fully dense samples (density = 5.15 g cm−1 [3]) with a remanence of 0.32 T, a
-    coercivity of 325 kA m−1 , and a BH max of 18.3 kJ m−1 [3].
+  quote: With a final temperature of 1100 °C, a holding time of only 5 min and an applied pressure of 50 MPa, they
+    prepared fully dense samples (density = 5.15 g cm−1 [3]) with a remanence of 0.32 T, a coercivity of 325 kA
+    m−1 , and a BH max of 18.3 kJ m−1 [3].
   note: Value quoted by review (Obara et al 2002, ref. [107]); unit typos ('g cm−1 [3]') are in the source.
 - id: hexa_sps_mrms_sauramuzquiz2016_review
   phase: SrFe12O19
@@ -842,8 +897,10 @@
     url: https://arxiv.org/pdf/2309.15680
     evidence: review
     locator: Sect. 3.3, p. 8
-  quote: This crystalline alignment translates in a pronounced magnetic alignment (M r /M s ratio = 0.89), which combined with the high coercivity results in an even higher BH max value of 26 kJ m−3 .
-  note: 'Value quoted by review (Saura-Múzquiz et al 2016, ref. [58]). Footnote 3 of review: Mr/Ms is used as the degree of magnetic orientation.'
+  quote: This crystalline alignment translates in a pronounced magnetic alignment (M r /M s ratio = 0.89), which
+    combined with the high coercivity results in an even higher BH max value of 26 kJ m−3 .
+  note: 'Value quoted by review (Saura-Múzquiz et al 2016, ref. [58]). Footnote 3 of review: Mr/Ms is used as the
+    degree of magnetic orientation.'
 - id: hexa_fp_sps_mrms_field_review
   phase: SrFe12O19
   route: FP
@@ -870,8 +927,9 @@
     url: https://arxiv.org/pdf/2309.15680
     evidence: review
     locator: Sect. 3.3, p. 8
-  quote: Applying a magnetic field prior to sintering showed an improvement on the texture (M r /M s ratio = 0.95), but this came at the cost of a reduced coercivity (133 kA m−1 ), and the BH max betterment
-    was not significant (29 kJ m−3 )[114].
+  quote: Applying a magnetic field prior to sintering showed an improvement on the texture (M r /M s ratio = 0.95),
+    but this came at the cost of a reduced coercivity (133 kA m−1 ), and the BH max betterment was not significant
+    (29 kJ m−3 )[114].
   note: Value quoted by review (ref. [114]).
 - id: hexa_sps_mrms_anneal_review
   phase: SrFe12O19
@@ -898,8 +956,8 @@
     url: https://arxiv.org/pdf/2309.15680
     evidence: review
     locator: Sect. 3.3, p. 8
-  quote: Instead, subsequent post-annealing of the SPS pellet (4 h at 850 °C) did allow a great enhancement of the squareness of the hysteresis loop (M r /M s ratio = 0.93), reaching a BH max of 36 kJ m−3
-    ,
+  quote: Instead, subsequent post-annealing of the SPS pellet (4 h at 850 °C) did allow a great enhancement of the
+    squareness of the hysteresis loop (M r /M s ratio = 0.93), reaching a BH max of 36 kJ m−3 ,
   note: Value quoted by review.
 - id: hexa_fp_br_goudsmit_f47
   phase: M-type ferrite (unspecified)
@@ -927,8 +985,9 @@
     evidence: datasheet
     locator: p. 1, Ferrite grades table
   quote: F47 anisotropic 460 328 368 41.5 -0.18 0.25 225
-  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only vs La-Co) not stated. Specified minimum. High HcJ with high Br suggests a substituted (e.g.
-    La-Co) grade, but composition is not stated.
+  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only
+    vs La-Co) not stated. Specified minimum. High HcJ with high Br suggests a substituted (e.g. La-Co) grade, but
+    composition is not stated.
 - id: hexa_fp_br_goudsmit_f25
   phase: M-type ferrite (unspecified)
   route: FP
@@ -955,7 +1014,8 @@
     evidence: datasheet
     locator: p. 1, Ferrite grades table
   quote: F25 anisotropic 380 143 147 25.5 -0.18 0.50 225
-  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only vs La-Co) not stated. Specified minimum.
+  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only
+    vs La-Co) not stated. Specified minimum.
 - id: hexa_fp_br_eclipse_y40
   phase: M-type ferrite (unspecified)
   route: FP
@@ -982,7 +1042,8 @@
     evidence: datasheet
     locator: tables 'Chinese Standard' and 'US standard' (p. 1-2)
   quote: Y40 440−460 4.4−4.6 330−354 4.15−4.45 340−360 4.27−4.52 37.5−41.8 4.7−5.3
-  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only vs La-Co) not stated. value = midpoint of 440-460 mT.
+  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only
+    vs La-Co) not stated. value = midpoint of 440-460 mT.
 - id: hexa_fp_br_eclipse_c8
   phase: M-type ferrite (unspecified)
   route: FP
@@ -1008,7 +1069,8 @@
     evidence: datasheet
     locator: tables 'Chinese Standard' and 'US standard' (p. 1-2)
   quote: C8 / C8A 385 3.85 235 2.95 242 3.05 27.8 3.50
-  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only vs La-Co) not stated.
+  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only
+    vs La-Co) not stated.
 - id: hexa_fp_br_allstar_c11
   phase: M-type ferrite (unspecified)
   route: FP
@@ -1034,8 +1096,9 @@
     evidence: datasheet
     locator: p. 1 table
   quote: C11 4.30 2.51 2.56 4.32 -0.2
-  note: 'Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only vs La-Co) not stated. Columns: Br typical (kGs), Hcb typical (kOe), Hcj minimum (kOe), BHmax
-    (MGOe), alpha Br. 4.30 kG = 0.430 T. Datasheet density range 4.70-5.1 g/cm3.'
+  note: 'Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; composition (Sr-only
+    vs La-Co) not stated. Columns: Br typical (kGs), Hcb typical (kOe), Hcj minimum (kOe), BHmax (MGOe), alpha Br.
+    4.30 kG = 0.430 T. Datasheet density range 4.70-5.1 g/cm3.'
 - id: hexa_bonded_br_arnold_plastiform2039
   phase: SrFe12O19
   route: FP
@@ -1063,8 +1126,10 @@
     url: https://www.arnoldmagnetics.com/wp-content/uploads/2017/11/Plastiform-2039-Magnetic-Material-Datasheet.pdf
     evidence: datasheet
     locator: Magnetic properties table
-  quote: 'Product Description: Polymer bonded, anisotropic Sr-Ferrite magnet for injection molding. ... Residual Induction Br 2770 - 3070 G 277 - 307 mT'
-  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; Sr ferrite stated; La-Co not stated. Density 3.80 g/cm3 (filler fraction not stated). value = midpoint.
+  quote: 'Product Description: Polymer bonded, anisotropic Sr-Ferrite magnet for injection molding. ... Residual
+    Induction Br 2770 - 3070 G 277 - 307 mT'
+  note: Datasheet value (accessed 2026-10-03); measurement method/sample count not stated; Sr ferrite stated; La-Co
+    not stated. Density 3.80 g/cm3 (filler fraction not stated). value = midpoint.
 - id: hexa_bonded_br_arnold_plastiform1044
   phase: SrFe12O19
   route: 'other: calendering (mechanical orientation of platelets in rubber sheet)'
@@ -1092,7 +1157,8 @@
     evidence: datasheet
     locator: Typical Magnetic Properties table
   quote: Br 2450 Gauss 245 mTesla - Made by calendaring – sheet process
-  note: Datasheet (accessed 2026-10-03). Orientation mechanism (calendering vs field) inferred from 'made by calendaring'; not explicitly stated.
+  note: Datasheet (accessed 2026-10-03). Orientation mechanism (calendering vs field) inferred from 'made by calendaring';
+    not explicitly stated.
 - id: hexa_bonded_br_arnold_plastiform1037
   phase: BaFe12O19
   route: 'other: flexible rubber-bonded ferrite, ''preferentially oriented'' (method not stated)'
@@ -1119,13 +1185,15 @@
     url: https://www.arnoldmagnetics.com/wp-content/uploads/2017/10/Plastiform-1037-Magnet-Material-Datasheet-1.pdf
     evidence: datasheet
     locator: Typical magnetic properties
-  quote: Magnetic properties are generated by preferentially orienting ferromagnetic barium ferrite in a stable binder. It is highly anisotropic and possesses an unusually strong resistance to demagnetization.
-    ... Residual Induction1 (Br) (at 23°C) 2150 Gauss 215 mT
+  quote: Magnetic properties are generated by preferentially orienting ferromagnetic barium ferrite in a stable
+    binder. It is highly anisotropic and possesses an unusually strong resistance to demagnetization. ... Residual
+    Induction1 (Br) (at 23°C) 2150 Gauss 215 mT
   note: Datasheet (accessed 2026-10-03).
 - id: hexa_tgg_texture_metu2012_md
   phase: BaFe12O19
   route: TGG
-  process: BaM matrix powder + BaM platelets (from RTGG on BiFeO3 seeds) aligned by tape casting, laminated, sintered (TGG); no magnetic field
+  process: BaM matrix powder + BaM platelets (from RTGG on BiFeO3 seeds) aligned by tape casting, laminated, sintered
+    (TGG); no magnetic field
   conditions:
     field_T: null
     T_process_K: null
@@ -1147,10 +1215,11 @@
     url: https://open.metu.edu.tr/bitstream/handle/11511/21629/index.pdf
     evidence: full_text
     locator: Sect. 4.2.3.1, Table 4.3
-  quote: G value of 1 shows completely random distribution while 0 shows the existence of 100% preferred orientation. As it is clear from Table 4.3, March coefficient (G) obtained from MD function is 0.67
-    meaning that the degree of texture within the bulk ceramic is 33%.
-  note: M.Sc. thesis, no DOI. Unit kind 'march_dollase_r' is not in the SCHEMA list; conversion to A requires the March-Dollase distribution (not done here). Thesis notes secondary phases and poor Rietveld
-    fits.
+  quote: G value of 1 shows completely random distribution while 0 shows the existence of 100% preferred orientation.
+    As it is clear from Table 4.3, March coefficient (G) obtained from MD function is 0.67 meaning that the degree
+    of texture within the bulk ceramic is 33%.
+  note: M.Sc. thesis, no DOI. Unit kind 'march_dollase_r' is not in the SCHEMA list; conversion to A requires the
+    March-Dollase distribution (not done here). Thesis notes secondary phases and poor Rietveld fits.
 - id: hexa_tgg_texture_metu2012_shindex
   phase: BaFe12O19
   route: TGG
@@ -1176,13 +1245,15 @@
     url: https://open.metu.edu.tr/bitstream/handle/11511/21629/index.pdf
     evidence: full_text
     locator: Sect. 4.2.3.1, Fig. 4.35
-  quote: Texture analysis that is conducted using Spherical Harmonics function gives the texture index as 7.555 in Figure 4.35. This is the indication of the existence of texture because it is well above
-    1 which shows the random distribution.
+  quote: Texture analysis that is conducted using Spherical Harmonics function gives the texture index as 7.555
+    in Figure 4.35. This is the indication of the existence of texture because it is well above 1 which shows the
+    random distribution.
   note: M.Sc. thesis, no DOI. Texture index J (1 = random).
 - id: hexa_fp_br_obara2014_calaco
   phase: (Ca,La)(Fe,Co)12O19
   route: FP
-  process: (Ca0.5La0.5)1.1Fe11.6Co0.4O19 calcined 1250 °C 4 h, wet-milled, slurry compacted in a magnetic field, sintered 1200 °C 1 h; 0.3 wt% SiO2 + 0.5 wt% CaO
+  process: (Ca0.5La0.5)1.1Fe11.6Co0.4O19 calcined 1250 °C 4 h, wet-milled, slurry compacted in a magnetic field,
+    sintered 1200 °C 1 h; 0.3 wt% SiO2 + 0.5 wt% CaO
   conditions:
     field_T: null
     T_process_K: 1473
@@ -1205,8 +1276,9 @@
     url: https://www.jstage.jst.go.jp/article/jjspm/61/S1/61_S258/_pdf
     evidence: full_text
     locator: abstract and Sect. II
-  quote: 'Optimum magnetic properties and conditions in this experiment were as follows; inter-additives: 0.3 wt.% SiO2 and 0.5 wt.% CaO, sintering temperature: 1200°C, Br=0.429 [T], HcJ=278 [kA/m], (BH)max=34.5
-    [kJ/m3]. ... The milled powder now in slurry form, was compacted into a cylindrical shape in the magnetic field.'
+  quote: '[...] properties and conditions in this experiment were as follows; inter-additives: 0.3 wt.% SiO2 and
+    0.5 wt.% CaO, sintering temperature: 1200°C, Br=0.429 [T], HcJ=278 [kA/m], (BH)max=34.5 [kJ/m3]. ... The milled
+    powder now in slurry form, was compacted into a cylindrical shape in the magnetic field.'
   note: Alignment field strength not stated. La is a rare earth.
 - id: hexa_sint_br_shon2021_lanaco
   phase: (La,Na)(Fe,Co)12O19
@@ -1234,7 +1306,8 @@
     evidence: abstract
     locator: abstract (Korean)
   quote: (La0.8Na0.2)Fe7.9Co0.1O19 소결자석의 Ms 및 Br은 각각 4.7 kG, 4.59 kG로서 상용 페라이트 자석보다 자기특성이 우수한 것으로 확인되었다.
-  note: Korean abstract quoted verbatim. Ms given as 4.7 kG (4*pi*Ms) and Br 4.59 kG; converted to T by compiler. Phase is La-based, not SrM.
+  note: Korean abstract quoted verbatim. Ms given as 4.7 kG (4*pi*Ms) and Br 4.59 kG; converted to T by compiler.
+    Phase is La-based, not SrM.
 - id: hexa_sint_js_same_sample_shon2021_lanaco
   phase: (La,Na)(Fe,Co)12O19
   route: 'other: sintered (alignment method not stated in abstract)'
@@ -1261,11 +1334,13 @@
     evidence: abstract
     locator: abstract (Korean)
   quote: (La0.8Na0.2)Fe7.9Co0.1O19 소결자석의 Ms 및 Br은 각각 4.7 kG, 4.59 kG로서 상용 페라이트 자석보다 자기특성이 우수한 것으로 확인되었다.
-  note: Korean abstract quoted verbatim. Ms given as 4.7 kG (4*pi*Ms) and Br 4.59 kG; converted to T by compiler. Phase is La-based, not SrM.
+  note: Korean abstract quoted verbatim. Ms given as 4.7 kG (4*pi*Ms) and Br 4.59 kG; converted to T by compiler.
+    Phase is La-based, not SrM.
 - id: nd2fe14b_hd_br_lee1985
   phase: Nd2Fe14B
   route: HD
-  process: melt-spun ribbons Nd0.14(Fe0.91B0.09)0.86 hot-pressed 700-750 °C (MQ2), then die-upset to 50% thickness reduction (MQ3)
+  process: melt-spun ribbons Nd0.14(Fe0.91B0.09)0.86 hot-pressed 700-750 °C (MQ2), then die-upset to 50% thickness
+    reduction (MQ3)
   conditions:
     field_T: null
     T_process_K: 973-1023 (hot pressing); die-upset temperature not stated
@@ -1287,11 +1362,12 @@
     url: https://api.openalex.org/works/doi:10.1109/tmag.1985.1064031
     evidence: abstract
     locator: abstract
-  quote: Over-quenched melt-spun ribbons of nominal composition Nd0.14(Fe0.91B0.09)0.86can be compacted to fully dense permanent magnets by hot-pressing at 700-750°C to 100 kPa (-15 kpsi). The resulting
-    material is only slightly magnetically aligned with room temperature magnetics:B_{r}/H_{ci}\simeq 8kG/19 kOe. Die-upsetting to a thickness reduction of 50% producesB_{r}/H_{ci}\simeq 11kG/12 kOe and
-    is accompanied by a lateral plastic flow of the ribbons and a corresponding ribbon thickness reduction.
-  note: Abstract has LaTeX residue ('B_{r}/H_{ci}\simeq'); 8 kG = 0.8 T, 11 kG = 1.1 T. 'to 100 kPa' is as printed (likely 100 MPa ~ 15 kpsi). Measurement direction not stated; for the die-upset magnet
-    the easy axis is the press direction.
+  quote: Over-quenched melt-spun ribbons of nominal composition Nd0.14(Fe0.91B0.09)0.86can be compacted to fully
+    dense permanent magnets by hot-pressing at 700-750°C to 100 kPa (-15 kpsi). The resulting material is only slightly
+    magnetically aligned with room temperature magnetics:B_{r}/H_{ci}\simeq 8kG/19 [...]
+  note: Abstract has LaTeX residue ('B_{r}/H_{ci}\simeq'); 8 kG = 0.8 T, 11 kG = 1.1 T. 'to 100 kPa' is as printed
+    (likely 100 MPa ~ 15 kpsi). Measurement direction not stated; for the die-upset magnet the easy axis is the
+    press direction.
 - id: nd2fe14b_hp_br_lee1985
   phase: Nd2Fe14B
   route: 'other: hot pressing of melt-spun ribbons (MQ2), ''only slightly magnetically aligned'''
@@ -1316,11 +1392,12 @@
     url: https://api.openalex.org/works/doi:10.1109/tmag.1985.1064031
     evidence: abstract
     locator: abstract
-  quote: Over-quenched melt-spun ribbons of nominal composition Nd0.14(Fe0.91B0.09)0.86can be compacted to fully dense permanent magnets by hot-pressing at 700-750°C to 100 kPa (-15 kpsi). The resulting
-    material is only slightly magnetically aligned with room temperature magnetics:B_{r}/H_{ci}\simeq 8kG/19 kOe. Die-upsetting to a thickness reduction of 50% producesB_{r}/H_{ci}\simeq 11kG/12 kOe and
-    is accompanied by a lateral plastic flow of the ribbons and a corresponding ribbon thickness reduction.
-  note: Abstract has LaTeX residue ('B_{r}/H_{ci}\simeq'); 8 kG = 0.8 T, 11 kG = 1.1 T. 'to 100 kPa' is as printed (likely 100 MPa ~ 15 kpsi). Measurement direction not stated; for the die-upset magnet
-    the easy axis is the press direction. Nanocrystalline isotropic-like reference for the HD route.
+  quote: Over-quenched melt-spun ribbons of nominal composition Nd0.14(Fe0.91B0.09)0.86can be compacted to fully
+    dense permanent magnets by hot-pressing at 700-750°C to 100 kPa (-15 kpsi). The resulting material is only slightly
+    magnetically aligned with room temperature magnetics:B_{r}/H_{ci}\simeq 8kG/19 [...]
+  note: Abstract has LaTeX residue ('B_{r}/H_{ci}\simeq'); 8 kG = 0.8 T, 11 kG = 1.1 T. 'to 100 kPa' is as printed
+    (likely 100 MPa ~ 15 kpsi). Measurement direction not stated; for the die-upset magnet the easy axis is the
+    press direction. Nanocrystalline isotropic-like reference for the HD route.
 - id: nd2fe14b_dhddr_jr_powder_horikawa2021_tdec23
   phase: Nd2Fe14B
   route: 'other: d-HDDR (texture memory) powder'
@@ -1347,9 +1424,11 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8451657/fullTextXML
     evidence: full_text
     locator: Sect. 2.3.2, Table 2
-  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ (kA · m−1) ... Powder 23 1.29 0.69 302 1160
-  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]).
-    Jr of powder (not of a dense magnet); density/packing not stated.
+  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ
+    (kA · m−1) ... Powder 23 1.29 0.69 302 1160
+  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along
+    easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]). Jr of powder
+    (not of a dense magnet); density/packing not stated.
 - id: nd2fe14b_dhddr_doa_powder_horikawa2021_tdec23
   phase: Nd2Fe14B
   route: 'other: d-HDDR (texture memory) powder'
@@ -1369,9 +1448,11 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8451657/fullTextXML
     evidence: full_text
     locator: Sect. 2.3.2, Table 2
-  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ (kA · m−1) ... Powder 23 1.29 0.69 302 1160
-  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]).
-    Unit kind not in SCHEMA list; DOA is not A (A requires Jr/Js).
+  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ
+    (kA · m−1) ... Powder 23 1.29 0.69 302 1160
+  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along
+    easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]). Unit kind not
+    in SCHEMA list; DOA is not A (A requires Jr/Js).
 - id: nd2fe14b_dhddr_jr_powder_horikawa2021_tdec500
   phase: Nd2Fe14B
   route: 'other: d-HDDR (texture memory) powder'
@@ -1398,9 +1479,11 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8451657/fullTextXML
     evidence: full_text
     locator: Sect. 2.3.2, Table 2
-  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ (kA · m−1) ... Powder 500 1.34 0.73 330 1230
-  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]).
-    Jr of powder (not of a dense magnet); density/packing not stated.
+  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ
+    (kA · m−1) ... Powder 500 1.34 0.73 330 1230
+  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along
+    easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]). Jr of powder
+    (not of a dense magnet); density/packing not stated.
 - id: nd2fe14b_dhddr_doa_powder_horikawa2021_tdec500
   phase: Nd2Fe14B
   route: 'other: d-HDDR (texture memory) powder'
@@ -1420,13 +1503,16 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8451657/fullTextXML
     evidence: full_text
     locator: Sect. 2.3.2, Table 2
-  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ (kA · m−1) ... Powder 500 1.34 0.73 330 1230
-  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]).
-    Unit kind not in SCHEMA list; DOA is not A (A requires Jr/Js).
+  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ
+    (kA · m−1) ... Powder 500 1.34 0.73 330 1230
+  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along
+    easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]). Unit kind not
+    in SCHEMA list; DOA is not A (A requires Jr/Js).
 - id: nd2fe14b_dhddr_br_bonded_horikawa2021_tdec23
   phase: Nd2Fe14B
   route: 'other: d-HDDR powder + field-aligned compression bonding'
-  process: d-HDDR powder (decrepitation at 23 °C) mixed with ~3 wt% epoxy, compression moulded and cured in vacuum (field alignment during moulding implied, not stated explicitly)
+  process: d-HDDR powder (decrepitation at 23 °C) mixed with ~3 wt% epoxy, compression moulded and cured in vacuum
+    (field alignment during moulding implied, not stated explicitly)
   conditions:
     field_T: null
     T_process_K: null
@@ -1448,14 +1534,18 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8451657/fullTextXML
     evidence: full_text
     locator: Sect. 2.3.2, Table 2
-  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ (kA · m−1) ... Bonded magnet 23 0.92 - 136 1100 ... For the fabrication of these bonded
-    magnets, magnet powder was mixed with approximately 3 wt% of epoxy resin binder. Then, compression molding and subsequent curing under vacuum conditions were performed.
-  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]).
-    Alignment field during moulding implied ('the applied magnetic field and the pressure during the molding') but value not given; magnet density not given.
+  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ
+    (kA · m−1) ... Bonded magnet 23 0.92 - 136 1100 ... For the fabrication of these bonded magnets, magnet powder
+    was mixed with approximately 3 wt% of epoxy resin binder. Then, compression molding [...]
+  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along
+    easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]). Alignment field
+    during moulding implied ('the applied magnetic field and the pressure during the molding') but value not given;
+    magnet density not given.
 - id: nd2fe14b_dhddr_br_bonded_horikawa2021_tdec500
   phase: Nd2Fe14B
   route: 'other: d-HDDR powder + field-aligned compression bonding'
-  process: d-HDDR powder (decrepitation at 500 °C) mixed with ~3 wt% epoxy, compression moulded and cured in vacuum (field alignment during moulding implied, not stated explicitly)
+  process: d-HDDR powder (decrepitation at 500 °C) mixed with ~3 wt% epoxy, compression moulded and cured in vacuum
+    (field alignment during moulding implied, not stated explicitly)
   conditions:
     field_T: null
     T_process_K: null
@@ -1477,14 +1567,18 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8451657/fullTextXML
     evidence: full_text
     locator: Sect. 2.3.2, Table 2
-  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ (kA · m−1) ... Bonded magnet 500 0.95 - 147 1160 ... For the fabrication of these bonded
-    magnets, magnet powder was mixed with approximately 3 wt% of epoxy resin binder. Then, compression molding and subsequent curing under vacuum conditions were performed.
-  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]).
-    Alignment field during moulding implied ('the applied magnetic field and the pressure during the molding') but value not given; magnet density not given.
+  quote: Table 2. T dec dependence of magnetic properties Sample T dec (°C) J r (T) DOA ( BH )max (kJ · m−3) H cJ
+    (kA · m−1) ... Bonded magnet 500 0.95 - 147 1160 ... For the fabrication of these bonded magnets, magnet powder
+    was mixed with approximately 3 wt% of epoxy resin binder. Then, compression [...]
+  note: DOA defined in the same review as DOA = (Jr - Jr_hard)/Jr, Jr and Jr_hard = remanent polarization along
+    easy and hard axes. Powder Jr measured on aligned powder sample (method details in ref. [48]). Alignment field
+    during moulding implied ('the applied magnetic field and the pressure during the molding') but value not given;
+    magnet density not given.
 - id: nd2fe14b_hddr_brjs_nakamura1999
   phase: Nd2Fe14B
   route: 'other: HDDR (texture memory) powder'
-  process: 'HDDR of Nd-Fe-B(-Co,Ga) powder: heated to >=800 °C in vacuum, disproportionated in H2, recombined with slow desorption under Ar'
+  process: 'HDDR of Nd-Fe-B(-Co,Ga) powder: heated to >=800 °C in vacuum, disproportionated in H2, recombined with
+    slow desorption under Ar'
   conditions:
     field_T: null
     T_process_K: '>=1073'
@@ -1505,8 +1599,9 @@
     url: https://api.openalex.org/works/doi:10.3379/jmsjmag.23.300
     evidence: abstract
     locator: abstract
-  quote: Various heat treatment patterns were also used for the recombination stage, and it was found that heating at high temperatures under Ar, rather than in a vacuum, enhanced the remanence to give
-    B1/Js ≈0.9, i. e. slow desorption with a relatively high partial pressure of hydrogen, is more effective in producing anisotropic HDDR powder.
+  quote: '[...] also used for the recombination stage, and it was found that heating at high temperatures under
+    Ar, rather than in a vacuum, enhanced the remanence to give B1/Js ≈0.9, i. e. slow desorption with a relatively
+    high partial pressure of hydrogen, is more effective in producing anisotropic HDDR powder.'
   note: '''B1/Js'' in the OpenAlex abstract is presumably Br/Js (subscript r misprinted). Value is approximate (''≈0.9'').'
 - id: nd2fe14b_iso_br_arnold_plastiform3202
   phase: Nd2Fe14B
@@ -1533,9 +1628,11 @@
     url: https://www.arnoldmagnetics.com/wp-content/uploads/2017/10/3202-Data-Sheet-2-16-12.pdf
     evidence: datasheet
     locator: Typical Properties table
-  quote: PLASTIFORM 3202 Isotropic Magnets ... Br (Residual Induction) 6,900 Gauss 690 mTesla ... Epoxy bonded, Compression molded, isotropic neodymium-iron-boron
-  note: Datasheet (accessed 2026-10-03). Density 5.95 g/cc on datasheet; powder volume fraction not stated (Magnequench web page gives typical 77.5 vol% loading for compression-bonded MQP magnets). Exchange-enhanced
-    remanence not stated.
+  quote: PLASTIFORM 3202 Isotropic Magnets ... Br (Residual Induction) 6,900 Gauss 690 mTesla ... Epoxy bonded,
+    Compression molded, isotropic neodymium-iron-boron
+  note: Datasheet (accessed 2026-10-03). Density 5.95 g/cc on datasheet; powder volume fraction not stated (Magnequench
+    web page gives typical 77.5 vol% loading for compression-bonded MQP magnets). Exchange-enhanced remanence not
+    stated.
 - id: nd2fe14b_iso_br_arnold_plastiform3201
   phase: Nd2Fe14B
   route: isotropic

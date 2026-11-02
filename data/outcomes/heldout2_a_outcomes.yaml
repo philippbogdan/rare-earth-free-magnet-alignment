@@ -1,3 +1,5 @@
+# Published sample outcomes in the fresh batch tested by frozen v4 predictions.
+# Use score status to distinguish convertible alignment measurements from other records.
 - id: fepd_dewet_0min_inplane
   phase: L10-FePd
   route: 'other: evaporated film annealed'
@@ -603,8 +605,7 @@
     locator: Results, Figure 3 and Table 1
   quote: The out-of-plane saturation magnetization ( M s ﬩ ) value decreased with the insertion of a single and
     two Ag nanolayers into the FePt system, ranging from 950 to 900 emu/cm 3 and 875 emu/cm 3 , and the remanent
-    magnetization ( M r ﬩ ) also decreased from 932 to 876 emu/cm 3 and 835 emu/cm 3 following the slope of M s
-    .
+    magnetization ( M r ﬩ ) also decreased from 932 to 876 emu/cm 3 and 835 emu/cm 3 [...]
   note: Converted measured Ms = 950 emu/cm3 to μ0Ms using 1 emu/cm3 = 1000 A/m. Paired with remanence-ratio record
     for the same film.
 - id: fept_ag_layers_1_js
@@ -633,8 +634,7 @@
     locator: Results, Figure 3 and Table 1
   quote: The out-of-plane saturation magnetization ( M s ﬩ ) value decreased with the insertion of a single and
     two Ag nanolayers into the FePt system, ranging from 950 to 900 emu/cm 3 and 875 emu/cm 3 , and the remanent
-    magnetization ( M r ﬩ ) also decreased from 932 to 876 emu/cm 3 and 835 emu/cm 3 following the slope of M s
-    .
+    magnetization ( M r ﬩ ) also decreased from 932 to 876 emu/cm 3 and 835 emu/cm 3 [...]
   note: Converted measured Ms = 900 emu/cm3 to μ0Ms using 1 emu/cm3 = 1000 A/m. Paired with remanence-ratio record
     for the same film.
 - id: fept_ag_layers_2_js
@@ -663,8 +663,7 @@
     locator: Results, Figure 3 and Table 1
   quote: The out-of-plane saturation magnetization ( M s ﬩ ) value decreased with the insertion of a single and
     two Ag nanolayers into the FePt system, ranging from 950 to 900 emu/cm 3 and 875 emu/cm 3 , and the remanent
-    magnetization ( M r ﬩ ) also decreased from 932 to 876 emu/cm 3 and 835 emu/cm 3 following the slope of M s
-    .
+    magnetization ( M r ﬩ ) also decreased from 932 to 876 emu/cm 3 and 835 emu/cm 3 [...]
   note: Converted measured Ms = 875 emu/cm3 to μ0Ms using 1 emu/cm3 = 1000 A/m. Paired with remanence-ratio record
     for the same film.
 - id: fept_bagc_8nm_001_rock

@@ -1,0 +1,223 @@
+{
+ "account": {
+  "phases": 31,
+  "rare_earth_free_phases": 30,
+  "reference_phases": [
+   "Nd2Fe14B"
+  ],
+  "route_classes": 18,
+  "cells": 558,
+  "verdicts": {
+   "full": 103,
+   "capped": 30,
+   "none": 196,
+   "open": 229
+  },
+  "rare_earth_free_cells": 540,
+  "rare_earth_free_verdicts": {
+   "full": 99,
+   "capped": 30,
+   "none": 187,
+   "open": 224
+  },
+  "full_threshold_A": 0.95,
+  "full_by_route": {
+   "EP": 28,
+   "FP": 14,
+   "SC+FA": 12,
+   "SC+SA": 11,
+   "FS": 7,
+   "MO": 5,
+   "FA": 5,
+   "HD": 4,
+   "DS+SA": 3,
+   "RX+FA": 3,
+   "RX+SA": 3,
+   "DS+FA": 3,
+   "DS": 2,
+   "AM+FA": 2,
+   "TGG": 1
+  },
+  "full_in_film_or_single_crystal_routes": 51,
+  "cells_with_refuting_measurement": 558,
+  "open_cells_with_deciding_quantity": 229
+ },
+ "mnal_c_textured_parent": {
+  "phase": "tau-MnAl-C",
+  "parent_fibre": [
+   0,
+   0,
+   0,
+   1
+  ],
+  "product_variants": 6,
+  "easy_axis_angle_to_fibre_deg": 52.2,
+  "easy_axis_angle_spread_deg": 0.0,
+  "A_max_AM": 0.6133,
+  "A_max_DS": 0.6133,
+  "verdict_AM": "capped",
+  "A_random": 0.5,
+  "cos_of_angle": 0.6133
+ },
+ "validation": {
+  "v1": {
+   "heldout_measurements": 441,
+   "within": 394,
+   "straddling": 34,
+   "violated": 13
+  },
+  "v2": {
+   "heldout_measurements": 4,
+   "within": 4,
+   "straddling": 0,
+   "violated": 0
+  },
+  "v3": {
+   "heldout_measurements": 89,
+   "within": 89,
+   "straddling": 0,
+   "violated": 0
+  },
+  "v4": {
+   "heldout_measurements": 40,
+   "within": 34,
+   "straddling": 4,
+   "violated": 2
+  },
+  "v5": {
+   "heldout_measurements": 60,
+   "within": 60,
+   "straddling": 0,
+   "violated": 0
+  },
+  "v1_detail": {
+   "within_share": 0.8934,
+   "violated_share": 0.0295,
+   "within_or_straddling_share": 0.9705,
+   "records_in_heldout_batches": 772,
+   "not_scored": {
+    "not a test": 228,
+    "not saturated": 15,
+    "not convertible": 88
+   },
+   "ceiling_below_0.97": {
+    "measurements": 220,
+    "within": 193,
+    "straddling": 14,
+    "violated": 13
+   },
+   "cannot_align_refuted": [
+    12,
+    130
+   ],
+   "alignment_shown": [
+    254,
+    290
+   ],
+   "pairs_as_expected": [
+    10,
+    10
+   ],
+   "violations": [
+    "copt_sc_kandaurova1992a",
+    "fecrco_FA_sintered_fe28cr7co2mo_vompe2019",
+    "feni_meteorite_poirier2015",
+    "hcpco_fp_ener2018_randompowder_mrms",
+    "hcpco_oth_bousnina2020_h025_mrms",
+    "hcpco_oth_bousnina2020_h05_mrms",
+    "hcpco_oth_bousnina2020_h075_mrms",
+    "hcpco_oth_bousnina2020_h10_mrms",
+    "hcpco_oth_bousnina2020_h125_mrms",
+    "hcpconi_iso_maurer2007_mrms",
+    "hfco7_iso_cl_bal2014",
+    "mnal_other_jia2022a",
+    "uni_out_rt_fept_ep_shima2002"
+   ],
+   "exposed": {
+    "n_scored": 75,
+    "n_not_test": 15,
+    "ceiling_ok": 63,
+    "ceiling_possible": 5,
+    "ceiling_violated": 7,
+    "none_n": 7,
+    "none_refuted": 0,
+    "acts_n": 61,
+    "acts_shown": 39,
+    "open_n": 7,
+    "interval_inside": 47,
+    "sharpness": 0.3314
+   },
+   "known": {
+    "n_scored": 107,
+    "n_not_test": 54,
+    "ceiling_ok": 106,
+    "ceiling_possible": 1,
+    "ceiling_violated": 0,
+    "none_n": 0,
+    "none_refuted": 0,
+    "acts_n": 107,
+    "acts_shown": 96,
+    "open_n": 0,
+    "interval_inside": 99,
+    "sharpness": 0.5327
+   }
+  }
+ },
+ "coverage": {
+  "candidate_phases_named_in_reviews": 24,
+  "candidate_phases_covered": 24,
+  "reviews": 20,
+  "literature_route_classes": 16,
+  "literature_route_classes_covered": 16
+ },
+ "evidence": {
+  "records_used_by_account": 476,
+  "quote_found_at_source": 468,
+  "doi_resolves": 443,
+  "quote_found_local": 68,
+  "quote_found_manual": 48,
+  "quote_found_online": 352,
+  "quote_not_found": 8,
+  "labelled_estimates": 116,
+  "records_in_repository": 3260
+ },
+ "frozen": {
+  "predictions_sha256": {
+   "v1": "eb6ee47de1f561568ff545347e7336fb226fee9f205a0a82637db39892252eca",
+   "v2": "fed2017ea7a6c8dc82c6ddf87cdef7f4300bca417e3ae55113b0eac10bc391af",
+   "v3": "b203b12b3f0b75f6935c9cde3aa4ee783f2c0fb79f406b5557cf7bef55716588",
+   "v4": "b8ce592f93b14a5bc774115a5cfe590a3fd1c647e7332174071f77fe0123c91b",
+   "v5": "0c7a5fd10bc6252afbdd1f9a24101db312ed32ec76170e6650a0e308afe15583"
+  },
+  "heldout_batches": {
+   "batch1": {
+    "fe16n2_outcomes.yaml": 60,
+    "l10_outcomes.yaml": 71,
+    "mnal_outcomes.yaml": 124,
+    "mnga_co_outcomes.yaml": 37,
+    "universe_outcomes.yaml": 26,
+    "nano_other_outcomes.yaml": 126,
+    "ferrite_ndfeb_outcomes.yaml": 56,
+    "mnbi_outcomes.yaml": 49,
+    "alnico_fecrco_outcomes.yaml": 277,
+    "fese_hea_outcomes.yaml": 12
+   },
+   "batch2": {
+    "ndfeb_routes_outcomes.yaml": 23,
+    "borides_feta_outcomes.yaml": 1
+   },
+   "batch3": {
+    "mn4n_outcomes.yaml": 6
+   },
+   "batch4": {
+    "heldout2_b_outcomes.yaml": 139
+   },
+   "batch5": {
+    "heldout2_a_outcomes.yaml": 60
+   },
+   "batch6": {
+    "heldout3_outcomes.yaml": 81
+   }
+  }
+ }
+}

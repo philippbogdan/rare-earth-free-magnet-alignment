@@ -1,4 +1,4 @@
-"""Engine checks against analytic benchmarks (run: .venv/bin/python -m pytest -q or directly)."""
+"""Check analytic orientation limits; run with python tests/test_engine.py."""
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 import numpy as np

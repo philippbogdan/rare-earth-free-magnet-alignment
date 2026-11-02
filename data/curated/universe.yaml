@@ -1,8 +1,6 @@
-# Universe of the frontier (denominators), generated from data/raw/universe_inputs.yaml records.
-# phases: rare-earth-free hard phases named as permanent-magnet candidates in the 20 reviews read
-#   (one record per review naming the phase). route_classes: alignment routes used or proposed in the
-#   literature, grouped into the account's route classes (docs/METHOD.md), with the records describing them.
-# Classes DS+SA and RX+SA are evaluated by the account but are not in this literature universe.
+# Candidate phases and route classes named in the selected literature.
+# Entries refer to records in data/raw/universe_inputs.yaml; see docs/data.md.
+# DS+SA and RX+SA are additional account routes beyond this literature selection.
 phases:
 - name: AlNiCo
   named_in:

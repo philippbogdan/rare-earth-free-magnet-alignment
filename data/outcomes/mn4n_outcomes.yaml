@@ -1,5 +1,5 @@
-# Topic: mn4n. Sealed measured outcomes. Do not expose values before predictions are frozen.
-# Figure-read values have explicit locator and estimated uncertainty.
+# Published Mn4N sample outcomes tested with frozen v2 predictions.
+# Figure readings retain their locator and estimated uncertainty.
 - id: mn4n_ep_zhou2021_s1_mrms
   phase: Mn4N
   route: EP

@@ -1,9 +1,9 @@
-"""Score a set of case predictions against the opened outcomes and the known cases.
+"""Score frozen predictions against measured outcomes, preserving batch eligibility.
 
-  v1  data/curated/cases.yaml       frozen before opening (docs/PROTOCOL_LOG.md): the held-out test
-  v2  data/curated/cases_v2.yaml    revised after opening (post hoc; every change listed in
-                                    docs/PROTOCOL_LOG.md); scored for information, never as held-out
-Writes results/scores_<version>.json.
+Each version is held out only on batches opened after its predictions were fixed.
+Earlier outcomes scored by revised rules are post hoc. Known and exposed records
+remain separate; docs/validation.md explains the sequence and exclusions.
+Outputs are results/scores_<version>.json.
 """
 import json
 import os

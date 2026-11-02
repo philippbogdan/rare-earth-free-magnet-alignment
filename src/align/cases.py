@@ -1,5 +1,8 @@
-"""Conditional predictions for the sealed published cases, built only from their
-value-free conditions (data/sealed/*.conditions.yaml). Writes data/curated/cases.yaml.
+"""Build sample predictions from value-free conditions and current phase data.
+
+Conditions are in data/heldout/*.conditions.yaml. Use build() to inspect current
+predictions without changing the frozen files; see REPRODUCE.md for a safe export.
+The historical files retain the rules used before each outcome batch opened.
 
 Each case gets:
   phase, route          the account phase and route class it tests
@@ -8,7 +11,7 @@ Each case gets:
   cls                   'acts' if A_hi > A_base + DELTA, 'none' otherwise; 'open' when an
                         unpublished quantity decides; 'info' when not a test of alignment
   meas                  how the measured value converts to A (MrMs | Br | vfrac | class | skip)
-  status                'heldout' or 'exposed' (docs/PROTOCOL_LOG.md)
+  status                initial 'heldout' or 'exposed'; evaluate.py applies batch eligibility
 """
 import json
 import os
@@ -25,7 +28,7 @@ from .routes import Path, _fibre
 
 PLANAR = 2 / np.pi                       # easy axes random in a plane, measured in that plane
 
-PHASE_MAP = {                            # collector phase label -> account phase id
+PHASE_MAP = {                            # source phase label -> account phase ID
     'tau-MnAl': 'tau-MnAl', 'tau-MnAl-C': 'tau-MnAl-C', 'tau-MnAl(C)': 'tau-MnAl-C',
     'LTP-MnBi': 'LTP-MnBi', 'L10-FeNi': 'L10-FeNi', 'L10-FePt': 'L10-FePt',
     'L10-CoPt': 'L10-CoPt', 'L10-FePd': 'L10-FePd', "α''-Fe16N2": 'Fe16N2',
@@ -64,7 +67,7 @@ PAIRS = [   # (case, reference case, expectation): same study, same alloy, one c
     ('ndfeb_nguyen2013_field_mr_over_ms', 'ndfeb_nguyen2013_zero_mr_over_ms', 'equal'),
 ]
 
-EXPOSED = {   # docs/PROTOCOL_LOG.md
+EXPOSED = {   # pre-freeze exposures described in docs/validation.md
     'prefix': ['fepd_scfa_', 'uni_out_rt_fepd_scfa', 'uni_out_fepd_l10_fa', 'mnal_hd_', 'mnal_sc_sa_kubo1976'],
     'ids': ['mnal_am_tiden2024_ref_mrms', 'mnal_ep_takata2018_sto', 'mnal_ep_takata2018_mgo_mn4n',
             'mnal_ep_takata2018_mgo', 'mnal_ep_takata2018_rocking', 'mnbi_other_tang2022_fieldsinter300',
@@ -244,11 +247,11 @@ def rods_A(tex, h, m, rule, spread=0.0):
 def build():
     ctx = Ctx()
     out = []
-    files = sorted(f for f in os.listdir(os.path.join(ROOT, 'data', 'sealed')) if f.endswith('.conditions.yaml'))
-    man = json.load(open(os.path.join(ROOT, 'data', 'sealed', 'MANIFEST.json')))
+    files = sorted(f for f in os.listdir(os.path.join(ROOT, 'data', 'heldout')) if f.endswith('.conditions.yaml'))
+    man = json.load(open(os.path.join(ROOT, 'data', 'heldout', 'MANIFEST.json')))
     real = {f: [c['id'] for c in m['cases']] for b in man['batches'].values() for f, m in b['files'].items()}
     for fn in files:                         # same-sample Js records for Br -> A
-        recs = yaml.safe_load(open(os.path.join(ROOT, 'data', 'sealed', fn))) or []
+        recs = yaml.safe_load(open(os.path.join(ROOT, 'data', 'heldout', fn))) or []
         ids = real.get(fn.replace('.conditions.yaml', '.yaml'), [])
         if len(ids) == len(recs):
             for c, i in zip(recs, ids):
@@ -266,13 +269,13 @@ def build():
                     ctx.js_same[x['id']] = exact2
                 elif len(same) == 1:
                     ctx.js_same[x['id']] = same[0]
-    man = json.load(open(os.path.join(ROOT, 'data', 'sealed', 'MANIFEST.json')))
+    man = json.load(open(os.path.join(ROOT, 'data', 'heldout', 'MANIFEST.json')))
     real = {f: [c['id'] for c in m['cases']] for b in man['batches'].values() for f, m in b['files'].items()}
     for fn in files:
         topic = fn.replace('_outcomes.conditions.yaml', '')
-        recs = yaml.safe_load(open(os.path.join(ROOT, 'data', 'sealed', fn)))
+        recs = yaml.safe_load(open(os.path.join(ROOT, 'data', 'heldout', fn)))
         ids = real.get(fn.replace('.conditions.yaml', '.yaml'), [])
-        if len(ids) == len(recs):              # value-free manifest ids (the redaction also hit ids)
+        if len(ids) == len(recs):              # recover original case IDs from manifest order
             for c, i in zip(recs, ids):
                 c['id'] = i
         for c in recs:
@@ -302,7 +305,7 @@ def encode(ctx, topic, c):
     cond = c.get('conditions') or {}
     proc = str(c.get('process') or '').lower()
     base = {'phase': pid, 'route': route, 'meas': {'kind': mk, 'along': al, 'saturating': saturating(c)}}
-    if mk == 'Br' and ctx.js_same.get(cid):         # same-sample Js for every phase (fixed after v3)
+    if mk == 'Br' and ctx.js_same.get(cid):         # use a same-sample saturation record wherever linked
         base['meas']['js_case'] = ctx.js_same[cid]
     if pid is None or pid not in ctx.ph:
         return {**base, 'pred': pred(1, ISO, 'phase not in the account', cls='info')}
@@ -598,7 +601,7 @@ def enc_mnga_co(ctx, pid, c, route, r, proc, cond, al, mk):
 
 
 def _rod_arrangement(why):
-    """v2: rods in an assembly made without a deliberate alignment step: their arrangement is unverified."""
+    """Bound a rod assembly whose arrangement was not measured after preparation."""
     return _hyp({'3-D random': ISO, 'lying flat at random azimuth (in-plane)': PLANAR,
                  'parallel bundles (dipolar self-assembly)': 1.0},
                 why + ': rod arrangement in the measured sample not verified', cls='open')
@@ -754,7 +757,7 @@ def enc_alnico_fecrco(ctx, pid, c, route, r, proc, cond, al, mk):
     if mo:
         mm = re.search(r'(\d+(?:\.\d+)?)\s*mo', proc + ' ' + cid.lower())
         mo_wt = float(mm.group(1)) if mm else None
-    mo_low = mo and mo_wt is not None and mo_wt < 3   # v2: path 1 is sourced at 3 wt% Mo only
+    mo_low = mo and mo_wt is not None and mo_wt < 3   # the nearest-axis path is sourced only at the stated Mo composition
     # ---------------------------------------------------- not tests of alignment
     if mk == 'class' or c.get('quantity') == 'texture_metric':
         return out(pred(1.0, ISO, 'parent texture metric from the same work that supplied the account input '
@@ -975,8 +978,10 @@ def enc_mn4n(ctx, pid, c, route, r, proc, cond, al, mk):
 
 
 def build_known():
-    """Specs for the known (fidelity) cases of PROBLEM.md, data/raw/known_cases_*.yaml, from the same
-    value-free fields and the same rules as the sealed cases."""
+    """Apply current sample rules to data/raw/known_cases_*.yaml.
+
+    These examples were already known and provide fidelity checks.
+    """
     ctx = Ctx()
     keep = ('id', 'phase', 'route', 'process', 'conditions', 'quantity', 'unit', 'measured_along', 'measurement')
     out = []
@@ -996,17 +1001,20 @@ def build_known():
 
 
 def write(version='v2'):
-    """Write the current rules' predictions. The v1 files (cases.yaml, cases_known.yaml) are the
-    frozen pre-registration (docs/PROTOCOL_LOG.md) and are never rewritten."""
+    """Write current predictions under a version suffix, replacing any existing file.
+
+    This writer rejects v1 but can overwrite later frozen versions. For inspection,
+    call build() and save elsewhere as shown in REPRODUCE.md.
+    """
     assert version != 'v1', 'v1 is frozen'
     known = build_known()
     open(os.path.join(ROOT, 'data', 'curated', f'cases_known_{version}.yaml'), 'w').write(
-        f'# Known-case predictions, rules {version} (post hoc; see docs/PROTOCOL_LOG.md).\n'
+        f'# Known-case predictions, rules {version}; fidelity checks. See docs/validation.md.\n'
         + yaml.safe_dump(known, sort_keys=False, allow_unicode=True, width=110))
     specs = build()
     open(os.path.join(ROOT, 'data', 'curated', f'cases_{version}.yaml'), 'w').write(
-        f'# Case predictions, rules {version}: revised AFTER the outcomes were opened (post hoc, not a\n'
-        '# held-out test); every change is listed in docs/PROTOCOL_LOG.md.\n'
+        f'# Current case predictions, label {version}. A label alone does not establish held-out status.\n'
+        '# Batch eligibility and frozen prediction hashes are described in docs/validation.md.\n'
         + yaml.safe_dump(specs, sort_keys=False, allow_unicode=True, width=110))
     return specs
 

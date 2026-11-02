@@ -1,6 +1,8 @@
-"""Record registry: every number used by the account is a sourced record (id -> value,
-unit, source, quote, evidence) from data/raw/*.yaml, data/curated/records.yaml or opened
-outcome files; curated phase descriptions refer to records by id."""
+"""Load cited records and verification status, indexed by record ID.
+
+Records come from data/raw/, data/curated/records.yaml and optional outcome files.
+Phase descriptions refer to these IDs; labelled estimates are resolved by curate.py.
+"""
 import glob
 import json
 import os

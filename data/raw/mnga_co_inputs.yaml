@@ -1,14 +1,6 @@
-# mnga_co inputs (visible). Topic: Mn-Ga hard phases and Co-rich rare-earth-free compounds.
-# Phases (names used in `phase`):
-#   L10-MnGa    L1_0 (AuCu-type, P4/mmm) Mn_xGa, x ~ 1-1.8 (Mn2Ga(r) / Mn3Ga2 in the Mn-Ga diagram)
-#   D022-Mn3Ga  D0_22 (Al3Ti-type, I4/mmm) Mn3-xGa, 0 <= x <= 1 (Mn3Ga ... Mn2Ga); composition in `conditions`
-#   D022-Mn3Ge  D0_22 tetragonal Mn3Ge (bulk metastable; parent hexagonal D0_19)
-#   Zr2Co11     hard Zr2Co11 phase (rhombohedral R32 polymorph carries the anisotropy), incl. Zr-Co-B, Zr-Co-Mo(-Si) alloys
-#   HfCo7       hard Hf-Co phase 'HfCo7' (orthorhombic; incl. Hf2Co11, Hf2Co11B, Co-Hf-B, Co-Hf-Zr-B alloys)
-# Conventions: temperatures in K (converted from C where needed, see note); Js = mu0*Ms in T (converted from
-# emu/cm3, kA/m or 4*pi*Ms in kG where needed, formula in note); K1 in MJ/m3 (1 Merg/cm3 = 0.1 MJ/m3);
-# lattice values in Angstrom as {a, b, c}. Quotes are verbatim; '...' joins verbatim fragments of the same source.
-# Values quoted from reviews carry evidence: review. Outcome data (remanence, Mr/Ms, texture) are NOT in this file.
+# Inputs for Mn-Ga, Mn-Ge and Co-rich hard magnetic phases.
+# Composition and polymorph matter; read conditions alongside the canonical phase label.
+# Source units, conversions and secondary-source evidence are recorded explicitly.
 - id: mnga_l10_ms5k_lu2015
   phase: L10-MnGa
   quantity: Ms_mass
@@ -173,7 +165,7 @@
     locator: Section 4
   quote: Sakuma [46] used the DFT calculations to predict the spin configu­ ration in the L10-MnGa phase, and determined
     the magnetic moments for Mn and Ga to be 2.51 and 0.09 μB, respectively. They reported that the magnetic moments
-    of Mn atoms are along the c axis, thus leading to a magnetocrystalline anisotropy of 2600 kJ/m3.
+    of Mn atoms are along the c axis, thus leading to a magnetocrystalline [...]
   note: Theoretical value quoted by a review; not a measurement.
 - id: mnga_l10_ha_lu2015
   phase: L10-MnGa
@@ -512,11 +504,9 @@
     url: https://www.nature.com/articles/srep17086.pdf
     evidence: full_text
     locator: Methods
-  quote: The as-melted ingots were then annealed in a tubular vacuum furnace at temperatures, Ta, ranging from 700
-    K to 900 K for annealing times, ta, extending from one day to up to one week. The ingots were subsequently quenched
-    into ice water. The annealing step is crucial for obtaining single-phase alloys. ... The annealing temperatures
-    were 740 K, 825 K and 870K for x = 0.15, 0.20 and 0.33, respectively, and 885K for the alloys with higher Mn
-    content.
+  quote: '[...] from one day to up to one week. The ingots were subsequently quenched into ice water. The annealing
+    step is crucial for obtaining single-phase alloys. ... The annealing temperatures were 740 K, 825 K and 870K
+    for x = 0.15, 0.20 and 0.33, respectively, and 885K for the alloys with higher Mn content.'
   note: Each anneal is above the Tc of the same alloy (740 > 595 K for x = 0.15; 825 > 640 K; 870 > 673 K; 885 >
     697-738 K), so the tetragonal phase formed while paramagnetic in this route.
 - id: mnga_l10_tf_lu2014
@@ -621,8 +611,7 @@
     locator: Section 3.1
   quote: Niida et al. [36] obtained the L10-type phase in annealed alloys with 36 to 37 at.% Ga, and the D022-type
     phase in annealed alloys with 26 to 34 ... at.% Ga. Huh et al. [51] determined that the melt-spun Mn–Ga ribbons
-    exhibit the L10 structure when the Ga content is 38 to 45 at.%, and the D022 structure when the Ga content is
-    34 at.%.
+    exhibit the L10 structure when the Ga content is 38 to 45 at.%, and the D022 [...]
   note: ''
 - id: mnga_l10_svp_cui2013
   phase: L10-MnGa
@@ -800,9 +789,7 @@
     locator: Section 2.1; ref. [15] = Mix et al., JMMM 391 (2015) 89; Fig. 1 after Okamoto 2014
   quote: The equilibrium tetragonal MnGa L10 phase forms below 1045 K from a peritectic reaction between the liquid
     and τ phases, within a limited range of Ga concentration from ~45–52 at.%. Mix et al. performed differential
-    scanning calorimetry (DSC) analysis to examine the formation of the L10 phase in a Mn55Ga45 alloy, see Fig.
-    3 [15]. Starting with a sample composed of quenched-in high-temperature τ phase (see Fig. 1), they found upon
-    heating that the transformation from the τ phase to the L10 phase occurred at 630 K.
+    scanning calorimetry (DSC) analysis to examine the formation of the L10 phase in a [...]
   note: Phase labels follow the Okamoto 2014 diagram ('tau' = high-temperature Mn-Ga phase, not tau-MnAl). Conflicts
     in detail with the Minakuchi/Hao-Xiong diagram (peritectoid 760 C, eutectoid 711 C).
 - id: mnga_l10_tf_mix2015
@@ -891,10 +878,9 @@
     url: https://par.nsf.gov/servlets/purl/10314453
     evidence: review
     locator: Section 2.2 (Mix et al. 2015)
-  quote: They also observed that the c/a ratio of the tetragonal L10 structure was significantly lower in the milled
-    powder, c/a = 0.9077, than in the original bulk material, c/a = 0.9486. ... They also found that the c/a ratio
-    increased to greater than the original bulk value, c/a = 0.9574, showing that the annealing relaxed the tetragonal
-    distortion caused by milling.
+  quote: '[...] was significantly lower in the milled powder, c/a = 0.9077, than in the original bulk material,
+    c/a = 0.9486. ... They also found that the c/a ratio increased to greater than the original bulk value, c/a
+    = 0.9574, showing that the annealing relaxed the tetragonal distortion caused by milling.'
   note: ''
 - id: mnga_l10_twins_mix2015
   phase: L10-MnGa
@@ -945,11 +931,9 @@
     url: https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.jmmm.2018.11.005
     evidence: abstract
     locator: abstract (Semantic Scholar)
-  quote: During the HD process, recrystallization and grain size refinements were observed without changing the
-    crystal structure, which led to the magnetic hardening and improvement of the magnetic properties. By optimizing
-    the HD parameters, maximum height reduction of up to 92% can be achieved where full recrystallization with few
-    defects were observed from EBSD and TEM measurements. ... with a height reduction of 92% and a homogeneous average
-    grain size of about 1.4 µm.
+  quote: '[...] of the magnetic properties. By optimizing the HD parameters, maximum height reduction of up to 92%
+    can be achieved where full recrystallization with few defects were observed from EBSD and TEM measurements.
+    ... with a height reduction of 92% and a homogeneous average grain size of about 1.4 µm.'
   note: ''
 - id: mnga_l10_deform_lu2022
   phase: L10-MnGa
@@ -1072,10 +1056,9 @@
     url: https://par.nsf.gov/servlets/purl/10314453
     evidence: review
     locator: Section 2.1
-  quote: Depending on the composition, in the range from 24 to 30 at.% Ga, the Mn3Ga phase forms from either the
-    high temperature ε or γ-Mn phases when cooled below 1003 K. ... This indicates that the tetragonal phase is
-    relatively stable down to room temperature and can be produced from annealing the high-temperature cubic phase
-    below 800 K.
+  quote: '[...] on the composition, in the range from 24 to 30 at.% Ga, the Mn3Ga phase forms from either the high
+    temperature ε or γ-Mn phases when cooled below 1003 K. ... This indicates that the tetragonal phase is relatively
+    stable down to room temperature and can be produced from annealing the [...]'
   note: ''
 - id: mn3ga_formation_ener_kb2022
   phase: D022-Mn3Ga
@@ -1094,9 +1077,7 @@
     locator: Section 2.2 (Ener et al. 2015)
   quote: The high temperature D019 phase dominated their as-cast ingots, thus they required nucleation and growth
     of the D022 phase within this existing matrix through an annealing treatment. By examining the microstructure
-    with magneto-optical Kerr microscopy, they concluded that the external magnetic field increased the nucleation
-    rate of the D022 phase. ... Cold rolling also introduced a high number of defects which likely served as nucleation
-    sites for the D022 phase
+    with magneto-optical Kerr microscopy, they concluded that the external magnetic [...]
   note: 'Diffusional nucleation-and-growth path: orientation relationship and variant selection not reported.'
 - id: mn3ga_formation_niida_kb2022
   phase: D022-Mn3Ga
@@ -1148,10 +1129,9 @@
     url: https://api.openalex.org/works/doi:10.1109/tmag.2014.2317460
     evidence: abstract
     locator: abstract
-  quote: X-ray diffraction results show the formation of D022after annealing the as-prepared ribbons with the D019structure
-    at 450 °C for different times. ... SEM images in the as-prepared ribbons show the presence of a microrod-like
-    D019microstructure with the size of the rods in the range of 0.5-1 μm. This homogeneous structure, after annealing
-    for long time is transformed to D022spherical shape nanoparticles with an average size below 100 nm.
+  quote: '[...] times. ... SEM images in the as-prepared ribbons show the presence of a microrod-like D019microstructure
+    with the size of the rods in the range of 0.5-1 μm. This homogeneous structure, after annealing for long time
+    is transformed to D022spherical shape nanoparticles with an average size below 100 [...]'
   note: Interpretation (nucleation and growth, orientation not inherited) is ours, from the morphology change; no
     orientation relationship is reported.
 - id: mn3ga_formation_elgendy2015
@@ -1169,10 +1149,9 @@
     url: https://api.openalex.org/works/doi:10.1088/0022-3727/48/12/125001
     evidence: abstract
     locator: abstract
-  quote: Mn 3 Ga alloys with a nearly pure D0 22 phase were obtained via a heat treatment of ground arc-melted ingot
-    powders with a cubic structure. X-ray difraction results show the formation of D0 22 after annealing the as-prepared
-    ingot at 673 K for different annealing time intervals. ... Microstructure studies on the annealed powders showed
-    the presence of small grains with size below 30 nm.
+  quote: '[...] arc-melted ingot powders with a cubic structure. X-ray difraction results show the formation of
+    D0 22 after annealing the as-prepared ingot at 673 K for different annealing time intervals. ... Microstructure
+    studies on the annealed powders showed the presence of small grains with size below [...]'
   note: ''
 - id: mn3ga_svp_elgendy2015
   phase: D022-Mn3Ga
@@ -1449,9 +1428,7 @@
     locator: abstract
   quote: The material nevertheless exhibits substantial uniaxial anisotropy, Ku=1.0MJm−3, which originates from
     the 4d site. The 2b site has hard axis anisotropy, which together with an oscillatory exchange coupling from
-    the first and second nearest neighbors, leads to a soft component of the magnetization in the c plane, coexisting
-    with c-axis hysteresis loops exhibiting coercivity of up to 1.2 T, and magnetization in the range 110–220 kA
-    m−1 at room temperature, depending on preparation conditions.
+    the first and second nearest neighbors, leads to a soft component of the magnetization [...]
   note: 'Room-temperature magnetization 110-220 kA/m = Js 0.14-0.28 T. Mn2Ga films: 480 kA/m and Ku = 2.35 MJ/m3
     (same abstract).'
 - id: mn3ga_k1_mn2ga_rode2013
@@ -1709,9 +1686,9 @@
     url: https://api.openalex.org/works/doi:10.1109/TMAG.2013.2244856
     evidence: abstract
     locator: abstract
-  quote: High-temperature x-ray diffraction and high-temperature magnetometry showed that the samples with low Mn
-    content (Mn1.9Ga and Mn2.1Ga) retain their tetragonal structure up to 850 K but the samples with high Mn concentrations
-    (Mn2.6Ga and Mn3.0Ga) undergo a structural phase transition from tetragonal to hexagonal phases around 800 K.
+  quote: '[...] and high-temperature magnetometry showed that the samples with low Mn content (Mn1.9Ga and Mn2.1Ga)
+    retain their tetragonal structure up to 850 K but the samples with high Mn concentrations (Mn2.6Ga and Mn3.0Ga)
+    undergo a structural phase transition from tetragonal to hexagonal phases around 800 K.'
   note: ''
 - id: mn3ga_tstab_balke2007
   phase: D022-Mn3Ga
@@ -2268,9 +2245,9 @@
     url: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.045502
     evidence: abstract
     locator: abstract
-  quote: This approach is demonstrated by solving a long-standing puzzle in the complex crystal structures of the
-    orthorhombic, rhombohedral, and hexagonal polymorphs close to the Zr2Co11 intermetallic compound. From our calculations,
-    we identified the hard magnetic phase and the origin of high coercivity in this compound
+  quote: '[...] demonstrated by solving a long-standing puzzle in the complex crystal structures of the orthorhombic,
+    rhombohedral, and hexagonal polymorphs close to the Zr2Co11 intermetallic compound. From our calculations, we
+    identified the hard magnetic phase and the origin of high coercivity in this compound'
   note: The abstract does not name the hard polymorph; the review Cui et al. 2018 (citing this work) names it as
     rhombohedral R32.
 - id: zr2co11_polymorph_demczyk1991
@@ -2378,11 +2355,9 @@
     url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
     evidence: review
     locator: Section 7
-  quote: A calculation of its free energy also suggests that the rhombohedral Zr2Co11 structure is stable only at
-    above 1198 K [176]. At lower temperatures, the rhombohedral structure transforms into a comparatively soft-magnetic
-    orthorhombic Zr2Co11 phase along with hexagonal Co and cubic Zr6Co23 [170,177]. ... These results indicate that
-    rapid quenching is essential to stabilize the rhombohedral Zr2Co11 and orthorhombic HfCo7, following the compound
-    formation and crystallization at high temperatures.
+  quote: '[...] the rhombohedral structure transforms into a comparatively soft-magnetic orthorhombic Zr2Co11 phase
+    along with hexagonal Co and cubic Zr6Co23 [170,177]. ... These results indicate that rapid quenching is essential
+    to stabilize the rhombohedral Zr2Co11 and orthorhombic HfCo7, following the [...]'
   note: ''
 - id: zr2co11_tstab_cui2018
   phase: Zr2Co11
@@ -2438,8 +2413,7 @@
     locator: p. 1
   quote: Note that the Co-Zr bulk phase diagram, shown in Figure 2b, indicates the formation of Zr2Co11 equilibrium
     phase only at a single composition (solid red vertical line). However, in practice it is found that standard
-    processing methods lead to the formation of secondary phases such as Co and Zr6Co23 having low magnetocrystalline
-    anisotropies during the cooling process.
+    processing methods lead to the formation of secondary phases such as Co and Zr6Co23 [...]
   note: ''
 - id: zr2co11_primary_cui2018
   phase: Zr2Co11
@@ -2493,11 +2467,9 @@
     url: https://www.osti.gov/servlets/purl/1768827
     evidence: full_text
     locator: p. 1 and Experimental Section
-  quote: The sputtered atoms gain sufficient energy via collisions with ions to form nanoparticles with high-anisotropy
-    structures in the gasaggregation chamber, before deposition on substrates kept at room temperature in the deposition
-    chamber. ... The nanoparticles were extracted as a collimated beam moving toward the deposition chamber, and
-    aligned by applying a magnetic field (Hal ≈ 5 kOe) before deposition on substrates, which were kept at room
-    temperature.
+  quote: '[...] deposition on substrates kept at room temperature in the deposition chamber. ... The nanoparticles
+    were extracted as a collimated beam moving toward the deposition chamber, and aligned by applying a magnetic
+    field (Hal ≈ 5 kOe) before deposition on substrates, which were kept at room temperature.'
   note: Alignment is free-body rotation of already ordered, single-crystalline particles in flight (not a field
     bias during formation).
 - id: zr2co11_svp_bal2013
@@ -2516,8 +2488,7 @@
     locator: p. 1, Fig. 1
   quote: The Zr2Co11 nanoparticles are monodisperse with an average particle size d = 8.7 nm and an rms standard
     deviation of σ/d = 0.18, as shown in the transmission electron microscopy (TEM) image (Figure 1a) and in the
-    corresponding particle-size histogram of Zr2Co11 nanoparticles (Figure 1b). High-resolution TEM (HRTEM) of a
-    single Zr2Co11 nanoparticle reveals a high-degree of atomic ordering by showing lattice fringes (Figure 1c).
+    corresponding particle-size histogram of Zr2Co11 nanoparticles (Figure 1b). [...]
   note: ''
 - id: zr2co11_svp_jin2016
   phase: Zr2Co11
@@ -2535,7 +2506,7 @@
     locator: Section III, Fig. 2
   quote: The average grain size of the rhombohedral Zr2Co11 increased from 35 nm for x = 0 to 110 nm for x = 1 (d),
     which is in good agreement with the XRD results of Fig. 1(a). The corresponding HRTEM images, Figs. 2(e)-2(f),
-    show that the hard magnetic phase contains defects and twinned crystals, which contributes to the coercivity.
+    show that the hard magnetic phase contains defects and twinned crystals, which [...]
   note: ''
 - id: zr2co11_twins_ivanova2009
   phase: Zr2Co11
@@ -2626,8 +2597,7 @@
     locator: abstract
   quote: All the ribbons consist mainly of a hard magnetic Zr2Co11 phase with rhombohedral crystal structure but
     also contain minor amounts of soft-magnetic phases. The increase in cell volume on alloying suggests that Mo
-    mainly enters the rhombohedral Zr2Co11 structure and occupies the Co site. Mo addition promotes the formation
-    of the hard magnetic phase and increases its volume fraction.
+    mainly enters the rhombohedral Zr2Co11 structure and occupies the Co site. Mo addition [...]
   note: ''
 - id: zr2co11_b_jin2016
   phase: Zr2Co11
@@ -2904,10 +2874,9 @@
     url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
     evidence: review
     locator: Section 7; ref. [179] = Lu et al., J. Alloys Compd. 627 (2015) 251
-  quote: For the compositions close to HfCo7, a formation of a new phase Hf2Co11 is also reported along with Hf6Co23
-    and a-Co for the bulk alloys prepared by arcmelting and subsequent annealing at above 973 K [179]. Interestingly,
-    the Hf2Co11 phase also crystallizes into an orthorhombic structure with a = 4.7 Å, b = 38 Å, and c = 8.3 Å and
-    exhibits magnetic properties similar to those of HfCo7.
+  quote: '[...] along with Hf6Co23 and a-Co for the bulk alloys prepared by arcmelting and subsequent annealing
+    at above 973 K [179]. Interestingly, the Hf2Co11 phase also crystallizes into an orthorhombic structure with
+    a = 4.7 Å, b = 38 Å, and c = 8.3 Å and exhibits magnetic properties similar to those of HfCo7.'
   note: ''
 - id: hfco7_easy_calc_cui2018
   phase: HfCo7
@@ -3035,10 +3004,9 @@
     url: https://www.nature.com/articles/srep06265
     evidence: full_text
     locator: Results
-  quote: The high-anisotropy crystal structure in Hf-Co nanoparticles is achieved during the gas-aggregation process
-    without a subsequent high-temperature anneal, often required in the case of wet-chemical and conventional physical
-    vapor-deposition methods14,17,18,19,23. ... As compared to the magnetic alignment performed in the solid phase,
-    relatively small fields of about 0.8 to 5 kOe are sufficient for the alignment of nanoparticles in the gas phase21,22,24,25.
+  quote: '[...] required in the case of wet-chemical and conventional physical vapor-deposition methods14,17,18,19,23.
+    ... As compared to the magnetic alignment performed in the solid phase, relatively small fields of about 0.8
+    to 5 kOe are sufficient for the alignment of nanoparticles in the gas phase21,22,24,25.'
   note: Alignment = free-body rotation of single-crystalline particles before landing.
 - id: hfco7_svp_bal2014
   phase: HfCo7
@@ -3058,7 +3026,7 @@
     locator: Results, Fig. 1
   quote: The corresponding particle-size histogram, shown in Fig. 1b, yields an average particle size of about 12.7
     nm with an rms standard deviation of σ/d ≈ 0.15. The Hf-Co nanoparticles are single-crystalline with a high
-    degree of atomic ordering, as can be seen from the high-resolution TEM image in Fig. 1c.
+    degree of atomic ordering, as can be seen from the high-resolution TEM image in Fig. [...]
   note: ''
 - id: hfco7_dsd_bal2014
   phase: HfCo7
@@ -3222,8 +3190,7 @@
     locator: abstract; Section I
   quote: Crystallization of the phase denoted HfCo7 , which is associated with the development of coercivity, occurs
     slowly at 500 ◦ C. ... The temperature range investigated spans the two exothermic phase transitions at 565
-    and 630 ◦ C in the amorphous material, which were identiﬁed in thermal analysis and magnetization measurements
-    [9].
+    and 630 ◦ C in the amorphous material, which were identiﬁed in thermal analysis and [...]
   note: 500-700 C = 773-973 K; DTA exotherms at 565 C (838 K) and 630 C (903 K). This crystallisation route lies
     at or above Tc (~770 K) rather than far above it; long anneals at 500 C give large-grained, soft, nearly single-phase
     HfCo7; at 800 C equilibrium HfCo3B2 + Hf6Co23 + Co.
@@ -3244,8 +3211,7 @@
     locator: Section III, Fig. 6
   quote: The thermo-magnetically processed sample in Fig. 6(a) shows well-deﬁned platelike crystallites which extend
     to length scales near 1 µm. This microstructure is distinct from that observed in the sample annealed at the
-    same temperature and for the same amount of time but with no applied magnetic ﬁeld [Fig. 6(b)]. ... In the case
-    demonstrated in Fig. 6, the ﬁeld appears to accelerate the coarsening of the microstructure
+    same temperature and for the same amount of time but with no applied magnetic ﬁeld [...]
   note: '600 C = 873 K > Tc (~770 K): the forming phase is paramagnetic; the reported field effect is on kinetics/microstructure,
     not on crystallographic alignment (none reported).'
 - id: hfco7_svp_mcguire2015

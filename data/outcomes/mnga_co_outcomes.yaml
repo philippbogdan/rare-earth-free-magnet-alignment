@@ -1,7 +1,6 @@
-# mnga_co outcomes - SEALED (do not open before predictions are frozen).
-# Phases: L10-MnGa, D022-Mn3Ga, D022-Mn3Ge, Zr2Co11, HfCo7 (see data/raw/mnga_co_inputs.yaml header).
-# Route codes per docs/METHOD.md; cluster-beam alignment is 'other: cluster deposition, in-flight field alignment'
-# (free-body rotation of single-crystal particles before landing). Mass remanences are given as Br with unit Am2/kg.
+# Published outcomes for Mn-Ga, Mn-Ge and Co-rich magnetic samples.
+# Cluster deposition may rotate particles before landing; process descriptions distinguish it.
+# Some mass remanences use the Br quantity label with a mass unit, so inspect unit before conversion.
 - id: mn3ga_iso_niida1996
   phase: D022-Mn3Ga
   route: isotropic
@@ -448,7 +447,7 @@
     locator: Section 2.2 (Ener et al. 2015)
   quote: The Hc and Mr of the cold-rolled samples was significantly improved by the magnetic field-assisted annealing
     (an improvement of ~200kA/m and ~4 Am2/kg with some variation depending on annealing temperature), whereas the
-    un-rolled samples did not show a significant improvement with the addition of the magnetic field during annealing.
+    un-rolled samples did not show a significant improvement with the addition of [...]
   note: ''
 - id: mn3ga_iso_balke2007_kb
   phase: D022-Mn3Ga
@@ -670,7 +669,7 @@
     locator: p. 2, Eq. (1)-(2), Fig. 4b
   quote: The remanence ratio of our Zr2Co11 nanoparticles, Mr/Ms = 0.88, corresponds to a δ value of about 0.11
     and to the narrow normalized distribution (p(θ) = P(θ)/P(0)) as shown in Figure 4b. Numerical evaluation of
-    Equation (1) shows that the percentage of nanoparticles with alignment angles smaller than 30° is about 73%.
+    Equation (1) shows that the percentage of nanoparticles with alignment angles smaller [...]
   note: Model-derived (circular with Mr/Ms); use as texture estimate only.
 - id: zr2co11_cl_js_bal2013
   phase: Zr2Co11

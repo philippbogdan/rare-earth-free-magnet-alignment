@@ -1,13 +1,11 @@
-# Curated phase descriptions for the account (docs/METHOD.md).
-# Every physical magnitude is {ref: <record id>} into data/raw/*.yaml or data/curated/records.yaml,
-# or {est: value, why: text} for an estimate made here (listed in FINDINGS.md). Plain values are
-# crystallographic conventions only (Miller indices, Laue class, cell content).
-# Selection rules, the same for every phase:
-#   Js  - highest measured 300 K value on bulk/powder/ribbon material (films and DFT not used);
-#   Tc  - measured on the same material as Js where available;
-#   T_f - the published formation window of each path; parents' textures only where published.
-#   single_variant particles: 'yes' only if demonstrated; otherwise 'unknown' (never assumed 'no').
-
+# Curated phase descriptions for the account; definitions in docs/method.md.
+# Physical magnitudes use {ref: record_id} or a labelled {est: value, why: text}.
+# Plain values specify crystallographic conventions such as indices and symmetry.
+# Js uses the highest measured room-temperature bulk, powder or ribbon value;
+# film measurements and density-functional calculations are not used for that choice.
+# Tc uses the same material where available. Formation windows and parent textures
+# follow the cited records. Single-variant particles are confirmed only when demonstrated.
+#
 # ------------------------------------------------------------------ tau-MnAl (binary)
 - id: tau-MnAl
   name: "τ-MnAl (binary, L1_0)"
@@ -233,7 +231,7 @@
   epitaxy: {demonstrated: true, refs: [copt_t_formation_barmak2004]}
   tgg: {}
 
-# ------------------------------------------------------------------ L1_0 FePd (calibration phase for field/stress selection)
+# ------------------------------------------------------------------ L1_0 FePd (field and stress selection)
 - id: L10-FePd
   name: "L1_0 FePd"
   universe: L10-FePd
@@ -785,7 +783,7 @@
   Tc: {ref: alpha1_tc_lo_iwama1970}
   cell: {atoms: 2, magnetic_fraction: {est: 0.7, why: "Fe+Co+Ni fraction of Alnico 5 (only bounds a paramagnetic bias)"}}
   paths:
-    # v2 (post hoc, docs/PROTOCOL_LOG.md): the open rod-axis question is settled by the opened outcomes:
+    # The v2 rod-axis rule uses already opened outcomes; see docs/validation.md:
     # equiaxed Alnico 5 field-cooled reaches Br/Js = 0.895 (same-sample Js), above the 0.831 that rods held
     # on the nearest <100> allow, and in columnar crystals A follows cos(field angle) (Makino 1963).
     - name: spinodal α -> α1 + α2 (rods follow the field direction in any grain)

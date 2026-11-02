@@ -1,4 +1,5 @@
-# fese_hea outcomes: sealed until predictions are frozen.
+# Published sample outcomes for Fe3Se4 and high-entropy magnetic alloys.
+# Batch membership and scoring eligibility are described in docs/validation.md.
 - id: hea_a_ta_br_na2021
   phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
   route: isotropic

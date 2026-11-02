@@ -1,7 +1,7 @@
 """Route evaluation: the same rules for every phase.
 
-A phase description (data/curated/phases.yaml; every number is a reference to a sourced
-record) is turned into, for each route: verdict, ceiling A_max and its magnet axis, the
+A phase description (data/curated/phases.yaml; physical inputs are sourced or labelled
+estimates) is turned into, for each route: verdict, ceiling A_max and its magnet axis, the
 chain that produces it, the prerequisites checked, any unpublished quantity that decides
 the answer (with the ceiling for each of its outcomes) and the single measurement that
 tests the prediction.

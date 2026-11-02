@@ -1,7 +1,7 @@
 """Print, for records whose quote was not found automatically, the best-matching passage of the
 saved source text, for checking by eye (results go to data/verification_manual.yaml by hand).
 
-    .venv/bin/python tools/quote_context.py <record id> ...
+    python tools/quote_context.py <record id> ...
 """
 import difflib
 import hashlib

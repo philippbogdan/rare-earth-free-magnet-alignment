@@ -1,6 +1,6 @@
 """Scoring of the conditional predictions (data/curated/cases.yaml) against measured outcomes.
 
-Fixed before any sealed batch is opened (docs/PROTOCOL_LOG.md). For each case:
+The scoring definitions are described in docs/validation.md. For each case:
 
   measurement -> A interval [m_lo, m_hi]
       Mr/Ms, A_reported, variant fraction : value -/+ its stated uncertainty
@@ -16,7 +16,7 @@ Fixed before any sealed batch is opened (docs/PROTOCOL_LOG.md). For each case:
   class 'none'  refuted if m_lo > A_hi + tol   (alignment beyond what no mechanism allows)
   class 'acts'  shown   if m_lo > A_base + tol; otherwise 'not shown' (not a refutation)
   class 'open'  each hypothesis h kept if m_lo <= hyp[h] + tol, else refuted
-  interval      (pre-registered) inside if [m_lo, m_hi] overlaps [min(A_base, A_hi) - tol, A_hi + tol];
+  interval      inside if [m_lo, m_hi] overlaps [min(A_base, A_hi) - tol, A_hi + tol];
                 sharpness = mean (A_hi - A_base)
   pairs         'higher': value(case) > value(reference) beyond the stated uncertainties;
                 'equal' : |A(case) - A(reference)| <= 2 DELTA

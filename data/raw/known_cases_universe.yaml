@@ -1,4 +1,5 @@
-# Known-case outcome records (PROBLEM.md known cases: field-aged columnar AlNiCo; hot-extruded MnAl-C) met while collecting the `universe` topic
+# Additional known outcomes for field-aged columnar AlNiCo and hot-extruded MnAl-C.
+# These records use the outcome schema and belong to the fidelity checks.
 - id: uni_out_mnalc_hd_extrusion_cui2018
   phase: tau-MnAl
   route: HD
@@ -27,7 +28,7 @@
     locator: Sect. 2 (p. 121) and Sect. 10 'Summary and future challenges' (p. 131)
   quote: The warm extrusion followed by annealing yielded anisotropic magnets exhibiting, despite the fairly modest
     Hc of 3 kOe, the highest (BH)max of 7–8 MGOe [9,87,90]. ... For MnAl(C), the highest bulk (BH)max ~ 7.5 MGOe
-    has been realized only at relatively low Hci ~ 3 kOe and imperfect texture (Br ~ 6 kG).
+    has been realized only at relatively low Hci ~ 3 kOe and imperfect texture (Br ~ 6 [...]
   note: KNOWN CASE (hot-extruded MnAl-C). Br ~6 kG = 0.6 T (unit conversion). That the summary's 'highest bulk'
     magnet is the warm-extruded one of Sect. 2 is our reading (same Hc ~3 kOe and (BH)max 7-8 MGOe); the summary
     itself does not name the route. The PDF text layer renders the en-dash in '7–8' as 'e'.

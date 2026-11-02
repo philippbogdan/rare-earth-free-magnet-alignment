@@ -1,30 +1,9 @@
-# Topic `universe` — input records (data/SCHEMA.md input format)
-#
-# (a) the rare-earth-free hard magnetic phases "under serious study" = phases named as permanent-magnet
-#     candidates in reviews / handbook chapters (2012-2026): quantity `other`, phase = the phase,
-#     value = "named as candidate in <review>", one record per (review, phase), each with its quote.
-#     `conditions` says how the review treats the phase (own section / listed / historical / thin films only /
-#     semi-hard ...). Evidence `abstract` also covers publisher previews (abstract + introduction + section
-#     headings) and OSTI subject keywords; such records are weaker than `full_text`.
-# (b) processing routes used or proposed to align (texture) permanent magnets: quantity `other`, phase `all`,
-#     value = "<route name> (<docs/METHOD.md code>): <definition>".
-# (c) general physics references used by the engine: quantity `other` (or `phase_fraction_limit`), phase `all`.
-#
-# Canonical phase names used here (aliases in brackets):
-#   AlNiCo; Fe-Cr-Co; M-type hexaferrite [BaFe12O19, SrFe12O19, hard ferrite]; tau-MnAl [L1_0 MnAl, MnAl(C)];
-#   LTP-MnBi [B8_1/NiAs-type MnBi]; L10-FeNi [tetrataenite]; alpha''-Fe16N2 [iron nitride]; L10-FePt; L10-CoPt
-#   [PtCo]; L10-FePd; Mn-Ga (L10/D022) [MnGa, Mn3Ga]; Zr2Co11; HfCo7; Co carbides (Co2C/Co3C);
-#   Co nanorods/nanowires (shape anisotropy); tetragonal Fe-Co [L1_0 FeCo, tet-FeCo, strained bct FeCo];
-#   epsilon-Fe2O3; Fe3Se4; Mn4N [Mn-Sn-(Co)-N with Mn4N-like phase]; (Fe,Co)2B; Fe2P-based; Fe-B borides;
-#   Fe-Ta; high-entropy alloys (a class, not a phase).
-# Quotes are verbatim from the page/file in `url` (whitespace and line-break hyphenation normalised;
-# sub/superscripts flattened, e.g. "L10" = L1_0, "T c" = Tc). Where a PDF text layer mis-renders a glyph the
-# quote gives the printed character and the note says so. No outcome values (remanence/texture of samples)
-# are in these quotes; outcomes met on the way are in .tmp/sealed/universe_outcomes.yaml (sealed) and
-# data/raw/known_cases_universe.yaml (known cases: columnar field-aged AlNiCo; hot-extruded MnAl-C).
-
-# ===== (a) PHASES: rare-earth-free hard phases named as permanent-magnet candidates in reviews =====
-# one record per (review, phase); value = "named as candidate in <review>"; see conditions for how the review treats it
+# Literature records identifying candidate hard phases, alignment routes and reference physics.
+# A candidate entry identifies the review or handbook that names the phase and how it is treated.
+# Route entries identify a mechanism used or proposed in the literature; codes are in docs/method.md.
+# Publisher previews and secondary accounts retain their weaker evidence classification.
+# Outcome measurements are separate in data/outcomes/universe_outcomes.yaml and
+# known examples in data/raw/known_cases_universe.yaml.
 - id: uni_ph_coey2012_alnico
   phase: AlNiCo
   quantity: other
@@ -94,8 +73,7 @@
     locator: section 'Alnico'; Discussion
   quote: For instance, one of the advantages of alnico alloys is that they have a very flat energy density over
     a broad range of temperatures. While alnico’s Co content is high and the availability of Co can also be a concern,
-    the resources for Co are better distributed than rare earth elements. A modest gain in the energy density can
-    make this alloy a viable alternative.
+    the resources for Co are better distributed than rare earth elements. A modest [...]
   note: ''
 - id: uni_ph_kramer2012_copt
   phase: L10-CoPt
@@ -252,7 +230,7 @@
     locator: p. 463 (section intro) and heading 'Alnico Magnets'
   quote: In particular, we review and assess the properties of current RE-free magnets such as alnico and ferrite
     (strontium or barium ferrites and iron oxide) and the prospects for future permanent magnet candidates such
-    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based intermetallic compounds.
+    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based [...]
   note: Published version deposited in DigitalCommons@University of Nebraska-Lincoln; read via Wayback Machine capture.
 - id: uni_ph_mccallum2014_copt
   phase: L10-CoPt
@@ -288,8 +266,7 @@
     locator: p. 463 (section intro) and subsection 'α″-Fe16N2 (iron nitride)'
   quote: In particular, we review and assess the properties of current RE-free magnets such as alnico and ferrite
     (strontium or barium ferrites and iron oxide) and the prospects for future permanent magnet candidates such
-    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based intermetallic compounds.
-    ... For permanent magnet applications, interest has focused on α″-Fe16N2.
+    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based [...]
   note: Published version deposited in DigitalCommons@University of Nebraska-Lincoln; read via Wayback Machine capture.
     The double prime of α″ is not present in the PDF text layer ('α -Fe16 N2').
 - id: uni_ph_mccallum2014_feni
@@ -308,9 +285,7 @@
     locator: p. 463 (section intro) and heading 'FeNi (tetrataenite)'
   quote: In particular, we review and assess the properties of current RE-free magnets such as alnico and ferrite
     (strontium or barium ferrites and iron oxide) and the prospects for future permanent magnet candidates such
-    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based intermetallic compounds.
-    ... Tetrataenite has relatively high magnetocrystalline anisotropy and a magnetization equal to that of Nd2Fe14B
-    and is predicted to be an excellent candidate for permanent magnet applications.
+    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based [...]
   note: Published version deposited in DigitalCommons@University of Nebraska-Lincoln; read via Wayback Machine capture.
 - id: uni_ph_mccallum2014_fepd
   phase: L10-FePd
@@ -328,9 +303,7 @@
     locator: subsection 'FeNi (tetrataenite)', p. 467
   quote: Well-known magnetic compounds with the L10 structure, such as FePt and FePd, derive from this lower-symmetry
     crystal structure the high magnetization and significant magnetocrystalline anisotropy necessary for advanced
-    permanent magnet applications. However, these compounds are under consideration only for thin-film-based devices
-    for applications in magnetic recording because of the high cost of Pt and Pd, which precludes their use as components
-    in bulk permanent magnets for motors and generators.
+    permanent magnet applications. However, these compounds are under consideration [...]
   note: Published version deposited in DigitalCommons@University of Nebraska-Lincoln; read via Wayback Machine capture.
 - id: uni_ph_mccallum2014_fept
   phase: L10-FePt
@@ -348,9 +321,7 @@
     locator: subsection 'FeNi (tetrataenite)', p. 467
   quote: Well-known magnetic compounds with the L10 structure, such as FePt and FePd, derive from this lower-symmetry
     crystal structure the high magnetization and significant magnetocrystalline anisotropy necessary for advanced
-    permanent magnet applications. However, these compounds are under consideration only for thin-film-based devices
-    for applications in magnetic recording because of the high cost of Pt and Pd, which precludes their use as components
-    in bulk permanent magnets for motors and generators.
+    permanent magnet applications. However, these compounds are under consideration [...]
   note: Published version deposited in DigitalCommons@University of Nebraska-Lincoln; read via Wayback Machine capture.
 - id: uni_ph_mccallum2014_hexaferrite
   phase: M-type hexaferrite
@@ -368,7 +339,7 @@
     locator: p. 463 (section intro) and heading 'Ferrite Magnets'
   quote: In particular, we review and assess the properties of current RE-free magnets such as alnico and ferrite
     (strontium or barium ferrites and iron oxide) and the prospects for future permanent magnet candidates such
-    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based intermetallic compounds.
+    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based [...]
   note: Published version deposited in DigitalCommons@University of Nebraska-Lincoln; read via Wayback Machine capture.
 - id: uni_ph_mccallum2014_mnal
   phase: tau-MnAl
@@ -386,9 +357,7 @@
     locator: p. 463 (section intro) and subsection 'MnAl (manganese aluminum)'
   quote: In particular, we review and assess the properties of current RE-free magnets such as alnico and ferrite
     (strontium or barium ferrites and iron oxide) and the prospects for future permanent magnet candidates such
-    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based intermetallic compounds.
-    ... The metastable τ-phase of MnAl forms in the L10–structure type from the high-temperature parent hexagonal
-    close-packed (hcp) ε-phase by a massive transformation (80).
+    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based [...]
   note: Published version deposited in DigitalCommons@University of Nebraska-Lincoln; read via Wayback Machine capture.
 - id: uni_ph_mccallum2014_mnbi
   phase: LTP-MnBi
@@ -406,9 +375,7 @@
     locator: p. 463 (section intro) and subsection 'MnBi (manganese bismuth)'
   quote: In particular, we review and assess the properties of current RE-free magnets such as alnico and ferrite
     (strontium or barium ferrites and iron oxide) and the prospects for future permanent magnet candidates such
-    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based intermetallic compounds.
-    ... The low-temperature phase (LTP) form of MnBi crystallizes in the hexagonal NiAs-type structure (Figure 10)
-    (72, 73)
+    as tetrataenite, iron nitride, manganese bismuth, manganese aluminum, and cerium-based [...]
   note: Published version deposited in DigitalCommons@University of Nebraska-Lincoln; read via Wayback Machine capture.
 - id: uni_ph_hirosawa2015_alnico
   phase: AlNiCo
@@ -494,8 +461,7 @@
     locator: Sect. 1 (Introduction), p. 85
   quote: The predicted increase and the recent concerns about the criticality of Dy, however, resulted in worldwide
     reconsideration of the permanent magnet materials and their usage, which included search for new materials free
-    from the critical elements, recycling of rare earths elements, alternative devices using less-critical materials
-    such as hard ferrites, and so on.
+    from the critical elements, recycling of rare earths elements, alternative [...]
   note: ''
 - id: uni_ph_hirosawa2015_mn4n
   phase: Mn4N
@@ -603,7 +569,7 @@
     locator: Sect. 5, p. 10
   quote: High-magnetization Fe-rich hard magnetic materials such as Fe16N2 particles [82], tetragonal-FeCo thin
     films epitaxially grown on substrates [83, 84], and L10-FeNi thin films [85] have the technical difficulties
-    to be considered as the base materials on which industrially useful bulk permanent magnet materials can be developed.
+    to be considered as the base materials on which industrially useful bulk permanent [...]
   note: Open-access review; IOPscience blocks scripts, read the publisher PDF captured by the Wayback Machine on
     2017-07-09.
 - id: uni_ph_hirosawa2017_fecotet
@@ -622,7 +588,7 @@
     locator: Sect. 5, p. 10
   quote: High-magnetization Fe-rich hard magnetic materials such as Fe16N2 particles [82], tetragonal-FeCo thin
     films epitaxially grown on substrates [83, 84], and L10-FeNi thin films [85] have the technical difficulties
-    to be considered as the base materials on which industrially useful bulk permanent magnet materials can be developed.
+    to be considered as the base materials on which industrially useful bulk permanent [...]
   note: Open-access review; IOPscience blocks scripts, read the publisher PDF captured by the Wayback Machine on
     2017-07-09.
 - id: uni_ph_hirosawa2017_fecrco
@@ -660,7 +626,7 @@
     locator: Sect. 5, p. 10
   quote: High-magnetization Fe-rich hard magnetic materials such as Fe16N2 particles [82], tetragonal-FeCo thin
     films epitaxially grown on substrates [83, 84], and L10-FeNi thin films [85] have the technical difficulties
-    to be considered as the base materials on which industrially useful bulk permanent magnet materials can be developed.
+    to be considered as the base materials on which industrially useful bulk permanent [...]
   note: Open-access review; IOPscience blocks scripts, read the publisher PDF captured by the Wayback Machine on
     2017-07-09.
 - id: uni_ph_hirosawa2017_hexaferrite
@@ -984,8 +950,7 @@
     locator: Introduction; section 'Nitride-Based Hard Magnetic Materials'
   quote: To address the above issues, many promising new rare-earth-free hard magnetic materials such as FePt, MnBi,
     FeNi, Co-carbide, Fe-nitride, ZrCo11, and HfCo7 have been investigated or re-investigated (Li et al., 2016;
-    Niarchos et al., 2015; Park, 2016; Ronning and Bader, 2014; Sellmyer et al., 2013). ... The interstitial α″-Fe16N2
-    compound with the body-centered tetragonal structure (Fig. 11A) exhibiting high MS was discovered by Jack (1951).
+    Niarchos et al., 2015; Park, 2016; Ronning and Bader, 2014; Sellmyer et al., 2013). [...]
   note: Closed chapter; read the ScienceDirect preview (abstract, Introduction, section headings with first lines,
     conclusion snippet) via Wayback Machine capture.
 - id: uni_ph_mohapatra2018_feni
@@ -1079,9 +1044,7 @@
     locator: Introduction; section 'MnBi Hard Magnetic Phase'
   quote: To address the above issues, many promising new rare-earth-free hard magnetic materials such as FePt, MnBi,
     FeNi, Co-carbide, Fe-nitride, ZrCo11, and HfCo7 have been investigated or re-investigated (Li et al., 2016;
-    Niarchos et al., 2015; Park, 2016; Ronning and Bader, 2014; Sellmyer et al., 2013). ... Mn-based hard magnetic
-    phases such as MnBi, MnAl, MnAlC, and MnGa have received considerable attention due to their high magnetocrystalline
-    anisotropy and TC values
+    Niarchos et al., 2015; Park, 2016; Ronning and Bader, 2014; Sellmyer et al., 2013). [...]
   note: Closed chapter; read the ScienceDirect preview (abstract, Introduction, section headings with first lines,
     conclusion snippet) via Wayback Machine capture.
 - id: uni_ph_mohapatra2018_mnga
@@ -1256,8 +1219,7 @@
     locator: Sect. 2.2 and Sect. 4 (conclusions)
   quote: Another approach is to exploit shape anisotropy in aligned composites of semi-hard materials. The best
     results have been achieved with cobalt nanowires chemically grown using polyol and then aligned [29,30]. ...
-    Aligned cobalt nanowire composites are promising, but the economic case is tricky when Nd or Co prices per kilogram
-    (or per cubic meter) are similar.
+    Aligned cobalt nanowire composites are promising, but the economic case is tricky when [...]
   note: ''
 - id: uni_ph_coey2020_copt
   phase: L10-CoPt
@@ -2052,9 +2014,6 @@
     highlighting the key materials (α‐MnBi, τ‐MnAl, L10‐FeNi, α″‐Fe16N2, FeTa, Fe2P), processing techniques, advanced
     multiscale simulations and associated challenges.
   note: Review writes alpha-MnBi (the low-temperature NiAs-type phase).
-
-# ===== (b) ROUTES: processing routes used or proposed to align (texture) permanent magnets =====
-# value = "<route name> (<METHOD.md code>): <definition>"; one or more sources per route
 - id: uni_rt_fp_coey2012
   phase: all
   quantity: other
@@ -2072,8 +2031,7 @@
     locator: Introduction (preview)
   quote: Processed magnets are frequently fully dense sintered, oriented blocks produced by power metallurgy or
     ceramic methods. An alignment step to orient the easy axes of all the crystallites is highly beneficial as without
-    it the remanent magnetization is decreased by more than a factor of 2, and the energy product by a factor of
-    4 (Eq. (7)).
+    it the remanent magnetization is decreased by more than a factor of 2, and the [...]
   note: Closed article; read the ScienceDirect preview (abstract, Introduction, section snippets) via Wayback Machine
     capture. The section "New magnets with moderate performance" and its candidate table were not visible.
 - id: uni_rt_fp_mccallum2014
@@ -2111,11 +2069,9 @@
     url: https://arxiv.org/pdf/2309.15680
     evidence: full_text
     locator: Sect. 3.1 Conventional sintering (arXiv version, p. 6)
-  quote: To prepare an anisotropic ferrite magnet, they used randomly oriented non-aggregated Ba-ferrite powder,
-    which was pressed-formed as an aqueous sludge under an applied external magnetic field. The excess water was
-    then removed by drying followed by the sintering of the pre-forms. This process developed in Philips Research
-    Laboratories in 1950s is, with some modifications, still in use for the preparation of commercial sintered ferrite
-    magnets.
+  quote: '[...] under an applied external magnetic field. The excess water was then removed by drying followed by
+    the sintering of the pre-forms. This process developed in Philips Research Laboratories in 1950s is, with some
+    modifications, still in use for the preparation of commercial sintered ferrite magnets.'
   note: 'Read in the arXiv version (2309.15680) of the J. Phys. D topical review. Same source as recent_routes.yaml
     uni_rt_fpwet_granados2021 (keep one when merging). Dry field pressing + sintering: classic_routes.yaml uni_rt_fp_mccallum2014.'
 - id: uni_rt_bonded_coey2020
@@ -2152,8 +2108,7 @@
     locator: section 'Alternative Compounds'
   quote: Injection molding would accomplish this, but achieving the necessary energy density needed for generators
     and traction motors has been a challenge even in Nd-based magnets. This is due to the dilution effect of the
-    nonmagnetic binder, which occupies about 35% of the magnet volume in injection molded magnets and 20–25% in
-    compression bonded magnets.
+    nonmagnetic binder, which occupies about 35% of the magnet volume in injection [...]
   note: ''
 - id: uni_rt_fpbonded_yang2018
   phase: all
@@ -2192,8 +2147,7 @@
     locator: Sect. I Introduction (p. 3349)
   quote: In order to enhance the performance of bonded Halbach cylinders, it is possible to employ an anisotropic
     moulding compound which can be oriented during the compression or injection moulding process to produce an anisotropic
-    bonded Halbach cylinder. ... However, whilst the required aligning field for anisotropic NdFeB powder is 1 T,
-    the required magnetizing field is 3 T.
+    bonded Halbach cylinder. ... However, whilst the required aligning field [...]
   note: Accepted manuscript deposited in White Rose Research Online (University of Sheffield).
 - id: uni_rt_slipcast_sakka2005
   phase: all
@@ -2214,7 +2168,7 @@
     locator: abstract
   quote: In this review paper, we introduce a new processing of textured ceramics with a feeble magnetic susceptibility
     by slip casting in a high magnetic field and subsequent heating. ... However, in a high magnetic field, the
-    energy of crystal anisotropy becomes comparable to or greater than the energy of thermal motion.
+    energy of crystal anisotropy becomes comparable to or greater than the energy of [...]
   note: Review in J. Ceram. Soc. Jpn (J-STAGE). Crossref lists the first author in capitals (SAKKA).
 - id: uni_rt_calender_qu2024
   phase: all
@@ -2236,8 +2190,7 @@
     locator: abstract
   quote: In this paper, the NdFeB bonded magnets were produced through calendaring molding, and the effect of powder
     shape on degree of alignment (DOA) of NdFeB bonded magnets was investigated. ... Microstructural analysis reveals
-    the presence of an oriented structure induced by mechanical stress in MQA bonded magnets, resulting in magnetic
-    anisotropy.
+    the presence of an oriented structure induced by mechanical stress in MQA [...]
   note: Abstract from the DOAJ record (AIP Advances, open access; full text not read). "calendaring" is verbatim.
     Calendering of flexible Sr-ferrite/rubber sheets is the industrial use; only patents and manufacturer pages
     were found for it.
@@ -2280,10 +2233,7 @@
     locator: Sect. 1 and Fig. 2
   quote: This shape favors a crystallographic alignment during compaction under a uniaxial pressure, during which
     the plate-like particles will have a tendency to spontaneously lay on their larger surface side, just as a deck
-    of cards would. This shape-induced orientation implicitly entails a magnetic alignment, as the easy magnetization
-    axis lies parallel to the c-axis (perpendicular to the platelet plane) [52, 58], vanishing the need for an external
-    magnetic field applied prior or during compaction, which considerably simplifies manufacturing the magnetic
-    piece.
+    of cards would. This shape-induced orientation implicitly entails a magnetic [...]
   note: 'New route class (not in METHOD.md list): mechanical alignment of anisometric single-crystal particles.'
 - id: uni_rt_shapesps_granados2021
   phase: all
@@ -2322,10 +2272,7 @@
     locator: Sect. 1 Introduction (arXiv version p. 2)
   quote: In the mid-1980s, R. W. Lee [1] originally reported a method to prepare an anisotropic Nd-Fe-B magnet with
     ultrafine grain size by hot pressing and die-upsetting the rapidly quenched Nd-Fe-B alloy at a high temperature.
-    Compared to the traditional sintering method, the die-upsetting process can realize a strong magnetic anisotropy
-    without applying an external magnetic field, which makes it appropriate to produce the ring magnets with radial
-    orientation. ... It is generally acknowledged that the high anisotropy is attributed to both the rotation and
-    the preferred growth of Nd2Fe14B grains under the pressure at high temperature.
+    Compared to the traditional sintering method, the die-upsetting process can [...]
   note: Review (Chin. Phys. B) read in its arXiv version 1809.09838. Rare-earth example; for an RE-free example
     of HD see uni_rt_hdext_feng2020.
 - id: uni_rt_hd_mccallum2014
@@ -2354,7 +2301,7 @@
     tau-MnAl-C(-Ni) are extruded at elevated temperature; dynamic recrystallisation during extrusion makes the extruded
     bar anisotropic along the extrusion axis'
   unit: ''
-  conditions: route class HD (S5) applied to tau-MnAl-C(-Ni) (known case 'hot-extruded MnAl-C', PROBLEM.md); commercial
+  conditions: route class HD (S5) applied to tau-MnAl-C(-Ni) (known case 'hot-extruded MnAl-C'); commercial
     production by Matsushita (bulk ingots) and Sanyo Special Steels (encapsulated gas-atomised powder)
   source:
     doi: 10.1016/j.actamat.2020.08.031
@@ -2442,7 +2389,7 @@
     locator: Sect. 3.2 (Additive manufacturing), pp. 127-128
   quote: It is important to find a way to introduce a powder alignment step into the additive manufacturing process.
     ... This could be a separate step; alternatively, in situ magnetic fields could be applied to align and magnetize
-    the magnetic powder, either in a uniform direction, or in a locally variable direction with pulsed microcoils.
+    the magnetic powder, either in a uniform direction, or in a locally variable [...]
   note: ''
 - id: uni_rt_am_dussa2024
   phase: all
@@ -2557,8 +2504,7 @@
     locator: Sect. 3.2
   quote: Annealing in the presence of a magnetic field leads to anisotropic magnetic properties, whereas annealing
     in the absence of a magnetic field leads to isotropic magnetic properties in Alnico magnets. ... The research
-    demonstrated that magnetic annealing is highly effective in enhancing the magnetic properties of Alnico magnets
-    when conducted at a temperature close to the onset of spinodal decomposition and below the curie temperature.
+    demonstrated that magnetic annealing is highly effective in enhancing the magnetic [...]
   note: ''
 - id: uni_rt_fa_rios2016
   phase: all
@@ -2580,10 +2526,7 @@
     locator: Sect. 1.1 Background and Sect. 1.2 Technical results (report p. 3)
   quote: Alnico is a commercially produced permanent magnet that is manufactured using thermomagnetic processing.
     ... The highest energy product alnico alloys are alnico 5-7 and alnico 9, which are both grain aligned and heat-treated
-    with an applied magnetic field using energy intensive resistive electromagnet technology. On the other hand,
-    magnetic field annealed alnico 8 without aligned grains develops the highest coercivity (Hci) after an extended
-    magnetic field heat-treatment. ... Formation of a directional structure during the precipitation step under
-    magnetic fields is is key to enhancing magnetic anisotropy.
+    with an applied magnetic field using energy intensive resistive [...]
   note: '"is is" is verbatim. For Fe-Cr-Co the same route (magnetic aging that elongates alpha1 along the field)
     is quoted in uni_rt_scfa_sugimoto1991.'
 - id: uni_rt_fa_sirisathitkul2022
@@ -2622,9 +2565,7 @@
     locator: Sect. 1 Introduction and Sect. 3.2 Ordering under a magnetic field
   quote: Under a magnetic field, however, there arises some difference in magnetic energy among different variants.
     If the magnetic anisotropy is high, we can expect selected formation of the specific variant with the lowest
-    magnetic energy. ... Expecting that the magnetic field is especially effective at the nucleation stage of ordering,
-    we employed a two-step ordering heat-treatment. The first step is made below Tc(d), where the progress of ordering
-    is slow, under a magnetic field, H1.
+    magnetic energy. ... Expecting that the magnetic field is especially effective at [...]
   note: Second record for this route because uni_rt_favariant_tanaka2000 is abstract-only. Tc(d) = Curie temperature
     of the disordered phase. The paper discusses the selection through a Boltzmann factor of a field-dependent nucleation
     barrier for each variant at the first-step temperature.
@@ -2648,7 +2589,7 @@
     locator: abstract
   quote: 'The necessary conditions for the formation of the mono-variant structure are: the ordering proceeds by
     nucleation and growth process (the temperature of heat treatment must be higher than the spinodal ordering temperature),
-    and magnetocrystalline anisotropy energy is sufficiently large to change the nucleation rates of different variants.'
+    and magnetocrystalline anisotropy energy is sufficiently large to change [...]'
   note: J-STAGE abstract (full text not read). Variant-fraction outcomes are in the sealed outcome file.
 - id: uni_rt_scfa_sugimoto1991
   phase: all
@@ -2667,12 +2608,9 @@
     url: https://tohoku.repo.nii.ac.jp/record/26128/files/10.1109-20.79083.pdf
     evidence: full_text
     locator: Introduction (p. 3412)
-  quote: A uniaxial magnetic anisotropy is usually induced by magnetic aging, which elongates the α1 phase parallel
-    to the applied field direction. ... Good magnetic properties can be expected by utilizing the anisotropic decomposition
-    to elongate more efficiently and aligning the α1 phase along the applied field direction in ⟨100⟩ textured samples.
-    This was done with an Fe-24%Cr-15%Co-3%Mo (in wt%) alloy in developing the ⟨100⟩ columnar structure [6] or with
-    a ridge single-crystal Fe-22%Cr-18.5%Co-3%Mo alloy [7]. But it is very expensive to produce a columnar or single
-    crystal.
+  quote: '[...] be expected by utilizing the anisotropic decomposition to elongate more efficiently and aligning
+    the α1 phase along the applied field direction in ⟨100⟩ textured samples. This was done with an Fe-24%Cr-15%Co-3%Mo
+    (in wt%) alloy in developing the ⟨100⟩ columnar structure [6] or with a ridge [...]'
   note: Transcribed from the page image (see texts/rt_sugimoto1991_transcribed.txt). The paper's sentence before
     this one attributes the coercivity gain from Mo to anisotropic decomposition along the <100> directions.
 - id: uni_rt_dsfa_kramer2012
@@ -2691,8 +2629,7 @@
     locator: Introduction
   quote: The first significant improvement in the maximum energy product was achieved in columnar grown alnico (Fig.
     1). The improvement came about from the grain alignment of the cubic phases and the application of a magnetic
-    field during cooling through the spinodal decomposition into the nominally FeCo body-centered cubic (bcc) and
-    the primitive cubic β-AlNi phases.
+    field during cooling through the spinodal decomposition into the nominally FeCo [...]
   note: ''
 - id: uni_rt_dsfa_mccallum2014
   phase: all
@@ -2711,8 +2648,7 @@
     locator: section 'Alnico Magnets', p. 464
   quote: Whereas early alnico magnets contained randomly oriented FeCo parallelepipeds, an anisotropic microstructure
     was achieved in the 1950s and 1960s by adopting directional solidification processing and applying a magnetic
-    field during the annealing processes, resulting in the formation of <001>-textured, elongated FeCo precipitates
-    aligned parallel to the direction of the applied magnetic field (47, 48).
+    field during the annealing processes, resulting in the formation of [...]
   note: Published version deposited in DigitalCommons@University of Nebraska-Lincoln; read via Wayback Machine capture.
     Qualitative description of the route; no sample values.
 - id: uni_rt_rxfa_sugimoto1991
@@ -2732,10 +2668,9 @@
     url: https://tohoku.repo.nii.ac.jp/record/26128/files/10.1109-20.79083.pdf
     evidence: full_text
     locator: abstract and Introduction (p. 3412)
-  quote: The secondary recrystallization is caused by heat-treating the alloys in the sequence of α, α + γ, α +
-    γ + σ, α phase region (HTSR). ... It is known that the (110)[001] or (001)[100] texture in silicon steel is
-    well developed by using a mixture of cold-rolling and annealing [8]. Since Fe-Cr-Co-Mo alloys have good ductilities,
-    it can be expected to form a favorable texture by the same method.
+  quote: '[...] is caused by heat-treating the alloys in the sequence of α, α + γ, α + γ + σ, α phase region (HTSR).
+    ... It is known that the (110)[001] or (001)[100] texture in silicon steel is well developed by using a mixture
+    of cold-rolling and annealing [8]. Since Fe-Cr-Co-Mo alloys have good ductilities, [...]'
   note: Tohoku University repository copy (scan). Quote transcribed from the page image because the OCR layer is
     unreliable (transcription in texts/rt_sugimoto1991_transcribed.txt). Crossref title lacks the angle brackets;
     printed title is "The Development of ⟨100⟩ Texture in Fe-Cr-Co-Mo Permanent Magnet Alloys".
@@ -2778,11 +2713,9 @@
     url: https://link.aps.org/accepted/10.1103/PhysRevApplied.6.024013
     evidence: full_text
     locator: Sect. II (accepted manuscript pp. 5-6)
-  quote: The principle of our proposed strained wire method is to apply a uniaxial tensile force on the prepared
-    wire-shaped sample during the post-annealing stage. ... The applied strain induces an elongated lattice along
-    the wire’s length orientation, which becomes nitrogen’s most preferred position among all possible octahedral
+  quote: '[...] wire’s length orientation, which becomes nitrogen’s most preferred position among all possible octahedral
     interstices. ... The third unique feature of the proposed strained wire method is to enable the alignment of
-    the magnetic easy axis of Fe16N2 grains along the wire in the long axis direction.
+    the magnetic easy axis of Fe16N2 grains along the wire in the long axis direction.'
   note: Accepted manuscript made available via CHORUS. Crossref title contains MathML; rendered here as plain text.
 - id: uni_rt_deformageing_khan2022
   phase: all
@@ -2804,9 +2737,7 @@
     locator: Sect. 1 Introduction, p. 3
   quote: Deformation aging is a technique of achieving magnetic anisotropy in an elongated precipitate structure
     through plastic deformation rather than magnetic field treatment. The alloy is first cooled through the spinodal
-    temperature to develop oversized, nearly spherical particles in deformation aging. An anisotropic deformation
-    such as an extrusion wire then drawing or rolling the alloys to elongate and align these spherical particles.
-    ... The deformation aging technique obtains the magnets in a thin sheet or wire shape.
+    temperature to develop oversized, nearly spherical particles in deformation aging. [...]
   note: Introduction of a research article summarising earlier work (Jin et al.); grammar verbatim. The original
     rolling-ageing work on Fe-Cr-Co-Si is Chin et al., J. Mater. Sci. 18 (1983) 1681, doi:10.1007/bf00542063 (not
     read).
@@ -2829,9 +2760,7 @@
     locator: abstract
   quote: High magnetic filed can affect not only ferromagnetic materials but also non-magnetic ones. In general,
     materials have a crystal magnetic anisotropy where a magnetic susceptibility is different in each crystal direction.
-    So that the utilization of this property can control the crystal orientation by imposition of the high magnetic
-    field. Up to now, the possibility of magnetic orientation by imposition of the high magnetic field has been
-    studied, it was said that existence of crystal magnetic anisotropy and a low viscosity are essential.
+    So that the utilization of this property can control the crystal orientation [...]
   note: '"filed" is verbatim. Second FS record because the physics (paramagnetic/diamagnetic anisotropy energy vs
     kT) differs from rotation of ferromagnetic grains (uni_rt_fs_yasuda2003). The introduction also cites Yasuda
     et al. for field alignment of ferromagnetic BiMn on reheating rapidly quenched alloy into the liquid-solid zone.'
@@ -2877,10 +2806,9 @@
     url: https://tsukuba.repo.nii.ac.jp/record/2002585/files/APL_116-24-242404.pdf
     evidence: full_text
     locator: Introduction and discussion of Fig. 1 (pp. 242404-1, -2)
-  quote: 'Epitaxially grown L10-FeNi films with the c-axis perpendicular to the film plane were fabricated by alternate
+  quote: Epitaxially grown L10-FeNi films with the c-axis perpendicular to the film plane were fabricated by alternate
     monoatomic deposition of Fe and Ni layers on Au–Cu–Ni buffer layers using molecular beam epitaxy (MBE). ...
-    They indicate the a-axis oriented epitaxial growth along the perpendicular direction to the film plane with
-    two variants: the epitaxial relationships are FeNiN[001](100)//STO[100](001) and FeNiN[010](100)//STO[100](001)'
+    They indicate the a-axis oriented epitaxial growth along the perpendicular [...]
   note: University of Tsukuba repository copy (publisher PDF). Crossref title reads "L1-FeNi" (subscript lost);
     printed title "Epitaxial L10-FeNi films ...". The two FeNiN variants have orthogonal in-plane c axes (stated
     in the paper), so a denitrided a-axis film is a 2-variant EP case. L10 FePt epitaxy by alternate monatomic layers
@@ -2905,8 +2833,7 @@
     locator: abstract
   quote: We illustrate here a method of gelcasting a matrix of non-magnetic iron (III) oxide and barium carbonate
     in the presence of barium ferrite seeds for templated grain growth. At high temperatures, the iron oxide and
-    barium carbonate react to form a fine-grained barium ferrite matrix surrounding the previously aligned barium
-    ferrite seeds.
+    barium carbonate react to form a fine-grained barium ferrite matrix surrounding the [...]
   note: Abstract from the CaltechAUTHORS record (full text not read).
 - id: uni_rt_hddr_kim2018
   phase: all
@@ -2928,7 +2855,7 @@
     locator: abstract
   quote: During the DR reaction following the HD process, the orientation of the initial Nd2Fe14B was recovered
     by a highly aligned Fe2B phase. It was demonstrated that the Fe2B phase could mediate texture during the HDDR
-    processing owing to the atomic configuration and crystallographic relation between the Nd2Fe14B and Fe2B phases.
+    processing owing to the atomic configuration and crystallographic relation between the [...]
   note: Abstract from the Sungkyunkwan University research portal (full text not read). Rare-earth example; no RE-free
     use of HDDR texture memory found.
 - id: uni_rt_colloid_anagnostopoulou2016
@@ -3006,11 +2933,9 @@
     url: https://dr.lib.iastate.edu/server/api/core/bitstreams/d3aff2f7-b015-4682-8132-f36dfed42e2d/content
     evidence: full_text
     locator: Sect. 7, p. 128
-  quote: Using the cluster-deposition method, Zr2Co11 and HfCo7 nanoparticles form the desired high-anisotropy structures
-    during the gas-aggregation process in the cluster chamber, without the requirement of a subsequent high-temperature
-    thermal annealing as shown in Fig. 11a [162,168]. This direct ordering substantially improves the phase purity
-    and also provides unique opportunity to align the easy axes of nanoparticles using a magnetic field of about
-    5 kOe, prior to deposition on substrates [162].
+  quote: '[...] a subsequent high-temperature thermal annealing as shown in Fig. 11a [162,168]. This direct ordering
+    substantially improves the phase purity and also provides unique opportunity to align the easy axes of nanoparticles
+    using a magnetic field of about 5 kOe, prior to deposition on substrates [162].'
   note: Published CC-BY version (IS-J-9589) from the Iowa State University Digital Repository, handle 20.500.12876/7140.
 - id: uni_rt_template_zeng2000
   phase: all
@@ -3050,11 +2975,8 @@
     locator: abstract
   quote: The work involved synthesis of nanocrystalline hard magnetic SmCo5 particles by ball milling in the presence
     of a magnetic field. ... The formation of the texture may be attributed to the effect of magnetic fields on
-    the grain orientation during the cold welding process during ball milling. The as-milled particles were then
-    compacted under a magnetic field with a binder to form bonded bulk SmCo5 nanostructured magnets.
+    the grain orientation during the cold welding process during ball milling. The [...]
   note: Abstract from the UT Arlington repository record (full text not read).
-
-# ===== (c) PHYSICS references used by the engine =====
 - id: uni_phys_sw1948_random_uniaxial_remanence
   phase: all
   quantity: other
@@ -3073,10 +2995,9 @@
     url: https://web.archive.org/web/20240918174859/https://royalsocietypublishing.org/doi/pdf/10.1098/rsta.1948.0007
     evidence: full_text
     locator: p. 624, Sect. 4, eq. (4·3); abstract p. 599
-  quote: 'Among various characterizing magnitudes for the random assembly of prolate ellipsoids are the following:
+  quote: '[...] various characterizing magnitudes for the random assembly of prolate ellipsoids are the following:
     ... Remanent intensity of magnetization: Ir = ½I0. (4·3) ... The results also apply to magneto-crystalline anisotropy
-    in the important and representative case in which there is a unique axis of easy magnetization as for hexagonal
-    cobalt.'
+    in the important and representative case in which there is a unique axis of [...]'
   note: 'Equation read on the page image of the publisher PDF (Wayback copy of royalsocietypublishing.org) because
     the OCR text layer garbles equations; subscripts flattened (Ir = I_r, I0 = I_0 = saturation magnetization of
     the particle material). The same page gives eq. (4·1), random-assembly coercivity Hc = 0·479(Nb − Na)I0. Reprint:
@@ -3100,9 +3021,7 @@
     locator: p. 641, Sect. 7 (last paragraph)
   quote: This suggests at once that cooling in a magnetic field favours a segregation of single domain particles
     or 'islands' with an easy direction of magnetization in the direction of the field. This is intelligible on
-    energetic grounds, for the favoured orientation of the magnetically anisotropic segregate is that corresponding
-    to the lowest energy. This would hold no less for magneto-crystalline or magneto-strain anisotropy than for
-    shape anisotropy.
+    energetic grounds, for the favoured orientation of the magnetically anisotropic [...]
   note: 'Transcribed from the page image (printed with typographic quotes around islands). The same paragraph gives
     along/perpendicular-to-field properties of field-cooled Alcomax II quoted from Hoselitz (1946): outcome data,
     not used here (put in the sealed part file).'
@@ -3122,11 +3041,9 @@
     url: https://lume.ufrgs.br/bitstream/10183/95403/1/000221837.pdf
     evidence: review
     locator: p. 1488, Sect. I (Introduction); value from ref. 7 (Gans 1932)
-  quote: The first systematic calculations of magnetization were performed on uniaxial single-domain particle systems
-    at zero temperature in 1948 by Stoner and Wohlfarth,5 and for materials with cubic magnetocrystalline anisotropy
-    in 1974 by Joffe and Heuberger.6 The predicted remanent magnetization, M r , for a random assembly of such multiaxial
-    particles is equal to 0.831 and 0.866 M s ... for positive and negative first-order magnetocrystalline anisotropy
-    constant, K 1 , respectively,7 higher than the value of 0.5 M s for uniaxial anisotropy.
+  quote: '[...] in 1974 by Joffe and Heuberger.6 The predicted remanent magnetization, M r , for a random assembly
+    of such multiaxial particles is equal to 0.831 and 0.866 M s ... for positive and negative first-order magnetocrystalline
+    anisotropy constant, K 1 , respectively,7 higher than the value of 0.5 [...]'
   note: 'Secondary citation of the original: R. Gans, Ann. Phys. (5. Folge) 15 (1932) 28 = Annalen der Physik 407,
     28-44, doi:10.1002/andp.19324070103 (closed; not read). Subscripts flattened by text extraction (M r = Mr, M
     s = Ms, K 1 = K1); the omitted parenthesis defines Ms as the saturation magnetization. K1 > 0 means easy <100>
@@ -3150,14 +3067,9 @@
     url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10161771/fullTextXML
     evidence: review
     locator: Sect. 4 (case list) and Table 1, column m_r
-  quote: 'these combinations of anisotropy constants correspond to the following well known easy-axis orientations
-    in hexagonal and cubic single crystals ... (i) easy c axis, (ii) easy basal plane, (iii) easy cone ... (iv)
-    〈100〉 directions, (v) 〈111〉 directions and (vi) 〈110〉 directions. ... Values for the reduced remanence m r ,
-    the coercivity B c (in Tesla), and for the autocorrelations Γ xx , Γ yy and Γ zz [equation (11)] at these points
-    on the hysteresis loop. ... Case (i): uniaxial ( k u1 = +1, k u2 = 0) 0.5 ... Case (ii): uniaxial ( k u1 = −1,
-    k u2 = 0) 0.785 ... Case (iii): uniaxial ( k u1 = −0.5, k u2 = +0.5) 0.909 ... Case (iv): cubic ( k c1 = +1,
-    k c2 = 0) 0.831 ... Case (v): cubic ( k c1 = −1, k c2 = 0) 0.866 ... Case (vi): cubic ( k c1 = −1, k c2 = +9)
-    0.912'
+  quote: '[...] (i): uniaxial ( k u1 = +1, k u2 = 0) 0.5 ... Case (ii): uniaxial ( k u1 = −1, k u2 = 0) 0.785 ...
+    Case (iii): uniaxial ( k u1 = −0.5, k u2 = +0.5) 0.909 ... Case (iv): cubic ( k c1 = +1, k c2 = 0) 0.831 ...
+    Case (v): cubic ( k c1 = −1, k c2 = 0) 0.866 ... Case (vi): cubic ( k c1 = −1, k c2 = +9) [...]'
   note: 'Open-access IUCrJ 10 (2023) 261-269 (PMC10161771), read as Europe PMC XML; Table 1 caption attributes the
     table to Usov & Peschany (1997), J. Magn. Magn. Mater. 174, 247, doi:10.1016/S0304-8853(97)00180-7 (closed;
     not read), hence evidence ''review''. Table rows quoted as flattened text: first number after each case label
@@ -3181,8 +3093,7 @@
     locator: pp. 382-383
   quote: Textures of Polycrystalline Wires.—In face-centered cubic (f.c.c.) metals the wire texture is usually a
     double fiber texture with [111] and [100] parallel to the axis; i.e., the crystallites have either [111] or
-    [100] parallel to the axis of the wire and have random orientations around the axis. ... Extruded rods usually
-    have the same textures as drawn wires. This is true of magnesium and cubic metals but is not true of zinc.
+    [100] parallel to the axis of the wire and have random orientations around the axis. [...]
   note: 'Book (McGraw-Hill, New York, 1943), no DOI; read in the Digital Library of India scan on archive.org; quote
     transcribed from the page images (OCR layer has errors), file phys_barrett1943_transcribed.txt. Later edition:
     Barrett & Massalski, Structure of Metals, 3rd ed. (1966). Same statement in modern form: uni_phys_fibre_table_rollett2016,
@@ -3205,8 +3116,7 @@
     locator: p. 382
   quote: Body-centered cubic (b.c.c.) metals have a simple [110] texture. This was discovered for iron by Ettish,
     Polanyi, and Weissenberg and has been confirmed many times. There appear to be no minor components in this texture,
-    and it is not altered by elements in solid solution, such as vanadium and silicon. Tungsten and molybdenum also
-    are known to have a simple [110] texture.
+    and it is not altered by elements in solid solution, such as vanadium and [...]
   note: 'Book (McGraw-Hill, New York, 1943), no DOI; read in the Digital Library of India scan on archive.org; quote
     transcribed from the page images (OCR layer has errors), file phys_barrett1943_transcribed.txt. Later edition:
     Barrett & Massalski, Structure of Metals, 3rd ed. (1966). '
@@ -3228,14 +3138,9 @@
     url: https://archive.org/details/structureofmetal029943mbp
     evidence: book
     locator: p. 383
-  quote: Hexagonal metals have wire textures that are less easily interpreted. Magnesium wire was first thought
-    to have all directions in the basal plane parallel to the wire axis (owing to a scatter from the ideal orientation).
-    However, later work on drawn and on extruded Dowmetal (magnesium alloyed with aluminum, manganese, and zinc)
-    indicates that only one set of directions in the basal plane has this position, viz., the direction [210], in
-    wire that has been formed at low temperatures. At a working temperature of 450°C. the fiber axis shifts to [110].
-    ... Zinc wires have the hexagonal axis about 70° from the wire axis with uniform distribution about the wire
-    axis. ... Zirconium has a texture like magnesium, with the [210] direction in the basal plane parallel to the
-    wire axis and with close-packed rows of atoms 30° to the axis.
+  quote: '[...] alloyed with aluminum, manganese, and zinc) indicates that only one set of directions in the basal
+    plane has this position, viz., the direction [210], in wire that has been formed at low temperatures. At a working
+    temperature of 450°C. the fiber axis shifts to [110]. ... Zinc wires have the [...]'
   note: 'Book (McGraw-Hill, New York, 1943), no DOI; read in the Digital Library of India scan on archive.org; quote
     transcribed from the page images (OCR layer has errors), file phys_barrett1943_transcribed.txt. Later edition:
     Barrett & Massalski, Structure of Metals, 3rd ed. (1966). Barrett''s footnote on p. 383 states that the 3-index
@@ -3279,9 +3184,9 @@
     url: https://archive.org/details/structureofmetal029943mbp
     evidence: book
     locator: pp. 386-387
-  quote: Body-centered cubic metals have not been extensively investigated for compression textures. Iron has a
-    double fiber texture, with [111] and [100] parallel to the axis of compression. ... Experiments of J. J. Heger
-    and the author show that an Fe-Si alloy containing 4.6 percent silicon also has the double texture.
+  quote: '[...] cubic metals have not been extensively investigated for compression textures. Iron has a double
+    fiber texture, with [111] and [100] parallel to the axis of compression. ... Experiments of J. J. Heger and
+    the author show that an Fe-Si alloy containing 4.6 percent silicon also has the double texture.'
   note: 'Book (McGraw-Hill, New York, 1943), no DOI; read in the Digital Library of India scan on archive.org; quote
     transcribed from the page images (OCR layer has errors), file phys_barrett1943_transcribed.txt. Later edition:
     Barrett & Massalski, Structure of Metals, 3rd ed. (1966). '
@@ -3325,11 +3230,9 @@
     url: http://pajarito.materials.cmu.edu/lectures/L22-Metal_Textures-fcc_bcc_hcp-26Apr16.pdf
     evidence: review
     locator: slides 13, 16 ('Uniaxial Modes - C∞' table), 17
-  quote: 'Deformation modes of uniaxial type generate fiber textures, i.e. a single common crystal axis parallel
-    to the deformation axis ... Uniaxial Modes - C∞ Deformation mode/ fcc/ bcc/ hcp (Ti) Wire drawing, <111> <110>
-    <10-10> Round extrusion. & <100> Upsetting, <110> <111> <0001> Uniaxial compression. &<100> Note exchange of
-    types between fcc & bcc ... In fcc metals, axisymmetric deformation (e.g. wire drawing) produces fiber texture:
-    <111> + <100> duplex, parallel to the wire.'
+  quote: '[...] ... Uniaxial Modes - C∞ Deformation mode/ fcc/ bcc/ hcp (Ti) Wire drawing, <111> <110> <10-10> Round
+    extrusion. & <100> Upsetting, <110> <111> <0001> Uniaxial compression. &<100> Note exchange of types between
+    fcc & bcc ... In fcc metals, axisymmetric deformation (e.g. wire drawing) produces [...]'
   note: 'Lecture notes by A.D. Rollett, Carnegie Mellon University, last revised 26 Apr 2016 (no DOI); the slides
     refer to Kocks, Tomé & Wenk, Texture and Anisotropy (Cambridge Univ. Press, 1998), ch. 5 (not read). The table
     is quoted as flattened by pdftotext: row 1 ''Wire drawing, Round extrusion'' = fcc <111> & <100>, bcc <110>,
@@ -3353,8 +3256,7 @@
     locator: Sect. 4 'Axisymmetrically drawn fcc metals' and 4.2
   quote: It is known that the texture of axisymmetrically drawn fcc metals is characterized by major <111> + minor
     <100> components, and the drawing texture changes to the <100> texture after Rex [ 29 , 30 ]. ... Axisymmetrically
-    extruded Al alloy rod [ 34 ], drawn Al wire [ 30 ] and Cu and some Cu alloy wires [ 29 ] generally have major
-    <111> + minor <001> double fiber textures in the deformed state.
+    extruded Al alloy rod [ 34 ], drawn Al wire [ 30 ] and Cu and some Cu alloy [...]
   note: Chapter by D.N. Lee and H.N. Han in 'Recent Developments in the Study of Recrystallization' (IntechOpen,
     2013). Crossref lists the first author as given 'Dong', family 'Nyung' (name split error); the author is Dong
     Nyung Lee. Relevant to the RX (deformation + recrystallisation) texture source S3.
@@ -3375,13 +3277,9 @@
     url: https://www.jstage.jst.go.jp/article/isijinternational1989/43/6/43_6_855/_pdf
     evidence: full_text
     locator: abstract; Sect. 2.1 (Eq. 1); Eq. (22)
-  quote: Up to now, the possibility of magnetic orientation by imposition of the high magnetic field has been studied,
-    it was said that existence of crystal magnetic anisotropy and a low viscosity are essential. ... The principle
-    of crystal orientation using a magnetic field is that a torque rotates a crystal to take a stable crystal orientation
-    so as to decrease the magnetization energy. ... The magnetic orientation works only when the magnetization energy
-    is larger than a thermal energy kT.14) This condition can be described as Eq. (22) ... where k is Boltzmann
-    constant. The condition that a particle radius should be larger than 20 nm is derived from Eq. (22) by using
-    physical properties and experimental conditions adopted in this experiment.
+  quote: '[...] The magnetic orientation works only when the magnetization energy is larger than a thermal energy
+    kT.14) This condition can be described as Eq. (22) ... where k is Boltzmann constant. The condition that a particle
+    radius should be larger than 20 nm is derived from Eq. (22) by using physical [...]'
   note: Group of S. Asai (Nagoya). Eq. (22) is garbled in text extraction (V, Δχ, B², 2μ0 and kT legible; relation
     sign lost); the text states the condition 'magnetization energy larger than kT'. The authors also bound the
     radius from above (about 100 μm for a 1 s rotation time, Zn) by the equation of motion with viscous drag. For
@@ -3405,10 +3303,7 @@
     locator: abstract
   quote: On the other hand the magnetization force that is familiar with the force to attract iron to a magnet,
     has been recognized to be effective even in non-magnetic materials when those are placed under a high magnetic
-    field, which has become rather conveniently available by developing superconducting technologies in these days.
-    In this paper, main results obtained when the imposition of a high magnetic field was accompanied to several
-    materials processing such as electrodeposition, vaperdeposition, solidification, baking, slip-casting and precipitation,
-    arereviewed from the view point of crystal orientation of non-magnetic materials.
+    field, which has become rather conveniently available by developing superconducting [...]
   note: Asai, Sassa, Tahashi, Sci. Technol. Adv. Mater. 4 (2003) 455-460 (open access, but the publisher site refused
     scripted download); abstract reconstructed from the OpenAlex inverted index, so word joins such as 'vaperdeposition',
     'arereviewed' are as fetched. The quantitative criterion is in uni_phys_dchi_alignment_criterion_sugiyama2003
@@ -3431,9 +3326,7 @@
     locator: abstract
   quote: The effect of a uniform magnetic field on the mechanism, kinetics, and resulting morphology of a spinodally
     decomposing alloy is investigated. It is shown that the magnetic field is most effective in forming uniformly
-    spaced rods parallel to the magnetization if the aging is carried out just below the intersection (on the phase
-    diagram) of the Curie temperature and the temperature where the spinodal instability sets in. This condition
-    limits the effective magnetic aging alloys to the composition range near this intersection.
+    spaced rods parallel to the magnetization if the aging is carried out just below [...]
   note: J. Appl. Phys. 34 (1963) 3581-3586; abstract from the Crossref record (identical in OpenAlex); full text
     not accessible.
 - id: uni_phys_neel1954_field_directional_order
@@ -3455,10 +3348,7 @@
     locator: abstract (part 2)
   quote: Dans la seconde partie, on montre, en adoptant le point de vue précédent, que dans les solutions solides
     ferromagnétiques à deux constituants au moins, traitées à chaud dans un champ magnétique, les atomes proches
-    voisins d'un atome donné doivent se répartir d'une façon anisotrope autour de ce dernier et donner naissance
-    à une surstructure d'orientation. Par trempe, cette surstructure est susceptible de se conserver en faux équilibre
-    à basse température et se manifeste par l'apparition d'une anisotropie magnétique de caractère uniaxial. ...
-    On suggère le rôle possible de ces effets dans l'alnico V et les ferrites de cobalt orientés.
+    voisins d'un atome donné doivent se répartir d'une façon anisotrope autour de ce [...]
   note: 'J. Phys. Radium 15 (1954) 225-239 (HAL jpa-00234899); abstract in French from the HAL API (full-text PDF
     behind a bot check). Paraphrase: atomic pair (directional) order set up by annealing in a field is frozen in
     by quenching and gives a uniaxial anisotropy along the annealing-field direction.'
@@ -3478,12 +3368,9 @@
     url: https://api.archives-ouvertes.fr/search/?q=halId_s:jpa-00234899&fl=abstract_s
     evidence: abstract
     locator: abstract (part 3)
-  quote: 'Dans une troisième partie, on montre que l''on peut créer une surstructure d''orientation dans une solution
-    solide quelconque au moyen d''une déformation élastique à chaud et la conserver par trempe. Si la solution solide
-    est ferromagnétique, les surstructures ainsi créées donnent naissance à une anisotropie magnétique de caractère
-    uniaxial. En s''appuyant sur une théorie sommaire des propriétés élastiques des solutions solides développée
-    à cet effet, le phénomène est soumis au calcul : on trouve des anisotropies de I04 ergs/cm3 pour des tensions
-    de I0 kg/mm2 , dans le cas des ferronickels.'
+  quote: '[...] anisotropie magnétique de caractère uniaxial. En s''appuyant sur une théorie sommaire des propriétés
+    élastiques des solutions solides développée à cet effet, le phénomène est soumis au calcul : on trouve des anisotropies
+    de I04 ergs/cm3 pour des tensions de I0 kg/mm2 , dans le cas des ferronickels.'
   note: Same source as uni_phys_neel1954_field_directional_order. 'I04' and 'I0' are as fetched (OCR of 10^4 and
     10). Mechanism relevant to stress bias (B2) and stress annealing.
 - id: uni_phys_chikazumi1955_induced_anisotropy
@@ -3504,10 +3391,7 @@
     locator: abstract
   quote: The magnitude of magnetic anisotropy induced by the magnetic annealing was measured as a function of composition
     for iron-nickel alloys. It is concluded that the magnitude of the anisotropy is proportional neither to the
-    magnetostriction nor to the saturation magnetization. The origin of this anisotropy, therefore, can be explained
-    neither by the theory of " strain of directional order " nor by the theory of " elongated order phase ". The
-    result can be consistently explained by the dipole. dipole interaction in directionally ordered arrangement
-    of atoms. The result is compared with Néel's formulas.
+    magnetostriction nor to the saturation magnetization. The origin of this [...]
   note: Chikazumi & Oomura, J. Phys. Soc. Jpn. 10 (1955) 842-849; abstract reconstructed from the OpenAlex inverted
     index ('dipole. dipole' as fetched, i.e. dipole-dipole); full text behind a bot check.
 - id: uni_phys_kuzmin2005_ms_t_shape
@@ -3525,11 +3409,9 @@
     url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=15783517&rettype=abstract&retmode=text
     evidence: abstract
     locator: abstract (PubMed 15783517)
-  quote: 'Analysis of available experimental data shows that there exists a limited variety of shapes of temperature
-    dependence of spontaneous magnetization. For most metallic ferromagnets the shape (as opposed to scale) of the
-    M(s) versus T curve can be characterized by a single dimensionless parameter. A numerical description of the
-    dependence M(s)(T) for a particular ferromagnetic material is thus reduced to evaluating three quantities: the
-    saturation magnetization M(0) identical with M(s)(0), the Curie point T(C), and the shape parameter s.'
+  quote: '[...] be characterized by a single dimensionless parameter. A numerical description of the dependence
+    M(s)(T) for a particular ferromagnetic material is thus reduced to evaluating three quantities: the saturation
+    magnetization M(0) identical with M(s)(0), the Curie point T(C), and the shape parameter s.'
   note: 'Phys. Rev. Lett. 94 (2005) 107204 (closed; not read). PubMed renders subscripts as M(s) = Ms, T(C) = Tc.
     Functional form: see uni_phys_kuzmin_formula_perevertov.'
 - id: uni_phys_kuzmin_formula_perevertov
@@ -3550,8 +3432,7 @@
     locator: Eq. (2) and following text (arXiv v2)
   quote: 'In 2005 a phenomenological MS(T) relation was introduced by Kuz’min [23] to approximate the MS(T) curve
     at all temperature range from o to TC in the following form: ... where s and p are parameters, p > 3/2, s >
-    0, m = MS/M0 is the reduced spontaneous magnetization at a reduced temperature ... This equation was constructed
-    to obey the classical power laws at low temperatures and around TC.'
+    0, m = MS/M0 is the reduced spontaneous magnetization at a reduced temperature ... This [...]'
   note: 'Read the arXiv v2 preprint (published as Physica B 739 (2026) 419002). Eq. (2) is garbled in text extraction;
     read from the layout text as m(τ) = [1 − sτ^(3/2) − (1 − s)τ^p]^(1/3). The value of p adopted by Kuz''min (2005)
     for metals is not in the text read; check the PRL before fixing p. Use: Js(T) of a forming phase at its formation
@@ -3576,13 +3457,7 @@
     locator: Sect. 1.1 (executive summary); Sect. 2, Eq. (2.1)
   quote: (M-H-T) magnetic equation of state space demonstrate that significantly different phase equilibria may
     result for those material systems where the product and parent phases exhibit different magnetization responses.
-    These calculations show that the Gibbs free energy is changed by a factor equal to –MdH, where M and H are the
-    magnetization and applied field strength, respectively. ... where M and H are defined as the magnetization and
-    the magnetic intensity, respectively. This effect will be manifested in the Fe-C binary equilibrium phase diagram
-    as shifts in the transformation temperatures of the various phases as well as changes in the solubility limits
-    (solvus lines) of the various phases. The main requirement for this proposed magnetic process to be effective
-    is that the parent and product phases need to exhibit different magnetization responses to the applied magnetic
-    field.
+    These calculations show that the Gibbs free energy is changed by a factor equal to [...]
   note: 'ORNL/TM-2005/79, Oak Ridge National Laboratory final technical report (PI G.M. Ludtka), March 2005; OSTI
     ID 838516; DOI 10.2172/838516 (resolves on api.crossref.org, type report). Eq. (2.1) as printed (garbled in
     extraction): ΔG_Fe(γ→α) = RT[ln a_Fe(γ) − ln a_Fe(α)] + ∫0^H (M_Fe(γ) − M_Fe(α)) dH; p. 26 restates the linear-in-H
@@ -3603,10 +3478,9 @@
     url: https://www.osti.gov/servlets/purl/838516
     evidence: full_text
     locator: Sect. 3 (Background) and Sect. 4 (p. 25)
-  quote: A magnetic flux density of 1 T augments the free energy by about 5.5 J/mole/µBohr (where µBohr is defined
-    as a Bohr magneton) and because the ferromagnetic iron moment is 2.2 µBohr, the impact on free energy that is
-    anticipated for iron-based materials is ~12J/mole per tesla or 360J/mole for a 30-T magnetic field. This energy
-    compares with energies of mixing, ordering energies, and formation energy differences.
+  quote: '[...] magneton) and because the ferromagnetic iron moment is 2.2 µBohr, the impact on free energy that
+    is anticipated for iron-based materials is ~12J/mole per tesla or 360J/mole for a 30-T magnetic field. This
+    energy compares with energies of mixing, ordering energies, and formation energy differences.'
   note: ORNL/TM-2005/79, Oak Ridge National Laboratory final technical report (PI G.M. Ludtka), March 2005; OSTI
     ID 838516; DOI 10.2172/838516 (resolves on api.crossref.org, type report). p. 25 repeats the estimate as µBohr
     × NA = 5.6 J/(mol·T). Gives the scale of the B1 field bias on a transformation (difference in moment per atom
@@ -3631,14 +3505,7 @@
     locator: Sect. 1 (Introduction); Sect. 2 with Fig. 2
   quote: In some solid/solid phase transformations, not only the difference in magnetic moment but also the magnetocrystalline
     anisotropy, shape magnetic anisotropy, induced magnetic anisotropy and the magnetostriction affect the nucleation
-    and growth rates, transformation kinetics, variants and microstructure of product phases. ... If a magnetic
-    field is applied, the free energy of the ferromagnetic product phase is decreased as shown by the dotted line
-    in figure 2 . The free energy of the parent phase is also reduced but is neglected because the parent phase
-    is paramagnetic and the decrease is very small. ... For diffusional transformation, the same principle can be
-    applied, and it is expected that the diffusional transformation temperature is increased by applying a magnetic
-    field. ... The additional energy supplied by a magnetic field is magnetostatic energy, which is the interaction
-    energy between the magnetic field and the magnetic moment of the phase, and is expressed as MdH, where M stands
-    for the magnetic moment of the product phase.
+    and growth rates, transformation kinetics, variants and [...]
   note: Review, Sci. Technol. Adv. Mater. 9 (2008) 013004 (open access, PMC5099791), read as PMC HTML; the integral
     sign before 'MdH' is not rendered in the HTML text. The thermodynamic treatment is credited to Kakeshita et
     al. (pulsed-field martensite studies).
@@ -3695,9 +3562,9 @@
     url: http://web.archive.org/web/20241127171042/https://www.tara.tcd.ie/bitstream/handle/2262/95743/1-s2.0-S209580991830835X-main.pdf
     evidence: full_text
     locator: Sect. 1 (after Table 1), p. 120
-  quote: If a single grain has a square loop with magnetization Ms, a fully dense collection of non-interacting,
-    randomly oriented grains magnetized in the easy direction closest to a field applied in the z direction has
-    ⟨Mz⟩ = (1/2)Ms; hence, the energy product is reduced by a factor of four relative to a dense sintered magnet.
+  quote: '[...] a square loop with magnetization Ms, a fully dense collection of non-interacting, randomly oriented
+    grains magnetized in the easy direction closest to a field applied in the z direction has ⟨Mz⟩ = (1/2)Ms; hence,
+    the energy product is reduced by a factor of four relative to a dense sintered magnet.'
   note: Secondary statement of the Stoner-Wohlfarth isotropic remanence (A = 1/2). The PDF text layer renders '⟨Mz⟩
     = (1/2)Ms' as 'hM z i ¼ ð1=2ÞM s'.
 - id: uni_phys_exchange_enhancement_coey2020

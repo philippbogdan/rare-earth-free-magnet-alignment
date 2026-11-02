@@ -1,4 +1,4 @@
-.venv/
-.tmp/
 __pycache__/
-*.pdf
+.venv/
+.cache/
+*.pyc

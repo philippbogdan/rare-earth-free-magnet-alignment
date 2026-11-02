@@ -1,8 +1,6 @@
-# Topic: mn4n. Inputs are intrinsic properties and formation mechanisms only.
-# Gaps: numerical/sign-specific bulk cubic K1; decomposition T_stab and atmosphere/time window;
-# measured density at 300 K; bulk nitriding and alloy transformation OR and variant count;
-# isolated single-crystal particle habit relative to <111>; melt crystallisation and growth direction;
-# hot deformation mechanism; film rocking-curve FWHM; field-aligned powder or textured-bulk data.
+# Intrinsic properties and formation mechanisms for Mn4N.
+# Unreported bulk anisotropy, formation relationships, particle habit and growth directions
+# remain gaps rather than assumed values; see the corresponding account cells.
 - id: mn4n_structure_zhou2021
   phase: Mn4N
   quantity: structure

@@ -1,7 +1,6 @@
-# mnal inputs: tau-MnAl and tau-MnAl-C (L1_0) formed from hcp epsilon. Records per data/SCHEMA.md.
-# Phase names: tau-MnAl, tau-MnAl-C, tau-MnAl(C) (both), epsilon-MnAl(-C) parent, epsilon'-MnAl-C (orthorhombic B19 intermediate).
-# Every quote is verbatim from the source text fetched (whitespace normalised; PDF ligature/hyphenation fixes; '...' joins non-adjacent fragments).
-# Patents have doi: null. Values converted to schema units carry 'converted from' in note.
+# Inputs for tau-MnAl and carbon-stabilised tau-MnAl-C from epsilon parents.
+# Labels distinguish the hexagonal parent and orthorhombic intermediate where present.
+# Patents retain their citation and URL. Unit conversions and excerpt qualifications are in note.
 - id: mnal_growth_direction_pacheco2023
   phase: epsilon-MnAl-C
   quantity: growth_direction
@@ -59,13 +58,9 @@
     url: https://mdpi-res.com/d_attachment/alloys/alloys-02-00007/article_deploy/alloys-02-00007.pdf
     evidence: review
     locator: Section 3, p. 102-103
-  quote: For instance, Kojima et al. [ 18] observed that during the annealing of anε-phase single crystal, the transformation
-    sequence ε (hexagonal)→ ε’ (orthorhombic)→ τ (tetragonal) occurs, with the crystallographic relations (0001)ε
-    || (100)ε’ || (111)τ. Similar relations were proposed by Jakubovics et al. [19]. These crystallographic relations
-    were proposed for the τ-phase with unit cell parameters around a = 3.9 Å and c = 3.6 Å [18] (theτ-phase can
-    be described with 2 different tetragonal unit cells). In the present work, we used the unit cell with parameters
-    around a = 2.8 Å and c = 3.6 Å [21]. The (111)τ planes in the first reference system were equivalent to the
-    (101)τ in the latter.
+  quote: '[...] single crystal, the transformation sequence ε (hexagonal)→ ε’ (orthorhombic)→ τ (tetragonal) occurs,
+    with the crystallographic relations (0001)ε || (100)ε’ || (111)τ. Similar relations were proposed by Jakubovics
+    et al. [19]. These crystallographic relations were proposed for the τ-phase [...]'
   note: 'Review-level (Pacheco quoting Kojima 1975). Gives both tau cell settings: fct a = 3.9, c = 3.6 A and primitive
     a = 2.8, c = 3.6 A, with (111)fct = (101)primitive. The pypdf text layer runs words together (''theε-phase'');
     quote as printed.'
@@ -87,10 +82,9 @@
     url: https://oa.tib.eu/renate/server/api/core/bitstreams/3dc35624-aeed-46c4-bd47-9b6ab3b15195/content
     evidence: review
     locator: Section 1 (Introduction), p. 156
-  quote: During the extrusion process, dynamic recrystallisation occurs which produces fine, recrystallised grains
-    of about 0.7-0.8 μm size [16], which show a broad <001> fibre texture parallel to the extrusion axis [17,18].
-    These grains contain a low density of true twins [17,19], which act to reduce the sharpness of the texture.
-    In addition, the presence of non-recrystallised regions which are highly twinned has been shown [17,19,20].
+  quote: '[...] extrusion process, dynamic recrystallisation occurs which produces fine, recrystallised grains of
+    about 0.7-0.8 μm size [16], which show a broad <001> fibre texture parallel to the extrusion axis [17,18]. These
+    grains contain a low density of true twins [17,19], which act to reduce the sharpness [...]'
   note: Texture type (<001> fibre || extrusion direction) is a mechanism/input statement; measured texture strengths
     are in the known-case file.
 - id: mnal_deformation_feng2020b
@@ -112,8 +106,7 @@
     locator: Section 3.2, p. 162
   quote: At the higher temperature used for the extrusion of material C, the yield strength of the material was
     lower which would cause a lower dislocation density and, in turn, reduce the energy stored in the deformed material.
-    This may be the reason why material C has a lower texture quality as the driving force for recrystallisation
-    would be diminished.
+    This may be the reason why material C has a lower texture quality as the [...]
   note: Authors' interpretation ('may be the reason').
 - id: mnal_deformation_feng2020c
   phase: tau-MnAl-C
@@ -134,9 +127,7 @@
     locator: Section 3.1, p. 158
   quote: The smaller particle size of the milled powder restricts the size of the non-recrystallised regions. Higher
     temperature and lower strain rate usually lead to less deformation twinning [28]. Although the extrusion speed
-    and therefore strain rate for material C was higher than that of B (cf. 1.1 mm/s for C, 0.1 mm/s for B), the
-    higher extrusion temperature of material C appears to have been the dominant influence as material C has a lower
-    volume fraction of highly twinned, non-recrystallised regions than material B.
+    and therefore strain rate for material C was higher than that of B (cf. 1.1 mm/s [...]
   note: 'Volume fraction of non-recrystallised regions: 0.172 (A, crushed powder), 0.025 (B), 0.014 (C) - microstructural,
     quoted in the paper p. 158.'
 - id: mnal_twins_feng2020a
@@ -338,16 +329,9 @@
     url: https://oa.tib.eu/renate/server/api/core/bitstreams/187f02b1-6f29-4daf-99bd-f5fff2989ef3/content
     evidence: full_text
     locator: Section 3.3.3, p. 6
-  quote: In addition to true twins found in the recrystallised grains, an order twin with sharp interface are also
-    observed as shown in Fig. 9(b). As the zone axis of twin and matrix are both parallel to the electron beam,
-    they appear the same diffraction contrast. The diffraction pattern in the top right corner of Fig. 9(b) was
-    taken from the area marked with dashed circle and could be indexed with [010] zone axis with the misorientation
-    angle about 86° . Considering the symmetry operations of τ-MnAl, it is equivalent to 120° /(111). Due to the
-    limitations of TEM, it is impractical to check all the twin boundaries formed in the samples. In TiAl phase
-    which has the same L10 structure as τ-MnAl, Inui et al. showed the formation energy ratio of true twin, order
-    twin and pseudo twin is roughly to be 1:2:3 or 1:6:7 to explain why true twins are more common to be observed
-    [42]. Based on the EBSD analysis, Bittner et al. also confirmed true twins are the dominant twin type in τ-MnAl-C
-    after hot extrusion [25].
+  quote: '[...] could be indexed with [010] zone axis with the misorientation angle about 86° . Considering the
+    symmetry operations of τ-MnAl, it is equivalent to 120° /(111). Due to the limitations of TEM, it is impractical
+    to check all the twin boundaries formed in the samples. In TiAl phase which has the same [...]'
   note: Includes Inui et al.'s formation-energy ratio for L1_0 TiAl (true:order:pseudo roughly 1:2:3 or 1:6:7) as
     explanation why true twins are most common; and Bittner et al.'s EBSD finding that true twins dominate after
     hot extrusion.
@@ -369,12 +353,7 @@
     locator: Section 3.2.3, p. 5
   quote: Based on the diffraction analysis, these micro-twins show a true or pseudo twin relationship. These twins
     show a total length more than 7 μm and are terminated at the grain boundaries on one side. Similar twin structures
-    were also reported by Yanar et al. [12] in massively transformed τ-phase and the formation of the planar defects
-    was attributed to the growth faults produced during atomic attachment at the migrating interfaces. Wiezorek
-    et al. [18] also reported plate-like τ-phase could be produced via a hybrid displacive-diffusional mechanism
-    which was associated with the interface of massive transformed τ-phase and the parent ε phase. In both phase
-    transformation mechanisms, strain leads to the motion of partial dislocations, which produce the twins in the
-    microstructure.
+    were also reported by Yanar et al. [12] in massively transformed τ-phase and [...]
   note: ''
 - id: mnal_formation_path_zhao2021
   phase: tau-MnAl-C
@@ -393,10 +372,9 @@
     url: https://oa.tib.eu/renate/server/api/core/bitstreams/187f02b1-6f29-4daf-99bd-f5fff2989ef3/content
     evidence: review
     locator: Section 1, p. 1
-  quote: Two mechanisms have been proposed to describe this transformation and they are massive transformation [12–14]
-    and the displacive-diffusional mechanism [15–17]. Both mechanisms could occur simultaneously during the phase
-    transformation from ε to τ, but the massive transformation is thought to be dominant in polycrystals and at
-    temperatures above 500 °C [18].
+  quote: '[...] and they are massive transformation [12–14] and the displacive-diffusional mechanism [15–17]. Both
+    mechanisms could occur simultaneously during the phase transformation from ε to τ, but the massive transformation
+    is thought to be dominant in polycrystals and at temperatures above 500 °C [18].'
   note: pdftotext renders the ranges '[12–14]' as '[12e14]' and drops the degree sign; quote as extracted.
 - id: mnal_deformation_zhao2021a
   phase: tau-MnAl-C
@@ -417,7 +395,7 @@
     locator: Section 1, p. 2
   quote: In this study, τ-MnAl-C was hot deformed through the die upsetting process. This process is analogous to
     hot extrusion in that dynamic recrystallization and texture formation also occur. Die-upset MnAl–C magnets have
-    a radial texture and therefore, ring magnets for motor applications could be prepared through this method [29].
+    a radial texture and therefore, ring magnets for motor applications could be [...]
   note: 'Same paper (Section 3.1): ''The maximum degree of texture which can be achieved by die-upsetting is necessarily
     lower than that achievable via extrusion because in die-upset samples as the preferred alignment occurs in the
     plane perpendicular to the axis of the applied force rather than in the direction parallel to it, as is the
@@ -441,8 +419,7 @@
     locator: Section 3.3.6, p. 8
   quote: A high density of defects is observed in the non-recrystallised grains of τ-MnAl-C, due to the accommodation
     of strain during the hot deformation process. Dislocations, twins and deformation bands are the most commonly
-    observed defects and the microstructure of the non-recrystallised grains is characterized by various different
-    combinations and configurations of these.
+    observed defects and the microstructure of the non-recrystallised grains is [...]
   note: 'Burgers vectors (Section 3.3.1): ''the Burgers vector of most of dislocations (A-E) belong to 1/2[110]
     ... and the Burgers vector of dislocation F is [110]''. APBs absent after DRX (Section 3.3.5).'
 - id: mnal_tc_zhao2021
@@ -580,11 +557,7 @@
     locator: Section 2 (arXiv:1703.10710v1)
   quote: As the cast material consists of a mixture of τ and equilibrium γ2 phases, a homogenization heat treatment
     at 1100°C for 5 days followed by quenching was carried out. For this, the as-cast material was encapsulated
-    in a glass tube which was evacuated to 10−4 mbar and then filled with 150 mbar of pure Ar. After homogenization,
-    the microstructure of the material was investigated using a Gemini Leo 1530 Scanning Electron Microscope (SEM)
-    and is shown in Figure 2(a) in backscattered electron contrast. The microstructure consists of irregularly shaped
-    grains and many planar interfaces, as was observed for C-doped MnAl elsewhere.[14] It should be noted that no
-    indication of the occurrence of phases other than τ was found using microscopy or with X-ray diffraction measurements.
+    in a glass tube which was evacuated to 10−4 mbar and then filled with 150 mbar of [...]
   note: 'Contrast: MnAl-C alloys retain epsilon on water quenching (e.g. Feng 2020, Zhao 2021 use quench + anneal).'
 - id: mnal_or_kubo1976
   phase: tau-MnAl-C
@@ -602,11 +575,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Example 3 (X-ray diffraction of compressed single crystals)
-  quote: 'and moreover, it became apparent that the ε c '' phase is a crystal oriented in one direction, and that
-    between the ε c phase of the matrix before the pressuring and the ε c '' phase of the matrix after the pressuring,
-    there exists crystal orientation relationships of ε.sub.c (0001) // ε.sub.c ''(100), ε.sub.c [0001] // ε.sub.c
-    ''[100] ... Between the unidirectionally oriented ε c '' phase and τ c phase, there existed such a specific
-    crystal orientation relationship as: ε.sub.c '' (100) // τ.sub.c (111).'
+  quote: '[...] matrix before the pressuring and the ε c '' phase of the matrix after the pressuring, there exists
+    crystal orientation relationships of ε.sub.c (0001) // ε.sub.c ''(100), ε.sub.c [0001] // ε.sub.c ''[100] ...
+    Between the unidirectionally oriented ε c '' phase and τ c phase, there existed such a [...]'
   note: Patent (no DOI). '.sub.' is the Google Patents rendering of subscripts. Measured on stress-transformed single
     crystals; the same patent states the eps'->tau step is martensitic (see mnal_formation_path_kubo1976a).
 - id: mnal_formation_path_kubo1976a
@@ -625,11 +596,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Example 3
-  quote: through an order-disorder transformation of ε c → ε c '. This ε c → ε c ' transformation corresponds to
-    the process followed from A point to B point in FIG. 3, and the shrinkage in the pressuring direction is not
-    excessively large. Furthermore, the ε c ' monocrystal transforms into a τ c monocrystal having the relationship
-    of ε c ' (100) // τ c (111) through the ε c '→ τ c martensitic transformation in which the specific (100) plane
-    slides to the direction of [001] at a specific distance.
+  quote: '[...] direction is not excessively large. Furthermore, the ε c '' monocrystal transforms into a τ c monocrystal
+    having the relationship of ε c '' (100) // τ c (111) through the ε c ''→ τ c martensitic transformation in which
+    the specific (100) plane slides to the direction of [001] at a specific distance.'
   note: 'Patent. eps'' lattice: ''orthorhombic structure with lattice constants of a = 4.371A, b = 2.758A and c
     = 4.582A, which crystal structure belongs to B19 type (MgCd type)''.'
 - id: mnal_lattice_kubo1976_epsprime
@@ -754,9 +723,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Example 3
-  quote: Of these test pieces, that of S 3 after being tempered was found, as a result of observation by X-ray diffraction,
+  quote: '[...] test pieces, that of S 3 after being tempered was found, as a result of observation by X-ray diffraction,
     to be a τ c (M) monocrystal with its C axis, the easy axis of magnetization of the τ c phase of the matrix,
-    oriented in the direction making an angle of about 82° to the pressuring direction.
+    oriented in the direction making an angle of about 82° to the pressuring direction.'
   note: Stress acts above Tc(tau) (Curie point of tau-MnAl-C ~ 270-300 C), i.e. the bias is mechanical (B2), not
     magnetic.
 - id: mnal_stress_effect_on_formation_kubo1976b
@@ -777,13 +746,7 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Example 4, Table 3
-  quote: 'The magnetic characteristics of the τ c (M) crystals which are formed from the ε c (M) monocrystals by
-    warm deformation and tempering depend on the degree of orientation of the τ c (M) crystals. The orientation
-    of the τ c (M) crystals relates closely to the direction of pressure. And also, the orientation relates to the
-    orientation of the ε c ''(M) phase before being transformed: thus when the pressuring direction falls within
-    the angle ranges of 35°≦ θ 1 ≦ 90°, 0° ≦ θ 2 ≦ 15°, the ε c '' phase of the matrix formed by the ε c → ε c ''
-    transformation is nearly unidirectionally oriented, and then, the one-directional or two-directional τ c phase
-    was formed by the ensuing ε c '' → τ c transformation. On the other hand, it was made clear by the X-ray diffraction
+  quote: '[...] by the ensuing ε c '' → τ c transformation. On the other hand, it was made clear by the X-ray diffraction
     that when the pressuring directions are θ 1 = 0°, θ 2 = 0°, and θ 1 = 90°, θ 2 = 30° multi-directional ε c ''
     (M) phase is formed, with resultant formation of the multi-directional τ c (M) phase.'
   note: 'Patent. Specimen S15 (theta1 = 90, theta2 = 0): ''the τ c [001] axis was found in two directions making
@@ -846,10 +809,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Example 6
-  quote: As the monocrystal in the τ c (M) phase formed by the ε c ' → τ c transformation of Example 3 is pressured
-    in the preferred direction of magnetization, that is, in the direction of τ c [001], the surface of atoms parallel
-    to the τ c (111) plane which holds the relationship of ε c ' (100) // τ c (111), slides by a specific distance,
-    receiving the stress in the direction of τ c [112].
+  quote: '[...] formed by the ε c '' → τ c transformation of Example 3 is pressured in the preferred direction of
+    magnetization, that is, in the direction of τ c [001], the surface of atoms parallel to the τ c (111) plane
+    which holds the relationship of ε c '' (100) // τ c (111), slides by a specific distance, [...]'
   note: 'The patent continues: ''from the ε c '' phase formed by the τ c → ε c '' transformation, by sliding at
     a specific distance in the direction of the ε c '' [001] in the plane of atoms parallel to the ε c '' (100)
     plane, a new unidirectional τ c phase which is different in crystalline azimuth from the τ c phase before making
@@ -952,11 +914,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Description of the preferred embodiment
-  quote: It has been clarified that in Mn-Al-C alloys, the solubility limit of carbon in the magnetic phase, as
-    determined by the measurement of lattice constants by way of X-ray diffraction and by measurement of Curie point
-    by use of a magnetic balance, is 0.6% for the composition of 72% Mn, 0.4% for the composition of 70% Mn, 0.2%
-    for the composition of 68.0% Mn, and the solubility limit of carbon within the composition range of 68.0-73.0%
-    Mn can be represented by the mathematical formula of (1/10 Mn--6.6)%.
+  quote: '[...] and by measurement of Curie point by use of a magnetic balance, is 0.6% for the composition of 72%
+    Mn, 0.4% for the composition of 70% Mn, 0.2% for the composition of 68.0% Mn, and the solubility limit of carbon
+    within the composition range of 68.0-73.0% Mn can be represented by the [...]'
   note: Upper C limit (1/3 Mn - 22.2) wt.% set by Al4C3 formation. C in excess of solubility forms Mn3AlC.
 - id: mnal_growth_direction_kubo1976
   phase: epsilon-MnAl-C
@@ -974,10 +934,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Example 10
-  quote: columnar crystals were observed under an optical microscope in the initially solidified parts. As this
-    casting was subjected to the M treatment at 850°C for 20 minutes, and was then, quenched from this temperature,
-    a separation of lamellar Mn 3 AlC was recognized in the columnar crystalline grains the lamellar pattern showing
-    abounding crystalline grains which makes about a right angle to the growing direction of the columnar crystals.
+  quote: '[...] As this casting was subjected to the M treatment at 850°C for 20 minutes, and was then, quenched
+    from this temperature, a separation of lamellar Mn 3 AlC was recognized in the columnar crystalline grains the
+    lamellar pattern showing abounding crystalline grains which makes about a right angle to [...]'
   note: 'Inference by the compiler, not stated by the patent: the patent states elsewhere that ''Mn 3 AlC aligned
     in lamellae parallel to the special crystal plane of ε c (0001)''; lamellae perpendicular to the growth direction
     would put eps[0001] along the growth direction (consistent with Pacheco 2023 for L-PBF). The wording ''abounding
@@ -1022,7 +981,7 @@
     locator: Example 3
   quote: Of these test pieces, that of S 3 after being tempered was found, as a result of observation by X-ray diffraction,
     to be a τ c (M) monocrystal with its C axis, the easy axis of magnetization of the τ c phase of the matrix,
-    oriented in the direction making an angle of about 82° to the pressuring direction.
+    oriented in the direction making an angle of about 82° to the pressuring [...]
   note: Unstressed tempering of the same kind of crystal gives isotropic tau (Examples 1-2). Magnetic values of
     the single-variant crystal are in the sealed outcome file.
 - id: mnal_deformation_sakamoto1977a
@@ -1044,14 +1003,7 @@
     locator: Background (summary of co-pending application Ser. No. 491,498 = US 3,976,519)
   quote: Said directional deformation should be one that causes the sliding of the plane of atoms in the (0001)
     .sub.ε phase to the [1100].sub.ε direction of the ε phase, in the same corresponding (100) .sub.ε.spsb.' plane
-    to the [001].sub.ε.spsb.' direction of the ε' phase, and the same corresponding (111) .sub.τ plane to the [112]τ
-    direction of the τ-phase. With respect to the compression direction relative to the τ-phase crystal orientation
-    after deformation, compression in the direction nearly perpendicular to the [001]τ axis of the obtained τ-phase
-    single crystal after deformation, which axis is the objective direction of easy magnetization, facilitates sliding
-    of the plane of atoms in every phase. When compressed under such conditions, deformation anisotropy was notable,
-    i.e., remarkable shrinkage in the direction of the compression was observed, and notable elongation was recognized
-    in the only one direction perpendicular to the compression direction. The direction where notable elongation
-    was recognized is nearly the same as the direction of easy magnetization of the obtained τ-phase single crystal.
+    to the [001].sub.ε.spsb.' direction of the ε' phase, and the same corresponding (111) [...]
   note: Patent. '[1100]' is the Google Patents rendering of [1-100]. Explains why extrusion (radial compression,
     axial elongation) puts the easy axis along the extrusion direction and upsetting puts it radial.
 - id: mnal_deformation_sakamoto1977b
@@ -1072,9 +1024,7 @@
     locator: Background
   quote: Regarding the polycrystalline Mn-Al-C alloys, said co-pending application, Ser. No. 491,498 also has indicated
     that as the alloys were upset in said temperature range, anisotropic permanent magnets with the direction of
-    preferred magnetization being in the direction of diameter which was perpendicular to the direction of compression,
-    were obtained. And, when the alloys were extruded, it was made clear that the direction of preferred magnetization
-    was in the direction of extrusion.
+    preferred magnetization being in the direction of diameter which was [...]
   note: Patent.
 - id: mnal_deformation_sakamoto1977c
   phase: tau-MnAl-C
@@ -1095,9 +1045,7 @@
     locator: Description of the preferred embodiments
   quote: When the semiangle α is small enough, the billet of polycrystalline Mn-Al-C system alloy undergoes rather
     uniform compressive deformation in the direction nearly perpendicular to the extrusion direction in the converging
-    portion. Accordingly, said compression deformation results in the effective directional working, described before,
-    which in turn results in an anisotropic Mn-Al-C system alloy magnet whose direction of preferred magnetization
-    is in the extrusion direction.
+    portion. Accordingly, said compression deformation results in the effective [...]
   note: 'Patent also: ''a better result is expected when said polycrystalline alloy undergoes compressive deformation
     in many directions centripetally around the extrusion direction, in order to provide said preferable directional
     deformation on every minute crystal diversified in orientation.'' Die-angle data are in the known-case file.'
@@ -1157,9 +1105,9 @@
     url: https://api.openalex.org/works/doi:10.1109/tmag.1980.1060672
     evidence: abstract
     locator: abstract
-  quote: They were produced by a combined processing of plastic working, i.e., upsetting previously extruded billets
-    of MnAlC permanent magnet alloys in the extrusion axis at 660°C. The direction of easy magnetization was converted
-    into directions perpendicular to the extrusion axis by a small plastic strain induced by the upsetting.
+  quote: '[...] by a combined processing of plastic working, i.e., upsetting previously extruded billets of MnAlC
+    permanent magnet alloys in the extrusion axis at 660°C. The direction of easy magnetization was converted into
+    directions perpendicular to the extrusion axis by a small plastic strain induced by the [...]'
   note: Torque measurements showed the easy direction 'lay uniformly in every direction parallel to the plane'.
     Small strain sufficing is consistent with the shear-transformation (tau<->eps') re-orientation mechanism of
     the Matsushita patents.
@@ -1183,9 +1131,7 @@
     locator: English abstract (J-STAGE); paper in Japanese
   quote: It was found that anisotropy of MnAlC magnet was increased as deformation right after the start of extrusion
     and saturated at the part on the way of extrusion. This phenomenon can be explained by the two deformation areas,
-    one is that dynamic recrystallization proceeds as keeping the former crystal orientation according to the strain
-    induced grain boundary migration mechanism, the other is that dynamic recrystallization proceeds with no relation
-    to the former crystal orientation according to the nucleation and growth mechanism.
+    one is that dynamic recrystallization proceeds as keeping the former crystal [...]
   note: 'Abstract also: ''Anisotropy of MnAlC formed was found to improve at lower temperature, finer particle size
     and lower strain rate. It was considered to be related to the homogeneity of τ phase and the crystal grain size.'''
 - id: mnal_deformation_madugundo2016
@@ -1311,7 +1257,7 @@
     locator: Results, 'Determination of the pathway for twin suppression' (Fig. 4)
   quote: The experimental results of Route 1 suggest that that only grain refinement is insufficient to eliminate
     the twin structures. ... Different from route 1, which failed to eliminate twin structure, route 2 was success
-    to suppressing twin structure during solid-state transformation of nanocrystalline microstructure.
+    to suppressing twin structure during solid-state transformation of nanocrystalline [...]
   note: Twin-free nanograined polycrystals are isotropic ('twin-free polycrystalline samples ... are isotropic'),
     so free single-variant particles are needed for alignment.
 - id: mnal_single_variant_particles_jia2022c
@@ -1331,9 +1277,9 @@
     url: https://www.researchsquare.com/article/rs-1850627/latest.pdf
     evidence: full_text
     locator: Results, 'Realization of unprecedented texture' (Fig. 5)
-  quote: We successfully synthesized high-purity τ-phase MnAl twin-free single-crystal nanoparticles using calciothermic
+  quote: '[...] synthesized high-purity τ-phase MnAl twin-free single-crystal nanoparticles using calciothermic
     reduction method ... the reaction temperature during calciothermic reduction process is increased from 900 oC
-    to 1100 oC, resulting in the growing of average particle size from 4.75 nm to 9.35 nm
+    to 1100 oC, resulting in the growing of average particle size from 4.75 nm to 9.35 nm'
   note: Superparamagnetic critical size estimated ~2.5 nm (K1*4/3*pi*D^3 = 25 kB*T).
 - id: mnal_twins_jia2022
   phase: tau-MnAl
@@ -1373,7 +1319,7 @@
     locator: Introduction
   quote: On one hand, the twin structure produces angles between the easy-magnetization directions in the variants
     on each side of twin boundary 36, making it impossible to align magnetization in the two variants parallel to
-    the external magnetic field, which suppresses the possibility of obtaining a high remanence in twinned magnets.
+    the external magnetic field, which suppresses the possibility of obtaining a high [...]
   note: 'Relevant to the free-body rotation operator: a twinned body contributes sum f_v |e_v . e_body| < 1.'
 - id: mnal_other_jia2022_tf_vs_tc
   phase: tau-MnAl
@@ -1411,9 +1357,9 @@
     url: https://www.researchsquare.com/article/rs-1850627/latest.pdf
     evidence: review
     locator: Results, discussion of Fig. 5e
-  quote: Uniaxial stress or torsional stress are demonstrated to introduce some degree of texture by changing the
-    relative fractions of different types of twins 45,50,53. Especially, if the stress is applied ... near the temperature
-    at which the ε → τ phase transformation is triggered, a significantly enhanced [001]τ texture can be realized
+  quote: '[...] are demonstrated to introduce some degree of texture by changing the relative fractions of different
+    types of twins 45,50,53. Especially, if the stress is applied ... near the temperature at which the ε → τ phase
+    transformation is triggered, a significantly enhanced [001]τ texture can be realized'
   note: Quote stops before the remanence value given in the same sentence (outcome, in sealed file).
 - id: mnal_lattice_takata2018
   phase: tau-MnAl
@@ -1456,8 +1402,7 @@
     locator: Sec. III and Table I
   quote: Using again the estimated mass fraction of the τ-phase, we found the corrected values of saturation magnetization
     Ms and magnetocrystalline anisotropy constant K1 presented in Table 1. ... Ms (MA∙m−1) 0.68 0.59 ... Saturation
-    magnetization Ms and magnetocrystalline anisotropy constant K1, corrected for the ferromagnetic phase fraction,
-    at two representative temperatures for the Mn54Al44C2 alloy sintered at 923 K.
+    magnetization Ms and magnetocrystalline anisotropy constant K1, corrected [...]
   note: 'Table I lists Ms = 0.68 MA/m (4 K) and 0.59 MA/m (300 K). Js = mu0*Ms converted here: 0.59 MA/m -> 0.741
     T at 300 K (0.68 MA/m -> 0.855 T at 4 K). Uncertainty is an estimate here (phase-fraction correction relies
     on the authors'' ~85 % tau estimate). Uncorrected sample specific moment 98 A m2/kg at 300 K (see Ms_mass record).
@@ -1812,12 +1757,9 @@
     url: https://hal.science/hal-01100219/file/MnAl_IEEE2014_Pasko_pv.pdf
     evidence: review
     locator: Sec. IV (discussion of Pareti et al. 1986)
-  quote: 'The anisotropy field Ha at room temperature increases with increasing Mn content and decreases with increasing
-    C content, the variation being from 3.1 MA∙m−1 to 4.2 MA∙m−1. It is remarkable that the saturation magnetization
-    Ms exhibits an inverse dependence on the chemical composition, so that the anisotropy constant K1 = μ0MsHa ∕
-    2 remains indeed almost constant in the considered compositional range. From figures in [22] these parameters
-    for Mn54Al44C2 alloy can be estimated as follows: Ms = 0.6 MA∙m−1, K1 = 1.0 MJ∙m−3, in good agreement with our
-    data.'
+  quote: '[...] the chemical composition, so that the anisotropy constant K1 = μ0MsHa ∕ 2 remains indeed almost
+    constant in the considered compositional range. From figures in [22] these parameters for Mn54Al44C2 alloy can
+    be estimated as follows: Ms = 0.6 MA∙m−1, K1 = 1.0 MJ∙m−3, in good agreement with our data.'
   note: 'Review of Pareti 1986 by Pasko et al.: K1 nearly composition-independent (Ha up with Mn, down with C; Ms
     inverse). Ms = 0.6 MA/m -> Js 0.75 T (converted).'
 - id: mnal_other_pareti1986_ha
@@ -1891,9 +1833,7 @@
     locator: abstract
   quote: The magnetocrystalline anisotropy energy (MAE) is obtained as (0.26 ± 0.01) meV/f.u. This leads to 1.5
     ×10 6 J/m 3 for magnetic anisotropy constant which is comparable to the measured value ∼10 6 J/m 3 . The dependence
-    of the MAE on axial ratio c / a also reflects the influence of the tetragonal distortion, that is, the MAE shows
-    drastic change from negative to positive at the vicinity of c / a =0.7071 which corresponds to cubic B2 lattice.
-    For larger value of c / a , MAE decreases with increasing c / a and goes into negative again for c / a >1.2.
+    of the MAE on axial ratio c / a also reflects the influence of the tetragonal [...]
   note: CALCULATION. c/a here refers to the primitive (B2-derived) tetragonal cell (c/a = 0.7071 is cubic B2); measured
     tau has c/a ~1.29-1.31 in this setting.
 - id: mnal_k1_park2010
@@ -1946,9 +1886,9 @@
     url: https://www.diva-portal.org/smash/get/diva2:1944562/FULLTEXT01.pdf
     evidence: full_text
     locator: Sec. 2 (Characterization) and Sec. 3 (DSC results), Fig. 6
-  quote: chosen to be slightly lower than the ε→τ phase transformation onset temperature Tonset = 673 K but above
+  quote: '[...] to be slightly lower than the ε→τ phase transformation onset temperature Tonset = 673 K but above
     the determined Mn55Al45 Curie temperature TC = 642 K. ... Upon subsequent cooling, a thermal event corresponding
-    to the τ-MnAl Curie transition is noted at TC(τ-MnAl) ~ 642 K, also in agreement with earlier literature [29].
+    to the τ-MnAl Curie transition is noted at TC(τ-MnAl) ~ 642 K, also in agreement [...]'
   note: Binary (carbon-free) tau Curie temperature from DSC. Formation-related values in the same quote (onset 673
     K) are .
 - id: mnal_tc_pasko2013
@@ -2726,7 +2666,7 @@
     locator: Thermal stability paragraph; Fig. 5a
   quote: The metastable τ-phase in the binary Mn-Al alloys would fully decompose after 10 min at 700 °C, while with
     carbon (1.6 at. %) one third of the τ-phase will still remain after one week at 700 °C [17]. The same stability
-    test was carried out on the ternary alloy produced here, with similar results (Fig. 5a).
+    test was carried out on the ternary alloy produced here, with similar results [...]
   note: Converted 700 C. With C consumed by TiC (0.5 at.% Ti) the alloy decomposes entirely in 7 days at 700 C (same
     paper).
 - id: mnal_tstab_feng2021ni
@@ -2840,8 +2780,7 @@
     locator: Sec. 4.2.2 (Fig. 13)
   quote: The samples were heated to 800°C and kept at this temperature for 30 min, while the phase transition was
     monitored. As indicated in Figure 13, the three kinds of samples show pronounced differences regarding stability.
-    The undoped Mn0.54Al0.46 sample is partially decomposed into β and γ2 at the end of heating process; the boron-doped
-    sample is almost completely decomposed; while the τ-phase is thermally stable for the carbon doped sample.
+    The undoped Mn0.54Al0.46 sample is partially decomposed into β and γ2 at the end [...]
   note: Converted 800 C. Doctoral thesis (Uppsala 2019), no Crossref DOI (urn:nbn:se:uu:diva-379177).
 - id: mnal_tstab_madugundo2016
   phase: tau-MnAl-C
@@ -2860,8 +2799,7 @@
     locator: Sec. III (XRD of magnets, Fig. 4)
   quote: The higher temperature used for hotcompaction for relatively longer time (time to heat from RT to 700 °C
     and compaction together was ∼22 min) could be a reason for the excessive decomposition of the τ-phase into β-
-    and γ2-phases. ... Faster heating from RT to 700 °C due to the higher heating rates achievable in MW-sintering
-    minimizes the τ-phase decomposition into β- and γ2-phases.
+    and γ2-phases. ... Faster heating from RT to 700 °C due to the higher heating rates [...]
   note: Converted 700 C. Fine milled powder decomposes faster than coarse bulk.
 - id: mnal_tstab_pasko2014sps
   phase: tau-MnAl(C)
@@ -2882,8 +2820,7 @@
     locator: Sec. 3.2
   quote: In the binary Mn55 Al45 alloy ε-phase decomposes completely into a pair of equilibrium γ2 -phase and β-phase.
     In the ternary Mn49 Al49 C2 and Mn54 Al44 C2 alloys ε-phase transforms on heating into ferromagnetic τ -phase.
-    ... This may indicate that, despite high heating/cooling rate, the elevated sintering temperatures of 650–950
-    °C are not optimal for the structural ε → τ transition to occur without decomposition.
+    ... This may indicate that, despite high heating/cooling rate, the elevated [...]
   note: Converted 650-950 C. Binary composition cannot survive SPS consolidation at >= 923 K; carbon enables tau.
 - id: mnal_tstab_pasko2013
   phase: tau-MnAl-C
@@ -2902,9 +2839,7 @@
     locator: Sec. 3.2 (Fig. 4)
   quote: The ramps were performed between 300 K and 900 K at 5 K/min rate. ... On heating, ε-phase transforms to
     τ-phase which is also paramagnetic at the transition temperature ~ 786 K (see the inset). The structural transition
-    is detected due to a difference in magnetic susceptibility of the phases. On cooling, magnetization is increased
-    drastically below Curie temperature of τ-phase as the reverse transition to ε-phase does not occur, probably,
-    due to kinetic reasons.
+    is detected due to a difference in magnetic susceptibility of the phases. On [...]
   note: Short excursion only; does not test long holds.
 - id: mnal_tstab_dreizler1980
   phase: tau-MnAl-C
@@ -2920,10 +2855,9 @@
     url: https://api.openalex.org/works/doi:10.1109/tmag.1980.1060641
     evidence: abstract
     locator: abstract
-  quote: we established the time-temperature-transformation diagram of a ternary alloy with the composition Mn0.538Al0.446C0.016.
-    It was homogenized for 2 h at 1375 K, quenched, and subsequently isothermally annealed at temperatures between
-    625 K and 1025 K for various times ranging from one minute up to seven days. ... The addition of carbon increases
-    the stability of the τ-phase, thereby allowing longer annealing times for the formation of single-phase samples.
+  quote: '[...] Mn0.538Al0.446C0.016. It was homogenized for 2 h at 1375 K, quenched, and subsequently isothermally
+    annealed at temperatures between 625 K and 1025 K for various times ranging from one minute up to seven days.
+    ... The addition of carbon increases the stability of the τ-phase, thereby allowing [...]'
   note: The TTT diagram itself (full text) not accessible; numbers quoted by Feng 2021 (see mnal_tstab_feng2021_*).
 - id: mnal_tstab_dreizler1979
   phase: tau-MnAl-C
@@ -2959,8 +2893,7 @@
     locator: Introduction; Thermal stability paragraph
   quote: The addition of carbon will enhance the stability of τ-phase against decomposition into the equilibrium
     phases [15–17]. One suggested mechanism to explain this effect is that the interstitial C atoms could inhibit
-    the diffusion of Mn and Al atoms [16]. ... With Ti addition, the MnAl-C alloys will lose their original stability
-    if additional C is not added to counteract the effect of forming TiC.
+    the diffusion of Mn and Al atoms [16]. ... With Ti addition, the MnAl-C alloys will [...]
   note: Qualitative mechanism.
 - id: mnal_tstab_kontos2020
   phase: tau-MnAl-C
@@ -3016,8 +2949,7 @@
     locator: Abstract
   quote: A cryomilling process was employed which decreased the particle size of the MnAl-C sample. Neutron diffraction
     data disclosed accompanying amorphous features, related to changes in Mn and Al atom occupancies during the
-    milling process. A flash heating procedure regenerated the structural ordering between Mn and Al in the structure,
-    where the initial magnetic properties were recovered.
+    milling process. A flash heating procedure regenerated the structural ordering [...]
   note: Milling destroys L1_0 order (chemical disorder) rather than only refining grains.
 - id: mnal_other_fang2019thesis_cooling
   phase: tau-MnAl-C
@@ -3034,9 +2966,9 @@
     url: https://www.diva-portal.org/smash/get/diva2:1295906/FULLTEXT01.pdf
     evidence: full_text
     locator: Sec. 4.2.1 (Fig. 10)
-  quote: On quenching, the outcome is approximately 50% each of the high-temperature phase (ε) and τ-phase. This
-    result stands in stark contrast to that from 10 K/min cooling, yielding almost 100% τ-phase. For the lower cooling
-    rate of 2 K/min, significant amounts of unwanted γ2 and β phases form during the end of cooling process.
+  quote: '[...] is approximately 50% each of the high-temperature phase (ε) and τ-phase. This result stands in stark
+    contrast to that from 10 K/min cooling, yielding almost 100% τ-phase. For the lower cooling rate of 2 K/min,
+    significant amounts of unwanted γ2 and β phases form during the end of cooling process.'
   note: Both a stability limit (slow cooling decomposes) and a formation input (direct formation on cooling).
 - id: mnal_growth_pasko2013
   phase: epsilon-MnAl-C
@@ -3073,8 +3005,7 @@
     locator: Sec. 3 (as-solidified state)
   quote: These columnar grains traverse the ribbon thickness along the direction of heat transfer during solidification,
     Fig. 3. ... A (00l) crystallographic texture is detected on both sides of the ribbons as evidenced by the difference
-    in the relative intensities of the corresponding specimen Bragg peaks compared to those of isotropic reference
-    data
+    in the relative intensities of the corresponding specimen Bragg peaks [...]
   note: Cross-topic item (growth texture). . Suggests epsilon c axis along the heat-flow (ribbon normal) direction.
 - id: mnal_field_zhang2025
   phase: tau-MnAl
@@ -3091,13 +3022,9 @@
     url: https://www.diva-portal.org/smash/get/diva2:1944562/FULLTEXT01.pdf
     evidence: full_text
     locator: Abstract; Introduction; Sec. 3 (Annealed states)
-  quote: Application of a mild (60 mT), uniform magnetic field during short-term thermal treatment of kinetically
-    retained, atomically disordered (paramagnetic) ε-MnAl was found to deliver a significant ~50 % increase in the
-    formation of L10 atomically ordered (ferromagnetic) τ-MnAl product phase, compared to that produced by conventional
-    (i.e., zero-field) annealing under identical thermal conditions. ... In contrast to these earlier reports, here
-    we confirm that a very mild (~ 60 mT), uniform magnetic field applied during a short 15-minute anneal at 660
-    K, approximately 20° above the experimentally confirmed τ-MnAl Curie temperature, results in a significant 50
-    % increase in the τ-phase content relative to that achieved under zero-fieldannealing conditions.
+  quote: '[...] In contrast to these earlier reports, here we confirm that a very mild (~ 60 mT), uniform magnetic
+    field applied during a short 15-minute anneal at 660 K, approximately 20° above the experimentally confirmed
+    τ-MnAl Curie temperature, results in a significant 50 % increase in the τ-phase content [...]'
   note: 'Cross-topic item (field effect on formation). . Kinetic effect claimed (relief of variant "gridlock"; DFT:
     tau variant with c parallel to H has 27 % higher susceptibility at 660 K). Texture of the product is recorded
     in the sealed outcome file (mnal_fa_zhang2025).'
@@ -3119,9 +3046,7 @@
       IEEE Magn Lett)'
   quote: these investigations report that annealing ingots of phase-pure ε-MnAl under large magnetic fields (10
     – 15 T) for up to 168 h, at temperatures below the determined τ-phase Curie temperature, influences the extent
-    of τ-phase formation relative to the zero-field counterpart. However, no difference was observed in the transformed
-    τ-phase content in specimens annealed at temperatures above (i.e., by ~20° ) the τ-phase Curie point with or
-    without an applied 15 T magnetic field.
+    of τ-phase formation relative to the zero-field counterpart. However, no difference [...]
   note: 'Cross-topic item (). . Primary sources: doi 10.2320/matertrans.MAW201709, 10.1109/LMAG.2016.2617859, 10.1109/TMAG.2018.2860559
     (not read here).'
 - id: mnal_deformation_juerries2020
@@ -3140,9 +3065,7 @@
     locator: Results (Fig. 9, Fig. 10)
   quote: Due to the reorientation of the grains during recrystallization, the deformed samples should show a texture
     where the magnetically easy <001> axis of the grains tends to be aligned perpendicular to the axis ... along
-    which pressure was applied during die-upsetting. ... The increase in remanence for low-Cu alloys emerges from
-    the formation of a planar texture during the hot deformation, whereas the increased coercivity is connected
-    to the grain refinement during dynamic recrystallisation
+    which pressure was applied during die-upsetting. ... The increase in remanence for [...]
   note: Cross-topic item (hot-deformation texture). .
 - id: mnal_formation_path_hoydick1997a
   phase: tau-MnAl(C)
@@ -3159,13 +3082,9 @@
     url: https://api.crossref.org/works/10.1063/1.364619
     evidence: abstract
     locator: abstract
-  quote: For many years the conventional wisdom has been that the τ phase forms via a displacive or martensitic
-    transformation. In this paper the results of a new electron microscopy investigation into the nature of the
-    ε→τ transformation and microstructural development are reported. It is shown that over the temperature range
-    450–700 °C the transformation involves a compositionally invariant, diffusional nucleation and growth process
-    rather than a shear mechanism. Importantly, elucidating the mechanism of the phase transformation has important
-    practical implications since a diffusional mechanism involving the migration of incoherent or partially coherent
-    interfaces points to very different thermomechanical processing routes and alloying strategies.
+  quote: '[...] investigation into the nature of the ε→τ transformation and microstructural development are reported.
+    It is shown that over the temperature range 450–700 °C the transformation involves a compositionally invariant,
+    diffusional nucleation and growth process rather than a shear mechanism. [...]'
   note: Abstract only (J. Appl. Phys. 81, 5624). The full Scripta Mater. 36 (1997) 151 paper by the same group (see
     mnal_formation_path_hoydick1997b) is closed.
 - id: mnal_formation_path_hoydick1997b
@@ -3205,9 +3124,7 @@
     locator: p. 103, Section 3
   quote: The lack of a preferred orientation in the grains of theτ-phase could be explained by the phase transformation
     mechanism proposed by Hoydik et al. [20]. In that work, it was observed that initially, eachτ-phase nucleus
-    holds a coherent relationship with a grain of theε-phase. However, almost no growth occurs into theseε grains,
-    and insteadτ grows by consuming neighboring grains that do not hold a special crystallographic relationship
-    with it (incoherent interfaces).
+    holds a coherent relationship with a grain of theε-phase. However, almost no [...]
   note: Secondary statement (Pacheco et al. 2023) of the original finding of Hoydick et al. 1997 (doi 10.1016/s1359-6462(96)00356-9,
     closed). Quote copied from the pypdf text layer, where some spaces between words and Greek letters are missing
     (e.g. "theτ-phase").
@@ -3226,11 +3143,9 @@
     url: https://api.crossref.org/works/10.1557/proc-652-y8.3
     evidence: abstract
     locator: abstract
-  quote: Defects produced in massively transformed L1 0 -ordered τ-MnAl have been characterized by detailed TEM
-    studies. The defect population in massive τ-MnAl comprises arrays of overlapping stacking faults, {111}-conjugated
-    microtwins, thermal antiphase boundaries and dislocations. The genesis of these defects has been attributed
-    to atomic attachment faulting on {111}- and {020}-type facets of the essentially incoherent growth interface
-    between the parent and product phases.
+  quote: '[...] stacking faults, {111}-conjugated microtwins, thermal antiphase boundaries and dislocations. The
+    genesis of these defects has been attributed to atomic attachment faulting on {111}- and {020}-type facets of
+    the essentially incoherent growth interface between the parent and product phases.'
   note: Abstract only (MRS Proc. 652, Y8.3).
 - id: mnal_formation_path_yanar2000b
   phase: tau-MnAl
@@ -3267,9 +3182,7 @@
     locator: abstract
   quote: The e→τ transformation in MnAl-C alloys was studied by metallographic methods and by transmission electron
     microscopy. The product phase appears in two morphologies. A flower-like morphology results from a massive transformation
-    whereas a plate-like morphology results from a shear reaction. The shear reaction appears preferentially in
-    alloys with large amounts of Mn and C. Annealing under a suitable uniaxial compressive stress accelerates the
-    operation of the shear mode.
+    whereas a plate-like morphology results from a shear reaction. The [...]
   note: Abstract only (J. Phys. IV 112, 1071); OpenAlex text writes the parent phase as "e" (epsilon). Stress acceleration
     is also a stress_effect_on_formation item.
 - id: mnal_formation_path_sologubenko2004a
@@ -3291,11 +3204,7 @@
     locator: p. 486, Introduction
   quote: The flower-like s-phase forms by a compositionally invariant, diffusion-controlled massive transformation
     [3 – 5]. The nucleation of the flower-like s-phase takes place mainly at grain boundaries of the parent e-phase.
-    As a re486 sult, a new grain structure evolves without predictable lattice correspondence with the matrix phase.
-    The plate-like s-phase forms by a displacive transformation [6]. While it was assumed in Ref. [3] that the s-phase
-    forms rather by the massive mode, it was shown in Ref. [2] that both transformation mechanisms can operate within
-    the same sample. The plate-like s-phase nucleates within grains of the ephase and has a crystallographic correspondence
-    with the matrix phase.
+    As a re486 sult, a new grain structure evolves without predictable lattice [...]
   note: PDF text layer renders tau as "s", epsilon as "e", epsilon-prime as "e0" and the arrow as "!"; quote kept
     exactly as in the text layer ("re486 sult" = "result" split by the page number 486; the line-break hyphen in
     "ephase" is lost). Introduction statement summarising earlier work; the paper itself is a TEM study of the displacive
@@ -3319,13 +3228,7 @@
     locator: abstract
   quote: A detailed description of the displacive transformation mode of the formation of plate-like τ-phase in
     MnAl (containing a small amount of carbon) is given. The plate-like τ-phase forms in a stepwise mode from the
-    ɛ-phase. Crystallographic correspondence is transmitted from the ɛ- to the τ-phase during the whole transformation
-    sequence. The intermediate long-range ordered ɛ′-phase nucleates within the ɛ-matrix. As ɛ′-domains evolve,
-    elastic strains increase at the ɛ′-interfaces until shear occurs in ɛ′-domains to reduce the transformation
-    strains. Stacking faults appear between ɛ′-domain boundaries. Polytypes are the result of a shuffling of the
-    stacking faults within ɛ′-domains. Finally, the ɛ′-domain boundaries are overcome by the collective motion of
-    transformation dislocations which form twinned τ-plates. The ɛ′-domain boundaries are nucleation sites for successive
-    transformation steps and limit the spatial extension of the transformation for the intermediate steps.
+    ɛ-phase. Crystallographic correspondence is transmitted from the ɛ- to the τ-phase [...]
   note: Quote from the Crossref abstract (clean Greek letters) of the paper read in full (ETH Research Collection
     copy).
 - id: mnal_formation_path_kojima1975
@@ -3343,12 +3246,9 @@
     url: https://api.openalex.org/works/doi:10.1063/1.30281
     evidence: abstract
     locator: abstract
-  quote: 'During the study on this ternary alloy system, a ferromagnetic phase (τ‐phase) single crystal was obtained
-    by annealing a high‐temperature phase (ε‐phase) single crystal containing lamellae of the compound Mn3AlC, under
-    the action of a uniaxial compressive stress. The formation process of the τ‐phase single crystal was analyzed.
-    The process can be explained by the ε (h.c.p.) →ε′ (orthorhomb.) →τ (f.c.t.) transformations with the following
-    orientation relationships: (0001)ε ∥ (100)ε′ ∥ (111)τ and ([1̄100]ε ∥ [001]ε′ ∥ [1̄1̄2]τ. The ε′‐phase is new
-    and has a B19‐type structure. The ε→ε′ transformation is a disorder‐order transformation and the ε′→τ is martensitic.'
+  quote: '[...] →ε′ (orthorhomb.) →τ (f.c.t.) transformations with the following orientation relationships: (0001)ε
+    ∥ (100)ε′ ∥ (111)τ and ([1̄100]ε ∥ [001]ε′ ∥ [1̄1̄2]τ. The ε′‐phase is new and has a B19‐type structure. The
+    ε→ε′ transformation is a disorder‐order transformation and the ε′→τ is martensitic.'
   note: Abstract only. Single-variant (single-crystal) tau under stress is a stress_effect_on_formation item.
 - id: mnal_formation_path_mullner2002
   phase: tau-MnAl-C
@@ -3368,10 +3268,7 @@
     locator: abstract
   quote: An k -phase Mn-Al-C single crystal was grown and annealed to obtain an intermediate stage of the k M transformation.
     The crystal was analysed by transmission electron microscopy, and direct evidence for the operation of the shear
-    mode was obtained. The transformation occurs in two steps from the hcp structure ( k ) over the orthorhombic
-    structure ( k ' phase) to the tetragonal phase. The study reveals the morphologies of k ' and , the necessity
-    for reordering during the second transformation step ( k ' M ) which is not a purely martensitic transformation,
-    and the selection of variants which is controlled by stresses through the selection of one k ' variant.
+    mode was obtained. The transformation occurs in two steps from the [...]
   note: 'Abstract only, as given by OpenAlex with broken Greek characters: "k" stands for epsilon, "M" for the arrow,
     and tau symbols are missing (e.g. "( k '' M )" = (epsilon-prime -> tau)). Kept verbatim; meaning confirmed by
     the paper title.'
@@ -3390,14 +3287,9 @@
     url: https://mdpi-res.com/d_attachment/materials/materials-10-01016/article_deploy/materials-10-01016.pdf
     evidence: full_text
     locator: abstract
-  quote: The phase transformation in two modes, including both displacive and massive growth of τ-phase from ε-MnAl(C),
-    was observed by in situ transmission electron microscopy. The exact temperature range for different phase transformation
-    modes was determined by magnetic measurements. The displacive growth of ε→τ in Mn54Al46 (or Mn54Al46C2.44) occurs
-    at temperatures below 650 K (or 766 K), above which both modes coexist. One-third or less of the ε-phase can
-    be transformed into τ-phase via displacive mode while the remaining two-thirds or more via massive mode. In
-    bulk τ-phase, most τ-nanocrystals formed via displacive mode are distributed in the matrix of large τ-grains
-    that formed via massive mode. The typical massive growth rate of the τ-phase is 8–60 nm/s, while the displacive
-    growth rate is low.
+  quote: '[...] the remaining two-thirds or more via massive mode. In bulk τ-phase, most τ-nanocrystals formed via
+    displacive mode are distributed in the matrix of large τ-grains that formed via massive mode. The typical massive
+    growth rate of the τ-phase is 8–60 nm/s, while the displacive growth rate is low.'
   note: ''
 - id: mnal_formation_path_si2017b
   phase: tau-MnAl-C
@@ -3434,9 +3326,7 @@
     locator: pp. 1-2, Introduction
   quote: A hybrid displacive-diffusional mechanism involving the motion of partial dislocations that act as transformation
     dislocations and concomitant short-range diffusion has been observed in recent years [19]. [...] Wiezorek et
-    al. reported some details of the dynamic sequences of PT during the in situ TEM heating experiments conducted
-    at temperatures between 813 K and 923 K, at which both the dominating massive ordering mode and the hybrid displacive-diffusional
-    mode were observed [19].
+    al. reported some details of the dynamic sequences of PT during the in situ [...]
   note: Secondary statement of Wiezorek et al., doi 10.1007/s11661-010-0308-1 (closed; not read). The sentence continues
     in the source with "The displacive mode usually occurs at lower temperatures while the massive mode dominates
     at high temperatures, but the exact temperature range is unknown."
@@ -3457,9 +3347,7 @@
     locator: p. 2, Introduction
   quote: The general consensus on the phase transformation, based on various in-situ and ex-situ TEM studies, is
     that both massive (diffusional) and shear (displacive) transformation modes are observed when quenched ε phase
-    is heat treated in the temperature range of 450–750 ◦ C [5,6,10–14]. The diffusional mode is claimed to dominate
-    at temperatures above 600 ◦ C whereas the displacive mode is claimed to dominate at temperatures below 600 ◦
-    C, although evidence of both modes is generally observed concurrently at temperatures below 600 ◦ C [15].
+    is heat treated in the temperature range of 450–750 ◦ C [5,6,10–14]. The diffusional [...]
   note: Literature summary (Wiezorek 2011, Si 2017, Muellner 2002, Hoydick 1997a,b, Palanisamy 2016, van den Broek
     1979, Sologubenko 2003).
 - id: mnal_formation_path_keller2023b
@@ -3480,8 +3368,7 @@
     locator: p. 8, Conclusions
   quote: Using EBSD on 350 ◦ C annealed samples, the τ phase was observed to nucleate on the previous grain boundaries
     of the parent ε phase and grow preferentially into the ε’ phase. A region of ε’ was observed between the τ and
-    ε phases, showing that at 350 ◦ C the τ phase has an energetic advantage growing into ε’ compared to ε and the
-    displacive transformation mode dominates.
+    ε phases, showing that at 350 ◦ C the τ phase has an energetic advantage [...]
   note: ''
 - id: mnal_formation_path_keller2023c
   phase: tau-MnAl
@@ -3500,7 +3387,7 @@
     locator: p. 2, Introduction
   quote: They also observed a composition dependence for the ε’ phase ordering behavior, where for Mn-rich compositions
     greater than 55 at.% Mn ε’ phase did not form and ε phase decomposed into γ2 and β phases without forming τ.
-    Therefore, the ε’ ordering behavior appears to be diminished in Mnrich compositions.
+    Therefore, the ε’ ordering behavior appears to be diminished in Mnrich [...]
   note: Secondary statement; original Genc et al. 2019 (doi 10.1016/j.intermet.2019.106617) not accessible.
 - id: mnal_formation_path_keller2023d
   phase: tau-MnAl
@@ -3537,10 +3424,9 @@
     url: https://minds.wisc.edu/bitstream/1793/9306/1/file_1.pdf
     evidence: full_text
     locator: p. 676, Introduction
-  quote: There are several solid-state transformation pathways to develop the r phase such as quenching the high-temperature
-    E phase (hcp) followed by an annealing of the retained E phase below 600 “C or cooling the E phase at rates
-    of the order of 15 K/s.~ Particularly in the latter method, at slow cooling rates (i.e., < 15 K/s) the E phase
-    decomposes into the equilibrium yZ and fi phase, while fast rates result in retention of the E phase.3
+  quote: '[...] pathways to develop the r phase such as quenching the high-temperature E phase (hcp) followed by
+    an annealing of the retained E phase below 600 “C or cooling the E phase at rates of the order of 15 K/s.~ Particularly
+    in the latter method, at slow cooling rates (i.e., < 15 K/s) the E phase [...]'
   note: 'Text layer is OCR of a scan: "r" = tau, "E" = epsilon, "yZ and fi" = gamma2 and beta, "“C" = degrees C.
     The undercooling result is in the abstract: "The amount of undercooling required to produce the metastable ferromagnetic
     τ phase in a Mn0.55Al0.433C0.017 alloy during solidification was estimated as approximately 470 K".'
@@ -3562,13 +3448,7 @@
     locator: abstract
   quote: This paper outlines the detailed procedure for the synthesis of pure ferromagnetic τ phase in binary Heusler
     Al-55 pct Mn alloy in bulk form through casting route without any addition of stabilizers. To obtain the processing
-    domain for the formation of the τ phase from high-temperature ε phase, isothermal transformation experiments
-    were carried out. The structure and microstructure were characterized by X-ray diffraction and electron microscopy
-    studies. The τ phase start times were obtained through magnetic measurements. In order to tune the casting conditions
-    for the formation of this phase, thermal modeling was carried out to predict the heat extraction rates for copper
-    molds of different diameters (2 to 12 mm) containing hot solids during casting process. This enabled us to estimate
-    the diameter of the mold to be used for obtaining τ phase directly during casting. It was concluded through
-    experimental verification that 10-mm-diameter casting in copper mold is suitable to obtain complete τ phase.
+    domain for the formation of the τ phase from high-temperature ε phase, [...]
   note: Abstract only (full text closed). The paper also reports TTT (tau start times) from magnetic measurements;
     values not available.
 - id: mnal_formation_path_shao2017
@@ -3585,10 +3465,9 @@
     url: https://api.crossref.org/works/10.1063/1.4974277
     evidence: abstract
     locator: abstract
-  quote: In this work, the strip casting technique was applied to prepare MnAl magnetic phase. X-ray diffraction
-    and energy dispersive X-ray analyses indicate that the as-prepared Mn54Al46 strip sample consists of pure τ-MnAl
-    magnetic phase. It is found that the composition of Mn54Al46 is suitable to prepare τ-MnAl phase during the
-    strip casting process.
+  quote: '[...] technique was applied to prepare MnAl magnetic phase. X-ray diffraction and energy dispersive X-ray
+    analyses indicate that the as-prepared Mn54Al46 strip sample consists of pure τ-MnAl magnetic phase. It is found
+    that the composition of Mn54Al46 is suitable to prepare τ-MnAl phase during the [...]'
   note: Abstract only.
 - id: mnal_formation_path_jia2022
   phase: tau-MnAl
@@ -3627,9 +3506,7 @@
     locator: p. 1346
   quote: Although relatively large τ-phase grains with irregular grain boundaries are detected, Figure 1a, most
     τ-phase grains appear to be lamellar in shape and are alternatively distributed with the ϵ-phase lamellae, as
-    shown in the area labeled as τ + ϵ in Figure 1c. This morphology is typical of a martensitic phase transformation,
-    consistent with other observations in literature [4]. It is observed that this lamellar structure generally
-    starts from an original ϵ-phase grain boundary or from an interface.
+    shown in the area labeled as τ + ϵ in Figure 1c. This morphology is typical of a [...]
   note: Field-annealed sample. 390 C = 663 K.
 - id: mnal_T_formation_hoydick1997
   phase: tau-MnAl(C)
@@ -3737,11 +3614,7 @@
     locator: Sect. 4.2
   quote: At 315 ◦ C, the initial evidence of the [1 0 1] and [0 1 0] superlattice ε’ peaks begin to appear, coinciding
     with the DSC exotherm passing its maximum and the onset of the T-VSM peak. From 315 to 450 ◦ C the ε’ peaks
-    grow in intensity without any evidence of the [0 0 1] τ superlattice peak. This therefore represents a period
-    of nucleation and growth of the ε’ phase prior to the formation of τ, and combined with the T-VSM data corroborates
-    the FM behavior of ε’ compared to ε. Above 450 ◦ C the τ phase is shown to rapidly nucleate and grow in intensity,
-    as evidenced by the [0 0 1] and [1 0 0] τ superlattice peaks, as well as the [1 1 0] and [0 0 2] fundamental
-    τ peaks.
+    grow in intensity without any evidence of the [0 0 1] τ superlattice peak. This [...]
   note: converted from 315 °C (epsilon-prime onset) and 450 °C (tau onset) at 10 °C/min heating; temperature resolution
     of the in situ frames not stated.
 - id: mnal_T_formation_si2017a
@@ -3762,14 +3635,9 @@
     url: https://mdpi-res.com/d_attachment/materials/materials-10-01016/article_deploy/materials-10-01016.pdf
     evidence: full_text
     locator: abstract; Sect. 3.2
-  quote: However, the downward tendency of M reversed at temperatures above 510 K and 540 K for MnAl and MnAlC,
-    respectively, indicating transformation of paramagnetic ε/ε’ to ferromagnetic τ-phase. The magnetizations of
-    MnAl and MnAlC do not vary too much at 510–650 K and 540–766 K, respectively, indicating the occurrence of additional
-    magnetization in compensation of the thermal driven magnetization loss in this temperature range. The PT during
-    this stage was slow and was ascribed to the displacive PT, which is a low temperature diffusionless process
-    involving co-operative shear movements of atoms on (001) ε’ along [010] ε’ that produces the final tetragonal
-    lattice of τ-phase. A sharp magnetization increase was observed at temperatures above 650 K and 766 K for MnAl
-    and MnAlC, respectively, indicating occurrence of high-rate PT in the samples.
+  quote: '[...] indicating transformation of paramagnetic ε/ε’ to ferromagnetic τ-phase. The magnetizations of MnAl
+    and MnAlC do not vary too much at 510–650 K and 540–766 K, respectively, indicating the occurrence of additional
+    magnetization in compensation of the thermal driven magnetization loss in [...]'
   note: 'Paired record for MnAlC: mnal_T_formation_si2017b. The onset temperatures are from constant-rate heating
     (20 K/min), not isothermal.'
 - id: mnal_T_formation_si2017b
@@ -3811,9 +3679,7 @@
     locator: Sect. 3.1
   quote: Both ε-MnAl and εMnAlC, when heated at 773 K, transformed into pure τ-phase in 15 min. Trace amounts of
     γ2 and β phases precipitate from τ-MnAl after heating for 25 min, indicating decomposition of τ-MnAl under prolonged
-    heating time at 773 K, owing to the lower decomposition temperature of τ-MnAl as determined by magnetic measurements
-    below. However, no decomposition was found in the τ-MnAlC after heating for 40 min, indicating a structural
-    stabilization effect of carbon in the lattices.
+    heating time at 773 K, owing to the lower decomposition temperature of τ-MnAl [...]
   note: ''
 - id: mnal_T_formation_si2017d
   phase: tau-MnAl
@@ -3835,8 +3701,7 @@
     locator: Sect. 3.5, Fig. 4b
   quote: The magnetization of ε-MnAl, when heated at 673 K, increases quickly within the first 15 min and then slowly
     until stabilizing at a certain value after 100 min, indicating full transformation of the ε- to τ- phase. However,
-    no saturation was observed in ε-MnAl when heated at 573 K for more than 12 h, indicating very slow PT rate at
-    this temperature.
+    no saturation was observed in ε-MnAl when heated at 573 K for more than 12 [...]
   note: '573 K is below Tc(tau-MnAl) ~630 K measured in the same paper: transformation below Tc proceeds but is
     very slow. Measured under a 4 T field.'
 - id: mnal_T_formation_jimenezvillacorta2014
@@ -3861,9 +3726,7 @@
     locator: Sect. 4 and Conclusions
   quote: Subsequent heat treatment at Tanneal = 618 K causes a significant increase in the τ-phase contribution
     from 0.28 wt. % to at least 18.0 wt. %, [...] Based on the magnetic measurements, it can be concluded that nucleation
-    of the τ-MnAl phase seems to occur at Tanneal ≈ 568 K, around 100 K lower than previously-reported values for
-    the onset of the ε→τ transformation in quenched MnAl alloys, and similar to those observed in nanostructured
-    samples, as summarized in Table 1.
+    of the τ-MnAl phase seems to occur at Tanneal ≈ 568 K, around 100 K lower than [...]
   note: 'Uncertainty: annealing temperature within 2 K of target (stated in Methods). Shows tau nucleation below
     Tc in rapidly solidified ribbons; fraction small at these temperatures.'
 - id: mnal_T_formation_jimenezvillacorta2014b
@@ -3908,10 +3771,9 @@
     url: https://mdpi-res.com/d_attachment/metals/metals-04-00008/article_deploy/metals-04-00008.pdf
     evidence: review
     locator: Sect. 1
-  quote: Recent reports on ε–phase MnAl thin films (5 nm thickness) [26,27] and on ε–phase MnAl ultrafine nanocrystallites
-    (~8.2 nm) obtained by mechanical milling [28] reveal an ε→τ transformation temperature in the range ~623–673
-    K, confirming the hypothesis that the temperature required for τ-phase formation is dependent on details of
-    the microstructure.
+  quote: '[...] [26,27] and on ε–phase MnAl ultrafine nanocrystallites (~8.2 nm) obtained by mechanical milling
+    [28] reveal an ε→τ transformation temperature in the range ~623–673 K, confirming the hypothesis that the temperature
+    required for τ-phase formation is dependent on details of the microstructure.'
   note: Secondary statement; originals (refs 26-28 in Jimenez-Villacorta et al. 2014) not read.
 - id: mnal_T_formation_kaneko1967
   phase: tau-MnAl
@@ -3935,9 +3797,7 @@
     locator: Fig. 3 (read from plot); English abstract
   quote: The π phase of Mn-Al and Mn-Al-Ti alloys, wich appears in the process of the isothermal transformation
     of the quenched ε phase to the stable phases (i.e. ζ and β-Mn), has been experimentally investigated and the
-    T.T.T. diagrams of the alloys with various compositions have been determined. [...] Thus, an alloy consisting
-    of the π phase alone can be obtained by the isothermal transformation (I) when the Mn-content is less than 56
-    at% in Mn-Al alloys or 55 at% in Mn-Al-2.7 at%Ti alloys.
+    T.T.T. diagrams of the alloys with various compositions have been determined. [...] [...]
   note: The paper calls the ferromagnetic metastable phase "π" (it forms from quenched epsilon and decomposes to
     zeta (=gamma2) + beta-Mn, i.e. tau in current notation; interpretation). Values read from the TTT figure of
     the scanned full text (Japanese text not read); time read on log axis to about +/-0.15 decade, temperatures
@@ -4034,11 +3894,9 @@
     url: https://www.research-collection.ethz.ch/server/api/core/bitstreams/cac30854-61d1-4363-b1ce-acec9889c4d3/content
     evidence: full_text
     locator: Fig. 7 caption; Fig. 3 caption; Sect. 3.4
-  quote: "Fig. 7. Dark-field image taken in [11\x16 20]e || [1\x16 10]s zone axes with 200s reflection. Bright thick\
-    \ horizontal lamellae are s-phase plates that are in twin-orientation to the dark thick horizontal lamellae.\
-    \ [...] Fig. 4. (a) Bright-field image taken along the [11\x16 20]e || [010]e01 zone axis. Thin horizontal plates\
-    \ are stacking faults. The stacking faults are parallel to (0001)e and terminate at a vertical band with strain\
-    \ contrast;"
+  quote: "[...] that are in twin-orientation to the dark thick horizontal lamellae. [...] Fig. 4. (a) Bright-field\
+    \ image taken along the [11\x16 20]e || [010]e01 zone axis. Thin horizontal plates are stacking faults. The\
+    \ stacking faults are parallel to (0001)e and terminate at a vertical band with strain contrast;"
   note: 'Text layer: "s" = tau, "e" = epsilon, "e0" = epsilon-prime; overbars appear as separated digits (e.g. "[11
     20]e || [1 10]s" = [11-20]eps || [1-10]tau). Fig. 3 (epsilon/epsilon-prime variant ORs viewed along [0001]eps)
     and Fig. 1 (structures and orientation relations) are figures; their caption text is scrambled in the text layer
@@ -4078,8 +3936,7 @@
     locator: pp. 486-490
   quote: This implies that three e0 -variants are present simultaneously in the sample. [...] This process yields
     three orientation variants of e0 -phase. [...] As proposed by Müllner et al. [10], a single s-plate forms by
-    the collective motion of a large number of dislocations of the same type and sign. [...] Thus, the two plates
-    form twins.
+    the collective motion of a large number of dislocations of the same type and sign. [...]
   note: 'Text layer: "s" = tau, "e" = epsilon, "e0" = epsilon-prime. The number of distinct tau orientation variants
     per epsilon grain is not stated as a number.'
 - id: mnal_n_variants_si2017
@@ -4098,12 +3955,9 @@
     url: https://mdpi-res.com/d_attachment/materials/materials-10-01016/article_deploy/materials-10-01016.pdf
     evidence: full_text
     locator: p. 5, Sect. 3.3
-  quote: Therefore, there are three symmetry-equivalent variants for ε’ in one original ε crystal. [...] Although
-    there are three variants of ε’, only one type of partial dislocation can shear one of the three possible ε’-phase
-    variants that may be produced in a given ε-grain into the L10 structure with the required correct ordering of
-    atoms. If several partial dislocations glide on every other closepacked plane of the parent phase in which there
-    are two or three variants of ε’, the resulting structure will not be L10. Hence, in a given ε-phase grain, one
-    ‘correct’ variant and two obstacle variants of the ε’-phase exist [19].
+  quote: '[...] of ε’, only one type of partial dislocation can shear one of the three possible ε’-phase variants
+    that may be produced in a given ε-grain into the L10 structure with the required correct ordering of atoms.
+    If several partial dislocations glide on every other closepacked plane of the parent phase [...]'
   note: Implies at most one epsilon-prime variant (and its twin-related tau variants) per epsilon grain transforms
     displacively; number of tau variants per epsilon grain not stated.
 - id: mnal_n_variants_keller2023
@@ -4123,8 +3977,7 @@
     locator: p. 2 Introduction; Sect. 4.4
   quote: This implies that there are three possible symmetry variants of ε’ that can nucleate relative to a parent
     ε phase orientation [5,6]. [...] The selection of one out of the three possible ε’ phase variants in a given
-    ε phase grain is most likely due to stress retained from the thermal contraction of quenching as well as the
-    stress between grains during the lattice contraction associated with ε’ ordering.
+    ε phase grain is most likely due to stress retained from the thermal contraction of [...]
   note: The second sentence starts at a page break in the text layer ("...forming out of the [page] parent ε phase.
     The selection of one out of the three ..."); quoted from "The selection".
 - id: mnal_n_variants_jia2022
@@ -4165,13 +4018,9 @@
     url: https://par.nsf.gov/servlets/purl/10467334
     evidence: review
     locator: p. 1, Introduction
-  quote: The τ phase has a metastable FM L10 ordered structure (P4/mmm space group; a = 0.277 nm, c = 0.358 nm in
-    BCT and a = 0.391 nm, c = 0.358 nm in FCT) and is claimed to form through a hybrid displacive-diffusional phase
-    transformation from the hightemperature ε phase, which has an HCP structure (P63/mmc space group; a = 0.2697
-    nm, “b” = 0.4671 nm, and c = 0.4396 nm), as shown in the Mn-Al binary phase diagram (Fig. 1) and crystal structures
-    (Fig. 2) [23]. The ordered B19 ε’ phase has an orthorhombic structure (Pmma space group; a = 0.276 nm, b = 0.458
-    nm, and c = 0.439 nm), involving an expansion along the ε’ a-axis of 2.3 % and a contraction along the ε’ baxis
-    of 2.0 % [4].
+  quote: '[...] phase transformation from the hightemperature ε phase, which has an HCP structure (P63/mmc space
+    group; a = 0.2697 nm, “b” = 0.4671 nm, and c = 0.4396 nm), as shown in the Mn-Al binary phase diagram (Fig.
+    1) and crystal structures (Fig. 2) [23]. The ordered B19 ε’ phase has an orthorhombic [...]'
   note: 'c/a computed here from the quoted values: 0.916 (fct, 0.358/0.391) and 1.29 (bct, 0.358/0.277). No source
     found giving the full epsilon -> tau transformation strain tensor.'
 - id: mnal_tetragonality_sologubenko2004
@@ -4208,11 +4057,9 @@
     url: https://mdpi-res.com/d_attachment/materials/materials-10-01016/article_deploy/materials-10-01016.pdf
     evidence: full_text
     locator: p. 7, Sect. 3.4
-  quote: The field-assisted long-time annealing provides full transformation of τ-phase in ε-MnAlC at 623 K via
-    displacive mode and at 773 K via both modes. The saturation magnetization (35 Am2/kg) of the 623 K annealed
+  quote: '[...] mode and at 773 K via both modes. The saturation magnetization (35 Am2/kg) of the 623 K annealed
     sample is approximately one-third of that (~105 Am2/kg) in the 773 K annealed sample. This proved that only
-    one of three possible ε’ variants were transformed via displacive mode into τ-phase at 623 K, a temperature
-    at which massive transformation is impossible.
+    one of three possible ε’ variants were transformed via displacive mode into τ-phase [...]'
   note: 'Ms is a phase-fraction proxy, not remanence. Contrast: Keller 2023 obtained 96 wt.% tau in binary Mn54Al46
     after 13 h at 623 K (mnal_T_formation_keller2023b), where tau grows into epsilon-prime from grain boundaries
     - the 1/3 limit is not universal (composition/carbon dependent).'
@@ -4231,10 +4078,9 @@
     url: https://par.nsf.gov/servlets/purl/10467334
     evidence: full_text
     locator: Sect. 4.5
-  quote: The Ea measured by Kissinger and FWO methods give average values of 142 ± 13 kJ/mol and 139 ± 8 kJ/mol,
-    respectively, for the ε to ε’ phase and average values of 155 ± 8 kJ/mol and 128 ± 10 kJ/mol, respectively,
-    for the ε’ to τ phase. This value for τ is lower than previous studies reporting ε to τ phase transformation
-    values between 165 kJ/mol [2419] and 186 kJ/mol [21], within the accuracy of the Kissinger and FWO methods [43,44].
+  quote: '[...] by Kissinger and FWO methods give average values of 142 ± 13 kJ/mol and 139 ± 8 kJ/mol, respectively,
+    for the ε to ε’ phase and average values of 155 ± 8 kJ/mol and 128 ± 10 kJ/mol, respectively, for the ε’ to
+    τ phase. This value for τ is lower than previous studies reporting ε to τ phase [...]'
   note: Earlier values are from refs [24/19] (Crisan 2018 / Lu 2016; the citation reads "[2419]") and [21] (Janotova
     2017) of Keller 2023.
 - id: mnal_other_si2017_growth
@@ -4252,23 +4098,9 @@
     url: https://mdpi-res.com/d_attachment/materials/materials-10-01016/article_deploy/materials-10-01016.pdf
     evidence: full_text
     locator: p. 7, Sect. 3.4
-  quote: Second, the rate of the propagation of the massive transformation front ranges from 8 nm/s to 60 nm/s,
-    depending on the front shape. The propagation rates of the inter-phase interface with arcshape, straight shape,
-    and sharp-angle tip of τm are ~8, ~10, and ~16 nm/s, respectively. The ε/ε’ phase in the sharp angle in-between
-    two τm grains transforms at a rate up to 60 nm/s, which slows down quickly when the sharp angle becomes obtuse
-    due to ε/ε’→τ transformations. It should be noted that the high rate area is very limited while most linear
-    growth rates are falling in the range 8–16 nm/s. Yanar et al. analyzed the growth kinetics of the τ phase in
-    the Mn-Al-C alloys using modified Burke– Turnbull equation and postmortem TEM, yielding a linear growth velocity
-    of ~1 μm/s [20], which is much larger than what we observed by in situ TEM. Yanar et al. determined the growth
-    rate by dividing the growth distance by the estimated time of growth, while the growth distance was calculated
-    by averaging maximum size measured in five τ colonies [20]. We speculate that one τ colony in the postmortem
-    TEM sample might contain several or more τ grains grown from different nuclei at the same time, thus the growth
-    distance might be overestimated. In fact, our in situ TEM studies showed that there are many τ grains grown
-    from many different τ nuclei distributed in the sample. If several τ grains from different nuclei met together
-    and grew into one τ colony, it is difficult to distinguish them by postmortem TEM observations. By applying
-    the modified Burke–Turnbull equation and the average growth rate observed by our in situ TEM, the activation
-    energy for diffusional growth in MnAlC is estimated to be 182.5 kJ/mol, which falls in the range of that reported
-    by Lu et.al but is higher than that estimated by Yanar et al. [20,21].
+  quote: '[...] the modified Burke–Turnbull equation and the average growth rate observed by our in situ TEM, the
+    activation energy for diffusional growth in MnAlC is estimated to be 182.5 kJ/mol, which falls in the range
+    of that reported by Lu et.al but is higher than that estimated by Yanar et al. [20,21].'
   note: Yanar value is from Yanar et al. 2002 (doi 10.1007/s11661-002-0363-3) as quoted by Si et al.
 - id: mnal_other_si2017_carbon
   phase: tau-MnAl-C
@@ -4287,8 +4119,7 @@
     locator: p. 4, Sect. 3.2
   quote: In fact, carbon not only increases the decomposition temperature of τ-phase, but also increases the activation
     temperatures for both displacive and massive transformations of ε-phase, as shown in Figure 1b. This result
-    is in agreement with the results in reference [4]. It seems that carbon increased the energy barriers of the
-    PT and phase decomposition.
+    is in agreement with the results in reference [4]. It seems that carbon [...]
   note: ''
 - id: mnal_other_dreizler1980
   phase: tau-MnAl-C
@@ -4305,13 +4136,9 @@
     url: https://api.openalex.org/works/doi:10.1109/TMAG.1980.1060641
     evidence: abstract
     locator: abstract
-  quote: In order to investigate the kinetics of the transformations which occur in this system, we established
-    the time-temperature-transformation diagram of a ternary alloy with the composition Mn0.538Al0.446C0.016. It
-    was homogenized for 2 h at 1375 K, quenched, and subsequently isothermally annealed at temperatures between
-    625 K and 1025 K for various times ranging from one minute up to seven days. The quantitative phase analyses
-    were performed by means of x-ray diffraction and stereological analysis of the microstructures. The addition
-    of carbon increases the stability of the τ-phase, thereby allowing longer annealing times for the formation
-    of single-phase samples.
+  quote: '[...] which occur in this system, we established the time-temperature-transformation diagram of a ternary
+    alloy with the composition Mn0.538Al0.446C0.016. It was homogenized for 2 h at 1375 K, quenched, and subsequently
+    isothermally annealed at temperatures between 625 K and 1025 K for various [...]'
   note: Abstract only; the TTT curve values (start/finish times) are in the closed full text (IEEE Trans. Magn.
     16, 534). 625-1025 K is the range studied, not necessarily the tau-formation range.
 - id: mnal_other_jia2022_route
@@ -4377,8 +4204,7 @@
     locator: Section 3 (Results), Fig. 6
   quote: For the annealing time t ≥ 48 h at 573 K, enhancement of Ms by IFHT at 15 T was observed. However, it was
     found that the IFHT at 573 K in 10 T did not influence the magnetic properties. On the other hand, even at μ0H
-    = 10 T, magnetization Ms was drastically enhanced compared with that in a zero field at Ta = 623 K, which was
-    different behavior from that at Ta = 573 K.
+    = 10 T, magnetization Ms was drastically enhanced compared with that in a zero [...]
   note: '"Ms" in the paper is M at 1.5 T (not saturating), used as a tau-fraction proxy, not a remanence. Authors
     explain the weaker effect at 573 K by greater stability of beta/gamma and slower thermally activated transformation.'
 - id: mnal_field_effect_on_formation_kobayashi2017c
@@ -4459,10 +4285,9 @@
     url: https://api.openalex.org/works/doi:10.1109/lmag.2016.2617859
     evidence: abstract
     locator: abstract
-  quote: Magnetic field effects on the transformation from the hexagonal close-packed ε-phase to the ferromagnetic
-    L10τ-phase were evaluated for Mn-Al alloys annealed at 573, 623 and 673 K in magnetic fields up to 15 T. The
-    phase transformation from the ε-phase to the τ-phase was enhanced by the magnetic field for the 623 K annealing
-    temperature. These in-field annealing effects are explained by the Zeeman energy of the ferromagnetic τ-phase.
+  quote: '[...] the transformation from the hexagonal close-packed ε-phase to the ferromagnetic L10τ-phase were
+    evaluated for Mn-Al alloys annealed at 573, 623 and 673 K in magnetic fields up to 15 T. The phase transformation
+    from the ε-phase to the τ-phase was enhanced by the magnetic field for the 623 K [...]'
   note: Abstract only (IEEE, closed). "L10τ-phase" spacing as indexed by OpenAlex.
 - id: mnal_field_effect_on_formation_mitsui2019a
   phase: tau-MnAl-C
@@ -4484,8 +4309,7 @@
     locator: abstract
   quote: In-magnetic-field annealing (IFA) effects on Zn-modified Mn-Al and Mn-Al-C were investigated at the annealing
     temperature of 573 K, which was around their TC. Mn53Zn2Al45showed the magnetic-field-induced acceleration of
-    the phase transformation to L10-phase (τ-phase) and the suppression of that to nonferromagnetic equilibrium
-    phase. For Mn55Al45C2, IFA effects were not clearly detected.
+    the phase transformation to L10-phase (τ-phase) and the suppression of that to [...]
   note: Abstract only. Crossref title contains MathML/LaTeX markup; tags stripped here.
 - id: mnal_field_effect_on_formation_mitsui2019b
   phase: tau-MnAl-C
@@ -4549,12 +4373,9 @@
     url: https://www.jstage.jst.go.jp/article/matertrans/66/2/66_MT-M2024129/_pdf
     evidence: full_text
     locator: abstract
-  quote: In this study, as the magnetic field intensity increased, the transformation temperature from ε-phase gradually
-    decreased to the lowest value in the range from 0 to 4 T. A single exothermic peak was observed on each DTA
-    curve, and it was found that the peak contained plural exothermic ε–τ and τ–β transformations. Activation energy
-    of the transformation also showed the lowest value in the magnetic field range from 4 to 10 T, suggesting that
-    the activation energy of the ε–τ transformation decreases at low magnetic field region from 0 to 4 T and the
-    activation energy of the τ–β transformation increases at high magnetic field region from 10 to 15 T.
+  quote: '[...] also showed the lowest value in the magnetic field range from 4 to 10 T, suggesting that the activation
+    energy of the ε–τ transformation decreases at low magnetic field region from 0 to 4 T and the activation energy
+    of the τ–β transformation increases at high magnetic field region from 10 to 15 T.'
   note: 'Same paper: "Tp at 15 T was evaluated to be 719 K, which was almost same as Tp at 0 T." and "In Mn-Al alloys,
     the τ-phase is ferromagnetic with a TC of 655 K, and the ε-phase is antiferromagnetic [44]." Zero-field Ea =
     161 kJ/mol (Kissinger). Field shifts were seen at 4 K/min; at 8 and 12 K/min Ton and Tp seemed field-independent.'
@@ -4596,8 +4417,7 @@
     locator: abstract
   quote: The uniaxial magnetocrystalline anisotropy of the L10 structure is proposed to act as a filter for selective
     propagation of the population of τ-MnAl variants that are favorably aligned with the applied field. In this
-    manner, crystallographic “gridlock” is alleviated that would otherwise arise from the coexistence of multiple,
-    energetically equivalent τ-phase variants within the parent ε-phase matrix.
+    manner, crystallographic “gridlock” is alleviated that would otherwise arise from [...]
   note: 'Abstract only: whether a field-parallel variant excess (texture/remanence anisotropy) was measured could
     not be checked.'
 - id: mnal_field_effect_on_formation_han2023
@@ -4640,12 +4460,9 @@
     url: https://api.archives-ouvertes.fr/search/?q=halId_s:hal-00827620
     evidence: abstract
     locator: abstract
-  quote: To obtain the metastable ferromagnetic τ-phase, rapidly solidified alloys were annealed either in a vacuum
-    furnace at 823 K or directly in the vibrating sample magnetometer under applied magnetic field. Optimal magnetic
-    properties were demonstrated by Mn54Al44C2 samples proved to be single-phase with a coercivity of 0.19 T measured
-    in both cases. For this composition the structural ε→τ phase transformation has been magnetically detected at
-    786 K, Curie temperature of τ-phase (Tc = 592 K, Tp = 610 K) has been determined using mean field approximations
-    in ferromagnetic and paramagnetic regions.
+  quote: '[...] with a coercivity of 0.19 T measured in both cases. For this composition the structural ε→τ phase
+    transformation has been magnetically detected at 786 K, Curie temperature of τ-phase (Tc = 592 K, Tp = 610 K)
+    has been determined using mean field approximations in ferromagnetic and paramagnetic [...]'
   note: Abstract only (HAL and EPJ full texts behind bot checks). Field applied above Tc(tau) during the transformation.
 - id: mnal_field_effect_on_formation_fischer2000
   phase: tau-MnAl (thin film)
@@ -4810,8 +4627,7 @@
     locator: abstract
   quote: As ɛ′-domains evolve, elastic strains increase at the ɛ′-interfaces until shear occurs in ɛ′-domains to
     reduce the transformation strains. Stacking faults appear between ɛ′-domain boundaries. Polytypes are the result
-    of a shuffling of the stacking faults within ɛ′-domains. Finally, the ɛ′-domain boundaries are overcome by the
-    collective motion of transformation dislocations which form twinned τ-plates.
+    of a shuffling of the stacking faults within ɛ′-domains. Finally, the ɛ′-domain [...]
   note: 'Full text read (ETH Research Collection copy); abstract text from Crossref (uses U+025B for epsilon). Paper
     keyword: "Stress-induced transformation". Also published as Z. Metallkd. 95 (2004) 486, doi:10.3139/146.017981.'
 - id: mnal_stress_effect_on_formation_sologubenko2004b
@@ -4832,7 +4648,7 @@
     locator: Section 4 (Discussion), p. 490
   quote: As proposed by Müllner et al. [10], a single s-plate forms by the collective motion of a large number of
     dislocations of the same type and sign. The long-range stresses associated with such a plate cancel if a second
-    plate forms with an equal number of opposite dislocations. Thus, the two plates form twins.
+    plate forms with an equal number of opposite dislocations. Thus, the two plates [...]
   note: Quote copied from the PDF text layer, in which the symbol-font tau is rendered as "s" ("s-plate" = tau-plate);
     the page number "490" interrupts the sentence in the extracted text. The last clause of value (external stress
     favours one twin) is an inference, not stated by the authors.
@@ -4854,9 +4670,7 @@
     locator: Section 4.4 (EBSD)
   quote: The selection of one out of the three possible ε’ phase variants in a given ε phase grain is most likely
     due to stress retained from the thermal contraction of quenching as well as the stress between grains during
-    the lattice contraction associated with ε’ ordering. This is due to the anisotropic elastic properties of the
-    ε’ phase, making the ε’ variant with a softer direction aligned to the stress more favorable than the others
-    [7,10].
+    the lattice contraction associated with ε’ ordering. This is due to the anisotropic [...]
   note: 'Same section: some grains show several epsilon'' variants, others one dominant variant; tau grows into
     ordered epsilon'' regions, not directly into disordered epsilon. The intro of this paper also summarises Zhang
     C. et al. 2018 (single tau variant under uniaxial stress) - recorded in the sealed outcome file.'

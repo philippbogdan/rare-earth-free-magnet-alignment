@@ -1,3 +1,5 @@
+# Cited properties and formation mechanisms of boride and Fe-Ta candidate phases.
+# Record fields and evidence rules are described in docs/data.md.
 - id: feco2b_structure_liu2024
   phase: (Fe0.7Co0.3)2B
   quantity: structure
@@ -14,8 +16,7 @@
     locator: Introduction
   quote: "The tetragonal phase (Fe1−x Cox )2 B (0.1 ≤ x ≤ 0.5) has an easy-axis magnetocrys-\nAcademic Editor: John\
     \ A. Mydosh            talline anisotropy (MCA) with a peak value at x = 0.3 (MCA constant, K1 = 4.1 Merg/cm3\
-    \ ,\n                                           or magnetocrystalline anisotropy field, HMCA = 7.8 kOe) at room\
-    \ temperature [10,11]."
+    \ ,\n                                           or magnetocrystalline anisotropy field, [...]"
   note: C16 designation comes from the topic brief; the quoted source explicitly states tetragonal.
 - id: feco2b_easy_lam2020
   phase: (Fe0.7Co0.3)2B
@@ -52,8 +53,7 @@
     locator: Introduction
   quote: "The tetragonal phase (Fe1−x Cox )2 B (0.1 ≤ x ≤ 0.5) has an easy-axis magnetocrys-\nAcademic Editor: John\
     \ A. Mydosh            talline anisotropy (MCA) with a peak value at x = 0.3 (MCA constant, K1 = 4.1 Merg/cm3\
-    \ ,\n                                           or magnetocrystalline anisotropy field, HMCA = 7.8 kOe) at room\
-    \ temperature [10,11]."
+    \ ,\n                                           or magnetocrystalline anisotropy field, [...]"
   note: Secondary citation of experimental K1=4.1 Merg/cm3; converted to 0.41 MJ/m3.
 - id: feco2b_js_liu2024
   phase: (Fe0.7Co0.3)2B
@@ -109,11 +109,7 @@
     magnets are expected to operate at elevated temperatures,                     temperature solution out of an
     excess of (Fe,Co) which was
 
-    it is necessary to study the temperature dependence of the                    decanted in a centrifuge [6].
-    The single crystals are grown as
-
-    magneto-crystalline anisotropy. This is the purpose of this                   tetragonal rods which were cut
-    using a wire saw to give them'
+    it is necessary to study the temperature dependence of the                    decanted in a centrifuge [...]'
   note: Single-crystal habit is demonstrated; no evidence that the long rod axis is the easy axis.
 - id: feco2b_formation_lam2020
   phase: (Fe0.7Co0.3)2B
@@ -135,7 +131,7 @@
     magnets are expected to operate at elevated temperatures,                     temperature solution out of an
     excess of (Fe,Co) which was
 
-    it is necessary to study the temperature dependence of the                    decanted in a centrifuge [6].'
+    it is necessary to study the temperature dependence of the                    decanted in a centrifuge [...]'
   note: ''
 - id: feco2b_meltspin_lam2020
   phase: (Fe0.7Co0.3)2B
@@ -193,13 +189,9 @@
     url: https://doi.org/10.1103/PhysRevB.92.174413
     evidence: abstract
     locator: abstract
-  quote: Using density functional theory based calculations we have explored the effect of substitutionally doping
-    the transition metal sublattice by the whole range of 5 ⁢ 𝑑 transition metals and found that doping by Re or
-    W elements should significantly enhance the magnetocrystalline anisotropy energy. Experimentally, W doping did
-    not succeed in enhancing the magnetic anisotropy due to formation of other phases. On the other hand, doping
-    by Ir and Re was successful and resulted in magnetic anisotropies that are in agreement with theoretical predictions.
-    In particular, doping by 2.5 at. % of Re on the Fe/Co site shows a magnetocrystalline anisotropy energy which
-    is increased by 50% compared to its parent ( F e 0 . 7 ⁢ C o 0 . 3 ) 2 ⁢ B compound, making this system interesting,
+  quote: '[...] by Ir and Re was successful and resulted in magnetic anisotropies that are in agreement with theoretical
+    predictions. In particular, doping by 2.5 at. % of Re on the Fe/Co site shows a magnetocrystalline anisotropy
+    energy which is increased by 50% compared to its parent ( F e 0 . 7 ⁢ C o 0 . [...]'
   note: Experimental Re increase reported in the abstract; parent and doped absolute K1 values are not quoted here.
 - id: feco2b_w_edstrom2015
   phase: (Fe,Co)2B + W
@@ -307,10 +299,7 @@
     locator: abstract
   quote: "Previous investigations of undercooled liquid Fe83B17 near the eutectic composition have found\n     \
     \    that metastable crystalline phases, such as Fe23B6, can be formed and persist down to ambient\n       \
-    \  temperature even for rather modest cooling rates. Using time-resolved high-energy x-ray diffrac-\n      \
-    \   tion on electrostatically levitated samples of Fe83B17, we demonstrate that the Fe23B6 metastable\n    \
-    \     phase and fcc c-Fe grow coherently from the undercooled Fe83B17 liquid and effectively suppress\n    \
-    \     the formation of the equilibrium Fe2B þ bcc a-Fe phases."
+    \  temperature even for rather modest cooling rates. Using time-resolved high-energy x-ray [...]"
   note: ''
 - id: fe2b_tf_quir2015
   phase: Fe2B
@@ -486,17 +475,7 @@
     url: https://pubs.acs.org/doi/10.1021/cm060068z
     evidence: abstract
     locator: abstract
-  quote: 'Single-crystal iron boride (Fe ₃ B) nanowires were synthesized on Pt and Pd (Pt/Pd) coated sapphire
-
-    substrates by a chemical vapor deposition method at 800 ° C using boron triiodide (BI ₃ ) and iron iodide
-
-    (FeI ₂ ) as precursors. Morphology of the Fe ₃ B nanowires can be controlled by manipulating the Pt/Pd
-
-    film thickness and the growth time. Transmission electron microscopy and selected area electron diffraction
-
-    were used to analyze the crystal structures of these novel materials. Electron energy-loss spectroscopy
-
-    and X-ray energy-dispersive spectroscopy studies on these nanowires confirm that they are composed of
+  quote: '[...] energy-dispersive spectroscopy studies on these nanowires confirm that they are composed of
 
     boron and iron. Scanning electron microscopy was employed to observe the morphology of these
 
@@ -605,11 +584,7 @@
     locator: section II
   quote: "Polycrystalline samples of nominal compositions listed\n                                             \
     \                    Analysis of powder x-ray diﬀraction patterns (Fig. 1)\nin Table I were synthesized by reacting\
-    \ the elements in\n                                                              shows that all of the materials\
-    \ studied adopt the tetrago-\nevacuated and ﬂame-sealed silica tubes. The tubes were\n                     \
-    \                                         nal Cr5 B3 structure type at room temperature. The sam-\nheated to\
-    \ 1000 ◦ C at 100 ◦ C per hour, and held at this\n                                                         \
-    \     ples used in the current study were >   ∼90% pure, and the\ntemperature for 12 hours."
+    \ the elements in\n                                                              shows [...]"
   note: This quote covers the initial reaction; subsequent long annealing was used for phase purification.
 - id: fe5pb2_tf_mcg2015
   phase: Fe5PB2
@@ -747,11 +722,7 @@
     locator: section II
   quote: "Polycrystalline samples of nominal compositions listed\n                                             \
     \                    Analysis of powder x-ray diﬀraction patterns (Fig. 1)\nin Table I were synthesized by reacting\
-    \ the elements in\n                                                              shows that all of the materials\
-    \ studied adopt the tetrago-\nevacuated and ﬂame-sealed silica tubes. The tubes were\n                     \
-    \                                         nal Cr5 B3 structure type at room temperature. The sam-\nheated to\
-    \ 1000 ◦ C at 100 ◦ C per hour, and held at this\n                                                         \
-    \     ples used in the current study were >   ∼90% pure, and the\ntemperature for 12 hours."
+    \ the elements in\n                                                              shows [...]"
   note: This quote covers the initial reaction; subsequent long annealing was used for phase purification.
 - id: fe5sib2_tf_mcg2015
   phase: Fe5SiB2
@@ -907,20 +878,7 @@
     heater stick, with the sample glued on it, was
 
     cooling to 1160 °C the ampoule was decanted using a centrifuge                         covered with a copper
-    foil so as to (i) better control the heat
-
-    and plate like single crystals of Fe5 B2 P could be found on the                       radiation in the sample
-    chamber, (ii) maintain a uniform tem-
-
-    growth side of the alumina filter. In order to confirm that the                        perature inside the wrapped
-    foil (due to its good thermal con-
-
-    growth of crystals took place from a complete liquid, we de-                           ductivity), and (iii)
-    further secure the sample throughout the
-
-    canted one growth at 1200 °C, instead of cooling to 1160 °C,                           measurement.
-
-    and indeed found all of the material decanted.'
+    foil so as to (i) better control the [...]'
   note: ''
 - id: fe5pb2_tf_sc2016
   phase: Fe5PB2
@@ -940,9 +898,7 @@
     heater stick, with the sample glued on it, was
 
     cooling to 1160 °C the ampoule was decanted using a centrifuge                         covered with a copper
-    foil so as to (i) better control the heat
-
-    and plate like single crystals of Fe5 B2 P could be found on the'
+    foil so as to (i) better control the [...]'
   note: Temperatures converted to K; source shows crystal growth in this cooling window.
 - id: fe5pb2_plate_sc2016
   phase: Fe5PB2
@@ -977,10 +933,8 @@
     url: https://arxiv.org/pdf/1508.05629
     evidence: full_text
     locator: section 3.2
-  quote: 'The Laue diffraction pattern shown in figure 2(b) was ob-
-
-    tained with the X-ray beam parallel to the plane of the plate                               3.4. Measurement
-    of magnetization and saturation magnetiza-
+  quote: '[...] X-ray beam parallel to the plane of the plate                               3.4. Measurement of
+    magnetization and saturation magnetiza-
 
     [100]. The Laue pattern shown in figure 2(c) was obtained with                                   tion
 
@@ -1092,10 +1046,7 @@
     locator: Results, Fig. 1
   quote: The XRD data for the melt-spun ribbons do not indicate that the rapid solidification modifies the above
     compositional range of the C14 structures. However, the comparison shown in Fig. 1 makes it clear that the C14
-    phase in the _two-phase_ ribbons is characterized by a markedly smaller unit cell volume than the C14 phase
-    in the equilibrated alloys of the same composition. Since the rapid solidification of the single phase Fe ₇₂
-    Nb ₂₈ alloy did not seem to introduce vacancies into the C14 lattice, the C14 lattice contraction found in two-phase
-    melt-spun alloys most probably manifests an increased fraction of the Fe atoms.
+    phase in the _two-phase_ ribbons is characterized by a markedly smaller unit cell [...]
   note: ''
 - id: feta_equil_tc_gabay2019
   phase: Fe2+δTa-C14-equilibrium

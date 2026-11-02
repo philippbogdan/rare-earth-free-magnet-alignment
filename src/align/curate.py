@@ -18,7 +18,7 @@ def _numeric(v):
     """Numeric text -> float; 'lo-hi' text -> [lo, hi]; other values unchanged."""
     import re
     if isinstance(v, str):
-        t = v.strip().replace('−', '-').replace('–', '-')
+        t = v.strip().replace('−', '-').replace('\u2013', '-')
         m = re.match(r'^([0-9]+(?:\.[0-9]+)?)\s*-\s*([0-9]+(?:\.[0-9]+)?)$', t)
         if m:
             return [float(m.group(1)), float(m.group(2))]

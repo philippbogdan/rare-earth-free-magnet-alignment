@@ -1,4 +1,5 @@
-# SEALED outcome records met while collecting the `universe` topic (do not open before predictions are frozen)
+# Additional published sample outcomes accompanying the candidate-material literature.
+# Batch membership and exposure exclusions are described in docs/validation.md.
 - id: uni_out_mnbi_hotcompact_rao2013_via_mccallum2014
   phase: LTP-MnBi
   route: 'other: arc melting + low-temperature ball milling + hot compaction (field-alignment step not stated in
@@ -140,10 +141,9 @@
     url: http://web.archive.org/web/20170709144257/http://iopscience.iop.org/article/10.1088/2043-6254/aa597c/pdf
     evidence: review
     locator: Sect. 5, pp. 9-10
-  quote: A combination of the shape anisotropy with the intrinsic magnetocrystalline anisotropy of 3d-metals was
-    investigated in Co nanorods [81], where the requirement ... to maintain magnetic space among particles to yield
-    the shape anisotropy yielded a reduced remanence of 0.8–0.9 T compared with the saturation magnetization of
-    Co metals (1.8 T).
+  quote: '[...] the intrinsic magnetocrystalline anisotropy of 3d-metals was investigated in Co nanorods [81], where
+    the requirement ... to maintain magnetic space among particles to yield the shape anisotropy yielded a reduced
+    remanence of 0.8–0.9 T compared with the saturation magnetization of Co metals (1.8 T).'
   note: The sentence is split across the page columns in the PDF (ellipsis). Value range as printed; compare Js(Co)
     1.8 T given in the same sentence.
 - id: uni_out_granados2021_srm_sps_jenus2016
@@ -644,7 +644,7 @@
     locator: abstract; Sect. 3.2
   quote: A single variant of the ordered phase is obtained in these alloys by applying a magnetic field during the
     early stage of ordering. The lowest magnetic field required for obtaining the single variant is about 0.5 T
-    for the Co–50Pt alloy, and 4 T for the Fe–55Pd alloy in the present heat-treatment conditions.
+    for the Co–50Pt alloy, and 4 T for the Fe–55Pd alloy in the present heat-treatment [...]
   note: Single variant coded as fraction 1.0. Same sentence gives the Fe-55Pd threshold (record uni_out_rt_fepd_scfa_farjami2009).
 - id: uni_out_rt_fepd_scfa_farjami2009
   phase: L10-FePd
@@ -674,7 +674,7 @@
     locator: abstract; Sect. 3.2
   quote: A single variant of the ordered phase is obtained in these alloys by applying a magnetic field during the
     early stage of ordering. The lowest magnetic field required for obtaining the single variant is about 0.5 T
-    for the Co–50Pt alloy, and 4 T for the Fe–55Pd alloy in the present heat-treatment conditions.
+    for the Co–50Pt alloy, and 4 T for the Fe–55Pd alloy in the present heat-treatment [...]
   note: Single variant coded as fraction 1.0.
 - id: uni_out_rt_fepd_scfa_tanaka2000mrsj_i
   phase: L10-FePd

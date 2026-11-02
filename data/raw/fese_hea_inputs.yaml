@@ -1,4 +1,5 @@
-# fese_hea inputs: source-grounded phase physics; measured route outcomes are sealed.
+# Cited physical inputs for Fe3Se4 and high-entropy magnetic alloys.
+# Processed-sample measurements are kept separately in data/outcomes/.
 - id: fese_structure_saucedo2021
   phase: Fe3Se4 (monoclinic)
   quantity: structure
@@ -299,11 +300,7 @@
 
     fused-silica tubes that were sealed under vacuum (<10−4
 
-    mbar). The mixtures were heated to 1050 °C in 10.5 h,
-
-    maintained at this temperature for 10 days, and quenched into
-
-    an ice bath.'
+    mbar). The mixtures were heated [...]'
   note: This route demonstrates product formation from solid elements; it does not establish primary crystallization
     from a melt or an orientation relationship.
 - id: fese_tform_ampoule_saucedo2021
@@ -351,15 +348,7 @@
 
     ions, with 234 mg (0.75 mmol) of Ph2Se2 in a mixture of 8 mL
 
-    of oleylamine and 2 mL of octadecene. The mixture was
-
-    degassed under vacuum at 80 °C for 40 min, after which the
-
-    reaction vessel was reﬁlled with Ar and heated to 300 °C at a
-
-    rate of 5 °C/min. The reaction was allowed to progress for 1 h,
-
-    followed by air-cooling.'
+    of oleylamine and [...]'
   note: Chemical synthesis rather than a coherent parent-to-product solid-state transformation. No OR or crystallographic
     variant count is established.
 - id: fese_tform_solvo_saucedo2021
@@ -511,9 +500,7 @@
 
     optimized quality, Fe atom clustering leads to the formation of Fe _x_ Se _y_ inclusions.
 
-    These objects have platelet shape and are embedded within Bi ₂ Se ₃ . Monoclinic Fe ₃ Se ₄ is identified
-
-    as the main secondary phase through detailed structural measurements.'
+    These objects have platelet shape and [...]'
   note: Demonstrates phase formation in an epitaxial host, not epitaxial single-phase Fe3Se4 film growth or a known
     Fe3Se4 orientation relationship.
 - id: hea_a_arc_melt_na2021
@@ -532,8 +519,7 @@
     locator: Methods
   quote: Ingots weighing approximately 60 grams with nominal compositions of equiatomic FeCoNiAl, FeCoNiAlCu X (X=0.1
     – 1.0), FeCoNiAlCu X Ti X (X=0.2 – 0.4) and Fe X Co Y NiAlCu 0\.4 Ti 0\.4 (X and/or Y = 1.0, 2.0) were prepared
-    by arc melting under an argon atmosphere. The purity of the elements was higher than 99.99 atomic percent (at.
-    %) and the ingots were remelted five times.
+    by arc melting under an argon atmosphere. The purity of the elements was [...]
   note: The alloy is cast from a melt, but this paper does not determine its primary crystal growth direction.
 - id: hea_a_spinodal_na2021
   phase: FeCoNiAlCu0.4Ti0.4 (alloy A)
@@ -667,9 +653,7 @@
     locator: Results and Discussion, Fig. 3
   quote: While the Cu-rich phase was not detected in the as-cast XRD pattern for Alloy D, it was observed in the
     650 °C annealed sample using EBSD scans. The copper-rich phase was observed at grain boundaries and inside grains,
-    with an area fraction of only ∼0.7% and an average diameter of 0.82 μm. Therefore, the increase in coercivity
-    is here associated with the copper-rich phase precipitation, which may act as pinning sites for domain wall
-    motion, thus increasing the coercivity.
+    with an area fraction of only ∼0.7% and an average diameter of 0.82 μm. [...]
   note: Cu-rich precipitation is observed by EBSD. Authors attribute coercivity to pinning; this is different from
     proof of elongated Fe-Co-rich rods.
 - id: hea_d_structure_na2021

@@ -1,5 +1,6 @@
-# SEALED mnal outcomes: measured remanence / Mr/Ms / texture of samples by route (not to be read before predictions are frozen).
-# Route codes per data/SCHEMA.md; 'SC+SA' = single-crystal parent + stress during transformation (METHOD: SA with S4).
+# Published remanence and texture outcomes for MnAl and MnAl-C samples.
+# SC+SA denotes a single-crystal parent under stress during transformation.
+# Exposure exclusions and version eligibility are described in docs/validation.md.
 - id: mnal_hd_zhao2021_radial
   phase: tau-MnAl-C
   route: HD
@@ -144,8 +145,7 @@
     locator: Section III, Fig. 3c, Table I
   quote: Figure 3(c) shows the hysteresis loops of the hot-deformed magnet measured with applied field parallel
     to the deformation direction (∥ el) and perpendicular to the deformation direction (⊥er). When measured in the
-    ∥ el direction the M/30 kOe, Mr and Hc are measured to be 79 emu/g, 36 emu/g and 2.7 kOe, respectively and when
-    measured in ⊥er direction 82 emu/g, 50 emu/g and 2.2 kOe, respectively.
+    ∥ el direction the M/30 kOe, Mr and Hc are measured to be 79 emu/g, 36 emu/g and 2.7 [...]
   note: Ratio Mr/M(30 kOe) = 50/82 computed here; M at 3 T underestimates Ms, so the ratio overestimates Mr/Ms.
 - id: mnal_hd_madugundo2016_par
   phase: tau-MnAl-C
@@ -175,8 +175,7 @@
     locator: Section III, Fig. 3c
   quote: Figure 3(c) shows the hysteresis loops of the hot-deformed magnet measured with applied field parallel
     to the deformation direction (∥ el) and perpendicular to the deformation direction (⊥er). When measured in the
-    ∥ el direction the M/30 kOe, Mr and Hc are measured to be 79 emu/g, 36 emu/g and 2.7 kOe, respectively and when
-    measured in ⊥er direction 82 emu/g, 50 emu/g and 2.2 kOe, respectively.
+    ∥ el direction the M/30 kOe, Mr and Hc are measured to be 79 emu/g, 36 emu/g and 2.7 [...]
   note: Ratio 36/79 computed here.
 - id: mnal_hd_madugundo2016_tp
   phase: tau-MnAl-C
@@ -226,7 +225,7 @@
     locator: abstract
   quote: The hot-deformed magnets develop a texture in a plane perpendicular to the deformation direction. Optimum
     magnetic properties have been obtained in a magnet with nominal composition Mn53.5Al44.5C2 with values of remnant
-    magnetization, coercivity, and energy product of 2.2 kOe, 3.3 kG, and 1.8 MGOe, respectively.
+    magnetization, coercivity, and energy product of 2.2 kOe, 3.3 kG, and 1.8 MGOe, [...]
   note: The abstract lists 'remnant magnetization, coercivity, and energy product of 2.2 kOe, 3.3 kG, and 1.8 MGOe'
     - order of units garbled; the kG value (3.3 kG = 0.33 T) is taken as the remanence, consistent with the companion
     AIP Advances paper (Hc 2.2 kOe, 1.8 MGOe). Uncertain.
@@ -283,10 +282,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Examples 11/14
-  quote: 'A test piece having the composition of P 4 was subjected to a compression to a degree of deformation of
+  quote: A test piece having the composition of P 4 was subjected to a compression to a degree of deformation of
     -53% by applying a pressuring force of 45 kg/mm 2 in the axial direction of its cylinder at 650°C. The preferred
-    direction of magnetization of the deformed specimen was found in the diameter direction of it, with its magnetic
-    characteristics being: Br = 4,900 G .sub.B Hc = 2,600 Oe (BH).sub.max = 4.3 × 10.sup.6 G.Oe'
+    direction of magnetization of the deformed specimen was found in the diameter [...]
   note: 'converted from 4900 G. '
 - id: mnal_hd_kubo1976_ex11_p5_upset
   phase: tau-MnAl-C
@@ -313,10 +311,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Examples 11/14
-  quote: 'A test piece having the composition of P 5 was subjected to a compression to a degree of deformation of
+  quote: A test piece having the composition of P 5 was subjected to a compression to a degree of deformation of
     -65%, by applying a pressuring force of 45 kg/mm 2 in the axial direction of its cylinder at 680°C. The preferred
-    direction of magnetization of the deformed specimen was found in the diameter direction of it, with its magnetic
-    characteristics being: Br = 5,050 G .sub.B Hc = 2,600 Oe (BH).sub.max = 4.6 × 10.sup.6 G.Oe'
+    direction of magnetization of the deformed specimen was found in the diameter [...]
   note: 'converted from 5050 G. '
 - id: mnal_hd_kubo1976_ex14_p4_upset
   phase: tau-MnAl-C
@@ -345,12 +342,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Examples 11/14
-  quote: 'A test piece having the composition of P 4 was compressed to a degree of deformation of -45% by applying
+  quote: A test piece having the composition of P 4 was compressed to a degree of deformation of -45% by applying
     a pressuring force of 45 kg/mm 2 at a temperature of 650°C in the axial direction of its cylinder. The test
-    piece after being compressed was tempered at 600°C for 3 hours, and then as the result of the measurement of
-    its magnetic characteristics, it was identified as an anisotropic magnet with its preferred direction magnetization
-    in its diameter direction. Its magnetic characteristics in the preferred direction of magnetization were found
-    to be: pressuring Br = 5,300 G .sub.B Hc = 2,600 Oe (BH)max = 4.7 × 10.sup.6 G.Oe'
+    piece after being compressed was tempered at 600°C for 3 hours, and then as the result [...]
   note: converted from 5300 G. Deformation of the epsilon parent; transformation during/after compression.
 - id: mnal_hd_kubo1976_ex11_p1_upset
   phase: tau-MnAl
@@ -375,17 +369,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Example 11
-  quote: 'A test piece having the composition of P 1 is compressed by pressuring it at a temperature of 680°C, a
+  quote: A test piece having the composition of P 1 is compressed by pressuring it at a temperature of 680°C, a
     pressure of 50 kg/mm 2 and in the axial direction of the cylinder to a degree of deformation of -25% in the
-    pressuring direction. In the test piece which had been subjected to the deformation, numerous cracks were found
-    developing. Its magnetic Table 5 ______________________________________ Mn Al C ______________________________________
-    P.sub.1 72.08 27.45 0.47 P.sub.2 70.21 29.55 0.24 P.sub.3 73.44 25.51 1.05 P.sub.4 72.36 26.40 1.24 P.sub.5
-    71.63 27.23 1.14 P.sub.6 68.86 30.78 0.40 P.sub.7 67.86 31.81 0.33 P.sub.8 71.66 26.35 1.99 P.sub.9 69.90 28.67
-    1.43 ______________________________________ characteristics greatly declined from the characteristic of (BH).sub.max
-    = 0.6 × 10.sup.6 G.Oe, as measured before making the pressuring, to: Br = 1,700 G .sub.B Hc = 700 Oe (BH).sub.max
-    = 0.3 × 10.sup.6 G.Oe showing it to be isotropic. As this test piece was examined by way of X-ray diffraction,
-    large amount of the β-Mn phase and AlMn(γ) phase were recognized, other than a small amount of remaining τ phase,
-    and the additional heat treatment of tempering merely caused a further decline in its magnetic characteristics.'
+    pressuring direction. In the test piece which had been subjected to the deformation, [...]
   note: 'converted from 1700 G. Isotropic, mostly decomposed to beta-Mn + AlMn(gamma): C below solubility gives
     no anisotropy.'
 - id: mnal_sc_kubo1976_ex1
@@ -416,8 +402,7 @@
     locator: Example 1
   quote: 'This ε c monocrystal was tempered at 600°C for 1 hour. The tempered test piece was found to be magnetically
     isotropic, as its magnetic characteristics were measured. The magnetic characterstics found were: Br = 2,750
-    G, .sub.B HC = 1,350 Oe, and (BH)max = 1.1 × 10.sup.6 G.Oe, which were equivalent to the magnetic characteristics
-    of isotropic Mn-Al-C alloy magnets of the ordinary polycrystal type.'
+    G, .sub.B HC = 1,350 Oe, and (BH)max = 1.1 × 10.sup.6 G.Oe, which were equivalent [...]'
   note: converted from 2750 G. Unstressed transformation of a single-crystal parent gave an isotropic magnet.
 - id: mnal_sc_kubo1976_ex2
   phase: tau-MnAl-C
@@ -536,9 +521,7 @@
     locator: Example 3
   quote: Furthermore, the magnetic torque was measured likewise of the test pieces of S 1 , S 2 and S 4 after being
     tempered. The values were respectively, 0.93 × 10 7 dyne-cm/cm 3 , 0.97 × 10 7 dyne-cm/cm 3 and 0.95 × 10 7
-    dyne-cm/cm 3 , and as the degree of anisotropization was expressed by their ratio to the value of magnetic torque
-    of monocrystal, i.e., the 1.07 × 10 7 dyne-cm/cm 3 above mentioned, all of these test pieces had such very high
-    degrees of anisotropization, e.g. more than 0.9.
+    dyne-cm/cm 3 , and as the degree of anisotropization was expressed by their ratio to [...]
   note: Ratio computed here from the printed torque values.
 - id: mnal_sc_sa_kubo1976_s2_torque
   phase: tau-MnAl-C
@@ -566,9 +549,7 @@
     locator: Example 3
   quote: Furthermore, the magnetic torque was measured likewise of the test pieces of S 1 , S 2 and S 4 after being
     tempered. The values were respectively, 0.93 × 10 7 dyne-cm/cm 3 , 0.97 × 10 7 dyne-cm/cm 3 and 0.95 × 10 7
-    dyne-cm/cm 3 , and as the degree of anisotropization was expressed by their ratio to the value of magnetic torque
-    of monocrystal, i.e., the 1.07 × 10 7 dyne-cm/cm 3 above mentioned, all of these test pieces had such very high
-    degrees of anisotropization, e.g. more than 0.9.
+    dyne-cm/cm 3 , and as the degree of anisotropization was expressed by their ratio to [...]
   note: Ratio computed here from the printed torque values.
 - id: mnal_sc_sa_kubo1976_s4_torque
   phase: tau-MnAl-C
@@ -596,9 +577,7 @@
     locator: Example 3
   quote: Furthermore, the magnetic torque was measured likewise of the test pieces of S 1 , S 2 and S 4 after being
     tempered. The values were respectively, 0.93 × 10 7 dyne-cm/cm 3 , 0.97 × 10 7 dyne-cm/cm 3 and 0.95 × 10 7
-    dyne-cm/cm 3 , and as the degree of anisotropization was expressed by their ratio to the value of magnetic torque
-    of monocrystal, i.e., the 1.07 × 10 7 dyne-cm/cm 3 above mentioned, all of these test pieces had such very high
-    degrees of anisotropization, e.g. more than 0.9.
+    dyne-cm/cm 3 , and as the degree of anisotropization was expressed by their ratio to [...]
   note: Ratio computed here from the printed torque values.
 - id: mnal_sc_sa_kubo1976_s5
   phase: tau-MnAl-C
@@ -632,10 +611,7 @@
     locator: Example 4, Table 3, specimen S5
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.5 0° 0° 600 - 0.8 3,300 1,400 1.8
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 3300 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s6
@@ -670,10 +646,7 @@
     locator: Example 4, Table 3, specimen S6
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.6 20° 0° 550 - 2.6 4,750 1,550 3.3
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 4750 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s7
@@ -708,10 +681,7 @@
     locator: Example 4, Table 3, specimen S7
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.7 35° 0° 550 -12.0 6,500 2,050 7.2
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 6500 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s8
@@ -746,10 +716,7 @@
     locator: Example 4, Table 3, specimen S8
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.8 55° 0° 500 - 0.2 2,900 1,500 1.6
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 2900 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s9
@@ -784,10 +751,7 @@
     locator: Example 4, Table 3, specimen S9
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.9 55° 0° 530 -14.8 6,900 2,250 9.0
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 6900 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s10
@@ -822,10 +786,7 @@
     locator: Example 4, Table 3, specimen S10
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.10 55° 0° 720 -14.5 6,800 2,200 8.1
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 6800 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s11
@@ -860,10 +821,7 @@
     locator: Example 4, Table 3, specimen S11
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.11 55° 0° 850 -14.0 2,600 1,600 1.4
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 2600 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s12
@@ -898,10 +856,7 @@
     locator: Example 4, Table 3, specimen S12
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.12 55° 0° 650 - 0.4 2,950 1,400 1.1
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 2950 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s13
@@ -936,10 +891,7 @@
     locator: Example 4, Table 3, specimen S13
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.13 55° 0° 600 -25.0 3,100 1,800 2.0
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 3100 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s14
@@ -974,10 +926,7 @@
     locator: Example 4, Table 3, specimen S14
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.14 70° 0° 580 -12.0 6,600 2,000 7.3
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 6600 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s15
@@ -1012,10 +961,7 @@
     locator: Example 4, Table 3, specimen S15
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.15 90° 0° 530 - 2.0 6,250 2,300 7.6
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 6250 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s16
@@ -1050,10 +996,7 @@
     locator: Example 4, Table 3, specimen S16
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.16 90° 0° 560 - 3.2 6,100 2,150 7.0
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 6100 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s17
@@ -1088,10 +1031,7 @@
     locator: Example 4, Table 3, specimen S17
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.17 35° 10° 830 -12.9 6,400 2,100 7.0
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 6400 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s18
@@ -1126,10 +1066,7 @@
     locator: Example 4, Table 3, specimen S18
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.18 35° 15° 550 -11.7 6,350 2,050 6.6
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 6350 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s19
@@ -1164,10 +1101,7 @@
     locator: Example 4, Table 3, specimen S19
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.19 70° 15° 600 -10.0 6,400 1,750 6.2
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 6400 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s20
@@ -1202,10 +1136,7 @@
     locator: Example 4, Table 3, specimen S20
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.20 55° 20° 650 - 6.2 4,150 1,500 2.3
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 4150 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s21
@@ -1240,10 +1171,7 @@
     locator: Example 4, Table 3, specimen S21
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.21 50° 30° 580 - 4.4 3,700 1,350 2.2
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 3700 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s22
@@ -1278,10 +1206,7 @@
     locator: Example 4, Table 3, specimen S22
   quote: The cut out test pieces were deformed by applying a pressure of 10-40 kg/mm 2 on a oil-hydraulic press
     at a temperature range of 500°-850°C, and were then, further subjected to a tempering in the temperature range
-    of 550°-650°C. The preferred direction of magnetization of the test pieces after being tempered was determined
-    by way of X-ray diffraction or measurement of magnetic torque or measurement of the magnetization curves in
-    varied directions, and its magnetic characteristics in the preferred direction of magnetization were measured.
-    ... S.sub.22 90° 30° 560 - 0.5 3,300 1,300 1.7
+    of 550°-650°C. The preferred direction of magnetization of the test pieces after [...]
   note: 'converted from 3300 G. Table 3 columns: specimen, pressing direction theta1, theta2, temperature (C), degree
     of deformation (%), Br (G), BHc (Oe), (BH)max (1e6 G.Oe).'
 - id: mnal_sc_sa_kubo1976_s23
@@ -1315,11 +1240,7 @@
     locator: Example 9, Table 4, specimen S23
   quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
     with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.23 72.02
-    27.43 0.55 1400 900 0.4
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase [...]
   note: 'converted from 1400 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_s24
@@ -1353,11 +1274,7 @@
     locator: Example 9, Table 4, specimen S24
   quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
     with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.24 69.77
-    30.04 0.19 1100 550 0.2
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase [...]
   note: 'converted from 1100 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_s25
@@ -1389,13 +1306,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Example 9, Table 4, specimen S25
-  quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
-    with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.25 73.44
-    25.53 1.03 2500 1250 0.9
+  quote: '[...] θ 1 = 55° and θ 2 = 0° . In Table 4, the values of compositions obtained by chemical analysis and
+    the values of magnetic characteristics in the preferred direction of magnetization measured after tempering
+    following the pressuring, are respectively shown. ... S.sub.25 73.44 25.53 1.03 2500 1250 0.9'
   note: 'converted from 2500 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_s26
@@ -1429,11 +1342,7 @@
     locator: Example 9, Table 4, specimen S26
   quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
     with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.26 72.89
-    25.86 1.25 6450 2350 6.4
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase [...]
   note: 'converted from 6450 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_s27
@@ -1467,11 +1376,7 @@
     locator: Example 9, Table 4, specimen S27
   quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
     with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.27 71.58
-    27.22 1.20 6900 2250 9.0
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase [...]
   note: 'converted from 6900 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_s28
@@ -1505,11 +1410,7 @@
     locator: Example 9, Table 4, specimen S28
   quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
     with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.28 70.72
-    28.29 0.99 6750 2200 8.0
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase [...]
   note: 'converted from 6750 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_s29
@@ -1543,11 +1444,7 @@
     locator: Example 9, Table 4, specimen S29
   quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
     with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.29 68.14
-    31.41 0.45 6550 1900 6.8
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase [...]
   note: 'converted from 6550 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_s30
@@ -1581,11 +1478,7 @@
     locator: Example 9, Table 4, specimen S30
   quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
     with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.30 67.63
-    32.17 0.20 1800 850 0.5
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase [...]
   note: 'converted from 1800 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_s31
@@ -1619,11 +1512,7 @@
     locator: Example 9, Table 4, specimen S31
   quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
     with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.31 71.40
-    26.42 2.18 2500 1400 1.1
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase [...]
   note: 'converted from 2500 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_s32
@@ -1657,11 +1546,7 @@
     locator: Example 9, Table 4, specimen S32
   quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
     with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.32 70.78
-    27.77 1.45 2750 1300 1.1
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase [...]
   note: 'converted from 2750 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_s33
@@ -1695,11 +1580,7 @@
     locator: Example 9, Table 4, specimen S33
   quote: A monocrystal or a polycrystal within large crystalline grains in the ε or ε c (M) phase of Mn-Al-C alloys
     with its composition of Mn, Al and C varied within the range of Mn 67.0 - 74.0% and C 0.1 - 2.5% was manufactured,
-    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase were cut out, and were then pressured
-    at 40 kg/mm 2 at a temperature of 570°C in the direction of θ 1 = 55° and θ 2 = 0° . In Table 4, the values
-    of compositions obtained by chemical analysis and the values of magnetic characteristics in the preferred direction
-    of magnetization measured after tempering following the pressuring, are respectively shown. ... S.sub.33 69.90
-    28.77 1.33 2600 1250 1.0
+    and from these crystals, monocrystal test pieces in the ε or ε c (M) phase [...]
   note: 'converted from 2600 G. Patent: C below solubility (S23, S24) barely anisotropic with gamma/beta-Mn; S25
     much beta-Mn; S30 much AlMn(gamma); S31-S33 contain Al4C3.'
 - id: mnal_sc_sa_kubo1976_ex5
@@ -1730,12 +1611,9 @@
     url: https://patents.google.com/patent/US3976519A/en
     evidence: full_text
     locator: Example 5
-  quote: 'This test piece was pressured and deformed at a temperature of 550°C, at pressure of of 35 kg/mm 2 in
-    the direction perpendicular to (1100) plane and its magnetic characteristics were measured. The magnetic characteristics
-    found in the pressuring direction were; Br = 5300 G, .sub.B Hc = 2200 Oe, (BH)max = 4.1 × 10.sup.6 G.Oe Then,
-    this test piece was held further at a temperature of 600°C for 1 hour, as the result, an anisotropic magnet
-    was obtained, having magnetic characteristics of: Br = 5700 G, .sub.B Hc = 2100 Oe, (BH)max = 5.2 × 10.sup.6
-    G.O3'
+  quote: This test piece was pressured and deformed at a temperature of 550°C, at pressure of of 35 kg/mm 2 in the
+    direction perpendicular to (1100) plane and its magnetic characteristics were measured. The magnetic characteristics
+    found in the pressuring direction were; Br = 5300 G, .sub.B Hc = 2200 Oe, [...]
   note: converted from 5700 G (5300 G before the 600 C anneal). Preferred direction along the pressing direction
     here.
 - id: mnal_sc_sa_kubo1976_ex6_repress
@@ -2072,10 +1950,9 @@
     url: https://patents.google.com/patent/US4023991A/en
     evidence: full_text
     locator: Example 22
-  quote: 'From the outer peripheral part of this test piece, a cube of 8.8 × 8.8 × 8.8 mm was cut out. By the measurement
+  quote: From the outer peripheral part of this test piece, a cube of 8.8 × 8.8 × 8.8 mm was cut out. By the measurement
     of its magnetic characteristics, it was found out to be an anisotropic magnet with its preferred direction of
-    magnetization in its diameter direction. The magnetic characteristics in the preferred direction of magnetization
-    observed were: Br = 5500 G B HC = 2400 Oe (BH) max 32 5.3 = 10 6 G.Oe.'
+    magnetization in its diameter direction. The magnetic characteristics in the [...]
   note: converted from 5500 G. Patent prints '(BH) max 32 5.3 = 10 6 G.Oe' (garbled; 5.3 x 10^6 G.Oe).
 - id: mnal_hd_kubo1977_ex23_rolling
   phase: tau-MnAl-C
@@ -2130,9 +2007,9 @@
     url: https://patents.google.com/patent/US4023991A/en
     evidence: full_text
     locator: Example 28
-  quote: 'This cylindrical test piece in the ε phase was compressed to a degree of deformation of -50% by applying
+  quote: This cylindrical test piece in the ε phase was compressed to a degree of deformation of -50% by applying
     a pressuring force of 45 kg/mm 2 at a temperature of 650° C in the axial direction of its cylinder. The test
-    piece after being compressed was found to be isotropic, giving low magnetic characteristics as: Br = 1,300 G'
+    piece after being compressed was found to be isotropic, giving low magnetic [...]
   note: 'converted from 1300 G. Binary epsilon deformed: isotropic, low properties.'
 - id: mnal_hd_kojima1979_dieupset
   phase: tau-MnAl-C
@@ -2281,12 +2158,9 @@
     url: https://www.researchsquare.com/article/rs-1850627/latest.pdf
     evidence: full_text
     locator: Results, Fig. 5d
-  quote: These twin-free single-crystal nanoparticles were extracted and aligned under the external field of 2 T
-    to fabricate a bonded magnet. The magnetic hysteresis loops of the bonded magnet were measured parallel and
-    perpendicular to the alignment field, as displayed in Fig. 5d. For comparison, hysteresis loop of another bonded
-    magnet without applying external field was also measured. Conspicuous texture features can be observed, and
-    the coercivity is approximately 0.15 T. An unprecedented for MnAl remanence ratio of 0.7 was achieved in the
-    field-aligned bonded magnet.
+  quote: '[...] 5d. For comparison, hysteresis loop of another bonded magnet without applying external field was
+    also measured. Conspicuous texture features can be observed, and the coercivity is approximately 0.15 T. An
+    unprecedented for MnAl remanence ratio of 0.7 was achieved in the field-aligned bonded magnet.'
   note: Preprint; published as Acta Mater. 2023 118654 (not read). 'remanence ratio' presumably Mr/M(2 T). Coercivity
     ~0.15 T.
 - id: mnal_isotropic_jia2022_review_cast
@@ -2554,10 +2428,9 @@
     url: https://api.openalex.org/works/doi:10.1063/1.4915093
     evidence: abstract
     locator: abstract
-  quote: Strong perpendicular magnetic anisotropy with coercivity Hc of 8 kOe, Ku of over 6.5 × 106 erg/cm3, saturation
-    magnetization Ms of 300 emu/cm3, and out-of-plane squareness Mr/Ms of 0.8 were achieved. These MnAl film properties
-    were obtained via DC magnetron sputtering at 530 °C, followed by 350 °C annealing under a 4 kOe magnetic field
-    oriented perpendicular to the film plane.
+  quote: '[...] with coercivity Hc of 8 kOe, Ku of over 6.5 × 106 erg/cm3, saturation magnetization Ms of 300 emu/cm3,
+    and out-of-plane squareness Mr/Ms of 0.8 were achieved. These MnAl film properties were obtained via DC magnetron
+    sputtering at 530 °C, followed by 350 °C annealing under a 4 kOe magnetic [...]'
   note: The film was already tau (deposited at 530 C) before the field anneal at 350 C (below Tc), so the field
     anneal is not an epsilon->tau formation-in-field experiment.
 - id: mnal_ep_sands1990
@@ -3225,7 +3098,7 @@
     locator: Sec. III (Fig. 4)
   quote: The approach to saturation at 300 K corresponds well to isotropic material. However, the magnetization
     curve at 4 K can be better fitted with an assumption of anisotropic texture. ... The presence of light crystallographic
-    texture can be attributed to the uniaxial pressure applied to the sample during SPS.
+    texture can be attributed to the uniaxial pressure applied to the sample [...]
   note: Qualitative texture inference from magnetization-curve fitting (not a pole figure). Relevant to stress during
     the epsilon->tau transformation (SPS under 70 MPa).
 - id: mnal_hd_kamino1966
@@ -3453,8 +3326,7 @@
     locator: Fig. 5 (read from plot); text Section 3
   quote: Figure 5 presents the typical magnetization curves for the sample annealed at 10 T. H⊥ and H// indicate
     the applied magnetic field direction perpendicular and parallel to H, respectively. The magnetization curves
-    were almost the same for H⊥ and H//, which indicated that a uniaxial oriented phase formation was not observed.
-    This behavior was observed for all in-field samples.
+    were almost the same for H⊥ and H//, which indicated that a uniaxial oriented phase [...]
   note: 'Read from Fig. 5 by pixel analysis: the two descending branches cross H = 0 at M = 29.9 and 26.7 Am2/kg
     and reach 69.5 and 67.3 Am2/kg at 1.5 T; the solid (H//) and broken (H-perp) curves could not be told apart
     at the crossings, so each direction lies in Mr/M(1.5 T) = 0.38-0.44. Directional difference <= ~0.06. Authors:
@@ -3488,8 +3360,7 @@
     locator: Fig. 5 (read from plot); Fig. 5 caption
   quote: Fig. 5 Typical magnetization curves at room temperature for the sample annealed at 10 T. H// and H⊥ indicate
     the measuring direction of the magnetic field, parallel and perpendicular to Hh, respectively. The solid and
-    broken curves are the magnetization curve of H// and H⊥, respectively. The inset indicates the relationship
-    between H//, H⊥, Hh, and the sample.
+    broken curves are the magnetization curve of H// and H⊥, respectively. The inset [...]
   note: 'See mnal_fa_kobayashi2017a: both directions 0.38-0.44 (branch assignment unresolved), value given as 0.41
     +/- 0.03.'
 - id: mnal_fa_kobayashi2017c
@@ -3612,9 +3483,7 @@
     locator: Section on Mn-Al bulk processing (p. 23); Table 7
   quote: However, by using compression along the [1 -1 1] direction of the ε phase during annealing, the martensitic
     transformation was constrained to just one variant of τ phase, the magnetic easy axis [0 0 1] (which is parallel
-    to the [1 -1 1] direction of the ε phase), formation of twins was suppressed, and consequently the resulting
-    single crystal magnet displayed high magnetic anisotropy along the axis of compression and a high Ms of 113
-    Am2/kg.
+    to the [1 -1 1] direction of the ε phase), formation of twins was suppressed, [...]
   note: 'Review evidence; original Zhang C. et al., Scripta Mater. 143 (2018) 72-76, doi:10.1016/j.scriptamat.2017.09.008
     (closed, abstract not available). Conditions from review text ("903 K anneal for 3 min while the specimen was
     under uniaxial compression") and Table 7 ("903 K anneal for 3 min under 320 MPa uniaxial compression"). Keller
@@ -3646,11 +3515,9 @@
     url: https://par.nsf.gov/servlets/purl/10314453
     evidence: review
     locator: Table 7 (continued), row Zhang et al. 2018
-  quote: However, by using compression along the [1 -1 1] direction of the ε phase during annealing, the martensitic
-    transformation was constrained to just one variant of τ phase, the magnetic easy axis [0 0 1] (which is parallel
-    to the [1 -1 1] direction of the ε phase), formation of twins was suppressed, and consequently the resulting
-    single crystal magnet displayed high magnetic anisotropy along the axis of compression and a high Ms of 113
-    Am2/kg.
+  quote: '[...] one variant of τ phase, the magnetic easy axis [0 0 1] (which is parallel to the [1 -1 1] direction
+    of the ε phase), formation of twins was suppressed, and consequently the resulting single crystal magnet displayed
+    high magnetic anisotropy along the axis of compression and a high Ms of 113 Am2/kg.'
   note: Review evidence. Same-sample Ms for normalising any remanence of this crystal.
 - id: mnal_other_sc_zhang2018c
   phase: tau-MnAl-C
@@ -3777,9 +3644,7 @@
     locator: Section on Mn-Al bulk processing (p. 23)
   quote: They observed coherence of the orientation of the τ crystal to that of the parent ε such that (1 1 1) and
     (-1 1 0) of the τ was parallel to (0 0 0 1) and (1 1 -2 0) of the ε, respectively. The [0 0 1] τ easy axis developed
-    at a direction tilted ~84◦ away from the axis of compression. Notably, they confirmed that when the compression
-    was applied along the [0 0 0 1] or [2 -1 -1 0] axes of the ε parent, the resulting τ phase was polycrystalline
-    and lacked a preferred orientation.
+    at a direction tilted ~84◦ away from the axis of compression. Notably, they [...]
   note: 'Review evidence. Test of the B2 rule: stress axes that do not distinguish the variants (symmetric positions)
     give no selection.'
 - id: mnal_sa_tyrman2018a

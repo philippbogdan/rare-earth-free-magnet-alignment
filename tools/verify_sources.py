@@ -1,13 +1,16 @@
-"""Verify sources and quotes of every record in data/raw/*.yaml, data/outcomes/*.yaml and
-data/curated/*.yaml.
+"""Check source metadata and quotations in the record files passed on the command line.
 
 For each record: (1) the DOI resolves on Crossref and its title/year/first author match;
 (2) the verbatim quote is found in the abstract (Crossref / OpenAlex / Semantic Scholar)
 or in the text at `url` (HTML or PDF via pdftotext). Matching ignores case, whitespace,
 punctuation and line-break hyphenation. Results go to data/verification.json.
-Fetched texts are cached in .tmp/cache (not committed).
+Fetched material is cached in .cache/fetched/; optional saved source texts belong
+under .cache/texts/. These must be extracts of the cited publications, never
+printouts of the records being checked: a self-match supplies no source evidence.
+With no file arguments, only data/raw/*.yaml is checked.
+See REPRODUCE.md for the complete file list and PDF extraction dependency.
 
-    .venv/bin/python tools/verify_sources.py [files...]
+    python tools/verify_sources.py [files...]
 """
 import difflib
 import glob
@@ -26,7 +29,7 @@ import urllib.request
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CACHE = os.path.join(ROOT, '.tmp', 'cache')
+CACHE = os.path.join(ROOT, '.cache', 'fetched')
 OUT = os.path.join(ROOT, 'data', 'verification.json')
 UA = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
                     '(KHTML, like Gecko) Chrome/124 Safari/537.36'}
@@ -124,13 +127,15 @@ _LOCAL = None
 
 
 def local_texts():
-    """Saved source texts from the collection work (.tmp/**/*.txt), normalised once."""
+    """Load and normalise optional .cache/texts/**/*.txt publication extracts.
+
+    The caller must check their provenance; this loader cannot distinguish a
+    source passage from an exported record containing the same quotation.
+    """
     global _LOCAL
     if _LOCAL is None:
         _LOCAL = []
-        for f in glob.glob(os.path.join(ROOT, '.tmp', '**', '*.txt'), recursive=True):
-            if os.path.dirname(f) == os.path.join(ROOT, '.tmp'):
-                continue                      # our own listings and printouts, not sources
+        for f in glob.glob(os.path.join(ROOT, '.cache', 'texts', '**', '*.txt'), recursive=True):
             try:
                 if os.path.getsize(f) > 30_000_000:
                     continue
